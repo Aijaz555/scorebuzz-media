@@ -38,7 +38,7 @@ Every day, publish 20–25 posts to the ScoreBuzz Facebook Page (Metricool brand
 ## Scheduling (Metricool `createScheduledPost`)
 - `blogId: "7677948"`, provider `facebook`, `facebookData: {"type":"POST"}`, `autoPublish: true`, the card URL in `media`, caption in `text`, link in `firstCommentText`, `publicationDate.timezone: "Asia/Karachi"`.
 - Confirm each response shows a `static.metricool.com` media URL (Metricool copied the image).
-- Before scheduling, call `getScheduledPosts` for the window and skip slots that already have a post.
+- Before scheduling, call `getScheduledPosts` for the window and skip slots that already have a post. Count those existing posts toward the 20–25 target for the window, so the Page never gets more than ~25 posts in 24 hours.
 
 ## Report
 At the end, send the user a short summary: number of posts scheduled, the mix, and anything skipped or uncertain.
