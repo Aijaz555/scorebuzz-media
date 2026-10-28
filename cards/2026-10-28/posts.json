@@ -1,480 +1,568 @@
 [
- {
-  "id": "01-ws-brewers-3-0",
-  "time": "2026-10-28T03:30:00",
-  "sport": "mlb",
-  "kind": "headline",
-  "label": "WORLD SERIES",
-  "tagText": "WORLD SERIES",
-  "headline": "Brewers lead 3–0. One win from history.",
-  "sub": "Milwaukee won Game 1 3–2, Game 2 5–4 and crushed Tampa Bay 10–1 in Game 3. Neither club has ever won a World Series.",
-  "stat": [
-   "3–0",
-   "series lead · Game 4 tonight"
-  ],
-  "caption": "⚾ The Brewers are ONE win away from their first-ever World Series title.\n\nMilwaukee leads Tampa Bay 3–0 after a 10–1 rout in Game 3. Game 4 is tonight in Tampa.\n\nSweep tonight, or do the Rays start a comeback? 👇\n\n#WorldSeries #Brewers #Rays"
- },
- {
-  "id": "02-nba-tonight",
-  "time": "2026-10-28T04:00:00",
-  "sport": "nba",
-  "kind": "list",
-  "label": "TONIGHT · TUE OCT 27 (ET)",
-  "headline": "NBA tonight",
-  "rows": [
-   [
-    "Nets",
-    "7:30 PM",
-    "Celtics"
-   ],
-   [
-    "Pistons",
-    "8:00 PM",
-    "Knicks"
-   ],
-   [
-    "Kings",
-    "8:00 PM",
-    "Spurs"
-   ],
-   [
-    "Trail Blazers",
-    "11:00 PM",
-    "Lakers"
-   ]
-  ],
-  "sub": "Away team left · home team right · all times ET",
-  "caption": "🏀 Four NBA games tonight. Which one are you watching?\n\n🔹 Nets @ Celtics, 7:30 PM ET\n🔹 Pistons @ Knicks, 8:00 PM ET\n🔹 Kings @ Spurs, 8:00 PM ET\n🔹 Trail Blazers @ Lakers, 11:00 PM ET\n\n#NBA #NBATonight"
- },
- {
-  "id": "03-nhl-tonight",
-  "time": "2026-10-28T04:30:00",
-  "sport": "nhl",
-  "kind": "list",
-  "label": "TONIGHT · TUE OCT 27 (ET)",
-  "headline": "NHL tonight",
-  "rows": [
-   [
-    "Bruins",
-    "8:00 PM",
-    "Hurricanes"
-   ],
-   [
-    "Panthers",
-    "8:00 PM",
-    "Jets"
-   ],
-   [
-    "Devils",
-    "8:00 PM",
-    "Stars"
-   ],
-   [
-    "Kings",
-    "8:00 PM",
-    "Blackhawks"
-   ],
-   [
-    "Senators",
-    "10:00 PM",
-    "Golden Knights"
-   ]
-  ],
-  "sub": "Away team left · home team right · all times ET",
-  "caption": "🏒 Big NHL night ahead, headlined by Bruins @ Hurricanes and Panthers @ Jets.\n\nWho's getting your pick tonight? 👇\n\n#NHL #NHLTonight"
- },
- {
-  "id": "04-ufc-volkanovski",
-  "time": "2026-10-28T05:30:00",
-  "sport": "mma",
-  "kind": "headline",
-  "label": "UFC 333 · ABU DHABI",
-  "headline": "Volkanovski hands Evloev his first loss",
-  "sub": "The featherweight champion stopped the previously unbeaten Movsar Evloev (20-0) by TKO at 4:54 of round 2 to keep his belt.",
-  "caption": "🥊 Still the champ. Alexander Volkanovski stopped Movsar Evloev in round 2 at UFC 333, ending Evloev's perfect 20-0 record.\n\nWho should Volk face next? 👇\n\n#UFC333 #UFC #Volkanovski"
- },
- {
-  "id": "05-nfl-mnf-cowboys",
-  "time": "2026-10-28T06:30:00",
-  "sport": "nfl",
-  "kind": "score",
-  "label": "MONDAY NIGHT FOOTBALL",
-  "home": "Eagles",
-  "homeAbbr": "PHI",
-  "homeScore": 21,
-  "away": "Cowboys",
-  "awayAbbr": "DAL",
-  "awayScore": 38,
-  "status": "FINAL",
-  "headline": "Cowboys roll in Philadelphia",
-  "sub": "Dallas put up 38 points on the road against their biggest rival.",
-  "caption": "🏈 Cowboys 38, Eagles 21. Dallas went into Philly on Monday Night Football and ran away with it.\n\nStatement win or one-off? 👇\n\n#MNF #Cowboys #Eagles #NFL"
- },
- {
-  "id": "06-nba-warriors",
-  "time": "2026-10-28T07:30:00",
-  "sport": "nba",
-  "kind": "score",
-  "label": "NBA · MON OCT 26",
-  "home": "Nuggets",
-  "homeAbbr": "DEN",
-  "homeScore": 114,
-  "away": "Warriors",
-  "awayAbbr": "GSW",
-  "awayScore": 134,
-  "status": "FINAL",
-  "headline": "Warriors blow out Denver",
-  "sub": "Golden State won by 20 in Denver.",
-  "caption": "🏀 Warriors 134, Nuggets 114. Golden State went into Denver and won by 20.\n\n#NBA #DubNation #Warriors"
- },
- {
-  "id": "07-ufc-yan",
-  "time": "2026-10-28T08:30:00",
-  "sport": "mma",
-  "kind": "headline",
-  "label": "UFC 333 · BANTAMWEIGHT TITLE",
-  "headline": "Petr Yan wins the trilogy",
-  "sub": "Yan beat Merab Dvalishvili by unanimous decision over five rounds to keep the bantamweight title.",
-  "caption": "🥊 Petr Yan beats Merab Dvalishvili again, this time by unanimous decision, to keep the bantamweight belt and win their trilogy.\n\nWas the decision right? 👇\n\n#UFC333 #UFC #PetrYan"
- },
- {
-  "id": "08-clasico",
-  "time": "2026-10-28T11:00:00",
-  "sport": "football",
-  "kind": "score",
-  "label": "LALIGA · EL CLÁSICO",
-  "home": "Barcelona",
-  "homeAbbr": "BAR",
-  "homeScore": 1,
-  "away": "Real Madrid",
-  "awayAbbr": "RMA",
-  "awayScore": 2,
-  "status": "FULL TIME",
-  "headline": "Real Madrid win at Barcelona",
-  "sub": "Los Blancos take the first Clásico of the season.",
-  "caption": "⚽ Real Madrid win El Clásico 2–1 away at Barcelona!\n\nWho was your man of the match? 👇\n\n#ElClasico #RealMadrid #Barca #LaLiga"
- },
- {
-  "id": "09-epl-md8-results",
-  "time": "2026-10-28T12:30:00",
-  "sport": "football",
-  "kind": "list",
-  "label": "PREMIER LEAGUE · MATCHDAY 8",
-  "headline": "Weekend results",
-  "rows": [
-   [
-    "Aston Villa",
-    "2–1",
-    "Man City"
-   ],
-   [
-    "Arsenal",
-    "2–0",
-    "Everton"
-   ],
-   [
-    "Chelsea",
-    "0–2",
-    "Tottenham"
-   ],
-   [
-    "Liverpool",
-    "2–0",
-    "Brighton"
-   ],
-   [
-    "Man United",
-    "0–3",
-    "Bournemouth"
-   ],
-   [
-    "Crystal Palace",
-    "0–2",
-    "Newcastle"
-   ]
-  ],
-  "caption": "⚽ Premier League Matchday 8 in one image.\n\nVilla beat City, Spurs won at Chelsea, and Bournemouth won 3–0 at Old Trafford 😳\n\nBiggest shock of the weekend? 👇\n\n#PremierLeague #EPL"
- },
- {
-  "id": "10-villa-city",
-  "time": "2026-10-28T13:30:00",
-  "sport": "football",
-  "kind": "score",
-  "label": "PREMIER LEAGUE",
-  "home": "Aston Villa",
-  "homeAbbr": "AVL",
-  "homeScore": 2,
-  "away": "Man City",
-  "awayAbbr": "MCI",
-  "awayScore": 1,
-  "status": "FULL TIME",
-  "headline": "City's first league defeat of the season",
-  "sub": "Man City are still level with Arsenal on 21 points at the top.",
-  "caption": "⚽ Aston Villa 2–1 Man City. City's first Premier League defeat of the season, and Arsenal have pulled level on 21 points.\n\nDoes this change the title race? 👇\n\n#AVLMCI #PremierLeague #AstonVilla #ManCity"
- },
- {
-  "id": "11-united-bournemouth",
-  "time": "2026-10-28T14:30:00",
-  "sport": "football",
-  "kind": "score",
-  "label": "PREMIER LEAGUE",
-  "home": "Man United",
-  "homeAbbr": "MUN",
-  "homeScore": 0,
-  "away": "Bournemouth",
-  "awayAbbr": "BOU",
-  "awayScore": 3,
-  "status": "FULL TIME",
-  "headline": "Bournemouth stun Old Trafford",
-  "sub": "United sit 16th with 7 points from 8 games.",
-  "caption": "⚽ Man United 0–3 Bournemouth. United are 16th with just one league win from eight games.\n\nWhat needs to change at Old Trafford? 👇\n\n#MUFC #ManUtd #PremierLeague"
- },
- {
-  "id": "12-chelsea-spurs",
-  "time": "2026-10-28T15:30:00",
-  "sport": "football",
-  "kind": "score",
-  "label": "PREMIER LEAGUE · LONDON DERBY",
-  "home": "Chelsea",
-  "homeAbbr": "CHE",
-  "homeScore": 0,
-  "away": "Tottenham",
-  "awayAbbr": "TOT",
-  "awayScore": 2,
-  "status": "FULL TIME",
-  "headline": "Spurs win the London derby",
-  "sub": "Tottenham beat Chelsea 2–0 at Stamford Bridge.",
-  "caption": "⚽ Chelsea 0–2 Tottenham. Spurs take the London derby at Stamford Bridge!\n\nSpurs fans, how good did that feel? 👇\n\n#CHETOT #COYS #Chelsea #PremierLeague"
- },
- {
-  "id": "13-laliga-roundup",
-  "time": "2026-10-28T16:30:00",
-  "sport": "football",
-  "kind": "list",
-  "label": "LALIGA · WEEKEND RESULTS",
-  "headline": "LaLiga round-up",
-  "rows": [
-   [
-    "Barcelona",
-    "1–2",
-    "Real Madrid"
-   ],
-   [
-    "Athletic Club",
-    "4–0",
-    "Getafe"
-   ],
-   [
-    "Atlético",
-    "1–0",
-    "Deportivo"
-   ],
-   [
-    "Valencia",
-    "1–2",
-    "Villarreal"
-   ],
-   [
-    "Sevilla",
-    "2–0",
-    "Osasuna"
-   ],
-   [
-    "Rayo",
-    "0–3",
-    "Elche"
-   ]
-  ],
-  "caption": "⚽ LaLiga weekend: Real Madrid won El Clásico, Athletic hit Getafe for four and Villarreal won 2–1 at Valencia.\n\n#LaLiga #RealMadrid #Athletic #Villarreal"
- },
- {
-  "id": "14-nfl-sunday",
-  "time": "2026-10-28T17:30:00",
-  "sport": "nfl",
-  "kind": "list",
-  "label": "NFL · SUNDAY RESULTS",
-  "headline": "Sunday's big scores",
-  "rows": [
-   [
-    "Chiefs",
-    "3–20",
-    "Seahawks"
-   ],
-   [
-    "Bengals",
-    "35–13",
-    "Ravens"
-   ],
-   [
-    "Buccaneers",
-    "43–13",
-    "Panthers"
-   ],
-   [
-    "Broncos",
-    "30–16",
-    "Cardinals"
-   ],
-   [
-    "Rams",
-    "35–21",
-    "Raiders"
-   ],
-   [
-    "Packers",
-    "17–20",
-    "Lions"
-   ]
-  ],
-  "sub": "Away team left · home team right",
-  "caption": "🏈 Sunday's NFL scores: Seattle held Kansas City to 3 points, Cincinnati put 35 on Baltimore and Tampa Bay scored 43 in Carolina.\n\nMost impressive team this week? 👇\n\n#NFL #NFLSunday"
- },
- {
-  "id": "15-poll-title-race",
-  "time": "2026-10-28T18:30:00",
-  "sport": "football",
-  "kind": "headline",
-  "label": "PREMIER LEAGUE TITLE RACE",
-  "headline": "Who wins the league?",
-  "sub": "Man City 21 pts · Arsenal 21 pts · Brighton 16 pts · Liverpool 15 pts, after 8 games.",
-  "caption": "🏆 Man City and Arsenal are level on 21 points after eight games.\n\nWho wins the Premier League?\n❤️ Arsenal\n👍 Man City\n😮 Liverpool\n😂 Someone else\n\nReact to vote 👇\n\n#PremierLeague #TitleRace"
- },
- {
-  "id": "16-nba-celtics",
-  "time": "2026-10-28T19:30:00",
-  "sport": "nba",
-  "kind": "score",
-  "label": "NBA · MON OCT 26",
-  "home": "Celtics",
-  "homeAbbr": "BOS",
-  "homeScore": 134,
-  "away": "Bulls",
-  "awayAbbr": "CHI",
-  "awayScore": 99,
-  "status": "FINAL",
-  "headline": "Celtics win by 35",
-  "sub": "Boston blew out Chicago at TD Garden.",
-  "caption": "🏀 Celtics 134, Bulls 99. A 35-point win in Boston.\n\n#NBA #Celtics #Bulls"
- },
- {
-  "id": "17-chelsea-united-preview",
-  "time": "2026-10-28T20:30:00",
-  "sport": "football",
-  "kind": "headline",
-  "label": "SATURDAY · 12:30 GMT · STAMFORD BRIDGE",
-  "headline": "Chelsea vs Man United",
-  "sub": "Both sides lost at home last weekend. Who bounces back?",
-  "caption": "⚽ Chelsea vs Man United kicks off Saturday's Premier League action (12:30 GMT).\n\nBoth lost at home last weekend. Your prediction? 👇\n\n#CHEMUN #Chelsea #MUFC"
- },
- {
-  "id": "18-nhl-recap",
-  "time": "2026-10-28T21:30:00",
-  "sport": "nhl",
-  "kind": "list",
-  "label": "NHL · MON OCT 26",
-  "headline": "Monday's NHL scores",
-  "rows": [
-   [
-    "Kings",
-    "6–3",
-    "Rangers"
-   ],
-   [
-    "Maple Leafs",
-    "2–5",
-    "Flames"
-   ],
-   [
-    "Red Wings",
-    "4–3",
-    "Oilers"
-   ]
-  ],
-  "sub": "Away team left · home team right",
-  "caption": "🏒 Monday in the NHL: the Kings scored six at MSG, Calgary beat Toronto 5–2 and Detroit edged Edmonton 4–3.\n\n#NHL #GoKingsGo #Flames #LGRW"
- },
- {
-  "id": "19-tnf-preview",
-  "time": "2026-10-28T22:30:00",
-  "sport": "nfl",
-  "kind": "headline",
-  "label": "THURSDAY NIGHT FOOTBALL · 8:15 PM ET",
-  "headline": "Panthers at Packers",
-  "sub": "Green Bay host Carolina on Thursday night. The Panthers lost 43–13 to Tampa Bay on Sunday.",
-  "caption": "🏈 Thursday Night Football: Panthers at Packers (8:15 PM ET).\n\nCan Carolina bounce back after a 43–13 loss to the Bucs? Score prediction 👇\n\n#TNF #Packers #Panthers"
- },
- {
-  "id": "20-liverpool-arsenal",
-  "time": "2026-10-28T23:30:00",
-  "sport": "football",
-  "kind": "headline",
-  "label": "SUNDAY · 16:30 GMT · ANFIELD",
-  "headline": "Liverpool vs Arsenal",
-  "sub": "Arsenal arrive joint top on 21 points. Liverpool are 4th on 15 after beating Brighton.",
-  "caption": "⚽ The big one this weekend: Liverpool vs Arsenal at Anfield on Sunday (16:30 GMT).\n\nArsenal are joint top. Can Liverpool close the gap? Predictions 👇\n\n#LIVARS #LFC #Arsenal #PremierLeague"
- },
- {
-  "id": "21-nfl-week-ahead",
-  "time": "2026-10-29T00:30:00",
-  "sport": "nfl",
-  "kind": "list",
-  "label": "NFL · THIS SUNDAY",
-  "headline": "Games to watch",
-  "rows": [
-   [
-    "Ravens",
-    "1:00 PM",
-    "Bills"
-   ],
-   [
-    "Chargers",
-    "4:05 PM",
-    "Rams"
-   ],
-   [
-    "Chiefs",
-    "4:25 PM",
-    "Broncos"
-   ],
-   [
-    "Eagles",
-    "8:20 PM",
-    "Commanders"
-   ]
-  ],
-  "sub": "Away team left · home team right · all times ET",
-  "caption": "🏈 Circle these for Sunday: Ravens @ Bills, Chargers @ Rams, Chiefs @ Broncos, and Eagles @ Commanders on Sunday Night Football.\n\nWhich game are you most excited for? 👇\n\n#NFL #NFLSunday"
- },
- {
-  "id": "22-nba-wednesday",
-  "time": "2026-10-29T01:30:00",
-  "sport": "nba",
-  "kind": "list",
-  "label": "TONIGHT · WED OCT 28 (ET)",
-  "headline": "NBA Wednesday",
-  "rows": [
-   [
-    "Knicks",
-    "8:00 PM",
-    "Bulls"
-   ],
-   [
-    "Rockets",
-    "8:00 PM",
-    "Bucks"
-   ],
-   [
-    "Warriors",
-    "8:00 PM",
-    "Timberwolves"
-   ],
-   [
-    "Thunder",
-    "9:30 PM",
-    "Mavericks"
-   ]
-  ],
-  "sub": "Away team left · home team right · all times ET",
-  "caption": "🏀 Wednesday's NBA picks: Knicks @ Bulls, Rockets @ Bucks, Warriors @ Wolves and Thunder @ Mavs.\n\nBest game of the night? 👇\n\n#NBA #NBATonight"
- }
+  {
+    "id": "01-ws-brewers-3-0",
+    "time": "2026-10-28T03:30:00",
+    "sport": "mlb",
+    "kind": "headline",
+    "label": "WORLD SERIES",
+    "tagText": "WORLD SERIES",
+    "headline": "Brewers lead 3–0. One win from history.",
+    "sub": "Milwaukee won Game 1 3–2, Game 2 5–4 and crushed Tampa Bay 10–1 in Game 3. Neither club has ever won a World Series.",
+    "stat": [
+      "3–0",
+      "series lead · Game 4 tonight"
+    ],
+    "caption": "⚾ The Brewers are ONE win away from their first-ever World Series title.\n\nMilwaukee leads Tampa Bay 3–0 after a 10–1 rout in Game 3. Game 4 is tonight in Tampa.\n\nSweep tonight, or do the Rays start a comeback? 👇\n\n#WorldSeries #Brewers #Rays"
+  },
+  {
+    "id": "02-nba-tonight",
+    "time": "2026-10-28T04:00:00",
+    "sport": "nba",
+    "kind": "list",
+    "label": "TONIGHT · TUE OCT 27 (ET)",
+    "headline": "NBA tonight",
+    "rows": [
+      [
+        "Nets",
+        "7:30 PM",
+        "Celtics"
+      ],
+      [
+        "Pistons",
+        "8:00 PM",
+        "Knicks"
+      ],
+      [
+        "Kings",
+        "8:00 PM",
+        "Spurs"
+      ],
+      [
+        "Trail Blazers",
+        "11:00 PM",
+        "Lakers"
+      ]
+    ],
+    "sub": "Away team left · home team right · all times ET",
+    "caption": "🏀 Four NBA games tonight. Which one are you watching?\n\n🔹 Nets @ Celtics, 7:30 PM ET\n🔹 Pistons @ Knicks, 8:00 PM ET\n🔹 Kings @ Spurs, 8:00 PM ET\n🔹 Trail Blazers @ Lakers, 11:00 PM ET\n\n#NBA #NBATonight"
+  },
+  {
+    "id": "03-nhl-tonight",
+    "time": "2026-10-28T04:30:00",
+    "sport": "nhl",
+    "kind": "list",
+    "label": "TONIGHT · TUE OCT 27 (ET)",
+    "headline": "NHL tonight",
+    "rows": [
+      [
+        "Bruins",
+        "8:00 PM",
+        "Hurricanes"
+      ],
+      [
+        "Panthers",
+        "8:00 PM",
+        "Jets"
+      ],
+      [
+        "Devils",
+        "8:00 PM",
+        "Stars"
+      ],
+      [
+        "Kings",
+        "8:00 PM",
+        "Blackhawks"
+      ],
+      [
+        "Senators",
+        "10:00 PM",
+        "Golden Knights"
+      ]
+    ],
+    "sub": "Away team left · home team right · all times ET",
+    "caption": "🏒 Big NHL night ahead, headlined by Bruins @ Hurricanes and Panthers @ Jets.\n\nWho's getting your pick tonight? 👇\n\n#NHL #NHLTonight"
+  },
+  {
+    "id": "04-ufc-volkanovski",
+    "time": "2026-10-28T05:30:00",
+    "sport": "mma",
+    "kind": "headline",
+    "label": "UFC 333 · ABU DHABI",
+    "headline": "Volkanovski hands Evloev his first loss",
+    "sub": "The featherweight champion stopped the previously unbeaten Movsar Evloev (20-0) by TKO at 4:54 of round 2 to keep his belt.",
+    "caption": "🥊 Still the champ. Alexander Volkanovski stopped Movsar Evloev in round 2 at UFC 333, ending Evloev's perfect 20-0 record.\n\nWho should Volk face next? 👇\n\n#UFC333 #UFC #Volkanovski"
+  },
+  {
+    "id": "05-nfl-mnf-cowboys",
+    "time": "2026-10-28T06:30:00",
+    "sport": "nfl",
+    "kind": "score",
+    "label": "MONDAY NIGHT FOOTBALL",
+    "home": "Eagles",
+    "homeAbbr": "PHI",
+    "homeScore": 21,
+    "away": "Cowboys",
+    "awayAbbr": "DAL",
+    "awayScore": 38,
+    "status": "FINAL",
+    "headline": "Cowboys roll in Philadelphia",
+    "sub": "Dallas put up 38 points on the road against their biggest rival.",
+    "caption": "🏈 Cowboys 38, Eagles 21. Dallas went into Philly on Monday Night Football and ran away with it.\n\nStatement win or one-off? 👇\n\n#MNF #Cowboys #Eagles #NFL"
+  },
+  {
+    "id": "06-nba-warriors",
+    "time": "2026-10-28T07:30:00",
+    "sport": "nba",
+    "kind": "score",
+    "label": "NBA · MON OCT 26",
+    "home": "Nuggets",
+    "homeAbbr": "DEN",
+    "homeScore": 114,
+    "away": "Warriors",
+    "awayAbbr": "GSW",
+    "awayScore": 134,
+    "status": "FINAL",
+    "headline": "Warriors blow out Denver",
+    "sub": "Golden State won by 20 in Denver.",
+    "caption": "🏀 Warriors 134, Nuggets 114. Golden State went into Denver and won by 20.\n\n#NBA #DubNation #Warriors"
+  },
+  {
+    "id": "07-ufc-yan",
+    "time": "2026-10-28T08:30:00",
+    "sport": "mma",
+    "kind": "headline",
+    "label": "UFC 333 · BANTAMWEIGHT TITLE",
+    "headline": "Petr Yan wins the trilogy",
+    "sub": "Yan beat Merab Dvalishvili by unanimous decision over five rounds to keep the bantamweight title.",
+    "caption": "🥊 Petr Yan beats Merab Dvalishvili again, this time by unanimous decision, to keep the bantamweight belt and win their trilogy.\n\nWas the decision right? 👇\n\n#UFC333 #UFC #PetrYan"
+  },
+  {
+    "id": "08-clasico",
+    "time": "2026-10-28T11:00:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "LALIGA · EL CLÁSICO",
+    "home": "Barcelona",
+    "homeAbbr": "BAR",
+    "homeScore": 1,
+    "away": "Real Madrid",
+    "awayAbbr": "RMA",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "headline": "Real Madrid win at Barcelona",
+    "sub": "Los Blancos take the first Clásico of the season.",
+    "caption": "⚽ Real Madrid win El Clásico 2–1 away at Barcelona!\n\nWho was your man of the match? 👇\n\n#ElClasico #RealMadrid #Barca #LaLiga"
+  },
+  {
+    "id": "09-epl-md8-results",
+    "time": "2026-10-28T12:30:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "PREMIER LEAGUE · MATCHDAY 8",
+    "headline": "Weekend results",
+    "rows": [
+      [
+        "Aston Villa",
+        "2–1",
+        "Man City"
+      ],
+      [
+        "Arsenal",
+        "2–0",
+        "Everton"
+      ],
+      [
+        "Chelsea",
+        "0–2",
+        "Tottenham"
+      ],
+      [
+        "Liverpool",
+        "2–0",
+        "Brighton"
+      ],
+      [
+        "Man United",
+        "0–3",
+        "Bournemouth"
+      ],
+      [
+        "Crystal Palace",
+        "0–2",
+        "Newcastle"
+      ]
+    ],
+    "caption": "⚽ Premier League Matchday 8 in one image.\n\nVilla beat City, Spurs won at Chelsea, and Bournemouth won 3–0 at Old Trafford 😳\n\nBiggest shock of the weekend? 👇\n\n#PremierLeague #EPL"
+  },
+  {
+    "id": "10-villa-city",
+    "time": "2026-10-28T13:30:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "PREMIER LEAGUE",
+    "home": "Aston Villa",
+    "homeAbbr": "AVL",
+    "homeScore": 2,
+    "away": "Man City",
+    "awayAbbr": "MCI",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "headline": "City's first league defeat of the season",
+    "sub": "Man City are still level with Arsenal on 21 points at the top.",
+    "caption": "⚽ Aston Villa 2–1 Man City. City's first Premier League defeat of the season, and Arsenal have pulled level on 21 points.\n\nDoes this change the title race? 👇\n\n#AVLMCI #PremierLeague #AstonVilla #ManCity"
+  },
+  {
+    "id": "11-united-bournemouth",
+    "time": "2026-10-28T14:30:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "PREMIER LEAGUE",
+    "home": "Man United",
+    "homeAbbr": "MUN",
+    "homeScore": 0,
+    "away": "Bournemouth",
+    "awayAbbr": "BOU",
+    "awayScore": 3,
+    "status": "FULL TIME",
+    "headline": "Bournemouth stun Old Trafford",
+    "sub": "United sit 16th with 7 points from 8 games.",
+    "caption": "⚽ Man United 0–3 Bournemouth. United are 16th with just one league win from eight games.\n\nWhat needs to change at Old Trafford? 👇\n\n#MUFC #ManUtd #PremierLeague"
+  },
+  {
+    "id": "12-chelsea-spurs",
+    "time": "2026-10-28T15:30:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "PREMIER LEAGUE · LONDON DERBY",
+    "home": "Chelsea",
+    "homeAbbr": "CHE",
+    "homeScore": 0,
+    "away": "Tottenham",
+    "awayAbbr": "TOT",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "headline": "Spurs win the London derby",
+    "sub": "Tottenham beat Chelsea 2–0 at Stamford Bridge.",
+    "caption": "⚽ Chelsea 0–2 Tottenham. Spurs take the London derby at Stamford Bridge!\n\nSpurs fans, how good did that feel? 👇\n\n#CHETOT #COYS #Chelsea #PremierLeague"
+  },
+  {
+    "id": "13-laliga-roundup",
+    "time": "2026-10-28T16:30:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "LALIGA · WEEKEND RESULTS",
+    "headline": "LaLiga round-up",
+    "rows": [
+      [
+        "Barcelona",
+        "1–2",
+        "Real Madrid"
+      ],
+      [
+        "Athletic Club",
+        "4–0",
+        "Getafe"
+      ],
+      [
+        "Atlético",
+        "1–0",
+        "Deportivo"
+      ],
+      [
+        "Valencia",
+        "1–2",
+        "Villarreal"
+      ],
+      [
+        "Sevilla",
+        "2–0",
+        "Osasuna"
+      ],
+      [
+        "Rayo",
+        "0–3",
+        "Elche"
+      ]
+    ],
+    "caption": "⚽ LaLiga weekend: Real Madrid won El Clásico, Athletic hit Getafe for four and Villarreal won 2–1 at Valencia.\n\n#LaLiga #RealMadrid #Athletic #Villarreal"
+  },
+  {
+    "id": "14-nfl-sunday",
+    "time": "2026-10-28T17:30:00",
+    "sport": "nfl",
+    "kind": "list",
+    "label": "NFL · SUNDAY RESULTS",
+    "headline": "Sunday's big scores",
+    "rows": [
+      [
+        "Chiefs",
+        "3–20",
+        "Seahawks"
+      ],
+      [
+        "Bengals",
+        "35–13",
+        "Ravens"
+      ],
+      [
+        "Buccaneers",
+        "43–13",
+        "Panthers"
+      ],
+      [
+        "Broncos",
+        "30–16",
+        "Cardinals"
+      ],
+      [
+        "Rams",
+        "35–21",
+        "Raiders"
+      ],
+      [
+        "Packers",
+        "17–20",
+        "Lions"
+      ]
+    ],
+    "sub": "Away team left · home team right",
+    "caption": "🏈 Sunday's NFL scores: Seattle held Kansas City to 3 points, Cincinnati put 35 on Baltimore and Tampa Bay scored 43 in Carolina.\n\nMost impressive team this week? 👇\n\n#NFL #NFLSunday"
+  },
+  {
+    "id": "15-poll-title-race",
+    "time": "2026-10-28T18:30:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "PREMIER LEAGUE TITLE RACE",
+    "headline": "Who wins the league?",
+    "sub": "Man City 21 pts · Arsenal 21 pts · Brighton 16 pts · Liverpool 15 pts, after 8 games.",
+    "caption": "🏆 Man City and Arsenal are level on 21 points after eight games.\n\nWho wins the Premier League?\n❤️ Arsenal\n👍 Man City\n😮 Liverpool\n😂 Someone else\n\nReact to vote 👇\n\n#PremierLeague #TitleRace"
+  },
+  {
+    "id": "16-nba-celtics",
+    "time": "2026-10-28T19:30:00",
+    "sport": "nba",
+    "kind": "score",
+    "label": "NBA · MON OCT 26",
+    "home": "Celtics",
+    "homeAbbr": "BOS",
+    "homeScore": 134,
+    "away": "Bulls",
+    "awayAbbr": "CHI",
+    "awayScore": 99,
+    "status": "FINAL",
+    "headline": "Celtics win by 35",
+    "sub": "Boston blew out Chicago at TD Garden.",
+    "caption": "🏀 Celtics 134, Bulls 99. A 35-point win in Boston.\n\n#NBA #Celtics #Bulls"
+  },
+  {
+    "id": "17-chelsea-united-preview",
+    "time": "2026-10-28T20:30:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "SATURDAY · 12:30 GMT · STAMFORD BRIDGE",
+    "headline": "Chelsea vs Man United",
+    "sub": "Both sides lost at home last weekend. Who bounces back?",
+    "caption": "⚽ Chelsea vs Man United kicks off Saturday's Premier League action (12:30 GMT).\n\nBoth lost at home last weekend. Your prediction? 👇\n\n#CHEMUN #Chelsea #MUFC"
+  },
+  {
+    "id": "18-nhl-recap",
+    "time": "2026-10-28T21:30:00",
+    "sport": "nhl",
+    "kind": "list",
+    "label": "NHL · MON OCT 26",
+    "headline": "Monday's NHL scores",
+    "rows": [
+      [
+        "Kings",
+        "6–3",
+        "Rangers"
+      ],
+      [
+        "Maple Leafs",
+        "2–5",
+        "Flames"
+      ],
+      [
+        "Red Wings",
+        "4–3",
+        "Oilers"
+      ]
+    ],
+    "sub": "Away team left · home team right",
+    "caption": "🏒 Monday in the NHL: the Kings scored six at MSG, Calgary beat Toronto 5–2 and Detroit edged Edmonton 4–3.\n\n#NHL #GoKingsGo #Flames #LGRW"
+  },
+  {
+    "id": "19-tnf-preview",
+    "time": "2026-10-28T22:30:00",
+    "sport": "nfl",
+    "kind": "headline",
+    "label": "THURSDAY NIGHT FOOTBALL · 8:15 PM ET",
+    "headline": "Panthers at Packers",
+    "sub": "Green Bay host Carolina on Thursday night. The Panthers lost 43–13 to Tampa Bay on Sunday.",
+    "caption": "🏈 Thursday Night Football: Panthers at Packers (8:15 PM ET).\n\nCan Carolina bounce back after a 43–13 loss to the Bucs? Score prediction 👇\n\n#TNF #Packers #Panthers"
+  },
+  {
+    "id": "20-liverpool-arsenal",
+    "time": "2026-10-28T23:30:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "SUNDAY · 16:30 GMT · ANFIELD",
+    "headline": "Liverpool vs Arsenal",
+    "sub": "Arsenal arrive joint top on 21 points. Liverpool are 4th on 15 after beating Brighton.",
+    "caption": "⚽ The big one this weekend: Liverpool vs Arsenal at Anfield on Sunday (16:30 GMT).\n\nArsenal are joint top. Can Liverpool close the gap? Predictions 👇\n\n#LIVARS #LFC #Arsenal #PremierLeague"
+  },
+  {
+    "id": "21-nfl-week-ahead",
+    "time": "2026-10-29T00:30:00",
+    "sport": "nfl",
+    "kind": "list",
+    "label": "NFL · THIS SUNDAY",
+    "headline": "Games to watch",
+    "rows": [
+      [
+        "Ravens",
+        "1:00 PM",
+        "Bills"
+      ],
+      [
+        "Chargers",
+        "4:05 PM",
+        "Rams"
+      ],
+      [
+        "Chiefs",
+        "4:25 PM",
+        "Broncos"
+      ],
+      [
+        "Eagles",
+        "8:20 PM",
+        "Commanders"
+      ]
+    ],
+    "sub": "Away team left · home team right · all times ET",
+    "caption": "🏈 Circle these for Sunday: Ravens @ Bills, Chargers @ Rams, Chiefs @ Broncos, and Eagles @ Commanders on Sunday Night Football.\n\nWhich game are you most excited for? 👇\n\n#NFL #NFLSunday"
+  },
+  {
+    "id": "22-nba-wednesday",
+    "time": "2026-10-29T01:30:00",
+    "sport": "nba",
+    "kind": "list",
+    "label": "TONIGHT · WED OCT 28 (ET)",
+    "headline": "NBA Wednesday",
+    "rows": [
+      [
+        "Knicks",
+        "8:00 PM",
+        "Bulls"
+      ],
+      [
+        "Rockets",
+        "8:00 PM",
+        "Bucks"
+      ],
+      [
+        "Warriors",
+        "8:00 PM",
+        "Timberwolves"
+      ],
+      [
+        "Thunder",
+        "9:30 PM",
+        "Mavericks"
+      ]
+    ],
+    "sub": "Away team left · home team right · all times ET",
+    "caption": "🏀 Wednesday's NBA picks: Knicks @ Bulls, Rockets @ Bucks, Warriors @ Wolves and Thunder @ Mavs.\n\nBest game of the night? 👇\n\n#NBA #NBATonight"
+  },
+  {
+    "id": "23-nhl-wednesday",
+    "time": "2026-10-29T02:30:00",
+    "sport": "nhl",
+    "kind": "list",
+    "label": "NHL · WED OCT 28",
+    "headline": "Wednesday's national games",
+    "rows": [
+      [
+        "Flyers",
+        "7:30 PM ET",
+        "Capitals"
+      ],
+      [
+        "Flames",
+        "8:30 PM ET",
+        "Oilers"
+      ]
+    ],
+    "sub": "Away team left · home team right · Flyers–Caps on TNT, Flames–Oilers on Prime",
+    "caption": "🏒 Two national NHL games tonight: Flyers at Capitals (7:30 PM ET) and the Battle of Alberta, Flames at Oilers (8:30 PM ET).\n\nWhich one are you watching? 👇\n\n#NHL #BattleOfAlberta #ALLCAPS #LetsGoOilers"
+  },
+  {
+    "id": "24-ws-game4-rays",
+    "time": "2026-10-29T03:30:00",
+    "sport": "mlb",
+    "kind": "score",
+    "label": "WORLD SERIES · GAME 4",
+    "home": "Rays",
+    "homeAbbr": "TB",
+    "homeScore": 4,
+    "away": "Brewers",
+    "awayAbbr": "MIL",
+    "awayScore": 3,
+    "status": "FINAL / 12",
+    "headline": "Rays walk it off in the 12th",
+    "sub": "Brewers lead 3–1 · Game 5 tonight, 8 PM ET in St. Petersburg",
+    "caption": "⚾ The Rays are still alive! Ben Williamson's walk-off single in the 12th beat the Brewers 4–3, right after Milwaukee had taken the lead.\n\nBrewers lead 3–1. Game 5 is tonight at 8 PM ET in Tampa Bay.\n\nDo the Brewers finish it tonight? 👇\n\n#WorldSeries #Brewers #RaysUp"
+  },
+  {
+    "id": "25-nhl-habs-shutout",
+    "time": "2026-10-29T04:30:00",
+    "sport": "nhl",
+    "kind": "score",
+    "label": "NHL · TUE OCT 27",
+    "home": "Blues",
+    "homeAbbr": "STL",
+    "homeScore": 0,
+    "away": "Canadiens",
+    "awayAbbr": "MTL",
+    "awayScore": 2,
+    "status": "FINAL",
+    "headline": "Fowler stops all 46 shots",
+    "sub": "Career-high saves and a sixth straight win for the Habs goalie.",
+    "caption": "🏒 Canadiens 2, Blues 0. Jacob Fowler made a career-high 46 saves for the shutout, and Montreal have won three in a row.\n\nIs Fowler the real deal? 👇\n\n#GoHabsGo #NHL #Canadiens"
+  },
+  {
+    "id": "26-nba-knicks",
+    "time": "2026-10-29T05:30:00",
+    "sport": "nba",
+    "kind": "score",
+    "label": "NBA · TUE OCT 27",
+    "home": "Knicks",
+    "homeAbbr": "NYK",
+    "homeScore": 111,
+    "away": "Pistons",
+    "awayAbbr": "DET",
+    "awayScore": 97,
+    "status": "FINAL",
+    "headline": "Knicks get their first win",
+    "sub": "Karl-Anthony Towns: 27 points, 20 rebounds. New York won the 3rd quarter 37–13.",
+    "caption": "🏀 First win of the season for the Knicks! New York beat Detroit 111–97 at MSG.\n\nKarl-Anthony Towns had 27 points and 20 rebounds, and Jalen Brunson added 23.\n\nIs this the start of a run? 👇\n\n#Knicks #NBA #Pistons"
+  },
+  {
+    "id": "27-f1-antonelli",
+    "time": "2026-10-29T06:30:00",
+    "sport": "racing",
+    "kind": "headline",
+    "label": "F1 · TITLE RACE",
+    "tagText": "FORMULA 1",
+    "headline": "Antonelli on the brink of the title",
+    "sub": "Won in Austin ahead of Leclerc and Verstappen. Next up: Mexico City GP, Oct 30 – Nov 1.",
+    "stat": [
+      "P1",
+      "United States GP · Austin"
+    ],
+    "caption": "🏁 Kimi Antonelli dominated the United States Grand Prix in Austin, finishing 13 seconds clear of Charles Leclerc with Max Verstappen third.\n\nThe Mercedes driver leads the championship heading to Mexico City this weekend.\n\nDoes he wrap up the title in Mexico? 👇\n\n#F1 #MexicoGP #Antonelli"
+  }
 ]
