@@ -42,3 +42,22 @@ Every day, publish 20–25 posts to the ScoreBuzz Facebook Page (Metricool brand
 
 ## Report
 At the end, send the user a short summary: number of posts scheduled, the mix, and anything skipped or uncertain.
+
+# YouTube (ScoreBuzz channel @scorebuzznet)
+
+Target set by the owner: **10–15 Shorts per day + 1 long video per day**. Publishing goes through Metricool (same brand `7677948`), so it only works on a paid Metricool plan; on the free plan, build and commit but do not schedule.
+
+## Shorts
+- Generator: `node tools/make_shorts.js shorts/YYYY-MM-DD/shorts.json shorts/YYYY-MM-DD [id ...]` → `<id>.mp4` (1080x1920, 12–20 s) + `<id>.jpg` thumbnail. Scene types and fields are documented at the top of the script; see `shorts/2026-10-29/shorts.json`.
+- Same accuracy rules as Facebook: every fact from a page opened with WebFetch, no invented quotes/stats, no logos/photos/footage.
+- Every Short must be different: vary the scene types and the angle (result, table, stat of the day, preview, title race, poll question). Never re-post the same template with only names swapped; YouTube's inauthentic-content policy targets mass-produced, repetitive videos.
+- Hook in the first 2 seconds, one idea per Short, end on a question.
+- Title ≤ 70 chars ending `#shorts`; description = 1–2 sentence summary + `https://scorebuzz.net` + 3–4 hashtags; 5–7 tags.
+- Mix like Facebook (~45% football, ~45% US sports, ~10% UFC/F1). Spread uploads roughly every 1–1.5 h across 11:00–09:30 PKT, never within 30 min of each other.
+- Optional voiceover: set `voice` to an MP3 path. vidIQ voiceover costs 14 credits per 1,000 characters, so it can't cover daily volume on the current plan.
+
+## Long video (format "video", 1920x1080)
+- Same generator with `"format": "video"`; 4–8 minutes, e.g. weekend football roundup, NFL week recap, NBA/NHL power rankings. Needs a voiceover to be worth watching.
+
+## Scheduling (Metricool `createScheduledPost`)
+- provider `youtube`, `youtubeData: {"title": ..., "type": "short"|"video", "privacy": "public", "tags": [...], "category": "SPORTS", "madeForKids": false, "isAiGeneratedContent": false}`, media = `https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/shorts/YYYY-MM-DD/<id>.mp4`, text = description.

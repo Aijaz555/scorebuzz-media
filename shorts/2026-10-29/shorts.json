@@ -1,0 +1,56 @@
+[
+{"id":"s01-ws-game4-walkoff","sport":"mlb","tagText":"WORLD SERIES",
+ "title":"Rays Walk It Off in the 12th to Stay Alive! World Series Game 4 #shorts",
+ "description":"The Rays beat the Brewers 4–3 in 12 innings on Ben Williamson's walk-off single. Milwaukee still lead the World Series 3–1.\n\nLive scores and results: https://scorebuzz.net\n\n#WorldSeries #Rays #Brewers #MLB",
+ "tags":["world series","world series game 4","rays","brewers","walk off","mlb","scorebuzz"],
+ "scenes":[
+  {"type":"hook","dur":2.4,"kicker":"World Series · Game 4","title":"Down to their last chance…","sub":"Rays trailed 3–0 in the series"},
+  {"type":"score","dur":4.2,"label":"Final · 12 innings","home":"Rays","homeAbbr":"TB","homeScore":4,"away":"Brewers","awayAbbr":"MIL","awayScore":3,"status":"FINAL / 12","note":"Ben Williamson walk-off single"},
+  {"type":"text","dur":4.0,"label":"How it ended","title":"Brewers went ahead in the 12th","sub":"Cooper Pratt homered in the top half. Tampa Bay tied it, loaded the bases, and Williamson won it."},
+  {"type":"stat","dur":3.4,"label":"Series","value":"3–1","unit":"Brewers lead","text":"Game 5: Wed, 8 PM ET in Tampa Bay"},
+  {"type":"outro","dur":2.5,"title":"Can Tampa Bay force Game 6?"}
+ ]},
+{"id":"s02-knicks-first-win","sport":"nba",
+ "title":"Knicks Finally Win! Towns Drops 27 & 20 vs Pistons #shorts",
+ "description":"The Knicks beat the Pistons 111–97 for their first win of the season. Karl-Anthony Towns had 27 points and 20 rebounds.\n\nLive scores: https://scorebuzz.net\n\n#Knicks #NBA #Pistons",
+ "tags":["knicks","pistons","karl anthony towns","nba","knicks first win","scorebuzz"],
+ "scenes":[
+  {"type":"hook","dur":2.2,"kicker":"NBA · Tuesday","title":"Win No. 1 for the Knicks","sub":"After an 0–3 start"},
+  {"type":"score","dur":4.0,"label":"Madison Square Garden","home":"Knicks","homeAbbr":"NYK","homeScore":111,"away":"Pistons","awayAbbr":"DET","awayScore":97,"status":"FINAL"},
+  {"type":"stat","dur":3.6,"label":"Karl-Anthony Towns","value":"27","unit":"PTS · 20 REB","text":"A monster double-double"},
+  {"type":"stat","dur":3.4,"label":"Third quarter","value":"37–13","unit":"Knicks","text":"The quarter that won it"},
+  {"type":"outro","dur":2.5,"title":"Turning point or one-off?"}
+ ]},
+{"id":"s03-fowler-46-saves","sport":"nhl",
+ "title":"46 Saves, Zero Goals: Jacob Fowler Shuts Out the Blues #shorts",
+ "description":"Jacob Fowler made a career-high 46 saves as the Canadiens beat the Blues 2–0, his sixth straight win.\n\nLive scores: https://scorebuzz.net\n\n#GoHabsGo #NHL #Canadiens",
+ "tags":["jacob fowler","canadiens","blues","nhl","shutout","scorebuzz"],
+ "scenes":[
+  {"type":"hook","dur":2.2,"kicker":"NHL · Tuesday","title":"46 shots. 0 goals.","sub":"Jacob Fowler was unbeatable"},
+  {"type":"score","dur":3.8,"label":"Enterprise Center, St. Louis","home":"Blues","homeAbbr":"STL","homeScore":0,"away":"Canadiens","awayAbbr":"MTL","awayScore":2,"status":"FINAL"},
+  {"type":"stat","dur":3.4,"label":"Fowler","value":"46","unit":"saves","text":"A career high"},
+  {"type":"list","dur":4.2,"label":"Montreal right now","rows":[["Wins in a row","3",""],["Point streak","5 games",""],["Record","7-3-2",""]]},
+  {"type":"outro","dur":2.5,"title":"Is Fowler the real deal?"}
+ ]},
+{"id":"s04-antonelli-title","sport":"racing","tagText":"FORMULA 1",
+ "title":"Antonelli Wins in Austin. Can He Clinch the F1 Title in Mexico? #shorts",
+ "description":"Kimi Antonelli won the United States Grand Prix ahead of Charles Leclerc and Max Verstappen and leads the championship heading to Mexico City (Oct 30 – Nov 1).\n\nhttps://scorebuzz.net\n\n#F1 #MexicoGP #Antonelli",
+ "tags":["f1","antonelli","united states grand prix","mexico gp","f1 title race","scorebuzz"],
+ "scenes":[
+  {"type":"hook","dur":2.4,"kicker":"Formula 1","title":"One step from the title","sub":"Kimi Antonelli, Mercedes"},
+  {"type":"list","dur":4.4,"label":"United States GP · Austin","title":"Podium","rows":[["P1","Antonelli","Mercedes"],["P2","Leclerc","+13.1s"],["P3","Verstappen","+17.5s"]]},
+  {"type":"text","dur":3.6,"label":"Why no title yet?","title":"Russell finished 8th, Hamilton 4th","sub":"Both results kept the championship alive."},
+  {"type":"text","dur":3.0,"label":"Next","title":"Mexico City GP","sub":"October 30 – November 1"},
+  {"type":"outro","dur":2.5,"title":"Does he wrap it up in Mexico?"}
+ ]},
+{"id":"s05-liv-ars-top4","sport":"football","tagText":"PREMIER LEAGUE",
+ "title":"Liverpool vs Arsenal: Who's Top Before the Big One? #shorts",
+ "description":"Arsenal are level with Man City on 21 points before Sunday's trip to Anfield (16:30 GMT). Liverpool sit 4th on 15.\n\nFull table: https://scorebuzz.net\n\n#LIVARS #PremierLeague #Arsenal #LFC",
+ "tags":["liverpool vs arsenal","premier league table","arsenal","liverpool","epl","scorebuzz"],
+ "scenes":[
+  {"type":"hook","dur":2.4,"kicker":"Premier League","title":"Liverpool vs Arsenal","sub":"Sunday, Anfield, 16:30 GMT"},
+  {"type":"table","dur":5.0,"label":"Top four after Matchday 8","cols":["W","D","L","PTS"],"rows":[["1","Man City","7","0","1","21"],["2","Arsenal","7","0","1","21"],["3","Brighton","5","1","2","16"],["4","Liverpool","4","3","1","15"]],"highlight":["2","4"],"note":"Arsenal are joint top"},
+  {"type":"stat","dur":3.2,"label":"The gap","value":"6","unit":"points","text":"Liverpool trail Arsenal"},
+  {"type":"outro","dur":2.5,"title":"Your score prediction?"}
+ ]}
+]
