@@ -1,0 +1,545 @@
+[
+  {
+    "id": "01-fleetwood-arsenal",
+    "time": "2026-10-29T11:00:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "CARABAO CUP · 4TH ROUND",
+    "home": "Fleetwood Town",
+    "homeAbbr": "FLE",
+    "homeScore": 1,
+    "away": "Arsenal",
+    "awayAbbr": "ARS",
+    "awayScore": 1,
+    "status": "FLEETWOOD WIN 5–3 PENS",
+    "headline": "League Two Fleetwood knock out Arsenal",
+    "sub": "Loupalo-Bi scored, Gyökeres levelled, Dowman was sent off late. Fleetwood won the shootout 5–3.",
+    "caption": "😱 Cup shock of the season? League Two Fleetwood Town have knocked Arsenal out of the Carabao Cup.\n\n1–1 after 90 minutes, Max Dowman sent off late, and Fleetwood held their nerve to win 5–3 on penalties.\n\nBiggest upset you've seen this season? 👇\n\n#CarabaoCup #Arsenal #Fleetwood"
+  },
+  {
+    "id": "02-liverpool-chelsea",
+    "time": "2026-10-29T12:00:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "CARABAO CUP · 4TH ROUND",
+    "home": "Liverpool",
+    "homeAbbr": "LIV",
+    "homeScore": 1,
+    "away": "Chelsea",
+    "awayAbbr": "CHE",
+    "awayScore": 1,
+    "status": "LIVERPOOL WIN 6–5 PENS",
+    "headline": "Liverpool edge Chelsea in sudden death",
+    "sub": "Gakpo cancelled out Rogers' penalty. Gomez scored the winning kick.",
+    "caption": "🔴 Sudden death at Anfield. Liverpool beat Chelsea 6–5 on penalties after a 1–1 draw.\n\nMorgan Rogers and Cody Gakpo both scored from the spot, then Joe Gomez buried the winning kick.\n\nWho deserved to go through? 👇\n\n#CarabaoCup #LFC #CFC"
+  },
+  {
+    "id": "03-carabao-results",
+    "time": "2026-10-29T13:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "CARABAO CUP · 4TH ROUND",
+    "headline": "Fourth-round results",
+    "rows": [
+      [
+        "Fleetwood",
+        "1–1 · 5–3p",
+        "Arsenal"
+      ],
+      [
+        "Liverpool",
+        "1–1 · 6–5p",
+        "Chelsea"
+      ],
+      [
+        "Man City",
+        "4–3 pens",
+        "Brighton"
+      ],
+      [
+        "Bournemouth",
+        "3–0",
+        "Aston Villa"
+      ],
+      [
+        "Crystal Palace",
+        "1–0",
+        "Fulham"
+      ],
+      [
+        "Sunderland",
+        "3–2",
+        "Brentford"
+      ],
+      [
+        "Bradford City",
+        "2–0",
+        "Peterborough"
+      ]
+    ],
+    "sub": "Winners left · p = penalties",
+    "caption": "🏆 Carabao Cup fourth round: what a couple of nights.\n\nArsenal out to Fleetwood, Chelsea out at Anfield, and Bournemouth won 3–0 against Villa.\n\nWhich result surprised you most? 👇\n\n#CarabaoCup #EFL"
+  },
+  {
+    "id": "04-epl-table",
+    "time": "2026-10-29T14:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "PREMIER LEAGUE · AFTER 8 GAMES",
+    "headline": "The top six",
+    "rows": [
+      [
+        "1  Man City",
+        "21 pts",
+        "GD +11"
+      ],
+      [
+        "2  Arsenal",
+        "21 pts",
+        "GD +8"
+      ],
+      [
+        "3  Brighton",
+        "16 pts",
+        "GD +16"
+      ],
+      [
+        "4  Liverpool",
+        "15 pts",
+        "GD +3"
+      ],
+      [
+        "5  Chelsea",
+        "13 pts",
+        "GD +2"
+      ],
+      [
+        "6  Brentford",
+        "11 pts",
+        "GD +5"
+      ]
+    ],
+    "sub": "Leeds, Newcastle and Aston Villa are also on 11 points.",
+    "caption": "📊 The Premier League top six heading into the weekend.\n\nMan City and Arsenal are level on 21 points, split only by goal difference.\n\nWho's top after Sunday? 👇\n\n#PremierLeague #EPL"
+  },
+  {
+    "id": "05-carabao-qf-draw",
+    "time": "2026-10-29T15:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "CARABAO CUP · QUARTER-FINALS",
+    "headline": "The last eight",
+    "rows": [
+      [
+        "Fleetwood",
+        "v",
+        "Everton / Newcastle"
+      ],
+      [
+        "Man City",
+        "v",
+        "Bradford City"
+      ],
+      [
+        "Crystal Palace",
+        "v",
+        "Sunderland"
+      ],
+      [
+        "Liverpool",
+        "v",
+        "Bournemouth"
+      ]
+    ],
+    "sub": "Home team left · to be played the week of December 14",
+    "caption": "🎟️ The Carabao Cup quarter-final draw is in.\n\nFleetwood's dream run continues against Everton or Newcastle, and Liverpool host Bournemouth. Ties are set for the week of December 14.\n\nWho lifts the trophy? 👇\n\n#CarabaoCup #EFL"
+  },
+  {
+    "id": "06-ws-brewers-champions",
+    "time": "2026-10-29T16:00:00",
+    "sport": "mlb",
+    "kind": "score",
+    "label": "WORLD SERIES · GAME 5",
+    "tagText": "WORLD SERIES",
+    "home": "Rays",
+    "homeAbbr": "TB",
+    "homeScore": 1,
+    "away": "Brewers",
+    "awayAbbr": "MIL",
+    "awayScore": 4,
+    "status": "FINAL · BREWERS WIN 4–1",
+    "headline": "Brewers win their first World Series",
+    "sub": "Milwaukee's first title since the 1957 Braves.",
+    "caption": "🏆 THE BREWERS ARE WORLD SERIES CHAMPIONS!\n\nMilwaukee beat Tampa Bay 4–1 in Game 5 to win the series 4–1 and claim the first title in franchise history.\n\nWhere were you when the final out landed? 👇\n\n#WorldSeries #Brewers #ThisIsMyCrew"
+  },
+  {
+    "id": "07-city-brighton-preview",
+    "time": "2026-10-29T17:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "PREMIER LEAGUE · SAT OCT 31",
+    "headline": "1st v 3rd: Man City v Brighton",
+    "sub": "City top on 21 points, Brighton third on 16. The teams met in the Carabao Cup on Wednesday and City won on penalties.",
+    "stat": [
+      "15:00",
+      "GMT · 11:00 AM ET"
+    ],
+    "caption": "🔵 First v third on Saturday. Man City host Brighton, three days after beating them on penalties in the cup.\n\nKick-off: 15:00 GMT / 11:00 AM ET.\n\nCity win, or can Brighton land a blow? 👇\n\n#MCIBHA #PremierLeague"
+  },
+  {
+    "id": "08-nhl-mcdavid-record",
+    "time": "2026-10-29T18:00:00",
+    "sport": "nhl",
+    "kind": "headline",
+    "label": "NHL · OILERS 4, FLAMES 0",
+    "headline": "McDavid moves past Gretzky",
+    "sub": "An assist in every game so far: the longest season-opening assist streak ever. He leads the NHL with 36 points.",
+    "stat": [
+      "13",
+      "straight games with an assist"
+    ],
+    "caption": "🏒 Connor McDavid is rewriting the record book again.\n\nTwo assists in Edmonton's 4–0 win over Calgary make it 13 straight games with an assist to start the season, an NHL record. The old mark of 12 was shared by Wayne Gretzky, Ken Linseman and Sebastian Aho.\n\nHow far can he take it? 👇\n\n#NHL #Oilers #McDavid"
+  },
+  {
+    "id": "09-epl-weekend",
+    "time": "2026-10-29T19:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "PREMIER LEAGUE · THIS WEEKEND",
+    "headline": "Games to watch",
+    "rows": [
+      [
+        "Chelsea",
+        "SAT 12:30",
+        "Man United"
+      ],
+      [
+        "Man City",
+        "SAT 15:00",
+        "Brighton"
+      ],
+      [
+        "Crystal Palace",
+        "SAT 17:30",
+        "Tottenham"
+      ],
+      [
+        "Liverpool",
+        "SUN 16:30",
+        "Arsenal"
+      ]
+    ],
+    "sub": "Home team left · UK times (GMT)",
+    "caption": "⚽ Big Premier League weekend ahead, and it ends with Liverpool v Arsenal on Sunday.\n\nWhich game are you most looking forward to? 👇\n\n#PremierLeague #EPL"
+  },
+  {
+    "id": "10-nba-wednesday-scores",
+    "time": "2026-10-29T20:00:00",
+    "sport": "nba",
+    "kind": "list",
+    "label": "NBA · WED OCT 28",
+    "headline": "Wednesday's scores",
+    "rows": [
+      [
+        "Spurs",
+        "117–111 OT",
+        "Jazz"
+      ],
+      [
+        "Warriors",
+        "119–114",
+        "Timberwolves"
+      ],
+      [
+        "Knicks",
+        "133–127",
+        "Bulls"
+      ],
+      [
+        "Thunder",
+        "96–120",
+        "Mavericks"
+      ],
+      [
+        "Rockets",
+        "132–100",
+        "Bucks"
+      ],
+      [
+        "Magic",
+        "99–129",
+        "Raptors"
+      ],
+      [
+        "Heat",
+        "129–117",
+        "Hawks"
+      ],
+      [
+        "76ers",
+        "114–109",
+        "Pacers"
+      ]
+    ],
+    "sub": "Away team left · home team right",
+    "caption": "🏀 Wednesday's NBA scores.\n\nWemby went for 36 in an OT win, the Warriors won in Minnesota, and Dallas beat OKC by 24.\n\nBest result of the night? 👇\n\n#NBA #NBAScores"
+  },
+  {
+    "id": "11-palace-spurs-preview",
+    "time": "2026-10-29T21:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "PREMIER LEAGUE · SAT OCT 31",
+    "headline": "Palace v Spurs on Saturday",
+    "sub": "Palace (17th, 7 pts) are through to the Carabao Cup quarter-finals. Spurs are 14th with 9 points.",
+    "stat": [
+      "17:30",
+      "GMT · 1:30 PM ET"
+    ],
+    "caption": "🦅 Crystal Palace v Tottenham, Saturday 17:30 GMT / 1:30 PM ET.\n\nPalace are 17th on 7 points but just won 1–0 at Fulham in the cup. Spurs sit 14th on 9.\n\nHome win, away win or draw? 👇\n\n#CRYTOT #PremierLeague"
+  },
+  {
+    "id": "12-nba-wemby",
+    "time": "2026-10-29T22:00:00",
+    "sport": "nba",
+    "kind": "score",
+    "label": "NBA · WED OCT 28",
+    "home": "Jazz",
+    "homeAbbr": "UTA",
+    "homeScore": 111,
+    "away": "Spurs",
+    "awayAbbr": "SAS",
+    "awayScore": 117,
+    "status": "FINAL / OT",
+    "headline": "Wemby drops 36 in OT win",
+    "sub": "36 points and 14 rebounds. San Antonio closed overtime on a 12–0 run.",
+    "caption": "👽 Victor Wembanyama: 36 points, 14 rebounds.\n\nThe Spurs trailed late in Utah, then closed overtime on a 12–0 run to win 117–111. That's three straight wins for San Antonio.\n\nIs Wemby the best player in the league right now? 👇\n\n#NBA #Spurs #Wembanyama"
+  },
+  {
+    "id": "13-ws-chourio-pratt",
+    "time": "2026-10-29T23:00:00",
+    "sport": "mlb",
+    "kind": "headline",
+    "label": "WORLD SERIES · RECORDS",
+    "tagText": "WORLD SERIES",
+    "headline": "Chourio's record-breaking Series",
+    "sub": "Rookie Cooper Pratt also set a Series rookie record with six straight hits.",
+    "stat": [
+      "11",
+      "hits: most ever in a five-game Series"
+    ],
+    "caption": "⚾ The numbers behind Milwaukee's title.\n\nJackson Chourio had 11 hits, a record for a five-game World Series. Rookie Cooper Pratt set a Series rookie record with six straight hits, and Jacob Misiorowski threw 5⅔ scoreless innings in Game 5.\n\nWho was your Series MVP? 👇\n\n#WorldSeries #Brewers"
+  },
+  {
+    "id": "14-liverpool-arsenal-poll",
+    "time": "2026-10-30T00:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "PREMIER LEAGUE · SUN NOV 1",
+    "headline": "Can Arsenal bounce back at Anfield?",
+    "sub": "Liverpool 4th (15 pts) v Arsenal 2nd (21 pts). Liverpool just knocked Chelsea out of the cup; Arsenal went out to Fleetwood.",
+    "stat": [
+      "16:30",
+      "GMT · 11:30 AM ET"
+    ],
+    "caption": "🔥 After a cup exit at Fleetwood, Arsenal travel to Anfield on Sunday (16:30 GMT / 11:30 AM ET).\n\nLiverpool are 4th on 15 points. Arsenal are 2nd on 21.\n\nDoes the cup shock hurt Arsenal, or fire them up? 👇\n\n#LIVARS #PremierLeague"
+  },
+  {
+    "id": "15-nba-warriors",
+    "time": "2026-10-30T01:00:00",
+    "sport": "nba",
+    "kind": "score",
+    "label": "NBA · WED OCT 28",
+    "home": "Timberwolves",
+    "homeAbbr": "MIN",
+    "homeScore": 114,
+    "away": "Warriors",
+    "awayAbbr": "GSW",
+    "awayScore": 119,
+    "status": "FINAL",
+    "headline": "Warriors win in Minnesota",
+    "sub": "Golden State beat the Timberwolves 119–114 on the road.",
+    "caption": "🏀 Warriors 119, Timberwolves 114.\n\nGolden State went into Minneapolis and came away with the win.\n\nAre the Warriors back? 👇\n\n#NBA #DubNation #Warriors"
+  },
+  {
+    "id": "16-nhl-thursday",
+    "time": "2026-10-30T02:00:00",
+    "sport": "nhl",
+    "kind": "list",
+    "label": "TONIGHT · THU OCT 29 (ET)",
+    "headline": "NHL tonight",
+    "rows": [
+      [
+        "Mammoth",
+        "7:00 PM",
+        "Penguins"
+      ],
+      [
+        "Blackhawks",
+        "7:30 PM",
+        "Red Wings"
+      ],
+      [
+        "Sabres",
+        "10:00 PM",
+        "Ducks"
+      ],
+      [
+        "Canucks",
+        "10:00 PM",
+        "Sharks"
+      ]
+    ],
+    "sub": "Selected games · away team left · times ET",
+    "caption": "🏒 NHL tonight. Which game has your attention?\n\n🔹 Mammoth @ Penguins, 7:00 PM ET\n🔹 Blackhawks @ Red Wings, 7:30 PM ET\n🔹 Sabres @ Ducks, 10:00 PM ET\n🔹 Canucks @ Sharks, 10:00 PM ET\n\n#NHL #NHLTonight"
+  },
+  {
+    "id": "17-tnf-panthers-packers",
+    "time": "2026-10-30T03:00:00",
+    "sport": "nfl",
+    "kind": "headline",
+    "label": "THURSDAY NIGHT FOOTBALL",
+    "headline": "Panthers at Packers tonight",
+    "sub": "Lambeau Field · Prime Video. The Packers lead the NFL with 13 takeaways, nine of them interceptions.",
+    "stat": [
+      "8:15 PM",
+      "ET kickoff"
+    ],
+    "caption": "🏈 Thursday Night Football: Panthers at Packers, 8:15 PM ET on Prime Video.\n\nGreen Bay lead the NFL with 13 takeaways. Carolina turned it over four times in their loss to Tampa Bay.\n\nWho's your pick at Lambeau? 👇\n\n#TNF #Packers #Panthers #NFL"
+  },
+  {
+    "id": "18-nba-thursday",
+    "time": "2026-10-30T04:00:00",
+    "sport": "nba",
+    "kind": "list",
+    "label": "TONIGHT · THU OCT 29 (ET)",
+    "headline": "NBA tonight",
+    "rows": [
+      [
+        "Cavaliers",
+        "8:00 PM",
+        "Hawks"
+      ],
+      [
+        "Kings",
+        "8:00 PM",
+        "Pelicans"
+      ],
+      [
+        "Grizzlies",
+        "10:00 PM",
+        "Trail Blazers"
+      ]
+    ],
+    "sub": "Away team left · home team right · times ET",
+    "caption": "🏀 Three NBA games on tonight's slate.\n\n🔹 Cavaliers @ Hawks, 8:00 PM ET\n🔹 Kings @ Pelicans, 8:00 PM ET\n🔹 Grizzlies @ Trail Blazers, 10:00 PM ET\n\nWho are you backing? 👇\n\n#NBA #NBATonight"
+  },
+  {
+    "id": "19-ucl-md4",
+    "time": "2026-10-30T05:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "CHAMPIONS LEAGUE · MATCHDAY 4",
+    "headline": "Next week's big games",
+    "rows": [
+      [
+        "Barcelona",
+        "TUE 20:00",
+        "Aston Villa"
+      ],
+      [
+        "Atlético",
+        "TUE 20:00",
+        "Bayern"
+      ],
+      [
+        "Man United",
+        "TUE 20:00",
+        "Roma"
+      ],
+      [
+        "Fenerbahçe",
+        "WED 17:45",
+        "Liverpool"
+      ],
+      [
+        "Leipzig",
+        "WED 20:00",
+        "Man City"
+      ],
+      [
+        "Slavia Praha",
+        "WED 20:00",
+        "Arsenal"
+      ]
+    ],
+    "sub": "Home team left · Nov 3–4 · UK times (GMT)",
+    "caption": "⭐ Champions League is back next week, and the fixtures are loaded.\n\nBarcelona v Aston Villa, Atlético v Bayern, Leipzig v Man City and more.\n\nWhich tie are you watching? 👇\n\n#UCL #ChampionsLeague"
+  },
+  {
+    "id": "20-mlb-never-won",
+    "time": "2026-10-30T06:00:00",
+    "sport": "mlb",
+    "kind": "headline",
+    "label": "MLB · THE WAIT GOES ON",
+    "headline": "Four teams have never won a World Series",
+    "sub": "Mariners · Padres · Rays · Rockies. The Brewers came off the list on Wednesday night.",
+    "caption": "⚾ With the Brewers now champions, only four MLB franchises have never won a World Series: the Mariners, Padres, Rays and Rockies.\n\nWho breaks through next? 👇\n\n#MLB #WorldSeries"
+  },
+  {
+    "id": "21-f1-antonelli-mexico",
+    "time": "2026-10-30T07:00:00",
+    "sport": "racing",
+    "kind": "headline",
+    "label": "F1 · MEXICO CITY GP",
+    "headline": "Antonelli can clinch the title in Mexico",
+    "sub": "Antonelli 365 · Russell 242 · Hamilton 241. Ninth place on Sunday seals it.",
+    "stat": [
+      "123",
+      "point lead · five races left"
+    ],
+    "caption": "🏁 Kimi Antonelli can be crowned F1 world champion this weekend in Mexico City.\n\nThe Mercedes driver leads by 123 points with five races left. Ninth place on Sunday is enough.\n\nDoes he wrap it up in Mexico? 👇\n\n#F1 #MexicoGP #Antonelli"
+  },
+  {
+    "id": "22-ufc-334",
+    "time": "2026-10-30T08:00:00",
+    "sport": "mma",
+    "kind": "headline",
+    "label": "UFC 334 · NEW YORK · NOV 14",
+    "headline": "Harrison vs Nunes at MSG",
+    "sub": "Main event: Ciryl Gane (c) vs Josh Hokit for the heavyweight title. Co-main: Kayla Harrison vs Amanda Nunes.",
+    "caption": "🥊 UFC 334 heads to Madison Square Garden on November 14.\n\nCiryl Gane defends the heavyweight title against Josh Hokit, and Kayla Harrison meets Amanda Nunes in the co-main.\n\nHarrison or Nunes? 👇\n\n#UFC334 #UFC"
+  },
+  {
+    "id": "23-nhl-saturday",
+    "time": "2026-10-30T09:00:00",
+    "sport": "nhl",
+    "kind": "list",
+    "label": "SATURDAY · OCT 31 (ET)",
+    "headline": "Saturday games to watch",
+    "rows": [
+      [
+        "Oilers",
+        "2:00 PM",
+        "Islanders"
+      ],
+      [
+        "Penguins",
+        "7:00 PM",
+        "Canadiens"
+      ],
+      [
+        "Maple Leafs",
+        "7:00 PM",
+        "Canucks"
+      ],
+      [
+        "Flames",
+        "10:00 PM",
+        "Avalanche"
+      ]
+    ],
+    "sub": "Selected games · away team left · times ET",
+    "caption": "🏒 Saturday's NHL slate is a good one. McDavid's Oilers visit the Islanders in the afternoon.\n\nWhich one are you watching? 👇\n\n#NHL #HockeyNight"
+  }
+]
