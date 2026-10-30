@@ -1,0 +1,501 @@
+[
+  {
+    "id": "01-pl-saturday",
+    "time": "2026-10-30T11:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "PREMIER LEAGUE · SAT OCT 31",
+    "headline": "Saturday's fixtures",
+    "rows": [
+      [
+        "Chelsea",
+        "12:30",
+        "Man United"
+      ],
+      [
+        "Bournemouth",
+        "15:00",
+        "Leeds"
+      ],
+      [
+        "Brentford",
+        "15:00",
+        "Nott'm Forest"
+      ],
+      [
+        "Coventry",
+        "15:00",
+        "Sunderland"
+      ],
+      [
+        "Hull City",
+        "15:00",
+        "Ipswich"
+      ],
+      [
+        "Man City",
+        "15:00",
+        "Brighton"
+      ],
+      [
+        "Tottenham",
+        "17:30",
+        "Crystal Palace"
+      ],
+      [
+        "Aston Villa",
+        "20:00",
+        "Fulham"
+      ]
+    ],
+    "sub": "Home team left · UK times (GMT)",
+    "caption": "📅 A packed Saturday in the Premier League, starting with Chelsea v Man United at 12:30.\n\nTop two meet third at the Etihad, and Spurs host Palace in the evening.\n\nWhich game are you watching? 👇\n\n#PremierLeague #PL #EPL"
+  },
+  {
+    "id": "02-utd-team-news",
+    "time": "2026-10-30T12:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "MAN UNITED · TEAM NEWS",
+    "headline": "Sesko out for a longer spell",
+    "sub": "Carrick: Fernandes is fully committed to the club. Mainoo is back in training ahead of Saturday's trip to Chelsea.",
+    "caption": "🔴 Team news from Carrick ahead of Chelsea away.\n\nBenjamin Sesko's calf injury will keep him out for a longer spell, while Kobbie Mainoo is back in training. Carrick also insisted Bruno Fernandes is fully committed to the club.\n\nWhat result do United need at Stamford Bridge? 👇\n\n#MUFC #CHEMUN #PremierLeague"
+  },
+  {
+    "id": "03-liverpool-injuries",
+    "time": "2026-10-30T13:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "LIVERPOOL v ARSENAL · SUN 16:30 GMT",
+    "headline": "Liverpool sweat on Szoboszlai",
+    "sub": "Szoboszlai (hamstring) and Muñoz (knee) are major doubts. Ekitike, Frimpong, Bradley and Leoni are out.",
+    "caption": "🚑 Liverpool's injury list is growing before Sunday's big one against Arsenal.\n\nDominik Szoboszlai (hamstring) and Muñoz (knee) are major doubts, and Hugo Ekitike is out until around late December.\n\nHow big a blow would losing Szoboszlai be? 👇\n\n#LFC #LIVARS #PremierLeague"
+  },
+  {
+    "id": "04-klassiker",
+    "time": "2026-10-30T14:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "BUNDESLIGA · SAT 17:30 GMT",
+    "headline": "Bayern v Dortmund: top of the table clash",
+    "sub": "Both sides are level on 17 points after seven games.",
+    "stat": [
+      "17",
+      "points each after 7 games"
+    ],
+    "caption": "🇩🇪 Der Klassiker with first place on the line.\n\nBayern and Dortmund are level on 17 points after seven games. They meet in Munich on Saturday at 17:30 GMT (1:30pm ET).\n\nBayern or Dortmund? Score prediction below 👇\n\n#Bundesliga #Klassiker #FCBBVB"
+  },
+  {
+    "id": "05-laliga-top3",
+    "time": "2026-10-30T15:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "LALIGA · AFTER 10 GAMES",
+    "headline": "The title race",
+    "rows": [
+      [
+        "1  Barcelona",
+        "27 pts",
+        ""
+      ],
+      [
+        "2  Atlético",
+        "25 pts",
+        ""
+      ],
+      [
+        "3  Real Madrid",
+        "24 pts",
+        ""
+      ]
+    ],
+    "sub": "This weekend: Barcelona v Alavés · Levante v Atlético · Racing Santander v Real Madrid",
+    "caption": "🇪🇸 Barcelona lead the way in LaLiga after 10 games, two points clear of Atlético.\n\nThis weekend: Barça host Alavés, Atlético go to Levante, and Real Madrid visit Racing Santander.\n\nWho wins the title this season? 👇\n\n#LaLiga #Barca #RealMadrid"
+  },
+  {
+    "id": "06-milan-derby",
+    "time": "2026-10-30T16:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "SERIE A · SAT 19:45 GMT",
+    "headline": "Milan v Inter: the Derby della Madonnina",
+    "sub": "Saturday at San Siro · 3:45pm ET",
+    "caption": "🔴⚫🔵 It's derby weekend in Milan.\n\nAC Milan host Inter at San Siro on Saturday at 19:45 GMT (3:45pm ET).\n\nRossoneri or Nerazzurri? 👇\n\n#SerieA #MilanInter #DerbyDellaMadonnina"
+  },
+  {
+    "id": "07-burnley-celestini",
+    "time": "2026-10-30T17:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "CHAMPIONSHIP · NEW HEAD COACH",
+    "headline": "Burnley appoint Fabio Celestini",
+    "sub": "First game: Burnley v Portsmouth, Saturday 15:00 GMT.",
+    "caption": "🟣 New era at Turf Moor. Burnley have appointed Fabio Celestini as head coach.\n\nHis first game in charge is Portsmouth at home on Saturday at 3pm.\n\nGood appointment for the Clarets? 👇\n\n#Burnley #Championship #EFL"
+  },
+  {
+    "id": "08-f1-mexico-times",
+    "time": "2026-10-30T18:00:00",
+    "sport": "racing",
+    "kind": "list",
+    "label": "F1 · MEXICO CITY GP",
+    "headline": "Weekend session times",
+    "rows": [
+      [
+        "Practice 1",
+        "FRI 18:30",
+        "2:30pm ET"
+      ],
+      [
+        "Practice 2",
+        "FRI 22:00",
+        "6:00pm ET"
+      ],
+      [
+        "Qualifying",
+        "SAT 21:00",
+        "5:00pm ET"
+      ],
+      [
+        "Race",
+        "SUN 20:00",
+        "3:00pm ET"
+      ]
+    ],
+    "sub": "Middle column UK time (GMT). Antonelli leads by 123 with 125 left: ninth on Sunday clinches the title.",
+    "caption": "🏁 Mexico City GP weekend is here, and Kimi Antonelli could be crowned champion on Sunday.\n\nHe leads Russell by 123 points with 125 left. Ninth place on Sunday seals it whatever Russell does.\n\nWill he get it done in Mexico? 👇\n\n#F1 #MexicoGP #Antonelli"
+  },
+  {
+    "id": "09-chelsea-utd-preview",
+    "time": "2026-10-30T19:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "PREMIER LEAGUE · SAT 12:30 GMT",
+    "headline": "Chelsea v Man United",
+    "sub": "Fifth v 16th at Stamford Bridge. Alonso v Carrick. 8:30am ET.",
+    "caption": "⚔️ Xabi Alonso's Chelsea v Michael Carrick's Man United, Saturday lunchtime.\n\nChelsea are fifth, United 16th. Kick-off 12:30 GMT (8:30am ET).\n\nWho takes it? 👇\n\n#CHEMUN #CFC #MUFC"
+  },
+  {
+    "id": "10-europe-weekend",
+    "time": "2026-10-30T20:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "EUROPE · THIS WEEKEND",
+    "headline": "Big games across Europe",
+    "rows": [
+      [
+        "Udinese",
+        "SAT 17:00",
+        "Roma"
+      ],
+      [
+        "Bayern",
+        "SAT 17:30",
+        "Dortmund"
+      ],
+      [
+        "AC Milan",
+        "SAT 19:45",
+        "Inter"
+      ],
+      [
+        "Juventus",
+        "SUN 19:45",
+        "Napoli"
+      ]
+    ],
+    "sub": "Home team left · UK times (GMT)",
+    "caption": "🌍 Not just the Premier League. Europe has a huge weekend too.\n\nDer Klassiker, the Milan derby and Juventus v Napoli, all this weekend.\n\nWhich one are you tuning in for? 👇\n\n#Bundesliga #SerieA #Football"
+  },
+  {
+    "id": "11-mls-dates",
+    "time": "2026-10-30T21:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "MLS · ROAD TO MLS CUP",
+    "headline": "Playoff key dates",
+    "rows": [
+      [
+        "Decision Day",
+        "SAT",
+        "Nov 7"
+      ],
+      [
+        "Wild Card",
+        "WED",
+        "Nov 18"
+      ],
+      [
+        "Round One",
+        "",
+        "Nov 20 – Dec 2"
+      ],
+      [
+        "MLS Cup",
+        "FRI",
+        "Dec 18"
+      ]
+    ],
+    "sub": "Nashville lead the East on 60 points.",
+    "caption": "⚽ MLS Decision Day is a week away. Nashville sit top of the East on 60 points.\n\nHere's the road to MLS Cup, which is on Friday, December 18.\n\nWho's lifting the cup? 👇\n\n#MLS #MLSCupPlayoffs"
+  },
+  {
+    "id": "12-tnf-packers",
+    "time": "2026-10-30T22:00:00",
+    "sport": "nfl",
+    "kind": "score",
+    "label": "THURSDAY NIGHT FOOTBALL",
+    "home": "Packers",
+    "homeAbbr": "GB",
+    "homeScore": 27,
+    "away": "Panthers",
+    "awayAbbr": "CAR",
+    "awayScore": 19,
+    "status": "FINAL",
+    "headline": "Packers hold off Panthers",
+    "sub": "Love: 288 yards, 3 TD. Green Bay move to 5-3, Carolina fall to 3-4.",
+    "caption": "🧀 Green Bay hold on. The Packers beat the Panthers 27–19 on Thursday Night Football.\n\nJordan Love threw for 288 yards and three touchdowns, and the Packers survived three turnovers to move to 5-3.\n\nAre the Packers a real contender? 👇\n\n#NFL #GoPackGo #KeepPounding"
+  },
+  {
+    "id": "13-nhl-thursday",
+    "time": "2026-10-30T23:00:00",
+    "sport": "nhl",
+    "kind": "list",
+    "label": "NHL · THU OCT 29",
+    "headline": "Thursday's scores",
+    "rows": [
+      [
+        "Jets",
+        "4–6",
+        "Lightning"
+      ],
+      [
+        "Mammoth",
+        "4–3 OT",
+        "Penguins"
+      ],
+      [
+        "Blue Jackets",
+        "2–3",
+        "Hurricanes"
+      ],
+      [
+        "Blackhawks",
+        "1–4",
+        "Red Wings"
+      ],
+      [
+        "Capitals",
+        "4–3",
+        "Predators"
+      ],
+      [
+        "Canadiens",
+        "5–2",
+        "Stars"
+      ],
+      [
+        "Islanders",
+        "4–3 OT",
+        "Wild"
+      ],
+      [
+        "Sabres",
+        "7–6",
+        "Ducks"
+      ]
+    ],
+    "sub": "Away team left · home team right",
+    "caption": "🏒 Busy Thursday in the NHL: two OT winners and a 7–6 thriller in Anaheim.\n\nBest result of the night? 👇\n\n#NHL #Hockey"
+  },
+  {
+    "id": "14-kochetkov",
+    "time": "2026-10-31T00:00:00",
+    "sport": "nhl",
+    "kind": "headline",
+    "label": "NHL · HURRICANES 3, BLUE JACKETS 2",
+    "headline": "Kochetkov sets a Canes record",
+    "sub": "Carolina are 11-2-2 after beating Columbus on Thursday.",
+    "stat": [
+      "9-0",
+      "to start the season"
+    ],
+    "caption": "🧱 Pyotr Kochetkov can't stop winning. He's 9-0 to start the season, a Hurricanes franchise record.\n\nCarolina beat Columbus 3–2 and are now 11-2-2.\n\nBest goalie in the league right now? 👇\n\n#NHL #LetsGoCanes"
+  },
+  {
+    "id": "15-nba-unbeaten",
+    "time": "2026-10-31T01:00:00",
+    "sport": "nba",
+    "kind": "headline",
+    "label": "NBA · UNBEATEN WATCH",
+    "headline": "Rockets and Grizzlies: the last unbeaten teams",
+    "sub": "Memphis beat Portland 124–103 on Thursday to hand the Blazers their first loss.",
+    "caption": "🏀 Then there were two. Portland lost 124–103 in Memphis on Thursday, leaving the Rockets and Grizzlies as the NBA's only unbeaten teams.\n\nWho stays perfect longest? 👇\n\n#NBA #Rockets #GrzNtn"
+  },
+  {
+    "id": "16-hawks-cavs",
+    "time": "2026-10-31T02:00:00",
+    "sport": "nba",
+    "kind": "score",
+    "label": "NBA · THU OCT 29",
+    "home": "Hawks",
+    "homeAbbr": "ATL",
+    "homeScore": 114,
+    "away": "Cavaliers",
+    "awayAbbr": "CLE",
+    "awayScore": 111,
+    "status": "FINAL",
+    "headline": "Okongwu leads Hawks past Cavs",
+    "sub": "Okongwu 29 pts, 12 reb. Alexander-Walker 25. Harden 24 and Mitchell 22 for Cleveland.",
+    "caption": "🦅 Onyeka Okongwu was everywhere: 29 points and 12 rebounds as Atlanta beat Cleveland 114–111.\n\nThe Hawks snapped their losing run and ended the Cavs' three-game win streak.\n\nOkongwu breakout season? 👇\n\n#NBA #TrueToAtlanta #LetEmKnow"
+  },
+  {
+    "id": "17-nba-friday",
+    "time": "2026-10-31T03:00:00",
+    "sport": "nba",
+    "kind": "list",
+    "label": "TONIGHT · FRI OCT 30 (ET)",
+    "headline": "NBA tonight",
+    "rows": [
+      [
+        "Wizards",
+        "7:00 PM",
+        "Hornets"
+      ],
+      [
+        "76ers",
+        "7:30 PM",
+        "Knicks"
+      ],
+      [
+        "Celtics",
+        "7:30 PM",
+        "Bulls"
+      ],
+      [
+        "Mavericks",
+        "8:00 PM",
+        "Rockets"
+      ],
+      [
+        "Warriors",
+        "10:00 PM",
+        "Lakers"
+      ],
+      [
+        "Suns",
+        "10:00 PM",
+        "Nuggets"
+      ]
+    ],
+    "sub": "Selected games · away team left · times ET",
+    "caption": "🏆 NBA Cup action starts tonight. 76ers-Knicks and Warriors-Lakers are on Prime Video.\n\nWhich game are you watching? 👇\n\n#NBA #NBACup"
+  },
+  {
+    "id": "18-larkin",
+    "time": "2026-10-31T04:00:00",
+    "sport": "nhl",
+    "kind": "headline",
+    "label": "NHL · RED WINGS",
+    "headline": "Red Wings suspend Dylan Larkin",
+    "sub": "He told Detroit he will not play while awaiting a trade. Arvidsson's hat trick beat Chicago 4–1.",
+    "caption": "🚨 Detroit have suspended Dylan Larkin after he told the club he's no longer willing to play for them while he waits for a trade.\n\nThe Red Wings still beat Chicago 4–1 behind a Viktor Arvidsson hat trick.\n\nWhere should Larkin end up? 👇\n\n#NHL #LGRW"
+  },
+  {
+    "id": "19-vikings-lions",
+    "time": "2026-10-31T05:00:00",
+    "sport": "nfl",
+    "kind": "headline",
+    "label": "NFL · WEEK 8 · SUN 1:00 PM ET",
+    "headline": "Unbeaten Vikings at the Lions",
+    "sub": "Minnesota are the only unbeaten team left. FOX.",
+    "stat": [
+      "6-0",
+      "the NFL's last perfect record"
+    ],
+    "caption": "🟣 The NFL's last unbeaten team hits the road. The 6-0 Vikings visit Detroit on Sunday.\n\n1:00pm ET on FOX.\n\nDo the Lions end the run? 👇\n\n#NFL #Skol #OnePride"
+  },
+  {
+    "id": "20-nfl-sunday",
+    "time": "2026-10-31T06:00:00",
+    "sport": "nfl",
+    "kind": "list",
+    "label": "NFL · WEEK 8",
+    "headline": "Games to watch",
+    "rows": [
+      [
+        "Ravens",
+        "SUN 1:00",
+        "Bills"
+      ],
+      [
+        "Vikings",
+        "SUN 1:00",
+        "Lions"
+      ],
+      [
+        "Browns",
+        "SUN 1:00",
+        "Steelers"
+      ],
+      [
+        "Chargers",
+        "SUN 4:05",
+        "Rams"
+      ],
+      [
+        "Chiefs",
+        "SUN 4:25",
+        "Broncos"
+      ],
+      [
+        "Eagles",
+        "SUN 8:20",
+        "Commanders"
+      ],
+      [
+        "Bears",
+        "MON 8:15",
+        "Seahawks"
+      ]
+    ],
+    "sub": "Away team left · times ET",
+    "caption": "🏈 Week 8 has a stacked Sunday. Ravens at Bills to start, Eagles at Commanders under the lights.\n\nGame of the week? 👇\n\n#NFL #NFLSunday"
+  },
+  {
+    "id": "21-ws-mvp",
+    "time": "2026-10-31T07:00:00",
+    "sport": "mlb",
+    "kind": "headline",
+    "label": "MLB · WORLD SERIES MVP",
+    "headline": "Contreras named World Series MVP",
+    "sub": "8-for-21 with 4 RBIs. First catcher to win it since Salvador Perez in 2015.",
+    "caption": "🏆 William Contreras is your World Series MVP.\n\nThe Brewers catcher went 8-for-21 with four RBIs, the first catcher to win it since Salvador Perez in 2015.\n\nRight choice? 👇\n\n#WorldSeries #Brewers #ThisIsMyCrew"
+  },
+  {
+    "id": "22-ufc-moicano",
+    "time": "2026-10-31T08:00:00",
+    "sport": "mma",
+    "kind": "headline",
+    "label": "UFC FIGHT NIGHT · SAT OCT 31",
+    "headline": "Moicano vs Nolan",
+    "sub": "Meta APEX, Las Vegas · prelims 5pm ET · main card 8pm ET",
+    "caption": "🥊 Halloween fight night in Vegas. Renato Moicano takes on Tom Nolan at the Meta APEX.\n\nMain card 8pm ET Saturday (00:00 GMT Sunday) on Paramount+.\n\nWho wins? 👇\n\n#UFC #UFCVegas"
+  },
+  {
+    "id": "23-mammoth-cooley",
+    "time": "2026-10-31T09:00:00",
+    "sport": "nhl",
+    "kind": "score",
+    "label": "NHL · THU OCT 29",
+    "home": "Penguins",
+    "homeAbbr": "PIT",
+    "homeScore": 3,
+    "away": "Mammoth",
+    "awayAbbr": "UTA",
+    "awayScore": 4,
+    "status": "FINAL / OT",
+    "headline": "Cooley hat trick forces OT",
+    "sub": "Tying goal with one second left. Sergachev won it in overtime.",
+    "caption": "😱 Logan Cooley tied it with one second left to complete a hat trick, and Mikhail Sergachev won it in overtime.\n\nMammoth 4, Penguins 3 (OT).\n\nGoal of the night? 👇\n\n#NHL #UtahMammoth"
+  }
+]
