@@ -2,7 +2,7 @@
 
 YouTube live streams that show a game's live score, not the game itself. This is the same
 format as Dope Media (@dopemediaph) and Sports Lounge (@Sportslounge6), which get
-5k–250k views per stream.
+5k–250k views per stream. Leagues: `nba nfl nhl ncaaf mlb epl ucl laliga seriea bundesliga mls`.
 
 ## The overlay (`overlay.html`, 1920x1080)
 
