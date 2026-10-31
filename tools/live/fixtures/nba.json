@@ -1,0 +1,538 @@
+{
+ "_note": "FAKE TEST DATA for SCOREBUZZ_MOCK=1. Not real games.",
+ "scoreboard": {
+  "events": [
+   {
+    "id": "9001",
+    "date": "2026-10-31T00:35Z",
+    "status": {
+     "displayClock": "4:21",
+     "period": 3,
+     "type": {
+      "state": "in",
+      "completed": false,
+      "shortDetail": "4:21 - 3rd"
+     }
+    },
+    "competitions": [
+     {
+      "competitors": [
+       {
+        "id": "1",
+        "homeAway": "home",
+        "score": "78",
+        "team": {
+         "id": "1",
+         "displayName": "Home Hawks",
+         "shortDisplayName": "Hawks",
+         "abbreviation": "HHK",
+         "color": "c8102e",
+         "alternateColor": "fdb927"
+        },
+        "linescores": [
+         {
+          "value": 28,
+          "displayValue": "28"
+         },
+         {
+          "value": 26,
+          "displayValue": "26"
+         },
+         {
+          "value": 24,
+          "displayValue": "24"
+         }
+        ],
+        "records": [
+         {
+          "type": "total",
+          "summary": "3-2"
+         }
+        ],
+        "leaders": [
+         {
+          "name": "pts",
+          "abbreviation": "PTS",
+          "leaders": [
+           {
+            "displayValue": "24",
+            "athlete": {
+             "shortName": "A. Guard"
+            }
+           }
+          ]
+         },
+         {
+          "name": "reb",
+          "abbreviation": "REB",
+          "leaders": [
+           {
+            "displayValue": "11",
+            "athlete": {
+             "shortName": "B. Center"
+            }
+           }
+          ]
+         },
+         {
+          "name": "ast",
+          "abbreviation": "AST",
+          "leaders": [
+           {
+            "displayValue": "7",
+            "athlete": {
+             "shortName": "C. Point"
+            }
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "2",
+        "homeAway": "away",
+        "score": "81",
+        "team": {
+         "id": "2",
+         "displayName": "Road Knights",
+         "shortDisplayName": "Knights",
+         "abbreviation": "RKN",
+         "color": "1d428a",
+         "alternateColor": "ffc72c"
+        },
+        "linescores": [
+         {
+          "value": 30,
+          "displayValue": "30"
+         },
+         {
+          "value": 25,
+          "displayValue": "25"
+         },
+         {
+          "value": 26,
+          "displayValue": "26"
+         }
+        ],
+        "records": [
+         {
+          "type": "total",
+          "summary": "4-1"
+         }
+        ],
+        "leaders": [
+         {
+          "name": "pts",
+          "abbreviation": "PTS",
+          "leaders": [
+           {
+            "displayValue": "27",
+            "athlete": {
+             "shortName": "D. Wing"
+            }
+           }
+          ]
+         },
+         {
+          "name": "reb",
+          "abbreviation": "REB",
+          "leaders": [
+           {
+            "displayValue": "9",
+            "athlete": {
+             "shortName": "E. Forward"
+            }
+           }
+          ]
+         },
+         {
+          "name": "ast",
+          "abbreviation": "AST",
+          "leaders": [
+           {
+            "displayValue": "8",
+            "athlete": {
+             "shortName": "F. Lead"
+            }
+           }
+          ]
+         }
+        ]
+       }
+      ],
+      "venue": {
+       "fullName": "Test Center"
+      },
+      "broadcasts": [
+       {
+        "names": [
+         "TEST TV"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "9002",
+    "date": "2026-10-31T01:35Z",
+    "status": {
+     "displayClock": "0:00",
+     "period": 0,
+     "type": {
+      "state": "pre",
+      "completed": false,
+      "shortDetail": "8:00 PM ET"
+     }
+    },
+    "competitions": [
+     {
+      "competitors": [
+       {
+        "id": "3",
+        "homeAway": "home",
+        "score": "0",
+        "team": {
+         "id": "3",
+         "displayName": "Bay Bolts",
+         "shortDisplayName": "Bolts",
+         "abbreviation": "BAY",
+         "color": "006bb6",
+         "alternateColor": "f58426"
+        },
+        "linescores": [],
+        "records": [
+         {
+          "type": "total",
+          "summary": "2-3"
+         }
+        ],
+        "leaders": []
+       },
+       {
+        "id": "4",
+        "homeAway": "away",
+        "score": "0",
+        "team": {
+         "id": "4",
+         "displayName": "Lake Comets",
+         "shortDisplayName": "Comets",
+         "abbreviation": "LKC",
+         "color": "552583",
+         "alternateColor": "fdb927"
+        },
+        "linescores": [],
+        "records": [
+         {
+          "type": "total",
+          "summary": "3-2"
+         }
+        ],
+        "leaders": []
+       }
+      ],
+      "venue": {
+       "fullName": "Test Arena"
+      },
+      "broadcasts": [
+       {
+        "names": [
+         "TEST TV"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "9003",
+    "date": "2026-10-30T21:35Z",
+    "status": {
+     "displayClock": "0:00",
+     "period": 4,
+     "type": {
+      "state": "post",
+      "completed": true,
+      "shortDetail": "Final"
+     }
+    },
+    "competitions": [
+     {
+      "competitors": [
+       {
+        "id": "5",
+        "homeAway": "home",
+        "score": "104",
+        "team": {
+         "id": "5",
+         "displayName": "River Rams",
+         "shortDisplayName": "Rams",
+         "abbreviation": "RVR",
+         "color": "00471b",
+         "alternateColor": "eee1c6"
+        },
+        "linescores": [
+         {
+          "value": 25,
+          "displayValue": "25"
+         },
+         {
+          "value": 27,
+          "displayValue": "27"
+         },
+         {
+          "value": 26,
+          "displayValue": "26"
+         },
+         {
+          "value": 26,
+          "displayValue": "26"
+         }
+        ],
+        "records": [
+         {
+          "type": "total",
+          "summary": "1-4"
+         }
+        ],
+        "leaders": []
+       },
+       {
+        "id": "6",
+        "homeAway": "away",
+        "score": "111",
+        "team": {
+         "id": "6",
+         "displayName": "Peak Pines",
+         "shortDisplayName": "Pines",
+         "abbreviation": "PKP",
+         "color": "0e2240",
+         "alternateColor": "fec524"
+        },
+        "linescores": [
+         {
+          "value": 30,
+          "displayValue": "30"
+         },
+         {
+          "value": 24,
+          "displayValue": "24"
+         },
+         {
+          "value": 29,
+          "displayValue": "29"
+         },
+         {
+          "value": 28,
+          "displayValue": "28"
+         }
+        ],
+        "records": [
+         {
+          "type": "total",
+          "summary": "5-0"
+         }
+        ],
+        "leaders": []
+       }
+      ],
+      "venue": {
+       "fullName": "Test Arena"
+      },
+      "broadcasts": [
+       {
+        "names": [
+         "TEST TV"
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "summary": {
+  "plays": [
+   {
+    "text": "Test play 0: D. Wing makes 3-pt jump shot",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "5:10"
+    },
+    "team": {
+     "id": "1"
+    },
+    "scoringPlay": true,
+    "scoreValue": 3
+   },
+   {
+    "text": "Test play 1: B. Center defensive rebound",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "6:11"
+    },
+    "team": {
+     "id": "2"
+    },
+    "scoringPlay": false,
+    "scoreValue": 0
+   },
+   {
+    "text": "Test play 2: B. Center defensive rebound",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "7:12"
+    },
+    "team": {
+     "id": "1"
+    },
+    "scoringPlay": false,
+    "scoreValue": 0
+   },
+   {
+    "text": "Test play 3: D. Wing makes 3-pt jump shot",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "8:13"
+    },
+    "team": {
+     "id": "2"
+    },
+    "scoringPlay": true,
+    "scoreValue": 3
+   },
+   {
+    "text": "Test play 4: B. Center defensive rebound",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "9:14"
+    },
+    "team": {
+     "id": "1"
+    },
+    "scoringPlay": false,
+    "scoreValue": 0
+   },
+   {
+    "text": "Test play 5: B. Center defensive rebound",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "5:15"
+    },
+    "team": {
+     "id": "2"
+    },
+    "scoringPlay": false,
+    "scoreValue": 0
+   },
+   {
+    "text": "Test play 6: D. Wing makes 3-pt jump shot",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "6:16"
+    },
+    "team": {
+     "id": "1"
+    },
+    "scoringPlay": true,
+    "scoreValue": 3
+   },
+   {
+    "text": "Test play 7: B. Center defensive rebound",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "7:17"
+    },
+    "team": {
+     "id": "2"
+    },
+    "scoringPlay": false,
+    "scoreValue": 0
+   },
+   {
+    "text": "Test play 8: B. Center defensive rebound",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "8:18"
+    },
+    "team": {
+     "id": "1"
+    },
+    "scoringPlay": false,
+    "scoreValue": 0
+   },
+   {
+    "text": "Test play 9: D. Wing makes 3-pt jump shot",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "9:19"
+    },
+    "team": {
+     "id": "2"
+    },
+    "scoringPlay": true,
+    "scoreValue": 3
+   },
+   {
+    "text": "Test play 10: B. Center defensive rebound",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "5:20"
+    },
+    "team": {
+     "id": "1"
+    },
+    "scoringPlay": false,
+    "scoreValue": 0
+   },
+   {
+    "text": "Test play 11: B. Center defensive rebound",
+    "period": {
+     "number": 3,
+     "displayValue": "3rd Quarter"
+    },
+    "clock": {
+     "displayValue": "6:21"
+    },
+    "team": {
+     "id": "2"
+    },
+    "scoringPlay": false,
+    "scoreValue": 0
+   }
+  ]
+ }
+}

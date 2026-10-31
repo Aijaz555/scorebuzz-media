@@ -1,0 +1,6 @@
+{
+  "leagues": ["nba", "nfl", "epl", "ucl", "nhl"],
+  "leadMinutes": 15,
+  "keys": ["PASTE-STREAM-KEY-1", "PASTE-STREAM-KEY-2", "PASTE-STREAM-KEY-3"],
+  "only": []
+}

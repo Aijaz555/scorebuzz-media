@@ -1,0 +1,237 @@
+{
+ "_note": "FAKE TEST DATA for SCOREBUZZ_MOCK=1. Not real games.",
+ "scoreboard": {
+  "events": [
+   {
+    "id": "8001",
+    "date": "2026-10-31T00:35Z",
+    "status": {
+     "displayClock": "67'",
+     "period": 2,
+     "type": {
+      "state": "in",
+      "completed": false,
+      "shortDetail": "67'"
+     }
+    },
+    "competitions": [
+     {
+      "competitors": [
+       {
+        "id": "11",
+        "homeAway": "home",
+        "score": "2",
+        "team": {
+         "id": "11",
+         "displayName": "Northtown FC",
+         "shortDisplayName": "Northtown",
+         "abbreviation": "NTH",
+         "color": "6cabdd",
+         "alternateColor": "1c2c5b"
+        },
+        "linescores": [
+         {
+          "value": 1,
+          "displayValue": "1"
+         },
+         {
+          "value": 1,
+          "displayValue": "1"
+         }
+        ],
+        "records": [
+         {
+          "type": "total",
+          "summary": "6-2-1"
+         }
+        ],
+        "leaders": []
+       },
+       {
+        "id": "12",
+        "homeAway": "away",
+        "score": "1",
+        "team": {
+         "id": "12",
+         "displayName": "Southport United",
+         "shortDisplayName": "Southport",
+         "abbreviation": "STH",
+         "color": "da291c",
+         "alternateColor": "fbe122"
+        },
+        "linescores": [
+         {
+          "value": 0,
+          "displayValue": "0"
+         },
+         {
+          "value": 1,
+          "displayValue": "1"
+         }
+        ],
+        "records": [
+         {
+          "type": "total",
+          "summary": "3-3-3"
+         }
+        ],
+        "leaders": []
+       }
+      ],
+      "venue": {
+       "fullName": "Test Stadium"
+      },
+      "broadcasts": [
+       {
+        "names": [
+         "TEST TV"
+        ]
+       }
+      ],
+      "details": [
+       {
+        "clock": {
+         "displayValue": "23'"
+        },
+        "type": {
+         "text": "Goal"
+        },
+        "team": {
+         "id": "11"
+        },
+        "scoringPlay": true,
+        "athletesInvolved": [
+         {
+          "displayName": "Test Striker"
+         }
+        ]
+       },
+       {
+        "clock": {
+         "displayValue": "51'"
+        },
+        "type": {
+         "text": "Goal"
+        },
+        "team": {
+         "id": "12"
+        },
+        "scoringPlay": true,
+        "athletesInvolved": [
+         {
+          "displayName": "Test Winger"
+         }
+        ]
+       },
+       {
+        "clock": {
+         "displayValue": "58'"
+        },
+        "type": {
+         "text": "Yellow Card"
+        },
+        "team": {
+         "id": "12"
+        },
+        "athletesInvolved": [
+         {
+          "displayName": "Test Defender"
+         }
+        ]
+       },
+       {
+        "clock": {
+         "displayValue": "62'"
+        },
+        "type": {
+         "text": "Goal"
+        },
+        "team": {
+         "id": "11"
+        },
+        "scoringPlay": true,
+        "athletesInvolved": [
+         {
+          "displayName": "Test Midfielder"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "8002",
+    "date": "2026-10-31T02:35Z",
+    "status": {
+     "displayClock": "0'",
+     "period": 0,
+     "type": {
+      "state": "pre",
+      "completed": false,
+      "shortDetail": "15:00"
+     }
+    },
+    "competitions": [
+     {
+      "competitors": [
+       {
+        "id": "13",
+        "homeAway": "home",
+        "score": "0",
+        "team": {
+         "id": "13",
+         "displayName": "Eastbury",
+         "shortDisplayName": "Eastbury",
+         "abbreviation": "EAS",
+         "color": "034694",
+         "alternateColor": "fff"
+        },
+        "linescores": [],
+        "records": [
+         {
+          "type": "total",
+          "summary": "5-2-2"
+         }
+        ],
+        "leaders": []
+       },
+       {
+        "id": "14",
+        "homeAway": "away",
+        "score": "0",
+        "team": {
+         "id": "14",
+         "displayName": "Westham Town",
+         "shortDisplayName": "Westham",
+         "abbreviation": "WHT",
+         "color": "7a263a",
+         "alternateColor": "1bb1e7"
+        },
+        "linescores": [],
+        "records": [
+         {
+          "type": "total",
+          "summary": "2-4-3"
+         }
+        ],
+        "leaders": []
+       }
+      ],
+      "venue": {
+       "fullName": "Test Arena"
+      },
+      "broadcasts": [
+       {
+        "names": [
+         "TEST TV"
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "summary": {}
+}

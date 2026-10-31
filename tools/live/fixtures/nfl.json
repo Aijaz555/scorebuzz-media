@@ -1,0 +1,228 @@
+{
+ "_note": "FAKE TEST DATA for SCOREBUZZ_MOCK=1. Not real games.",
+ "scoreboard": {
+  "events": [
+   {
+    "id": "7001",
+    "date": "2026-10-31T00:35Z",
+    "status": {
+     "displayClock": "8:12",
+     "period": 4,
+     "type": {
+      "state": "in",
+      "completed": false,
+      "shortDetail": "8:12 - 4th"
+     }
+    },
+    "competitions": [
+     {
+      "competitors": [
+       {
+        "id": "21",
+        "homeAway": "home",
+        "score": "24",
+        "team": {
+         "id": "21",
+         "displayName": "Lakeside Lumberjacks",
+         "shortDisplayName": "Lumberjacks",
+         "abbreviation": "LSL",
+         "color": "203731",
+         "alternateColor": "ffb612"
+        },
+        "linescores": [
+         {
+          "value": 7,
+          "displayValue": "7"
+         },
+         {
+          "value": 10,
+          "displayValue": "10"
+         },
+         {
+          "value": 7,
+          "displayValue": "7"
+         },
+         {
+          "value": 0,
+          "displayValue": "0"
+         }
+        ],
+        "records": [
+         {
+          "type": "total",
+          "summary": "5-3"
+         }
+        ],
+        "leaders": [
+         {
+          "name": "pyds",
+          "abbreviation": "PYDS",
+          "leaders": [
+           {
+            "displayValue": "241",
+            "athlete": {
+             "shortName": "Q. Back"
+            }
+           }
+          ]
+         },
+         {
+          "name": "ryds",
+          "abbreviation": "RYDS",
+          "leaders": [
+           {
+            "displayValue": "77",
+            "athlete": {
+             "shortName": "R. Back"
+            }
+           }
+          ]
+         },
+         {
+          "name": "recyds",
+          "abbreviation": "RECYDS",
+          "leaders": [
+           {
+            "displayValue": "96",
+            "athlete": {
+             "shortName": "W. Out"
+            }
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "22",
+        "homeAway": "away",
+        "score": "19",
+        "team": {
+         "id": "22",
+         "displayName": "Coastal Cats",
+         "shortDisplayName": "Cats",
+         "abbreviation": "CCT",
+         "color": "0085ca",
+         "alternateColor": "101820"
+        },
+        "linescores": [
+         {
+          "value": 3,
+          "displayValue": "3"
+         },
+         {
+          "value": 7,
+          "displayValue": "7"
+         },
+         {
+          "value": 3,
+          "displayValue": "3"
+         },
+         {
+          "value": 6,
+          "displayValue": "6"
+         }
+        ],
+        "records": [
+         {
+          "type": "total",
+          "summary": "3-4"
+         }
+        ],
+        "leaders": [
+         {
+          "name": "pyds",
+          "abbreviation": "PYDS",
+          "leaders": [
+           {
+            "displayValue": "188",
+            "athlete": {
+             "shortName": "S. Arm"
+            }
+           }
+          ]
+         },
+         {
+          "name": "ryds",
+          "abbreviation": "RYDS",
+          "leaders": [
+           {
+            "displayValue": "64",
+            "athlete": {
+             "shortName": "T. Runner"
+            }
+           }
+          ]
+         },
+         {
+          "name": "recyds",
+          "abbreviation": "RECYDS",
+          "leaders": [
+           {
+            "displayValue": "71",
+            "athlete": {
+             "shortName": "U. Hands"
+            }
+           }
+          ]
+         }
+        ]
+       }
+      ],
+      "venue": {
+       "fullName": "Test Arena"
+      },
+      "broadcasts": [
+       {
+        "names": [
+         "TEST TV"
+        ]
+       }
+      ],
+      "situation": {
+       "downDistanceText": "3rd & 4 at LSL 22",
+       "possession": "22",
+       "isRedZone": true,
+       "lastPlay": {
+        "text": "T. Runner rush up the middle for 5 yards"
+       }
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "summary": {
+  "drives": {
+   "current": {
+    "plays": [
+     {
+      "text": "S. Arm pass short right to U. Hands for 12 yards",
+      "period": {
+       "number": 4,
+       "displayValue": "4th Quarter"
+      },
+      "clock": {
+       "displayValue": "9:01"
+      },
+      "team": {
+       "id": "22"
+      }
+     },
+     {
+      "text": "T. Runner rush up the middle for 5 yards",
+      "period": {
+       "number": 4,
+       "displayValue": "4th Quarter"
+      },
+      "clock": {
+       "displayValue": "8:12"
+      },
+      "team": {
+       "id": "22"
+      }
+     }
+    ]
+   }
+  }
+ }
+}
