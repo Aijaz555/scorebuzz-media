@@ -1,0 +1,78 @@
+[
+  {
+    "id": "24-city-brighton-ft",
+    "time": "2026-11-01T05:30:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "PREMIER LEAGUE · SATURDAY",
+    "home": "Man City",
+    "homeAbbr": "MCI",
+    "homeScore": 0,
+    "away": "Brighton",
+    "awayAbbr": "BHA",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "headline": "Brighton win at the Etihad",
+    "sub": "Yasin Ayari scored on 11 minutes. City had 21 shots and couldn't find an equaliser.",
+    "caption": "😱 Brighton beat Man City 1–0 at the Etihad. Yasin Ayari's 11th-minute goal was enough, despite City taking 21 shots.\n\nCity stay on 21 points, so Arsenal can go top with a win at Anfield on Sunday.\n\nBig blow to City's title hopes? 👇\n\n#MCIBHA #ManCity #BHAFC #PremierLeague"
+  },
+  {
+    "id": "25-chelsea-united-ft",
+    "time": "2026-11-01T06:30:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "PREMIER LEAGUE · SATURDAY",
+    "home": "Chelsea",
+    "homeAbbr": "CHE",
+    "homeScore": 2,
+    "away": "Man United",
+    "awayAbbr": "MUN",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "headline": "Red card sinks United at the Bridge",
+    "sub": "Rogers 50' · Martínez sent off 63' · Palmer penalty 64'",
+    "caption": "🔵 Chelsea 2–0 Man United.\n\nMorgan Rogers opened the scoring, Lisandro Martínez was sent off on 63 minutes, and Cole Palmer scored the penalty a minute later.\n\nHow long does Carrick have left? 👇\n\n#CHEMUN #CFC #MUFC #PremierLeague"
+  },
+  {
+    "id": "26-pl-saturday-results",
+    "time": "2026-11-01T11:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "PREMIER LEAGUE · SATURDAY RESULTS",
+    "headline": "Saturday's results",
+    "rows": [
+      [
+        "Chelsea",
+        "2–0",
+        "Man United"
+      ],
+      [
+        "Bournemouth",
+        "2–0",
+        "Leeds"
+      ],
+      [
+        "Brentford",
+        "2–0",
+        "Nott'm Forest"
+      ],
+      [
+        "Coventry",
+        "3–1",
+        "Sunderland"
+      ],
+      [
+        "Hull City",
+        "2–2",
+        "Ipswich"
+      ],
+      [
+        "Man City",
+        "0–1",
+        "Brighton"
+      ]
+    ],
+    "sub": "Home team left · full time",
+    "caption": "📋 A big Saturday in the Premier League: Brighton won at Man City, Chelsea beat 10-man United, and Coventry beat Sunderland 3–1.\n\nResult of the day? 👇\n\n#PremierLeague #EPL #PL"
+  }
+]
