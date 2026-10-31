@@ -54,6 +54,7 @@ Target set by the owner: **15 Shorts per day** (plus 1 long video per day when a
 - Hook in the first 2 seconds, one idea per Short, end on a question.
 - Title ≤ 70 chars ending `#shorts`; description = 1–2 sentence summary + `https://scorebuzz.net` + 3–4 hashtags; 5–7 tags.
 - Mix like Facebook (~45% football, ~45% US sports, ~10% UFC/F1). Spread uploads roughly every 1–1.5 h across 11:00–09:30 PKT, never within 30 min of each other.
+- Every Short gets a music bed too: after rendering, run `tools/add_music.sh shorts/<day>/<id>.mp4 <hype|anthem|drama> <tmp>` and replace the file before pushing (same beds and rules as TikTok).
 - Optional voiceover: set `voice` to an MP3 path. vidIQ voiceover costs 14 credits per 1,000 characters, so it can't cover daily volume on the current plan.
 
 ## What gets views (vidIQ research, 31 Oct 2026)
