@@ -1,0 +1,688 @@
+[
+ {
+  "id": "n01-hamilton-pole",
+  "sport": "racing",
+  "tagText": "FORMULA 1",
+  "time": "2026-11-01T14:15:00",
+  "title": "Lewis Hamilton Takes POLE in Mexico! 😱 #F1 #shorts",
+  "description": "Lewis Hamilton will start the Mexico City Grand Prix from pole. George Russell is 2nd, Charles Leclerc 3rd, Max Verstappen 4th and title leader Kimi Antonelli 5th. Antonelli clinches the championship with 9th or better. Race: Sunday 20:00 GMT / 3pm ET.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#F1 #MexicoGP #Hamilton #Antonelli",
+  "tags": [
+   "lewis hamilton pole",
+   "mexico gp",
+   "f1 qualifying",
+   "hamilton",
+   "antonelli",
+   "formula 1",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "F1 · Mexico City GP",
+    "title": "Hamilton on pole!",
+    "sub": "Qualifying, Saturday"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Starting grid",
+    "title": "Top 5",
+    "rows": [
+     [
+      "P1",
+      "Hamilton",
+      ""
+     ],
+     [
+      "P2",
+      "Russell",
+      ""
+     ],
+     [
+      "P3",
+      "Leclerc",
+      ""
+     ],
+     [
+      "P4",
+      "Verstappen",
+      ""
+     ],
+     [
+      "P5",
+      "Antonelli",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 4.0,
+    "label": "Title watch",
+    "title": "Antonelli needs P9 or better",
+    "sub": "Finish ninth or higher on Sunday and he's world champion, whatever anyone else does."
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Race",
+    "value": "20:00",
+    "unit": "GMT",
+    "text": "Sunday · 3pm ET"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Hamilton win it from pole?"
+   }
+  ]
+ },
+ {
+  "id": "n02-barca-6-1",
+  "sport": "football",
+  "tagText": "LALIGA",
+  "time": "2026-11-01T15:15:00",
+  "title": "Barça Hit SIX! Raphinha & Yamal Both Score Twice 🔥 #shorts",
+  "description": "Barcelona beat Alavés 6–1. Raphinha and Lamine Yamal both scored twice, with Fermín López and Anthony Gordon also on the scoresheet.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Barca #LaLiga #LamineYamal #Raphinha",
+  "tags": [
+   "barcelona vs alaves",
+   "barcelona",
+   "lamine yamal",
+   "raphinha",
+   "laliga",
+   "barca 6-1",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "LaLiga · Saturday",
+    "title": "Barça score six",
+    "sub": "Alavés blown away"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Barcelona",
+    "home": "Barcelona",
+    "homeAbbr": "BAR",
+    "homeScore": 6,
+    "away": "Alavés",
+    "awayAbbr": "ALA",
+    "awayScore": 1,
+    "status": "FULL TIME"
+   },
+   {
+    "type": "list",
+    "dur": 5.2,
+    "label": "Barça's goals",
+    "title": "How the six went in",
+    "rows": [
+     [
+      "8'",
+      "Raphinha",
+      ""
+     ],
+     [
+      "23'",
+      "Fermín López",
+      ""
+     ],
+     [
+      "41'",
+      "Raphinha",
+      ""
+     ],
+     [
+      "45+1'",
+      "Lamine Yamal",
+      ""
+     ],
+     [
+      "64'",
+      "Lamine Yamal",
+      ""
+     ],
+     [
+      "81'",
+      "Anthony Gordon",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who's stopping Barça this season?"
+   }
+  ]
+ },
+ {
+  "id": "n03-milan-derby",
+  "sport": "football",
+  "tagText": "SERIE A",
+  "time": "2026-11-01T16:15:00",
+  "title": "Milan Win the Derby 3–1! Pulisic Scores in 4 Minutes ⚡ #shorts",
+  "description": "AC Milan beat Inter 3–1 in the Derby della Madonnina. Christian Pulisic headed in after 4 minutes, Adrien Rabiot added a second, Alessandro Bastoni pulled one back, and Diego Moreira scored a free kick before half-time.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#MilanInter #ACMilan #SerieA #Pulisic",
+  "tags": [
+   "milan vs inter",
+   "milan derby",
+   "pulisic",
+   "ac milan",
+   "inter",
+   "serie a",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Serie A · Derby di Milano",
+    "title": "Milan own the city",
+    "sub": "Three goals in the first half"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "San Siro",
+    "home": "AC Milan",
+    "homeAbbr": "MIL",
+    "homeScore": 3,
+    "away": "Inter",
+    "awayAbbr": "INT",
+    "awayScore": 1,
+    "status": "FULL TIME"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Goals",
+    "title": "All in the first half",
+    "rows": [
+     [
+      "4'",
+      "Pulisic",
+      "MIL"
+     ],
+     [
+      "10'",
+      "Rabiot",
+      "MIL"
+     ],
+     [
+      "22'",
+      "Bastoni",
+      "INT"
+     ],
+     [
+      "43'",
+      "Moreira (FK)",
+      "MIL"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Milan fans, best derby win in years?"
+   }
+  ]
+ },
+ {
+  "id": "n04-mcdavid-37",
+  "sport": "nhl",
+  "tagText": "NHL",
+  "time": "2026-11-01T17:15:00",
+  "title": "McDavid Falls ONE Point Short of Mario Lemieux's Record 😮 #NHL #shorts",
+  "description": "Connor McDavid finished October with 37 points (8 goals, 29 assists), one short of Mario Lemieux's October record of 38. He had an assist in the Oilers' 4–0 win over the Islanders on Saturday.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NHL #McDavid #Oilers",
+  "tags": [
+   "connor mcdavid",
+   "mcdavid record",
+   "mario lemieux",
+   "oilers",
+   "nhl",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · October record chase",
+    "title": "So close…",
+    "sub": "Connor McDavid vs Mario Lemieux"
+   },
+   {
+    "type": "stat",
+    "dur": 3.6,
+    "label": "McDavid in October",
+    "value": "37",
+    "unit": "points",
+    "text": "8 goals · 29 assists"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Lemieux's October record",
+    "value": "38",
+    "unit": "points",
+    "text": "Still standing, by one point"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Saturday",
+    "home": "Islanders",
+    "homeAbbr": "NYI",
+    "homeScore": 0,
+    "away": "Oilers",
+    "awayAbbr": "EDM",
+    "awayScore": 4,
+    "status": "FINAL",
+    "note": "McDavid: 1 assist · Nugent-Hopkins: 2 goals"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Does McDavid break it next season?"
+   }
+  ]
+ },
+ {
+  "id": "n05-klassiker",
+  "sport": "football",
+  "tagText": "BUNDESLIGA",
+  "time": "2026-11-01T18:15:00",
+  "title": "89th-Minute Equaliser! Bayern vs Dortmund Ends 2–2 😱 #shorts",
+  "description": "Der Klassiker finished 2–2. Konrad Laimer and Dayot Upamecano scored for Bayern, but Serhou Guirassy and Fábio Silva's 89th-minute goal earned Dortmund a point.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Klassiker #FCBBVB #Bundesliga",
+  "tags": [
+   "bayern vs dortmund",
+   "der klassiker",
+   "bayern munich",
+   "dortmund",
+   "bundesliga",
+   "fabio silva",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Bundesliga · Der Klassiker",
+    "title": "Drama in Munich",
+    "sub": "Top of the table clash"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Allianz Arena",
+    "home": "Bayern",
+    "homeAbbr": "FCB",
+    "homeScore": 2,
+    "away": "Dortmund",
+    "awayAbbr": "BVB",
+    "awayScore": 2,
+    "status": "FULL TIME"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Goals",
+    "title": "Back and forth",
+    "rows": [
+     [
+      "38'",
+      "Laimer",
+      "FCB"
+     ],
+     [
+      "60'",
+      "Guirassy",
+      "BVB"
+     ],
+     [
+      "66'",
+      "Upamecano",
+      "FCB"
+     ],
+     [
+      "89'",
+      "Fábio Silva",
+      "BVB"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Fair result?"
+   }
+  ]
+ },
+ {
+  "id": "n06-cfb-upsets",
+  "sport": "nfl",
+  "tagText": "COLLEGE FOOTBALL",
+  "time": "2026-11-01T19:15:00",
+  "title": "Two Ranked Teams Go Down! College Football Saturday 🏈 #CFB #shorts",
+  "description": "Syracuse beat No. 19 SMU 30–27 and Iowa shut out No. 25 Wisconsin 30–0. Elsewhere, No. 5 Notre Dame beat Navy 35–13, No. 12 Ole Miss beat Auburn 45–15 and No. 13 Texas Tech beat No. 22 Arizona 34–26.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#CollegeFootball #CFB #Syracuse #Hawkeyes",
+  "tags": [
+   "college football",
+   "cfb",
+   "syracuse vs smu",
+   "iowa vs wisconsin",
+   "upsets",
+   "college football scores",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "College football · Saturday",
+    "title": "Upset alert!",
+    "sub": "Two ranked teams lose"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Upset No. 1",
+    "home": "Syracuse",
+    "homeAbbr": "SYR",
+    "homeScore": 30,
+    "away": "No. 19 SMU",
+    "awayAbbr": "SMU",
+    "awayScore": 27,
+    "status": "FINAL"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Upset No. 2",
+    "home": "Iowa",
+    "homeAbbr": "IOWA",
+    "homeScore": 30,
+    "away": "No. 25 Wisconsin",
+    "awayAbbr": "WIS",
+    "awayScore": 0,
+    "status": "FINAL",
+    "note": "A shutout"
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "Other ranked results",
+    "title": "Took care of business",
+    "rows": [
+     [
+      "No. 5 Notre Dame",
+      "35–13",
+      "Navy"
+     ],
+     [
+      "No. 12 Ole Miss",
+      "45–15",
+      "Auburn"
+     ],
+     [
+      "No. 13 Texas Tech",
+      "34–26",
+      "No. 22 Arizona"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Biggest shock of the day?"
+   }
+  ]
+ },
+ {
+  "id": "n07-pastrnak",
+  "sport": "nhl",
+  "tagText": "NHL",
+  "time": "2026-11-01T20:15:00",
+  "title": "Pastrnak Passes Bergeron! Bruins Win in OT 🚨 #NHL #shorts",
+  "description": "David Pastrnak scored his eighth goal of the season to pass Patrice Bergeron for third on the Bruins' all-time goals list, and Elias Lindholm won it 5–4 in overtime against the Blackhawks.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NHL #NHLBruins #Pastrnak",
+  "tags": [
+   "david pastrnak",
+   "bruins",
+   "patrice bergeron",
+   "blackhawks",
+   "nhl",
+   "overtime",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · Saturday",
+    "title": "Bruins history",
+    "sub": "Pastrnak passes Bergeron"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "Boston's all-time goals list",
+    "title": "Pastrnak moves up to 3rd",
+    "sub": "Past Patrice Bergeron"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "TD Garden · overtime",
+    "home": "Bruins",
+    "homeAbbr": "BOS",
+    "homeScore": 5,
+    "away": "Blackhawks",
+    "awayAbbr": "CHI",
+    "awayScore": 4,
+    "status": "FINAL / OT",
+    "note": "Elias Lindholm won it in OT"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Pastrnak catch the top two?"
+   }
+  ]
+ },
+ {
+  "id": "n08-blazers-jazz",
+  "sport": "nba",
+  "tagText": "NBA",
+  "time": "2026-11-01T21:15:00",
+  "title": "Blazers Roll in Utah, Avdija Drops 24 🏀 #NBA #shorts",
+  "description": "The Trail Blazers beat the Jazz 112–90 in Salt Lake City. Deni Avdija led Portland with 24 points as the Blazers improved to 4-1.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#RipCity #Blazers #NBA",
+  "tags": [
+   "blazers",
+   "jazz",
+   "deni avdija",
+   "nba",
+   "portland trail blazers",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA · Saturday",
+    "title": "Portland by 22",
+    "sub": "Blazers win in Utah"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Salt Lake City",
+    "home": "Jazz",
+    "homeAbbr": "UTA",
+    "homeScore": 90,
+    "away": "Blazers",
+    "awayAbbr": "POR",
+    "awayScore": 112,
+    "status": "FINAL"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Deni Avdija",
+    "value": "24",
+    "unit": "points",
+    "text": "Led all scorers"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Portland",
+    "value": "4-1",
+    "unit": "record",
+    "text": "Jazz drop to 1-5"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Are the Blazers for real?"
+   }
+  ]
+ },
+ {
+  "id": "n09-nfl-week8",
+  "sport": "nfl",
+  "tagText": "NFL WEEK 8",
+  "time": "2026-11-01T22:15:00",
+  "title": "NFL Week 8: The 5 Games You Can't Miss Today 🏈 #NFL #shorts",
+  "description": "Week 8's biggest games (all times ET): unbeaten Vikings at Lions and Ravens at Bills at 1pm, Browns at Steelers at 1pm, Chiefs at Broncos at 4:25pm, and Eagles at Commanders on Sunday Night Football at 8:20pm.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NFL #NFLSunday #Week8",
+  "tags": [
+   "nfl week 8",
+   "nfl sunday",
+   "vikings vs lions",
+   "chiefs vs broncos",
+   "browns vs steelers",
+   "nfl",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NFL · Week 8",
+    "title": "Sunday is stacked",
+    "sub": "Five must-watch games"
+   },
+   {
+    "type": "list",
+    "dur": 6.0,
+    "label": "Today · times ET",
+    "title": "Away @ home",
+    "rows": [
+     [
+      "Vikings (6-0)",
+      "1:00",
+      "Lions (4-2)"
+     ],
+     [
+      "Ravens (4-3)",
+      "1:00",
+      "Bills (5-1)"
+     ],
+     [
+      "Browns (5-2)",
+      "1:00",
+      "Steelers (5-2)"
+     ],
+     [
+      "Chiefs (5-1)",
+      "4:25",
+      "Broncos (5-2)"
+     ],
+     [
+      "Eagles (2-5)",
+      "8:20",
+      "Commanders"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "The big one",
+    "title": "Can anyone stop Minnesota?",
+    "sub": "The NFL's last unbeaten team"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Game of the week?"
+   }
+  ]
+ },
+ {
+  "id": "n10-europe-goalfest",
+  "sport": "football",
+  "tagText": "EUROPE",
+  "time": "2026-11-01T23:15:00",
+  "title": "Saturday Goal-Fest Across Europe ⚽🔥 24 Goals in 4 Games #shorts",
+  "description": "Saturday's wildest results in Europe: Barcelona 6–1 Alavés, Udinese 2–5 Roma, Leverkusen 2–4 Stuttgart and Bayern 2–2 Dortmund. That's 24 goals in four games.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Football #LaLiga #SerieA #Bundesliga",
+  "tags": [
+   "football results",
+   "europe results",
+   "roma",
+   "stuttgart",
+   "barcelona",
+   "bundesliga",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Europe · Saturday",
+    "title": "Goals everywhere",
+    "sub": "24 in four games"
+   },
+   {
+    "type": "list",
+    "dur": 5.6,
+    "label": "Full time",
+    "title": "Home team left",
+    "rows": [
+     [
+      "Barcelona",
+      "6–1",
+      "Alavés"
+     ],
+     [
+      "Udinese",
+      "2–5",
+      "Roma"
+     ],
+     [
+      "Leverkusen",
+      "2–4",
+      "Stuttgart"
+     ],
+     [
+      "Bayern",
+      "2–2",
+      "Dortmund"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Stuttgart",
+    "title": "Demirovic scores twice",
+    "sub": "Stuttgart win 4–2 at Leverkusen"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best game of the day?"
+   }
+  ]
+ }
+]
