@@ -145,6 +145,7 @@ footer{position:absolute;left:0;right:0;bottom:0;height:80px;background:#04060E;
   <div class="hc"><div class="chip acc" id="lg"></div><div class="chip" id="venue"></div><div class="chip num" id="now" style="font-size:20px"></div></div>
 </header>
 <div id="app"><div class="err">Loading live data…</div></div>
+<div id="trkL" style="position:absolute;overflow:hidden;z-index:4;display:none;border-radius:14px"><iframe id="trkF" scrolling="no" style="position:absolute;left:0;top:0;width:950px;height:640px;border:0;transform-origin:0 0;background:transparent"></iframe></div>
 <div class="pop" id="pop"></div>
 <div class="trans" id="trans"></div>
 <div class="sub" id="sub"><div class="av">SB</div><div class="tx"><b>Enjoying the live scores?</b><span>Like the stream and subscribe for every game, every night</span></div><div class="btn"><span class="bell">🔔</span>SUBSCRIBE</div></div>
@@ -152,6 +153,8 @@ footer{position:absolute;left:0;right:0;bottom:0;height:80px;background:#04060E;
 <script>
 const q = new URLSearchParams(location.search);
 const league = q.get('league'), event = q.get('event');
+// ?trk=<scorebuzz.net match page>: show the site's own live tracker in the centre (stream.js crops the page to the tracker card)
+const TRK = q.get('trk');
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 const ACC = { nba: '#FF8A3D', nfl: '#4C8DFF', nhl: '#7FD1FF', mlb: '#FF4D5E', football: '#BEFF3C' };
 const $ = (id) => document.getElementById(id);
@@ -377,7 +380,7 @@ function preView(g) {
 function stage(g, ph) {
   if (ph === 'pre') return preView(g);
   if (ph === 'break' || ph === 'final') return (slide % 2 && g.box) ? boxView(g) : compare(g);
-  if (g.soccer) return pitch(g);
+  if (g.soccer) return TRK ? '<div id="trkHole" style="width:100%;height:100%"></div>' : pitch(g);
   if (g.sport === 'nfl') return field(g);
   if (g.sport === 'nhl') return rink(g);
   if (g.sport === 'mlb') return diamond(g);
@@ -442,9 +445,10 @@ function render(g) {
   const [lw, rw] = g.soccer ? ['home', 'away'] : ['away', 'home'];
   $('app').innerHTML = `
     <div class="side l">${side(L, R, g, lw)}</div>
-    <div class="center">${statusBar(g, ph)}<div class="panel stage" id="stage">${stage(g, ph)}</div>${ph === 'pre' ? '' : wpBar(g)}${playsPanel(g, ph)}</div>
+    <div class="center">${statusBar(g, ph)}<div class="panel stage" id="stage">${stage(g, ph)}</div>${ph === 'pre' ? '' : wpBar(g)}${TRK && g.soccer && ph === 'live' ? '' : playsPanel(g, ph)}</div>
     <div class="side r">${side(R, L, g, rw)}</div>`;
   prev = { home: g.home.score, away: g.away.score };
+  placeTracker();
 
   // big-play popup
   const big = g.plays.find((p) => p.big);
@@ -455,6 +459,18 @@ function render(g) {
   if (lastPhase && ph !== lastPhase && (ph === 'break' || ph === 'final')) transition(g, ph);
   lastPhase = ph;
   ticker(g);
+}
+
+// keep one iframe alive across re-renders (moving it would reload it): it sits in a layer positioned over #trkHole
+function placeTracker() {
+  const L = $('trkL'), F = $('trkF'), hole = $('trkHole');
+  if (!TRK || !hole) { L.style.display = 'none'; return; }
+  if (!F.src) F.src = TRK;
+  const r = hole.getBoundingClientRect(), root = document.body.getBoundingClientRect();
+  const k = Math.min(r.width / 950, r.height / 640);
+  const w = 950 * k, h = 640 * k;
+  Object.assign(L.style, { display: 'block', left: (r.left - root.left + (r.width - w) / 2) + 'px', top: (r.top - root.top + (r.height - h) / 2) + 'px', width: w + 'px', height: h + 'px' });
+  F.style.transform = `scale(${k})`;
 }
 
 function popup(p, g) {

@@ -35,6 +35,7 @@ const IN_FPS = 2;
 // so the ticker and animations move smoothly. --smooth 0 falls back to 2 fps screenshots.
 const SMOOTH = arg('smooth', require('fs').existsSync('/usr/bin/Xvfb') ? '1' : '0') !== '0';
 const FPS = Number(arg('fps', 30));
+const TRK = arg('tracker'); // scorebuzz.net match page whose live tracker card replaces the centre pitch
 
 if (!league || !event || (!key && !out)) {
   console.error('usage: stream.js --league nba --event <id> (--key <stream key> | --out file.mp4) [--minutes N]');
@@ -49,7 +50,7 @@ if (!league || !event || (!key && !out)) {
     xvfb = spawn('Xvfb', [display, '-screen', '0', '1920x1080x24', '-nolisten', 'tcp'], { stdio: 'ignore' });
     await new Promise((r) => setTimeout(r, 1500));
   }
-  const url = `http://127.0.0.1:${port}/?league=${league}&event=${event}`;
+  const url = `http://127.0.0.1:${port}/?league=${league}&event=${event}${TRK ? '&trk=' + encodeURIComponent(TRK) : ''}`;
   let browser, page;
   if (SMOOTH) {
     // --app opens a bare window (no tabs or address bar); with no window manager it fills the virtual screen
@@ -65,6 +66,20 @@ if (!league || !event || (!key && !out)) {
     page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
   }
   if (!page.url().startsWith('http')) await page.goto(url);
+  // crop the embedded site page down to its tracker card (works across origins through Playwright)
+  const CROP = `html,body{background:transparent!important;overflow:hidden!important}
+    body *{visibility:hidden!important}
+    .trk2,.trk2 *{visibility:visible!important}
+    .trk2{position:fixed!important;left:0!important;top:0!important;width:950px!important;height:640px!important;margin:0!important;z-index:2147483647!important}
+    #chat,.chat,[class*=cookie],[class*=install]{display:none!important}`;
+  const crop = async () => {
+    for (const f of page.frames()) {
+      if (f === page.mainFrame() || !/scorebuzz\.net/.test(f.url())) continue;
+      const done = await f.evaluate(() => !!document.getElementById('sb-crop')).catch(() => true);
+      if (!done) await f.addStyleTag({ content: CROP }).then((h) => h.evaluate((e) => { e.id = 'sb-crop'; })).catch(() => {});
+    }
+  };
+  if (TRK) { page.on('framenavigated', () => setTimeout(crop, 1500)); setInterval(crop, 3000); }
   await page.waitForFunction(() => window.__ready, null, { timeout: 60000 }).catch(() => console.warn('no data yet, streaming the waiting screen'));
 
   const target = out || `${rtmp}/${key}`;
