@@ -45,7 +45,7 @@ At the end, send the user a short summary: number of posts scheduled, the mix, a
 
 # YouTube (ScoreBuzz channel @scorebuzznet)
 
-Target set by the owner: **10–15 Shorts per day + 1 long video per day**. Publishing goes through Metricool (same brand `7677948`), so it only works on a paid Metricool plan; on the free plan, build and commit but do not schedule.
+Target set by the owner: **15 Shorts per day** (plus 1 long video per day when a voiceover is available). Publishing goes through Metricool (same brand `7677948`), so it only works on a paid Metricool plan; on the free plan, build and commit but do not schedule.
 
 ## Shorts
 - Generator: `node tools/make_shorts.js shorts/YYYY-MM-DD/shorts.json shorts/YYYY-MM-DD [id ...]` → `<id>.mp4` (1080x1920, 12–20 s) + `<id>.jpg` thumbnail. Scene types and fields are documented at the top of the script; see `shorts/2026-10-29/shorts.json`.
@@ -61,10 +61,18 @@ Target set by the owner: **10–15 Shorts per day + 1 long video per day**. Publ
 - Titles: hook first, a number or name, one emoji, then 1–2 hashtags + #shorts (e.g. "McDavid Falls ONE Point Short of Mario Lemieux's Record 😮 #NHL #shorts").
 - Cover every big sport the US/UK audience follows: NFL, college football (Saturdays), NBA, NHL, F1, UFC, Premier League, LaLiga, Serie A, Bundesliga.
 - Publish results within hours, previews 1–3 hours before kick-off; end every Short on a question.
-- Scores for Shorts can come straight from ESPN's scoreboard/summary JSON (site.api.espn.com), which is allowed in this environment.
+- Scores can come straight from ESPN's scoreboard/summary JSON (site.api.espn.com), which is allowed in this environment.
 
 ## Long video (format "video", 1920x1080)
 - Same generator with `"format": "video"`; 4–8 minutes, e.g. weekend football roundup, NFL week recap, NBA/NHL power rankings. Needs a voiceover to be worth watching.
 
 ## Scheduling (Metricool `createScheduledPost`)
 - provider `youtube`, `youtubeData: {"title": ..., "type": "short"|"video", "privacy": "public", "tags": [...], "category": "SPORTS", "madeForKids": false, "isAiGeneratedContent": false}`, media = `https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/shorts/YYYY-MM-DD/<id>.mp4`, text = description.
+
+# TikTok (@scorebuzznet, connected in Metricool brand 7677948)
+
+- Post **5 TikToks per day**, the strongest of the day's Shorts (records, upsets, late drama, big previews). New accounts get flagged for spam at high volume.
+- Same MP4 as the Short, but **not at the same time** as YouTube: aim for US evening (7–10pm ET), US lunchtime before NFL/NBA slates, and UK lunchtime/afternoon for football. ET = PKT − 10 in US winter time (PKT − 9 in summer).
+- Caption, written for TikTok: a hook line in caps or with one emoji ("89th minute. Bayern thought they'd won it… then Fábio Silva 😱"), the fact in one line, a question, then 4–5 lowercase hashtags (sport, league, team, player, #football/#sports). No #shorts, no links (they aren't clickable).
+- Metricool `createScheduledPost`: provider `tiktok`, `tiktokData: {"title": <short hook, required>, "privacyOption": "PUBLIC_TO_EVERYONE", "disableComment": false, "disableDuet": false, "disableStitch": false, "commercialContentThirdParty": false, "commercialContentOwnBrand": false, "autoAddMusic": false, "isAigc": false}`, media = the Short's raw.githubusercontent.com MP4 URL.
+- What overperforms on TikTok (vidIQ, Oct 2026): drama hooks in the first 3 s ("IT ALL CAME DOWN TO THIS"), upsets, records, emotional moments, and trending audio. Our videos have silent audio; adding a licensed/royalty-free music bed would help.
