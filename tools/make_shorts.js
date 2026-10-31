@@ -49,7 +49,7 @@ function scene(sc) {
       const team = (n, ab, win, at) => a(at, `tm ${win ? '' : 'dim'}`, `<div class="bd">${esc(ab || initials(n))}</div><div class="nm">${esc(n)}</div>`);
       return `${sc.label ? a(0, 'label', esc(sc.label)) : ''}
         <div class="score">${team(sc.home, sc.homeAbbr, hs >= as, 0.2)}
-          <div class="mid">${a(0.5, 'sc', `<span class="${as > hs ? 'dimtxt' : ''}" data-count="${hs}">0</span><i>–</i><span class="${hs > as ? 'dimtxt' : ''}" data-count="${as}">0</span>`)}${a(0.9, 'st', esc(sc.status || 'FINAL'))}</div>
+          <div class="mid">${a(0.5, 'sc' + (String(sc.homeScore).length + String(sc.awayScore).length > 4 ? ' long' : ''), `<span class="${as > hs ? 'dimtxt' : ''}" data-count="${hs}">0</span><i>–</i><span class="${hs > as ? 'dimtxt' : ''}" data-count="${as}">0</span>`)}${a(0.9, 'st', esc(sc.status || 'FINAL'))}</div>
           ${team(sc.away, sc.awayAbbr, as >= hs, 0.35)}</div>
         ${sc.note ? a(1.3, 'note', esc(sc.note)) : ''}`;
     }
@@ -111,7 +111,7 @@ function html(v) {
   .bd{width:170px;height:170px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;font-size:50px;font-weight:800;background:#1E2754;border:5px solid ${s.color}}
   .nm{font-size:44px;font-weight:700;line-height:1.1}
   .mid{text-align:center;padding:0 10px}
-  .sc{font-size:${wide ? 150 : 160}px;font-weight:800;letter-spacing:-4px;display:flex;align-items:center;gap:20px;justify-content:center}.sc i{font-style:normal;color:#5A6390;font-size:100px}
+  .sc{font-size:${wide ? 150 : 160}px;font-weight:800;letter-spacing:-4px;display:flex;align-items:center;gap:20px;justify-content:center}.sc i{font-style:normal;color:#5A6390;font-size:100px}.sc.long{font-size:${wide ? 110 : 112}px;letter-spacing:-3px;gap:10px}.sc.long i{font-size:70px}
   .dimtxt{color:#7C86AC}
   .st{display:inline-block;margin-top:12px;font-size:30px;font-weight:800;letter-spacing:2px;color:${s.color};border:3px solid ${s.color}66;padding:8px 22px;border-radius:999px}
   .table{background:#121833cc;border:3px solid #232B50;border-radius:28px;overflow:hidden}

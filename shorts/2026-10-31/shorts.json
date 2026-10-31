@@ -1,0 +1,619 @@
+[
+ {
+  "id": "s01-city-brighton",
+  "sport": "football",
+  "tagText": "PREMIER LEAGUE",
+  "time": "2026-11-01T00:00:00",
+  "title": "Brighton Stun Man City at the Etihad! 21 Shots, 0 Goals #shorts",
+  "description": "Man City 0–1 Brighton. Yasin Ayari scored in the 11th minute and City couldn't find a way back despite 21 shots.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#ManCity #Brighton #PremierLeague #MCIBHA",
+  "tags": [
+   "man city vs brighton",
+   "man city",
+   "brighton",
+   "premier league",
+   "yasin ayari",
+   "epl results",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.3,
+    "kicker": "Premier League · Saturday",
+    "title": "City shut out at home",
+    "sub": "Brighton hold on at the Etihad"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Etihad Stadium",
+    "home": "Man City",
+    "homeAbbr": "MCI",
+    "homeScore": 0,
+    "away": "Brighton",
+    "awayAbbr": "BHA",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "note": "Yasin Ayari 11'"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Man City",
+    "value": "21",
+    "unit": "shots",
+    "text": "Only 6 on target, none went in"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "Title race",
+    "title": "Arsenal can go top tomorrow",
+    "sub": "City stay on 21 points. Arsenal (21) play Liverpool at Anfield on Sunday."
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Big blow for City's title hopes?"
+   }
+  ]
+ },
+ {
+  "id": "s02-chelsea-united",
+  "sport": "football",
+  "tagText": "PREMIER LEAGUE",
+  "time": "2026-11-01T01:30:00",
+  "title": "Red Card, Penalty, Defeat: Chelsea Beat Man United 2–0 #shorts",
+  "description": "Chelsea 2–0 Man United. Morgan Rogers scored, Lisandro Martínez was sent off, and Cole Palmer scored the penalty a minute later.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#CHEMUN #Chelsea #MUFC #PremierLeague",
+  "tags": [
+   "chelsea vs man united",
+   "chelsea",
+   "man united",
+   "cole palmer",
+   "lisandro martinez red card",
+   "premier league",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.3,
+    "kicker": "Premier League · Saturday",
+    "title": "14 minutes that sank United",
+    "sub": "Goal, red card, penalty"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Stamford Bridge",
+    "home": "Chelsea",
+    "homeAbbr": "CHE",
+    "homeScore": 2,
+    "away": "Man United",
+    "awayAbbr": "MUN",
+    "awayScore": 0,
+    "status": "FULL TIME"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "How it happened",
+    "title": "Second half",
+    "rows": [
+     [
+      "50'",
+      "Goal",
+      "Rogers"
+     ],
+     [
+      "63'",
+      "Red card",
+      "Martínez"
+     ],
+     [
+      "64'",
+      "Penalty",
+      "Palmer"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Man United",
+    "title": "Now nine games without a win",
+    "sub": "In all competitions"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "How long does Carrick last?"
+   }
+  ]
+ },
+ {
+  "id": "s03-pl-saturday",
+  "sport": "football",
+  "tagText": "PREMIER LEAGUE",
+  "time": "2026-11-01T03:00:00",
+  "title": "Every Premier League 3pm Result in 15 Seconds #shorts",
+  "description": "Saturday's 3pm Premier League results: Bournemouth, Brentford and Coventry win, Hull and Ipswich draw, Brighton beat Man City.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#PremierLeague #EPL #FootballResults",
+  "tags": [
+   "premier league results",
+   "epl results",
+   "bournemouth",
+   "brentford",
+   "coventry",
+   "hull",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Premier League · 3pm",
+    "title": "Saturday's results",
+    "sub": "All five games"
+   },
+   {
+    "type": "list",
+    "dur": 6.0,
+    "label": "Full time",
+    "title": "3pm kick-offs",
+    "rows": [
+     [
+      "Bournemouth",
+      "2–0",
+      "Leeds"
+     ],
+     [
+      "Brentford",
+      "2–0",
+      "Nott'm Forest"
+     ],
+     [
+      "Coventry",
+      "3–1",
+      "Sunderland"
+     ],
+     [
+      "Hull City",
+      "2–2",
+      "Ipswich"
+     ],
+     [
+      "Man City",
+      "0–1",
+      "Brighton"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Coventry",
+    "title": "Three different scorers",
+    "sub": "Sakamoto, Awoniyi and Rudoni sink Sunderland"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Result of the day?"
+   }
+  ]
+ },
+ {
+  "id": "s04-liv-ars-preview",
+  "sport": "football",
+  "tagText": "PREMIER LEAGUE",
+  "time": "2026-11-01T14:00:00",
+  "title": "Arsenal Can Go Top at Anfield… If They End a 14-Year Wait #shorts",
+  "description": "Liverpool v Arsenal, Sunday 16:30 GMT (11:30am ET). City lost to Brighton, so an Arsenal win puts them top. Arsenal haven't won a league game at Anfield in 14 years. Bukayo Saka is out.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#LIVARS #Arsenal #LFC #PremierLeague",
+  "tags": [
+   "liverpool vs arsenal",
+   "arsenal",
+   "liverpool",
+   "anfield",
+   "premier league",
+   "title race",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Sunday · 16:30 GMT",
+    "title": "A chance to go top",
+    "sub": "Liverpool v Arsenal"
+   },
+   {
+    "type": "stat",
+    "dur": 3.6,
+    "label": "Arsenal at Anfield",
+    "value": "14",
+    "unit": "years",
+    "text": "Since their last league win there"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "Why it matters",
+    "title": "City lost on Saturday",
+    "sub": "Arsenal and City are both on 21 points. A win sends Arsenal clear."
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Team news",
+    "title": "Saka is out",
+    "sub": "Thigh injury"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Your prediction?"
+   }
+  ]
+ },
+ {
+  "id": "s05-hakimi-hattrick",
+  "sport": "football",
+  "tagText": "LIGUE 1",
+  "time": "2026-11-01T05:00:00",
+  "title": "A Right-Back Hat-Trick! Hakimi Scores 3 as PSG Win 5–1 #shorts",
+  "description": "Achraf Hakimi scored a hat-trick as PSG beat Le Havre 5–1 in Ligue 1 on Friday.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#PSG #Hakimi #Ligue1",
+  "tags": [
+   "hakimi",
+   "hakimi hat trick",
+   "psg",
+   "le havre",
+   "ligue 1",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Ligue 1 · Friday",
+    "title": "A defender's hat-trick",
+    "sub": "Achraf Hakimi"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Ligue 1",
+    "home": "Le Havre",
+    "homeAbbr": "HAC",
+    "homeScore": 1,
+    "away": "PSG",
+    "awayAbbr": "PSG",
+    "awayScore": 5,
+    "status": "FULL TIME"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "Hakimi's goals",
+    "title": "28' · 55' · 69'",
+    "sub": "PSG stay top of Ligue 1"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Best right-back in the world?"
+   }
+  ]
+ },
+ {
+  "id": "s06-mavs-rockets",
+  "sport": "nba",
+  "tagText": "NBA CUP",
+  "time": "2026-11-01T07:00:00",
+  "title": "Kyrie 35, Flagg 33: Mavs End the Rockets' Perfect Start #shorts",
+  "description": "The Mavericks beat the Rockets 116–111 to hand Houston their first loss. Kyrie Irving scored 35 and Cooper Flagg 33. The Grizzlies are now the NBA's only unbeaten team.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Mavs #Rockets #NBA #NBACup",
+  "tags": [
+   "mavericks",
+   "rockets",
+   "kyrie irving",
+   "cooper flagg",
+   "nba cup",
+   "nba",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA Cup · Friday",
+    "title": "Unbeaten no more",
+    "sub": "Houston's first loss"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Dallas",
+    "home": "Mavericks",
+    "homeAbbr": "DAL",
+    "homeScore": 116,
+    "away": "Rockets",
+    "awayAbbr": "HOU",
+    "awayScore": 111,
+    "status": "FINAL"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Kyrie Irving",
+    "value": "35",
+    "unit": "points",
+    "text": "26 of them after half-time"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Cooper Flagg",
+    "value": "33",
+    "unit": "points",
+    "text": "Kevin Durant had 28 for Houston"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Can the Grizzlies stay perfect?"
+   }
+  ]
+ },
+ {
+  "id": "s07-giannis-heat",
+  "sport": "nba",
+  "tagText": "NBA CUP",
+  "time": "2026-11-01T09:00:00",
+  "title": "Giannis Triple-Double: 31-17-10 as Miami Drop 145 #shorts",
+  "description": "Giannis Antetokounmpo had 31 points, 17 rebounds and 10 assists as the Heat beat the Pacers 145–125.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#HeatCulture #Giannis #NBA",
+  "tags": [
+   "giannis",
+   "giannis antetokounmpo",
+   "heat",
+   "pacers",
+   "triple double",
+   "nba",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA Cup · Friday",
+    "title": "Giannis does everything",
+    "sub": "Heat 145, Pacers 125"
+   },
+   {
+    "type": "list",
+    "dur": 4.2,
+    "label": "Giannis",
+    "title": "Triple-double",
+    "rows": [
+     [
+      "Points",
+      "31",
+      ""
+     ],
+     [
+      "Rebounds",
+      "17",
+      ""
+     ],
+     [
+      "Assists",
+      "10",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Miami",
+    "home": "Heat",
+    "homeAbbr": "MIA",
+    "homeScore": 145,
+    "away": "Pacers",
+    "awayAbbr": "IND",
+    "awayScore": 125,
+    "status": "FINAL",
+    "note": "Klay Thompson: seven threes"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Miami",
+    "title": "Two straight wins",
+    "sub": "After an 0–4 start"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Is Miami back?"
+   }
+  ]
+ },
+ {
+  "id": "s08-murray-39",
+  "sport": "nba",
+  "tagText": "NBA CUP",
+  "time": "2026-11-01T11:00:00",
+  "title": "Jamal Murray Couldn't Miss: 39 Points, 7-of-9 From Three #shorts",
+  "description": "Jamal Murray scored 39 with seven threes as the Nuggets beat the Suns 127–120. Christian Braun added 31.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Nuggets #JamalMurray #NBA",
+  "tags": [
+   "jamal murray",
+   "nuggets",
+   "suns",
+   "christian braun",
+   "nba",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA Cup · Friday",
+    "title": "Murray on fire",
+    "sub": "Nuggets 127, Suns 120"
+   },
+   {
+    "type": "stat",
+    "dur": 3.6,
+    "label": "Jamal Murray",
+    "value": "39",
+    "unit": "points",
+    "text": "7-of-9 from three"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Christian Braun",
+    "value": "31",
+    "unit": "points",
+    "text": "Jokic: 18 points, 10 assists"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Denver",
+    "home": "Nuggets",
+    "homeAbbr": "DEN",
+    "homeScore": 127,
+    "away": "Suns",
+    "awayAbbr": "PHX",
+    "awayScore": 120,
+    "status": "FINAL"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Murray's best game this season?"
+   }
+  ]
+ },
+ {
+  "id": "s09-browns-steelers",
+  "sport": "nfl",
+  "tagText": "NFL WEEK 8",
+  "time": "2026-11-01T12:30:00",
+  "title": "Browns at Steelers: 5-2 vs 5-2 for the AFC North Lead #shorts",
+  "description": "The Browns (5-2) visit the Steelers (5-2) on Sunday at 1pm ET on CBS, with first place in the AFC North on the line.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NFL #Browns #Steelers",
+  "tags": [
+   "browns vs steelers",
+   "browns",
+   "steelers",
+   "afc north",
+   "nfl week 8",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NFL · Week 8",
+    "title": "AFC North showdown",
+    "sub": "Sunday · 1:00 PM ET · CBS"
+   },
+   {
+    "type": "list",
+    "dur": 4.2,
+    "label": "Head to head",
+    "title": "Same record",
+    "rows": [
+     [
+      "Browns",
+      "5-2",
+      ""
+     ],
+     [
+      "Steelers",
+      "5-2",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "Also on Sunday (ET)",
+    "title": "Week 8 picks",
+    "rows": [
+     [
+      "Vikings (6-0)",
+      "1:00",
+      "Lions"
+     ],
+     [
+      "Chiefs",
+      "4:25",
+      "Broncos"
+     ],
+     [
+      "Eagles",
+      "8:20",
+      "Commanders"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Browns or Steelers?"
+   }
+  ]
+ },
+ {
+  "id": "s10-lundell-jets",
+  "sport": "nhl",
+  "tagText": "NHL",
+  "time": "2026-11-01T08:00:00",
+  "title": "First Career Hat Trick for Lundell, Jets Lose 8 Straight #shorts",
+  "description": "Anton Lundell scored his first NHL hat trick as the Panthers beat the Jets 5–2. Winnipeg have lost eight in a row (0-6-2).\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NHL #FlaPanthers #GoJetsGo",
+  "tags": [
+   "anton lundell",
+   "panthers",
+   "jets",
+   "hat trick",
+   "nhl",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NHL · Friday",
+    "title": "Hat trick No. 1",
+    "sub": "Anton Lundell"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Winnipeg",
+    "home": "Jets",
+    "homeAbbr": "WPG",
+    "homeScore": 2,
+    "away": "Panthers",
+    "awayAbbr": "FLA",
+    "awayScore": 5,
+    "status": "FINAL"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Winnipeg Jets",
+    "value": "8",
+    "unit": "straight losses",
+    "text": "0-6-2 in that run"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "What's wrong in Winnipeg?"
+   }
+  ]
+ }
+]
