@@ -1,0 +1,448 @@
+[
+  {
+    "id": "01-pl-table",
+    "time": "2026-10-31T11:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "PREMIER LEAGUE · TABLE",
+    "headline": "The table before Matchday 9",
+    "rows": [
+      [
+        "1",
+        "Man City",
+        "21"
+      ],
+      [
+        "2",
+        "Arsenal",
+        "21"
+      ],
+      [
+        "3",
+        "Brighton",
+        "16"
+      ],
+      [
+        "4",
+        "Liverpool",
+        "15"
+      ],
+      [
+        "5",
+        "Chelsea",
+        "13"
+      ],
+      [
+        "16",
+        "Man United",
+        "7"
+      ],
+      [
+        "20",
+        "Sunderland",
+        "5"
+      ]
+    ],
+    "sub": "Position · club · points (8 games played)",
+    "caption": "📊 Matchday 9 starts today. City and Arsenal are level on 21 points at the top, and Sunderland prop up the table on 5.\n\nWho's top after this weekend? 👇\n\n#PremierLeague #EPL #PL"
+  },
+  {
+    "id": "02-psg-hakimi",
+    "time": "2026-10-31T12:00:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "LIGUE 1 · FRIDAY",
+    "home": "Le Havre",
+    "homeAbbr": "HAC",
+    "homeScore": 1,
+    "away": "PSG",
+    "awayAbbr": "PSG",
+    "awayScore": 5,
+    "status": "FULL TIME",
+    "headline": "Hakimi hat-trick in PSG rout",
+    "sub": "Achraf Hakimi scored three times from right-back. PSG stay top on 20 points.",
+    "caption": "🎩 A hat-trick from a right-back. Achraf Hakimi scored three as PSG won 5–1 at Le Havre on Friday.\n\nPSG stay top of Ligue 1, two points clear of Lille.\n\nBest full-back in the world right now? 👇\n\n#Ligue1 #PSG #Hakimi"
+  },
+  {
+    "id": "03-chelsea-united-today",
+    "time": "2026-10-31T13:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "PREMIER LEAGUE · TODAY 12:30 GMT",
+    "headline": "Chelsea v Man United: Carrick's big test",
+    "sub": "United are winless in eight games in all competitions and sit 16th, one point above the drop zone.",
+    "stat": [
+      "8",
+      "games without a win"
+    ],
+    "caption": "⚔️ Chelsea v Man United kicks off at 12:30 GMT (8:30am ET).\n\nMichael Carrick stays in charge, but United are eight games without a win in all competitions and sit just one point above the bottom three.\n\nCan United turn it around at Stamford Bridge? 👇\n\n#CHEMUN #MUFC #CFC"
+  },
+  {
+    "id": "04-city-brighton",
+    "time": "2026-10-31T14:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "PREMIER LEAGUE · TODAY 15:00 GMT",
+    "headline": "Man City v Brighton: 1st v 3rd",
+    "sub": "City (21 pts) host Brighton (16 pts) at the Etihad. 11am ET.",
+    "caption": "🔵 Top of the table City host third-placed Brighton at 3pm GMT (11am ET).\n\nCity are level with Arsenal on 21 points, Brighton sit five points back.\n\nCan Brighton spring a surprise? Score prediction 👇\n\n#MCIBHA #ManCity #BHAFC"
+  },
+  {
+    "id": "05-lille-giroud",
+    "time": "2026-10-31T15:00:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "LIGUE 1 · FRIDAY",
+    "home": "Lille",
+    "homeAbbr": "LIL",
+    "homeScore": 1,
+    "away": "Lens",
+    "awayAbbr": "RCL",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "headline": "Giroud wins the derby late",
+    "sub": "Olivier Giroud scored on 86 minutes. Lille go second, two points behind PSG.",
+    "caption": "🐐 Olivier Giroud still has it. His 86th-minute goal won the derby for Lille, 1–0 against Lens.\n\nLille move up to second, two points behind PSG.\n\nCan Lille push PSG all the way? 👇\n\n#Ligue1 #LOSC #Giroud"
+  },
+  {
+    "id": "06-anfield-drought",
+    "time": "2026-10-31T16:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "LIVERPOOL v ARSENAL · SUN 16:30 GMT",
+    "headline": "14 years without a league win at Anfield",
+    "sub": "Arsenal have five draws and eight defeats there since. Saka is out injured. 11:30am ET Sunday.",
+    "caption": "🔴 Arsenal haven't won a league game at Anfield in 14 years, and Mikel Arteta says it's time to change that.\n\nBukayo Saka misses out with a thigh injury. Kick-off Sunday 16:30 GMT (11:30am ET).\n\nDoes the drought end this weekend? 👇\n\n#LIVARS #Arsenal #LFC"
+  },
+  {
+    "id": "07-europe-saturday",
+    "time": "2026-10-31T17:00:00",
+    "sport": "football",
+    "kind": "list",
+    "label": "EUROPE · TODAY",
+    "headline": "Saturday's big games",
+    "rows": [
+      [
+        "Levante",
+        "13:00",
+        "Atlético"
+      ],
+      [
+        "Bayern",
+        "17:30",
+        "Dortmund"
+      ],
+      [
+        "Milan",
+        "19:45",
+        "Inter"
+      ],
+      [
+        "Barcelona",
+        "20:00",
+        "Alavés"
+      ]
+    ],
+    "sub": "Home team left · UK times (GMT) · subtract 4 hours for ET",
+    "caption": "🌍 A huge Saturday in Europe: Der Klassiker, the Milan derby, and the top two in LaLiga both in action.\n\nWhich one are you watching? 👇\n\n#Bundesliga #SerieA #LaLiga"
+  },
+  {
+    "id": "08-milan-derby",
+    "time": "2026-10-31T18:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "SERIE A · TONIGHT 19:45 GMT",
+    "headline": "Inter top the table going into the derby",
+    "sub": "Inter lead on 25 points, level with Lazio. Milan are fifth on 18. Lautaro Martínez is out. 3:45pm ET.",
+    "caption": "🔴⚫🔵 Derby day in Milan.\n\nInter are top on 25 points but without Lautaro Martínez. Ruben Amorim's Milan are fifth on 18 and need a win.\n\nRossoneri or Nerazzurri? 👇\n\n#MilanInter #SerieA #DerbyDiMilano"
+  },
+  {
+    "id": "09-wrexham",
+    "time": "2026-10-31T19:00:00",
+    "sport": "football",
+    "kind": "score",
+    "label": "CHAMPIONSHIP · FRIDAY",
+    "home": "Sheffield Utd",
+    "homeAbbr": "SHU",
+    "homeScore": 1,
+    "away": "Wrexham",
+    "awayAbbr": "WRE",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "headline": "Brereton Díaz sinks Wrexham",
+    "sub": "Ben Brereton Díaz scored on 30 minutes. Wrexham are 17th in the Championship.",
+    "caption": "⚽ Wrexham lost 1–0 at Sheffield United on Friday night. Ben Brereton Díaz got the only goal.\n\nWrexham sit 17th after 13 games.\n\nWrexham fans, where do you finish this season? 👇\n\n#Wrexham #SUFC #EFL"
+  },
+  {
+    "id": "10-mls-nashville",
+    "time": "2026-10-31T20:00:00",
+    "sport": "football",
+    "kind": "headline",
+    "label": "MLS · DECISION DAY SAT NOV 7",
+    "headline": "Nashville: Supporters' Shield winners",
+    "sub": "Nashville clinched their first Shield. 15 MLS games this weekend, one week before Decision Day.",
+    "caption": "🏆 Nashville SC have their first Supporters' Shield and sit top of the East.\n\nDecision Day is next Saturday, and the playoff spots are still being settled this weekend.\n\nWho's your pick for MLS Cup? 👇\n\n#MLS #NashvilleSC #MLSCupPlayoffs"
+  },
+  {
+    "id": "11-nhl-halloween",
+    "time": "2026-10-31T21:00:00",
+    "sport": "nhl",
+    "kind": "list",
+    "label": "NHL · TODAY · SAT OCT 31",
+    "headline": "Halloween on ice: 10 games",
+    "rows": [
+      [
+        "Blackhawks",
+        "1:00",
+        "Bruins"
+      ],
+      [
+        "Blues",
+        "1:00",
+        "Red Wings"
+      ],
+      [
+        "Oilers",
+        "2:00",
+        "Islanders"
+      ],
+      [
+        "Penguins",
+        "7:00",
+        "Canadiens"
+      ],
+      [
+        "Maple Leafs",
+        "7:00",
+        "Canucks"
+      ],
+      [
+        "Blue Jackets",
+        "8:00",
+        "Stars"
+      ],
+      [
+        "Flames",
+        "10:00",
+        "Avalanche"
+      ]
+    ],
+    "sub": "Selected games · away team left · times ET (pm)",
+    "caption": "🎃 The busiest NHL Halloween since 2015: 10 games today, starting at 1pm ET.\n\nDavid Pastrnak needs one goal to pass Patrice Bergeron for third on Boston's all-time list.\n\nWhich game are you watching? 👇\n\n#NHL #Hockey"
+  },
+  {
+    "id": "12-mcdavid-october",
+    "time": "2026-10-31T22:00:00",
+    "sport": "nhl",
+    "kind": "headline",
+    "label": "NHL · OILERS AT ISLANDERS · 2PM ET",
+    "headline": "McDavid chasing Lemieux's October record",
+    "sub": "36 points in 13 games. He needs four today to tie Mario Lemieux's 38.",
+    "stat": [
+      "36",
+      "points (8 G, 28 A)"
+    ],
+    "caption": "🔥 Connor McDavid has 36 points in October. Mario Lemieux's record for the month is 38.\n\nThe Oilers play the Islanders at 2pm ET today, his last chance this month.\n\nDoes he get there? 👇\n\n#NHL #McDavid #LetsGoOilers"
+  },
+  {
+    "id": "13-mavs-rockets",
+    "time": "2026-10-31T23:00:00",
+    "sport": "nba",
+    "kind": "score",
+    "label": "NBA CUP · FRI OCT 30",
+    "home": "Mavericks",
+    "homeAbbr": "DAL",
+    "homeScore": 116,
+    "away": "Rockets",
+    "awayAbbr": "HOU",
+    "awayScore": 111,
+    "status": "FINAL",
+    "headline": "Rockets' unbeaten start is over",
+    "sub": "Kyrie Irving 35 (26 after half-time), Cooper Flagg 33. Grizzlies (5-0) are the last unbeaten team.",
+    "caption": "🏀 Houston are unbeaten no more. Dallas won 116–111 behind Kyrie Irving's 35 points and 33 from Cooper Flagg.\n\nThat leaves Memphis (5-0) as the NBA's only unbeaten team.\n\nHow long can the Grizzlies keep it going? 👇\n\n#NBA #MFFL #NBACup"
+  },
+  {
+    "id": "14-f1-qualifying",
+    "time": "2026-11-01T00:00:00",
+    "sport": "racing",
+    "kind": "headline",
+    "label": "F1 · MEXICO CITY GP",
+    "headline": "Qualifying today: Leclerc fastest in practice",
+    "sub": "Leclerc topped FP1 and FP2. Qualifying 21:00 GMT (5pm ET). Race Sunday 20:00 GMT (3pm ET).",
+    "caption": "🏁 Charles Leclerc was quickest in both practice sessions in Mexico City.\n\nQualifying is at 21:00 GMT (5pm ET). On Sunday, Kimi Antonelli clinches the title with ninth place or better.\n\nWho takes pole? 👇\n\n#F1 #MexicoGP #Leclerc"
+  },
+  {
+    "id": "15-nba-tonight",
+    "time": "2026-11-01T01:00:00",
+    "sport": "nba",
+    "kind": "list",
+    "label": "TONIGHT · SAT OCT 31 (ET)",
+    "headline": "NBA tonight",
+    "rows": [
+      [
+        "76ers",
+        "6:00",
+        "Hornets"
+      ],
+      [
+        "Hawks",
+        "7:00",
+        "Pelicans"
+      ],
+      [
+        "Cavaliers",
+        "8:00",
+        "Bucks"
+      ],
+      [
+        "Timberwolves",
+        "8:00",
+        "Spurs"
+      ],
+      [
+        "Kings",
+        "8:00",
+        "Grizzlies"
+      ],
+      [
+        "Thunder",
+        "8:30",
+        "Rockets"
+      ]
+    ],
+    "sub": "Away team left · times ET (pm)",
+    "caption": "🏀 Halloween hoops. The unbeaten Grizzlies host the winless Kings, and the Thunder visit Houston.\n\nWhich game are you watching? 👇\n\n#NBA #NBATonight"
+  },
+  {
+    "id": "16-ufc-tonight",
+    "time": "2026-11-01T02:00:00",
+    "sport": "mma",
+    "kind": "list",
+    "label": "UFC VEGAS 123 · TONIGHT",
+    "headline": "Moicano vs Nolan: the main card",
+    "rows": [
+      [
+        "Moicano",
+        "LW",
+        "Nolan"
+      ],
+      [
+        "Randy Brown",
+        "WW",
+        "Jacobe Smith"
+      ],
+      [
+        "Ode Osbourne",
+        "FLY",
+        "Cody Durden"
+      ],
+      [
+        "Yana Santos",
+        "BW",
+        "Luana Santos"
+      ],
+      [
+        "Lebosnoyani",
+        "WW",
+        "Hasanov"
+      ]
+    ],
+    "sub": "Main card 8pm ET (00:00 GMT) · Paramount+ in US, TNT Sports in UK",
+    "caption": "🥊 Fight night in Vegas. Renato Moicano meets No. 11 Tom Nolan over five rounds at the Meta APEX.\n\nPrelims 5pm ET, main card 8pm ET (midnight GMT).\n\nMoicano or Nolan? 👇\n\n#UFC #UFCVegas123"
+  },
+  {
+    "id": "17-giannis-heat",
+    "time": "2026-11-01T03:00:00",
+    "sport": "nba",
+    "kind": "score",
+    "label": "NBA CUP · FRI OCT 30",
+    "home": "Heat",
+    "homeAbbr": "MIA",
+    "homeScore": 145,
+    "away": "Pacers",
+    "awayAbbr": "IND",
+    "awayScore": 125,
+    "status": "FINAL",
+    "headline": "Giannis triple-double powers Miami",
+    "sub": "31 points, 17 rebounds, 10 assists. Adebayo 27, Klay Thompson seven threes.",
+    "caption": "🔥 Giannis Antetokounmpo: 31 points, 17 rebounds, 10 assists.\n\nThe Heat put up 145 on Indiana for a second straight win after an 0-4 start.\n\nIs Miami back? 👇\n\n#NBA #HeatCulture #NBACup"
+  },
+  {
+    "id": "18-browns-steelers",
+    "time": "2026-11-01T04:00:00",
+    "sport": "nfl",
+    "kind": "headline",
+    "label": "NFL · WEEK 8 · SUN 1:00 PM ET · CBS",
+    "headline": "Browns at Steelers: 5-2 v 5-2",
+    "sub": "First place in the AFC North on the line in Pittsburgh.",
+    "caption": "🏈 Two 5-2 teams, one AFC North showdown. The Browns visit Pittsburgh on Sunday at 1pm ET on CBS.\n\nBrowns or Steelers? 👇\n\n#NFL #DawgPound #HereWeGo"
+  },
+  {
+    "id": "19-murray-39",
+    "time": "2026-11-01T05:00:00",
+    "sport": "nba",
+    "kind": "score",
+    "label": "NBA CUP · FRI OCT 30",
+    "home": "Nuggets",
+    "homeAbbr": "DEN",
+    "homeScore": 127,
+    "away": "Suns",
+    "awayAbbr": "PHX",
+    "awayScore": 120,
+    "status": "FINAL",
+    "headline": "Jamal Murray drops 39",
+    "sub": "7-of-9 from three. Christian Braun added 31 and Jokic had 18 points and 10 assists.",
+    "caption": "🎯 Jamal Murray was on fire: 39 points and 7-of-9 from three as Denver beat Phoenix 127–120.\n\nChristian Braun chipped in 31.\n\nMurray's best game of the season? 👇\n\n#NBA #MileHighBasketball #NBACup"
+  },
+  {
+    "id": "20-eagles-injuries",
+    "time": "2026-11-01T06:00:00",
+    "sport": "nfl",
+    "kind": "headline",
+    "label": "SUNDAY NIGHT FOOTBALL · 8:20 PM ET · NBC",
+    "headline": "Eagles without DeVonta Smith in Washington",
+    "sub": "Eagles (2-5) at Commanders (1-4-1). Saquon Barkley has no injury designation.",
+    "caption": "🚑 The Eagles will be without DeVonta Smith for Sunday Night Football in Washington.\n\nPhilly are 2-5, the Commanders 1-4-1. Saquon Barkley is good to go.\n\nWho needs this one more? 👇\n\n#SNF #FlyEaglesFly #HTTC"
+  },
+  {
+    "id": "21-jets-skid",
+    "time": "2026-11-01T07:00:00",
+    "sport": "nhl",
+    "kind": "score",
+    "label": "NHL · FRI OCT 30",
+    "home": "Jets",
+    "homeAbbr": "WPG",
+    "homeScore": 2,
+    "away": "Panthers",
+    "awayAbbr": "FLA",
+    "awayScore": 5,
+    "status": "FINAL",
+    "headline": "Lundell hat trick, Jets lose eighth straight",
+    "sub": "Anton Lundell's first NHL hat trick. Winnipeg are 0-6-2 in their last eight.",
+    "caption": "🎩 Anton Lundell scored his first career hat trick as Florida beat Winnipeg 5–2.\n\nThe Jets have now lost eight in a row.\n\nWhat's gone wrong in Winnipeg? 👇\n\n#NHL #TimeToHunt #GoJetsGo"
+  },
+  {
+    "id": "22-mlb-free-agency",
+    "time": "2026-11-01T08:00:00",
+    "sport": "mlb",
+    "kind": "headline",
+    "label": "MLB · OFFSEASON",
+    "headline": "Free agency opens Monday",
+    "sub": "Players can sign with any team from Nov 2 at 5pm ET. The qualifying offer is $23.15M.",
+    "stat": [
+      "NOV 2",
+      "5pm ET"
+    ],
+    "caption": "⚾ The offseason is here. Free agents can sign with any team from Monday at 5pm ET.\n\nThe Braves have already picked up options on Ronald Acuña Jr. and Ozzie Albies.\n\nWho's the biggest name your team should chase? 👇\n\n#MLB #HotStove #FreeAgency"
+  },
+  {
+    "id": "23-chiefs-broncos",
+    "time": "2026-11-01T09:00:00",
+    "sport": "nfl",
+    "kind": "headline",
+    "label": "NFL · WEEK 8 · SUN 4:25 PM ET · CBS",
+    "headline": "Chiefs at Broncos: AFC West showdown",
+    "sub": "Kansas City (5-1) visit Denver (5-2).",
+    "caption": "🏈 The AFC West heats up. The 5-1 Chiefs visit the 5-2 Broncos on Sunday at 4:25pm ET on CBS.\n\nWho wins in Denver? 👇\n\n#NFL #ChiefsKingdom #BroncosCountry"
+  }
+]
