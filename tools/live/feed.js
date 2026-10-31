@@ -65,6 +65,7 @@ function team(c) {
     name: t.shortDisplayName || t.name || t.displayName || '?',
     full: t.displayName || t.name || '?',
     abbr: t.abbreviation || (t.name || '?').slice(0, 3).toUpperCase(),
+    logo: t.logo || t.logos?.[0]?.href || '', // ESPN team logo / national flag URL
     color: hex(t.color, '#2A3570'),
     alt: hex(t.alternateColor, '#FFFFFF'),
     score: c.score ?? '0',
@@ -105,6 +106,8 @@ function plays(sum, comp, teamsById, L) {
       text: `${d.type?.text || 'Event'}${d.athletesInvolved?.length ? ` · ${d.athletesInvolved.map((a) => a.displayName).join(', ')}` : ''}`,
       team: teamsById[d.team?.id] || '',
       big: !!d.scoringPlay || !!d.redCard,
+      id: `${d.clock?.displayValue}-${d.type?.text}`,
+      type: d.scoringPlay ? 'Goal' : d.type?.text || '',
     }));
     if (Array.isArray(sum.keyEvents) && sum.keyEvents.length) {
       list = sum.keyEvents.map((k) => ({
@@ -112,18 +115,145 @@ function plays(sum, comp, teamsById, L) {
         text: k.text || k.type?.text || '',
         team: teamsById[k.team?.id] || '',
         big: !!k.scoringPlay,
+        id: k.id || `${k.clock?.displayValue}-${k.type?.text}`,
+        type: k.scoringPlay ? 'Goal' : k.type?.text || '',
       }));
     }
   } else {
     const raw = sum.plays || sum.drives?.current?.plays || [];
     list = raw.map((p) => ({
+      id: p.id || p.sequenceNumber || '',
+      type: p.type?.text || '',
+      value: p.scoreValue || 0,
       clock: [periodLabel(p.period?.number, L), p.clock?.displayValue].filter(Boolean).join(' '),
       text: p.text || p.type?.text || '',
       team: teamsById[p.team?.id] || '',
       big: !!p.scoringPlay && (L.sport !== 'nba' || (p.scoreValue || 0) >= 3),
     }));
   }
-  return list.filter((p) => p.text).slice(-5).reverse();
+  return list.filter((p) => p.text).slice(-7).reverse();
+}
+
+
+// ---- extra panels (all optional: each returns null/[] when ESPN doesn't provide the data) ----
+
+const STAT_PICK = {
+  nba: ['fieldGoalPct', 'threePointFieldGoalPct', 'freeThrowPct', 'totalRebounds', 'assists', 'turnovers', 'steals', 'blocks'],
+  nfl: ['totalYards', 'netPassingYards', 'rushingYards', 'firstDowns', 'turnovers', 'possessionTime', 'thirdDownEff'],
+  nhl: ['shotsTotal', 'powerPlayGoals', 'faceoffPercent', 'hits', 'blockedShots', 'takeaways', 'giveaways'],
+  mlb: ['hits', 'errors', 'homeRuns', 'strikeouts', 'walks', 'leftOnBase'],
+  football: ['possessionPct', 'totalShots', 'shotsOnTarget', 'wonCorners', 'foulsCommitted', 'saves', 'offsides'],
+};
+const num = (v) => { const n = parseFloat(String(v).replace('%', '')); return Number.isFinite(n) ? n : null; };
+
+// Team stat comparison rows: [{ label, home, away, h, a }] (h/a numeric for the bars)
+function teamStats(sum, L, home, away) {
+  const teams = sum.boxscore?.teams || [];
+  const side = (id) => teams.find((t) => String(t.team?.id) === String(id))?.statistics || [];
+  const hs = side(home.id), as = side(away.id);
+  if (!hs.length || !as.length) return [];
+  const want = STAT_PICK[L.sport] || [];
+  let names = want.filter((n) => hs.some((x) => x.name === n));
+  if (names.length < 3) names = hs.filter((x) => num(x.displayValue) !== null && !String(x.displayValue).includes('-')).map((x) => x.name);
+  return names.slice(0, 6).map((n) => {
+    const h = hs.find((x) => x.name === n) || {}, a = as.find((x) => x.name === n) || {};
+    const toNum = (x) => (n === 'possessionTime' ? (([m, sec]) => m * 60 + +sec)(String(x.displayValue || '0:0').split(':').map(Number)) : num(x.displayValue));
+    return { label: (h.label || h.abbreviation || n).replace(/Percentage/i, '%'), home: h.displayValue ?? '–', away: a.displayValue ?? '–', h: toNum(h) ?? 0, a: toNum(a) ?? 0 };
+  });
+}
+
+// Home win probability over the game, 0..100, max ~120 points (NBA, NFL, NCAAF)
+function winProb(sum) {
+  const wp = sum.winprobability || [];
+  if (!wp.length) return null;
+  const step = Math.max(1, Math.ceil(wp.length / 120));
+  const series = wp.filter((_, i) => i % step === 0 || i === wp.length - 1).map((w) => Math.round((w.homeWinPercentage ?? 0.5) * 1000) / 10);
+  return { home: series[series.length - 1], series };
+}
+
+// Score margin (home - away) after each scoring play: game-flow chart
+function flow(sum) {
+  const raw = (sum.plays || []).filter((p) => p.scoringPlay && p.homeScore != null);
+  if (raw.length < 2) return null;
+  const step = Math.max(1, Math.ceil(raw.length / 150));
+  return [0, ...raw.filter((_, i) => i % step === 0 || i === raw.length - 1).map((p) => p.homeScore - p.awayScore)];
+}
+
+// NFL/NCAAF ball position on a 0..100 field drawn away end-zone left, home end-zone right
+function field(sit, home, away, teamsById) {
+  if (!sit || !sit.possessionText) return null;
+  const m = String(sit.possessionText).match(/([A-Z&]+)\s+(\d+)/i);
+  if (!m) return null;
+  const side = m[1].toUpperCase(), yd = Number(m[2]);
+  const ball = side === home.abbr ? 100 - yd : side === away.abbr ? yd : 50;
+  const poss = teamsById[sit.possession] || '';
+  const dir = poss === away.abbr ? 1 : -1; // away team attacks towards the home end zone (right)
+  return { ball, firstDown: sit.distance ? Math.max(0, Math.min(100, ball + dir * sit.distance)) : null, poss, dir, text: sit.downDistanceText || '' };
+}
+
+// Football timeline: goals and cards with minute for the 0-90' bar
+function timeline(comp, teamsById) {
+  return (comp.details || []).map((d) => ({
+    min: parseInt(d.clock?.displayValue, 10) || 0,
+    team: teamsById[d.team?.id] || '',
+    kind: d.scoringPlay ? 'goal' : d.redCard ? 'red' : d.yellowCard ? 'yellow' : 'other',
+    who: d.athletesInvolved?.[0]?.shortName || d.athletesInvolved?.[0]?.displayName || '',
+  })).filter((x) => x.kind !== 'other');
+}
+
+// Top players per team from the box score: { cols: [...], home: [[name, ...]], away: [...] }
+const BOX = { nba: { sort: 'PTS', cols: ['PTS', 'REB', 'AST'] }, nhl: { sort: 'PTS', cols: ['G', 'A', 'SOG'] } };
+function box(sum, L, home, away) {
+  const cfg = BOX[L.sport];
+  if (!cfg) return null;
+  const pick = (id) => {
+    const g = (sum.boxscore?.players || []).find((x) => String(x.team?.id) === String(id))?.statistics?.[0];
+    if (!g) return [];
+    const labels = g.labels || g.names || [];
+    const idx = (k) => labels.indexOf(k);
+    if (idx(cfg.sort) < 0) return [];
+    return (g.athletes || []).filter((a) => a.stats?.length)
+      .map((a) => ({ name: a.athlete?.shortName || a.athlete?.displayName || '', v: cfg.cols.map((c) => a.stats[idx(c)] ?? '–'), s: num(a.stats[idx(cfg.sort)]) || 0 }))
+      .sort((x, y) => y.s - x.s).slice(0, 4).map((x) => [x.name, ...x.v]);
+  };
+  const h = pick(home.id), a = pick(away.id);
+  return h.length || a.length ? { cols: cfg.cols, home: h, away: a } : null;
+}
+
+// NBA/NHL shot chart: last 60 shooting plays with court coordinates.
+// ESPN NBA coordinates are feet on a half court (x 0-50 across, y 0-47 from the baseline);
+// free throws and missing locations come through as huge negative numbers and are dropped.
+function shots(sum, teamsById, L) {
+  if (!['nba', 'nhl'].includes(L.sport)) return [];
+  return (sum.plays || [])
+    .filter((p) => (p.shootingPlay || /shot/i.test(p.type?.text || '')) && p.coordinate && Math.abs(p.coordinate.x) < 200 && Math.abs(p.coordinate.y) < 200)
+    .slice(-60)
+    .map((p) => ({ x: p.coordinate.x, y: p.coordinate.y, made: !!p.scoringPlay, team: teamsById[p.team?.id] || '', v: p.scoreValue || 0 }));
+}
+
+// Current scoring run, e.g. { team: 'MEM', for: 10, against: 0 } when one side has scored the last 8+ points
+function run(sum, home, away) {
+  const sp = (sum.plays || []).filter((p) => p.scoringPlay && p.homeScore != null);
+  if (sp.length < 3) return null;
+  let h = 0, a = 0, last = sp[sp.length - 1];
+  for (let i = sp.length - 1; i > 0; i--) {
+    const dh = sp[i].homeScore - sp[i - 1].homeScore, da = sp[i].awayScore - sp[i - 1].awayScore;
+    if ((dh > 0 && a > 0) || (da > 0 && h > 0)) break;
+    h += Math.max(0, dh); a += Math.max(0, da);
+  }
+  const best = Math.max(h, a);
+  if (best < 8 || !last) return null;
+  return { team: h > a ? home.abbr : away.abbr, for: best, against: 0 };
+}
+
+// MLB at-bat situation
+function mlbSit(sit) {
+  if (sit.balls == null && sit.outs == null) return null;
+  return {
+    balls: sit.balls ?? 0, strikes: sit.strikes ?? 0, outs: sit.outs ?? 0,
+    bases: [!!sit.onFirst, !!sit.onSecond, !!sit.onThird],
+    batter: sit.batter?.athlete?.shortName || '', pitcher: sit.pitcher?.athlete?.shortName || '',
+  };
 }
 
 function statusText(st, L) {
@@ -165,14 +295,27 @@ async function game(league, eventId) {
       : null,
     lastPlay: sit.lastPlay?.text || '',
     plays: plays(sum, comp, teamsById, L),
+    stats: teamStats(sum, L, home, away),
+    winProb: winProb(sum),
+    flow: flow(sum),
+    field: L.sport === 'nfl' && ev.status?.type?.state === 'in' ? field(sit, home, away, teamsById) : null,
+    timeline: L.soccer ? timeline(comp, teamsById) : [],
+    box: box(sum, L, home, away),
+    shots: shots(sum, teamsById, L),
+    run: L.soccer ? null : run(sum, home, away),
+    mlb: L.sport === 'mlb' && ev.status?.type?.state === 'in' ? mlbSit(sit) : null,
+    drive: sum.drives?.current?.description || '',
+    detail: ev.status?.type?.detail || '',
+    period: ev.status?.period || 0,
+    clock: ev.status?.displayClock || '',
     ticker: (sb.events || []).filter((e) => e.id !== ev.id).map((e) => {
       const c = e.competitions[0];
       const h = c.competitors.find((x) => x.homeAway === 'home');
       const a = c.competitors.find((x) => x.homeAway === 'away');
       const pre = e.status?.type?.state === 'pre';
       return {
-        a: a.team.abbreviation, as: pre ? '' : a.score,
-        h: h.team.abbreviation, hs: pre ? '' : h.score,
+        a: a.team.abbreviation, as: pre ? '' : a.score, al: a.team.logo || '',
+        h: h.team.abbreviation, hs: pre ? '' : h.score, hl: h.team.logo || '',
         st: pre ? new Date(e.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET'
           : (e.status?.type?.shortDetail || '').toUpperCase(),
       };

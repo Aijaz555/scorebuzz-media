@@ -1,6 +1,6 @@
 // Local server for the live scoreboard.
 //   node tools/live/server.js [port]          (default 8787)
-// Open http://localhost:8787/?league=nba&event=<ESPN event id>  (1920x1080 page)
+// Open http://localhost:8787/?league=nba&event=<ESPN event id>  (1920x1080 overlay; /classic = simple version)
 // JSON:  /api/game?league=nba&event=<id>     /api/games?league=nba[&date=YYYYMMDD]
 const http = require('http');
 const fs = require('fs');
@@ -8,7 +8,8 @@ const path = require('path');
 const feed = require('./feed');
 
 function start(port = 8787) {
-  const page = path.join(__dirname, 'scoreboard.html');
+  const page = path.join(__dirname, 'overlay.html');
+  const classic = path.join(__dirname, 'scoreboard.html');
   const server = http.createServer(async (req, res) => {
     const u = new URL(req.url, 'http://x');
     const send = (code, body, type = 'application/json') => {
@@ -17,6 +18,7 @@ function start(port = 8787) {
     };
     try {
       if (u.pathname === '/') return send(200, fs.readFileSync(page, 'utf8'), 'text/html; charset=utf-8');
+      if (u.pathname === '/classic') return send(200, fs.readFileSync(classic, 'utf8'), 'text/html; charset=utf-8');
       if (u.pathname === '/api/game') return send(200, await feed.game(u.searchParams.get('league'), u.searchParams.get('event')));
       if (u.pathname === '/api/games') return send(200, await feed.list(u.searchParams.get('league'), u.searchParams.get('date')));
       send(404, { error: 'not found' });
