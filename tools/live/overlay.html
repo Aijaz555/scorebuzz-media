@@ -275,6 +275,32 @@ function rink(g) {
     ${dots}</svg><div class="h cap">Shots &amp; goals</div>`;
 }
 
+// live tracker: ball at the latest action, fading trail of the previous ones, attack zone shading
+let ballKey = '', ballPos = null;
+function track(g, W, H, hc, ac) {
+  const ev = g.tracker || [];
+  if (!ev.length || g.state !== 'in') return `<text x="${W / 2}" y="${H / 2 + 8}" text-anchor="middle" font-size="22" font-weight="800" letter-spacing="3" fill="#ffffff99" font-family="Inter">${g.state === 'in' ? 'WAITING FOR THE NEXT ACTION' : ''}</text>`;
+  const px = (e) => 14 + e.x / 100 * (W - 28), py = (e) => 14 + e.y / 100 * (H - 28);
+  const last = ev[ev.length - 1], col = last.home ? hc : ac, x = px(last), y = py(last);
+  const zone = last.att >= 67 ? 'DANGEROUS ATTACK' : last.att >= 40 ? 'ATTACK' : 'IN POSSESSION';
+  const zx = last.home ? W * (last.att >= 67 ? 2 / 3 : last.att >= 40 ? 1 / 2 : 0) : 0;
+  const zw = last.home ? W - zx : W * (last.att >= 67 ? 1 / 3 : last.att >= 40 ? 1 / 2 : 1);
+  const trail = ev.slice(0, -1).map((e, i, a) => `<circle cx="${px(e)}" cy="${py(e)}" r="7" fill="${e.home ? hc : ac}" opacity="${0.25 + 0.5 * (i + 1) / a.length}" stroke="#fff" stroke-width="2"/>`).join('');
+  const path = ev.map((e) => `${px(e)},${py(e)}`).join(' ');
+  const moved = ballKey !== last.id; const from = moved && ballPos ? ballPos : { x, y };
+  ballKey = last.id; ballPos = { x, y };
+  const anim = (a, f, t) => from[a] !== t ? `<animate attributeName="${a === 'x' ? 'cx' : 'cy'}" from="${f}" to="${t}" dur="1.2s" fill="freeze" calcMode="spline" keySplines=".2 .8 .3 1" keyTimes="0;1"/>` : '';
+  const lab = `${last.min} · ${last.type.toUpperCase()}${last.who ? ' · ' + last.who.split(' ').pop().toUpperCase() : ''}`;
+  const lw = Math.min(W - 40, 30 + lab.length * 11.5), lx = Math.max(20, Math.min(W - 20 - lw, x - lw / 2)), ly = y < H / 2 ? y + 22 : y - 64;
+  return `<rect x="${zx}" y="0" width="${zw}" height="${H}" fill="${col}" opacity=".16"><animate attributeName="opacity" values=".08;.22;.08" dur="2s" repeatCount="indefinite"/></rect>
+    <text x="${last.home ? W - 24 : 24}" y="${H - 22}" text-anchor="${last.home ? 'end' : 'start'}" font-size="15" font-weight="800" letter-spacing="2" fill="#fff" opacity=".85" font-family="Inter">${zone} ${last.home ? '→' : '←'}</text>
+    <polyline points="${path}" fill="none" stroke="#ffffff55" stroke-width="2" stroke-dasharray="6 6"/>${trail}
+    <circle cx="${x}" cy="${y}" r="14" fill="none" stroke="${col}" stroke-width="4"><animate attributeName="r" values="14;34" dur="1.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.4s" repeatCount="indefinite"/>${anim('x', from.x, x)}${anim('y', from.y, y)}</circle>
+    <circle cx="${x}" cy="${y}" r="11" fill="#fff" stroke="${col}" stroke-width="4">${anim('x', from.x, x)}${anim('y', from.y, y)}</circle>
+    <g><rect x="${lx}" y="${ly}" width="${lw}" height="40" rx="8" fill="#0A0E1Ee6" stroke="${col}" stroke-width="3"/>
+    <text x="${lx + lw / 2}" y="${ly + 27}" text-anchor="middle" font-size="19" font-weight="800" fill="#fff" font-family="Inter">${esc(lab)}</text></g>`;
+}
+
 function pitch(g) {
   const W = 820, H = 240, ac = vivid(g.away), hc = vivid(g.home);
   const sh = (g.stats || []).find((s) => /^shots$/i.test(s.label)), ot = (g.stats || []).find((s) => /target/i.test(s.label));
@@ -282,27 +308,25 @@ function pitch(g) {
   let lastX = { true: -99, false: -99 }, flip = { true: false, false: false };
   const tl = (g.timeline || []).map((e) => {
     const x = Math.min(90, e.min) / 90 * (W - 40) + 20, top = e.team === g.home.abbr;
-    flip[top] = x - lastX[top] < 110 ? !flip[top] : false; lastX[top] = x;
+    flip[top] = x - lastX[top] < 150 ? !flip[top] : false; lastX[top] = x;
     const col = e.kind === 'goal' ? (top ? hc : ac) : e.kind === 'red' ? '#FF2D46' : '#FFD23F';
     return `<g transform="translate(${x} ${top ? 30 : 74})">${e.kind === 'goal' ? `<circle r="13" fill="${col}" stroke="#fff" stroke-width="3"/><text y="5" text-anchor="middle" font-size="14">⚽</text>` : `<rect x="-7" y="-10" width="14" height="20" rx="2" fill="${col}"/>`}
       <text y="${top ? (flip[top] ? 34 : -20) : (flip[top] ? -20 : 32)}" text-anchor="middle" font-size="15" font-weight="800" fill="#fff" font-family="Inter">${e.min}' ${esc(e.who.split(' ').pop())}</text></g>`;
   }).join('');
-  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="filter:drop-shadow(0 30px 40px #000a)">
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="filter:drop-shadow(0 30px 40px #000a);margin-top:34px">
       <defs><linearGradient id="grass" x1="0" x2="1"><stop offset="0" stop-color="#16733A"/><stop offset="1" stop-color="#0F5A2C"/></linearGradient>
       <pattern id="mow" width="80" height="${H}" patternUnits="userSpaceOnUse"><rect width="40" height="${H}" fill="#ffffff0a"/></pattern></defs>
       <rect width="${W}" height="${H}" rx="12" fill="url(#grass)"/><rect width="${W}" height="${H}" fill="url(#mow)"/>
       <g stroke="#ffffff88" stroke-width="3" fill="none"><rect x="10" y="10" width="${W - 20}" height="${H - 20}" rx="4"/><line x1="${W / 2}" y1="10" x2="${W / 2}" y2="${H - 10}"/><circle cx="${W / 2}" cy="${H / 2}" r="46"/>
       <rect x="10" y="${H / 2 - 80}" width="110" height="160"/><rect x="${W - 120}" y="${H / 2 - 80}" width="110" height="160"/>
       <rect x="10" y="${H / 2 - 36}" width="40" height="72"/><rect x="${W - 50}" y="${H / 2 - 36}" width="40" height="72"/></g>
-      <text x="${W / 4}" y="${H / 2 + 22}" text-anchor="middle" font-size="64" font-weight="800" fill="#ffffffcc" font-family="Barlow Condensed,Inter">${poss ? esc(poss.home) : ''}</text>
-      <text x="${W * 3 / 4}" y="${H / 2 + 22}" text-anchor="middle" font-size="64" font-weight="800" fill="#ffffffcc" font-family="Barlow Condensed,Inter">${poss ? esc(poss.away) : ''}</text>
-      ${poss ? `<text x="${W / 2}" y="${H - 26}" text-anchor="middle" font-size="16" font-weight="800" letter-spacing="3" fill="#ffffffaa" font-family="Inter">${ot ? 'SHOTS (ON TARGET)' : 'SHOTS'}</text>` : ''}
+      ${track(g, W, H, hc, ac)}
     </svg>
     <svg width="${W}" height="104" viewBox="0 0 ${W} 110">
       <line x1="20" y1="52" x2="${W - 20}" y2="52" stroke="#ffffff30" stroke-width="4" stroke-linecap="round"/>
       ${g.state === 'in' ? `<line x1="20" y1="52" x2="${Math.min(90, parseInt(g.clock) || 0) / 90 * (W - 40) + 20}" y2="52" stroke="var(--lime)" stroke-width="4" stroke-linecap="round"/>` : ''}
       <text x="20" y="104" font-size="13" fill="#ffffff66" font-family="Inter" font-weight="700">0'</text><text x="${W / 2}" y="104" text-anchor="middle" font-size="13" fill="#ffffff66" font-family="Inter" font-weight="700">HT</text><text x="${W - 20}" y="104" text-anchor="end" font-size="13" fill="#ffffff66" font-family="Inter" font-weight="700">90'</text>
-      ${tl}</svg><div class="h cap">Match timeline</div>`;
+      ${tl}</svg><div class="h cap">Live tracker</div>`;
 }
 
 function diamond(g) {

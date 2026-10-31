@@ -97,6 +97,32 @@ function periodLabel(n, L) {
   return `${L.sport === 'nhl' ? 'P' : 'Q'}${n}`;
 }
 
+// Soccer live tracker: last actions with pitch coordinates from ESPN commentary.
+// fieldPositionX/Y are 0-100 from the acting team's view (attacking towards x=100);
+// we draw home attacking right, so away actions are mirrored.
+function tracker(sum, comp, home, away) {
+  const byName = {};
+  for (const c of comp.competitors || []) {
+    const ab = c.homeAway === 'home' ? home.abbr : away.abbr;
+    for (const n of [c.team?.displayName, c.team?.name, c.team?.shortDisplayName]) if (n) byName[n] = ab;
+  }
+  const out = [];
+  for (const c of sum.commentary || []) {
+    const p = c.play;
+    if (!p || p.fieldPositionX == null || p.fieldPositionY == null) continue;
+    const t = byName[p.team?.displayName] || '';
+    if (!t) continue;
+    const isHome = t === home.abbr;
+    const x = isHome ? p.fieldPositionX : 100 - p.fieldPositionX;
+    const y = isHome ? p.fieldPositionY : 100 - p.fieldPositionY;
+    const who = p.participants?.[0]?.athlete?.displayName || '';
+    out.push({ id: String(p.id || c.sequence), min: c.time?.displayValue || p.clock?.displayValue || '', team: t, home: isHome,
+      x: Math.max(0, Math.min(100, x)), y: Math.max(0, Math.min(100, y)), type: p.type?.text || '', who, att: p.fieldPositionX });
+  }
+  const seen = new Set();
+  return out.filter((e) => !seen.has(e.id) && seen.add(e.id)).slice(-6);
+}
+
 function plays(sum, comp, teamsById, L) {
   let list = [];
   if (L.soccer) {
@@ -300,6 +326,7 @@ async function game(league, eventId) {
     flow: flow(sum),
     field: L.sport === 'nfl' && ev.status?.type?.state === 'in' ? field(sit, home, away, teamsById) : null,
     timeline: L.soccer ? timeline(comp, teamsById) : [],
+    tracker: L.soccer && sum.commentary ? tracker(sum, comp, home, away) : [],
     box: box(sum, L, home, away),
     shots: shots(sum, teamsById, L),
     run: L.soccer ? null : run(sum, home, away),
