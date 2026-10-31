@@ -56,6 +56,13 @@ Target set by the owner: **10–15 Shorts per day + 1 long video per day**. Publ
 - Mix like Facebook (~45% football, ~45% US sports, ~10% UFC/F1). Spread uploads roughly every 1–1.5 h across 11:00–09:30 PKT, never within 30 min of each other.
 - Optional voiceover: set `voice` to an MP3 path. vidIQ voiceover costs 14 credits per 1,000 characters, so it can't cover daily volume on the current plan.
 
+## What gets views (vidIQ research, 31 Oct 2026)
+- Small sports channels break out with: weekly recaps ("Everything you missed from NFL Week X"), "3 biggest takeaways"/instant reactions, college football recaps, comebacks/upsets, records ("one point short of Lemieux"), and list/history Shorts ("Every Premier League winner").
+- Titles: hook first, a number or name, one emoji, then 1–2 hashtags + #shorts (e.g. "McDavid Falls ONE Point Short of Mario Lemieux's Record 😮 #NHL #shorts").
+- Cover every big sport the US/UK audience follows: NFL, college football (Saturdays), NBA, NHL, F1, UFC, Premier League, LaLiga, Serie A, Bundesliga.
+- Publish results within hours, previews 1–3 hours before kick-off; end every Short on a question.
+- Scores for Shorts can come straight from ESPN's scoreboard/summary JSON (site.api.espn.com), which is allowed in this environment.
+
 ## Long video (format "video", 1920x1080)
 - Same generator with `"format": "video"`; 4–8 minutes, e.g. weekend football roundup, NFL week recap, NBA/NHL power rankings. Needs a voiceover to be worth watching.
 
