@@ -73,6 +73,8 @@ Target set by the owner: **15 Shorts per day** (plus 1 long video per day when a
 
 # TikTok (@scorebuzznet, connected in Metricool brand 7677948)
 
+> **PAUSED by the owner on 1 Nov 2026.** TikTok rejected posts as "high spamming risk" and the failures caused error emails. Do not create or schedule TikTok posts until the owner turns this back on. The notes below are kept for reference.
+
 - Post **5 TikToks per day**, the strongest of the day's Shorts (records, upsets, late drama, big previews). New accounts get flagged for spam at high volume.
 - Same MP4 as the Short, but **not at the same time** as YouTube: aim for US evening (7–10pm ET), US lunchtime before NFL/NBA slates, and UK lunchtime/afternoon for football. ET = PKT − 10 in US winter time (PKT − 9 in summer).
 - Caption, written for TikTok: a hook line in caps or with one emoji ("89th minute. Bayern thought they'd won it… then Fábio Silva 😱"), the fact in one line, a question, then 4–5 lowercase hashtags (sport, league, team, player, #football/#sports). No #shorts, no links (they aren't clickable).
