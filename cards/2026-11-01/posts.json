@@ -1,0 +1,379 @@
+[
+ {
+  "id": "01-roma-udinese",
+  "time": "2026-11-01T13:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "SERIE A · SAT OCT 31",
+  "home": "Udinese",
+  "homeAbbr": "UDI",
+  "homeScore": 2,
+  "away": "Roma",
+  "awayAbbr": "ROM",
+  "awayScore": 5,
+  "status": "FULL TIME",
+  "headline": "Four goals in 27 minutes",
+  "sub": "Cristante, Mora, Malen and Ndicka by the 37th minute. Ghilardi added a fifth in stoppage time.",
+  "caption": "🐺 Roma were 4–0 up at Udinese by the 37th minute.\n\nCristante, Mora, Malen and Ndicka did the damage, and Ghilardi made it 5–2 in stoppage time. Roma are third, one point off the top.\n\nCan Roma win the Scudetto this season? 👇\n\n#ASRoma #SerieA #UdineseRoma"
+ },
+ {
+  "id": "02-spurs-palace",
+  "time": "2026-11-01T14:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "PREMIER LEAGUE · SAT OCT 31",
+  "home": "Tottenham",
+  "homeAbbr": "TOT",
+  "homeScore": 2,
+  "away": "Crystal Palace",
+  "awayAbbr": "CRY",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "headline": "Three in a row for Spurs",
+  "sub": "Mateta sent off after 13 minutes. Archie Gray and Jan Paul van Hecke with the headers.",
+  "caption": "⚪ Spurs are on a roll. Three Premier League wins in a row for the first time in 20 months.\n\nPalace lost Jean-Philippe Mateta to a red card after 13 minutes, then Archie Gray and Jan Paul van Hecke headed in.\n\nAre Spurs back? 👇\n\n#COYS #TOTCRY #PremierLeague"
+ },
+ {
+  "id": "03-lazio-top",
+  "time": "2026-11-01T15:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "SERIE A · TODAY",
+  "headline": "Lazio can go three clear",
+  "rows": [
+   [
+    "1",
+    "Lazio",
+    "25"
+   ],
+   [
+    "2",
+    "Inter",
+    "25"
+   ],
+   [
+    "3",
+    "Roma",
+    "24"
+   ],
+   [
+    "4",
+    "AC Milan",
+    "21"
+   ],
+   [
+    "5",
+    "Como",
+    "20"
+   ]
+  ],
+  "sub": "Points. Lazio have a game in hand: Cagliari at home, 14:00 GMT (9am ET).",
+  "caption": "🦅 Lazio sit top of Serie A on goal difference, and they have a game in hand.\n\nBeat Cagliari today (14:00 GMT, 9am ET) and they go three points clear of Inter.\n\nDo Lazio stay top all season? 👇\n\n#Lazio #SerieA #LazioCagliari"
+ },
+ {
+  "id": "04-real-racing",
+  "time": "2026-11-01T16:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "LALIGA · TODAY 15:15 GMT",
+  "headline": "Real Madrid have to respond",
+  "rows": [
+   [
+    "1",
+    "Barcelona",
+    "30"
+   ],
+   [
+    "2",
+    "Atlético",
+    "28"
+   ],
+   [
+    "3",
+    "Real Madrid",
+    "24"
+   ]
+  ],
+  "sub": "Real (10 games) visit Racing Santander today. Barça and Atlético both won on Saturday.",
+  "caption": "⚪ Barcelona scored six and Atlético won at Levante on Saturday. That leaves Real Madrid six points off the top.\n\nReal have a game in hand, at Racing Santander today, 15:15 GMT (10:15am ET).\n\nCan Madrid still win LaLiga? 👇\n\n#RealMadrid #LaLiga #HalaMadrid"
+ },
+ {
+  "id": "05-stuttgart",
+  "time": "2026-11-01T17:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "BUNDESLIGA · SAT OCT 31",
+  "home": "Leverkusen",
+  "homeAbbr": "B04",
+  "homeScore": 2,
+  "away": "Stuttgart",
+  "awayAbbr": "VFB",
+  "awayScore": 4,
+  "status": "FULL TIME",
+  "headline": "Stuttgart run riot in Leverkusen",
+  "sub": "Ermedin Demirović scored twice. Leweling and El Khannouss also on target.",
+  "caption": "🔴 Four away goals at the BayArena.\n\nErmedin Demirović scored twice, with Jamie Leweling and Bilal El Khannouss also on target, as Stuttgart won 4–2 at Leverkusen.\n\nBest away performance of the weekend? 👇\n\n#VfB #Bundesliga #B04VFB"
+ },
+ {
+  "id": "06-juve-napoli",
+  "time": "2026-11-01T18:00:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "SERIE A · TONIGHT 19:45 GMT",
+  "headline": "Juventus v Napoli: level on 14 points",
+  "sub": "7th v 8th in Turin. 2:45pm ET. Both sides are 11 points behind leaders Lazio.",
+  "caption": "⚫⚪ Juventus v Napoli tonight in Turin, 19:45 GMT (2:45pm ET).\n\nBoth teams have 14 points from nine games and sit 11 behind the leaders. The loser could be out of the title race already.\n\nJuve or Napoli? 👇\n\n#JuveNapoli #SerieA #Juventus #Napoli"
+ },
+ {
+  "id": "07-klassiker",
+  "time": "2026-11-01T19:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "BUNDESLIGA · DER KLASSIKER",
+  "home": "Bayern",
+  "homeAbbr": "FCB",
+  "homeScore": 2,
+  "away": "Dortmund",
+  "awayAbbr": "BVB",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "headline": "89th-minute twist in Munich",
+  "sub": "Fábio Silva's late goal keeps Dortmund level with Bayern on 18 points.",
+  "caption": "😱 Bayern thought they'd won Der Klassiker. Then Fábio Silva struck in the 89th minute.\n\nBayern 2–2 Dortmund, and the top two are still level on 18 points.\n\nWho finishes top of the Bundesliga? 👇\n\n#Klassiker #FCBBVB #Bundesliga"
+ },
+ {
+  "id": "08-usc-ohio-state",
+  "time": "2026-11-01T20:00:00",
+  "sport": "nfl",
+  "kind": "score",
+  "label": "COLLEGE FOOTBALL · SAT OCT 31",
+  "home": "USC",
+  "homeAbbr": "USC",
+  "homeScore": 30,
+  "away": "No. 2 Ohio State",
+  "awayAbbr": "OSU",
+  "awayScore": 18,
+  "status": "FINAL",
+  "headline": "USC stun No. 2 Ohio State",
+  "sub": "Jayden Maiava 222 yards and a TD. Freshman Trent Mosley 101 receiving yards.",
+  "caption": "🚨 Upset of the night. USC beat No. 2 Ohio State 30–18.\n\nJayden Maiava threw for 222 yards and a touchdown, and freshman Trent Mosley had 101 receiving yards. It's the biggest win of Lincoln Riley's time at USC.\n\nDoes Ohio State still make the Playoff? 👇\n\n#CFB #FightOn #GoBucks #CollegeFootball",
+  "tagText": "CFB"
+ },
+ {
+  "id": "09-nfl-1pm",
+  "time": "2026-11-01T21:00:00",
+  "sport": "nfl",
+  "kind": "list",
+  "label": "NFL WEEK 8 · 1PM ET",
+  "headline": "The early kickoffs",
+  "rows": [
+   [
+    "Ravens 4-3",
+    "@",
+    "Bills 5-1"
+   ],
+   [
+    "Vikings 6-0",
+    "@",
+    "Lions 4-2"
+   ],
+   [
+    "Browns 5-2",
+    "@",
+    "Steelers 5-2"
+   ],
+   [
+    "Colts 2-5",
+    "@",
+    "Jaguars 4-2"
+   ],
+   [
+    "Titans 1-6",
+    "@",
+    "Bengals 4-2"
+   ]
+  ],
+  "sub": "Plus Cardinals-Cowboys, Raiders-Jets and Falcons-Bucs. 18:00 GMT.",
+  "caption": "🏈 Eight games at 1pm ET (18:00 GMT), led by unbeaten Minnesota in Detroit and Baltimore in Buffalo.\n\nWhich one are you watching? 👇\n\n#NFL #NFLSunday #Week8"
+ },
+ {
+  "id": "10-canes-jets",
+  "time": "2026-11-01T22:00:00",
+  "sport": "nhl",
+  "kind": "headline",
+  "label": "NHL · TODAY 1PM ET",
+  "headline": "Hurricanes (11-2-2) host the struggling Jets",
+  "sub": "Winnipeg have lost eight in a row. Puck drop 1pm ET / 18:00 GMT.",
+  "caption": "🌀 Carolina are 11-2-2. Winnipeg have lost eight straight.\n\nThe Jets visit Raleigh at 1pm ET today.\n\nDo the Jets finally snap the skid? 👇\n\n#NHL #LetsGoCanes #GoJetsGo"
+ },
+ {
+  "id": "11-f1-race",
+  "time": "2026-11-01T23:00:00",
+  "sport": "racing",
+  "kind": "headline",
+  "label": "F1 · MEXICO CITY GP · 20:00 GMT",
+  "headline": "Hamilton on pole. Antonelli on the brink.",
+  "sub": "Kimi Antonelli (P4) is champion with P9 or better if Hamilton or Russell wins. If neither wins, the title is his. 3pm ET.",
+  "caption": "🏁 Lewis Hamilton starts from pole in Mexico City, his first pole for Ferrari.\n\nKimi Antonelli starts fourth and can become F1's youngest ever world champion today. Lights out 20:00 GMT (3pm ET).\n\nDoes Antonelli seal it today? 👇\n\n#F1 #MexicoGP #Hamilton #Antonelli"
+ },
+ {
+  "id": "12-wemby-43",
+  "time": "2026-11-02T00:00:00",
+  "sport": "nba",
+  "kind": "headline",
+  "label": "NBA · SAT OCT 31",
+  "headline": "Wemby: 43 points, 6 blocks",
+  "stat": [
+   "43",
+   "points in a 121–111 win over Minnesota"
+  ],
+  "sub": "Spurs have won four straight.",
+  "caption": "👽 Victor Wembanyama went for 43 points, 7 rebounds and 6 blocks as San Antonio beat Minnesota 121–111.\n\nThat's four wins in a row for the Spurs.\n\nIs Wemby the MVP favourite already? 👇\n\n#PorVida #Wembanyama #NBA"
+ },
+ {
+  "id": "13-chargers-rams",
+  "time": "2026-11-02T01:00:00",
+  "sport": "nfl",
+  "kind": "headline",
+  "label": "NFL · TODAY 4:05PM ET",
+  "headline": "The 0-6 Chargers try again",
+  "sub": "The battle of LA: Chargers at Rams (3-4), 4:05pm ET on Fox (21:05 GMT).",
+  "caption": "⚡ Six games, six losses. The Chargers are still looking for their first win.\n\nNext up: the Rams (3-4) at 4:05pm ET on Fox.\n\nIs today the day? 👇\n\n#NFL #BoltUp #RamsHouse"
+ },
+ {
+  "id": "14-iowa-state",
+  "time": "2026-11-02T02:00:00",
+  "sport": "nfl",
+  "kind": "score",
+  "label": "COLLEGE FOOTBALL · SAT OCT 31",
+  "home": "Iowa State",
+  "homeAbbr": "ISU",
+  "homeScore": 51,
+  "away": "No. 24 Oklahoma State",
+  "awayAbbr": "OKST",
+  "awayScore": 49,
+  "status": "FINAL",
+  "headline": "Walk-off field goal in a 100-point game",
+  "sub": "Kyle Konrardy hit from 34 yards as time expired. Aiden Flora ran for 221 yards.",
+  "caption": "🎯 51–49. Kyle Konrardy drilled a 34-yard field goal as time expired and Iowa State beat No. 24 Oklahoma State.\n\nAiden Flora ran for 221 yards in a 100-point shootout.\n\nWildest finish of the weekend? 👇\n\n#CFB #Cyclones #CollegeFootball",
+  "tagText": "CFB"
+ },
+ {
+  "id": "15-ufc-nolan",
+  "time": "2026-11-02T03:00:00",
+  "sport": "mma",
+  "kind": "headline",
+  "label": "UFC VEGAS 123 · RESULT",
+  "headline": "Tom Nolan stops Renato Moicano",
+  "sub": "Round 3 TKO at 1:28. Nolan is now 12-1 with six straight UFC wins.",
+  "caption": "🥊 Tom Nolan survived two tough rounds on the mat, then finished Renato Moicano with ground strikes in round three.\n\nIt's six straight UFC wins for Nolan, now 12-1.\n\nWho should he fight next? 👇\n\n#UFC #UFCVegas123 #MMA"
+ },
+ {
+  "id": "16-grizzlies-6-0",
+  "time": "2026-11-02T04:00:00",
+  "sport": "nba",
+  "kind": "score",
+  "label": "NBA · SAT OCT 31",
+  "home": "Grizzlies",
+  "homeAbbr": "MEM",
+  "homeScore": 136,
+  "away": "Kings",
+  "awayAbbr": "SAC",
+  "awayScore": 105,
+  "status": "FINAL",
+  "headline": "6-0. Memphis are the last unbeaten team",
+  "sub": "Rookie Cameron Boozer 27 points and 9 rebounds. Isaiah Stewart 24.",
+  "caption": "🐻 Still perfect. Memphis beat Sacramento 136–105 to go 6-0.\n\nRookie Cameron Boozer had 27 points and Isaiah Stewart added 24. The Grizzlies are the NBA's only unbeaten team.\n\nHow far can this run go? 👇\n\n#GrzNxtGen #NBA #Grizzlies"
+ },
+ {
+  "id": "17-nba-tonight",
+  "time": "2026-11-02T05:00:00",
+  "sport": "nba",
+  "kind": "list",
+  "label": "NBA · TONIGHT",
+  "headline": "Sunday night hoops",
+  "rows": [
+   [
+    "Clippers 1-4",
+    "@",
+    "Warriors 3-3"
+   ],
+   [
+    "Raptors 3-2",
+    "@",
+    "Lakers 4-2"
+   ]
+  ],
+  "sub": "Clippers-Warriors 8:30pm ET. Raptors-Lakers 9pm ET.",
+  "caption": "🏀 Two late games tonight: Clippers at Warriors (8:30pm ET) and Raptors at Lakers (9pm ET).\n\nWho are you backing? 👇\n\n#NBA #DubNation #LakeShow"
+ },
+ {
+  "id": "18-lewandowski-fire",
+  "time": "2026-11-02T06:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "MLS · SAT OCT 31",
+  "home": "Colorado",
+  "homeAbbr": "COL",
+  "homeScore": 2,
+  "away": "Chicago Fire",
+  "awayAbbr": "CHI",
+  "awayScore": 4,
+  "status": "FULL TIME",
+  "headline": "Lewandowski on target as Chicago win",
+  "sub": "Jonathan Bamba scored twice. The Fire are fourth in the East with 55 points.",
+  "caption": "🔥 Robert Lewandowski scored the go-ahead goal as Chicago won 4–2 in Colorado.\n\nJonathan Bamba got two and Puso Dithejane added a late fourth. The Fire sit fourth in the East.\n\nCan Chicago make a playoff run? 👇\n\n#MLS #CF97 #Lewandowski"
+ },
+ {
+  "id": "19-habs-five",
+  "time": "2026-11-02T07:00:00",
+  "sport": "nhl",
+  "kind": "score",
+  "label": "NHL · SAT OCT 31",
+  "home": "Canadiens",
+  "homeAbbr": "MTL",
+  "homeScore": 5,
+  "away": "Penguins",
+  "awayAbbr": "PIT",
+  "awayScore": 4,
+  "status": "FINAL",
+  "headline": "Five straight for Montreal",
+  "sub": "Josh Anderson two goals and an assist. Sidney Crosby had three points for Pittsburgh.",
+  "caption": "🔵⚪🔴 Five in a row for the Canadiens.\n\nJosh Anderson scored twice as Montreal edged Pittsburgh 5–4, despite three points from Sidney Crosby.\n\nAre the Habs for real this year? 👇\n\n#GoHabsGo #NHL #LetsGoPens"
+ },
+ {
+  "id": "20-miami-unc",
+  "time": "2026-11-02T08:00:00",
+  "sport": "nfl",
+  "kind": "score",
+  "label": "COLLEGE FOOTBALL · SAT OCT 31",
+  "home": "North Carolina",
+  "homeAbbr": "UNC",
+  "homeScore": 35,
+  "away": "No. 1 Miami",
+  "awayAbbr": "MIA",
+  "awayScore": 38,
+  "status": "FINAL",
+  "headline": "No. 1 Miami survive a scare",
+  "sub": "Mark Fletcher Jr. scored on fourth down with 7:49 left. Miami are 8-0.",
+  "caption": "🙃 No. 1 Miami nearly slipped up. North Carolina pushed them all the way before the Hurricanes won 38–35.\n\nMark Fletcher Jr.'s fourth-down touchdown with 7:49 left was the difference. Miami stay perfect at 8-0.\n\nStill the best team in the country? 👇\n\n#CFB #GoCanes #CollegeFootball",
+  "tagText": "CFB"
+ },
+ {
+  "id": "21-stamkos",
+  "time": "2026-11-02T09:00:00",
+  "sport": "nhl",
+  "kind": "score",
+  "label": "NHL · SAT OCT 31",
+  "home": "Predators",
+  "homeAbbr": "NSH",
+  "homeScore": 5,
+  "away": "Lightning",
+  "awayAbbr": "TBL",
+  "awayScore": 4,
+  "status": "FINAL / SO",
+  "headline": "Stamkos beats his old team",
+  "sub": "The tying goal in regulation and the only goal of the shootout.",
+  "caption": "🎯 Steven Stamkos against Tampa Bay, again.\n\nHe scored the tying goal in regulation and the only goal of the shootout as Nashville beat the Lightning 5–4.\n\nStamkos' best moment in Nashville so far? 👇\n\n#NHL #Smashville #GoBolts"
+ }
+]

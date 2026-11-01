@@ -684,5 +684,317 @@
     "title": "Best game of the day?"
    }
   ]
+ },
+ {
+  "id": "n11-usc-upset",
+  "sport": "nfl",
+  "tagText": "COLLEGE FOOTBALL",
+  "time": "2026-11-02T00:45:00",
+  "title": "USC STUN No. 2 Ohio State! 30–18 🚨 #CFB #shorts",
+  "description": "USC beat No. 2 Ohio State 30–18. Jayden Maiava threw for 222 yards and a touchdown and freshman Trent Mosley had 101 receiving yards.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#CFB #USC #OhioState #CollegeFootball",
+  "tags": [
+   "usc vs ohio state",
+   "usc upset",
+   "ohio state",
+   "college football",
+   "cfb upsets",
+   "jayden maiava",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.3,
+    "kicker": "College football · Saturday night",
+    "title": "No. 2 is DOWN",
+    "sub": "Ohio State upset"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Final",
+    "home": "USC",
+    "homeAbbr": "USC",
+    "homeScore": 30,
+    "away": "No. 2 Ohio State",
+    "awayAbbr": "OSU",
+    "awayScore": 18,
+    "status": "FINAL"
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "USC stars",
+    "title": "How they did it",
+    "rows": [
+     [
+      "QB",
+      "Jayden Maiava",
+      "222 yds, 1 TD"
+     ],
+     [
+      "WR",
+      "Trent Mosley",
+      "5 rec, 101 yds"
+     ],
+     [
+      "RB",
+      "King Miller",
+      "78 yds, 1 TD"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Lincoln Riley",
+    "title": "His biggest win at USC",
+    "sub": "Ohio State fall to 6-2"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Do the Buckeyes still make the Playoff?"
+   }
+  ]
+ },
+ {
+  "id": "n12-wemby-43",
+  "sport": "nba",
+  "tagText": "NBA",
+  "time": "2026-11-02T02:45:00",
+  "title": "Wemby Drops 43 With 6 Blocks 👽 #NBA #shorts",
+  "description": "Victor Wembanyama scored 43 points with 7 rebounds and 6 blocks as the Spurs beat the Timberwolves 121–111 for their fourth straight win.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Wembanyama #Spurs #NBA",
+  "tags": [
+   "wembanyama",
+   "victor wembanyama 43 points",
+   "spurs",
+   "timberwolves",
+   "nba",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA · Saturday",
+    "title": "Wemby went OFF",
+    "sub": "Spurs vs Timberwolves"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Victor Wembanyama",
+    "value": 43,
+    "unit": "points",
+    "text": "in a 121–111 win over Minnesota"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "Wemby's line",
+    "title": "Full stat line",
+    "rows": [
+     [
+      "43",
+      "Points",
+      ""
+     ],
+     [
+      "7",
+      "Rebounds",
+      ""
+     ],
+     [
+      "6",
+      "Blocks",
+      ""
+     ],
+     [
+      "4",
+      "Assists",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 2.8,
+    "label": "Spurs",
+    "title": "Four wins in a row",
+    "sub": "San Antonio are 4-2"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is Wemby the MVP favourite?"
+   }
+  ]
+ },
+ {
+  "id": "n13-roma-blitz",
+  "sport": "football",
+  "tagText": "SERIE A",
+  "time": "2026-11-02T04:45:00",
+  "title": "4 Goals in 27 Minutes! Roma Smash Udinese 5–2 🐺 #shorts",
+  "description": "Roma were 4–0 up at Udinese by the 37th minute through Bryan Cristante, Rodrigo Mora, Donyell Malen and Evan Ndicka, and won 5–2. They are third in Serie A, a point off the top.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#ASRoma #SerieA #Football",
+  "tags": [
+   "udinese vs roma",
+   "roma",
+   "serie a",
+   "roma 5-2",
+   "malen",
+   "serie a results",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Serie A · Saturday",
+    "title": "4–0 in 37 minutes",
+    "sub": "Roma in a hurry"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Roma's blitz",
+    "title": "10th to 37th minute",
+    "rows": [
+     [
+      "10'",
+      "Cristante",
+      "1–0"
+     ],
+     [
+      "31'",
+      "Mora",
+      "2–0"
+     ],
+     [
+      "33'",
+      "Malen",
+      "3–0"
+     ],
+     [
+      "37'",
+      "Ndicka",
+      "4–0"
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Full time",
+    "home": "Udinese",
+    "homeAbbr": "UDI",
+    "homeScore": 2,
+    "away": "Roma",
+    "awayAbbr": "ROM",
+    "awayScore": 5,
+    "status": "FULL TIME"
+   },
+   {
+    "type": "table",
+    "dur": 4.0,
+    "label": "Serie A top 4",
+    "cols": [
+     "P",
+     "PTS"
+    ],
+    "rows": [
+     [
+      "1",
+      "Lazio",
+      "9",
+      "25"
+     ],
+     [
+      "2",
+      "Inter",
+      "10",
+      "25"
+     ],
+     [
+      "3",
+      "Roma",
+      "10",
+      "24"
+     ],
+     [
+      "4",
+      "AC Milan",
+      "10",
+      "21"
+     ]
+    ],
+    "highlight": [
+     "3"
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Roma win the Scudetto?"
+   }
+  ]
+ },
+ {
+  "id": "n14-isu-walkoff",
+  "sport": "nfl",
+  "tagText": "COLLEGE FOOTBALL",
+  "time": "2026-11-02T06:45:00",
+  "title": "Walk-Off FG Ends a 100-Point Thriller 😱 #CFB #shorts",
+  "description": "Kyle Konrardy kicked a 34-yard field goal as time expired and Iowa State beat No. 24 Oklahoma State 51–49. Aiden Flora ran for 221 yards.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#CFB #IowaState #CollegeFootball",
+  "tags": [
+   "iowa state vs oklahoma state",
+   "walk off field goal",
+   "iowa state",
+   "college football",
+   "cfb",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.3,
+    "kicker": "College football · Saturday",
+    "title": "0:00 on the clock",
+    "sub": "34 yards to win it"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Final 3 minutes",
+    "title": "FG, TD, then the kick",
+    "sub": "Oklahoma State scored with 53 seconds left to lead 49–48"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Final",
+    "home": "Iowa State",
+    "homeAbbr": "ISU",
+    "homeScore": 51,
+    "away": "No. 24 Oklahoma State",
+    "awayAbbr": "OKST",
+    "awayScore": 49,
+    "status": "FINAL"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Aiden Flora",
+    "value": 221,
+    "unit": "rushing yards",
+    "text": "for Iowa State"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Wildest finish of the weekend?"
+   }
+  ]
  }
 ]
