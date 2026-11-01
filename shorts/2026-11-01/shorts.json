@@ -996,5 +996,122 @@
     "title": "Wildest finish of the weekend?"
    }
   ]
+ },
+ {
+  "id": "n15-cfb-board",
+  "sport": "nfl",
+  "tagText": "COLLEGE FOOTBALL",
+  "time": "2026-11-02T06:45:00",
+  "title": "College Football Top 25 Results: No. 2 Ohio State FALLS 😱 #CFB #shorts",
+  "description": "Saturday's results for the top-ranked teams: USC beat No. 2 Ohio State 30–18, No. 1 Miami survived North Carolina 38–35, No. 3 Georgia beat No. 17 Florida 27–8 and No. 4 Indiana beat Minnesota in overtime.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#CFB #CollegeFootball #OhioState #USC",
+  "tags": [
+   "college football scores",
+   "cfb results",
+   "top 25 results",
+   "usc vs ohio state",
+   "miami vs unc",
+   "college football",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 19.2,
+    "kicker": "College football · Saturday",
+    "title": "Top 25 results",
+    "badge": "Full time",
+    "first": 1.0,
+    "step": 1.7,
+    "rows": [
+     {
+      "home": "UNC",
+      "homeAbbr": "UNC",
+      "hs": 35,
+      "away": "#1 Miami",
+      "awayAbbr": "MIA",
+      "as": 38
+     },
+     {
+      "home": "USC",
+      "homeAbbr": "USC",
+      "hs": 30,
+      "away": "#2 Ohio St",
+      "awayAbbr": "OSU",
+      "as": 18
+     },
+     {
+      "home": "#3 Georgia",
+      "homeAbbr": "UGA",
+      "hs": 27,
+      "away": "#17 Florida",
+      "awayAbbr": "FLA",
+      "as": 8
+     },
+     {
+      "home": "#4 Indiana",
+      "homeAbbr": "IU",
+      "hs": 23,
+      "away": "Minnesota",
+      "awayAbbr": "MIN",
+      "as": 16,
+      "note": "OT"
+     },
+     {
+      "home": "Navy",
+      "homeAbbr": "NAVY",
+      "hs": 13,
+      "away": "#5 Notre Dame",
+      "awayAbbr": "ND",
+      "as": 35
+     },
+     {
+      "home": "#6 Utah",
+      "homeAbbr": "UTAH",
+      "hs": 49,
+      "away": "Cincinnati",
+      "awayAbbr": "CIN",
+      "as": 25
+     },
+     {
+      "home": "#7 UCLA",
+      "homeAbbr": "UCLA",
+      "hs": 27,
+      "away": "Nevada",
+      "awayAbbr": "NEV",
+      "as": 0
+     },
+     {
+      "home": "#8 BYU",
+      "homeAbbr": "BYU",
+      "hs": 27,
+      "away": "Arizona St",
+      "awayAbbr": "ASU",
+      "as": 20
+     },
+     {
+      "home": "#11 Texas",
+      "homeAbbr": "TEX",
+      "hs": 31,
+      "away": "Miss. State",
+      "awayAbbr": "MSST",
+      "as": 3
+     },
+     {
+      "home": "#12 Ole Miss",
+      "homeAbbr": "MISS",
+      "hs": 45,
+      "away": "Auburn",
+      "awayAbbr": "AUB",
+      "as": 15
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Biggest result of the day?",
+    "sub": "Tell us in the comments"
+   }
+  ]
  }
 ]

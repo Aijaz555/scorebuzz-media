@@ -15,6 +15,12 @@
 //   stat:  { label, value, unit, text }                   value counts up if numeric
 //   text:  { label, title, sub }
 //   outro: { title, sub }                                 "Follow" / scorebuzz.net call to action
+//   board: { kicker, title, badge, rows: [{ home, homeAbbr, hs, away, awayAbbr, as, note }], first, step }
+//          Results board (fixture list on a white card). Each score drops in with a bounce and a pop
+//          sound, home then away, one fixture every `step` s (default 1.8) starting at `first` (default 1.0).
+//          Set dur >= first + rows*step + ~1.0 so the full board holds before the next scene.
+//   cta:   { title, sub }                                 Like / Comment / Share end card
+// Pop sound-effect times are written to <id>.sfx.json; tools/add_music.sh mixes them in.
 // Original graphics only: no logos, photos or match footage.
 const fs = require('fs');
 const path = require('path');
@@ -70,6 +76,27 @@ function scene(sc) {
       const num = /^-?\d+(\.\d+)?$/.test(String(sc.value));
       return `${sc.label ? a(0, 'label', esc(sc.label)) : ''}${a(0.2, 'big', `<b ${num ? `data-count="${sc.value}"` : ''}>${num ? 0 : esc(sc.value)}</b>${sc.unit ? `<span>${esc(sc.unit)}</span>` : ''}`)}${sc.text ? a(0.8, 'title', esc(sc.text)) : ''}`;
     }
+    case 'board': {
+      const first = sc.first ?? 1.0, step = sc.step ?? 1.8;
+      const badge = (n, ab) => `<div class="bb">${esc(ab || initials(n))}</div>`;
+      const rows = sc.rows.map((r, i) => {
+        const at = first + i * step;
+        const hw = Number(r.hs) > Number(r.as), aw = Number(r.as) > Number(r.hs);
+        return `<div class="br">
+          <div class="bt h ${aw ? 'lose' : ''}"><span class="bn">${esc(r.home)}</span>${badge(r.home, r.homeAbbr)}</div>
+          <div class="bx"><b class="pop" data-at="${at}">${esc(r.hs)}</b></div>
+          <div class="bx"><b class="pop" data-at="${at + 0.35}">${esc(r.as)}</b></div>
+          <div class="bt ${hw ? 'lose' : ''}">${badge(r.away, r.awayAbbr)}<span class="bn">${esc(r.away)}</span></div>
+          ${r.note ? `<div class="bnote pop2" data-at="${at + 0.6}">${esc(r.note)}</div>` : ''}
+        </div>`;
+      }).join('');
+      return `<div class="bhead">${a(0, 'bk', esc(sc.kicker || ''))}${a(0.1, 'btitle', esc(sc.title || ''))}${sc.badge ? a(0.25, 'bbadge', esc(sc.badge)) : ''}</div>
+        ${a(0.3, 'bcard n' + Math.min(12, sc.rows.length), rows)}`;
+    }
+    case 'cta':
+      return `${a(0, 'ctat', esc(sc.title || 'What did you make of these results?'))}
+        <div class="ctab">${a(0.25, 'cb like', '♥<span>LIKE</span>')}${a(0.4, 'cb com', '💬<span>COMMENT</span>')}${a(0.55, 'cb shr', '↗<span>SHARE</span>')}</div>
+        ${a(0.8, 'url', 'scorebuzz.net')}${sc.sub ? a(1.0, 'sub c', esc(sc.sub)) : ''}`;
     case 'outro':
       return `${a(0, 'title c', esc(sc.title || 'Live scores, tables & results'))}${a(0.3, 'url', 'scorebuzz.net')}${a(0.7, 'sub c', esc(sc.sub || 'Follow ScoreBuzz for daily updates'))}`;
     default:
@@ -82,12 +109,17 @@ function html(v) {
   const wide = v.format === 'video';
   const W = wide ? 1920 : 1080, H = wide ? 1080 : 1920;
   let t = 0;
+  const pops = [];
   const scenes = v.scenes.map((sc) => {
+    if (sc.type === 'board') {
+      const first = sc.first ?? 1.0, step = sc.step ?? 1.8;
+      sc.rows.forEach((r, i) => { pops.push(+(t + first + i * step).toFixed(3), +(t + first + i * step + 0.35).toFixed(3)); });
+    }
     const out = `<section class="scene t-${sc.type}" data-start="${t}" data-dur="${sc.dur}">${scene(sc)}</section>`;
     t += sc.dur;
     return out;
   }).join('');
-  return { total: t, W, H, page: `<!doctype html><html><head><meta charset="utf-8"><style>
+  return { total: t, W, H, pops, page: `<!doctype html><html><head><meta charset="utf-8"><style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{width:${W}px;height:${H}px;font-family:Inter,sans-serif;color:#F3F5FB;background:#0A0E1E;overflow:hidden;position:relative}
   #glow{position:absolute;inset:-20%;background:radial-gradient(ellipse at 80% 15%,${s.color}38,transparent 50%),radial-gradient(ellipse at 10% 90%,#3D7BFF2e,transparent 50%)}
@@ -124,6 +156,33 @@ function html(v) {
   .row{display:grid;grid-template-columns:1fr auto 1fr;gap:22px;align-items:center;padding:34px 30px;font-size:44px;font-weight:700;border-top:2px solid #232B50}
   .row:first-child{border-top:none}.row .l{text-align:right}.row .m{font-weight:800;color:${s.color};min-width:200px;text-align:center}
   .big{display:flex;align-items:baseline;gap:24px;flex-wrap:wrap}.big b{font-size:${wide ? 260 : 300}px;font-weight:800;color:${s.color};letter-spacing:-8px;line-height:1}.big span{font-size:56px;font-weight:700;color:#C3CAE3}
+  .t-board{justify-content:flex-start;gap:26px;top:230px;bottom:250px}
+  .bhead{text-align:center}
+  .bk{font-size:40px;font-weight:800;letter-spacing:4px;color:#FFD23F;text-transform:uppercase}
+  .btitle{font-size:76px;font-weight:900;letter-spacing:-1px;line-height:1.05;text-transform:uppercase}
+  .bbadge{display:inline-block;margin-top:14px;background:#FFD23F;color:#0A0E1E;font-size:34px;font-weight:900;letter-spacing:3px;padding:8px 28px;border-radius:12px;text-transform:uppercase}
+  .bcard{flex:1;display:flex;flex-direction:column;justify-content:space-evenly;background:#fff;border-radius:34px;padding:10px 22px;box-shadow:0 30px 80px #0008;color:#0A0E1E}
+  .br{display:grid;grid-template-columns:1fr 104px 104px 1fr;gap:12px;align-items:center;padding:14px 0 20px;border-top:2px solid #E6E9F2;position:relative}
+  .br:first-child{border-top:none}
+  .bt{display:flex;align-items:center;gap:14px;font-size:36px;font-weight:800;line-height:1.05;min-width:0}
+  .bt.h{justify-content:flex-end;text-align:right}
+  .bt.lose{color:#8A92AD}
+  .bn{overflow:hidden}
+  .bb{flex:none;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font-size:20px;font-weight:900;color:#fff;background:#13205A;border:4px solid ${s.color}}
+  .bx{height:96px;border-radius:18px;background:#0B1B4F;display:grid;place-items:center;box-shadow:inset 0 -6px 0 #06102f}
+  .bx b{display:block;font-size:76px;font-weight:900;line-height:1;opacity:0;background:linear-gradient(180deg,#FFE27A 0%,#FFB800 45%,#FF3B3B 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 5px 0 #7a1010)}
+  .bnote{position:absolute;left:0;right:0;bottom:-4px;text-align:center;font-size:22px;letter-spacing:2px;font-weight:700;color:#5A6390;opacity:0}
+  .bcard.n9 .br,.bcard.n10 .br,.bcard.n11 .br,.bcard.n12 .br{padding:8px 0 16px}
+  .bcard.n9 .bx,.bcard.n10 .bx,.bcard.n11 .bx,.bcard.n12 .bx{height:80px}
+  .bcard.n9 .bx b,.bcard.n10 .bx b,.bcard.n11 .bx b,.bcard.n12 .bx b{font-size:62px}
+  .bcard.n9 .bt,.bcard.n10 .bt,.bcard.n11 .bt,.bcard.n12 .bt{font-size:33px}
+  .bcard.n9 .bb,.bcard.n10 .bb,.bcard.n11 .bb,.bcard.n12 .bb{width:52px;height:52px;font-size:17px}
+  .t-cta{align-items:center;text-align:center}
+  .ctat{font-size:88px;font-weight:900;line-height:1.05;letter-spacing:-2px;text-transform:uppercase;text-align:center}
+  .ctab{display:flex;gap:34px;justify-content:center}
+  .cb{width:240px;height:240px;border-radius:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font-size:96px;font-weight:900;border:6px solid #0A0E1E;box-shadow:0 12px 0 #0A0E1E}
+  .cb span{font-size:32px;letter-spacing:2px;color:#0A0E1E}
+  .cb.like{background:#FF5C8A;color:#fff}.cb.com{background:#FFD23F}.cb.shr{background:#4FD8FF;color:#0A0E1E}
   .url{font-size:${wide ? 110 : 120}px;font-weight:800;color:#BEFF3C;letter-spacing:-3px;text-align:center}
   </style></head><body><div id="glow"></div><div id="grid"></div><div id="bar"></div>
   <header><div class="logo">Score<b>Buzz</b></div><div class="tag">${s.emoji} ${esc(v.tagText || s.tag)}</div></header>
@@ -139,6 +198,13 @@ function html(v) {
       const st=+sc.dataset.start,du=+sc.dataset.dur,l=t-st;
       const vis=l<0||l>=du?0:Math.min(1,l/0.25,(du-l)/0.25);
       sc.style.opacity=vis; if(!vis) continue;
+      for(const el of sc.querySelectorAll('.pop,.pop2')){
+        const x=(l-(+el.dataset.at))/0.42;
+        if(x<0){el.style.opacity=0;continue;}
+        const k=Math.min(1,x), c1=1.9, c3=c1+1, back=1+c3*Math.pow(k-1,3)+c1*Math.pow(k-1,2);
+        el.style.opacity=Math.min(1,x*3);
+        if(el.classList.contains('pop')) el.style.transform='scale('+(3.2-2.2*back)+') rotate('+((1-k)*-14)+'deg)';
+      }
       for(const el of sc.querySelectorAll('.a')){
         const p=ease((l-(+el.dataset.at))/0.45);
         el.style.opacity=p; el.style.transform='translateY('+((1-p)*50)+'px)';
@@ -153,7 +219,9 @@ function html(v) {
 }
 
 async function render(browser, v, outDir) {
-  const { page: doc, total, W, H } = html(v);
+  const { page: doc, total, W, H, pops } = html(v);
+  const sfx = path.join(outDir, `${v.id}.sfx.json`);
+  if (pops.length) fs.writeFileSync(sfx, JSON.stringify(pops)); else if (fs.existsSync(sfx)) fs.unlinkSync(sfx);
   const page = await browser.newPage({ viewport: { width: W, height: H } });
   await page.setContent(doc, { waitUntil: 'load' });
   const out = path.join(outDir, `${v.id}.mp4`);
@@ -172,7 +240,9 @@ async function render(browser, v, outDir) {
   ff.stdin.end();
   await new Promise((res, rej) => ff.on('close', (c) => (c ? rej(new Error(`ffmpeg exit ${c}`)) : res())));
   // thumbnail: the frame 0.6s before the end of the first non-hook scene, or mid-video
-  const thumbT = Math.min(total - 0.1, (v.scenes[0].dur || 2) + (v.scenes[1]?.dur || 2) - 0.6);
+  let thumbT = Math.min(total - 0.1, (v.scenes[0].dur || 2) + (v.scenes[1]?.dur || 2) - 0.6);
+  let acc = 0;
+  for (const sc of v.scenes) { if (sc.type === 'board') { thumbT = acc + sc.dur - 0.4; break; } acc += sc.dur; } // full results board
   await page.evaluate((t) => window.setFrame(t), thumbT);
   await page.screenshot({ path: path.join(outDir, `${v.id}.jpg`), type: 'jpeg', quality: 90 });
   await page.close();
