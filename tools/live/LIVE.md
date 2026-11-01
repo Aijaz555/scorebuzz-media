@@ -70,6 +70,14 @@ SCOREBUZZ_MOCK=1 node tools/live/server.js                    # offline fake gam
 
 Manual alternative with no server: add `http://localhost:8787/?league=nba&event=<id>` as a 1920x1080 Browser Source in OBS and press Start Streaming.
 
+## YouTube and Facebook at the same time
+
+`stream.js --key <youtube key> --fb-key <facebook key>` encodes once and sends the same stream to both
+(ffmpeg `tee`), so it costs no extra CPU, only double the upload (~3 Mbps each). If one side drops, the other
+keeps going. Facebook key: Page > Live Producer > "Streaming software" > copy the stream key (turn on
+"Use a persistent stream key" so it doesn't change). Facebook needs RTMPS (`rtmps://live-api-s.facebook.com:443/rtmp`,
+the default). In `live.config.json` a key can be `{"youtube": "...", "facebook": "..."}`.
+
 ## Fully automatic (next step)
 
 `autopilot.js` + a stream-key pool already starts and stops the video for every game. What it can't

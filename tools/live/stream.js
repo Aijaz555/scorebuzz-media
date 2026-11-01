@@ -8,6 +8,9 @@
 //   --event    ESPN event id (list them with games.js)
 //   --key      YouTube stream key (YouTube Studio > Go live > Stream). Or set YT_STREAM_KEY.
 //   --rtmp     ingest URL, default rtmp://a.rtmp.youtube.com/live2
+//   --fb-key   also stream to a Facebook Page (Live Producer > streaming software > stream key). Or set FB_STREAM_KEY.
+//              One encode is sent to both (ffmpeg tee): no extra CPU, double the upload (~3 Mbps each).
+//              If one destination drops, the other keeps going.
 //   --out      write to a local file instead of streaming (for testing)
 //   --minutes  stop after N minutes (default: 20 min after the game ends, max 6 h)
 //   --port     scoreboard server port (default 8787; shared by all streams on the machine)
@@ -27,6 +30,8 @@ const league = arg('league');
 const event = arg('event');
 const key = arg('key', process.env.YT_STREAM_KEY);
 const rtmp = arg('rtmp', 'rtmp://a.rtmp.youtube.com/live2');
+const fbKey = arg('fb-key', process.env.FB_STREAM_KEY);
+const fbRtmp = arg('fb-rtmp', 'rtmps://live-api-s.facebook.com:443/rtmp');
 const out = arg('out');
 const port = Number(arg('port', 8787));
 const maxMin = Number(arg('minutes', 360));
@@ -37,8 +42,8 @@ const SMOOTH = arg('smooth', require('fs').existsSync('/usr/bin/Xvfb') ? '1' : '
 const FPS = Number(arg('fps', 30));
 const TRK = arg('tracker'); // scorebuzz.net match page whose live tracker card replaces the centre pitch
 
-if (!league || !event || (!key && !out)) {
-  console.error('usage: stream.js --league nba --event <id> (--key <stream key> | --out file.mp4) [--minutes N]');
+if (!league || !event || (!key && !fbKey && !out)) {
+  console.error('usage: stream.js --league nba --event <id> (--key <youtube key> [--fb-key <facebook key>] | --out file.mp4) [--minutes N]');
   process.exit(1);
 }
 
@@ -82,7 +87,8 @@ if (!league || !event || (!key && !out)) {
   if (TRK) { page.on('framenavigated', () => setTimeout(crop, 1500)); setInterval(crop, 3000); }
   await page.waitForFunction(() => window.__ready, null, { timeout: 60000 }).catch(() => console.warn('no data yet, streaming the waiting screen'));
 
-  const target = out || `${rtmp}/${key}`;
+  const dests = out ? [] : [key && `${rtmp}/${key}`, fbKey && `${fbRtmp}/${fbKey}`].filter(Boolean);
+  const target = out || (dests.length > 1 ? dests.map((d) => `[f=flv:onfail=ignore]${d}`).join('|') : dests[0]);
   const ff = spawn('ffmpeg', [
     '-loglevel', 'error',
     ...(SMOOTH
@@ -92,9 +98,9 @@ if (!league || !event || (!key && !out)) {
     '-vf', `fps=${SMOOTH ? FPS : 30},format=yuv420p`,
     '-c:v', 'libx264', '-preset', SMOOTH ? 'superfast' : 'veryfast', '-tune', SMOOTH ? 'zerolatency' : 'stillimage', '-b:v', '3000k', '-maxrate', '3000k', '-bufsize', '6000k',
     '-g', String(2 * (SMOOTH ? FPS : 30)), '-keyint_min', String(2 * (SMOOTH ? FPS : 30)), '-sc_threshold', '0',
-    '-c:a', 'aac', '-b:a', '128k', '-ar', '44100',
+    '-c:a', 'aac', '-b:a', '128k', '-ar', '48000',
     '-shortest',
-    '-f', out ? (out.endsWith('.flv') ? 'flv' : 'mp4') : 'flv', '-y', target,
+    ...(dests.length > 1 ? ['-map', '0:v', '-map', '1:a', '-f', 'tee', '-y', target] : ['-f', out ? (out.endsWith('.flv') ? 'flv' : 'mp4') : 'flv', '-y', target]),
   ], { stdio: [SMOOTH ? 'ignore' : 'pipe', 'inherit', 'inherit'] });
   ff.on('exit', (c) => { console.log(`ffmpeg exited (${c})`); process.exit(c ? 1 : 0); });
 
@@ -107,7 +113,7 @@ if (!league || !event || (!key && !out)) {
     await browser.close().catch(() => {});
   };
   process.on('SIGINT', stop); process.on('SIGTERM', stop);
-  console.log(`${out ? 'recording' : 'streaming'} ${league} ${event} → ${out || rtmp + '/****'}`);
+  console.log(`${out ? 'recording' : 'streaming'} ${league} ${event} → ${out || [key && 'YouTube', fbKey && 'Facebook'].filter(Boolean).join(' + ')}`);
 
   let last = null;
   while (!stopping) {

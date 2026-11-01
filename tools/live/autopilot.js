@@ -7,6 +7,7 @@
 //   "leagues": ["nba", "nfl", "epl"],
 //   "leadMinutes": 15,                       // go live this long before the start
 //   "keys": ["key-1", "key-2", "key-3"],      // one key per stream running at the same time
+//   // or, to send a stream to YouTube AND a Facebook Page: {"youtube": "yt-key", "facebook": "fb-key"}
 //   "only": ["LAL", "GS", "NYK"]              // optional: only games involving these team abbreviations
 // }
 // Each key must belong to a YouTube broadcast that starts automatically when video arrives
@@ -37,7 +38,9 @@ async function tick() {
       if (!key) { log(`no free stream key for ${g.matchup}, skipped`); done.add(g.id); continue; }
       log(`START ${g.title}`);
       log(`  description:\n${g.description}`);
-      const proc = spawn(process.execPath, [path.join(__dirname, 'stream.js'), '--league', league, '--event', g.id, '--key', key], { stdio: 'inherit' });
+      const k = typeof key === 'string' ? { youtube: key } : key;
+      const dest = [...(k.youtube ? ['--key', k.youtube] : []), ...(k.facebook ? ['--fb-key', k.facebook] : [])];
+      const proc = spawn(process.execPath, [path.join(__dirname, 'stream.js'), '--league', league, '--event', g.id, ...dest], { stdio: 'inherit' });
       running.set(g.id, { key, proc });
       proc.on('exit', (c) => { log(`END ${g.matchup} (${c})`); running.delete(g.id); done.add(g.id); });
     }
