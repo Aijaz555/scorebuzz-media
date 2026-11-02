@@ -1,0 +1,1231 @@
+[
+ {
+  "id": "s01-arsenal-anfield",
+  "sport": "football",
+  "time": "2026-11-02T11:30:00",
+  "title": "Arsenal FINALLY Win at Anfield! Havertz Makes History 🔴 #shorts",
+  "description": "Kai Havertz scored after 16 minutes as Arsenal won 1–0 at Liverpool, their first league win at Anfield since 2012. It was his 46th Premier League goal, a record for a German player, and Arsenal are three points clear at the top.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Arsenal #PremierLeague #LIVARS #Havertz",
+  "tags": [
+   "liverpool vs arsenal",
+   "arsenal win at anfield",
+   "havertz goal",
+   "premier league",
+   "arsenal top of the league",
+   "epl table",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Premier League · Sunday",
+    "title": "Arsenal win at Anfield!",
+    "sub": "First league win there since 2012"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Full time",
+    "home": "Liverpool",
+    "homeAbbr": "LIV",
+    "homeScore": 0,
+    "away": "Arsenal",
+    "awayAbbr": "ARS",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "note": "Havertz 16'"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Kai Havertz",
+    "value": 46,
+    "unit": "PL goals",
+    "text": "Most ever by a German player"
+   },
+   {
+    "type": "table",
+    "dur": 4.6,
+    "label": "Premier League top 5",
+    "cols": [
+     "P",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Arsenal",
+      9,
+      24
+     ],
+     [
+      2,
+      "Man City",
+      9,
+      21
+     ],
+     [
+      3,
+      "Brighton",
+      9,
+      19
+     ],
+     [
+      4,
+      "Chelsea",
+      9,
+      16
+     ],
+     [
+      5,
+      "Liverpool",
+      9,
+      15
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Arsenal's title this year?"
+   }
+  ],
+  "bed": "anthem"
+ },
+ {
+  "id": "s02-europe-board",
+  "sport": "football",
+  "time": "2026-11-02T13:00:00",
+  "title": "Sunday's Football Results Across Europe ⚽ Full Time #shorts",
+  "description": "Sunday's full-time scores: Arsenal won at Liverpool, Real Madrid won 3–0 at Racing, Juventus beat 10-man Napoli 2–0 and Serie A leaders Lazio beat Cagliari 2–1.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#PremierLeague #LaLiga #SerieA #Bundesliga",
+  "tags": [
+   "football results",
+   "premier league results",
+   "laliga results",
+   "serie a results",
+   "bundesliga results",
+   "sunday football scores",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 20.6,
+    "kicker": "Europe · Sunday Nov 1",
+    "title": "Full-time scores",
+    "badge": "Full time",
+    "first": 1.0,
+    "step": 1.85,
+    "rows": [
+     {
+      "home": "Liverpool",
+      "homeAbbr": "LIV",
+      "hs": 0,
+      "away": "Arsenal",
+      "awayAbbr": "ARS",
+      "as": 1
+     },
+     {
+      "home": "Racing",
+      "homeAbbr": "RAC",
+      "hs": 0,
+      "away": "Real Madrid",
+      "awayAbbr": "RMA",
+      "as": 3
+     },
+     {
+      "home": "Juventus",
+      "homeAbbr": "JUV",
+      "hs": 2,
+      "away": "Napoli",
+      "awayAbbr": "NAP",
+      "as": 0
+     },
+     {
+      "home": "Lazio",
+      "homeAbbr": "LAZ",
+      "hs": 2,
+      "away": "Cagliari",
+      "awayAbbr": "CAG",
+      "as": 1
+     },
+     {
+      "home": "Getafe",
+      "homeAbbr": "GET",
+      "hs": 3,
+      "away": "Sevilla",
+      "awayAbbr": "SEV",
+      "as": 1
+     },
+     {
+      "home": "Athletic",
+      "homeAbbr": "ATH",
+      "hs": 2,
+      "away": "Real Sociedad",
+      "awayAbbr": "RSO",
+      "as": 1
+     },
+     {
+      "home": "Frankfurt",
+      "homeAbbr": "SGE",
+      "hs": 3,
+      "away": "Hamburg",
+      "awayAbbr": "HSV",
+      "as": 1
+     },
+     {
+      "home": "Union Berlin",
+      "homeAbbr": "FCU",
+      "hs": 1,
+      "away": "Cologne",
+      "awayAbbr": "KOE",
+      "as": 1
+     },
+     {
+      "home": "Como",
+      "homeAbbr": "COM",
+      "hs": 1,
+      "away": "Venezia",
+      "awayAbbr": "VEN",
+      "as": 0
+     },
+     {
+      "home": "Frosinone",
+      "homeAbbr": "FRO",
+      "hs": 2,
+      "away": "Torino",
+      "awayAbbr": "TOR",
+      "as": 0
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Result of the day?",
+    "sub": "Tell us in the comments"
+   }
+  ],
+  "bed": "hype"
+ },
+ {
+  "id": "s03-antonelli",
+  "sport": "racing",
+  "time": "2026-11-02T14:30:00",
+  "title": "Kimi Antonelli Is F1's YOUNGEST Ever Champion 🏆 #F1 #shorts",
+  "description": "Kimi Antonelli finished third in the Mexico City Grand Prix to become Formula 1's youngest world champion at 20. Max Verstappen won the race ahead of Lewis Hamilton. Next up: São Paulo, 6–8 November.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#F1 #Antonelli #MexicoGP #Mercedes",
+  "tags": [
+   "kimi antonelli champion",
+   "youngest f1 champion",
+   "mexico city grand prix",
+   "f1 2026",
+   "verstappen wins mexico",
+   "formula 1",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "F1 · Mexico City GP",
+    "title": "Antonelli is champion!",
+    "sub": "The youngest in F1 history"
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "Race result",
+    "title": "Podium",
+    "rows": [
+     [
+      "P1",
+      "Verstappen",
+      ""
+     ],
+     [
+      "P2",
+      "Hamilton",
+      ""
+     ],
+     [
+      "P3",
+      "Antonelli",
+      ""
+     ],
+     [
+      "P4",
+      "Leclerc",
+      ""
+     ],
+     [
+      "P5",
+      "Norris",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "World champion at",
+    "value": 20,
+    "unit": "years old",
+    "text": "Third place was all he needed"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Next race",
+    "title": "São Paulo GP",
+    "sub": "6–8 November"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "How many titles will he win?"
+   }
+  ],
+  "bed": "anthem",
+  "tagText": "FORMULA 1"
+ },
+ {
+  "id": "s04-juve-stunners",
+  "sport": "football",
+  "time": "2026-11-02T16:00:00",
+  "title": "Two Long-Range ROCKETS! Juventus Beat Napoli ⚫⚪ #SerieA #shorts",
+  "description": "Juventus beat 10-man Napoli 2–0. Teenager Kerim Alajbegovic scored his first Serie A goal from 20 yards in the 70th minute, Luca Marianucci was sent off for Napoli, and Jérémie Boga added another long-range strike.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Juventus #SerieA #JuveNapoli",
+  "tags": [
+   "juventus vs napoli",
+   "juventus napoli 2-0",
+   "alajbegovic goal",
+   "boga goal",
+   "serie a",
+   "juventus",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Serie A · Sunday",
+    "title": "Two rockets in Turin",
+    "sub": "Juventus v Napoli"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Full time",
+    "home": "Juventus",
+    "homeAbbr": "JUV",
+    "homeScore": 2,
+    "away": "Napoli",
+    "awayAbbr": "NAP",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "note": "Alajbegovic 70', Boga 87'"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "How it happened",
+    "title": "Key moments",
+    "rows": [
+     [
+      "70'",
+      "Alajbegovic",
+      "1–0"
+     ],
+     [
+      "75'",
+      "Marianucci sent off",
+      "10 men"
+     ],
+     [
+      "87'",
+      "Boga",
+      "2–0"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "First Serie A goal",
+    "title": "Kerim Alajbegovic",
+    "sub": "A teenager, from 20 yards"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Better goal: Alajbegovic or Boga?"
+   }
+  ],
+  "bed": "anthem"
+ },
+ {
+  "id": "s05-messi-winner",
+  "sport": "football",
+  "time": "2026-11-02T17:30:00",
+  "title": "Messi Wins It Late! 26th Goal of the Season 🐐 #MLS #shorts",
+  "description": "Inter Miami came from behind to win 2–1 at New England. Lionel Messi set up Germán Berterame's equaliser and scored the winner in the 83rd minute, his league-leading 26th goal. Miami move up to second in the East with one game left.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Messi #InterMiami #MLS",
+  "tags": [
+   "messi goal",
+   "inter miami vs new england",
+   "messi 26 goals",
+   "mls",
+   "inter miami",
+   "lionel messi",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "MLS · Sunday",
+    "title": "Messi, 83rd minute",
+    "sub": "Inter Miami were 1–0 down"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Full time",
+    "home": "New England",
+    "homeAbbr": "NE",
+    "homeScore": 1,
+    "away": "Inter Miami",
+    "awayAbbr": "MIA",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "note": "Berterame 69', Messi 83'"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Messi this season",
+    "value": 26,
+    "unit": "MLS goals",
+    "text": "Most in the league"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Eastern Conference",
+    "title": "Miami up to 2nd",
+    "sub": "One regular-season game left"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Messi MVP again?"
+   }
+  ],
+  "bed": "drama"
+ },
+ {
+  "id": "s06-lazio-top",
+  "sport": "football",
+  "time": "2026-11-02T19:00:00",
+  "title": "Lazio Are UNBEATEN and 3 Points Clear in Serie A 🦅 #shorts",
+  "description": "Lazio came from behind to beat Cagliari 2–1 with goals from Gustav Isaksen and Andrea Pinamonti. Nine wins and a draw from ten games put them three points clear of Inter at the top of Serie A.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Lazio #SerieA #Calcio",
+  "tags": [
+   "lazio",
+   "serie a table",
+   "lazio vs cagliari",
+   "serie a 2026",
+   "lazio top of the league",
+   "inter",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Serie A",
+    "title": "Lazio: still unbeaten",
+    "sub": "Ten games, nine wins"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Sunday",
+    "home": "Lazio",
+    "homeAbbr": "LAZ",
+    "homeScore": 2,
+    "away": "Cagliari",
+    "awayAbbr": "CAG",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "note": "Isaksen 36', Pinamonti 83'"
+   },
+   {
+    "type": "table",
+    "dur": 4.8,
+    "label": "Serie A top 5",
+    "cols": [
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Lazio",
+      9,
+      1,
+      0,
+      28
+     ],
+     [
+      2,
+      "Inter",
+      8,
+      1,
+      1,
+      25
+     ],
+     [
+      3,
+      "Roma",
+      7,
+      3,
+      0,
+      24
+     ],
+     [
+      4,
+      "Como",
+      7,
+      2,
+      1,
+      23
+     ],
+     [
+      5,
+      "Milan",
+      6,
+      3,
+      1,
+      21
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Lazio win the Scudetto?"
+   }
+  ],
+  "bed": "anthem"
+ },
+ {
+  "id": "s07-nfl-board",
+  "sport": "nfl",
+  "time": "2026-11-02T20:30:00",
+  "title": "NFL Week 8 Sunday Scores: Vikings Lose, 2 OT Thrillers 🏈 #NFL #shorts",
+  "description": "Every Sunday score from NFL Week 8: the Lions handed the Vikings their first loss, the Broncos beat the Chiefs on a last-play sack, and the Bengals and Cardinals won in overtime.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NFL #NFLSunday #Week8",
+  "tags": [
+   "nfl scores",
+   "nfl week 8",
+   "nfl results",
+   "broncos chiefs",
+   "lions vikings",
+   "nfl sunday",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 21.6,
+    "kicker": "NFL · Week 8 Sunday",
+    "title": "Final scores",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.85,
+    "rows": [
+     {
+      "home": "Bills",
+      "homeAbbr": "BUF",
+      "hs": 36,
+      "away": "Ravens",
+      "awayAbbr": "BAL",
+      "as": 10
+     },
+     {
+      "home": "Lions",
+      "homeAbbr": "DET",
+      "hs": 19,
+      "away": "Vikings",
+      "awayAbbr": "MIN",
+      "as": 15
+     },
+     {
+      "home": "Broncos",
+      "homeAbbr": "DEN",
+      "hs": 28,
+      "away": "Chiefs",
+      "awayAbbr": "KC",
+      "as": 24
+     },
+     {
+      "home": "Bengals",
+      "homeAbbr": "CIN",
+      "hs": 43,
+      "away": "Titans",
+      "awayAbbr": "TEN",
+      "as": 36,
+      "note": "OT"
+     },
+     {
+      "home": "Cowboys",
+      "homeAbbr": "DAL",
+      "hs": 30,
+      "away": "Cardinals",
+      "awayAbbr": "ARI",
+      "as": 33,
+      "note": "OT"
+     },
+     {
+      "home": "Jets",
+      "homeAbbr": "NYJ",
+      "hs": 33,
+      "away": "Raiders",
+      "awayAbbr": "LV",
+      "as": 38
+     },
+     {
+      "home": "Jaguars",
+      "homeAbbr": "JAX",
+      "hs": 42,
+      "away": "Colts",
+      "awayAbbr": "IND",
+      "as": 7
+     },
+     {
+      "home": "Steelers",
+      "homeAbbr": "PIT",
+      "hs": 27,
+      "away": "Browns",
+      "awayAbbr": "CLE",
+      "as": 6
+     },
+     {
+      "home": "Rams",
+      "homeAbbr": "LAR",
+      "hs": 24,
+      "away": "Chargers",
+      "awayAbbr": "LAC",
+      "as": 9
+     },
+     {
+      "home": "Dolphins",
+      "homeAbbr": "MIA",
+      "hs": 19,
+      "away": "Patriots",
+      "awayAbbr": "NE",
+      "as": 24
+     },
+     {
+      "home": "Commanders",
+      "homeAbbr": "WSH",
+      "hs": 27,
+      "away": "Eagles",
+      "awayAbbr": "PHI",
+      "as": 10
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Biggest result of Week 8?",
+    "sub": "Tell us in the comments"
+   }
+  ],
+  "bed": "hype"
+ },
+ {
+  "id": "s08-bucs-zero",
+  "sport": "nfl",
+  "time": "2026-11-02T22:00:00",
+  "title": "The Bucs Won Without Completing a SINGLE Pass 😳 #NFL #shorts",
+  "description": "Tampa Bay beat Atlanta 16–0 in heavy rain with Baker Mayfield going 0-for-3. The Bucs ran for a team-record 324 yards and became the first team with zero completions since Buffalo in 1974.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#GoBucs #NFL #Buccaneers",
+  "tags": [
+   "buccaneers falcons",
+   "zero completions",
+   "baker mayfield",
+   "bucky irving",
+   "nfl week 8",
+   "nfl weird stats",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NFL · Week 8",
+    "title": "Zero completions. A win.",
+    "sub": "Buccaneers v Falcons"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Final",
+    "home": "Buccaneers",
+    "homeAbbr": "TB",
+    "homeScore": 16,
+    "away": "Falcons",
+    "awayAbbr": "ATL",
+    "awayScore": 0,
+    "status": "FINAL",
+    "note": "Played in driving rain"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Baker Mayfield passing",
+    "value": "0/3",
+    "unit": "",
+    "text": "0 yards"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Bucs rushing",
+    "value": 324,
+    "unit": "yards",
+    "text": "A team record. Irving 170, Gainwell 140"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Last time it happened",
+    "title": "Buffalo, 1974",
+    "sub": "The only other team in the Super Bowl era"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Ever seen a game like this?"
+   }
+  ],
+  "bed": "hype"
+ },
+ {
+  "id": "s09-broncos-sack",
+  "sport": "nfl",
+  "time": "2026-11-02T23:30:00",
+  "title": "4th-and-Goal, Final Play… SACKED! Broncos Stun Chiefs 🐴 #NFL #shorts",
+  "description": "Denver trailed Kansas City 24–13 in the fourth quarter and won 28–24. Jonah Coleman scored with under two minutes left and Malcolm Roach sacked Patrick Mahomes on 4th-and-goal on the final play. The Broncos (6-2) lead the AFC West.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#BroncosCountry #ChiefsKingdom #NFL",
+  "tags": [
+   "broncos vs chiefs",
+   "broncos chiefs 28-24",
+   "mahomes sacked",
+   "malcolm roach",
+   "afc west",
+   "nfl week 8",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NFL · Week 8",
+    "title": "Down 24–13. Then this.",
+    "sub": "Broncos v Chiefs"
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "The last 15 minutes",
+    "title": "How Denver won",
+    "rows": [
+     [
+      "Q4",
+      "Nix TD + 2-pt",
+      "24–21"
+     ],
+     [
+      "2:30",
+      "Butker misses 54-yd FG",
+      ""
+     ],
+     [
+      "1:56",
+      "Coleman 5-yd TD",
+      "28–24"
+     ],
+     [
+      "0:00",
+      "Roach sacks Mahomes",
+      "4th & goal"
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final",
+    "home": "Broncos",
+    "homeAbbr": "DEN",
+    "homeScore": 28,
+    "away": "Chiefs",
+    "awayAbbr": "KC",
+    "awayScore": 24,
+    "status": "FINAL"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "AFC West",
+    "title": "Broncos 6-2, Chiefs 5-2",
+    "sub": "Denver go top"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins the AFC West?"
+   }
+  ],
+  "bed": "drama"
+ },
+ {
+  "id": "s10-burrow-462",
+  "sport": "nfl",
+  "time": "2026-11-02T01:00:00",
+  "title": "Burrow: 462 Yards, 5 TDs, Then Runs In the OT Winner 🐯 #NFL #shorts",
+  "description": "Joe Burrow threw for 462 yards and five touchdowns, then ran in a 9-yard score in overtime as the Bengals beat the Titans 43–36. Only Norm Van Brocklin, in 1951, had a similar stat line.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Bengals #WhoDey #NFL",
+  "tags": [
+   "joe burrow",
+   "bengals vs titans",
+   "burrow 462 yards",
+   "nfl overtime",
+   "bengals",
+   "nfl week 8",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NFL · Week 8",
+    "title": "Burrow did EVERYTHING",
+    "sub": "Bengals v Titans"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Joe Burrow",
+    "value": 462,
+    "unit": "passing yards",
+    "text": "Plus 5 touchdown passes"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Final · overtime",
+    "home": "Bengals",
+    "homeAbbr": "CIN",
+    "homeScore": 43,
+    "away": "Titans",
+    "awayAbbr": "TEN",
+    "awayScore": 36,
+    "status": "FINAL/OT",
+    "note": "Burrow 9-yd TD run in OT"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "Last seen in 1951",
+    "title": "Norm Van Brocklin",
+    "sub": "The only other QB with 400+ yards, 5 TD passes, a rushing TD and multiple picks"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best QB in the AFC?"
+   }
+  ],
+  "bed": "drama"
+ },
+ {
+  "id": "s11-luka-45",
+  "sport": "nba",
+  "time": "2026-11-03T02:30:00",
+  "title": "Luka Drops 45 With 15 Rebounds and 5 Steals 🔥 #NBA #shorts",
+  "description": "Luka Doncic had 45 points, 15 rebounds, six assists, five steals and eight 3-pointers as the Lakers beat the Raptors 131–125. That's four straight games with 37 or more.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#LakeShow #Luka #NBA",
+  "tags": [
+   "luka doncic",
+   "luka 45 points",
+   "lakers vs raptors",
+   "lakers",
+   "nba highlights",
+   "nba scoring",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Sunday",
+    "title": "Luka: 45 points",
+    "sub": "Lakers v Raptors"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "Luka Doncic",
+    "title": "Stat line",
+    "rows": [
+     [
+      "45",
+      "points",
+      ""
+     ],
+     [
+      "15",
+      "rebounds",
+      ""
+     ],
+     [
+      "6",
+      "assists",
+      ""
+     ],
+     [
+      "5",
+      "steals",
+      ""
+     ],
+     [
+      "8",
+      "threes",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final",
+    "home": "Lakers",
+    "homeAbbr": "LAL",
+    "homeScore": 131,
+    "away": "Raptors",
+    "awayAbbr": "TOR",
+    "awayScore": 125,
+    "status": "FINAL"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "In a row",
+    "value": 4,
+    "unit": "games",
+    "text": "with 37+ points"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is Luka the MVP?"
+   }
+  ],
+  "bed": "hype"
+ },
+ {
+  "id": "s12-kochetkov",
+  "sport": "nhl",
+  "time": "2026-11-03T04:00:00",
+  "title": "Kochetkov Is 10-0! Only the 3rd Goalie EVER 🧱 #NHL #shorts",
+  "description": "Pyotr Kochetkov made 26 saves in Carolina's 7–0 win over Winnipeg to start the season 10-0. He is the third goalie in NHL history to do it, level with Carey Price. Only Jack Campbell (11) has a longer start.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#LetsGoCanes #NHL #Hurricanes",
+  "tags": [
+   "pyotr kochetkov",
+   "hurricanes vs jets",
+   "kochetkov 10-0",
+   "nhl records",
+   "carolina hurricanes",
+   "nhl",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · Sunday",
+    "title": "10 starts. 10 wins.",
+    "sub": "Pyotr Kochetkov"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final",
+    "home": "Hurricanes",
+    "homeAbbr": "CAR",
+    "homeScore": 7,
+    "away": "Jets",
+    "awayAbbr": "WPG",
+    "awayScore": 0,
+    "status": "FINAL",
+    "note": "26 saves, shutout"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "Best starts to a season",
+    "title": "Goalies",
+    "rows": [
+     [
+      "11-0",
+      "Jack Campbell",
+      "2020-21"
+     ],
+     [
+      "10-0",
+      "Carey Price",
+      ""
+     ],
+     [
+      "10-0",
+      "Pyotr Kochetkov",
+      "Now"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Does he catch Campbell?"
+   }
+  ],
+  "bed": "drama"
+ },
+ {
+  "id": "s13-mcdavid",
+  "sport": "nhl",
+  "time": "2026-11-03T05:30:00",
+  "title": "McDavid Has an Assist in EVERY Game: 15 Straight 🏒 #NHL #shorts",
+  "description": "Connor McDavid scored 50 seconds in and assisted again in Edmonton's 4–1 win over the Rangers. That's an assist in all 15 games, an NHL record to start a season, and he leads the league with 39 points.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Oilers #McDavid #NHL",
+  "tags": [
+   "connor mcdavid",
+   "mcdavid record",
+   "oilers vs rangers",
+   "mcdavid assist streak",
+   "edmonton oilers",
+   "nhl",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · record",
+    "title": "15 games. 15 with an assist.",
+    "sub": "Connor McDavid"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Season-opening assist streak",
+    "value": 15,
+    "unit": "games",
+    "text": "An NHL record"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Points this season",
+    "value": 39,
+    "unit": "points",
+    "text": "Most in the league"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Sunday",
+    "home": "Rangers",
+    "homeAbbr": "NYR",
+    "homeScore": 1,
+    "away": "Oilers",
+    "awayAbbr": "EDM",
+    "awayScore": 4,
+    "status": "FINAL",
+    "note": "McDavid scored 50 seconds in"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can anyone stop him?"
+   }
+  ],
+  "bed": "drama"
+ },
+ {
+  "id": "s14-lendeborg",
+  "sport": "nba",
+  "time": "2026-11-03T07:00:00",
+  "title": "Rookie Lendeborg Drops 37 Without Curry 🌉 #NBA #shorts",
+  "description": "Yaxel Lendeborg scored a career-high 37 on 13-of-19 shooting as the Warriors beat the Clippers 124–112 with Stephen Curry and Draymond Green resting. It's the most by a Warriors rookie since Curry's 42 in 2010.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#DubNation #Warriors #NBA",
+  "tags": [
+   "yaxel lendeborg",
+   "warriors vs clippers",
+   "lendeborg 37 points",
+   "warriors rookie",
+   "golden state warriors",
+   "nba rookies",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Sunday",
+    "title": "A rookie drops 37",
+    "sub": "No Curry. No Green."
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Yaxel Lendeborg",
+    "value": 37,
+    "unit": "points",
+    "text": "13-of-19, 6-of-11 from three"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final",
+    "home": "Warriors",
+    "homeAbbr": "GSW",
+    "homeScore": 124,
+    "away": "Clippers",
+    "awayAbbr": "LAC",
+    "awayScore": 112,
+    "status": "FINAL"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Warriors rookies",
+    "title": "Most since Curry in 2010",
+    "sub": "Curry scored 42 that night"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Rookie of the Year?"
+   }
+  ],
+  "bed": "hype"
+ },
+ {
+  "id": "s15-ap-poll",
+  "sport": "nfl",
+  "time": "2026-11-03T08:30:00",
+  "title": "New AP Top 25: Ohio State Drop From 2 to 11 😮 #CFB #shorts",
+  "description": "The new AP poll: Miami stay No. 1, Georgia move to 2 and Utah jump to 3. Ohio State fall from 2 to 11 after losing at USC, who enter at No. 18.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#CFB #CollegeFootball #APPoll",
+  "tags": [
+   "ap poll",
+   "college football rankings",
+   "ap top 25",
+   "ohio state",
+   "cfb rankings week 10",
+   "college football",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "College football",
+    "title": "The new AP Top 25",
+    "sub": "Week 10"
+   },
+   {
+    "type": "table",
+    "dur": 5.0,
+    "label": "AP poll · top 6",
+    "cols": [
+     "W-L",
+     "LAST"
+    ],
+    "rows": [
+     [
+      1,
+      "Miami",
+      "8-0",
+      1
+     ],
+     [
+      2,
+      "Georgia",
+      "7-1",
+      3
+     ],
+     [
+      3,
+      "Utah",
+      "8-0",
+      6
+     ],
+     [
+      4,
+      "Notre Dame",
+      "7-1",
+      5
+     ],
+     [
+      5,
+      "UCLA",
+      "8-0",
+      7
+     ],
+     [
+      6,
+      "Indiana",
+      "8-1",
+      4
+     ]
+    ],
+    "highlight": [
+     3
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 4.2,
+    "label": "Big movers",
+    "title": "Up and down",
+    "rows": [
+     [
+      "Ohio State",
+      "2 → 11",
+      "▼9"
+     ],
+     [
+      "USC",
+      "NR → 18",
+      "▲"
+     ],
+     [
+      "Utah",
+      "6 → 3",
+      "▲3"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who's ranked too high?"
+   }
+  ],
+  "bed": "hype",
+  "tagText": "COLLEGE FOOTBALL"
+ }
+]

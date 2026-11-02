@@ -1,0 +1,503 @@
+[
+ {
+  "id": "01-arsenal-anfield",
+  "time": "2026-11-02T11:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "PREMIER LEAGUE · SUN NOV 1",
+  "home": "Liverpool",
+  "homeAbbr": "LIV",
+  "homeScore": 0,
+  "away": "Arsenal",
+  "awayAbbr": "ARS",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "headline": "Arsenal finally win at Anfield",
+  "sub": "Kai Havertz after 16 minutes. Arsenal's first league win there since 2012.",
+  "caption": "🔴 Arsenal have won at Anfield for the first time in the league since 2012.\n\nKai Havertz scored after 16 minutes and the Gunners held on for 1–0. It's his 46th Premier League goal, a record for a German player.\n\nIs this the season Arsenal win the title? 👇\n\n#Arsenal #LIVARS #PremierLeague"
+ },
+ {
+  "id": "02-epl-top5",
+  "time": "2026-11-02T12:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · AFTER 9 GAMES",
+  "headline": "Arsenal three points clear",
+  "rows": [
+   [
+    "1",
+    "Arsenal",
+    "24"
+   ],
+   [
+    "2",
+    "Man City",
+    "21"
+   ],
+   [
+    "3",
+    "Brighton",
+    "19"
+   ],
+   [
+    "4",
+    "Chelsea",
+    "16"
+   ],
+   [
+    "5",
+    "Liverpool",
+    "15"
+   ]
+  ],
+  "sub": "Points. Liverpool sit fifth, nine behind the leaders.",
+  "caption": "📊 The Premier League top five after nine games.\n\nArsenal lead Man City by three points. Brighton are third, and Liverpool are already nine points off the top.\n\nWho finishes in the top four? 👇\n\n#PremierLeague #EPL #Arsenal #MCFC"
+ },
+ {
+  "id": "03-juve-napoli",
+  "time": "2026-11-02T13:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "SERIE A · SUN NOV 1",
+  "home": "Juventus",
+  "homeAbbr": "JUV",
+  "homeScore": 2,
+  "away": "Napoli",
+  "awayAbbr": "NAP",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "headline": "Two long-range stunners",
+  "sub": "Teenager Kerim Alajbegovic (70') and Jérémie Boga (87'). Napoli finished with 10 men.",
+  "caption": "⚫⚪ Juventus beat Napoli 2–0, and both goals were from distance.\n\nKerim Alajbegovic scored his first Serie A goal, Luca Marianucci was sent off for Napoli five minutes later, and Jérémie Boga sealed it late.\n\nGoal of the weekend? 👇\n\n#Juventus #JuveNapoli #SerieA"
+ },
+ {
+  "id": "04-real-racing",
+  "time": "2026-11-02T14:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "LALIGA · AFTER 11 GAMES",
+  "headline": "Real Madrid win 3–0 at Racing",
+  "rows": [
+   [
+    "1",
+    "Barcelona",
+    "30"
+   ],
+   [
+    "2",
+    "Atlético",
+    "28"
+   ],
+   [
+    "3",
+    "Real Madrid",
+    "27"
+   ],
+   [
+    "4",
+    "Betis",
+    "23"
+   ]
+  ],
+  "sub": "Mbappé (pen), Bellingham and Diomande, all inside 36 minutes.",
+  "caption": "⚪ Real Madrid were 3–0 up at Racing after 36 minutes and that's how it finished.\n\nKylian Mbappé scored a penalty, then Jude Bellingham and Yan Diomande added more. Real are third, three points behind Barcelona.\n\nWho wins LaLiga? 👇\n\n#RealMadrid #LaLiga #HalaMadrid"
+ },
+ {
+  "id": "05-lazio-clear",
+  "time": "2026-11-02T15:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "SERIE A · SUN NOV 1",
+  "home": "Lazio",
+  "homeAbbr": "LAZ",
+  "homeScore": 2,
+  "away": "Cagliari",
+  "awayAbbr": "CAG",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "headline": "Lazio go three clear",
+  "sub": "Isaksen and Pinamonti. Still unbeaten: 9 wins, 1 draw. 28 points, Inter 25.",
+  "caption": "🦅 Lazio are three points clear at the top of Serie A.\n\nGustav Isaksen and Andrea Pinamonti scored in a 2–1 win over Cagliari. Nine wins and a draw from ten games.\n\nCan anyone catch them? 👇\n\n#Lazio #SerieA #LazioCagliari"
+ },
+ {
+  "id": "06-antonelli-champion",
+  "time": "2026-11-02T16:00:00",
+  "sport": "racing",
+  "kind": "headline",
+  "label": "F1 · MEXICO CITY GP",
+  "headline": "Kimi Antonelli: F1's youngest world champion",
+  "sub": "Third place in Mexico was enough. Max Verstappen won the race, Lewis Hamilton was second.",
+  "stat": [
+   "20",
+   "years old"
+  ],
+  "caption": "🏆 Kimi Antonelli is Formula 1 world champion, and the youngest in the sport's history.\n\nThe 20-year-old finished third in Mexico City to seal the title. Max Verstappen won the race ahead of Lewis Hamilton.\n\nHow many titles will he win? 👇\n\n#F1 #Antonelli #MexicoGP"
+ },
+ {
+  "id": "07-newcastle-everton",
+  "time": "2026-11-02T17:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "PREMIER LEAGUE · TONIGHT 20:00 GMT",
+  "home": "Newcastle",
+  "homeAbbr": "NEW",
+  "homeScore": "–",
+  "away": "Everton",
+  "awayAbbr": "EVE",
+  "awayScore": "–",
+  "status": "3PM ET",
+  "headline": "Monday night at St James' Park",
+  "sub": "Newcastle (3W 2D 3L) host Everton (2W 4D 2L). One point between them.",
+  "caption": "⚫⚪ Monday Night Football in the Premier League: Newcastle v Everton at St James' Park.\n\nKick-off 20:00 GMT (3pm ET). Newcastle have 11 points, Everton 10.\n\nYour score prediction? 👇\n\n#NEWEVE #NUFC #EFC #PremierLeague"
+ },
+ {
+  "id": "08-messi-winner",
+  "time": "2026-11-02T18:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "MLS · SUN NOV 1",
+  "home": "New England",
+  "homeAbbr": "NE",
+  "homeScore": 1,
+  "away": "Inter Miami",
+  "awayAbbr": "MIA",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "headline": "Messi's 83rd-minute winner",
+  "sub": "An assist and the winner. His league-leading 26th goal. Miami move up to second in the East.",
+  "caption": "🐐 Lionel Messi set up the equaliser and scored the winner as Inter Miami came from behind to win 2–1 in New England.\n\nIt's his 26th MLS goal of the season, the most in the league. Miami are second in the East with one game left.\n\nMVP again? 👇\n\n#Messi #InterMiami #MLS"
+ },
+ {
+  "id": "09-ucl-week",
+  "time": "2026-11-02T19:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 4",
+  "headline": "The big games this week",
+  "rows": [
+   [
+    "Barcelona",
+    "v",
+    "Aston Villa"
+   ],
+   [
+    "Atlético",
+    "v",
+    "Bayern"
+   ],
+   [
+    "Man Utd",
+    "v",
+    "Roma"
+   ],
+   [
+    "Villarreal",
+    "v",
+    "PSG"
+   ],
+   [
+    "Leipzig",
+    "v",
+    "Man City"
+   ],
+   [
+    "Slavia Prague",
+    "v",
+    "Arsenal"
+   ]
+  ],
+  "sub": "Tue and Wed, 20:00 GMT (3pm ET). Fenerbahçe v Liverpool, Wed 17:45 GMT.",
+  "caption": "⭐ Champions League is back on Tuesday.\n\nUnbeaten Aston Villa go to Barcelona, Bayern visit Atlético and Man Utd host Roma. On Wednesday Man City are in Leipzig and Arsenal in Prague.\n\nWhich game are you watching? 👇\n\n#UCL #ChampionsLeague"
+ },
+ {
+  "id": "10-nfl-week8",
+  "time": "2026-11-02T20:00:00",
+  "sport": "nfl",
+  "kind": "list",
+  "label": "NFL · WEEK 8 · SUNDAY",
+  "headline": "Sunday in one card",
+  "rows": [
+   [
+    "Bills",
+    "36–10",
+    "Ravens"
+   ],
+   [
+    "Broncos",
+    "28–24",
+    "Chiefs"
+   ],
+   [
+    "Lions",
+    "19–15",
+    "Vikings"
+   ],
+   [
+    "Bengals",
+    "43–36 OT",
+    "Titans"
+   ],
+   [
+    "Cardinals",
+    "33–30 OT",
+    "Cowboys"
+   ],
+   [
+    "Raiders",
+    "38–33",
+    "Jets"
+   ],
+   [
+    "Jaguars",
+    "42–7",
+    "Colts"
+   ]
+  ],
+  "sub": "Also: Steelers 27–6, Rams 24–9, Patriots 24–19, Bucs 16–0, Commanders 27–10.",
+  "caption": "🏈 NFL Week 8 Sunday: two overtime games, the Vikings' first loss and a 4th-and-goal finish in Denver.\n\nWinners listed first. Which result surprised you most? 👇\n\n#NFL #NFLSunday #Week8"
+ },
+ {
+  "id": "11-bucs-zero",
+  "time": "2026-11-02T21:00:00",
+  "sport": "nfl",
+  "kind": "headline",
+  "label": "NFL · BUCCANEERS 16, FALCONS 0",
+  "headline": "Won without completing a pass",
+  "sub": "Baker Mayfield went 0-for-3 in the rain. Tampa Bay ran for a team-record 324 yards. The last team with zero completions: Buffalo, 1974.",
+  "stat": [
+   "324",
+   "rushing yards"
+  ],
+  "caption": "🌧️ The Bucs beat the Falcons 16–0 without completing a single pass.\n\nBaker Mayfield was 0-for-3 in a downpour. Bucky Irving (170) and Kenny Gainwell (140) ran for a team-record 324 yards.\n\nHave you ever seen a game like this? 👇\n\n#GoBucs #NFL #RiseUp"
+ },
+ {
+  "id": "12-broncos-chiefs",
+  "time": "2026-11-02T22:00:00",
+  "sport": "nfl",
+  "kind": "score",
+  "label": "NFL · WEEK 8",
+  "home": "Broncos",
+  "homeAbbr": "DEN",
+  "homeScore": 28,
+  "away": "Chiefs",
+  "awayAbbr": "KC",
+  "awayScore": 24,
+  "status": "FINAL",
+  "headline": "Sacked on 4th-and-goal",
+  "sub": "Malcolm Roach dropped Mahomes on the last play. Denver (6-2) lead the AFC West.",
+  "caption": "🐴 Denver were down 24–13 in the fourth quarter. They won 28–24.\n\nJonah Coleman scored with under two minutes left, then Malcolm Roach sacked Patrick Mahomes on 4th-and-goal on the final play. The Broncos (6-2) now lead the AFC West.\n\nWho wins the division? 👇\n\n#BroncosCountry #ChiefsKingdom #NFL"
+ },
+ {
+  "id": "13-burrow",
+  "time": "2026-11-02T23:00:00",
+  "sport": "nfl",
+  "kind": "headline",
+  "label": "NFL · BENGALS 43, TITANS 36 (OT)",
+  "headline": "462 yards, 5 TDs, then the winner",
+  "sub": "Joe Burrow ran in a 9-yard TD in overtime. The Bengals are 5-2 for the first time since 2021.",
+  "stat": [
+   "462",
+   "passing yards"
+  ],
+  "caption": "🐯 Joe Burrow threw for 462 yards and five touchdowns, then ran in the overtime winner himself.\n\nOnly one other QB, Hall of Famer Norm Van Brocklin in 1951, has had 400+ yards, five TD passes, a rushing TD and multiple picks in one game.\n\nBest QB in the AFC right now? 👇\n\n#Bengals #WhoDey #NFL"
+ },
+ {
+  "id": "14-luka-45",
+  "time": "2026-11-03T00:00:00",
+  "sport": "nba",
+  "kind": "headline",
+  "label": "NBA · LAKERS 131, RAPTORS 125",
+  "headline": "Luka: 45 points, 15 rebounds",
+  "sub": "Eight 3-pointers and five steals. 37+ points in four straight games.",
+  "stat": [
+   "45",
+   "points"
+  ],
+  "caption": "🔥 Luka Doncic had 45 points, 15 rebounds, six assists and five steals as the Lakers beat the Raptors 131–125.\n\nThat's four straight games with 37 or more. He leads the NBA in scoring.\n\nIs Luka the MVP favourite? 👇\n\n#LakeShow #Luka #NBA"
+ },
+ {
+  "id": "15-lions-vikings",
+  "time": "2026-11-03T01:00:00",
+  "sport": "nfl",
+  "kind": "score",
+  "label": "NFL · WEEK 8",
+  "home": "Lions",
+  "homeAbbr": "DET",
+  "homeScore": 19,
+  "away": "Vikings",
+  "awayAbbr": "MIN",
+  "awayScore": 15,
+  "status": "FINAL",
+  "headline": "The Vikings lose for the first time",
+  "sub": "Jared Goff to Jameson Williams with 4:35 left. Jahmyr Gibbs ran for 153 yards.",
+  "caption": "🦁 No more unbeatens in the NFC North. The Lions beat the Vikings 19–15.\n\nJared Goff found Jameson Williams for the go-ahead touchdown with 4:35 left, and Jahmyr Gibbs ran for 153 yards. Detroit have won three straight.\n\nWho wins the NFC North? 👇\n\n#OnePride #Skol #NFL"
+ },
+ {
+  "id": "16-ravens-qbs",
+  "time": "2026-11-03T02:00:00",
+  "sport": "nfl",
+  "kind": "score",
+  "label": "NFL · WEEK 8",
+  "home": "Bills",
+  "homeAbbr": "BUF",
+  "homeScore": 36,
+  "away": "Ravens",
+  "awayAbbr": "BAL",
+  "awayScore": 10,
+  "status": "FINAL",
+  "headline": "Lamar Jackson needs thumb surgery",
+  "sub": "Hurt on Baltimore's first snap. Coach Jesse Minter says he goes on IR and could miss the rest of the season.",
+  "caption": "😬 A bad day for Baltimore. Lamar Jackson hurt his throwing thumb on the first snap, and the Bills won 36–10.\n\nCoach Jesse Minter said Jackson needs surgery and will go on injured reserve. Backup Tyler Huntley also left hurt, so third-stringer Joe Fagnano finished the game.\n\nCan the Ravens survive without him? 👇\n\n#Ravens #BillsMafia #NFL"
+ },
+ {
+  "id": "17-nba-tonight",
+  "time": "2026-11-03T03:00:00",
+  "sport": "nba",
+  "kind": "list",
+  "label": "NBA · TONIGHT · 15 GAMES",
+  "headline": "Monday night picks",
+  "rows": [
+   [
+    "Thunder 4-2",
+    "@",
+    "Cavaliers 4-2"
+   ],
+   [
+    "Pelicans 2-4",
+    "@",
+    "Grizzlies 6-0"
+   ],
+   [
+    "Celtics 5-1",
+    "@",
+    "Rockets 6-1"
+   ],
+   [
+    "Heat 2-4",
+    "@",
+    "Lakers 5-2"
+   ]
+  ],
+  "sub": "7pm, 8pm, 8:30pm and 10pm ET. Memphis are still unbeaten.",
+  "caption": "🏀 15 NBA games tonight. Start with Thunder at Cavs (7pm ET), then unbeaten Memphis (8pm ET) and Celtics at Rockets (8:30pm ET).\n\nWhich game are you watching? 👇\n\n#NBA #NBATonight #Celtics #Rockets"
+ },
+ {
+  "id": "18-mnf",
+  "time": "2026-11-03T04:00:00",
+  "sport": "nfl",
+  "kind": "score",
+  "label": "MONDAY NIGHT FOOTBALL · 8:15PM ET",
+  "home": "Seahawks",
+  "homeAbbr": "SEA",
+  "homeScore": "–",
+  "away": "Bears",
+  "awayAbbr": "CHI",
+  "awayScore": "–",
+  "status": "ESPN",
+  "headline": "Bears (5-2) at Seahawks (4-3)",
+  "sub": "Lumen Field, Seattle. 8:15pm ET / 01:15 GMT.",
+  "caption": "🏈 Monday Night Football: the Bears (5-2) visit the Seahawks (4-3) at Lumen Field.\n\nKickoff 8:15pm ET on ESPN (01:15 GMT).\n\nYour pick? 👇\n\n#MNF #DaBears #GoHawks"
+ },
+ {
+  "id": "19-kochetkov",
+  "time": "2026-11-03T05:00:00",
+  "sport": "nhl",
+  "kind": "headline",
+  "label": "NHL · HURRICANES 7, JETS 0",
+  "headline": "Kochetkov starts the season 10-0",
+  "sub": "26 saves for the shutout. Only the third goalie in NHL history to open 10-0.",
+  "stat": [
+   "10-0",
+   "to start"
+  ],
+  "caption": "🧱 Pyotr Kochetkov is 10-0 this season after a 26-save shutout in Carolina's 7–0 win over Winnipeg.\n\nHe's the third goalie ever to start a season 10-0, level with Carey Price. Only Jack Campbell (11) has done more.\n\nDoes he get to 12? 👇\n\n#LetsGoCanes #NHL #Kochetkov"
+ },
+ {
+  "id": "20-mcdavid",
+  "time": "2026-11-03T06:00:00",
+  "sport": "nhl",
+  "kind": "headline",
+  "label": "NHL · OILERS 4, RANGERS 1",
+  "headline": "McDavid: an assist in all 15 games",
+  "sub": "An NHL record to start a season. He also scored 50 seconds in and leads the league with 39 points.",
+  "stat": [
+   "39",
+   "points"
+  ],
+  "caption": "🏒 Connor McDavid has an assist in every game this season: 15 straight, an NHL record to start a year.\n\nHe also scored 50 seconds into a 4–1 win at the Rangers and leads the league with 39 points.\n\nCan anyone stop him? 👇\n\n#Oilers #McDavid #NHL"
+ },
+ {
+  "id": "21-lendeborg",
+  "time": "2026-11-03T07:00:00",
+  "sport": "nba",
+  "kind": "headline",
+  "label": "NBA · WARRIORS 124, CLIPPERS 112",
+  "headline": "Rookie Lendeborg drops 37",
+  "sub": "13-of-19 shooting with Curry and Green resting. Most by a Warriors rookie since Curry's 42 in 2010.",
+  "stat": [
+   "37",
+   "points"
+  ],
+  "caption": "🌉 Yaxel Lendeborg scored a career-high 37 as the Warriors beat the Clippers without Steph Curry or Draymond Green.\n\nIt's the most by a Warriors rookie since Curry scored 42 in 2010. Golden State have won four straight.\n\nRookie of the Year? 👇\n\n#DubNation #NBA #Warriors"
+ },
+ {
+  "id": "22-ap-poll",
+  "time": "2026-11-03T08:00:00",
+  "sport": "nfl",
+  "tagText": "CFB",
+  "kind": "list",
+  "label": "COLLEGE FOOTBALL · AP POLL WEEK 10",
+  "headline": "Ohio State fall to No. 11",
+  "rows": [
+   [
+    "1",
+    "Miami",
+    "8-0"
+   ],
+   [
+    "2",
+    "Georgia",
+    "7-1"
+   ],
+   [
+    "3",
+    "Utah",
+    "8-0"
+   ],
+   [
+    "4",
+    "Notre Dame",
+    "7-1"
+   ],
+   [
+    "5",
+    "UCLA",
+    "8-0"
+   ],
+   [
+    "6",
+    "Indiana",
+    "8-1"
+   ]
+  ],
+  "sub": "Ohio State drop from 2 to 11 after losing at USC. USC enter the poll at No. 18.",
+  "caption": "📋 New AP Top 25: Miami stay No. 1, Georgia move up to 2 and Utah jump to 3.\n\nOhio State fall from 2 to 11 after the loss at USC, who come in at No. 18.\n\nWho's too high? 👇\n\n#CFB #CollegeFootball #APPoll"
+ },
+ {
+  "id": "23-gauthier",
+  "time": "2026-11-03T09:00:00",
+  "sport": "nhl",
+  "kind": "score",
+  "label": "NHL · SUN NOV 1",
+  "home": "Ducks",
+  "homeAbbr": "ANA",
+  "homeScore": 6,
+  "away": "Senators",
+  "awayAbbr": "OTT",
+  "awayScore": 3,
+  "status": "FINAL",
+  "headline": "Down 3–0, then a Gauthier hat trick",
+  "sub": "Anaheim scored six straight. Gauthier got two goals 36 seconds apart in the third.",
+  "caption": "🦆 The Ducks trailed Ottawa 3–0 and won 6–3.\n\nCutter Gauthier scored a hat trick, including two goals 36 seconds apart on the power play in the third period. Leo Carlsson had three assists.\n\nBest comeback of the weekend? 👇\n\n#FlyTogether #NHL #Ducks"
+ }
+]
