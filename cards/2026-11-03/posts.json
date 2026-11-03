@@ -1,0 +1,533 @@
+[
+ {
+  "id": "01-ucl-tonight",
+  "time": "2026-11-03T11:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · TONIGHT",
+  "headline": "Matchday 4 is here",
+  "rows": [
+   [
+    "Barcelona",
+    "v",
+    "Aston Villa"
+   ],
+   [
+    "Atlético",
+    "v",
+    "Bayern"
+   ],
+   [
+    "Man United",
+    "v",
+    "Roma"
+   ],
+   [
+    "Villarreal",
+    "v",
+    "PSG"
+   ],
+   [
+    "Feyenoord",
+    "v",
+    "Inter"
+   ],
+   [
+    "Galatasaray",
+    "v",
+    "Stuttgart"
+   ]
+  ],
+  "sub": "Most games kick off 8pm GMT (3pm ET). Galatasaray v Stuttgart and Shakhtar v Sporting start 5:45pm GMT.",
+  "caption": "⭐ Champions League night. Nine games today, and the big ones all kick off at 8pm GMT (3pm ET).\n\nBarcelona host unbeaten Aston Villa, Atlético take on Bayern, and Man United welcome Roma.\n\nWhich game are you watching? 👇\n\n#UCL #ChampionsLeague #UCLTonight"
+ },
+ {
+  "id": "02-barca-villa",
+  "time": "2026-11-03T12:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "UCL · BARCELONA v ASTON VILLA · 8PM GMT",
+  "headline": "Villa have won all three",
+  "rows": [
+   [
+    "Aston Villa",
+    "UCL",
+    "9 pts · 2nd"
+   ],
+   [
+    "Barcelona",
+    "UCL",
+    "6 pts · 8th"
+   ],
+   [
+    "Barcelona",
+    "LaLiga",
+    "1st · 30 pts"
+   ],
+   [
+    "Aston Villa",
+    "PL",
+    "10th · 12 pts"
+   ]
+  ],
+  "sub": "Nicolas Jackson has 3 Champions League goals for Villa. Lamine Yamal has 2 for Barça.",
+  "caption": "🟣 Aston Villa are perfect in the Champions League: three games, three wins, nine points.\n\nTonight they go to Barcelona, who top LaLiga with 30 points from 11 games. Kick-off 8pm GMT / 3pm ET.\n\nCan Villa keep it going? 👇\n\n#AVFC #Barca #UCL"
+ },
+ {
+  "id": "03-fiorentina-sassuolo",
+  "time": "2026-11-03T13:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "SERIE A · MON NOV 2",
+  "home": "Sassuolo",
+  "homeAbbr": "SAS",
+  "homeScore": 2,
+  "away": "Fiorentina",
+  "awayAbbr": "FIO",
+  "awayScore": 4,
+  "status": "FULL TIME",
+  "headline": "Six goals at Sassuolo",
+  "sub": "Pellegrino, Njie, Mastantuono and Valdepeñas for Fiorentina. Laurienté scored both for Sassuolo.",
+  "caption": "💜 Fiorentina won 4–2 at Sassuolo on Monday night.\n\nArmand Laurienté scored twice for Sassuolo, but Mateo Pellegrino, Alieu Njie, Franco Mastantuono and Víctor Valdepeñas all found the net for the Viola.\n\nWho was the star of this one? 👇\n\n#Fiorentina #SerieA #SassuoloFiorentina"
+ },
+ {
+  "id": "04-united-roma",
+  "time": "2026-11-03T14:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "UCL · MAN UNITED v ROMA · 8PM GMT",
+  "headline": "17th in England v unbeaten in Italy",
+  "rows": [
+   [
+    "Man United",
+    "PL",
+    "17th · 7 pts"
+   ],
+   [
+    "Roma",
+    "Serie A",
+    "3rd · unbeaten"
+   ],
+   [
+    "Man United",
+    "UCL",
+    "3 pts · 21st"
+   ],
+   [
+    "Roma",
+    "UCL",
+    "4 pts · 15th"
+   ]
+  ],
+  "sub": "Roma have 7 wins and 3 draws in Serie A. Donyell Malen has 3 Champions League goals.",
+  "caption": "🔴 Man United are 17th in the Premier League with 7 points from 9 games. Roma are third in Serie A and haven't lost a league game yet.\n\nThey meet at Old Trafford tonight, 8pm GMT / 3pm ET.\n\nPrediction? 👇\n\n#MUFC #ASRoma #UCL"
+ },
+ {
+  "id": "05-parma-atalanta",
+  "time": "2026-11-03T15:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "SERIE A · MON NOV 2",
+  "home": "Atalanta",
+  "homeAbbr": "ATA",
+  "homeScore": 0,
+  "away": "Parma",
+  "awayAbbr": "PAR",
+  "awayScore": 3,
+  "status": "FULL TIME",
+  "headline": "Parma stun Atalanta",
+  "sub": "Fabbian header (41'), Zappacosta own goal (47'), Lontani (58').",
+  "caption": "😮 Parma went to Bergamo and won 3–0.\n\nGiovanni Fabbian headed in before half-time, a Davide Zappacosta own goal doubled it and Simone Lontani made it three before the hour.\n\nBiggest shock of the Serie A weekend? 👇\n\n#Parma #Atalanta #SerieA"
+ },
+ {
+  "id": "06-atleti-bayern",
+  "time": "2026-11-03T16:00:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "UCL · ATLÉTICO v BAYERN · 8PM GMT",
+  "headline": "Bayern haven't lost yet this season",
+  "sub": "Five wins and three draws in the Bundesliga, one win and two draws in Europe. Atlético are second in LaLiga.",
+  "stat": [
+   "4",
+   "UCL goals for Harry Kane"
+  ],
+  "caption": "🔥 Atlético Madrid v Bayern Munich in Madrid tonight (8pm GMT / 3pm ET).\n\nBayern are unbeaten in the Bundesliga and the Champions League, and Harry Kane already has four goals in Europe. Atlético sit second in LaLiga.\n\nWho wins it? 👇\n\n#Atleti #FCBayern #UCL"
+ },
+ {
+  "id": "07-serie-a-top5",
+  "time": "2026-11-03T17:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "SERIE A · AFTER 10 GAMES",
+  "headline": "Lazio still unbeaten on top",
+  "rows": [
+   [
+    "1",
+    "Lazio",
+    "28"
+   ],
+   [
+    "2",
+    "Inter",
+    "25"
+   ],
+   [
+    "3",
+    "Roma",
+    "24"
+   ],
+   [
+    "4",
+    "Como",
+    "23"
+   ],
+   [
+    "5",
+    "AC Milan",
+    "21"
+   ]
+  ],
+  "sub": "Points. Lazio: nine wins and a draw. Roma are the only other unbeaten team in the top five.",
+  "caption": "📊 The Serie A top five after 10 games.\n\nLazio lead by three points with nine wins and a draw. Inter are second, Roma third and Como are in the top four.\n\nWho wins the Scudetto? 👇\n\n#SerieA #Lazio #Inter #ASRoma"
+ },
+ {
+  "id": "08-villarreal-psg",
+  "time": "2026-11-03T18:00:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "UCL · VILLARREAL v PSG · 8PM GMT",
+  "headline": "PSG: 3 games, 3 wins, +9",
+  "sub": "PSG lead the league phase on goal difference. Ousmane Dembélé has 3 Champions League goals. Villarreal have 3 points.",
+  "caption": "🔵 PSG are top of the Champions League table with three wins and a +9 goal difference.\n\nThey're at Villarreal tonight, 8pm GMT / 3pm ET. Ousmane Dembélé has three goals in Europe so far.\n\nCan anyone stop PSG? 👇\n\n#PSG #Villarreal #UCL"
+ },
+ {
+  "id": "09-ucl-perfect",
+  "time": "2026-11-03T19:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · AFTER 3 GAMES",
+  "headline": "Five teams with 9 points",
+  "rows": [
+   [
+    "1",
+    "PSG",
+    "+9"
+   ],
+   [
+    "2",
+    "Aston Villa",
+    "+9"
+   ],
+   [
+    "3",
+    "Liverpool",
+    "+5"
+   ],
+   [
+    "4",
+    "Real Madrid",
+    "+5"
+   ],
+   [
+    "5",
+    "Real Betis",
+    "+3"
+   ]
+  ],
+  "sub": "Goal difference. PSG, Villa and Betis play tonight; Liverpool and Real Madrid play Wednesday.",
+  "caption": "✅ Five teams are still perfect in the Champions League: PSG, Aston Villa, Liverpool, Real Madrid and Real Betis.\n\nThree of them play tonight (8pm GMT / 3pm ET).\n\nHow many will still be perfect after this week? 👇\n\n#UCL #ChampionsLeague #LFC #AVFC"
+ },
+ {
+  "id": "10-depor-comeback",
+  "time": "2026-11-03T20:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "LALIGA · MON NOV 2",
+  "home": "Deportivo",
+  "homeAbbr": "DEP",
+  "homeScore": 2,
+  "away": "Osasuna",
+  "awayAbbr": "OSA",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "headline": "Depor come from behind",
+  "sub": "Budimir put Osasuna ahead (32'). Mario Soriano's free kick (64') and Bil Nsongo (87') won it.",
+  "caption": "⚪🔵 Deportivo La Coruña came from behind to beat Osasuna 2–1.\n\nAnte Budimir scored first, then Mario Soriano curled in a free kick and Bil Nsongo won it with three minutes left.\n\nHow far can Depor go this season? 👇\n\n#Deportivo #LaLiga #Depor"
+ },
+ {
+  "id": "11-bears-seahawks",
+  "time": "2026-11-03T21:00:00",
+  "sport": "nfl",
+  "kind": "score",
+  "label": "MONDAY NIGHT FOOTBALL · WEEK 8",
+  "home": "Seahawks",
+  "homeAbbr": "SEA",
+  "homeScore": 17,
+  "away": "Bears",
+  "awayAbbr": "CHI",
+  "awayScore": 34,
+  "status": "FINAL",
+  "headline": "Bears roll in Seattle",
+  "sub": "Caleb Williams: 247 yards, 1 TD, no turnovers. D'Andre Swift ran in 3 touchdowns.",
+  "caption": "🐻 The Bears beat the Seahawks 34–17 on Monday Night Football and move to 6–2.\n\nCaleb Williams threw for 247 yards with no turnovers, and D'Andre Swift scored three rushing touchdowns. Seattle fall to 4–4.\n\nAre the Bears for real? 👇\n\n#DaBears #MNF #Seahawks"
+ },
+ {
+  "id": "12-simmons",
+  "time": "2026-11-03T22:00:00",
+  "sport": "nfl",
+  "kind": "headline",
+  "label": "NFL · BEARS 34, SEAHAWKS 17",
+  "headline": "Jeffery Simmons' Bears debut: instant impact",
+  "sub": "Sack on the opening drive, 6 tackles, a tackle for loss and a pass defended. Seattle went 1 for 11 on third down.",
+  "stat": [
+   "252",
+   "total yards allowed"
+  ],
+  "caption": "💥 The Bears sent Tennessee a package including two first-round picks for Jeffery Simmons last week. Monday night showed why.\n\nHe sacked Sam Darnold on the opening drive, and Chicago held Seattle to 252 yards and one third-down conversion.\n\nTrade of the year? 👇\n\n#DaBears #NFL #MNF"
+ },
+ {
+  "id": "13-sga-43",
+  "time": "2026-11-03T23:00:00",
+  "sport": "nba",
+  "kind": "score",
+  "label": "NBA · MON NOV 2",
+  "home": "Cavaliers",
+  "homeAbbr": "CLE",
+  "homeScore": 112,
+  "away": "Thunder",
+  "awayAbbr": "OKC",
+  "awayScore": 117,
+  "status": "FINAL",
+  "headline": "SGA: 43 and the dagger",
+  "sub": "Season-high 43 points and the go-ahead three with 32.6 seconds left.",
+  "caption": "⚡ Shai Gilgeous-Alexander scored a season-high 43 and hit the go-ahead three with 32.6 seconds left as the Thunder won 117–112 in Cleveland.\n\nOKC are missing three starters and still found a way.\n\nBest player in the league right now? 👇\n\n#ThunderUp #NBA #SGA"
+ },
+ {
+  "id": "14-pelicans-grizzlies",
+  "time": "2026-11-04T00:00:00",
+  "sport": "nba",
+  "kind": "score",
+  "label": "NBA · MON NOV 2 · OVERTIME",
+  "home": "Grizzlies",
+  "homeAbbr": "MEM",
+  "homeScore": 134,
+  "away": "Pelicans",
+  "awayAbbr": "NOP",
+  "awayScore": 135,
+  "status": "FINAL/OT",
+  "headline": "No more unbeaten teams",
+  "sub": "Memphis were 6–0. Ty Jerome scored 40 but his last-second shot missed. Zion had 9 of his 25 in OT.",
+  "caption": "😱 The NBA's last unbeaten team is gone. The Pelicans won 135–134 in overtime in Memphis.\n\nJeremiah Fears hit two free throws with 7.3 seconds left, Zion Williamson scored 9 of his 25 in OT, and Ty Jerome's 40 wasn't enough.\n\nWho's the best team in the West? 👇\n\n#Pelicans #GrizzNation #NBA"
+ },
+ {
+  "id": "15-rockets-first",
+  "time": "2026-11-04T01:00:00",
+  "sport": "nba",
+  "kind": "score",
+  "label": "NBA · MON NOV 2",
+  "home": "Rockets",
+  "homeAbbr": "HOU",
+  "homeScore": 109,
+  "away": "Celtics",
+  "awayAbbr": "BOS",
+  "awayScore": 93,
+  "status": "FINAL",
+  "headline": "Rockets 7–1, first in the West",
+  "sub": "Alperen Şengün: 26 points, 10 assists, 7 rebounds. Houston's best start since 2014–15.",
+  "caption": "🚀 The Rockets beat the Celtics 109–93 and are 7–1, top of the Western Conference.\n\nAlperen Şengün had 26 points and 10 assists, and Houston never trailed. It's their best start since 2014–15.\n\nRockets: contenders? 👇\n\n#Rockets #NBA #Celtics"
+ },
+ {
+  "id": "16-sixers-7-1",
+  "time": "2026-11-04T02:00:00",
+  "sport": "nba",
+  "kind": "score",
+  "label": "NBA · MON NOV 2",
+  "home": "76ers",
+  "homeAbbr": "PHI",
+  "homeScore": 126,
+  "away": "Bulls",
+  "awayAbbr": "CHI",
+  "awayScore": 107,
+  "status": "FINAL",
+  "headline": "Sixers 7–1, top of the East",
+  "sub": "Maxey 26 (15 in the 4th) and 11 assists. Brown 25 and 11. LeBron 15, 9 assists, 7 rebounds.",
+  "caption": "🔔 The 76ers have won four in a row and lead the East at 7–1.\n\nTyrese Maxey scored 15 of his 26 in the fourth quarter, Jaylen Brown had 25 and LeBron James added 15 points and 9 assists against the Bulls.\n\nCan this lineup win it all? 👇\n\n#Sixers #NBA #LeBron"
+ },
+ {
+  "id": "17-cfp-tonight",
+  "time": "2026-11-04T03:00:00",
+  "sport": "nfl",
+  "tagText": "CFB",
+  "kind": "list",
+  "label": "COLLEGE FOOTBALL · CFP RANKINGS · 7PM ET",
+  "headline": "First CFP rankings tonight",
+  "rows": [
+   [
+    "1",
+    "Miami",
+    "8-0"
+   ],
+   [
+    "2",
+    "Georgia",
+    "7-1"
+   ],
+   [
+    "3",
+    "Utah",
+    "8-0"
+   ],
+   [
+    "4",
+    "Notre Dame",
+    "7-1"
+   ],
+   [
+    "5",
+    "UCLA",
+    "8-0"
+   ],
+   [
+    "6",
+    "Indiana",
+    "8-1"
+   ]
+  ],
+  "sub": "Current AP top six. The committee's first top 25 is revealed tonight at 7pm ET on ESPN.",
+  "caption": "📋 The first College Football Playoff rankings drop tonight at 7pm ET on ESPN.\n\nIn the AP poll it's Miami, Georgia, Utah, Notre Dame, UCLA and Indiana at the top.\n\nWho's your committee No. 1? 👇\n\n#CFB #CFPRankings #CollegeFootball"
+ },
+ {
+  "id": "18-nhl-tonight",
+  "time": "2026-11-04T04:00:00",
+  "sport": "nhl",
+  "kind": "list",
+  "label": "NHL · TONIGHT · 11 GAMES",
+  "headline": "McDavid already has 39 points",
+  "rows": [
+   [
+    "Oilers",
+    "@",
+    "Devils · 7:30"
+   ],
+   [
+    "Hurricanes",
+    "@",
+    "Predators · 8:00"
+   ],
+   [
+    "Avalanche",
+    "@",
+    "Blue Jackets · 7:00"
+   ],
+   [
+    "Wild",
+    "@",
+    "Flyers · 7:00"
+   ]
+  ],
+  "sub": "Times ET. Connor McDavid has 30 assists already. Carolina lead the NHL with 26 points.",
+  "caption": "🏒 11 NHL games tonight, starting at 7pm ET.\n\nConnor McDavid brings 39 points (30 of them assists) into Edmonton's 7:30pm ET game in New Jersey. League leaders Carolina visit Nashville at 8pm ET.\n\nWhat's McDavid's final total this season? 👇\n\n#NHL #Oilers #McDavid"
+ },
+ {
+  "id": "19-spurs-five",
+  "time": "2026-11-04T05:00:00",
+  "sport": "nba",
+  "kind": "headline",
+  "label": "NBA · SPURS 119, JAZZ 97",
+  "headline": "Spurs win five straight",
+  "sub": "Seven players in double figures against Utah. Over the streak Wembanyama is averaging 28.8 points, 9.8 rebounds and 4 blocks.",
+  "stat": [
+   "4.0",
+   "Wemby blocks per game in the streak"
+  ],
+  "caption": "🖤 The Spurs have won five in a row after beating the Jazz 119–97.\n\nDylan Harper led with 17, Victor Wembanyama had 12 points, 11 rebounds and 3 blocks, and seven players scored in double figures.\n\nSpurs in the top four of the West this year? 👇\n\n#PorVida #Spurs #NBA"
+ },
+ {
+  "id": "20-red-wings",
+  "time": "2026-11-04T06:00:00",
+  "sport": "nhl",
+  "kind": "score",
+  "label": "NHL · MON NOV 2",
+  "home": "Panthers",
+  "homeAbbr": "FLA",
+  "homeScore": 3,
+  "away": "Red Wings",
+  "awayAbbr": "DET",
+  "awayScore": 5,
+  "status": "FINAL",
+  "headline": "Two goals in 45 seconds",
+  "sub": "Faulk and Brandsegg-Nygård early in the 3rd. Tarasov made 23 saves against his old team.",
+  "caption": "🔴 The Red Wings won 5–3 in Florida.\n\nJustin Faulk and Michael Brandsegg-Nygård scored 45 seconds apart early in the third, Carter Mazur got his first NHL goal, and ex-Panther Daniil Tarasov made 23 saves.\n\nRed Wings back in the playoffs this season? 👇\n\n#LGRW #NHL #RedWings"
+ },
+ {
+  "id": "21-ufc-saturday",
+  "time": "2026-11-04T07:00:00",
+  "sport": "mma",
+  "kind": "list",
+  "label": "UFC FIGHT NIGHT · SATURDAY NOV 7",
+  "headline": "Heavyweights headline Saturday",
+  "rows": [
+   [
+    "Cortes Acosta",
+    "vs",
+    "Johnny Walker"
+   ],
+   [
+    "Tatiana Suarez",
+    "vs",
+    "Virna Jandiroba"
+   ],
+   [
+    "Davey Grant",
+    "vs",
+    "Elijah Smith"
+   ]
+  ],
+  "sub": "Main event: Waldo Cortes Acosta v Johnny Walker at heavyweight. Suarez v Jandiroba at strawweight.",
+  "caption": "🥊 UFC Fight Night on Saturday: Waldo Cortes Acosta v Johnny Walker at heavyweight.\n\nAlso on the card: Tatiana Suarez v Virna Jandiroba at strawweight, and Davey Grant v Elijah Smith at bantamweight.\n\nWho wins the main event? 👇\n\n#UFC #UFCFightNight #MMA"
+ },
+ {
+  "id": "22-f1-saopaulo",
+  "time": "2026-11-04T08:00:00",
+  "sport": "racing",
+  "kind": "list",
+  "label": "F1 · SÃO PAULO GP · THIS WEEKEND",
+  "headline": "First race for the new champion",
+  "rows": [
+   [
+    "1",
+    "Max Verstappen",
+    "Mexico"
+   ],
+   [
+    "2",
+    "Lewis Hamilton",
+    "Mexico"
+   ],
+   [
+    "3",
+    "Kimi Antonelli",
+    "Mexico"
+   ]
+  ],
+  "sub": "Antonelli sealed the title with P3 in Mexico. Next: São Paulo, then Las Vegas, Qatar and Abu Dhabi.",
+  "caption": "🏁 F1 heads to São Paulo this weekend, the first race since Kimi Antonelli clinched the world title in Mexico.\n\nMax Verstappen won in Mexico City ahead of Lewis Hamilton. Four races left: São Paulo, Las Vegas, Qatar and Abu Dhabi.\n\nWho wins in Brazil? 👇\n\n#F1 #BrazilGP #SaoPauloGP"
+ },
+ {
+  "id": "23-pastrnak",
+  "time": "2026-11-04T09:00:00",
+  "sport": "nhl",
+  "kind": "score",
+  "label": "NHL · MON NOV 2 · SHOOTOUT",
+  "home": "Bruins",
+  "homeAbbr": "BOS",
+  "homeScore": 3,
+  "away": "Golden Knights",
+  "awayAbbr": "VGK",
+  "awayScore": 2,
+  "status": "FINAL/SO",
+  "headline": "Pastrňák wins it in the shootout",
+  "sub": "Only goal of the shootout. Swayman stopped Connelly, Eichel and Marner. Boston's 6th straight home win.",
+  "caption": "🐻 David Pastrňák scored the only goal of the shootout and the Bruins beat Vegas 3–2.\n\nJeremy Swayman stopped Trevor Connelly, Jack Eichel and Mitch Marner, and Boston have now won six straight at home.\n\nBruins fans, how good is this team? 👇\n\n#NHLBruins #NHL #VegasBorn"
+ }
+]

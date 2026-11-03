@@ -1,0 +1,1245 @@
+[
+ {
+  "id": "s01-ucl-predict",
+  "sport": "football",
+  "time": "2026-11-03T11:30:00",
+  "bed": "hype",
+  "title": "Champions League Tonight: Predict EVERY Score ⭐ #UCL #shorts",
+  "description": "Nine Champions League games on Tuesday: Barcelona v Aston Villa, Atlético v Bayern, Man United v Roma, Villarreal v PSG and more. Most kick off at 8pm GMT (3pm ET). Drop your score predictions.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#UCL #ChampionsLeague #Barca #AVFC",
+  "tags": [
+   "champions league predictions",
+   "ucl tonight",
+   "barcelona vs aston villa",
+   "atletico vs bayern",
+   "man united vs roma",
+   "villarreal vs psg",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 17.6,
+    "kicker": "Champions League · Tuesday",
+    "title": "Predict the scores",
+    "badge": "Tonight",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Galatasaray",
+      "homeAbbr": "GAL",
+      "hs": "?",
+      "away": "Stuttgart",
+      "awayAbbr": "VFB",
+      "as": "?",
+      "note": "5:45pm GMT"
+     },
+     {
+      "home": "Shakhtar",
+      "homeAbbr": "SHK",
+      "hs": "?",
+      "away": "Sporting",
+      "awayAbbr": "SCP",
+      "as": "?",
+      "note": "5:45pm GMT"
+     },
+     {
+      "home": "Barcelona",
+      "homeAbbr": "BAR",
+      "hs": "?",
+      "away": "Aston Villa",
+      "awayAbbr": "AVL",
+      "as": "?",
+      "note": "8pm GMT"
+     },
+     {
+      "home": "Atlético",
+      "homeAbbr": "ATM",
+      "hs": "?",
+      "away": "Bayern",
+      "awayAbbr": "FCB",
+      "as": "?",
+      "note": "8pm GMT"
+     },
+     {
+      "home": "Man United",
+      "homeAbbr": "MUN",
+      "hs": "?",
+      "away": "Roma",
+      "awayAbbr": "ROM",
+      "as": "?",
+      "note": "8pm GMT"
+     },
+     {
+      "home": "Villarreal",
+      "homeAbbr": "VIL",
+      "hs": "?",
+      "away": "PSG",
+      "awayAbbr": "PSG",
+      "as": "?",
+      "note": "8pm GMT"
+     },
+     {
+      "home": "Feyenoord",
+      "homeAbbr": "FEY",
+      "hs": "?",
+      "away": "Inter",
+      "awayAbbr": "INT",
+      "as": "?",
+      "note": "8pm GMT"
+     },
+     {
+      "home": "Bodø/Glimt",
+      "homeAbbr": "BOD",
+      "hs": "?",
+      "away": "Lille",
+      "awayAbbr": "LIL",
+      "as": "?",
+      "note": "8pm GMT"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Your predictions?",
+    "sub": "Drop your scores in the comments"
+   }
+  ]
+ },
+ {
+  "id": "s02-villa-perfect",
+  "sport": "football",
+  "time": "2026-11-03T13:00:00",
+  "bed": "drama",
+  "title": "Aston Villa Are PERFECT in the Champions League… Next: Barcelona 😳 #UCL #shorts",
+  "description": "Aston Villa have won all three Champions League games and sit second on 9 points. Tonight they visit Barcelona, who lead LaLiga with 30 points from 11 games. Kick-off 8pm GMT / 3pm ET.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#AVFC #Barca #UCL #ChampionsLeague",
+  "tags": [
+   "aston villa",
+   "barcelona vs aston villa",
+   "champions league",
+   "ucl table",
+   "nicolas jackson",
+   "lamine yamal",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Champions League · Tonight",
+    "title": "3 games. 3 wins.",
+    "sub": "Aston Villa go to Barcelona"
+   },
+   {
+    "type": "table",
+    "dur": 4.4,
+    "label": "League phase · top 5",
+    "cols": [
+     "P",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "PSG",
+      3,
+      9
+     ],
+     [
+      2,
+      "Aston Villa",
+      3,
+      9
+     ],
+     [
+      3,
+      "Liverpool",
+      3,
+      9
+     ],
+     [
+      4,
+      "Real Madrid",
+      3,
+      9
+     ],
+     [
+      5,
+      "Real Betis",
+      3,
+      9
+     ]
+    ],
+    "highlight": [
+     2
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 4.2,
+    "label": "The matchup",
+    "title": "Barcelona v Aston Villa",
+    "rows": [
+     [
+      "Barça",
+      "LaLiga",
+      "1st · 30 pts"
+     ],
+     [
+      "Villa",
+      "Premier League",
+      "10th · 12 pts"
+     ],
+     [
+      "Barça",
+      "UCL",
+      "6 pts · 8th"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Nicolas Jackson",
+    "value": 3,
+    "unit": "UCL goals",
+    "text": "Villa's top scorer in Europe"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Villa win in Barcelona?"
+   }
+  ]
+ },
+ {
+  "id": "s03-fiorentina-six",
+  "sport": "football",
+  "time": "2026-11-03T14:30:00",
+  "bed": "anthem",
+  "title": "6-Goal Thriller! Fiorentina Score 4 at Sassuolo 💜 #SerieA #shorts",
+  "description": "Fiorentina won 4–2 at Sassuolo on Monday. Armand Laurienté scored twice for Sassuolo, but Pellegrino, Njie, Mastantuono and Valdepeñas all scored for Fiorentina.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Fiorentina #SerieA #Sassuolo #Mastantuono",
+  "tags": [
+   "sassuolo vs fiorentina",
+   "fiorentina",
+   "serie a",
+   "mastantuono",
+   "serie a goals",
+   "italian football",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Serie A · Monday",
+    "title": "Six-goal thriller",
+    "sub": "Sassuolo v Fiorentina"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Full time",
+    "home": "Sassuolo",
+    "homeAbbr": "SAS",
+    "homeScore": 2,
+    "away": "Fiorentina",
+    "awayAbbr": "FIO",
+    "awayScore": 4,
+    "status": "FULL TIME"
+   },
+   {
+    "type": "list",
+    "dur": 5.2,
+    "label": "The goals",
+    "rows": [
+     [
+      "25'",
+      "Laurienté",
+      "SAS"
+     ],
+     [
+      "45+2'",
+      "Pellegrino",
+      "FIO"
+     ],
+     [
+      "50'",
+      "Njie",
+      "FIO"
+     ],
+     [
+      "65'",
+      "Laurienté",
+      "SAS"
+     ],
+     [
+      "79'",
+      "Mastantuono",
+      "FIO"
+     ],
+     [
+      "90+3'",
+      "Valdepeñas",
+      "FIO"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best goal of the night?"
+   }
+  ]
+ },
+ {
+  "id": "s04-united-roma",
+  "sport": "football",
+  "time": "2026-11-03T16:00:00",
+  "bed": "drama",
+  "title": "Man United 17th vs Unbeaten Roma Tonight 😬 #MUFC #shorts",
+  "description": "Man United are 17th in the Premier League with 7 points from 9 games. Roma are third in Serie A and unbeaten (7 wins, 3 draws). They meet in the Champions League at Old Trafford tonight, 8pm GMT / 3pm ET.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#MUFC #ASRoma #UCL #ManUnited",
+  "tags": [
+   "man united vs roma",
+   "manchester united",
+   "as roma",
+   "champions league",
+   "premier league table",
+   "carrick",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Champions League · Tonight",
+    "title": "17th v unbeaten",
+    "sub": "Man United host Roma"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Man United in the Premier League",
+    "value": 17,
+    "unit": "th",
+    "text": "7 points from 9 games"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Roma in Serie A",
+    "value": 0,
+    "unit": "defeats",
+    "text": "7 wins, 3 draws, 3rd in the table"
+   },
+   {
+    "type": "list",
+    "dur": 3.8,
+    "label": "Champions League so far",
+    "rows": [
+     [
+      "Roma",
+      "4 pts",
+      "15th"
+     ],
+     [
+      "Man United",
+      "3 pts",
+      "21st"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "United or Roma?"
+   }
+  ]
+ },
+ {
+  "id": "s05-kane-bayern",
+  "sport": "football",
+  "time": "2026-11-03T17:30:00",
+  "bed": "hype",
+  "title": "Bayern Haven't Lost ONCE This Season. Atlético Next 🔥 #UCL #shorts",
+  "description": "Bayern Munich are unbeaten in the Bundesliga (5 wins, 3 draws) and the Champions League (1 win, 2 draws), and Harry Kane has 4 Champions League goals. Tonight they play Atlético Madrid, second in LaLiga, in Madrid at 8pm GMT / 3pm ET.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#FCBayern #Atleti #UCL #HarryKane",
+  "tags": [
+   "atletico vs bayern",
+   "bayern munich",
+   "harry kane",
+   "champions league",
+   "atletico madrid",
+   "bundesliga",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Champions League · Tonight",
+    "title": "Still unbeaten",
+    "sub": "Bayern go to Atlético"
+   },
+   {
+    "type": "list",
+    "dur": 4.0,
+    "label": "Bayern this season",
+    "rows": [
+     [
+      "Bundesliga",
+      "5W 3D",
+      "0 losses"
+     ],
+     [
+      "Champions League",
+      "1W 2D",
+      "0 losses"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Harry Kane",
+    "value": 4,
+    "unit": "UCL goals",
+    "text": "Already in this Champions League"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "The hosts",
+    "title": "Atlético are 2nd in LaLiga",
+    "sub": "28 points from 11 games"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Does the run end tonight?"
+   }
+  ]
+ },
+ {
+  "id": "s06-parma-shock",
+  "sport": "football",
+  "time": "2026-11-03T19:00:00",
+  "bed": "hype",
+  "title": "Parma Go to Atalanta and Win 3–0 😮 #SerieA #shorts",
+  "description": "Parma beat Atalanta 3–0 in Bergamo on Monday: a Giovanni Fabbian header, a Davide Zappacosta own goal and a Simone Lontani finish.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Parma #Atalanta #SerieA",
+  "tags": [
+   "atalanta vs parma",
+   "parma",
+   "atalanta",
+   "serie a",
+   "serie a upset",
+   "italian football",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Serie A · Monday",
+    "title": "Shock in Bergamo",
+    "sub": "Parma win 3–0"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Full time",
+    "home": "Atalanta",
+    "homeAbbr": "ATA",
+    "homeScore": 0,
+    "away": "Parma",
+    "awayAbbr": "PAR",
+    "awayScore": 3,
+    "status": "FULL TIME"
+   },
+   {
+    "type": "list",
+    "dur": 4.0,
+    "label": "The goals",
+    "rows": [
+     [
+      "41'",
+      "Fabbian (header)",
+      "PAR"
+     ],
+     [
+      "47'",
+      "Zappacosta (og)",
+      "PAR"
+     ],
+     [
+      "58'",
+      "Lontani",
+      "PAR"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "dur": 4.2,
+    "label": "Serie A top 5",
+    "cols": [
+     "P",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Lazio",
+      10,
+      28
+     ],
+     [
+      2,
+      "Inter",
+      10,
+      25
+     ],
+     [
+      3,
+      "Roma",
+      10,
+      24
+     ],
+     [
+      4,
+      "Como",
+      10,
+      23
+     ],
+     [
+      5,
+      "AC Milan",
+      10,
+      21
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Upset of the weekend?"
+   }
+  ]
+ },
+ {
+  "id": "s07-psg-top",
+  "sport": "football",
+  "time": "2026-11-03T20:30:00",
+  "bed": "anthem",
+  "title": "5 Teams Still PERFECT in the Champions League ✅ #UCL #shorts",
+  "description": "After three games, PSG, Aston Villa, Liverpool, Real Madrid and Real Betis all have 9 points. PSG lead on goal difference (+9) and Ousmane Dembélé has 3 goals.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#UCL #PSG #LFC #RealMadrid",
+  "tags": [
+   "champions league table",
+   "psg",
+   "aston villa",
+   "liverpool",
+   "real madrid",
+   "real betis",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Champions League",
+    "title": "5 perfect teams",
+    "sub": "9 points from 9"
+   },
+   {
+    "type": "list",
+    "dur": 4.8,
+    "label": "Goal difference",
+    "title": "Still perfect",
+    "rows": [
+     [
+      "1",
+      "PSG",
+      "+9"
+     ],
+     [
+      "2",
+      "Aston Villa",
+      "+9"
+     ],
+     [
+      "3",
+      "Liverpool",
+      "+5"
+     ],
+     [
+      "4",
+      "Real Madrid",
+      "+5"
+     ],
+     [
+      "5",
+      "Real Betis",
+      "+3"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Ousmane Dembélé",
+    "value": 3,
+    "unit": "UCL goals",
+    "text": "PSG are at Villarreal tonight"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who stays perfect?"
+   }
+  ]
+ },
+ {
+  "id": "s08-bears-mnf",
+  "sport": "nfl",
+  "time": "2026-11-03T22:00:00",
+  "bed": "hype",
+  "title": "Bears ROLL Seattle 34–17! Swift Scores 3 🐻 #NFL #shorts",
+  "description": "The Bears beat the Seahawks 34–17 on Monday Night Football to go 6–2. Caleb Williams threw for 247 yards with no turnovers, D'Andre Swift ran for three touchdowns, and Seattle's run of 30 straight games without losing by more than four points ended.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#DaBears #MNF #Seahawks #NFL",
+  "tags": [
+   "bears vs seahawks",
+   "monday night football",
+   "caleb williams",
+   "dandre swift",
+   "chicago bears",
+   "nfl week 8",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Monday Night Football",
+    "title": "Bears roll in Seattle",
+    "sub": "Chicago move to 6–2"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Final",
+    "home": "Seahawks",
+    "homeAbbr": "SEA",
+    "homeScore": 17,
+    "away": "Bears",
+    "awayAbbr": "CHI",
+    "awayScore": 34,
+    "status": "FINAL"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "D'Andre Swift",
+    "value": 3,
+    "unit": "rush TDs",
+    "text": "Caleb Williams: 247 yards, 0 turnovers"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Streak over",
+    "title": "Seattle hadn't lost by more than 4 in 30 games",
+    "sub": "Until Monday night"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Are the Bears for real?"
+   }
+  ]
+ },
+ {
+  "id": "s09-sga-43",
+  "sport": "nba",
+  "time": "2026-11-03T23:30:00",
+  "bed": "drama",
+  "title": "SGA Drops 43 and Hits the Go-Ahead Three ⚡ #NBA #shorts",
+  "description": "Shai Gilgeous-Alexander scored a season-high 43 and hit the go-ahead 3-pointer with 32.6 seconds left as the short-handed Thunder beat the Cavaliers 117–112 in Cleveland.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#ThunderUp #NBA #SGA",
+  "tags": [
+   "shai gilgeous-alexander",
+   "sga 43 points",
+   "thunder vs cavaliers",
+   "okc thunder",
+   "nba highlights",
+   "nba scores",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Monday",
+    "title": "43 and the dagger",
+    "sub": "SGA in Cleveland"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Shai Gilgeous-Alexander",
+    "value": 43,
+    "unit": "points",
+    "text": "Season high · 11 of 12 free throws"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Fourth quarter",
+    "title": "Go-ahead three with 32.6s left",
+    "sub": "8 ties and 8 lead changes in the 4th"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final",
+    "home": "Cavaliers",
+    "homeAbbr": "CLE",
+    "homeScore": 112,
+    "away": "Thunder",
+    "awayAbbr": "OKC",
+    "awayScore": 117,
+    "status": "FINAL"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best player in the NBA?"
+   }
+  ]
+ },
+ {
+  "id": "s10-grizzlies-fall",
+  "sport": "nba",
+  "time": "2026-11-04T01:00:00",
+  "bed": "drama",
+  "title": "The NBA's Last Unbeaten Team Just Lost in OT 😱 #NBA #shorts",
+  "description": "The Pelicans beat the Grizzlies 135–134 in overtime to end Memphis's 6–0 start. Jeremiah Fears hit two free throws with 7.3 seconds left, Zion Williamson scored 9 of his 25 in OT, and Ty Jerome's 40 points weren't enough.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Pelicans #GrizzNation #NBA",
+  "tags": [
+   "pelicans vs grizzlies",
+   "ty jerome 40 points",
+   "zion williamson",
+   "memphis grizzlies",
+   "new orleans pelicans",
+   "nba overtime",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Monday",
+    "title": "0 unbeaten teams left",
+    "sub": "Memphis were 6–0"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final · overtime",
+    "home": "Grizzlies",
+    "homeAbbr": "MEM",
+    "homeScore": 134,
+    "away": "Pelicans",
+    "awayAbbr": "NOP",
+    "awayScore": 135,
+    "status": "FINAL/OT"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Ty Jerome",
+    "value": 40,
+    "unit": "points",
+    "text": "9 straight to force OT, missed at the buzzer"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "The winner",
+    "title": "Fears: 2 free throws, 7.3s left",
+    "sub": "Zion had 9 of his 25 in overtime"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best team in the West?"
+   }
+  ]
+ },
+ {
+  "id": "s11-cfp-tonight",
+  "sport": "nfl",
+  "tagText": "COLLEGE FOOTBALL",
+  "time": "2026-11-04T02:30:00",
+  "bed": "hype",
+  "title": "First CFP Rankings Drop TONIGHT 📋 Who's No. 1? #CFB #shorts",
+  "description": "The first College Football Playoff rankings are revealed tonight at 7pm ET on ESPN. In the AP poll it's Miami, Georgia, Utah, Notre Dame and UCLA at the top, with Ohio State down to 11th.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#CFB #CFPRankings #CollegeFootball",
+  "tags": [
+   "cfp rankings",
+   "college football playoff",
+   "first cfp rankings",
+   "ap poll",
+   "miami hurricanes",
+   "college football",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "College football · Tonight",
+    "title": "First CFP rankings",
+    "sub": "7pm ET on ESPN"
+   },
+   {
+    "type": "table",
+    "dur": 5.0,
+    "label": "AP poll · top 8",
+    "cols": [
+     "REC"
+    ],
+    "rows": [
+     [
+      1,
+      "Miami",
+      "8-0"
+     ],
+     [
+      2,
+      "Georgia",
+      "7-1"
+     ],
+     [
+      3,
+      "Utah",
+      "8-0"
+     ],
+     [
+      4,
+      "Notre Dame",
+      "7-1"
+     ],
+     [
+      5,
+      "UCLA",
+      "8-0"
+     ],
+     [
+      6,
+      "Indiana",
+      "8-1"
+     ],
+     [
+      7,
+      "BYU",
+      "7-1"
+     ],
+     [
+      8,
+      "Kentucky",
+      "7-1"
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Big faller",
+    "title": "Ohio State: No. 2 to No. 11",
+    "sub": "After losing at USC"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who's your No. 1?"
+   }
+  ]
+ },
+ {
+  "id": "s12-mcdavid-39",
+  "sport": "nhl",
+  "time": "2026-11-04T04:00:00",
+  "bed": "drama",
+  "title": "McDavid Already Has 30 ASSISTS 🤯 #NHL #shorts",
+  "description": "Connor McDavid has 39 points, 30 of them assists, and the Oilers (11-2-2) are in New Jersey tonight at 7:30pm ET. Carolina lead the NHL with 26 points.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NHL #Oilers #McDavid",
+  "tags": [
+   "connor mcdavid",
+   "mcdavid assists",
+   "edmonton oilers",
+   "oilers vs devils",
+   "nhl points leaders",
+   "nhl tonight",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · Tonight",
+    "title": "McDavid is on another level",
+    "sub": "Oilers at Devils, 7:30pm ET"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Connor McDavid",
+    "value": 39,
+    "unit": "points",
+    "text": "And it is only early November"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Connor McDavid",
+    "value": 30,
+    "unit": "assists",
+    "text": "Already"
+   },
+   {
+    "type": "table",
+    "dur": 4.2,
+    "label": "NHL points table",
+    "cols": [
+     "GP",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Hurricanes",
+      16,
+      26
+     ],
+     [
+      2,
+      "Oilers",
+      15,
+      24
+     ],
+     [
+      3,
+      "Wild",
+      16,
+      23
+     ],
+     [
+      4,
+      "Bruins",
+      16,
+      23
+     ]
+    ],
+    "highlight": [
+     2
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "How many points will he finish with?"
+   }
+  ]
+ },
+ {
+  "id": "s13-nba-board",
+  "sport": "nba",
+  "time": "2026-11-04T05:30:00",
+  "bed": "hype",
+  "title": "Monday's NBA Results: Memphis' Unbeaten Run ENDS 😱 #NBA #shorts",
+  "description": "Monday's NBA results: Thunder edge the Cavs, Pelicans end Memphis's unbeaten start in OT, Rockets beat the Celtics, 76ers move to 7–1 and the Spurs win again.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NBA #NBAScores #Rockets #Sixers",
+  "tags": [
+   "nba scores",
+   "nba results",
+   "monday nba",
+   "thunder vs cavaliers",
+   "rockets vs celtics",
+   "pelicans vs grizzlies",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 22.6,
+    "kicker": "NBA · Monday Nov 2",
+    "title": "Monday results",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Cavaliers",
+      "homeAbbr": "CLE",
+      "hs": 112,
+      "away": "Thunder",
+      "awayAbbr": "OKC",
+      "as": 117
+     },
+     {
+      "home": "Grizzlies",
+      "homeAbbr": "MEM",
+      "hs": 134,
+      "away": "Pelicans",
+      "awayAbbr": "NOP",
+      "as": 135,
+      "note": "OT"
+     },
+     {
+      "home": "Rockets",
+      "homeAbbr": "HOU",
+      "hs": 109,
+      "away": "Celtics",
+      "awayAbbr": "BOS",
+      "as": 93
+     },
+     {
+      "home": "76ers",
+      "homeAbbr": "PHI",
+      "hs": 126,
+      "away": "Bulls",
+      "awayAbbr": "CHI",
+      "as": 107
+     },
+     {
+      "home": "Hornets",
+      "homeAbbr": "CHA",
+      "hs": 91,
+      "away": "Pistons",
+      "awayAbbr": "DET",
+      "as": 124
+     },
+     {
+      "home": "Spurs",
+      "homeAbbr": "SAS",
+      "hs": 119,
+      "away": "Jazz",
+      "awayAbbr": "UTA",
+      "as": 97
+     },
+     {
+      "home": "Knicks",
+      "homeAbbr": "NYK",
+      "hs": 103,
+      "away": "Nets",
+      "awayAbbr": "BKN",
+      "as": 90
+     },
+     {
+      "home": "Timberwolves",
+      "homeAbbr": "MIN",
+      "hs": 112,
+      "away": "Bucks",
+      "awayAbbr": "MIL",
+      "as": 100
+     },
+     {
+      "home": "Nuggets",
+      "homeAbbr": "DEN",
+      "hs": 110,
+      "away": "Blazers",
+      "awayAbbr": "POR",
+      "as": 118
+     },
+     {
+      "home": "Mavericks",
+      "homeAbbr": "DAL",
+      "hs": 100,
+      "away": "Kings",
+      "awayAbbr": "SAC",
+      "as": 115
+     },
+     {
+      "home": "Magic",
+      "homeAbbr": "ORL",
+      "hs": 94,
+      "away": "Wizards",
+      "awayAbbr": "WAS",
+      "as": 103
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Result of the night?",
+    "sub": "Tell us in the comments"
+   }
+  ]
+ },
+ {
+  "id": "s14-rockets-sixers",
+  "sport": "nba",
+  "time": "2026-11-04T07:00:00",
+  "bed": "anthem",
+  "title": "Rockets and 76ers Both 7–1 at the Top 🚀 #NBA #shorts",
+  "description": "The Rockets beat the Celtics 109–93 to go 7–1 and top the West, their best start since 2014–15. The 76ers beat the Bulls 126–107 to go 7–1 and lead the East.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Rockets #Sixers #NBA",
+  "tags": [
+   "houston rockets",
+   "philadelphia 76ers",
+   "nba standings",
+   "alperen sengun",
+   "tyrese maxey",
+   "lebron james 76ers",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Conference leaders",
+    "title": "Both 7–1",
+    "sub": "Rockets in the West, Sixers in the East"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Houston",
+    "home": "Rockets",
+    "homeAbbr": "HOU",
+    "homeScore": 109,
+    "away": "Celtics",
+    "awayAbbr": "BOS",
+    "awayScore": 93,
+    "status": "FINAL",
+    "note": "Şengün 26 pts, 10 ast"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Philadelphia",
+    "home": "76ers",
+    "homeAbbr": "PHI",
+    "homeScore": 126,
+    "away": "Bulls",
+    "awayAbbr": "CHI",
+    "awayScore": 107,
+    "status": "FINAL",
+    "note": "Maxey 26 · LeBron 15-7-9"
+   },
+   {
+    "type": "list",
+    "dur": 3.6,
+    "label": "Best records",
+    "rows": [
+     [
+      "Rockets",
+      "West",
+      "7-1"
+     ],
+     [
+      "76ers",
+      "East",
+      "7-1"
+     ],
+     [
+      "Pistons",
+      "East",
+      "6-1"
+     ],
+     [
+      "Grizzlies",
+      "West",
+      "6-1"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Which 7–1 team is real?"
+   }
+  ]
+ },
+ {
+  "id": "s15-f1-saopaulo",
+  "sport": "racing",
+  "time": "2026-11-04T08:30:00",
+  "bed": "anthem",
+  "title": "New F1 Champion Antonelli Heads to Brazil 🏁 #F1 #shorts",
+  "description": "Kimi Antonelli clinched the F1 title with third in Mexico City, where Max Verstappen won ahead of Lewis Hamilton. Next up: the São Paulo Grand Prix this weekend, then Las Vegas, Qatar and Abu Dhabi.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#F1 #BrazilGP #Antonelli",
+  "tags": [
+   "f1",
+   "sao paulo grand prix",
+   "kimi antonelli",
+   "f1 champion",
+   "max verstappen",
+   "f1 calendar",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Formula 1",
+    "title": "Champion's first race",
+    "sub": "São Paulo this weekend"
+   },
+   {
+    "type": "list",
+    "dur": 4.0,
+    "label": "Mexico City GP",
+    "title": "Podium",
+    "rows": [
+     [
+      "1",
+      "Max Verstappen",
+      ""
+     ],
+     [
+      "2",
+      "Lewis Hamilton",
+      ""
+     ],
+     [
+      "3",
+      "Kimi Antonelli",
+      "Champion"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 4.0,
+    "label": "Races left",
+    "rows": [
+     [
+      "Nov 8",
+      "São Paulo",
+      ""
+     ],
+     [
+      "Nov 21",
+      "Las Vegas",
+      ""
+     ],
+     [
+      "Nov 29",
+      "Qatar",
+      ""
+     ],
+     [
+      "Dec 6",
+      "Abu Dhabi",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins in Brazil?"
+   }
+  ]
+ }
+]
