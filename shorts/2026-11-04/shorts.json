@@ -1,0 +1,1280 @@
+[
+ {
+  "id": "s01-psg-six",
+  "sport": "football",
+  "time": "2026-11-04T11:30:00",
+  "bed": "anthem",
+  "title": "PSG 4–0 Up After 17 MINUTES at Villarreal 🤯 #UCL #shorts",
+  "description": "PSG beat Villarreal 6–0 away in the Champions League, scoring four times in the first 17 minutes. Fabián Ruiz got two.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#PSG #UCL #ChampionsLeague #Villarreal",
+  "tags": [
+   "psg vs villarreal",
+   "villarreal 0-6 psg",
+   "champions league",
+   "fabian ruiz",
+   "psg goals",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Champions League",
+    "title": "4–0 after 17 minutes",
+    "sub": "PSG in Spain"
+   },
+   {
+    "type": "score",
+    "dur": 3.5,
+    "label": "Matchday 4 · Full time",
+    "home": "Villarreal",
+    "homeAbbr": "VIL",
+    "homeScore": 0,
+    "away": "PSG",
+    "awayAbbr": "PSG",
+    "awayScore": 6,
+    "status": "FULL TIME",
+    "note": "PSG stay perfect: 4 wins from 4"
+   },
+   {
+    "type": "list",
+    "dur": 4.2,
+    "label": "The goals",
+    "title": "Six for the holders",
+    "rows": [
+     [
+      "9'",
+      "João Neves",
+      "1–0"
+     ],
+     [
+      "12'",
+      "Désiré Doué",
+      "2–0"
+     ],
+     [
+      "13'",
+      "Senny Mayulu",
+      "3–0"
+     ],
+     [
+      "17'",
+      "Fabián Ruiz",
+      "4–0"
+     ],
+     [
+      "50'",
+      "Fabián Ruiz",
+      "5–0"
+     ],
+     [
+      "78'",
+      "David Boly",
+      "6–0"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "All competitions",
+    "value": "10",
+    "unit": "wins in a row",
+    "text": "Three points clear at the top"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Can anyone stop PSG?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s02-ucl-board",
+  "sport": "football",
+  "time": "2026-11-04T13:00:00",
+  "bed": "hype",
+  "title": "Tuesday's Champions League Results: PSG Hit SIX 🔥 #UCL #shorts",
+  "description": "Every Champions League result from Tuesday: PSG won 6–0 at Villarreal, Barcelona beat Aston Villa 3–0, Man United came from 2–0 down to beat Roma 3–2 and Bayern won at Atlético.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#UCL #ChampionsLeague #UCLResults #PSG",
+  "tags": [
+   "champions league results",
+   "ucl results",
+   "barcelona vs aston villa",
+   "man united vs roma",
+   "atletico vs bayern",
+   "villarreal vs psg",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 19.2,
+    "kicker": "Champions League · Tuesday",
+    "title": "All nine results",
+    "badge": "Full time",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Galatasaray",
+      "homeAbbr": "GAL",
+      "hs": 2,
+      "away": "Stuttgart",
+      "awayAbbr": "VFB",
+      "as": 0
+     },
+     {
+      "home": "Shakhtar",
+      "homeAbbr": "SHK",
+      "hs": 0,
+      "away": "Sporting",
+      "awayAbbr": "SCP",
+      "as": 1
+     },
+     {
+      "home": "Atlético",
+      "homeAbbr": "ATM",
+      "hs": 0,
+      "away": "Bayern",
+      "awayAbbr": "FCB",
+      "as": 2
+     },
+     {
+      "home": "Barcelona",
+      "homeAbbr": "BAR",
+      "hs": 3,
+      "away": "Aston Villa",
+      "awayAbbr": "AVL",
+      "as": 0
+     },
+     {
+      "home": "Bodø/Glimt",
+      "homeAbbr": "BOD",
+      "hs": 0,
+      "away": "Lille",
+      "awayAbbr": "LIL",
+      "as": 0
+     },
+     {
+      "home": "Feyenoord",
+      "homeAbbr": "FEY",
+      "hs": 0,
+      "away": "Inter",
+      "awayAbbr": "INT",
+      "as": 3
+     },
+     {
+      "home": "LASK",
+      "homeAbbr": "LASK",
+      "hs": 4,
+      "away": "Slovan",
+      "awayAbbr": "SLO",
+      "as": 0
+     },
+     {
+      "home": "Man United",
+      "homeAbbr": "MUN",
+      "hs": 3,
+      "away": "Roma",
+      "awayAbbr": "ROM",
+      "as": 2
+     },
+     {
+      "home": "Villarreal",
+      "homeAbbr": "VIL",
+      "hs": 0,
+      "away": "PSG",
+      "awayAbbr": "PSG",
+      "as": 6
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Result of the night?",
+    "sub": "Tell us in the comments"
+   }
+  ]
+ },
+ {
+  "id": "s03-cunha-comeback",
+  "sport": "football",
+  "time": "2026-11-04T14:30:00",
+  "bed": "drama",
+  "title": "Man United 0–2 Down… Then Cunha Happened 😱 #MUFC #shorts",
+  "description": "Man United trailed Roma 2–0 at half-time and won 3–2. Bruno Fernandes scored a penalty and Matheus Cunha struck twice late, then was sent off for a second yellow.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#MUFC #ManUnited #UCL #ASRoma",
+  "tags": [
+   "man united vs roma",
+   "matheus cunha",
+   "manchester united comeback",
+   "champions league",
+   "bruno fernandes",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Old Trafford",
+    "title": "0–2 down at half-time",
+    "sub": "Then this happened"
+   },
+   {
+    "type": "list",
+    "dur": 4.0,
+    "label": "How it happened",
+    "title": "Five goals, one red",
+    "rows": [
+     [
+      "11'",
+      "Soulé",
+      "0–1"
+     ],
+     [
+      "17'",
+      "Malen (pen)",
+      "0–2"
+     ],
+     [
+      "58'",
+      "Fernandes (pen)",
+      "1–2"
+     ],
+     [
+      "83'",
+      "Cunha",
+      "2–2"
+     ],
+     [
+      "86'",
+      "Cunha",
+      "3–2"
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Champions League · Full time",
+    "home": "Man United",
+    "homeAbbr": "MUN",
+    "homeScore": 3,
+    "away": "Roma",
+    "awayAbbr": "ROM",
+    "awayScore": 2,
+    "status": "FULL TIME"
+   },
+   {
+    "type": "text",
+    "dur": 2.8,
+    "label": "Then…",
+    "title": "Cunha sent off in stoppage time",
+    "sub": "Two quick yellow cards after his winner"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Turning point for United?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s04-raphinha-19",
+  "sport": "football",
+  "time": "2026-11-04T16:00:00",
+  "bed": "anthem",
+  "title": "Raphinha Has 19 Goals in 13 Games 🤯 Barça 3–0 Villa #UCL #shorts",
+  "description": "Barcelona ended Aston Villa's perfect Champions League start with a 3–0 win. Lamine Yamal scored early and Raphinha got two, taking him to 19 goals in 13 games this season.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Barca #AVFC #UCL #Raphinha",
+  "tags": [
+   "barcelona vs aston villa",
+   "raphinha",
+   "lamine yamal",
+   "champions league",
+   "aston villa",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Barcelona 3–0 Aston Villa",
+    "title": "Villa's perfect run is over",
+    "sub": ""
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Champions League · Full time",
+    "home": "Barcelona",
+    "homeAbbr": "BAR",
+    "homeScore": 3,
+    "away": "Aston Villa",
+    "awayAbbr": "AVL",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "note": "Yamal 7' · Raphinha 52', 64'"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Raphinha this season",
+    "value": "19",
+    "unit": "goals",
+    "text": "in 13 games"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Unai Emery at Barcelona",
+    "value": "15",
+    "unit": "defeats",
+    "text": "in 16 games"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Best attack in Europe?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s05-karl-record",
+  "sport": "football",
+  "time": "2026-11-04T17:30:00",
+  "bed": "drama",
+  "title": "18-Year-Old Joins Yamal, Mbappé & Raúl 😮 #FCBayern #shorts",
+  "description": "Lennart Karl scored as Bayern won 2–0 at Atlético Madrid. He's only the fourth player to reach five Champions League goals before turning 19.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#FCBayern #UCL #LennartKarl #Atleti",
+  "tags": [
+   "lennart karl",
+   "bayern munich",
+   "atletico vs bayern",
+   "champions league records",
+   "harry kane",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Atlético 0–2 Bayern",
+    "title": "An 18-year-old did this",
+    "sub": ""
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Lennart Karl",
+    "value": "5",
+    "unit": "UCL goals",
+    "text": "before turning 19"
+   },
+   {
+    "type": "list",
+    "dur": 3.8,
+    "label": "Five UCL goals before 19",
+    "title": "Only four players",
+    "rows": [
+     [
+      "Lamine Yamal",
+      "11",
+      ""
+     ],
+     [
+      "Kylian Mbappé",
+      "10",
+      ""
+     ],
+     [
+      "Raúl",
+      "6",
+      ""
+     ],
+     [
+      "Lennart Karl",
+      "5",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 3.0,
+    "label": "Champions League · Full time",
+    "home": "Atlético",
+    "homeAbbr": "ATM",
+    "homeScore": 0,
+    "away": "Bayern",
+    "awayAbbr": "FCB",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "note": "Karl 54' · Laimer 74'"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "How good can Karl get?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s06-ucl-predict",
+  "sport": "football",
+  "time": "2026-11-04T19:00:00",
+  "bed": "hype",
+  "title": "Champions League Tonight: Predict EVERY Score ⭐ #UCL #shorts",
+  "description": "Wednesday in the Champions League: Fenerbahçe v Liverpool and AEK v Real Madrid at 5:45pm GMT, then Slavia Prague v Arsenal, RB Leipzig v Man City and more at 8pm GMT (3pm ET). Drop your predictions.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#UCL #LFC #Arsenal #ManCity",
+  "tags": [
+   "champions league predictions",
+   "ucl tonight",
+   "fenerbahce vs liverpool",
+   "slavia prague vs arsenal",
+   "leipzig vs man city",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 16.0,
+    "kicker": "Champions League · Wednesday",
+    "title": "Predict the scores",
+    "badge": "Tonight",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Fenerbahçe",
+      "homeAbbr": "FEN",
+      "hs": "?",
+      "away": "Liverpool",
+      "awayAbbr": "LIV",
+      "note": "5:45pm GMT",
+      "as": "?"
+     },
+     {
+      "home": "AEK Athens",
+      "homeAbbr": "AEK",
+      "hs": "?",
+      "away": "Real Madrid",
+      "awayAbbr": "RMA",
+      "note": "5:45pm GMT",
+      "as": "?"
+     },
+     {
+      "home": "Slavia Prague",
+      "homeAbbr": "SLA",
+      "hs": "?",
+      "away": "Arsenal",
+      "awayAbbr": "ARS",
+      "note": "8pm GMT",
+      "as": "?"
+     },
+     {
+      "home": "RB Leipzig",
+      "homeAbbr": "RBL",
+      "hs": "?",
+      "away": "Man City",
+      "awayAbbr": "MCI",
+      "note": "8pm GMT",
+      "as": "?"
+     },
+     {
+      "home": "Dortmund",
+      "homeAbbr": "BVB",
+      "hs": "?",
+      "away": "Real Betis",
+      "awayAbbr": "BET",
+      "note": "8pm GMT",
+      "as": "?"
+     },
+     {
+      "home": "Porto",
+      "homeAbbr": "POR",
+      "hs": "?",
+      "away": "Napoli",
+      "awayAbbr": "NAP",
+      "note": "8pm GMT",
+      "as": "?"
+     },
+     {
+      "home": "Lens",
+      "homeAbbr": "RCL",
+      "hs": "?",
+      "away": "Como",
+      "awayAbbr": "COM",
+      "note": "8pm GMT",
+      "as": "?"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Your predictions?",
+    "sub": "Drop your scores in the comments"
+   }
+  ]
+ },
+ {
+  "id": "s07-ucl-table",
+  "sport": "football",
+  "time": "2026-11-04T20:30:00",
+  "bed": "hype",
+  "title": "Champions League Table: PSG Clear, 6 Teams on 9 Points 📊 #UCL #shorts",
+  "description": "The Champions League top eight after Tuesday: PSG lead on 12 points, with Barcelona, Aston Villa, Liverpool, Real Madrid, Sporting and Real Betis all on 9. Liverpool, Real Madrid and Betis play today.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#UCL #ChampionsLeague #PSG #LFC",
+  "tags": [
+   "champions league table",
+   "ucl standings",
+   "psg",
+   "liverpool",
+   "real madrid",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Champions League",
+    "title": "Six teams on 9 points",
+    "sub": "Who's in the top eight?"
+   },
+   {
+    "type": "table",
+    "dur": 6.0,
+    "label": "League phase · after Tuesday",
+    "cols": [
+     "P",
+     "GD",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "PSG",
+      4,
+      "+15",
+      12
+     ],
+     [
+      2,
+      "Barcelona",
+      4,
+      "+8",
+      9
+     ],
+     [
+      3,
+      "Aston Villa",
+      4,
+      "+6",
+      9
+     ],
+     [
+      4,
+      "Liverpool",
+      3,
+      "+5",
+      9
+     ],
+     [
+      5,
+      "Real Madrid",
+      3,
+      "+5",
+      9
+     ],
+     [
+      6,
+      "Sporting CP",
+      4,
+      "+4",
+      9
+     ],
+     [
+      7,
+      "Real Betis",
+      3,
+      "+3",
+      9
+     ],
+     [
+      8,
+      "Bayern",
+      4,
+      "+7",
+      8
+     ],
+     [
+      9,
+      "Arsenal",
+      3,
+      "+4",
+      7
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "note": "Top eight go straight to the last 16"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Tonight",
+    "title": "Liverpool, Real Madrid and Betis play",
+    "sub": "This table moves again tonight"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Who finishes top?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s08-jets-comeback",
+  "sport": "nhl",
+  "time": "2026-11-04T22:00:00",
+  "bed": "drama",
+  "title": "4–0 Down in the 3rd… Jets WIN in OT 🤯 #NHL #shorts",
+  "description": "The Winnipeg Jets trailed Montreal 4–0 in the third period and won 5–4 in overtime. They scored four goals in 2:08, the tying goal with 32 seconds left, the latest four-goal comeback in NHL history.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#GoJetsGo #NHL #GoHabsGo",
+  "tags": [
+   "jets vs canadiens",
+   "winnipeg jets comeback",
+   "nhl comeback",
+   "kyle connor",
+   "dylan samberg",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Montreal · Tuesday",
+    "title": "4–0 down in the third",
+    "sub": "Winnipeg had lost nine straight"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Jets rally",
+    "value": "4",
+    "unit": "goals in 2:08",
+    "text": "Tying goal with 32 seconds left"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "NHL · Final/OT",
+    "home": "Canadiens",
+    "homeAbbr": "MTL",
+    "homeScore": 4,
+    "away": "Jets",
+    "awayAbbr": "WPG",
+    "awayScore": 5,
+    "status": "FINAL/OT",
+    "note": "Dylan Samberg wins it in overtime"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "History",
+    "title": "Latest four-goal comeback in NHL history",
+    "sub": "Nine-game losing streak over"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Best comeback you've seen?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s09-cfp-rankings",
+  "sport": "nfl",
+  "time": "2026-11-04T23:30:00",
+  "bed": "hype",
+  "title": "First CFP Rankings: Miami No. 1, Ohio State OUT 😳 #CFB #shorts",
+  "description": "The first College Football Playoff rankings: Miami, Georgia, Utah and Indiana hold the projected byes. Ohio State are 12th and the first team out of the projected bracket.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#CFB #CFPRankings #CollegeFootball",
+  "tags": [
+   "cfp rankings",
+   "first cfp rankings",
+   "college football playoff",
+   "miami hurricanes",
+   "ohio state",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "College Football Playoff",
+    "title": "The first rankings are out",
+    "sub": ""
+   },
+   {
+    "type": "table",
+    "dur": 6.0,
+    "label": "CFP top 12",
+    "cols": [
+     "REC"
+    ],
+    "rows": [
+     [
+      1,
+      "Miami",
+      "8–0"
+     ],
+     [
+      2,
+      "Georgia",
+      "7–1"
+     ],
+     [
+      3,
+      "Utah",
+      "8–0"
+     ],
+     [
+      4,
+      "Indiana",
+      "8–1"
+     ],
+     [
+      5,
+      "Alabama",
+      "6–2"
+     ],
+     [
+      6,
+      "Kentucky",
+      "7–1"
+     ],
+     [
+      7,
+      "Texas",
+      "6–2"
+     ],
+     [
+      8,
+      "UCLA",
+      "8–0"
+     ],
+     [
+      9,
+      "BYU",
+      "7–1"
+     ],
+     [
+      10,
+      "Ole Miss",
+      "6–2"
+     ],
+     [
+      11,
+      "Notre Dame",
+      "7–1"
+     ],
+     [
+      12,
+      "Ohio State",
+      "6–2"
+     ]
+    ],
+    "highlight": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "danger": [
+     12
+    ],
+    "note": "Top four = projected byes"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "First team out",
+    "title": "Ohio State",
+    "sub": "Boise State take the Group of 6 spot"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Who got snubbed?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s10-robertson-hattrick",
+  "sport": "nhl",
+  "time": "2026-11-05T01:00:00",
+  "bed": "hype",
+  "title": "Jason Robertson: Hat Trick in 5 Minutes 20 Seconds 🎩 #NHL #shorts",
+  "description": "Jason Robertson scored a natural hat trick in 5:20 early in the second period, the third-fastest in Stars history, as Dallas beat Washington 6–5.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#TexasHockey #NHL #ALLCAPS",
+  "tags": [
+   "jason robertson",
+   "robertson hat trick",
+   "stars vs capitals",
+   "dallas stars",
+   "nhl hat trick",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Stars at Capitals",
+    "title": "Three goals. Five minutes.",
+    "sub": ""
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Jason Robertson",
+    "value": "5:20",
+    "unit": "",
+    "text": "Natural hat trick in the 2nd period"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "NHL · Final",
+    "home": "Capitals",
+    "homeAbbr": "WSH",
+    "homeScore": 5,
+    "away": "Stars",
+    "awayAbbr": "DAL",
+    "awayScore": 6,
+    "status": "FINAL",
+    "note": "Caps scored with 1:02 left but ran out of time"
+   },
+   {
+    "type": "text",
+    "dur": 2.8,
+    "label": "Stars history",
+    "title": "Third-fastest natural hat trick",
+    "sub": "Robertson now has 8 goals"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Hat trick of the season?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s11-mcdavid-16",
+  "sport": "nhl",
+  "time": "2026-11-05T02:30:00",
+  "bed": "drama",
+  "title": "McDavid's NHL Record Assist Streak Hits 16 Games 🤯 #NHL #shorts",
+  "description": "Connor McDavid has an assist in all 16 Oilers games this season, extending his NHL record for a season-opening assist streak. He leads the league with 31, though the Devils won 4–3 in a shootout.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NHL #Oilers #McDavid",
+  "tags": [
+   "connor mcdavid",
+   "mcdavid assist streak",
+   "oilers vs devils",
+   "nhl records",
+   "jack hughes",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Connor McDavid",
+    "title": "16 games. 16 with an assist.",
+    "sub": ""
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Season-opening assist streak",
+    "value": "16",
+    "unit": "games",
+    "text": "An NHL record"
+   },
+   {
+    "type": "stat",
+    "dur": 2.8,
+    "label": "League-leading",
+    "value": "31",
+    "unit": "assists",
+    "text": "in 16 games"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "NHL · Final/SO",
+    "home": "Devils",
+    "homeAbbr": "NJD",
+    "homeScore": 4,
+    "away": "Oilers",
+    "awayAbbr": "EDM",
+    "awayScore": 3,
+    "status": "FINAL/SO",
+    "note": "Jack Hughes scored twice for New Jersey"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "How long can it last?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s12-nba-top",
+  "sport": "nba",
+  "time": "2026-11-05T04:00:00",
+  "bed": "hype",
+  "title": "Pistons vs 76ers TONIGHT: 1st vs 2nd in the East 🔥 #NBA #shorts",
+  "description": "The 76ers (7–1) visit the Pistons (6–1) at 7pm ET tonight with first place in the East on the line. In the West, the Rockets are 7–1, the Grizzlies 6–1 and the Trail Blazers 5–1.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NBA #Pistons #Sixers #Rockets",
+  "tags": [
+   "pistons vs 76ers",
+   "nba standings",
+   "detroit pistons",
+   "philadelphia 76ers",
+   "nba tonight",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA · Tonight 7pm ET",
+    "title": "1st v 2nd in the East",
+    "sub": "In Detroit"
+   },
+   {
+    "type": "table",
+    "dur": 4.5,
+    "label": "East leaders",
+    "cols": [
+     "W",
+     "L"
+    ],
+    "rows": [
+     [
+      1,
+      "76ers",
+      7,
+      1
+     ],
+     [
+      2,
+      "Pistons",
+      6,
+      1
+     ],
+     [
+      3,
+      "Celtics",
+      5,
+      2
+     ]
+    ],
+    "highlight": [
+     1,
+     2
+    ]
+   },
+   {
+    "type": "table",
+    "dur": 4.5,
+    "label": "West leaders",
+    "cols": [
+     "W",
+     "L"
+    ],
+    "rows": [
+     [
+      1,
+      "Rockets",
+      7,
+      1
+     ],
+     [
+      2,
+      "Grizzlies",
+      6,
+      1
+     ],
+     [
+      3,
+      "Trail Blazers",
+      5,
+      1
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 2.6,
+    "label": "Also tonight",
+    "title": "Rockets at Wolves · Cavs at Thunder",
+    "sub": "14 games, first tip 7pm ET"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Pistons or 76ers?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s13-chargers-0-7",
+  "sport": "nfl",
+  "time": "2026-11-05T05:30:00",
+  "bed": "drama",
+  "title": "The Chargers Are 0–7. The ONLY Winless Team 😬 #NFL #shorts",
+  "description": "The Los Angeles Chargers are 0–7, the NFL's only winless team, heading into Week 9. They host the 2–5 Houston Texans on Sunday at 4:05pm ET.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#BoltUp #NFL #Chargers",
+  "tags": [
+   "chargers 0-7",
+   "los angeles chargers",
+   "nfl standings",
+   "texans vs chargers",
+   "nfl week 9",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NFL · Week 9",
+    "title": "One team hasn't won",
+    "sub": ""
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Los Angeles Chargers",
+    "value": "0–7",
+    "unit": "",
+    "text": "The NFL's only winless team"
+   },
+   {
+    "type": "table",
+    "dur": 4.2,
+    "label": "Worst records",
+    "cols": [
+     "W",
+     "L"
+    ],
+    "rows": [
+     [
+      32,
+      "Chargers",
+      0,
+      7
+     ],
+     [
+      31,
+      "Titans",
+      1,
+      7
+     ],
+     [
+      30,
+      "Dolphins",
+      1,
+      6
+     ]
+    ],
+    "danger": [
+     32
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 2.8,
+    "label": "Sunday 4:05pm ET",
+    "title": "Texans (2–5) at Chargers",
+    "sub": "Do they get off the mark?"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "First win this week?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s14-f1-p2",
+  "sport": "racing",
+  "time": "2026-11-05T07:00:00",
+  "bed": "drama",
+  "title": "F1's Fight for P2: 16 Points, 4 Drivers 🏁 #F1 #shorts",
+  "description": "Kimi Antonelli is champion, but Max Verstappen, Lewis Hamilton, George Russell and Charles Leclerc are split by 16 points in the fight for second. Next: the São Paulo Grand Prix on Sunday (5pm GMT / 12pm ET).\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#F1 #SaoPauloGP #Formula1",
+  "tags": [
+   "f1 standings",
+   "sao paulo grand prix",
+   "max verstappen",
+   "lewis hamilton",
+   "kimi antonelli",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Formula 1",
+    "title": "The title's gone. P2 isn't.",
+    "sub": ""
+   },
+   {
+    "type": "table",
+    "dur": 4.8,
+    "label": "Drivers' standings",
+    "cols": [
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Antonelli",
+      380
+     ],
+     [
+      2,
+      "Verstappen",
+      261
+     ],
+     [
+      3,
+      "Hamilton",
+      259
+     ],
+     [
+      4,
+      "Russell",
+      250
+     ],
+     [
+      5,
+      "Leclerc",
+      245
+     ]
+    ],
+    "highlight": [
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 2.8,
+    "label": "P2 to P5",
+    "value": "16",
+    "unit": "points",
+    "text": "with four races left"
+   },
+   {
+    "type": "text",
+    "dur": 2.6,
+    "label": "Next",
+    "title": "São Paulo Grand Prix",
+    "sub": "Sunday 5pm GMT / 12pm ET"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Who finishes second?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s15-nfl-week9",
+  "sport": "nfl",
+  "time": "2026-11-05T08:30:00",
+  "bed": "hype",
+  "title": "NFL Week 9: The 5 Games You Can't Miss 🏈 #NFL #shorts",
+  "description": "NFL Week 9 starts Thursday with Jaguars at Ravens and ends with the 6–1 Bills at the 6–1 Vikings on Monday Night Football.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NFL #NFLWeek9 #BillsMafia #Skol",
+  "tags": [
+   "nfl week 9",
+   "bills vs vikings",
+   "packers vs patriots",
+   "jaguars vs ravens",
+   "nfl schedule",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NFL · Week 9",
+    "title": "5 games to circle",
+    "sub": ""
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Away @ home",
+    "title": "Week 9 must-watch",
+    "rows": [
+     [
+      "Jaguars 5–2",
+      "@",
+      "Ravens 4–4"
+     ],
+     [
+      "Lions 5–2",
+      "@",
+      "Dolphins 1–6"
+     ],
+     [
+      "Packers 5–3",
+      "@",
+      "Patriots 5–3"
+     ],
+     [
+      "Bucs 3–5",
+      "@",
+      "Bears 6–2"
+     ],
+     [
+      "Bills 6–1",
+      "@",
+      "Vikings 6–1"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Monday Night Football",
+    "title": "Bills (6–1) at Vikings (6–1)",
+    "sub": "8:15pm ET"
+   },
+   {
+    "type": "text",
+    "dur": 2.6,
+    "label": "Thursday Night Football",
+    "title": "Jaguars at Ravens",
+    "sub": "8:15pm ET"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Game of the week?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ }
+]

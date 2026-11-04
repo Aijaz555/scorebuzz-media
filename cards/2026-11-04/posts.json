@@ -1,0 +1,629 @@
+[
+ {
+  "id": "01-psg-six",
+  "time": "2026-11-04T11:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 4",
+  "home": "Villarreal",
+  "homeAbbr": "VIL",
+  "homeScore": 0,
+  "away": "PSG",
+  "awayAbbr": "PSG",
+  "awayScore": 6,
+  "status": "FULL TIME",
+  "headline": "4–0 up after 17 minutes",
+  "sub": "Fabián Ruiz scored twice. PSG are 4 from 4 and three points clear at the top.",
+  "caption": "🔵 PSG were 4–0 up at Villarreal after 17 minutes and won 6–0.\n\nJoão Neves, Désiré Doué, Senny Mayulu and Fabián Ruiz all scored early, Ruiz added another and David Boly finished it. That's 10 straight wins for the holders.\n\nIs anyone stopping PSG this season? 👇\n\n#PSG #UCL #ChampionsLeague"
+ },
+ {
+  "id": "02-barca-villa",
+  "time": "2026-11-04T12:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 4",
+  "home": "Barcelona",
+  "homeAbbr": "BAR",
+  "homeScore": 3,
+  "away": "Aston Villa",
+  "awayAbbr": "AVL",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "headline": "Villa's perfect start is over",
+  "sub": "Lamine Yamal scored early, then Raphinha got two. He has 19 goals in 13 games this season.",
+  "caption": "🔴🔵 Barcelona 3–0 Aston Villa. Villa's 100% Champions League start is over.\n\nLamine Yamal pounced on a short goal-kick in the 7th minute and Raphinha scored twice after the break. Unai Emery has now lost 15 of his 16 games at Barça.\n\nWho impressed you most? 👇\n\n#Barca #AVFC #UCL"
+ },
+ {
+  "id": "03-united-roma",
+  "time": "2026-11-04T13:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · OLD TRAFFORD",
+  "home": "Man United",
+  "homeAbbr": "MUN",
+  "homeScore": 3,
+  "away": "Roma",
+  "awayAbbr": "ROM",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "headline": "0–2 down. Then Cunha.",
+  "sub": "Bruno Fernandes penalty (58'), Matheus Cunha 83' and 86'. Cunha was then sent off for a second yellow.",
+  "caption": "😱 Man United were 2–0 down to Roma at half-time and won 3–2.\n\nBruno Fernandes scored a penalty, then Matheus Cunha struck twice in three minutes late on. He picked up two quick yellows and was sent off in stoppage time.\n\nIs this the night United's season turns? 👇\n\n#MUFC #ASRoma #UCL"
+ },
+ {
+  "id": "04-karl-bayern",
+  "time": "2026-11-04T14:00:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "UCL · ATLÉTICO 0–2 BAYERN",
+  "headline": "18-year-old Lennart Karl joins Yamal, Mbappé and Raúl",
+  "sub": "Only four players have scored five Champions League goals before turning 19. Karl is the latest.",
+  "stat": [
+   "5",
+   "UCL goals before 19"
+  ],
+  "caption": "🔥 Bayern won 2–0 at Atlético Madrid and an 18-year-old opened the scoring.\n\nLennart Karl's goal was his fifth in the Champions League. Only Lamine Yamal, Kylian Mbappé and Raúl reached five before turning 19. Konrad Laimer added the second from a Harry Kane pass.\n\nHow good can Karl become? 👇\n\n#FCBayern #Atleti #UCL"
+ },
+ {
+  "id": "05-ucl-table",
+  "time": "2026-11-04T15:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · TABLE",
+  "headline": "The top eight right now",
+  "rows": [
+   [
+    "1  PSG",
+    "12 pts",
+    "P4"
+   ],
+   [
+    "2  Barcelona",
+    "9 pts",
+    "P4"
+   ],
+   [
+    "3  Aston Villa",
+    "9 pts",
+    "P4"
+   ],
+   [
+    "4  Liverpool",
+    "9 pts",
+    "P3"
+   ],
+   [
+    "5  Real Madrid",
+    "9 pts",
+    "P3"
+   ],
+   [
+    "6  Sporting CP",
+    "9 pts",
+    "P4"
+   ],
+   [
+    "7  Real Betis",
+    "9 pts",
+    "P3"
+   ],
+   [
+    "8  Bayern",
+    "8 pts",
+    "P4"
+   ]
+  ],
+  "sub": "Liverpool, Real Madrid and Real Betis play today. Top eight go straight to the last 16.",
+  "caption": "📊 The Champions League top eight after Tuesday's games.\n\nPSG lead on 12 points. Liverpool, Real Madrid and Real Betis are still perfect and play today, so this table will move again tonight.\n\nWho finishes top? 👇\n\n#UCL #ChampionsLeague #PSG #LFC"
+ },
+ {
+  "id": "06-ucl-wednesday",
+  "time": "2026-11-04T16:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · TONIGHT",
+  "headline": "Wednesday's big games",
+  "rows": [
+   [
+    "Fenerbahçe",
+    "v",
+    "Liverpool"
+   ],
+   [
+    "AEK Athens",
+    "v",
+    "Real Madrid"
+   ],
+   [
+    "Slavia Prague",
+    "v",
+    "Arsenal"
+   ],
+   [
+    "RB Leipzig",
+    "v",
+    "Man City"
+   ],
+   [
+    "Dortmund",
+    "v",
+    "Real Betis"
+   ],
+   [
+    "Porto",
+    "v",
+    "Napoli"
+   ],
+   [
+    "Lens",
+    "v",
+    "Como"
+   ]
+  ],
+  "sub": "Liverpool and Real Madrid kick off 5:45pm GMT (12:45pm ET). The rest start 8pm GMT (3pm ET).",
+  "caption": "⭐ Champions League night, part two.\n\nLiverpool go to Fenerbahçe and Real Madrid visit AEK at 5:45pm GMT (12:45pm ET). Arsenal, Man City and Dortmund all play at 8pm GMT (3pm ET).\n\nWhich English team has the toughest night? 👇\n\n#UCL #LFC #Arsenal #ManCity"
+ },
+ {
+  "id": "07-fener-liverpool",
+  "time": "2026-11-04T17:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "UCL · FENERBAHÇE v LIVERPOOL · 5:45PM GMT",
+  "headline": "Perfect in Europe, 5th at home",
+  "rows": [
+   [
+    "Liverpool",
+    "UCL",
+    "3 wins · 9 pts"
+   ],
+   [
+    "Fenerbahçe",
+    "UCL",
+    "2 draws · 1 loss"
+   ],
+   [
+    "Liverpool",
+    "Premier League",
+    "5th · 15 pts"
+   ]
+  ],
+  "sub": "Kick-off 5:45pm GMT / 12:45pm ET in Istanbul.",
+  "caption": "🔴 Liverpool have won all three Champions League games. In the Premier League they're fifth on 15 points.\n\nToday they're in Istanbul to face Fenerbahçe, who are still looking for their first win (two draws, one defeat). Kick-off 5:45pm GMT / 12:45pm ET.\n\nScore prediction? 👇\n\n#LFC #Fenerbahce #UCL"
+ },
+ {
+  "id": "08-slavia-arsenal",
+  "time": "2026-11-04T18:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "UCL · SLAVIA PRAGUE v ARSENAL · 8PM GMT",
+  "headline": "Arsenal: 8 wins from 9 in the league",
+  "rows": [
+   [
+    "Arsenal",
+    "Premier League",
+    "1st · 24 pts"
+   ],
+   [
+    "Arsenal",
+    "UCL",
+    "7 pts · 9th"
+   ],
+   [
+    "Slavia Prague",
+    "UCL",
+    "1 pt · 32nd"
+   ]
+  ],
+  "sub": "Kick-off 8pm GMT / 3pm ET in Prague.",
+  "caption": "🔴⚪ Arsenal top the Premier League with 24 points from 9 games, and they're unbeaten in the Champions League (two wins, one draw).\n\nTonight it's Slavia Prague away, a side with one point so far. Kick-off 8pm GMT / 3pm ET.\n\nHow many do Arsenal score? 👇\n\n#Arsenal #AFC #UCL"
+ },
+ {
+  "id": "09-ucl-tuesday-results",
+  "time": "2026-11-04T19:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · TUESDAY'S RESULTS",
+  "headline": "All nine results",
+  "rows": [
+   [
+    "Galatasaray",
+    "2–0",
+    "Stuttgart"
+   ],
+   [
+    "Shakhtar",
+    "0–1",
+    "Sporting"
+   ],
+   [
+    "Atlético",
+    "0–2",
+    "Bayern"
+   ],
+   [
+    "Barcelona",
+    "3–0",
+    "Aston Villa"
+   ],
+   [
+    "Bodø/Glimt",
+    "0–0",
+    "Lille"
+   ],
+   [
+    "Feyenoord",
+    "0–3",
+    "Inter"
+   ],
+   [
+    "LASK",
+    "4–0",
+    "Slovan"
+   ],
+   [
+    "Man United",
+    "3–2",
+    "Roma"
+   ],
+   [
+    "Villarreal",
+    "0–6",
+    "PSG"
+   ]
+  ],
+  "sub": "",
+  "caption": "📋 Every Champions League result from Tuesday night.\n\nPSG hit six, Inter won 3–0 in Rotterdam, LASK scored four, and Aleksey Batrakov netted twice in three minutes for Galatasaray.\n\nResult of the night? 👇\n\n#UCL #ChampionsLeague #UCLResults"
+ },
+ {
+  "id": "10-leipzig-city",
+  "time": "2026-11-04T20:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "UCL · RB LEIPZIG v MAN CITY · 8PM GMT",
+  "headline": "City need a win in Leipzig",
+  "rows": [
+   [
+    "Man City",
+    "UCL",
+    "6 pts · 12th"
+   ],
+   [
+    "RB Leipzig",
+    "UCL",
+    "3 pts · 28th"
+   ],
+   [
+    "Man City",
+    "Premier League",
+    "2nd · 21 pts"
+   ]
+  ],
+  "sub": "Kick-off 8pm GMT / 3pm ET. A win would lift City into the top-eight race.",
+  "caption": "🩵 Man City are 12th in the Champions League on 6 points and second in the Premier League, three behind Arsenal.\n\nThey're at RB Leipzig tonight (8pm GMT / 3pm ET). Leipzig have won one of three.\n\nCity win? 👇\n\n#ManCity #RBLeipzig #UCL"
+ },
+ {
+  "id": "11-jets-comeback",
+  "time": "2026-11-04T21:00:00",
+  "sport": "nhl",
+  "kind": "score",
+  "label": "NHL · TUESDAY",
+  "home": "Canadiens",
+  "homeAbbr": "MTL",
+  "homeScore": 4,
+  "away": "Jets",
+  "awayAbbr": "WPG",
+  "awayScore": 5,
+  "status": "FINAL/OT",
+  "headline": "4–0 down in the 3rd. Won in OT.",
+  "sub": "Four goals in 2:08, the tying one with 32 seconds left. The latest four-goal comeback in NHL history.",
+  "caption": "🤯 The Jets trailed Montreal 4–0 in the third period and won 5–4 in overtime.\n\nWinnipeg scored four goals in 2 minutes 8 seconds, Kyle Connor tied it with 32 seconds left, and Dylan Samberg won it in OT. It snapped a nine-game losing streak.\n\nGreatest comeback you've ever seen? 👇\n\n#GoJetsGo #NHL #GoHabsGo"
+ },
+ {
+  "id": "12-cfp-rankings",
+  "time": "2026-11-04T22:00:00",
+  "sport": "nfl",
+  "kind": "list",
+  "label": "COLLEGE FOOTBALL · FIRST CFP RANKINGS",
+  "headline": "The committee's top 7",
+  "rows": [
+   [
+    "1",
+    "Miami",
+    "8–0"
+   ],
+   [
+    "2",
+    "Georgia",
+    "7–1"
+   ],
+   [
+    "3",
+    "Utah",
+    "8–0"
+   ],
+   [
+    "4",
+    "Indiana",
+    "8–1"
+   ],
+   [
+    "5",
+    "Alabama",
+    "6–2"
+   ],
+   [
+    "6",
+    "Kentucky",
+    "7–1"
+   ],
+   [
+    "7",
+    "Texas",
+    "6–2"
+   ]
+  ],
+  "sub": "Unbeaten UCLA are 8th. Ohio State are 12th, the first team out.",
+  "caption": "📋 The first College Football Playoff rankings are out, and Miami are No. 1.\n\nGeorgia, Utah and Indiana complete the top four (the projected first-round byes). Kentucky are sixth, and Ohio State are 12th, the first team out.\n\nWho did the committee get wrong? 👇\n\n#CFB #CFPRankings #CollegeFootball"
+ },
+ {
+  "id": "13-robertson-hattrick",
+  "time": "2026-11-04T23:00:00",
+  "sport": "nhl",
+  "kind": "score",
+  "label": "NHL · TUESDAY",
+  "home": "Capitals",
+  "homeAbbr": "WSH",
+  "homeScore": 5,
+  "away": "Stars",
+  "awayAbbr": "DAL",
+  "awayScore": 6,
+  "status": "FINAL",
+  "headline": "Robertson: 3 goals in 5:20",
+  "sub": "A natural hat trick early in the second period, the third-fastest in Stars history.",
+  "caption": "🎩 Jason Robertson scored three straight goals in 5 minutes 20 seconds as Dallas beat Washington 6–5.\n\nIt's the third-fastest natural hat trick in Stars history. The Caps got it back to 6–5 with 1:02 left but ran out of time.\n\nBest hat trick of the season so far? 👇\n\n#TexasHockey #NHL #ALLCAPS"
+ },
+ {
+  "id": "14-chargers-winless",
+  "time": "2026-11-05T00:00:00",
+  "sport": "nfl",
+  "kind": "headline",
+  "label": "NFL · WEEK 9",
+  "headline": "The Chargers are the NFL's only winless team",
+  "sub": "Next up: the 2–5 Texans in LA on Sunday, 4:05pm ET.",
+  "stat": [
+   "0–7",
+   "record"
+  ],
+  "caption": "😬 The Los Angeles Chargers are 0–7, the only team in the NFL without a win.\n\nThey host the 2–5 Houston Texans on Sunday at 4:05pm ET.\n\nDo they get off the mark this week? 👇\n\n#BoltUp #NFL #Chargers"
+ },
+ {
+  "id": "15-devils-oilers",
+  "time": "2026-11-05T01:00:00",
+  "sport": "nhl",
+  "kind": "score",
+  "label": "NHL · TUESDAY",
+  "home": "Devils",
+  "homeAbbr": "NJD",
+  "homeScore": 4,
+  "away": "Oilers",
+  "awayAbbr": "EDM",
+  "awayScore": 3,
+  "status": "FINAL/SO",
+  "headline": "McDavid's record streak hits 16",
+  "sub": "He has an assist in all 16 games, an NHL record to start a season. Jack Hughes scored twice for the Devils.",
+  "caption": "🏒 The Devils beat the Oilers 4–3 in a shootout, but Connor McDavid kept his streak going.\n\nHe has an assist in all 16 games this season, extending his NHL record, and leads the league with 31. Jack Hughes scored twice and Connor Hellebuyck won his first home start for New Jersey.\n\nHow long does McDavid's streak last? 👇\n\n#NHL #Oilers #NJDevils"
+ },
+ {
+  "id": "16-f1-p2-battle",
+  "time": "2026-11-05T02:00:00",
+  "sport": "racing",
+  "kind": "list",
+  "label": "F1 · DRIVERS' STANDINGS",
+  "headline": "16 points cover P2 to P5",
+  "rows": [
+   [
+    "1",
+    "Antonelli",
+    "380"
+   ],
+   [
+    "2",
+    "Verstappen",
+    "261"
+   ],
+   [
+    "3",
+    "Hamilton",
+    "259"
+   ],
+   [
+    "4",
+    "Russell",
+    "250"
+   ],
+   [
+    "5",
+    "Leclerc",
+    "245"
+   ]
+  ],
+  "sub": "Antonelli is champion. The fight for second goes to São Paulo this Sunday (5pm GMT / 12pm ET).",
+  "caption": "🏁 Kimi Antonelli has the title, but the race for second is wide open.\n\nMax Verstappen (261), Lewis Hamilton (259), George Russell (250) and Charles Leclerc (245) are split by 16 points with four races left. Next: São Paulo on Sunday.\n\nWho finishes runner-up? 👇\n\n#F1 #SaoPauloGP #Formula1"
+ },
+ {
+  "id": "17-nba-tonight",
+  "time": "2026-11-05T03:00:00",
+  "sport": "nba",
+  "kind": "list",
+  "label": "NBA · TONIGHT · 14 GAMES",
+  "headline": "Wednesday's best games",
+  "rows": [
+   [
+    "Pistons 6–1",
+    "7pm ET",
+    "76ers 7–1"
+   ],
+   [
+    "Thunder 5–2",
+    "8pm ET",
+    "Cavaliers 4–3"
+   ],
+   [
+    "Grizzlies 6–1",
+    "8pm ET",
+    "Pacers 2–6"
+   ],
+   [
+    "Wolves 5–3",
+    "8:30pm ET",
+    "Rockets 7–1"
+   ],
+   [
+    "Spurs 5–2",
+    "9:30pm ET",
+    "Mavericks 4–3"
+   ],
+   [
+    "Kings 1–6",
+    "10pm ET",
+    "Lakers 6–2"
+   ]
+  ],
+  "sub": "Home team on the left. First tip 7pm ET.",
+  "caption": "🏀 14 NBA games tonight, starting at 7pm ET.\n\nThe East's top two meet in Detroit (Pistons 6–1 v 76ers 7–1), OKC and Cleveland go again two days after SGA's 43, and the 7–1 Rockets visit Minnesota.\n\nWhich game are you watching? 👇\n\n#NBA #NBATonight #Pistons #Sixers"
+ },
+ {
+  "id": "18-pistons-sixers",
+  "time": "2026-11-05T04:00:00",
+  "sport": "nba",
+  "kind": "list",
+  "label": "NBA · PISTONS v 76ERS · 7PM ET",
+  "headline": "First place in the East is on the line",
+  "rows": [
+   [
+    "76ers",
+    "7–1",
+    "1st East"
+   ],
+   [
+    "Pistons",
+    "6–1",
+    "2nd East"
+   ],
+   [
+    "Celtics",
+    "5–2",
+    "3rd East"
+   ]
+  ],
+  "sub": "Tip-off 7pm ET in Detroit.",
+  "caption": "🔥 First v second in the East tonight: the 76ers (7–1) visit the Pistons (6–1) at 7pm ET.\n\nPhilly have won four in a row. Detroit have lost once all season.\n\nWho wins it? 👇\n\n#Pistons #Sixers #NBA"
+ },
+ {
+  "id": "19-nfl-week9",
+  "time": "2026-11-05T05:00:00",
+  "sport": "nfl",
+  "kind": "list",
+  "label": "NFL · WEEK 9 · MUST-WATCH",
+  "headline": "Five games to circle",
+  "rows": [
+   [
+    "Jaguars 5–2",
+    "@",
+    "Ravens 4–4"
+   ],
+   [
+    "Lions 5–2",
+    "@",
+    "Dolphins 1–6"
+   ],
+   [
+    "Packers 5–3",
+    "@",
+    "Patriots 5–3"
+   ],
+   [
+    "Bucs 3–5",
+    "@",
+    "Bears 6–2"
+   ],
+   [
+    "Bills 6–1",
+    "@",
+    "Vikings 6–1"
+   ]
+  ],
+  "sub": "Thursday 8:15pm ET to Monday 8:15pm ET. Bills at Vikings is Monday Night Football.",
+  "caption": "🏈 Week 9 starts tomorrow night with Jaguars at Ravens (8:15pm ET).\n\nThe big one is Monday: the 6–1 Bills at the 6–1 Vikings. Packers at Patriots is 5–3 against 5–3 on Sunday afternoon.\n\nGame of the week? 👇\n\n#NFL #NFLWeek9 #BillsMafia #Skol"
+ },
+ {
+  "id": "20-preds-canes",
+  "time": "2026-11-05T06:00:00",
+  "sport": "nhl",
+  "kind": "score",
+  "label": "NHL · TUESDAY",
+  "home": "Predators",
+  "homeAbbr": "NSH",
+  "homeScore": 4,
+  "away": "Hurricanes",
+  "awayAbbr": "CAR",
+  "awayScore": 1,
+  "status": "FINAL",
+  "headline": "Kochetkov's 10–0 start is over",
+  "sub": "Josi and Colton had a goal and an assist each, Saros made 29 saves. Carolina still lead the NHL.",
+  "caption": "🐯 Pyotr Kochetkov had won his first 10 starts. The Predators ended that with a 4–1 win.\n\nRoman Josi and Ross Colton each had a goal and an assist, Filip Forsberg added two assists and Juuse Saros made 29 saves.\n\nCanes still the team to beat? 👇\n\n#Smashville #NHL #CanesNation"
+ },
+ {
+  "id": "21-tnf-jags-ravens",
+  "time": "2026-11-05T07:00:00",
+  "sport": "nfl",
+  "kind": "headline",
+  "label": "NFL · THURSDAY NIGHT · 8:15PM ET",
+  "headline": "Jaguars at Ravens kicks off Week 9",
+  "sub": "Jacksonville come in at 5–2, Baltimore at 4–4. Thursday 8:15pm ET.",
+  "caption": "🏈 Thursday Night Football: Jacksonville (5–2) at Baltimore (4–4), 8:15pm ET tomorrow.\n\nThe Ravens need it to stay in touch in the AFC. The Jaguars are tied for the fourth-best record in the conference.\n\nWho wins? 👇\n\n#TNF #Ravens #DUUUVAL",
+  "stat": [
+   "5–2",
+   "Jaguars' record"
+  ]
+ },
+ {
+  "id": "22-ufc-suarez",
+  "time": "2026-11-05T08:00:00",
+  "sport": "mma",
+  "kind": "list",
+  "label": "UFC FIGHT NIGHT · SATURDAY",
+  "headline": "Suarez v Jandiroba: who wins?",
+  "rows": [
+   [
+    "Tatiana Suarez",
+    "13–1",
+    "Strawweight"
+   ],
+   [
+    "Virna Jandiroba",
+    "23–4",
+    "Strawweight"
+   ]
+  ],
+  "sub": "Co-main of Cortes Acosta v Walker. Main card 8pm ET Saturday.",
+  "caption": "🥊 Tatiana Suarez (13–1) takes on Virna Jandiroba (23–4) at strawweight on Saturday.\n\nIt's the co-main event under Waldo Cortes Acosta v Johnny Walker. Main card 8pm ET.\n\nWho's your pick? 👇\n\n#UFC #UFCFightNight #MMA"
+ },
+ {
+  "id": "23-cbj-avs",
+  "time": "2026-11-05T09:00:00",
+  "sport": "nhl",
+  "kind": "score",
+  "label": "NHL · TUESDAY",
+  "home": "Blue Jackets",
+  "homeAbbr": "CBJ",
+  "homeScore": 7,
+  "away": "Avalanche",
+  "awayAbbr": "COL",
+  "awayScore": 2,
+  "status": "FINAL",
+  "headline": "A goal after 28 seconds, then seven",
+  "sub": "Mathieu Olivier scored 28 seconds in. Charlie Coyle had two goals and two assists.",
+  "caption": "💥 Columbus put seven past Colorado.\n\nMathieu Olivier scored 28 seconds into the game, Charlie Coyle had two goals and two assists, and the Blue Jackets snapped a two-game skid with a 7–2 win.\n\nBiggest surprise of the night? 👇\n\n#CBJ #NHL #GoAvsGo"
+ }
+]
