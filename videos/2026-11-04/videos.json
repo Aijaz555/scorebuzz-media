@@ -1,0 +1,1560 @@
+[
+ {
+  "id": "v1-football-weekend",
+  "sport": "football",
+  "format": "video",
+  "bed": "anthem",
+  "time": "2026-11-05T13:00:00",
+  "title": "Football Weekend Recap: Arsenal Win at Anfield, Milan Win the Derby ⚽",
+  "description": "Everything you missed from the football weekend (31 Oct – 2 Nov) plus Tuesday's Champions League: Arsenal won 1–0 at Liverpool to go top of the Premier League, Man City lost again, Barcelona hit six, AC Milan beat Inter 3–1, Juventus beat Napoli and Bayern drew 2–2 with Dortmund. Then PSG won 6–0 at Villarreal and Man United came from 2–0 down to beat Roma.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#PremierLeague #LaLiga #SerieA #Bundesliga #UCL",
+  "tags": [
+   "football weekend recap",
+   "premier league results",
+   "liverpool vs arsenal",
+   "milan vs inter",
+   "bayern vs dortmund",
+   "la liga results",
+   "champions league results",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 5,
+    "kicker": "Football weekend recap",
+    "title": "Everything you missed",
+    "sub": "Premier League · LaLiga · Serie A · Bundesliga · Champions League"
+   },
+   {
+    "type": "text",
+    "dur": 4,
+    "label": "Premier League · Matchweek 9",
+    "title": "Arsenal go top",
+    "sub": "A big weekend for the top three"
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "Premier League · Sunday",
+    "home": "Liverpool",
+    "homeAbbr": "LIV",
+    "homeScore": 0,
+    "away": "Arsenal",
+    "awayAbbr": "ARS",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "note": "Kai Havertz 16'"
+   },
+   {
+    "type": "text",
+    "dur": 7,
+    "label": "Anfield",
+    "title": "Arsenal's first league win at Anfield since 2012",
+    "sub": "Havertz now has 46 Premier League goals, the most by a German player"
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "Premier League · Saturday",
+    "home": "Man City",
+    "homeAbbr": "MCI",
+    "homeScore": 0,
+    "away": "Brighton",
+    "awayAbbr": "BHA",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "note": "Yasin Ayari 11'"
+   },
+   {
+    "type": "text",
+    "dur": 7,
+    "label": "Manchester City",
+    "title": "Two league defeats in a row",
+    "sub": "City had opened the season with seven straight wins. Brighton are now third."
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "Premier League · Saturday",
+    "home": "Chelsea",
+    "homeAbbr": "CHE",
+    "homeScore": 2,
+    "away": "Man United",
+    "awayAbbr": "MUN",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "note": "Morgan Rogers 50' · Cole Palmer pen 64'"
+   },
+   {
+    "type": "text",
+    "dur": 7,
+    "label": "Man United",
+    "title": "Nine games without a win in all competitions",
+    "sub": "Their worst run since 1988–89. Lisandro Martínez was sent off for two yellows in two minutes."
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "Premier League · Saturday",
+    "home": "Tottenham",
+    "homeAbbr": "TOT",
+    "homeScore": 2,
+    "away": "Crystal Palace",
+    "awayAbbr": "CRY",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "note": "Archie Gray 25' · Jan Paul van Hecke 73'"
+   },
+   {
+    "type": "text",
+    "dur": 7,
+    "label": "Tottenham",
+    "title": "Three league wins in a row",
+    "sub": "Spurs' first run like it in 20 months. Palace were down to 10 men from the 13th minute after Mateta's red card."
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "Premier League · Monday",
+    "home": "Newcastle",
+    "homeAbbr": "NEW",
+    "homeScore": 0,
+    "away": "Everton",
+    "awayAbbr": "EVE",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "note": "Thierno Barry 49'"
+   },
+   {
+    "type": "table",
+    "dur": 10,
+    "label": "Premier League · Matchweek 9 results",
+    "cols": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "",
+      "Chelsea v Man United",
+      2,
+      0
+     ],
+     [
+      "",
+      "Bournemouth v Leeds",
+      2,
+      0
+     ],
+     [
+      "",
+      "Brentford v Nottm Forest",
+      2,
+      0
+     ],
+     [
+      "",
+      "Coventry v Sunderland",
+      3,
+      1
+     ],
+     [
+      "",
+      "Hull v Ipswich",
+      2,
+      2
+     ],
+     [
+      "",
+      "Man City v Brighton",
+      0,
+      1
+     ],
+     [
+      "",
+      "Tottenham v Crystal Palace",
+      2,
+      0
+     ],
+     [
+      "",
+      "Aston Villa v Fulham",
+      1,
+      1
+     ],
+     [
+      "",
+      "Liverpool v Arsenal",
+      0,
+      1
+     ],
+     [
+      "",
+      "Newcastle v Everton",
+      0,
+      1
+     ]
+    ],
+    "highlight": [],
+    "danger": [],
+    "note": ""
+   },
+   {
+    "type": "table",
+    "dur": 9,
+    "label": "Premier League table · top six",
+    "cols": [
+     "P",
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Arsenal",
+      9,
+      8,
+      0,
+      1,
+      24
+     ],
+     [
+      2,
+      "Man City",
+      9,
+      7,
+      0,
+      2,
+      21
+     ],
+     [
+      3,
+      "Brighton",
+      9,
+      6,
+      1,
+      2,
+      19
+     ],
+     [
+      4,
+      "Chelsea",
+      9,
+      5,
+      1,
+      3,
+      16
+     ],
+     [
+      5,
+      "Liverpool",
+      9,
+      4,
+      3,
+      2,
+      15
+     ],
+     [
+      6,
+      "Brentford",
+      9,
+      3,
+      5,
+      1,
+      14
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "danger": [],
+    "note": ""
+   },
+   {
+    "type": "text",
+    "dur": 4,
+    "label": "LaLiga",
+    "title": "Barcelona bounce back",
+    "sub": "After losing El Clásico, Barça scored six"
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "LaLiga · Saturday",
+    "home": "Barcelona",
+    "homeAbbr": "BAR",
+    "homeScore": 6,
+    "away": "Alavés",
+    "awayAbbr": "ALA",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "note": "Raphinha 2 · Lamine Yamal 2 · Fermín López · Anthony Gordon"
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "LaLiga · Sunday",
+    "home": "Racing",
+    "homeAbbr": "RAC",
+    "homeScore": 0,
+    "away": "Real Madrid",
+    "awayAbbr": "RMA",
+    "awayScore": 3,
+    "status": "FULL TIME",
+    "note": "Mbappé pen 11' · Bellingham 21' · Diomande 36'"
+   },
+   {
+    "type": "text",
+    "dur": 7,
+    "label": "Real Madrid",
+    "title": "Bellingham's 50th goal for the club",
+    "sub": "Mbappé's fifth goal in three games, and a fourth straight league win for Madrid."
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "LaLiga · Saturday",
+    "home": "Levante",
+    "homeAbbr": "LEV",
+    "homeScore": 0,
+    "away": "Atlético",
+    "awayAbbr": "ATM",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "note": "Grimaldo 36' · Giuliano Simeone 62'"
+   },
+   {
+    "type": "table",
+    "dur": 8,
+    "label": "LaLiga table · top four",
+    "cols": [
+     "P",
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Barcelona",
+      11,
+      10,
+      0,
+      1,
+      30
+     ],
+     [
+      2,
+      "Atlético",
+      11,
+      9,
+      1,
+      1,
+      28
+     ],
+     [
+      3,
+      "Real Madrid",
+      11,
+      9,
+      0,
+      2,
+      27
+     ],
+     [
+      4,
+      "Real Betis",
+      11,
+      7,
+      2,
+      2,
+      23
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "danger": [],
+    "note": ""
+   },
+   {
+    "type": "text",
+    "dur": 4,
+    "label": "Serie A",
+    "title": "Derby day in Milan",
+    "sub": ""
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "Serie A · Derby della Madonnina",
+    "home": "AC Milan",
+    "homeAbbr": "MIL",
+    "homeScore": 3,
+    "away": "Inter",
+    "awayAbbr": "INT",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "note": "Pulisic 4' · Rabiot 10' · Bastoni 22' · Moreira 43'"
+   },
+   {
+    "type": "text",
+    "dur": 7,
+    "label": "AC Milan",
+    "title": "Diego Moreira: a goal and two assists",
+    "sub": "Inter's nine-game unbeaten league run is over, and Lazio go top"
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "Serie A · Sunday",
+    "home": "Juventus",
+    "homeAbbr": "JUV",
+    "homeScore": 2,
+    "away": "Napoli",
+    "awayAbbr": "NAP",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "note": "Alajbegovic 70' · Boga 87'"
+   },
+   {
+    "type": "text",
+    "dur": 6,
+    "label": "Juventus",
+    "title": "Two long-range goals in the last 20 minutes",
+    "sub": "Napoli finished with 10 men after Marianucci's second yellow"
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "Serie A · Saturday",
+    "home": "Udinese",
+    "homeAbbr": "UDI",
+    "homeScore": 2,
+    "away": "Roma",
+    "awayAbbr": "ROM",
+    "awayScore": 5,
+    "status": "FULL TIME",
+    "note": "Roma were 4–0 up after 37 minutes"
+   },
+   {
+    "type": "table",
+    "dur": 8,
+    "label": "Serie A table · top five",
+    "cols": [
+     "P",
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Lazio",
+      10,
+      9,
+      1,
+      0,
+      28
+     ],
+     [
+      2,
+      "Inter",
+      10,
+      8,
+      1,
+      1,
+      25
+     ],
+     [
+      3,
+      "Roma",
+      10,
+      7,
+      3,
+      0,
+      24
+     ],
+     [
+      4,
+      "Como",
+      10,
+      7,
+      2,
+      1,
+      23
+     ],
+     [
+      5,
+      "AC Milan",
+      10,
+      6,
+      3,
+      1,
+      21
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "danger": [],
+    "note": ""
+   },
+   {
+    "type": "text",
+    "dur": 4,
+    "label": "Bundesliga",
+    "title": "Der Klassiker",
+    "sub": "Bayern v Dortmund in Munich"
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "Bundesliga · Saturday",
+    "home": "Bayern",
+    "homeAbbr": "FCB",
+    "homeScore": 2,
+    "away": "Dortmund",
+    "awayAbbr": "BVB",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "note": "Laimer 38' · Guirassy 60' · Upamecano 66' · Fábio Silva 89'"
+   },
+   {
+    "type": "text",
+    "dur": 7,
+    "label": "Harry Kane",
+    "title": "The new Ballon d'Or winner hit the bar from the spot",
+    "sub": "Kane missed a penalty at 1–0. Fábio Silva's 89th-minute equaliser kept Dortmund unbeaten."
+   },
+   {
+    "type": "score",
+    "dur": 6,
+    "label": "Bundesliga · Saturday",
+    "home": "Leverkusen",
+    "homeAbbr": "B04",
+    "homeScore": 2,
+    "away": "Stuttgart",
+    "awayAbbr": "VFB",
+    "awayScore": 4,
+    "status": "FULL TIME",
+    "note": "Demirović 2 · Leweling · El Khannouss"
+   },
+   {
+    "type": "table",
+    "dur": 8,
+    "label": "Bundesliga table · top five",
+    "cols": [
+     "P",
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Bayern",
+      8,
+      5,
+      3,
+      0,
+      18
+     ],
+     [
+      2,
+      "Dortmund",
+      8,
+      5,
+      3,
+      0,
+      18
+     ],
+     [
+      3,
+      "Freiburg",
+      8,
+      5,
+      1,
+      2,
+      16
+     ],
+     [
+      4,
+      "RB Leipzig",
+      8,
+      5,
+      0,
+      3,
+      15
+     ],
+     [
+      5,
+      "Werder Bremen",
+      8,
+      4,
+      3,
+      1,
+      15
+     ]
+    ],
+    "highlight": [
+     1,
+     2
+    ],
+    "danger": [],
+    "note": "Bayern and Dortmund are both unbeaten"
+   },
+   {
+    "type": "text",
+    "dur": 4,
+    "label": "Champions League · Tuesday",
+    "title": "Then Europe started again",
+    "sub": ""
+   },
+   {
+    "type": "table",
+    "dur": 10,
+    "label": "Champions League · Tuesday's results",
+    "cols": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "",
+      "Galatasaray v Stuttgart",
+      2,
+      0
+     ],
+     [
+      "",
+      "Shakhtar v Sporting",
+      0,
+      1
+     ],
+     [
+      "",
+      "Atlético v Bayern",
+      0,
+      2
+     ],
+     [
+      "",
+      "Barcelona v Aston Villa",
+      3,
+      0
+     ],
+     [
+      "",
+      "Bodø/Glimt v Lille",
+      0,
+      0
+     ],
+     [
+      "",
+      "Feyenoord v Inter",
+      0,
+      3
+     ],
+     [
+      "",
+      "LASK v Slovan",
+      4,
+      0
+     ],
+     [
+      "",
+      "Man United v Roma",
+      3,
+      2
+     ],
+     [
+      "",
+      "Villarreal v PSG",
+      0,
+      6
+     ]
+    ],
+    "highlight": [],
+    "danger": [],
+    "note": ""
+   },
+   {
+    "type": "text",
+    "dur": 6,
+    "label": "PSG",
+    "title": "4–0 up after 17 minutes in Villarreal",
+    "sub": "Fabián Ruiz scored twice in a 6–0 win. PSG are 4 from 4."
+   },
+   {
+    "type": "text",
+    "dur": 7,
+    "label": "Man United",
+    "title": "From 0–2 down to 3–2 against Roma",
+    "sub": "Bruno Fernandes scored a penalty, Matheus Cunha got two late goals, then a red card"
+   },
+   {
+    "type": "text",
+    "dur": 7,
+    "label": "Bayern",
+    "title": "Lennart Karl, 18, scores again",
+    "sub": "Only Yamal, Mbappé and Raúl also reached five Champions League goals before turning 19"
+   },
+   {
+    "type": "cta",
+    "dur": 5,
+    "title": "Who had the best weekend?",
+    "sub": "Tell us in the comments"
+   },
+   {
+    "type": "outro",
+    "dur": 4,
+    "title": "Live scores, tables & results",
+    "sub": "Follow ScoreBuzz for daily results and recaps"
+   }
+  ],
+  "fbTime": "2026-11-05T14:00:00",
+  "fbCaption": "⚽ Missed the weekend? Here's all of it in four minutes.\n\nArsenal won at Anfield for the first time since 2012, Man City lost again, AC Milan beat Inter, Bayern and Dortmund drew 2–2, and PSG hit six in the Champions League.\n\nWho had the best weekend? 👇\n\n#PremierLeague #SerieA #Bundesliga #UCL"
+ },
+ {
+  "id": "v2-nfl-week8",
+  "sport": "nfl",
+  "format": "video",
+  "bed": "hype",
+  "time": "2026-11-05T22:00:00",
+  "title": "NFL Week 8 Recap: Vikings Lose, Broncos Stop Mahomes & a ZERO-Completion Win 🏈",
+  "description": "Everything you missed from NFL Week 8: the Lions handed the Vikings their first loss, the Broncos stopped Patrick Mahomes on fourth-and-goal, Joe Burrow threw for 462 yards in an overtime win, and the Buccaneers beat the Falcons without completing a pass. Plus every result, the standings and the Week 9 games to watch.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NFL #NFLWeek8 #NFLWeek9 #Broncos #Bengals",
+  "tags": [
+   "nfl week 8 recap",
+   "nfl week 8 results",
+   "broncos vs chiefs",
+   "lions vs vikings",
+   "joe burrow",
+   "buccaneers zero completions",
+   "nfl standings",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 5,
+    "kicker": "NFL Week 8 recap",
+    "title": "Everything you missed",
+    "sub": "Every result, the big stories and the standings"
+   },
+   {
+    "type": "table",
+    "dur": 10.5,
+    "label": "Week 8 results · home team first (1/2)",
+    "cols": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "",
+      "Packers v Panthers",
+      27,
+      19
+     ],
+     [
+      "",
+      "Bills v Ravens",
+      36,
+      10
+     ],
+     [
+      "",
+      "Bengals v Titans",
+      43,
+      36
+     ],
+     [
+      "",
+      "Cowboys v Cardinals",
+      30,
+      33
+     ],
+     [
+      "",
+      "Lions v Vikings",
+      19,
+      15
+     ],
+     [
+      "",
+      "Jets v Raiders",
+      33,
+      38
+     ],
+     [
+      "",
+      "Steelers v Browns",
+      27,
+      6
+     ]
+    ],
+    "highlight": [],
+    "danger": [],
+    "note": ""
+   },
+   {
+    "type": "table",
+    "dur": 10.5,
+    "label": "Week 8 results · home team first (2/2)",
+    "cols": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "",
+      "Buccaneers v Falcons",
+      16,
+      0
+     ],
+     [
+      "",
+      "Jaguars v Colts",
+      42,
+      7
+     ],
+     [
+      "",
+      "Rams v Chargers",
+      24,
+      9
+     ],
+     [
+      "",
+      "Broncos v Chiefs",
+      28,
+      24
+     ],
+     [
+      "",
+      "Dolphins v Patriots",
+      19,
+      24
+     ],
+     [
+      "",
+      "Commanders v Eagles",
+      27,
+      10
+     ],
+     [
+      "",
+      "Seahawks v Bears",
+      17,
+      34
+     ]
+    ],
+    "highlight": [],
+    "danger": [],
+    "note": "Panthers at Packers was Thursday; Bears at Seahawks was Monday night"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · NFC North",
+    "home": "Lions",
+    "homeAbbr": "DET",
+    "homeScore": 19,
+    "away": "Vikings",
+    "awayAbbr": "MIN",
+    "awayScore": 15,
+    "status": "FINAL",
+    "note": "Goff to Jameson Williams for the go-ahead TD with 4:35 left"
+   },
+   {
+    "type": "text",
+    "dur": 8.0,
+    "label": "Minnesota",
+    "title": "The Vikings' first loss of the season",
+    "sub": "Jahmyr Gibbs ran for 153 yards. Detroit's Jack Campbell left with a neck injury."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · AFC West",
+    "home": "Broncos",
+    "homeAbbr": "DEN",
+    "homeScore": 28,
+    "away": "Chiefs",
+    "awayAbbr": "KC",
+    "awayScore": 24,
+    "status": "FINAL",
+    "note": "Malcolm Roach sacked Mahomes on fourth-and-goal on the final play"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Patrick Mahomes when leading by 10+ in the 4th",
+    "value": "80–3",
+    "unit": "career record",
+    "text": "Denver have won 15 straight one-score games over two seasons"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Denver",
+    "title": "Broncos 6–2 and first in the AFC West",
+    "sub": "Sean Payton's 200th career win"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · overtime",
+    "home": "Bengals",
+    "homeAbbr": "CIN",
+    "homeScore": 43,
+    "away": "Titans",
+    "awayAbbr": "TEN",
+    "awayScore": 36,
+    "status": "FINAL/OT",
+    "note": "Burrow tied it with 1:17 left, then ran in the OT winner"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Joe Burrow",
+    "value": "462",
+    "unit": "passing yards",
+    "text": "5 touchdown passes. Tee Higgins: 10 catches, 155 yards, 2 TDs"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · rain in Tampa",
+    "home": "Buccaneers",
+    "homeAbbr": "TB",
+    "homeScore": 16,
+    "away": "Falcons",
+    "awayAbbr": "ATL",
+    "awayScore": 0,
+    "status": "FINAL",
+    "note": "Baker Mayfield went 0 for 3"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Tampa Bay",
+    "value": "0",
+    "unit": "completions",
+    "text": "The first team to win without completing a pass since the 1974 Bills"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Buccaneers",
+    "title": "324 rushing yards, a team record",
+    "sub": "Bucky Irving ran for 170. Michael Penix Jr. threw four interceptions."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · overtime",
+    "home": "Cowboys",
+    "homeAbbr": "DAL",
+    "homeScore": 30,
+    "away": "Cardinals",
+    "awayAbbr": "ARI",
+    "awayScore": 33,
+    "status": "FINAL/OT",
+    "note": "Chad Ryland missed the PAT that would have won it, then hit a 42-yarder in OT"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Arizona",
+    "title": "Gardner Minshew came off the bench",
+    "sub": "Three TD passes, and Tyler Allgeier ran for 147 yards"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday",
+    "home": "Bills",
+    "homeAbbr": "BUF",
+    "homeScore": 36,
+    "away": "Ravens",
+    "awayAbbr": "BAL",
+    "awayScore": 10,
+    "status": "FINAL",
+    "note": "Josh Allen: 289 yards, 2 TDs"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Baltimore",
+    "title": "The Ravens lost Lamar Jackson and Tyler Huntley to injuries",
+    "sub": "Buffalo pulled away with three second-half touchdown drives"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · AFC North",
+    "home": "Steelers",
+    "homeAbbr": "PIT",
+    "homeScore": 27,
+    "away": "Browns",
+    "awayAbbr": "CLE",
+    "awayScore": 6,
+    "status": "FINAL",
+    "note": "8 sacks · Jaylen Warren 143 yards on his birthday"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · AFC South",
+    "home": "Jaguars",
+    "homeAbbr": "JAX",
+    "homeScore": 42,
+    "away": "Colts",
+    "awayAbbr": "IND",
+    "awayScore": 7,
+    "status": "FINAL",
+    "note": "Trevor Lawrence: 10 of 14, 210 yards, 3 TDs"
+   },
+   {
+    "type": "text",
+    "dur": 9.0,
+    "label": "Around the league",
+    "title": "Raiders, Commanders and Patriots win",
+    "sub": "Kirk Cousins threw 3 TDs to beat the Jets. Washington scored 27 straight against the Eagles, who have lost six in a row. Drake Maye had 3 TDs in Miami."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Monday Night Football",
+    "home": "Seahawks",
+    "homeAbbr": "SEA",
+    "homeScore": 17,
+    "away": "Bears",
+    "awayAbbr": "CHI",
+    "awayScore": 34,
+    "status": "FINAL",
+    "note": "D'Andre Swift 3 TDs · Jeffery Simmons sack on debut"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · LA derby",
+    "home": "Rams",
+    "homeAbbr": "LAR",
+    "homeScore": 24,
+    "away": "Chargers",
+    "awayAbbr": "LAC",
+    "awayScore": 9,
+    "status": "FINAL",
+    "note": "The Chargers are 0–7"
+   },
+   {
+    "type": "table",
+    "dur": 9.0,
+    "label": "Standings after Week 8 · AFC",
+    "cols": [
+     "W",
+     "L",
+     "T"
+    ],
+    "rows": [
+     [
+      1,
+      "Bills",
+      6,
+      1,
+      0
+     ],
+     [
+      2,
+      "Broncos",
+      6,
+      2,
+      0
+     ],
+     [
+      3,
+      "Steelers",
+      6,
+      2,
+      0
+     ],
+     [
+      4,
+      "Jaguars",
+      5,
+      2,
+      0
+     ],
+     [
+      5,
+      "Chiefs",
+      5,
+      2,
+      0
+     ],
+     [
+      6,
+      "Bengals",
+      5,
+      2,
+      0
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "danger": [],
+    "note": ""
+   },
+   {
+    "type": "table",
+    "dur": 9.0,
+    "label": "Standings after Week 8 · NFC",
+    "cols": [
+     "W",
+     "L",
+     "T"
+    ],
+    "rows": [
+     [
+      1,
+      "49ers",
+      6,
+      1,
+      0
+     ],
+     [
+      2,
+      "Vikings",
+      6,
+      1,
+      0
+     ],
+     [
+      3,
+      "Bears",
+      6,
+      2,
+      0
+     ],
+     [
+      4,
+      "Lions",
+      5,
+      2,
+      0
+     ],
+     [
+      5,
+      "Giants",
+      4,
+      2,
+      1
+     ],
+     [
+      6,
+      "Packers",
+      5,
+      3,
+      0
+     ]
+    ],
+    "highlight": [
+     1,
+     2
+    ],
+    "danger": [],
+    "note": ""
+   },
+   {
+    "type": "list",
+    "dur": 9.0,
+    "label": "Week 9 · away @ home",
+    "title": "Games to watch",
+    "rows": [
+     [
+      "Jaguars 5–2",
+      "@",
+      "Ravens 4–4"
+     ],
+     [
+      "Packers 5–3",
+      "@",
+      "Patriots 5–3"
+     ],
+     [
+      "Bucs 3–5",
+      "@",
+      "Bears 6–2"
+     ],
+     [
+      "Bills 6–1",
+      "@",
+      "Vikings 6–1"
+     ]
+    ],
+    "note": "Thursday 8:15pm ET: Jaguars at Ravens. Monday 8:15pm ET: Bills at Vikings."
+   },
+   {
+    "type": "cta",
+    "dur": 5,
+    "title": "Best game of Week 8?",
+    "sub": "Tell us in the comments"
+   },
+   {
+    "type": "outro",
+    "dur": 4,
+    "title": "Live scores & standings",
+    "sub": "Follow ScoreBuzz for daily results and recaps"
+   }
+  ],
+  "fbTime": "2026-11-05T23:00:00",
+  "fbCaption": "🏈 NFL Week 8 in just over three minutes.\n\nThe Vikings lost for the first time, the Broncos stopped Mahomes on the final play, Joe Burrow threw for 462 yards, and the Bucs won without completing a pass.\n\nBest game of the week? 👇\n\n#NFL #NFLWeek8 #Broncos #Bengals"
+ },
+ {
+  "id": "v3-nba-nhl-week",
+  "sport": "other",
+  "format": "video",
+  "bed": "drama",
+  "time": "2026-11-06T22:00:00",
+  "title": "NBA & NHL Week in Review: Luka's Scoring Run, Wemby 43 & a Record Comeback 🏀🏒",
+  "description": "The NBA and NHL from 28 October to 3 November: Luka Dončić scored 37+ in five straight games, Victor Wembanyama dropped 43, Stephen Curry and SGA both hit 40+, and Memphis's unbeaten start ended in overtime. In the NHL, the Jets came back from 4–0 down in the third, Connor McDavid stretched his record assist streak to 16 and Logan Cooley scored a hat trick with a second left. Standings as of 3 November.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NBA #NHL #Lakers #Spurs #Oilers",
+  "tags": [
+   "nba week in review",
+   "nhl week in review",
+   "luka doncic",
+   "victor wembanyama",
+   "connor mcdavid",
+   "jets comeback",
+   "nba standings",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 5,
+    "kicker": "NBA & NHL · 28 Oct – 3 Nov",
+    "title": "The week in review",
+    "sub": "Records, comebacks and big scoring nights"
+   },
+   {
+    "type": "text",
+    "dur": 4.0,
+    "label": "NBA",
+    "title": "The scoring week",
+    "sub": ""
+   },
+   {
+    "type": "stat",
+    "dur": 9.0,
+    "label": "Luka Dončić · Lakers",
+    "value": "5",
+    "unit": "straight games with 37+",
+    "text": "45 v Toronto, then 42 v Miami. He averaged 43.4 points in that run."
+   },
+   {
+    "type": "text",
+    "dur": 8.0,
+    "label": "Lakers 138–117 Heat",
+    "title": "42 points, 13 assists, 7 rebounds",
+    "sub": "One night after 45 points and 15 rebounds against the Raptors"
+   },
+   {
+    "type": "score",
+    "dur": 8.0,
+    "label": "NBA · Saturday",
+    "home": "Spurs",
+    "homeAbbr": "SA",
+    "homeScore": 121,
+    "away": "Timberwolves",
+    "awayAbbr": "MIN",
+    "awayScore": 111,
+    "status": "FINAL",
+    "note": "Wembanyama: 43 points, 6 blocks"
+   },
+   {
+    "type": "text",
+    "dur": 8.0,
+    "label": "Victor Wembanyama",
+    "title": "40+ points for the 10th time in the regular season",
+    "sub": "17 of 34 from the field. It was San Antonio's fourth straight win."
+   },
+   {
+    "type": "score",
+    "dur": 8.0,
+    "label": "NBA · Wednesday",
+    "home": "Timberwolves",
+    "homeAbbr": "MIN",
+    "homeScore": 114,
+    "away": "Warriors",
+    "awayAbbr": "GS",
+    "awayScore": 119,
+    "status": "FINAL",
+    "note": "Stephen Curry: season-high 44"
+   },
+   {
+    "type": "score",
+    "dur": 8.0,
+    "label": "NBA · Monday",
+    "home": "Cavaliers",
+    "homeAbbr": "CLE",
+    "homeScore": 112,
+    "away": "Thunder",
+    "awayAbbr": "OKC",
+    "awayScore": 117,
+    "status": "FINAL",
+    "note": "SGA: 43 points and the go-ahead three with 32.6s left"
+   },
+   {
+    "type": "score",
+    "dur": 8.0,
+    "label": "NBA · Monday · overtime",
+    "home": "Grizzlies",
+    "homeAbbr": "MEM",
+    "homeScore": 134,
+    "away": "Pelicans",
+    "awayAbbr": "NO",
+    "awayScore": 135,
+    "status": "FINAL/OT",
+    "note": "Ty Jerome scored 40 for Memphis"
+   },
+   {
+    "type": "text",
+    "dur": 6.5,
+    "label": "Memphis",
+    "title": "The NBA's last unbeaten team lost",
+    "sub": "The Grizzlies started 6–0"
+   },
+   {
+    "type": "text",
+    "dur": 9.0,
+    "label": "Miami",
+    "title": "Giannis' first win with the Heat",
+    "sub": "24 points and 18 rebounds in Atlanta. Bam Adebayo became Miami's career rebounding leader."
+   },
+   {
+    "type": "table",
+    "dur": 10.5,
+    "label": "NBA standings · as of 3 Nov",
+    "cols": [
+     "W",
+     "L"
+    ],
+    "rows": [
+     [
+      1,
+      "Rockets",
+      7,
+      1
+     ],
+     [
+      2,
+      "76ers",
+      7,
+      1
+     ],
+     [
+      3,
+      "Grizzlies",
+      6,
+      1
+     ],
+     [
+      4,
+      "Pistons",
+      6,
+      1
+     ],
+     [
+      5,
+      "Trail Blazers",
+      5,
+      1
+     ],
+     [
+      6,
+      "Lakers",
+      6,
+      2
+     ]
+    ],
+    "highlight": [
+     1,
+     2
+    ],
+    "danger": [],
+    "note": "Rockets lead the West, 76ers lead the East"
+   },
+   {
+    "type": "text",
+    "dur": 4.0,
+    "label": "NHL",
+    "title": "The comeback week",
+    "sub": ""
+   },
+   {
+    "type": "score",
+    "dur": 8.0,
+    "label": "NHL · Tuesday · overtime",
+    "home": "Canadiens",
+    "homeAbbr": "MTL",
+    "homeScore": 4,
+    "away": "Jets",
+    "awayAbbr": "WPG",
+    "awayScore": 5,
+    "status": "FINAL/OT",
+    "note": "Montreal led 4–0 early in the third"
+   },
+   {
+    "type": "stat",
+    "dur": 9.0,
+    "label": "Winnipeg Jets",
+    "value": "4",
+    "unit": "goals in 2:08",
+    "text": "The latest four-goal comeback in NHL history. It ended a nine-game losing streak."
+   },
+   {
+    "type": "score",
+    "dur": 8.0,
+    "label": "NHL · Thursday · overtime",
+    "home": "Kings",
+    "homeAbbr": "LA",
+    "homeScore": 6,
+    "away": "Senators",
+    "awayAbbr": "OTT",
+    "awayScore": 5,
+    "status": "FINAL/OT",
+    "note": "LA blew a 4-goal third-period lead, then won in OT"
+   },
+   {
+    "type": "score",
+    "dur": 8.0,
+    "label": "NHL · Thursday · overtime",
+    "home": "Penguins",
+    "homeAbbr": "PIT",
+    "homeScore": 3,
+    "away": "Mammoth",
+    "awayAbbr": "UTA",
+    "awayScore": 4,
+    "status": "FINAL/OT",
+    "note": "Logan Cooley's hat trick goal came with one second left"
+   },
+   {
+    "type": "text",
+    "dur": 8.0,
+    "label": "Logan Cooley",
+    "title": "A hat trick against his hometown team",
+    "sub": "Sergachev won it in overtime. Cooley had six goals in four games."
+   },
+   {
+    "type": "score",
+    "dur": 8.0,
+    "label": "NHL · Thursday",
+    "home": "Ducks",
+    "homeAbbr": "ANA",
+    "homeScore": 6,
+    "away": "Sabres",
+    "awayAbbr": "BUF",
+    "awayScore": 7,
+    "status": "FINAL",
+    "note": "Tage Thompson: 3 goals, 2 assists"
+   },
+   {
+    "type": "stat",
+    "dur": 9.0,
+    "label": "Connor McDavid",
+    "value": "16",
+    "unit": "games with an assist",
+    "text": "An NHL record to start a season. He had 31 assists through 3 Nov."
+   },
+   {
+    "type": "text",
+    "dur": 8.0,
+    "label": "Jason Robertson",
+    "title": "A natural hat trick in 5 minutes 20 seconds",
+    "sub": "Dallas beat Washington 6–5 on Tuesday"
+   },
+   {
+    "type": "text",
+    "dur": 8.0,
+    "label": "Pyotr Kochetkov",
+    "title": "Won his first 10 starts",
+    "sub": "Nashville finally beat him, 4–1, on Tuesday"
+   },
+   {
+    "type": "table",
+    "dur": 10.5,
+    "label": "NHL standings · as of 3 Nov",
+    "cols": [
+     "GP",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Hurricanes",
+      17,
+      26
+     ],
+     [
+      2,
+      "Oilers",
+      16,
+      25
+     ],
+     [
+      3,
+      "Wild",
+      17,
+      25
+     ],
+     [
+      4,
+      "Bruins",
+      16,
+      23
+     ],
+     [
+      5,
+      "Golden Knights",
+      17,
+      22
+     ],
+     [
+      6,
+      "Canadiens",
+      15,
+      21
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "danger": [],
+    "note": ""
+   },
+   {
+    "type": "cta",
+    "dur": 5,
+    "title": "Player of the week?",
+    "sub": "Luka, Wemby or McDavid? Comment below"
+   },
+   {
+    "type": "outro",
+    "dur": 4,
+    "title": "Live scores & standings",
+    "sub": "Follow ScoreBuzz for daily results and recaps"
+   }
+  ],
+  "fbTime": "2026-11-06T23:00:00",
+  "fbCaption": "🏀🏒 The NBA and NHL week in review (28 Oct – 3 Nov).\n\nLuka Dončić scored 37+ in five straight games, Wembanyama dropped 43, the Jets came back from 4–0 down in the third, and McDavid's assist streak reached 16.\n\nPlayer of the week? 👇\n\n#NBA #NHL #Lakers #Oilers"
+ }
+]

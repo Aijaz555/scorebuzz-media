@@ -45,7 +45,7 @@ At the end, send the user a short summary: number of posts scheduled, the mix, a
 
 # YouTube (ScoreBuzz channel @scorebuzznet)
 
-Target set by the owner: **15 Shorts per day** (plus 1 long video per day when a voiceover is available). Publishing goes through Metricool (same brand `7677948`), so it only works on a paid Metricool plan; on the free plan, build and commit but do not schedule.
+Target set by the owner: **15 YouTube uploads per day**, including weekly recap videos on Tuesdays and Fridays (see "Long videos" below). Publishing goes through Metricool (same brand `7677948`), so it only works on a paid Metricool plan; on the free plan, build and commit but do not schedule.
 
 ## Shorts
 - Generator: `node tools/make_shorts.js shorts/YYYY-MM-DD/shorts.json shorts/YYYY-MM-DD [id ...]` → `<id>.mp4` (1080x1920, 12–20 s) + `<id>.jpg` thumbnail. Scene types and fields are documented at the top of the script; see `shorts/2026-10-29/shorts.json`.
@@ -65,8 +65,16 @@ Target set by the owner: **15 Shorts per day** (plus 1 long video per day when a
 - Publish results within hours, previews 1–3 hours before kick-off; end every Short on a question.
 - Scores can come straight from ESPN's scoreboard/summary JSON (site.api.espn.com), which is allowed in this environment.
 
-## Long video (format "video", 1920x1080)
-- Same generator with `"format": "video"`; 4–8 minutes, e.g. weekend football roundup, NFL week recap, NBA/NHL power rankings. Needs a voiceover to be worth watching.
+## Long videos: weekly recaps (owner's request, 4 Nov 2026)
+- **Only on some days, not daily** (YouTube's upload limit). Fixed days, all times PKT:
+  - **Tuesday:** a football weekend recap (Premier League, LaLiga, Serie A, Bundesliga) at ~13:00, and an NFL week recap after Monday Night Football at ~22:00.
+  - **Friday:** an NBA/NHL week in review at ~22:00.
+  - (First week only: the football and NFL Week 8 recaps go out Thu 5 Nov and the NBA/NHL review Fri 6 Nov.)
+- Length 3–5 minutes (180–300 s), 1920x1080: `node tools/make_shorts.js videos/YYYY-MM-DD/videos.json videos/YYYY-MM-DD` with `"format": "video"`. It renders at about 3x real time, so run it in the background (`nohup … &`). Example: `videos/2026-11-04/videos.json`.
+- **No voiceover** (owner's choice): on-screen text, scores and tables carry the story. Give each text/score scene 6–9 s and each table 8–11 s so it can be read. Then add a music bed with `tools/add_music.sh` (original royalty-free beds only, never commercial songs). Don't use `board` scenes in wide format, because they're built for vertical; use a `table` with cols `["",""]` and rows `["", "Home v Away", hs, as]` for results lists, with at most ~11 rows per table.
+- Research: every score and scorer comes from ESPN JSON (scoreboard + summary). Story details come from the ESPN/AP game story in the summary's `article`, or from a page opened with WebFetch. Frame stats in time ("as of 3 Nov", "through Week 8") so they stay true when the video goes out.
+- **Count them toward the day's targets**: each long video counts as 1 of the 15 YouTube uploads and 1 of the ≤25 Facebook posts for its day, so a Tuesday has 13 Shorts and a Friday has 14.
+- Post each long video on **YouTube** (`type: "video"`, title ≤100 chars, chapters optional) **and the Facebook Page** (same MP4, `facebookData: {"type":"POST","title": <title>}`, caption = 2–3 lines + question + hashtags, link in first comment), at least 1 hour apart on the two networks.
 
 ## Scheduling (Metricool `createScheduledPost`)
 - provider `youtube`, `youtubeData: {"title": ..., "type": "short"|"video", "privacy": "public", "tags": [...], "category": "SPORTS", "madeForKids": false, "isAiGeneratedContent": false}`, media = `https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/shorts/YYYY-MM-DD/<id>.mp4`, text = description.
