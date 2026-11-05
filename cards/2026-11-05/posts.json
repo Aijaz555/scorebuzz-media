@@ -1,0 +1,542 @@
+[
+ {
+  "id": "01-como-nine",
+  "time": "2026-11-05T11:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 4",
+  "home": "Lens",
+  "homeAbbr": "RCL",
+  "homeScore": 1,
+  "away": "Como",
+  "awayAbbr": "COM",
+  "awayScore": 9,
+  "status": "FULL TIME",
+  "headline": "A Champions League away record",
+  "sub": "Most goals ever scored by a team on the road in the competition. Tasos Douvikas got a hat trick.",
+  "caption": "🤯 Como won 9–1 at Lens in the Champions League.\n\nThat's the most goals any team has ever scored away from home in the competition. Tasos Douvikas scored a hat trick and seven different players found the net. Cesc Fàbregas's side are now fourth in the table.\n\nAre Como the real deal? 👇\n\n#Como #UCL #ChampionsLeague"
+ },
+ {
+  "id": "02-fener-liverpool",
+  "time": "2026-11-05T12:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · ISTANBUL",
+  "home": "Fenerbahçe",
+  "homeAbbr": "FEN",
+  "homeScore": 3,
+  "away": "Liverpool",
+  "awayAbbr": "LIV",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "headline": "Liverpool led twice and lost",
+  "sub": "Nyoni and Isak scored. Greenwood, Archie Brown and Vedat Muriqi (79') replied. Liverpool's perfect start is over.",
+  "caption": "😳 Liverpool were ahead twice in Istanbul and still lost 3–2 to Fenerbahçe.\n\nTrey Nyoni and Alexander Isak put them in front, but Mason Greenwood's free kick, Archie Brown and a Vedat Muriqi header turned it around. It's their second defeat in four days after losing to Arsenal on Sunday.\n\nWhat's gone wrong at Liverpool? 👇\n\n#LFC #Fenerbahce #UCL"
+ },
+ {
+  "id": "03-madrid-aek",
+  "time": "2026-11-05T13:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · ATHENS",
+  "home": "AEK Athens",
+  "homeAbbr": "AEK",
+  "homeScore": 2,
+  "away": "Real Madrid",
+  "awayAbbr": "RMA",
+  "awayScore": 3,
+  "status": "FULL TIME",
+  "headline": "Valverde wins it in the 92nd minute",
+  "sub": "Behind twice. Bellingham and Mbappé equalised, then Valverde fired one in from outside the box.",
+  "caption": "⚪ Real Madrid were behind twice in Athens and won 3–2 in stoppage time.\n\nJude Bellingham and Kylian Mbappé equalised, then Federico Valverde fired one in from outside the box in the 92nd minute. Madrid are 4 from 4.\n\nBellingham is also now the youngest player to reach 60 Champions League games, passing Iker Casillas.\n\nCan anyone beat Mourinho's Madrid? 👇\n\n#RealMadrid #HalaMadrid #UCL"
+ },
+ {
+  "id": "04-haaland-leipzig",
+  "time": "2026-11-05T15:00:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "UCL · RB LEIPZIG 2–3 MAN CITY",
+  "headline": "Haaland: 62 goals in 61 Champions League games",
+  "sub": "His 78th-minute winner was his 13th goal in 9 games against Leipzig, his most against any team.",
+  "stat": [
+   "14",
+   "goals this season"
+  ],
+  "caption": "🤖 Erling Haaland did it again.\n\nCity were pegged back twice in Leipzig before Haaland scored the winner 12 minutes from time. That's 13 goals in nine games against Leipzig and 62 in 61 Champions League games.\n\nCity are up to seventh in the table.\n\nIs Haaland the best No. 9 in the world? 👇\n\n#ManCity #Haaland #UCL"
+ },
+ {
+  "id": "05-ucl-top8",
+  "time": "2026-11-05T16:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · AFTER MATCHDAY 4",
+  "headline": "The top eight",
+  "rows": [
+   [
+    "1",
+    "PSG",
+    "12 pts"
+   ],
+   [
+    "2",
+    "Real Madrid",
+    "12 pts"
+   ],
+   [
+    "3",
+    "Arsenal",
+    "10 pts"
+   ],
+   [
+    "4",
+    "Como",
+    "9 pts"
+   ],
+   [
+    "5",
+    "Barcelona",
+    "9 pts"
+   ],
+   [
+    "6",
+    "Aston Villa",
+    "9 pts"
+   ],
+   [
+    "7",
+    "Man City",
+    "9 pts"
+   ],
+   [
+    "8",
+    "Liverpool",
+    "9 pts"
+   ]
+  ],
+  "sub": "Top eight go straight to the last 16.",
+  "caption": "📊 The Champions League top eight after four matchdays.\n\nPSG and Real Madrid are perfect on 12 points, Arsenal are third and unbeaten, and Como are fourth. Liverpool hang on in eighth after losing in Istanbul.\n\nWho finishes top? 👇\n\n#UCL #ChampionsLeague #PSG #Arsenal"
+ },
+ {
+  "id": "06-arsenal-slavia",
+  "time": "2026-11-05T17:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · PRAGUE",
+  "home": "Slavia Prague",
+  "homeAbbr": "SLA",
+  "homeScore": 1,
+  "away": "Arsenal",
+  "awayAbbr": "ARS",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "headline": "Gyökeres takes his chance",
+  "sub": "Madueke scored after 9 minutes, Gyökeres added a goal and an assist. Slavia pulled one back in the 90th.",
+  "caption": "🔴⚪ Arsenal won 2–1 in Prague and climbed to third in the Champions League.\n\nNoni Madueke opened the scoring, Viktor Gyökeres set it up and then scored the second himself on a rare start. Slavia scored late to make it nervy.\n\nShould Gyökeres start on Saturday? 👇\n\n#Arsenal #AFC #UCL"
+ },
+ {
+  "id": "07-uel-tonight",
+  "time": "2026-11-05T18:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "EUROPA LEAGUE · TONIGHT",
+  "headline": "Palace, Bournemouth, Sunderland, Celtic",
+  "rows": [
+   [
+    "5:45pm",
+    "Crystal Palace v Hoffenheim",
+    "GMT"
+   ],
+   [
+    "5:45pm",
+    "Sparta Prague v Bournemouth",
+    "GMT"
+   ],
+   [
+    "8:00pm",
+    "Sunderland v Dinamo Zagreb",
+    "GMT"
+   ],
+   [
+    "8:00pm",
+    "Celtic v Beşiktaş",
+    "GMT"
+   ],
+   [
+    "8:00pm",
+    "AZ v Juventus",
+    "GMT"
+   ],
+   [
+    "5:45pm",
+    "AC Milan v Ferencváros",
+    "GMT"
+   ]
+  ],
+  "sub": "5:45pm GMT = 12:45pm ET · 8pm GMT = 3pm ET. Bournemouth have won all three so far.",
+  "caption": "🟠 Europa League night.\n\nBournemouth (3 wins from 3) go to Sparta Prague and Palace host Hoffenheim at 5:45pm GMT. Sunderland host Dinamo Zagreb and Celtic, still looking for a first point, face Beşiktaş at 8pm GMT (3pm ET).\n\nWhich of the four wins tonight? 👇\n\n#UEL #EuropaLeague #AFCB #CPFC"
+ },
+ {
+  "id": "08-atleti-barca",
+  "time": "2026-11-05T19:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "LALIGA · SUNDAY 8PM GMT / 3PM ET",
+  "headline": "Atlético v Barcelona: 2nd v 1st",
+  "rows": [
+   [
+    "1",
+    "Barcelona",
+    "30 pts"
+   ],
+   [
+    "2",
+    "Atlético",
+    "28 pts"
+   ],
+   [
+    "3",
+    "Real Madrid",
+    "27 pts"
+   ],
+   [
+    "4",
+    "Real Betis",
+    "23 pts"
+   ]
+  ],
+  "sub": "Win it and Atlético go top. Real Madrid play at Valencia on Saturday night.",
+  "caption": "🔥 Sunday's big one in Spain: Atlético Madrid v Barcelona.\n\nBarça lead LaLiga by two points, so a home win puts Atlético top. Real Madrid are a point further back and play at Valencia the night before.\n\nWho wins it? 👇\n\n#LaLiga #Atleti #Barca"
+ },
+ {
+  "id": "09-pl-weekend",
+  "time": "2026-11-05T20:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · THIS WEEKEND",
+  "headline": "The games to watch",
+  "rows": [
+   [
+    "Sat",
+    "Arsenal v Hull",
+    "3pm GMT"
+   ],
+   [
+    "Sat",
+    "Nott'm Forest v Man City",
+    "5:30pm"
+   ],
+   [
+    "Sun",
+    "Crystal Palace v Liverpool",
+    "2pm"
+   ],
+   [
+    "Sun",
+    "Sunderland v Chelsea",
+    "2pm"
+   ],
+   [
+    "Sun",
+    "Man United v Aston Villa",
+    "4:30pm"
+   ]
+  ],
+  "sub": "Leaders Arsenal (24 pts) are three clear of Man City. Everton v Coventry opens the round on Friday at 8pm.",
+  "caption": "⚽ This weekend in the Premier League.\n\nLeaders Arsenal host Hull, second-placed City go to Forest, and Liverpool travel to Palace three days after losing in Istanbul. Man United v Aston Villa closes it on Sunday.\n\nWhich result are you most sure of? 👇\n\n#PremierLeague #PL #Arsenal #ManCity"
+ },
+ {
+  "id": "10-porto-napoli",
+  "time": "2026-11-05T21:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · PORTO",
+  "home": "Porto",
+  "homeAbbr": "POR",
+  "homeScore": 4,
+  "away": "Napoli",
+  "awayAbbr": "NAP",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "headline": "Napoli's European nightmare",
+  "sub": "McTominay equalised, then Porto scored three in the last 20 minutes. Napoli have lost three of four.",
+  "caption": "🔵 Porto thrashed Napoli 4–1.\n\nScott McTominay cancelled out Jan Bednarek's header, but Gabri Veiga, Jakub Kiwior and a late Samu Aghehowa penalty sank the Italians. Napoli finished with ten men and have lost three of their four games.\n\nCan Napoli still get out of the league phase? 👇\n\n#FCPorto #Napoli #UCL"
+ },
+ {
+  "id": "11-sixers-pistons",
+  "time": "2026-11-05T22:00:00",
+  "sport": "nba",
+  "kind": "score",
+  "label": "NBA · DETROIT",
+  "home": "Pistons",
+  "homeAbbr": "DET",
+  "homeScore": 106,
+  "away": "76ers",
+  "awayAbbr": "PHI",
+  "awayScore": 112,
+  "status": "FINAL",
+  "headline": "Jaylen Brown's block seals it",
+  "sub": "30 points for Brown, 26 and 15 for Embiid. The Sixers are 8–1 and top of the East.",
+  "caption": "🏀 First v second in the East went to Philadelphia.\n\nJaylen Brown scored a season-high 30 and blocked Cade Cunningham's three with 37 seconds left as the 76ers won 112–106 in Detroit. Joel Embiid had 26 and 15.\n\nAnd LeBron James became the first player in NBA history to make 16,000 field goals.\n\nAre the Sixers the best team in the East? 👇\n\n#Sixers #Pistons #NBA"
+ },
+ {
+  "id": "12-sga-42",
+  "time": "2026-11-06T00:00:00",
+  "sport": "nba",
+  "kind": "score",
+  "label": "NBA · OKLAHOMA CITY",
+  "home": "Thunder",
+  "homeAbbr": "OKC",
+  "homeScore": 124,
+  "away": "Cavaliers",
+  "awayAbbr": "CLE",
+  "awayScore": 116,
+  "status": "FINAL",
+  "headline": "SGA: 85 points in two games v Cleveland",
+  "sub": "43 on Monday, 42 on Wednesday. The Thunder beat the Cavs twice in three nights.",
+  "caption": "🔥 Shai Gilgeous-Alexander scored 42 as the Thunder beat Cleveland again, 124–116.\n\nThat's 85 points in two games against the Cavs in three nights. He went 15 of 19 from the line, and Ajay Mitchell added 23.\n\nIs SGA the best scorer in the league right now? 👇\n\n#ThunderUp #NBA #SGA"
+ },
+ {
+  "id": "13-f1-brazil",
+  "time": "2026-11-06T01:00:00",
+  "sport": "racing",
+  "kind": "list",
+  "label": "F1 · SÃO PAULO GRAND PRIX",
+  "headline": "Antonelli's first race as champion",
+  "rows": [
+   [
+    "Fri",
+    "Practice 1",
+    "3:30pm GMT"
+   ],
+   [
+    "Fri",
+    "Practice 2",
+    "7pm GMT"
+   ],
+   [
+    "Sat",
+    "Qualifying",
+    "6pm GMT / 1pm ET"
+   ],
+   [
+    "Sun",
+    "Race (71 laps)",
+    "5pm GMT / 12pm ET"
+   ]
+  ],
+  "sub": "No sprint this weekend. Race at Interlagos on Sunday.",
+  "caption": "🏁 F1 is at Interlagos this weekend, and Kimi Antonelli races for the first time as world champion.\n\nQualifying is Saturday at 6pm GMT (1pm ET) and the race is Sunday at 5pm GMT (12pm ET). No sprint this time.\n\nWho wins in Brazil? 👇\n\n#F1 #SaoPauloGP #BrazilGP"
+ },
+ {
+  "id": "14-knicks-half",
+  "time": "2026-11-06T02:00:00",
+  "sport": "nba",
+  "kind": "score",
+  "label": "NBA · MADISON SQUARE GARDEN",
+  "home": "Knicks",
+  "homeAbbr": "NYK",
+  "homeScore": 135,
+  "away": "Bulls",
+  "awayAbbr": "CHI",
+  "awayScore": 105,
+  "status": "FINAL",
+  "headline": "84 points by half-time",
+  "sub": "That ties the Knicks' record for an opening half. Jalen Brunson had 22 in the first quarter and 33 overall.",
+  "caption": "🗽 The Knicks scored 84 points in the first half against the Bulls.\n\nThat ties the franchise record for a half, set back in 1988. Jalen Brunson had 22 in the first quarter alone and finished with 33 in a 135–105 win. Chicago have lost six straight.\n\nKnicks back on track? 👇\n\n#Knicks #NBA #Bulls"
+ },
+ {
+  "id": "15-tnf",
+  "time": "2026-11-06T03:00:00",
+  "sport": "nfl",
+  "kind": "headline",
+  "label": "THURSDAY NIGHT FOOTBALL · 8:15PM ET",
+  "headline": "Jaguars at Ravens: Week 9 starts tonight",
+  "sub": "Jacksonville can move to 6–2. Baltimore are .500 after eight games.",
+  "caption": "🏈 Thursday Night Football: Jaguars (5–2) at Ravens (4–4), 8:15pm ET.\n\nBaltimore need a win to stay in touch in the AFC. Trevor Lawrence has 17 touchdown passes for Jacksonville.\n\nWho takes it? 👇\n\n#TNF #Ravens #DUUUVAL",
+  "stat": [
+   "5–2 v 4–4",
+   "Jaguars v Ravens"
+  ]
+ },
+ {
+  "id": "16-nhl-tonight",
+  "time": "2026-11-06T04:00:00",
+  "sport": "nhl",
+  "kind": "list",
+  "label": "NHL · TONIGHT",
+  "headline": "11 games, puck drop 7pm ET",
+  "rows": [
+   [
+    "7:00",
+    "Hurricanes at Islanders",
+    "ET"
+   ],
+   [
+    "7:00",
+    "Bruins at Penguins",
+    "ET"
+   ],
+   [
+    "7:00",
+    "Golden Knights at Red Wings",
+    "ET"
+   ],
+   [
+    "7:00",
+    "Stars at Blue Jackets",
+    "ET"
+   ],
+   [
+    "8:00",
+    "Ducks at Oilers",
+    "ET"
+   ],
+   [
+    "9:30",
+    "Predators at Avalanche",
+    "ET"
+   ]
+  ],
+  "sub": "Carolina (12–3–2) lead the league. Edmonton are 11–2–3.",
+  "caption": "🏒 Busy night in the NHL: 11 games, starting at 7pm ET.\n\nThe league-leading Hurricanes visit the Islanders, the Bruins go to Pittsburgh, and McDavid's Oilers host Anaheim at 8pm ET.\n\nWhich game are you watching? 👇\n\n#NHL #LetsGoCanes #Oilers"
+ },
+ {
+  "id": "17-cfb-saturday",
+  "time": "2026-11-06T05:00:00",
+  "sport": "nfl",
+  "kind": "list",
+  "label": "COLLEGE FOOTBALL · SATURDAY",
+  "headline": "No. 1 and No. 2 both on the road",
+  "rows": [
+   [
+    "7:30pm",
+    "#1 Miami at #11 Notre Dame",
+    "ET"
+   ],
+   [
+    "7:30pm",
+    "#2 Georgia at #10 Ole Miss",
+    "ET"
+   ],
+   [
+    "Noon",
+    "#9 BYU at #3 Utah",
+    "ET"
+   ],
+   [
+    "3:30pm",
+    "#5 Alabama at #14 LSU",
+    "ET"
+   ],
+   [
+    "6:15pm",
+    "#6 Kentucky at #13 Tennessee",
+    "ET"
+   ],
+   [
+    "3:30pm",
+    "#23 Oregon at #12 Ohio State",
+    "ET"
+   ]
+  ],
+  "sub": "CFP rankings. Miami will be without WR Malachi Toney (ankle surgery).",
+  "caption": "🏈 This Saturday is loaded.\n\nNo. 1 Miami go to Notre Dame without star receiver Malachi Toney, who needs ankle surgery. No. 2 Georgia are at Ole Miss at the same time, and No. 3 Utah host BYU at noon ET.\n\nWhich top-three team goes down? 👇\n\n#CFB #CollegeFootball #CFPRankings"
+ },
+ {
+  "id": "18-nba-tonight",
+  "time": "2026-11-06T06:00:00",
+  "sport": "nba",
+  "kind": "list",
+  "label": "NBA · TONIGHT",
+  "headline": "Two games, both out West",
+  "rows": [
+   [
+    "9:00pm",
+    "Magic at Suns",
+    "ET"
+   ],
+   [
+    "10:00pm",
+    "Heat at Warriors",
+    "ET"
+   ]
+  ],
+  "sub": "The Warriors are 5–3. Miami are on the second night of a back-to-back.",
+  "caption": "🏀 A quiet NBA night: just two games.\n\nOrlando visit Phoenix at 9pm ET, then Miami are at Golden State at 10pm ET, one night after playing the Clippers.\n\nWho are you picking? 👇\n\n#NBA #DubNation #HEATCulture"
+ },
+ {
+  "id": "19-ufc-walker",
+  "time": "2026-11-06T07:00:00",
+  "sport": "mma",
+  "kind": "headline",
+  "label": "UFC FIGHT NIGHT · SATURDAY",
+  "headline": "Cortes Acosta v Walker headlines Saturday",
+  "sub": "Heavyweight main event. Main card 8pm ET (1am GMT Sunday). Suarez v Jandiroba is the co-main.",
+  "caption": "🥊 Waldo Cortes Acosta (17–4) meets Johnny Walker (23–10) at heavyweight in Saturday's UFC main event.\n\nThe main card starts at 8pm ET, with Tatiana Suarez v Virna Jandiroba in the co-main.\n\nKnockout or decision? 👇\n\n#UFC #UFCFightNight #MMA",
+  "stat": [
+   "17–4 v 23–10",
+   "pro records"
+  ]
+ },
+ {
+  "id": "20-nba-unbeaten-west",
+  "time": "2026-11-06T08:00:00",
+  "sport": "nba",
+  "kind": "list",
+  "label": "NBA · WEDNESDAY'S RESULTS",
+  "headline": "Who won last night",
+  "rows": [
+   [
+    "76ers",
+    "112–106",
+    "at Pistons"
+   ],
+   [
+    "Thunder",
+    "124–116",
+    "v Cavaliers"
+   ],
+   [
+    "Knicks",
+    "135–105",
+    "v Bulls"
+   ],
+   [
+    "Blazers",
+    "132–119",
+    "at Suns"
+   ],
+   [
+    "Wolves",
+    "117–107",
+    "at Rockets"
+   ],
+   [
+    "Pacers",
+    "107–103",
+    "at Grizzlies"
+   ],
+   [
+    "Celtics",
+    "109–102",
+    "v Bucks"
+   ]
+  ],
+  "sub": "Portland are 6–1. Full results at scorebuzz.net",
+  "caption": "📋 Wednesday in the NBA.\n\nThe Sixers won the East's top-two clash, SGA scored 42, the Knicks hit 84 in a half and Damian Lillard's Blazers moved to 6–1 with a win in Phoenix.\n\nBest performance of the night? 👇\n\n#NBA #NBAResults #RipCity"
+ },
+ {
+  "id": "21-madrid-nfl",
+  "time": "2026-11-06T09:00:00",
+  "sport": "nfl",
+  "kind": "headline",
+  "label": "NFL · WEEK 9 · SUNDAY",
+  "headline": "NFL at the Bernabéu: Bengals v Falcons",
+  "sub": "Sunday 9:30am ET / 2:30pm GMT at Real Madrid's stadium. Atlanta are the home team.",
+  "stat": [
+   "5–2 v 3–5",
+   "Bengals v Falcons"
+  ],
+  "caption": "🇪🇸 The NFL is back at the Santiago Bernabéu on Sunday.\n\nThe 5–2 Bengals face the 3–5 Falcons in Madrid at 9:30am ET (2:30pm GMT). It's Atlanta's sixth regular-season game outside the US.\n\nWould you go to an NFL game in Europe? 👇\n\n#NFL #Bengals #RiseUp #MadridGame"
+ }
+]
