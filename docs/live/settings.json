@@ -24,7 +24,11 @@
   "SUN"
  ],
  "top25": 15,
- "pin": null,
+ "pin": {
+  "league": "uel",
+  "event": "401915523",
+  "note": "Sunderland v Dinamo Zagreb (main stream title matches)"
+ },
  "slots": {
   "1": {
    "league": "nfl",
@@ -56,5 +60,5 @@
   "win": true,
   "fit": "fill"
  },
- "reload": 5
+ "reload": 6
 }
