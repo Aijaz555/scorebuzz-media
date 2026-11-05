@@ -165,14 +165,14 @@ footer{position:absolute;left:0;right:0;bottom:0;height:80px;background:#04060E;
 //   ?fit=contain (default: whole board visible, dark bars if the shape differs) | fill (stretch to exactly fill) | none
 //   ?w=1280&h=720  fit into this box (top-left) instead of the window, for studios whose web layer shows only part of the page
 //   ?size=1  shows the window size the streaming studio really uses (to debug cropping)
-var P=new URLSearchParams(location.search),mode=P.get('fit')||'contain';
-function fit(){var W=+P.get('w')||innerWidth,H=+P.get('h')||innerHeight,b=document.body,sx=W/1920,sy=H/1080;
- b.style.marginLeft=b.style.marginTop='0px';
+var P=new URLSearchParams(location.search),mode0=P.get('fit')||'contain';
+function fit(){var R=window.__fitRemote||{};var W=+R.w||+P.get('w')||innerWidth,H=+R.h||+P.get('h')||innerHeight,X=+R.x||0,Y=+R.y||0,b=document.body,sx=W/1920,sy=H/1080;
+ var mode=R.fit||mode0;b.style.marginLeft=X+'px';b.style.marginTop=Y+'px';
  if(mode==='none'||!W||!H){b.style.transform='';}
  else if(mode==='fill'){b.style.transform='scale('+sx+','+sy+')';}
- else{var s=Math.min(sx,sy);b.style.transform='scale('+s+')';b.style.marginLeft=((W-1920*s)/2)+'px';b.style.marginTop=((H-1080*s)/2)+'px';}
- var d=document.getElementById('__sz');if(P.has('size')){if(!d){d=document.createElement('div');d.id='__sz';d.style.cssText='position:fixed;left:0;top:0;z-index:99999;background:#ff0;color:#000;font:bold 28px sans-serif;padding:6px 12px';document.documentElement.appendChild(d);}d.textContent='window '+innerWidth+' x '+innerHeight+' · fit '+W+' x '+H+' · dpr '+devicePixelRatio;}}
-addEventListener('resize',fit);addEventListener('DOMContentLoaded',fit);addEventListener('load',fit);setInterval(fit,2000);fit();})();</script>
+ else{var s=Math.min(sx,sy);b.style.transform='scale('+s+')';b.style.marginLeft=(X+(W-1920*s)/2)+'px';b.style.marginTop=(Y+(H-1080*s)/2)+'px';}
+ var d=document.getElementById('__sz');if(P.has('size')||R.debug){if(!d){d=document.createElement('div');d.id='__sz';d.style.cssText='position:fixed;left:0;top:0;z-index:99999;background:#ff0;color:#000;font:bold 28px sans-serif;padding:6px 12px';document.documentElement.appendChild(d);}d.textContent='window '+innerWidth+' x '+innerHeight+' · fit '+W+' x '+H+' · dpr '+devicePixelRatio;}}
+window.__fit=fit;addEventListener('resize',fit);addEventListener('DOMContentLoaded',fit);addEventListener('load',fit);setInterval(fit,2000);fit();})();</script>
 <div class="bgfx"></div><div class="grid"></div>
 <header>
   <div class="logo">Score<b>Buzz</b></div>
@@ -1259,6 +1259,8 @@ async function loadSettings() {
     if (Array.isArray(c.teams)) AUTO_TEAMS = c.teams.map((t) => String(t).toUpperCase());
     if (c.top25 !== undefined) AUTO_TOP = Number(c.top25) || 0;
     PIN = c.pin && c.pin.event ? c.pin : null;
+    // remote screen fitting for the streaming studio: {"fit": {"w": 1910, "h": 1070, "x": 0, "y": 0, "fit": "fill", "debug": true}}
+    window.__fitRemote = c.fit || {}; if (window.__fit) window.__fit();
     if (SLOT) { const sl = (c.slots || {})[SLOT]; PIN = sl && sl.event ? sl : null; }
   } catch (e) { /* keep URL settings */ }
 }

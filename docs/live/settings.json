@@ -52,5 +52,8 @@
    "event": "401873051",
    "note": "Bills at Vikings, MNF Mon 8:15pm ET"
   }
+ },
+ "fit": {
+  "debug": true
  }
 }

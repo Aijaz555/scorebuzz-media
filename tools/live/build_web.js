@@ -50,6 +50,8 @@ async function loadSettings() {
     if (Array.isArray(c.teams)) AUTO_TEAMS = c.teams.map((t) => String(t).toUpperCase());
     if (c.top25 !== undefined) AUTO_TOP = Number(c.top25) || 0;
     PIN = c.pin && c.pin.event ? c.pin : null;
+    // remote screen fitting for the streaming studio: {"fit": {"w": 1910, "h": 1070, "x": 0, "y": 0, "fit": "fill", "debug": true}}
+    window.__fitRemote = c.fit || {}; if (window.__fit) window.__fit();
     if (SLOT) { const sl = (c.slots || {})[SLOT]; PIN = sl && sl.event ? sl : null; }
   } catch (e) { /* keep URL settings */ }
 }
