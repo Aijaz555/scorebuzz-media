@@ -162,6 +162,52 @@ footer{position:absolute;left:0;right:0;bottom:0;height:80px;background:#04060E;
 .tk.lab{color:var(--lime);font-weight:900;letter-spacing:2px}
 .fsub{flex:none;margin:0 20px}
 .err{position:absolute;inset:0;display:grid;place-items:center;font-size:36px;color:var(--mute)}
+
+/* ===== light theme (matches scorebuzz.net: #f2f2f2 page, white cards, black header, lime "Buzz", blue accents) ===== */
+body.light{--bg:#f2f2f2;--panel:#ffffff;--panel2:#f7f7f8;--line:#e6e6e6;--ink:#1b1b1b;--mute:#6b6b6b;--dim:#9a9a9a;--lime:#2f80ed;--acc:#2f80ed;--red:#e53935;--brand:#c6f432}
+html:has(body.light){background:#f2f2f2}
+.light .bgfx{opacity:.35}
+.light .grid{opacity:.35}
+.light .panel{box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 14px rgba(0,0,0,.05);backdrop-filter:none}
+.light header{top:0;left:0;right:0;height:84px;padding:0 28px;background:#000;color:#fff;z-index:4}
+.light .logo{color:#fff}.light .logo b{color:var(--brand)}
+.light .pill{background:#1c1c1c;border-color:#2a2a2a;color:#fff}.light .pill.live{background:var(--red);box-shadow:none}
+.light .chip{background:#1c1c1c;border-color:#2a2a2a;color:#d6d6d6}.light .chip.acc{color:var(--brand)}
+.light .team:before{opacity:.18}
+.light .lg{border-color:rgba(0,0,0,.1);box-shadow:0 3px 10px rgba(0,0,0,.15)}
+.light .lg.ok{background:#f7f7f8;border-color:var(--line)}
+.light .lg img{filter:none}
+.light .tn .rec{color:var(--mute)}
+.light .tn .poss,.light .runb,.light .pl .pts{color:#fff}
+.light .score{text-shadow:none}.light .score.lose{color:#a3a3a3}
+.light .score.flash{animation:sflashL 2.6s ease-out}@keyframes sflashL{0%{color:var(--acc);transform:scale(1.18)}100%{transform:scale(1)}}
+.light .ls div{background:#f7f7f8}
+.light .st .bar,.light .mstat .b,.light .cmp .row .b{background:#ececec}
+.light .mc-tabs span{background:#f2f2f2}.light .mc-tabs span.on{background:var(--acc);color:#fff}
+.light .ltab tr.hl td{background:#2f80ed14;color:var(--ink)}
+.light .sbon .stage{background:#fff}
+.light .pl{background:#f7f7f8}
+.light .pl.big{background:linear-gradient(90deg,color-mix(in srgb,var(--pc) 20%,#fff),#f7f7f8)}
+.light .pop .v{color:#fff;text-shadow:none}
+.light .trans .mid{background:#fff;border-color:var(--line);color:var(--ink);box-shadow:0 30px 90px rgba(0,0,0,.35)}.light .trans .mid .s2{color:var(--acc)}
+.light .sub{background:#fff;border-color:var(--line);box-shadow:0 12px 40px rgba(0,0,0,.15)}
+.light .sub .av{background:#000;color:var(--brand)}
+.light .mc .sub{background:none;box-shadow:none}
+.light footer{background:#000;border-top:none;color:#fff}
+.light .fb{background:var(--brand);color:#000}
+.light .tk em{color:#9a9a9a}.light .tk.lab{color:var(--brand)}
+.light .tk .lg.ok{background:#fff}
+.light footer [style*="var(--lime)"]{color:var(--brand)!important}
+.light .wpbar i{border-right-color:#fff}
+.light [style*="color:#fff"]{color:var(--ink)!important}
+/* charts drawn on the panel (not on a pitch/court): dark ink instead of white */
+.light .ch text[fill^="#fff"]{fill:var(--mute)}
+.light .ch [stroke^="#fff"]{stroke:rgba(0,0,0,.3)}
+.light .ch polyline[stroke="#fff"]{stroke:var(--ink)}
+.light .ch rect[fill^="#ffffff"]{fill:#f7f7f8}
+.light .ch circle[fill="#fff"]{stroke:rgba(0,0,0,.3);stroke-width:1.5}
+.light .legend svg circle[fill="#fff"]{fill:var(--ink)}
+.light .legend svg[stroke="#fff"]{stroke:var(--ink)}
 </style></head>
 <body><script>(function(){
 // Fit the 1920x1080 design to whatever window it is shown in.
@@ -191,6 +237,9 @@ window.__fit=fit;addEventListener('resize',fit);addEventListener('DOMContentLoad
 <footer><div class="fb">SCOREBUZZ.NET</div><div class="tick"><div id="tick"></div></div><div class="btn fsub"><span class="bell">🔔</span>SUBSCRIBE</div></footer>
 <script>
 const q = new URLSearchParams(location.search);
+// theme: light (matches scorebuzz.net) unless ?theme=dark
+const THEME_DARK = q.get('theme') === 'dark';
+if (!THEME_DARK) document.body.classList.add('light');
 const league = q.get('league'), event = q.get('event');
 // ?trk=<scorebuzz.net match page>: show the site's own live tracker in the centre (stream.js crops the page to the tracker card)
 const TRK = q.get('trk');
@@ -275,7 +324,7 @@ function court(g) {
     <text x="30" y="${H - 18}" font-size="22" font-weight="900" fill="${hc}" font-family="Inter">${esc(g.home.abbr)} ◀</text>
     <text x="${W - 30}" y="${H - 18}" text-anchor="end" font-size="22" font-weight="900" fill="${ac}" font-family="Inter">▶ ${esc(g.away.abbr)}</text>
     ${dots}</svg></div>
-    <div class="legend"><span><svg width="16" height="16"><circle cx="8" cy="8" r="6" fill="#fff"/></svg>MADE</span><span><svg width="16" height="16" stroke="#fff" stroke-width="3"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>MISSED</span></div>
+    <div class="legend"><span><svg class="ch" width="16" height="16"><circle cx="8" cy="8" r="6" fill="#fff"/></svg>MADE</span><span><svg class="ch" width="16" height="16" stroke="#fff" stroke-width="3"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>MISSED</span></div>
     <div class="h cap">Shot chart</div>`;
 }
 
@@ -364,7 +413,7 @@ function pitch(g) {
       <rect x="10" y="${H / 2 - 36}" width="40" height="72"/><rect x="${W - 50}" y="${H / 2 - 36}" width="40" height="72"/></g>
       ${track(g, W, H, hc, ac)}
     </svg>
-    <svg width="${W}" height="104" viewBox="0 0 ${W} 110">
+    <svg class="ch" width="${W}" height="104" viewBox="0 0 ${W} 110">
       <line x1="20" y1="52" x2="${W - 20}" y2="52" stroke="#ffffff30" stroke-width="4" stroke-linecap="round"/>
       ${g.state === 'in' ? `<line x1="20" y1="52" x2="${Math.min(90, parseInt(g.clock) || 0) / 90 * (W - 40) + 20}" y2="52" stroke="var(--lime)" stroke-width="4" stroke-linecap="round"/>` : ''}
       <text x="20" y="104" font-size="13" fill="#ffffff66" font-family="Inter" font-weight="700">0'</text><text x="${W / 2}" y="104" text-anchor="middle" font-size="13" fill="#ffffff66" font-family="Inter" font-weight="700">HT</text><text x="${W - 20}" y="104" text-anchor="end" font-size="13" fill="#ffffff66" font-family="Inter" font-weight="700">90'</text>
@@ -375,7 +424,7 @@ function diamond(g) {
   const m = g.mlb || { balls: 0, strikes: 0, outs: 0, bases: [false, false, false] };
   const base = (x, y, on) => `<rect x="${x - 26}" y="${y - 26}" width="52" height="52" transform="rotate(45 ${x} ${y})" fill="${on ? 'var(--lime)' : '#ffffff14'}" stroke="#ffffff88" stroke-width="3"/>`;
   const dots = (n, max, c) => Array.from({ length: max }, (_, i) => `<i style="display:inline-block;width:22px;height:22px;border-radius:50%;margin:0 4px;background:${i < n ? c : '#ffffff18'}"></i>`).join('');
-  return `<div style="display:flex;align-items:center;gap:60px"><svg width="380" height="340" viewBox="0 0 380 340">
+  return `<div style="display:flex;align-items:center;gap:60px"><svg class="ch" width="380" height="340" viewBox="0 0 380 340">
       <path d="M190 320 L40 170 L190 20 L340 170 Z" fill="#7A4A26" fill-opacity=".35" stroke="#ffffff44" stroke-width="3"/>
       ${base(340, 170, m.bases[0])}${base(190, 20, m.bases[1])}${base(40, 170, m.bases[2])}
       <path d="M190 330 l-16 -14 v-14 h32 v14 z" fill="#fff"/></svg>
@@ -450,7 +499,7 @@ function momentumView(g) {
     return e.kind === 'goal' ? `<g transform="translate(${x} ${top ? 14 : H - 14})"><circle r="11" fill="#fff"/><text y="5" text-anchor="middle" font-size="13">⚽</text></g>` : `<rect x="${x - 5}" y="${top ? 6 : H - 22}" width="10" height="15" rx="2" fill="${e.kind === 'red' ? '#FF2D46' : '#FFD23F'}"/>`; }).join('');
   const tot = m.reduce((a, x) => a + x.v, 0), last10 = m.slice(-10).reduce((a, x) => a + x.v, 0);
   const who = Math.abs(last10) < 3 ? 'Even contest in the last 10 minutes' : `${(last10 > 0 ? g.home : g.away).name.toUpperCase()} ON TOP in the last 10 minutes`;
-  return `<svg width="${W}" height="${H + 26}" viewBox="0 0 ${W} ${H + 26}">
+  return `<svg class="ch" width="${W}" height="${H + 26}" viewBox="0 0 ${W} ${H + 26}">
     <rect x="20" y="0" width="${W - 40}" height="${H}" rx="10" fill="#ffffff06"/>
     <line x1="20" y1="${mid}" x2="${W - 20}" y2="${mid}" stroke="#ffffff40" stroke-width="2"/>
     <line x1="${20 + 45 * bw}" y1="6" x2="${20 + 45 * bw}" y2="${H - 6}" stroke="#ffffff25" stroke-dasharray="4 5"/>
@@ -527,7 +576,7 @@ function usLeadView(g) {
   const line = pts.map((p) => p.join(',')).join(' ');
   const area = (sign) => `<clipPath id="c${sign}"><rect x="0" y="${sign > 0 ? 0 : mid}" width="${W}" height="${mid}"/></clipPath><polygon clip-path="url(#c${sign})" points="20,${mid} ${line} ${W - 20},${mid}" fill="${sign > 0 ? hc : ac}" opacity=".55"/>`;
   const maxH = Math.max(0, ...f), maxA = Math.max(0, ...f.map((v) => -v));
-  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect x="20" y="0" width="${W - 40}" height="${H}" rx="10" fill="#ffffff06"/>${area(1)}${area(-1)}
+  return `<svg class="ch" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect x="20" y="0" width="${W - 40}" height="${H}" rx="10" fill="#ffffff06"/>${area(1)}${area(-1)}
     <polyline points="${line}" fill="none" stroke="#fff" stroke-width="2.5"/><line x1="20" y1="${mid}" x2="${W - 20}" y2="${mid}" stroke="#ffffff55" stroke-width="2"/>
     <text x="30" y="26" font-size="17" font-weight="900" fill="${hc}" font-family="Inter">▲ ${esc(g.home.abbr)} · biggest lead ${maxH}</text>
     <text x="30" y="${H - 12}" font-size="17" font-weight="900" fill="${ac}" font-family="Inter">▼ ${esc(g.away.abbr)} · biggest lead ${maxA}</text></svg>
@@ -537,7 +586,7 @@ function usWpView(g) {
   const sr = g.winProb.series, W = 860, H = 280, [hc, ac] = pair(g);
   const pts = sr.map((v, i) => `${20 + i / Math.max(1, sr.length - 1) * (W - 40)},${H - 10 - v / 100 * (H - 20)}`).join(' ');
   const last = sr[sr.length - 1];
-  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect x="20" y="0" width="${W - 40}" height="${H}" rx="10" fill="#ffffff06"/>
+  return `<svg class="ch" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect x="20" y="0" width="${W - 40}" height="${H}" rx="10" fill="#ffffff06"/>
     <line x1="20" y1="${H / 2}" x2="${W - 20}" y2="${H / 2}" stroke="#ffffff40" stroke-dasharray="5 6"/>
     <polyline points="${pts}" fill="none" stroke="${last >= 50 ? hc : ac}" stroke-width="4" stroke-linejoin="round"/>
     <text x="30" y="28" font-size="17" font-weight="900" fill="${hc}" font-family="Inter">${esc(g.home.abbr)} ${Math.round(last)}%</text>
@@ -577,7 +626,7 @@ function wpBar(g) {
   let spark = '';
   if (g.winProb && g.winProb.series.length > 2) {
     const s = g.winProb.series, w = 100 / (s.length - 1);
-    spark = `<svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline fill="none" stroke="#ffffffaa" stroke-width="1.2" vector-effect="non-scaling-stroke" points="${s.map((v, i) => `${i * w},${30 - (g.soccer ? 100 - v : 100 - v) * 0.3}`).join(' ')}"/></svg>`;
+    spark = `<svg class="ch" viewBox="0 0 100 30" preserveAspectRatio="none"><polyline fill="none" stroke="#ffffffaa" stroke-width="1.2" vector-effect="non-scaling-stroke" points="${s.map((v, i) => `${i * w},${30 - (g.soccer ? 100 - v : 100 - v) * 0.3}`).join(' ')}"/></svg>`;
   }
   return `<div class="panel wp" style="--away:${vivid(L)};--home:${vivid(R)}">
     <div class="s num">${Math.round(lp)}%<small>${esc(L.abbr)}</small></div>
@@ -667,7 +716,7 @@ function sbUrl(g) {
     const fav = (typeof AUTO_TEAMS !== 'undefined' ? AUTO_TEAMS : []);
     if (!fav.length || ![g.home.abbr, g.away.abbr].some((a) => fav.includes(String(a).toUpperCase()))) return '';
   }
-  return `https://scorebuzz.net/${lg}/${slugify(g.home.name)}-vs-${slugify(g.away.name)}-${g.id}/?ui=v1`;
+  return `https://scorebuzz.net/${lg}/${slugify(g.home.name)}-vs-${slugify(g.away.name)}-${g.id}/${THEME_DARK ? '?ui=v1' : ''}`;
 }
 let sbBase = '', sbAnchored = 0;
 function placeSite() {
