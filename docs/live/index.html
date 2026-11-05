@@ -1261,6 +1261,9 @@ async function loadSettings() {
     PIN = c.pin && c.pin.event ? c.pin : null;
     // remote screen fitting for the streaming studio: {"fit": {"w": 1910, "h": 1070, "x": 0, "y": 0, "fit": "fill", "debug": true}}
     window.__fitRemote = c.fit || {}; if (window.__fit) window.__fit();
+    // remote reload: bump "reload" in settings.json and every open stream page reloads itself (picks up new code)
+    if (window.__reloadSeen === undefined) window.__reloadSeen = c.reload ?? null;
+    else if ((c.reload ?? null) !== window.__reloadSeen) location.reload();
     if (SLOT) { const sl = (c.slots || {})[SLOT]; PIN = sl && sl.event ? sl : null; }
   } catch (e) { /* keep URL settings */ }
 }

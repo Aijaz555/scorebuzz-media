@@ -55,5 +55,6 @@
  },
  "fit": {
   "debug": true
- }
+ },
+ "reload": 1
 }
