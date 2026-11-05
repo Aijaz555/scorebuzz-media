@@ -1,13 +1,16 @@
 // ScoreBuzz Facebook card generator.
 // Usage: node tools/make_cards.js posts.json out_dir
 // posts.json: [{ id, sport, kind: "score"|"headline"|"list", label, ... }]
-//   score:    { home, homeScore, away, awayScore, status, headline, sub }
+//   score:    { home, homeScore, away, awayScore, status, headline, sub, homeLogo, awayLogo }
+//   any kind: venue (ESPN venue.fullName) -> stadium photo banner from photos/ with its licence credit
+//             (skipped automatically if we have no photo, or for lists longer than 5 rows)
 //   headline: { headline, sub }
 //   list:     { headline, rows: [[left, mid, right], ...], sub }
-// Renders 1080x1350 PNGs named <id>.png. No logos or photos: original graphics only.
+// Renders 1080x1350 PNGs named <id>.png. Crests: ESPN team.logo URLs. Photos: stadiums only (never people).
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
+const assets = require('./media_assets');
 
 const SPORT = {
   football: { tag: 'FOOTBALL', color: '#BEFF3C', ink: '#0A0E1E', text: '#178A4C', emoji: '⚽' },
@@ -32,9 +35,9 @@ function body(p, s) {
     const hw = Number(p.homeScore) > Number(p.awayScore), aw = Number(p.awayScore) > Number(p.homeScore);
     return `
       <div class="score">
-        <div class="tm ${aw ? 'dim' : ''}"><div class="bd">${esc(p.homeAbbr || initials(p.home))}</div><div class="nm">${esc(p.home)}</div></div>
+        <div class="tm ${aw ? 'dim' : ''}"><div class="bd${p.homeLogo ? ' img' : ''}">${p.homeLogo ? `<img src="${p.homeLogo}">` : esc(p.homeAbbr || initials(p.home))}</div><div class="nm">${esc(p.home)}</div></div>
         <div class="mid"><div class="sc"><span class="${aw ? 'dim' : ''}">${esc(p.homeScore)}</span><i>–</i><span class="${hw ? 'dim' : ''}">${esc(p.awayScore)}</span></div><div class="st">${esc(p.status || 'FINAL')}</div></div>
-        <div class="tm ${hw ? 'dim' : ''}"><div class="bd">${esc(p.awayAbbr || initials(p.away))}</div><div class="nm">${esc(p.away)}</div></div>
+        <div class="tm ${hw ? 'dim' : ''}"><div class="bd${p.awayLogo ? ' img' : ''}">${p.awayLogo ? `<img src="${p.awayLogo}">` : esc(p.awayAbbr || initials(p.away))}</div><div class="nm">${esc(p.away)}</div></div>
       </div>
       <h1 class="h small">${esc(p.headline)}</h1>
       ${p.sub ? `<p class="sub">${esc(p.sub)}</p>` : ''}`;
@@ -82,7 +85,15 @@ function html(p) {
   .fbar{position:absolute;left:0;right:0;bottom:0;height:150px;background:#000}
   footer{position:absolute;bottom:0;height:150px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;font-size:30px;font-weight:700;color:#bdbdbd}
   footer b{color:#C6F432}
-  </style></head><body><div class="glow"></div><div class="lines"></div><div class="bar"></div><div class="fbar"></div>
+  .bd.img{background:#fff;border-width:3px}.bd img{width:78%;height:78%;object-fit:contain}
+  /* stadium photo banner */
+  .photo{position:absolute;left:0;right:0;top:170px;height:430px;background-size:cover;background-position:center}
+  .photo:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(242,242,242,0) 55%,#f2f2f2 100%)}
+  .credit{position:absolute;right:20px;top:176px;z-index:3;font-size:15px;font-weight:600;color:#fff;background:rgba(0,0,0,.45);padding:3px 10px;border-radius:6px;max-width:700px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  body.ph .label{top:520px;background:#fff;padding:6px 16px;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+  body.ph main{top:580px;justify-content:flex-start}
+  body.ph .lines{display:none}
+  </style></head><body class="${p._photo ? 'ph' : ''}"><div class="glow"></div><div class="lines"></div>${p._photo ? `<div class="photo" style="background-image:url('${p._photo.src}')"></div><div class="credit">${esc(p._photo.credit)}</div>` : ''}<div class="bar"></div><div class="fbar"></div>
   <header><div class="logo">Score<b>Buzz</b></div><div class="tag">${s.emoji} ${esc(p.tagText || s.tag)}</div></header>
   ${p.label ? `<div class="label">${esc(p.label)}</div>` : ''}
   <main>${body(p, s)}</main>
@@ -97,6 +108,9 @@ function html(p) {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1080, height: 1350 } });
   for (const p of posts) {
+    await assets.inlineCrests(p);
+    const ph = assets.photo(p.venue);
+    p._photo = ph && !(p.kind === 'list' && (p.rows || []).length > 5) ? ph : null;
     await page.setContent(html(p), { waitUntil: 'load' });
     await page.screenshot({ path: path.join(outDir, `${p.id}.png`) });
   }

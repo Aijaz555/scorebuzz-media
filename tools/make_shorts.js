@@ -21,11 +21,14 @@
 //          Set dur >= first + rows*step + ~1.0 so the full board holds before the next scene.
 //   cta:   { title, sub }                                 Like / Comment / Share end card
 // Pop sound-effect times are written to <id>.sfx.json; tools/add_music.sh mixes them in.
-// Original graphics only: no logos, photos or match footage.
+// Crests: homeLogo/awayLogo (ESPN team.logo URLs) on score scenes and board rows.
+// Photo: optional video-level "venue" (ESPN venue.fullName) -> stadium photo band from photos/ (licence credit shown)
+// behind hook/score/stat/text scenes of vertical Shorts. Stadium photos only: never players or other people.
 const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
 const { chromium } = require('playwright');
+const assets = require('./media_assets');
 
 const FPS = 30;
 const SPORT = {
@@ -52,11 +55,11 @@ function scene(sc) {
       return `${sc.kicker ? a(0, 'kicker', esc(sc.kicker)) : ''}${a(0.15, 'hero', esc(sc.title))}${sc.sub ? a(0.6, 'sub', esc(sc.sub)) : ''}`;
     case 'score': {
       const hs = Number(sc.homeScore), as = Number(sc.awayScore);
-      const team = (n, ab, win, at) => a(at, `tm ${win ? '' : 'dim'}`, `<div class="bd">${esc(ab || initials(n))}</div><div class="nm">${esc(n)}</div>`);
+      const team = (n, ab, win, at, logo) => a(at, `tm ${win ? '' : 'dim'}`, `<div class="bd${logo ? ' img' : ''}">${logo ? `<img src="${logo}">` : esc(ab || initials(n))}</div><div class="nm">${esc(n)}</div>`);
       return `${sc.label ? a(0, 'label', esc(sc.label)) : ''}
-        <div class="score">${team(sc.home, sc.homeAbbr, hs >= as, 0.2)}
+        <div class="score">${team(sc.home, sc.homeAbbr, hs >= as, 0.2, sc.homeLogo)}
           <div class="mid">${a(0.5, 'sc' + (String(sc.homeScore).length + String(sc.awayScore).length > 4 ? ' long' : ''), `<span class="${as > hs ? 'dimtxt' : ''}" data-count="${hs}">0</span><i>–</i><span class="${hs > as ? 'dimtxt' : ''}" data-count="${as}">0</span>`)}${a(0.9, 'st', esc(sc.status || 'FINAL'))}</div>
-          ${team(sc.away, sc.awayAbbr, as >= hs, 0.35)}</div>
+          ${team(sc.away, sc.awayAbbr, as >= hs, 0.35, sc.awayLogo)}</div>
         ${sc.note ? a(1.3, 'note', esc(sc.note)) : ''}`;
     }
     case 'table': {
@@ -78,15 +81,15 @@ function scene(sc) {
     }
     case 'board': {
       const first = sc.first ?? 1.0, step = sc.step ?? 1.8;
-      const badge = (n, ab) => `<div class="bb">${esc(ab || initials(n))}</div>`;
+      const badge = (n, ab, logo) => `<div class="bb${logo ? ' img' : ''}">${logo ? `<img src="${logo}">` : esc(ab || initials(n))}</div>`;
       const rows = sc.rows.map((r, i) => {
         const at = first + i * step;
         const hw = Number(r.hs) > Number(r.as), aw = Number(r.as) > Number(r.hs);
         return `<div class="br">
-          <div class="bt h ${aw ? 'lose' : ''}"><span class="bn">${esc(r.home)}</span>${badge(r.home, r.homeAbbr)}</div>
+          <div class="bt h ${aw ? 'lose' : ''}"><span class="bn">${esc(r.home)}</span>${badge(r.home, r.homeAbbr, r.homeLogo)}</div>
           <div class="bx"><b class="pop" data-at="${at}">${esc(r.hs)}</b></div>
           <div class="bx"><b class="pop" data-at="${at + 0.35}">${esc(r.as)}</b></div>
-          <div class="bt ${hw ? 'lose' : ''}">${badge(r.away, r.awayAbbr)}<span class="bn">${esc(r.away)}</span></div>
+          <div class="bt ${hw ? 'lose' : ''}">${badge(r.away, r.awayAbbr, r.awayLogo)}<span class="bn">${esc(r.away)}</span></div>
           ${r.note ? `<div class="bnote pop2" data-at="${at + 0.6}">${esc(r.note)}</div>` : ''}
         </div>`;
       }).join('');
@@ -115,7 +118,8 @@ function html(v) {
       const first = sc.first ?? 1.0, step = sc.step ?? 1.8;
       sc.rows.forEach((r, i) => { pops.push(+(t + first + i * step).toFixed(3), +(t + first + i * step + 0.35).toFixed(3)); });
     }
-    const out = `<section class="scene t-${sc.type}" data-start="${t}" data-dur="${sc.dur}">${scene(sc)}</section>`;
+    const wp = v._photo && !wide && ['hook', 'score', 'stat', 'text'].includes(sc.type || 'text');
+    const out = `<section class="scene t-${sc.type}${wp ? ' wp' : ''}" data-start="${t}" data-dur="${sc.dur}">${scene(sc)}</section>`;
     t += sc.dur;
     return out;
   }).join('');
@@ -214,7 +218,12 @@ function html(v) {
   .bb{background:#111}
   .cb{border-color:#111;box-shadow:0 12px 0 #111}
   .url{color:#111}
-  </style></head><body><div id="glow"></div><div id="grid"></div><div id="hbar"></div><div id="fbar"></div><div id="bar"></div>
+  .bd.img,.bb.img{background:#fff}.bd img,.bb img{width:78%;height:78%;object-fit:contain}
+  #ph{position:absolute;left:0;right:0;top:220px;height:640px;background-size:cover;background-position:center;opacity:0;z-index:0}
+  #ph:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,#f2f2f2 100%)}
+  #phc{position:absolute;right:24px;top:232px;z-index:3;font-size:20px;font-weight:600;color:#fff;background:rgba(0,0,0,.45);padding:4px 12px;border-radius:8px;max-width:820px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:0}
+  .scene.wp{top:780px;justify-content:flex-start}
+  </style></head><body><div id="glow"></div><div id="grid"></div>${v._photo && !wide ? `<div id="ph" style="background-image:url('${v._photo.src}')"></div><div id="phc">${esc(v._photo.credit)}</div>` : ''}<div id="hbar"></div><div id="fbar"></div><div id="bar"></div>
   <header><div class="logo">Score<b>Buzz</b></div><div class="tag">${s.emoji} ${esc(v.tagText || s.tag)}</div></header>
   ${scenes}
   <footer><span>Live scores · Tables · Results</span><b>scorebuzz.net</b></footer>
@@ -224,9 +233,12 @@ function html(v) {
   window.setFrame=(t)=>{
     document.getElementById('bar').style.width=(t/TOTAL*100)+'%';
     document.getElementById('glow').style.transform='translate('+(Math.sin(t/3)*40)+'px,'+(Math.cos(t/4)*40)+'px)';
+    let phv=0;
     for(const sc of document.querySelectorAll('.scene')){
       const st=+sc.dataset.start,du=+sc.dataset.dur,l=t-st;
       const vis=l<0||l>=du?0:Math.min(1,l/0.25,(du-l)/0.25);
+      if(sc.classList.contains('wp')) phv=Math.max(phv,vis);
+      for(const id of ['ph','phc']){const e=document.getElementById(id); if(e) e.style.opacity=phv;}
       sc.style.opacity=vis; if(!vis) continue;
       for(const el of sc.querySelectorAll('.pop,.pop2')){
         const x=(l-(+el.dataset.at))/0.42;
@@ -249,6 +261,8 @@ function html(v) {
 }
 
 async function render(browser, v, outDir) {
+  await assets.inlineCrests(v);
+  v._photo = assets.photo(v.venue);
   const { page: doc, total, W, H, pops } = html(v);
   const sfx = path.join(outDir, `${v.id}.sfx.json`);
   if (pops.length) fs.writeFileSync(sfx, JSON.stringify(pops)); else if (fs.existsSync(sfx)) fs.unlinkSync(sfx);

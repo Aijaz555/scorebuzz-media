@@ -10,6 +10,11 @@ Every day, publish 20–25 posts to the ScoreBuzz Facebook Page (Metricool brand
 - Alternate the two through the day (image, image, Reel, …) so the feed never runs 3+ of one kind in a row; put Reels in
   the evening UK / US prime-time slots, when Reels reach is highest.
 
+**Crests and stadium photos (owner's request, 5 Nov 2026):**
+- Team crests: put ESPN's `team.logo` URL in `homeLogo` / `awayLogo` on score cards, score scenes and board rows (cards and Shorts inline them).
+- Stadium photos: set `venue` (ESPN `competitions[0].venue.fullName`) on cards and on each vertical Short; the generators add a photo banner from `photos/` with its licence credit. Photos come only from Wikimedia Commons under CC0 / public domain / CC BY / CC BY-SA (never NC/ND), fetched by the **Stadium photos** GitHub Action (`.github/workflows/photos.yml`), because the agent sandbox can't reach Commons. Each day: `node tools/photos_wanted.js 1 2`; if `photos/wanted.json` is non-empty, commit + push it, run the workflow (`actions_run_trigger`, workflow `photos.yml`, ref `main`), wait for it to finish (≈5 min), `git pull`, and look at any new photos before using them: if one shows identifiable people up close or is poor, add its file name to `photos/blocked.json` under its slug and delete the .jpg/.json.
+- **Never** use photos of players, coaches or other people, and never official posters, broadcaster graphics or agency photos (Getty/AP/Reuters), even if they look free.
+
 ## Audience and mix
 - Audience: **US and UK sports fans**. Not South Asia. No cricket unless it is a huge global story.
 - Mix per day (about 22 posts):
