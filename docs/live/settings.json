@@ -70,6 +70,16 @@
    "league": "nhl",
    "event": "401892652",
    "note": "Carolina Hurricanes vs New York Islanders, 2026-11-06T00:00:00Z"
+  },
+  "10": {
+   "league": "nhl",
+   "event": "401892656",
+   "note": "Vancouver Canucks vs Winnipeg Jets, 2026-11-06T01:00:00Z"
+  },
+  "11": {
+   "league": "nhl",
+   "event": "401892657",
+   "note": "Anaheim Ducks vs Edmonton Oilers, 2026-11-06T01:00:00Z"
   }
  },
  "fit": {
