@@ -43,7 +43,7 @@ let PIN = null;
 async function loadSettings() {
   if (q.has('noremote')) return;
   try {
-    const r = await window.fetch('settings.json?t=' + Date.now(), { cache: 'no-store' });
+    const r = await window.fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/settings.json?t=' + Date.now(), { cache: 'no-store' });
     if (!r.ok) return;
     const c = await r.json();
     if (Array.isArray(c.leagues) && c.leagues.length) AUTO_LEAGUES = c.leagues;
@@ -84,7 +84,15 @@ async function autoTick() {
   if (PIN) return;
   if (SLOT) { if (!event) $('app').innerHTML = '<div class="err">ScoreBuzz live scoreboard · next game coming up</div>'; return; }
   const cur = G && G.id === event ? G : null;
-  if (cur && cur.state === 'in') { finalSince = 0; return; }
+  if (cur && cur.state === 'in') {
+    finalSince = 0;
+    // stay on a live game, unless it isn't a favourite and a favourite game is live now
+    const isFav = AUTO_TEAMS.length && [cur.home.abbr, cur.away.abbr].some((a) => AUTO_TEAMS.includes(String(a).toUpperCase()));
+    if (isFav || !AUTO_TEAMS.length) return;
+    const better = await pickGame();
+    if (better && better.state === 'in' && better.id !== event && better.abbrs.some((a) => AUTO_TEAMS.includes(String(a).toUpperCase()))) { league = better.league; event = better.id; G = null; tickKey = ''; poll(); }
+    return;
+  }
   if (cur && cur.state === 'post') { if (!finalSince) finalSince = Date.now(); if (Date.now() - finalSince < 15 * 60000) return; }
   const g = await pickGame();
   if (g && (g.id !== event || g.league !== league)) { league = g.league; event = g.id; G = null; finalSince = 0; tickKey = ''; poll(); }
@@ -104,7 +112,19 @@ for (const must of ['FEED.game(league, event)', 'let league', 'autoTick', 'const
 }
 const out = path.join(__dirname, '..', '..', 'docs', 'live', 'index.html');
 fs.mkdirSync(path.dirname(out), { recursive: true });
-fs.writeFileSync(out, page);
+// index.html is a tiny loader: it fetches the real page (app.html) straight from raw.githubusercontent.com,
+// so code updates reach running streams on the next reload instead of waiting for the host's cache.
+fs.writeFileSync(path.join(path.dirname(out), 'app.html'), page);
+fs.writeFileSync(out, `<!doctype html><html><head><meta charset="utf-8"><title>ScoreBuzz live</title></head><body style="margin:0;background:#0A0E1E">
+<script>
+(function () {
+  var src = 'https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/app.html?t=' + Date.now();
+  function go(html) { document.open(); document.write(html); document.close(); }
+  fetch(src, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.text(); }).then(go)
+    .catch(function () { setTimeout(function () { location.reload(); }, 15000); });
+})();
+</script></body></html>
+`);
 const settings = path.join(path.dirname(out), 'settings.json');
 if (!fs.existsSync(settings)) fs.writeFileSync(settings, JSON.stringify({ leagues: ['nfl', 'ncaaf', 'nba', 'nhl', 'ucl', 'epl'], teams: ['LAL', 'GS', 'NYK', 'BOS', 'PHI', 'KC', 'DAL', 'ARS', 'LIV', 'MNC'], top25: 15, pin: null }, null, 2) + '\n');
 console.log(`wrote ${path.relative(process.cwd(), out)} (${Math.round(page.length / 1024)} KB)`);
