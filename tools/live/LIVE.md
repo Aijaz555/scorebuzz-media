@@ -179,6 +179,8 @@ starting 30 min before kick-off and stopped when the game is over.
      volume: music.volume) — a freshly shuffled per-sport playlist — and finally livereacting_schedule_stream([at])
      or, when at = "now", livereacting_start_stream.
      `restart` → update_project(duration) then start_stream.
+- LiveReacting refuses title/description edits on a SCHEDULED project ("Can not update title/description"): cancel the
+  schedule, update, then schedule again. (Edits on a LIVE project work.)
 - Planned durations are generous (NBA/NHL 3h15 after tip-off, NFL 4h, soccer 2h15) and the hourly run stops a
   stream once ESPN says the game is final; a stream that ended before the game did is restarted.
 - Music per sport (settings.json `music`): Kevin MacLeod tracks from incompetech.com (CC BY 4.0, credited in every
