@@ -1,5 +1,7 @@
 # ScoreBuzz Facebook daily playbook
 
+**Look (owner's request, 5 Nov 2026):** every card, Short, Reel, thumbnail and live stream uses the scorebuzz.net light theme: #f2f2f2 page, white cards, black header/footer bars, "Score" white + "Buzz" lime (#C6F432), blue accent (#2F80ED), dark text. The generators (tools/make_cards.js, make_shorts.js, make_thumbs.js, tools/live/overlay.html) already do this; don't reintroduce the old dark navy/green look.
+
 Every day, publish 20–25 posts to the ScoreBuzz Facebook Page (Metricool brand `7677948`): **image posts and Reels only**
 (owner's request, 5 Nov 2026: focus on images and Reels; no text-only or link posts).
 - **~15–17 image posts**, each an original branded card (below).

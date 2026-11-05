@@ -10,14 +10,14 @@ const path = require('path');
 const { chromium } = require('playwright');
 
 const SPORT = {
-  football: { tag: 'FOOTBALL', color: '#BEFF3C', ink: '#0A0E1E', emoji: '⚽' },
-  nfl: { tag: 'NFL', color: '#4C8DFF', ink: '#fff', emoji: '🏈' },
-  nba: { tag: 'NBA', color: '#FF8A3D', ink: '#0A0E1E', emoji: '🏀' },
-  nhl: { tag: 'NHL', color: '#7FD1FF', ink: '#0A0E1E', emoji: '🏒' },
-  mlb: { tag: 'MLB', color: '#FF4D5E', ink: '#fff', emoji: '⚾' },
-  mma: { tag: 'UFC', color: '#E8E8E8', ink: '#0A0E1E', emoji: '🥊' },
-  racing: { tag: 'RACING', color: '#FFD23F', ink: '#0A0E1E', emoji: '🏁' },
-  other: { tag: 'SPORTS', color: '#B48CFF', ink: '#0A0E1E', emoji: '🏆' },
+  football: { tag: 'FOOTBALL', color: '#BEFF3C', ink: '#0A0E1E', text: '#178A4C', emoji: '⚽' },
+  nfl: { tag: 'NFL', color: '#4C8DFF', ink: '#fff', text: '#2F6FE0', emoji: '🏈' },
+  nba: { tag: 'NBA', color: '#FF8A3D', ink: '#0A0E1E', text: '#E0681B', emoji: '🏀' },
+  nhl: { tag: 'NHL', color: '#7FD1FF', ink: '#0A0E1E', text: '#1590C8', emoji: '🏒' },
+  mlb: { tag: 'MLB', color: '#FF4D5E', ink: '#fff', text: '#D92D20', emoji: '⚾' },
+  mma: { tag: 'UFC', color: '#E8E8E8', ink: '#0A0E1E', text: '#333333', emoji: '🥊' },
+  racing: { tag: 'RACING', color: '#FFD23F', ink: '#0A0E1E', text: '#B88A00', emoji: '🏁' },
+  other: { tag: 'SPORTS', color: '#B48CFF', ink: '#0A0E1E', text: '#7B4FE0', emoji: '🏆' },
 };
 
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -52,34 +52,37 @@ function html(p) {
   const s = SPORT[p.sport] || SPORT.other;
   return `<!doctype html><html><head><meta charset="utf-8"><style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{width:1080px;height:1350px;font-family:Inter,sans-serif;color:#F3F5FB;background:#0A0E1E;overflow:hidden;position:relative}
-  .glow{position:absolute;inset:0;background:radial-gradient(ellipse at 85% 10%,${s.color}33,transparent 55%),radial-gradient(ellipse at 0% 100%,#3D7BFF26,transparent 55%)}
-  .lines{position:absolute;left:60px;right:60px;top:220px;bottom:220px;border:3px solid rgba(255,255,255,.05);border-radius:18px}
-  .lines:after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:3px solid rgba(255,255,255,.05)}
-  header{position:absolute;top:64px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center}
-  .logo{font-size:52px;font-weight:800;letter-spacing:-1.5px}.logo b{color:#BEFF3C}
+  /* light theme matching scorebuzz.net: #f2f2f2 page, white cards, black header/footer, lime "Buzz", blue accents */
+  body{width:1080px;height:1350px;font-family:Inter,sans-serif;color:#1b1b1b;background:#f2f2f2;overflow:hidden;position:relative}
+  .glow{position:absolute;inset:0;background:radial-gradient(ellipse at 90% 18%,${s.text}1f,transparent 50%),radial-gradient(ellipse at 0% 100%,#2f80ed14,transparent 55%)}
+  .lines{position:absolute;left:60px;right:60px;top:220px;bottom:220px;border:3px solid rgba(0,0,0,.035);border-radius:18px}
+  .lines:after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:3px solid rgba(0,0,0,.035)}
+  .bar{position:absolute;left:0;right:0;top:0;height:170px;background:#000}
+  header{position:absolute;top:0;height:170px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;color:#fff}
+  .logo{font-size:56px;font-weight:800;letter-spacing:-1.5px}.logo b{color:#C6F432}
   .tag{background:${s.color};color:${s.ink};font-weight:800;font-size:28px;letter-spacing:1.5px;padding:12px 24px;border-radius:999px}
-  .label{position:absolute;top:190px;left:72px;font-size:28px;font-weight:700;letter-spacing:2px;color:${s.color}}
-  main{position:absolute;top:250px;left:72px;right:72px;bottom:190px;display:flex;flex-direction:column;justify-content:center;gap:34px}
-  .h{font-weight:800;letter-spacing:-2px;line-height:1.05}
+  .label{position:absolute;top:206px;left:72px;font-size:28px;font-weight:800;letter-spacing:2px;color:${s.text};text-transform:uppercase}
+  main{position:absolute;top:260px;left:72px;right:72px;bottom:190px;display:flex;flex-direction:column;justify-content:center;gap:34px}
+  .h{font-weight:800;letter-spacing:-2px;line-height:1.05;color:#111}
   .huge{font-size:104px}.big{font-size:84px}.med{font-size:64px;letter-spacing:-1.2px}.small{font-size:56px;letter-spacing:-1px;text-align:center}
-  .sub{font-size:36px;line-height:1.35;color:#AEB6D2;font-weight:500}
-  .score{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:#121833;border:2px solid #232B50;border-radius:28px;padding:44px 30px}
-  .tm{text-align:center}.tm.dim{opacity:.55}
-  .bd{width:132px;height:132px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;font-size:40px;font-weight:800;background:#1E2754;border:3px solid ${s.color}}
+  .sub{font-size:36px;line-height:1.35;color:#555;font-weight:500}
+  .score{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:#fff;border:2px solid #e6e6e6;border-radius:28px;padding:44px 30px;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+  .tm{text-align:center}.tm.dim{opacity:.5}
+  .bd{width:132px;height:132px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;font-size:40px;font-weight:800;background:#f2f2f2;color:#111;border:4px solid ${s.text}}
   .nm{font-size:34px;font-weight:700;line-height:1.15}
   .mid{text-align:center;padding:0 16px}
-  .sc{font-size:120px;font-weight:800;letter-spacing:-3px;display:flex;align-items:center;gap:18px}.sc i{font-style:normal;color:#5A6390;font-size:80px}
-  .sc .dim{color:#7C86AC}
-  .st{display:inline-block;margin-top:8px;font-size:24px;font-weight:800;letter-spacing:2px;color:${s.color};border:2px solid ${s.color}55;padding:6px 16px;border-radius:999px}
-  .list{background:#121833;border:2px solid #232B50;border-radius:24px;overflow:hidden}
-  .row{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;padding:22px 30px;font-size:34px;font-weight:600;border-top:2px solid #232B50}
+  .sc{font-size:120px;font-weight:800;letter-spacing:-3px;display:flex;align-items:center;gap:18px;color:#111}.sc i{font-style:normal;color:#bdbdbd;font-size:80px}
+  .sc .dim{color:#a3a3a3}
+  .st{display:inline-block;margin-top:8px;font-size:24px;font-weight:800;letter-spacing:2px;color:${s.text};border:2px solid ${s.text}55;padding:6px 16px;border-radius:999px}
+  .list{background:#fff;border:2px solid #e6e6e6;border-radius:24px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+  .row{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;padding:22px 30px;font-size:34px;font-weight:600;border-top:2px solid #eeeeee}
   .row:first-child{border-top:none}
-  .row .l{text-align:right}.row .m{font-weight:800;color:${s.color};min-width:150px;text-align:center}
-  .stat{display:flex;align-items:baseline;gap:20px}.stat b{font-size:120px;font-weight:800;color:${s.color};letter-spacing:-3px}.stat span{font-size:36px;color:#AEB6D2;font-weight:600}
-  footer{position:absolute;bottom:64px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;font-size:30px;font-weight:700;color:#AEB6D2}
-  footer b{color:#BEFF3C}
-  </style></head><body><div class="glow"></div><div class="lines"></div>
+  .row .l{text-align:right}.row .m{font-weight:800;color:${s.text};min-width:150px;text-align:center}
+  .stat{display:flex;align-items:baseline;gap:20px}.stat b{font-size:120px;font-weight:800;color:${s.text};letter-spacing:-3px}.stat span{font-size:36px;color:#555;font-weight:600}
+  .fbar{position:absolute;left:0;right:0;bottom:0;height:150px;background:#000}
+  footer{position:absolute;bottom:0;height:150px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;font-size:30px;font-weight:700;color:#bdbdbd}
+  footer b{color:#C6F432}
+  </style></head><body><div class="glow"></div><div class="lines"></div><div class="bar"></div><div class="fbar"></div>
   <header><div class="logo">Score<b>Buzz</b></div><div class="tag">${s.emoji} ${esc(p.tagText || s.tag)}</div></header>
   ${p.label ? `<div class="label">${esc(p.label)}</div>` : ''}
   <main>${body(p, s)}</main>

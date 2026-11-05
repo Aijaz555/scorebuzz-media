@@ -18,14 +18,14 @@ const path = require('path');
 const { chromium } = require('playwright');
 
 const SPORT = {
-  football: { tag: 'FOOTBALL', color: '#BEFF3C', emoji: '⚽' },
-  nfl: { tag: 'NFL', color: '#4C8DFF', emoji: '🏈' },
-  nba: { tag: 'NBA', color: '#FF8A3D', emoji: '🏀' },
-  nhl: { tag: 'NHL', color: '#7FD1FF', emoji: '🏒' },
-  mlb: { tag: 'MLB', color: '#FF4D5E', emoji: '⚾' },
-  mma: { tag: 'UFC', color: '#FF4D5E', emoji: '🥊' },
-  racing: { tag: 'F1', color: '#FFD23F', emoji: '🏁' },
-  other: { tag: 'SPORTS', color: '#B48CFF', emoji: '🏆' },
+  football: { tag: 'FOOTBALL', color: '#BEFF3C', text: '#178A4C', emoji: '⚽' },
+  nfl: { tag: 'NFL', color: '#4C8DFF', text: '#2F6FE0', emoji: '🏈' },
+  nba: { tag: 'NBA', color: '#FF8A3D', text: '#E0681B', emoji: '🏀' },
+  nhl: { tag: 'NHL', color: '#7FD1FF', text: '#1590C8', emoji: '🏒' },
+  mlb: { tag: 'MLB', color: '#FF4D5E', text: '#D92D20', emoji: '⚾' },
+  mma: { tag: 'UFC', color: '#FF4D5E', text: '#D92D20', emoji: '🥊' },
+  racing: { tag: 'F1', color: '#FFD23F', text: '#B88A00', emoji: '🏁' },
+  other: { tag: 'SPORTS', color: '#B48CFF', text: '#7B4FE0', emoji: '🏆' },
 };
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const hl = (s) => esc(s).replace(/\*([^*]+)\*/g, '<em>$1</em>');
@@ -68,8 +68,21 @@ function html(v) {
   .emoji{font-family:'Noto Color Emoji';font-size:${wide ? 70 : 120}px;line-height:1}
   .sticker{position:absolute;${wide ? 'right:40px;top:96px' : 'right:40px;top:230px'};background:#FF2D55;color:#fff;font-weight:900;font-size:${wide ? 34 : 54}px;letter-spacing:2px;padding:${wide ? '8px 20px' : '14px 30px'};border-radius:16px;transform:rotate(8deg);border:${wide ? 4 : 6}px solid #fff;box-shadow:0 10px 0 #0009;text-transform:uppercase}
   footer{position:absolute;bottom:${wide ? 24 : 110}px;left:0;right:0;text-align:center;font-weight:900;font-size:${wide ? 30 : 46}px;color:#BEFF3C;letter-spacing:-1px}
+
+  /* light theme matching scorebuzz.net */
+  body{background:#f2f2f2;color:#111}
+  .burst{background:radial-gradient(circle at 50% ${wide ? '50%' : '46%'},${s.text}30 0%,${s.text}10 30%,transparent 55%),repeating-conic-gradient(from 0deg at 50% ${wide ? '50%' : '46%'},#00000008 0deg 6deg,transparent 6deg 18deg)}
+  .vig{background:radial-gradient(ellipse at center,transparent 55%,#0000001a 100%)}
+  .stripe{background:${s.text};opacity:.08}
+  .hbar{position:absolute;left:0;right:0;top:0;height:${wide ? 92 : 200}px;background:#000}
+  header{color:#fff}.logo b{color:#C6F432}
+  .big{background:none;color:#111;-webkit-background-clip:border-box;filter:drop-shadow(0 ${wide ? 6 : 10}px 0 ${s.text}55)}
+  .hook{color:#111;-webkit-text-stroke:0;text-shadow:none}.hook em{color:${s.text}}
+  .tb{background:#111;color:#fff}
+  .fbar{position:absolute;left:0;right:0;bottom:0;height:${wide ? 64 : 200}px;background:#000}
+  footer{color:#C6F432;z-index:1}
   </style></head><body>
-  <div class="burst"></div><div class="stripe"></div><div class="vig"></div>
+  <div class="burst"></div><div class="stripe"></div><div class="vig"></div><div class="hbar"></div><div class="fbar"></div>
   <header><div class="logo">Score<b>Buzz</b></div><div class="tag">${s.emoji} ${esc(v.tagText || s.tag)}</div></header>
   ${th.sticker ? `<div class="sticker">${esc(th.sticker)}</div>` : ''}
   <div class="wrap">

@@ -29,14 +29,14 @@ const { chromium } = require('playwright');
 
 const FPS = 30;
 const SPORT = {
-  football: { tag: 'FOOTBALL', color: '#BEFF3C', ink: '#0A0E1E', emoji: '⚽' },
-  nfl: { tag: 'NFL', color: '#4C8DFF', ink: '#fff', emoji: '🏈' },
-  nba: { tag: 'NBA', color: '#FF8A3D', ink: '#0A0E1E', emoji: '🏀' },
-  nhl: { tag: 'NHL', color: '#7FD1FF', ink: '#0A0E1E', emoji: '🏒' },
-  mlb: { tag: 'MLB', color: '#FF4D5E', ink: '#fff', emoji: '⚾' },
-  mma: { tag: 'UFC', color: '#E8E8E8', ink: '#0A0E1E', emoji: '🥊' },
-  racing: { tag: 'F1', color: '#FFD23F', ink: '#0A0E1E', emoji: '🏁' },
-  other: { tag: 'SPORTS', color: '#B48CFF', ink: '#0A0E1E', emoji: '🏆' },
+  football: { tag: 'FOOTBALL', color: '#BEFF3C', ink: '#0A0E1E', text: '#178A4C', emoji: '⚽' },
+  nfl: { tag: 'NFL', color: '#4C8DFF', ink: '#fff', text: '#2F6FE0', emoji: '🏈' },
+  nba: { tag: 'NBA', color: '#FF8A3D', ink: '#0A0E1E', text: '#E0681B', emoji: '🏀' },
+  nhl: { tag: 'NHL', color: '#7FD1FF', ink: '#0A0E1E', text: '#1590C8', emoji: '🏒' },
+  mlb: { tag: 'MLB', color: '#FF4D5E', ink: '#fff', text: '#D92D20', emoji: '⚾' },
+  mma: { tag: 'UFC', color: '#E8E8E8', ink: '#0A0E1E', text: '#333333', emoji: '🥊' },
+  racing: { tag: 'F1', color: '#FFD23F', ink: '#0A0E1E', text: '#B88A00', emoji: '🏁' },
+  other: { tag: 'SPORTS', color: '#B48CFF', ink: '#0A0E1E', text: '#7B4FE0', emoji: '🏆' },
 };
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const initials = (n) => {
@@ -184,7 +184,37 @@ function html(v) {
   .cb span{font-size:32px;letter-spacing:2px;color:#0A0E1E}
   .cb.like{background:#FF5C8A;color:#fff}.cb.com{background:#FFD23F}.cb.shr{background:#4FD8FF;color:#0A0E1E}
   .url{font-size:${wide ? 110 : 120}px;font-weight:800;color:#BEFF3C;letter-spacing:-3px;text-align:center}
-  </style></head><body><div id="glow"></div><div id="grid"></div><div id="bar"></div>
+
+  /* ===== light theme matching scorebuzz.net (#f2f2f2 page, white cards, black header/footer bars, lime "Buzz", blue accents) ===== */
+  body{color:#1b1b1b;background:#f2f2f2}
+  #glow{background:radial-gradient(ellipse at 80% 15%,${s.text}1c,transparent 50%),radial-gradient(ellipse at 10% 90%,#2f80ed14,transparent 50%)}
+  #grid{background-image:linear-gradient(rgba(0,0,0,.03) 2px,transparent 2px),linear-gradient(90deg,rgba(0,0,0,.03) 2px,transparent 2px)}
+  #hbar{position:absolute;left:0;right:0;top:0;height:${wide ? 140 : 220}px;background:#000;z-index:1}
+  #fbar{position:absolute;left:0;right:0;bottom:0;height:${wide ? 120 : 240}px;background:#000;z-index:1}
+  header{top:${wide ? 40 : 100}px;color:#fff}.logo b{color:#C6F432}
+  #bar{background:#C6F432}
+  footer{color:#bdbdbd}footer b{color:#C6F432}
+  .kicker,.label{color:${s.text}}
+  .hero,.title,.ctat,.btitle{color:#111}
+  .sub,.note{color:#555}.note{border-left-color:${s.text}}
+  .score,.table,.list{background:#fff;border-color:#e6e6e6;box-shadow:0 10px 36px rgba(0,0,0,.07)}
+  .tm.dim{filter:none;opacity:.5}
+  .bd{background:#f2f2f2;color:#111;border-color:${s.text}}
+  .sc{color:#111}.sc i{color:#c4c4c4}.dimtxt{color:#a3a3a3}
+  .st{color:${s.text};border-color:${s.text}55}
+  .tr{border-top-color:#eeeeee}.tr span:last-child{color:${s.text}}
+  .th{color:#8a8a8a}.th span:last-child{color:#8a8a8a}
+  .tr.hi{background:${s.text}1a}.tr.dz{background:#e5393514}.tr.dz span:first-child{color:#d92d20}
+  .row{border-top-color:#eeeeee}.row .m{color:${s.text}}
+  .big b{color:${s.text}}.big span{color:#555}
+  .bk{color:#2f80ed}
+  .bbadge{background:#000;color:#C6F432}
+  .bcard{box-shadow:0 20px 60px rgba(0,0,0,.12);border:2px solid #e6e6e6}
+  .bx{background:#111;box-shadow:inset 0 -6px 0 #000}
+  .bb{background:#111}
+  .cb{border-color:#111;box-shadow:0 12px 0 #111}
+  .url{color:#111}
+  </style></head><body><div id="glow"></div><div id="grid"></div><div id="hbar"></div><div id="fbar"></div><div id="bar"></div>
   <header><div class="logo">Score<b>Buzz</b></div><div class="tag">${s.emoji} ${esc(v.tagText || s.tag)}</div></header>
   ${scenes}
   <footer><span>Live scores · Tables · Results</span><b>scorebuzz.net</b></footer>
