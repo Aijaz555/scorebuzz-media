@@ -1,0 +1,1057 @@
+[
+ {
+  "id": "s01-como-nine",
+  "sport": "football",
+  "time": "2026-11-05T11:15:00",
+  "bed": "anthem",
+  "title": "Como Score NINE Away From Home 🤯 A Champions League Record #UCL #shorts",
+  "description": "Como won 9–1 at Lens, the most goals any team has scored away from home in Champions League history. Tasos Douvikas scored a hat trick and Como are now fourth.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Como #UCL #ChampionsLeague #Fabregas",
+  "tags": [
+   "lens vs como",
+   "como 9-1",
+   "champions league record",
+   "tasos douvikas",
+   "cesc fabregas",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Champions League",
+    "title": "NINE goals. Away.",
+    "sub": "Como in Lens"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Matchday 4 · Full time",
+    "home": "Lens",
+    "homeAbbr": "RCL",
+    "homeScore": 1,
+    "away": "Como",
+    "awayAbbr": "COM",
+    "awayScore": 9,
+    "status": "FULL TIME",
+    "note": "Seven different scorers"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Record",
+    "value": "9",
+    "unit": "goals",
+    "text": "Most ever by an away team in the Champions League"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Hat trick",
+    "title": "Tasos Douvikas: 7', 32', 57'",
+    "sub": "Como are now 4th in the table"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Are Como the real deal?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s02-ucl-board",
+  "sport": "football",
+  "time": "2026-11-05T12:20:00",
+  "bed": "hype",
+  "title": "Wednesday's Champions League Results: Como Hit NINE 🔥 #UCL #shorts",
+  "description": "Every Champions League result from Wednesday: Como won 9–1 at Lens, Fenerbahçe beat Liverpool 3–2, Real Madrid won 3–2 in Athens, and Arsenal and Man City both won away.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#UCL #ChampionsLeague #UCLResults #LFC",
+  "tags": [
+   "champions league results",
+   "ucl results",
+   "fenerbahce vs liverpool",
+   "lens vs como",
+   "leipzig vs man city",
+   "slavia prague vs arsenal",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 19.2,
+    "kicker": "Champions League · Wednesday",
+    "title": "All nine results",
+    "badge": "Full time",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "AEK Athens",
+      "homeAbbr": "AEK",
+      "hs": 2,
+      "away": "Real Madrid",
+      "awayAbbr": "RMA",
+      "as": 3
+     },
+     {
+      "home": "Fenerbahçe",
+      "homeAbbr": "FEN",
+      "hs": 3,
+      "away": "Liverpool",
+      "awayAbbr": "LIV",
+      "as": 2
+     },
+     {
+      "home": "Dortmund",
+      "homeAbbr": "BVB",
+      "hs": 2,
+      "away": "Real Betis",
+      "awayAbbr": "BET",
+      "as": 1
+     },
+     {
+      "home": "Porto",
+      "homeAbbr": "POR",
+      "hs": 4,
+      "away": "Napoli",
+      "awayAbbr": "NAP",
+      "as": 1
+     },
+     {
+      "home": "Lens",
+      "homeAbbr": "RCL",
+      "hs": 1,
+      "away": "Como",
+      "awayAbbr": "COM",
+      "as": 9
+     },
+     {
+      "home": "PSV",
+      "homeAbbr": "PSV",
+      "hs": 1,
+      "away": "Club Brugge",
+      "awayAbbr": "BRU",
+      "as": 2
+     },
+     {
+      "home": "RB Leipzig",
+      "homeAbbr": "RBL",
+      "hs": 2,
+      "away": "Man City",
+      "awayAbbr": "MCI",
+      "as": 3
+     },
+     {
+      "home": "Slavia Prague",
+      "homeAbbr": "SLA",
+      "hs": 1,
+      "away": "Arsenal",
+      "awayAbbr": "ARS",
+      "as": 2
+     },
+     {
+      "home": "Viking",
+      "homeAbbr": "VIK",
+      "hs": 4,
+      "away": "Sabah",
+      "awayAbbr": "SAB",
+      "as": 1
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Result of the night?",
+    "sub": "Tell us in the comments"
+   }
+  ]
+ },
+ {
+  "id": "s03-fener-liverpool",
+  "sport": "football",
+  "time": "2026-11-05T14:00:00",
+  "bed": "drama",
+  "title": "Liverpool Led TWICE… and Still Lost in Istanbul 😳 #LFC #shorts",
+  "description": "Liverpool were ahead twice at Fenerbahçe and lost 3–2. Mason Greenwood, Archie Brown and Vedat Muriqi scored for the Turkish side to end Liverpool's perfect Champions League start.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#LFC #Fenerbahce #UCL #Liverpool",
+  "tags": [
+   "fenerbahce vs liverpool",
+   "liverpool defeat",
+   "mason greenwood",
+   "vedat muriqi",
+   "champions league",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Istanbul",
+    "title": "Liverpool led twice",
+    "sub": "And still lost"
+   },
+   {
+    "type": "list",
+    "dur": 4.2,
+    "label": "How it happened",
+    "title": "Five goals in 54 minutes",
+    "rows": [
+     [
+      "25'",
+      "Nyoni",
+      "0–1"
+     ],
+     [
+      "29'",
+      "Greenwood (FK)",
+      "1–1"
+     ],
+     [
+      "69'",
+      "Isak",
+      "1–2"
+     ],
+     [
+      "73'",
+      "Archie Brown",
+      "2–2"
+     ],
+     [
+      "79'",
+      "Muriqi",
+      "3–2"
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Champions League · Full time",
+    "home": "Fenerbahçe",
+    "homeAbbr": "FEN",
+    "homeScore": 3,
+    "away": "Liverpool",
+    "awayAbbr": "LIV",
+    "awayScore": 2,
+    "status": "FULL TIME"
+   },
+   {
+    "type": "text",
+    "dur": 2.8,
+    "label": "Bad week",
+    "title": "Two defeats in four days",
+    "sub": "After losing 1–0 to Arsenal on Sunday"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "What's wrong at Liverpool?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s04-valverde-winner",
+  "sport": "football",
+  "time": "2026-11-05T15:15:00",
+  "bed": "drama",
+  "title": "Real Madrid Behind TWICE… Then Valverde in the 92nd 😱 #UCL #shorts",
+  "description": "Real Madrid trailed AEK Athens twice and won 3–2 with a Federico Valverde strike in stoppage time. Jude Bellingham also became the youngest player to reach 60 Champions League games.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#RealMadrid #UCL #Valverde #Bellingham",
+  "tags": [
+   "aek vs real madrid",
+   "valverde goal",
+   "real madrid comeback",
+   "jude bellingham record",
+   "champions league",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Champions League",
+    "title": "2–1 down with 15 minutes left",
+    "sub": "Real Madrid in Athens"
+   },
+   {
+    "type": "list",
+    "dur": 4.0,
+    "label": "The goals",
+    "title": "Behind twice",
+    "rows": [
+     [
+      "12'",
+      "Koïta",
+      "1–0"
+     ],
+     [
+      "32'",
+      "Bellingham",
+      "1–1"
+     ],
+     [
+      "75'",
+      "Pilios",
+      "2–1"
+     ],
+     [
+      "78'",
+      "Mbappé",
+      "2–2"
+     ],
+     [
+      "90+2'",
+      "Valverde",
+      "2–3"
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 3.0,
+    "label": "Full time",
+    "home": "AEK Athens",
+    "homeAbbr": "AEK",
+    "homeScore": 2,
+    "away": "Real Madrid",
+    "awayAbbr": "RMA",
+    "awayScore": 3,
+    "status": "FULL TIME",
+    "note": "4 wins from 4"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Bellingham",
+    "value": "60",
+    "unit": "UCL games",
+    "text": "Youngest ever to get there, passing Iker Casillas"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Can anyone stop Madrid?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s05-atleti-barca",
+  "sport": "football",
+  "time": "2026-11-05T16:30:00",
+  "bed": "hype",
+  "title": "Atlético vs Barcelona: Win and Atleti Go TOP 🔥 #LaLiga #shorts",
+  "description": "Barcelona lead LaLiga by two points over Atlético Madrid, who host them on Sunday at 8pm GMT (3pm ET). Real Madrid are third, a point further back.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#LaLiga #Atleti #Barca #RealMadrid",
+  "tags": [
+   "atletico vs barcelona",
+   "laliga table",
+   "barcelona",
+   "atletico madrid",
+   "laliga title race",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "LaLiga · Sunday",
+    "title": "2nd v 1st",
+    "sub": "Atlético v Barcelona"
+   },
+   {
+    "type": "table",
+    "dur": 5.0,
+    "label": "LaLiga · after 11 games",
+    "cols": [
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Barcelona",
+      10,
+      0,
+      1,
+      30
+     ],
+     [
+      2,
+      "Atlético",
+      9,
+      1,
+      1,
+      28
+     ],
+     [
+      3,
+      "Real Madrid",
+      9,
+      0,
+      2,
+      27
+     ],
+     [
+      4,
+      "Real Betis",
+      7,
+      2,
+      2,
+      23
+     ]
+    ],
+    "highlight": [
+     1,
+     2
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "The maths",
+    "title": "Atlético win = Atlético top",
+    "sub": "Real Madrid play at Valencia on Saturday"
+   },
+   {
+    "type": "text",
+    "dur": 2.6,
+    "label": "Kick-off",
+    "title": "Sunday 8pm GMT · 3pm ET",
+    "sub": "In Madrid"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Who wins it?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s06-f1-brazil",
+  "sport": "racing",
+  "time": "2026-11-05T17:45:00",
+  "bed": "hype",
+  "title": "Antonelli's First Race as F1 Champion 🏁 São Paulo GP Times #F1 #shorts",
+  "description": "Kimi Antonelli races as world champion for the first time at the São Paulo Grand Prix. Qualifying is Saturday at 6pm GMT (1pm ET) and the race is Sunday at 5pm GMT (12pm ET). No sprint this weekend.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#F1 #SaoPauloGP #BrazilGP #Antonelli",
+  "tags": [
+   "sao paulo grand prix",
+   "f1 brazil",
+   "kimi antonelli",
+   "interlagos",
+   "f1 schedule",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Formula 1 · Interlagos",
+    "title": "First race as champion",
+    "sub": "Kimi Antonelli"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "São Paulo GP",
+    "title": "Weekend times",
+    "rows": [
+     [
+      "Fri",
+      "Practice 1",
+      "3:30pm GMT"
+     ],
+     [
+      "Fri",
+      "Practice 2",
+      "7pm GMT"
+     ],
+     [
+      "Sat",
+      "Qualifying",
+      "6pm GMT"
+     ],
+     [
+      "Sun",
+      "Race",
+      "5pm GMT"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "In the US",
+    "title": "Qualifying 1pm ET · Race 12pm ET",
+    "sub": "No sprint this weekend"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Who wins in Brazil?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s07-uel-predict",
+  "sport": "football",
+  "time": "2026-11-05T20:00:00",
+  "bed": "hype",
+  "title": "Europa League Tonight: Predict EVERY Score ⚽ #UEL #shorts",
+  "description": "Thursday in the Europa League: Crystal Palace, Bournemouth and AC Milan play at 5:45pm GMT (12:45pm ET), then Sunderland, Celtic, Juventus and Leverkusen at 8pm GMT (3pm ET). Drop your predictions.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#UEL #EuropaLeague #CPFC #AFCB",
+  "tags": [
+   "europa league predictions",
+   "uel tonight",
+   "crystal palace",
+   "bournemouth",
+   "sunderland",
+   "celtic",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 17.0,
+    "kicker": "Europa League · Thursday",
+    "title": "Predict the scores",
+    "badge": "Tonight",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Crystal Palace",
+      "homeAbbr": "CRY",
+      "hs": "?",
+      "away": "Hoffenheim",
+      "awayAbbr": "TSG",
+      "as": "?",
+      "note": "5:45pm GMT"
+     },
+     {
+      "home": "Sparta Prague",
+      "homeAbbr": "SPA",
+      "hs": "?",
+      "away": "Bournemouth",
+      "awayAbbr": "BOU",
+      "as": "?",
+      "note": "5:45pm GMT"
+     },
+     {
+      "home": "AC Milan",
+      "homeAbbr": "MIL",
+      "hs": "?",
+      "away": "Ferencváros",
+      "awayAbbr": "FTC",
+      "as": "?",
+      "note": "5:45pm GMT"
+     },
+     {
+      "home": "Sunderland",
+      "homeAbbr": "SUN",
+      "hs": "?",
+      "away": "Dinamo Zagreb",
+      "awayAbbr": "DZG",
+      "as": "?",
+      "note": "8pm GMT"
+     },
+     {
+      "home": "Celtic",
+      "homeAbbr": "CEL",
+      "hs": "?",
+      "away": "Beşiktaş",
+      "awayAbbr": "BJK",
+      "as": "?",
+      "note": "8pm GMT"
+     },
+     {
+      "home": "AZ",
+      "homeAbbr": "AZ",
+      "hs": "?",
+      "away": "Juventus",
+      "awayAbbr": "JUV",
+      "as": "?",
+      "note": "8pm GMT"
+     },
+     {
+      "home": "Leverkusen",
+      "homeAbbr": "B04",
+      "hs": "?",
+      "away": "Marseille",
+      "awayAbbr": "OM",
+      "as": "?",
+      "note": "8pm GMT"
+     },
+     {
+      "home": "Benfica",
+      "homeAbbr": "SLB",
+      "hs": "?",
+      "away": "Lech Poznań",
+      "awayAbbr": "LEC",
+      "as": "?",
+      "note": "8pm GMT"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Your predictions?",
+    "sub": "Drop your scores in the comments"
+   }
+  ]
+ },
+ {
+  "id": "s08-sixers-block",
+  "sport": "nba",
+  "time": "2026-11-05T23:15:00",
+  "bed": "hype",
+  "title": "1st vs 2nd in the East… Jaylen Brown's Block Decides It 🔥 #NBA #shorts",
+  "description": "The 76ers beat the Pistons 112–106 in Detroit. Jaylen Brown scored a season-high 30 and blocked Cade Cunningham's three with 37 seconds left, and LeBron James became the first player to make 16,000 field goals.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Sixers #Pistons #NBA #LeBron",
+  "tags": [
+   "76ers vs pistons",
+   "jaylen brown",
+   "joel embiid",
+   "lebron 16000 field goals",
+   "nba standings",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA · Detroit",
+    "title": "1st v 2nd in the East",
+    "sub": "Who blinked?"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Final",
+    "home": "Pistons",
+    "homeAbbr": "DET",
+    "homeScore": 106,
+    "away": "76ers",
+    "awayAbbr": "PHI",
+    "awayScore": 112,
+    "status": "FINAL",
+    "note": "Sixers 8–1, top of the East"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "37 seconds left",
+    "title": "Brown blocks Cunningham's three",
+    "sub": "Jaylen Brown: season-high 30 points"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "LeBron James",
+    "value": "16000",
+    "unit": "field goals",
+    "text": "First player in NBA history to get there"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Best team in the East?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s09-nba-board",
+  "sport": "nba",
+  "time": "2026-11-06T00:30:00",
+  "bed": "hype",
+  "title": "NBA Wednesday Results: Sixers Win 1st vs 2nd 🏀 #NBA #shorts",
+  "description": "Wednesday in the NBA: the 76ers won in Detroit, Shai Gilgeous-Alexander scored 42 for OKC, the Knicks put up 84 in a half and the Blazers moved to 6–1.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NBA #NBAResults #Sixers #ThunderUp",
+  "tags": [
+   "nba scores",
+   "nba results",
+   "76ers vs pistons",
+   "thunder vs cavaliers",
+   "knicks vs bulls",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 21.0,
+    "kicker": "NBA · Wednesday night",
+    "title": "11 finals",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.7,
+    "rows": [
+     {
+      "home": "Pistons",
+      "homeAbbr": "DET",
+      "hs": 106,
+      "away": "76ers",
+      "awayAbbr": "PHI",
+      "as": 112
+     },
+     {
+      "home": "Wizards",
+      "homeAbbr": "WAS",
+      "hs": 105,
+      "away": "Hawks",
+      "awayAbbr": "ATL",
+      "as": 120
+     },
+     {
+      "home": "Celtics",
+      "homeAbbr": "BOS",
+      "hs": 109,
+      "away": "Bucks",
+      "awayAbbr": "MIL",
+      "as": 102
+     },
+     {
+      "home": "Nets",
+      "homeAbbr": "BKN",
+      "hs": 114,
+      "away": "Hornets",
+      "awayAbbr": "CHA",
+      "as": 104
+     },
+     {
+      "home": "Knicks",
+      "homeAbbr": "NYK",
+      "hs": 135,
+      "away": "Bulls",
+      "awayAbbr": "CHI",
+      "as": 105
+     },
+     {
+      "home": "Grizzlies",
+      "homeAbbr": "MEM",
+      "hs": 103,
+      "away": "Pacers",
+      "awayAbbr": "IND",
+      "as": 107
+     },
+     {
+      "home": "Pelicans",
+      "homeAbbr": "NOP",
+      "hs": 120,
+      "away": "Jazz",
+      "awayAbbr": "UTA",
+      "as": 113,
+      "note": "OT"
+     },
+     {
+      "home": "Thunder",
+      "homeAbbr": "OKC",
+      "hs": 124,
+      "away": "Cavaliers",
+      "awayAbbr": "CLE",
+      "as": 116
+     },
+     {
+      "home": "Rockets",
+      "homeAbbr": "HOU",
+      "hs": 107,
+      "away": "Wolves",
+      "awayAbbr": "MIN",
+      "as": 117
+     },
+     {
+      "home": "Nuggets",
+      "homeAbbr": "DEN",
+      "hs": 128,
+      "away": "Raptors",
+      "awayAbbr": "TOR",
+      "as": 109
+     },
+     {
+      "home": "Suns",
+      "homeAbbr": "PHX",
+      "hs": 119,
+      "away": "Blazers",
+      "awayAbbr": "POR",
+      "as": 132
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Best win of the night?",
+    "sub": "Tell us in the comments"
+   }
+  ]
+ },
+ {
+  "id": "s10-sga-85",
+  "sport": "nba",
+  "time": "2026-11-06T01:45:00",
+  "bed": "anthem",
+  "title": "SGA Drops 85 on Cleveland in 3 Nights 🔥 #ThunderUp #shorts",
+  "description": "Shai Gilgeous-Alexander scored 43 on Monday and 42 on Wednesday as the Thunder beat the Cavaliers twice in three nights. OKC won 124–116 at home.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#ThunderUp #NBA #SGA #Cavs",
+  "tags": [
+   "shai gilgeous-alexander",
+   "sga 42 points",
+   "thunder vs cavaliers",
+   "okc thunder",
+   "nba scoring",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA · Thunder v Cavs",
+    "title": "Same team. Three nights.",
+    "sub": "SGA did it again"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Shai Gilgeous-Alexander",
+    "value": "85",
+    "unit": "points",
+    "text": "In two games against Cleveland"
+   },
+   {
+    "type": "list",
+    "dur": 3.6,
+    "label": "The two games",
+    "title": "Two wins for OKC",
+    "rows": [
+     [
+      "Mon",
+      "43 pts",
+      "117–112 at CLE"
+     ],
+     [
+      "Wed",
+      "42 pts",
+      "124–116 v CLE"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 2.8,
+    "label": "Wednesday",
+    "title": "15 of 19 from the line",
+    "sub": "Plus 8 assists. Thunder 6–2"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Best scorer in the NBA?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s11-cfb-saturday",
+  "sport": "nfl",
+  "tagText": "COLLEGE FOOTBALL",
+  "time": "2026-11-06T03:00:00",
+  "bed": "hype",
+  "title": "No. 1 AND No. 2 on the Road Saturday 😳 College Football #CFB #shorts",
+  "description": "A huge college football Saturday: No. 1 Miami visit No. 11 Notre Dame and No. 2 Georgia go to No. 10 Ole Miss, both at 7:30pm ET. No. 3 Utah host No. 9 BYU at noon ET.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#CFB #CollegeFootball #CFPRankings #Miami",
+  "tags": [
+   "miami vs notre dame",
+   "georgia vs ole miss",
+   "utah vs byu",
+   "alabama vs lsu",
+   "college football week 11",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "College football · Saturday",
+    "title": "No. 1 AND No. 2 on the road",
+    "sub": "Same kick-off time"
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "CFP rankings · ET",
+    "title": "The big ones",
+    "rows": [
+     [
+      "7:30pm",
+      "#1 Miami at #11 Notre Dame",
+      ""
+     ],
+     [
+      "7:30pm",
+      "#2 Georgia at #10 Ole Miss",
+      ""
+     ],
+     [
+      "Noon",
+      "#9 BYU at #3 Utah",
+      ""
+     ],
+     [
+      "3:30pm",
+      "#5 Alabama at #14 LSU",
+      ""
+     ],
+     [
+      "6:15pm",
+      "#6 Kentucky at #13 Tennessee",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Miami news",
+    "title": "No Malachi Toney",
+    "sub": "Star WR needs ankle surgery"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Which top-3 team falls?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s12-tnf-preview",
+  "sport": "nfl",
+  "time": "2026-11-06T04:45:00",
+  "bed": "hype",
+  "title": "Thursday Night Football: Jaguars at Ravens TONIGHT 🏈 #NFL #shorts",
+  "description": "NFL Week 9 starts with the 5–2 Jaguars at the 4–4 Ravens at 8:15pm ET. Trevor Lawrence has 17 touchdown passes, and Derrick Henry has 632 rushing yards for Baltimore.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#TNF #NFL #Ravens #DUUUVAL",
+  "tags": [
+   "jaguars vs ravens",
+   "thursday night football",
+   "nfl week 9",
+   "trevor lawrence",
+   "derrick henry",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Thursday Night Football",
+    "title": "Jaguars at Ravens",
+    "sub": "8:15pm ET tonight"
+   },
+   {
+    "type": "table",
+    "dur": 4.0,
+    "label": "Records",
+    "cols": [
+     "W",
+     "L"
+    ],
+    "rows": [
+     [
+      "",
+      "Jaguars",
+      5,
+      2
+     ],
+     [
+      "",
+      "Ravens",
+      4,
+      4
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 4.0,
+    "label": "Season leaders",
+    "title": "Players to watch",
+    "rows": [
+     [
+      "JAX",
+      "Trevor Lawrence",
+      "17 TD passes"
+     ],
+     [
+      "BAL",
+      "Derrick Henry",
+      "632 rush yds"
+     ],
+     [
+      "BAL",
+      "Zay Flowers",
+      "608 rec yds"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Who wins tonight?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ },
+ {
+  "id": "s13-ufc-preview",
+  "sport": "mma",
+  "time": "2026-11-06T07:00:00",
+  "bed": "hype",
+  "title": "Cortes Acosta vs Johnny Walker: UFC Heavyweights Saturday 🥊 #UFC #shorts",
+  "description": "Waldo Cortes Acosta (17–4) meets Johnny Walker (23–10) at heavyweight in Saturday's UFC Fight Night main event. Tatiana Suarez v Virna Jandiroba is the co-main. Main card 8pm ET.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#UFC #UFCFightNight #MMA",
+  "tags": [
+   "cortes acosta vs walker",
+   "ufc fight night",
+   "johnny walker ufc",
+   "tatiana suarez",
+   "ufc this weekend",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "UFC · Saturday",
+    "title": "Heavyweights headline",
+    "sub": "Main card 8pm ET"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Main event · Heavyweight",
+    "title": "Cortes Acosta (17–4) v Walker (23–10)",
+    "sub": "Saturday · main card 8pm ET / 1am GMT"
+   },
+   {
+    "type": "list",
+    "dur": 3.6,
+    "label": "Main card",
+    "title": "Also on the card",
+    "rows": [
+     [
+      "Co-main",
+      "Suarez v Jandiroba",
+      "13–1 v 23–4"
+     ],
+     [
+      "",
+      "Grant v Smith",
+      "Bantamweight"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Knockout or decision?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ]
+ }
+]
