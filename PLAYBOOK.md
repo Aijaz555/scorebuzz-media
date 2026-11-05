@@ -31,7 +31,7 @@ Every day, publish 20–25 posts to the ScoreBuzz Facebook Page (Metricool brand
 
 ## Captions
 - 1–4 short lines: hook with emoji → the fact → a question to drive comments. Then 2–4 hashtags.
-- Put the link in the **first comment**, not the caption: `firstCommentText: "Live scores, fixtures and results: https://scorebuzz.net"`.
+- **No link in the first comment** (owner's request, 5 Nov 2026): send `firstCommentText: ""` on every Facebook post and Reel. No links in captions either; the scorebuzz.net name on the card/video is enough.
 - Vary wording and post types day to day; avoid identical openings.
 
 ## Cards
@@ -43,9 +43,9 @@ Every day, publish 20–25 posts to the ScoreBuzz Facebook Page (Metricool brand
 
 ## Scheduling (Metricool `createScheduledPost`)
 - Reels: same as below but `facebookData: {"type":"REEL"}`, the Short's MP4 (commit-pinned raw URL) in `media`,
-  `videoThumbnailUrl` = its `.thumb.jpg`, caption in `text` (hook + question + 2–4 hashtags incl. #Reels), link in `firstCommentText`.
+  `videoThumbnailUrl` = its `.thumb.jpg`, caption in `text` (hook + question + 2–4 hashtags incl. #Reels), `firstCommentText: ""` (no link).
   Count Reels toward the 20–25 Facebook total. The same video may also be a YouTube Short (that's fine).
-- Image posts: `blogId: "7677948"`, provider `facebook`, `facebookData: {"type":"POST"}`, `autoPublish: true`, the card URL in `media`, caption in `text`, link in `firstCommentText`, `publicationDate.timezone: "Asia/Karachi"`.
+- Image posts: `blogId: "7677948"`, provider `facebook`, `facebookData: {"type":"POST"}`, `autoPublish: true`, the card URL in `media`, caption in `text`, `firstCommentText: ""` (no link comment), `publicationDate.timezone: "Asia/Karachi"`.
 - Confirm each response shows a `static.metricool.com` media URL (Metricool copied the image).
 - Before scheduling, call `getScheduledPosts` for the window and skip slots that already have a post. Count those existing posts toward the 20–25 target for the window, so the Page never gets more than ~25 posts in 24 hours.
 
