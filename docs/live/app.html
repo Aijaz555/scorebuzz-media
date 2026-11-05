@@ -79,7 +79,10 @@ header{position:absolute;top:22px;left:28px;right:28px;height:56px;display:flex;
 .ltab td.n{font-family:'Barlow Condensed',Inter;font-size:26px;font-weight:700}
 .formb{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:7px;font-weight:900;font-size:16px;margin:0 2px;color:#0A0E1E}
 /* center */
-.sbon .stage{flex:0 0 auto;height:520px;padding:0;background:#0A0E1E}.sbon .plays .pl ~ .pl ~ .pl ~ .pl{display:none}
+.status{flex-shrink:0}.sbon .stage{flex:0 0 auto;height:560px;padding:0;background:#0A0E1E}.sbon .plays .pl ~ .pl ~ .pl{display:none}
+body:has(.center.sbon) .side{width:372px}body:has(.center.sbon) .tn .n{font-size:31px;letter-spacing:-.5px}body:has(.center.sbon) .trow{gap:14px}body:has(.center.sbon) .center{left:416px;right:416px}
+.lclk-dot{display:inline-block;width:12px;height:12px;border-radius:50%;background:#FF2D46;margin-left:12px;vertical-align:middle;animation:lblink 1s infinite}@keyframes lblink{50%{opacity:.2}}
+
 
 .center{position:absolute;top:96px;bottom:104px;left:500px;right:500px;display:flex;flex-direction:column;gap:16px}
 .status{height:84px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 22px}
@@ -664,6 +667,9 @@ async function game(league, eventId) {
     detail: ev.status?.type?.detail || '',
     period: ev.status?.period || 0,
     clock: ev.status?.displayClock || '',
+    // football: elapsed match time in seconds (ESPN's clock stops at 45:00/90:00 in stoppage time, so the
+    // displayed "45'+2'" is used when it is later), for the ticking mm:ss clock in the overlay
+    clockSec: L.soccer ? Math.max(Number(ev.status?.clock) || 0, ((s) => { const m = String(s || '').match(/(\d+)'(?:\+(\d+))?/); return m ? (Number(m[1]) + Number(m[2] || 0)) * 60 : 0; })(ev.status?.displayClock)) : null,
     ticker: (sb.events || []).filter((e) => e.id !== ev.id).map((e) => {
       const c = e.competitions[0];
       const h = c.competitors.find((x) => x.homeAway === 'home');
@@ -1124,6 +1130,17 @@ function playsPanel(g, ph) {
   }).join('') || '<div class="pl" style="grid-template-columns:1fr;padding-left:18px"><span class="x" style="color:var(--dim)">Updates will appear here</span></div>'}</div>`;
 }
 
+// ---- real-time football clock (mm:ss), like the website: runs locally between data updates ----
+let clkBase = { id: '', sec: 0, at: 0 }, clkShown = 0;
+function liveSecs(g) {
+  if (clkBase.id !== g.id || g.clockSec > clkBase.sec + 1 || g.clockSec < clkBase.sec - 90) { clkBase = { id: g.id, sec: g.clockSec, at: Date.now() }; clkShown = 0; }
+  const s = clkBase.sec + (Date.now() - clkBase.at) / 1000;
+  clkShown = Math.max(clkShown, Math.min(s, clkBase.sec + 600)); // never runs backwards; stops if data freezes for 10 min
+  return clkShown;
+}
+const mmss = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+setInterval(() => { const el = document.getElementById('lclk'); if (el && G) el.textContent = mmss(liveSecs(G)); }, 250);
+
 function statusBar(g, ph) {
   const lead = Number(g.home.score) - Number(g.away.score);
   const leader = lead > 0 ? g.home : g.away;
@@ -1135,7 +1152,8 @@ function statusBar(g, ph) {
   const per = g.soccer ? '' : g.sport === 'mlb' ? '' : '';
   const big = ph === 'pre' ? 'UPCOMING' : g.soccer ? (ph === 'live' ? g.clock || g.status : g.status) : ph === 'live' ? (g.clock || '') : g.status;
   const small = ph === 'live' && !g.soccer ? g.status.replace(/^[\d:.]+\s*-\s*/, '') : ph === 'live' ? g.label : ph === 'pre' ? g.label : g.label;
-  return `<div class="panel status">${left}<div class="clk"><div class="p">${esc(small)}</div><div class="t num ${/^[\d:.']+$/.test(big) ? '' : 'w'}">${esc(big)}</div></div><div class="lead r">${esc(g.broadcast || g.label)}</div></div>`;
+  const tick = g.soccer && ph === 'live' && g.clockSec != null;
+  return `<div class="panel status">${left}<div class="clk"><div class="p">${esc(small)}</div><div class="t num ${tick || /^[\d:.']+$/.test(big) ? '' : 'w'}">${tick ? `<span id="lclk">${mmss(liveSecs(g))}</span><span class="lclk-dot"></span>` : esc(big)}</div></div><div class="lead r">${esc(g.broadcast || g.label)}</div></div>`;
 }
 
 // ---------------- render loop ----------------
