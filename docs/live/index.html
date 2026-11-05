@@ -79,6 +79,8 @@ header{position:absolute;top:22px;left:28px;right:28px;height:56px;display:flex;
 .ltab td.n{font-family:'Barlow Condensed',Inter;font-size:26px;font-weight:700}
 .formb{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:7px;font-weight:900;font-size:16px;margin:0 2px;color:#0A0E1E}
 /* center */
+.sbon .stage{flex:0 0 auto;height:520px;padding:0;background:#0A0E1E}.sbon .plays .pl ~ .pl ~ .pl ~ .pl{display:none}
+
 .center{position:absolute;top:96px;bottom:104px;left:500px;right:500px;display:flex;flex-direction:column;gap:16px}
 .status{height:84px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 22px}
 .status .clk{text-align:center}.status .clk .p{font-size:16px;font-weight:800;letter-spacing:3px;color:var(--acc)}
@@ -178,6 +180,7 @@ addEventListener('resize',fit);addEventListener('DOMContentLoaded',fit);addEvent
   <div class="hc"><div class="chip acc" id="lg"></div><div class="chip" id="venue"></div><div class="chip num" id="now" style="font-size:20px"></div></div>
 </header>
 <div id="app"><div class="err">Loading live data…</div></div>
+<div id="sbL" style="position:absolute;overflow:hidden;z-index:4;display:none;border-radius:14px;background:#0A0E1E"><iframe id="sbF" scrolling="no" style="position:absolute;border:0;transform-origin:0 0;background:#0A0E1E"></iframe></div>
 <div id="trkL" style="position:absolute;overflow:hidden;z-index:4;display:none;border-radius:14px"><iframe id="trkF" scrolling="no" style="position:absolute;left:0;top:0;width:950px;height:640px;border:0;transform-origin:0 0;background:transparent"></iframe></div>
 <div class="pop" id="pop"></div>
 <div class="trans" id="trans"></div>
@@ -1082,6 +1085,7 @@ function usCentre(g, main, brk) {
 }
 
 function stage(g, ph) {
+  if (g.soccer && ph === 'live' && sbUrl(g)) return '<div id="sbHole" style="width:100%;height:100%"></div>';
   if (g.soccer && !TRK && g.centre) return matchCentre(g, ph);
   if (ph === 'pre') return preView(g);
   if (ph === 'break' || ph === 'final') return g.soccer ? ((slide % 2 && g.box) ? boxView(g) : compare(g)) : usCentre(g, compare(g), true);
@@ -1148,10 +1152,10 @@ function render(g) {
   const [lw, rw] = g.soccer ? ['home', 'away'] : ['away', 'home'];
   $('app').innerHTML = `
     <div class="side l">${side(L, R, g, lw)}</div>
-    <div class="center">${statusBar(g, ph)}<div class="panel stage" id="stage">${stage(g, ph)}</div>${ph === 'pre' ? '' : wpBar(g)}${TRK && g.soccer && ph === 'live' ? '' : playsPanel(g, ph)}</div>
+    <div class="center ${g.soccer && ph === 'live' && sbUrl(g) ? 'sbon' : ''}">${statusBar(g, ph)}<div class="panel stage" id="stage">${stage(g, ph)}</div>${ph === 'pre' || (g.soccer && ph === 'live' && sbUrl(g)) ? '' : wpBar(g)}${TRK && g.soccer && ph === 'live' ? '' : playsPanel(g, ph)}</div>
     <div class="side r">${side(R, L, g, rw)}</div>`;
   prev = { home: g.home.score, away: g.away.score };
-  placeTracker();
+  placeTracker(); placeSite();
 
   // big-play popup
   const big = g.plays.find((p) => p.big);
@@ -1162,6 +1166,31 @@ function render(g) {
   if (lastPhase && ph !== lastPhase && (ph === 'break' || ph === 'final')) transition(g, ph);
   lastPhase = ph;
   ticker(g);
+}
+
+// ---------------- scorebuzz.net live tracker (the website's own "Live Action" pitch) ----------------
+// The match page on scorebuzz.net is embedded and cropped to its tracker card: the page is opened at
+// #trkSlot (the browser scrolls the tracker to the top), the site's sticky header covers the first 64 px,
+// so the visible window starts just below it. ?sbtrk=0 turns it off (our own tracker is used instead).
+const SB_LEAGUE = { epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga' };
+const SB_W = 1000, SB_TOP = 64, SB_X = 14, SB_VW = 972, SB_VH = 536;
+const slugify = (n) => String(n || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+function sbUrl(g) {
+  const lg = SB_LEAGUE[league];
+  if (!lg || q.get('sbtrk') === '0') return '';
+  return `https://scorebuzz.net/${lg}/${slugify(g.home.name)}-vs-${slugify(g.away.name)}-${g.id}/?ui=v1`;
+}
+let sbBase = '', sbAnchored = 0;
+function placeSite() {
+  const L = $('sbL'), F = $('sbF'), hole = $('sbHole');
+  if (!hole || !G) { L.style.display = 'none'; return; }
+  const base = sbUrl(G);
+  if (base !== sbBase) { sbBase = base; F.src = base + '#trkSlot'; sbAnchored = Date.now(); }
+  else if (Date.now() - sbAnchored > 10 * 60000) { sbAnchored = Date.now(); F.src = base + '#t-ov'; setTimeout(() => { F.src = base + '#trkSlot'; }, 400); } // re-anchor now and then
+  const r = hole.getBoundingClientRect(), root = document.body.getBoundingClientRect(), sc = parseFloat((document.body.style.transform.match(/scale\(([\d.]+)/) || [])[1]) || 1;
+  const hw = r.width / sc, hh = r.height / sc, k = Math.min(hw / SB_VW, hh / SB_VH), w = SB_VW * k, h = SB_VH * k;
+  Object.assign(L.style, { display: 'block', left: ((r.left - root.left) / sc + (hw - w) / 2) + 'px', top: ((r.top - root.top) / sc + (hh - h) / 2) + 'px', width: w + 'px', height: h + 'px' });
+  Object.assign(F.style, { width: SB_W + 'px', height: (SB_TOP + SB_VH + 20) + 'px', left: (-SB_X * k) + 'px', top: (-SB_TOP * k) + 'px', transform: `scale(${k})` });
 }
 
 // keep one iframe alive across re-renders (moving it would reload it): it sits in a layer positioned over #trkHole
