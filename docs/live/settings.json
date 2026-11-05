@@ -54,7 +54,9 @@
   }
  },
  "fit": {
+  "win": true,
+  "fit": "fill",
   "debug": true
  },
- "reload": 1
+ "reload": 2
 }

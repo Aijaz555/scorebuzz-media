@@ -166,7 +166,7 @@ footer{position:absolute;left:0;right:0;bottom:0;height:80px;background:#04060E;
 //   ?w=1280&h=720  fit into this box (top-left) instead of the window, for studios whose web layer shows only part of the page
 //   ?size=1  shows the window size the streaming studio really uses (to debug cropping)
 var P=new URLSearchParams(location.search),mode0=P.get('fit')||'contain';
-function fit(){var R=window.__fitRemote||{};var W=+R.w||+P.get('w')||innerWidth,H=+R.h||+P.get('h')||innerHeight,X=+R.x||0,Y=+R.y||0,b=document.body,sx=W/1920,sy=H/1080;
+function fit(){var R=window.__fitRemote||{};var W=+R.w||(R.win?0:+P.get('w'))||innerWidth,H=+R.h||(R.win?0:+P.get('h'))||innerHeight,X=+R.x||0,Y=+R.y||0,b=document.body,sx=W/1920,sy=H/1080;
  var mode=R.fit||mode0;b.style.marginLeft=X+'px';b.style.marginTop=Y+'px';
  if(mode==='none'||!W||!H){b.style.transform='';}
  else if(mode==='fill'){b.style.transform='scale('+sx+','+sy+')';}
