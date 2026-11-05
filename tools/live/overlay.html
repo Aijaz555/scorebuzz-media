@@ -141,14 +141,15 @@ footer{position:absolute;left:0;right:0;bottom:0;height:80px;background:#04060E;
 <body><script>(function(){
 // Fit the 1920x1080 design to whatever window it is shown in.
 //   ?fit=contain (default: whole board visible, dark bars if the shape differs) | fill (stretch to exactly fill) | none
+//   ?w=1280&h=720  fit into this box (top-left) instead of the window, for studios whose web layer shows only part of the page
 //   ?size=1  shows the window size the streaming studio really uses (to debug cropping)
 var P=new URLSearchParams(location.search),mode=P.get('fit')||'contain';
-function fit(){var W=innerWidth,H=innerHeight,b=document.body,sx=W/1920,sy=H/1080;
+function fit(){var W=+P.get('w')||innerWidth,H=+P.get('h')||innerHeight,b=document.body,sx=W/1920,sy=H/1080;
  b.style.marginLeft=b.style.marginTop='0px';
  if(mode==='none'||!W||!H){b.style.transform='';}
  else if(mode==='fill'){b.style.transform='scale('+sx+','+sy+')';}
  else{var s=Math.min(sx,sy);b.style.transform='scale('+s+')';b.style.marginLeft=((W-1920*s)/2)+'px';b.style.marginTop=((H-1080*s)/2)+'px';}
- var d=document.getElementById('__sz');if(P.has('size')){if(!d){d=document.createElement('div');d.id='__sz';d.style.cssText='position:fixed;left:0;top:0;z-index:99999;background:#ff0;color:#000;font:bold 28px sans-serif;padding:6px 12px';document.documentElement.appendChild(d);}d.textContent='window '+W+' x '+H+' · dpr '+devicePixelRatio;}}
+ var d=document.getElementById('__sz');if(P.has('size')){if(!d){d=document.createElement('div');d.id='__sz';d.style.cssText='position:fixed;left:0;top:0;z-index:99999;background:#ff0;color:#000;font:bold 28px sans-serif;padding:6px 12px';document.documentElement.appendChild(d);}d.textContent='window '+innerWidth+' x '+innerHeight+' · fit '+W+' x '+H+' · dpr '+devicePixelRatio;}}
 addEventListener('resize',fit);addEventListener('DOMContentLoaded',fit);addEventListener('load',fit);setInterval(fit,2000);fit();})();</script>
 <div class="bgfx"></div><div class="grid"></div>
 <header>
