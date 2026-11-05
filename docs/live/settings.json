@@ -21,8 +21,7 @@
   "MNC",
   "CRY",
   "BOU",
-  "SUN",
-  "CEL"
+  "SUN"
  ],
  "top25": 15,
  "pin": null,
@@ -55,8 +54,7 @@
  },
  "fit": {
   "win": true,
-  "fit": "fill",
-  "debug": true
+  "fit": "fill"
  },
- "reload": 3
+ "reload": 4
 }
