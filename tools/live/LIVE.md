@@ -96,10 +96,30 @@ the default). In `live.config.json` a key can be `{"youtube": "...", "facebook":
    ```
 3. YouTube Studio → Go live → Stream → create one **reusable stream key per simultaneous stream** (3 keys), each with "Enable auto-start" and "Enable auto-stop". Paste them into `tools/live/live.config.json`.
 4. Test one recording without going live: `node tools/live/stream.js --league nba --event <id> --out test.mp4 --minutes 2`.
-5. Start it: `pm2 start tools/live/autopilot.js --name scorebuzz-live -- tools/live/live.config.json && pm2 save && pm2 startup`. Logs: `pm2 logs scorebuzz-live` (it prints the YouTube title and description for each game it starts).
+5. Start it: `pm2 start tools/live/autopilot.js --name scorebuzz-live && pm2 save && pm2 startup`. Logs: `pm2 logs scorebuzz-live` (it prints the YouTube title and description for each game it starts).
 6. Update later with `git pull && pm2 restart scorebuzz-live`.
 
 Titles: with reusable keys, YouTube reuses the last title on that key. Until the YouTube Data API step below is set up, set each upcoming broadcast's title from `games.js` in Studio (or accept the generic title).
+
+## Remote control (no SSH needed after setup)
+
+The server is managed through GitHub, so it can be run from a Claude session (which can't open SSH connections):
+
+- **Settings in git:** `tools/live/live.settings.json` — leagues, team filters (`only`), college `top25`, `leadMinutes`, plus `include` / `exclude` (event ids) and `paused`. `sync.sh` (cron, every 2 min) pulls `main`; the autopilot re-reads settings every minute, and a game added to `exclude` while live is stopped. Code changes under `tools/` restart the autopilot automatically.
+- **Status from the server:** `sync.sh` pushes `status.json` (running / upcoming / finished games, YouTube broadcast ids, errors), `log.txt` (last 150 log lines) and `server.txt` (CPU, memory, pm2) to the **`live-status`** branch.
+- **Secrets stay on the server** in `tools/live/live.config.json` (git-ignored): stream keys and the YouTube API refresh token. Never commit them: the repo is public.
+- **Push access for the server:** create a fine-grained GitHub token (Settings → Developer settings → Fine-grained tokens) for `Aijaz555/scorebuzz-media` only, permission *Contents: Read and write*, then on the server: `git config credential.helper store && git push` once (user = your GitHub name, password = the token). Or add an SSH deploy key with write access.
+
+## Auto start and stop (with each game's own title)
+
+With `youtubeApi` set, for each chosen game the autopilot creates a public broadcast with the game's
+title, description and a designed "LIVE NOW" thumbnail, binds it to a free stream key, starts the video
+`leadMinutes` before kick-off (YouTube **auto-starts** the broadcast) and stops 20 min after the final
+(YouTube **auto-stops** it). One-time setup:
+1. Google Cloud Console → new project → enable **YouTube Data API v3** → OAuth consent screen (External, add your Google account as a test user, or publish it so the token doesn't expire after 7 days) → Credentials → OAuth client ID → type **Desktop app**. Put the client id/secret in `live.config.json` under `youtubeApi`.
+2. On the server: `node tools/live/youtube.js auth`, follow the printed steps (an SSH tunnel from your computer + one browser sign-in). The refresh token is saved to `live.config.json`.
+3. `pm2 restart scorebuzz-live`. The log line `YouTube API on` confirms it.
+Quota: ~150 units per game (insert + bind + thumbnail) of the default 10,000/day.
 
 ## Fully automatic (next step)
 

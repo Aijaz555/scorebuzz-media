@@ -13,8 +13,10 @@ sudo npx playwright install-deps chromium
 npx playwright install chromium
 sudo npm install -g pm2
 [ -f tools/live/live.config.json ] || cp tools/live/live.config.example.json tools/live/live.config.json
+# remote control: pull settings/code from GitHub and push status every 2 minutes
+( crontab -l 2>/dev/null | grep -v 'tools/live/sync.sh'; echo "*/2 * * * * $(pwd)/tools/live/sync.sh >> $HOME/scorebuzz-sync.log 2>&1" ) | crontab -
 echo
 echo "Done. Next:"
 echo "  1. Put your YouTube stream keys in tools/live/live.config.json"
 echo "  2. Check the data feed:   node tools/live/games.js nba nfl epl"
-echo "  3. Start the autopilot:   pm2 start tools/live/autopilot.js --name scorebuzz-live -- tools/live/live.config.json && pm2 save && pm2 startup"
+echo "  3. Start the autopilot:   pm2 start tools/live/autopilot.js --name scorebuzz-live && pm2 save && pm2 startup"
