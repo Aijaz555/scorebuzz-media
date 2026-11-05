@@ -58,6 +58,26 @@ header{position:absolute;top:22px;left:28px;right:28px;height:56px;display:flex;
 .st .bar{grid-column:1/3;height:6px;border-radius:9px;background:#ffffff10;overflow:hidden}.st .bar i{display:block;height:100%;background:var(--tc2);border-radius:9px;transition:width 1s}
 .st .bar.win i{box-shadow:0 0 12px var(--tc2)}
 
+
+/* football match centre views */
+.mc-tabs{position:absolute;top:14px;right:18px;display:flex;gap:6px;z-index:3}
+.mc-tabs span{font-size:12px;font-weight:800;letter-spacing:1.5px;padding:5px 9px;border-radius:7px;color:var(--mute);background:#ffffff08;text-transform:uppercase}
+.mc-tabs span.on{background:var(--lime);color:#0A0E1E}
+.mc{width:100%;height:100%;padding:50px 26px 10px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+.mc svg{display:block}
+.mc .sub{font-size:15px;font-weight:700;color:var(--mute);letter-spacing:1px;margin-top:8px;text-align:center}
+.mstat{display:grid;grid-template-columns:1fr 1fr;column-gap:34px;row-gap:2px;width:100%}
+.mstat .row{display:grid;grid-template-columns:70px 1fr 70px;align-items:center;gap:10px;padding:1px 0}
+.mstat .k{grid-column:1/-1;text-align:center;font-size:12px;font-weight:800;letter-spacing:1.5px;color:var(--mute);text-transform:uppercase;margin-bottom:-2px}
+.mstat .v{font-size:23px;font-weight:800;line-height:1.1}.mstat .v.r{text-align:right}
+.mstat .b{height:9px;border-radius:9px;background:#ffffff10;overflow:hidden;display:flex}
+.mstat .b i{height:100%}
+.ltab{width:100%;border-collapse:collapse}
+.ltab td,.ltab th{padding:3px 10px;font-size:19px;text-align:center}
+.ltab th{font-size:13px;letter-spacing:2px;color:var(--mute)}
+.ltab td.t{text-align:left;font-weight:700}.ltab tr.hl td{background:#BEFF3C1f;color:#fff;font-weight:900}.ltab tr.hl td:first-child{border-left:4px solid var(--lime)}
+.ltab td.n{font-family:'Barlow Condensed',Inter;font-size:26px;font-weight:700}
+.formb{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:7px;font-weight:900;font-size:16px;margin:0 2px;color:#0A0E1E}
 /* center */
 .center{position:absolute;top:96px;bottom:104px;left:500px;right:500px;display:flex;flex-direction:column;gap:16px}
 .status{height:84px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 22px}
@@ -70,7 +90,7 @@ header{position:absolute;top:22px;left:28px;right:28px;height:56px;display:flex;
 .stage{flex:1;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .stage svg{display:block}
 .stage .cap{position:absolute;top:16px;left:20px}
-.legend{position:absolute;top:14px;right:18px;display:flex;gap:14px;font-size:14px;font-weight:700;color:var(--mute)}
+.legend{position:absolute;top:50px;right:18px;display:flex;gap:14px;font-size:14px;font-weight:700;color:var(--mute)}
 .legend span{display:flex;align-items:center;gap:6px}
 .wp{height:74px;padding:12px 22px;display:grid;grid-template-columns:150px 1fr 150px;align-items:center;gap:16px}
 .wp .s{font-size:34px;font-weight:800}.wp .s small{display:block;font-family:Inter;font-size:12px;letter-spacing:2px;color:var(--mute);font-weight:800}
@@ -356,6 +376,20 @@ const STAT_PICK = {
 const num = (v) => { const n = parseFloat(String(v).replace('%', '')); return Number.isFinite(n) ? n : null; };
 
 // Team stat comparison rows: [{ label, home, away, h, a }] (h/a numeric for the bars)
+// football: the full stat list for the match-centre stats view
+function teamStatsAll(sum, home, away) {
+  const teams = sum.boxscore?.teams || [];
+  const side = (id) => teams.find((t) => String(t.team?.id) === String(id))?.statistics || [];
+  const hs = side(home.id), as = side(away.id);
+  const want = [['possessionPct', 'Possession %'], ['totalShots', 'Shots'], ['shotsOnTarget', 'On target'], ['wonCorners', 'Corners'], ['totalPasses', 'Passes'], ['passPct', 'Pass accuracy'], ['totalCrosses', 'Crosses'], ['foulsCommitted', 'Fouls'], ['offsides', 'Offsides'], ['yellowCards', 'Yellow cards'], ['redCards', 'Red cards'], ['saves', 'Saves']];
+  return want.map(([n, label]) => {
+    const h = hs.find((x) => x.name === n), a = as.find((x) => x.name === n);
+    if (!h || !a) return null;
+    const pct = n === 'passPct';
+    const f = (x) => (pct ? `${Math.round(parseFloat(x.displayValue) * 100)}%` : x.displayValue);
+    return { label, home: f(h), away: f(a), h: num(h.displayValue) ?? 0, a: num(a.displayValue) ?? 0 };
+  }).filter(Boolean);
+}
 function teamStats(sum, L, home, away) {
   const teams = sum.boxscore?.teams || [];
   const side = (id) => teams.find((t) => String(t.team?.id) === String(id))?.statistics || [];
@@ -473,6 +507,82 @@ function statusText(st, L) {
   return (s.shortDetail || `${st.period} ${st.displayClock}`).toUpperCase();
 }
 
+// ---------- football match centre: momentum, shot map, lineups, table, form ----------
+const SHOT = { 'shot-on-target': 'on', 'shot-off-target': 'off', 'shot-blocked': 'blocked', goal: 'goal', 'penalty---scored': 'goal', 'own-goal': 'goal' };
+function teamOf(p, home, away, comp) {
+  const n = p.team?.displayName || '';
+  for (const c of comp.competitors || []) {
+    if ([c.team?.displayName, c.team?.name, c.team?.shortDisplayName].includes(n)) return c.homeAway === 'home' ? 'home' : 'away';
+  }
+  return '';
+}
+function soccerCentre(sum, comp, home, away) {
+  const com = (sum.commentary || []).filter((c) => c.play);
+  // attack momentum per minute: shots, corners and actions deep in the opponent's half push the bar
+  const W = { goal: 12, 'shot-on-target': 6, 'shot-off-target': 4, 'shot-blocked': 3, 'corner-awarded': 3, offside: 1.5, foul: 0.6 };
+  const raw = {};
+  const shots = [];
+  for (const c of com) {
+    const p = c.play, side = teamOf(p, home, away, comp);
+    if (!side) continue;
+    const min = Math.max(1, Math.round((p.clock?.value ?? c.time?.value ?? 0) / 60));
+    const type = p.type?.type || '';
+    const depth = p.fieldPositionX != null ? Math.max(0, (p.fieldPositionX - 50) / 50) : 0;
+    let w = (W[type] || 0) + depth * 2;
+    if (type === 'foul') w = depth * 1.5; // a foul is won by the other side: count it for the attacker only when deep
+    if (w) { raw[min] = raw[min] || { home: 0, away: 0 }; raw[min][side] += w; }
+    if (SHOT[type] && p.fieldPositionX != null) {
+      shots.push({ side, kind: SHOT[type], x: p.fieldPositionX, y: p.fieldPositionY ?? 50, min: c.time?.displayValue || p.clock?.displayValue || '',
+        who: (p.participants?.[0]?.athlete?.displayName || '').split(' ').pop() });
+    }
+  }
+  const last = Math.max(0, ...Object.keys(raw).map(Number));
+  const momentum = [];
+  for (let m = 1; m <= Math.max(last, 1); m++) {
+    let h = 0, a = 0;
+    for (let k = m - 2; k <= m; k++) { h += raw[k]?.home || 0; a += raw[k]?.away || 0; } // 3-minute rolling window
+    momentum.push({ min: m, v: Math.round((h - a) * 10) / 10 });
+  }
+  // lineups: lines from the formation, players placed left→right by their position code
+  const lineRank = (ab) => /^G/.test(ab) ? 0 : /^(CD|LB|RB|LWB|RWB|D|SW|CB)/.test(ab) ? 1 : /^DM/.test(ab) ? 2 : /^(CM|LM|RM|M\b|M$)/.test(ab) ? 3 : /^(AM|CAM)/.test(ab) ? 4 : 5;
+  const lat = (ab) => /(^L|-L$)/.test(ab) ? 0 : /(^R|-R$)/.test(ab) ? 2 : 1;
+  const lineups = {};
+  for (const r of sum.rosters || []) {
+    const side = r.homeAway === 'home' ? 'home' : 'away';
+    const st = (pl) => Object.fromEntries((pl.stats || []).map((x) => [x.name, Number(x.displayValue) || 0]));
+    const P = (pl) => { const s = st(pl); return { n: pl.jersey || '', name: pl.athlete?.lastName || pl.athlete?.shortName || '', pos: pl.position?.abbreviation || '',
+      g: s.totalGoals || 0, a: s.goalAssists || 0, yc: s.yellowCards || 0, rc: s.redCards || 0, out: !!pl.subbedOut, in: !!pl.subbedIn }; };
+    const starters = (r.roster || []).filter((x) => x.starter).map(P);
+    if (starters.length < 11) continue;
+    const counts = String(r.formation || '').split('-').map(Number).filter(Boolean);
+    starters.sort((x, y) => lineRank(x.pos) - lineRank(y.pos) || (Number(x.n) - Number(y.n)));
+    const gk = starters.filter((x) => lineRank(x.pos) === 0).slice(0, 1);
+    const outfield = starters.filter((x) => !gk.includes(x));
+    const lines = [gk];
+    let i = 0;
+    for (const c of (counts.reduce((a, b) => a + b, 0) === outfield.length ? counts : [outfield.length])) { lines.push(outfield.slice(i, i + c).sort((x, y) => lat(x.pos) - lat(y.pos))); i += c; }
+    lineups[side] = { formation: r.formation || '', lines, subsIn: (r.roster || []).filter((x) => x.subbedIn).map(P) };
+  }
+  // league table rows around both teams
+  let table = [];
+  const ents = sum.standings?.groups?.[0]?.standings?.entries || [];
+  if (ents.length) {
+    const rows = ents.map((e) => { const s = Object.fromEntries((e.stats || []).map((x) => [x.name, x.displayValue])); return { id: String(e.id), team: e.team, pos: Number(s.rank) || 0, gp: s.gamesPlayed, gd: s.pointDifferential, pts: s.points }; })
+      .sort((a, b) => a.pos - b.pos).map((r, k) => ({ ...r, pos: r.pos || k + 1 }));
+    const idx = rows.map((r, k) => ([String(home.id), String(away.id)].includes(r.id) ? k : -1)).filter((k) => k >= 0);
+    const keep = new Set();
+    for (const k of idx) for (let d = -1; d <= 1; d++) if (rows[k + d]) keep.add(k + d);
+    for (let k = 0; keep.size < 7 && k < rows.length; k++) keep.add(k);
+    table = [...keep].sort((a, b) => a - b).slice(0, 7).map((k) => ({ ...rows[k], hl: [String(home.id), String(away.id)].includes(rows[k].id) }));
+  }
+  const form = {};
+  for (const f of sum.lastFiveGames || []) {
+    const side = String(f.team?.id) === String(home.id) ? 'home' : 'away';
+    form[side] = (f.events || []).slice(0, 5).map((e) => e.gameResult || '').join('');
+  }
+  return { momentum, shots, lineups, table, tableName: sum.standings?.header || '', form };
+}
+
 async function game(league, eventId) {
   const L = LEAGUES[league];
   let sb = await scoreboard(league);
@@ -495,7 +605,7 @@ async function game(league, eventId) {
   const home = team(comp.competitors.find((c) => c.homeAway === 'home'));
   const away = team(comp.competitors.find((c) => c.homeAway === 'away'));
   const teamsById = { [home.id]: home.abbr, [away.id]: away.abbr };
-  const sum = ev.status?.type?.state === 'pre' ? {} : await summary(league, eventId);
+  const sum = ev.status?.type?.state === 'pre' && !L.soccer ? {} : await summary(league, eventId);
   const sit = comp.situation || {};
   if (L.soccer) {
     // football: ESPN's scoreboard has no half-by-half linescores, so build them from the goals,
@@ -541,6 +651,8 @@ async function game(league, eventId) {
     field: L.sport === 'nfl' && ev.status?.type?.state === 'in' ? field(sit, home, away, teamsById) : null,
     timeline: L.soccer ? timeline(comp, teamsById) : [],
     tracker: L.soccer && sum.commentary ? tracker(sum, comp, home, away) : [],
+    centre: L.soccer ? soccerCentre(sum, comp, home, away) : null,
+    statsAll: L.soccer ? teamStatsAll(sum, home, away) : [],
     box: box(sum, L, home, away),
     shots: shots(sum, teamsById, L),
     run: L.soccer ? null : run(sum, home, away),
@@ -831,14 +943,151 @@ function preView(g) {
     <div class="when">${f('America/New_York')} ET · ${f('Europe/London')} UK${g.broadcast ? ' · ' + esc(g.broadcast) : ''}</div></div>`;
 }
 
+// ---------------- football match centre (rotating views) ----------------
+function cdist(a, b) { const f = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)); const x = f(a), y = f(b); return Math.hypot(x[0] - y[0], x[1] - y[1], x[2] - y[2]); }
+function pair(g) { const hc = vivid(g.home); let ac = vivid(g.away); if (cdist(hc, ac) < 120) ac = cdist(hc, '#FFFFFF') > 160 ? '#F2F4FA' : '#FF8A3D'; return [hc, ac]; }
+const MC_LIVE = ['tracker', 'momentum', 'tracker', 'shots', 'tracker', 'lineups', 'stats', 'table'];
+const MC_BREAK = ['stats', 'momentum', 'shots', 'lineups', 'table'];
+const MC_PRE = ['countdown', 'lineups', 'countdown', 'form'];
+const MC_NAMES = { tracker: 'Live tracker', momentum: 'Momentum', shots: 'Shot map', lineups: 'Line-ups', stats: 'Stats', table: 'Table', countdown: 'Kick-off', form: 'Form' };
+function mcView(g, list) {
+  const have = (v) => v === 'lineups' ? g.centre?.lineups?.home && g.centre?.lineups?.away : v === 'table' ? g.centre?.table?.length : v === 'shots' ? g.centre?.shots?.length : v === 'momentum' ? g.centre?.momentum?.length > 3 : v === 'stats' ? g.statsAll?.length : v === 'form' ? g.centre?.form?.home || g.centre?.form?.away : true;
+  const ok = list.filter(have);
+  if (q.get('view') && ok.includes(q.get('view'))) return q.get('view'); // ?view=shots etc. pins one view (previews)
+  return ok[Math.floor(Date.now() / 12000) % ok.length] || list[0];
+}
+function mcTabs(list, cur) {
+  const uniq = [...new Set(list)];
+  return `<div class="mc-tabs">${uniq.map((v) => `<span class="${v === cur ? 'on' : ''}">${MC_NAMES[v]}</span>`).join('')}</div>`;
+}
+function pitchSVG(W, H) {
+  return `<defs><linearGradient id="grass2" x1="0" x2="1"><stop offset="0" stop-color="#16733A"/><stop offset="1" stop-color="#0F5A2C"/></linearGradient>
+    <pattern id="mow2" width="${W / 10}" height="${H}" patternUnits="userSpaceOnUse"><rect width="${W / 20}" height="${H}" fill="#ffffff0a"/></pattern></defs>
+    <rect width="${W}" height="${H}" rx="12" fill="url(#grass2)"/><rect width="${W}" height="${H}" fill="url(#mow2)"/>
+    <g stroke="#ffffff70" stroke-width="2.5" fill="none"><rect x="8" y="8" width="${W - 16}" height="${H - 16}" rx="4"/><line x1="${W / 2}" y1="8" x2="${W / 2}" y2="${H - 8}"/><circle cx="${W / 2}" cy="${H / 2}" r="${H * 0.16}"/>
+    <rect x="8" y="${H * 0.21}" width="${W * 0.14}" height="${H * 0.58}"/><rect x="${W - 8 - W * 0.14}" y="${H * 0.21}" width="${W * 0.14}" height="${H * 0.58}"/>
+    <rect x="8" y="${H * 0.37}" width="${W * 0.05}" height="${H * 0.26}"/><rect x="${W - 8 - W * 0.05}" y="${H * 0.37}" width="${W * 0.05}" height="${H * 0.26}"/></g>`;
+}
+function momentumView(g) {
+  const m = g.centre.momentum, W = 860, H = 230, mid = H / 2, [hc, ac] = pair(g);
+  const maxMin = Math.max(90, m.length), bw = (W - 40) / maxMin, peak = Math.max(6, ...m.map((x) => Math.abs(x.v)));
+  const bars = m.map((x) => { const h = Math.abs(x.v) / peak * (mid - 16); const up = x.v > 0;
+    return `<rect x="${20 + (x.min - 1) * bw}" y="${up ? mid - h : mid}" width="${Math.max(2, bw - 1.5)}" height="${Math.max(1, h)}" rx="2" fill="${up ? hc : ac}" opacity="${0.55 + 0.45 * Math.min(1, Math.abs(x.v) / peak)}"/>`; }).join('');
+  const marks = (g.timeline || []).filter((e) => e.kind !== 'other').map((e) => { const x = 20 + (Math.min(maxMin, e.min) - 0.5) * bw, top = e.team === g.home.abbr;
+    return e.kind === 'goal' ? `<g transform="translate(${x} ${top ? 14 : H - 14})"><circle r="11" fill="#fff"/><text y="5" text-anchor="middle" font-size="13">⚽</text></g>` : `<rect x="${x - 5}" y="${top ? 6 : H - 22}" width="10" height="15" rx="2" fill="${e.kind === 'red' ? '#FF2D46' : '#FFD23F'}"/>`; }).join('');
+  const tot = m.reduce((a, x) => a + x.v, 0), last10 = m.slice(-10).reduce((a, x) => a + x.v, 0);
+  const who = Math.abs(last10) < 3 ? 'Even contest in the last 10 minutes' : `${(last10 > 0 ? g.home : g.away).name.toUpperCase()} ON TOP in the last 10 minutes`;
+  return `<svg width="${W}" height="${H + 26}" viewBox="0 0 ${W} ${H + 26}">
+    <rect x="20" y="0" width="${W - 40}" height="${H}" rx="10" fill="#ffffff06"/>
+    <line x1="20" y1="${mid}" x2="${W - 20}" y2="${mid}" stroke="#ffffff40" stroke-width="2"/>
+    <line x1="${20 + 45 * bw}" y1="6" x2="${20 + 45 * bw}" y2="${H - 6}" stroke="#ffffff25" stroke-dasharray="4 5"/>
+    ${bars}${marks}
+    <text x="${W - 26}" y="24" text-anchor="end" font-size="16" font-weight="900" fill="${hc}" font-family="Inter">▲ ${esc(g.home.abbr)} PRESSURE</text>
+    <text x="${W - 26}" y="${H - 12}" text-anchor="end" font-size="16" font-weight="900" fill="${ac}" font-family="Inter">▼ ${esc(g.away.abbr)} PRESSURE</text>
+    <text x="20" y="${H + 22}" font-size="13" fill="#ffffff66" font-family="Inter" font-weight="700">1'</text>
+    <text x="${20 + 45 * bw}" y="${H + 22}" text-anchor="middle" font-size="13" fill="#ffffff66" font-family="Inter" font-weight="700">HT</text>
+    <text x="${W - 20}" y="${H + 22}" text-anchor="end" font-size="13" fill="#ffffff66" font-family="Inter" font-weight="700">${maxMin}'</text></svg>
+    <div class="sub">${esc(who)} · attack momentum from shots, corners and pressure in the final third</div>`;
+}
+function shotsView(g) {
+  const W = 860, H = 310, [hc, ac] = pair(g);
+  // home attacks right, away attacks left
+  const pos = (s) => { const x = s.side === 'home' ? s.x : 100 - s.x, y = s.side === 'home' ? s.y : 100 - s.y; return [8 + x / 100 * (W - 16), 8 + y / 100 * (H - 16)]; };
+  const dot = (s) => { const [x, y] = pos(s), c = s.side === 'home' ? hc : ac;
+    if (s.kind === 'goal') return `<g><circle cx="${x}" cy="${y}" r="15" fill="#fff" stroke="${c}" stroke-width="4"/><text x="${x}" y="${y + 6}" text-anchor="middle" font-size="16">⚽</text><text x="${x}" y="${y - 22}" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="Inter">${esc(s.min)} ${esc(s.who)}</text></g>`;
+    if (s.kind === 'on') return `<circle cx="${x}" cy="${y}" r="10" fill="${c}" stroke="#fff" stroke-width="2.5"/>`;
+    if (s.kind === 'blocked') return `<g stroke="${c}" stroke-width="4" stroke-linecap="round"><line x1="${x - 7}" y1="${y - 7}" x2="${x + 7}" y2="${y + 7}"/><line x1="${x + 7}" y1="${y - 7}" x2="${x - 7}" y2="${y + 7}"/></g>`;
+    return `<circle cx="${x}" cy="${y}" r="9" fill="none" stroke="${c}" stroke-width="3.5"/>`; };
+  const sh = g.centre.shots, cnt = (side, k) => sh.filter((s) => s.side === side && (!k || s.kind === k || (k === 'on' && s.kind === 'goal'))).length;
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${pitchSVG(W, H)}${sh.filter((s) => s.kind !== 'goal').map(dot).join('')}${sh.filter((s) => s.kind === 'goal').map(dot).join('')}
+    <text x="24" y="34" font-size="18" font-weight="900" fill="#fff" font-family="Inter">${esc(g.away.abbr)} ${cnt('away')} shots · ${cnt('away', 'on')} on target</text>
+    <text x="${W - 24}" y="34" text-anchor="end" font-size="18" font-weight="900" fill="#fff" font-family="Inter">${esc(g.home.abbr)} ${cnt('home')} shots · ${cnt('home', 'on')} on target</text></svg>
+    <div class="sub">● on target &nbsp; ○ off target &nbsp; ✕ blocked &nbsp; ⚽ goal · ${esc(g.home.abbr)} attack → , ${esc(g.away.abbr)} attack ←</div>`;
+}
+function lineupsView(g) {
+  const W = 860, H = 320, L = g.centre.lineups, [hc, ac] = pair(g);
+  const team = (lu, side) => {
+    const n = lu.lines.length, c = side === 'home' ? hc : ac;
+    return lu.lines.map((line, li) => line.map((p, k) => {
+      const fx = (li + 0.5) / n * 0.5, x = side === 'home' ? 8 + fx * (W - 16) : W - 8 - fx * (W - 16);
+      const fy = (k + 1) / (line.length + 1), y = side === 'home' ? 8 + fy * (H - 16) : H - 8 - fy * (H - 16);
+      const badges = `${p.g ? `<text x="${x + 16}" y="${y - 12}" font-size="14">${'⚽'.repeat(Math.min(3, p.g))}</text>` : ''}${p.rc ? `<rect x="${x - 26}" y="${y - 24}" width="9" height="13" rx="1.5" fill="#FF2D46"/>` : p.yc ? `<rect x="${x - 26}" y="${y - 24}" width="9" height="13" rx="1.5" fill="#FFD23F"/>` : ''}${p.out ? `<text x="${x + 18}" y="${y + 8}" font-size="15" font-weight="900" fill="#FF6B78" font-family="Inter">▼</text>` : ''}`;
+      return `<g><circle cx="${x}" cy="${y}" r="17" fill="${c}" stroke="#fff" stroke-width="2.5"/><text x="${x}" y="${y + 6}" text-anchor="middle" font-size="16" font-weight="900" fill="${lum(c) > 0.6 ? '#0A0E1E' : '#fff'}" font-family="Inter">${esc(p.n)}</text>
+        <text x="${x}" y="${y + 36}" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="Inter" paint-order="stroke" stroke="#0a3a1c" stroke-width="4">${esc(p.name.length > 12 ? p.name.slice(0, 11) + '.' : p.name)}</text>${badges}</g>`;
+    }).join('')).join('');
+  };
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${pitchSVG(W, H)}${team(L.home, 'home')}${team(L.away, 'away')}</svg>
+    <div class="sub">${esc(g.home.name)} ${esc(L.home.formation)} &nbsp;·&nbsp; ${esc(g.away.name)} ${esc(L.away.formation)}${L.home.subsIn.length + L.away.subsIn.length ? ` &nbsp;·&nbsp; ${L.home.subsIn.length + L.away.subsIn.length} subs on` : ''}</div>`;
+}
+function statsView(g) {
+  const [hc, ac] = pair(g);
+  const rows = g.statsAll.slice(0, 10).map((r) => { const t = Math.max(r.h + r.a, 0.0001);
+    return `<div class="row"><div class="k">${esc(r.label)}</div><span class="v">${esc(r.home)}</span><div class="b"><i style="width:${r.h / t * 100}%;background:${hc}"></i><i style="width:${r.a / t * 100}%;background:${ac}"></i></div><span class="v r">${esc(r.away)}</span></div>`; }).join('');
+  return `<div style="display:flex;justify-content:space-between;width:100%;font-size:18px;font-weight:900;margin-bottom:2px"><span style="color:${hc}">● ${esc(g.home.name)}</span><span style="color:${ac}">${esc(g.away.name)} ●</span></div><div class="mstat">${rows}</div>
+    <style>.mc .lg{width:46px;height:46px}.mc .lg span{font-size:14px}</style>`;
+}
+function tableView(g) {
+  const t = g.centre.table;
+  return `<div style="font-size:16px;font-weight:800;letter-spacing:2px;color:var(--mute);margin-bottom:6px;text-transform:uppercase">${esc(g.centre.tableName || g.label + ' table')} · live</div>
+    <table class="ltab"><tr><th>#</th><th style="text-align:left">TEAM</th><th>P</th><th>GD</th><th>PTS</th></tr>${t.slice(0, 7).map((r) => `<tr class="${r.hl ? 'hl' : ''}"><td class="n">${r.pos}</td><td class="t">${esc(r.team)}</td><td class="n">${esc(r.gp)}</td><td class="n">${esc(r.gd)}</td><td class="n">${esc(r.pts)}</td></tr>`).join('')}</table>`;
+}
+function formView(g) {
+  const f = g.centre.form, col = { W: '#3DDC84', D: '#FFD23F', L: '#FF5C6C' };
+  const row = (t, s) => `<div style="display:flex;align-items:center;gap:18px;margin:14px 0">${logo(t)}<b style="font-size:26px;width:260px">${esc(t.name)}</b>${(s || '').split('').map((r) => `<span class="formb" style="background:${col[r] || '#888'}">${r}</span>`).join('') || '<span style="color:var(--mute)">–</span>'}</div>`;
+  return `<div style="font-size:16px;font-weight:800;letter-spacing:2px;color:var(--mute);margin-bottom:10px">LAST FIVE GAMES (MOST RECENT FIRST)</div>${row(g.home, f.home)}${row(g.away, f.away)}`;
+}
+function matchCentre(g, ph) {
+  const list = ph === 'pre' ? MC_PRE : ph === 'live' ? MC_LIVE : MC_BREAK;
+  const v = mcView(g, list);
+  if (v === 'countdown') return preView(g) + mcTabs(list.filter((x) => mcView(g, [x]) === x), v);
+  if (v === 'tracker') return pitch(g) + mcTabs(MC_LIVE.filter((x) => mcView(g, [x]) === x), v);
+  const body = v === 'momentum' ? momentumView(g) : v === 'shots' ? shotsView(g) : v === 'lineups' ? lineupsView(g) : v === 'stats' ? statsView(g) : v === 'table' ? tableView(g) : formView(g);
+  return `<div class="mc">${body}</div>${mcTabs(list.filter((x) => mcView(g, [x]) === x), v)}`;
+}
+
+// ---------------- US sports: rotating views during the game ----------------
+const US_NAMES = { main: { nba: 'Shot chart', nfl: 'Field', nhl: 'Rink', mlb: 'At bat' }, flow: 'Lead tracker', stats: 'Team stats', box: 'Leaders', wp: 'Win probability' };
+function usLeadView(g) {
+  const f = g.flow, W = 860, H = 280, mid = H / 2, [hc, ac] = pair(g);
+  const peak = Math.max(5, ...f.map((v) => Math.abs(v))), n = f.length - 1;
+  const pts = f.map((v, i) => [20 + i / Math.max(1, n) * (W - 40), mid - v / peak * (mid - 24)]);
+  const line = pts.map((p) => p.join(',')).join(' ');
+  const area = (sign) => `<clipPath id="c${sign}"><rect x="0" y="${sign > 0 ? 0 : mid}" width="${W}" height="${mid}"/></clipPath><polygon clip-path="url(#c${sign})" points="20,${mid} ${line} ${W - 20},${mid}" fill="${sign > 0 ? hc : ac}" opacity=".55"/>`;
+  const maxH = Math.max(0, ...f), maxA = Math.max(0, ...f.map((v) => -v));
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect x="20" y="0" width="${W - 40}" height="${H}" rx="10" fill="#ffffff06"/>${area(1)}${area(-1)}
+    <polyline points="${line}" fill="none" stroke="#fff" stroke-width="2.5"/><line x1="20" y1="${mid}" x2="${W - 20}" y2="${mid}" stroke="#ffffff55" stroke-width="2"/>
+    <text x="30" y="26" font-size="17" font-weight="900" fill="${hc}" font-family="Inter">▲ ${esc(g.home.abbr)} · biggest lead ${maxH}</text>
+    <text x="30" y="${H - 12}" font-size="17" font-weight="900" fill="${ac}" font-family="Inter">▼ ${esc(g.away.abbr)} · biggest lead ${maxA}</text></svg>
+    <div class="sub">Score margin after every scoring play · ${f.filter((v, i) => i && Math.sign(v) && Math.sign(v) !== Math.sign(f[i - 1] || 0)).length} lead changes</div>`;
+}
+function usWpView(g) {
+  const sr = g.winProb.series, W = 860, H = 280, [hc, ac] = pair(g);
+  const pts = sr.map((v, i) => `${20 + i / Math.max(1, sr.length - 1) * (W - 40)},${H - 10 - v / 100 * (H - 20)}`).join(' ');
+  const last = sr[sr.length - 1];
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect x="20" y="0" width="${W - 40}" height="${H}" rx="10" fill="#ffffff06"/>
+    <line x1="20" y1="${H / 2}" x2="${W - 20}" y2="${H / 2}" stroke="#ffffff40" stroke-dasharray="5 6"/>
+    <polyline points="${pts}" fill="none" stroke="${last >= 50 ? hc : ac}" stroke-width="4" stroke-linejoin="round"/>
+    <text x="30" y="28" font-size="17" font-weight="900" fill="${hc}" font-family="Inter">${esc(g.home.abbr)} ${Math.round(last)}%</text>
+    <text x="30" y="${H - 16}" font-size="17" font-weight="900" fill="${ac}" font-family="Inter">${esc(g.away.abbr)} ${Math.round(100 - last)}%</text></svg>
+    <div class="sub">ESPN win probability through the game</div>`;
+}
+function usCentre(g, main, brk) {
+  const list = (brk ? ['main', 'box', 'flow', 'wp'] : ['main', 'flow', 'main', 'stats', 'main', 'box', 'wp']).filter((v) => v === 'main' || (v === 'flow' && g.flow && g.flow.length > 3) || (v === 'stats' && g.stats?.length) || (v === 'box' && g.box) || (v === 'wp' && g.winProb?.series?.length > 3));
+  const v = (q.get('view') && list.includes(q.get('view'))) ? q.get('view') : list[Math.floor(Date.now() / 12000) % list.length];
+  const names = [...new Set(list)];
+  const tabs = names.length > 1 ? `<div class="mc-tabs">${names.map((x) => `<span class="${x === v ? 'on' : ''}">${x === 'main' ? (brk ? 'Team stats' : US_NAMES.main[g.sport] || 'Live') : US_NAMES[x]}</span>`).join('')}</div>` : '';
+  if (v === 'main') return main + tabs;
+  const body = v === 'flow' ? usLeadView(g) : v === 'wp' ? usWpView(g) : v === 'stats' ? compare(g) : boxView(g);
+  return (v === 'stats' || v === 'box' ? body : `<div class="mc">${body}</div>`) + tabs;
+}
+
 function stage(g, ph) {
+  if (g.soccer && !TRK && g.centre) return matchCentre(g, ph);
   if (ph === 'pre') return preView(g);
-  if (ph === 'break' || ph === 'final') return (slide % 2 && g.box) ? boxView(g) : compare(g);
+  if (ph === 'break' || ph === 'final') return g.soccer ? ((slide % 2 && g.box) ? boxView(g) : compare(g)) : usCentre(g, compare(g), true);
   if (g.soccer) return TRK ? '<div id="trkHole" style="width:100%;height:100%"></div>' : pitch(g);
-  if (g.sport === 'nfl') return field(g);
-  if (g.sport === 'nhl') return rink(g);
-  if (g.sport === 'mlb') return diamond(g);
-  return court(g);
+  const main = g.sport === 'nfl' ? field(g) : g.sport === 'nhl' ? rink(g) : g.sport === 'mlb' ? diamond(g) : court(g);
+  return usCentre(g, main);
 }
 
 function wpBar(g) {

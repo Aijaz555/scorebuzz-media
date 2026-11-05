@@ -185,6 +185,20 @@ const STAT_PICK = {
 const num = (v) => { const n = parseFloat(String(v).replace('%', '')); return Number.isFinite(n) ? n : null; };
 
 // Team stat comparison rows: [{ label, home, away, h, a }] (h/a numeric for the bars)
+// football: the full stat list for the match-centre stats view
+function teamStatsAll(sum, home, away) {
+  const teams = sum.boxscore?.teams || [];
+  const side = (id) => teams.find((t) => String(t.team?.id) === String(id))?.statistics || [];
+  const hs = side(home.id), as = side(away.id);
+  const want = [['possessionPct', 'Possession %'], ['totalShots', 'Shots'], ['shotsOnTarget', 'On target'], ['wonCorners', 'Corners'], ['totalPasses', 'Passes'], ['passPct', 'Pass accuracy'], ['totalCrosses', 'Crosses'], ['foulsCommitted', 'Fouls'], ['offsides', 'Offsides'], ['yellowCards', 'Yellow cards'], ['redCards', 'Red cards'], ['saves', 'Saves']];
+  return want.map(([n, label]) => {
+    const h = hs.find((x) => x.name === n), a = as.find((x) => x.name === n);
+    if (!h || !a) return null;
+    const pct = n === 'passPct';
+    const f = (x) => (pct ? `${Math.round(parseFloat(x.displayValue) * 100)}%` : x.displayValue);
+    return { label, home: f(h), away: f(a), h: num(h.displayValue) ?? 0, a: num(a.displayValue) ?? 0 };
+  }).filter(Boolean);
+}
 function teamStats(sum, L, home, away) {
   const teams = sum.boxscore?.teams || [];
   const side = (id) => teams.find((t) => String(t.team?.id) === String(id))?.statistics || [];
@@ -302,6 +316,82 @@ function statusText(st, L) {
   return (s.shortDetail || `${st.period} ${st.displayClock}`).toUpperCase();
 }
 
+// ---------- football match centre: momentum, shot map, lineups, table, form ----------
+const SHOT = { 'shot-on-target': 'on', 'shot-off-target': 'off', 'shot-blocked': 'blocked', goal: 'goal', 'penalty---scored': 'goal', 'own-goal': 'goal' };
+function teamOf(p, home, away, comp) {
+  const n = p.team?.displayName || '';
+  for (const c of comp.competitors || []) {
+    if ([c.team?.displayName, c.team?.name, c.team?.shortDisplayName].includes(n)) return c.homeAway === 'home' ? 'home' : 'away';
+  }
+  return '';
+}
+function soccerCentre(sum, comp, home, away) {
+  const com = (sum.commentary || []).filter((c) => c.play);
+  // attack momentum per minute: shots, corners and actions deep in the opponent's half push the bar
+  const W = { goal: 12, 'shot-on-target': 6, 'shot-off-target': 4, 'shot-blocked': 3, 'corner-awarded': 3, offside: 1.5, foul: 0.6 };
+  const raw = {};
+  const shots = [];
+  for (const c of com) {
+    const p = c.play, side = teamOf(p, home, away, comp);
+    if (!side) continue;
+    const min = Math.max(1, Math.round((p.clock?.value ?? c.time?.value ?? 0) / 60));
+    const type = p.type?.type || '';
+    const depth = p.fieldPositionX != null ? Math.max(0, (p.fieldPositionX - 50) / 50) : 0;
+    let w = (W[type] || 0) + depth * 2;
+    if (type === 'foul') w = depth * 1.5; // a foul is won by the other side: count it for the attacker only when deep
+    if (w) { raw[min] = raw[min] || { home: 0, away: 0 }; raw[min][side] += w; }
+    if (SHOT[type] && p.fieldPositionX != null) {
+      shots.push({ side, kind: SHOT[type], x: p.fieldPositionX, y: p.fieldPositionY ?? 50, min: c.time?.displayValue || p.clock?.displayValue || '',
+        who: (p.participants?.[0]?.athlete?.displayName || '').split(' ').pop() });
+    }
+  }
+  const last = Math.max(0, ...Object.keys(raw).map(Number));
+  const momentum = [];
+  for (let m = 1; m <= Math.max(last, 1); m++) {
+    let h = 0, a = 0;
+    for (let k = m - 2; k <= m; k++) { h += raw[k]?.home || 0; a += raw[k]?.away || 0; } // 3-minute rolling window
+    momentum.push({ min: m, v: Math.round((h - a) * 10) / 10 });
+  }
+  // lineups: lines from the formation, players placed left→right by their position code
+  const lineRank = (ab) => /^G/.test(ab) ? 0 : /^(CD|LB|RB|LWB|RWB|D|SW|CB)/.test(ab) ? 1 : /^DM/.test(ab) ? 2 : /^(CM|LM|RM|M\b|M$)/.test(ab) ? 3 : /^(AM|CAM)/.test(ab) ? 4 : 5;
+  const lat = (ab) => /(^L|-L$)/.test(ab) ? 0 : /(^R|-R$)/.test(ab) ? 2 : 1;
+  const lineups = {};
+  for (const r of sum.rosters || []) {
+    const side = r.homeAway === 'home' ? 'home' : 'away';
+    const st = (pl) => Object.fromEntries((pl.stats || []).map((x) => [x.name, Number(x.displayValue) || 0]));
+    const P = (pl) => { const s = st(pl); return { n: pl.jersey || '', name: pl.athlete?.lastName || pl.athlete?.shortName || '', pos: pl.position?.abbreviation || '',
+      g: s.totalGoals || 0, a: s.goalAssists || 0, yc: s.yellowCards || 0, rc: s.redCards || 0, out: !!pl.subbedOut, in: !!pl.subbedIn }; };
+    const starters = (r.roster || []).filter((x) => x.starter).map(P);
+    if (starters.length < 11) continue;
+    const counts = String(r.formation || '').split('-').map(Number).filter(Boolean);
+    starters.sort((x, y) => lineRank(x.pos) - lineRank(y.pos) || (Number(x.n) - Number(y.n)));
+    const gk = starters.filter((x) => lineRank(x.pos) === 0).slice(0, 1);
+    const outfield = starters.filter((x) => !gk.includes(x));
+    const lines = [gk];
+    let i = 0;
+    for (const c of (counts.reduce((a, b) => a + b, 0) === outfield.length ? counts : [outfield.length])) { lines.push(outfield.slice(i, i + c).sort((x, y) => lat(x.pos) - lat(y.pos))); i += c; }
+    lineups[side] = { formation: r.formation || '', lines, subsIn: (r.roster || []).filter((x) => x.subbedIn).map(P) };
+  }
+  // league table rows around both teams
+  let table = [];
+  const ents = sum.standings?.groups?.[0]?.standings?.entries || [];
+  if (ents.length) {
+    const rows = ents.map((e) => { const s = Object.fromEntries((e.stats || []).map((x) => [x.name, x.displayValue])); return { id: String(e.id), team: e.team, pos: Number(s.rank) || 0, gp: s.gamesPlayed, gd: s.pointDifferential, pts: s.points }; })
+      .sort((a, b) => a.pos - b.pos).map((r, k) => ({ ...r, pos: r.pos || k + 1 }));
+    const idx = rows.map((r, k) => ([String(home.id), String(away.id)].includes(r.id) ? k : -1)).filter((k) => k >= 0);
+    const keep = new Set();
+    for (const k of idx) for (let d = -1; d <= 1; d++) if (rows[k + d]) keep.add(k + d);
+    for (let k = 0; keep.size < 7 && k < rows.length; k++) keep.add(k);
+    table = [...keep].sort((a, b) => a - b).slice(0, 7).map((k) => ({ ...rows[k], hl: [String(home.id), String(away.id)].includes(rows[k].id) }));
+  }
+  const form = {};
+  for (const f of sum.lastFiveGames || []) {
+    const side = String(f.team?.id) === String(home.id) ? 'home' : 'away';
+    form[side] = (f.events || []).slice(0, 5).map((e) => e.gameResult || '').join('');
+  }
+  return { momentum, shots, lineups, table, tableName: sum.standings?.header || '', form };
+}
+
 async function game(league, eventId) {
   const L = LEAGUES[league];
   let sb = await scoreboard(league);
@@ -324,7 +414,7 @@ async function game(league, eventId) {
   const home = team(comp.competitors.find((c) => c.homeAway === 'home'));
   const away = team(comp.competitors.find((c) => c.homeAway === 'away'));
   const teamsById = { [home.id]: home.abbr, [away.id]: away.abbr };
-  const sum = ev.status?.type?.state === 'pre' ? {} : await summary(league, eventId);
+  const sum = ev.status?.type?.state === 'pre' && !L.soccer ? {} : await summary(league, eventId);
   const sit = comp.situation || {};
   if (L.soccer) {
     // football: ESPN's scoreboard has no half-by-half linescores, so build them from the goals,
@@ -370,6 +460,8 @@ async function game(league, eventId) {
     field: L.sport === 'nfl' && ev.status?.type?.state === 'in' ? field(sit, home, away, teamsById) : null,
     timeline: L.soccer ? timeline(comp, teamsById) : [],
     tracker: L.soccer && sum.commentary ? tracker(sum, comp, home, away) : [],
+    centre: L.soccer ? soccerCentre(sum, comp, home, away) : null,
+    statsAll: L.soccer ? teamStatsAll(sum, home, away) : [],
     box: box(sum, L, home, away),
     shots: shots(sum, teamsById, L),
     run: L.soccer ? null : run(sum, home, away),
