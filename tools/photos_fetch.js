@@ -12,7 +12,7 @@ const UA = 'ScoreBuzzMedia/1.0 (https://scorebuzz.net; stadium photos with attri
 const API = 'https://commons.wikimedia.org/w/api.php';
 const OK_LIC = /^(cc0|public domain|pd\b|pd-|cc[- ]by(-sa)?[- ]\d(\.\d)?)/i;
 const BAD_LIC = /\bnc\b|\bnd\b|non-?commercial|no ?deriv/i;
-const BAD_TITLE = /logo|crest|badge|map|plan|diagram|seat(ing)?[ _-]?chart|ticket|svg|kit|shirt|jersey|mascot|player|portrait|statue|celebrat|fans?\b|team photo|squad|interview|press conference|construction|demolition|model|render/i;
+const BAD_TITLE = /logo|crest|badge|map|plan|diagram|seat(ing)?[ _-]?chart|ticket|svg|kit|shirt|jersey|mascot|player|portrait|statue|celebrat|fans?\b|team photo|squad|interview|press conference|construction|demolition|model|render|crowd|supporter|ultras|tifo|mural|graffiti|sign\b|plaque|gate|entrance|parking|car park|bus\b|church|scaffold|river|skyline|cityscape|street|road|night|concert|protest|police|soldier|military|ceremony|anthem|warm.?up|training|match|game\b|vs\.?\b| v /i;
 const strip = (h) => String(h || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 
 async function api(params) {
