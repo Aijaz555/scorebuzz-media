@@ -1,6 +1,12 @@
 # ScoreBuzz Facebook daily playbook
 
-Every day, publish 20–25 posts to the ScoreBuzz Facebook Page (Metricool brand `7677948`), each with an original branded image card.
+Every day, publish 20–25 posts to the ScoreBuzz Facebook Page (Metricool brand `7677948`): **image posts and Reels only**
+(owner's request, 5 Nov 2026: focus on images and Reels; no text-only or link posts).
+- **~15–17 image posts**, each an original branded card (below).
+- **~8–10 Reels**: the day's best vertical videos from `shorts/YYYY-MM-DD/` (results boards, big wins, records, upsets),
+  posted as Facebook Reels with a Facebook-style caption (not the YouTube title) and the designed `.thumb.jpg` as cover.
+- Alternate the two through the day (image, image, Reel, …) so the feed never runs 3+ of one kind in a row; put Reels in
+  the evening UK / US prime-time slots, when Reels reach is highest.
 
 ## Audience and mix
 - Audience: **US and UK sports fans**. Not South Asia. No cricket unless it is a huge global story.
@@ -36,7 +42,10 @@ Every day, publish 20–25 posts to the ScoreBuzz Facebook Page (Metricool brand
 5. Image URL: `https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/cards/YYYY-MM-DD/<id>.png` (the agent workspace proxy may return 403 for raw.githubusercontent.com; that is expected, Metricool can fetch it).
 
 ## Scheduling (Metricool `createScheduledPost`)
-- `blogId: "7677948"`, provider `facebook`, `facebookData: {"type":"POST"}`, `autoPublish: true`, the card URL in `media`, caption in `text`, link in `firstCommentText`, `publicationDate.timezone: "Asia/Karachi"`.
+- Reels: same as below but `facebookData: {"type":"REEL"}`, the Short's MP4 (commit-pinned raw URL) in `media`,
+  `videoThumbnailUrl` = its `.thumb.jpg`, caption in `text` (hook + question + 2–4 hashtags incl. #Reels), link in `firstCommentText`.
+  Count Reels toward the 20–25 Facebook total. The same video may also be a YouTube Short (that's fine).
+- Image posts: `blogId: "7677948"`, provider `facebook`, `facebookData: {"type":"POST"}`, `autoPublish: true`, the card URL in `media`, caption in `text`, link in `firstCommentText`, `publicationDate.timezone: "Asia/Karachi"`.
 - Confirm each response shows a `static.metricool.com` media URL (Metricool copied the image).
 - Before scheduling, call `getScheduledPosts` for the window and skip slots that already have a post. Count those existing posts toward the 20–25 target for the window, so the Page never gets more than ~25 posts in 24 hours.
 
