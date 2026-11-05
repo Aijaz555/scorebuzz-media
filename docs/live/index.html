@@ -138,7 +138,18 @@ footer{position:absolute;left:0;right:0;bottom:0;height:80px;background:#04060E;
 .fsub{flex:none;margin:0 20px}
 .err{position:absolute;inset:0;display:grid;place-items:center;font-size:36px;color:var(--mute)}
 </style></head>
-<body><script>(function(){function fit(){var s=Math.min(innerWidth/1920,innerHeight/1080);if(!s||Math.abs(s-1)<0.001){document.body.style.transform='';return;}document.body.style.transform='scale('+s+')';document.body.style.marginLeft=((innerWidth-1920*s)/2)+'px';document.body.style.marginTop=((innerHeight-1080*s)/2)+'px';}addEventListener('resize',fit);addEventListener('DOMContentLoaded',fit);fit();})();</script>
+<body><script>(function(){
+// Fit the 1920x1080 design to whatever window it is shown in.
+//   ?fit=contain (default: whole board visible, dark bars if the shape differs) | fill (stretch to exactly fill) | none
+//   ?size=1  shows the window size the streaming studio really uses (to debug cropping)
+var P=new URLSearchParams(location.search),mode=P.get('fit')||'contain';
+function fit(){var W=innerWidth,H=innerHeight,b=document.body,sx=W/1920,sy=H/1080;
+ b.style.marginLeft=b.style.marginTop='0px';
+ if(mode==='none'||!W||!H){b.style.transform='';}
+ else if(mode==='fill'){b.style.transform='scale('+sx+','+sy+')';}
+ else{var s=Math.min(sx,sy);b.style.transform='scale('+s+')';b.style.marginLeft=((W-1920*s)/2)+'px';b.style.marginTop=((H-1080*s)/2)+'px';}
+ var d=document.getElementById('__sz');if(P.has('size')){if(!d){d=document.createElement('div');d.id='__sz';d.style.cssText='position:fixed;left:0;top:0;z-index:99999;background:#ff0;color:#000;font:bold 28px sans-serif;padding:6px 12px';document.documentElement.appendChild(d);}d.textContent='window '+W+' x '+H+' · dpr '+devicePixelRatio;}}
+addEventListener('resize',fit);addEventListener('DOMContentLoaded',fit);addEventListener('load',fit);setInterval(fit,2000);fit();})();</script>
 <div class="bgfx"></div><div class="grid"></div>
 <header>
   <div class="logo">Score<b>Buzz</b></div>
