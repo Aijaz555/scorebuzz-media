@@ -1,0 +1,33 @@
+name: Stadium photos
+# Fetches freely licensed stadium photos from Wikimedia Commons for the venues in photos/wanted.json
+# (written by tools/photos_wanted.js) and commits them to photos/. Run it from the Actions tab or via the API.
+on:
+  workflow_dispatch:
+    inputs:
+      max:
+        description: Max venues to fetch this run
+        default: "400"
+permissions:
+  contents: write
+concurrency: photos
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node tools/photos_fetch.js
+        env:
+          MAX: ${{ inputs.max }}
+      - name: Commit photos
+        run: |
+          git config user.name "scorebuzz-bot"
+          git config user.email "scorebuzz-bot@users.noreply.github.com"
+          git add photos
+          git diff --cached --quiet && echo "nothing new" && exit 0
+          git commit -m "Stadium photos from Wikimedia Commons ($(git diff --cached --name-only | grep -c '\.jpg$') new)"
+          git pull --rebase
+          git push
