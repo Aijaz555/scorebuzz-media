@@ -5,7 +5,8 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#060914;--panel:rgba(16,22,46,.92);--panel2:#0C1128;--line:rgba(255,255,255,.08);--ink:#F4F6FC;--mute:#9AA3C7;--dim:#5B638C;--lime:#BEFF3C;--acc:#FF8A3D;--red:#FF2D46;--away:#3D7BFF;--home:#FF8A3D;--awayInk:#fff;--homeInk:#fff}
-body{width:1920px;height:1080px;overflow:hidden;background:var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Roboto,sans-serif;position:relative}
+html{overflow:hidden;background:var(--bg)}
+body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;background:var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Roboto,sans-serif;position:relative}
 .num{font-family:'Barlow Condensed',Inter,sans-serif;font-variant-numeric:tabular-nums}
 .bgfx{position:absolute;inset:0;background:radial-gradient(900px 600px at 0% 0%,color-mix(in srgb,var(--away) 28%,transparent),transparent 70%),radial-gradient(900px 600px at 100% 0%,color-mix(in srgb,var(--home) 28%,transparent),transparent 70%),radial-gradient(1200px 500px at 50% 120%,#1B2A6B55,transparent 70%)}
 .grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(#000,transparent 60%);opacity:.35}
@@ -137,7 +138,7 @@ footer{position:absolute;left:0;right:0;bottom:0;height:80px;background:#04060E;
 .fsub{flex:none;margin:0 20px}
 .err{position:absolute;inset:0;display:grid;place-items:center;font-size:36px;color:var(--mute)}
 </style></head>
-<body>
+<body><script>(function(){function fit(){var s=Math.min(innerWidth/1920,innerHeight/1080);if(!s||Math.abs(s-1)<0.001){document.body.style.transform='';return;}document.body.style.transform='scale('+s+')';document.body.style.marginLeft=((innerWidth-1920*s)/2)+'px';document.body.style.marginTop=((innerHeight-1080*s)/2)+'px';}addEventListener('resize',fit);addEventListener('DOMContentLoaded',fit);fit();})();</script>
 <div class="bgfx"></div><div class="grid"></div>
 <header>
   <div class="logo">Score<b>Buzz</b></div>
