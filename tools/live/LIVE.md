@@ -180,4 +180,5 @@ starting 30 min before kick-off and stopped when the game is over.
 - Planned durations are generous (NBA/NHL 3h15 after tip-off, NFL 4h, soccer 2h15) and the hourly run stops a
   stream once ESPN says the game is final; a stream that ended before the game did is restarted.
 - Music: every project has an `audioPlaylist` layer of original synthesised tracks (tools/music/live, built by
-  `python3 tools/make_live_music.py`), shuffled, looping, volume 3/10. No commercial music, ever.
+  `python3 tools/make_live_music.py`; 6 upbeat ones imported to the LiveReacting library), looping at volume 3/10,
+  a different order per project. Duplicated Slot projects inherit it. No commercial music, ever.
