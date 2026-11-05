@@ -175,10 +175,18 @@ starting 30 min before kick-off and stopped when the game is over.
   1. `stop` → livereacting_stop_stream. `cancel` → livereacting_cancel_schedules.
   2. Commit + push settings.json (attribution) BEFORE starting/scheduling, so the page shows the right game.
   3. `assign` → livereacting_update_project(title, description, duration {manual:false, planned: durationSec}),
-     then livereacting_schedule_stream([at]) or, when at = "now", livereacting_start_stream.
+     then, if the action has `music`, livereacting_set_playlist(projectId, music.layerId, music.files, loop: true,
+     volume: music.volume) — a freshly shuffled per-sport playlist — and finally livereacting_schedule_stream([at])
+     or, when at = "now", livereacting_start_stream.
      `restart` → update_project(duration) then start_stream.
 - Planned durations are generous (NBA/NHL 3h15 after tip-off, NFL 4h, soccer 2h15) and the hourly run stops a
   stream once ESPN says the game is final; a stream that ended before the game did is restarted.
-- Music: every project has an `audioPlaylist` layer of original synthesised tracks (tools/music/live, built by
+- Music per sport (settings.json `music`): Kevin MacLeod tracks from incompetech.com (CC BY 4.0, credited in every
+  description, which the planner adds) plus our own originals. Playlists: american_football (rock/epic), basketball
+  (funk/hip-hop), hockey (hard rock/electro), soccer (upbeat electronic/world), baseball (easy funk/acoustic),
+  14–22 tracks (~45–60 min) each, reshuffled for every game. Add a track: livereacting_import_from_url
+  (https://incompetech.com/music/royalty-free/mp3-royaltyfree/<Title>.mp3), then add title → file id to a playlist.
+  `music.layers` maps each project (main, 1–20) to its Music layer id; a new Slot needs its layer id added there.
+- Originals: every project has an `audioPlaylist` layer of original synthesised tracks (tools/music/live, built by
   `python3 tools/make_live_music.py`; 6 upbeat ones imported to the LiveReacting library), looping at volume 3/10,
   a different order per project. Duplicated Slot projects inherit it. No commercial music, ever.

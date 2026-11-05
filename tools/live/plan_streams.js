@@ -40,12 +40,24 @@ function hoursFor(league) {
   return cfg.hours[league] ?? (feed.LEAGUES[league]?.soccer ? cfg.hours.soccer : 3.5);
 }
 
-function describe(g) {
+// per-sport music: a freshly shuffled copy of that sport's playlist for the project's Music layer
+function musicFor(g, key) {
+  const M = settings.music || {};
+  const sport = feed.LEAGUES[g.league]?.soccer ? 'soccer' : g.league;
+  const list = Object.entries((M.playlists || {})[(M.sports || {})[sport]] || {});
+  for (let i = list.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [list[i], list[j]] = [list[j], list[i]]; }
+  const layerId = (M.layers || {})[key];
+  return list.length && layerId ? { layerId, volume: M.volume ?? 3, titles: list.map((x) => x[0]), files: list.map((x) => ({ fileId: x[1] })) } : null;
+}
+
+function describe(g, music) {
   const t = new Date(g.start);
   const et = t.toLocaleString('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric', minute: '2-digit' });
   const uk = t.toLocaleString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit' });
   const lines = g.description.split('\n');
   lines.splice(1, 0, `Start: ${et} ET / ${uk} UK.`);
+  const kevin = (music?.titles || []).filter((t) => !t.startsWith('ScoreBuzz'));
+  if (kevin.length) lines.push('', 'Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/):', kevin.join(' · '));
   return lines.join('\n');
 }
 
@@ -132,7 +144,9 @@ async function games(extra) {
     const at = startAt - now > 4 * MIN ? iso(startAt) : 'now';
     const dur = Math.round((endAt - Math.max(now, startAt)) / 1000);
     setA(p.key, { league: g.league, event: g.id, note: `${g.matchup}, ${iso(kick)}` });
-    actions.push({ type: 'assign', projectId: p.id, project: p.name, league: g.league, event: g.id, title: g.title, description: describe(g), durationSec: Math.min(dur, 8 * 3600 - 120), at });
+    const music = musicFor(g, p.key);
+    actions.push({ type: 'assign', projectId: p.id, project: p.name, league: g.league, event: g.id, title: g.title, description: describe(g, music), durationSec: Math.min(dur, 8 * 3600 - 120), at,
+      music: music && { layerId: music.layerId, volume: music.volume, files: music.files } });
   }
 
   settings.slots = Object.fromEntries(Object.entries(slots).sort((a, b) => Number(a[0]) - Number(b[0])));
