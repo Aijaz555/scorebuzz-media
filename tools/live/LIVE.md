@@ -179,6 +179,9 @@ starting 30 min before kick-off and stopped when the game is over.
      volume: music.volume) — a freshly shuffled per-sport playlist — and finally livereacting_schedule_stream([at])
      or, when at = "now", livereacting_start_stream.
      `restart` → update_project(duration) then start_stream.
+- YouTube tags and category: the LiveReacting API ignores youtubeAdvancedSettings (tested 5 Nov 2026), so Category =
+  Sports is set once per project in the Studio (and as the channel upload default). Per-game keywords go in the title
+  and the hashtag line (league, matchup, both teams), which the planner writes; actions also carry `tags` for later.
 - LiveReacting refuses title/description edits on a SCHEDULED project ("Can not update title/description"): cancel the
   schedule, update, then schedule again. (Edits on a LIVE project work.)
 - Planned durations are generous (NBA/NHL 3h15 after tip-off, NFL 4h, soccer 2h15) and the hourly run stops a

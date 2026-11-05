@@ -50,12 +50,31 @@ function musicFor(g, key) {
   return list.length && layerId ? { layerId, volume: M.volume ?? 3, titles: list.map((x) => x[0]), files: list.map((x) => ({ fileId: x[1] })) } : null;
 }
 
+const tagify = (x) => String(x).normalize('NFD').replace(/[^A-Za-z0-9 ]/g, '').split(/\s+/).filter(Boolean).map((w) => w[0].toUpperCase() + w.slice(1)).join('');
+function hashtags(g) {
+  const L = feed.LEAGUES[g.league] || {};
+  const [t1, t2] = g.matchup.split(' vs ');
+  const nick = (t) => t.split(' ').pop();
+  const lg = tagify(L.name || L.label || g.league.toUpperCase());
+  return [...new Set([`#${lg}`, `#${tagify(nick(t1))}Vs${tagify(nick(t2))}`, `#${tagify(t1)}`, `#${tagify(t2)}`, '#LiveScore', L.soccer ? '#Football' : '', '#ScoreBuzz'].filter(Boolean))];
+}
+
+// YouTube tags, for when the API (or the Studio) can take them: league, both teams, matchup and generic live-score terms
+function ytTags(g) {
+  const L = feed.LEAGUES[g.league] || {};
+  const [t1, t2] = g.matchup.split(' vs ');
+  return [g.matchup, `${t1} live`, `${t2} live`, `${L.name || L.label} live`, `${L.name || L.label} live score`, 'live score', 'live scoreboard', 'play by play', 'scorebuzz'];
+}
+
 function describe(g, music) {
   const t = new Date(g.start);
   const et = t.toLocaleString('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric', minute: '2-digit' });
   const uk = t.toLocaleString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit' });
-  const lines = g.description.split('\n');
+  const lines = g.description.split('\n').filter((l) => !l.startsWith('#'));
   lines.splice(1, 0, `Start: ${et} ET / ${uk} UK.`);
+  // hashtags: YouTube shows the first three above the title and indexes them like tags (the LiveReacting API
+  // can't set YouTube tags or category, so the per-game keywords live here and in the title)
+  lines.push(hashtags(g).join(' '));
   const kevin = (music?.titles || []).filter((t) => !t.startsWith('ScoreBuzz'));
   if (kevin.length) lines.push('', 'Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/):', kevin.join(' · '));
   return lines.join('\n');
@@ -145,7 +164,7 @@ async function games(extra) {
     const dur = Math.round((endAt - Math.max(now, startAt)) / 1000);
     setA(p.key, { league: g.league, event: g.id, note: `${g.matchup}, ${iso(kick)}` });
     const music = musicFor(g, p.key);
-    actions.push({ type: 'assign', projectId: p.id, project: p.name, league: g.league, event: g.id, title: g.title, description: describe(g, music), durationSec: Math.min(dur, 8 * 3600 - 120), at,
+    actions.push({ type: 'assign', projectId: p.id, project: p.name, league: g.league, event: g.id, title: g.title, description: describe(g, music), tags: ytTags(g), category: 'Sports', durationSec: Math.min(dur, 8 * 3600 - 120), at,
       music: music && { layerId: music.layerId, volume: music.volume, files: music.files } });
   }
 
