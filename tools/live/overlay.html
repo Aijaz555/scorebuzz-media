@@ -719,7 +719,8 @@ function ticker(g) {
   const key = JSON.stringify(g.ticker);
   if (key === tickKey) return;
   tickKey = key;
-  const items = `<span class="tk lab">${esc(g.label)}</span>` + g.ticker.map((t) => `<span class="tk">${tLogo(t.a, t.al)}${esc(t.a)} <b>${esc(t.as)}</b>${tLogo(t.h, t.hl)}${esc(t.h)} <b>${esc(t.hs)}</b><em>${esc(t.st)}</em></span>`).join('')
+  const none = g.ticker.length ? '' : `<span class="tk">No other ${esc(g.label)} games live right now</span>`;
+  const items = `<span class="tk lab">${esc(g.label)} · LIVE</span>` + none + g.ticker.map((t) => `<span class="tk">${tLogo(t.a, t.al)}${esc(t.a)} <b>${esc(t.as)}</b>${tLogo(t.h, t.hl)}${esc(t.h)} <b>${esc(t.hs)}</b><em>${esc(t.st)}</em></span>`).join('')
     + '<span class="tk lab">LIVE SCORES · NO GAME FOOTAGE</span><span class="tk">Fixtures, tables and results at&nbsp;<b style="color:var(--lime);font-family:Inter;font-size:21px">scorebuzz.net</b></span>';
   $('tick').innerHTML = items + items;
   $('tick').style.setProperty('--dur', Math.max(45, g.ticker.length * 10) + 's');

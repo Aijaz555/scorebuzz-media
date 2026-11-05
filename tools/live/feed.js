@@ -474,7 +474,8 @@ async function game(league, eventId) {
     // football: elapsed match time in seconds (ESPN's clock stops at 45:00/90:00 in stoppage time, so the
     // displayed "45'+2'" is used when it is later), for the ticking mm:ss clock in the overlay
     clockSec: L.soccer ? Math.max(Number(ev.status?.clock) || 0, ((s) => { const m = String(s || '').match(/(\d+)'(?:\+(\d+))?/); return m ? (Number(m[1]) + Number(m[2] || 0)) * 60 : 0; })(ev.status?.displayClock)) : null,
-    ticker: (sb.events || []).filter((e) => e.id !== ev.id).map((e) => {
+    // bottom ticker: only the OTHER games of this same league that are live right now (owner's request)
+    ticker: (sb.events || []).filter((e) => e.id !== ev.id && e.status?.type?.state === 'in').map((e) => {
       const c = e.competitions[0];
       const h = c.competitors.find((x) => x.homeAway === 'home');
       const a = c.competitors.find((x) => x.homeAway === 'away');

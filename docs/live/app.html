@@ -671,7 +671,8 @@ async function game(league, eventId) {
     // football: elapsed match time in seconds (ESPN's clock stops at 45:00/90:00 in stoppage time, so the
     // displayed "45'+2'" is used when it is later), for the ticking mm:ss clock in the overlay
     clockSec: L.soccer ? Math.max(Number(ev.status?.clock) || 0, ((s) => { const m = String(s || '').match(/(\d+)'(?:\+(\d+))?/); return m ? (Number(m[1]) + Number(m[2] || 0)) * 60 : 0; })(ev.status?.displayClock)) : null,
-    ticker: (sb.events || []).filter((e) => e.id !== ev.id).map((e) => {
+    // bottom ticker: only the OTHER games of this same league that are live right now (owner's request)
+    ticker: (sb.events || []).filter((e) => e.id !== ev.id && e.status?.type?.state === 'in').map((e) => {
       const c = e.competitions[0];
       const h = c.competitors.find((x) => x.homeAway === 'home');
       const a = c.competitors.find((x) => x.homeAway === 'away');
@@ -1256,7 +1257,8 @@ function ticker(g) {
   const key = JSON.stringify(g.ticker);
   if (key === tickKey) return;
   tickKey = key;
-  const items = `<span class="tk lab">${esc(g.label)}</span>` + g.ticker.map((t) => `<span class="tk">${tLogo(t.a, t.al)}${esc(t.a)} <b>${esc(t.as)}</b>${tLogo(t.h, t.hl)}${esc(t.h)} <b>${esc(t.hs)}</b><em>${esc(t.st)}</em></span>`).join('')
+  const none = g.ticker.length ? '' : `<span class="tk">No other ${esc(g.label)} games live right now</span>`;
+  const items = `<span class="tk lab">${esc(g.label)} · LIVE</span>` + none + g.ticker.map((t) => `<span class="tk">${tLogo(t.a, t.al)}${esc(t.a)} <b>${esc(t.as)}</b>${tLogo(t.h, t.hl)}${esc(t.h)} <b>${esc(t.hs)}</b><em>${esc(t.st)}</em></span>`).join('')
     + '<span class="tk lab">LIVE SCORES · NO GAME FOOTAGE</span><span class="tk">Fixtures, tables and results at&nbsp;<b style="color:var(--lime);font-family:Inter;font-size:21px">scorebuzz.net</b></span>';
   $('tick').innerHTML = items + items;
   $('tick').style.setProperty('--dur', Math.max(45, g.ticker.length * 10) + 's');
