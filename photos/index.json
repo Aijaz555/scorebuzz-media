@@ -1,0 +1,966 @@
+{
+ "acrisure-stadium": {
+  "venue": "Acrisure Stadium",
+  "credit": "Photo: NASA Headquarters / NASA/Aubrey Gemignani / Wikimedia Commons, Public domain"
+ },
+ "afas-stadion": {
+  "venue": "AFAS Stadion",
+  "credit": "Photo: KSKB1935 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "albertsons-stadium": {
+  "venue": "Albertsons Stadium",
+  "credit": "Photo: Ken Lund from Reno, Nevada, USA / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "allegiant-stadium": {
+  "venue": "Allegiant Stadium",
+  "credit": "Photo: Amin Eshaiker / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "allianz-arena": {
+  "venue": "Allianz Arena",
+  "credit": "Photo: Richard Bartz, Munich aka Makro Freak / Wikimedia Commons, CC BY-SA 2.5"
+ },
+ "allianz-field": {
+  "venue": "Allianz Field",
+  "credit": "Photo: WikiWriter7519 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "allianz-riviera": {
+  "venue": "Allianz Riviera",
+  "credit": "Photo: Treehill / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "allianz-stadium": {
+  "venue": "Allianz Stadium",
+  "credit": "Photo: Matteo Aresca 05 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "amerant-bank-arena": {
+  "venue": "Amerant Bank Arena",
+  "credit": "Photo: Gatorfan252525 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "america-first-field": {
+  "venue": "America First Field",
+  "credit": "Photo: ChelsaR / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "american-airlines-center": {
+  "venue": "American Airlines Center",
+  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "american-express-stadium": {
+  "venue": "American Express Stadium",
+  "credit": "Photo: Hassocks5489 / Wikimedia Commons, CC0"
+ },
+ "anfield": {
+  "venue": "Anfield",
+  "credit": "Photo: Rodhullandemu / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "arasen-stadion": {
+  "venue": "Arasen Stadion",
+  "credit": "Photo: GAD / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "arena-cdmx": {
+  "venue": "Arena CDMX",
+  "credit": "Photo: Tbhotch / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "arrowhead-stadium": {
+  "venue": "Arrowhead Stadium",
+  "credit": "Photo: https://en.wikipedia.org/wiki/User:Ichabod / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "aspmyra-stadion": {
+  "venue": "Aspmyra Stadion",
+  "credit": "Photo: Røed / Wikimedia Commons, CC BY-SA 2.5"
+ },
+ "at-t-stadium": {
+  "venue": "AT&T Stadium",
+  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "audi-field": {
+  "venue": "Audi Field",
+  "credit": "Photo: David / Wikimedia Commons, CC BY 2.0"
+ },
+ "autzen-stadium": {
+  "venue": "Autzen Stadium",
+  "credit": "Photo: Kingofthedead / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "balaidos": {
+  "venue": "Balaidos",
+  "credit": "Photo: Steigi1900 / Wikimedia Commons, CC0"
+ },
+ "ball-arena": {
+  "venue": "Ball Arena",
+  "credit": "Photo: MhcL947 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "bank-of-america-stadium": {
+  "venue": "Bank of America Stadium",
+  "credit": "Photo: Roland Arhelger / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "barclays-center": {
+  "venue": "Barclays Center",
+  "credit": "Photo: Tdorante10 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "bayarena": {
+  "venue": "BayArena",
+  "credit": "Photo: Simon Mannweiler / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "bc-place": {
+  "venue": "BC Place",
+  "credit": "Photo: GoToVan / Wikimedia Commons, CC BY 2.0"
+ },
+ "bell-centre": {
+  "venue": "Bell Centre",
+  "credit": "Photo: Jeangagnon / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "ben-hill-griffin-stadium": {
+  "venue": "Ben Hill Griffin Stadium",
+  "credit": "Photo: soulbust / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "bmo-field": {
+  "venue": "BMO Field",
+  "credit": "Photo: Abazz / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "bmo-stadium": {
+  "venue": "BMO Stadium",
+  "credit": "Photo: BagmanTheEditor / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "boone-pickens-stadium": {
+  "venue": "Boone Pickens Stadium",
+  "credit": "Photo: Wesley Fryer at flickr.com / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "borussia-park": {
+  "venue": "BORUSSIA-PARK",
+  "credit": "Photo: PeterAnders2001 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "bridgestone-arena": {
+  "venue": "Bridgestone Arena",
+  "credit": "Photo: Quinntropy / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "caesars-superdome": {
+  "venue": "Caesars Superdome",
+  "credit": "Photo: CBP Photography / Wikimedia Commons, Public domain"
+ },
+ "canada-life-centre": {
+  "venue": "Canada Life Centre",
+  "credit": "Photo: Chris Woodrich / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "canadian-tire-centre": {
+  "venue": "Canadian Tire Centre",
+  "credit": "Photo: Quintin Soloviev / Wikimedia Commons, CC BY 4.0"
+ },
+ "canvas-stadium": {
+  "venue": "Canvas Stadium",
+  "credit": "Photo: Tony Webster / Wikimedia Commons, CC BY 2.0"
+ },
+ "capital-one-arena": {
+  "venue": "Capital One Arena",
+  "credit": "Photo: 3d U.S. Infantry Regiment (The Old Guard) / Wikimedia Commons, Public domain"
+ },
+ "celtic-park": {
+  "venue": "Celtic Park",
+  "credit": "Photo: Guillaume Gogo / Wikimedia Commons, CC BY 2.0"
+ },
+ "chase-center": {
+  "venue": "Chase Center",
+  "credit": "Photo: Gregory Varnum / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "citi-field": {
+  "venue": "Citi Field",
+  "credit": "Photo: Aude / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "climate-pledge-arena": {
+  "venue": "Climate Pledge Arena",
+  "credit": "Photo: SounderBruce / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "coventry-building-society-arena": {
+  "venue": "Coventry Building Society Arena",
+  "credit": "Photo: Lewis Clarke / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "craven-cottage": {
+  "venue": "Craven Cottage",
+  "credit": "Photo: Nick C / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "crypto-com-arena": {
+  "venue": "crypto.com Arena",
+  "credit": "Photo: InvadingInvader / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "de-kuip": {
+  "venue": "De Kuip",
+  "credit": "Photo: FeyenoordR'dam1908 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "decathlon-arena-stade-pierre-mauroy": {
+  "venue": "Decathlon Arena - Stade Pierre-Mauroy",
+  "credit": "Photo: Liondartois / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "delta-center": {
+  "venue": "Delta Center",
+  "credit": "Photo: Chris Light / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "deutsche-bank-park": {
+  "venue": "Deutsche Bank Park",
+  "credit": "Photo: Patrik Meyer / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "dick-s-sporting-goods-park": {
+  "venue": "Dick's Sporting Goods Park",
+  "credit": "Photo: DenverLawGuy / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "dignity-health-sports-park": {
+  "venue": "Dignity Health Sports Park",
+  "credit": "Photo: SkyLadderDrones / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "dkr-texas-memorial-stadium": {
+  "venue": "DKR-Texas Memorial Stadium",
+  "credit": "Photo: Fredlyfish4 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "donald-w-reynolds-razorback-stadium": {
+  "venue": "Donald W. Reynolds Razorback Stadium",
+  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "el-sadar": {
+  "venue": "El Sadar",
+  "credit": "Photo: Esuescucre1 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "elland-road": {
+  "venue": "Elland Road",
+  "credit": "Photo: Mtaylor848 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "emirates-stadium": {
+  "venue": "Emirates Stadium",
+  "credit": "Photo: Arne Müseler / Wikimedia Commons, CC BY-SA 3.0 de"
+ },
+ "empower-field-at-mile-high": {
+  "venue": "Empower Field at Mile High",
+  "credit": "Photo: Troutfarm27 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "ennio-tardini": {
+  "venue": "Ennio Tardini",
+  "credit": "Photo: Threecharlie / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "enterprise-center": {
+  "venue": "Enterprise Center",
+  "credit": "Photo: Lightmetro / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "estadi-ciutat-de-valencia": {
+  "venue": "Estadi Ciutat de València",
+  "credit": "Photo: Francesc Fort / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "estadio-coliseum": {
+  "venue": "Estadio Coliseum",
+  "credit": "Photo: The Cosmonaut / Wikimedia Commons, CC BY-SA 2.5 ca"
+ },
+ "estadio-da-luz": {
+  "venue": "Estádio da Luz",
+  "credit": "Photo: Alvesgaspar / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "estadio-de-vallecas": {
+  "venue": "Estadio de Vallecas",
+  "credit": "Photo: Rubén Sobrino / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "estadio-do-dragao": {
+  "venue": "Estádio do Dragão",
+  "credit": "Photo: Palickap / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "estadio-dr-magalhaes-pessoa": {
+  "venue": "Estádio Dr. Magalhaes Pessoa",
+  "credit": "Photo: Threeohsix / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "estadio-la-cartuja": {
+  "venue": "Estadio La Cartuja",
+  "credit": "Photo: LuisMora4B / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "estadio-martinez-valero": {
+  "venue": "Estadio Martínez Valero",
+  "credit": "Photo: Magicloren / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "etihad-stadium": {
+  "venue": "Etihad Stadium",
+  "credit": "Photo: Daniel from Glasgow, United Kingdom / Wikimedia Commons, CC BY 2.0"
+ },
+ "europa-park-stadion": {
+  "venue": "Europa-Park Stadion",
+  "credit": "Photo: Andreas Schwarzkopf / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "everbank-stadium": {
+  "venue": "EverBank Stadium",
+  "credit": "Photo: Quintin Soloviev / Wikimedia Commons, CC BY 4.0"
+ },
+ "fc-bayern-munich-stadium": {
+  "venue": "FC Bayern Munich Stadium",
+  "credit": "Photo: Martin Falbisoner / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "fedexforum": {
+  "venue": "FedExForum",
+  "credit": "Photo: Marco Espino-Ovalle / Wikimedia Commons, Public domain"
+ },
+ "firstbank-stadium": {
+  "venue": "FirstBank Stadium",
+  "credit": "Photo: PCN02WPS / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "fiserv-forum": {
+  "venue": "Fiserv Forum",
+  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "folsom-field": {
+  "venue": "Folsom Field",
+  "credit": "Photo: Thelastcanadian / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "ford-field": {
+  "venue": "Ford Field",
+  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "fortuna-arena": {
+  "venue": "Fortuna Arena",
+  "credit": "Photo: Milda 444 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "generali-arena": {
+  "venue": "Generali Arena",
+  "credit": "Photo: Ralphinho1 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "geodis-park": {
+  "venue": "GEODIS Park",
+  "credit": "Photo: cornfield948 / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "gerald-j-ford-stadium": {
+  "venue": "Gerald J. Ford Stadium",
+  "credit": "Photo: HavanaHeat / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "gillette-stadium": {
+  "venue": "Gillette Stadium",
+  "credit": "Photo: Abzeronow / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "giulesti-stadium": {
+  "venue": "Giulesti Stadium",
+  "credit": "Photo: Christopher Voitus / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "giuseppe-sinigaglia": {
+  "venue": "Giuseppe Sinigaglia",
+  "credit": "Photo: Mister No / Wikimedia Commons, CC BY 3.0"
+ },
+ "goffertstadion": {
+  "venue": "Goffertstadion",
+  "credit": "Photo: Roger Veringmeier / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "golden-1-center": {
+  "venue": "Golden 1 Center",
+  "credit": "Photo: Quintin Soloviev / Wikimedia Commons, CC BY 4.0"
+ },
+ "groupama-stadium": {
+  "venue": "Groupama Stadium",
+  "credit": "Photo: Sebleouf / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "gtech-community-stadium": {
+  "venue": "Gtech Community Stadium",
+  "credit": "Photo: AndyScott / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "hard-rock-stadium": {
+  "venue": "Hard Rock Stadium",
+  "credit": "Photo: Gatorfan252525 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "highmark-stadium": {
+  "venue": "Highmark Stadium",
+  "credit": "Photo: Quintin Soloviev / Wikimedia Commons, CC BY 4.0"
+ },
+ "hill-dickinson-stadium": {
+  "venue": "Hill Dickinson Stadium",
+  "credit": "Photo: Austiñobobbiño / Wikimedia Commons, CC BY 4.0"
+ },
+ "home-deluxe-arena": {
+  "venue": "Home Deluxe Arena",
+  "credit": "Photo: Fhausm / Wikimedia Commons, CC0"
+ },
+ "honda-center": {
+  "venue": "Honda Center",
+  "credit": "Photo: Troutfarm27 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "huntington-bank-stadium": {
+  "venue": "Huntington Bank Stadium",
+  "credit": "Photo: Lectrician2 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "inter-co-stadium": {
+  "venue": "Inter&Co Stadium",
+  "credit": "Photo: Keiteay / Wikimedia Commons, CC BY 4.0"
+ },
+ "intuit-dome": {
+  "venue": "Intuit Dome",
+  "credit": "Photo: Haruhi8 / Wikimedia Commons, CC BY 4.0"
+ },
+ "jack-trice-stadium": {
+  "venue": "Jack Trice Stadium",
+  "credit": "Photo: Tallness456 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "jma-wireless-dome": {
+  "venue": "JMA Wireless Dome",
+  "credit": "Photo: MattCC716 / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "kaseya-center": {
+  "venue": "Kaseya Center",
+  "credit": "Photo: Phillip Pessar / Wikimedia Commons, CC BY 2.0"
+ },
+ "kenan-stadium": {
+  "venue": "Kenan Stadium",
+  "credit": "Photo: Disc Wheel / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "keybank-center": {
+  "venue": "KeyBank Center",
+  "credit": "Photo: Andre Carrotflower / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "kia-center": {
+  "venue": "Kia Center",
+  "credit": "Photo: Michael Rivera / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "kinnick-stadium": {
+  "venue": "Kinnick Stadium",
+  "credit": "Photo: MediaGuy768 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "kroger-field": {
+  "venue": "Kroger Field",
+  "credit": "Photo: PCN02WPS / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "kyle-field": {
+  "venue": "Kyle Field",
+  "credit": "Photo: Janreagan at English Wikipedia / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "la-rosaleda": {
+  "venue": "La Rosaleda",
+  "credit": "Photo: Alan Grant / Wikimedia Commons, CC BY 4.0"
+ },
+ "lambeau-field": {
+  "venue": "Lambeau Field",
+  "credit": "Photo: Tony Webster from Minneapolis, Minnesota / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "lavell-edwards-stadium": {
+  "venue": "LaVell Edwards Stadium",
+  "credit": "Photo: Tony Webster / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "lenovo-center": {
+  "venue": "Lenovo Center",
+  "credit": "Photo: CavsFan45 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "levi-s-stadium": {
+  "venue": "Levi's Stadium",
+  "credit": "Photo: Dvortygirl / Wikimedia Commons, CC BY 4.0"
+ },
+ "lincoln-financial-field": {
+  "venue": "Lincoln Financial Field",
+  "credit": "Photo: NASA Headquarters / NASA/Thalia Patrinos / Wikimedia Commons, Public domain"
+ },
+ "little-caesars-arena": {
+  "venue": "Little Caesars Arena",
+  "credit": "Photo: Coreyfein01 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "los-angeles-memorial-coliseum": {
+  "venue": "Los Angeles Memorial Coliseum",
+  "credit": "Photo: Thomas Kelsey, Los Angeles Times / Wikimedia Commons, CC BY 4.0"
+ },
+ "lotto-park": {
+  "venue": "Lotto Park",
+  "credit": "Photo: Lotto park immage / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "lucas-oil-stadium": {
+  "venue": "Lucas Oil Stadium",
+  "credit": "Photo: U.S. Army / Wikimedia Commons, CC BY 2.0"
+ },
+ "lumen-field": {
+  "venue": "Lumen Field",
+  "credit": "Photo: SounderBruce / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "m-t-bank-stadium": {
+  "venue": "M&T Bank Stadium",
+  "credit": "Photo: Famartin / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "madison-square-garden": {
+  "venue": "Madison Square Garden",
+  "credit": "Photo: Ajay Suresh from New York, NY, USA / Wikimedia Commons, CC BY 2.0"
+ },
+ "memorial-stadium-bloomington-in": {
+  "venue": "Memorial Stadium (Bloomington, IN)",
+  "credit": "Photo: Tails Wx / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "memorial-stadium-norman-ok": {
+  "venue": "Memorial Stadium (Norman, OK)",
+  "credit": "Photo: MARELBU / Wikimedia Commons, CC BY 3.0"
+ },
+ "memorial-stadium": {
+  "venue": "Memorial Stadium",
+  "credit": "Photo: Quintin Soloviev / Wikimedia Commons, CC BY 4.0"
+ },
+ "mercedes-benz-stadium": {
+  "venue": "Mercedes-Benz Stadium",
+  "credit": "Photo: Gatorfan252525 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "merkur-arena": {
+  "venue": "Merkur Arena",
+  "credit": "Photo: Thomas Ledl / Wikimedia Commons, CC BY 4.0"
+ },
+ "mestalla-stadium": {
+  "venue": "Mestalla Stadium",
+  "credit": "Photo: Anidae / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "metlife-stadium": {
+  "venue": "MetLife Stadium",
+  "credit": "Photo: Andrew nyr / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "mewa-arena": {
+  "venue": "MEWA ARENA",
+  "credit": "Photo: Atirador / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "mhparena": {
+  "venue": "MHPArena",
+  "credit": "Photo: RudolfSimon / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "moda-center": {
+  "venue": "Moda Center",
+  "credit": "Photo: Oregon Department of Transportation / Wikimedia Commons, CC BY 2.0"
+ },
+ "nationwide-arena": {
+  "venue": "Nationwide Arena",
+  "credit": "Photo: Eric / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "neyland-stadium": {
+  "venue": "Neyland Stadium",
+  "credit": "Photo: w_lemay / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "nippert-stadium": {
+  "venue": "Nippert Stadium",
+  "credit": "Photo: Ben Levin / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "nissan-stadium": {
+  "venue": "Nissan Stadium",
+  "credit": "Photo: Quintin Soloviev / Wikimedia Commons, CC BY 4.0"
+ },
+ "northwest-stadium": {
+  "venue": "Northwest Stadium",
+  "credit": "Photo: U.S. Secretary of Defense / Wikimedia Commons, CC BY 2.0"
+ },
+ "notre-dame-stadium": {
+  "venue": "Notre Dame Stadium",
+  "credit": "Photo: AndyHemmerCincinnati / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "nu-stadium": {
+  "venue": "Nu Stadium",
+  "credit": "Photo: Cuban Boy / Wikimedia Commons, CC0"
+ },
+ "ohio-stadium": {
+  "venue": "Ohio Stadium",
+  "credit": "Photo: East of the Mississippi / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "old-trafford": {
+  "venue": "Old Trafford",
+  "credit": "Photo: Joris van Rooden / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "olimpico": {
+  "venue": "Olimpico",
+  "credit": "Photo: Zakarie Faibis / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "parc-des-princes": {
+  "venue": "Parc des Princes",
+  "credit": "Photo: Zakarie Faibis / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "paycom-center": {
+  "venue": "Paycom Center",
+  "credit": "Photo: Quintin Soloviev / Wikimedia Commons, CC BY 4.0"
+ },
+ "paycor-stadium": {
+  "venue": "Paycor Stadium",
+  "credit": "Photo: Antony-22 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "paypal-park": {
+  "venue": "PayPal Park",
+  "credit": "Photo: Rylesbourne / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "philips-stadion": {
+  "venue": "Philips Stadion",
+  "credit": "Photo: Michielverbeek / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "portman-road": {
+  "venue": "Portman Road",
+  "credit": "Photo: John Fielding from Norwich, UK / Wikimedia Commons, CC BY 2.0"
+ },
+ "ppg-paints-arena": {
+  "venue": "PPG Paints Arena",
+  "credit": "Photo: Andrew nyr / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "prezero-arena": {
+  "venue": "PreZero Arena",
+  "credit": "Photo: Toensmeier / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "providence-park": {
+  "venue": "Providence Park",
+  "credit": "Photo: Ray Terrill / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "prudential-center": {
+  "venue": "Prudential Center",
+  "credit": "Photo: Andrew nyr / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "q2-stadium": {
+  "venue": "Q2 Stadium",
+  "credit": "Photo: Daniel Ziegler / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "raiffeisen-arena-linz": {
+  "venue": "Raiffeisen Arena (Linz)",
+  "credit": "Photo: Werner100359 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "ramon-sanchez-pizjuan-stadium": {
+  "venue": "Ramón Sánchez Pizjuán Stadium",
+  "credit": "Photo: Thomas Dahlstrøm Nielsen / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "raymond-james-stadium": {
+  "venue": "Raymond James Stadium",
+  "credit": "Photo: Staff Sgt. Jayson Price / Wikimedia Commons, Public domain"
+ },
+ "rcde-stadium": {
+  "venue": "RCDE Stadium",
+  "credit": "Photo: Elemaki / Wikimedia Commons, CC BY 3.0"
+ },
+ "reale-arena": {
+  "venue": "Reale Arena",
+  "credit": "Photo: Iñaki LL / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "red-bull-arena": {
+  "venue": "Red Bull Arena",
+  "credit": "Photo: Frank Vincentz / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "reliant-stadium": {
+  "venue": "Reliant Stadium",
+  "credit": "Photo: No machine-readable author provided. W0lfie assumed (based o / Wikimedia Commons, CC BY-SA 2.5"
+ },
+ "renato-dall-ara": {
+  "venue": "Renato Dall'Ara",
+  "credit": "Photo: Nick.mon / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "rheinenergiestadion": {
+  "venue": "RheinEnergieStadion",
+  "credit": "Photo: CEphoto, Uwe Aranas / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "riazor": {
+  "venue": "Riazor",
+  "credit": "Photo: Jenócrates / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "rice-eccles-stadium": {
+  "venue": "Rice-Eccles Stadium",
+  "credit": "Photo: Mattstorms / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "riyadh-air-metropolitano": {
+  "venue": "Riyadh Air Metropolitano",
+  "credit": "Photo: JesVCB / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "roazhon-park": {
+  "venue": "Roazhon Park",
+  "credit": "Photo: Page4Pol / Wikimedia Commons, CC0"
+ },
+ "rocket-arena": {
+  "venue": "Rocket Arena",
+  "credit": "Photo: Cards84664 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "rogers-arena": {
+  "venue": "Rogers Arena",
+  "credit": "Photo: Daniel from Glasgow, United Kingdom / Wikimedia Commons, CC BY 2.0"
+ },
+ "rogers-place": {
+  "venue": "Rogers Place",
+  "credit": "Photo: Mack Male from Edmonton, AB, Canada / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "rose-bowl": {
+  "venue": "Rose Bowl",
+  "credit": "Photo: Ted Eytan / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "ryan-field": {
+  "venue": "Ryan Field",
+  "credit": "Photo: vxla from Chicago, US / Wikimedia Commons, CC BY 2.0"
+ },
+ "san-mames": {
+  "venue": "San Mamés",
+  "credit": "Photo: Loxyger / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "san-siro": {
+  "venue": "San Siro",
+  "credit": "Photo: Massimo Previtera / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "sanford-stadium": {
+  "venue": "Sanford Stadium",
+  "credit": "Photo: Godawgs80 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "santiago-bernabeu": {
+  "venue": "Santiago Bernabéu",
+  "credit": "Photo: Fernando Pascullo / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "sap-center-at-san-jose": {
+  "venue": "SAP Center at San Jose",
+  "credit": "Photo: Doug Kerr from Albany, NY, United States / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "scotiabank-arena": {
+  "venue": "Scotiabank Arena",
+  "credit": "Photo: Adam Bishop / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "scotiabank-saddledome": {
+  "venue": "Scotiabank Saddledome",
+  "credit": "Photo: Bernard Spragg. NZ from Christchurch, New Zealand / Wikimedia Commons, CC0"
+ },
+ "selhurst-park": {
+  "venue": "Selhurst Park",
+  "credit": "Photo: Arne Müseler / Wikimedia Commons, CC BY-SA 3.0 de"
+ },
+ "shell-energy-stadium": {
+  "venue": "Shell Energy Stadium",
+  "credit": "Photo: HDFC PR / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "signal-iduna-park": {
+  "venue": "Signal Iduna Park",
+  "credit": "Photo: Arne Müseler / www.arne-mueseler.com / Wikimedia Commons, CC BY-SA 3.0 de"
+ },
+ "smoothie-king-center": {
+  "venue": "Smoothie King Center",
+  "credit": "Photo: Paul Lowry / Wikimedia Commons, CC BY 2.0"
+ },
+ "snapdragon-stadium": {
+  "venue": "Snapdragon Stadium",
+  "credit": "Photo: Spatms / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "sofi-stadium": {
+  "venue": "SoFi Stadium",
+  "credit": "Photo: Troutfarm27 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "soldier-field": {
+  "venue": "Soldier Field",
+  "credit": "Photo: Moses8910 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "spectrum-center": {
+  "venue": "Spectrum Center",
+  "credit": "Photo: Matthew D. Britt from Glens Falls, NY, U.S.A. / Wikimedia Commons, CC BY 2.0"
+ },
+ "sporting-park": {
+  "venue": "Sporting Park",
+  "credit": "Photo: Conman33 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "sports-illustrated-stadium": {
+  "venue": "Sports Illustrated Stadium",
+  "credit": "Photo: Nowoco / Wikimedia Commons, CC0"
+ },
+ "spotify-camp-nou": {
+  "venue": "Spotify Camp Nou",
+  "credit": "Photo: Roxymatic / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "st-james-park": {
+  "venue": "St. James' Park",
+  "credit": "Photo: Arne Müseler / Wikimedia Commons, CC BY-SA 3.0 de"
+ },
+ "stade-bollaert-delelis": {
+  "venue": "Stade Bollaert-Delelis",
+  "credit": "Photo: Liondartois / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stade-de-l-abbe-deschamps": {
+  "venue": "Stade de l'Abbé-Deschamps",
+  "credit": "Photo: Vicente.Mtp / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stade-de-l-aube": {
+  "venue": "Stade de l'Aube",
+  "credit": "Photo: Chabe01 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stade-de-la-meinau": {
+  "venue": "Stade de la Meinau",
+  "credit": "Photo: Gzen92 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stade-du-moustoir-yves-allainmat": {
+  "venue": "Stade du Moustoir - Yves Allainmat",
+  "credit": "Photo: MFonzatti / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stade-francis-le-ble": {
+  "venue": "Stade Francis-Le Blé",
+  "credit": "Photo: Hypotypose1 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stade-jean-bouin": {
+  "venue": "Stade Jean Bouin",
+  "credit": "Photo: Chabe01 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stade-marie-marvingt": {
+  "venue": "Stade Marie-Marvingt",
+  "credit": "Photo: Sebleouf / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stade-oceane": {
+  "venue": "Stade Océane",
+  "credit": "Photo: Philippe Alès / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stade-saputo": {
+  "venue": "Stade Saputo",
+  "credit": "Photo: Guilhem Vellut from Annecy, France / Wikimedia Commons, CC BY 2.0"
+ },
+ "stade-velodrome": {
+  "venue": "Stade Vélodrome",
+  "credit": "Photo: Bernard Ddd / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "stadio-artemio-franchi": {
+  "venue": "Stadio Artemio Franchi",
+  "credit": "Photo: Sailko / Wikimedia Commons, CC BY 3.0"
+ },
+ "stadio-benito-stirpe": {
+  "venue": "Stadio Benito Stirpe",
+  "credit": "Photo: Norberto Mastrantoni / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stadio-diego-armando-maradona": {
+  "venue": "Stadio Diego Armando Maradona",
+  "credit": "Photo: Calciopedia / Wikimedia Commons, CC0"
+ },
+ "stadio-friuli": {
+  "venue": "Stadio Friuli",
+  "credit": "Photo: Pottercomuneo / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stadio-luigi-ferraris": {
+  "venue": "Stadio Luigi Ferraris",
+  "credit": "Photo: Gabriel Rinaldi / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stadio-olimpico-grande-torino": {
+  "venue": "Stadio Olimpico Grande Torino",
+  "credit": "Photo: Lisa16031977 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stadio-pier-luigi-penzo": {
+  "venue": "Stadio Pier Luigi Penzo",
+  "credit": "Photo: kallerna / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stadion-an-der-alten-forsterei": {
+  "venue": "Stadion An der Alten Försterei",
+  "credit": "Photo: GodeNehler / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stadium-municipal-de-toulouse": {
+  "venue": "Stadium Municipal de Toulouse",
+  "credit": "Photo: Gaillac / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stadium-of-light": {
+  "venue": "Stadium of Light",
+  "credit": "Photo: Chabe01 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stamford-bridge": {
+  "venue": "Stamford Bridge",
+  "credit": "Photo: Daniel from Glasgow, United Kingdom / Wikimedia Commons, CC BY 2.0"
+ },
+ "state-farm-arena": {
+  "venue": "State Farm Arena",
+  "credit": "Photo: Warren LeMay from Cincinnati, OH, United States / Wikimedia Commons, CC0"
+ },
+ "state-farm-stadium": {
+  "venue": "State Farm Stadium",
+  "credit": "Photo: Gage Skidmore / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "subaru-park": {
+  "venue": "Subaru Park",
+  "credit": "Photo: Dough4872 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "sukru-saracoglu-stadium": {
+  "venue": "Şükrü Saracoğlu Stadium",
+  "credit": "Photo: Yigitylnz / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "t-mobile-arena": {
+  "venue": "T-Mobile Arena",
+  "credit": "Photo: Bill Feldberg / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "target-center": {
+  "venue": "Target Center",
+  "credit": "Photo: Tony Webster from Minneapolis, Minnesota, United States / Wikimedia Commons, CC BY 2.0"
+ },
+ "td-garden": {
+  "venue": "TD Garden",
+  "credit": "Photo: Kid Clutch from RAIN CITY USA / Wikimedia Commons, CC BY 2.0"
+ },
+ "tdecu-stadium": {
+  "venue": "TDECU Stadium",
+  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "the-city-ground": {
+  "venue": "The City Ground",
+  "credit": "Photo: Arne Müseler / Wikimedia Commons, CC BY-SA 3.0 de"
+ },
+ "the-mkm-stadium": {
+  "venue": "The MKM Stadium",
+  "credit": "Photo: Hullian111 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "tiger-stadium-la": {
+  "venue": "Tiger Stadium (LA)",
+  "credit": "Photo: WClarke / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "tottenham-hotspur-stadium": {
+  "venue": "Tottenham Hotspur Stadium",
+  "credit": "Photo: Hzh / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "toyota-center-houston": {
+  "venue": "Toyota Center (Houston)",
+  "credit": "Photo: Atownballer (talk) / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "toyota-stadium": {
+  "venue": "Toyota Stadium",
+  "credit": "Photo: Flavius Constantine / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "tql-stadium": {
+  "venue": "TQL Stadium",
+  "credit": "Photo: Hayden Schiff / Wikimedia Commons, CC BY 4.0"
+ },
+ "tropicana-field": {
+  "venue": "Tropicana Field",
+  "credit": "Photo: Yamasztuka / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "u-power-stadium": {
+  "venue": "U-Power Stadium",
+  "credit": "Photo: Iaznavi78 / Wikimedia Commons, CC0"
+ },
+ "u-s-bank-stadium": {
+  "venue": "U.S. Bank Stadium",
+  "credit": "Photo: Myotus / Wikimedia Commons, CC0"
+ },
+ "ubs-arena": {
+  "venue": "UBS Arena",
+  "credit": "Photo: Andrew nyr / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "unipol-domus": {
+  "venue": "Unipol Domus",
+  "credit": "Photo: Nilo1926 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "united-center": {
+  "venue": "United Center",
+  "credit": "Photo: Jordano53 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "ursapharm-arena-an-der-kaiserlinde": {
+  "venue": "URSAPHARM-Arena an der Kaiserlinde",
+  "credit": "Photo: Simon Mannweiler / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "vasil-levski-national-stadium": {
+  "venue": "Vasil Levski National Stadium",
+  "credit": "Photo: Oleg Morgan / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "vaught-hemingway-stadium": {
+  "venue": "Vaught-Hemingway Stadium",
+  "credit": "Photo: Fredlyfish4 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "veikkaus-arena": {
+  "venue": "Veikkaus Arena",
+  "credit": "Photo: Ximonic (Simo Räsänen) / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "veltins-arena": {
+  "venue": "Veltins Arena",
+  "credit": "Photo: Walter Koch / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "via-del-mare": {
+  "venue": "Via Del Mare",
+  "credit": "Photo: Effems / Wikimedia Commons, CC0"
+ },
+ "viking-stadion": {
+  "venue": "Viking Stadion",
+  "credit": "Photo: Paweł Pokrzywiński / Wikimedia Commons, CC BY 4.0"
+ },
+ "villa-park": {
+  "venue": "Villa Park",
+  "credit": "Photo: Arne Müseler / Wikimedia Commons, CC BY-SA 3.0 de"
+ },
+ "vitality-stadium": {
+  "venue": "Vitality Stadium",
+  "credit": "Photo: Mr Ignavy / Wikimedia Commons, CC BY-SA 2.0"
+ },
+ "volksparkstadion": {
+  "venue": "Volksparkstadion",
+  "credit": "Photo: Kim Holger Kelting / Wikimedia Commons, CC BY 4.0"
+ },
+ "weserstadion": {
+  "venue": "Weserstadion",
+  "credit": "Photo: Arne Müseler / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "williams-brice-stadium": {
+  "venue": "Williams-Brice Stadium",
+  "credit": "Photo: PCN02WPS / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "wwk-arena": {
+  "venue": "WWK Arena",
+  "credit": "Photo: Arne Müseler / Wikimedia Commons, CC BY-SA 4.0"
+ }
+}
