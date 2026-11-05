@@ -121,6 +121,22 @@ title, description and a designed "LIVE NOW" thumbnail, binds it to a free strea
 3. `pm2 restart scorebuzz-live`. The log line `YouTube API on` confirms it.
 Quota: ~150 units per game (insert + bind + thumbnail) of the default 10,000/day.
 
+## Cloud studio (LiveReacting) — no server needed (tested 5 Nov 2026)
+
+`docs/live/index.html` is a server-free copy of the overlay (build with `node tools/live/build_web.js`
+after changing `overlay.html` or `feed.js`). It reads ESPN from the browser. Use it as a **Web Page layer**
+in LiveReacting (or any cloud studio). Working settings on the free plan (1280x720 canvas; the web layer
+renders at 1697x715 but only ~1280x720 is shown):
+
+    https://raw.githack.com/Aijaz555/scorebuzz-media/main/docs/live/index.html?auto=1&fit=fill&w=1280&h=720
+
+- `auto=1`: always shows the best game (live first, favourite teams first, else the next game's countdown; finals held 15 min).
+  Steer it from git with `docs/live/settings.json` (`leagues`, `teams`, `top25`, `pin: {league, event}`); the page re-reads it every minute.
+- One game only: `?league=nba&event=<ESPN id>&fit=fill&w=1280&h=720`.
+- `size=1` shows the real window size in a yellow label (debugging only). Add `&v=N` to bust caches after an update.
+- Plans: the 24/7 plan has no length limit and 5 destinations (YouTube + Facebook together); Facebook ends any live after 8 hours,
+  so schedule daily windows (weeknights ~7pm–3am ET; weekends noon–8pm and 8pm–4am ET).
+
 ## Fully automatic (next step)
 
 `autopilot.js` + a stream-key pool already starts and stops the video for every game. What it can't
