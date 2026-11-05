@@ -117,7 +117,7 @@ title, description and a designed "LIVE NOW" thumbnail, binds it to a free strea
 `leadMinutes` before kick-off (YouTube **auto-starts** the broadcast) and stops 20 min after the final
 (YouTube **auto-stops** it). One-time setup:
 1. Google Cloud Console → new project → enable **YouTube Data API v3** → OAuth consent screen (External, add your Google account as a test user, or publish it so the token doesn't expire after 7 days) → Credentials → OAuth client ID → type **Desktop app**. Put the client id/secret in `live.config.json` under `youtubeApi`.
-2. On the server: `node tools/live/youtube.js auth`, follow the printed steps (an SSH tunnel from your computer + one browser sign-in). The refresh token is saved to `live.config.json`.
+2. On the server: `node tools/live/youtube.js auth`. Open the printed link on any device, sign in, then copy the address the browser ends on (127.0.0.1:8788/?code=…, the page itself won't load) and paste it into the terminal. Then `node tools/live/youtube.js check` tests everything and explains any failure.
 3. `pm2 restart scorebuzz-live`. The log line `YouTube API on` confirms it.
 Quota: ~150 units per game (insert + bind + thumbnail) of the default 10,000/day.
 
