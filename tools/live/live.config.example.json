@@ -1,10 +1,15 @@
 {
-  "leagues": ["nba", "nfl", "epl", "ucl", "nhl"],
-  "leadMinutes": 15,
+  "leagues": ["ncaaf", "nfl", "nba", "ucl", "epl"],
+  "leadMinutes": 30,
   "keys": [
     {"youtube": "PASTE-YOUTUBE-KEY-1", "facebook": "PASTE-FACEBOOK-KEY-1"},
     "PASTE-YOUTUBE-KEY-2",
     "PASTE-YOUTUBE-KEY-3"
   ],
-  "only": []
+  "only": {
+    "nba": ["LAL", "GS", "NYK", "BOS", "PHI", "DET", "OKC", "MIA"],
+    "epl": ["ARS", "LIV", "MNC", "MAN", "CHE", "TOT"],
+    "ucl": ["ARS", "LIV", "MNC", "MAN", "CHE", "AVL", "RMA", "BAR", "PSG", "MUN"]
+  },
+  "top25": 15
 }

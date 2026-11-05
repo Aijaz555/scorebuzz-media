@@ -407,6 +407,9 @@ async function list(league, date) {
     const title = `${t1.displayName} vs ${t2.displayName} | ${tag} Live Scoreboard & Play-by-Play`;
     return {
       league, id: e.id, start: e.date, state: e.status?.type?.state,
+      abbrs: [a.abbreviation, h.abbreviation].filter(Boolean),
+      // best (lowest) top-25 ranking of the two teams, college only (99 = unranked)
+      rank: Math.min(...c.competitors.map((x) => x.curatedRank?.current || 99).map((r) => (r > 0 && r < 26 ? r : 99))),
       matchup: `${t1.displayName} vs ${t2.displayName}`,
       title: title.length > 100 ? `${t1.displayName} vs ${t2.displayName} | ${tag} Live Scoreboard` : title,
       description: [

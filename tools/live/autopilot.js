@@ -8,7 +8,9 @@
 //   "leadMinutes": 15,                       // go live this long before the start
 //   "keys": ["key-1", "key-2", "key-3"],      // one key per stream running at the same time
 //   // or, to send a stream to YouTube AND a Facebook Page: {"youtube": "yt-key", "facebook": "fb-key"}
-//   "only": ["LAL", "GS", "NYK"]              // optional: only games involving these team abbreviations
+//   "only": {"nba": ["LAL", "GS", "NYK"]},     // optional: per league, only games involving these team abbreviations
+//                                              // (a plain list applies to every league)
+//   "top25": 10                                // optional, college: only games with a team ranked this high or better
 // }
 // Each key must belong to a YouTube broadcast that starts automatically when video arrives
 // (YouTube Studio > Go live > Manage > Schedule stream > "Enable auto-start"). Creating those
@@ -32,7 +34,9 @@ async function tick() {
     for (const g of games) {
       if (running.has(g.id) || done.has(g.id) || g.state === 'post') continue;
       if (new Date(g.start) - Date.now() > lead) continue;
-      if (cfg.only?.length && !cfg.only.some((a) => g.title.toUpperCase().includes(a.toUpperCase()))) continue;
+      const only = Array.isArray(cfg.only) ? cfg.only : cfg.only?.[league];
+      if (only?.length && !only.some((a) => g.abbrs.map((x) => x.toUpperCase()).includes(a.toUpperCase()))) continue;
+      if (league === 'ncaaf' && cfg.top25 && g.rank > cfg.top25) continue;
       const busy = new Set([...running.values()].map((r) => r.key));
       const key = cfg.keys.find((k) => !busy.has(k));
       if (!key) { log(`no free stream key for ${g.matchup}, skipped`); done.add(g.id); continue; }

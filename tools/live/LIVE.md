@@ -78,6 +78,29 @@ keeps going. Facebook key: Page > Live Producer > "Streaming software" > copy th
 "Use a persistent stream key" so it doesn't change). Facebook needs RTMPS (`rtmps://live-api-s.facebook.com:443/rtmp`,
 the default). In `live.config.json` a key can be `{"youtube": "...", "facebook": "..."}`.
 
+## What Sports Lounge does (checked 5 Nov 2026, @Sportslounge7 live tab)
+
+- 2–4 streams a day, each one game, 2.5–5 h long (goes live before the start, ends after the final).
+- Title: `<Team> vs <Team> | NBA Live Scoreboard & Play-by-Play`, `| Week 8 Live Scoreboard & Play-by-Play` (NFL), `<Team> vs <Team> LIVE | NCAAF Live Scoreboard & Play-by-Play`. Our `games.js` uses the same pattern.
+- Views per stream: college football Saturday top games 60k–260k (best: Texas v Ole Miss 262k, Georgia v Florida 236k, Notre Dame v BYU 220k), NFL 15k–180k (Bears v Seahawks 179k), NBA 25k–100k (Lakers games most often), MLB playoffs 13k–54k.
+- So pick games, don't stream everything: ranked college games on Saturday, NFL Sunday/prime time, one or two big-market NBA games a night (Lakers, Warriors, Knicks, Celtics, 76ers), big Champions League/Premier League games for the UK audience. `live.config.example.json` is set up that way (`only` per league, `top25` for college).
+
+## VPS quick start (recommended hosting)
+
+1. Rent an Ubuntu 24.04 server with 2 vCPU / 4 GB RAM (Hetzner CPX21, DigitalOcean or Vultr; roughly $5–12 a month). Each stream needs ~0.6 CPU core and ~3 Mbps upload, so this runs 3 at once.
+2. SSH in and run:
+   ```bash
+   git clone https://github.com/Aijaz555/scorebuzz-media && cd scorebuzz-media
+   bash tools/live/setup_vps.sh
+   node tools/live/games.js nba nfl ncaaf     # check the data feed works from the server
+   ```
+3. YouTube Studio → Go live → Stream → create one **reusable stream key per simultaneous stream** (3 keys), each with "Enable auto-start" and "Enable auto-stop". Paste them into `tools/live/live.config.json`.
+4. Test one recording without going live: `node tools/live/stream.js --league nba --event <id> --out test.mp4 --minutes 2`.
+5. Start it: `pm2 start tools/live/autopilot.js --name scorebuzz-live -- tools/live/live.config.json && pm2 save && pm2 startup`. Logs: `pm2 logs scorebuzz-live` (it prints the YouTube title and description for each game it starts).
+6. Update later with `git pull && pm2 restart scorebuzz-live`.
+
+Titles: with reusable keys, YouTube reuses the last title on that key. Until the YouTube Data API step below is set up, set each upcoming broadcast's title from `games.js` in Studio (or accept the generic title).
+
 ## Fully automatic (next step)
 
 `autopilot.js` + a stream-key pool already starts and stops the video for every game. What it can't
