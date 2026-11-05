@@ -189,7 +189,7 @@ function side(t, opp, g, which) {
   const cur = g.state === 'in' ? Math.min(g.period, n) - 1 : -1;
   const ls = g.sport === 'mlb' ? '' : `<div class="ls">${labels.map((l, i) => `<div class="${i === cur ? 'cur' : ''}"><b>${l}</b><span class="num">${esc(t.lines[i] ?? '–')}</span></div>`).join('')}</div>`;
   const poss = g.field && g.field.poss === t.abbr ? '<div class="poss">🏈 BALL</div>' : '';
-  const ldr = g.leaders.map((x) => ({ cat: x.cat, p: x[which] })).filter((x) => x.p).slice(0, 3);
+  const ldr = g.leaders.map((x) => ({ cat: x.cat, p: x[which] })).filter((x) => x.p).slice(0, g.soccer ? 4 : 3);
   const st = (g.stats || []).slice(0, 4);
   const flash = prev && prev[which] !== t.score ? 'flash' : '';
   return `
@@ -198,8 +198,8 @@ function side(t, opp, g, which) {
     <div class="score num ${lose ? 'lose' : ''} ${flash}">${g.state === 'pre' ? '0' : esc(t.score)}</div>
     ${ls}
   </div>
-  <div class="panel card" style="--tc2:${vivid(t)}"><div class="h">${g.state === 'pre' ? 'Season leaders' : 'Game leaders'}</div>
-    ${ldr.length ? ldr.map((x) => `<div class="ldr"><span class="c">${esc(x.cat)}</span><span class="p">${esc(x.p.name)}</span><span class="v num">${esc(x.p.value)}</span></div>`).join('') : '<div class="ldr"><span></span><span class="p" style="color:var(--dim)">Updates when the game starts</span></div>'}
+  <div class="panel card" style="--tc2:${vivid(t)}"><div class="h">${g.soccer ? 'Goals' : g.state === 'pre' ? 'Season leaders' : 'Game leaders'}</div>
+    ${ldr.length ? ldr.map((x) => `<div class="ldr"><span class="c">${esc(x.cat)}</span><span class="p">${esc(x.p.name)}</span><span class="v num">${esc(x.p.value)}</span></div>`).join('') : `<div class="ldr"><span></span><span class="p" style="color:var(--dim)">${g.soccer ? (g.state === 'pre' ? 'Scorers appear here' : 'No goals yet') : 'Live at tip-off'}</span></div>`}
   </div>
   <div class="panel card" style="flex:1;--tc2:${vivid(t)}"><div class="h">Team stats</div>
     ${st.length ? st.map((r) => {

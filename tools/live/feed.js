@@ -90,6 +90,11 @@ function leaders(comp) {
   return order.map((k) => by[k]);
 }
 
+// football: goalscorers in the "game leaders" panel (cat = ball icon, value = minute)
+function soccerLeaders(home, away) {
+  const n = Math.min(4, Math.max(home.scorers?.length || 0, away.scorers?.length || 0));
+  return Array.from({ length: n }, (_, i) => ({ cat: 'GOAL', home: home.scorers[i], away: away.scorers[i] }));
+}
 function periodLabel(n, L) {
   if (!n) return '';
   if (L.sport === 'mlb') return `INN ${n}`;
@@ -144,6 +149,9 @@ function plays(sum, comp, teamsById, L) {
         id: k.id || `${k.clock?.displayValue}-${k.type?.text}`,
         type: k.scoringPlay ? 'Goal' : k.type?.text || '',
       }));
+      // keep the moments that matter (goals, cards, penalties, half/full time) ahead of substitutions
+      const key = list.filter((x) => x.big || /goal|card|penalty|half|kick|end|start|var/i.test(`${x.type} ${x.text}`) && !/substitution/i.test(x.text));
+      if (key.length >= 4) list = key;
     }
   } else {
     const raw = sum.plays || sum.drives?.current?.plays || [];
@@ -292,15 +300,46 @@ function statusText(st, L) {
 
 async function game(league, eventId) {
   const L = LEAGUES[league];
-  const sb = await scoreboard(league);
-  const ev = (sb.events || []).find((e) => String(e.id) === String(eventId));
-  if (!ev) throw new Error(`event ${eventId} is not on today's ${league} scoreboard`);
+  let sb = await scoreboard(league);
+  let ev = (sb.events || []).find((e) => String(e.id) === String(eventId));
+  if (!ev && !MOCK) {
+    // ESPN's default scoreboard rolls over to the next US day around 6-11am ET, and a stream may start
+    // before that: look the game's date up in its summary and load that day's scoreboard instead.
+    try {
+      const s0 = await summary(league, eventId);
+      const d = s0?.header?.competitions?.[0]?.date;
+      if (d) {
+        const ymd = new Date(d).toLocaleDateString('en-CA', { timeZone: 'America/New_York' }).replace(/-/g, '');
+        sb = await scoreboard(league, ymd);
+        ev = (sb.events || []).find((e) => String(e.id) === String(eventId));
+      }
+    } catch (e) { /* fall through to the error below */ }
+  }
+  if (!ev) throw new Error(`event ${eventId} is not on the ${league} scoreboard`);
   const comp = ev.competitions[0];
   const home = team(comp.competitors.find((c) => c.homeAway === 'home'));
   const away = team(comp.competitors.find((c) => c.homeAway === 'away'));
   const teamsById = { [home.id]: home.abbr, [away.id]: away.abbr };
   const sum = ev.status?.type?.state === 'pre' ? {} : await summary(league, eventId);
   const sit = comp.situation || {};
+  if (L.soccer) {
+    // football: ESPN's scoreboard has no half-by-half linescores, so build them from the goals,
+    // and show each side's goalscorers where US sports show game leaders
+    const goals = (comp.details || []).filter((d) => d.scoringPlay).map((d) => ({
+      min: parseInt(d.clock?.displayValue, 10) || 0, label: d.clock?.displayValue || '',
+      team: String(d.team?.id), who: (d.athletesInvolved?.[0]?.shortName || '') + (d.ownGoal ? ' (OG)' : d.penaltyKick ? ' (pen)' : ''),
+      half: /^45'\+|^([0-9]|[1-3][0-9]|4[0-5])'/.test(d.clock?.displayValue || '') ? 0 : 1,
+    }));
+    const st = ev.status?.type?.state;
+    for (const t of [home, away]) {
+      if (!t.lines.length && st !== 'pre') {
+        const h1 = goals.filter((g) => g.team === String(t.id) && g.half === 0).length;
+        const h2 = goals.filter((g) => g.team === String(t.id) && g.half === 1).length;
+        t.lines = (ev.status?.period || 1) >= 2 || st === 'post' ? [String(h1), String(h2)] : [String(h1)];
+      }
+      t.scorers = goals.filter((g) => g.team === String(t.id)).map((g) => ({ name: g.who, value: g.label }));
+    }
+  }
   return {
     league,
     label: L.label,
@@ -315,7 +354,7 @@ async function game(league, eventId) {
     broadcast: (comp.broadcasts || []).flatMap((b) => b.names || []).join(' · '),
     home,
     away,
-    leaders: leaders(comp),
+    leaders: L.soccer ? soccerLeaders(home, away) : leaders(comp),
     situation: L.sport === 'nfl' && sit.downDistanceText
       ? { text: sit.downDistanceText, possession: teamsById[sit.possession] || '', redZone: !!sit.isRedZone }
       : null,
