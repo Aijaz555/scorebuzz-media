@@ -719,7 +719,17 @@
    }
   ],
   "fbTime": "2026-11-05T14:00:00",
-  "fbCaption": "⚽ Missed the weekend? Here's all of it in four minutes.\n\nArsenal won at Anfield for the first time since 2012, Man City lost again, AC Milan beat Inter, Bayern and Dortmund drew 2–2, and PSG hit six in the Champions League.\n\nWho had the best weekend? 👇\n\n#PremierLeague #SerieA #Bundesliga #UCL"
+  "fbCaption": "⚽ Missed the weekend? Here's all of it in four minutes.\n\nArsenal won at Anfield for the first time since 2012, Man City lost again, AC Milan beat Inter, Bayern and Dortmund drew 2–2, and PSG hit six in the Champions League.\n\nWho had the best weekend? 👇\n\n#PremierLeague #SerieA #Bundesliga #UCL",
+  "thumb": {
+   "kicker": "Weekend recap",
+   "big": "1–0",
+   "teams": [
+    "LIV",
+    "ARS"
+   ],
+   "hook": "Arsenal win at *Anfield*",
+   "sticker": "Every result"
+  }
  },
  {
   "id": "v2-nfl-week8",
@@ -1217,7 +1227,14 @@
    }
   ],
   "fbTime": "2026-11-05T23:00:00",
-  "fbCaption": "🏈 NFL Week 8 in just over three minutes.\n\nThe Vikings lost for the first time, the Broncos stopped Mahomes on the final play, Joe Burrow threw for 462 yards, and the Bucs won without completing a pass.\n\nBest game of the week? 👇\n\n#NFL #NFLWeek8 #Broncos #Bengals"
+  "fbCaption": "🏈 NFL Week 8 in just over three minutes.\n\nThe Vikings lost for the first time, the Broncos stopped Mahomes on the final play, Joe Burrow threw for 462 yards, and the Bucs won without completing a pass.\n\nBest game of the week? 👇\n\n#NFL #NFLWeek8 #Broncos #Bengals",
+  "thumb": {
+   "kicker": "NFL Week 8 recap",
+   "big": "0",
+   "hook": "completions… and *won*",
+   "sticker": "Wild week",
+   "emoji": "🤯"
+  }
  },
  {
   "id": "v3-nba-nhl-week",
@@ -1555,6 +1572,12 @@
    }
   ],
   "fbTime": "2026-11-06T23:00:00",
-  "fbCaption": "🏀🏒 The NBA and NHL week in review (28 Oct – 3 Nov).\n\nLuka Dončić scored 37+ in five straight games, Wembanyama dropped 43, the Jets came back from 4–0 down in the third, and McDavid's assist streak reached 16.\n\nPlayer of the week? 👇\n\n#NBA #NHL #Lakers #Oilers"
+  "fbCaption": "🏀🏒 The NBA and NHL week in review (28 Oct – 3 Nov).\n\nLuka Dončić scored 37+ in five straight games, Wembanyama dropped 43, the Jets came back from 4–0 down in the third, and McDavid's assist streak reached 16.\n\nPlayer of the week? 👇\n\n#NBA #NHL #Lakers #Oilers",
+  "thumb": {
+   "kicker": "NBA & NHL week",
+   "big": "43",
+   "hook": "Wemby + a *record* comeback",
+   "sticker": "Week in review"
+  }
  }
 ]

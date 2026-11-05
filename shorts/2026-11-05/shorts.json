@@ -56,7 +56,18 @@
     "title": "Are Como the real deal?",
     "sub": "Follow ScoreBuzz for daily updates"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "Champions League",
+   "big": "9–1",
+   "teams": [
+    "LEN",
+    "COM"
+   ],
+   "hook": "*Nine* goals away",
+   "sticker": "Record",
+   "emoji": "🤯"
+  }
  },
  {
   "id": "s02-ucl-board",
@@ -164,7 +175,13 @@
     "title": "Result of the night?",
     "sub": "Tell us in the comments"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "Champions League",
+   "big": "9",
+   "hook": "results in *60 seconds*",
+   "sticker": "Full time"
+  }
  },
  {
   "id": "s03-fener-liverpool",
@@ -247,7 +264,18 @@
     "title": "What's wrong at Liverpool?",
     "sub": "Follow ScoreBuzz for daily updates"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "Istanbul",
+   "big": "3–2",
+   "teams": [
+    "FEN",
+    "LIV"
+   ],
+   "hook": "Liverpool led *twice*",
+   "sticker": "Shock",
+   "emoji": "😳"
+  }
  },
  {
   "id": "s04-valverde-winner",
@@ -332,7 +360,14 @@
     "title": "Can anyone stop Madrid?",
     "sub": "Follow ScoreBuzz for daily updates"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "Real Madrid",
+   "big": "90+2'",
+   "hook": "*Valverde* wins it",
+   "sticker": "Comeback",
+   "emoji": "😱"
+  }
  },
  {
   "id": "s05-atleti-barca",
@@ -426,7 +461,13 @@
     "title": "Who wins it?",
     "sub": "Follow ScoreBuzz for daily updates"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "LaLiga · Sunday",
+   "big": "2nd v 1st",
+   "hook": "Win = *top*",
+   "sticker": "Title race"
+  }
  },
  {
   "id": "s06-f1-brazil",
@@ -492,7 +533,14 @@
     "title": "Who wins in Brazil?",
     "sub": "Follow ScoreBuzz for daily updates"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "São Paulo GP",
+   "big": "#1",
+   "hook": "Antonelli's first race *as champ*",
+   "sticker": "This weekend",
+   "emoji": "🏁"
+  }
  },
  {
   "id": "s07-uel-predict",
@@ -600,7 +648,13 @@
     "title": "Your predictions?",
     "sub": "Drop your scores in the comments"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "Europa League",
+   "big": "?–?",
+   "hook": "Predict *every* score",
+   "sticker": "Tonight"
+  }
  },
  {
   "id": "s08-sixers-block",
@@ -659,7 +713,14 @@
     "title": "Best team in the East?",
     "sub": "Follow ScoreBuzz for daily updates"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "1st v 2nd · East",
+   "big": "112–106",
+   "hook": "The *block* that won it",
+   "sticker": "Final",
+   "emoji": "🔥"
+  }
  },
  {
   "id": "s09-nba-board",
@@ -783,7 +844,13 @@
     "title": "Best win of the night?",
     "sub": "Tell us in the comments"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "NBA · Wednesday",
+   "big": "11",
+   "hook": "finals in *one* video",
+   "sticker": "Results"
+  }
  },
  {
   "id": "s10-sga-85",
@@ -847,7 +914,14 @@
     "title": "Best scorer in the NBA?",
     "sub": "Follow ScoreBuzz for daily updates"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "Shai Gilgeous-Alexander",
+   "big": "85",
+   "hook": "points in *3 nights*",
+   "sticker": "Unreal",
+   "emoji": "🔥"
+  }
  },
  {
   "id": "s11-cfb-saturday",
@@ -919,7 +993,14 @@
     "title": "Which top-3 team falls?",
     "sub": "Follow ScoreBuzz for daily updates"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "College football",
+   "big": "#1 & #2",
+   "hook": "both on the *road*",
+   "sticker": "Saturday",
+   "emoji": "😳"
+  }
  },
  {
   "id": "s12-tnf-preview",
@@ -996,7 +1077,13 @@
     "title": "Who wins tonight?",
     "sub": "Follow ScoreBuzz for daily updates"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "Thursday Night Football",
+   "big": "5–2 v 4–4",
+   "hook": "Jaguars at *Ravens*",
+   "sticker": "Tonight"
+  }
  },
  {
   "id": "s13-ufc-preview",
@@ -1052,6 +1139,17 @@
     "title": "Knockout or decision?",
     "sub": "Follow ScoreBuzz for daily updates"
    }
-  ]
+  ],
+  "thumb": {
+   "kicker": "UFC · Saturday",
+   "big": "KO?",
+   "hook": "*Heavyweights* collide",
+   "teams": [
+    "WCA",
+    "JW"
+   ],
+   "sticker": "Main event",
+   "emoji": "🥊"
+  }
  }
 ]

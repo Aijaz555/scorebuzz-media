@@ -76,6 +76,12 @@ Target set by the owner: **15 YouTube uploads per day**, including weekly recap 
 - **Count them toward the day's targets**: each long video counts as 1 of the 15 YouTube uploads and 1 of the ≤25 Facebook posts for its day, so a Tuesday has 13 Shorts and a Friday has 14.
 - Post each long video on **YouTube** (`type: "video"`, title ≤100 chars, chapters optional) **and the Facebook Page** (same MP4, `facebookData: {"type":"POST","title": <title>}`, caption = 2–3 lines + question + hashtags, link in first comment), at least 1 hour apart on the two networks.
 
+## Thumbnails (owner's request, 5 Nov 2026)
+- Every Short and long video gets a designed thumbnail, not a video frame: add a `thumb` object to each entry in `shorts.json` / `videos.json` and run `node tools/make_thumbs.js <json> <dir>` → `<id>.thumb.jpg` (1080x1920 Shorts, 1280x720 videos). Fields are documented at the top of the script.
+- Formula: yellow kicker (league/event) → one giant number or score (`big`, ≤ 6–8 chars; team abbreviation badges optional) → a 2–5 word hook with one *highlighted* word (+ one emoji) → a red corner sticker (RECORD, FINAL, TONIGHT, COMEBACK, UPSET…). One idea per thumbnail, and it must say something the title doesn't repeat word for word.
+- Same accuracy rules: the number and hook must be true facts from the Short. No logos, crests or player photos.
+- Check a contact sheet (nothing clipped or overlapping), commit, then pass the commit-pinned URL as `videoThumbnailUrl` in `createScheduledPost` (YouTube Shorts/videos and Facebook video posts). YouTube only displays custom Shorts thumbnails on verified channels where Shorts thumbnails are enabled; it is harmless otherwise.
+
 ## Scheduling (Metricool `createScheduledPost`)
 - provider `youtube`, `youtubeData: {"title": ..., "type": "short"|"video", "privacy": "public", "tags": [...], "category": "SPORTS", "madeForKids": false, "isAiGeneratedContent": false}`, media = `https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/shorts/YYYY-MM-DD/<id>.mp4`, text = description.
 
