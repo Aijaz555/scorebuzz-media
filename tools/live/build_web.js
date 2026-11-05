@@ -28,7 +28,11 @@ const FEED = (function () {
 
 const autoPick = `
 // ---- autopilot game picker (static version) ----
-const AUTO = q.get('auto') === '1';
+// ?slot=N: a reusable "game slot" for a studio project. The game shown comes from settings.json
+// "slots": {"1": {"league": "ncaaf", "event": "401858291"}, ...}, so a project's web layer never
+// has to change: Claude sets the slot's game in git, retitles the project and schedules it via API.
+const SLOT = q.get('slot');
+const AUTO = q.get('auto') === '1' || !!SLOT;
 let AUTO_LEAGUES = (q.get('leagues') || q.get('league') || 'nba').split(',').filter(Boolean);
 let AUTO_TEAMS = (q.get('teams') || '').toUpperCase().split(',').filter(Boolean);
 let AUTO_TOP = Number(q.get('top25') || 0);
@@ -46,6 +50,7 @@ async function loadSettings() {
     if (Array.isArray(c.teams)) AUTO_TEAMS = c.teams.map((t) => String(t).toUpperCase());
     if (c.top25 !== undefined) AUTO_TOP = Number(c.top25) || 0;
     PIN = c.pin && c.pin.event ? c.pin : null;
+    if (SLOT) { const sl = (c.slots || {})[SLOT]; PIN = sl && sl.event ? sl : null; }
   } catch (e) { /* keep URL settings */ }
 }
 let finalSince = 0;
@@ -72,6 +77,7 @@ async function autoTick() {
   await loadSettings();
   if (PIN && (PIN.event !== event || PIN.league !== league)) { league = PIN.league; event = String(PIN.event); G = null; finalSince = 0; tickKey = ''; poll(); return; }
   if (PIN) return;
+  if (SLOT) { if (!event) $('app').innerHTML = '<div class="err">ScoreBuzz live scoreboard · next game coming up</div>'; return; }
   const cur = G && G.id === event ? G : null;
   if (cur && cur.state === 'in') { finalSince = 0; return; }
   if (cur && cur.state === 'post') { if (!finalSince) finalSince = Date.now(); if (Date.now() - finalSince < 15 * 60000) return; }

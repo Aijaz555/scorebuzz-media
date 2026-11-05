@@ -25,5 +25,27 @@
   "CEL"
  ],
  "top25": 15,
- "pin": null
+ "pin": null,
+ "slots": {
+  "1": {
+   "league": "ncaaf",
+   "event": "401858291",
+   "note": "#1 Miami at #11 Notre Dame, Sat 7:30pm ET"
+  },
+  "2": {
+   "league": "ncaaf",
+   "event": "401856741",
+   "note": "#2 Georgia at #10 Ole Miss, Sat 7:30pm ET"
+  },
+  "3": {
+   "league": "ncaaf",
+   "event": "401856740",
+   "note": "#5 Alabama at #14 LSU, Sat 3:30pm ET"
+  },
+  "4": {
+   "league": "nfl",
+   "event": "401873051",
+   "note": "Bills at Vikings, MNF Mon 8:15pm ET"
+  }
+ }
 }

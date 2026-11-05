@@ -85,7 +85,10 @@ function leaders(comp) {
       if (!top) continue;
       const k = cat.abbreviation || cat.shortDisplayName || cat.name || '';
       if (!by[k]) { by[k] = { cat: k }; order.push(k); }
-      by[k][c.homeAway] = { name: top.athlete?.shortName || top.athlete?.displayName || '', value: top.displayValue || String(top.value ?? '') };
+      let value = top.displayValue || String(top.value ?? '');
+      // football season leaders come as "188/233, 2425 YDS, 25 TD, 1 INT": keep the yards so it fits the panel
+      if (value.length > 9) value = (value.match(/[\d,]+ YDS/) || [value.split(',')[0]])[0].replace(' YDS', '');
+      by[k][c.homeAway] = { name: top.athlete?.shortName || top.athlete?.displayName || '', value };
     }
   }
   return order.map((k) => by[k]);
