@@ -156,3 +156,28 @@ Hosting: a $5–12/month Ubuntu VPS (2 vCPU / 2–4 GB) runs 3–4 streams at on
 - Description says it is a live scoreboard without footage, and links scorebuzz.net.
 - YouTube can limit monetization on channels whose videos are mass-produced or repetitive. Each stream has different live data, but keep the channel varied (Shorts, recaps) and don't run streams for games with no audience.
 - ESPN's JSON API is unofficial, with no SLA: if it changes or blocks requests, `feed.js` is the only file to change (or swap in a paid feed such as Sportradar/API-Sports).
+
+## Every game, its own stream (owner's request, 5 Nov 2026)
+
+Leagues: NFL, NBA, NHL, MLB, Premier League, LaLiga, Serie A, Ligue 1, MLS (plus Champions League and
+top-10 college football). Each game gets its own LiveReacting stream with its own title and description,
+starting 30 min before kick-off and stopped when the game is over.
+
+- Pool: LiveReacting projects named `ScoreBuzz Main` (web layer `?auto=1…`, steered by `settings.pin`) and
+  `Slot N` (web layer `…/docs/live/index.html?slot=N&fit=fill&w=1920&h=1080`, steered by `settings.slots[N]`).
+  To add capacity: duplicate a Slot project in the Studio, name it `Slot <next number>` and change `slot=` in
+  its Web Page layer URL to the same number. Peak load (Sat/Sun evenings) is about 20 games at once.
+- `node tools/live/plan_streams.js <projects.json> --write` (projects.json = livereacting_list_projects output)
+  decides stops, restarts and new assignments and updates docs/live/settings.json. Priority when the pool is
+  short: favourite teams, then nfl > nba > epl > ucl > ncaaf > nhl > laliga > seriea > ligue1 > mls > mlb.
+  Override any of it with `"streams": {...}` in settings.json (leagues, leadMinutes, ncaafTop, hours).
+- Run hourly by the scheduled task "ScoreBuzz live stream manager". For each action:
+  1. `stop` → livereacting_stop_stream. `cancel` → livereacting_cancel_schedules.
+  2. Commit + push settings.json (attribution) BEFORE starting/scheduling, so the page shows the right game.
+  3. `assign` → livereacting_update_project(title, description, duration {manual:false, planned: durationSec}),
+     then livereacting_schedule_stream([at]) or, when at = "now", livereacting_start_stream.
+     `restart` → update_project(duration) then start_stream.
+- Planned durations are generous (NBA/NHL 3h15 after tip-off, NFL 4h, soccer 2h15) and the hourly run stops a
+  stream once ESPN says the game is final; a stream that ended before the game did is restarted.
+- Music: every project has an `audioPlaylist` layer of original synthesised tracks (tools/music/live, built by
+  `python3 tools/make_live_music.py`), shuffled, looping, volume 3/10. No commercial music, ever.

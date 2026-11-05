@@ -216,6 +216,7 @@ const LEAGUES = {
   laliga: { path: 'soccer/esp.1', label: 'LALIGA', name: 'LaLiga', sport: 'football', periods: 2, soccer: true },
   seriea: { path: 'soccer/ita.1', label: 'SERIE A', name: 'Serie A', sport: 'football', periods: 2, soccer: true },
   bundesliga: { path: 'soccer/ger.1', label: 'BUNDESLIGA', name: 'Bundesliga', sport: 'football', periods: 2, soccer: true },
+  ligue1: { path: 'soccer/fra.1', label: 'LIGUE 1', name: 'Ligue 1', sport: 'football', periods: 2, soccer: true },
   mls: { path: 'soccer/usa.1', label: 'MLS', sport: 'football', periods: 2, soccer: true },
 };
 
@@ -702,7 +703,7 @@ async function list(league, date) {
     const tag = league === 'nfl' && week ? `NFL Week ${week}` : L.name || L.label;
     const title = `${t1.displayName} vs ${t2.displayName} | ${tag} Live Scoreboard & Play-by-Play`;
     return {
-      league, id: e.id, start: e.date, state: e.status?.type?.state,
+      league, id: e.id, start: e.date, state: e.status?.type?.state, status: e.status?.type?.name || '',
       abbrs: [a.abbreviation, h.abbreviation].filter(Boolean),
       // best (lowest) top-25 ranking of the two teams, college only (99 = unranked)
       rank: Math.min(...c.competitors.map((x) => x.curatedRank?.current || 99).map((r) => (r > 0 && r < 26 ? r : 99))),
