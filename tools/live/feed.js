@@ -15,6 +15,7 @@ const LEAGUES = {
   mlb: { path: 'baseball/mlb', label: 'MLB', sport: 'mlb', periods: 9, otLabel: 'X' },
   epl: { path: 'soccer/eng.1', label: 'PREMIER LEAGUE', name: 'Premier League', sport: 'football', periods: 2, soccer: true },
   ucl: { path: 'soccer/uefa.champions', label: 'CHAMPIONS LEAGUE', name: 'Champions League', sport: 'football', periods: 2, soccer: true },
+  uel: { path: 'soccer/uefa.europa', label: 'EUROPA LEAGUE', name: 'Europa League', sport: 'football', periods: 2, soccer: true },
   laliga: { path: 'soccer/esp.1', label: 'LALIGA', name: 'LaLiga', sport: 'football', periods: 2, soccer: true },
   seriea: { path: 'soccer/ita.1', label: 'SERIE A', name: 'Serie A', sport: 'football', periods: 2, soccer: true },
   bundesliga: { path: 'soccer/ger.1', label: 'BUNDESLIGA', name: 'Bundesliga', sport: 'football', periods: 2, soccer: true },

@@ -29,9 +29,25 @@ const FEED = (function () {
 const autoPick = `
 // ---- autopilot game picker (static version) ----
 const AUTO = q.get('auto') === '1';
-const AUTO_LEAGUES = (q.get('leagues') || q.get('league') || 'nba').split(',').filter(Boolean);
-const AUTO_TEAMS = (q.get('teams') || '').toUpperCase().split(',').filter(Boolean);
-const AUTO_TOP = Number(q.get('top25') || 0);
+let AUTO_LEAGUES = (q.get('leagues') || q.get('league') || 'nba').split(',').filter(Boolean);
+let AUTO_TEAMS = (q.get('teams') || '').toUpperCase().split(',').filter(Boolean);
+let AUTO_TOP = Number(q.get('top25') || 0);
+let PIN = null;
+// Remote control: in auto mode the page also reads ./settings.json next to it (committed to GitHub),
+// so leagues/teams can be changed or a game pinned without touching the streaming studio.
+//   { "leagues": ["nba","nfl"], "teams": ["LAL"], "top25": 10, "pin": {"league": "nba", "event": "401..."} | null }
+async function loadSettings() {
+  if (q.has('noremote')) return;
+  try {
+    const r = await window.fetch('settings.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) return;
+    const c = await r.json();
+    if (Array.isArray(c.leagues) && c.leagues.length) AUTO_LEAGUES = c.leagues;
+    if (Array.isArray(c.teams)) AUTO_TEAMS = c.teams.map((t) => String(t).toUpperCase());
+    if (c.top25 !== undefined) AUTO_TOP = Number(c.top25) || 0;
+    PIN = c.pin && c.pin.event ? c.pin : null;
+  } catch (e) { /* keep URL settings */ }
+}
 let finalSince = 0;
 async function pickGame() {
   const all = [];
@@ -53,6 +69,9 @@ async function pickGame() {
   return soonFav || pre[0] || ok.filter((g) => g.state === 'post').pop() || null;
 }
 async function autoTick() {
+  await loadSettings();
+  if (PIN && (PIN.event !== event || PIN.league !== league)) { league = PIN.league; event = String(PIN.event); G = null; finalSince = 0; tickKey = ''; poll(); return; }
+  if (PIN) return;
   const cur = G && G.id === event ? G : null;
   if (cur && cur.state === 'in') { finalSince = 0; return; }
   if (cur && cur.state === 'post') { if (!finalSince) finalSince = Date.now(); if (Date.now() - finalSince < 15 * 60000) return; }
@@ -75,4 +94,6 @@ for (const must of ['FEED.game(league, event)', 'let league', 'autoTick', 'const
 const out = path.join(__dirname, '..', '..', 'docs', 'live', 'index.html');
 fs.mkdirSync(path.dirname(out), { recursive: true });
 fs.writeFileSync(out, page);
+const settings = path.join(path.dirname(out), 'settings.json');
+if (!fs.existsSync(settings)) fs.writeFileSync(settings, JSON.stringify({ leagues: ['nfl', 'ncaaf', 'nba', 'nhl', 'ucl', 'epl'], teams: ['LAL', 'GS', 'NYK', 'BOS', 'PHI', 'KC', 'DAL', 'ARS', 'LIV', 'MNC'], top25: 15, pin: null }, null, 2) + '\n');
 console.log(`wrote ${path.relative(process.cwd(), out)} (${Math.round(page.length / 1024)} KB)`);

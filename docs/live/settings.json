@@ -1,0 +1,29 @@
+{
+ "leagues": [
+  "nfl",
+  "ncaaf",
+  "nba",
+  "nhl",
+  "ucl",
+  "uel",
+  "epl"
+ ],
+ "teams": [
+  "LAL",
+  "GS",
+  "NYK",
+  "BOS",
+  "PHI",
+  "KC",
+  "DAL",
+  "ARS",
+  "LIV",
+  "MNC",
+  "CRY",
+  "BOU",
+  "SUN",
+  "CEL"
+ ],
+ "top25": 15,
+ "pin": null
+}
