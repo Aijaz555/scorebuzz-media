@@ -86,9 +86,9 @@
   "win": true,
   "fit": "fill"
  },
- "reload": 9,
+ "reload": 10,
  "music": {
-  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals.",
+  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks \u2014 no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals.",
   "playlists": {
    "american_football": {
     "Volatile Reaction": "6aeceb72a44fc7f985e331dd",

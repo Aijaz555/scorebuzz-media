@@ -95,6 +95,30 @@ function leaders(comp) {
   return order.map((k) => by[k]);
 }
 
+// Game leaders from the summary (all categories ESPN gives: NFL passing/rushing/receiving/sacks/tackles,
+// NBA points/rebounds/assists, NHL goals/assists/points): [{ cat, home: {name, value, detail}, away: {...} }]
+const LCAT = { passingYards: 'PASS', rushingYards: 'RUSH', receivingYards: 'REC', sacks: 'SACK', totalTackles: 'TKL', interceptions: 'INT',
+  points: 'PTS', rebounds: 'REB', assists: 'AST', steals: 'STL', blocks: 'BLK', goals: 'G', saves: 'SV', plusMinus: '+/-' };
+function summaryLeaders(sum, home, away, sport) {
+  const by = {}, order = [];
+  for (const t of sum.leaders || []) {
+    const side = String(t.team?.id) === String(home.id) ? 'home' : String(t.team?.id) === String(away.id) ? 'away' : null;
+    if (!side) continue;
+    for (const c of t.leaders || []) {
+      const top = c.leaders?.[0];
+      if (!top?.athlete) continue;
+      const k = LCAT[c.name] || (c.shortDisplayName || c.abbreviation || c.name || '').toUpperCase().slice(0, 4);
+      const k2 = sport === 'nhl' && c.name === 'assists' ? 'A' : sport === 'nhl' && c.name === 'points' ? 'PTS' : k;
+      if (!by[k2]) { by[k2] = { cat: k2 }; order.push(k2); }
+      const detail = top.displayValue || String(top.value ?? '');
+      let value = detail;
+      if (value.length > 6) value = ((value.match(/([\d,]+) YDS/) || [])[1]) || value.split(',')[0];
+      by[k2][side] = { name: top.athlete.shortName || top.athlete.displayName || '', value, detail };
+    }
+  }
+  return order.map((k) => by[k]).filter((x) => x.home || x.away);
+}
+
 // football: goalscorers in the "game leaders" panel (cat = ball icon, value = minute)
 function soccerLeaders(home, away) {
   const n = Math.min(4, Math.max(home.scorers?.length || 0, away.scorers?.length || 0));
@@ -208,7 +232,7 @@ function teamStats(sum, L, home, away) {
   const want = STAT_PICK[L.sport] || [];
   let names = want.filter((n) => hs.some((x) => x.name === n));
   if (names.length < 3) names = hs.filter((x) => num(x.displayValue) !== null && !String(x.displayValue).includes('-')).map((x) => x.name);
-  return names.slice(0, 6).map((n) => {
+  return names.slice(0, 8).map((n) => {
     const h = hs.find((x) => x.name === n) || {}, a = as.find((x) => x.name === n) || {};
     const toNum = (x) => (n === 'possessionTime' ? (([m, sec]) => m * 60 + +sec)(String(x.displayValue || '0:0').split(':').map(Number)) : num(x.displayValue));
     return { label: (h.label || h.abbreviation || n).replace(/Percentage/i, '%'), home: h.displayValue ?? '–', away: a.displayValue ?? '–', h: toNum(h) ?? 0, a: toNum(a) ?? 0 };
@@ -449,7 +473,7 @@ async function game(league, eventId) {
     broadcast: (comp.broadcasts || []).flatMap((b) => b.names || []).join(' · '),
     home,
     away,
-    leaders: L.soccer ? soccerLeaders(home, away) : leaders(comp),
+    leaders: L.soccer ? soccerLeaders(home, away) : (ev.status?.type?.state !== 'pre' && summaryLeaders(sum, home, away, L.sport).length ? summaryLeaders(sum, home, away, L.sport) : leaders(comp)),
     situation: L.sport === 'nfl' && sit.downDistanceText
       ? { text: sit.downDistanceText, possession: teamsById[sit.possession] || '', redZone: !!sit.isRedZone }
       : null,

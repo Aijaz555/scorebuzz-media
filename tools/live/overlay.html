@@ -163,6 +163,10 @@ footer{position:absolute;left:0;right:0;bottom:0;height:80px;background:#04060E;
 .fsub{flex:none;margin:0 20px}
 .err{position:absolute;inset:0;display:grid;place-items:center;font-size:36px;color:var(--mute)}
 
+.rdots{float:right;display:flex;gap:6px;margin-top:4px}.rdots i{width:9px;height:9px;border-radius:50%;background:var(--line)}.rdots i.on{background:var(--tc2,var(--acc))}
+
+.ldr.sl{grid-template-columns:60px 1fr}.ldr.sl small{display:block;font-size:19px;font-weight:600;color:var(--mute);margin-top:2px}
+.bxh{text-align:right;font-size:15px;font-weight:800;letter-spacing:2px;color:var(--mute);margin:-4px 0 -2px}.ldr.bxr{grid-template-columns:1fr auto}.ldr.bxr .v{font-size:30px}.ldr.bxr .v em{font-style:normal;color:var(--dim);margin:0 6px}
 /* ===== light theme (matches scorebuzz.net: #f2f2f2 page, white cards, black header, lime "Buzz", blue accents) ===== */
 body.light{--bg:#f2f2f2;--panel:#ffffff;--panel2:#f7f7f8;--line:#e6e6e6;--ink:#1b1b1b;--mute:#6b6b6b;--dim:#9a9a9a;--lime:#2f80ed;--acc:#2f80ed;--red:#e53935;--brand:#c6f432}
 html:has(body.light){background:#f2f2f2}
@@ -286,15 +290,47 @@ function side(t, opp, g, which) {
     <div class="score num ${lose ? 'lose' : ''} ${flash}">${g.state === 'pre' ? '0' : esc(t.score)}</div>
     ${ls}
   </div>
-  <div class="panel card" style="--tc2:${vivid(t)}"><div class="h">${g.soccer ? 'Goals' : g.state === 'pre' ? 'Season leaders' : 'Game leaders'}</div>
-    ${ldr.length ? ldr.map((x) => `<div class="ldr"><span class="c">${esc(x.cat)}</span><span class="p">${esc(x.p.name)}</span><span class="v num">${esc(x.p.value)}</span></div>`).join('') : `<div class="ldr"><span></span><span class="p" style="color:var(--dim)">${g.soccer ? (g.state === 'pre' ? 'Scorers appear here' : 'No goals yet') : 'Live at tip-off'}</span></div>`}
+  ${g.soccer ? soccerCards(t, g, which, ldr, st) : usCards(t, g, which)}`;
+}
+
+// football: goals + team stats (unchanged)
+function soccerCards(t, g, which, ldr, st) {
+  return `<div class="panel card" style="--tc2:${vivid(t)}"><div class="h">Goals</div>
+    ${ldr.length ? ldr.map((x) => `<div class="ldr"><span class="c">${esc(x.cat)}</span><span class="p">${esc(x.p.name)}</span><span class="v num">${esc(x.p.value)}</span></div>`).join('') : `<div class="ldr"><span></span><span class="p" style="color:var(--dim)">${g.state === 'pre' ? 'Scorers appear here' : 'No goals yet'}</span></div>`}
   </div>
-  <div class="panel card" style="flex:1;--tc2:${vivid(t)}"><div class="h">Team stats</div>
-    ${st.length ? st.map((r) => {
-      const me = which === 'home' ? r.h : r.a, ot = which === 'home' ? r.a : r.h, tot = Math.max(me + ot, 0.0001);
-      return `<div class="st"><span class="k">${esc(r.label)}</span><span class="v num">${esc(which === 'home' ? r.home : r.away)}</span><div class="bar ${me > ot ? 'win' : ''}"><i style="width:${(me / tot) * 100}%"></i></div></div>`;
-    }).join('') : '<div class="st"><span class="k" style="color:var(--dim)">Live team stats appear here</span></div>'}
-  </div>`;
+  <div class="panel card" style="flex:1;--tc2:${vivid(t)}"><div class="h">Team stats</div>${statRows(g.stats.slice(0, 4), which)}</div>`;
+}
+function statRows(rows, which) {
+  return rows.length ? rows.map((r) => {
+    const me = which === 'home' ? r.h : r.a, ot = which === 'home' ? r.a : r.h, tot = Math.max(me + ot, 0.0001);
+    return `<div class="st"><span class="k">${esc(r.label)}</span><span class="v num">${esc(which === 'home' ? r.home : r.away)}</span><div class="bar ${me > ot ? 'win' : ''}"><i style="width:${(me / tot) * 100}%"></i></div></div>`;
+  }).join('') : '<div class="st"><span class="k" style="color:var(--dim)">Live team stats appear here</span></div>';
+}
+// NBA / NFL / NHL: the two cards under each team rotate every 10 s through leaders, stat lines,
+// top players and pages of team stats (both sides show the same page, so they compare side by side)
+const ROT_MS = 10000;
+const dots = (n, i) => n > 1 ? `<span class="rdots">${Array.from({ length: n }, (_, k) => `<i class="${k === i ? 'on' : ''}"></i>`).join('')}</span>` : '';
+function usCards(t, g, which) {
+  const r = Math.floor(Date.now() / ROT_MS);
+  // same categories on both sides (a dash where this team has no leader) so the two columns line up
+  const L = (g.leaders || []).map((x) => ({ cat: x.cat, p: x[which] || { name: '–', value: '–' } }));
+  const ldrRow = (x, v) => `<div class="ldr"><span class="c">${esc(x.cat)}</span><span class="p">${esc(x.p.name)}</span><span class="v num">${esc(v ?? x.p.value)}</span></div>`;
+  const p1 = [];
+  if (L.length) p1.push({ h: g.state === 'pre' ? 'Season leaders' : 'Game leaders', b: L.slice(0, 3).map((x) => ldrRow(x)).join('') });
+  if (L.length > 3) p1.push({ h: 'More leaders', b: L.slice(3, 6).map((x) => ldrRow(x)).join('') });
+  const lines = L.filter((x) => x.p.detail && x.p.detail !== x.p.value).slice(0, 3);
+  if (lines.length) p1.push({ h: 'Stat lines', b: lines.map((x) => `<div class="ldr sl"><span class="c">${esc(x.cat)}</span><span class="p">${esc(x.p.name)}<small>${esc(x.p.detail)}</small></span><span></span></div>`).join('') });
+  const bx = g.box && g.box[which];
+  if (bx && bx.length) p1.push({ h: 'Top players', b: `<div class="bxh">${g.box.cols.map(esc).join(' · ')}</div>` + bx.slice(0, 3).map((row) => `<div class="ldr bxr"><span class="p">${esc(row[0])}</span><span class="v num">${row.slice(1).map(esc).join('<em>·</em>')}</span></div>`).join('') });
+  if (!p1.length) p1.push({ h: 'Game leaders', b: `<div class="ldr"><span></span><span class="p" style="color:var(--dim)">Live at ${g.sport === 'nfl' ? 'kick-off' : g.sport === 'nhl' ? 'puck drop' : 'tip-off'}</span></div>` });
+  const st = g.stats || [];
+  const p2 = [];
+  for (let i = 0; i < st.length; i += 3) p2.push(i + 3 > st.length && st.length > 3 ? st.slice(-3) : st.slice(i, i + 3)); // last page always full
+  if (!p2.length) p2.push([]);
+  const a = p1[r % p1.length], ai = r % p1.length, bi = r % p2.length;
+  return `
+  <div class="panel card rot" style="--tc2:${vivid(t)}"><div class="h">${esc(a.h)}${dots(p1.length, ai)}</div>${a.b}</div>
+  <div class="panel card rot" style="flex:1;--tc2:${vivid(t)}"><div class="h">Team stats${dots(p2.length, bi)}</div>${statRows(p2[bi], which)}</div>`;
 }
 
 // ---------------- centre visuals ----------------
@@ -604,7 +640,7 @@ function usCentre(g, main, brk) {
 }
 
 function stage(g, ph) {
-  if (g.soccer && ph === 'live' && sbUrl(g)) return '<div id="sbHole" style="width:100%;height:100%"></div>';
+  if (sbOn(g, ph) && (g.soccer || SB_US.includes(league))) return '<div id="sbHole" style="width:100%;height:100%"></div>';
   if (g.soccer && !TRK && g.centre) return matchCentre(g, ph);
   if (ph === 'pre') return preView(g);
   if (ph === 'break' || ph === 'final') return g.soccer ? ((slide % 2 && g.box) ? boxView(g) : compare(g)) : usCentre(g, compare(g), true);
@@ -683,7 +719,7 @@ function render(g) {
   const [lw, rw] = g.soccer ? ['home', 'away'] : ['away', 'home'];
   $('app').innerHTML = `
     <div class="side l">${side(L, R, g, lw)}</div>
-    <div class="center ${g.soccer && ph === 'live' && sbUrl(g) ? 'sbon' : ''}">${statusBar(g, ph)}<div class="panel stage" id="stage">${stage(g, ph)}</div>${ph === 'pre' || (g.soccer && ph === 'live' && sbUrl(g)) ? '' : wpBar(g)}${TRK && g.soccer && ph === 'live' ? '' : playsPanel(g, ph)}</div>
+    <div class="center ${sbOn(g, ph) ? 'sbon' : ''}">${statusBar(g, ph)}<div class="panel stage" id="stage">${stage(g, ph)}</div>${ph === 'pre' || sbOn(g, ph) ? '' : wpBar(g)}${TRK && g.soccer && ph === 'live' ? '' : playsPanel(g, ph)}</div>
     <div class="side r">${side(R, L, g, rw)}</div>`;
   prev = { home: g.home.score, away: g.away.score };
   placeTracker(); placeSite();
@@ -703,8 +739,15 @@ function render(g) {
 // The match page on scorebuzz.net is embedded and cropped to its tracker card: the page is opened at
 // #trkSlot (the browser scrolls the tracker to the top), the site's sticky header covers the first 64 px,
 // so the visible window starts just below it. ?sbtrk=0 turns it off (our own tracker is used instead).
-const SB_LEAGUE = { epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga' };
-const SB_W = 1000, SB_TOP = 64, SB_X = 14, SB_VW = 972, SB_VH = 536;
+const SB_LEAGUE = { epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga',
+  nba: 'basketball/nba', nfl: 'american-football/nfl', ncaaf: 'american-football/college-football', nhl: 'ice-hockey/nhl' };
+const SB_US = ['nba', 'nfl', 'ncaaf', 'nhl'];
+// crop of the site's tracker card (page opened at #trkSlot, 1000 px wide; measured 6 Nov 2026):
+// top = first visible pixel (the sticky header covers 0-64), vh = visible height
+const SB_BOX = { soccer: { top: 64, vh: 536 }, nba: { top: 64, vh: 512 }, nfl: { top: 100, vh: 456 }, ncaaf: { top: 100, vh: 456 }, nhl: { top: 74, vh: 582 } };
+const SB_W = 1000, SB_X = 14, SB_VW = 972;
+const sbBox = () => SB_BOX[league] || SB_BOX.soccer;
+const sbOn = (g, ph) => ph === 'live' && !!sbUrl(g);
 const slugify = (n) => String(n || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 function sbUrl(g) {
   const lg = SB_LEAGUE[league];
@@ -712,7 +755,7 @@ function sbUrl(g) {
   // the website only has a live tracker for some matches and that can't be checked from here (cross-origin),
   // so in auto mode use it for favourite teams and pinned/slot games (big matches, usually covered);
   // other games get our own tracker
-  if (typeof AUTO !== 'undefined' && AUTO && !(typeof PIN !== 'undefined' && PIN) && q.get('sbtrk') !== '1') {
+  if (!SB_US.includes(league) && typeof AUTO !== 'undefined' && AUTO && !(typeof PIN !== 'undefined' && PIN) && q.get('sbtrk') !== '1') {
     const fav = (typeof AUTO_TEAMS !== 'undefined' ? AUTO_TEAMS : []);
     if (!fav.length || ![g.home.abbr, g.away.abbr].some((a) => fav.includes(String(a).toUpperCase()))) return '';
   }
@@ -726,6 +769,7 @@ function placeSite() {
   if (base !== sbBase) { sbBase = base; F.src = base + '#trkSlot'; sbAnchored = Date.now(); }
   else if (Date.now() - sbAnchored > 10 * 60000) { sbAnchored = Date.now(); F.src = base + '#t-ov'; setTimeout(() => { F.src = base + '#trkSlot'; }, 400); } // re-anchor now and then
   const r = hole.getBoundingClientRect(), root = document.body.getBoundingClientRect(), sc = parseFloat((document.body.style.transform.match(/scale\(([\d.]+)/) || [])[1]) || 1;
+  const { top: SB_TOP, vh: SB_VH } = sbBox();
   const hw = r.width / sc, hh = r.height / sc, k = Math.min(hw / SB_VW, hh / SB_VH), w = SB_VW * k, h = SB_VH * k;
   Object.assign(L.style, { display: 'block', left: ((r.left - root.left) / sc + (hw - w) / 2) + 'px', top: ((r.top - root.top) / sc + (hh - h) / 2) + 'px', width: w + 'px', height: h + 'px' });
   Object.assign(F.style, { width: SB_W + 'px', height: (SB_TOP + SB_VH + 20) + 'px', left: (-SB_X * k) + 'px', top: (-SB_TOP * k) + 'px', transform: `scale(${k})` });
