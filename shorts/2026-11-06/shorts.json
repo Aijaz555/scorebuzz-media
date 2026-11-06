@@ -1242,5 +1242,85 @@
    "sticker": "Final",
    "emoji": "🏒"
   }
+ },
+ {
+  "id": "s08-curry-heat",
+  "sport": "nba",
+  "time": "2026-11-06T21:15:00",
+  "bed": "hype",
+  "venue": "Chase Center",
+  "title": "Curry Drops 29 in 28 Minutes as Warriors Beat Giannis & the Heat 🔥 #NBA #shorts",
+  "description": "Stephen Curry scored 29 points with six threes in 28 minutes as the Warriors beat the Heat 120–100. Giannis Antetokounmpo had 20 points and 14 rebounds for Miami. Earlier, Devin Booker's 30 helped the Suns snap a four-game losing streak.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NBA #Warriors #DubNation #Heat",
+  "tags": [
+   "warriors vs heat",
+   "stephen curry",
+   "giannis antetokounmpo",
+   "nba results",
+   "devin booker",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA · San Francisco",
+    "title": "Curry: 29 in 28 minutes",
+    "sub": "Warriors roll"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Final",
+    "home": "Warriors",
+    "homeAbbr": "GS",
+    "homeScore": 120,
+    "away": "Heat",
+    "awayAbbr": "MIA",
+    "awayScore": 100,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+    "note": "Warriors 6–3 · Heat 3–6"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Stephen Curry",
+    "value": "6",
+    "unit": "threes",
+    "text": "29 points on 9-of-19 shooting"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Giannis Antetokounmpo",
+    "title": "20 points, 14 rebounds",
+    "sub": "Not enough for Miami"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Also Thursday",
+    "title": "Booker 30, Suns end their skid",
+    "sub": "Phoenix 117, Orlando 104"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Are the Warriors contenders again?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA",
+   "big": "120–100",
+   "hook": "Curry *cooks* the Heat",
+   "sticker": "Final",
+   "teams": [
+    "GS",
+    "MIA"
+   ],
+   "emoji": "🔥"
+  }
  }
 ]
