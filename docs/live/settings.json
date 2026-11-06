@@ -26,16 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "seriea",
-   "event": "401874815",
-   "note": "Venezia vs Udinese, 2026-11-06T19:45:00Z"
-  },
-  "2": {
-   "league": "ligue1",
-   "event": "401876405",
-   "note": "Toulouse vs Strasbourg, 2026-11-06T19:45:00Z"
-  },
   "3": {
    "league": "epl",
    "event": "401879242",
