@@ -26,16 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "nfl",
-   "event": "401873037",
-   "note": "Jaguars at Ravens, TNF Thu 8:15pm ET"
-  },
-  "11": {
-   "league": "nhl",
-   "event": "401892657",
-   "note": "Anaheim Ducks vs Edmonton Oilers, 2026-11-06T01:00:00Z"
-  },
   "12": {
    "league": "nba",
    "event": "401909937",
@@ -45,11 +35,6 @@
    "league": "nhl",
    "event": "401892658",
    "note": "Nashville Predators vs Colorado Avalanche, 2026-11-06T02:30:00Z"
-  },
-  "14": {
-   "league": "nba",
-   "event": "401909936",
-   "note": "Orlando Magic vs Phoenix Suns, 2026-11-06T02:00:00Z"
   }
  },
  "fit": {
