@@ -1,0 +1,327 @@
+[
+ {
+  "id": "01-bournemouth-sparta",
+  "time": "2026-11-06T11:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "EUROPA LEAGUE · PRAGUE",
+  "home": "Sparta Prague",
+  "homeAbbr": "SPA",
+  "homeScore": 1,
+  "away": "Bournemouth",
+  "awayAbbr": "BOU",
+  "awayScore": 3,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/433.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+  "venue": "Generali Arena",
+  "headline": "Four from four for Bournemouth",
+  "sub": "Tyler Adams (57'), Evanilson (81') and Rayan (90') turned it around after Sparta went ahead.",
+  "caption": "🍒 Bournemouth's first European season keeps getting better.\n\nThey went behind in Prague, but Tyler Adams, Evanilson and Rayan scored after the break for a 3–1 win. That's four wins from four in the Europa League and seven straight wins in all competitions.\n\nHow far can they go? 👇\n\n#AFCB #UEL #EuropaLeague"
+ },
+ {
+  "id": "02-palace-hoffenheim",
+  "time": "2026-11-06T11:45:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "EUROPA LEAGUE · SELHURST PARK",
+  "home": "Crystal Palace",
+  "homeAbbr": "CRY",
+  "homeScore": 1,
+  "away": "Hoffenheim",
+  "awayAbbr": "TSG",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+  "venue": "Selhurst Park",
+  "headline": "Kamada rescues 10-man Palace",
+  "sub": "Prass scored for Hoffenheim on 7'. Wharton was sent off on 77'. Kamada levelled in stoppage time.",
+  "caption": "😮‍💨 Late drama at Selhurst Park.\n\nDown to 10 men after Adam Wharton's second yellow, Crystal Palace were heading for defeat until Daichi Kamada equalised in stoppage time. It finished 1–1 with Hoffenheim.\n\nPoint gained or two dropped? 👇\n\n#CPFC #UEL #EuropaLeague"
+ },
+ {
+  "id": "03-celtic-besiktas",
+  "time": "2026-11-06T13:15:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "EUROPA LEAGUE · GLASGOW",
+  "home": "Celtic",
+  "homeAbbr": "CEL",
+  "homeScore": 3,
+  "away": "Besiktas",
+  "awayAbbr": "BES",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
+  "venue": "Celtic Park",
+  "headline": "Camilo Durán wins it late",
+  "sub": "Besiktas led, Celtic went 2–1 up, Kökçü levelled on 85'... then Durán scored his second on 87'.",
+  "caption": "🍀 What a finish at Celtic Park.\n\nBesiktas went ahead, Callum Osmand and Camilo Durán put Celtic 2–1 up, Orkun Kökçü made it 2–2 with five minutes left, and Durán struck again two minutes later. Celtic win 3–2.\n\nBest European night of Celtic's season? 👇\n\n#Celtic #UEL #EuropaLeague"
+ },
+ {
+  "id": "04-pl-table",
+  "time": "2026-11-06T14:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · BEFORE MATCHWEEK 10",
+  "headline": "Arsenal three points clear",
+  "rows": [
+   [
+    "1",
+    "Arsenal",
+    "24 pts"
+   ],
+   [
+    "2",
+    "Man City",
+    "21 pts"
+   ],
+   [
+    "3",
+    "Brighton",
+    "19 pts"
+   ],
+   [
+    "4",
+    "Chelsea",
+    "16 pts"
+   ],
+   [
+    "5",
+    "Liverpool",
+    "15 pts"
+   ],
+   [
+    "6",
+    "Brentford",
+    "14 pts"
+   ]
+  ],
+  "sub": "This weekend: Arsenal v Hull and Forest v Man City (Sat), Palace v Liverpool (Sun).",
+  "caption": "📊 The Premier League top six before matchweek 10.\n\nArsenal have won eight of nine and lead Man City by three points. Arsenal host Hull on Saturday, while City go to Nottingham Forest.\n\nWho's top at Christmas? 👇\n\n#PremierLeague #Arsenal #ManCity"
+ },
+ {
+  "id": "05-raphinha-2030",
+  "time": "2026-11-06T15:30:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "LALIGA · BARCELONA",
+  "headline": "Raphinha signs on until 2030",
+  "sub": "Barcelona reward him for a fine start to the season. The leaders visit Atlético on Sunday.",
+  "stat": [
+   "10",
+   "wins from 11 for Barça"
+  ],
+  "caption": "✍️ Raphinha is staying at Barcelona until 2030.\n\nThe club announced his new contract after a strong start to the season. Barça top LaLiga with 10 wins from 11 games.\n\nGood deal for Barça? 👇\n\n#Barca #Raphinha #LaLiga"
+ },
+ {
+  "id": "06-laliga-top3",
+  "time": "2026-11-06T16:15:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "LALIGA · TOP OF THE TABLE",
+  "headline": "Three points cover the top three",
+  "rows": [
+   [
+    "1",
+    "Barcelona",
+    "30 pts"
+   ],
+   [
+    "2",
+    "Atlético Madrid",
+    "28 pts"
+   ],
+   [
+    "3",
+    "Real Madrid",
+    "27 pts"
+   ]
+  ],
+  "sub": "Sat: Valencia v Real Madrid (8pm GMT). Sun: Atlético v Barcelona (8pm GMT). Barça are without Rodri.",
+  "caption": "🔥 LaLiga's title race gets serious this weekend.\n\nReal Madrid go to Valencia on Saturday, then leaders Barcelona visit second-placed Atlético on Sunday night. Barça will be without Rodri, who has a hamstring injury.\n\nWho's top on Monday morning? 👇\n\n#LaLiga #Barca #Atleti"
+ },
+ {
+  "id": "07-everton-coventry",
+  "time": "2026-11-06T17:45:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "PREMIER LEAGUE · TONIGHT",
+  "home": "Everton",
+  "homeAbbr": "EVE",
+  "homeScore": "",
+  "away": "Coventry",
+  "awayAbbr": "COV",
+  "awayScore": "",
+  "status": "8PM GMT · 3PM ET",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+  "venue": "Hill Dickinson Stadium",
+  "headline": "Friday night opens matchweek 10",
+  "sub": "Everton are 7th on 13 points, Coventry 16th on 9. Jack Grealish is still unavailable for Everton.",
+  "caption": "⚽ Friday night football is back.\n\nEverton host Coventry at 8pm GMT (3pm ET) to open matchweek 10. Everton are seventh, Coventry 16th, and Jack Grealish is still unavailable for David Moyes's side.\n\nYour score prediction? 👇\n\n#EFC #PUSB #PremierLeague"
+ },
+ {
+  "id": "08-jags-ravens",
+  "time": "2026-11-06T18:30:00",
+  "sport": "nfl",
+  "kind": "score",
+  "label": "NFL · THURSDAY NIGHT FOOTBALL",
+  "home": "Ravens",
+  "homeAbbr": "BAL",
+  "homeScore": 10,
+  "away": "Jaguars",
+  "awayAbbr": "JAX",
+  "awayScore": 33,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+  "venue": "M&T Bank Stadium",
+  "headline": "Jaguars cruise in Baltimore",
+  "sub": "Trevor Lawrence: 242 yards, 1 TD. Rookie Joe Fagnano threw for 60 in his first start. Jags 6–2, Ravens 4–5.",
+  "caption": "🐆 Jacksonville made it look easy.\n\nThe Jaguars beat the Ravens 33–10 in the rain on Thursday night. Trevor Lawrence threw for 242 yards, while Baltimore, without Lamar Jackson and Tyler Huntley, started rookie Joe Fagnano. The Ravens have lost four straight.\n\nAre the Jaguars real AFC contenders? 👇\n\n#DUUUVAL #RavensFlock #TNF #NFL"
+ },
+ {
+  "id": "09-henry-7th",
+  "time": "2026-11-06T20:00:00",
+  "sport": "nfl",
+  "kind": "headline",
+  "label": "NFL · ALL-TIME RUSHING LIST",
+  "headline": "Derrick Henry moves up to 7th all-time",
+  "sub": "He passed LaDainian Tomlinson on the NFL's career rushing list on Thursday night.",
+  "caption": "🏈 Another legend passed.\n\nDerrick Henry moved into seventh on the NFL's all-time rushing list on Thursday night, passing LaDainian Tomlinson, even on a tough night for the Ravens.\n\nWhere does Henry rank among the greatest running backs? 👇\n\n#RavensFlock #DerrickHenry #NFL"
+ },
+ {
+  "id": "10-bundesliga-top",
+  "time": "2026-11-06T20:45:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "BUNDESLIGA · AFTER 8 GAMES",
+  "headline": "Bayern and Dortmund level on 18",
+  "rows": [
+   [
+    "1",
+    "Bayern Munich",
+    "18 pts"
+   ],
+   [
+    "2",
+    "Dortmund",
+    "18 pts"
+   ],
+   [
+    "3",
+    "Freiburg",
+    "16 pts"
+   ],
+   [
+    "4",
+    "RB Leipzig",
+    "15 pts"
+   ],
+   [
+    "5",
+    "Werder Bremen",
+    "15 pts"
+   ]
+  ],
+  "sub": "Saturday: Mainz v Bayern and Dortmund v Elversberg (both 2:30pm GMT).",
+  "caption": "🇩🇪 It's tight at the top of the Bundesliga.\n\nBayern and Dortmund are both unbeaten on 18 points after eight games, with Freiburg two behind. On Saturday Bayern go to Mainz and Dortmund host Elversberg.\n\nWho wins the title this season? 👇\n\n#Bundesliga #FCBayern #BVB"
+ },
+ {
+  "id": "11-lightning-home",
+  "time": "2026-11-06T22:15:00",
+  "sport": "nhl",
+  "kind": "headline",
+  "label": "NHL · TAMPA BAY",
+  "headline": "Still perfect at home",
+  "sub": "Ilya Mikheyev scored twice and Andrei Vasilevskiy made 24 saves as the Lightning beat Chicago 4–1.",
+  "stat": [
+   "8–0",
+   "at home this season"
+  ],
+  "caption": "⚡ Nobody has won in Tampa this season.\n\nThe Lightning beat the Blackhawks 4–1 on Thursday to go 8–0–0 at home. Ilya Mikheyev scored twice and Andrei Vasilevskiy made 24 saves.\n\nHow long can the home run last? 👇\n\n#GoBolts #Lightning #NHL"
+ },
+ {
+  "id": "12-miami-notre-dame",
+  "time": "2026-11-07T00:30:00",
+  "sport": "nfl",
+  "kind": "score",
+  "label": "COLLEGE FOOTBALL · SATURDAY",
+  "home": "#11 Notre Dame",
+  "homeAbbr": "ND",
+  "homeScore": "",
+  "away": "#1 Miami",
+  "awayAbbr": "MIA",
+  "awayScore": "",
+  "status": "7:30PM ET",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
+  "venue": "Notre Dame Stadium",
+  "headline": "No. 1 Miami visits Notre Dame",
+  "sub": "Miami are 8–0, Notre Dame 7–1. College GameDay is in South Bend.",
+  "caption": "🏈 The big one in South Bend.\n\nNo. 1 Miami (8–0) visit No. 11 Notre Dame (7–1) on Saturday at 7:30pm ET, and College GameDay will be there. Miami star receiver Malachi Toney is dealing with an ankle injury.\n\nWho wins? 👇\n\n#CollegeFootball #GoIrish #GoCanes"
+ },
+ {
+  "id": "13-chargers-0-7",
+  "time": "2026-11-07T01:15:00",
+  "sport": "nfl",
+  "kind": "headline",
+  "label": "NFL · WEEK 9",
+  "headline": "The Chargers are 0–7",
+  "sub": "They host the 2–5 Houston Texans on Sunday at 4:05pm ET.",
+  "stat": [
+   "0–7",
+   "the NFL’s only winless team"
+  ],
+  "caption": "😬 Still waiting for win No. 1.\n\nThe Chargers are 0–7 and host the Houston Texans (2–5) on Sunday at 4:05pm ET.\n\nDo they finally get off the mark? 👇\n\n#BoltUp #Chargers #NFL"
+ },
+ {
+  "id": "14-nba-friday",
+  "time": "2026-11-07T02:45:00",
+  "sport": "nba",
+  "kind": "list",
+  "label": "NBA · FRIDAY NIGHT (ET)",
+  "headline": "Tonight's best games",
+  "rows": [
+   [
+    "7:00",
+    "Celtics at Hornets",
+    "6–2 v 3–6"
+   ],
+   [
+    "7:30",
+    "76ers at Cavaliers",
+    "8–1 v 4–4"
+   ],
+   [
+    "8:00",
+    "Thunder at Grizzlies",
+    "6–2 v 6–2"
+   ],
+   [
+    "10:00",
+    "Blazers at Lakers",
+    "6–1 v 7–2"
+   ],
+   [
+    "10:00",
+    "Spurs at Kings",
+    "6–2 v 1–7"
+   ]
+  ],
+  "sub": "9 games tonight. All times ET.",
+  "caption": "🏀 Friday night in the NBA (all ET):\n\n7:30pm: the 8–1 76ers at Cleveland\n8pm: Thunder at Grizzlies, both 6–2\n10pm: Trail Blazers (6–1) at Lakers (7–2)\n\nWhich one are you watching? 👇\n\n#NBA #Lakers #Sixers #ThunderUp"
+ },
+ {
+  "id": "15-camara-debut",
+  "time": "2026-11-07T05:30:00",
+  "sport": "racing",
+  "kind": "headline",
+  "label": "F1 · SÃO PAULO GRAND PRIX",
+  "headline": "A home F1 debut for Rafael Câmara",
+  "sub": "The Brazilian drives for Haas at Interlagos, ahead of his full rookie season in 2027. Race: Sunday, 5pm GMT / 12pm ET.",
+  "caption": "🇧🇷 A home debut at Interlagos.\n\nRafael Câmara makes his F1 debut with Haas at the São Paulo Grand Prix this weekend, ahead of his full rookie season in 2027. Lights out on Sunday at 5pm GMT (12pm ET).\n\nHow will he get on? 👇\n\n#F1 #BrazilGP #HaasF1"
+ }
+]

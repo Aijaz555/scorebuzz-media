@@ -15,10 +15,6 @@
   "venue": "Allianz Arena",
   "credit": "Photo: Richard Bartz, Munich aka Makro Freak / Wikimedia Commons, CC BY-SA 2.5"
  },
- "allianz-field": {
-  "venue": "Allianz Field",
-  "credit": "Photo: RamseyCountyMN / Wikimedia Commons, CC BY-SA 2.0"
- },
  "allianz-riviera": {
   "venue": "Allianz Riviera",
   "credit": "Photo: EliziR / Wikimedia Commons, CC BY-SA 3.0"
@@ -186,10 +182,6 @@
  "dkr-texas-memorial-stadium": {
   "venue": "DKR-Texas Memorial Stadium",
   "credit": "Photo: Fredlyfish4 / Wikimedia Commons, CC BY-SA 4.0"
- },
- "el-sadar": {
-  "venue": "El Sadar",
-  "credit": "Photo: JLVwiki / Wikimedia Commons, CC BY-SA 4.0"
  },
  "elland-road": {
   "venue": "Elland Road",
@@ -399,10 +391,6 @@
   "venue": "Levi's Stadium",
   "credit": "Photo: Dvortygirl / Wikimedia Commons, CC BY 4.0"
  },
- "lincoln-financial-field": {
-  "venue": "Lincoln Financial Field",
-  "credit": "Photo: NASA Headquarters / NASA/Thalia Patrinos / Wikimedia Commons, Public domain"
- },
  "little-caesars-arena": {
   "venue": "Little Caesars Arena",
   "credit": "Photo: Coreyfein01 / Wikimedia Commons, CC BY-SA 4.0"
@@ -530,10 +518,6 @@
  "portman-road": {
   "venue": "Portman Road",
   "credit": "Photo: John Fielding from Norwich, UK / Wikimedia Commons, CC BY 2.0"
- },
- "ppg-paints-arena": {
-  "venue": "PPG Paints Arena",
-  "credit": "Photo: Designism / Wikimedia Commons, CC0"
  },
  "prezero-arena": {
   "venue": "PreZero Arena",

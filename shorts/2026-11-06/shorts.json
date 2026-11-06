@@ -1,0 +1,1246 @@
+[
+ {
+  "id": "s01-uel-board",
+  "sport": "football",
+  "time": "2026-11-06T12:45:00",
+  "bed": "hype",
+  "title": "Europa League Results: Milan Stunned at San Siro 😳 #UEL #shorts",
+  "description": "Thursday's big Europa League results: Ferencváros won 2–0 at AC Milan, Bournemouth came from behind to win 3–1 in Prague, Celtic beat Besiktas 3–2 and Sunderland lost 2–0 to Dinamo Zagreb.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#UEL #EuropaLeague #ACMilan #AFCB",
+  "tags": [
+   "europa league results",
+   "uel results",
+   "milan vs ferencvaros",
+   "sparta prague vs bournemouth",
+   "celtic vs besiktas",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 18.4,
+    "kicker": "Europa League · Thursday",
+    "title": "The big results",
+    "badge": "Full time",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "AC Milan",
+      "homeAbbr": "MIL",
+      "hs": 0,
+      "away": "Ferencváros",
+      "awayAbbr": "FER",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/622.png"
+     },
+     {
+      "home": "Sparta Prague",
+      "homeAbbr": "SPA",
+      "hs": 1,
+      "away": "Bournemouth",
+      "awayAbbr": "BOU",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/433.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+     },
+     {
+      "home": "Crystal Palace",
+      "homeAbbr": "CRY",
+      "hs": 1,
+      "away": "Hoffenheim",
+      "awayAbbr": "TSG",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
+     },
+     {
+      "home": "Sunderland",
+      "homeAbbr": "SUN",
+      "hs": 0,
+      "away": "Dinamo Zagreb",
+      "awayAbbr": "DZG",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/597.png"
+     },
+     {
+      "home": "Celtic",
+      "homeAbbr": "CEL",
+      "hs": 3,
+      "away": "Besiktas",
+      "awayAbbr": "BES",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png"
+     },
+     {
+      "home": "AZ Alkmaar",
+      "homeAbbr": "AZ",
+      "hs": 1,
+      "away": "Juventus",
+      "awayAbbr": "JUV",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/140.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png"
+     },
+     {
+      "home": "Leverkusen",
+      "homeAbbr": "B04",
+      "hs": 0,
+      "away": "Marseille",
+      "awayAbbr": "OM",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png"
+     },
+     {
+      "home": "Benfica",
+      "homeAbbr": "SLB",
+      "hs": 3,
+      "away": "Lech Poznan",
+      "awayAbbr": "LECH",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1929.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2990.png"
+     },
+     {
+      "home": "Real Sociedad",
+      "homeAbbr": "RSO",
+      "hs": 1,
+      "away": "Lyon",
+      "awayAbbr": "OL",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Result of the night?",
+    "sub": "Tell us in the comments"
+   }
+  ],
+  "thumb": {
+   "kicker": "Europa League",
+   "big": "0–2",
+   "hook": "*Milan* stunned at home",
+   "sticker": "Full time",
+   "teams": [
+    "MIL",
+    "FER"
+   ],
+   "emoji": "😳"
+  }
+ },
+ {
+  "id": "s02-milan-ferencvaros",
+  "sport": "football",
+  "time": "2026-11-06T11:30:00",
+  "bed": "drama",
+  "venue": "San Siro",
+  "title": "Ferencváros STUN AC Milan at San Siro 😳 #ACMilan #UEL #shorts",
+  "description": "AC Milan lost 2–0 at home to Ferencváros in the Europa League. Lenny Joseph scored twice in the second half, and Ferencváros are now four from four while Milan have three points from four games.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#ACMilan #Ferencvaros #UEL #EuropaLeague",
+  "tags": [
+   "ac milan",
+   "ferencvaros",
+   "milan vs ferencvaros",
+   "europa league",
+   "lenny joseph",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Europa League · San Siro",
+    "title": "Milan 0, Ferencváros 2",
+    "sub": "At home."
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Full time",
+    "home": "AC Milan",
+    "homeAbbr": "MIL",
+    "homeScore": 0,
+    "away": "Ferencváros",
+    "awayAbbr": "FER",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/622.png",
+    "note": "Ferencváros finished with 10 men"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Lenny Joseph",
+    "title": "Two goals in 14 minutes",
+    "sub": "52' and 66'"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Ferencváros",
+    "value": "4",
+    "unit": "wins from 4",
+    "text": "A perfect start to the league phase"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "AC Milan",
+    "title": "3 points from 4 games",
+    "sub": "Maignan suspended, a stand-in keeper in goal"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Can Milan still go through?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "Europa League",
+   "big": "0–2",
+   "hook": "Shock at *San Siro*",
+   "sticker": "Upset",
+   "emoji": "😳"
+  }
+ },
+ {
+  "id": "s03-ronaldo-retires",
+  "sport": "football",
+  "time": "2026-11-06T15:15:00",
+  "bed": "drama",
+  "title": "Cristiano Ronaldo RETIRES From Portugal After 23 Years 😢 #Ronaldo #shorts",
+  "description": "Cristiano Ronaldo has retired from international football with Portugal after being benched by coach Jorge Jesus, ending a 23-year international career full of trophies and records.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Ronaldo #CR7 #Portugal #Football",
+  "tags": [
+   "cristiano ronaldo",
+   "ronaldo retires",
+   "ronaldo portugal",
+   "cr7",
+   "portugal national team",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Portugal",
+    "title": "Ronaldo is done with Portugal",
+    "sub": "After 23 years"
+   },
+   {
+    "type": "text",
+    "dur": 4.0,
+    "label": "Retired",
+    "title": "Cristiano Ronaldo quits international football",
+    "sub": "after being benched by coach Jorge Jesus"
+   },
+   {
+    "type": "stat",
+    "dur": 3.8,
+    "label": "International career",
+    "value": "23",
+    "unit": "years",
+    "text": "Trophies and records with Portugal"
+   },
+   {
+    "type": "outro",
+    "dur": 3.0,
+    "title": "Greatest international career ever?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "Portugal",
+   "big": "23",
+   "hook": "years… *over*",
+   "sticker": "Retired",
+   "emoji": "😢"
+  }
+ },
+ {
+  "id": "s04-bournemouth-perfect",
+  "sport": "football",
+  "time": "2026-11-06T14:00:00",
+  "bed": "anthem",
+  "venue": "Generali Arena",
+  "title": "Bournemouth Make It 4 From 4 in Europe 🍒 #AFCB #shorts",
+  "description": "Bournemouth came from behind to beat Sparta Prague 3–1. Tyler Adams scored his first goal since last November, then Evanilson and Rayan finished it: four wins from four in their first European season, and seven straight wins overall.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#AFCB #UEL #EuropaLeague #TylerAdams",
+  "tags": [
+   "bournemouth",
+   "sparta prague vs bournemouth",
+   "tyler adams",
+   "europa league",
+   "evanilson",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Europa League",
+    "title": "4 games. 4 wins.",
+    "sub": "Bournemouth's first European season"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Full time",
+    "home": "Sparta Prague",
+    "homeAbbr": "SPA",
+    "homeScore": 1,
+    "away": "Bournemouth",
+    "awayAbbr": "BOU",
+    "awayScore": 3,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/433.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+    "note": "Came from behind in Prague"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Tyler Adams",
+    "title": "First goal since last November",
+    "sub": "then Evanilson and Rayan"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Bournemouth",
+    "value": "7",
+    "unit": "wins in a row",
+    "text": "In all competitions"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "How far can Bournemouth go?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "Europa League",
+   "big": "4/4",
+   "hook": "Bournemouth are *perfect*",
+   "sticker": "Full time",
+   "emoji": "🍒"
+  }
+ },
+ {
+  "id": "s05-pl-predict",
+  "sport": "football",
+  "time": "2026-11-06T16:30:00",
+  "bed": "hype",
+  "title": "Premier League This Weekend: Predict EVERY Score ⚽ #PremierLeague #shorts",
+  "description": "Ten Premier League games from Friday to Sunday, starting with Everton v Coventry. Leaders Arsenal host Hull, Man City go to Forest and Liverpool visit Crystal Palace. Drop your predictions.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#PremierLeague #EPL #Arsenal #ManCity",
+  "tags": [
+   "premier league predictions",
+   "premier league this weekend",
+   "arsenal vs hull",
+   "forest vs man city",
+   "palace vs liverpool",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 19.2,
+    "kicker": "Premier League · Fri–Sun",
+    "title": "Predict every score",
+    "badge": "This weekend",
+    "first": 1.0,
+    "step": 1.7,
+    "rows": [
+     {
+      "home": "Everton",
+      "homeAbbr": "EVE",
+      "hs": "?",
+      "away": "Coventry",
+      "awayAbbr": "COV",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png"
+     },
+     {
+      "home": "Leeds",
+      "homeAbbr": "LEE",
+      "hs": "?",
+      "away": "Tottenham",
+      "awayAbbr": "TOT",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
+     },
+     {
+      "home": "Arsenal",
+      "homeAbbr": "ARS",
+      "hs": "?",
+      "away": "Hull",
+      "awayAbbr": "HUL",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png"
+     },
+     {
+      "home": "Fulham",
+      "homeAbbr": "FUL",
+      "hs": "?",
+      "away": "Newcastle",
+      "awayAbbr": "NEW",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+     },
+     {
+      "home": "Nott'm Forest",
+      "homeAbbr": "NFO",
+      "hs": "?",
+      "away": "Man City",
+      "awayAbbr": "MCI",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+     },
+     {
+      "home": "Brighton",
+      "homeAbbr": "BHA",
+      "hs": "?",
+      "away": "Brentford",
+      "awayAbbr": "BRE",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png"
+     },
+     {
+      "home": "Crystal Palace",
+      "homeAbbr": "CRY",
+      "hs": "?",
+      "away": "Liverpool",
+      "awayAbbr": "LIV",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+     },
+     {
+      "home": "Ipswich",
+      "homeAbbr": "IPS",
+      "hs": "?",
+      "away": "Bournemouth",
+      "awayAbbr": "BOU",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+     },
+     {
+      "home": "Sunderland",
+      "homeAbbr": "SUN",
+      "hs": "?",
+      "away": "Chelsea",
+      "awayAbbr": "CHE",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+     },
+     {
+      "home": "Man United",
+      "homeAbbr": "MUN",
+      "hs": "?",
+      "away": "Aston Villa",
+      "awayAbbr": "AVL",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Drop your predictions",
+    "sub": "Who gets them all right?"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League",
+   "big": "?–?",
+   "hook": "Predict *every* score",
+   "sticker": "This weekend",
+   "emoji": "⚽"
+  }
+ },
+ {
+  "id": "s06-lazio-top",
+  "sport": "football",
+  "time": "2026-11-06T17:45:00",
+  "bed": "anthem",
+  "title": "Lazio Top of Serie A and Still Unbeaten 🦅 #Lazio #SerieA #shorts",
+  "description": "Lazio lead Serie A with 28 points from 10 games and haven't lost yet. They visit Napoli on Sunday, the same day Inter host fourth-placed Como.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Lazio #SerieA #Inter #Roma",
+  "tags": [
+   "lazio",
+   "serie a table",
+   "serie a standings",
+   "napoli vs lazio",
+   "inter vs como",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Serie A",
+    "title": "Lazio are top. Unbeaten.",
+    "sub": "9 wins, 1 draw"
+   },
+   {
+    "type": "table",
+    "dur": 4.5,
+    "label": "Serie A · after 10 games",
+    "cols": [
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Lazio",
+      9,
+      1,
+      0,
+      28
+     ],
+     [
+      2,
+      "Inter",
+      8,
+      1,
+      1,
+      25
+     ],
+     [
+      3,
+      "Roma",
+      7,
+      3,
+      0,
+      24
+     ],
+     [
+      4,
+      "Como",
+      7,
+      2,
+      1,
+      23
+     ],
+     [
+      5,
+      "AC Milan",
+      6,
+      3,
+      1,
+      21
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 3.5,
+    "label": "This weekend (GMT)",
+    "title": "Big games",
+    "rows": [
+     [
+      "Sat 7:45pm",
+      "Roma v Sassuolo",
+      ""
+     ],
+     [
+      "Sun 11:30am",
+      "Napoli v Lazio",
+      ""
+     ],
+     [
+      "Sun 5pm",
+      "Inter v Como",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Can Lazio win the Scudetto?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "Serie A",
+   "big": "28",
+   "hook": "Lazio *unbeaten* at the top",
+   "sticker": "Top",
+   "emoji": "🦅"
+  }
+ },
+ {
+  "id": "s07-tnf-jags",
+  "sport": "nfl",
+  "time": "2026-11-06T20:15:00",
+  "bed": "hype",
+  "venue": "M&T Bank Stadium",
+  "title": "Jaguars CRUSH the Ravens 33-10 on TNF 🐆 #NFL #shorts",
+  "description": "The Jaguars beat the Ravens 33–10 on Thursday Night Football. Trevor Lawrence threw for 242 yards, rookie Joe Fagnano made his first start for Baltimore, and Derrick Henry moved into seventh on the all-time rushing list.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NFL #Jaguars #Ravens #TNF",
+  "tags": [
+   "jaguars vs ravens",
+   "thursday night football",
+   "trevor lawrence",
+   "joe fagnano",
+   "derrick henry",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Thursday Night Football",
+    "title": "Jaguars 33, Ravens 10",
+    "sub": "In the rain in Baltimore"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Final",
+    "home": "Ravens",
+    "homeAbbr": "BAL",
+    "homeScore": 10,
+    "away": "Jaguars",
+    "awayAbbr": "JAX",
+    "awayScore": 33,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+    "note": "Jaguars 6–2 · Ravens 4–5"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Rookie QB Joe Fagnano",
+    "title": "First start: 60 yards, 2 INTs",
+    "sub": "Lamar Jackson and Tyler Huntley are on IR"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Jaguars",
+    "value": "5",
+    "unit": "wins in 6 games",
+    "text": "A 3½-game lead in the AFC South"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Derrick Henry",
+    "title": "Now 7th on the all-time rushing list",
+    "sub": "Passed LaDainian Tomlinson"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Are the Jags AFC contenders?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "TNF",
+   "big": "33–10",
+   "hook": "Jags *dominate* in the rain",
+   "sticker": "Final",
+   "teams": [
+    "JAX",
+    "BAL"
+   ],
+   "emoji": "🐆"
+  }
+ },
+ {
+  "id": "s10-mcdavid-17",
+  "sport": "nhl",
+  "time": "2026-11-07T00:15:00",
+  "bed": "drama",
+  "venue": "Rogers Place",
+  "title": "McDavid's Streak Hits 17 Games… but the Ducks Win 😮 #Oilers #NHL #shorts",
+  "description": "Connor McDavid had a goal and three assists, extending his season-opening points and assists streaks to 17 games, but the Ducks won 5–4 in Edmonton. Cutter Gauthier became the first Anaheim player with nine goals in four games.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Oilers #McDavid #Ducks #NHL",
+  "tags": [
+   "connor mcdavid",
+   "mcdavid streak",
+   "oilers vs ducks",
+   "cutter gauthier",
+   "nhl",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NHL · Edmonton",
+    "title": "McDavid: 4 points",
+    "sub": "…and still lost"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Final",
+    "home": "Oilers",
+    "homeAbbr": "EDM",
+    "homeScore": 4,
+    "away": "Ducks",
+    "awayAbbr": "ANA",
+    "awayScore": 5,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png",
+    "note": "Ducks have won three in a row"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Connor McDavid",
+    "value": "17",
+    "unit": "games",
+    "text": "A point and an assist in every game this season"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Connor McDavid",
+    "value": "44",
+    "unit": "points",
+    "text": "Most in the NHL"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Cutter Gauthier",
+    "title": "9 goals in 4 games",
+    "sub": "First Ducks player ever to do it"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Can anyone stop McDavid?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL",
+   "big": "17",
+   "hook": "games and *counting*",
+   "sticker": "Streak",
+   "emoji": "🔥"
+  }
+ },
+ {
+  "id": "s11-cfb-predict",
+  "sport": "nfl",
+  "time": "2026-11-07T01:30:00",
+  "bed": "hype",
+  "title": "College Football Saturday: Predict EVERY Top 25 Showdown 🏈 #CFB #shorts",
+  "description": "Seven ranked-v-ranked games on Saturday, including No. 1 Miami at No. 11 Notre Dame, No. 2 Georgia at No. 10 Ole Miss and No. 9 BYU at No. 3 Utah. Score predictions, not results: drop yours.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#CollegeFootball #CFB #GoIrish #GoDawgs",
+  "tags": [
+   "college football predictions",
+   "miami vs notre dame",
+   "georgia vs ole miss",
+   "byu vs utah",
+   "alabama vs lsu",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 15.5,
+    "kicker": "College Football · Saturday",
+    "title": "Predict the Top 25 clashes",
+    "badge": "Score prediction",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "#3 Utah",
+      "homeAbbr": "UTAH",
+      "hs": "?",
+      "away": "#9 BYU",
+      "awayAbbr": "BYU",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png"
+     },
+     {
+      "home": "#18 Missouri",
+      "homeAbbr": "MIZ",
+      "hs": "?",
+      "away": "#7 Texas",
+      "awayAbbr": "TEX",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
+     },
+     {
+      "home": "#14 LSU",
+      "homeAbbr": "LSU",
+      "hs": "?",
+      "away": "#5 Alabama",
+      "awayAbbr": "ALA",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png"
+     },
+     {
+      "home": "#12 Ohio State",
+      "homeAbbr": "OSU",
+      "hs": "?",
+      "away": "#23 Oregon",
+      "awayAbbr": "ORE",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png"
+     },
+     {
+      "home": "#13 Tennessee",
+      "homeAbbr": "TENN",
+      "hs": "?",
+      "away": "#6 Kentucky",
+      "awayAbbr": "UK",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png"
+     },
+     {
+      "home": "#11 Notre Dame",
+      "homeAbbr": "ND",
+      "hs": "?",
+      "away": "#1 Miami",
+      "awayAbbr": "MIA",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png"
+     },
+     {
+      "home": "#10 Ole Miss",
+      "homeAbbr": "MISS",
+      "hs": "?",
+      "away": "#2 Georgia",
+      "awayAbbr": "UGA",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Drop your predictions",
+    "sub": "Biggest upset of the day?"
+   }
+  ],
+  "thumb": {
+   "kicker": "College Football",
+   "big": "7",
+   "hook": "ranked *showdowns*",
+   "sticker": "Saturday",
+   "emoji": "🏈"
+  }
+ },
+ {
+  "id": "s12-nfl-sunday",
+  "sport": "nfl",
+  "time": "2026-11-07T03:00:00",
+  "bed": "hype",
+  "venue": "SoFi Stadium",
+  "title": "NFL Week 9 Sunday: Games You Can't Miss 🏈 Chargers Still 0-7 #NFL #shorts",
+  "description": "NFL Week 9 Sunday starts with Bengals v Falcons in Madrid. The winless Chargers (0–7) host the Texans, the Packers visit the Patriots in a 5–3 v 5–3 clash, and the Bears host the Buccaneers on Sunday night.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NFL #NFLSunday #Chargers #Packers",
+  "tags": [
+   "nfl week 9",
+   "nfl sunday",
+   "chargers 0-7",
+   "packers vs patriots",
+   "bengals falcons madrid",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NFL Week 9 · Sunday",
+    "title": "Games you can't miss",
+    "sub": "All times ET"
+   },
+   {
+    "type": "list",
+    "dur": 4.2,
+    "label": "Sunday (ET)",
+    "title": "The big ones",
+    "rows": [
+     [
+      "9:30am",
+      "Bengals v Falcons",
+      "Madrid"
+     ],
+     [
+      "4:05pm",
+      "Texans at Chargers",
+      "2–5 v 0–7"
+     ],
+     [
+      "4:25pm",
+      "Packers at Patriots",
+      "5–3 v 5–3"
+     ],
+     [
+      "8:20pm",
+      "Buccaneers at Bears",
+      "3–5 v 6–2"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "LA Chargers",
+    "value": "0",
+    "unit": "wins",
+    "text": "The NFL's only winless team"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Also Sunday",
+    "title": "Lions at Dolphins · Broncos at Panthers",
+    "sub": "Detroit 5–2 · Denver 6–2"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Your lock of the week?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Week 9",
+   "big": "0–7",
+   "hook": "Chargers *still* winless",
+   "sticker": "Sunday",
+   "emoji": "😬"
+  }
+ },
+ {
+  "id": "s13-lakers-blazers",
+  "sport": "nba",
+  "time": "2026-11-07T04:00:00",
+  "bed": "hype",
+  "venue": "crypto.com Arena",
+  "title": "Blazers (6-1) at Lakers (7-2) TONIGHT 🏀 Friday NBA Preview #NBA #shorts",
+  "description": "Friday night in the NBA: the 6–1 Trail Blazers visit the 7–2 Lakers at 10pm ET, plus 76ers at Cavaliers, Thunder at Grizzlies and Celtics at Hornets.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NBA #Lakers #RipCity #Sixers",
+  "tags": [
+   "lakers vs blazers",
+   "nba tonight",
+   "nba friday",
+   "76ers vs cavaliers",
+   "thunder vs grizzlies",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NBA · Friday night",
+    "title": "Blazers at Lakers",
+    "sub": "6–1 v 7–2"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "10pm ET · Los Angeles",
+    "title": "Two of the best records in the West",
+    "sub": "Portland 6–1 · Lakers 7–2"
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "Also tonight (ET)",
+    "title": "More big games",
+    "rows": [
+     [
+      "7:00",
+      "Celtics at Hornets",
+      "6–2 v 3–6"
+     ],
+     [
+      "7:30",
+      "76ers at Cavaliers",
+      "8–1 v 4–4"
+     ],
+     [
+      "8:00",
+      "Thunder at Grizzlies",
+      "6–2 v 6–2"
+     ],
+     [
+      "10:00",
+      "Spurs at Kings",
+      "6–2 v 1–7"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.8,
+    "title": "Who wins in LA?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA Tonight",
+   "big": "10PM",
+   "hook": "Blazers *at* Lakers",
+   "sticker": "Tonight",
+   "teams": [
+    "POR",
+    "LAL"
+   ],
+   "emoji": "🏀"
+  }
+ },
+ {
+  "id": "s14-f1-senna",
+  "sport": "racing",
+  "time": "2026-11-06T19:00:00",
+  "bed": "anthem",
+  "title": "Champion Antonelli's Senna Tribute at Interlagos 🏁 #F1 #shorts",
+  "description": "New world champion Kimi Antonelli will honour Ayrton Senna with a special helmet at the São Paulo Grand Prix, Rafael Câmara makes a home debut with Haas, and Lewis Hamilton says he's 'not going to be silenced' over Ferrari's Mexico opening lap. Race: Sunday 5pm GMT.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#F1 #BrazilGP #Antonelli #Senna",
+  "tags": [
+   "f1",
+   "sao paulo grand prix",
+   "kimi antonelli",
+   "ayrton senna helmet",
+   "rafael camara",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "F1 · São Paulo GP",
+    "title": "The champion arrives at Interlagos",
+    "sub": ""
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Kimi Antonelli",
+    "title": "World champion",
+    "sub": "crowned in Mexico City a week ago"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "This weekend",
+    "title": "A special helmet for Ayrton Senna",
+    "sub": "Antonelli's racing hero"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Rafael Câmara",
+    "title": "A home F1 debut with Haas",
+    "sub": "ahead of his rookie season in 2027"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Lewis Hamilton",
+    "title": "'Not going to be silenced'",
+    "sub": "on Ferrari's Mexico opening lap with Leclerc"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Who wins in Brazil?",
+    "sub": "Race: Sunday 5pm GMT · 12pm ET"
+   }
+  ],
+  "thumb": {
+   "kicker": "São Paulo GP",
+   "big": "#1",
+   "hook": "A tribute to *Senna*",
+   "sticker": "Race week",
+   "emoji": "🏁"
+  }
+ },
+ {
+  "id": "s09-nhl-board",
+  "sport": "nhl",
+  "time": "2026-11-06T23:00:00",
+  "bed": "hype",
+  "title": "Every NHL Result From Thursday: 3 OT Thrillers 🏒 #NHL #shorts",
+  "description": "All 11 NHL results from Thursday: the Ducks won 5–4 in Edmonton, the Lightning stayed perfect at home, the Bruins scored six in Pittsburgh, and the Canadiens, Devils and Predators all won in overtime.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#NHL #NHLResults #Oilers #GoBolts",
+  "tags": [
+   "nhl results",
+   "nhl scores",
+   "oilers vs ducks",
+   "lightning",
+   "bruins vs penguins",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 20.9,
+    "kicker": "NHL · Thursday",
+    "title": "All 11 results",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.7,
+    "rows": [
+     {
+      "home": "Canadiens",
+      "homeAbbr": "MTL",
+      "hs": 5,
+      "away": "Mammoth",
+      "awayAbbr": "UTA",
+      "as": 4,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png",
+      "note": "OT"
+     },
+     {
+      "home": "Red Wings",
+      "homeAbbr": "DET",
+      "hs": 1,
+      "away": "Golden Knights",
+      "awayAbbr": "VGK",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png"
+     },
+     {
+      "home": "Lightning",
+      "homeAbbr": "TB",
+      "hs": 4,
+      "away": "Blackhawks",
+      "awayAbbr": "CHI",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png"
+     },
+     {
+      "home": "Devils",
+      "homeAbbr": "NJ",
+      "hs": 5,
+      "away": "Blues",
+      "awayAbbr": "STL",
+      "as": 4,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png",
+      "note": "OT"
+     },
+     {
+      "home": "Islanders",
+      "homeAbbr": "NYI",
+      "hs": 3,
+      "away": "Hurricanes",
+      "awayAbbr": "CAR",
+      "as": 5,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png"
+     },
+     {
+      "home": "Rangers",
+      "homeAbbr": "NYR",
+      "hs": 3,
+      "away": "Flyers",
+      "awayAbbr": "PHI",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png"
+     },
+     {
+      "home": "Penguins",
+      "homeAbbr": "PIT",
+      "hs": 2,
+      "away": "Bruins",
+      "awayAbbr": "BOS",
+      "as": 6,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png"
+     },
+     {
+      "home": "Blue Jackets",
+      "homeAbbr": "CBJ",
+      "hs": 2,
+      "away": "Stars",
+      "awayAbbr": "DAL",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+      "note": "SO"
+     },
+     {
+      "home": "Jets",
+      "homeAbbr": "WPG",
+      "hs": 6,
+      "away": "Canucks",
+      "awayAbbr": "VAN",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png"
+     },
+     {
+      "home": "Oilers",
+      "homeAbbr": "EDM",
+      "hs": 4,
+      "away": "Ducks",
+      "awayAbbr": "ANA",
+      "as": 5,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png"
+     },
+     {
+      "home": "Avalanche",
+      "homeAbbr": "COL",
+      "hs": 2,
+      "away": "Predators",
+      "awayAbbr": "NSH",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
+      "note": "OT"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Result of the night?",
+    "sub": "Tell us in the comments"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL Thursday",
+   "big": "11",
+   "hook": "results in *20 seconds*",
+   "sticker": "Final",
+   "emoji": "🏒"
+  }
+ }
+]
