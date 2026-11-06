@@ -45,6 +45,36 @@
    "league": "nhl",
    "event": "401892659",
    "note": "Columbus Blue Jackets vs Buffalo Sabres, 2026-11-07T00:00:00Z"
+  },
+  "5": {
+   "league": "nba",
+   "event": "401909290",
+   "note": "Utah Jazz vs Dallas Mavericks, 2026-11-07T01:00:00Z"
+  },
+  "6": {
+   "league": "nba",
+   "event": "401909291",
+   "note": "Oklahoma City Thunder vs Memphis Grizzlies, 2026-11-07T01:00:00Z"
+  },
+  "7": {
+   "league": "nba",
+   "event": "401909292",
+   "note": "Toronto Raptors vs Milwaukee Bucks, 2026-11-07T01:00:00Z"
+  },
+  "8": {
+   "league": "nba",
+   "event": "401909293",
+   "note": "Minnesota Timberwolves vs New Orleans Pelicans, 2026-11-07T01:00:00Z"
+  },
+  "9": {
+   "league": "nhl",
+   "event": "401892660",
+   "note": "San Jose Sharks vs Minnesota Wild, 2026-11-07T01:00:00Z"
+  },
+  "10": {
+   "league": "nhl",
+   "event": "401892661",
+   "note": "Anaheim Ducks vs Calgary Flames, 2026-11-07T01:00:00Z"
   }
  },
  "fit": {
