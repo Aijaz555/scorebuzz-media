@@ -47,10 +47,10 @@ const LEAGUES = {
     if (!home.abbreviation || !away.abbreviation) { console.error(`slot ${slot}: teams not found`); continue; }
     const soccer = sport === 'football';
     const short = (t) => t.shortDisplayName || t.name || t.abbreviation;
-    const side = (t) => ({ name: short(t), abbr: t.abbreviation, logo: (t.logos && t.logos[0] && t.logos[0].href) || t.logo });
+    const side = (t) => ({ name: short(t), abbr: t.abbreviation, logo: (t.logos && t.logos[0] && t.logos[0].href) || t.logo, color: t.color });
     // soccer lists home first; US sports away first ("Away at Home"), the card shows them left to right
     const [L, R] = soccer ? [home, away] : [away, home];
-    specs.push({ id: vid, sport, leagueKey: sl.league, league: lgName, venue: j.gameInfo?.venue?.fullName, home: side(L), away: side(R) });
+    specs.push({ id: vid, sport, style: sl.league === 'nba' ? 'arena' : undefined, leagueKey: sl.league, league: lgName, venue: j.gameInfo?.venue?.fullName, home: side(L), away: side(R) });
     todo.push(vid);
   }
   if (!specs.length) { console.log('nothing to do'); return; }

@@ -81,6 +81,52 @@ async function html(t) {
   </body></html>`;
 }
 
+// "arena" style (owner's reference, 7 Nov 2026): colour-graded arena photo, two huge glowing crests, brush "VS",
+// small LIVE badge top-left. Crests = ESPN team logos (+ team.color for the glow); photo = the venue, never people.
+async function arenaHtml(t) {
+  const ph = assets.photo(t.venue);
+  const glow = (c) => '#' + String(c || 'ffffff').replace('#', '');
+  const crest = async (x) => (await assets.crest(x.logo)) || '';
+  const [hl, al] = [await crest(t.home), await crest(t.away)];
+  return `<!doctype html><html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1280px;height:720px;overflow:hidden;background:#140a2a;font-family:'Inter Display',Inter,sans-serif;position:relative}
+  .bg{position:absolute;inset:-10px;background:${ph ? `url(${ph.src}) center 35%/cover` : '#241050'};filter:saturate(1.7) contrast(1.25) brightness(.85)}
+  .dusk{position:absolute;inset:0;background:linear-gradient(180deg,#3b0f7acc 0%,#c2185b88 26%,#ff8a3d55 42%,transparent 58%);mix-blend-mode:overlay}
+  .dusk2{position:absolute;inset:0;background:linear-gradient(180deg,#2a0a5a99 0%,transparent 35%,transparent 55%,#120626 100%)}
+  .floor{position:absolute;left:0;right:0;bottom:0;height:300px;background:
+    radial-gradient(ellipse at 22% 70%,${glow(t.home.color)}66,transparent 55%),radial-gradient(ellipse at 78% 70%,${glow(t.away.color)}66,transparent 55%),
+    repeating-linear-gradient(90deg,#ffffff0a 0 3px,transparent 3px 22px);filter:blur(2px)}
+  .lg{position:absolute;top:175px;width:400px;height:400px;display:flex;align-items:center;justify-content:center}
+  .lg img{max-width:100%;max-height:100%;object-fit:contain;
+    filter:drop-shadow(0 0 3px #fff) drop-shadow(0 0 3px #fff) drop-shadow(0 0 2px #fff) drop-shadow(0 0 28px var(--g)) drop-shadow(0 0 60px var(--g)) drop-shadow(0 18px 24px #000c)}
+  .l{left:40px}.r{right:40px}
+  .vs{position:absolute;left:50%;top:380px;transform:translate(-50%,-50%);width:360px;height:280px}
+  .live{position:absolute;left:30px;top:26px;display:flex;align-items:center;gap:10px;background:#E10600;color:#fff;font-weight:900;font-style:italic;font-size:44px;padding:4px 20px 6px 16px;border-radius:10px;border:3px solid #fff;box-shadow:0 0 24px #E10600aa}
+  .live i{width:20px;height:20px;border-radius:50%;background:#fff}
+  .brand{position:absolute;right:26px;bottom:20px;font-size:26px;font-weight:900;color:#fff;letter-spacing:-.5px;text-shadow:0 2px 8px #000}.brand b{color:#C6F432}
+  .credit{position:absolute;left:12px;bottom:8px;font-size:11px;color:#fff9;text-shadow:0 1px 2px #000}
+  </style></head><body>
+  <div class="bg"></div><div class="dusk"></div><div class="dusk2"></div><div class="floor"></div>
+  <div class="lg l" style="--g:${glow(t.home.color)}">${hl ? `<img src="${hl}">` : ''}</div>
+  <div class="lg r" style="--g:${glow(t.away.color)}">${al ? `<img src="${al}">` : ''}</div>
+  <svg class="vs" viewBox="0 0 430 330">
+    <defs><filter id="brush" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035 0.6" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+    <g filter="url(#brush)">
+      <polygon points="40,300 150,40 175,48 80,310" fill="#fff" opacity=".9"/>
+      <polygon points="250,300 380,20 400,30 290,312" fill="#fff" opacity=".85"/>
+      <text x="215" y="250" text-anchor="middle" font-family="Inter Display, Inter" font-weight="900" font-style="italic" font-size="250"
+        fill="#fff" stroke="#111" stroke-width="10" paint-order="stroke" transform="skewX(-14) translate(60,0)">VS</text>
+    </g>
+  </svg>
+  <div class="live"><i></i>LIVE</div>
+  <div class="brand">Score<b>Buzz</b></div>
+  ${ph ? `<div class="credit">${esc(ph.credit)}</div>` : ''}
+  </body></html>`;
+}
+
 (async () => {
   const [specFile, out] = process.argv.slice(2);
   const specs = JSON.parse(fs.readFileSync(specFile, 'utf8'));
@@ -88,8 +134,9 @@ async function html(t) {
   const b = await chromium.launch();
   const p = await b.newPage({ viewport: { width: 1280, height: 720 } });
   for (const t of specs) {
-    await p.setContent(await html(t), { waitUntil: 'load' });
-    await p.waitForTimeout(150);
+    await p.setContent(await (t.style === 'arena' ? arenaHtml(t) : html(t)), { waitUntil: 'load' });
+    await p.evaluate(async () => { await Promise.all([...document.images].map((i) => i.decode().catch(() => {}))); });
+    await p.waitForTimeout(600);
     const f = path.join(out, `${t.id}.jpg`);
     await p.screenshot({ path: f, type: 'jpeg', quality: 90 });
     console.log(f);
