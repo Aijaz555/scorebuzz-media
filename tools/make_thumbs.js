@@ -13,6 +13,7 @@
 //   }
 // Rules (see PLAYBOOK "Thumbnails"): one idea, max ~5 words of text, a huge number, high contrast,
 // key content inside the centre square (feeds crop Shorts), no logos/photos — original graphics only.
+const leagueTheme = require('./league_theme');
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
@@ -37,7 +38,8 @@ function fallback(v) {
 }
 
 function html(v) {
-  const s = SPORT[v.sport] || SPORT.other;
+  const LT = leagueTheme.theme(v.league); // league colour scheme (tools/league_theme.js)
+  const s = leagueTheme.apply(SPORT[v.sport] || SPORT.other, LT);
   const th = { ...fallback(v), ...(v.thumb || {}) };
   const wide = v.format === 'video';
   const W = wide ? 1280 : 1080, H = wide ? 720 : 1920;
@@ -81,6 +83,7 @@ function html(v) {
   .tb{background:#111;color:#fff}
   .fbar{position:absolute;left:0;right:0;bottom:0;height:${wide ? 64 : 200}px;background:#000}
   footer{color:#C6F432;z-index:1}
+  ${leagueTheme.css(LT)}
   </style></head><body>
   <div class="burst"></div><div class="stripe"></div><div class="vig"></div><div class="hbar"></div><div class="fbar"></div>
   <header><div class="logo">Score<b>Buzz</b></div><div class="tag">${s.emoji} ${esc(v.tagText || s.tag)}</div></header>

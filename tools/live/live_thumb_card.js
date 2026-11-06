@@ -3,7 +3,7 @@
 // spec.json: [{ id, sport: football|nfl|nba|nhl|mlb, league: "PREMIER LEAGUE", venue: "<ESPN venue.fullName>" (stadium photo),
 //               home: {name, abbr, logo}, away: {name, abbr, logo},   // per-game: big crests + VS
 //               headline, sub,                                       // generic: no teams, big headline instead
-//               theme: "pl" (Premier League palette: purple #37003C, pink #E90052, cyan #04F5FF, green #00FF85; league name
+//               leagueKey: epl|ucl|laliga|nfl|nba|... (tools/league_theme.js colours; theme: "pl" = epl) (Premier League palette: purple #37003C, pink #E90052, cyan #04F5FF, green #00FF85; league name
 //               as plain text — never the official lion logo or the league's proprietary typeface), kickoff, note }]
 // Look: stadium photo in the background (licence credit shown), dark vignette, huge red LIVE badge,
 // glowing team crests, lime ScoreBuzz accents. Crests = ESPN team logos; photos = stadiums only, never people.
@@ -11,13 +11,16 @@ const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
 const assets = require('../media_assets');
+const leagueTheme = require('../league_theme');
 
 const ACCENT = { football: '#C6F432', nfl: '#4C8DFF', nba: '#FF8A3D', nhl: '#7FD1FF', mlb: '#FF4D5E' };
 const ICON = { football: '⚽', nfl: '🏈', nba: '🏀', nhl: '🏒', mlb: '⚾' };
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 async function html(t) {
-  const acc = ACCENT[t.sport] || '#C6F432';
+  const LT = leagueTheme.theme(t.leagueKey || (t.theme === 'pl' ? 'epl' : null));
+  if (LT) LT.key = leagueTheme.theme('epl') === LT ? 'epl' : '';
+  const acc = LT ? LT.accent : (ACCENT[t.sport] || '#C6F432');
   const ph = assets.photo(t.venue);
   const teams = t.home && t.away;
   const crest = async (x) => { const c = await assets.crest(x.logo); return c ? `<img src="${c}">` : `<b>${esc(x.abbr)}</b>`; };
@@ -54,18 +57,16 @@ async function html(t) {
   .bar{position:absolute;left:0;right:0;bottom:0;height:62px;background:#000c;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:800;letter-spacing:1px}
   .bar b{color:#C6F432;margin-left:12px}
   .credit{position:absolute;right:10px;bottom:66px;font-size:12px;color:#fffa;text-shadow:0 1px 2px #000}
-  ${t.theme === 'pl' ? `
-  body{background:#37003C;font-family:'Inter Display',Inter,sans-serif}
+  ${LT ? `
+  body{background:${LT.primary};font-family:'Inter Display',Inter,sans-serif}
   .bg{filter:saturate(.9) contrast(1.05)}
-  .shade{background:radial-gradient(ellipse at 50% 50%,rgba(55,0,60,.25),rgba(38,0,42,.92) 78%),linear-gradient(180deg,rgba(55,0,60,.8),rgba(55,0,60,.35) 42%,rgba(30,0,34,.96))}
-  .glow{background:radial-gradient(ellipse at 30% 50%,#E9005266,transparent 60%),radial-gradient(ellipse at 70% 50%,#04F5FF55,transparent 60%)}
-  .live{background:#E90052;box-shadow:0 0 0 6px #ffffff22,0 0 60px #E90052cc}
-  .lg{top:122px;background:linear-gradient(90deg,#04F5FF,#00FF85);color:#37003C;font-family:'Inter Display';font-weight:900;font-size:38px;letter-spacing:-.5px;padding:8px 30px;border-radius:12px;text-transform:none}
-  .cr{box-shadow:0 0 0 8px #fff,0 0 0 16px #E90052,0 0 80px #04F5FFaa,0 20px 50px #000c}
-  .v{color:#00FF85;text-shadow:0 6px 0 #37003C,0 0 40px #00FF85}
+  .shade{background:radial-gradient(ellipse at 50% 50%,${LT.primary}40,${LT.primary}eb 78%),linear-gradient(180deg,${LT.primary}cc,${LT.primary}59 42%,${LT.primary}f5)}
+  .glow{background:radial-gradient(ellipse at 30% 50%,${LT.hot}66,transparent 60%),radial-gradient(ellipse at 70% 50%,${LT.accent}55,transparent 60%)}
+  .lg{top:122px;background:${LT.key === 'epl' ? 'linear-gradient(90deg,#04F5FF,#00FF85)' : LT.accent};color:${LT.ink === '#FFFFFF' ? LT.primary : LT.ink};font-family:'Inter Display';font-weight:900;font-size:38px;letter-spacing:-.5px;padding:8px 30px;border-radius:12px;text-transform:none;box-shadow:0 0 0 4px #fff3,0 8px 30px #0008}
+  .cr{box-shadow:0 0 0 8px #fff,0 0 0 16px ${LT.hot},0 0 80px ${LT.accent}aa,0 20px 50px #000c}
+  .v{color:${LT.accent === '#FFFFFF' || LT.accent === '#E8E8E8' || LT.accent === '#A2AAAD' || LT.ink === '#FFFFFF' ? '#fff' : LT.accent};text-shadow:0 6px 0 ${LT.primary},0 0 40px ${LT.accent}}
   .nm{font-family:'Inter Display'}
-  .bar{background:#37003C;border-top:6px solid;border-image:linear-gradient(90deg,#E90052,#04F5FF,#00FF85) 1}
-  .bar b{color:#00FF85}` : ''}
+  .bar{background:${LT.primary};border-top:6px solid ${LT.hot}}` : ''}
   .ko{position:absolute;left:50%;bottom:84px;transform:translateX(-50%);display:flex;gap:14px;white-space:nowrap}
   .ko span{background:#fff;color:#37003C;font-weight:900;font-size:30px;padding:6px 20px;border-radius:10px;box-shadow:0 8px 24px #0009}
   .ko span.n{background:#E90052;color:#fff}

@@ -24,6 +24,7 @@
 // Crests: homeLogo/awayLogo (ESPN team.logo URLs) on score scenes and board rows.
 // Photo: optional video-level "venue" (ESPN venue.fullName) -> stadium photo band from photos/ (licence credit shown)
 // behind hook/score/stat/text scenes of vertical Shorts. Stadium photos only: never players or other people.
+const leagueTheme = require('./league_theme');
 const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
@@ -108,7 +109,8 @@ function scene(sc) {
 }
 
 function html(v) {
-  const s = SPORT[v.sport] || SPORT.other;
+  const LT = leagueTheme.theme(v.league); // league colour scheme (tools/league_theme.js)
+  const s = leagueTheme.apply(SPORT[v.sport] || SPORT.other, LT);
   const wide = v.format === 'video';
   const W = wide ? 1920 : 1080, H = wide ? 1080 : 1920;
   let t = 0;
@@ -223,6 +225,7 @@ function html(v) {
   #ph:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,#f2f2f2 100%)}
   #phc{position:absolute;right:24px;top:232px;z-index:3;font-size:20px;font-weight:600;color:#fff;background:rgba(0,0,0,.45);padding:4px 12px;border-radius:8px;max-width:820px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:0}
   .scene.wp{top:780px;justify-content:flex-start}
+  ${leagueTheme.css(LT)}
   </style></head><body><div id="glow"></div><div id="grid"></div>${v._photo && !wide ? `<div id="ph" style="background-image:url('${v._photo.src}')"></div><div id="phc">${esc(v._photo.credit)}</div>` : ''}<div id="hbar"></div><div id="fbar"></div><div id="bar"></div>
   <header><div class="logo">Score<b>Buzz</b></div><div class="tag">${s.emoji} ${esc(v.tagText || s.tag)}</div></header>
   ${scenes}

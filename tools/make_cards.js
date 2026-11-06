@@ -7,6 +7,7 @@
 //   headline: { headline, sub }
 //   list:     { headline, rows: [[left, mid, right], ...], sub }
 // Renders 1080x1350 PNGs named <id>.png. Crests: ESPN team.logo URLs. Photos: stadiums only (never people).
+const leagueTheme = require('./league_theme');
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
@@ -52,7 +53,8 @@ function body(p, s) {
 }
 
 function html(p) {
-  const s = SPORT[p.sport] || SPORT.other;
+  const LT = leagueTheme.theme(p.league); // league colour scheme (tools/league_theme.js)
+  const s = leagueTheme.apply(SPORT[p.sport] || SPORT.other, LT);
   return `<!doctype html><html><head><meta charset="utf-8"><style>
   *{margin:0;padding:0;box-sizing:border-box}
   /* light theme matching scorebuzz.net: #f2f2f2 page, white cards, black header/footer, lime "Buzz", blue accents */
@@ -93,6 +95,7 @@ function html(p) {
   body.ph .label{top:520px;background:#fff;padding:6px 16px;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
   body.ph main{top:580px;justify-content:flex-start}
   body.ph .lines{display:none}
+  ${leagueTheme.css(LT)}
   </style></head><body class="${p._photo ? 'ph' : ''}"><div class="glow"></div><div class="lines"></div>${p._photo ? `<div class="photo" style="background-image:url('${p._photo.src}')"></div><div class="credit">${esc(p._photo.credit)}</div>` : ''}<div class="bar"></div><div class="fbar"></div>
   <header><div class="logo">Score<b>Buzz</b></div><div class="tag">${s.emoji} ${esc(p.tagText || s.tag)}</div></header>
   ${p.label ? `<div class="label">${esc(p.label)}</div>` : ''}

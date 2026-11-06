@@ -2,6 +2,8 @@
 
 **Look (owner's request, 5 Nov 2026):** every card, Short, Reel, thumbnail and live stream uses the scorebuzz.net light theme: #f2f2f2 page, white cards, black header/footer bars, "Score" white + "Buzz" lime (#C6F432), blue accent (#2F80ED), dark text. The generators (tools/make_cards.js, make_shorts.js, make_thumbs.js, tools/live/overlay.html) already do this; don't reintroduce the old dark navy/green look.
 
+**League colours (owner's request, 7 Nov 2026):** every card, Short, Reel and thumbnail about one competition uses that competition's own colour scheme, close to its official brand palette (Premier League purple/green/pink, LaLiga black/red, Bundesliga red, NFL navy/red, NBA blue/red, etc.), instead of the generic look: set `"league"` on every entry in posts.json / shorts.json / videos.json (keys: epl, ucl, uel, uecl, laliga, seriea, bundesliga, ligue1, mls, nfl, ncaaf, nba, nhl, mlb, ufc, f1 — see `tools/league_theme.js`). Leave it out only for mixed-league posts (e.g. a multi-sport round-up). Colours only: never a league's logo, wordmark artwork or proprietary font (trademarks); write the league name as plain text. The ScoreBuzz name and scorebuzz.net stay on everything.
+
 Every day, publish 20–25 posts to the ScoreBuzz Facebook Page (Metricool brand `7677948`): **image posts and Reels only**
 (owner's request, 5 Nov 2026: focus on images and Reels; no text-only or link posts).
 - **~15–17 image posts**, each an original branded card (below).
