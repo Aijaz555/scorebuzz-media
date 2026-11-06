@@ -25,18 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "12": {
-   "league": "nba",
-   "event": "401909937",
-   "note": "Miami Heat vs Golden State Warriors, 2026-11-06T03:00:00Z"
-  },
-  "13": {
-   "league": "nhl",
-   "event": "401892658",
-   "note": "Nashville Predators vs Colorado Avalanche, 2026-11-06T02:30:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
