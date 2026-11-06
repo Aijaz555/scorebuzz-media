@@ -74,6 +74,15 @@ At the end, send the user a short summary: number of posts scheduled, the mix, a
 - Every Short gets a music bed too: after rendering, run `tools/add_music.sh shorts/<day>/<id>.mp4 <hype|anthem|drama> <tmp>` and replace the file before pushing (same beds and rules as TikTok).
 - Optional voiceover: set `voice` to an MP3 path. vidIQ voiceover costs 14 credits per 1,000 characters, so it can't cover daily volume on the current plan.
 
+## Evergreen history, records & facts (owner's request, 6 Nov 2026)
+- **Weekdays (Mon–Fri): 2–3 of the day's vertical videos are evergreen** history/record/fact Shorts, aimed at going viral. They go to YouTube (inside the 8-upload cap) and Facebook as Reels; weekends stay news/results-only.
+- Angles that travel: "On this day" (a famous match or record from this date), all-time records ("Most Premier League goals ever", "Longest NFL winning streaks"), countries' achievements ("Every country that has won the World Cup", "Brazil: 5 World Cups"), list/history ("Every Super Bowl winner since 2000", "Every F1 champion since 2010"), unbelievable stats ("Only X players have ever…"), and "Did you know?" facts. Tie them to the week's news when possible (e.g. a record McDavid is chasing, a country's World Cup history before a qualifier).
+- Same US/UK sports mix; prefer football, NFL, NBA, NHL, F1, UFC, World Cup/Olympics. No cricket.
+- **Accuracy is everything:** every number, date and name must come from a page opened with WebFetch (official league/governing-body records, Wikipedia record lists checked against a second source when in doubt) or from ESPN JSON. Phrase records with a date ("as of Nov 2026"). Never guess a stat to make a fact more dramatic; if two sources disagree, leave it out.
+- Format: hook in 1–2 s as a question or claim ("Only ONE country has won 5 World Cups"), then `list`/`table`/`stat`/`text` scenes counting up to the answer, end on a question ("Who's next?"). No player photos, no flags of disputed territories, no logos except ESPN team crests on score/board scenes. Stadium photos are fine.
+- Keep a log so nothing repeats: add each evergreen video's topic to `shorts/evergreen_log.json` (`[{"date","id","topic"}]`) and check it before picking a topic; don't repeat a topic within 60 days, and don't use the same template two days running.
+- Titles follow the normal formula ("Every Country That Has Won the World Cup 🏆 #WorldCup #shorts"); Facebook Reel captions: hook + one surprising fact + a question + 2–4 hashtags.
+
 ## What gets views (vidIQ research, 31 Oct 2026)
 - Small sports channels break out with: weekly recaps ("Everything you missed from NFL Week X"), "3 biggest takeaways"/instant reactions, college football recaps, comebacks/upsets, records ("one point short of Lemieux"), and list/history Shorts ("Every Premier League winner").
 - Titles: hook first, a number or name, one emoji, then 1–2 hashtags + #shorts (e.g. "McDavid Falls ONE Point Short of Mario Lemieux's Record 😮 #NHL #shorts").
