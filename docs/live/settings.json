@@ -31,16 +31,6 @@
    "event": "401873037",
    "note": "Jaguars at Ravens, TNF Thu 8:15pm ET"
   },
-  "2": {
-   "league": "nhl",
-   "event": "401892653",
-   "note": "Philadelphia Flyers vs New York Rangers, 2026-11-06T00:00:00Z"
-  },
-  "3": {
-   "league": "nhl",
-   "event": "401892654",
-   "note": "Boston Bruins vs Pittsburgh Penguins, 2026-11-06T00:00:00Z"
-  },
   "4": {
    "league": "nhl",
    "event": "401892655",
@@ -70,11 +60,6 @@
    "league": "nhl",
    "event": "401892652",
    "note": "Carolina Hurricanes vs New York Islanders, 2026-11-06T00:00:00Z"
-  },
-  "10": {
-   "league": "nhl",
-   "event": "401892656",
-   "note": "Vancouver Canucks vs Winnipeg Jets, 2026-11-06T01:00:00Z"
   },
   "11": {
    "league": "nhl",
