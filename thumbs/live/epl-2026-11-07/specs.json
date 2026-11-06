@@ -1,0 +1,78 @@
+[
+ {
+  "id": "leeds-tottenham",
+  "sport": "football",
+  "theme": "pl",
+  "league": "Premier League",
+  "venue": "Elland Road",
+  "home": {
+   "name": "Leeds",
+   "abbr": "LEE",
+   "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png"
+  },
+  "away": {
+   "name": "Tottenham",
+   "abbr": "TOT",
+   "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
+  },
+  "kickoff": "SAT 12:30 GMT \u00b7 7:30AM ET",
+  "note": "12th v 9th"
+ },
+ {
+  "id": "arsenal-hull",
+  "sport": "football",
+  "theme": "pl",
+  "league": "Premier League",
+  "venue": "Emirates Stadium",
+  "home": {
+   "name": "Arsenal",
+   "abbr": "ARS",
+   "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png"
+  },
+  "away": {
+   "name": "Hull City",
+   "abbr": "HUL",
+   "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png"
+  },
+  "kickoff": "SAT 3PM GMT \u00b7 10AM ET",
+  "note": "Leaders at home"
+ },
+ {
+  "id": "fulham-newcastle",
+  "sport": "football",
+  "theme": "pl",
+  "league": "Premier League",
+  "venue": "Craven Cottage",
+  "home": {
+   "name": "Fulham",
+   "abbr": "FUL",
+   "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png"
+  },
+  "away": {
+   "name": "Newcastle",
+   "abbr": "NEW",
+   "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+  },
+  "kickoff": "SAT 3PM GMT \u00b7 10AM ET",
+  "note": "15th v 13th"
+ },
+ {
+  "id": "forest-mancity",
+  "sport": "football",
+  "theme": "pl",
+  "league": "Premier League",
+  "venue": "The City Ground",
+  "home": {
+   "name": "Forest",
+   "abbr": "NFO",
+   "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png"
+  },
+  "away": {
+   "name": "Man City",
+   "abbr": "MCI",
+   "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+  },
+  "kickoff": "SAT 5:30PM GMT \u00b7 12:30PM ET",
+  "note": "19th v 2nd"
+ }
+]

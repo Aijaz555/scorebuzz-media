@@ -2,7 +2,9 @@
 // Usage: node tools/live/live_thumb_card.js spec.json out_dir
 // spec.json: [{ id, sport: football|nfl|nba|nhl|mlb, league: "PREMIER LEAGUE", venue: "<ESPN venue.fullName>" (stadium photo),
 //               home: {name, abbr, logo}, away: {name, abbr, logo},   // per-game: big crests + VS
-//               headline, sub }]                                     // generic: no teams, big headline instead
+//               headline, sub,                                       // generic: no teams, big headline instead
+//               theme: "pl" (Premier League palette: purple #37003C, pink #E90052, cyan #04F5FF, green #00FF85; league name
+//               as plain text — never the official lion logo or the league's proprietary typeface), kickoff, note }]
 // Look: stadium photo in the background (licence credit shown), dark vignette, huge red LIVE badge,
 // glowing team crests, lime ScoreBuzz accents. Crests = ESPN team logos; photos = stadiums only, never people.
 const fs = require('fs');
@@ -52,11 +54,27 @@ async function html(t) {
   .bar{position:absolute;left:0;right:0;bottom:0;height:62px;background:#000c;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:800;letter-spacing:1px}
   .bar b{color:#C6F432;margin-left:12px}
   .credit{position:absolute;right:10px;bottom:66px;font-size:12px;color:#fffa;text-shadow:0 1px 2px #000}
+  ${t.theme === 'pl' ? `
+  body{background:#37003C;font-family:'Inter Display',Inter,sans-serif}
+  .bg{filter:saturate(.9) contrast(1.05)}
+  .shade{background:radial-gradient(ellipse at 50% 50%,rgba(55,0,60,.25),rgba(38,0,42,.92) 78%),linear-gradient(180deg,rgba(55,0,60,.8),rgba(55,0,60,.35) 42%,rgba(30,0,34,.96))}
+  .glow{background:radial-gradient(ellipse at 30% 50%,#E9005266,transparent 60%),radial-gradient(ellipse at 70% 50%,#04F5FF55,transparent 60%)}
+  .live{background:#E90052;box-shadow:0 0 0 6px #ffffff22,0 0 60px #E90052cc}
+  .lg{top:122px;background:linear-gradient(90deg,#04F5FF,#00FF85);color:#37003C;font-family:'Inter Display';font-weight:900;font-size:38px;letter-spacing:-.5px;padding:8px 30px;border-radius:12px;text-transform:none}
+  .cr{box-shadow:0 0 0 8px #fff,0 0 0 16px #E90052,0 0 80px #04F5FFaa,0 20px 50px #000c}
+  .v{color:#00FF85;text-shadow:0 6px 0 #37003C,0 0 40px #00FF85}
+  .nm{font-family:'Inter Display'}
+  .bar{background:#37003C;border-top:6px solid;border-image:linear-gradient(90deg,#E90052,#04F5FF,#00FF85) 1}
+  .bar b{color:#00FF85}` : ''}
+  .ko{position:absolute;left:50%;bottom:84px;transform:translateX(-50%);display:flex;gap:14px;white-space:nowrap}
+  .ko span{background:#fff;color:#37003C;font-weight:900;font-size:30px;padding:6px 20px;border-radius:10px;box-shadow:0 8px 24px #0009}
+  .ko span.n{background:#E90052;color:#fff}
   </style></head><body>
   <div class="bg"></div><div class="shade"></div><div class="glow"></div>
   <div class="top"><div class="logo">Score<b>Buzz</b></div><div class="live"><i></i>LIVE</div></div>
   <div class="lg">${esc(t.league || 'LIVE SCOREBOARD')}</div>
   ${centre}
+  ${t.kickoff || t.note ? `<div class="ko">${t.kickoff ? `<span>${esc(t.kickoff)}</span>` : ''}${t.note ? `<span class="n">${esc(t.note)}</span>` : ''}</div>` : ''}
   <div class="bar">LIVE SCORES · STATS · <b>scorebuzz.net</b></div>
   ${ph ? `<div class="credit">${esc(ph.credit)}</div>` : ''}
   </body></html>`;
