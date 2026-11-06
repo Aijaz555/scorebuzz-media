@@ -184,6 +184,9 @@ starting 30 min before kick-off and stopped when the game is over.
   and the hashtag line (league, matchup, both teams), which the planner writes; actions also carry `tags` for later.
 - LiveReacting refuses title/description edits on a SCHEDULED project ("Can not update title/description"): cancel the
   schedule, update, then schedule again. (Edits on a LIVE project work.)
+- Stuck starts: a project can sit in PREPARING forever after a YouTube error (6 Nov: TNF on Slot 1 scheduled →
+  ERROR UNKNOWN_ERROR, then PREPARING for 37 min). Each hourly run checks every PREPARING project with
+  livereacting_get_stream_status; if preparingStartedAt is over 10 min ago, stop it and start it again (once per run).
 - Planned durations are generous (NBA/NHL 3h15 after tip-off, NFL 4h, soccer 2h15) and the hourly run stops a
   stream once ESPN says the game is final; a stream that ended before the game did is restarted.
 - Music per sport (settings.json `music`): Kevin MacLeod tracks from incompetech.com (CC BY 4.0, credited in every
