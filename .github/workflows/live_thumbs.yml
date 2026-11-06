@@ -1,0 +1,37 @@
+name: Live thumbnails
+# Sets the YouTube thumbnail of live scoreboard streams from thumbs/live/<videoId>.jpg (made by tools/live/live_thumbs.js).
+# Needs repository secrets YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (see tools/live/LIVE.md "Thumbnails").
+on:
+  workflow_dispatch:
+    inputs:
+      video_ids:
+        description: Comma-separated YouTube video ids
+        required: true
+permissions:
+  contents: write
+concurrency: live-thumbs
+jobs:
+  set:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node tools/live/set_thumbs.js
+        env:
+          VIDEO_IDS: ${{ inputs.video_ids }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      - name: Record which thumbnails are done
+        if: always()
+        run: |
+          git config user.name "scorebuzz-bot"
+          git config user.email "scorebuzz-bot@users.noreply.github.com"
+          git add thumbs/live/done.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Live thumbnails set on YouTube"
+          git pull --rebase
+          git push

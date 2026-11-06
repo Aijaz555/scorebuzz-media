@@ -198,3 +198,26 @@ starting 30 min before kick-off and stopped when the game is over.
 - Originals: every project has an `audioPlaylist` layer of original synthesised tracks (tools/music/live, built by
   `python3 tools/make_live_music.py`; 6 upbeat ones imported to the LiveReacting library), looping at volume 3/10,
   a different order per project. Duplicated Slot projects inherit it. No commercial music, ever.
+
+## Thumbnails for live streams (added 6 Nov 2026)
+
+LiveReacting's API can't set a YouTube thumbnail, so live streams get one through the YouTube Data API, run from a GitHub Action
+(the credentials live in GitHub repository secrets, never in this public repo):
+
+1. `node tools/live/live_thumbs.js <videoId>:<slot> ...` renders `thumbs/live/<videoId>.jpg` (1280x720, light ScoreBuzz look:
+   league, "LIVE", team badges, "Home v Away", LIVE NOW sticker) and prints `video_ids=...` for the ones not yet done.
+   The video id is the `v=` part of `livereacting_get_stream_status` → `destinations[].viewingUrl`.
+2. Commit + push, then run the **Live thumbnails** workflow (`.github/workflows/live_thumbs.yml`, ref `main`) with input
+   `video_ids`. It calls `thumbnails.set` (50 of the 10,000 daily quota units each) and records successes in `thumbs/live/done.json`.
+
+Only runs when `"thumbs": true` in `docs/live/settings.json` (so the hourly manager doesn't trigger failing runs before setup).
+
+**One-time setup (owner):**
+1. YouTube Studio > Settings > Channel > Feature eligibility: verify the channel by phone (custom thumbnails need it).
+2. Google Cloud console (any project): enable **YouTube Data API v3**; OAuth consent screen: External, add yourself, then
+   **Publish app** (otherwise the token expires after 7 days); Credentials > Create OAuth client ID > **Desktop app**.
+3. On any computer with Node: put the client id/secret in `tools/live/live.config.json` as
+   `{"youtubeApi": {"clientId": "...", "clientSecret": "..."}}`, run `node tools/live/youtube.js auth`, sign in with the
+   account that owns @scorebuzznet, and copy the `refreshToken` it saves. Don't commit that file.
+4. GitHub > Aijaz555/scorebuzz-media > Settings > Secrets and variables > Actions: add `YT_CLIENT_ID`, `YT_CLIENT_SECRET`,
+   `YT_REFRESH_TOKEN`. Then set `"thumbs": true` in `docs/live/settings.json` (or ask Claude to).
