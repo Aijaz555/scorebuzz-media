@@ -1,0 +1,42 @@
+[
+ {
+  "id": "scorebuzz-live",
+  "sport": "football",
+  "league": "LIVE SCOREBOARD",
+  "venue": "Tottenham Hotspur Stadium",
+  "headline": "Live scores",
+  "sub": "Every goal \u00b7 every point"
+ },
+ {
+  "id": "football-live",
+  "sport": "football",
+  "league": "FOOTBALL",
+  "venue": "Emirates Stadium",
+  "headline": "Live scores",
+  "sub": "Goals \u00b7 stats \u00b7 live tracker"
+ },
+ {
+  "id": "nfl-live",
+  "sport": "nfl",
+  "league": "NFL",
+  "venue": "SoFi Stadium",
+  "headline": "Live scores",
+  "sub": "Every drive \u00b7 play-by-play"
+ },
+ {
+  "id": "nba-live",
+  "sport": "nba",
+  "league": "NBA",
+  "venue": "crypto.com Arena",
+  "headline": "Live scores",
+  "sub": "Every basket \u00b7 live stats"
+ },
+ {
+  "id": "nhl-live",
+  "sport": "nhl",
+  "league": "NHL",
+  "venue": "Rogers Place",
+  "headline": "Live scores",
+  "sub": "Every goal \u00b7 live stats"
+ }
+]

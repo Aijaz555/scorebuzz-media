@@ -2,7 +2,7 @@
 //
 // LiveReacting can't set a YouTube thumbnail, so the hourly live manager does it in two steps:
 //   1. node tools/live/live_thumbs.js <videoId>:<slot> [<videoId>:<slot> ...]
-//      renders thumbs/live/<videoId>.jpg for the game in that slot (docs/live/settings.json) and
+//      renders thumbs/live/<videoId>.jpg (tools/live/live_thumb_card.js: stadium photo, crests, VS, red LIVE badge) for the game in that slot (docs/live/settings.json) and
 //      prints the video ids that still need their thumbnail set (skips ones listed in thumbs/live/done.json).
 //   2. commit + push, then run the "Live thumbnails" GitHub Action (.github/workflows/live_thumbs.yml)
 //      with input video_ids = the printed ids. The Action uploads them with the YouTube Data API
@@ -46,18 +46,17 @@ const LEAGUES = {
     const home = by('home'), away = by('away');
     if (!home.abbreviation || !away.abbreviation) { console.error(`slot ${slot}: teams not found`); continue; }
     const soccer = sport === 'football';
-    const [L, R] = soccer ? [home, away] : [away, home]; // soccer lists home first, US sports away @ home
     const short = (t) => t.shortDisplayName || t.name || t.abbreviation;
-    specs.push({ id: vid, sport, format: 'video', tagText: lgName.toUpperCase(),
-      thumb: { kicker: `${lgName} · live scoreboard`, big: 'LIVE', teams: [L.abbreviation, R.abbreviation],
-        hook: `${short(L)} ${soccer ? 'v' : 'at'} *${short(R)}*`, sticker: 'Live now', emoji: '🔴' } });
+    const side = (t) => ({ name: short(t), abbr: t.abbreviation, logo: (t.logos && t.logos[0] && t.logos[0].href) || t.logo });
+    // soccer lists home first; US sports away first ("Away at Home"), the card shows them left to right
+    const [L, R] = soccer ? [home, away] : [away, home];
+    specs.push({ id: vid, sport, league: lgName.toUpperCase(), venue: j.gameInfo?.venue?.fullName, home: side(L), away: side(R) });
     todo.push(vid);
   }
   if (!specs.length) { console.log('nothing to do'); return; }
   const f = path.join(OUT, '.spec.json');
   fs.writeFileSync(f, JSON.stringify(specs, null, 1));
-  execFileSync(process.execPath, [path.join(ROOT, 'tools', 'make_thumbs.js'), f, OUT], { stdio: 'inherit', timeout: 120000 });
+  execFileSync(process.execPath, [path.join(__dirname, 'live_thumb_card.js'), f, OUT], { stdio: 'inherit', timeout: 120000 });
   fs.unlinkSync(f);
-  for (const v of todo) fs.renameSync(path.join(OUT, `${v}.thumb.jpg`), path.join(OUT, `${v}.jpg`));
   console.log(`video_ids=${todo.join(',')}`);
 })();
