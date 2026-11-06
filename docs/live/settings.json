@@ -31,36 +31,6 @@
    "event": "401873037",
    "note": "Jaguars at Ravens, TNF Thu 8:15pm ET"
   },
-  "4": {
-   "league": "nhl",
-   "event": "401892655",
-   "note": "Dallas Stars vs Columbus Blue Jackets, 2026-11-06T00:00:00Z"
-  },
-  "5": {
-   "league": "nhl",
-   "event": "401892648",
-   "note": "Utah Mammoth vs Montreal Canadiens, 2026-11-06T00:00:00Z"
-  },
-  "6": {
-   "league": "nhl",
-   "event": "401892649",
-   "note": "Vegas Golden Knights vs Detroit Red Wings, 2026-11-06T00:00:00Z"
-  },
-  "7": {
-   "league": "nhl",
-   "event": "401892650",
-   "note": "Chicago Blackhawks vs Tampa Bay Lightning, 2026-11-06T00:00:00Z"
-  },
-  "8": {
-   "league": "nhl",
-   "event": "401892651",
-   "note": "St. Louis Blues vs New Jersey Devils, 2026-11-06T00:00:00Z"
-  },
-  "9": {
-   "league": "nhl",
-   "event": "401892652",
-   "note": "Carolina Hurricanes vs New York Islanders, 2026-11-06T00:00:00Z"
-  },
   "11": {
    "league": "nhl",
    "event": "401892657",
@@ -88,7 +58,7 @@
  },
  "reload": 10,
  "music": {
-  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks \u2014 no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals.",
+  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals.",
   "playlists": {
    "american_football": {
     "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
