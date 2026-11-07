@@ -75,6 +75,16 @@
    "league": "nhl",
    "event": "401892661",
    "note": "Anaheim Ducks vs Calgary Flames, 2026-11-07T01:00:00Z"
+  },
+  "11": {
+   "league": "nba",
+   "event": "401909294",
+   "note": "Portland Trail Blazers vs Los Angeles Lakers, 2026-11-07T03:00:00Z"
+  },
+  "12": {
+   "league": "nba",
+   "event": "401909295",
+   "note": "San Antonio Spurs vs Sacramento Kings, 2026-11-07T03:00:00Z"
   }
  },
  "fit": {
