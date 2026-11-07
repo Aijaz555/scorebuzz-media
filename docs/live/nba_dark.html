@@ -117,7 +117,7 @@ function render(s, sb) {
   const row = (t) => `<tr><td><img src="${t.logo}" alt="">${esc(t.abbr)}</td>${cols.map((_, i) => `<td>${t.lines[i] ?? '–'}</td>`).join('')}<td>${t.score}</td></tr>`;
   const bs = Object.fromEntries((s.boxscore?.teams || []).map((t) => [t.team.id, Object.fromEntries(t.statistics.map((x) => [x.name, x.displayValue]))]));
   const H = bs[home.id] || {}, A = bs[away.id] || {};
-  const plays = (s.plays || []).slice(-3).reverse();
+  const plays = (s.plays || []).slice(-2).reverse();
   const tname = (id) => (String(id) === String(home.id) ? home : String(id) === String(away.id) ? away : null);
   const ldrs = () => ['points', 'assists', 'rebounds'].map((cat) => { const cell = (t) => { const L = (s.leaders || []).find((x) => String(x.team.id) === String(t.id)); const c2 = L?.leaders.find((x) => x.name === cat); const l = c2?.leaders?.[0]; return l ? `<span class="p"><img src="${t.logo}">${esc(l.athlete.shortName)} <b>${esc(l.displayValue)}</b></span>` : ''; };
     return `<div class="ldr"><span class="k">${({ points: 'PTS', assists: 'AST', rebounds: 'REB' })[cat]}</span>${cell(home)}${cell(away)}</div>`; }).join('');
