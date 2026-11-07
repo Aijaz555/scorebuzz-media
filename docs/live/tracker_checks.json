@@ -9,26 +9,6 @@
   "reason": "ok (contrast 43)",
   "at": "2026-11-07T23:07:12+00:00"
  },
- "401909938": {
-  "slot": "5",
-  "league": "nba",
-  "game": "Pacers v Nuggets",
-  "url": "https://scorebuzz.net/basketball/nba/pacers-vs-nuggets-401909938/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 71)",
-  "at": "2026-11-07T23:07:15+00:00"
- },
- "401892664": {
-  "slot": "7",
-  "league": "nhl",
-  "game": "Kraken v Rangers",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/kraken-vs-rangers-401892664/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-07T23:07:18+00:00"
- },
  "761935": {
   "slot": "14",
   "league": "mls",
@@ -59,11 +39,38 @@
   "reason": "ok (contrast 49)",
   "at": "2026-11-07T23:07:27+00:00"
  },
+ "401856745": {
+  "slot": "2",
+  "league": "ncaaf",
+  "mode": "built-in",
+  "status": "ok",
+  "at": "2026-11-07T23:45:57+00:00"
+ },
  "401856740": {
   "slot": "4",
   "league": "ncaaf",
   "mode": "built-in",
   "status": "ok",
-  "at": "2026-11-07T23:10:15+00:00"
+  "at": "2026-11-07T23:45:58+00:00"
+ },
+ "401909938": {
+  "slot": "5",
+  "league": "nba",
+  "game": "Pacers v Nuggets",
+  "url": "https://scorebuzz.net/basketball/nba/pacers-vs-nuggets-401909938/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-07T23:46:03+00:00"
+ },
+ "401892664": {
+  "slot": "7",
+  "league": "nhl",
+  "game": "Kraken v Rangers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kraken-vs-rangers-401892664/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 99)",
+  "at": "2026-11-07T23:46:06+00:00"
  }
 }
