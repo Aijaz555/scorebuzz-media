@@ -230,3 +230,11 @@ Only runs when `"thumbs": true` in `docs/live/settings.json` (so the hourly mana
 - YouTube tags: the LiveReacting tool can't write `youtubeAdvancedSettings.tags` (the field exists on each project but the API tool doesn't accept it), so the "live" keywords go in the title and the description hashtags (#<A>Vs<B>Live, #<League>Live, #LiveStream). `ytTags()` in plan_streams.js holds the per-game tag list for when the tool or the YouTube Data API can set them.
 
 - **docs/live/app.html has edits that tools/live/overlay.html lacks** (league colour touch, 7 Nov 2026). Before running build_web.js, port those into overlay.html, or patch app.html directly, otherwise the rebuild drops them.
+
+## Tracker check at kick-off (owner's request, 7 Nov 2026)
+- `tools/live/check_trackers.py` runs every 10 min (workflow `tracker_check.yml`). For each stream whose game has started it opens
+  the scorebuzz.net match page the stream embeds and checks the tracker card really draws (a canvas ≥400×250 with real contrast,
+  no "loading…" text; two tries 25 s apart). A failing game gets `"sbtrk": 0` on its slot in settings.json, which makes the stream
+  page use the built-in ESPN-data tracker for that game (no restart). Results: `docs/live/tracker_checks.json`.
+- The slot's `sbtrk` is cleared when the planner assigns a new game to the slot (plan_streams writes a fresh entry).
+- The stream manager should read tracker_checks.json and mention any switched games in its summary.

@@ -1,0 +1,69 @@
+{
+ "401856740": {
+  "slot": "4",
+  "league": "ncaaf",
+  "mode": "built-in",
+  "status": "ok",
+  "at": "2026-11-07T23:07:04+00:00"
+ },
+ "761941": {
+  "slot": "1",
+  "league": "mls",
+  "game": "Philadelphia v Toronto",
+  "url": "https://scorebuzz.net/football/mls/philadelphia-vs-toronto-761941/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-07T23:07:12+00:00"
+ },
+ "401909938": {
+  "slot": "5",
+  "league": "nba",
+  "game": "Pacers v Nuggets",
+  "url": "https://scorebuzz.net/basketball/nba/pacers-vs-nuggets-401909938/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 71)",
+  "at": "2026-11-07T23:07:15+00:00"
+ },
+ "401892664": {
+  "slot": "7",
+  "league": "nhl",
+  "game": "Kraken v Rangers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kraken-vs-rangers-401892664/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-07T23:07:18+00:00"
+ },
+ "761935": {
+  "slot": "14",
+  "league": "mls",
+  "game": "Chicago v Columbus",
+  "url": "https://scorebuzz.net/football/mls/chicago-vs-columbus-761935/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-07T23:07:21+00:00"
+ },
+ "761937": {
+  "slot": "16",
+  "league": "mls",
+  "game": "Cincinnati v Nashville",
+  "url": "https://scorebuzz.net/football/mls/cincinnati-vs-nashville-761937/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-07T23:07:24+00:00"
+ },
+ "761938": {
+  "slot": "17",
+  "league": "mls",
+  "game": "Miami v Charlotte",
+  "url": "https://scorebuzz.net/football/mls/miami-vs-charlotte-761938/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 49)",
+  "at": "2026-11-07T23:07:27+00:00"
+ }
+}

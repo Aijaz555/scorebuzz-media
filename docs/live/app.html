@@ -1335,6 +1335,8 @@ const slugify = (n) => String(n || '').toLowerCase().replace(/[^a-z0-9]+/g, '-')
 function sbUrl(g) {
   const lg = SB_LEAGUE[league];
   if (!lg || q.get('sbtrk') === '0') return '';
+  // per-game override written by tools/live/check_trackers.js when the website's tracker isn't working for this game
+  if (typeof PIN !== 'undefined' && PIN && String(PIN.event) === String(g.id) && PIN.sbtrk === 0) return '';
   // the website only has a live tracker for some matches and that can't be checked from here (cross-origin),
   // so in auto mode use it for favourite teams and pinned/slot games (big matches, usually covered);
   // other games get our own tracker

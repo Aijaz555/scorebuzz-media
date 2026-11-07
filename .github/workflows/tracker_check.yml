@@ -1,0 +1,31 @@
+name: Live tracker check
+# Every 10 minutes: for each live stream whose game has started, open the scorebuzz.net match page the stream embeds and
+# check its live tracker really draws (tools/live/check_trackers.py). If not, the slot gets "sbtrk": 0 in
+# docs/live/settings.json and the stream page switches that game to the built-in tracker within a minute, no restart.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: tracker-check
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright pillow && python -m playwright install --with-deps chromium
+      - run: python3 tools/live/check_trackers.py
+      - name: Commit results
+        run: |
+          git config user.name "scorebuzz-bot"
+          git config user.email "scorebuzz-bot@users.noreply.github.com"
+          git add docs/live/settings.json docs/live/tracker_checks.json
+          git diff --cached --quiet && echo "nothing new" && exit 0
+          git commit -m "Live tracker check: $(date -u +%FT%H:%MZ)"
+          git pull --rebase
+          git push
