@@ -1,0 +1,390 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ScoreBuzz 3D Match Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<!--
+  3D animated match tracker (football). Usage: match3d.html?league=epl&event=<espn id>[&replay=1]
+  Everything moving on the pitch is an ANIMATION driven by ESPN's live play-by-play: where each real event
+  (shot, corner, foul, card, goal) happened is real; the passes in between are simulated filler.
+  The page always says so on screen ("animated tracker, not match footage").
+-->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#05070d;font-family:Inter,sans-serif;color:#fff}
+.num{font-family:'Barlow Condensed',Inter,sans-serif;font-variant-numeric:tabular-nums}
+#sky{position:absolute;inset:0;background:radial-gradient(1400px 500px at 50% -10%,#3b4a7a 0%,#141b33 45%,#05070d 80%)}
+#lights{position:absolute;inset:0;pointer-events:none;background:radial-gradient(500px 220px at 12% 4%,#ffffff22,transparent 70%),radial-gradient(500px 220px at 88% 4%,#ffffff22,transparent 70%)}
+#stage{position:absolute;inset:0;perspective:1700px;perspective-origin:50% 8%;overflow:hidden}
+#world{position:absolute;left:50%;top:50%;transform-style:preserve-3d;will-change:transform}
+#apron{position:absolute;transform-style:preserve-3d;background:#0f4a24;border-radius:6px}
+#pitch{position:absolute;transform-style:preserve-3d;background:repeating-linear-gradient(90deg,#1f8a43 0 8.33%,#1a7a3b 8.33% 16.66%)}
+#pitch svg{position:absolute;inset:0;width:100%;height:100%}
+.up{position:absolute;transform-style:preserve-3d;transform-origin:50% 100%}
+#stand{position:absolute;transform-origin:50% 100%;background-size:900px 300px;filter:brightness(.8)}
+#stand.flash{animation:flash 2.5s}
+@keyframes flash{0%,100%{filter:brightness(.8)}20%,60%{filter:brightness(1.5) saturate(1.3)}}
+#boards{position:absolute;transform-origin:50% 100%;background:#0b0f1d;display:flex;align-items:center;overflow:hidden;border-top:3px solid #222}
+#boards .run{white-space:nowrap;font-weight:900;letter-spacing:4px;font-size:44px;animation:run 28s linear infinite;color:#c6f432}
+#boards .run span{margin:0 60px}#boards .run span:nth-child(even){color:#fff}
+@keyframes run{to{transform:translateX(-50%)}}
+.goal{position:absolute;transform-origin:0 50%;border:5px solid #fff;border-bottom:none;background:repeating-linear-gradient(0deg,#ffffff30 0 2px,transparent 2px 14px),repeating-linear-gradient(90deg,#ffffff30 0 2px,transparent 2px 14px)}
+.pl{position:absolute;width:0;height:0;transform-style:preserve-3d}
+.pl .sh{position:absolute;left:-22px;top:-9px;width:44px;height:18px;border-radius:50%;background:radial-gradient(#0008,transparent 70%)}
+.pl .fig{position:absolute;left:-23px;top:-92px;width:46px;height:92px;transform-origin:50% 100%}
+.fig .hd{position:absolute;left:14px;top:0;width:18px;height:18px;border-radius:50%;background:#e9d3bd;box-shadow:inset -3px -3px 0 #0002}
+.fig .sh2{position:absolute;left:3px;top:18px;width:40px;height:40px;border-radius:12px 12px 6px 6px;display:grid;place-items:center;font:800 22px 'Barlow Condensed';box-shadow:inset -5px -4px 0 #0003}
+.fig .lg{position:absolute;top:57px;width:10px;height:35px;border-radius:4px;background:#1b1b1b}
+.fig .lg.a{left:12px}.fig .lg.b{left:24px}
+.fig .shorts{position:absolute;left:8px;top:52px;width:30px;height:14px;border-radius:3px}
+.pl .tag{position:absolute;left:-90px;top:-128px;width:180px;text-align:center;font-weight:800;font-size:20px;text-shadow:0 2px 6px #000;opacity:0;transition:opacity .4s;transform-origin:50% 100%}
+.pl.on .tag{opacity:1}
+#ball{position:absolute;width:0;height:0;transform-style:preserve-3d}
+#ball .sh{position:absolute;left:-10px;top:-5px;width:20px;height:10px;border-radius:50%;background:#0009}
+#ball .b{position:absolute;left:-11px;top:-22px;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff 0 30%,#d8dbe2 60%,#8b909c);transform-origin:50% 100%}
+
+/* overlays */
+#bug{position:absolute;left:40px;top:34px;display:flex;align-items:stretch;height:64px;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px #0009;font-weight:900}
+#bug .lg{background:#000;color:#c6f432;padding:0 18px;display:flex;align-items:center;font-size:24px;letter-spacing:1px}
+#bug .t{display:flex;align-items:center;gap:12px;padding:0 18px;font-size:30px;letter-spacing:1px}
+#bug .sc{background:#0b0f1d;padding:0 20px;display:flex;align-items:center;font-size:44px;gap:14px}
+#bug .clk{background:#e53935;padding:0 18px;display:flex;align-items:center;font-size:34px;min-width:110px;justify-content:center}
+#label{position:absolute;right:40px;top:40px;font-weight:800;font-size:18px;letter-spacing:2px;padding:10px 16px;border-radius:10px;background:#000a;border:1px solid #ffffff22;color:#d6d6d6;text-align:right}
+#label b{color:#c6f432}
+#poss{position:absolute;left:40px;top:112px;width:420px;font-weight:800;font-size:16px;letter-spacing:2px;color:#ddd}
+#poss .bar{display:flex;height:10px;border-radius:6px;overflow:hidden;margin-top:6px;background:#ffffff22}
+#poss .bar i{display:block;height:100%;transition:width 1.5s}
+#ev{position:absolute;left:50%;bottom:120px;transform:translateX(-50%) translateY(30px);opacity:0;transition:all .45s;display:flex;align-items:center;gap:18px;background:#000d;border:1px solid #ffffff22;border-left:10px solid var(--c,#c6f432);border-radius:14px;padding:16px 28px;max-width:1500px;box-shadow:0 20px 50px #000a}
+#ev.on{opacity:1;transform:translateX(-50%)}
+#ev .k{font:800 40px 'Barlow Condensed';letter-spacing:2px;white-space:nowrap}
+#ev .x{font-size:26px;font-weight:700;color:#e8e8e8;max-width:1100px}
+#ev .m{font:800 34px 'Barlow Condensed';color:#c6f432}
+#big{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;opacity:0}
+#big.on{animation:big 4.2s forwards}
+#big div{font:900 260px 'Barlow Condensed';letter-spacing:10px;color:#fff;text-shadow:0 0 60px var(--c,#c6f432),0 10px 40px #000;transform:skewX(-8deg)}
+@keyframes big{0%{opacity:0;transform:scale(.6)}10%{opacity:1;transform:scale(1.05)}18%{transform:scale(1)}80%{opacity:1}100%{opacity:0}}
+#card{position:absolute;left:50%;top:34%;width:90px;height:130px;margin-left:-45px;border-radius:10px;opacity:0;box-shadow:0 20px 40px #000a}
+#card.on{animation:card 2.8s forwards}
+@keyframes card{0%{opacity:0;transform:rotate(-30deg) scale(.5)}15%{opacity:1;transform:rotate(8deg) scale(1.1)}25%{transform:rotate(0) scale(1)}80%{opacity:1}100%{opacity:0}}
+footer{position:absolute;left:0;right:0;bottom:0;height:72px;background:#000;display:flex;align-items:center;gap:24px;padding:0 28px;font-weight:900;letter-spacing:2px;font-size:22px}
+footer .site{color:#c6f432}footer .note{color:#aaa;font-weight:700;font-size:20px;letter-spacing:1px}
+footer .sub{margin-left:auto;background:#e53935;padding:10px 20px;border-radius:10px}
+#err{position:absolute;inset:0;display:grid;place-items:center;font-size:36px;color:#999}
+</style></head><body>
+<div id="sky"></div><div id="lights"></div>
+<div id="stage"><div id="world">
+  <div id="stand" class="up"></div>
+  <div id="boards" class="up"><div class="run"></div></div>
+  <div id="apron"></div>
+  <div id="pitch"></div>
+</div></div>
+<div id="bug"><div class="lg" id="lgn">PREMIER LEAGUE</div><div class="t" id="tH"></div><div class="sc num" id="sc">0 - 0</div><div class="t" id="tA"></div><div class="clk num" id="clk">0'</div></div>
+<div id="poss"><div>POSSESSION <span id="pv"></span></div><div class="bar"><i id="pH"></i><i id="pA"></i></div></div>
+<div id="label">ANIMATED LIVE TRACKER<br><b>REAL EVENTS · NOT MATCH FOOTAGE</b></div>
+<div id="ev"><span class="m num" id="evm"></span><span class="k" id="evk"></span><span class="x" id="evx"></span></div>
+<div id="big"><div id="bigt">GOAL</div></div>
+<div id="card"></div>
+<footer><span class="site">SCOREBUZZ.NET</span><span class="note">Live score, stats &amp; play-by-play · animation based on live match data</span><span class="sub">🔔 SUBSCRIBE</span></footer>
+<script>
+const q = new URLSearchParams(location.search);
+const league = q.get('league') || 'epl', event = q.get('event');
+const PATHS = { epl: 'soccer/eng.1', ucl: 'soccer/uefa.champions', uel: 'soccer/uefa.europa', laliga: 'soccer/esp.1', seriea: 'soccer/ita.1', bundesliga: 'soccer/ger.1', ligue1: 'soccer/fra.1', mls: 'soccer/usa.1' };
+const NAMES = { epl: 'PREMIER LEAGUE', ucl: 'CHAMPIONS LEAGUE', uel: 'EUROPA LEAGUE', laliga: 'LALIGA', seriea: 'SERIE A', bundesliga: 'BUNDESLIGA', ligue1: 'LIGUE 1', mls: 'MLS' };
+const REPLAY = q.has('replay');
+const $ = (id) => document.getElementById(id);
+const PW = 2700, PH = 1750, TILT = Number(q.get('tilt') || 60), CAM_Z = Number(q.get('z') || 1100), CAM_Y = Number(q.get('y') || 150);           // pitch size in px (105 x 68 m), camera tilt
+const X = (x) => x / 100 * PW, Y = (y) => y / 100 * PH;
+const rnd = (a, b) => a + Math.random() * (b - a);
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+
+// ---------- scene ----------
+function buildScene() {
+  const w = $('world'), m = 120;
+  Object.assign($('pitch').style, { left: -PW / 2 + 'px', top: -PH / 2 + 'px', width: PW + 'px', height: PH + 'px' });
+  Object.assign($('apron').style, { left: -PW / 2 - m + 'px', top: -PH / 2 - m + 'px', width: PW + 2 * m + 'px', height: PH + 2 * m + 'px' });
+  const L = 'stroke="#ffffffd0" stroke-width="5" fill="none"';
+  $('pitch').innerHTML = `<svg viewBox="0 0 ${PW} ${PH}"><g ${L}>
+    <rect x="3" y="3" width="${PW - 6}" height="${PH - 6}"/><line x1="${PW / 2}" y1="0" x2="${PW / 2}" y2="${PH}"/>
+    <circle cx="${PW / 2}" cy="${PH / 2}" r="${Y(13.4)}"/><circle cx="${PW / 2}" cy="${PH / 2}" r="6" fill="#fff"/>
+    <rect x="0" y="${Y(20.4)}" width="${X(15.7)}" height="${Y(59.2)}"/><rect x="${PW - X(15.7)}" y="${Y(20.4)}" width="${X(15.7)}" height="${Y(59.2)}"/>
+    <rect x="0" y="${Y(36.5)}" width="${X(5.2)}" height="${Y(27)}"/><rect x="${PW - X(5.2)}" y="${Y(36.5)}" width="${X(5.2)}" height="${Y(27)}"/>
+    <circle cx="${X(10.5)}" cy="${PH / 2}" r="5" fill="#fff"/><circle cx="${PW - X(10.5)}" cy="${PH / 2}" r="5" fill="#fff"/>
+    <path d="M ${X(15.7)} ${Y(38)} A ${Y(13.4)} ${Y(13.4)} 0 0 1 ${X(15.7)} ${Y(62)}"/><path d="M ${PW - X(15.7)} ${Y(38)} A ${Y(13.4)} ${Y(13.4)} 0 0 0 ${PW - X(15.7)} ${Y(62)}"/>
+    </g></svg>`;
+  // goals (7.32m wide, 2.44m high) standing on the goal lines
+  const gw = Y(10.8), gh = X(2.32), gd = 70;
+  for (const side of [0, 1]) {
+    const g = document.createElement('div'); g.className = 'goal';
+    Object.assign(g.style, { width: gh + 'px', height: gw + 'px', top: PH / 2 - gw / 2 + 'px', left: (side ? PW : 0) + 'px',
+      transform: `rotateY(${side ? -90 : 90}deg)` });
+    g.style.borderLeft = 'none'; g.style.border = '6px solid #fff';
+    $('pitch').appendChild(g);
+  }
+  // advertising boards and stand behind the far touchline
+  const bw = PW + 600, bh = 90;
+  Object.assign($('boards').style, { width: bw + 'px', height: bh + 'px', left: -bw / 2 + 'px', top: -PH / 2 - 160 - bh + 'px', transform: 'rotateX(-90deg)' });
+  $('boards').querySelector('.run').innerHTML = Array(16).fill(0).map((_, i) => `<span>${i % 2 ? 'LIVE SCORES · PLAY-BY-PLAY' : 'SCOREBUZZ.NET'}</span>`).join('');
+  const sw = PW + 2200, sh = 1500;
+  Object.assign($('stand').style, { width: sw + 'px', height: sh + 'px', left: -sw / 2 + 'px', top: -PH / 2 - 190 - sh + 'px', transform: 'rotateX(-58deg)' });
+}
+
+function crowdTexture(c1, c2) {
+  const cv = document.createElement('canvas'); cv.width = 900; cv.height = 300;
+  const x = cv.getContext('2d');
+  x.fillStyle = '#10131c'; x.fillRect(0, 0, 900, 300);
+  const pal = [c1, c1, c1, c2, '#1d2233', '#2c3348', '#d9d9d9', '#3a3f55', '#8a6a52', '#c9a27e', '#222'];
+  for (let row = 0; row < 300; row += 10) {
+    x.fillStyle = '#0a0c12'; x.fillRect(0, row + 8, 900, 2);           // tier steps
+    for (let col = 0; col < 900; col += 6 + Math.random() * 3) {
+      x.fillStyle = pal[Math.floor(Math.random() * pal.length)];
+      x.fillRect(col, row + 1 + Math.random() * 2, 4, 5);                 // body
+      x.fillStyle = Math.random() < .5 ? '#c9a27e' : '#7a5a44'; x.fillRect(col + 1, row, 2, 2); // head
+    }
+  }
+  return cv.toDataURL();
+}
+
+// ---------- data ----------
+let D = { home: null, away: null, events: [], seen: new Set(), clock: '', state: 'pre', score: [0, 0], poss: [50, 50] };
+function lum(h) { const n = parseInt(h.slice(1), 16); return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255; }
+function cdist(a, b) { const f = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)); const p = f(a), r = f(b); return Math.hypot(p[0] - r[0], p[1] - r[1], p[2] - r[2]); }
+const hx = (c, d) => (c && /^[0-9a-f]{6}$/i.test(c) ? '#' + c : d);
+
+async function load() {
+  const url = `https://site.api.espn.com/apis/site/v2/sports/${PATHS[league]}/summary?event=${event}`;
+  const s = await (await fetch(url, { cache: 'no-store' })).json();
+  const comp = s.header.competitions[0];
+  const cs = comp.competitors;
+  const H = cs.find((c) => c.homeAway === 'home'), A = cs.find((c) => c.homeAway === 'away');
+  const team = (c) => ({ id: c.team.id, abbr: c.team.abbreviation, name: c.team.displayName, short: c.team.shortDisplayName || c.team.name, color: hx(c.team.color, '#888888'), alt: hx(c.team.alternateColor, '#222222'), logo: c.team.logos?.[0]?.href || c.team.logo });
+  if (!D.home) {
+    D.home = team(H); D.away = team(A);
+    if (cdist(D.home.color, D.away.color) < 130) D.away.color = cdist(D.home.color, D.away.alt) > 130 ? D.away.alt : (lum(D.home.color) > .5 ? '#1b2a6b' : '#f2f2f2');
+    D.rosters = {};
+    for (const r of s.rosters || []) D.rosters[r.team.id] = { formation: r.formation, players: (r.roster || []).filter((p) => p.starter).map((p) => ({ n: p.jersey, name: p.athlete?.shortName || p.athlete?.displayName, pos: p.position?.abbreviation || '' })) };
+  }
+  D.score = [Number(H.score || 0), Number(A.score || 0)];
+  D.state = comp.status.type.state; D.clock = comp.status.displayClock || ''; D.detail = comp.status.type.shortDetail;
+  const bs = s.boxscore?.teams || [];
+  const pp = (id) => Number((bs.find((t) => t.team.id === id)?.statistics || []).find((x) => x.name === 'possessionPct')?.displayValue);
+  if (pp(D.home.id) >= 0) D.poss = [pp(D.home.id), pp(D.away.id)];
+  const byName = {}; byName[D.home.name] = 'H'; byName[D.away.name] = 'A'; byName[D.home.short] = 'H'; byName[D.away.short] = 'A';
+  const evs = [];
+  for (const c of s.commentary || []) {
+    const p = c.play; if (!p) continue;
+    const side = byName[p.team?.displayName] || byName[p.team?.shortDisplayName];
+    const type = p.type?.text || '';
+    if (!side || p.fieldPositionX == null) { if (/substitution/i.test(type) && side) evs.push({ id: String(p.id || c.sequence), side, type, text: c.text, min: c.time?.displayValue }); continue; }
+    const mir = side === 'A';
+    const cv = (x, y) => ({ x: mir ? 100 - x : x, y: mir ? 100 - y : y });
+    const at = cv(p.fieldPositionX, p.fieldPositionY ?? 50);
+    const to = p.fieldPosition2X != null ? cv(p.fieldPosition2X, p.fieldPosition2Y ?? 50) : null;
+    evs.push({ id: String(p.id || c.sequence), side, type, text: c.text || p.text || type, min: c.time?.displayValue || '', at, to,
+      who: p.participants?.[0]?.athlete?.displayName || '', goal: !!p.scoringPlay || /^goal/i.test(type) });
+  }
+  D.events = evs;
+  render();
+}
+
+// ---------- players ----------
+const P = [];  // {side, n, name, gk, base:{x,y}, x, y, el}
+function lineSlot(pos) {
+  if (/^G/.test(pos)) return 0;
+  if (/CD|CB|LB|RB|WB|SW|D$/.test(pos)) return 1;
+  if (/DM/.test(pos)) return 2;
+  if (/AM/.test(pos)) return 4;
+  if (/M/.test(pos)) return 3;
+  return 5;
+}
+const lat = (pos) => (/(^L|-L$)/.test(pos) ? -1 : /(^R|-R$)/.test(pos) ? 1 : 0);
+const DEPTH = [4, 20, 30, 37, 44, 50];
+function buildPlayers() {
+  for (const side of ['H', 'A']) {
+    const t = side === 'H' ? D.home : D.away;
+    let list = D.rosters[t.id]?.players || [];
+    if (list.length < 11) list = Array.from({ length: 11 }, (_, i) => ({ n: String(i + 1), name: '', pos: ['G', 'RB', 'CD-R', 'CD-L', 'LB', 'RM', 'CM-R', 'CM-L', 'LM', 'CF-R', 'CF-L'][i] }));
+    const lines = {};
+    for (const p of list.slice(0, 11)) (lines[lineSlot(p.pos)] ||= []).push(p);
+    for (const [k, ps] of Object.entries(lines)) {
+      ps.sort((a, b) => lat(a.pos) - lat(b.pos));
+      ps.forEach((p, i) => {
+        const yy = ps.length === 1 ? 50 : 14 + (72 * i) / (ps.length - 1);
+        const bx = DEPTH[k], by = side === 'H' ? 100 - yy : yy;    // home's left side is the far touchline
+        const o = { side, n: p.n, name: p.name, gk: k == 0, base: { x: side === 'H' ? bx : 100 - bx, y: by }, x: 0, y: 0, vx: 0, vy: 0, wob: rnd(0, 6) };
+        o.x = o.base.x; o.y = o.base.y;
+        const el = document.createElement('div'); el.className = 'pl';
+        const shirt = o.gk ? (side === 'H' ? '#2ecc71' : '#f5b700') : t.color;
+        const ink = lum(shirt) > .55 ? '#111' : '#fff';
+        const shorts = o.gk ? '#111' : (lum(t.color) > .7 ? '#1b1b1b' : '#f2f2f2');
+        el.innerHTML = `<div class="sh"></div><div class="fig" style="transform:rotateX(${-TILT}deg) scale(1.5)"><div class="lg a"></div><div class="lg b"></div><div class="shorts" style="background:${shorts}"></div><div class="sh2" style="background:${shirt};color:${ink}">${p.n || ''}</div><div class="hd"></div></div><div class="tag" style="transform:rotateX(${-TILT}deg)">${p.name || ''}</div>`;
+        $('pitch').appendChild(el); o.el = el; P.push(o);
+      });
+    }
+  }
+}
+
+// ---------- engine ----------
+const ball = { x: 50, y: 50, h: 0, from: null, to: null, t: 0, dur: 1, arc: 0, owner: 'H', carrier: null, hold: 0 };
+let queue = [], cam = 0, lastCarrier = null;
+function nearest(side, x, y, skip) { let b = null, d = 1e9; for (const p of P) if (p.side === side && p !== skip && !p.gk) { const e = Math.hypot(p.x - x, (p.y - y) * .66); if (e < d) { d = e; b = p; } } return b; }
+function keeper(side) { return P.find((p) => p.side === side && p.gk); }
+function kick(to, speed = 34, arc = 0, after) { ball.from = { x: ball.x, y: ball.y }; ball.to = to; ball.t = 0; ball.dur = Math.max(0.35, Math.hypot(to.x - ball.x, (to.y - ball.y) * .66) / speed); ball.arc = arc; ball.after = after; }
+const dirOf = (side) => (side === 'H' ? 1 : -1);
+function ambient() {
+  // filler: the team on the ball passes it around, mostly forward, sometimes loses it
+  const s = ball.owner, d = dirOf(s);
+  if (Math.random() < 0.13) { const w = s === 'H' ? D.poss[1] : D.poss[0]; if (Math.random() * 100 < w + 15) ball.owner = s === 'H' ? 'A' : 'H'; }
+  const mates = P.filter((p) => p.side === ball.owner && !p.gk && p !== ball.carrier);
+  const fwd = mates.filter((p) => (p.x - ball.x) * dirOf(ball.owner) > -8 && Math.hypot(p.x - ball.x, p.y - ball.y) < 40);
+  const pool = fwd.length ? fwd : mates;
+  const r = pool[Math.floor(Math.random() * pool.length)];
+  if (!r) return;
+  const lead = { x: clamp(r.x + dirOf(ball.owner) * rnd(1, 5), 2, 98), y: clamp(r.y + rnd(-4, 4), 3, 97) };
+  // stop short of the opposition box with the filler (real shots only come from real events)
+  if (dirOf(ball.owner) > 0 && lead.x > 80) lead.x = rnd(62, 78); if (dirOf(ball.owner) < 0 && lead.x < 20) lead.x = rnd(22, 38);
+  const far = Math.hypot(lead.x - ball.x, lead.y - ball.y) > 28;
+  ball.carrier = r; kick(lead, far ? 40 : 30, far ? 1 : 0.15);
+  ball.hold = rnd(0.3, 1.4);
+}
+function say(kind, text, side, min) {
+  const t = side === 'H' ? D.home : side === 'A' ? D.away : null;
+  const ev = $('ev'); ev.style.setProperty('--c', t ? t.color : '#c6f432');
+  $('evk').textContent = kind.toUpperCase(); $('evx').textContent = text || ''; $('evm').textContent = min || '';
+  ev.classList.add('on'); clearTimeout(say.t); say.t = setTimeout(() => ev.classList.remove('on'), 6500);
+}
+function big(txt, color) { const b = $('big'); $('bigt').textContent = txt; b.style.setProperty('--c', color); b.classList.remove('on'); void b.offsetWidth; b.classList.add('on'); $('stand').classList.remove('flash'); void $('stand').offsetWidth; $('stand').classList.add('flash'); }
+function cardFx(color) { const c = $('card'); c.style.background = color; c.classList.remove('on'); void c.offsetWidth; c.classList.add('on'); }
+function tagOn(p) { if (!p) return; p.el.classList.add('on'); setTimeout(() => p.el.classList.remove('on'), 3500); }
+
+// a real event: move play to where it happened, then act it out
+function playEvent(e) {
+  const s = e.side, d = dirOf(s), opp = s === 'H' ? 'A' : 'H';
+  const type = `${e.type} ${e.text}`;
+  queue = [];
+  ball.owner = s;
+  const actor = nearest(s, e.at.x, e.at.y);
+  const go = (to, sp, arc, then) => queue.push(() => { ball.carrier = actor; kick(to, sp, arc, then); });
+  const tm = s === 'H' ? D.home : D.away;
+  if (/goal/i.test(e.type) || e.goal) {
+    go(e.at, 32, 0.3);
+    queue.push(() => { kick({ x: s === 'H' ? 101.5 : -1.5, y: rnd(46, 54) }, 70, 0.6); tagOn(actor); });
+    queue.push(() => { big('GOAL!', tm.color); say('Goal', e.text, s, e.min); ball.hold = 5; });
+    queue.push(() => { ball.x = 50; ball.y = 50; ball.owner = opp; ball.hold = 1.5; });
+  } else if (/shot|attempt/i.test(type)) {
+    const saved = /saved|on target/i.test(type), blocked = /blocked/i.test(type);
+    const tgt = e.to && e.to.x > -5 && e.to.x < 105 ? e.to : null;
+    go(e.at, 32, 0.2);
+    queue.push(() => {
+      tagOn(actor);
+      if (blocked) { const b = nearest(opp, e.at.x + d * 4, e.at.y); kick({ x: b ? b.x : e.at.x + d * 5, y: b ? b.y : e.at.y }, 60, 0.1); }
+      else if (saved) { const k = keeper(opp); kick({ x: s === 'H' ? 99 : 1, y: tgt ? clamp(tgt.y, 45, 55) : rnd(46, 54) }, 65, 0.5, () => { if (k) { ball.x = k.x; ball.y = k.y; } }); }
+      else kick({ x: s === 'H' ? 103 : -3, y: tgt ? tgt.y : (Math.random() < .5 ? rnd(36, 43) : rnd(57, 64)) }, 62, 1.2);
+      say(blocked ? 'Shot blocked' : saved ? 'Shot saved' : 'Shot wide', e.text, s, e.min);
+    });
+    queue.push(() => { ball.hold = 1.8; });
+    queue.push(() => { const k = keeper(opp); ball.owner = opp; ball.x = s === 'H' ? 94 : 6; ball.y = 50; if (k) ball.carrier = k; ball.hold = 1; });
+    queue.push(() => { ball.owner = opp; kick({ x: s === 'H' ? 55 : 45, y: rnd(25, 75) }, 45, 1.3); });
+  } else if (/corner/i.test(type)) {
+    const cy = e.at.y < 50 ? 0.8 : 99.2;
+    go({ x: s === 'H' ? 96 : 4, y: cy < 50 ? 8 : 92 }, 32, 0.2);
+    queue.push(() => { ball.x = s === 'H' ? 99.4 : 0.6; ball.y = cy; ball.hold = 2.2; say('Corner', e.text, s, e.min); });
+    queue.push(() => kick({ x: s === 'H' ? 93 : 7, y: rnd(42, 58) }, 40, 1.6));
+    queue.push(() => { ball.owner = opp; kick({ x: s === 'H' ? 75 : 25, y: rnd(30, 70) }, 45, 1.0); });
+  } else if (/foul|free kick/i.test(type)) {
+    go(e.at, 28, 0.1);
+    queue.push(() => { ball.hold = 2.2; tagOn(actor); say(/free kick/i.test(type) ? 'Free kick' : 'Foul', e.text, s, e.min); });
+  } else if (/yellow|red card/i.test(type)) {
+    go(e.at, 28, 0.1);
+    queue.push(() => { ball.hold = 2.8; tagOn(actor); cardFx(/red/i.test(type) ? '#e53935' : '#ffd400'); say(/red/i.test(type) ? 'Red card' : 'Yellow card', e.text, s, e.min); });
+  } else if (/offside/i.test(type)) {
+    go(e.at, 34, 0.4);
+    queue.push(() => { ball.hold = 2; say('Offside', e.text, s, e.min); ball.owner = opp; });
+  } else if (/substitution/i.test(type)) {
+    say('Substitution', e.text, s, e.min);
+  } else {
+    go(e.at, 30, 0.2);
+    queue.push(() => { say(e.type || 'Play', e.text, s, e.min); });
+  }
+}
+
+let last = performance.now();
+function frame(now) {
+  const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  // ball
+  if (ball.to) {
+    ball.t += dt / ball.dur; const k = Math.min(1, ball.t), e = 1 - (1 - k) * (1 - k) * 0.6 - 0.4 * (1 - k);
+    ball.x = ball.from.x + (ball.to.x - ball.from.x) * k; ball.y = ball.from.y + (ball.to.y - ball.from.y) * k;
+    ball.h = Math.sin(Math.PI * k) * ball.arc * 70;
+    if (k >= 1) { ball.to = null; ball.h = 0; const f = ball.after; ball.after = null; f && f(); }
+  } else if (ball.hold > 0) ball.hold -= dt;
+  else if (queue.length) queue.shift()();
+  else ambient();
+  // players: hold a shape that slides with the ball; the nearest of each team goes to the ball
+  const att = ball.owner, shift = (ball.x - 50) * 0.45;
+  const chasers = new Set([nearest('H', ball.x, ball.y), nearest('A', ball.x, ball.y)]);
+  for (const p of P) {
+    let tx, ty;
+    if (p.gk) { tx = p.base.x + shift * 0.08; ty = 50 + (ball.y - 50) * 0.18; }
+    else {
+      const push = (p.side === att ? 14 : -4) * dirOf(p.side);
+      tx = clamp(p.base.x + push + shift, 3, 97); ty = clamp(p.base.y + (ball.y - p.base.y) * 0.22, 3, 97);
+      tx += Math.sin(now / 900 + p.wob) * 1.2; ty += Math.cos(now / 1100 + p.wob) * 1.2;
+      if (chasers.has(p) && (!ball.to || p === ball.carrier)) { tx = ball.to && p === ball.carrier ? ball.to.x : ball.x - dirOf(p.side) * 0.8; ty = ball.to && p === ball.carrier ? ball.to.y : ball.y; }
+      else if (p === ball.carrier && ball.to) { tx = ball.to.x; ty = ball.to.y; }
+    }
+    const dx = tx - p.x, dy = ty - p.y, dist = Math.hypot(dx, dy), sp = (chasers.has(p) || p === ball.carrier ? 12 : 6) * dt;
+    if (dist > 0.05) { p.x += dx / dist * Math.min(sp, dist); p.y += dy / dist * Math.min(sp, dist); }
+    p.el.style.transform = `translate3d(${X(p.x)}px,${Y(p.y)}px,0)`;
+  }
+  const bel = $('ball');
+  bel.style.transform = `translate3d(${X(ball.x)}px,${Y(ball.y)}px,0)`;
+  bel.querySelector('.b').style.transform = `translateZ(0) rotateX(${-TILT}deg) translateY(${-ball.h}px)`;
+  // camera follows the ball along the touchline
+  const want = clamp((ball.x - 50) / 100 * PW * 0.62, -PW * 0.24, PW * 0.24);
+  cam += (want - cam) * Math.min(1, dt * 1.6);
+  $('world').style.transform = `translateY(${CAM_Y}px) translateZ(${-CAM_Z}px) rotateX(${TILT}deg) translateX(${-cam}px)`;
+  requestAnimationFrame(frame);
+}
+
+// ---------- overlays ----------
+function render() {
+  const H = D.home, A = D.away;
+  $('lgn').textContent = NAMES[league] || league.toUpperCase();
+  const chip = (t) => `<span style="width:14px;height:40px;border-radius:4px;background:${t.color};border:2px solid #fff3"></span>${t.abbr}`;
+  $('tH').innerHTML = chip(H); $('tA').innerHTML = chip(A);
+  $('tH').style.background = $('tA').style.background = '#141a2e';
+  if (!REPLAY) { $('sc').textContent = `${D.score[0]} - ${D.score[1]}`; $('clk').textContent = D.state === 'in' ? D.clock : D.state === 'post' ? 'FT' : D.detail || ''; }
+  $('pH').style.width = D.poss[0] + '%'; $('pH').style.background = H.color; $('pA').style.width = D.poss[1] + '%'; $('pA').style.background = A.color;
+  $('pv').textContent = `· ${H.abbr} ${D.poss[0]}% – ${D.poss[1]}% ${A.abbr}`;
+}
+
+// ---------- start ----------
+(async () => {
+  if (!event) { document.body.insertAdjacentHTML('beforeend', '<div id="err">match3d.html?league=epl&event=ESPN_ID</div>'); return; }
+  buildScene();
+  try { await load(); } catch (e) { document.body.insertAdjacentHTML('beforeend', `<div id="err">Waiting for live data… (${e.message})</div>`); setTimeout(() => location.reload(), 20000); return; }
+  $('stand').style.backgroundImage = `url(${crowdTexture(D.home.color, D.away.color)})`;
+  const b = document.createElement('div'); b.id = 'ball'; b.innerHTML = '<div class="sh"></div><div class="b"></div>'; $('pitch').appendChild(b);
+  buildPlayers();
+  requestAnimationFrame(frame);
+  if (REPLAY) {
+    // demo: replay the match's real events one after another, with the score building up
+    let i = 0, sc = [0, 0];
+    const evs = D.events.filter((e) => e.at || /substitution/i.test(e.type));
+    const next = () => {
+      const e = evs[i++]; if (!e) { i = 0; sc = [0, 0]; return setTimeout(next, 4000); }
+      $('clk').textContent = e.min || ''; if (e.goal) { sc[e.side === 'H' ? 0 : 1]++; setTimeout(() => ($('sc').textContent = `${sc[0]} - ${sc[1]}`), 2500); }
+      $('sc').textContent = `${sc[0]} - ${sc[1]}`;
+      playEvent(e); setTimeout(next, e.at ? 7500 : 3500);
+    };
+    setTimeout(next, 1500);
+  } else {
+    // live: mark what already happened as seen, act out the latest one, then poll for new events
+    D.events.forEach((e) => D.seen.add(e.id));
+    const lastEv = D.events[D.events.length - 1]; if (lastEv && lastEv.at) playEvent(lastEv);
+    setInterval(async () => {
+      try { await load(); } catch (e) { return; }
+      for (const e of D.events) if (!D.seen.has(e.id)) { D.seen.add(e.id); playEvent(e); }
+    }, 15000);
+    setInterval(() => { if (D.state === 'in' && /^\d+'?$/.test(D.clock)) {} }, 1000);
+  }
+})();
+</script></body></html>
