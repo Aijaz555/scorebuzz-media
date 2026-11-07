@@ -42,14 +42,24 @@
    "note": "St. Louis Blues vs Nashville Predators, 2026-11-07T18:00:00Z"
   },
   "4": {
-   "league": "seriea",
-   "event": "401874803",
-   "note": "AS Roma vs Sassuolo, 2026-11-07T19:45:00Z"
+   "league": "ncaaf",
+   "event": "401856740",
+   "note": "Alabama Crimson Tide vs LSU Tigers, 2026-11-07T20:30:00Z"
   },
   "5": {
    "league": "ligue1",
    "event": "401876411",
    "note": "AJ Auxerre vs Paris FC, 2026-11-07T18:00:00Z"
+  },
+  "6": {
+   "league": "laliga",
+   "event": "401882808",
+   "note": "Valencia vs Real Madrid, 2026-11-07T20:00:00Z"
+  },
+  "7": {
+   "league": "seriea",
+   "event": "401874803",
+   "note": "AS Roma vs Sassuolo, 2026-11-07T19:45:00Z"
   },
   "8": {
    "league": "ncaaf",
@@ -75,6 +85,11 @@
    "league": "seriea",
    "event": "401874974",
    "note": "Parma vs Bologna, 2026-11-07T17:00:00Z"
+  },
+  "13": {
+   "league": "ligue1",
+   "event": "401876407",
+   "note": "Paris Saint-Germain vs Troyes, 2026-11-07T20:05:00Z"
   }
  },
  "fit": {
