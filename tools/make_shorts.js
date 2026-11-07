@@ -95,7 +95,7 @@ function scene(sc) {
         </div>`;
       }).join('');
       return `<div class="bhead">${a(0, 'bk', esc(sc.kicker || ''))}${a(0.1, 'btitle', esc(sc.title || ''))}${sc.badge ? a(0.25, 'bbadge', esc(sc.badge)) : ''}</div>
-        ${a(0.3, 'bcard n' + Math.min(12, sc.rows.length), rows)}`;
+        ${a(0.3, 'bcard n' + Math.min(12, sc.rows.length) + (sc.rows.some((r) => String(r.hs).length > 2 || String(r.as).length > 2) ? ' s3' : ''), rows)}`;
     }
     case 'cta':
       return `${a(0, 'ctat', esc(sc.title || 'What did you make of these results?'))}
@@ -178,6 +178,7 @@ function html(v) {
   .bx{height:96px;border-radius:18px;background:#0B1B4F;display:grid;place-items:center;box-shadow:inset 0 -6px 0 #06102f}
   .bx b{display:block;font-size:76px;font-weight:900;line-height:1;opacity:0;background:linear-gradient(180deg,#FFE27A 0%,#FFB800 45%,#FF3B3B 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 5px 0 #7a1010)}
   .bnote{position:absolute;left:0;right:0;bottom:-4px;text-align:center;font-size:22px;letter-spacing:2px;font-weight:700;color:#5A6390;opacity:0}
+  .bcard.s3 .br{grid-template-columns:1fr 148px 148px 1fr;gap:10px}.bcard.s3 .bx b{font-size:60px;letter-spacing:-2px}.bcard.s3 .bt{font-size:32px}
   .bcard.n9 .br,.bcard.n10 .br,.bcard.n11 .br,.bcard.n12 .br{padding:8px 0 16px}
   .bcard.n9 .bx,.bcard.n10 .bx,.bcard.n11 .bx,.bcard.n12 .bx{height:80px}
   .bcard.n9 .bx b,.bcard.n10 .bx b,.bcard.n11 .bx b,.bcard.n12 .bx b{font-size:62px}
