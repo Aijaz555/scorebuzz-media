@@ -33,9 +33,9 @@ def http(method, url, data=None, headers=None):
 
 def access_token():
     data = urllib.parse.urlencode({
-        "client_id": os.environ["YT_CLIENT_ID"],
-        "client_secret": os.environ["YT_CLIENT_SECRET"],
-        "refresh_token": os.environ["YT_REFRESH_TOKEN"],
+        "client_id": os.environ["YT_CLIENT_ID"].strip(),
+        "client_secret": os.environ["YT_CLIENT_SECRET"].strip(),
+        "refresh_token": os.environ["YT_REFRESH_TOKEN"].strip(),
         "grant_type": "refresh_token",
     }).encode()
     return http("POST", "https://oauth2.googleapis.com/token", data,
