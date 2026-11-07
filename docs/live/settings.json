@@ -26,20 +26,10 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "nba",
-   "event": "401909288",
-   "note": "Boston Celtics vs Charlotte Hornets, 2026-11-07T00:00:00Z"
-  },
   "2": {
    "league": "nba",
    "event": "401909289",
    "note": "Philadelphia 76ers vs Cleveland Cavaliers, 2026-11-07T00:30:00Z"
-  },
-  "3": {
-   "league": "nba",
-   "event": "401909287",
-   "note": "Washington Wizards vs Atlanta Hawks, 2026-11-07T00:00:00Z"
   },
   "4": {
    "league": "nhl",
