@@ -45,6 +45,21 @@
    "league": "seriea",
    "event": "401874811",
    "note": "Torino vs Lecce, 2026-11-07T14:00:00Z"
+  },
+  "5": {
+   "league": "epl",
+   "event": "401878760",
+   "note": "Arsenal vs Hull City, 2026-11-07T15:00:00Z"
+  },
+  "6": {
+   "league": "epl",
+   "event": "401879241",
+   "note": "Fulham vs Newcastle United, 2026-11-07T15:00:00Z"
+  },
+  "7": {
+   "league": "laliga",
+   "event": "401882813",
+   "note": "Espanyol vs Deportivo, 2026-11-07T15:15:00Z"
   }
  },
  "fit": {
