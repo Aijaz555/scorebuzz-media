@@ -25,18 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "11": {
-   "league": "nba",
-   "event": "401909294",
-   "note": "Portland Trail Blazers vs Los Angeles Lakers, 2026-11-07T03:00:00Z"
-  },
-  "12": {
-   "league": "nba",
-   "event": "401909295",
-   "note": "San Antonio Spurs vs Sacramento Kings, 2026-11-07T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
