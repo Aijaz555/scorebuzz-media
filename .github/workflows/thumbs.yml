@@ -3,8 +3,8 @@ name: YouTube thumbnails
 # (tools/yt_thumbs.py). Needs repo secrets YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN.
 # Runs every 2 hours so each upload gets its thumbnail soon after it goes live; can also be run by hand.
 on:
-  schedule:
-    - cron: "20 */2 * * *"
+  # schedule:              # switched on once the Google login works
+  #   - cron: "20 */2 * * *"
   workflow_dispatch:
     inputs:
       days:
