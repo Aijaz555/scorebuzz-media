@@ -31,6 +31,11 @@
    "event": "761941",
    "note": "Philadelphia Union vs Toronto FC, 2026-11-07T21:00:00Z"
   },
+  "2": {
+   "league": "ncaaf",
+   "event": "401856745",
+   "note": "Kentucky Wildcats vs Tennessee Volunteers, 2026-11-07T23:15:00Z"
+  },
   "4": {
    "league": "ncaaf",
    "event": "401856740",
@@ -51,25 +56,10 @@
    "event": "401892664",
    "note": "New York Rangers vs Seattle Kraken, 2026-11-07T22:00:00Z"
   },
-  "8": {
-   "league": "ncaaf",
-   "event": "401856743",
-   "note": "Texas Longhorns vs Missouri Tigers, 2026-11-07T17:00:00Z"
-  },
-  "9": {
-   "league": "ncaaf",
-   "event": "401858512",
-   "note": "UCLA Bruins vs Minnesota Golden Gophers, 2026-11-07T17:00:00Z"
-  },
   "11": {
    "league": "mls",
    "event": "761934",
    "note": "CF Montréal vs Vancouver Whitecaps, 2026-11-07T21:00:00Z"
-  },
-  "12": {
-   "league": "seriea",
-   "event": "401874803",
-   "note": "AS Roma vs Sassuolo, 2026-11-07T19:45:00Z"
   },
   "13": {
    "league": "ligue1",
