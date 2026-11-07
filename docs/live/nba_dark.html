@@ -1,0 +1,159 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ScoreBuzz NBA live (dark)</title>
+<!-- ScoreBuzz dark NBA scoreboard (demo, 7 Nov 2026): a mix of our live page and a navy/gold "big score" broadcast layout.
+     Reads ESPN directly from the browser. Usage: nba_dark.html?event=<ESPN id>[&league=nba]  (1920x1080) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1326;--navy2:#0f1a33;--panel:#121f3dcc;--line:#263457;--ink:#f3f6ff;--mute:#9aa7c7;--gold:#f2c14e;--lime:#c6f432;--red:#e5484d;--hc:#1d428a;--ac:#c8102e}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--navy);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif}
+#bg{position:absolute;inset:0;background:
+  radial-gradient(900px 700px at 8% 30%,color-mix(in srgb,var(--hc) 55%,transparent),transparent 70%),
+  radial-gradient(900px 700px at 92% 30%,color-mix(in srgb,var(--ac) 50%,transparent),transparent 70%),
+  linear-gradient(180deg,#0d1730 0%,#0a1124 55%,#070d1c 100%)}
+#bg:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,#ffffff05 0 1px,transparent 1px 48px),repeating-linear-gradient(90deg,#ffffff04 0 1px,transparent 1px 48px);mask:radial-gradient(60% 50% at 50% 35%,#000 20%,transparent 100%)}
+.wrap{position:absolute;inset:0;padding:26px 44px 14px;display:flex;flex-direction:column;gap:14px}
+header{display:flex;align-items:center;justify-content:space-between;height:60px;flex:none}
+.brand{font-size:38px;font-weight:900;letter-spacing:-1px}.brand b{color:var(--lime)}
+.title{font-size:30px;font-weight:900;letter-spacing:6px;text-transform:uppercase;color:var(--ink)}.title b{color:var(--gold)}.title span{color:var(--mute);margin:0 14px}
+.right{display:flex;align-items:center;gap:18px;font-size:22px;color:var(--mute);letter-spacing:1px}
+.live{background:var(--red);color:#fff;font-weight:900;font-size:22px;letter-spacing:4px;padding:10px 26px;border-radius:8px;display:flex;align-items:center;gap:12px}
+.live i{width:12px;height:12px;border-radius:50%;background:#fff;animation:bl 1.2s infinite}@keyframes bl{50%{opacity:.3}}
+.hero{display:grid;grid-template-columns:1fr 760px 1fr;align-items:center;height:290px;flex:none}
+.team{display:flex;flex-direction:column;align-items:center;gap:12px}
+.team img{width:170px;height:170px;object-fit:contain;filter:drop-shadow(0 10px 30px #0009)}
+.team .city{font-size:50px;font-weight:900;letter-spacing:1px;text-transform:uppercase;line-height:1}
+.team .nick{font-size:24px;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:var(--mute)}
+.team .rec{font-size:17px;font-weight:800;letter-spacing:1px;color:var(--ink);background:#ffffff18;padding:3px 12px;border-radius:999px;margin-left:10px;vertical-align:middle}
+.mid{text-align:center}
+.mid .per{font-size:34px;font-weight:900;letter-spacing:8px;text-transform:uppercase;color:var(--gold)}
+.mid .sc{font-size:190px;font-weight:900;line-height:1;letter-spacing:-6px;font-variant-numeric:tabular-nums;display:flex;justify-content:center;align-items:center;gap:6px}
+.mid .sc i{font-style:normal;color:var(--gold);font-size:130px;margin:0 6px;line-height:1;position:relative;top:-14px}
+.mid .sc .lo{color:#ffffffaa}
+.mid .clk{font-size:40px;font-weight:800;letter-spacing:2px;color:var(--ink);margin-top:-6px}
+.mid .lead{display:inline-block;margin-top:10px;font-size:20px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--mute)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 24px;backdrop-filter:blur(6px);overflow:hidden}
+.h{font-size:20px;font-weight:900;letter-spacing:5px;text-transform:uppercase;color:#c9d3f0;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:28px;font-weight:800;font-variant-numeric:tabular-nums}
+th{font-size:18px;font-weight:800;letter-spacing:2px;color:var(--mute);text-align:center;padding:2px 0 6px}th:first-child{text-align:left}th:last-child{color:var(--gold)}
+td{text-align:center;padding:6px 0;border-top:1px solid #ffffff10}td:first-child{text-align:left;display:flex;align-items:center;gap:14px}td:last-child{color:var(--gold);font-size:32px}
+td img{width:40px;height:40px;object-fit:contain}
+.row2{display:grid;grid-template-columns:1.2fr .9fr 1.3fr;gap:18px;flex:1;min-height:0;overflow:hidden}
+.stat{display:grid;grid-template-columns:80px 1fr 150px 1fr 80px;align-items:center;gap:14px;padding:5px 0;border-top:1px solid #ffffff10;font-size:25px;font-weight:800;font-variant-numeric:tabular-nums}
+.stat:first-of-type{border-top:none}
+.stat .n{text-align:center;font-size:15px;font-weight:800;letter-spacing:2px;color:var(--mute);text-transform:uppercase}
+.stat .bar{height:9px;border-radius:6px;background:#ffffff14;position:relative;overflow:hidden}
+.stat .bar b{position:absolute;top:0;bottom:0;border-radius:6px}
+.stat .hv{color:var(--gold);text-align:right}.stat .av{color:#ff8b8b}
+.stat.g{grid-template-columns:90px 1fr 170px 1fr 90px}
+.stat.g .n{grid-column:auto}
+.pbp{display:flex;flex-direction:column;gap:8px}
+.play{display:flex;align-items:center;gap:14px;background:#ffffff0a;border-radius:10px;padding:8px 14px;font-size:21px;font-weight:600}
+.play img{width:30px;height:30px;object-fit:contain}
+.play .t{font-size:17px;font-weight:800;color:var(--gold);letter-spacing:1px;min-width:92px}
+.play .x{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.play .v{background:var(--lime);color:#111;font-weight:900;font-size:19px;padding:3px 10px;border-radius:8px}
+.ldr{display:grid;grid-template-columns:36px 1fr auto;gap:12px;align-items:center;padding:6px 0;border-top:1px solid #ffffff10;font-size:23px;font-weight:700;white-space:nowrap}.ldr img{width:30px;height:30px;object-fit:contain}
+.ldr:first-of-type{border-top:none}.ldr small{display:block;font-size:16px;color:var(--mute);font-weight:600;letter-spacing:1px}
+.ldr .v{font-size:24px;font-weight:900;color:var(--gold);font-variant-numeric:tabular-nums}.ldr .v em{font-style:normal;color:var(--mute);margin:0 6px;font-weight:600}
+.ldrs{display:block}
+.ticker{display:flex;align-items:center;height:60px;flex:none;background:#0a142bcc;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.ticker .lg{flex:none;height:100%;display:flex;align-items:center;padding:0 28px;background:var(--gold);color:#111;font-weight:900;font-size:22px;letter-spacing:4px;position:relative;z-index:2}.ticker .win{flex:1;overflow:hidden}
+.ticker .run{display:flex;gap:0;white-space:nowrap;font-size:24px;font-weight:800;animation:run 40s linear infinite}
+.ticker .it{display:flex;align-items:center;gap:10px;padding:0 34px;border-right:1px solid #ffffff22}
+.ticker img{width:30px;height:30px;object-fit:contain}.ticker .vs{color:var(--gold)}.ticker .st{color:var(--mute);font-size:19px;font-weight:700;letter-spacing:1px}.ticker .fin{color:var(--gold)}
+@keyframes run{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+footer{display:flex;justify-content:space-between;align-items:center;height:48px;flex:none;font-size:19px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mute)}
+footer .ok{display:inline-block;width:10px;height:10px;border-radius:50%;background:#3ddc84;margin-right:10px;box-shadow:0 0 8px #3ddc84}
+footer b{color:var(--lime);font-weight:900}
+.err{position:absolute;inset:0;display:grid;place-items:center;font-size:40px;color:var(--mute)}
+</style></head>
+<body><div id="bg"></div>
+<div class="wrap" id="app"></div>
+<script>
+const q = new URLSearchParams(location.search);
+const league = q.get('league') || 'nba', event = q.get('event');
+const SPORT = { nba: 'basketball/nba', wnba: 'basketball/wnba', ncaab: 'basketball/mens-college-basketball' };
+const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const $ = (id) => document.getElementById(id);
+const hex = (c, d) => (c && /^[0-9a-f]{6}$/i.test(c) ? '#' + c : d);
+const J = async (u) => (await fetch(u, { cache: 'no-store' })).json();
+let last = null, tz = 'America/New_York', tzName = '';
+
+function team(x) {
+  const t = x.team; const st = {};
+  return { id: t.id, abbr: t.abbreviation, city: t.location || t.displayName, nick: t.name || '', logo: t.logos?.[0]?.href || t.logo || '',
+    color: hex(t.color, '#2A3570'), alt: hex(t.alternateColor, '#ffffff'), score: Number(x.score || 0),
+    lines: (x.linescores || []).map((l) => l.displayValue ?? ''), rec: (x.record || []).find((r) => r.type === 'total')?.summary || '' };
+}
+function period(st, g) {
+  const p = st.period, n = st.type?.name || '';
+  if (/HALFTIME/.test(n)) return ['Halftime', ''];
+  if (/FINAL/.test(n)) return [p > 4 ? 'Final / OT' : 'Final', ''];
+  if (/SCHEDULED|PRE/.test(n) || st.type?.state === 'pre') return ['Tip-off', new Date(g.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: tz }) + ' ' + tzName];
+  if (/END/.test(n)) return [`End of ${p > 4 ? 'OT' + (p - 4 > 1 ? p - 4 : '') : 'quarter ' + p}`, ''];
+  return [p > 4 ? `Overtime${p - 4 > 1 ? ' ' + (p - 4) : ''}` : `Quarter ${p}`, st.displayClock || ''];
+}
+function stat(h, a, name, pct) {
+  const H = Number(h) || 0, A = Number(a) || 0, tot = pct ? 100 : Math.max(1, H + A);
+  return `<div class="stat"><span class="hv">${esc(h)}</span><span class="bar"><b style="right:0;width:${pct ? H : (H / tot) * 100}%;background:var(--gold)"></b></span><span class="n">${esc(name)}</span>
+    <span class="bar"><b style="left:0;width:${pct ? A : (A / tot) * 100}%;background:#ff8b8b"></b></span><span class="av">${esc(a)}</span></div>`;
+}
+function render(s, sb) {
+  const c = s.header.competitions[0], g = { date: c.date };
+  const home = team(c.competitors.find((x) => x.homeAway === 'home')), away = team(c.competitors.find((x) => x.homeAway === 'away'));
+  document.documentElement.style.setProperty('--hc', home.color === '#ffffff' ? home.alt : home.color);
+  document.documentElement.style.setProperty('--ac', away.color === '#ffffff' ? away.alt : away.color);
+  const [per, clk] = period(c.status, g);
+  const lead = home.score === away.score ? (c.status.type?.state === 'pre' ? '' : 'Tied') : `${home.score > away.score ? home.abbr : away.abbr} lead by ${Math.abs(home.score - away.score)}`;
+  const season = s.header.season ? `${s.header.season.year - 1}–${String(s.header.season.year).slice(2)} ${s.header.season.type === 3 ? 'Playoffs' : 'Regular season'}` : '';
+  const venue = s.gameInfo?.venue, vtext = venue ? `${venue.fullName}${venue.address?.city ? ' · ' + venue.address.city : ''}${venue.address?.state ? ', ' + venue.address.state : ''}` : '';
+  const per4 = Math.max(4, home.lines.length, away.lines.length);
+  const cols = [...Array(per4)].map((_, i) => (i < 4 ? `Q${i + 1}` : per4 > 5 ? `OT${i - 3}` : 'OT'));
+  if (per4 === 4) cols.push('OT');
+  const row = (t) => `<tr><td><img src="${t.logo}" alt="">${esc(t.abbr)}</td>${cols.map((_, i) => `<td>${t.lines[i] ?? '–'}</td>`).join('')}<td>${t.score}</td></tr>`;
+  const bs = Object.fromEntries((s.boxscore?.teams || []).map((t) => [t.team.id, Object.fromEntries(t.statistics.map((x) => [x.name, x.displayValue]))]));
+  const H = bs[home.id] || {}, A = bs[away.id] || {};
+  const plays = (s.plays || []).slice(-4).reverse();
+  const tname = (id) => (String(id) === String(home.id) ? home : String(id) === String(away.id) ? away : null);
+  const ldrs = (tid) => { const L = (s.leaders || []).find((x) => String(x.team.id) === String(tid)); if (!L) return '';
+    const t = tname(tid); return L.leaders.filter((x) => x.leaders?.length).slice(0, 3).map((x) => `<div class="ldr"><img src="${t.logo}"><div>${esc(x.leaders[0].athlete.shortName)}</div><div class="v">${esc(x.leaders[0].displayValue)}<em>${({ points: 'PTS', assists: 'AST', rebounds: 'REB' })[x.name] || esc(x.displayName.slice(0, 3).toUpperCase())}</em></div></div>`).join(''); };
+  // other games today
+  const others = (sb?.events || []).filter((e) => e.id !== c.id).map((e) => { const cc = e.competitions[0]; const h = cc.competitors.find((x) => x.homeAway === 'home'), a = cc.competitors.find((x) => x.homeAway === 'away');
+    const st = cc.status.type; const pre = st.state === 'pre'; const t = new Date(e.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: tz }) + ' ' + tzName;
+    return `<span class="it"><img src="${a.team.logo}">${esc(a.team.abbreviation)} ${pre ? '<span class="vs">VS</span>' : `<span class="vs">${a.score} - ${h.score}</span>`} <img src="${h.team.logo}">${esc(h.team.abbreviation)} <span class="st ${st.completed ? 'fin' : ''}">${pre ? t : esc(st.shortDetail)}</span></span>`; }).join('');
+  const now = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', second: '2-digit', timeZone: tz });
+  $('app').innerHTML = `
+  <header><div class="brand">Score<b>Buzz</b></div><div class="title"><b>NBA</b><span>·</span>${esc(season)}</div>
+    <div class="right"><span>${esc((venue?.address?.city || 'Local').toUpperCase())} TIME · ${now}</span><div class="live"><i></i>LIVE</div></div></header>
+  <div class="hero">
+    <div class="team"><img src="${home.logo}" alt=""><div class="city">${esc(home.city)}</div><div class="nick">${esc(home.nick)}${home.rec ? ` <span class="rec">${esc(home.rec)}</span>` : ''}</div></div>
+    <div class="mid"><div class="per">${esc(per)}</div><div class="sc"><span class="${home.score < away.score ? 'lo' : ''}">${home.score}</span><i>:</i><span class="${away.score < home.score ? 'lo' : ''}">${away.score}</span></div><div class="clk">${esc(clk)}</div>${lead ? `<div class="lead">${esc(lead)}</div>` : ''}</div>
+    <div class="team"><img src="${away.logo}" alt=""><div class="city">${esc(away.city)}</div><div class="nick">${esc(away.nick)}${away.rec ? ` <span class="rec">${esc(away.rec)}</span>` : ''}</div></div>
+  </div>
+  <div class="panel"><div class="h">Quarter-by-quarter</div><table><tr><th>Team</th>${cols.map((x) => `<th>${x}</th>`).join('')}<th>Total</th></tr>${row(home)}${row(away)}</table></div>
+  <div class="row2">
+    <div class="panel"><div class="h">Team statistics</div>
+      ${stat(H.fieldGoalPct, A.fieldGoalPct, 'Field goal %', true)}${stat(H.threePointFieldGoalPct, A.threePointFieldGoalPct, '3-point %', true)}${stat(H.freeThrowPct, A.freeThrowPct, 'Free throw %', true)}
+      ${stat(H.totalRebounds, A.totalRebounds, 'Rebounds')}${stat(H.assists, A.assists, 'Assists')}${stat(H.turnovers, A.turnovers, 'Turnovers')}</div>
+    <div class="panel"><div class="h">Top players</div><div class="ldrs">${ldrs(home.id)}${ldrs(away.id)}</div></div>
+    <div class="panel"><div class="h">Latest game action</div><div class="pbp">${plays.length ? plays.map((p) => { const t = tname(p.team?.id);
+      return `<div class="play">${t ? `<img src="${t.logo}">` : '<span style="width:30px"></span>'}<span class="t">Q${p.period?.number} ${esc(p.clock?.displayValue || '')}</span><span class="x">${esc(p.text)}</span>${p.scoringPlay && p.scoreValue ? `<span class="v">+${p.scoreValue}</span>` : ''}</div>`; }).join('')
+      : `<div class="play"><span class="t">PRE-GAME</span><span class="x">${esc(home.city + ' ' + home.nick)} vs ${esc(away.city + ' ' + away.nick)}</span></div>`}</div></div>
+  </div>
+  <div class="ticker"><div class="lg">NBA SCORES</div><div class="win"><div class="run">${others || '<span class="it">No other NBA games today</span>'}${others}</div></div></div>
+  <footer><div>${esc(vtext)}</div><div><b>scorebuzz.net</b> &nbsp;·&nbsp; Live scoreboard, no game footage &nbsp;·&nbsp; <span class="ok"></span>ESPN data · updated ${now}</div></footer>`;
+}
+async function tick() {
+  try {
+    const s = await J(`https://site.api.espn.com/apis/site/v2/sports/${SPORT[league] || SPORT.nba}/summary?event=${event}`);
+    const v = s.gameInfo?.venue?.address?.state || '';
+    tz = /CA|WA|OR|NV/.test(v) ? 'America/Los_Angeles' : /AZ|CO|UT/.test(v) ? 'America/Denver' : /TX|IL|MN|WI|TN|LA|OK|MO/.test(v) ? 'America/Chicago' : s.gameInfo?.venue?.address?.city === 'Mexico City' ? 'America/Mexico_City' : 'America/New_York';
+    tzName = { 'America/Los_Angeles': 'PT', 'America/Denver': 'MT', 'America/Chicago': 'CT', 'America/New_York': 'ET', 'America/Mexico_City': 'CST' }[tz];
+    const sb = await J(`https://site.api.espn.com/apis/site/v2/sports/${SPORT[league] || SPORT.nba}/scoreboard`).catch(() => null);
+    render(s, sb); last = Date.now();
+  } catch (e) { if (!last) $('app').innerHTML = `<div class="err">Loading ScoreBuzz live scoreboard…</div>`; }
+}
+if (!event) $('app').innerHTML = '<div class="err">Add ?event=&lt;ESPN game id&gt;</div>'; else { tick(); setInterval(tick, 8000); }
+</script>
+</body></html>
