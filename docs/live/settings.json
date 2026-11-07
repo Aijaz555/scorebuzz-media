@@ -26,10 +26,15 @@
  "top25": 15,
  "pin": null,
  "slots": {
+  "1": {
+   "league": "epl",
+   "event": "401878757",
+   "note": "Nottingham Forest vs Manchester City, 2026-11-07T17:30:00Z"
+  },
   "2": {
-   "league": "laliga",
-   "event": "401882812",
-   "note": "Málaga vs Racing Santander, 2026-11-07T13:00:00Z"
+   "league": "ncaaf",
+   "event": "401856849",
+   "note": "BYU Cougars vs Utah Utes, 2026-11-07T17:00:00Z"
   },
   "3": {
    "league": "seriea",
@@ -55,6 +60,31 @@
    "league": "laliga",
    "event": "401882813",
    "note": "Espanyol vs Deportivo, 2026-11-07T15:15:00Z"
+  },
+  "8": {
+   "league": "ncaaf",
+   "event": "401856743",
+   "note": "Texas Longhorns vs Missouri Tigers, 2026-11-07T17:00:00Z"
+  },
+  "9": {
+   "league": "ncaaf",
+   "event": "401858512",
+   "note": "UCLA Bruins vs Minnesota Golden Gophers, 2026-11-07T17:00:00Z"
+  },
+  "10": {
+   "league": "nhl",
+   "event": "401892662",
+   "note": "Florida Panthers vs Washington Capitals, 2026-11-07T17:30:00Z"
+  },
+  "11": {
+   "league": "laliga",
+   "event": "401882811",
+   "note": "Osasuna vs Athletic Club, 2026-11-07T17:30:00Z"
+  },
+  "12": {
+   "league": "seriea",
+   "event": "401874974",
+   "note": "Parma vs Bologna, 2026-11-07T17:00:00Z"
   }
  },
  "fit": {
