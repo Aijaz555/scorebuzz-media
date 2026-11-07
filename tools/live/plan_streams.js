@@ -54,7 +54,9 @@ const tagify = (x) => String(x).normalize('NFD').replace(/[^A-Za-z0-9 ]/g, '').s
 function hashtags(g) {
   const L = feed.LEAGUES[g.league] || {};
   const [t1, t2] = g.matchup.split(' vs ');
-  const nick = (t) => t.split(' ').pop();
+  // US teams by nickname (Lakers), football clubs by city/club name (Leeds, Man City, Real Madrid), not 'United'/'Hotspur'
+  const TWO = /^(Manchester|Real|Atletico|Atlético|Athletic|Inter|AC|AS|Aston|West|Nottingham|Crystal|Sheffield|Paris|Red|New|Sporting|Rayo|Celta|San|Las|St\.?)$/;
+  const nick = (t) => { const w = t.replace(/^(FC|AFC|CF|SC|CD|UD|RC|SD|SSC|US|OGC|RC) /, '').split(' '); return !L.soccer ? t.split(' ').pop() : TWO.test(w[0]) && w[1] ? w[0].replace('Manchester', 'Man') + ' ' + w[1] : w[0]; };
   const lg = tagify(L.name || L.label || g.league.toUpperCase());
   return [...new Set([`#${lg}`, `#${tagify(nick(t1))}Vs${tagify(nick(t2))}`, `#${tagify(t1)}`, `#${tagify(t2)}`, '#LiveScore', L.soccer ? '#Football' : '', '#ScoreBuzz'].filter(Boolean))];
 }
