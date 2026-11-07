@@ -740,8 +740,10 @@ function render(g) {
 // #trkSlot (the browser scrolls the tracker to the top), the site's sticky header covers the first 64 px,
 // so the visible window starts just below it. ?sbtrk=0 turns it off (our own tracker is used instead).
 const SB_LEAGUE = { epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls',
-  nba: 'basketball/nba', nfl: 'american-football/nfl', ncaaf: 'american-football/college-football', nhl: 'ice-hockey/nhl' };
-const SB_US = ['nba', 'nfl', 'ncaaf', 'nhl'];
+  nba: 'basketball/nba', nfl: 'american-football/nfl', nhl: 'ice-hockey/nhl' };
+// college football: the website's match page has no working tracker card (7 Nov 2026: blank field stuck on "loading",
+// crop showed the page's tabs), so NCAAF streams use the built-in field / team stats / win probability views instead.
+const SB_US = ['nba', 'nfl', 'nhl'];
 // crop of the site's tracker card (page opened at #trkSlot, 1000 px wide; measured 6 Nov 2026):
 // top = first visible pixel (the sticky header covers 0-64), vh = visible height
 const SB_BOX = { soccer: { top: 64, vh: 536 }, nba: { top: 64, vh: 512 }, nfl: { top: 100, vh: 456 }, ncaaf: { top: 100, vh: 456 }, nhl: { top: 74, vh: 582 } };
