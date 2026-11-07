@@ -26,21 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "4": {
-   "league": "nhl",
-   "event": "401892659",
-   "note": "Columbus Blue Jackets vs Buffalo Sabres, 2026-11-07T00:00:00Z"
-  },
-  "8": {
-   "league": "nba",
-   "event": "401909293",
-   "note": "Minnesota Timberwolves vs New Orleans Pelicans, 2026-11-07T01:00:00Z"
-  },
-  "10": {
-   "league": "nhl",
-   "event": "401892661",
-   "note": "Anaheim Ducks vs Calgary Flames, 2026-11-07T01:00:00Z"
-  },
   "11": {
    "league": "nba",
    "event": "401909294",
