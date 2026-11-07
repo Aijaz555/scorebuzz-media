@@ -529,14 +529,15 @@ async function list(league, date) {
     // Say "Scoreboard" plainly so nobody expects game footage.
     const week = e.week?.number || sb.week?.number;
     const tag = league === 'nfl' && week ? `NFL Week ${week}` : L.name || L.label;
-    const title = `${t1.displayName} vs ${t2.displayName} | ${tag} Live Scoreboard & Play-by-Play`;
+    // Owner (7 Nov 2026): every stream title says LIVE right after the matchup ("Team vs Team LIVE | ...").
+    const title = `${t1.displayName} vs ${t2.displayName} LIVE | ${tag} Scoreboard & Play-by-Play`;
     return {
       league, id: e.id, start: e.date, state: e.status?.type?.state, status: e.status?.type?.name || '',
       abbrs: [a.abbreviation, h.abbreviation].filter(Boolean),
       // best (lowest) top-25 ranking of the two teams, college only (99 = unranked)
       rank: Math.min(...c.competitors.map((x) => x.curatedRank?.current || 99).map((r) => (r > 0 && r < 26 ? r : 99))),
       matchup: `${t1.displayName} vs ${t2.displayName}`,
-      title: title.length > 100 ? `${t1.displayName} vs ${t2.displayName} | ${tag} Live Scoreboard` : title,
+      title: title.length > 100 ? `${t1.displayName} vs ${t2.displayName} LIVE | ${tag} Scoreboard` : title,
       description: [
         `Live score updates for ${t1.displayName} vs ${t2.displayName} (${L.label}): score, clock, period scores, top performers and play-by-play, updated every few seconds.`,
         '',
