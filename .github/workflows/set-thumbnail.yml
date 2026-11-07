@@ -1,0 +1,53 @@
+# Set a YouTube thumbnail via the Data API (no Studio sign-in needed)
+#
+# Place this file at: scorebuzz-media/.github/workflows/set-thumbnail.yml
+# Thumbnail JPGs live at: scorebuzz-media/assets/thumbnails/*.jpg
+#   (copies staged in this folder's assets/thumbnails/)
+# Secrets used (already saved 2026-11-07 in Aijaz555/scorebuzz-media,
+# never printed or copied anywhere): YT_CLIENT_ID, YT_CLIENT_SECRET,
+# YT_REFRESH_TOKEN.
+#
+# Run: GitHub repo -> Actions -> "Set YouTube thumbnail" -> Run workflow
+#   video_id:  the YouTube video ID (e.g. YxZ9J0BpKp4 for Leeds vs Spurs)
+#   thumbnail: path in the repo, e.g.
+#              assets/thumbnails/leeds-vs-tottenham-v3-2026-11-07.jpg
+#              assets/thumbnails/arsenal-vs-hull-2026-11-07.jpg
+name: Set YouTube thumbnail
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: "YouTube video ID to set the thumbnail on"
+        required: true
+        type: string
+      thumbnail:
+        description: "Thumbnail file path in this repo"
+        required: true
+        default: "assets/thumbnails/leeds-vs-tottenham-v3-2026-11-07.jpg"
+        type: string
+
+jobs:
+  set-thumbnail:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests pillow
+      - name: Set thumbnail via YouTube Data API
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          python3 set_thumbnail.py \
+            --video-id "${{ inputs.video_id }}" \
+            --thumbnail "${{ inputs.thumbnail }}"
+      - name: Check the public thumbnail URL responds
+        # The watch page can cache the old frame for a few minutes;
+        # a 200 here only proves the image endpoint answers.
+        run: |
+          curl -s -o /dev/null -w "maxres thumbnail HTTP %{http_code}\n" \
+            "https://i.ytimg.com/vi/${{ inputs.video_id }}/maxresdefault.jpg"
