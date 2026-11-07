@@ -26,11 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "epl",
-   "event": "401878757",
-   "note": "Nottingham Forest vs Manchester City, 2026-11-07T17:30:00Z"
-  },
   "2": {
    "league": "ncaaf",
    "event": "401856849",
@@ -57,9 +52,9 @@
    "note": "Valencia vs Real Madrid, 2026-11-07T20:00:00Z"
   },
   "7": {
-   "league": "seriea",
-   "event": "401874803",
-   "note": "AS Roma vs Sassuolo, 2026-11-07T19:45:00Z"
+   "league": "mls",
+   "event": "761941",
+   "note": "Philadelphia Union vs Toronto FC, 2026-11-07T21:00:00Z"
   },
   "8": {
    "league": "ncaaf",
@@ -76,20 +71,50 @@
    "event": "401892662",
    "note": "Florida Panthers vs Washington Capitals, 2026-11-07T17:30:00Z"
   },
-  "11": {
-   "league": "laliga",
-   "event": "401882811",
-   "note": "Osasuna vs Athletic Club, 2026-11-07T17:30:00Z"
-  },
   "12": {
    "league": "seriea",
-   "event": "401874974",
-   "note": "Parma vs Bologna, 2026-11-07T17:00:00Z"
+   "event": "401874803",
+   "note": "AS Roma vs Sassuolo, 2026-11-07T19:45:00Z"
   },
   "13": {
    "league": "ligue1",
    "event": "401876407",
    "note": "Paris Saint-Germain vs Troyes, 2026-11-07T20:05:00Z"
+  },
+  "14": {
+   "league": "mls",
+   "event": "761934",
+   "note": "CF Montréal vs Vancouver Whitecaps, 2026-11-07T21:00:00Z"
+  },
+  "15": {
+   "league": "mls",
+   "event": "761935",
+   "note": "Chicago Fire FC vs Columbus Crew, 2026-11-07T21:00:00Z"
+  },
+  "16": {
+   "league": "mls",
+   "event": "761936",
+   "note": "D.C. United vs New York City FC, 2026-11-07T21:00:00Z"
+  },
+  "17": {
+   "league": "mls",
+   "event": "761937",
+   "note": "FC Cincinnati vs Nashville SC, 2026-11-07T21:00:00Z"
+  },
+  "18": {
+   "league": "mls",
+   "event": "761938",
+   "note": "Inter Miami CF vs Charlotte FC, 2026-11-07T21:00:00Z"
+  },
+  "19": {
+   "league": "mls",
+   "event": "761940",
+   "note": "Orlando City SC vs New England Revolution, 2026-11-07T21:00:00Z"
+  },
+  "20": {
+   "league": "mls",
+   "event": "761939",
+   "note": "Red Bull New York vs Atlanta United FC, 2026-11-07T21:00:00Z"
   }
  },
  "fit": {
