@@ -104,12 +104,12 @@ body:has(.center.sbon) .side{width:372px}body:has(.center.sbon) .tn .n{font-size
 .wpbar i{position:absolute;left:0;top:0;bottom:0;background:var(--away);transition:width 1.2s;border-right:3px solid #fff}
 .wpwrap{position:relative}.wpwrap svg{position:absolute;left:0;right:0;bottom:30px;width:100%;height:22px;opacity:.6}
 .plays{height:268px;padding:16px 20px;display:flex;flex-direction:column;gap:8px}
-.pl{display:grid;grid-template-columns:6px 46px 108px 1fr auto;gap:14px;align-items:center;height:48px;padding-right:12px;border-radius:12px;background:#ffffff08}
+.pl{display:grid;grid-template-columns:6px 46px 108px 1fr auto;gap:14px;align-items:center;min-height:48px;padding:4px 0;padding-right:12px;border-radius:12px;background:#ffffff08}
 @keyframes slide{from{opacity:0;transform:translateY(-14px)}}
 .pl .bar{height:100%;border-radius:12px 0 0 12px;background:var(--pc)}
 .pl .lg{width:38px;height:38px;border-width:2px}.pl .lg span{font-size:17px}
 .pl .k{font-size:20px;font-weight:700;color:var(--mute)}
-.pl .x{font-size:21px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pl .x{font-size:20px;font-weight:600;line-height:1.2;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .pl .pts{font-size:24px;font-weight:800;color:var(--bg);background:var(--lime);border-radius:9px;padding:0 10px}
 .pl.big{background:linear-gradient(90deg,color-mix(in srgb,var(--pc) 35%,transparent),#ffffff06)}
 /* popup on stage */
@@ -630,7 +630,8 @@ function usWpView(g) {
     <div class="sub">ESPN win probability through the game</div>`;
 }
 function usCentre(g, main, brk) {
-  const list = (brk ? ['main', 'box', 'flow', 'wp'] : ['main', 'flow', 'main', 'stats', 'main', 'box', 'wp']).filter((v) => v === 'main' || (v === 'flow' && g.flow && g.flow.length > 3) || (v === 'stats' && g.stats?.length) || (v === 'box' && g.box) || (v === 'wp' && g.winProb?.series?.length > 3));
+  // owner (7 Nov 2026): football (NFL / college) keeps the field in the centre during play, no rotating to stats / win probability
+  const list = (brk ? ['main', 'box', 'flow', 'wp'] : g.sport === 'nfl' ? ['main'] : ['main', 'flow', 'main', 'stats', 'main', 'box', 'wp']).filter((v) => v === 'main' || (v === 'flow' && g.flow && g.flow.length > 3) || (v === 'stats' && g.stats?.length) || (v === 'box' && g.box) || (v === 'wp' && g.winProb?.series?.length > 3));
   const v = (q.get('view') && list.includes(q.get('view'))) ? q.get('view') : list[Math.floor(Date.now() / 12000) % list.length];
   const names = [...new Set(list)];
   const tabs = names.length > 1 ? `<div class="mc-tabs">${names.map((x) => `<span class="${x === v ? 'on' : ''}">${x === 'main' ? (brk ? 'Team stats' : US_NAMES.main[g.sport] || 'Live') : US_NAMES[x]}</span>`).join('')}</div>` : '';
@@ -673,7 +674,7 @@ function wpBar(g) {
 function playsPanel(g, ph) {
   if (ph === 'pre') return `<div class="panel plays"><div class="h">Before the game</div><div class="pl" style="grid-template-columns:1fr;padding-left:18px"><span class="x">${esc(g.away.full)} (${esc(g.away.record || '–')}) at ${esc(g.home.full)} (${esc(g.home.record || '–')})</span></div>${g.venue ? `<div class="pl" style="grid-template-columns:1fr;padding-left:18px"><span class="x">📍 ${esc(g.venue)}</span></div>` : ''}<div class="pl" style="grid-template-columns:1fr;padding-left:18px"><span class="x">Live score, play-by-play and stats start at tip-off · no game footage</span></div></div>`;
   const byAbbr = { [g.home.abbr]: g.home, [g.away.abbr]: g.away };
-  return `<div class="panel plays"><div class="h">${g.soccer ? 'Key events' : 'Play-by-play'}</div>${g.plays.slice(0, 4).map((p) => {
+  return `<div class="panel plays"><div class="h">${g.soccer ? 'Key events' : 'Play-by-play'}</div>${g.plays.slice(0, 3).map((p) => {
     const t = byAbbr[p.team];
     return `<div class="pl ${p.big ? 'big' : ''}" style="--pc:${t ? vivid(t) : '#5B638C'}"><span class="bar"></span>${t ? logo(t) : '<span></span>'}<span class="k num" style="font-size:20px">${esc(p.clock)}</span><span class="x">${esc(p.text)}</span>${p.value > 0 && !g.soccer ? `<span class="pts num">+${p.value}</span>` : '<span></span>'}</div>`;
   }).join('') || '<div class="pl" style="grid-template-columns:1fr;padding-left:18px"><span class="x" style="color:var(--dim)">Updates will appear here</span></div>'}</div>`;

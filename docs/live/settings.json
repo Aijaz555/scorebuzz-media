@@ -135,7 +135,7 @@
   "win": true,
   "fit": "fill"
  },
- "reload": 13,
+ "reload": 14,
  "music": {
   "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals.",
   "playlists": {
@@ -285,5 +285,8 @@
   },
   "volume": 3
  },
- "thumbs": false
+ "thumbs": false,
+ "dark": [
+  "nba"
+ ]
 }

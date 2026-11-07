@@ -55,7 +55,9 @@ async function loadSettings() {
     // remote reload: bump "reload" in settings.json and every open stream page reloads itself (picks up new code)
     if (window.__reloadSeen === undefined) window.__reloadSeen = c.reload ?? null;
     else if ((c.reload ?? null) !== window.__reloadSeen) location.reload();
-    if (SLOT) { const sl = (c.slots || {})[SLOT]; PIN = sl && sl.event ? sl : null; }
+    if (SLOT) { const sl = (c.slots || {})[SLOT]; PIN = sl && sl.event ? sl : null;
+      // dark broadcast layout (docs/live/dark.html) for the leagues listed in settings "dark": hand the slot over to it
+      if (PIN && Array.isArray(c.dark) && c.dark.includes(PIN.league)) { location.replace('dark.html' + location.search); return; } }
   } catch (e) { /* keep URL settings */ }
 }
 let finalSince = 0;
