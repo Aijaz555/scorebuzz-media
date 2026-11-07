@@ -42,24 +42,14 @@
    "note": "St. Louis Blues vs Nashville Predators, 2026-11-07T18:00:00Z"
   },
   "4": {
+   "league": "seriea",
+   "event": "401874803",
+   "note": "AS Roma vs Sassuolo, 2026-11-07T19:45:00Z"
+  },
+  "5": {
    "league": "ligue1",
    "event": "401876411",
    "note": "AJ Auxerre vs Paris FC, 2026-11-07T18:00:00Z"
-  },
-  "5": {
-   "league": "epl",
-   "event": "401878760",
-   "note": "Arsenal vs Hull City, 2026-11-07T15:00:00Z"
-  },
-  "6": {
-   "league": "epl",
-   "event": "401879241",
-   "note": "Fulham vs Newcastle United, 2026-11-07T15:00:00Z"
-  },
-  "7": {
-   "league": "laliga",
-   "event": "401882813",
-   "note": "Espanyol vs Deportivo, 2026-11-07T15:15:00Z"
   },
   "8": {
    "league": "ncaaf",
