@@ -26,14 +26,14 @@
  "top25": 15,
  "pin": {
   "league": "mls",
-  "event": "761944",
-  "note": "Houston Dynamo FC vs St. Louis CITY SC, 2026-11-08T00:00:00Z"
+  "event": "761946",
+  "note": "Real Salt Lake vs LA Galaxy, 2026-11-08T00:00:00Z"
  },
  "slots": {
   "1": {
-   "league": "mls",
-   "event": "761941",
-   "note": "Philadelphia Union vs Toronto FC, 2026-11-07T21:00:00Z"
+   "league": "nba",
+   "event": "401909942",
+   "note": "Orlando Magic vs Golden State Warriors, 2026-11-08T01:30:00Z"
   },
   "2": {
    "league": "ncaaf",
@@ -41,9 +41,9 @@
    "note": "Kentucky Wildcats vs Tennessee Volunteers, 2026-11-07T23:15:00Z"
   },
   "3": {
-   "league": "mls",
-   "event": "761943",
-   "note": "FC Dallas vs Colorado Rapids, 2026-11-08T00:00:00Z"
+   "league": "nhl",
+   "event": "401892669",
+   "note": "San Jose Sharks vs Dallas Stars, 2026-11-08T01:00:00Z"
   },
   "4": {
    "league": "ncaaf",
@@ -82,8 +82,8 @@
   },
   "11": {
    "league": "mls",
-   "event": "761934",
-   "note": "CF Montréal vs Vancouver Whitecaps, 2026-11-07T21:00:00Z"
+   "event": "761943",
+   "note": "FC Dallas vs Colorado Rapids, 2026-11-08T00:00:00Z"
   },
   "12": {
    "league": "nhl",
@@ -91,44 +91,44 @@
    "note": "Utah Mammoth vs Ottawa Senators, 2026-11-08T00:00:00Z"
   },
   "13": {
+   "league": "nba",
+   "event": "401909940",
+   "note": "New York Knicks vs Cleveland Cavaliers, 2026-11-08T01:00:00Z"
+  },
+  "14": {
+   "league": "nba",
+   "event": "401909941",
+   "note": "Washington Wizards vs Oklahoma City Thunder, 2026-11-08T01:00:00Z"
+  },
+  "15": {
    "league": "nhl",
    "event": "401892667",
    "note": "New Jersey Devils vs New York Islanders, 2026-11-08T00:00:00Z"
   },
-  "14": {
-   "league": "mls",
-   "event": "761935",
-   "note": "Chicago Fire FC vs Columbus Crew, 2026-11-07T21:00:00Z"
-  },
-  "15": {
-   "league": "mls",
-   "event": "761936",
-   "note": "D.C. United vs New York City FC, 2026-11-07T21:00:00Z"
-  },
   "16": {
-   "league": "mls",
-   "event": "761937",
-   "note": "FC Cincinnati vs Nashville SC, 2026-11-07T21:00:00Z"
+   "league": "nhl",
+   "event": "401892668",
+   "note": "Chicago Blackhawks vs Carolina Hurricanes, 2026-11-08T01:00:00Z"
   },
   "17": {
-   "league": "mls",
-   "event": "761938",
-   "note": "Inter Miami CF vs Charlotte FC, 2026-11-07T21:00:00Z"
+   "league": "nhl",
+   "event": "401892670",
+   "note": "Tampa Bay Lightning vs Minnesota Wild, 2026-11-08T01:00:00Z"
   },
   "18": {
    "league": "mls",
-   "event": "761940",
-   "note": "Orlando City SC vs New England Revolution, 2026-11-07T21:00:00Z"
+   "event": "761942",
+   "note": "Austin FC vs Portland Timbers, 2026-11-08T00:00:00Z"
   },
   "19": {
    "league": "mls",
-   "event": "761939",
-   "note": "Red Bull New York vs Atlanta United FC, 2026-11-07T21:00:00Z"
+   "event": "761944",
+   "note": "Houston Dynamo FC vs St. Louis CITY SC, 2026-11-08T00:00:00Z"
   },
   "20": {
    "league": "mls",
-   "event": "761942",
-   "note": "Austin FC vs Portland Timbers, 2026-11-08T00:00:00Z"
+   "event": "761945",
+   "note": "Minnesota United FC vs San Jose Earthquakes, 2026-11-08T00:00:00Z"
   }
  },
  "fit": {
