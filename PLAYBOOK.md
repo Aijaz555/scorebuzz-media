@@ -100,7 +100,7 @@ Goal: get found in YouTube/Google search, not just the Shorts feed. Sports searc
 - **Tags (8–12):** matchup both orders, each team, player names, "<league> scores today", "<league> week N", event names, "scorebuzz". Never list keywords in the description (YouTube spam policy), never tag teams/players who aren't in the video, never "highlights"/"full match" (we show no footage).
 - **Facebook captions:** same names in the first line (Facebook search and hashtags), 2–4 hashtags led by team/player.
 - **Live streams:** titles "<Team> vs <Team> LIVE | <League> Scoreboard & Play-by-Play" (tools/live/feed.js).
-- Keyword volume data: vidIQ keyword research costs 5 credits a call and the account has very few credits, so don't use it in daily runs.
+- **Keyword bank:** `docs/keywords.md` (vidIQ data, 7 Nov 2026): team and star names are the biggest searches; "premier league predictions" (+76%) on prediction boards; "nfl shorts" in NFL tags; never generic "live score"/"live match" (cricket/South Asia traffic). vidIQ keyword research costs 5 credits a call (≈150/month), so don't use it in daily runs.
 
 ## Long videos: weekly recaps (owner's request, 4 Nov 2026)
 - **Only on some days, not daily** (YouTube's upload limit). Fixed days, all times PKT:

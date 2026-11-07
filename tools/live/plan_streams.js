@@ -58,7 +58,7 @@ function hashtags(g) {
   const TWO = /^(Manchester|Real|Atletico|Atlético|Athletic|Inter|AC|AS|Aston|West|Nottingham|Crystal|Sheffield|Paris|Red|New|Sporting|Rayo|Celta|San|Las|St\.?)$/;
   const nick = (t) => { const w = t.replace(/^(FC|AFC|CF|SC|CD|UD|RC|SD|SSC|US|OGC|RC) /, '').split(' '); return !L.soccer ? t.split(' ').pop() : TWO.test(w[0]) && w[1] ? w[0].replace('Manchester', 'Man') + ' ' + w[1] : w[0]; };
   const lg = tagify(L.name || L.label || g.league.toUpperCase());
-  return [...new Set([`#${lg}`, `#${tagify(nick(t1))}Vs${tagify(nick(t2))}`, `#${tagify(t1)}`, `#${tagify(t2)}`, `#${tagify(nick(t1))}Vs${tagify(nick(t2))}Live`, `#${lg}Live`, '#LiveScore', '#LiveStream', L.soccer ? '#Football' : '', '#ScoreBuzz'].filter(Boolean))];
+  return [...new Set([`#${lg}`, `#${tagify(nick(t1))}Vs${tagify(nick(t2))}`, `#${tagify(t1)}`, `#${tagify(t2)}`, `#${tagify(nick(t1))}Vs${tagify(nick(t2))}Live`, `#${lg}Live`, '#LiveStream', L.soccer ? '#Football' : '', '#ScoreBuzz'].filter(Boolean))];
 }
 
 // YouTube tags, for when the API (or the Studio) can take them: league, both teams, matchup and generic live-score terms
@@ -66,7 +66,7 @@ function ytTags(g) {
   const L = feed.LEAGUES[g.league] || {};
   const [t1, t2] = g.matchup.split(' vs ');
   const lg = L.name || L.label;
-  return [`${g.matchup} live`, g.matchup, `${t1} vs ${t2} live stream`, `${t1} live`, `${t2} live`, `${lg} live`, `${lg} live stream`, `${lg} live score`, `${t1} game today`, `${t2} game today`, 'live score', 'live scoreboard', 'play by play', 'scorebuzz'];
+  return [`${g.matchup} live`, g.matchup, `${t1} vs ${t2} live stream`, `${t1} live`, `${t2} live`, `${lg} live`, `${lg} live stream`, `${lg} live score`, `${t1} game today`, `${t2} game today`, 'live scoreboard', 'play by play', 'scorebuzz'];
 }
 
 function describe(g, music) {
