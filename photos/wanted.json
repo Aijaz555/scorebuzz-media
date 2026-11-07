@@ -18,18 +18,6 @@
   "country": "Spain"
  },
  {
-  "slug": "olimpico",
-  "name": "Olimpico",
-  "city": "Roma",
-  "country": "Italy"
- },
- {
-  "slug": "san-siro",
-  "name": "San Siro",
-  "city": "Milano",
-  "country": "Italy"
- },
- {
   "slug": "stade-raymond-kopa",
   "name": "Stade Raymond Kopa",
   "city": "Angers",
@@ -48,27 +36,9 @@
   "country": "USA"
  },
  {
-  "slug": "tql-stadium",
-  "name": "TQL Stadium",
-  "city": "Cincinnati, Ohio",
-  "country": "USA"
- },
- {
   "slug": "allianz-field",
   "name": "Allianz Field",
   "city": "Saint Paul, Minnesota",
-  "country": "USA"
- },
- {
-  "slug": "lotto-park",
-  "name": "Lotto Park",
-  "city": "Brussels",
-  "country": "Belgium"
- },
- {
-  "slug": "caesars-superdome",
-  "name": "Caesars Superdome",
-  "city": "New Orleans",
   "country": "USA"
  },
  {
@@ -84,12 +54,6 @@
   "country": "USA"
  },
  {
-  "slug": "tiger-stadium-la",
-  "name": "Tiger Stadium (LA)",
-  "city": "Baton Rouge",
-  "country": "USA"
- },
- {
   "slug": "allegacy-federal-credit-union-stadium",
   "name": "Allegacy Federal Credit Union Stadium",
   "city": "Winston-Salem",
@@ -102,34 +66,16 @@
   "country": "USA"
  },
  {
-  "slug": "mortgage-matchup-center",
-  "name": "Mortgage Matchup Center",
-  "city": "Phoenix",
-  "country": ""
- },
- {
-  "slug": "smoothie-king-center",
-  "name": "Smoothie King Center",
-  "city": "New Orleans",
-  "country": ""
- },
- {
   "slug": "arena-cdmx",
   "name": "Arena CDMX",
   "city": "Mexico City",
   "country": ""
  },
  {
-  "slug": "benchmark-international-arena",
-  "name": "Benchmark International Arena",
-  "city": "Tampa",
-  "country": "USA"
- },
- {
-  "slug": "ppg-paints-arena",
-  "name": "PPG Paints Arena",
-  "city": "Pittsburgh",
-  "country": "USA"
+  "slug": "mortgage-matchup-center",
+  "name": "Mortgage Matchup Center",
+  "city": "Phoenix",
+  "country": ""
  },
  {
   "slug": "grand-casino-arena",
