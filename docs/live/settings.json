@@ -24,7 +24,11 @@
   "SUN"
  ],
  "top25": 15,
- "pin": null,
+ "pin": {
+  "league": "mls",
+  "event": "761944",
+  "note": "Houston Dynamo FC vs St. Louis CITY SC, 2026-11-08T00:00:00Z"
+ },
  "slots": {
   "1": {
    "league": "mls",
@@ -35,6 +39,11 @@
    "league": "ncaaf",
    "event": "401856745",
    "note": "Kentucky Wildcats vs Tennessee Volunteers, 2026-11-07T23:15:00Z"
+  },
+  "3": {
+   "league": "mls",
+   "event": "761943",
+   "note": "FC Dallas vs Colorado Rapids, 2026-11-08T00:00:00Z"
   },
   "4": {
    "league": "ncaaf",
@@ -47,24 +56,44 @@
    "note": "Denver Nuggets vs Indiana Pacers, 2026-11-07T22:00:00Z"
   },
   "6": {
-   "league": "laliga",
-   "event": "401882808",
-   "note": "Valencia vs Real Madrid, 2026-11-07T20:00:00Z"
+   "league": "nba",
+   "event": "401909939",
+   "note": "Brooklyn Nets vs Atlanta Hawks, 2026-11-08T00:30:00Z"
   },
   "7": {
    "league": "nhl",
    "event": "401892664",
    "note": "New York Rangers vs Seattle Kraken, 2026-11-07T22:00:00Z"
   },
+  "8": {
+   "league": "ncaaf",
+   "event": "401858291",
+   "note": "Miami Hurricanes vs Notre Dame Fighting Irish, 2026-11-08T00:30:00Z"
+  },
+  "9": {
+   "league": "ncaaf",
+   "event": "401856741",
+   "note": "Georgia Bulldogs vs Ole Miss Rebels, 2026-11-08T00:30:00Z"
+  },
+  "10": {
+   "league": "nhl",
+   "event": "401892665",
+   "note": "Montreal Canadiens vs Toronto Maple Leafs, 2026-11-08T00:00:00Z"
+  },
   "11": {
    "league": "mls",
    "event": "761934",
    "note": "CF Montréal vs Vancouver Whitecaps, 2026-11-07T21:00:00Z"
   },
+  "12": {
+   "league": "nhl",
+   "event": "401892666",
+   "note": "Utah Mammoth vs Ottawa Senators, 2026-11-08T00:00:00Z"
+  },
   "13": {
-   "league": "ligue1",
-   "event": "401876407",
-   "note": "Paris Saint-Germain vs Troyes, 2026-11-07T20:05:00Z"
+   "league": "nhl",
+   "event": "401892667",
+   "note": "New Jersey Devils vs New York Islanders, 2026-11-08T00:00:00Z"
   },
   "14": {
    "league": "mls",
@@ -95,6 +124,11 @@
    "league": "mls",
    "event": "761939",
    "note": "Red Bull New York vs Atlanta United FC, 2026-11-07T21:00:00Z"
+  },
+  "20": {
+   "league": "mls",
+   "event": "761942",
+   "note": "Austin FC vs Portland Timbers, 2026-11-08T00:00:00Z"
   }
  },
  "fit": {
