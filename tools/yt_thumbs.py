@@ -38,8 +38,17 @@ def access_token():
         "refresh_token": os.environ["YT_REFRESH_TOKEN"].strip(),
         "grant_type": "refresh_token",
     }).encode()
-    return http("POST", "https://oauth2.googleapis.com/token", data,
-                {"Content-Type": "application/x-www-form-urlencoded"})["access_token"]
+    try:
+        return http("POST", "https://oauth2.googleapis.com/token", data,
+                    {"Content-Type": "application/x-www-form-urlencoded"})["access_token"]
+    except RuntimeError:
+        # Safe hints only (a client ID is public; never print the secret or the token itself)
+        cid, sec, rt = (os.environ[k].strip() for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"))
+        print("Login failed. Check:")
+        print("  YT_CLIENT_ID      =", cid, "(should end in .apps.googleusercontent.com)")
+        print("  YT_CLIENT_SECRET  : length", len(sec), "starts with", repr(sec[:7]), "(usually 'GOCSPX-')")
+        print("  YT_REFRESH_TOKEN  : length", len(rt), "starts with", repr(rt[:3]), "(usually '1//')")
+        raise
 
 
 def norm(t):
