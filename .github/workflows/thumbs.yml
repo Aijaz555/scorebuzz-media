@@ -1,0 +1,41 @@
+name: YouTube thumbnails
+# Uploads our designed <id>.thumb.jpg thumbnails to published YouTube Shorts/videos via the YouTube Data API
+# (tools/yt_thumbs.py). Needs repo secrets YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN.
+# Runs every 2 hours so each upload gets its thumbnail soon after it goes live; can also be run by hand.
+on:
+  schedule:
+    - cron: "20 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Days to process (YYYY-MM-DD, space separated). Empty = today and yesterday (PKT)"
+        default: ""
+      dry_run:
+        description: "1 = only list matches, upload nothing"
+        default: "0"
+permissions:
+  contents: write
+concurrency: thumbs
+jobs:
+  thumbs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Upload thumbnails
+        run: python3 tools/yt_thumbs.py ${{ inputs.days }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+      - name: Commit log
+        if: always()
+        run: |
+          git config user.name "scorebuzz-bot"
+          git config user.email "scorebuzz-bot@users.noreply.github.com"
+          git add thumbs/uploaded.json 2>/dev/null || true
+          git diff --cached --quiet && echo "nothing new" && exit 0
+          git commit -m "YouTube thumbnails uploaded ($(date -u +%F))"
+          git pull --rebase
+          git push
