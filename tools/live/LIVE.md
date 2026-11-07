@@ -224,3 +224,7 @@ Only runs when `"thumbs": true` in `docs/live/settings.json` (so the hourly mana
    account that owns @scorebuzznet, and copy the `refreshToken` it saves. Don't commit that file.
 4. GitHub > Aijaz555/scorebuzz-media > Settings > Secrets and variables > Actions: add `YT_CLIENT_ID`, `YT_CLIENT_SECRET`,
    `YT_REFRESH_TOKEN`. Then set `"thumbs": true` in `docs/live/settings.json` (or ask Claude to).
+
+## Titles and tags (owner's request, 7 Nov 2026)
+- Every stream title reads `<Team> vs <Team> LIVE | <League> Scoreboard & Play-by-Play` (feed.js builds it; plan_streams passes it to livereacting_update_project).
+- YouTube tags: the LiveReacting tool can't write `youtubeAdvancedSettings.tags` (the field exists on each project but the API tool doesn't accept it), so the "live" keywords go in the title and the description hashtags (#<A>Vs<B>Live, #<League>Live, #LiveStream). `ytTags()` in plan_streams.js holds the per-game tag list for when the tool or the YouTube Data API can set them.
