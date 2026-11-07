@@ -1,11 +1,4 @@
 {
- "401856740": {
-  "slot": "4",
-  "league": "ncaaf",
-  "mode": "built-in",
-  "status": "ok",
-  "at": "2026-11-07T23:07:04+00:00"
- },
  "761941": {
   "slot": "1",
   "league": "mls",
@@ -65,5 +58,12 @@
   "status": "ok",
   "reason": "ok (contrast 49)",
   "at": "2026-11-07T23:07:27+00:00"
+ },
+ "401856740": {
+  "slot": "4",
+  "league": "ncaaf",
+  "mode": "built-in",
+  "status": "ok",
+  "at": "2026-11-07T23:10:15+00:00"
  }
 }
