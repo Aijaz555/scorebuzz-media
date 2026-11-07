@@ -184,6 +184,9 @@ starting 30 min before kick-off and stopped when the game is over.
   and the hashtag line (league, matchup, both teams), which the planner writes; actions also carry `tags` for later.
 - LiveReacting refuses title/description edits on a SCHEDULED project ("Can not update title/description"): cancel the
   schedule, update, then schedule again. (Edits on a LIVE project work.)
+- Concurrency cap (found 7 Nov 2026 01:45 UTC): the LiveReacting plan allows only **9 concurrent live streams** (scheduling and
+  starting both refuse a 10th). Slots 10+ only stream when one of Slots 1–9 is free, until the owner raises the limit with
+  LiveReacting support (live chat) or upgrades the plan.
 - Stuck starts: a project can sit in PREPARING forever after a YouTube error (6 Nov: TNF on Slot 1 scheduled →
   ERROR UNKNOWN_ERROR, then PREPARING for 37 min). Each hourly run checks every PREPARING project with
   livereacting_get_stream_status; if preparingStartedAt is over 10 min ago, stop it and start it again (once per run).
