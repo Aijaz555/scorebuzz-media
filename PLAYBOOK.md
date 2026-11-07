@@ -70,7 +70,7 @@ At the end, send the user a short summary: number of posts scheduled, the mix, a
 - Same accuracy rules as Facebook: every fact from a page opened with WebFetch, no invented quotes/stats, no logos/photos/footage.
 - Every Short must be different: vary the scene types and the angle (result, table, stat of the day, preview, title race, poll question). Never re-post the same template with only names swapped; YouTube's inauthentic-content policy targets mass-produced, repetitive videos.
 - Hook in the first 2 seconds, one idea per Short, end on a question.
-- Title ≤ 70 chars ending `#shorts`; description = 1–2 sentence summary + `https://scorebuzz.net` + 3–4 hashtags; 5–7 tags.
+- Title ≤ 70 chars ending `#shorts`, search phrase first; description = 2–4 keyword-rich sentences + `https://scorebuzz.net` + 3–4 hashtags; 8–12 tags (see "Search keywords" below).
 - Mix like Facebook (~45% football, ~45% US sports, ~10% UFC/F1). Spread the (at most 8) uploads roughly every 2–2.5 h across 11:00–09:30 PKT, never within 90 min of each other. Only the strongest, most distinct videos go to YouTube.
 - **Results boards (owner's request, 1 Nov 2026):** for round-ups of several results, use the `board` scene (format modelled on a fast-growing UCL score-prediction Short): kicker + big title + yellow badge ("FULL TIME"/"RESULTS") over a white fixture card; each score drops in with a bounce and a pop sound, home then away, one fixture every ~1.7–2.2 s; a full-board hold, then the `cta` Like/Comment/Share end card. 6–11 fixtures, 18–32 s. Home team on the left. No crests: abbreviation badges only. Run `tools/add_music.sh` as usual; it mixes the pops in automatically from `<id>.sfx.json` (sound made by `tools/make_pop.py`, original). Make at least one board per day (league matchday, Top 25 Saturday, NBA/NHL night), and use it for previews too ("score prediction" boards with a question, never presented as results). Example: `n15-cfb-board` in `shorts/2026-11-01/shorts.json`.
 - Every Short gets a music bed too: after rendering, run `tools/add_music.sh shorts/<day>/<id>.mp4 <hype|anthem|drama> <tmp>` and replace the file before pushing (same beds and rules as TikTok).
@@ -91,6 +91,16 @@ At the end, send the user a short summary: number of posts scheduled, the mix, a
 - Cover every big sport the US/UK audience follows: NFL, college football (Saturdays), NBA, NHL, F1, UFC, Premier League, LaLiga, Serie A, Bundesliga.
 - Publish results within hours, previews 1–3 hours before kick-off; end every Short on a question.
 - Scores can come straight from ESPN's scoreboard/summary JSON (site.api.espn.com), which is allowed in this environment.
+
+## Search keywords: titles, descriptions, tags (owner's request, 7 Nov 2026)
+Goal: get found in YouTube/Google search, not just the Shorts feed. Sports search is dominated by a few phrase shapes; use them every time.
+- **Phrase shapes people search:** "<Team> vs <Team>" (both orders appear in tags), "<Team> vs <Team> live / score / result / predictions", "<player name>" (+ "stats", "today", "<team>"), "<league> table / standings / results today / scores today", "<league> week N predictions / picks", "<team> game today", "who won <Team> vs <Team>". Use full team names once, short names after (Man City, Spurs, Cavs).
+- **Title:** start with the search phrase (matchup, player name or "<League> table/results"), then the hook. Main keyword in the first ~40 characters, ≤70 chars, one emoji, end `#shorts`. Example: "LeBron Held to 8 in Cleveland Return | Cavaliers vs 76ers 😬 #shorts" (not "LeBron's homecoming didn't go to plan").
+- **Description (2–4 sentences + link + hashtags):** first sentence repeats the main keyword naturally ("The Anaheim Ducks beat the Calgary Flames 5–3…"), then the key facts with every team and player name spelled out, final score, league and competition (NBA Cup, Week 9). Link line also keyworded ("Ducks vs Flames final score and NHL scores: https://scorebuzz.net"). 3–4 hashtags; the first three show above the title, so lead with the player/team and league.
+- **Tags (8–12):** matchup both orders, each team, player names, "<league> scores today", "<league> week N", event names, "scorebuzz". Never list keywords in the description (YouTube spam policy), never tag teams/players who aren't in the video, never "highlights"/"full match" (we show no footage).
+- **Facebook captions:** same names in the first line (Facebook search and hashtags), 2–4 hashtags led by team/player.
+- **Live streams:** titles "<Team> vs <Team> LIVE | <League> Scoreboard & Play-by-Play" (tools/live/feed.js).
+- Keyword volume data: vidIQ keyword research costs 5 credits a call and the account has very few credits, so don't use it in daily runs.
 
 ## Long videos: weekly recaps (owner's request, 4 Nov 2026)
 - **Only on some days, not daily** (YouTube's upload limit). Fixed days, all times PKT:
