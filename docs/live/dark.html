@@ -86,8 +86,10 @@ const CROP = { nba: { top: 64, vh: 512 }, nfl: { top: 100, vh: 456 }, nhl: { top
 const LG = { nba: { name: 'NBA', per: 'Quarter', cols: ['Q1', 'Q2', 'Q3', 'Q4'], ot: 'OT' }, nfl: { name: 'NFL', per: 'Quarter', cols: ['Q1', 'Q2', 'Q3', 'Q4'], ot: 'OT' },
   nhl: { name: 'NHL', per: 'Period', cols: ['P1', 'P2', 'P3'], ot: 'OT' }, mlb: { name: 'MLB', per: 'Inning', cols: ['1', '2', '3', '4', '5', '6', '7', '8', '9'], ot: 'X' } };
 // scale the 1920x1080 design to the window (?fit=fill&w=&h= like the main overlay)
-function fit() { const W = +q.get('w') || innerWidth, H = +q.get('h') || innerHeight, sx = W / 1920, sy = H / 1080;
-  document.body.style.transform = q.get('fit') === 'fill' ? `scale(${sx},${sy})` : `scale(${Math.min(sx, sy)})`; }
+// settings.json "fit" ({"win": true, "fit": "fill"} in production) overrides the URL, exactly like the main overlay
+function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
+  const mode = R.fit || q.get('fit') || 'contain', b = document.body; b.style.marginLeft = (+R.x || 0) + 'px'; b.style.marginTop = (+R.y || 0) + 'px';
+  if (mode === 'fill') b.style.transform = `scale(${sx},${sy})`; else { const k = Math.min(sx, sy); b.style.transform = `scale(${k})`; b.style.marginLeft = ((+R.x || 0) + (W - 1920 * k) / 2) + 'px'; b.style.marginTop = ((+R.y || 0) + (H - 1080 * k) / 2) + 'px'; } }
 addEventListener('resize', fit); setInterval(fit, 2000); fit();
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const $ = (id) => document.getElementById(id);
@@ -195,14 +197,18 @@ function placeTracker(url) {
   if (trkSrc !== url) { trkSrc = url; trkF.src = url + '#trkSlot'; }
   trkF.parentNode.style.display = 'block';
   const { top: TOP, vh: VH } = CROP[league], X = 14, VW = 972; // crop measured 6 Nov 2026 (page 1000 px wide, sticky header 64 px)
-  const r = box.getBoundingClientRect(), w = r.width, h = r.height - 26, k = Math.min(w / VW, h / VH);
-  Object.assign(trkF.parentNode.style, { left: r.left + 'px', top: r.top + 'px', width: w + 'px', height: h + 'px' });
+  // the layer lives inside the scaled body, so convert the box's screen rect back into design (1920x1080) coordinates
+  const m = /scale\(([\d.]+)(?:,\s*([\d.]+))?\)/.exec(document.body.style.transform || ''), sx = m ? +m[1] : 1, sy = m ? +(m[2] || m[1]) : 1;
+  const r = box.getBoundingClientRect(), br = document.body.getBoundingClientRect();
+  const left = (r.left - br.left) / sx, top = (r.top - br.top) / sy, w = r.width / sx, h = r.height / sy - 26, k = Math.min(w / VW, h / VH);
+  Object.assign(trkF.parentNode.style, { left: left + 'px', top: top + 'px', width: w + 'px', height: h + 'px' });
   Object.assign(trkF.style, { height: (TOP + VH + 20) + 'px', left: ((w - VW * k) / 2 - X * k) + 'px', top: ((h - VH * k) / 2 - TOP * k) + 'px', transform: `scale(${k})` });
 }
 let reloadSeen;
 async function slotTick() { // same remote control as the main overlay: docs/live/settings.json "slots"
   try {
     const c = await J('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/settings.json?t=' + Date.now());
+    window.__fitRemote = c.fit || {}; fit();
     if (reloadSeen === undefined) reloadSeen = c.reload ?? null; else if ((c.reload ?? null) !== reloadSeen) location.reload();
     const sl = (c.slots || {})[SLOT];
     if (!sl || !sl.event) { $('app').innerHTML = '<div class="err">ScoreBuzz live scoreboard · next game coming up</div>'; event = null; return; }
