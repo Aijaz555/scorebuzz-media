@@ -167,6 +167,10 @@ footer{position:absolute;left:0;right:0;bottom:0;height:80px;background:#04060E;
 
 .ldr.sl{grid-template-columns:60px 1fr}.ldr.sl small{display:block;font-size:19px;font-weight:600;color:var(--mute);margin-top:2px}
 .bxh{text-align:right;font-size:15px;font-weight:800;letter-spacing:2px;color:var(--mute);margin:-4px 0 -2px}.ldr.bxr{grid-template-columns:1fr auto}.ldr.bxr .v{font-size:30px}.ldr.bxr .v em{font-style:normal;color:var(--dim);margin:0 6px}
+/* league colour touch: header stripe, league chip and accents in the league's brand colours (body.lgc, vars set in render) */
+.lgc header:after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:6px;background:linear-gradient(90deg,var(--lg1) 0 55%,var(--lg2) 55% 80%,var(--lg3) 80%);z-index:4}
+.lgc .chip#lg{background:var(--lg1);border-color:var(--lg2);color:var(--lg4)}
+.lgc footer{box-shadow:inset 0 3px 0 var(--lg1)}
 /* ===== light theme (matches scorebuzz.net: #f2f2f2 page, white cards, black header, lime "Buzz", blue accents) ===== */
 body.light{--bg:#f2f2f2;--panel:#ffffff;--panel2:#f7f7f8;--line:#e6e6e6;--ink:#1b1b1b;--mute:#6b6b6b;--dim:#9a9a9a;--lime:#2f80ed;--acc:#2f80ed;--red:#e53935;--brand:#c6f432}
 html:has(body.light){background:#f2f2f2}
@@ -1267,8 +1271,23 @@ function statusBar(g, ph) {
   return `<div class="panel status">${left}<div class="clk"><div class="p">${esc(small)}</div><div class="t num ${tick || /^[\d:.']+$/.test(big) ? '' : 'w'}">${tick ? `<span id="lclk">${mmss(liveSecs(g))}</span><span class="lclk-dot"></span>` : esc(big)}</div></div><div class="lead r">${esc(g.broadcast || g.label)}</div></div>`;
 }
 
+// league brand colours (approximate official palettes): lg1 = primary (readable on white), lg2/lg3 = accents
+const LG_COLORS = { // [primary, accent, stripe end, chip text]
+  epl: ['#37003C', '#00FF85', '#E90052', '#00FF85'], ucl: ['#0E1E5B', '#00C8FF', '#B8C2D6', '#00C8FF'], uel: ['#E06A00', '#1B1B1B', '#E06A00', '#FFFFFF'],
+  laliga: ['#E8312B', '#1B1B1B', '#E8312B', '#FFFFFF'], seriea: ['#0A3D91', '#00B2E3', '#0A3D91', '#FFFFFF'], ligue1: ['#091C3E', '#DAE025', '#091C3E', '#DAE025'],
+  bundesliga: ['#D20515', '#1B1B1B', '#D20515', '#FFFFFF'], mls: ['#001F5B', '#C8102E', '#001F5B', '#FFFFFF'],
+};
+function leagueColors() {
+  const c = q.get('lgc') !== '0' && LG_COLORS[league];
+  document.body.classList.toggle('lgc', !!c);
+  if (!c) { ['--lg1', '--lg2', '--lg3', '--lg4', '--acc'].forEach((k) => document.body.style.removeProperty(k)); return; }
+  document.body.style.setProperty('--lg1', c[0]); document.body.style.setProperty('--lg2', c[1]); document.body.style.setProperty('--lg3', c[2]); document.body.style.setProperty('--lg4', c[3]);
+  if (!THEME_DARK) document.body.style.setProperty('--acc', c[0]);
+}
+
 // ---------------- render loop ----------------
 function render(g) {
+  leagueColors();
   const ph = phase(g);
   document.documentElement.style.setProperty('--acc', ACC[g.sport] || '#FF8A3D');
   document.documentElement.style.setProperty('--away', vivid(g.soccer ? g.home : g.away));
