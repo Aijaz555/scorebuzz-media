@@ -1,0 +1,451 @@
+[
+ {
+  "id": "01-europe-friday",
+  "time": "2026-11-07T11:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "FRIDAY NIGHT IN EUROPE",
+  "headline": "Friday's results",
+  "rows": [
+   [
+    "Everton",
+    "3–1",
+    "Coventry"
+   ],
+   [
+    "Hamburg",
+    "3–1",
+    "Gladbach"
+   ],
+   [
+    "Toulouse",
+    "3–1",
+    "Strasbourg"
+   ],
+   [
+    "Venezia",
+    "2–1",
+    "Udinese"
+   ],
+   [
+    "Sevilla",
+    "0–0",
+    "Alavés"
+   ]
+  ],
+  "sub": "Premier League, Bundesliga, Ligue 1, Serie A and LaLiga · full time",
+  "caption": "🌍 Friday night football, all wrapped up.\n\nThierno Barry scored twice as Everton came from behind to beat Coventry 3–1 and climb to 5th. Hamburg beat 10-man Gladbach 3–1, and Sevilla missed a penalty in a 0–0 with Alavés.\n\nWhich result surprised you most? 👇\n\n#PremierLeague #Bundesliga #LaLiga #Football"
+ },
+ {
+  "id": "02-celtics-hornets",
+  "time": "2026-11-07T11:50:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA CUP · CHARLOTTE",
+  "home": "Hornets",
+  "homeAbbr": "CHA",
+  "homeScore": 80,
+  "away": "Celtics",
+  "awayAbbr": "BOS",
+  "awayScore": 119,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+  "venue": "Spectrum Center",
+  "headline": "Tatum: 34 points, 9 assists, 8 rebounds",
+  "sub": "Boston hit 17 of 31 threes in the first half and led by 31 at the break.",
+  "caption": "☘️ That got out of hand fast.\n\nJayson Tatum had 34 points, nine assists and eight rebounds as the Celtics crushed the Hornets 119–80. Boston have won seven of their last eight; Charlotte have lost six straight.\n\nAre the Celtics back to being East favourites? 👇\n\n#Celtics #NBA #NBACup"
+ },
+ {
+  "id": "03-toulouse-reyna",
+  "time": "2026-11-07T13:30:00",
+  "sport": "football",
+  "league": "ligue1",
+  "kind": "score",
+  "label": "LIGUE 1 · TOULOUSE",
+  "home": "Toulouse",
+  "homeAbbr": "TFC",
+  "homeScore": 3,
+  "away": "Strasbourg",
+  "awayAbbr": "RCS",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
+  "venue": "Stadium Municipal de Toulouse",
+  "headline": "Two Americans on the scoresheet",
+  "sub": "Mark McKenzie headed in Toulouse's second; Gio Reyna pulled one back for Strasbourg.",
+  "caption": "🇺🇸 A good night for the USMNT lads in France.\n\nMark McKenzie scored a header for Toulouse and Gio Reyna netted for Strasbourg, but it was Toulouse who won 3–1.\n\nShould both be in the next USMNT squad? 👇\n\n#Ligue1 #USMNT #Toulouse"
+ },
+ {
+  "id": "04-kaprizov-16",
+  "time": "2026-11-07T14:20:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · ST. PAUL",
+  "home": "Wild",
+  "homeAbbr": "MIN",
+  "homeScore": 4,
+  "away": "Sharks",
+  "awayAbbr": "SJ",
+  "awayScore": 1,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
+  "headline": "Kaprizov: 1 goal, 3 assists",
+  "sub": "His 16th goal leads the NHL. Minnesota are 6-0-1 in their last seven and top of the West.",
+  "caption": "🔥 Kirill Kaprizov is on one.\n\nA goal and three assists in a 4–1 win over the Sharks. That's an NHL-leading 16 goals, and the Wild are top of the Western Conference with 27 points.\n\nIs Kaprizov the Hart Trophy favourite right now? 👇\n\n#mnwild #NHL #Kaprizov"
+ },
+ {
+  "id": "05-leeds-spurs",
+  "time": "2026-11-07T16:00:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "PREMIER LEAGUE · KICK-OFF 12:30 GMT",
+  "headline": "Leeds v Spurs at Elland Road",
+  "sub": "12th v 9th, one point apart. Leeds have drawn five of nine; Spurs have three wins, three draws, three defeats.",
+  "venue": "Elland Road",
+  "stat": [
+   "7:30am",
+   "ET kick-off"
+  ],
+  "caption": "⚪ Saturday starts at Elland Road.\n\nLeeds (11 pts) host Tottenham (12 pts) at 12:30 GMT / 7:30am ET. Only a point separates them in mid-table.\n\nYour prediction? 👇\n\n#LUFC #COYS #PremierLeague"
+ },
+ {
+  "id": "06-thunder-mitchell",
+  "time": "2026-11-07T17:40:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA CUP · MEMPHIS",
+  "home": "Grizzlies",
+  "homeAbbr": "MEM",
+  "homeScore": 97,
+  "away": "Thunder",
+  "awayAbbr": "OKC",
+  "awayScore": 128,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+  "venue": "FedExForum",
+  "headline": "Ajay Mitchell: career-high 35",
+  "sub": "SGA added 28. OKC have now beaten Memphis 16 times in a row.",
+  "caption": "⚡ Ajay Mitchell, take a bow.\n\nA career-high 35 points as the Thunder routed the Grizzlies 128–97. Shai Gilgeous-Alexander added 28, and that's 16 straight wins for OKC over Memphis.\n\nCan anyone stop the Thunder this season? 👇\n\n#ThunderUp #NBA #OKC"
+ },
+ {
+  "id": "07-arsenal-hull",
+  "time": "2026-11-07T18:30:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · SATURDAY",
+  "headline": "Leaders in action",
+  "rows": [
+   [
+    "1. Arsenal",
+    "24 pts",
+    "v Hull · 15:00"
+   ],
+   [
+    "2. Man City",
+    "21 pts",
+    "at Forest · 17:30"
+   ],
+   [
+    "3. Brighton",
+    "19 pts",
+    "v Brentford · Sun"
+   ]
+  ],
+  "sub": "Times GMT. Arsenal have won eight of their nine league games.",
+  "venue": "Emirates Stadium",
+  "caption": "🔴 Can Arsenal stretch the gap?\n\nThe leaders host promoted Hull at 15:00 GMT (10am ET), three points clear of Man City, who go to Forest at 17:30 GMT.\n\nWill the gap be 3 or 6 tonight? 👇\n\n#Arsenal #PremierLeague #ManCity"
+ },
+ {
+  "id": "08-mls-final-day",
+  "time": "2026-11-07T20:10:00",
+  "sport": "football",
+  "league": "mls",
+  "kind": "list",
+  "label": "MLS · FINAL DAY OF THE SEASON",
+  "headline": "The West race goes to the wire",
+  "rows": [
+   [
+    "7. LA Galaxy",
+    "44 pts",
+    "at Real Salt Lake"
+   ],
+   [
+    "8. Portland",
+    "43 pts",
+    "at Austin"
+   ],
+   [
+    "9. Colorado",
+    "43 pts",
+    "at Dallas"
+   ],
+   [
+    "10. Seattle",
+    "43 pts",
+    "v LAFC"
+   ],
+   [
+    "11. Real Salt Lake",
+    "42 pts",
+    "v LA Galaxy"
+   ],
+   [
+    "12. Minnesota",
+    "41 pts",
+    "v San Jose"
+   ]
+  ],
+  "sub": "Three points cover six teams chasing the last three playoff places. Western games 7pm ET.",
+  "caption": "🚨 It's the final day of the MLS regular season.\n\nIn the West, just three points separate six teams fighting for the last three playoff places. Seattle, Portland and Colorado are all on 43.\n\nWho misses out? 👇\n\n#MLS #Sounders #Timbers #Rapids"
+ },
+ {
+  "id": "09-seriea-top",
+  "time": "2026-11-07T21:50:00",
+  "sport": "football",
+  "league": "seriea",
+  "kind": "list",
+  "label": "SERIE A · THE TOP FIVE",
+  "headline": "Lazio lead, Napoli wait",
+  "rows": [
+   [
+    "1. Lazio",
+    "28 pts",
+    "at Napoli · Sun"
+   ],
+   [
+    "2. Inter",
+    "25 pts",
+    "v Como · Sun"
+   ],
+   [
+    "3. Roma",
+    "24 pts",
+    "v Sassuolo · tonight"
+   ],
+   [
+    "4. Como",
+    "23 pts",
+    "at Inter · Sun"
+   ],
+   [
+    "5. AC Milan",
+    "21 pts",
+    "at Genoa · Sun"
+   ]
+  ],
+  "sub": "Lazio are unbeaten after 10 games (W9 D1). Inter v Como is 2nd v 4th.",
+  "caption": "🦅 Unbeaten Lazio face their toughest test yet.\n\nThe Serie A leaders go to Napoli on Sunday, while second-placed Inter host Como in a 2nd v 4th clash. Roma can close the gap tonight against Sassuolo.\n\nWho's top after this weekend? 👇\n\n#SerieA #Lazio #Inter #Roma"
+ },
+ {
+  "id": "10-valencia-madrid",
+  "time": "2026-11-07T23:30:00",
+  "sport": "football",
+  "league": "laliga",
+  "kind": "headline",
+  "label": "LALIGA · TONIGHT 20:00 GMT",
+  "headline": "Real Madrid go to Mestalla",
+  "sub": "Real are 3rd on 27 points, three behind Barcelona. Valencia are 19th with nine points.",
+  "venue": "Mestalla Stadium",
+  "stat": [
+   "3pm",
+   "ET kick-off"
+  ],
+  "caption": "⚪ Real Madrid can't afford to slip tonight.\n\nThey visit 19th-placed Valencia at 20:00 GMT / 3pm ET, three points behind leaders Barcelona, who play Atlético on Sunday.\n\nComfortable win or Mestalla upset? 👇\n\n#RealMadrid #LaLiga #Valencia"
+ },
+ {
+  "id": "11-nba-saturday",
+  "time": "2026-11-08T01:10:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · SATURDAY (ALL ET)",
+  "headline": "Tonight in the NBA",
+  "rows": [
+   [
+    "5:00",
+    "Nuggets v Pacers",
+    "Mexico City"
+   ],
+   [
+    "7:30",
+    "Nets at Hawks",
+    ""
+   ],
+   [
+    "8:00",
+    "Knicks at Cavaliers",
+    ""
+   ],
+   [
+    "8:00",
+    "Wizards at Thunder",
+    ""
+   ],
+   [
+    "8:30",
+    "Magic at Warriors",
+    ""
+   ],
+   [
+    "9:00",
+    "Rockets at Suns",
+    ""
+   ],
+   [
+    "10:00",
+    "Spurs at Blazers",
+    ""
+   ]
+  ],
+  "sub": "Pacers host the Nuggets at Arena CDMX.",
+  "caption": "🏀 Seven games tonight, starting in Mexico City.\n\nThe Pacers host the Nuggets at Arena CDMX at 5pm ET, and Spurs (6-2) v Blazers (6-1) closes the night at 10pm ET.\n\nWhich game are you watching? 👇\n\n#NBA #NBAMexicoCity #Spurs"
+ },
+ {
+  "id": "12-ufc-preview",
+  "time": "2026-11-08T02:50:00",
+  "sport": "mma",
+  "league": "ufc",
+  "kind": "headline",
+  "label": "UFC FIGHT NIGHT · LAS VEGAS",
+  "headline": "Cortés-Acosta v Walker tonight",
+  "sub": "Heavyweight main event at the Meta APEX. Waldo Cortés-Acosta (17-4) meets Johnny Walker (23-10).",
+  "stat": [
+   "5 rds",
+   "main event"
+  ],
+  "caption": "🥊 Heavyweights headline in Vegas tonight.\n\nWaldo Cortés-Acosta (17-4) takes on Johnny Walker (23-10) over five rounds at the Meta APEX.\n\nWho gets his hand raised? 👇\n\n#UFC #UFCVegas #MMA"
+ },
+ {
+  "id": "13-nhl-saturday",
+  "time": "2026-11-08T04:30:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "list",
+  "label": "NHL · SATURDAY NIGHT (ALL ET)",
+  "headline": "Tonight's best NHL games",
+  "rows": [
+   [
+    "7:00",
+    "Canadiens at Maple Leafs",
+    ""
+   ],
+   [
+    "7:00",
+    "Devils at Islanders",
+    ""
+   ],
+   [
+    "8:00",
+    "Lightning at Wild",
+    ""
+   ],
+   [
+    "8:00",
+    "Blackhawks at Hurricanes",
+    ""
+   ],
+   [
+    "10:00",
+    "Canucks at Oilers",
+    ""
+   ]
+  ],
+  "sub": "Montreal (10-3-3) at Toronto (8-7-2) leads off; the West-leading Wild host Tampa Bay (10-3-2).",
+  "caption": "🏒 Saturday night hockey.\n\nCanadiens at Maple Leafs leads off at 7pm ET, and the Wild, top of the West, host the Lightning at 8pm ET.\n\nHabs or Leafs tonight? 👇\n\n#NHL #GoHabsGo #LeafsForever"
+ },
+ {
+  "id": "14-nfl-best",
+  "time": "2026-11-08T06:30:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "NFL · BEST RECORDS BEFORE WEEK 9 SUNDAY",
+  "headline": "The NFL's top teams",
+  "rows": [
+   [
+    "49ers",
+    "6-1",
+    "v Raiders"
+   ],
+   [
+    "Vikings",
+    "6-1",
+    ""
+   ],
+   [
+    "Bills",
+    "6-1",
+    ""
+   ],
+   [
+    "Bears",
+    "6-2",
+    "v Buccaneers"
+   ],
+   [
+    "Broncos",
+    "6-2",
+    "at Panthers"
+   ],
+   [
+    "Steelers",
+    "6-2",
+    ""
+   ],
+   [
+    "Jaguars",
+    "6-2",
+    ""
+   ]
+  ],
+  "sub": "Seven teams have six wins. The Chargers are the NFL's only winless team at 0-7.",
+  "caption": "🏈 The race at the top is crowded.\n\nThe 49ers, Vikings and Bills are 6-1, with four more teams at 6-2. On Sunday the 49ers host the Raiders and the Bears host the Bucs on Sunday Night Football.\n\nWho's the best team in football right now? 👇\n\n#NFL #49ers #Bills #DaBears"
+ },
+ {
+  "id": "15-pl-sunday",
+  "time": "2026-11-08T07:30:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · SUNDAY (GMT)",
+  "headline": "Sunday's five games",
+  "rows": [
+   [
+    "14:00",
+    "Brighton v Brentford",
+    ""
+   ],
+   [
+    "14:00",
+    "Crystal Palace v Liverpool",
+    ""
+   ],
+   [
+    "14:00",
+    "Ipswich v Bournemouth",
+    ""
+   ],
+   [
+    "14:00",
+    "Sunderland v Chelsea",
+    ""
+   ],
+   [
+    "16:30",
+    "Man United v Aston Villa",
+    ""
+   ]
+  ],
+  "sub": "Man United are 17th with seven points from nine games.",
+  "caption": "🔴 Five Premier League games today.\n\nLiverpool go to Crystal Palace at 14:00 GMT (9am ET), and Man United, 17th with one win in nine, host Aston Villa at 16:30 GMT.\n\nWhich game are you watching? 👇\n\n#PremierLeague #MUFC #LFC #CFC"
+ }
+]
