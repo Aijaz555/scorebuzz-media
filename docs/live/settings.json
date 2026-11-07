@@ -26,15 +26,10 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "2": {
-   "league": "ncaaf",
-   "event": "401856849",
-   "note": "BYU Cougars vs Utah Utes, 2026-11-07T17:00:00Z"
-  },
-  "3": {
-   "league": "nhl",
-   "event": "401892663",
-   "note": "St. Louis Blues vs Nashville Predators, 2026-11-07T18:00:00Z"
+  "1": {
+   "league": "mls",
+   "event": "761941",
+   "note": "Philadelphia Union vs Toronto FC, 2026-11-07T21:00:00Z"
   },
   "4": {
    "league": "ncaaf",
@@ -42,9 +37,9 @@
    "note": "Alabama Crimson Tide vs LSU Tigers, 2026-11-07T20:30:00Z"
   },
   "5": {
-   "league": "ligue1",
-   "event": "401876411",
-   "note": "AJ Auxerre vs Paris FC, 2026-11-07T18:00:00Z"
+   "league": "nba",
+   "event": "401909938",
+   "note": "Denver Nuggets vs Indiana Pacers, 2026-11-07T22:00:00Z"
   },
   "6": {
    "league": "laliga",
@@ -52,9 +47,9 @@
    "note": "Valencia vs Real Madrid, 2026-11-07T20:00:00Z"
   },
   "7": {
-   "league": "mls",
-   "event": "761941",
-   "note": "Philadelphia Union vs Toronto FC, 2026-11-07T21:00:00Z"
+   "league": "nhl",
+   "event": "401892664",
+   "note": "New York Rangers vs Seattle Kraken, 2026-11-07T22:00:00Z"
   },
   "8": {
    "league": "ncaaf",
@@ -66,10 +61,10 @@
    "event": "401858512",
    "note": "UCLA Bruins vs Minnesota Golden Gophers, 2026-11-07T17:00:00Z"
   },
-  "10": {
-   "league": "nhl",
-   "event": "401892662",
-   "note": "Florida Panthers vs Washington Capitals, 2026-11-07T17:30:00Z"
+  "11": {
+   "league": "mls",
+   "event": "761934",
+   "note": "CF Montréal vs Vancouver Whitecaps, 2026-11-07T21:00:00Z"
   },
   "12": {
    "league": "seriea",
@@ -83,35 +78,30 @@
   },
   "14": {
    "league": "mls",
-   "event": "761934",
-   "note": "CF Montréal vs Vancouver Whitecaps, 2026-11-07T21:00:00Z"
-  },
-  "15": {
-   "league": "mls",
    "event": "761935",
    "note": "Chicago Fire FC vs Columbus Crew, 2026-11-07T21:00:00Z"
   },
-  "16": {
+  "15": {
    "league": "mls",
    "event": "761936",
    "note": "D.C. United vs New York City FC, 2026-11-07T21:00:00Z"
   },
-  "17": {
+  "16": {
    "league": "mls",
    "event": "761937",
    "note": "FC Cincinnati vs Nashville SC, 2026-11-07T21:00:00Z"
   },
-  "18": {
+  "17": {
    "league": "mls",
    "event": "761938",
    "note": "Inter Miami CF vs Charlotte FC, 2026-11-07T21:00:00Z"
   },
-  "19": {
+  "18": {
    "league": "mls",
    "event": "761940",
    "note": "Orlando City SC vs New England Revolution, 2026-11-07T21:00:00Z"
   },
-  "20": {
+  "19": {
    "league": "mls",
    "event": "761939",
    "note": "Red Bull New York vs Atlanta United FC, 2026-11-07T21:00:00Z"
