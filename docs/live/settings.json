@@ -26,15 +26,15 @@
  "top25": 15,
  "pin": null,
  "slots": {
+  "1": {
+   "league": "nfl",
+   "event": "401873046",
+   "note": "Houston Texans vs Los Angeles Chargers, 2026-11-08T21:05:00Z"
+  },
   "2": {
    "league": "nfl",
    "event": "401873040",
    "note": "Dallas Cowboys vs Indianapolis Colts, 2026-11-08T18:00:00Z"
-  },
-  "3": {
-   "league": "laliga",
-   "event": "401882815",
-   "note": "Celta Vigo vs Levante, 2026-11-08T17:30:00Z"
   },
   "4": {
    "league": "nfl",
@@ -76,15 +76,10 @@
    "event": "401873041",
    "note": "Denver Broncos vs Carolina Panthers, 2026-11-08T18:00:00Z"
   },
-  "12": {
-   "league": "laliga",
-   "event": "401882807",
-   "note": "Villarreal vs Getafe, 2026-11-08T17:30:00Z"
-  },
   "13": {
-   "league": "seriea",
-   "event": "401874808",
-   "note": "Internazionale vs Como, 2026-11-08T17:00:00Z"
+   "league": "nfl",
+   "event": "401873049",
+   "note": "Green Bay Packers vs New England Patriots, 2026-11-08T21:25:00Z"
   },
   "14": {
    "league": "nhl",
@@ -92,6 +87,16 @@
    "note": "Vegas Golden Knights vs Buffalo Sabres, 2026-11-08T20:30:00Z"
   },
   "15": {
+   "league": "nfl",
+   "event": "401873047",
+   "note": "Las Vegas Raiders vs San Francisco 49ers, 2026-11-08T21:25:00Z"
+  },
+  "16": {
+   "league": "nfl",
+   "event": "401873048",
+   "note": "Arizona Cardinals vs Seattle Seahawks, 2026-11-08T21:25:00Z"
+  },
+  "17": {
    "league": "laliga",
    "event": "401882816",
    "note": "Atlético Madrid vs Barcelona, 2026-11-08T20:00:00Z"
