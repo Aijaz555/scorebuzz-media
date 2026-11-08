@@ -595,5 +595,15 @@
   "status": "ok",
   "reason": "ok (contrast 42)",
   "at": "2026-11-08T19:49:44+00:00"
+ },
+ "401875003": {
+  "slot": "18",
+  "league": "seriea",
+  "game": "Fiorentina v Juventus",
+  "url": "https://scorebuzz.net/football/serie-a/fiorentina-vs-juventus-401875003/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-08T19:57:57+00:00"
  }
 }
