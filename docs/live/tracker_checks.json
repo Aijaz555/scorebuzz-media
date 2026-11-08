@@ -406,16 +406,6 @@
   "reason": "ok (contrast 41)",
   "at": "2026-11-08T15:47:04+00:00"
  },
- "401882810": {
-  "slot": "2",
-  "league": "laliga",
-  "game": "Real Sociedad v Rayo",
-  "url": "https://scorebuzz.net/football/la-liga/real-sociedad-vs-rayo-401882810/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 47)",
-  "at": "2026-11-08T16:02:29+00:00"
- },
  "401873038": {
   "slot": "7",
   "league": "nfl",
@@ -465,5 +455,25 @@
   "status": "ok",
   "reason": "ok (contrast 47)",
   "at": "2026-11-08T16:18:51+00:00"
+ },
+ "401879240": {
+  "slot": "1",
+  "league": "epl",
+  "game": "Man Utd v Aston Villa",
+  "url": "https://scorebuzz.net/football/english-premier-league/man-utd-vs-aston-villa-401879240/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "no tracker card on the match page",
+  "at": "2026-11-08T16:36:38+00:00"
+ },
+ "401882810": {
+  "slot": "2",
+  "league": "laliga",
+  "game": "Real Sociedad v Rayo",
+  "url": "https://scorebuzz.net/football/la-liga/real-sociedad-vs-rayo-401882810/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T16:36:41+00:00"
  }
 }
