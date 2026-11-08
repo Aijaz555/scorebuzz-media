@@ -33,9 +33,9 @@
    "sbtrk": 0
   },
   "2": {
-   "league": "laliga",
-   "event": "401882810",
-   "note": "Real Sociedad vs Rayo Vallecano, 2026-11-08T15:15:00Z"
+   "league": "nfl",
+   "event": "401873040",
+   "note": "Dallas Cowboys vs Indianapolis Colts, 2026-11-08T18:00:00Z"
   },
   "3": {
    "league": "laliga",
@@ -44,43 +44,38 @@
   },
   "4": {
    "league": "nfl",
-   "event": "401873040",
-   "note": "Dallas Cowboys vs Indianapolis Colts, 2026-11-08T18:00:00Z"
-  },
-  "5": {
-   "league": "nfl",
    "event": "401873045",
    "note": "New York Jets vs Kansas City Chiefs, 2026-11-08T18:00:00Z"
   },
-  "6": {
+  "5": {
    "league": "nfl",
    "event": "401873044",
    "note": "New York Giants vs Philadelphia Eagles, 2026-11-08T18:00:00Z"
   },
-  "7": {
-   "league": "nfl",
-   "event": "401873038",
-   "note": "Cincinnati Bengals vs Atlanta Falcons, 2026-11-08T14:30:00Z"
-  },
-  "8": {
+  "6": {
    "league": "nhl",
    "event": "401892674",
    "note": "Florida Panthers vs Boston Bruins, 2026-11-08T18:00:00Z"
   },
-  "9": {
+  "8": {
    "league": "nfl",
    "event": "401873042",
    "note": "Detroit Lions vs Miami Dolphins, 2026-11-08T18:00:00Z"
   },
-  "10": {
+  "9": {
    "league": "nfl",
    "event": "401873039",
    "note": "Cleveland Browns vs New Orleans Saints, 2026-11-08T18:00:00Z"
   },
-  "11": {
+  "10": {
    "league": "nfl",
    "event": "401873043",
    "note": "Los Angeles Rams vs Washington Commanders, 2026-11-08T18:00:00Z"
+  },
+  "11": {
+   "league": "nfl",
+   "event": "401873041",
+   "note": "Denver Broncos vs Carolina Panthers, 2026-11-08T18:00:00Z"
   },
   "12": {
    "league": "laliga",
@@ -113,9 +108,14 @@
    "note": "Le Mans vs AS Monaco, 2026-11-08T16:15:00Z"
   },
   "18": {
-   "league": "nfl",
-   "event": "401873041",
-   "note": "Denver Broncos vs Carolina Panthers, 2026-11-08T18:00:00Z"
+   "league": "seriea",
+   "event": "401875003",
+   "note": "Fiorentina vs Juventus, 2026-11-08T19:45:00Z"
+  },
+  "19": {
+   "league": "ligue1",
+   "event": "401876404",
+   "note": "Lens vs Marseille, 2026-11-08T19:45:00Z"
   }
  },
  "fit": {
