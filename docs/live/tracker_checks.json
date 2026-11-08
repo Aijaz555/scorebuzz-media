@@ -506,96 +506,6 @@
   "reason": "ok (contrast 46)",
   "at": "2026-11-08T19:22:13+00:00"
  },
- "401873040": {
-  "slot": "2",
-  "league": "nfl",
-  "game": "Colts v Cowboys",
-  "url": "https://scorebuzz.net/american-football/nfl/colts-vs-cowboys-401873040/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-08T19:49:21+00:00"
- },
- "401873045": {
-  "slot": "4",
-  "league": "nfl",
-  "game": "Chiefs v Jets",
-  "url": "https://scorebuzz.net/american-football/nfl/chiefs-vs-jets-401873045/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-08T19:49:23+00:00"
- },
- "401873044": {
-  "slot": "5",
-  "league": "nfl",
-  "game": "Eagles v Giants",
-  "url": "https://scorebuzz.net/american-football/nfl/eagles-vs-giants-401873044/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-08T19:49:26+00:00"
- },
- "401892674": {
-  "slot": "6",
-  "league": "nhl",
-  "game": "Bruins v Panthers",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/bruins-vs-panthers-401892674/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-08T19:49:29+00:00"
- },
- "401873042": {
-  "slot": "8",
-  "league": "nfl",
-  "game": "Dolphins v Lions",
-  "url": "https://scorebuzz.net/american-football/nfl/dolphins-vs-lions-401873042/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-08T19:49:32+00:00"
- },
- "401873039": {
-  "slot": "9",
-  "league": "nfl",
-  "game": "Saints v Browns",
-  "url": "https://scorebuzz.net/american-football/nfl/saints-vs-browns-401873039/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 50)",
-  "at": "2026-11-08T19:49:35+00:00"
- },
- "401873043": {
-  "slot": "10",
-  "league": "nfl",
-  "game": "Commanders v Rams",
-  "url": "https://scorebuzz.net/american-football/nfl/commanders-vs-rams-401873043/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-08T19:49:38+00:00"
- },
- "401873041": {
-  "slot": "11",
-  "league": "nfl",
-  "game": "Panthers v Broncos",
-  "url": "https://scorebuzz.net/american-football/nfl/panthers-vs-broncos-401873041/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-08T19:49:41+00:00"
- },
- "401876404": {
-  "slot": "19",
-  "league": "ligue1",
-  "game": "Lens v Marseille",
-  "url": "https://scorebuzz.net/football/ligue-1/lens-vs-marseille-401876404/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-08T19:49:44+00:00"
- },
  "401875003": {
   "slot": "18",
   "league": "seriea",
@@ -615,5 +525,95 @@
   "status": "ok",
   "reason": "ok (contrast 44)",
   "at": "2026-11-08T20:06:05+00:00"
+ },
+ "401873040": {
+  "slot": "2",
+  "league": "nfl",
+  "game": "Colts v Cowboys",
+  "url": "https://scorebuzz.net/american-football/nfl/colts-vs-cowboys-401873040/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T20:27:42+00:00"
+ },
+ "401873045": {
+  "slot": "4",
+  "league": "nfl",
+  "game": "Chiefs v Jets",
+  "url": "https://scorebuzz.net/american-football/nfl/chiefs-vs-jets-401873045/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-08T20:27:45+00:00"
+ },
+ "401873044": {
+  "slot": "5",
+  "league": "nfl",
+  "game": "Eagles v Giants",
+  "url": "https://scorebuzz.net/american-football/nfl/eagles-vs-giants-401873044/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T20:27:48+00:00"
+ },
+ "401892674": {
+  "slot": "6",
+  "league": "nhl",
+  "game": "Bruins v Panthers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/bruins-vs-panthers-401892674/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 89)",
+  "at": "2026-11-08T20:27:51+00:00"
+ },
+ "401873042": {
+  "slot": "8",
+  "league": "nfl",
+  "game": "Dolphins v Lions",
+  "url": "https://scorebuzz.net/american-football/nfl/dolphins-vs-lions-401873042/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-08T20:27:54+00:00"
+ },
+ "401873039": {
+  "slot": "9",
+  "league": "nfl",
+  "game": "Saints v Browns",
+  "url": "https://scorebuzz.net/american-football/nfl/saints-vs-browns-401873039/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 51)",
+  "at": "2026-11-08T20:27:57+00:00"
+ },
+ "401873043": {
+  "slot": "10",
+  "league": "nfl",
+  "game": "Commanders v Rams",
+  "url": "https://scorebuzz.net/american-football/nfl/commanders-vs-rams-401873043/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T20:28:00+00:00"
+ },
+ "401873041": {
+  "slot": "11",
+  "league": "nfl",
+  "game": "Panthers v Broncos",
+  "url": "https://scorebuzz.net/american-football/nfl/panthers-vs-broncos-401873041/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T20:28:03+00:00"
+ },
+ "401876404": {
+  "slot": "19",
+  "league": "ligue1",
+  "game": "Lens v Marseille",
+  "url": "https://scorebuzz.net/football/ligue-1/lens-vs-marseille-401876404/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T20:28:06+00:00"
  }
 }
