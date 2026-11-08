@@ -5,6 +5,7 @@
 //
 // Options:
 //   --league   nba | nfl | nhl | ncaaf | mlb | epl | ucl | laliga | seriea | bundesliga | mls
+//              | cricket:<ESPN cricket league id>  (e.g. --league cricket:8616 --event 1558437; uses docs/live/cricket.html)
 //   --event    ESPN event id (list them with games.js)
 //   --key      YouTube stream key (YouTube Studio > Go live > Stream). Or set YT_STREAM_KEY.
 //   --rtmp     ingest URL, default rtmp://a.rtmp.youtube.com/live2
@@ -55,7 +56,9 @@ if (!league || !event || (!key && !fbKey && !out)) {
     xvfb = spawn('Xvfb', [display, '-screen', '0', '1920x1080x24', '-nolisten', 'tcp'], { stdio: 'ignore' });
     await new Promise((r) => setTimeout(r, 1500));
   }
-  const url = `http://127.0.0.1:${port}/?league=${league}&event=${event}${TRK ? '&trk=' + encodeURIComponent(TRK) : ''}`;
+  const url = league.startsWith('cricket')
+    ? `http://127.0.0.1:${port}/cricket?league=${league.split(':')[1] || ''}&event=${event}`
+    : `http://127.0.0.1:${port}/?league=${league}&event=${event}${TRK ? '&trk=' + encodeURIComponent(TRK) : ''}`;
   let browser, page;
   if (SMOOTH) {
     // --app opens a bare window (no tabs or address bar); with no window manager it fills the virtual screen

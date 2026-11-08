@@ -248,3 +248,21 @@ Only runs when `"thumbs": true` in `docs/live/settings.json` (so the hourly mana
   (`location.replace('dark.html?slot=N…')`) and dark.html hands back when the slot's league isn't listed. Web-layer URLs stay as they are.
 - Football (NFL / college) in the main overlay keeps the field in the centre during play (no rotation to stats / win probability).
 - Play-by-play rows wrap to two lines (3 plays) so sentences are readable.
+
+## Cricket (owner's request, 8 Nov 2026)
+
+`docs/live/cricket.html` is a separate 1920x1080 live-score page for cricket (score only, no footage), in the dark
+broadcast style. It reads ESPN's public cricket JSON from the browser (`/apis/site/v2/sports/cricket/<league>/summary`,
+`/playbyplay` and `/scorepanel`; CORS is open), so it also works on GitHub Pages or as an OBS Browser Source.
+
+- Open: `cricket.html?league=<ESPN cricket league id>&event=<id>` (e.g. Asia U19 Cup = league `8616`), or
+  `cricket.html?teams=IND19,PAK19` to pick that match from ESPN's score panel (live first). `?fit=fill` scales to the window.
+- Find ids: `https://site.api.espn.com/apis/site/v2/sports/cricket/scorepanel` lists every match with its league id and event id.
+- Panels: big score with overs/CRR/RRR and the chase equation ("PAK19 need 132 off 188 balls", or the result), both teams'
+  innings, batters (R B 4s 6s SR), bowlers (O M R W Econ), partnership, last wicket, last 5 overs, extras, toss,
+  this over (ball chips), a run worm for both innings with wicket dots and the target line, ball-by-ball commentary,
+  FOUR / SIX / WICKET pop-ups, and a ticker of other matches. Pre-match shows the start time (GMT) and toss.
+- Stream: `node tools/live/stream.js --league cricket:8616 --event 1558437 --key <stream key>` (served at `/cricket` by `server.js`;
+  the stream ends 20 min after the result like other sports).
+- Flags/logos are ESPN's `team.logo`; team colours are approximate national colours (colours only).
+- The daily-posts playbook still excludes cricket for the US/UK feed; this page is for live-score streams the owner chooses to run.

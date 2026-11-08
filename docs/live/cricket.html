@@ -1,0 +1,282 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ScoreBuzz live cricket</title>
+<!-- ScoreBuzz live CRICKET tracker (owner's request, 8 Nov 2026): a 1920x1080 live-score page in the dark broadcast style,
+     for YouTube/Facebook live-score streams (score only, no match footage). Reads ESPN's public cricket JSON straight from the
+     browser (CORS is open), so it works on GitHub Pages, in OBS as a Browser Source, or via tools/live/stream.js --league cricket.
+     Usage:  cricket.html?league=<ESPN cricket league id>&event=<ESPN event id>      e.g. ?league=8616&event=1558437
+             cricket.html?teams=IND19,PAK19       finds that match on ESPN's cricket score panel (live first, then next/last)
+     Panels: big score + chase equation (need X off Y, CRR/RRR), batters, bowlers, partnership + last wicket, this over,
+     run worm for both innings with wicket dots, ball-by-ball commentary, FOUR/SIX/WICKET pop-ups, ticker of other matches.
+     Team flags/logos come from ESPN's CDN (team.logo); if one fails, the abbreviation is shown. ?fit=fill scales to the window. -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1326;--panel:#121f3dcc;--line:#263457;--ink:#f3f6ff;--mute:#9aa7c7;--gold:#f2c14e;--lime:#c6f432;--red:#e5484d;--hc:#1f6fd6;--ac:#0f8a43}
+*{margin:0;padding:0;box-sizing:border-box}
+html{overflow:hidden;background:var(--navy)}body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:relative;background:var(--navy);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif}
+#bg{position:absolute;inset:0;background:radial-gradient(900px 700px at 6% 25%,color-mix(in srgb,var(--hc) 50%,transparent),transparent 70%),radial-gradient(900px 700px at 94% 25%,color-mix(in srgb,var(--ac) 50%,transparent),transparent 70%),linear-gradient(180deg,#0d1730 0%,#0a1124 55%,#070d1c 100%)}
+.wrap{position:absolute;inset:0;padding:24px 44px 12px;display:flex;flex-direction:column;gap:14px}
+header{position:relative;display:flex;align-items:center;justify-content:center;height:58px;flex:none;white-space:nowrap}
+.brand{position:absolute;left:0;font-size:38px;font-weight:900;letter-spacing:-1px}.brand b{color:var(--lime)}
+.title{font-size:26px;font-weight:900;letter-spacing:5px;text-transform:uppercase;max-width:1150px;overflow:hidden;text-overflow:ellipsis}.title b{color:var(--gold)}
+.right{position:absolute;right:0;display:flex;align-items:center;gap:16px;font-size:20px;color:var(--mute)}
+.live{background:var(--red);color:#fff;font-weight:900;font-size:22px;letter-spacing:4px;padding:10px 24px;border-radius:8px;display:flex;align-items:center;gap:12px}
+.live i{width:12px;height:12px;border-radius:50%;background:#fff;animation:bl 1.2s infinite}@keyframes bl{50%{opacity:.3}}
+.live.off{background:#ffffff22}.live.off i{display:none}
+.hero{display:grid;grid-template-columns:1fr 820px 1fr;align-items:center;height:290px;flex:none}
+.team{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.flag{width:140px;height:94px;border-radius:12px;overflow:hidden;display:grid;place-items:center;background:#ffffff14;box-shadow:0 10px 30px #0008;font-size:34px;font-weight:900}
+.flag img{width:100%;height:100%;object-fit:cover}
+.team .nm{font-size:36px;font-weight:900;letter-spacing:1px;text-transform:uppercase;line-height:1.05}
+.team .inn{font-size:30px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums}.team .inn small{font-size:20px;color:var(--mute);margin-left:8px}
+.team .bat{display:inline-block;font-size:15px;font-weight:900;letter-spacing:3px;background:var(--lime);color:#0b1326;padding:3px 12px;border-radius:999px}
+.mid{text-align:center}
+.mid .per{font-size:24px;font-weight:900;letter-spacing:7px;text-transform:uppercase;color:var(--gold)}
+.mid .sc{font-size:128px;font-weight:900;line-height:1;letter-spacing:-5px;font-variant-numeric:tabular-nums}
+.mid .sc span{color:var(--mute);font-size:70px;letter-spacing:-2px}
+.mid .ov{font-size:30px;font-weight:800;color:var(--ink);margin-top:2px}.mid .ov b{color:var(--gold)}
+.eq{margin-top:12px;display:inline-block;font-size:28px;font-weight:900;letter-spacing:1px;padding:8px 26px;border-radius:12px;background:#ffffff12;border:1px solid var(--line)}.eq b{color:var(--lime)}
+.row2{display:grid;grid-template-columns:600px 1fr 520px;gap:14px;flex:1;min-height:0}
+.col{display:flex;flex-direction:column;gap:14px;min-height:0;min-width:0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:12px 20px;overflow:hidden;min-height:0}
+.h{font-size:18px;font-weight:900;letter-spacing:5px;text-transform:uppercase;color:#c9d3f0;margin-bottom:6px;display:flex;justify-content:space-between}.h span{color:var(--mute);letter-spacing:2px}
+table{width:100%;border-collapse:collapse;font-size:26px;font-weight:800;font-variant-numeric:tabular-nums}
+th{font-size:16px;letter-spacing:2px;color:var(--mute);text-align:center;padding:2px 0 6px}th:first-child{text-align:left}
+td{text-align:center;padding:5px 0;border-top:1px solid #ffffff10}td:first-child{text-align:left;max-width:280px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+td.big{color:var(--gold);font-size:30px}td.x{color:var(--mute);font-size:22px}
+.strk:after{content:' *';color:var(--lime)}
+.kv{display:flex;justify-content:space-between;font-size:21px;font-weight:700;padding:3px 0;border-top:1px solid #ffffff10}.kv:first-of-type{border-top:0}.kv b{color:var(--gold)}.kv span{color:var(--mute)}
+.balls{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.b{min-width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:24px;font-weight:900;background:#ffffff16;border:2px solid #ffffff22;padding:0 8px}
+.b.f{background:#2f80ed;border-color:#2f80ed}.b.s{background:#9b51e0;border-color:#9b51e0}.b.w{background:var(--red);border-color:var(--red)}.b.e{background:#f2994a33;border-color:#f2994a;font-size:18px}.b.z{color:var(--mute)}
+#worm{width:100%;height:calc(100% - 30px);display:block}
+.legend{display:flex;gap:22px;font-size:16px;font-weight:800;letter-spacing:1px;color:var(--mute)}.legend i{display:inline-block;width:22px;height:6px;border-radius:3px;margin-right:8px;vertical-align:middle}
+.com{display:flex;flex-direction:column;gap:8px}
+.ci{display:grid;grid-template-columns:70px 52px 1fr;align-items:center;gap:12px;font-size:20px;font-weight:600;line-height:1.2}
+.ci .o{color:var(--mute);font-weight:800;font-variant-numeric:tabular-nums}.ci .b{min-width:46px;height:46px;font-size:19px}
+.ci .t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+footer{flex:none;height:56px;display:flex;align-items:center;gap:16px;background:#070d1ccc;border:1px solid var(--line);border-radius:12px;overflow:hidden;padding-right:12px}
+footer .lab{flex:none;background:var(--gold);color:#0b1326;font-weight:900;letter-spacing:3px;font-size:18px;padding:0 18px;height:100%;display:grid;place-items:center}
+.tick{flex:1;overflow:hidden;white-space:nowrap;position:relative;height:100%}
+.tick div{position:absolute;white-space:nowrap;top:50%;transform:translateY(-50%);font-size:21px;font-weight:700;animation:sc 80s linear infinite}
+.tick span{margin-right:60px}.tick b{color:var(--gold)}
+@keyframes sc{from{left:100%}to{left:-200%}}
+.sub{flex:none;background:#ff0033;color:#fff;font-weight:900;letter-spacing:2px;font-size:18px;padding:9px 18px;border-radius:8px}
+.site{flex:none;font-weight:900;color:var(--lime);font-size:20px}
+#pop{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%) scale(.6);opacity:0;pointer-events:none;font-size:170px;font-weight:900;letter-spacing:-4px;text-shadow:0 20px 60px #000c;transition:all .35s cubic-bezier(.2,1.4,.4,1);text-align:center;line-height:1}
+#pop small{display:block;font-size:40px;letter-spacing:4px;color:var(--ink);margin-top:10px}
+#pop.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.c4{color:#5aa7ff}.c6{color:#c08bff}.cw{color:#ff5a5f}
+.msg{position:absolute;inset:0;display:grid;place-items:center;font-size:30px;color:var(--mute)}
+</style></head><body>
+<div id="bg"></div>
+<div class="wrap">
+  <header><div class="brand">Score<b>Buzz</b></div><div class="title" id="title">Live cricket</div>
+    <div class="right"><span id="clock"></span><div class="live" id="live"><i></i>LIVE</div></div></header>
+  <section class="hero">
+    <div class="team" id="tA"></div>
+    <div class="mid"><div class="per" id="per"></div><div class="sc" id="sc">–</div><div class="ov" id="ov"></div><div class="eq" id="eq" style="display:none"></div></div>
+    <div class="team" id="tB"></div>
+  </section>
+  <section class="row2">
+    <div class="col">
+      <div class="panel"><div class="h">Batting <span id="pship"></span></div><table id="batT"></table></div>
+      <div class="panel"><div class="h">Bowling</div><table id="bowlT"></table></div>
+      <div class="panel" style="flex:1"><div class="h">Key numbers</div><div id="keys"></div></div>
+    </div>
+    <div class="col">
+      <div class="panel" style="flex:none"><div class="h">This over <span id="ovno"></span></div><div class="balls" id="thisOver"></div></div>
+      <div class="panel" style="flex:1"><div class="h">Run worm <span class="legend" id="leg"></span></div><svg id="worm" viewBox="0 0 700 330" preserveAspectRatio="none"></svg></div>
+    </div>
+    <div class="col">
+      <div class="panel" style="flex:1"><div class="h">Ball by ball</div><div class="com" id="com"></div></div>
+    </div>
+  </section>
+  <footer><div class="lab">CRICKET</div><div class="tick"><div id="tick">Loading other matches…</div></div><div class="site">scorebuzz.net</div><div class="sub">SUBSCRIBE 🔔</div></footer>
+</div>
+<div id="pop"></div>
+<script>
+const Q = new URLSearchParams(location.search);
+const API = 'https://site.api.espn.com/apis/site/v2/sports/cricket';
+let LEAGUE = Q.get('league'), EVENT = Q.get('event');
+const TEAMS = (Q.get('teams') || '').toUpperCase().split(',').filter(Boolean);
+// approximate national colours (colours only); falls back to the default blue/green
+const COLORS = { IND: '#1f6fd6', PAK: '#0f8a43', AUS: '#f2b705', ENG: '#1c3f94', NZ: '#222222', SA: '#007a4d', RSA: '#007a4d', SL: '#1a3a8f', BAN: '#006a4e', AFG: '#1660b5', WI: '#7b1e3a', ZIM: '#d40000', IRE: '#169b62', NEP: '#d0103a', UAE: '#00843d', USA: '#b22234', SCO: '#0065bd', NED: '#ff6f00', OMA: '#c8102e' };
+const colorOf = (ab) => { const k = String(ab || '').replace(/[^A-Z]/gi, '').toUpperCase().replace(/(U)?19$|W$|A$/, ''); return COLORS[k] || COLORS[k.slice(0, 3)] || null; };
+const esc = (s) => String(s ?? '').replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const J = async (u) => { const r = await fetch(u, { cache: 'no-store' }); if (!r.ok) throw new Error(r.status + ' ' + u); return r.json(); };
+const short = (n) => { const p = String(n || '').trim().split(/\s+/); return p.length > 1 ? p[0][0] + ' ' + p.slice(1).join(' ') : p[0] || ''; };
+
+function fit() { if (Q.get('fit') !== 'fill') return; const w = +(Q.get('w') || innerWidth), h = +(Q.get('h') || innerHeight); document.body.style.transform = `scale(${w / 1920},${h / 1080})`; }
+addEventListener('resize', fit); fit();
+
+async function findByTeams() {
+  const j = await J(`${API}/scorepanel`);
+  const evs = [];
+  for (const s of j.scores || []) for (const ev of s.events || []) evs.push({ ev, lg: s.leagues?.[0]?.id });
+  const ok = evs.filter(({ ev }) => TEAMS.every((t) => ev.competitions[0].competitors.some((c) => c.team.abbreviation.toUpperCase() === t)));
+  const rank = (e) => ({ in: 0, pre: 1, post: 2 }[e.ev.status.type.state] ?? 3);
+  ok.sort((a, b) => rank(a) - rank(b));
+  if (ok[0]) { LEAGUE = ok[0].lg; EVENT = ok[0].ev.id; }
+}
+
+// ---- ball-by-ball store (complete pages are cached; the last two are refetched every poll) ----
+const items = new Map(); let pageCount = 0;
+async function loadPbp() {
+  const first = await J(`${API}/${LEAGUE}/playbyplay?event=${EVENT}&page=${Math.max(1, pageCount - 1) || 1}`);
+  const pc = first.commentary?.pageCount || 0;
+  const want = [];
+  for (let p = pageCount ? Math.max(1, pageCount - 1) : 1; p <= pc; p++) want.push(p);
+  const pages = await Promise.all(want.map((p) => J(`${API}/${LEAGUE}/playbyplay?event=${EVENT}&page=${p}`).catch(() => null)));
+  for (const pg of [first, ...pages]) for (const it of pg?.commentary?.items || []) items.set(it.id, it);
+  pageCount = pc;
+}
+const sorted = () => [...items.values()].sort((a, b) => a.sequence - b.sequence);
+
+function chip(it) {
+  const t = it.playType?.description || '', d = it.dismissal?.dismissal;
+  if (d) return '<div class="b w">W</div>';
+  if (/six/i.test(t)) return '<div class="b s">6</div>';
+  if (/four/i.test(t)) return '<div class="b f">4</div>';
+  const txt = (it.shortText || '').toLowerCase();
+  if (/wide/.test(txt)) return `<div class="b e">${it.scoreValue > 1 ? it.scoreValue : ''}wd</div>`;
+  if (/no ball/.test(txt)) return `<div class="b e">nb</div>`;
+  if (/leg bye|byes?\b/.test(txt)) return `<div class="b e">${it.scoreValue}lb</div>`;
+  const r = it.scoreValue || 0; return `<div class="b ${r ? '' : 'z'}">${r ? r : '•'}</div>`;
+}
+const overStr = (it) => { const o = it.over || {}; return o.actual != null ? Number(o.actual).toFixed(1) : ''; };
+
+function teamHtml(c, inns, batting) {
+  const t = c.team, logo = t.logos?.[0]?.href || t.logo;
+  const flag = logo ? `<img src="${logo}" onerror="this.parentNode.textContent='${esc(t.abbreviation)}'">` : esc(t.abbreviation);
+  return `<div class="flag">${flag}</div><div class="nm">${esc(t.displayName)}</div><div class="inn">${inns || '&nbsp;'}</div>${batting ? '<div class="bat">BATTING</div>' : ''}`;
+}
+
+let lastSeq = 0, popT;
+function pop(html) { const p = document.getElementById('pop'); p.innerHTML = html; p.classList.add('on'); clearTimeout(popT); popT = setTimeout(() => p.classList.remove('on'), 3800); }
+
+function worm(all, comps) {
+  const svg = document.getElementById('worm'); const W = 700, H = 330, P = 34;
+  const inns = {}; for (const it of all) { const n = it.innings?.number || it.period; (inns[n] = inns[n] || []).push(it); }
+  const keys = Object.keys(inns).sort();
+  const lim = Math.max(...all.map((i) => i.over?.limit || 0), 20);
+  const maxR = Math.max(50, ...all.map((i) => i.innings?.runs || 0), ...all.map((i) => i.innings?.target || 0));
+  const x = (ov) => P + (ov / lim) * (W - P - 10), y = (r) => H - 24 - (r / (maxR * 1.08)) * (H - 40);
+  let g = '';
+  for (let k = 0; k <= lim; k += lim > 20 ? 10 : 5) g += `<line x1="${x(k)}" x2="${x(k)}" y1="8" y2="${H - 24}" stroke="#ffffff12"/><text x="${x(k)}" y="${H - 6}" fill="#9aa7c7" font-size="14" text-anchor="middle" font-weight="700">${k}</text>`;
+  for (let r = 0; r <= maxR; r += maxR > 250 ? 100 : 50) g += `<line x1="${P}" x2="${W - 10}" y1="${y(r)}" y2="${y(r)}" stroke="#ffffff10"/><text x="${P - 6}" y="${y(r) + 5}" fill="#9aa7c7" font-size="13" text-anchor="end" font-weight="700">${r}</text>`;
+  const tgt = all.find((i) => i.innings?.target)?.innings?.target;
+  if (tgt) g += `<line x1="${P}" x2="${W - 10}" y1="${y(tgt)}" y2="${y(tgt)}" stroke="#f2c14e" stroke-dasharray="6 6"/><text x="${W - 14}" y="${y(tgt) - 6}" fill="#f2c14e" font-size="14" text-anchor="end" font-weight="800">TARGET ${tgt}</text>`;
+  let leg = '';
+  keys.forEach((k) => {
+    const arr = inns[k], team = arr[arr.length - 1].team, col = colorOf(team?.abbreviation) || (k == 1 ? '#5aa7ff' : '#3ddc84');
+    const pts = [`${x(0)},${y(0)}`].concat(arr.map((i) => `${x(i.over?.unique != null ? (i.over.number - 1) + (i.over.ball || 0) / 6 : 0)},${y(i.innings?.runs || 0)}`));
+    g += `<polyline points="${pts.join(' ')}" fill="none" stroke="${col}" stroke-width="4" stroke-linejoin="round"/>`;
+    arr.filter((i) => i.dismissal?.dismissal).forEach((i) => { g += `<circle cx="${x((i.over.number - 1) + (i.over.ball || 0) / 6)}" cy="${y(i.innings?.runs || 0)}" r="7" fill="#e5484d" stroke="#fff" stroke-width="2"/>`; });
+    leg += `<span><i style="background:${col}"></i>${esc(team?.abbreviation || 'Inns ' + k)}</span>`;
+  });
+  svg.innerHTML = g; document.getElementById('leg').innerHTML = leg + '<span><i style="background:#e5484d;width:10px;height:10px;border-radius:50%"></i>WICKET</span>';
+}
+
+async function tick() {
+  try {
+    if (!EVENT && TEAMS.length) await findByTeams();
+    if (!EVENT) { document.getElementById('title').textContent = 'Add ?league=&event= or ?teams=IND19,PAK19'; return; }
+    const [sum] = await Promise.all([J(`${API}/${LEAGUE}/summary?event=${EVENT}`), loadPbp().catch(() => {})]);
+    const comp = sum.header.competitions[0], st = comp.status?.type || {};
+    const lgName = sum.header.league?.name || sum.leagues?.[0]?.name || '';
+    const [A, B] = comp.competitors;
+    document.documentElement.style.setProperty('--hc', colorOf(A.team.abbreviation) || '#1f6fd6');
+    document.documentElement.style.setProperty('--ac', colorOf(B.team.abbreviation) || '#0f8a43');
+    document.getElementById('title').innerHTML = `${esc(lgName)} <b>·</b> ${esc(A.team.abbreviation)} v ${esc(B.team.abbreviation)}`;
+    window.__state = st.state; const live = st.state === 'in'; const lv = document.getElementById('live');
+    lv.className = 'live' + (live ? '' : ' off'); lv.innerHTML = live ? '<i></i>LIVE' : (st.state === 'post' ? 'RESULT' : 'PRE-MATCH');
+    const all = sorted(), last = all[all.length - 1];
+    const batId = last?.team?.id;
+    const innsTxt = (c) => (c.linescores || []).filter((l) => l.runs || l.wickets || l.overs && l.isBatting !== false && (l.runs || l.wickets))
+      .map((l) => `${l.runs}${l.wickets < 10 ? '/' + l.wickets : ''}<small>${l.overs ? '(' + l.overs + ')' : ''}</small>`).join(' & ');
+    const liveInns = (c) => { if (!live || !last || batId !== c.team.id) return innsTxt(c);
+      const prev = (c.linescores || []).filter((l) => (l.runs || l.wickets) && l.period !== last.period).map((l) => `${l.runs}${l.wickets < 10 ? '/' + l.wickets : ''}`);
+      return [...prev, `${last.innings?.runs ?? 0}/${last.innings?.wickets ?? 0}<small>(${overStr(last)})</small>`].join(' & '); };
+    document.getElementById('tA').innerHTML = teamHtml(A, liveInns(A), live && batId === A.team.id);
+    document.getElementById('tB').innerHTML = teamHtml(B, liveInns(B), live && batId === B.team.id);
+    const venue = sum.gameInfo?.venue?.address?.city || '';
+    if (!last) {
+      const d = new Date(comp.date || sum.header.competitions[0].date);
+      document.getElementById('per').textContent = 'Starts';
+      document.getElementById('sc').textContent = d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' }) + ' GMT';
+      document.getElementById('ov').textContent = ((sum.notes || []).find((n) => n.type === 'toss')?.text || venue).replace(/\s+,/g, ',');
+      document.getElementById('com').innerHTML = '<div style="color:var(--mute);font-size:24px;padding-top:20px">Ball-by-ball starts with the first delivery.</div>';
+      return;
+    }
+    const I = last.innings || {}, O = last.over || {};
+    document.getElementById('per').textContent = (last.periodText || '') + (venue ? ' · ' + venue : '');
+    document.getElementById('sc').innerHTML = `${I.runs ?? 0}<span>/${I.wickets ?? 0}</span>`;
+    document.getElementById('ov').innerHTML = `<b>${overStr(last)}</b> overs${O.limit ? ' of ' + O.limit : ''} &nbsp;·&nbsp; CRR <b>${(I.runRate ?? 0).toFixed(2)}</b>${I.target && st.state !== 'post' ? ` &nbsp;·&nbsp; RRR <b>${(I.requiredRunRate ?? 0).toFixed(2)}</b>` : ''}`;
+    const eq = document.getElementById('eq');
+    const bat = last.team?.abbreviation || '';
+    if (st.state === 'post') { eq.style.display = ''; eq.innerHTML = esc(comp.status?.summary || st.detail || 'Result'); }
+    else if (I.target) { eq.style.display = ''; eq.innerHTML = `${esc(bat)} need <b>${I.remainingRuns}</b> off <b>${I.remainingBalls}</b> balls`; }
+    else if (O.limit && I.balls) { eq.style.display = ''; const proj = Math.round((I.runs / I.balls) * O.limit * 6); eq.innerHTML = `Projected score <b>${proj}</b> at CRR`; }
+    else eq.style.display = 'none';
+
+    // batters & bowlers (from the latest ball)
+    const bt = (x, strike) => x?.athlete?.displayName ? `<tr><td class="${strike ? 'strk' : ''}">${esc(x.athlete.displayName)}</td><td class="big">${x.totalRuns}</td><td>${x.faced}</td><td class="x">${x.fours}</td><td class="x">${x.sixes}</td><td class="x">${x.faced ? (x.totalRuns / x.faced * 100).toFixed(1) : '0.0'}</td></tr>` : '';
+    const outNow = last.dismissal?.dismissal;
+    document.getElementById('batT').innerHTML = `<tr><th>Batter</th><th>R</th><th>B</th><th>4s</th><th>6s</th><th>SR</th></tr>${outNow ? '' : bt(last.batsman, true)}${bt(last.otherBatsman, false)}`;
+    const bw = (x) => x?.athlete?.displayName ? `<tr><td>${esc(x.athlete.displayName)}</td><td>${x.overs}</td><td class="x">${x.maidens}</td><td>${x.conceded}</td><td class="big">${x.wickets}</td><td class="x">${x.balls ? (x.conceded / (x.balls / 6)).toFixed(2) : '–'}</td></tr>` : '';
+    document.getElementById('bowlT').innerHTML = `<tr><th>Bowler</th><th>O</th><th>M</th><th>R</th><th>W</th><th>ECON</th></tr>${bw(last.bowler)}${bw(last.otherBowler)}`;
+
+    // partnership, last wicket, extras
+    const cur = all.filter((i) => (i.innings?.number || i.period) === (I.number || last.period));
+    const lastW = [...cur].reverse().find((i) => i.dismissal?.dismissal);
+    const sinceW = lastW ? cur.slice(cur.indexOf(lastW) + 1) : cur;
+    const pRuns = (I.runs || 0) - (lastW?.innings?.runs || 0), pBalls = sinceW.length;
+    document.getElementById('pship').textContent = `Partnership ${pRuns} (${pBalls})`;
+    const lw = lastW ? `${esc(lastW.batsman?.athlete?.displayName)} ${lastW.batsman?.totalRuns} (${lastW.batsman?.faced}) · ${esc(lastW.dismissal?.text || lastW.dismissal?.type || 'out')}` : '–';
+    const last5 = cur.filter((i) => i.over && i.over.number > (O.number || 0) - 5);
+    const r5 = last5.length ? (I.runs || 0) - ((cur[cur.indexOf(last5[0]) - 1]?.innings?.runs) || 0) : 0;
+    const w5 = last5.filter((i) => i.dismissal?.dismissal).length;
+    const ex = (I.wides || 0) + (I.noBalls || 0) + (I.byes || 0) + (I.legByes || 0);
+    document.getElementById('keys').innerHTML =
+      `<div class="kv"><span>Last wicket</span><b style="max-width:330px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink)">${lw}</b></div>` +
+      `<div class="kv"><span>Last 5 overs</span><b>${r5}/${w5}</b></div>` +
+      (I.target ? `<div class="kv"><span>Target</span><b>${I.target}</b></div>` : '') +
+      `<div class="kv"><span>Extras</span><b>${ex}</b></div>` +
+      ((sum.notes || []).find((n) => n.type === 'toss') ? `<div class="kv"><span>Toss</span><b style="color:var(--ink);font-size:19px">${esc(sum.notes.find((n) => n.type === 'toss').text.replace(/\s+,/g, ','))}</b></div>` : '');
+
+    // this over
+    const thisOv = cur.filter((i) => i.over?.number === O.number);
+    document.getElementById('ovno').textContent = `Over ${O.number || ''} · ${esc(short(last.bowler?.athlete?.displayName))}`;
+    document.getElementById('thisOver').innerHTML = thisOv.map(chip).join('') || '<span style="color:var(--mute)">New over</span>';
+
+    // commentary
+    document.getElementById('com').innerHTML = [...all].reverse().slice(0, 10).map((i) =>
+      `<div class="ci"><span class="o">${overStr(i)}</span>${chip(i)}<span class="t">${esc(i.shortText)}</span></div>`).join('');
+
+    worm(all, comp.competitors);
+
+    // pop-ups for new boundaries / wickets
+    if (lastSeq && last.sequence > lastSeq) {
+      const t = last.playType?.description || '';
+      if (last.dismissal?.dismissal) pop(`<span class="cw">WICKET!</span><small>${esc(last.batsman?.athlete?.displayName)} ${last.batsman?.totalRuns} (${last.batsman?.faced})</small>`);
+      else if (/six/i.test(t)) pop(`<span class="c6">SIX!</span><small>${esc(last.batsman?.athlete?.displayName)}</small>`);
+      else if (/four/i.test(t)) pop(`<span class="c4">FOUR!</span><small>${esc(last.batsman?.athlete?.displayName)}</small>`);
+    }
+    lastSeq = last.sequence;
+  } catch (e) { console.error(e); }
+}
+
+async function ticker() {
+  try {
+    const j = await J(`${API}/scorepanel`); const out = [];
+    for (const s of j.scores || []) for (const ev of s.events || []) {
+      if (ev.id === EVENT) continue;
+      const c = ev.competitions[0]; const st = ev.status.type.state; if (st === 'pre') continue;
+      out.push(`<span><b>${esc(s.leagues?.[0]?.abbreviation || '')}</b> ${c.competitors.map((x) => `${esc(x.team.abbreviation)} ${esc(x.score || '')}`).join(' v ')}${st === 'in' ? ' · LIVE' : ''}</span>`);
+    }
+    document.getElementById('tick').innerHTML = out.slice(0, 18).join('') || 'Live cricket scores at scorebuzz.net';
+  } catch (e) {}
+}
+setInterval(() => { document.getElementById('clock').textContent = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' }) + ' GMT'; }, 1000);
+tick(); setInterval(tick, 8000); ticker(); setInterval(ticker, 120000);
+</script></body></html>
