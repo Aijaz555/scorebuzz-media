@@ -476,16 +476,6 @@
   "reason": "ok (contrast 44)",
   "at": "2026-11-08T17:38:12+00:00"
  },
- "401874808": {
-  "slot": "13",
-  "league": "seriea",
-  "game": "Inter Milan v Como",
-  "url": "https://scorebuzz.net/football/serie-a/inter-milan-vs-como-401874808/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 49)",
-  "at": "2026-11-08T17:46:22+00:00"
- },
  "401873040": {
   "slot": "2",
   "league": "nfl",
@@ -585,5 +575,15 @@
   "status": "ok",
   "reason": "ok (contrast 50)",
   "at": "2026-11-08T18:15:34+00:00"
+ },
+ "401874808": {
+  "slot": "13",
+  "league": "seriea",
+  "game": "Inter Milan v Como",
+  "url": "https://scorebuzz.net/football/serie-a/inter-milan-vs-como-401874808/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 47)",
+  "at": "2026-11-08T18:23:42+00:00"
  }
 }
