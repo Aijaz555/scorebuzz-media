@@ -266,3 +266,14 @@ broadcast style. It reads ESPN's public cricket JSON from the browser (`/apis/si
   the stream ends 20 min after the result like other sports).
 - Flags/logos are ESPN's `team.logo`; team colours are approximate national colours (colours only).
 - The daily-posts playbook still excludes cricket for the US/UK feed; this page is for live-score streams the owner chooses to run.
+
+## Stadium crowd audio (owner's request, 8 Nov 2026)
+- The owner wants stadium crowd ambience instead of music, sport by sport. Done so far: **soccer** (`music.playlists.soccer`:
+  ScoreBuzz Stadium Soccer A/B, 30 min each) and **cricket** (`music.playlists.cricket`: ScoreBuzz Stadium Cricket A), volume 6
+  (`music.volumes`). Other sports still use the Kevin MacLeod playlists until the owner supplies crowd recordings.
+- Mixes are built from Pixabay recordings the owner downloads (Pixabay Content License: commercial/YouTube use, no credit; not
+  allowed to redistribute the files on their own, so they are NOT committed here). Recipe: loudness-normalise each clip (-18 LUFS),
+  chain random 40-110 s sections of the long stadium beds with 5 s equal-power crossfades, overlay cheer clips every 1.5-3 min,
+  3 s fade at both ends, loudnorm -16 LUFS, MP3 160k, 30 min. Upload with livereacting_upload_file (needs
+  `*.r2.cloudflarestorage.com` allowed), then add title → file id to the sport's playlist. Titles start with "ScoreBuzz" so the
+  planner doesn't add a Kevin MacLeod credit.

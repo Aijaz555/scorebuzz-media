@@ -48,7 +48,7 @@
  },
  "reload": 22,
  "music": {
-  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals.",
+  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks \u2014 no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old.",
   "playlists": {
    "american_football": {
     "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
@@ -72,30 +72,8 @@
     "EDM Detection Mode": "6aecf07ca44fc7f985e42db5"
    },
    "soccer": {
-    "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
-    "Movement Proposition": "6aecebcca44fc7f985e3426d",
-    "Hitman": "6aecebfea44fc7f985e34cd7",
-    "Exhilarate": "6aecec2ea44fc7f985e353ba",
-    "Big Rock": "6aecec6ea44fc7f985e36052",
-    "Cut and Run": "6aecec8da44fc7f985e3676c",
-    "Raving Energy": "6aececada44fc7f985e36ce7",
-    "Malicious": "6aececcca44fc7f985e373d7",
-    "Hard Boiled": "6aecececa44fc7f985e37970",
-    "Ouroboros": "6aeced0ba44fc7f985e3805f",
-    "Heroic Age": "6aeced2aa44fc7f985e384c5",
-    "Killers": "6aeced49a44fc7f985e38ba3",
-    "Crusade": "6aeced69a44fc7f985e390e1",
-    "Fearless First": "6aeced88a44fc7f985e394fd",
-    "Severe Tire Damage": "6aeceda8a44fc7f985e39c4b",
-    "Rocket": "6aecedc7a44fc7f985e3a0ee",
-    "EDM Detection Mode": "6aecf07ca44fc7f985e42db5",
-    "Pamgaea": "6aecefa2a44fc7f985e40100",
-    "Inspired": "6aecefc1a44fc7f985e4083e",
-    "Shiny Tech": "6aeceee3a44fc7f985e3d901",
-    "ScoreBuzz Kickoff": "6aece7d0a44fc7f985e28087",
-    "ScoreBuzz Primetime": "6aece80ca44fc7f985e28b17",
-    "ScoreBuzz Stadium": "6aece863a44fc7f985e29b6f",
-    "ScoreBuzz Fourth Quarter": "6aece8d8a44fc7f985e2b019"
+    "ScoreBuzz Stadium Soccer A": "6af065e5f370b34507b78d51",
+    "ScoreBuzz Stadium Soccer B": "6af065e5f370b34507b78d5b"
    },
    "basketball": {
     "Funkorama": "6aecede7a44fc7f985e3a8f0",
@@ -161,6 +139,35 @@
     "Groove Grove": "6aecee26a44fc7f985e3b4de",
     "ScoreBuzz Primetime": "6aece80ca44fc7f985e28b17",
     "ScoreBuzz Stadium": "6aece863a44fc7f985e29b6f"
+   },
+   "soccer_music_old": {
+    "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
+    "Movement Proposition": "6aecebcca44fc7f985e3426d",
+    "Hitman": "6aecebfea44fc7f985e34cd7",
+    "Exhilarate": "6aecec2ea44fc7f985e353ba",
+    "Big Rock": "6aecec6ea44fc7f985e36052",
+    "Cut and Run": "6aecec8da44fc7f985e3676c",
+    "Raving Energy": "6aececada44fc7f985e36ce7",
+    "Malicious": "6aececcca44fc7f985e373d7",
+    "Hard Boiled": "6aecececa44fc7f985e37970",
+    "Ouroboros": "6aeced0ba44fc7f985e3805f",
+    "Heroic Age": "6aeced2aa44fc7f985e384c5",
+    "Killers": "6aeced49a44fc7f985e38ba3",
+    "Crusade": "6aeced69a44fc7f985e390e1",
+    "Fearless First": "6aeced88a44fc7f985e394fd",
+    "Severe Tire Damage": "6aeceda8a44fc7f985e39c4b",
+    "Rocket": "6aecedc7a44fc7f985e3a0ee",
+    "EDM Detection Mode": "6aecf07ca44fc7f985e42db5",
+    "Pamgaea": "6aecefa2a44fc7f985e40100",
+    "Inspired": "6aecefc1a44fc7f985e4083e",
+    "Shiny Tech": "6aeceee3a44fc7f985e3d901",
+    "ScoreBuzz Kickoff": "6aece7d0a44fc7f985e28087",
+    "ScoreBuzz Primetime": "6aece80ca44fc7f985e28b17",
+    "ScoreBuzz Stadium": "6aece863a44fc7f985e29b6f",
+    "ScoreBuzz Fourth Quarter": "6aece8d8a44fc7f985e2b019"
+   },
+   "cricket": {
+    "ScoreBuzz Stadium Cricket A": "6af065e6f370b34507b78d6a"
    }
   },
   "sports": {
@@ -169,7 +176,8 @@
    "nba": "basketball",
    "nhl": "hockey",
    "mlb": "baseball",
-   "soccer": "soccer"
+   "soccer": "soccer",
+   "cricket": "cricket"
   },
   "layers": {
    "1": "6aece926a44fc7f985e2be6a",
@@ -194,7 +202,11 @@
    "20": "6aeced46a44fc7f985e38b37",
    "main": "6aece93aa44fc7f985e2c4d1"
   },
-  "volume": 3
+  "volume": 3,
+  "volumes": {
+   "soccer": 6,
+   "cricket": 6
+  }
  },
  "thumbs": false,
  "dark": [
