@@ -48,20 +48,25 @@
   },
   "5": {
    "league": "nba",
-   "event": "401909947",
-   "note": "Utah Jazz vs Minnesota Timberwolves, 2026-11-09T00:00:00Z"
+   "event": "401909949",
+   "note": "Boston Celtics vs Milwaukee Bucks, 2026-11-09T01:00:00Z"
   },
   "6": {
    "league": "nba",
    "event": "401909946",
    "note": "Los Angeles Lakers vs Detroit Pistons, 2026-11-08T23:00:00Z"
   },
-  "7": {
-   "league": "nba",
-   "event": "401909945",
-   "note": "Philadelphia 76ers vs Chicago Bulls, 2026-11-08T20:30:00Z"
-  },
   "8": {
+   "league": "nfl",
+   "event": "401873050",
+   "note": "Tampa Bay Buccaneers vs Chicago Bears, 2026-11-09T01:20:00Z"
+  },
+  "9": {
+   "league": "nba",
+   "event": "401909947",
+   "note": "Utah Jazz vs Minnesota Timberwolves, 2026-11-09T00:00:00Z"
+  },
+  "10": {
    "league": "nhl",
    "event": "401892676",
    "note": "New Jersey Devils vs Toronto Maple Leafs, 2026-11-09T00:00:00Z"
@@ -81,11 +86,10 @@
    "event": "401873048",
    "note": "Arizona Cardinals vs Seattle Seahawks, 2026-11-08T21:25:00Z"
   },
-  "14": {
+  "15": {
    "league": "nhl",
-   "event": "401892675",
-   "note": "Vegas Golden Knights vs Buffalo Sabres, 2026-11-08T20:30:00Z",
-   "sbtrk": 0
+   "event": "401892679",
+   "note": "Pittsburgh Penguins vs Anaheim Ducks, 2026-11-09T01:00:00Z"
   }
  },
  "fit": {
