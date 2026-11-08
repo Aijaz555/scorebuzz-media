@@ -346,16 +346,6 @@
   "reason": "ok (contrast 45)",
   "at": "2026-11-08T14:28:20+00:00"
  },
- "401882810": {
-  "slot": "2",
-  "league": "laliga",
-  "game": "Real Sociedad v Rayo",
-  "url": "https://scorebuzz.net/football/la-liga/real-sociedad-vs-rayo-401882810/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 51)",
-  "at": "2026-11-08T15:22:34+00:00"
- },
  "401879243": {
   "slot": "4",
   "league": "epl",
@@ -425,5 +415,15 @@
   "status": "ok",
   "reason": "ok (contrast 41)",
   "at": "2026-11-08T15:47:04+00:00"
+ },
+ "401882810": {
+  "slot": "2",
+  "league": "laliga",
+  "game": "Real Sociedad v Rayo",
+  "url": "https://scorebuzz.net/football/la-liga/real-sociedad-vs-rayo-401882810/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 47)",
+  "at": "2026-11-08T16:02:29+00:00"
  }
 }
