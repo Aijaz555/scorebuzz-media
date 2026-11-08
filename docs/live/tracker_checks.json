@@ -196,36 +196,6 @@
   "reason": "ok (contrast 80)",
   "at": "2026-11-08T02:59:16+00:00"
  },
- "401892670": {
-  "slot": "5",
-  "league": "nhl",
-  "game": "Wild v Lightning",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/wild-vs-lightning-401892670/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 79)",
-  "at": "2026-11-08T02:59:19+00:00"
- },
- "401909943": {
-  "slot": "7",
-  "league": "nba",
-  "game": "Suns v Rockets",
-  "url": "https://scorebuzz.net/basketball/nba/suns-vs-rockets-401909943/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 71)",
-  "at": "2026-11-08T02:59:22+00:00"
- },
- "401909942": {
-  "slot": "13",
-  "league": "nba",
-  "game": "Warriors v Magic",
-  "url": "https://scorebuzz.net/basketball/nba/warriors-vs-magic-401909942/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 71)",
-  "at": "2026-11-08T02:59:25+00:00"
- },
  "401909939": {
   "slot": "6",
   "league": "nba",
@@ -315,5 +285,35 @@
   "status": "ok",
   "reason": "ok (contrast 78)",
   "at": "2026-11-08T03:25:35+00:00"
+ },
+ "401892670": {
+  "slot": "5",
+  "league": "nhl",
+  "game": "Wild v Lightning",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/wild-vs-lightning-401892670/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 79)",
+  "at": "2026-11-08T03:33:42+00:00"
+ },
+ "401909943": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Suns v Rockets",
+  "url": "https://scorebuzz.net/basketball/nba/suns-vs-rockets-401909943/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-08T03:33:45+00:00"
+ },
+ "401909942": {
+  "slot": "13",
+  "league": "nba",
+  "game": "Warriors v Magic",
+  "url": "https://scorebuzz.net/basketball/nba/warriors-vs-magic-401909942/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 71)",
+  "at": "2026-11-08T03:33:48+00:00"
  }
 }
