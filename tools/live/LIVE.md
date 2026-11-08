@@ -189,6 +189,7 @@ starting 30 min before kick-off and stopped when the game is over.
   LiveReacting support (live chat) or upgrades the plan.
   - 8 Nov 2026 14:43 UTC: cap hit again — Real Sociedad-Rayo (Slot 2, now) and 4 Ligue 1 16:15 UK games (Slots 12-15) refused; only Slot 1 (Man Utd-Villa) scheduled.
   - 8 Nov 2026 16:45 UTC: 4 Ligue 1 restarts (Slots 14-17) went through (10 streams counted), then all 8 18:00 UK schedules (7 NFL 1pm ET games + Panthers-Bruins, Slots 4-6,8-11,18) were refused by the cap; the next hourly runs start them as slots free up.
+  - 8 Nov 2026 17:43 UTC: Bengals-Falcons (Slot 7) stopped, Cowboys-Colts started on Slot 2 (9/9); Jets-Chiefs, Giants-Eagles, Panthers-Bruins, Lions-Dolphins, Browns-Saints, Rams-Commanders (Slots 4-6,8-11) prepared but refused by the cap. Schedules for 19:15 UTC (Slots 18-19) were accepted.
 - Stuck starts: a project can sit in PREPARING forever after a YouTube error (6 Nov: TNF on Slot 1 scheduled →
   ERROR UNKNOWN_ERROR, then PREPARING for 37 min). Each hourly run checks every PREPARING project with
   livereacting_get_stream_status; if preparingStartedAt is over 10 min ago, stop it and start it again (once per run).
