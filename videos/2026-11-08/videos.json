@@ -1,0 +1,720 @@
+[
+  {
+    "id": "epl-mw10",
+    "sport": "football",
+    "league": "epl",
+    "format": "video",
+    "bed": "anthem",
+    "title": "Premier League Results, Table & Fixtures | Matchweek 10 2026/27 ⚽",
+    "description": "Premier League Matchweek 10 results, the updated Premier League table and the next fixtures. Arsenal lead on 27 points after 10 games; the big result was Man Utd 4–4 Aston Villa. Next round starts Sat 21 Nov.\n\nAll Matchweek 10 scores: Everton 3–1 Coventry, Leeds 1–0 Spurs, Arsenal 1–0 Hull, Fulham 1–1 Newcastle, Nottm Forest 3–1 Man City, Brighton 2–0 Brentford, C Palace 1–3 Liverpool, Ipswich 1–2 Bournemouth, Sunderland 1–0 Chelsea, Man Utd 4–4 Aston Villa.\n\n0:00 Intro\n0:04 Matchweek 10 results\n0:35 Premier League table\n0:57 Matchweek 11 fixtures\n\nPremier League live scores, table and fixtures: https://scorebuzz.net\n\n#PremierLeague #Football #premierleaguetable #ScoreBuzz",
+    "tags": [
+      "premier league table",
+      "premier league standings",
+      "premier league results",
+      "premier league fixtures",
+      "premier league matchweek 10",
+      "premier league results today",
+      "Man Utd vs Aston Villa",
+      "Arsenal premier league",
+      "scorebuzz"
+    ],
+    "tt": {
+      "league": "epl",
+      "name": "Premier League",
+      "mw": 10,
+      "season": "2026/27",
+      "zones": {
+        "ucl": 4,
+        "rel": 3
+      },
+      "result": {
+        "home": "Man Utd",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+        "hs": 4,
+        "away": "Aston Villa",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+        "as": 4,
+        "venue": "Old Trafford"
+      },
+      "table": [
+        {
+          "rank": 1,
+          "team": "Arsenal",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+          "p": 10,
+          "gd": "+10",
+          "pts": 27
+        },
+        {
+          "rank": 2,
+          "team": "Brighton",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
+          "p": 10,
+          "gd": "+19",
+          "pts": 22
+        },
+        {
+          "rank": 3,
+          "team": "Man City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+          "p": 10,
+          "gd": "+8",
+          "pts": 21
+        },
+        {
+          "rank": 4,
+          "team": "Liverpool",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+          "p": 10,
+          "gd": "+4",
+          "pts": 18
+        },
+        {
+          "rank": 5,
+          "team": "Chelsea",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+          "p": 10,
+          "gd": "+3",
+          "pts": 16
+        },
+        {
+          "rank": 6,
+          "team": "Everton",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+          "p": 10,
+          "gd": "+2",
+          "pts": 16
+        },
+        {
+          "rank": 7,
+          "team": "Bournemouth",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+          "p": 10,
+          "gd": "+2",
+          "pts": 15
+        },
+        {
+          "rank": 8,
+          "team": "Brentford",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+          "p": 10,
+          "gd": "+5",
+          "pts": 14
+        },
+        {
+          "rank": 9,
+          "team": "Leeds",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+          "p": 10,
+          "gd": "+2",
+          "pts": 14
+        },
+        {
+          "rank": 10,
+          "team": "Aston Villa",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+          "p": 10,
+          "gd": "-3",
+          "pts": 13
+        },
+        {
+          "rank": 11,
+          "team": "Spurs",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
+          "p": 10,
+          "gd": "-1",
+          "pts": 12
+        },
+        {
+          "rank": 12,
+          "team": "Newcastle",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
+          "p": 10,
+          "gd": "-3",
+          "pts": 12
+        },
+        {
+          "rank": 13,
+          "team": "Hull",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
+          "p": 10,
+          "gd": "0",
+          "pts": 11
+        },
+        {
+          "rank": 14,
+          "team": "Ipswich",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+          "p": 10,
+          "gd": "-5",
+          "pts": 11
+        },
+        {
+          "rank": 15,
+          "team": "Fulham",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
+          "p": 10,
+          "gd": "-2",
+          "pts": 10
+        },
+        {
+          "rank": 16,
+          "team": "Nottm Forest",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+          "p": 10,
+          "gd": "-4",
+          "pts": 9
+        },
+        {
+          "rank": 17,
+          "team": "Coventry",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+          "p": 10,
+          "gd": "-9",
+          "pts": 9
+        },
+        {
+          "rank": 18,
+          "team": "Man Utd",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+          "p": 10,
+          "gd": "-5",
+          "pts": 8
+        },
+        {
+          "rank": 19,
+          "team": "Sunderland",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+          "p": 10,
+          "gd": "-9",
+          "pts": 8
+        },
+        {
+          "rank": 20,
+          "team": "C Palace",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+          "p": 10,
+          "gd": "-14",
+          "pts": 7
+        }
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-21T12:30Z",
+          "home": "Man City",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+          "away": "Fulham",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png"
+        },
+        {
+          "date": "2026-11-21T15:00Z",
+          "home": "Bournemouth",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+          "away": "Nottm Forest",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png"
+        },
+        {
+          "date": "2026-11-21T15:00Z",
+          "home": "Aston Villa",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+          "away": "Sunderland",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png"
+        },
+        {
+          "date": "2026-11-21T15:00Z",
+          "home": "Chelsea",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+          "away": "Leeds",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png"
+        },
+        {
+          "date": "2026-11-21T15:00Z",
+          "home": "Coventry",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+          "away": "C Palace",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+        },
+        {
+          "date": "2026-11-21T15:00Z",
+          "home": "Spurs",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
+          "away": "Ipswich",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png"
+        },
+        {
+          "date": "2026-11-21T17:30Z",
+          "home": "Newcastle",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
+          "away": "Arsenal",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png"
+        },
+        {
+          "date": "2026-11-22T14:00Z",
+          "home": "Hull",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
+          "away": "Brighton",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+        },
+        {
+          "date": "2026-11-22T16:30Z",
+          "home": "Liverpool",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+          "away": "Man Utd",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
+        },
+        {
+          "date": "2026-11-23T20:00Z",
+          "home": "Brentford",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+          "away": "Everton",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+        }
+      ]
+    },
+    "thumb": {
+      "kicker": "Premier League · Matchweek 10",
+      "big": "27 PTS",
+      "hook": "Arsenal *top*",
+      "sticker": "TABLE",
+      "emoji": "⚽"
+    },
+    "scenes": [
+      {
+        "type": "hook",
+        "dur": 4,
+        "kicker": "Premier League · Matchweek 10",
+        "title": "Results, table & fixtures",
+        "sub": "Arsenal top on 27 points"
+      },
+      {
+        "type": "table",
+        "dur": 13,
+        "label": "Premier League · Matchweek 10 results",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Everton v Coventry",
+            3,
+            1
+          ],
+          [
+            "",
+            "Leeds v Spurs",
+            1,
+            0
+          ],
+          [
+            "",
+            "Arsenal v Hull",
+            1,
+            0
+          ],
+          [
+            "",
+            "Fulham v Newcastle",
+            1,
+            1
+          ],
+          [
+            "",
+            "Nottm Forest v Man City",
+            3,
+            1
+          ],
+          [
+            "",
+            "Brighton v Brentford",
+            2,
+            0
+          ],
+          [
+            "",
+            "C Palace v Liverpool",
+            1,
+            3
+          ],
+          [
+            "",
+            "Ipswich v Bournemouth",
+            1,
+            2
+          ],
+          [
+            "",
+            "Sunderland v Chelsea",
+            1,
+            0
+          ],
+          [
+            "",
+            "Man Utd v Aston Villa",
+            4,
+            4
+          ]
+        ]
+      },
+      {
+        "type": "score",
+        "dur": 6,
+        "label": "Premier League · Sun 8 Nov",
+        "home": "Man Utd",
+        "homeAbbr": "MAN",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+        "homeScore": 4,
+        "away": "Aston Villa",
+        "awayAbbr": "AVL",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+        "awayScore": 4,
+        "status": "FULL TIME",
+        "note": "MAN: B. Fernandes 16' pen · Y. Tielemans 44' · J. Zirkzee 90'+2' · P. Dorgu 90'+6'  |  AVL: Alysson 1' · N. Jackson 4' · J. McGinn 48' pen · L. Goretzka 53'"
+      },
+      {
+        "type": "score",
+        "dur": 6,
+        "label": "Premier League · Fri 6 Nov",
+        "home": "Everton",
+        "homeAbbr": "EVE",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+        "homeScore": 3,
+        "away": "Coventry",
+        "awayAbbr": "COV",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "EVE: T. Barry 56', 61' · K. Dewsbury-Hall 81'  |  COV: Y. Gboho 52'"
+      },
+      {
+        "type": "score",
+        "dur": 6,
+        "label": "Premier League · Sat 7 Nov",
+        "home": "Nottm Forest",
+        "homeAbbr": "NFO",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+        "homeScore": 3,
+        "away": "Man City",
+        "awayAbbr": "MNC",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "NFO: J. Cunha 6' · L. Delap 18', 73'  |  MNC: R. Cherki 52'"
+      },
+      {
+        "type": "table",
+        "dur": 11,
+        "label": "Premier League table · after Matchweek 10",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            1,
+            "Arsenal",
+            10,
+            9,
+            0,
+            1,
+            "+10",
+            27
+          ],
+          [
+            2,
+            "Brighton",
+            10,
+            7,
+            1,
+            2,
+            "+19",
+            22
+          ],
+          [
+            3,
+            "Man City",
+            10,
+            7,
+            0,
+            3,
+            "+8",
+            21
+          ],
+          [
+            4,
+            "Liverpool",
+            10,
+            5,
+            3,
+            2,
+            "+4",
+            18
+          ],
+          [
+            5,
+            "Chelsea",
+            10,
+            5,
+            1,
+            4,
+            "+3",
+            16
+          ],
+          [
+            6,
+            "Everton",
+            10,
+            4,
+            4,
+            2,
+            "+2",
+            16
+          ],
+          [
+            7,
+            "Bournemouth",
+            10,
+            4,
+            3,
+            3,
+            "+2",
+            15
+          ],
+          [
+            8,
+            "Brentford",
+            10,
+            3,
+            5,
+            2,
+            "+5",
+            14
+          ],
+          [
+            9,
+            "Leeds",
+            10,
+            3,
+            5,
+            2,
+            "+2",
+            14
+          ],
+          [
+            10,
+            "Aston Villa",
+            10,
+            3,
+            4,
+            3,
+            "-3",
+            13
+          ]
+        ],
+        "highlight": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "note": "Top 4: Champions League places"
+      },
+      {
+        "type": "table",
+        "dur": 11,
+        "label": "Premier League table · after Matchweek 10 (11–20)",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            11,
+            "Spurs",
+            10,
+            3,
+            3,
+            4,
+            "-1",
+            12
+          ],
+          [
+            12,
+            "Newcastle",
+            10,
+            3,
+            3,
+            4,
+            "-3",
+            12
+          ],
+          [
+            13,
+            "Hull",
+            10,
+            2,
+            5,
+            3,
+            "0",
+            11
+          ],
+          [
+            14,
+            "Ipswich",
+            10,
+            3,
+            2,
+            5,
+            "-5",
+            11
+          ],
+          [
+            15,
+            "Fulham",
+            10,
+            2,
+            4,
+            4,
+            "-2",
+            10
+          ],
+          [
+            16,
+            "Nottm Forest",
+            10,
+            2,
+            3,
+            5,
+            "-4",
+            9
+          ],
+          [
+            17,
+            "Coventry",
+            10,
+            3,
+            0,
+            7,
+            "-9",
+            9
+          ],
+          [
+            18,
+            "Man Utd",
+            10,
+            1,
+            5,
+            4,
+            "-5",
+            8
+          ],
+          [
+            19,
+            "Sunderland",
+            10,
+            2,
+            2,
+            6,
+            "-9",
+            8
+          ],
+          [
+            20,
+            "C Palace",
+            10,
+            2,
+            1,
+            7,
+            "-14",
+            7
+          ]
+        ],
+        "danger": [
+          18,
+          19,
+          20
+        ],
+        "note": "Bottom 3: relegation zone"
+      },
+      {
+        "type": "list",
+        "dur": 9,
+        "label": "Premier League · Matchweek 11 fixtures (UK · ET)",
+        "rows": [
+          [
+            "Sat 21 Nov",
+            "Man City v Fulham",
+            "12:30 · 7:30 AM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Bournemouth v Nottm Forest",
+            "15:00 · 10:00 AM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Aston Villa v Sunderland",
+            "15:00 · 10:00 AM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Chelsea v Leeds",
+            "15:00 · 10:00 AM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Coventry v C Palace",
+            "15:00 · 10:00 AM"
+          ]
+        ]
+      },
+      {
+        "type": "list",
+        "dur": 9,
+        "label": "Premier League · Matchweek 11 fixtures (UK · ET) cont.",
+        "rows": [
+          [
+            "Sat 21 Nov",
+            "Spurs v Ipswich",
+            "15:00 · 10:00 AM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Newcastle v Arsenal",
+            "17:30 · 12:30 PM"
+          ],
+          [
+            "Sun 22 Nov",
+            "Hull v Brighton",
+            "14:00 · 9:00 AM"
+          ],
+          [
+            "Sun 22 Nov",
+            "Liverpool v Man Utd",
+            "16:30 · 11:30 AM"
+          ],
+          [
+            "Mon 23 Nov",
+            "Brentford v Everton",
+            "20:00 · 3:00 PM"
+          ]
+        ]
+      },
+      {
+        "type": "cta",
+        "dur": 5,
+        "title": "Who wins the Premier League this season?",
+        "sub": "Live scores, tables & fixtures every day"
+      }
+    ]
+  }
+]
