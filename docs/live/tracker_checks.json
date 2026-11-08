@@ -476,26 +476,6 @@
   "reason": "ok (contrast 44)",
   "at": "2026-11-08T17:38:12+00:00"
  },
- "401882815": {
-  "slot": "3",
-  "league": "laliga",
-  "game": "Celta Vigo v Levante",
-  "url": "https://scorebuzz.net/football/la-liga/celta-vigo-vs-levante-401882815/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 46)",
-  "at": "2026-11-08T18:49:21+00:00"
- },
- "401882807": {
-  "slot": "12",
-  "league": "laliga",
-  "game": "Villarreal v Getafe",
-  "url": "https://scorebuzz.net/football/la-liga/villarreal-vs-getafe-401882807/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 46)",
-  "at": "2026-11-08T18:49:24+00:00"
- },
  "401874808": {
   "slot": "13",
   "league": "seriea",
@@ -585,5 +565,25 @@
   "status": "ok",
   "reason": "ok (contrast 45)",
   "at": "2026-11-08T19:14:03+00:00"
+ },
+ "401882815": {
+  "slot": "3",
+  "league": "laliga",
+  "game": "Celta Vigo v Levante",
+  "url": "https://scorebuzz.net/football/la-liga/celta-vigo-vs-levante-401882815/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T19:22:10+00:00"
+ },
+ "401882807": {
+  "slot": "12",
+  "league": "laliga",
+  "game": "Villarreal v Getafe",
+  "url": "https://scorebuzz.net/football/la-liga/villarreal-vs-getafe-401882807/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T19:22:13+00:00"
  }
 }
