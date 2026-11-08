@@ -22,27 +22,27 @@ header{position:relative;display:flex;align-items:center;justify-content:center;
 .right{display:flex;align-items:center;gap:16px;font-size:20px;color:var(--mute);letter-spacing:1px}
 .live{background:var(--red);color:#fff;font-weight:900;font-size:22px;letter-spacing:4px;padding:10px 26px;border-radius:8px;display:flex;align-items:center;gap:12px}
 .live i{width:12px;height:12px;border-radius:50%;background:#fff;animation:bl 1.2s infinite}@keyframes bl{50%{opacity:.3}}
-.hero{display:grid;grid-template-columns:1fr 760px 1fr;align-items:center;height:250px;flex:none}
+.hero{display:grid;grid-template-columns:1fr 760px 1fr;align-items:center;height:212px;flex:none}
 .team{display:flex;flex-direction:column;align-items:center;gap:12px}
-.team img{width:140px;height:140px;object-fit:contain;filter:drop-shadow(0 10px 30px #0009)}
-.team .city{font-size:44px;font-weight:900;letter-spacing:1px;text-transform:uppercase;line-height:1}
+.team img{width:118px;height:118px;object-fit:contain;filter:drop-shadow(0 10px 30px #0009)}
+.team .city{font-size:40px;font-weight:900;letter-spacing:1px;text-transform:uppercase;line-height:1}
 .team .rk{color:var(--gold);font-size:30px;vertical-align:middle}
-.team .nick{font-size:24px;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:var(--mute)}
+.team .nick{font-size:21px;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:var(--mute)}
 .team .rec{font-size:17px;font-weight:800;letter-spacing:1px;color:var(--ink);background:#ffffff18;padding:3px 12px;border-radius:999px;margin-left:10px;vertical-align:middle}
 .mid{text-align:center}
-.mid .per{font-size:34px;font-weight:900;letter-spacing:8px;text-transform:uppercase;color:var(--gold)}
-.mid .sc{font-size:170px;font-weight:900;line-height:1;letter-spacing:-6px;font-variant-numeric:tabular-nums;display:flex;justify-content:center;align-items:center;gap:6px}
-.mid .sc i{font-style:normal;color:var(--gold);font-size:116px;margin:0 6px;line-height:1;position:relative;top:-14px}
+.mid .per{font-size:30px;font-weight:900;letter-spacing:8px;text-transform:uppercase;color:var(--gold)}
+.mid .sc{font-size:150px;font-weight:900;line-height:1;letter-spacing:-6px;font-variant-numeric:tabular-nums;display:flex;justify-content:center;align-items:center;gap:6px}
+.mid .sc i{font-style:normal;color:var(--gold);font-size:100px;margin:0 6px;line-height:1;position:relative;top:-14px}
 .mid .sc .lo{color:#ffffffaa}
-.mid .clk{font-size:34px;font-weight:800;letter-spacing:2px;color:var(--ink);margin-top:-6px}
+.mid .clk{font-size:30px;font-weight:800;letter-spacing:2px;color:var(--ink);margin-top:-6px}
 .mid .lead{display:inline-block;margin-left:18px;font-size:20px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold);vertical-align:middle}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 24px;backdrop-filter:blur(6px);overflow:hidden}
-.h{font-size:20px;font-weight:900;letter-spacing:5px;text-transform:uppercase;color:#c9d3f0;margin-bottom:8px}
-table{width:100%;border-collapse:collapse;font-size:28px;font-weight:800;font-variant-numeric:tabular-nums}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:12px 22px;backdrop-filter:blur(6px);overflow:hidden}
+.h{font-size:19px;font-weight:900;letter-spacing:5px;text-transform:uppercase;color:#c9d3f0;margin-bottom:6px}
+table{width:100%;border-collapse:collapse;font-size:26px;font-weight:800;font-variant-numeric:tabular-nums}
 th{font-size:18px;font-weight:800;letter-spacing:2px;color:var(--mute);text-align:center;padding:2px 0 6px}th:first-child{text-align:left}th:last-child{color:var(--gold)}
-td{text-align:center;padding:4px 0;border-top:1px solid #ffffff10}td:first-child{text-align:left;display:flex;align-items:center;gap:14px}td.tot{color:var(--gold);font-size:32px}td.x{color:var(--mute)}th.x{color:var(--mute)}
+td{text-align:center;padding:2px 0;border-top:1px solid #ffffff10}td:first-child{text-align:left;display:flex;align-items:center;gap:14px}td.tot{color:var(--gold);font-size:30px}td.x{color:var(--mute)}th.x{color:var(--mute)}
 td img{width:40px;height:40px;object-fit:contain}
-.row2{display:grid;grid-template-columns:470px 1fr 540px;gap:14px;flex:1;min-height:0;overflow:hidden}
+.row2{display:grid;grid-template-columns:440px 1fr 500px;gap:14px;flex:1;min-height:0;overflow:hidden}
 .col{display:flex;flex-direction:column;gap:14px;min-height:0;min-width:0}.col .panel{min-height:0;min-width:0}.col .panel:first-child{flex:1}
 .trk{position:relative;padding:0;overflow:hidden;background:#0b1326}.trk .cap{position:absolute;left:0;right:0;bottom:0;text-align:center;font-size:14px;letter-spacing:3px;color:var(--mute);text-transform:uppercase;padding:4px;background:#0b1326cc}
 #trkL iframe{position:absolute;border:0;width:1000px;transform-origin:0 0;background:#0b1326}
@@ -187,7 +187,8 @@ function render(s, sb) {
   const he = (ha) => { const x = c.competitors.find((y) => y.homeAway === ha); return { H: x.hits, E: x.errors }; };
   const bs = Object.fromEntries((s.boxscore?.teams || []).map((t) => [t.team.id, Object.fromEntries(t.statistics.flatMap((x) => x.stats ? x.stats.map((y) => [x.name + '.' + y.name, y.displayValue]) : [[x.name, x.displayValue]]))]));
   const H = bs[home.id] || {}, A = bs[away.id] || {};
-  const sv = (T, k, k2) => (k2 && T[k] !== undefined ? `${T[k]}/${T[k2]}` : T[k]);
+  const pre = c.status?.type?.state === 'pre';
+  const sv = (T, k, k2) => (pre || T[k] === undefined ? '–' : k2 ? `${T[k]}/${T[k2] ?? 0}` : T[k]); // before the game ESPN lists season totals: show dashes
   const statsHtml = STATS[league].map(([n, k, p, k2]) => stat(sv(H, k, k2), sv(A, k, k2), n, p)).join('');
   const seen = new Set();
   const plays = (s.plays || (s.drives ? [...(s.drives.previous || []), s.drives.current].filter(Boolean).flatMap((d) => d.plays || []) : [])).filter((p) => (p.text || '').trim() && !seen.has(p.id) && seen.add(p.id)).slice(LEADERS[league].length ? -2 : -5).reverse();
@@ -196,7 +197,7 @@ function render(s, sb) {
   const ldrs = () => LEADERS[league].map(([cat, lab]) => { const cell = (t) => { const L2 = (s.leaders || []).find((x) => String(x.team.id) === String(t.id)); const c2 = L2?.leaders.find((x) => x.name === cat); const l = c2?.leaders?.[0]; return l ? `<span class="p"><img src="${t.logo}">${esc(l.athlete.shortName)} <b>${esc(league === 'nfl' || league === 'ncaaf' ? short(l.displayValue) : l.displayValue)}</b></span>` : '<span></span>'; };
     return `<div class="ldr"><span class="k">${lab}</span>${cell(home)}${cell(away)}</div>`; }).join('');
   const scoring = () => (s.scoringPlays || (s.plays || []).filter((p) => p.scoringPlay)).slice(-3).reverse().map((p) => { const t = tname(p.team?.id);
-    return `<div class="play">${t ? `<img src="${t.logo}">` : ''}<span class="t">${esc(p.period?.number ? (league === 'mlb' ? 'Inn ' : 'Q') + p.period.number : '')}</span><span class="x">${esc(p.text || p.shortText || '')}</span><span class="v" style="background:var(--gold)">${esc(p.awayScore ?? '')}–${esc(p.homeScore ?? '')}</span></div>`; }).join('') || '<div class="play"><span class="x">No scoring yet</span></div>';
+    return `<div class="play">${t ? `<img src="${t.logo}">` : ''}<span class="t">${esc(p.period?.number ? (league === 'mlb' ? 'Inn ' : 'Q') + p.period.number : '')}</span><span class="x">${esc(p.text || p.shortText || '')}</span><span class="v" style="background:var(--gold)">${esc(p.awayScore ?? '')}–${esc(p.homeScore ?? '')}</span></div>`; }).join('') || `<div class="play"><span class="x">${c.status?.type?.state === 'pre' ? esc(per + (clk ? ' · ' + clk : '')) : 'No scoring yet'}</span></div>`;
   const slug = (n) => String(n || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   // the website's tracker only draws during play: before / after the game the centre shows the scoring plays instead.
   // College football and MLB (no website tracker), or a slot the tracker check switched off (sbtrk: 0), use the built-in field / diamond.
