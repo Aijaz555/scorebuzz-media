@@ -33,5 +33,5 @@ jobs:
               git commit -qm "Live tracker check: $(date -u +%FT%H:%MZ)"
               git pull -q --rebase origin main && git push -q || echo "push failed"
             fi
-            [ $i -lt 6 ] && sleep 480
+            if [ $i -lt 6 ]; then sleep 480; fi
           done
