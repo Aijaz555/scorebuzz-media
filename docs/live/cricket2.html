@@ -1,0 +1,474 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ScoreBuzz Cricket Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<!--
+  ScoreBuzz live cricket tracker, alternative layout to cricket.html (1920x1080 stream page, scales to any window).
+  Data: ESPN public JSON (site.api.espn.com/apis/site/v2/sports/cricket/...), polled every 8 s.
+  URL params:
+    ?event=<espn event id>&league=<espn league id>   a specific match (league optional, looked up from the score panel)
+    ?team=PAK                                        otherwise: the live match of this team (abbr prefix, e.g. IND, PAK, AUS)
+    (none)                                           otherwise: the most important live match right now
+    &w=1920&h=1080                                   fixed render size (default: fit the window)
+-->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#060914;--panel:rgba(16,22,46,.92);--line:rgba(255,255,255,.08);--ink:#F4F6FC;--mute:#9AA3C7;--dim:#5B638C;--lime:#BEFF3C;--acc:#FF8A3D;--red:#FF2D46;--t1:#1F5BD8;--t2:#01803E;--four:#3D7BFF;--six:#B44DFF}
+html{overflow:hidden;background:var(--bg)}
+body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;background:var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Roboto,sans-serif;position:relative}
+.num{font-family:'Barlow Condensed',Inter,sans-serif;font-variant-numeric:tabular-nums}
+.bgfx{position:absolute;inset:0;background:radial-gradient(900px 620px at 0% 0%,color-mix(in srgb,var(--t1) 30%,transparent),transparent 70%),radial-gradient(900px 620px at 0% 100%,color-mix(in srgb,var(--t2) 30%,transparent),transparent 70%),radial-gradient(1200px 700px at 100% 50%,#16204a55,transparent 70%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(#000,transparent 85%);opacity:.5}
+.panel{position:absolute;background:var(--panel);border:1px solid var(--line);border-radius:22px;box-shadow:0 20px 50px #0008,inset 0 1px 0 #ffffff10;overflow:hidden}
+.h{font-size:18px;font-weight:800;letter-spacing:3px;color:var(--mute);text-transform:uppercase}
+
+header{position:absolute;top:22px;left:28px;right:28px;height:56px;display:flex;align-items:center;gap:16px}
+.logo{font-size:38px;font-weight:900;letter-spacing:-1.4px}.logo b{color:var(--lime)}
+.pill{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:2px;padding:9px 18px;border-radius:999px;background:#ffffff12;border:1px solid var(--line)}
+.pill.live{background:var(--red);border-color:transparent;box-shadow:0 0 30px #FF2D4666}
+.pill i{width:11px;height:11px;border-radius:50%;background:#fff}.pill.live i{animation:blink 1.1s infinite}
+@keyframes blink{50%{opacity:.25}}
+.hc{margin-left:auto;display:flex;gap:12px;align-items:center;min-width:0}
+.chip{font-size:19px;font-weight:800;letter-spacing:1.5px;padding:9px 16px;border-radius:12px;background:#ffffff0d;border:1px solid var(--line);color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:760px}
+.chip.acc{color:var(--acc)}
+
+/* team cards */
+.team{left:28px;width:470px;height:300px;padding:24px 28px}
+.team:before{content:'';position:absolute;inset:0;background:linear-gradient(160deg,color-mix(in srgb,var(--tc) 70%,transparent),transparent 62%);opacity:.8}
+.team:after{content:'';position:absolute;left:0;right:0;top:0;height:6px;background:var(--tc)}
+.team>*{position:relative}
+.team.t1{top:96px;--tc:var(--t1)}.team.t2{top:412px;--tc:var(--t2)}
+.trow{display:flex;align-items:center;gap:18px}
+.lg{width:96px;height:96px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--tc);border:3px solid #ffffff30;position:relative;overflow:hidden}
+.lg span{font-weight:900;font-size:28px}
+.lg img{position:absolute;inset:10%;width:80%;height:80%;object-fit:contain}
+.lg.ok{background:radial-gradient(circle,#ffffff26,#ffffff08 70%)}.lg.ok span{display:none}
+.tn{min-width:0}.tn .n{font-size:36px;font-weight:900;letter-spacing:-.8px;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:300px}
+.tn .bat{display:inline-block;margin-top:8px;font-size:17px;font-weight:900;letter-spacing:2px;color:var(--bg);background:var(--lime);padding:4px 10px;border-radius:8px}
+.tn .bowl{display:inline-block;margin-top:8px;font-size:17px;font-weight:800;letter-spacing:2px;color:var(--mute);background:#ffffff10;padding:4px 10px;border-radius:8px}
+.sc{display:flex;align-items:baseline;gap:14px;margin-top:14px;white-space:nowrap}
+.sc .r{font-size:128px;font-weight:800;line-height:.9;letter-spacing:-2px;text-shadow:0 8px 40px #0009}
+.sc .o{font-size:34px;font-weight:700;color:#ffffffcc}
+.sc .r.flash{animation:sflash 2.4s ease-out}
+@keyframes sflash{0%{color:var(--lime);text-shadow:0 0 60px var(--lime)}100%{}}
+.tsub{font-size:21px;font-weight:700;color:#ffffffb0;margin-top:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* left bottom: partnership / fow */
+.part{left:28px;top:728px;width:470px;height:248px;padding:20px 26px}
+.kv{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;border-top:1px solid var(--line)}
+.kv:first-of-type{border-top:none}
+.kv .k{font-size:19px;font-weight:700;color:var(--mute)}.kv .v{font-size:30px;font-weight:800}
+.fow{font-size:18px;color:var(--mute);font-weight:600;line-height:1.5;margin-top:6px;max-height:56px;overflow:hidden}
+.fow b{color:var(--ink)}
+
+/* centre */
+.eq{left:518px;top:96px;width:900px;height:140px;padding:20px 30px;display:flex;flex-direction:column;justify-content:center}
+.eq .big{font-size:42px;font-weight:900;letter-spacing:-.6px;line-height:1.1}
+.eq .big em{font-style:normal;color:var(--lime)}
+.eq .rates{display:flex;gap:14px;margin-top:12px}
+.rate{flex:1;background:#00000040;border:1px solid var(--line);border-radius:14px;padding:6px 14px;display:flex;justify-content:space-between;align-items:baseline}
+.rate b{font-size:16px;letter-spacing:2px;color:var(--mute)}.rate span{font-size:34px;font-weight:800}
+.rate.hot span{color:var(--acc)}
+
+.bats{left:518px;top:252px;width:900px;height:290px;padding:12px 26px}
+table{width:100%;border-collapse:collapse}
+th{font-size:16px;letter-spacing:2px;color:var(--dim);font-weight:800;text-align:right;padding:4px 8px}
+th:first-child{text-align:left}
+td{font-size:28px;font-weight:700;text-align:right;padding:6px 8px;border-top:1px solid var(--line)}
+td:first-child{text-align:left;font-family:Inter,sans-serif;font-size:27px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:420px}
+td.R{font-size:36px;font-weight:800;color:var(--lime)}
+tr.off td{color:#ffffff88}tr.off td.R{color:#ffffff99}
+.strk{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--lime);margin-right:10px;box-shadow:0 0 12px var(--lime);vertical-align:middle}
+.nostrk{display:inline-block;width:12px;margin-right:10px}
+
+.over{left:518px;top:558px;width:900px;height:136px;padding:16px 26px}
+.balls{display:flex;gap:12px;margin-top:10px;align-items:center}
+.ball{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;font-size:30px;font-weight:800;background:#ffffff14;border:2px solid #ffffff22;flex:none}
+.ball.b4{background:var(--four);border-color:transparent}
+.ball.b6{background:var(--six);border-color:transparent}
+.ball.bW{background:var(--red);border-color:transparent}
+.ball.bX{background:#FFB020;color:#1a1200;border-color:transparent;font-size:24px}
+.ball.b0{color:var(--mute)}
+.ball.empty{background:transparent;border:2px dashed #ffffff18}
+.ball.new{animation:pop .7s cubic-bezier(.2,1.6,.4,1)}
+@keyframes pop{0%{transform:scale(.2)}100%{transform:scale(1)}}
+.prev{margin-left:auto;text-align:right}
+.prev b{display:block;font-size:15px;letter-spacing:2px;color:var(--dim)}.prev span{font-size:22px;font-weight:700;color:var(--mute)}
+
+.chart{left:518px;top:710px;width:900px;height:266px;padding:14px 22px}
+.chart svg{display:block;margin-top:6px}
+.legend{position:absolute;right:24px;top:16px;display:flex;gap:18px;font-size:16px;font-weight:800;color:var(--mute)}
+.legend i{display:inline-block;width:16px;height:5px;border-radius:3px;margin-right:6px;vertical-align:middle}
+
+/* right: commentary */
+.comm{left:1438px;top:96px;width:454px;height:880px;padding:20px 22px}
+.feed{margin-top:12px;display:flex;flex-direction:column;gap:10px}
+.cm{display:grid;grid-template-columns:62px 52px 1fr;gap:12px;align-items:center;padding:10px 12px;border-radius:14px;background:#ffffff07;border:1px solid var(--line)}
+.cm .ov{font-size:24px;font-weight:800;color:var(--mute)}
+.cm .ball{width:48px;height:48px;font-size:21px}
+.cm .tx{font-size:18px;font-weight:600;line-height:1.3;color:#e6e9f5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.cm.W{border-color:#FF2D4666;background:#FF2D4614}
+.cm.n{animation:slide .6s ease-out}
+@keyframes slide{0%{opacity:0;transform:translateY(-16px)}100%{opacity:1}}
+
+/* bottom ticker */
+.tick{position:absolute;left:28px;right:28px;bottom:22px;height:66px;border-radius:18px;background:var(--panel);border:1px solid var(--line);overflow:hidden;display:flex;align-items:center}
+.tick .lab{flex:none;height:100%;display:grid;place-items:center;padding:0 22px;background:var(--lime);color:var(--bg);font-weight:900;font-size:19px;letter-spacing:2px}
+.tick .rail{flex:1;overflow:hidden;white-space:nowrap;position:relative;height:100%}
+.tick .track{position:absolute;top:0;left:0;height:100%;display:flex;align-items:center;gap:46px;padding-left:30px;animation:scroll var(--dur,60s) linear infinite}
+.tick .g{font-size:22px;font-weight:700;color:#dfe3f2}.tick .g b{color:var(--lime);font-weight:800}.tick .g em{font-style:normal;color:var(--mute);font-size:18px;margin-right:8px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* big moment flash */
+.boom{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;opacity:0}
+.boom div{font-size:300px;font-weight:900;letter-spacing:-6px;font-family:'Barlow Condensed',Inter,sans-serif;text-shadow:0 0 80px currentColor}
+.boom.go{animation:boom 2.6s ease-out}
+@keyframes boom{0%{opacity:0;transform:scale(.6)}12%{opacity:1;transform:scale(1.05)}70%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.15)}}
+.msg{position:absolute;inset:0;display:grid;place-items:center;font-size:40px;font-weight:800;color:var(--mute)}
+.hide{display:none!important}
+</style></head>
+<body>
+<div class="bgfx"></div><div class="grid"></div>
+<header>
+  <div class="logo">Score<b>Buzz</b></div>
+  <div class="pill" id="pill"><i></i><span id="pillt">LIVE</span></div>
+  <div class="hc"><div class="chip acc" id="series">CRICKET</div><div class="chip" id="match"></div><div class="chip num" id="clock"></div></div>
+</header>
+
+<div id="app" class="hide">
+  <div class="panel team t1" id="T1"></div>
+  <div class="panel team t2" id="T2"></div>
+  <div class="panel part"><div class="h">Partnership</div><div id="part"></div></div>
+
+  <div class="panel eq"><div class="big" id="eqbig"></div><div class="rates" id="rates"></div></div>
+  <div class="panel bats"><div id="batbowl"></div></div>
+  <div class="panel over"><div class="h" id="overh">This over</div><div class="balls" id="balls"></div></div>
+  <div class="panel chart"><div class="h">Run rate worm</div><div class="legend" id="legend"></div><div id="worm"></div></div>
+
+  <div class="panel comm"><div class="h">Ball by ball</div><div class="feed" id="feed"></div></div>
+</div>
+<div class="tick"><div class="lab">LIVE CRICKET</div><div class="rail"><div class="track" id="track"></div></div></div>
+<div class="boom" id="boom"><div id="boomt"></div></div>
+<div class="msg" id="msg">Loading live cricket…</div>
+
+<script>
+const API = 'https://site.api.espn.com/apis/site/v2/sports/cricket';
+const Q = new URLSearchParams(location.search);
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const J = async u => { const r = await fetch(u, { cache: 'no-store' }); if (!r.ok) throw new Error(r.status); return r.json(); };
+
+// fit 1920x1080 into the window (or a fixed ?w=&h=)
+function fit() {
+  const w = +Q.get('w') || innerWidth, h = +Q.get('h') || innerHeight;
+  document.body.style.transform = `scale(${Math.min(w / 1920, h / 1080)})`;
+}
+addEventListener('resize', fit); fit();
+
+// national colours by abbreviation prefix (ESPN leaves cricket team colours empty)
+const COLORS = { IND: '#1F5BD8', PAK: '#01803E', AUS: '#E8B400', ENG: '#1B3A8C', NZ: '#2B2B2B', SA: '#007A4D', SL: '#0A3D91', BAN: '#006A4E', AFG: '#1E5AA8', WI: '#7B0041', ZIM: '#C8102E', IRE: '#169B62', NEP: '#DC143C', UAE: '#00732F', SCO: '#0065BF', NED: '#F36C21', USA: '#B22234', OMA: '#C8102E', NAM: '#003580', CAN: '#D80621', HK: '#DE2910', HKG: '#DE2910' };
+function teamColor(abbr, fallbackIdx) {
+  const a = String(abbr || '').toUpperCase().replace(/[-\s]?(W|A|U19|19)$/,'').replace(/[^A-Z]/g, '');
+  for (const k of Object.keys(COLORS).sort((x, y) => y.length - x.length)) if (a === k || a.startsWith(k)) return COLORS[k];
+  let h = 0; for (const c of a) h = (h * 31 + c.charCodeAt(0)) % 360;
+  return `hsl(${(h + fallbackIdx * 140) % 360} 65% 42%)`;
+}
+// importance of a match when none is given
+const BIG = ['IND', 'PAK', 'AUS', 'ENG', 'SA', 'NZ', 'SL', 'BAN', 'AFG', 'WI'];
+function weight(ev) {
+  const c = ev.competitions?.[0] || {}, cls = +(c.class?.internationalClassId || 0);
+  const abbrs = (c.competitors || []).map(x => x.team?.abbreviation || '');
+  let w = cls ? 100 - cls * 5 : 0;
+  for (const a of abbrs) if (BIG.some(b => a.startsWith(b))) w += 20;
+  if (abbrs.some(a => /-W$/.test(a))) w -= 3;
+  return w;
+}
+
+let LEAGUE = Q.get('league'), EVENT = Q.get('event');
+let pages = [], pageSize = 25, lastSeq = 0, firstLoad = true, lastScoreKey = '';
+
+async function pickMatch(panel) {
+  const evs = [];
+  for (const s of panel.scores || []) for (const e of s.events || []) evs.push({ e, league: s.leagues?.[0]?.id });
+  if (EVENT) { const f = evs.find(x => x.e.id === EVENT); if (f && !LEAGUE) LEAGUE = f.league; return !!LEAGUE; }
+  const team = (Q.get('team') || '').toUpperCase();
+  let pool = evs.filter(x => x.e.status?.type?.state === 'in');
+  if (team) {
+    const t = evs.filter(x => (x.e.competitions?.[0]?.competitors || []).some(c => (c.team?.abbreviation || '').toUpperCase().startsWith(team)));
+    const order = { in: 0, pre: 1, post: 2 };
+    t.sort((a, b) => order[a.e.status.type.state] - order[b.e.status.type.state]);
+    if (t.length) pool = [t[0]];
+  }
+  if (!pool.length) pool = evs.filter(x => x.e.status?.type?.state === 'pre');
+  if (!pool.length) return false;
+  pool.sort((a, b) => weight(b.e) - weight(a.e));
+  EVENT = pool[0].e.id; LEAGUE = pool[0].league; return true;
+}
+
+// ---------- ball-by-ball ----------
+async function loadBalls() {
+  const base = `${API}/${LEAGUE}/playbyplay?event=${EVENT}`;
+  if (!pages.length) {
+    const p1 = await J(base + '&page=1');
+    const c = p1.commentary || {}; pageSize = c.pageSize || 25;
+    pages[1] = c.items || [];
+    const n = c.pageCount || 1, rest = [];
+    for (let i = 2; i <= n; i++) rest.push(J(`${base}&page=${i}`).then(r => pages[i] = r.commentary?.items || []).catch(() => pages[i] = []));
+    await Promise.all(rest);
+  } else {
+    // refresh the last page and the next one (new balls land there)
+    const last = pages.length - 1;
+    for (let i = last; i <= last + 1; i++) {
+      const r = await J(`${base}&page=${i}`).catch(() => null);
+      const items = r?.commentary?.items || [];
+      if (items.length || i === last) pages[i] = items;
+      if (items.length < pageSize) break;
+    }
+  }
+  const all = [], seen = new Set();
+  for (const p of pages) for (const it of p || []) if (it.over?.number && it.bowler?.athlete?.id && it.batsman?.athlete?.id && !seen.has(it.id + ':' + it.sequence)) { seen.add(it.id + ':' + it.sequence); all.push(it); }
+  all.sort((a, b) => (a.period - b.period) || (a.sequence - b.sequence));
+  return all;
+}
+
+function chipOf(it) {
+  const t = it.playType?.description || '', v = it.scoreValue || 0;
+  if (it.dismissal?.dismissal) return { c: 'bW', t: 'W' };
+  if (t === 'four') return { c: 'b4', t: '4' };
+  if (t === 'six') return { c: 'b6', t: '6' };
+  if (t === 'wide') return { c: 'bX', t: (v > 1 ? v - 1 : '') + 'wd' };
+  if (t === 'no ball') return { c: 'bX', t: (v > 1 ? v - 1 : '') + 'nb' };
+  if (t === 'leg bye') return { c: 'b0', t: v + 'lb' };
+  if (t === 'bye') return { c: 'b0', t: v + 'b' };
+  return { c: v ? '' : 'b0', t: v ? String(v) : '•' };
+}
+const legal = it => !['wide', 'no ball'].includes(it.playType?.description);
+
+function analyse(all) {
+  const inns = {};
+  for (const it of all) {
+    const k = it.period; const I = inns[k] ||= { period: k, team: it.team, balls: [], bat: new Map(), bowl: new Map(), fow: [], overs: new Map() };
+    I.balls.push(it);
+    for (const b of [it.batsman, it.otherBatsman]) if (b?.athlete?.id) {
+      const o = I.bat.get(b.athlete.id) || { id: b.athlete.id, name: b.athlete.displayName, out: '' };
+      Object.assign(o, { r: b.totalRuns, b: b.faced, f4: b.fours, s6: b.sixes }); I.bat.set(b.athlete.id, o);
+    }
+    for (const b of [it.bowler, it.otherBowler]) if (b?.athlete?.id) I.bowl.set(b.athlete.id, { id: b.athlete.id, name: b.athlete.displayName, o: b.overs, m: b.maidens, r: b.conceded, w: b.wickets });
+    const ov = it.over?.number || 1;
+    const O = I.overs.get(ov) || { n: ov, runs: 0, w: 0, end: 0 };
+    O.runs = Math.max(O.runs, it.over?.runs || 0); O.end = it.innings?.runs ?? O.end;
+    if (it.dismissal?.dismissal) {
+      O.w++;
+      const id = it.dismissal.batsman?.athlete?.id; const o = I.bat.get(id); if (o) o.out = it.dismissal.text || it.dismissal.type || 'out';
+      I.fow.push({ s: `${it.innings?.runs}-${it.innings?.wickets}`, name: it.dismissal.batsman?.athlete?.displayName || '', ov: it.over?.overs, runs: it.innings?.runs, ballIdx: I.balls.length });
+    }
+    I.overs.set(ov, O);
+  }
+  return Object.values(inns).sort((a, b) => a.period - b.period);
+}
+
+const tname = n => String(n || '').replace(/\s*Under-?19s?/i, ' U19').replace(/\s*Women$/i, ' Women');
+const ovLabel = it => { const o = it.over || {}; return o.complete && legal(it) ? `${o.number - 1}.6` : (o.overs ?? ''); };
+const ovStr = balls => `${Math.floor(balls / 6)}.${balls % 6}`.replace(/\.0$/, '');
+const sr = (r, b) => b ? (r * 100 / b).toFixed(1) : '0.0';
+const short = n => { const p = String(n || '').trim().split(/\s+/); return p.length > 2 ? p[0][0] + ' ' + p.slice(-2).join(' ') : n; };
+
+// ---------- render ----------
+function teamCard(el, c, i, battingId, state) {
+  const t = c.team || {}, color = teamColor(t.abbreviation, i);
+  document.documentElement.style.setProperty(i ? '--t2' : '--t1', color);
+  const ls = (c.linescores || []).filter(l => l.score || l.runs || l.wickets);
+  const cur = ls.find(l => l.isCurrent) || ls[ls.length - 1];
+  const parts = ls.map(l => String(l.runs) + (l.wickets < 10 && l.description !== 'all out' ? '/' + l.wickets : '') + (l.declared ? 'd' : ''));
+  const big = parts.length ? parts.join(' & ') : (state === 'pre' ? '' : 'Yet to bat');
+  const isBat = String(t.id) === String(battingId) && state === 'in';
+  const overs = cur && cur.overs ? `(${cur.overs}${cur.isCurrent ? '' : ''} ov)` : '';
+  const logo = t.logos?.[0]?.href || t.logo || '';
+  const sub = cur?.description && cur.description !== '' ? cur.description : (cur?.target ? `Target ${cur.target}` : '');
+  const key = big;
+  const flash = el.dataset.k && el.dataset.k !== key ? ' flash' : ''; el.dataset.k = key;
+  el.innerHTML = `<div class="trow"><div class="lg" style="--tc:${color}"><span>${esc(t.abbreviation)}</span>${logo ? `<img src="${esc(logo)}" onload="this.parentNode.classList.add('ok')" onerror="this.remove()">` : ''}</div>
+    <div class="tn"><div class="n">${esc(tname(t.displayName || t.name))}</div>${state === 'in' ? (isBat ? '<span class="bat">BATTING</span>' : '<span class="bowl">BOWLING</span>') : ''}</div></div>
+    <div class="sc"><div class="r num${flash}">${esc(big || '–')}</div><div class="o num">${esc(overs)}</div></div>
+    <div class="tsub">${esc(sub)}</div>`;
+  const sc = el.querySelector('.sc'), r = sc.querySelector('.r'), o = sc.querySelector('.o');
+  let fs = 128;
+  while (sc.scrollWidth > 414 && fs > 50) { fs -= 6; r.style.fontSize = fs + 'px'; o.style.fontSize = Math.max(22, fs * .3) + 'px'; }
+}
+
+function render(sum, all) {
+  const comp = sum.header?.competitions?.[0] || {}, st = comp.status || {}, state = st.type?.state || 'pre';
+  const cs = comp.competitors || [];
+  // header
+  $('series').textContent = (sum.header?.season?.slug || '').replace(/-/g, ' ').toUpperCase() || 'CRICKET';
+  const lname = sum.header?.leagues?.[0]?.name; if (lname) $('series').textContent = lname.toUpperCase();
+  $('match').textContent = [comp.description, sum.gameInfo?.venue?.address?.city || sum.gameInfo?.venue?.shortName].filter(Boolean).join(' · ');
+  $('pill').className = 'pill' + (state === 'in' ? ' live' : '');
+  $('pillt').textContent = state === 'in' ? 'LIVE' : state === 'post' ? 'RESULT' : 'UPCOMING';
+  document.title = `${cs.map(c => c.team?.abbreviation).join(' v ')} LIVE | ScoreBuzz Cricket`;
+
+  teamCard($('T1'), cs[0] || {}, 0, st.battingTeamId, state);
+  teamCard($('T2'), cs[1] || {}, 1, st.battingTeamId, state);
+
+  const inns = analyse(all), I = inns[inns.length - 1], last = I?.balls[I.balls.length - 1];
+  const inn = last?.innings || {};
+
+  // equation
+  const note = (sum.notes || []).find(n => n.type === 'toss')?.text;
+  let big = esc(st.summary || st.type?.detail || '');
+  if (state === 'pre') {
+    const d = new Date(comp.date);
+    big = `Starts <em>${d.toLocaleString([], { weekday: 'short', hour: '2-digit', minute: '2-digit' })}</em>`;
+  } else if (state === 'in' && inn.target && inn.remainingRuns > 0 && inn.remainingBalls > 0) {
+    big = `${esc(I.team?.abbreviation || '')} need <em>${inn.remainingRuns}</em> runs from <em>${inn.remainingBalls}</em> balls`;
+  } else if (state === 'in' && !inn.target && I && (inn.trailBy > 0 || inn.leadBy > 0)) {
+    big = `${esc(I.team?.abbreviation || '')} ${inn.leadBy > 0 ? 'lead' : 'trail'} by <em>${inn.leadBy > 0 ? inn.leadBy : inn.trailBy}</em> runs · ${inn.runs}/${inn.wickets}`;
+  } else if (state === 'in' && !inn.target && inn.runs != null && I) {
+    big = `${esc(I.team?.displayName || '')} <em>${inn.runs}/${inn.wickets}</em> after ${ovStr(inn.balls)} overs`;
+  }
+  $('eqbig').innerHTML = big || esc(note || '');
+  const rates = [];
+  if (last) {
+    rates.push(['CRR', (inn.runRate ?? 0).toFixed ? Number(inn.runRate || 0).toFixed(2) : inn.runRate]);
+    if (inn.target) { rates.push(['TARGET', inn.target]); rates.push(['RRR', Number(inn.requiredRunRate || 0).toFixed(2), inn.requiredRunRate > inn.runRate]); }
+    else if (inn.ballLimit) rates.push(['PROJECTED', Math.round((inn.runs || 0) / Math.max(1, inn.balls) * inn.ballLimit)]);
+    rates.push(['EXTRAS', I.balls.reduce((s, b) => s + (['wide', 'no ball', 'leg bye', 'bye'].includes(b.playType?.description) ? (b.scoreValue || 0) : 0), 0)]);
+  } else if (note) rates.push(['TOSS', esc(note).replace(/,.*$/, '')]);
+  $('rates').innerHTML = rates.map(([k, v, hot]) => `<div class="rate${hot ? ' hot' : ''}"><b>${k}</b><span class="num">${v}</span></div>`).join('');
+
+  // batters + bowler
+  if (I && last && state !== 'pre') {
+    const dismissedNow = last.dismissal?.dismissal ? last.dismissal.batsman?.athlete?.id : null;
+    const ids = [last.batsman?.athlete?.id, last.otherBatsman?.athlete?.id].filter(Boolean);
+    // strike after the last ball: runs ran (excluding the extra itself) odd → swap; end of over → swap
+    const t = last.playType?.description || '', v = last.scoreValue || 0;
+    const ran = ['wide', 'no ball'].includes(t) ? Math.max(0, v - 1) : (['four', 'six'].includes(t) ? 0 : v);
+    let striker = last.batsman?.athlete?.id;
+    if (ran % 2) striker = last.otherBatsman?.athlete?.id;
+    if (last.over?.complete && legal(last)) striker = striker === ids[0] ? ids[1] : ids[0];
+    const rows = ids.map(id => I.bat.get(id)).filter(Boolean).filter(b => state !== 'in' || b.id !== dismissedNow);
+    rows.sort((a, b) => (b.id === striker) - (a.id === striker));
+    let bh = `<table><tr><th>BATTER</th><th>R</th><th>B</th><th>4s</th><th>6s</th><th>SR</th></tr>`;
+    for (const b of rows) bh += `<tr class="${state !== 'in' ? 'off' : ''}"><td>${b.id === striker && state === 'in' ? '<span class="strk"></span>' : '<span class="nostrk"></span>'}${esc(b.name)}</td><td class="R num">${b.r}</td><td class="num">${b.b}</td><td class="num">${b.f4}</td><td class="num">${b.s6}</td><td class="num">${sr(b.r, b.b)}</td></tr>`;
+    if (rows.length < 2 && state === 'in') bh += `<tr class="off"><td><span class="nostrk"></span>New batter</td><td class="R num">–</td><td></td><td></td><td></td><td></td></tr>`;
+    const bw = last.bowler?.athlete?.id ? I.bowl.get(last.bowler.athlete.id) : null;
+    bh += `<tr><th style="padding-top:10px">BOWLER</th><th>O</th><th>M</th><th>R</th><th>W</th><th>ECON</th></tr>`;
+    if (bw) bh += `<tr><td><span class="nostrk"></span>${esc(bw.name)}</td><td class="num">${bw.o}</td><td class="num">${bw.m}</td><td class="num">${bw.r}</td><td class="R num">${bw.w}</td><td class="num">${(bw.r / Math.max(1 / 6, Math.floor(bw.o) + (bw.o % 1) * 10 / 6)).toFixed(2)}</td></tr>`;
+    $('batbowl').innerHTML = bh + '</table>';
+    $('batbowl').parentNode.classList.remove('hide');
+  } else {
+    $('batbowl').innerHTML = `<div class="h">Match info</div><div style="font-size:26px;font-weight:700;margin-top:18px;line-height:1.5;color:#dfe3f2">${esc(note || '')}<br>${esc(sum.gameInfo?.venue?.fullName || '')}</div>`;
+  }
+
+  // this over
+  const ballsEl = $('balls');
+  if (I && last) {
+    const ovN = last.over?.number, cur = I.balls.filter(b => b.over?.number === ovN);
+    const prev = I.overs.get(ovN - 1);
+    const legalN = cur.filter(legal).length;
+    let h = cur.map((b, i) => { const c = chipOf(b); return `<div class="ball num ${c.c}${b.sequence > lastSeq && !firstLoad ? ' new' : ''}">${c.t}</div>`; }).join('');
+    for (let i = legalN; i < 6; i++) h += '<div class="ball empty"></div>';
+    h += `<div class="prev"><b>OVER ${ovN} · ${last.over?.runs ?? 0} RUNS</b>${prev ? `<span>Over ${prev.n}: ${prev.runs} run${prev.runs === 1 ? '' : 's'}${prev.w ? `, ${prev.w} wkt` : ''}</span>` : ''}</div>`;
+    ballsEl.innerHTML = h;
+    $('overh').textContent = `This over · ${short(last.bowler?.athlete?.displayName || '')}`;
+  } else ballsEl.innerHTML = '<div style="font-size:24px;color:var(--mute);font-weight:700">Ball-by-ball starts at the first delivery</div>';
+
+  // partnership + fall of wickets
+  if (I && last) {
+    const lw = I.fow[I.fow.length - 1];
+    const since = lw ? I.balls.slice(lw.ballIdx) : I.balls;
+    const pr = (inn.runs || 0) - (lw ? lw.runs : 0), pb = since.filter(legal).length;
+    const ovs = [...I.overs.values()].sort((a, b) => a.n - b.n), l5 = ovs.slice(-5);
+    $('part').innerHTML = `<div class="kv"><span class="k">${I.fow.length ? 'Wicket ' + (I.fow.length + 1) : 'Opening stand'}</span><span class="v num">${pr} <small style="font-size:20px;color:var(--mute)">(${pb})</small></span></div>
+      <div class="kv"><span class="k">Last 5 overs</span><span class="v num">${l5.reduce((s, o) => s + o.runs, 0)}/${l5.reduce((s, o) => s + o.w, 0)}</span></div>
+      <div class="fow">${I.fow.length ? '<b>FOW</b> ' + I.fow.map(f => `<b>${f.s}</b> ${esc(short(f.name).split(' ').slice(-1)[0])} (${f.ov})`).join(' · ') : 'No wickets yet'}</div>`;
+  } else $('part').innerHTML = '<div class="kv"><span class="k">Waiting for the first ball</span><span class="v">–</span></div>';
+
+  // worm
+  drawWorm(inns, cs);
+
+  // commentary
+  const feed = all.slice(-11).reverse();
+  $('feed').innerHTML = feed.map(it => {
+    const c = chipOf(it), isNew = it.sequence > lastSeq && !firstLoad;
+    const plain = String(it.text || '').replace(/<[^>]*>/g, '').trim();
+    const tx = it.dismissal?.dismissal && it.dismissal.text ? it.shortText + ' — ' + it.dismissal.text : (plain || it.shortText || '');
+    return `<div class="cm${c.c === 'bW' ? ' W' : ''}${isNew ? ' n' : ''}"><div class="ov num">${ovLabel(it)}</div><div class="ball num ${c.c}">${c.t}</div><div class="tx">${esc(tx)}</div></div>`;
+  }).join('') || '<div style="color:var(--mute);font-size:20px">Commentary appears once play starts.</div>';
+
+  // big moment
+  if (!firstLoad && last && last.sequence > lastSeq) {
+    const c = chipOf(last);
+    if (c.c === 'bW') boom('WICKET', 'var(--red)'); else if (c.c === 'b6') boom('SIX!', 'var(--six)'); else if (c.c === 'b4') boom('FOUR!', 'var(--four)');
+  }
+  if (last) lastSeq = Math.max(lastSeq, last.sequence);
+  firstLoad = false;
+}
+
+function boom(t, color) {
+  const b = $('boom'); $('boomt').textContent = t; $('boomt').style.color = color;
+  b.classList.remove('go'); void b.offsetWidth; b.classList.add('go');
+}
+
+function drawWorm(inns, cs) {
+  const W = 856, H = 212, pl = 44, pb = 28, pt = 8;
+  const lim = Math.max(...inns.map(I => (I.balls.at(-1)?.innings?.ballLimit || 0) / 6), ...inns.map(I => Math.max(...I.overs.keys())), 5);
+  const series = inns.map(I => {
+    const ovs = [...I.overs.values()].sort((a, b) => a.n - b.n); let cum = 0;
+    return { I, pts: [[0, 0], ...ovs.map(o => [o.n, o.end])], wk: ovs.filter(o => o.w).map(o => [o.n, o.end, o.w]) };
+  });
+  series.forEach((s, i) => s.second = series.slice(0, i).some(p => String(p.I.team?.id) === String(s.I.team?.id)));
+  const maxR = Math.max(50, ...series.flatMap(s => s.pts.map(p => p[1]))) * 1.08;
+  const x = o => pl + o / lim * (W - pl - 10), y = r => pt + (1 - r / maxR) * (H - pt - pb);
+  const colorOf = I => { const i = cs.findIndex(c => String(c.team?.id) === String(I.team?.id)); return i === 1 ? 'var(--t2)' : 'var(--t1)'; };
+  let g = '';
+  const step = maxR > 300 ? 100 : maxR > 150 ? 50 : 25;
+  for (let r = 0; r <= maxR; r += step) g += `<line x1="${pl}" x2="${W - 10}" y1="${y(r)}" y2="${y(r)}" stroke="#ffffff12"/><text x="${pl - 8}" y="${y(r) + 5}" fill="#5B638C" font-size="14" font-weight="700" text-anchor="end">${r}</text>`;
+  const os = lim > 30 ? 10 : 5;
+  for (let o = 0; o <= lim; o += os) g += `<text x="${x(o)}" y="${H - 6}" fill="#5B638C" font-size="14" font-weight="700" text-anchor="middle">${o}</text>`;
+  for (const s of series) {
+    const c = colorOf(s.I), d = s.pts.map((p, i) => (i ? 'L' : 'M') + x(p[0]).toFixed(1) + ' ' + y(p[1]).toFixed(1)).join('');
+    g += `<path d="${d}" fill="none" stroke="${c}" stroke-width="5" ${s.second ? 'stroke-dasharray="10 8"' : ''} stroke-linejoin="round" stroke-linecap="round" style="filter:brightness(1.35)"/>`;
+    for (const w of s.wk) g += `<circle cx="${x(w[0])}" cy="${y(w[1])}" r="${6 + (w[2] - 1) * 2}" fill="var(--red)" stroke="#060914" stroke-width="2"/>`;
+  }
+  const tgt = inns.at(-1)?.balls.at(-1)?.innings?.target;
+  if (tgt) g += `<line x1="${pl}" x2="${W - 10}" y1="${y(tgt)}" y2="${y(tgt)}" stroke="var(--lime)" stroke-dasharray="6 6" stroke-width="2"/><text x="${W - 14}" y="${y(tgt) - 8}" fill="var(--lime)" font-size="15" font-weight="800" text-anchor="end">TARGET ${tgt}</text>`;
+  $('worm').innerHTML = `<svg width="${W}" height="${H}" font-family="Inter,sans-serif">${g}</svg>`;
+  $('legend').innerHTML = series.map(s => `<span><i style="background:${colorOf(s.I)};filter:brightness(1.35)"></i>${esc(s.I.team?.abbreviation || '')}${s.second ? ' 2nd' : ''}</span>`).join('') + '<span><i style="background:var(--red);width:10px;height:10px;border-radius:50%"></i>WICKET</span>';
+}
+
+function ticker(panel) {
+  const out = [];
+  for (const s of panel.scores || []) for (const e of s.events || []) {
+    if (e.id === EVENT) continue;
+    const st = e.status?.type?.state; if (st === 'pre') continue;
+    const c = e.competitions?.[0]?.competitors || [];
+    out.push({ w: weight(e) + (st === 'in' ? 50 : 0), h: `<span class="g"><em>${esc(s.leagues?.[0]?.abbreviation || '')}</em>${c.map(x => `${esc(x.team?.abbreviation)} <b>${esc((x.score || '').replace(/\s*\(.*\)/, '') || '–')}</b>`).join(' v ')} <em>${st === 'in' ? 'LIVE' : 'FT'}</em></span>` });
+  }
+  out.sort((a, b) => b.w - a.w);
+  const items = out.slice(0, 14).map(o => o.h).join('') || '<span class="g">More live cricket at <b>scorebuzz.net</b></span>';
+  const tr = $('track'); tr.innerHTML = items + items; tr.style.setProperty('--dur', Math.max(30, out.length * 7) + 's');
+}
+
+function clock() { $('clock').textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); }
+setInterval(clock, 10000); clock();
+
+let panel = null;
+async function tick() {
+  try {
+    if (!panel || Date.now() - panel.t > 60000) { panel = await J(`${API}/scorepanel`); panel.t = Date.now(); ticker(panel); }
+    if (!EVENT || !LEAGUE) { if (!(await pickMatch(panel))) { $('msg').textContent = 'No live cricket right now'; $('msg').classList.remove('hide'); return; } }
+    const sum = await J(`${API}/${LEAGUE}/summary?event=${EVENT}`);
+    const state = sum.header?.competitions?.[0]?.status?.type?.state;
+    let all = [];
+    if (state !== 'pre') all = await loadBalls().catch(() => []);
+    render(sum, all);
+    $('app').classList.remove('hide'); $('msg').classList.add('hide');
+    // auto mode: move on 20 min after a result
+    if (state === 'post' && !Q.get('event')) { const done = tick.doneAt ||= Date.now(); if (Date.now() - done > 20 * 60000) { EVENT = LEAGUE = null; pages = []; lastSeq = 0; firstLoad = true; tick.doneAt = 0; } }
+  } catch (e) { console.warn('tick failed', e); }
+}
+tick(); setInterval(tick, 8000);
+</script>
+</body></html>
