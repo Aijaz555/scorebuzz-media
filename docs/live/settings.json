@@ -36,6 +36,11 @@
    "event": "401873040",
    "note": "Dallas Cowboys vs Indianapolis Colts, 2026-11-08T18:00:00Z"
   },
+  "3": {
+   "league": "nfl",
+   "event": "401873049",
+   "note": "Green Bay Packers vs New England Patriots, 2026-11-08T21:25:00Z"
+  },
   "4": {
    "league": "nfl",
    "event": "401873045",
@@ -76,26 +81,21 @@
    "event": "401873041",
    "note": "Denver Broncos vs Carolina Panthers, 2026-11-08T18:00:00Z"
   },
+  "12": {
+   "league": "nfl",
+   "event": "401873047",
+   "note": "Las Vegas Raiders vs San Francisco 49ers, 2026-11-08T21:25:00Z"
+  },
   "13": {
    "league": "nfl",
-   "event": "401873049",
-   "note": "Green Bay Packers vs New England Patriots, 2026-11-08T21:25:00Z"
+   "event": "401873048",
+   "note": "Arizona Cardinals vs Seattle Seahawks, 2026-11-08T21:25:00Z"
   },
   "14": {
    "league": "nhl",
    "event": "401892675",
    "note": "Vegas Golden Knights vs Buffalo Sabres, 2026-11-08T20:30:00Z",
    "sbtrk": 0
-  },
-  "15": {
-   "league": "nfl",
-   "event": "401873047",
-   "note": "Las Vegas Raiders vs San Francisco 49ers, 2026-11-08T21:25:00Z"
-  },
-  "16": {
-   "league": "nfl",
-   "event": "401873048",
-   "note": "Arizona Cardinals vs Seattle Seahawks, 2026-11-08T21:25:00Z"
   },
   "17": {
    "league": "laliga",
