@@ -31,10 +31,25 @@
    "event": "401873046",
    "note": "Houston Texans vs Los Angeles Chargers, 2026-11-08T21:05:00Z"
   },
+  "2": {
+   "league": "nba",
+   "event": "401909948",
+   "note": "Brooklyn Nets vs Dallas Mavericks, 2026-11-09T00:30:00Z"
+  },
   "3": {
    "league": "nfl",
    "event": "401873049",
    "note": "Green Bay Packers vs New England Patriots, 2026-11-08T21:25:00Z"
+  },
+  "4": {
+   "league": "nhl",
+   "event": "401892678",
+   "note": "Philadelphia Flyers vs Calgary Flames, 2026-11-09T00:00:00Z"
+  },
+  "5": {
+   "league": "nba",
+   "event": "401909947",
+   "note": "Utah Jazz vs Minnesota Timberwolves, 2026-11-09T00:00:00Z"
   },
   "6": {
    "league": "nba",
@@ -45,6 +60,11 @@
    "league": "nba",
    "event": "401909945",
    "note": "Philadelphia 76ers vs Chicago Bulls, 2026-11-08T20:30:00Z"
+  },
+  "8": {
+   "league": "nhl",
+   "event": "401892676",
+   "note": "New Jersey Devils vs Toronto Maple Leafs, 2026-11-09T00:00:00Z"
   },
   "11": {
    "league": "nhl",
@@ -66,16 +86,6 @@
    "event": "401892675",
    "note": "Vegas Golden Knights vs Buffalo Sabres, 2026-11-08T20:30:00Z",
    "sbtrk": 0
-  },
-  "17": {
-   "league": "laliga",
-   "event": "401882816",
-   "note": "Atlético Madrid vs Barcelona, 2026-11-08T20:00:00Z"
-  },
-  "18": {
-   "league": "seriea",
-   "event": "401875003",
-   "note": "Fiorentina vs Juventus, 2026-11-08T19:45:00Z"
   }
  },
  "fit": {
