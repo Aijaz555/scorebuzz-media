@@ -626,16 +626,6 @@
   "reason": "ok (contrast 44)",
   "at": "2026-11-08T21:44:53+00:00"
  },
- "401873046": {
-  "slot": "1",
-  "league": "nfl",
-  "game": "Chargers v Texans",
-  "url": "https://scorebuzz.net/american-football/nfl/chargers-vs-texans-401873046/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 46)",
-  "at": "2026-11-08T22:19:25+00:00"
- },
  "401909945": {
   "slot": "7",
   "league": "nba",
@@ -675,5 +665,15 @@
   "status": "ok",
   "reason": "ok (contrast 46)",
   "at": "2026-11-08T22:35:44+00:00"
+ },
+ "401873046": {
+  "slot": "1",
+  "league": "nfl",
+  "game": "Chargers v Texans",
+  "url": "https://scorebuzz.net/american-football/nfl/chargers-vs-texans-401873046/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T23:02:04+00:00"
  }
 }
