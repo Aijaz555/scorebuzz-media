@@ -636,36 +636,6 @@
   "reason": "ok (contrast 71)",
   "at": "2026-11-08T22:27:31+00:00"
  },
- "401873049": {
-  "slot": "3",
-  "league": "nfl",
-  "game": "Patriots v Packers",
-  "url": "https://scorebuzz.net/american-football/nfl/patriots-vs-packers-401873049/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-08T22:35:38+00:00"
- },
- "401873047": {
-  "slot": "12",
-  "league": "nfl",
-  "game": "49ers v Raiders",
-  "url": "https://scorebuzz.net/american-football/nfl/49ers-vs-raiders-401873047/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 47)",
-  "at": "2026-11-08T22:35:41+00:00"
- },
- "401873048": {
-  "slot": "13",
-  "league": "nfl",
-  "game": "Seahawks v Cardinals",
-  "url": "https://scorebuzz.net/american-football/nfl/seahawks-vs-cardinals-401873048/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 46)",
-  "at": "2026-11-08T22:35:44+00:00"
- },
  "401873046": {
   "slot": "1",
   "league": "nfl",
@@ -675,5 +645,45 @@
   "status": "ok",
   "reason": "ok (contrast 46)",
   "at": "2026-11-08T23:02:04+00:00"
+ },
+ "401873049": {
+  "slot": "3",
+  "league": "nfl",
+  "game": "Patriots v Packers",
+  "url": "https://scorebuzz.net/american-football/nfl/patriots-vs-packers-401873049/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T23:10:16+00:00"
+ },
+ "401892677": {
+  "slot": "11",
+  "league": "nhl",
+  "game": "Jets v Lightning",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/jets-vs-lightning-401892677/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 89)",
+  "at": "2026-11-08T23:10:19+00:00"
+ },
+ "401873047": {
+  "slot": "12",
+  "league": "nfl",
+  "game": "49ers v Raiders",
+  "url": "https://scorebuzz.net/american-football/nfl/49ers-vs-raiders-401873047/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 50)",
+  "at": "2026-11-08T23:10:22+00:00"
+ },
+ "401873048": {
+  "slot": "13",
+  "league": "nfl",
+  "game": "Seahawks v Cardinals",
+  "url": "https://scorebuzz.net/american-football/nfl/seahawks-vs-cardinals-401873048/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T23:10:25+00:00"
  }
 }
