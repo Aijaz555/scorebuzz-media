@@ -606,16 +606,6 @@
   "reason": "ok (contrast 45)",
   "at": "2026-11-08T21:36:40+00:00"
  },
- "401873046": {
-  "slot": "1",
-  "league": "nfl",
-  "game": "Chargers v Texans",
-  "url": "https://scorebuzz.net/american-football/nfl/chargers-vs-texans-401873046/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 48)",
-  "at": "2026-11-08T21:44:47+00:00"
- },
  "401882816": {
   "slot": "17",
   "league": "laliga",
@@ -675,5 +665,15 @@
   "status": "ok",
   "reason": "ok (contrast 46)",
   "at": "2026-11-08T22:03:16+00:00"
+ },
+ "401873046": {
+  "slot": "1",
+  "league": "nfl",
+  "game": "Chargers v Texans",
+  "url": "https://scorebuzz.net/american-football/nfl/chargers-vs-texans-401873046/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T22:19:25+00:00"
  }
 }
