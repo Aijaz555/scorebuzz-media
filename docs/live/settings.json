@@ -26,12 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "epl",
-   "event": "401879240",
-   "note": "Manchester United vs Aston Villa, 2026-11-08T16:30:00Z",
-   "sbtrk": 0
-  },
   "2": {
    "league": "nfl",
    "event": "401873040",
@@ -56,6 +50,11 @@
    "league": "nhl",
    "event": "401892674",
    "note": "Florida Panthers vs Boston Bruins, 2026-11-08T18:00:00Z"
+  },
+  "7": {
+   "league": "nba",
+   "event": "401909945",
+   "note": "Philadelphia 76ers vs Chicago Bulls, 2026-11-08T20:30:00Z"
   },
   "8": {
    "league": "nfl",
@@ -88,24 +87,14 @@
    "note": "Internazionale vs Como, 2026-11-08T17:00:00Z"
   },
   "14": {
-   "league": "ligue1",
-   "event": "401876412",
-   "note": "Angers vs Nice, 2026-11-08T16:15:00Z"
+   "league": "nhl",
+   "event": "401892675",
+   "note": "Vegas Golden Knights vs Buffalo Sabres, 2026-11-08T20:30:00Z"
   },
   "15": {
-   "league": "ligue1",
-   "event": "401876410",
-   "note": "Brest vs Lyon, 2026-11-08T16:15:00Z"
-  },
-  "16": {
-   "league": "ligue1",
-   "event": "401876409",
-   "note": "Le Havre AC vs Lorient, 2026-11-08T16:15:00Z"
-  },
-  "17": {
-   "league": "ligue1",
-   "event": "401876408",
-   "note": "Le Mans vs AS Monaco, 2026-11-08T16:15:00Z"
+   "league": "laliga",
+   "event": "401882816",
+   "note": "Atlético Madrid vs Barcelona, 2026-11-08T20:00:00Z"
   },
   "18": {
    "league": "seriea",
