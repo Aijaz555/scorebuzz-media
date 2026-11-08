@@ -475,5 +475,15 @@
   "status": "ok",
   "reason": "ok (contrast 45)",
   "at": "2026-11-08T17:05:17+00:00"
+ },
+ "401874808": {
+  "slot": "13",
+  "league": "seriea",
+  "game": "Inter Milan v Como",
+  "url": "https://scorebuzz.net/football/serie-a/inter-milan-vs-como-401874808/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T17:13:42+00:00"
  }
 }
