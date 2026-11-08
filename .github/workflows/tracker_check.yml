@@ -1,31 +1,37 @@
 name: Live tracker check
-# Every 10 minutes: for each live stream whose game has started, open the scorebuzz.net match page the stream embeds and
-# check its live tracker really draws (tools/live/check_trackers.py). If not, the slot gets "sbtrk": 0 in
-# docs/live/settings.json and the stream page switches that game to the built-in tracker within a minute, no restart.
+# Checks that every live stream's tracker really draws (tools/live/check_trackers.py) and switches a failing game to the
+# built-in tracker via "sbtrk": 0 in docs/live/settings.json. GitHub's cron is often late or skipped at busy times, so each run
+# loops for ~50 minutes (a check about every 8 minutes) and the cron fires every 30 minutes; the concurrency group stops overlaps.
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 permissions:
   contents: write
-concurrency: tracker-check
+concurrency:
+  group: tracker-check
+  cancel-in-progress: false
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 58
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install playwright pillow && python -m playwright install --with-deps chromium
-      - run: python3 tools/live/check_trackers.py
-      - name: Commit results
+      - name: Check every ~8 minutes for 50 minutes
         run: |
           git config user.name "scorebuzz-bot"
           git config user.email "scorebuzz-bot@users.noreply.github.com"
-          git add docs/live/settings.json docs/live/tracker_checks.json
-          git diff --cached --quiet && echo "nothing new" && exit 0
-          git commit -m "Live tracker check: $(date -u +%FT%H:%MZ)"
-          git pull --rebase
-          git push
+          for i in 1 2 3 4 5 6; do
+            git pull -q --rebase origin main || true
+            python3 tools/live/check_trackers.py || true
+            git add docs/live/settings.json docs/live/tracker_checks.json
+            if ! git diff --cached --quiet; then
+              git commit -qm "Live tracker check: $(date -u +%FT%H:%MZ)"
+              git pull -q --rebase origin main && git push -q || echo "push failed"
+            fi
+            [ $i -lt 6 ] && sleep 480
+          done

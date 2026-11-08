@@ -47,11 +47,24 @@ def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", str(s or "").lower()).strip("-")
 
 
+SB = {}
+def short_names(league):
+    """team id -> ESPN shortDisplayName (the site's URL slug: "Pacers", "Ole Miss", "Philadelphia"); the summary lacks it"""
+    if league not in SB:
+        try:
+            j = get(f"https://site.api.espn.com/apis/site/v2/sports/{ESPN[league]}/scoreboard" + ("?groups=80&limit=100" if league == "ncaaf" else ""))
+            SB[league] = {str(x["team"]["id"]): x["team"].get("shortDisplayName") for e in j.get("events", []) for x in e["competitions"][0]["competitors"]}
+        except Exception:
+            SB[league] = {}
+    return SB[league]
+
+
 def game(league, event):
     s = get(f"https://site.api.espn.com/apis/site/v2/sports/{ESPN[league]}/summary?event={event}")
     c = s["header"]["competitions"][0]
     t = {x["homeAway"]: x["team"] for x in c["competitors"]}
-    name = lambda x: x.get("shortDisplayName") or x.get("name") or x.get("displayName") or "?"
+    sn = short_names(league)
+    name = lambda x: sn.get(str(x.get("id"))) or x.get("shortDisplayName") or x.get("name") or x.get("displayName") or "?"
     return {"state": c["status"]["type"]["state"], "detail": c["status"]["type"].get("shortDetail", ""),
             "home": name(t["home"]), "away": name(t["away"])}
 

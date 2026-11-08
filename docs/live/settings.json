@@ -53,7 +53,8 @@
   "8": {
    "league": "ncaaf",
    "event": "401858291",
-   "note": "Miami Hurricanes vs Notre Dame Fighting Irish, 2026-11-08T00:30:00Z"
+   "note": "Miami Hurricanes vs Notre Dame Fighting Irish, 2026-11-08T00:30:00Z",
+   "sbtrk": 0
   },
   "9": {
    "league": "ncaaf",
@@ -120,7 +121,7 @@
   "win": true,
   "fit": "fill"
  },
- "reload": 18,
+ "reload": 19,
  "music": {
   "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals.",
   "playlists": {
