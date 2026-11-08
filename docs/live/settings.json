@@ -35,6 +35,11 @@
    "league": "cricket:8616",
    "event": "1558437",
    "note": "India U19 vs Pakistan U19 (Asia U19 Cup), owner request 2026-11-08"
+  },
+  "3": {
+   "league": "laliga",
+   "event": "401882814",
+   "note": "Elche vs Real Betis, 2026-11-08T13:00:00Z"
   }
  },
  "fit": {
@@ -43,7 +48,7 @@
  },
  "reload": 22,
  "music": {
-  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks \u2014 no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals.",
+  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals.",
   "playlists": {
    "american_football": {
     "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
