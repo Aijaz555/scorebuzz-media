@@ -26,15 +26,10 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "seriea",
-   "event": "401874810",
-   "note": "Napoli vs Lazio, 2026-11-08T11:30:00Z"
-  },
   "2": {
-   "league": "cricket:8616",
-   "event": "1558437",
-   "note": "India U19 vs Pakistan U19 (Asia U19 Cup), owner request 2026-11-08"
+   "league": "laliga",
+   "event": "401882810",
+   "note": "Real Sociedad vs Rayo Vallecano, 2026-11-08T15:15:00Z"
   },
   "3": {
    "league": "laliga",
