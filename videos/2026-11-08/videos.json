@@ -4,9 +4,8 @@
     "sport": "football",
     "league": "epl",
     "format": "video",
-    "bed": "anthem",
     "title": "Premier League Results, Table & Fixtures | Matchweek 10 2026/27 ⚽",
-    "description": "Premier League Matchweek 10 results, the updated Premier League table and the next fixtures. Arsenal lead on 27 points after 10 games; the big result was Man Utd 4–4 Aston Villa. Next round starts Sat 21 Nov.\n\nAll Matchweek 10 scores: Everton 3–1 Coventry, Leeds 1–0 Spurs, Arsenal 1–0 Hull, Fulham 1–1 Newcastle, Nottm Forest 3–1 Man City, Brighton 2–0 Brentford, C Palace 1–3 Liverpool, Ipswich 1–2 Bournemouth, Sunderland 1–0 Chelsea, Man Utd 4–4 Aston Villa.\n\n0:00 Intro\n0:04 Matchweek 10 results\n0:35 Premier League table\n0:57 Matchweek 11 fixtures\n\nPremier League live scores, table and fixtures: https://scorebuzz.net\n\n#PremierLeague #Football #premierleaguetable #ScoreBuzz",
+    "description": "Premier League Matchweek 10 results, the updated Premier League table and the next fixtures. Arsenal lead on 27 points after 10 games; the big result was Man Utd 4–4 Aston Villa. Next round starts Sat 21 Nov.\n\nAll Matchweek 10 scores: Everton 3–1 Coventry, Leeds 1–0 Spurs, Arsenal 1–0 Hull, Fulham 1–1 Newcastle, Nottm Forest 3–1 Man City, Brighton 2–0 Brentford, C Palace 1–3 Liverpool, Ipswich 1–2 Bournemouth, Sunderland 1–0 Chelsea, Man Utd 4–4 Aston Villa.\n\n0:00 Intro\n0:06 Matchweek 10 results\n0:20 Every game\n1:30 Premier League table\n2:00 Title race & relegation\n2:16 Matchweek 11 fixtures\n\nPremier League live scores, table and fixtures: https://scorebuzz.net\n\n#PremierLeague #Football #premierleaguetable #ScoreBuzz\n\nMusic: \"Werq\" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0/)",
     "tags": [
       "premier league table",
       "premier league standings",
@@ -281,14 +280,14 @@
     "scenes": [
       {
         "type": "hook",
-        "dur": 4,
+        "dur": 6,
         "kicker": "Premier League · Matchweek 10",
         "title": "Results, table & fixtures",
         "sub": "Arsenal top on 27 points"
       },
       {
         "type": "table",
-        "dur": 13,
+        "dur": 14,
         "label": "Premier League · Matchweek 10 results",
         "cols": [
           "",
@@ -359,22 +358,7 @@
       },
       {
         "type": "score",
-        "dur": 6,
-        "label": "Premier League · Sun 8 Nov",
-        "home": "Man Utd",
-        "homeAbbr": "MAN",
-        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
-        "homeScore": 4,
-        "away": "Aston Villa",
-        "awayAbbr": "AVL",
-        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
-        "awayScore": 4,
-        "status": "FULL TIME",
-        "note": "MAN: B. Fernandes 16' pen · Y. Tielemans 44' · J. Zirkzee 90'+2' · P. Dorgu 90'+6'  |  AVL: Alysson 1' · N. Jackson 4' · J. McGinn 48' pen · L. Goretzka 53'"
-      },
-      {
-        "type": "score",
-        "dur": 6,
+        "dur": 7,
         "label": "Premier League · Fri 6 Nov",
         "home": "Everton",
         "homeAbbr": "EVE",
@@ -389,7 +373,52 @@
       },
       {
         "type": "score",
-        "dur": 6,
+        "dur": 7,
+        "label": "Premier League · Sat 7 Nov",
+        "home": "Leeds",
+        "homeAbbr": "LEE",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+        "homeScore": 1,
+        "away": "Spurs",
+        "awayAbbr": "TOT",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "LEE: N. Okafor 79'"
+      },
+      {
+        "type": "score",
+        "dur": 7,
+        "label": "Premier League · Sat 7 Nov",
+        "home": "Arsenal",
+        "homeAbbr": "ARS",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+        "homeScore": 1,
+        "away": "Hull",
+        "awayAbbr": "HUL",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "ARS: M. Ødegaard 72'"
+      },
+      {
+        "type": "score",
+        "dur": 7,
+        "label": "Premier League · Sat 7 Nov",
+        "home": "Fulham",
+        "homeAbbr": "FUL",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
+        "homeScore": 1,
+        "away": "Newcastle",
+        "awayAbbr": "NEW",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "FUL: R. Muniz 83'  |  NEW: J. Murphy 80'"
+      },
+      {
+        "type": "score",
+        "dur": 7,
         "label": "Premier League · Sat 7 Nov",
         "home": "Nottm Forest",
         "homeAbbr": "NFO",
@@ -403,8 +432,83 @@
         "note": "NFO: J. Cunha 6' · L. Delap 18', 73'  |  MNC: R. Cherki 52'"
       },
       {
+        "type": "score",
+        "dur": 7,
+        "label": "Premier League · Sun 8 Nov",
+        "home": "Brighton",
+        "homeAbbr": "BHA",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
+        "homeScore": 2,
+        "away": "Brentford",
+        "awayAbbr": "BRE",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "BHA: D. Gómez 15' · P. Gross 42' pen"
+      },
+      {
+        "type": "score",
+        "dur": 7,
+        "label": "Premier League · Sun 8 Nov",
+        "home": "C Palace",
+        "homeAbbr": "CRY",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+        "homeScore": 1,
+        "away": "Liverpool",
+        "awayAbbr": "LIV",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+        "awayScore": 3,
+        "status": "FULL TIME",
+        "note": "CRY: E. Nketiah 90'+5' pen  |  LIV: A. Mac Allister 40' · F. Wirtz 54' · A. Isak 89'"
+      },
+      {
+        "type": "score",
+        "dur": 7,
+        "label": "Premier League · Sun 8 Nov",
+        "home": "Ipswich",
+        "homeAbbr": "IPS",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+        "homeScore": 1,
+        "away": "Bournemouth",
+        "awayAbbr": "BOU",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+        "awayScore": 2,
+        "status": "FULL TIME",
+        "note": "IPS: J. Clarke 73' pen  |  BOU: Evanilson 5' · L. Davis (og) 46'"
+      },
+      {
+        "type": "score",
+        "dur": 7,
+        "label": "Premier League · Sun 8 Nov",
+        "home": "Sunderland",
+        "homeAbbr": "SUN",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+        "homeScore": 1,
+        "away": "Chelsea",
+        "awayAbbr": "CHE",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "SUN: E. Le Fée 36' pen"
+      },
+      {
+        "type": "score",
+        "dur": 7,
+        "label": "Premier League · Sun 8 Nov",
+        "home": "Man Utd",
+        "homeAbbr": "MAN",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+        "homeScore": 4,
+        "away": "Aston Villa",
+        "awayAbbr": "AVL",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+        "awayScore": 4,
+        "status": "FULL TIME",
+        "note": "MAN: B. Fernandes 16' pen · Y. Tielemans 44' · J. Zirkzee 90'+2' · P. Dorgu 90'+6'  |  AVL: Alysson 1' · N. Jackson 4' · J. McGinn 48' pen · L. Goretzka 53'"
+      },
+      {
         "type": "table",
-        "dur": 11,
+        "dur": 15,
         "label": "Premier League table · after Matchweek 10",
         "cols": [
           "P",
@@ -526,7 +630,7 @@
       },
       {
         "type": "table",
-        "dur": 11,
+        "dur": 15,
         "label": "Premier League table · after Matchweek 10 (11–20)",
         "cols": [
           "P",
@@ -646,8 +750,22 @@
         "note": "Bottom 3: relegation zone"
       },
       {
+        "type": "text",
+        "dur": 8,
+        "label": "Title race",
+        "title": "Arsenal lead by 5 points",
+        "sub": "Brighton are second on 22 points after 10 games"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Relegation zone",
+        "title": "C Palace bottom on 7 points",
+        "sub": "In the drop zone: Man Utd 8 · Sunderland 8 · C Palace 7. Coventry are first above it on 9."
+      },
+      {
         "type": "list",
-        "dur": 9,
+        "dur": 11,
         "label": "Premier League · Matchweek 11 fixtures (UK · ET)",
         "rows": [
           [
@@ -679,7 +797,7 @@
       },
       {
         "type": "list",
-        "dur": 9,
+        "dur": 11,
         "label": "Premier League · Matchweek 11 fixtures (UK · ET) cont.",
         "rows": [
           [
@@ -711,10 +829,11 @@
       },
       {
         "type": "cta",
-        "dur": 5,
+        "dur": 6,
         "title": "Who wins the Premier League this season?",
         "sub": "Live scores, tables & fixtures every day"
       }
-    ]
+    ],
+    "music": "Werq"
   }
 ]
