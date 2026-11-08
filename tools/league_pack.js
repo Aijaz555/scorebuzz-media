@@ -3,7 +3,7 @@
 // Usage: node tools/league_pack.js <out videos.json> <fromYYYYMMDD> <toYYYYMMDD> <league> [league ...]
 //   leagues: epl laliga seriea bundesliga ligue1 (results window = from..to, fixtures = next 21 days after `to`)
 // Then: node tools/make_shorts.js <json> <dir>; node tools/make_thumbs.js <json> <dir>;
-//       tools/add_music.sh <dir>/<id>.mp4 anthem <tmp> (replace the file).
+//       node tools/music_pick.js <json> <dir> <id> (a different free track per video + credit line).
 const fs = require('fs');
 
 const L = {
@@ -75,28 +75,35 @@ async function pack(key, from, to) {
   const scenes = []; const chapters = []; let t = 0;
   const push = (sc, chap) => { if (chap) chapters.push(`${mmss(Math.round(t))} ${chap}`); scenes.push(sc); t += sc.dur; };
   const leader = entries[0];
-  push({ type: 'hook', dur: 4, kicker: `${lg.name} · ${mw}`, title: 'Results, table & fixtures', sub: `${leader.team} top on ${leader.pts} points` }, 'Intro');
-  chunk(res, 10).forEach((part, i) => push({ type: 'table', dur: 9 + Math.ceil(part.length / 3), label: `${lg.name} · ${mw} results${i ? ' (cont.)' : ''}`, cols: ['', ''], rows: part.map((r) => ['', `${r.home} v ${r.away}`, r.hs, r.as]) }, i ? null : `${mw} results`));
-  top.forEach((r) => {
+  // 2.5-3 min (owner, 8 Nov 2026): every result gets its own score card; card time stretches to hit ~165 s
+  const n = entries.length, rel = n - lg.zones.rel, half = Math.ceil(n / 2);
+  const second = entries[1], safe = entries[rel - 1];
+  const fixedDur = 6 + 14 * chunk(res, 10).length + 15 + 15 + 8 + 8 + (next.length ? 11 * chunk(next, 5).length : 0) + 6;
+  const cardDur = Math.max(7, Math.min(11, Math.round((165 - fixedDur) / res.length)));
+  push({ type: 'hook', dur: 6, kicker: `${lg.name} · ${mw}`, title: 'Results, table & fixtures', sub: `${leader.team} top on ${leader.pts} points` }, 'Intro');
+  chunk(res, 10).forEach((part, i) => push({ type: 'table', dur: 14, label: `${lg.name} · ${mw} results${i ? ' (cont.)' : ''}`, cols: ['', ''], rows: part.map((r) => ['', `${r.home} v ${r.away}`, r.hs, r.as]) }, i ? null : `${mw} results`));
+  res.forEach((r, i) => {
     const hsco = scorers(r, r.hid), asco = scorers(r, r.aid);
-    const note = [hsco && `${r.ha}: ${hsco}`, asco && `${r.aa}: ${asco}`].filter(Boolean).join('  |  ');
-    push({ type: 'score', dur: 6, label: `${lg.name} · ${fmtDay(r.date)}`, home: r.home, homeAbbr: r.ha, homeLogo: r.hl, homeScore: r.hs, away: r.away, awayAbbr: r.aa, awayLogo: r.al, awayScore: r.as, status: 'FULL TIME', note: note.length > 200 ? note.slice(0, 197) + '…' : note });
+    const note = [hsco && `${r.ha}: ${hsco}`, asco && `${r.aa}: ${asco}`].filter(Boolean).join('  |  ') || 'No goals';
+    push({ type: 'score', dur: cardDur, label: `${lg.name} · ${fmtDay(r.date)}`, home: r.home, homeAbbr: r.ha, homeLogo: r.hl, homeScore: r.hs, away: r.away, awayAbbr: r.aa, awayLogo: r.al, awayScore: r.as, status: 'FULL TIME', note: note.length > 200 ? note.slice(0, 197) + '…' : note }, i ? null : 'Every game');
   });
-  const n = entries.length, rel = n - lg.zones.rel;
   const row = (e) => [e.rank, e.team, e.p, e.w, e.d, e.l, e.gd, e.pts];
-  const half = Math.ceil(n / 2);
-  push({ type: 'table', dur: 11, label: `${lg.name} table · after ${mw}`, cols: ['P', 'W', 'D', 'L', 'GD', 'PTS'], rows: entries.slice(0, half).map(row), highlight: entries.slice(0, lg.zones.ucl).map((e) => e.rank), note: `Top ${lg.zones.ucl}: Champions League places` }, `${lg.name} table`);
-  push({ type: 'table', dur: 11, label: `${lg.name} table · after ${mw} (${half + 1}–${n})`, cols: ['P', 'W', 'D', 'L', 'GD', 'PTS'], rows: entries.slice(half).map(row), danger: entries.filter((e) => e.rank > rel).map((e) => e.rank), note: `Bottom ${lg.zones.rel}: relegation zone` });
+  push({ type: 'table', dur: 15, label: `${lg.name} table · after ${mw}`, cols: ['P', 'W', 'D', 'L', 'GD', 'PTS'], rows: entries.slice(0, half).map(row), highlight: entries.slice(0, lg.zones.ucl).map((e) => e.rank), note: `Top ${lg.zones.ucl}: Champions League places` }, `${lg.name} table`);
+  push({ type: 'table', dur: 15, label: `${lg.name} table · after ${mw} (${half + 1}–${n})`, cols: ['P', 'W', 'D', 'L', 'GD', 'PTS'], rows: entries.slice(half).map(row), danger: entries.filter((e) => e.rank > rel).map((e) => e.rank), note: `Bottom ${lg.zones.rel}: relegation zone` });
+  const gap = leader.pts - second.pts;
+  push({ type: 'text', dur: 8, label: 'Title race', title: gap ? `${leader.team} lead by ${gap} point${gap > 1 ? 's' : ''}` : `${leader.team} top on goal difference`, sub: `${second.team} are second on ${second.pts} points after ${gp} games` }, 'Title race & relegation');
+  const bottom = entries.slice(rel).map((e) => `${e.team} ${e.pts}`).join(' · ');
+  push({ type: 'text', dur: 8, label: 'Relegation zone', title: `${entries[n - 1].team} bottom on ${entries[n - 1].pts} points`, sub: `In the drop zone: ${bottom}. ${safe.team} are first above it on ${safe.pts}.` });
   if (next.length) {
-    chunk(next, 6).forEach((part, i) => push({ type: 'list', dur: 9, label: `${lg.name} · Matchweek ${gp + 1} fixtures (UK · ET)${i ? ' cont.' : ''}`, rows: part.map((e) => { const { h, a } = sideOf(e.competitions[0]); return [fmtDay(e.date), `${h.team.shortDisplayName} v ${a.team.shortDisplayName}`, `${fmtUK(e.date)} · ${fmtET(e.date)}`]; }) }, i ? null : `Matchweek ${gp + 1} fixtures`));
+    chunk(next, 5).forEach((part, i) => push({ type: 'list', dur: 11, label: `${lg.name} · Matchweek ${gp + 1} fixtures (UK · ET)${i ? ' cont.' : ''}`, rows: part.map((e) => { const { h, a } = sideOf(e.competitions[0]); return [fmtDay(e.date), `${h.team.shortDisplayName} v ${a.team.shortDisplayName}`, `${fmtUK(e.date)} · ${fmtET(e.date)}`]; }) }, i ? null : `Matchweek ${gp + 1} fixtures`));
   }
-  push({ type: 'cta', dur: 5, title: `Who wins the ${lg.name} this season?`, sub: 'Live scores, tables & fixtures every day' });
+  push({ type: 'cta', dur: 6, title: `Who wins the ${lg.name} this season?`, sub: 'Live scores, tables & fixtures every day' });
 
   const big = top[0];
   const nextLine = next.length ? `Next round starts ${fmtDay(next[0].date)}.` : '';
   const id = `${key}-mw${gp}`;
   return {
-    id, sport: 'football', league: key, format: 'video', bed: 'anthem',
+    id, sport: 'football', league: key, format: 'video', 
     title: `${lg.name} Results, Table & Fixtures | ${mw} ${new Date(toD).getFullYear()}/${String(new Date(toD).getFullYear() + 1).slice(2)} ⚽`.slice(0, 100),
     description: [
       `${lg.name} ${mw} results, the updated ${lg.name} table and the next fixtures. ${leader.team} lead on ${leader.pts} points after ${gp} games; the big result was ${big.home} ${big.hs}–${big.as} ${big.away}. ${nextLine}`.trim(),

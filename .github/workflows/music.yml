@@ -1,0 +1,39 @@
+name: Music library
+# Downloads the Kevin MacLeod (incompetech.com, CC BY 4.0) tracks listed in tools/music/library/tracks.json into
+# tools/music/library/ and commits them. The agent sandbox can't reach incompetech.com, so this runs on GitHub.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: music
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download tracks
+        run: |
+          cd tools/music/library
+          python3 - <<'PY'
+          import json, os, urllib.parse, urllib.request
+          for t in json.load(open('tracks.json'))['tracks']:
+              f = t + '.mp3'
+              if os.path.exists(f) and os.path.getsize(f) > 100000: continue
+              url = 'https://incompetech.com/music/royalty-free/mp3-royaltyfree/' + urllib.parse.quote(f)
+              try:
+                  req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 scorebuzz-bot'})
+                  data = urllib.request.urlopen(req, timeout=60).read()
+                  if len(data) > 100000: open(f, 'wb').write(data); print('ok', f, len(data))
+                  else: print('too small', f)
+              except Exception as e: print('FAIL', f, e)
+          PY
+      - name: Commit tracks
+        run: |
+          git config user.name "scorebuzz-bot"
+          git config user.email "scorebuzz-bot@users.noreply.github.com"
+          git add tools/music/library
+          git diff --cached --quiet && echo "nothing new" && exit 0
+          git commit -m "Music library: $(git diff --cached --name-only | grep -c '\.mp3$') Kevin MacLeod tracks (CC BY 4.0)"
+          git pull --rebase
+          git push

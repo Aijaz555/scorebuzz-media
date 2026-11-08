@@ -1,0 +1,5 @@
+{
+  "note": "Background music for YouTube videos (owner, 8 Nov 2026: a different free track per video, not the same bed). Kevin MacLeod, incompetech.com, CC BY 4.0 - the credit line is added to every description by tools/music_pick.js. Upbeat/stadium tracks only (no playful/kids-sounding ones). Files are downloaded by the 'Music library' GitHub Action (.github/workflows/music.yml) because the agent sandbox can't reach incompetech.com.",
+  "license": "Creative Commons: By Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0/)",
+  "tracks": ["Exhilarate", "Hitman", "Volatile Reaction", "Movement Proposition", "Big Rock", "Raving Energy", "Rocket", "Shiny Tech", "EDM Detection Mode", "Heroic Age", "Fearless First", "Cut and Run", "Hard Boiled", "Crusade", "Groove Grove", "Werq", "Funkorama", "Gonna Start", "Malicious", "Killers", "Severe Tire Damage", "Ouroboros", "Funk Game Loop"]
+}
