@@ -596,16 +596,6 @@
   "reason": "ok (contrast 46)",
   "at": "2026-11-08T21:02:42+00:00"
  },
- "401909945": {
-  "slot": "7",
-  "league": "nba",
-  "game": "Bulls v 76ers",
-  "url": "https://scorebuzz.net/basketball/nba/bulls-vs-76ers-401909945/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-08T21:20:19+00:00"
- },
  "401873049": {
   "slot": "3",
   "league": "nfl",
@@ -675,5 +665,15 @@
   "status": "ok",
   "reason": "ok (contrast 44)",
   "at": "2026-11-08T21:44:53+00:00"
+ },
+ "401909945": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Bulls v 76ers",
+  "url": "https://scorebuzz.net/basketball/nba/bulls-vs-76ers-401909945/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 71)",
+  "at": "2026-11-08T21:53:00+00:00"
  }
 }
