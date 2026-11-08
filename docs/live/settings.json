@@ -25,7 +25,13 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "seriea",
+   "event": "401874810",
+   "note": "Napoli vs Lazio, 2026-11-08T11:30:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
