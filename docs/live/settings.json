@@ -26,11 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "11": {
-   "league": "nba",
-   "event": "401909944",
-   "note": "San Antonio Spurs vs Portland Trail Blazers, 2026-11-08T03:00:00Z"
-  },
   "18": {
    "league": "nhl",
    "event": "401892673",
