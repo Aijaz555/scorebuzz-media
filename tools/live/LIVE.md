@@ -210,6 +210,17 @@ starting 30 min before kick-off and stopped when the game is over.
   `python3 tools/make_live_music.py`; 6 upbeat ones imported to the LiveReacting library), looping at volume 3/10,
   a different order per project. Duplicated Slot projects inherit it. No commercial music, ever.
 
+## Stream check (added 9 Nov 2026)
+
+Each hourly run checks what every LIVE stream actually shows on YouTube (needs `i.ytimg.com` on the session's allowed
+network domains, which the owner added 9 Nov 2026):
+`node tools/live/check_streams.js <videoId>:<slot> ... --out <scratch dir>` downloads YouTube's live preview frame
+(`maxresdefault_live.jpg`, refreshed every few minutes) and prints, per stream, the image path and the game
+settings.json says the slot should show. Look at each image: the screen shows home team first, so either team order
+matches. Problems: a different matchup, "next game coming up", a blank/black/loading screen. Skip streams that went
+LIVE in this run (the preview lags a few minutes). A problem seen once → stop + start that project once
+(it reloads the page); seen again in the next run (same game) → notify the owner.
+
 ## Thumbnails for live streams (added 6 Nov 2026)
 
 LiveReacting's API can't set a YouTube thumbnail, so live streams get one through the YouTube Data API, run from a GitHub Action

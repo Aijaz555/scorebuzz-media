@@ -225,7 +225,7 @@ function render(s, sb) {
     <div class="mid"><div class="per">${esc(per)}</div><div class="sc"><span class="${home.score < away.score ? 'lo' : ''}">${home.score}</span><i>:</i><span class="${away.score < home.score ? 'lo' : ''}">${away.score}</span></div><div class="clk">${esc(clk)}${lead ? `<span class="lead">${esc(lead)}</span>` : ''}</div></div>
     <div class="team"><img src="${away.logo}" alt=""><div class="city">${away.rank ? `<span class="rk">#${away.rank}</span> ` : ''}${esc(away.city)}</div><div class="nick">${esc(away.nick)}${away.rec ? ` <span class="rec">${esc(away.rec)}</span>` : ''}</div></div>
   </div>
-  <div class="panel"><div class="h">Quarter-by-quarter</div><table><tr><th>Team</th>${cols.map((x) => `<th>${x}</th>`).join('')}<th>${league === 'mlb' ? 'R' : 'Total'}</th>${extra.map((k) => `<th class="x">${k}</th>`).join('')}</tr>${row(home, he('home'))}${row(away, he('away'))}</table></div>
+  <div class="panel"><div class="h">${league === 'nhl' ? 'Period-by-period' : league === 'mlb' ? 'Inning-by-inning' : 'Quarter-by-quarter'}</div><table><tr><th>Team</th>${cols.map((x) => `<th>${x}</th>`).join('')}<th>${league === 'mlb' ? 'R' : 'Total'}</th>${extra.map((k) => `<th class="x">${k}</th>`).join('')}</tr>${row(home, he('home'))}${row(away, he('away'))}</table></div>
   <div class="row2">
     <div class="panel"><div class="h">Team statistics</div>
       ${statsHtml}</div>
