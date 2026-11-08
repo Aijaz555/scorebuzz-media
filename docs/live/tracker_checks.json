@@ -315,5 +315,15 @@
   "status": "ok",
   "reason": "ok (contrast 89)",
   "at": "2026-11-08T05:26:12+00:00"
+ },
+ "401874810": {
+  "slot": "1",
+  "league": "seriea",
+  "game": "Napoli v Lazio",
+  "url": "https://scorebuzz.net/football/serie-a/napoli-vs-lazio-401874810/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-08T11:35:48+00:00"
  }
 }
