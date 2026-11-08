@@ -26,46 +26,10 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "nhl",
-   "event": "401892671",
-   "note": "Detroit Red Wings vs Colorado Avalanche, 2026-11-08T02:00:00Z"
-  },
-  "3": {
-   "league": "nhl",
-   "event": "401892672",
-   "note": "Pittsburgh Penguins vs Los Angeles Kings, 2026-11-08T02:00:00Z"
-  },
-  "5": {
-   "league": "nhl",
-   "event": "401892670",
-   "note": "Tampa Bay Lightning vs Minnesota Wild, 2026-11-08T01:00:00Z"
-  },
-  "7": {
-   "league": "nba",
-   "event": "401909943",
-   "note": "Houston Rockets vs Phoenix Suns, 2026-11-08T02:00:00Z"
-  },
-  "8": {
-   "league": "ncaaf",
-   "event": "401858291",
-   "note": "Miami Hurricanes vs Notre Dame Fighting Irish, 2026-11-08T00:30:00Z",
-   "sbtrk": 0
-  },
-  "9": {
-   "league": "ncaaf",
-   "event": "401856741",
-   "note": "Georgia Bulldogs vs Ole Miss Rebels, 2026-11-08T00:30:00Z"
-  },
   "11": {
    "league": "nba",
    "event": "401909944",
    "note": "San Antonio Spurs vs Portland Trail Blazers, 2026-11-08T03:00:00Z"
-  },
-  "13": {
-   "league": "nba",
-   "event": "401909942",
-   "note": "Orlando Magic vs Golden State Warriors, 2026-11-08T01:30:00Z"
   },
   "18": {
    "league": "nhl",
