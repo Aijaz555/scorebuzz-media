@@ -236,26 +236,6 @@
   "reason": "ok (contrast 79)",
   "at": "2026-11-08T03:33:42+00:00"
  },
- "401909943": {
-  "slot": "7",
-  "league": "nba",
-  "game": "Suns v Rockets",
-  "url": "https://scorebuzz.net/basketball/nba/suns-vs-rockets-401909943/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-08T03:33:45+00:00"
- },
- "401909942": {
-  "slot": "13",
-  "league": "nba",
-  "game": "Warriors v Magic",
-  "url": "https://scorebuzz.net/basketball/nba/warriors-vs-magic-401909942/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 71)",
-  "at": "2026-11-08T03:33:48+00:00"
- },
  "401856741": {
   "slot": "9",
   "league": "ncaaf",
@@ -276,26 +256,6 @@
   "reason": "ok (contrast 79)",
   "at": "2026-11-08T03:41:58+00:00"
  },
- "401909944": {
-  "slot": "11",
-  "league": "nba",
-  "game": "Trail Blazers v Spurs",
-  "url": "https://scorebuzz.net/basketball/nba/trail-blazers-vs-spurs-401909944/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-08T03:50:05+00:00"
- },
- "401892673": {
-  "slot": "18",
-  "league": "nhl",
-  "game": "Oilers v Canucks",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/oilers-vs-canucks-401892673/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 89)",
-  "at": "2026-11-08T03:50:08+00:00"
- },
  "401892671": {
   "slot": "1",
   "league": "nhl",
@@ -315,5 +275,45 @@
   "status": "ok",
   "reason": "ok (contrast 89)",
   "at": "2026-11-08T03:58:18+00:00"
+ },
+ "401909943": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Suns v Rockets",
+  "url": "https://scorebuzz.net/basketball/nba/suns-vs-rockets-401909943/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 71)",
+  "at": "2026-11-08T04:21:45+00:00"
+ },
+ "401909944": {
+  "slot": "11",
+  "league": "nba",
+  "game": "Trail Blazers v Spurs",
+  "url": "https://scorebuzz.net/basketball/nba/trail-blazers-vs-spurs-401909944/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 71)",
+  "at": "2026-11-08T04:21:48+00:00"
+ },
+ "401909942": {
+  "slot": "13",
+  "league": "nba",
+  "game": "Warriors v Magic",
+  "url": "https://scorebuzz.net/basketball/nba/warriors-vs-magic-401909942/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-08T04:21:51+00:00"
+ },
+ "401892673": {
+  "slot": "18",
+  "league": "nhl",
+  "game": "Oilers v Canucks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/oilers-vs-canucks-401892673/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 79)",
+  "at": "2026-11-08T04:21:54+00:00"
  }
 }
