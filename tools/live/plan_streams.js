@@ -44,10 +44,11 @@ function hoursFor(league) {
 function musicFor(g, key) {
   const M = settings.music || {};
   const sport = feed.LEAGUES[g.league]?.soccer ? 'soccer' : g.league;
-  const list = Object.entries((M.playlists || {})[(M.sports || {})[sport]] || {});
+  const pl = (M.sports || {})[sport];
+  const list = Object.entries((M.playlists || {})[pl] || {});
   for (let i = list.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [list[i], list[j]] = [list[j], list[i]]; }
   const layerId = (M.layers || {})[key];
-  return list.length && layerId ? { layerId, volume: M.volume ?? 3, titles: list.map((x) => x[0]), files: list.map((x) => ({ fileId: x[1] })) } : null;
+  return list.length && layerId ? { layerId, volume: (M.volumes || {})[pl] ?? M.volume ?? 3, titles: list.map((x) => x[0]), files: list.map((x) => ({ fileId: x[1] })) } : null;
 }
 
 const tagify = (x) => String(x).normalize('NFD').replace(/[^A-Za-z0-9 ]/g, '').split(/\s+/).filter(Boolean).map((w) => w[0].toUpperCase() + w.slice(1)).join('');
