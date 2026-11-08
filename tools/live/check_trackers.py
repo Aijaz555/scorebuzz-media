@@ -27,6 +27,7 @@ ESPN = {"epl": "soccer/eng.1", "ucl": "soccer/uefa.champions", "uel": "soccer/ue
 SITE = {"epl": "football/english-premier-league", "ucl": "football/champions-league", "uel": "football/europa-league",
         "laliga": "football/la-liga", "seriea": "football/serie-a", "bundesliga": "football/bundesliga",
         "ligue1": "football/ligue-1", "mls": "football/mls", "nba": "basketball/nba", "nfl": "american-football/nfl",
+        "ncaaf": "american-football/college-football",
         "nhl": "ice-hockey/nhl"}
 BAD_TEXT = re.compile(r"loading|unavailable|not available|no data|error", re.I)
 

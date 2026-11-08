@@ -85,8 +85,8 @@ const q = new URLSearchParams(location.search);
 const SLOT = q.get('slot');
 let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('sbtrk') === '0';
 const SPORT = { nba: 'basketball/nba', nfl: 'football/nfl', ncaaf: 'football/college-football', nhl: 'hockey/nhl', mlb: 'baseball/mlb' };
-const SITE = { nba: 'basketball/nba', nfl: 'american-football/nfl', nhl: 'ice-hockey/nhl' }; // scorebuzz.net match pages with a live tracker
-const CROP = { nba: { top: 64, vh: 512 }, nfl: { top: 100, vh: 456 }, nhl: { top: 74, vh: 582 } }; // tracker card crop, same as the main overlay
+const SITE = { nba: 'basketball/nba', nfl: 'american-football/nfl', ncaaf: 'american-football/college-football', nhl: 'ice-hockey/nhl' }; // scorebuzz.net match pages with a live tracker (MLB: built-in; football falls back to the built-in field when the check sets sbtrk: 0)
+const CROP = { nba: { top: 64, vh: 512 }, nfl: { top: 100, vh: 456 }, ncaaf: { top: 100, vh: 456 }, nhl: { top: 74, vh: 582 } }; // tracker card crop, same as the main overlay
 const LG = { nba: { name: 'NBA', per: 'Quarter', cols: ['Q1', 'Q2', 'Q3', 'Q4'], ot: 'OT' }, nfl: { name: 'NFL', per: 'Quarter', cols: ['Q1', 'Q2', 'Q3', 'Q4'], ot: 'OT' }, ncaaf: { name: 'NCAAF', per: 'Quarter', cols: ['Q1', 'Q2', 'Q3', 'Q4'], ot: 'OT' },
   nhl: { name: 'NHL', per: 'Period', cols: ['P1', 'P2', 'P3'], ot: 'OT' }, mlb: { name: 'MLB', per: 'Inning', cols: ['1', '2', '3', '4', '5', '6', '7', '8', '9'], ot: 'X' } };
 // scale the 1920x1080 design to the window (?fit=fill&w=&h= like the main overlay)
@@ -103,7 +103,7 @@ let last = null, lastSit = null, tz = 'America/New_York', tzName = '';
 
 function team(x) {
   const t = x.team; const st = {};
-  return { id: t.id, abbr: t.abbreviation, city: t.location || t.displayName, nick: t.name || '', rank: (x.curatedRank?.current || x.rank) > 0 && (x.curatedRank?.current || x.rank) <= 25 ? (x.curatedRank?.current || x.rank) : 0, logo: t.logos?.[0]?.href || t.logo || '',
+  return { id: t.id, abbr: t.abbreviation, city: t.location || t.displayName, nick: t.name || '', short: t.shortDisplayName || t.name || '', rank: (x.curatedRank?.current || x.rank) > 0 && (x.curatedRank?.current || x.rank) <= 25 ? (x.curatedRank?.current || x.rank) : 0, logo: t.logos?.[0]?.href || t.logo || '',
     color: hex(t.color, '#2A3570'), alt: hex(t.alternateColor, '#ffffff'), score: Number(x.score || 0),
     lines: (x.linescores || []).map((l) => l.displayValue ?? ''), rec: (x.record || []).find((r) => r.type === 'total')?.summary || '' };
 }
@@ -200,9 +200,12 @@ function render(s, sb) {
     return `<div class="play">${t ? `<img src="${t.logo}">` : ''}<span class="t">${esc(p.period?.number ? (league === 'mlb' ? 'Inn ' : 'Q') + p.period.number : '')}</span><span class="x">${esc(p.text || p.shortText || '')}</span><span class="v" style="background:var(--gold)">${esc(p.awayScore ?? '')}–${esc(p.homeScore ?? '')}</span></div>`; }).join('') || `<div class="play"><span class="x">${c.status?.type?.state === 'pre' ? esc(per + (clk ? ' · ' + clk : '')) : 'No scoring yet'}</span></div>`;
   const slug = (n) => String(n || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   // the website's tracker only draws during play: before / after the game the centre shows the scoring plays instead.
-  // College football and MLB (no website tracker), or a slot the tracker check switched off (sbtrk: 0), use the built-in field / diamond.
+  // MLB (no website tracker), or a slot the tracker check switched off (sbtrk: 0), uses the built-in field / diamond.
   const live = c.status?.type?.state === 'in';
-  const trkUrl = SITE[league] && live && !noSite ? `https://scorebuzz.net/${SITE[league]}/${slug(home.nick)}-vs-${slug(away.nick)}-${c.id}/` : '';
+  // the site's URL slug is ESPN's shortDisplayName ("Pacers", "Ole Miss", "Philadelphia"), which only the scoreboard carries
+  const sbEv = (sb?.events || []).find((e) => e.id === c.id);
+  const shortOf = (t) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === String(t.id))?.team?.shortDisplayName || t.short;
+  const trkUrl = SITE[league] && live && !noSite && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(home))}-vs-${slug(shortOf(away))}-${c.id}/` : '';
   let sit = (sb?.events || []).find((e) => e.id === c.id)?.competitions?.[0]?.situation || null;
   if (sit && !sit.possessionText && lastSit?.possessionText) sit = { ...lastSit, ...sit, possessionText: lastSit.possessionText, possession: lastSit.possession }; // keep the ball on the field through timeouts
   if (sit?.possessionText) lastSit = sit;
