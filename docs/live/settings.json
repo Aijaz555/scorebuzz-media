@@ -25,13 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "18": {
-   "league": "nhl",
-   "event": "401892673",
-   "note": "Vancouver Canucks vs Edmonton Oilers, 2026-11-08T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
