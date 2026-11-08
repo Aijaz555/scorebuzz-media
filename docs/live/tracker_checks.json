@@ -186,26 +186,6 @@
   "reason": "ok (contrast 79)",
   "at": "2026-11-08T02:34:44+00:00"
  },
- "401892671": {
-  "slot": "1",
-  "league": "nhl",
-  "game": "Avalanche v Red Wings",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/avalanche-vs-red-wings-401892671/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 90)",
-  "at": "2026-11-08T02:51:05+00:00"
- },
- "401892672": {
-  "slot": "3",
-  "league": "nhl",
-  "game": "Kings v Penguins",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-penguins-401892672/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 79)",
-  "at": "2026-11-08T02:51:08+00:00"
- },
  "401892668": {
   "slot": "4",
   "league": "nhl",
@@ -315,5 +295,25 @@
   "status": "ok",
   "reason": "ok (contrast 80)",
   "at": "2026-11-08T03:17:25+00:00"
+ },
+ "401892671": {
+  "slot": "1",
+  "league": "nhl",
+  "game": "Avalanche v Red Wings",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/avalanche-vs-red-wings-401892671/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 79)",
+  "at": "2026-11-08T03:25:32+00:00"
+ },
+ "401892672": {
+  "slot": "3",
+  "league": "nhl",
+  "game": "Kings v Penguins",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-penguins-401892672/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 78)",
+  "at": "2026-11-08T03:25:35+00:00"
  }
 }
