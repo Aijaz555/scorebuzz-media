@@ -1437,7 +1437,14 @@ async function loadSettings() {
       // dark broadcast layout (docs/live/dark.html) for the leagues listed in settings "dark": hand the slot over to it
       if (PIN && Array.isArray(c.dark) && c.dark.includes(PIN.league)) { location.replace('dark.html' + location.search); return; }
       // cricket games (league "cricket:<espn league id>") use the cricket tracker page (docs/live/cricket2.html)
-      if (PIN && /^cricket/.test(PIN.league)) { location.replace('cricket2.html' + location.search); return; } }
+      // loaded fresh from raw GitHub (like index.html loads this page), because the stream host caches docs/live/*.html for hours
+      if (PIN && /^cricket/.test(PIN.league)) { if (window.__toCricket) return; window.__toCricket = 1;
+        window.fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/cricket2.html?t=' + Date.now(), { cache: 'no-store' })
+          .then((r) => { if (!r.ok) throw 0; return r.text(); })
+          .then((html) => { const top = setTimeout(() => {}, 0); for (let i = 1; i <= top + 50; i++) { clearTimeout(i); clearInterval(i); }
+            document.open(); document.write(html); document.close(); })
+          .catch(() => { window.__toCricket = 0; });
+        return; } }
   } catch (e) { /* keep URL settings */ }
 }
 let finalSince = 0;

@@ -153,6 +153,8 @@ tr.off td{color:#ffffff88}tr.off td.R{color:#ffffff99}
 <div class="msg" id="msg">Loading live cricket…</div>
 
 <script>
+// wrapped in a function: app.html may document.write this page into a window that already has its own globals ($, fit, ...)
+(() => {
 const API = 'https://site.api.espn.com/apis/site/v2/sports/cricket';
 const Q = new URLSearchParams(location.search);
 const $ = id => document.getElementById(id);
@@ -498,5 +500,6 @@ async function tick() {
   } catch (e) { console.warn('tick failed', e); }
 }
 tick(); setInterval(tick, 8000);
+})();
 </script>
 </body></html>

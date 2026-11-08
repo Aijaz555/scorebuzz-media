@@ -268,7 +268,7 @@ broadcast style. It reads ESPN's public cricket JSON from the browser (`/apis/si
 - The daily-posts playbook still excludes cricket for the US/UK feed; this page is for live-score streams the owner chooses to run.
 
 ## Stadium crowd audio (owner's request, 8 Nov 2026)
-- The owner wants stadium crowd ambience instead of music, sport by sport. Done so far: **nfl** (`music.playlists.nfl_crowd`: ScoreBuzz Stadium NFL A, from one 39 s clip chopped into 12-30 s sections with ±4% speed and L/R variation; NCAAF still on music), **soccer** (`music.playlists.soccer`:
+- The owner wants stadium crowd ambience instead of music, sport by sport. Done so far: **nfl** (`music.playlists.nfl_crowd`: ScoreBuzz Stadium NFL A, from one 39 s clip chopped into 12-30 s sections with ±4% speed and L/R variation; NCAAF uses it too), **soccer** (`music.playlists.soccer`:
   ScoreBuzz Stadium Soccer A/B, 30 min each) and **cricket** (`music.playlists.cricket`: ScoreBuzz Stadium Cricket A), volume 6
   (`music.volumes`). Other sports still use the Kevin MacLeod playlists until the owner supplies crowd recordings.
 - Mixes are built from Pixabay recordings the owner downloads (Pixabay Content License: commercial/YouTube use, no credit; not
