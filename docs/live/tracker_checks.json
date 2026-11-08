@@ -625,5 +625,15 @@
   "status": "ok",
   "reason": "ok (contrast 41)",
   "at": "2026-11-08T20:37:59+00:00"
+ },
+ "401909945": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Bulls v 76ers",
+  "url": "https://scorebuzz.net/basketball/nba/bulls-vs-76ers-401909945/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-08T20:46:11+00:00"
  }
 }
