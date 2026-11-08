@@ -47,10 +47,13 @@ const LEAGUES = {
     if (!home.abbreviation || !away.abbreviation) { console.error(`slot ${slot}: teams not found`); continue; }
     const soccer = sport === 'football';
     const short = (t) => t.shortDisplayName || t.name || t.abbreviation;
-    const side = (t) => ({ name: short(t), abbr: t.abbreviation, logo: (t.logos && t.logos[0] && t.logos[0].href) || t.logo, color: t.color });
+    // logo for a team-colour background: ESPN's "primary_logo_on_primary_color" when there is one, else the dark variant
+    const relLogo = (t, ...rels) => (t.logos || []).find((l) => rels.every((r) => (l.rel || []).includes(r)))?.href;
+    const onColor = (t) => relLogo(t, 'primary_logo_on_primary_color') || relLogo(t, 'dark') || undefined;
+    const side = (t) => ({ logoOnColor: onColor(t), name: short(t), abbr: t.abbreviation, logo: (t.logos && t.logos[0] && t.logos[0].href) || t.logo, color: t.color, alternateColor: t.alternateColor, city: soccer ? '' : (t.location || ''), nick: soccer ? short(t) : (t.name || short(t)) });
     // soccer lists home first; US sports away first ("Away at Home"), the card shows them left to right
     const [L, R] = soccer ? [home, away] : [away, home];
-    specs.push({ id: vid, sport, style: sl.league === 'nba' ? 'arena' : undefined, leagueKey: sl.league, league: lgName, venue: j.gameInfo?.venue?.fullName, home: side(L), away: side(R) });
+    specs.push({ id: vid, sport, style: settings.thumbStyle || 'split', leagueKey: sl.league, league: lgName, venue: j.gameInfo?.venue?.fullName, home: side(L), away: side(R) });
     todo.push(vid);
   }
   if (!specs.length) { console.log('nothing to do'); return; }

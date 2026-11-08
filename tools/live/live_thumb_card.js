@@ -127,6 +127,46 @@ async function arenaHtml(t) {
   </body></html>`;
 }
 
+
+// "split" style (owner's reference, 9 Nov 2026): two full-height halves in each team's own colour, a big faded copy of
+// the crest as a watermark, the crest centred and the team name (city / nickname) in heavy white caps at the bottom.
+// Small "<LEAGUE> · LIVE" chip top-centre; bottom-right left clear for YouTube's LIVE / Upcoming badge.
+// Crests = ESPN team logos (team.logos[0]), colours = ESPN team.color / alternateColor.
+async function splitHtml(t) {
+  const hex = (c, d) => '#' + String(c || d).replace('#', '');
+  const lum = (h) => { const n = parseInt(h.slice(1), 16); return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255; };
+  const bgOf = (x) => { let c = hex(x.color, '1d2a4a'); if (lum(c) > 0.82) c = hex(x.alternateColor, '1d2a4a'); return lum(c) > 0.82 ? '#1d2a4a' : c; };
+  const panel = async (x, side) => {
+    const c = (x.logoOnColor && await assets.crest(x.logoOnColor)) || await assets.crest(x.logo);
+    const bg = bgOf(x);
+    const city = x.city || '', nick = x.nick || x.name || x.abbr;
+    const long = Math.max(city.length, nick.length);
+    const fs = long > 13 ? 50 : long > 10 ? 58 : 66;
+    return `<div class="p ${side}" style="background:${bg}">
+      <div class="shade"></div>
+      ${c ? `<img class="wm" src="${c}"><img class="cr" src="${c}">` : `<div class="ab">${esc(x.abbr)}</div>`}
+      <div class="nm" style="font-size:${fs}px">${city ? `<span>${esc(city)}</span>` : ''}<span>${esc(nick)}</span></div></div>`;
+  };
+  const [L, R] = [await panel(t.home, 'l'), await panel(t.away, 'r')];
+  return `<!doctype html><html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1280px;height:720px;overflow:hidden;background:#05070d;font-family:'Inter Display',Inter,'Segoe UI',sans-serif;position:relative;display:flex;gap:10px}
+  .p{position:relative;flex:1;height:100%;overflow:hidden;display:flex;flex-direction:column;align-items:center}
+  .shade{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 38%,rgba(255,255,255,.10),transparent 60%),linear-gradient(180deg,transparent 55%,rgba(0,0,0,.35))}
+  .wm{position:absolute;width:150%;height:150%;left:-25%;top:-22%;object-fit:contain;opacity:.13;filter:grayscale(.2) blur(1px)}
+  .cr{position:relative;margin-top:96px;width:380px;height:380px;object-fit:contain;filter:drop-shadow(0 10px 22px rgba(0,0,0,.45))}
+  .ab{position:relative;margin-top:150px;font-size:180px;font-weight:900;color:#fff}
+  .nm{position:absolute;left:0;right:0;bottom:46px;text-align:center;color:#fff;font-weight:900;line-height:1.02;letter-spacing:.5px;text-transform:uppercase;text-shadow:0 4px 14px rgba(0,0,0,.45)}
+  .nm span{display:block}
+  .chip{position:absolute;left:50%;top:22px;transform:translateX(-50%);display:flex;align-items:center;gap:12px;background:#0b0f1aee;color:#fff;font-weight:900;font-size:28px;letter-spacing:2px;padding:8px 22px;border-radius:999px;border:3px solid #fff;white-space:nowrap;z-index:2}
+  .chip i{width:14px;height:14px;border-radius:50%;background:#FF2D2D;box-shadow:0 0 12px #FF2D2D}
+  .chip b{color:#C6F432;font-weight:900}
+  </style></head><body>
+  ${L}${R}
+  <div class="chip">${esc(t.league || '')}<i></i>LIVE <b>· ScoreBuzz</b></div>
+  </body></html>`;
+}
+
 (async () => {
   const [specFile, out] = process.argv.slice(2);
   const specs = JSON.parse(fs.readFileSync(specFile, 'utf8'));
@@ -134,7 +174,7 @@ async function arenaHtml(t) {
   const b = await chromium.launch();
   const p = await b.newPage({ viewport: { width: 1280, height: 720 } });
   for (const t of specs) {
-    await p.setContent(await (t.style === 'arena' ? arenaHtml(t) : html(t)), { waitUntil: 'load' });
+    await p.setContent(await (t.style === 'split' ? splitHtml(t) : t.style === 'arena' ? arenaHtml(t) : html(t)), { waitUntil: 'load' });
     await p.evaluate(async () => { await Promise.all([...document.images].map((i) => i.decode().catch(() => {}))); });
     await p.waitForTimeout(600);
     const f = path.join(out, `${t.id}.jpg`);
