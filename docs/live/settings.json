@@ -24,26 +24,17 @@
   "SUN"
  ],
  "top25": 15,
- "pin": {
-  "league": "mls",
-  "event": "761946",
-  "note": "Real Salt Lake vs LA Galaxy, 2026-11-08T00:00:00Z"
- },
+ "pin": null,
  "slots": {
   "1": {
-   "league": "mls",
-   "event": "761947",
-   "note": "San Diego FC vs Sporting Kansas City, 2026-11-08T00:00:00Z"
-  },
-  "2": {
-   "league": "ncaaf",
-   "event": "401856745",
-   "note": "Kentucky Wildcats vs Tennessee Volunteers, 2026-11-07T23:15:00Z"
+   "league": "nhl",
+   "event": "401892671",
+   "note": "Detroit Red Wings vs Colorado Avalanche, 2026-11-08T02:00:00Z"
   },
   "3": {
-   "league": "mls",
-   "event": "761948",
-   "note": "Seattle Sounders FC vs LAFC, 2026-11-08T00:00:00Z"
+   "league": "nhl",
+   "event": "401892672",
+   "note": "Pittsburgh Penguins vs Los Angeles Kings, 2026-11-08T02:00:00Z"
   },
   "4": {
    "league": "nhl",
@@ -76,15 +67,10 @@
    "event": "401856741",
    "note": "Georgia Bulldogs vs Ole Miss Rebels, 2026-11-08T00:30:00Z"
   },
-  "10": {
-   "league": "nhl",
-   "event": "401892665",
-   "note": "Montreal Canadiens vs Toronto Maple Leafs, 2026-11-08T00:00:00Z"
-  },
   "11": {
-   "league": "mls",
-   "event": "761943",
-   "note": "FC Dallas vs Colorado Rapids, 2026-11-08T00:00:00Z"
+   "league": "nba",
+   "event": "401909944",
+   "note": "San Antonio Spurs vs Portland Trail Blazers, 2026-11-08T03:00:00Z"
   },
   "12": {
    "league": "nhl",
@@ -117,19 +103,9 @@
    "note": "Washington Wizards vs Oklahoma City Thunder, 2026-11-08T01:00:00Z"
   },
   "18": {
-   "league": "mls",
-   "event": "761942",
-   "note": "Austin FC vs Portland Timbers, 2026-11-08T00:00:00Z"
-  },
-  "19": {
-   "league": "mls",
-   "event": "761944",
-   "note": "Houston Dynamo FC vs St. Louis CITY SC, 2026-11-08T00:00:00Z"
-  },
-  "20": {
-   "league": "mls",
-   "event": "761945",
-   "note": "Minnesota United FC vs San Jose Earthquakes, 2026-11-08T00:00:00Z"
+   "league": "nhl",
+   "event": "401892673",
+   "note": "Vancouver Canucks vs Edmonton Oilers, 2026-11-08T03:00:00Z"
   }
  },
  "fit": {
