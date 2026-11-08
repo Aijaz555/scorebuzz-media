@@ -31,55 +31,25 @@
    "event": "401873046",
    "note": "Houston Texans vs Los Angeles Chargers, 2026-11-08T21:05:00Z"
   },
-  "2": {
-   "league": "nfl",
-   "event": "401873040",
-   "note": "Dallas Cowboys vs Indianapolis Colts, 2026-11-08T18:00:00Z"
-  },
   "3": {
    "league": "nfl",
    "event": "401873049",
    "note": "Green Bay Packers vs New England Patriots, 2026-11-08T21:25:00Z"
   },
-  "4": {
-   "league": "nfl",
-   "event": "401873045",
-   "note": "New York Jets vs Kansas City Chiefs, 2026-11-08T18:00:00Z"
-  },
-  "5": {
-   "league": "nfl",
-   "event": "401873044",
-   "note": "New York Giants vs Philadelphia Eagles, 2026-11-08T18:00:00Z"
-  },
   "6": {
-   "league": "nhl",
-   "event": "401892674",
-   "note": "Florida Panthers vs Boston Bruins, 2026-11-08T18:00:00Z"
+   "league": "nba",
+   "event": "401909946",
+   "note": "Los Angeles Lakers vs Detroit Pistons, 2026-11-08T23:00:00Z"
   },
   "7": {
    "league": "nba",
    "event": "401909945",
    "note": "Philadelphia 76ers vs Chicago Bulls, 2026-11-08T20:30:00Z"
   },
-  "8": {
-   "league": "nfl",
-   "event": "401873042",
-   "note": "Detroit Lions vs Miami Dolphins, 2026-11-08T18:00:00Z"
-  },
-  "9": {
-   "league": "nfl",
-   "event": "401873039",
-   "note": "Cleveland Browns vs New Orleans Saints, 2026-11-08T18:00:00Z"
-  },
-  "10": {
-   "league": "nfl",
-   "event": "401873043",
-   "note": "Los Angeles Rams vs Washington Commanders, 2026-11-08T18:00:00Z"
-  },
   "11": {
-   "league": "nfl",
-   "event": "401873041",
-   "note": "Denver Broncos vs Carolina Panthers, 2026-11-08T18:00:00Z"
+   "league": "nhl",
+   "event": "401892677",
+   "note": "Tampa Bay Lightning vs Winnipeg Jets, 2026-11-08T23:00:00Z"
   },
   "12": {
    "league": "nfl",
@@ -106,11 +76,6 @@
    "league": "seriea",
    "event": "401875003",
    "note": "Fiorentina vs Juventus, 2026-11-08T19:45:00Z"
-  },
-  "19": {
-   "league": "ligue1",
-   "event": "401876404",
-   "note": "Lens vs Marseille, 2026-11-08T19:45:00Z"
   }
  },
  "fit": {
