@@ -36,20 +36,10 @@
    "event": "401892672",
    "note": "Pittsburgh Penguins vs Los Angeles Kings, 2026-11-08T02:00:00Z"
   },
-  "4": {
-   "league": "nhl",
-   "event": "401892668",
-   "note": "Chicago Blackhawks vs Carolina Hurricanes, 2026-11-08T01:00:00Z"
-  },
   "5": {
    "league": "nhl",
    "event": "401892670",
    "note": "Tampa Bay Lightning vs Minnesota Wild, 2026-11-08T01:00:00Z"
-  },
-  "6": {
-   "league": "nba",
-   "event": "401909939",
-   "note": "Brooklyn Nets vs Atlanta Hawks, 2026-11-08T00:30:00Z"
   },
   "7": {
    "league": "nba",
@@ -72,35 +62,10 @@
    "event": "401909944",
    "note": "San Antonio Spurs vs Portland Trail Blazers, 2026-11-08T03:00:00Z"
   },
-  "12": {
-   "league": "nhl",
-   "event": "401892666",
-   "note": "Utah Mammoth vs Ottawa Senators, 2026-11-08T00:00:00Z"
-  },
   "13": {
    "league": "nba",
    "event": "401909942",
    "note": "Orlando Magic vs Golden State Warriors, 2026-11-08T01:30:00Z"
-  },
-  "14": {
-   "league": "nhl",
-   "event": "401892669",
-   "note": "San Jose Sharks vs Dallas Stars, 2026-11-08T01:00:00Z"
-  },
-  "15": {
-   "league": "nhl",
-   "event": "401892667",
-   "note": "New Jersey Devils vs New York Islanders, 2026-11-08T00:00:00Z"
-  },
-  "16": {
-   "league": "nba",
-   "event": "401909940",
-   "note": "New York Knicks vs Cleveland Cavaliers, 2026-11-08T01:00:00Z"
-  },
-  "17": {
-   "league": "nba",
-   "event": "401909941",
-   "note": "Washington Wizards vs Oklahoma City Thunder, 2026-11-08T01:00:00Z"
   },
   "18": {
    "league": "nhl",
