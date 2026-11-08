@@ -596,36 +596,6 @@
   "reason": "ok (contrast 46)",
   "at": "2026-11-08T21:02:42+00:00"
  },
- "401873046": {
-  "slot": "1",
-  "league": "nfl",
-  "game": "Chargers v Texans",
-  "url": "https://scorebuzz.net/american-football/nfl/chargers-vs-texans-401873046/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 48)",
-  "at": "2026-11-08T21:10:54+00:00"
- },
- "401882816": {
-  "slot": "17",
-  "league": "laliga",
-  "game": "Atl\u00e9tico v Barcelona",
-  "url": "https://scorebuzz.net/football/la-liga/atl-tico-vs-barcelona-401882816/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-08T21:10:57+00:00"
- },
- "401875003": {
-  "slot": "18",
-  "league": "seriea",
-  "game": "Fiorentina v Juventus",
-  "url": "https://scorebuzz.net/football/serie-a/fiorentina-vs-juventus-401875003/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-08T21:11:00+00:00"
- },
  "401909945": {
   "slot": "7",
   "league": "nba",
@@ -675,5 +645,35 @@
   "status": "ok",
   "reason": "ok (contrast 45)",
   "at": "2026-11-08T21:36:40+00:00"
+ },
+ "401873046": {
+  "slot": "1",
+  "league": "nfl",
+  "game": "Chargers v Texans",
+  "url": "https://scorebuzz.net/american-football/nfl/chargers-vs-texans-401873046/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 48)",
+  "at": "2026-11-08T21:44:47+00:00"
+ },
+ "401882816": {
+  "slot": "17",
+  "league": "laliga",
+  "game": "Atl\u00e9tico v Barcelona",
+  "url": "https://scorebuzz.net/football/la-liga/atl-tico-vs-barcelona-401882816/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T21:44:50+00:00"
+ },
+ "401875003": {
+  "slot": "18",
+  "league": "seriea",
+  "game": "Fiorentina v Juventus",
+  "url": "https://scorebuzz.net/football/serie-a/fiorentina-vs-juventus-401875003/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T21:44:53+00:00"
  }
 }
