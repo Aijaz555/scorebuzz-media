@@ -104,7 +104,7 @@ async function pack(key, from, to) {
   const id = `${key}-mw${gp}`;
   return {
     id, sport: 'football', league: key, format: 'video', 
-    title: `${lg.name} Results, Table & Fixtures | ${mw} ${new Date(toD).getFullYear()}/${String(new Date(toD).getFullYear() + 1).slice(2)} ⚽`.slice(0, 100),
+    title: `${lg.name} Table Updated Today ${new Date(toD).getFullYear()} | ${lg.name} Results & Fixtures ${mw} ⚽`.slice(0, 100),
     description: [
       `${lg.name} ${mw} results, the updated ${lg.name} table and the next fixtures. ${leader.team} lead on ${leader.pts} points after ${gp} games; the big result was ${big.home} ${big.hs}–${big.as} ${big.away}. ${nextLine}`.trim(),
       `All ${mw} scores: ${res.map((r) => `${r.home} ${r.hs}–${r.as} ${r.away}`).join(', ')}.`,
@@ -112,7 +112,7 @@ async function pack(key, from, to) {
       `${lg.name} live scores, table and fixtures: https://scorebuzz.net`,
       `${lg.tag} #Football #${slug(lg.name)}table #ScoreBuzz`,
     ].join('\n\n'),
-    tags: [`${lg.name.toLowerCase()} table`, `${lg.name.toLowerCase()} standings`, `${lg.name.toLowerCase()} results`, `${lg.name.toLowerCase()} fixtures`, `${lg.name.toLowerCase()} ${mw.toLowerCase()}`, `${lg.name.toLowerCase()} results today`, `${big.home} vs ${big.away}`, `${leader.team} ${lg.name.toLowerCase()}`, 'scorebuzz'],
+    tags: [`${lg.name.toLowerCase()} table`, `${lg.name.toLowerCase()} table updated today`, `${lg.name.toLowerCase()} standings`, `${lg.name.toLowerCase()} results`, `${lg.name.toLowerCase()} fixtures`, `${lg.name.toLowerCase()} ${mw.toLowerCase()}`, `${lg.name.toLowerCase()} results today`, `${big.home} vs ${big.away}`, `${leader.team} ${lg.name.toLowerCase()}`, 'scorebuzz'],
     // table-channel style thumbnails (tools/make_table_thumbs.js): result + mini table, and next fixtures + mini table
     tt: {
       league: key, name: lg.name, mw: gp, season: `${new Date(toD).getFullYear()}/${String(new Date(toD).getFullYear() + 1).slice(2)}`, zones: lg.zones,
