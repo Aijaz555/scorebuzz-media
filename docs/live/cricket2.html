@@ -454,9 +454,27 @@ function ticker(panel) {
 function clock() { $('clock').textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); }
 setInterval(clock, 10000); clock();
 
+// ?slot=N (a LiveReacting "Slot N" project, handed over from app.html): the game comes from settings.json
+// slots[N] = {league: "cricket:<espn league id>", event: "<id>"}; when the slot moves to another sport, go back to app.html.
+const SLOT = Q.get('slot');
+let reloadSeen;
+async function slotSettings() {
+  if (!SLOT) return;
+  try {
+    const c = await J('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/settings.json?t=' + Date.now());
+    if (reloadSeen === undefined) reloadSeen = c.reload ?? null; else if ((c.reload ?? null) !== reloadSeen) return location.reload();
+    const sl = (c.slots || {})[SLOT];
+    if (!sl || !/^cricket/.test(sl.league || '')) return location.replace('index.html' + location.search);
+    const lg = String(sl.league).split(':')[1], ev = String(sl.event);
+    if (ev !== EVENT || (lg && lg !== LEAGUE)) { EVENT = ev; LEAGUE = lg || null; pages = []; lastSeq = 0; firstLoad = true; }
+  } catch (e) { /* keep the current game */ }
+}
+if (SLOT) setInterval(slotSettings, 30000);
+
 let panel = null;
 async function tick() {
   try {
+    if (SLOT && !EVENT) await slotSettings();
     if (!panel || Date.now() - panel.t > 60000) { panel = await J(`${API}/scorepanel`); panel.t = Date.now(); ticker(panel); }
     if (!EVENT || !LEAGUE) { if (!(await pickMatch(panel))) { $('msg').textContent = 'No live cricket right now'; $('msg').classList.remove('hide'); return; } }
     const sum = await J(`${API}/${LEAGUE}/summary?event=${EVENT}`);
@@ -466,7 +484,7 @@ async function tick() {
     render(sum, all);
     $('app').classList.remove('hide'); $('msg').classList.add('hide');
     // auto mode: move on 20 min after a result
-    if (state === 'post' && !Q.get('event')) { const done = tick.doneAt ||= Date.now(); if (Date.now() - done > 20 * 60000) { EVENT = LEAGUE = null; pages = []; lastSeq = 0; firstLoad = true; tick.doneAt = 0; } }
+    if (state === 'post' && !Q.get('event') && !SLOT) { const done = tick.doneAt ||= Date.now(); if (Date.now() - done > 20 * 60000) { EVENT = LEAGUE = null; pages = []; lastSeq = 0; firstLoad = true; tick.doneAt = 0; } }
   } catch (e) { console.warn('tick failed', e); }
 }
 tick(); setInterval(tick, 8000);
