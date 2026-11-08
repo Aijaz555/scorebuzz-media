@@ -1,6 +1,8 @@
 // League round-up videos (owner's request, 8 Nov 2026): one 16:9 video per league per matchweek with
 // RESULTS -> updated STANDINGS table -> next FIXTURES, like table/fixture channels. All data from ESPN JSON.
-// Usage: node tools/league_pack.js <out videos.json> <fromYYYYMMDD> <toYYYYMMDD> <league> [league ...]
+// Usage: node tools/league_pack.js <out videos.json> <fromYYYYMMDD> <toYYYYMMDD> <league> [league ...]   (matchweek video)
+//        node tools/league_pack.js <out videos.json> --day <YYYYMMDD> <league> [league ...]            (match-day video,
+//          owner's request 8 Nov 2026: "table updated today" video uploaded within an hour of a league's last game that day)
 //   leagues: epl laliga seriea bundesliga ligue1 (results window = from..to, fixtures = next 21 days after `to`)
 // Then: node tools/make_shorts.js <json> <dir>; node tools/make_thumbs.js <json> <dir>;
 //       node tools/music_pick.js <json> <dir> <id> (a different free track per video + credit line).
@@ -32,12 +34,12 @@ async function days(base, from, to) {
 }
 const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g, '');
 
-async function pack(key, from, to) {
+async function pack(key, from, to, dayMode = false) {
   const lg = L[key];
   const base = `https://site.api.espn.com/apis/site/v2/sports/soccer/${lg.espn}`;
   const all = await days(base, from, to);
   const open = all.filter((e) => !e.status.type.completed && !/POSTPONED|CANCELED/.test(e.status.type.name));
-  if (open.length) throw new Error(`${key}: matchweek not finished (${open.map((e) => e.shortName).join(', ')})`);
+  if (open.length) throw new Error(`${key}: ${dayMode ? 'games still to finish today' : 'matchweek not finished'} (${open.map((e) => e.shortName).join(', ')})`);
   const done = all.filter((e) => e.status.type.completed && e.status.type.name !== 'STATUS_POSTPONED')
     .sort((x, y) => x.date.localeCompare(y.date));
   if (!done.length) throw new Error(`${key}: no finished games ${from}-${to}`);
@@ -55,6 +57,14 @@ async function pack(key, from, to) {
   const next = [];
   for (const e of fx) { if (next.length >= Math.floor(entries.length / 2) || (next.length && new Date(e.date) - new Date(next[next.length - 1].date) > 3 * 864e5)) break; next.push(e); }
 
+  let earlier = [];
+  if (dayMode) {
+    const d0 = new Date(`${from.slice(0, 4)}-${from.slice(4, 6)}-${from.slice(6)}T12:00:00Z`);
+    earlier = (await days(base, ymd(new Date(d0.getTime() - 3 * 864e5)), ymd(new Date(d0.getTime() - 864e5))))
+      .filter((e) => e.status.type.completed && e.status.type.name !== 'STATUS_POSTPONED').sort((x, y) => x.date.localeCompare(y.date))
+      .map((e) => { const { h, a } = sideOf(e.competitions[0]); return ['', `${h.team.shortDisplayName} v ${a.team.shortDisplayName}`, +h.score, +a.score]; });
+  }
+  const dayName = fmtDay(done[0].date);
   const res = done.map((e) => {
     const c = e.competitions[0], { h, a } = sideOf(c);
     const goals = (c.details || []).filter((d) => d.scoringPlay).map((d) => ({
@@ -78,15 +88,18 @@ async function pack(key, from, to) {
   // 2.5-3 min (owner, 8 Nov 2026): every result gets its own score card; card time stretches to hit ~165 s
   const n = entries.length, rel = n - lg.zones.rel, half = Math.ceil(n / 2);
   const second = entries[1], safe = entries[rel - 1];
-  const fixedDur = 6 + 14 * chunk(res, 10).length + 15 + 15 + 8 + 8 + (next.length ? 11 * chunk(next, 5).length : 0) + 6;
-  const cardDur = Math.max(7, Math.min(11, Math.round((165 - fixedDur) / res.length)));
-  push({ type: 'hook', dur: 6, kicker: `${lg.name} · ${mw}`, title: 'Results, table & fixtures', sub: `${leader.team} top on ${leader.pts} points` }, 'Intro');
-  chunk(res, 10).forEach((part, i) => push({ type: 'table', dur: 14, label: `${lg.name} · ${mw} results${i ? ' (cont.)' : ''}`, cols: ['', ''], rows: part.map((r) => ['', `${r.home} v ${r.away}`, r.hs, r.as]) }, i ? null : `${mw} results`));
+  const sameRound = next.length && new Date(next[0].date) - new Date(done[done.length - 1].date) < 3 * 864e5;
+  const fxLabel = dayMode && sameRound ? `Still to play · ${mw}` : `Matchweek ${gp + 1} fixtures`;
+  const fixedDur = 6 + 14 * chunk(res, 10).length + (earlier.length ? 12 : 0) + 15 + 15 + 8 + 8 + (next.length ? 11 * chunk(next, 5).length : 0) + 6;
+  const cardDur = Math.max(7, Math.min(res.length <= 4 ? 14 : 11, Math.round((165 - fixedDur) / res.length)));
+  push({ type: 'hook', dur: 6, kicker: `${lg.name} · ${dayMode ? dayName : mw}`, title: dayMode ? 'Table updated today' : 'Results, table & fixtures', sub: `${leader.team} top on ${leader.pts} points` }, 'Intro');
+  chunk(res, 10).forEach((part, i) => push({ type: 'table', dur: 14, label: `${lg.name} · ${dayMode ? `${dayName} results` : `${mw} results`}${i ? ' (cont.)' : ''}`, cols: ['', ''], rows: part.map((r) => ['', `${r.home} v ${r.away}`, r.hs, r.as]) }, i ? null : (dayMode ? `${dayName} results` : `${mw} results`)));
   res.forEach((r, i) => {
     const hsco = scorers(r, r.hid), asco = scorers(r, r.aid);
     const note = [hsco && `${r.ha}: ${hsco}`, asco && `${r.aa}: ${asco}`].filter(Boolean).join('  |  ') || 'No goals';
     push({ type: 'score', dur: cardDur, label: `${lg.name} · ${fmtDay(r.date)}`, home: r.home, homeAbbr: r.ha, homeLogo: r.hl, homeScore: r.hs, away: r.away, awayAbbr: r.aa, awayLogo: r.al, awayScore: r.as, status: 'FULL TIME', note: note.length > 200 ? note.slice(0, 197) + '…' : note }, i ? null : 'Every game');
   });
+  if (earlier.length) push({ type: 'table', dur: 12, label: `${lg.name} · earlier in ${mw}`, cols: ['', ''], rows: earlier.slice(-10) }, `Earlier in ${mw}`);
   const row = (e) => [e.rank, e.team, e.p, e.w, e.d, e.l, e.gd, e.pts];
   push({ type: 'table', dur: 15, label: `${lg.name} table · after ${mw}`, cols: ['P', 'W', 'D', 'L', 'GD', 'PTS'], rows: entries.slice(0, half).map(row), highlight: entries.slice(0, lg.zones.ucl).map((e) => e.rank), note: `Top ${lg.zones.ucl}: Champions League places` }, `${lg.name} table`);
   push({ type: 'table', dur: 15, label: `${lg.name} table · after ${mw} (${half + 1}–${n})`, cols: ['P', 'W', 'D', 'L', 'GD', 'PTS'], rows: entries.slice(half).map(row), danger: entries.filter((e) => e.rank > rel).map((e) => e.rank), note: `Bottom ${lg.zones.rel}: relegation zone` });
@@ -95,19 +108,20 @@ async function pack(key, from, to) {
   const bottom = entries.slice(rel).map((e) => `${e.team} ${e.pts}`).join(' · ');
   push({ type: 'text', dur: 8, label: 'Relegation zone', title: `${entries[n - 1].team} bottom on ${entries[n - 1].pts} points`, sub: `In the drop zone: ${bottom}. ${safe.team} are first above it on ${safe.pts}.` });
   if (next.length) {
-    chunk(next, 5).forEach((part, i) => push({ type: 'list', dur: 11, label: `${lg.name} · Matchweek ${gp + 1} fixtures (UK · ET)${i ? ' cont.' : ''}`, rows: part.map((e) => { const { h, a } = sideOf(e.competitions[0]); return [fmtDay(e.date), `${h.team.shortDisplayName} v ${a.team.shortDisplayName}`, `${fmtUK(e.date)} · ${fmtET(e.date)}`]; }) }, i ? null : `Matchweek ${gp + 1} fixtures`));
+    chunk(next, 5).forEach((part, i) => push({ type: 'list', dur: 11, label: `${lg.name} · ${fxLabel} (UK · ET)${i ? ' cont.' : ''}`, rows: part.map((e) => { const { h, a } = sideOf(e.competitions[0]); return [fmtDay(e.date), `${h.team.shortDisplayName} v ${a.team.shortDisplayName}`, `${fmtUK(e.date)} · ${fmtET(e.date)}`]; }) }, i ? null : fxLabel));
   }
   push({ type: 'cta', dur: 6, title: `Who wins the ${lg.name} this season?`, sub: 'Live scores, tables & fixtures every day' });
 
   const big = top[0];
   const nextLine = next.length ? `Next round starts ${fmtDay(next[0].date)}.` : '';
-  const id = `${key}-mw${gp}`;
+  const id = dayMode ? `${key}-${from}` : `${key}-mw${gp}`;
+  const dateLong = new Date(done[0].date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Europe/London' });
   return {
     id, sport: 'football', league: key, format: 'video', 
-    title: `${lg.name} Table Updated Today ${new Date(toD).getFullYear()} | ${lg.name} Results & Fixtures ${mw} ⚽`.slice(0, 100),
+    title: (dayMode ? `${lg.name} Table Updated Today ${dateLong} | ${lg.name} Results & Standings ${mw} ⚽` : `${lg.name} Table Updated Today ${new Date(toD).getFullYear()} | ${lg.name} Results & Fixtures ${mw} ⚽`).slice(0, 100),
     description: [
-      `${lg.name} ${mw} results, the updated ${lg.name} table and the next fixtures. ${leader.team} lead on ${leader.pts} points after ${gp} games; the big result was ${big.home} ${big.hs}–${big.as} ${big.away}. ${nextLine}`.trim(),
-      `All ${mw} scores: ${res.map((r) => `${r.home} ${r.hs}–${r.as} ${r.away}`).join(', ')}.`,
+      `${lg.name} ${dayMode ? `results from ${dayName} (${mw})` : `${mw} results`}, the updated ${lg.name} table and the next fixtures. ${leader.team} lead on ${leader.pts} points after ${gp} games; the big result was ${big.home} ${big.hs}–${big.as} ${big.away}. ${nextLine}`.trim(),
+      `${dayMode ? `${dayName} scores` : `All ${mw} scores`}: ${res.map((r) => `${r.home} ${r.hs}–${r.as} ${r.away}`).join(', ')}.`,
       chapters.join('\n'),
       `${lg.name} live scores, table and fixtures: https://scorebuzz.net`,
       `${lg.tag} #Football #${slug(lg.name)}table #ScoreBuzz`,
@@ -126,12 +140,14 @@ async function pack(key, from, to) {
 }
 
 (async () => {
-  const [out, from, to, ...keys] = process.argv.slice(2);
+  const argv = process.argv.slice(2);
+  const dayMode = argv[1] === '--day';
+  const [out, from, to, ...keys] = dayMode ? [argv[0], argv[2], argv[2], ...argv.slice(3)] : argv;
   if (!out || !from || !to || !keys.length) { console.error('usage: league_pack.js out.json from to league...'); process.exit(1); }
   const list = fs.existsSync(out) ? JSON.parse(fs.readFileSync(out, 'utf8')) : [];
   for (const k of keys) {
     try {
-      const v = await pack(k, from, to);
+      const v = await pack(k, from, to, dayMode);
       const i = list.findIndex((x) => x.id === v.id); if (i >= 0) list[i] = v; else list.push(v);
       console.log(`${v.id}: ${v.scenes.length} scenes, ${v.scenes.reduce((s, x) => s + x.dur, 0)} s`);
     } catch (e) { console.error(`${k}: ${e.message}`); }
