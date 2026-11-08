@@ -326,16 +326,6 @@
   "reason": "ok (contrast 45)",
   "at": "2026-11-08T13:23:32+00:00"
  },
- "401882814": {
-  "slot": "3",
-  "league": "laliga",
-  "game": "Elche v Betis",
-  "url": "https://scorebuzz.net/football/la-liga/elche-vs-betis-401882814/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-08T13:55:55+00:00"
- },
  "401879243": {
   "slot": "4",
   "league": "epl",
@@ -405,5 +395,15 @@
   "status": "switched",
   "reason": "tracker card has no drawing",
   "at": "2026-11-08T14:05:59+00:00"
+ },
+ "401882814": {
+  "slot": "3",
+  "league": "laliga",
+  "game": "Elche v Betis",
+  "url": "https://scorebuzz.net/football/la-liga/elche-vs-betis-401882814/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T14:28:20+00:00"
  }
 }
