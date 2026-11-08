@@ -505,5 +505,85 @@
   "status": "ok",
   "reason": "ok (contrast 49)",
   "at": "2026-11-08T17:46:22+00:00"
+ },
+ "401873040": {
+  "slot": "2",
+  "league": "nfl",
+  "game": "Colts v Cowboys",
+  "url": "https://scorebuzz.net/american-football/nfl/colts-vs-cowboys-401873040/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T18:07:00+00:00"
+ },
+ "401873045": {
+  "slot": "4",
+  "league": "nfl",
+  "game": "Chiefs v Jets",
+  "url": "https://scorebuzz.net/american-football/nfl/chiefs-vs-jets-401873045/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-08T18:07:03+00:00"
+ },
+ "401873044": {
+  "slot": "5",
+  "league": "nfl",
+  "game": "Eagles v Giants",
+  "url": "https://scorebuzz.net/american-football/nfl/eagles-vs-giants-401873044/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T18:07:06+00:00"
+ },
+ "401892674": {
+  "slot": "6",
+  "league": "nhl",
+  "game": "Bruins v Panthers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/bruins-vs-panthers-401892674/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 101)",
+  "at": "2026-11-08T18:07:09+00:00"
+ },
+ "401873042": {
+  "slot": "8",
+  "league": "nfl",
+  "game": "Dolphins v Lions",
+  "url": "https://scorebuzz.net/american-football/nfl/dolphins-vs-lions-401873042/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-08T18:07:12+00:00"
+ },
+ "401873039": {
+  "slot": "9",
+  "league": "nfl",
+  "game": "Saints v Browns",
+  "url": "https://scorebuzz.net/american-football/nfl/saints-vs-browns-401873039/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 51)",
+  "at": "2026-11-08T18:07:15+00:00"
+ },
+ "401873043": {
+  "slot": "10",
+  "league": "nfl",
+  "game": "Commanders v Rams",
+  "url": "https://scorebuzz.net/american-football/nfl/commanders-vs-rams-401873043/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T18:07:18+00:00"
+ },
+ "401873041": {
+  "slot": "11",
+  "league": "nfl",
+  "game": "Panthers v Broncos",
+  "url": "https://scorebuzz.net/american-football/nfl/panthers-vs-broncos-401873041/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T18:07:21+00:00"
  }
 }
