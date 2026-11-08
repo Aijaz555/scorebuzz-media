@@ -48,21 +48,15 @@
   "country": "USA"
  },
  {
-  "slug": "casino-del-sol-stadium",
-  "name": "Casino Del Sol Stadium",
-  "city": "Tucson",
+  "slug": "galaxy-stadium",
+  "name": "Galaxy Stadium",
+  "city": "Lubbock",
   "country": "USA"
  },
  {
   "slug": "allegacy-federal-credit-union-stadium",
   "name": "Allegacy Federal Credit Union Stadium",
   "city": "Winston-Salem",
-  "country": "USA"
- },
- {
-  "slug": "galaxy-stadium",
-  "name": "Galaxy Stadium",
-  "city": "Lubbock",
   "country": "USA"
  },
  {
@@ -78,15 +72,21 @@
   "country": ""
  },
  {
-  "slug": "grand-casino-arena",
-  "name": "Grand Casino Arena",
-  "city": "Saint Paul",
-  "country": "USA"
+  "slug": "xfinity-mobile-arena",
+  "name": "Xfinity Mobile Arena",
+  "city": "Philadelphia",
+  "country": ""
  },
  {
   "slug": "lenovo-center",
   "name": "Lenovo Center",
   "city": "Raleigh",
+  "country": "USA"
+ },
+ {
+  "slug": "grand-casino-arena",
+  "name": "Grand Casino Arena",
+  "city": "Saint Paul",
   "country": "USA"
  }
 ]
