@@ -406,56 +406,6 @@
   "reason": "ok (contrast 41)",
   "at": "2026-11-08T15:47:04+00:00"
  },
- "401873038": {
-  "slot": "7",
-  "league": "nfl",
-  "game": "Falcons v Bengals",
-  "url": "https://scorebuzz.net/american-football/nfl/falcons-vs-bengals-401873038/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-08T16:18:38+00:00"
- },
- "401876412": {
-  "slot": "14",
-  "league": "ligue1",
-  "game": "Angers v Nice",
-  "url": "https://scorebuzz.net/football/ligue-1/angers-vs-nice-401876412/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-08T16:18:41+00:00"
- },
- "401876410": {
-  "slot": "15",
-  "league": "ligue1",
-  "game": "Brest v Lyon",
-  "url": "https://scorebuzz.net/football/ligue-1/brest-vs-lyon-401876410/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-08T16:18:44+00:00"
- },
- "401876409": {
-  "slot": "16",
-  "league": "ligue1",
-  "game": "Le Havre AC v Lorient",
-  "url": "https://scorebuzz.net/football/ligue-1/le-havre-ac-vs-lorient-401876409/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-08T16:18:48+00:00"
- },
- "401876408": {
-  "slot": "17",
-  "league": "ligue1",
-  "game": "Le Mans v Monaco",
-  "url": "https://scorebuzz.net/football/ligue-1/le-mans-vs-monaco-401876408/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 47)",
-  "at": "2026-11-08T16:18:51+00:00"
- },
  "401879240": {
   "slot": "1",
   "league": "epl",
@@ -475,5 +425,55 @@
   "status": "ok",
   "reason": "ok (contrast 46)",
   "at": "2026-11-08T16:36:41+00:00"
+ },
+ "401873038": {
+  "slot": "7",
+  "league": "nfl",
+  "game": "Falcons v Bengals",
+  "url": "https://scorebuzz.net/american-football/nfl/falcons-vs-bengals-401873038/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T17:05:05+00:00"
+ },
+ "401876412": {
+  "slot": "14",
+  "league": "ligue1",
+  "game": "Angers v Nice",
+  "url": "https://scorebuzz.net/football/ligue-1/angers-vs-nice-401876412/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T17:05:08+00:00"
+ },
+ "401876410": {
+  "slot": "15",
+  "league": "ligue1",
+  "game": "Brest v Lyon",
+  "url": "https://scorebuzz.net/football/ligue-1/brest-vs-lyon-401876410/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T17:05:11+00:00"
+ },
+ "401876409": {
+  "slot": "16",
+  "league": "ligue1",
+  "game": "Le Havre AC v Lorient",
+  "url": "https://scorebuzz.net/football/ligue-1/le-havre-ac-vs-lorient-401876409/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T17:05:14+00:00"
+ },
+ "401876408": {
+  "slot": "17",
+  "league": "ligue1",
+  "game": "Le Mans v Monaco",
+  "url": "https://scorebuzz.net/football/ligue-1/le-mans-vs-monaco-401876408/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T17:05:17+00:00"
  }
 }
