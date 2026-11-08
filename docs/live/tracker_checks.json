@@ -506,26 +506,6 @@
   "reason": "ok (contrast 46)",
   "at": "2026-11-08T19:22:13+00:00"
  },
- "401875003": {
-  "slot": "18",
-  "league": "seriea",
-  "game": "Fiorentina v Juventus",
-  "url": "https://scorebuzz.net/football/serie-a/fiorentina-vs-juventus-401875003/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-08T19:57:57+00:00"
- },
- "401882816": {
-  "slot": "17",
-  "league": "laliga",
-  "game": "Atl\u00e9tico v Barcelona",
-  "url": "https://scorebuzz.net/football/la-liga/atl-tico-vs-barcelona-401882816/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-08T20:06:05+00:00"
- },
  "401873040": {
   "slot": "2",
   "league": "nfl",
@@ -615,5 +595,35 @@
   "status": "ok",
   "reason": "ok (contrast 45)",
   "at": "2026-11-08T20:28:06+00:00"
+ },
+ "401892675": {
+  "slot": "14",
+  "league": "nhl",
+  "game": "Sabres v Golden Knights",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/sabres-vs-golden-knights-401892675/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "tracker says: not available",
+  "at": "2026-11-08T20:37:53+00:00"
+ },
+ "401882816": {
+  "slot": "17",
+  "league": "laliga",
+  "game": "Atl\u00e9tico v Barcelona",
+  "url": "https://scorebuzz.net/football/la-liga/atl-tico-vs-barcelona-401882816/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T20:37:57+00:00"
+ },
+ "401875003": {
+  "slot": "18",
+  "league": "seriea",
+  "game": "Fiorentina v Juventus",
+  "url": "https://scorebuzz.net/football/serie-a/fiorentina-vs-juventus-401875003/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-08T20:37:59+00:00"
  }
 }
