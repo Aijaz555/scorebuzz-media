@@ -605,5 +605,15 @@
   "status": "ok",
   "reason": "ok (contrast 42)",
   "at": "2026-11-08T19:57:57+00:00"
+ },
+ "401882816": {
+  "slot": "17",
+  "league": "laliga",
+  "game": "Atl\u00e9tico v Barcelona",
+  "url": "https://scorebuzz.net/football/la-liga/atl-tico-vs-barcelona-401882816/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T20:06:05+00:00"
  }
 }
