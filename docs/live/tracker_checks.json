@@ -346,76 +346,6 @@
   "reason": "ok (contrast 45)",
   "at": "2026-11-08T14:28:20+00:00"
  },
- "401879243": {
-  "slot": "4",
-  "league": "epl",
-  "game": "C Palace v Liverpool",
-  "url": "https://scorebuzz.net/football/english-premier-league/c-palace-vs-liverpool-401879243/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-08T15:14:09+00:00"
- },
- "401878759": {
-  "slot": "5",
-  "league": "epl",
-  "game": "Ipswich v Bournemouth",
-  "url": "https://scorebuzz.net/football/english-premier-league/ipswich-vs-bournemouth-401878759/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-08T15:14:12+00:00"
- },
- "401879239": {
-  "slot": "6",
-  "league": "epl",
-  "game": "Sunderland v Chelsea",
-  "url": "https://scorebuzz.net/football/english-premier-league/sunderland-vs-chelsea-401879239/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-08T15:14:15+00:00"
- },
- "401873038": {
-  "slot": "7",
-  "league": "nfl",
-  "game": "Falcons v Bengals",
-  "url": "https://scorebuzz.net/american-football/nfl/falcons-vs-bengals-401873038/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-08T15:14:18+00:00"
- },
- "401879244": {
-  "slot": "8",
-  "league": "epl",
-  "game": "Brighton v Brentford",
-  "url": "https://scorebuzz.net/football/english-premier-league/brighton-vs-brentford-401879244/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 46)",
-  "at": "2026-11-08T15:14:21+00:00"
- },
- "401875018": {
-  "slot": "9",
-  "league": "seriea",
-  "game": "Genoa v Milan",
-  "url": "https://scorebuzz.net/football/serie-a/genoa-vs-milan-401875018/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 41)",
-  "at": "2026-11-08T15:14:24+00:00"
- },
- "401874800": {
-  "slot": "10",
-  "league": "seriea",
-  "game": "Monza v Atalanta",
-  "url": "https://scorebuzz.net/football/serie-a/monza-vs-atalanta-401874800/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 41)",
-  "at": "2026-11-08T15:14:27+00:00"
- },
  "401882810": {
   "slot": "2",
   "league": "laliga",
@@ -425,5 +355,75 @@
   "status": "ok",
   "reason": "ok (contrast 51)",
   "at": "2026-11-08T15:22:34+00:00"
+ },
+ "401879243": {
+  "slot": "4",
+  "league": "epl",
+  "game": "C Palace v Liverpool",
+  "url": "https://scorebuzz.net/football/english-premier-league/c-palace-vs-liverpool-401879243/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T15:46:46+00:00"
+ },
+ "401878759": {
+  "slot": "5",
+  "league": "epl",
+  "game": "Ipswich v Bournemouth",
+  "url": "https://scorebuzz.net/football/english-premier-league/ipswich-vs-bournemouth-401878759/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T15:46:49+00:00"
+ },
+ "401879239": {
+  "slot": "6",
+  "league": "epl",
+  "game": "Sunderland v Chelsea",
+  "url": "https://scorebuzz.net/football/english-premier-league/sunderland-vs-chelsea-401879239/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-08T15:46:52+00:00"
+ },
+ "401873038": {
+  "slot": "7",
+  "league": "nfl",
+  "game": "Falcons v Bengals",
+  "url": "https://scorebuzz.net/american-football/nfl/falcons-vs-bengals-401873038/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T15:46:55+00:00"
+ },
+ "401879244": {
+  "slot": "8",
+  "league": "epl",
+  "game": "Brighton v Brentford",
+  "url": "https://scorebuzz.net/football/english-premier-league/brighton-vs-brentford-401879244/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T15:46:58+00:00"
+ },
+ "401875018": {
+  "slot": "9",
+  "league": "seriea",
+  "game": "Genoa v Milan",
+  "url": "https://scorebuzz.net/football/serie-a/genoa-vs-milan-401875018/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-08T15:47:01+00:00"
+ },
+ "401874800": {
+  "slot": "10",
+  "league": "seriea",
+  "game": "Monza v Atalanta",
+  "url": "https://scorebuzz.net/football/serie-a/monza-vs-atalanta-401874800/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-08T15:47:04+00:00"
  }
 }
