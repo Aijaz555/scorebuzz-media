@@ -645,5 +645,35 @@
   "status": "ok",
   "reason": "ok (contrast 62)",
   "at": "2026-11-08T21:20:19+00:00"
+ },
+ "401873049": {
+  "slot": "3",
+  "league": "nfl",
+  "game": "Patriots v Packers",
+  "url": "https://scorebuzz.net/american-football/nfl/patriots-vs-packers-401873049/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T21:28:26+00:00"
+ },
+ "401873047": {
+  "slot": "12",
+  "league": "nfl",
+  "game": "49ers v Raiders",
+  "url": "https://scorebuzz.net/american-football/nfl/49ers-vs-raiders-401873047/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 47)",
+  "at": "2026-11-08T21:28:29+00:00"
+ },
+ "401873048": {
+  "slot": "13",
+  "league": "nfl",
+  "game": "Seahawks v Cardinals",
+  "url": "https://scorebuzz.net/american-football/nfl/seahawks-vs-cardinals-401873048/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-08T21:28:32+00:00"
  }
 }
