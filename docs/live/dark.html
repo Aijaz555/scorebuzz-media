@@ -138,8 +138,10 @@ function fieldView(sit, home, away) {
     if (m) { const side = m[1].toUpperCase(), yd = Number(m[2]); ball = side === home.abbr ? 100 - yd : side === away.abbr ? yd : 50; }
     poss = String(sit.possession) === String(home.id) ? home : String(sit.possession) === String(away.id) ? away : null;
     dir = poss === away ? 1 : poss === home ? -1 : 0;
+    // during timeouts / between plays ESPN drops possessionText but keeps yardLine = yards to the end zone for the possession team
+    if (ball == null && poss && sit.yardLine != null && sit.yardLine > 0) ball = poss === away ? 100 - sit.yardLine : sit.yardLine;
     if (ball != null && sit.distance) fd = Math.max(0, Math.min(100, ball + dir * sit.distance));
-    txt = sit.downDistanceText || sit.shortDownDistanceText || '';
+    txt = sit.downDistanceText || sit.shortDownDistanceText || (sit.lastPlay?.type?.text === 'Timeout' ? 'Timeout' : '');
   }
   const yards = [10, 20, 30, 40, 50, 40, 30, 20, 10];
   const lines = [...Array(21)].map((_, i) => `<line x1="${X(i * 5)}" y1="20" x2="${X(i * 5)}" y2="${H - 20}" stroke="#ffffff${i % 2 ? '35' : '70'}" stroke-width="${i % 2 ? 1.5 : 2.5}"/>`).join('');
