@@ -1,0 +1,935 @@
+[
+ {
+  "id": "s01-arsenal-six-clear",
+  "sport": "football",
+  "league": "epl",
+  "bed": "anthem",
+  "venue": "Emirates Stadium",
+  "yt": null,
+  "fb": "2026-11-08T12:50:00",
+  "title": "Premier League Table: Arsenal 6 Points Clear 🔴 #PremierLeague #shorts",
+  "description": "Arsenal beat Hull City 1–0 with a Martin Ødegaard goal while Manchester City lost 3–1 at Nottingham Forest, so Arsenal lead the Premier League by six points. Brighton, Chelsea and Liverpool play on Sunday.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Arsenal #PremierLeague #ManCity",
+  "tags": [
+   "premier league table",
+   "arsenal",
+   "arsenal vs hull",
+   "martin odegaard",
+   "man city",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Premier League",
+    "title": "Arsenal pull away",
+    "sub": "while City slip again"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Saturday · Emirates",
+    "home": "Arsenal",
+    "homeAbbr": "ARS",
+    "homeScore": 1,
+    "away": "Hull City",
+    "awayAbbr": "HUL",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
+    "note": "Ødegaard 72'"
+   },
+   {
+    "type": "table",
+    "dur": 4.2,
+    "label": "Premier League · top 5",
+    "cols": [
+     "P",
+     "W",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Arsenal",
+      10,
+      9,
+      27
+     ],
+     [
+      2,
+      "Man City",
+      10,
+      7,
+      21
+     ],
+     [
+      3,
+      "Brighton",
+      9,
+      6,
+      19
+     ],
+     [
+      4,
+      "Chelsea",
+      9,
+      5,
+      16
+     ],
+     [
+      5,
+      "Everton",
+      10,
+      4,
+      16
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Man City",
+    "title": "3 league defeats in a row",
+    "sub": "Lost 3–1 at Nottingham Forest"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Is the title race already over?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League",
+   "big": "+6",
+   "hook": "Arsenal *pull* clear",
+   "sticker": "TABLE",
+   "teams": [
+    "ARS",
+    "MCI"
+   ],
+   "emoji": "🔴"
+  },
+  "fbtext": "🔴 Arsenal are six points clear.\n\nMartin Ødegaard's goal beat Hull 1–0, and Man City lost again at Forest, their third league defeat in a row.\n\nIs the title race already over? 👇\n\n#Arsenal #PremierLeague #Reels",
+  "time": "2026-11-08T12:50:00"
+ },
+ {
+  "id": "s02-forest-city",
+  "sport": "football",
+  "league": "epl",
+  "bed": "drama",
+  "venue": "The City Ground",
+  "yt": "2026-11-08T11:50:00",
+  "fb": "2026-11-08T20:20:00",
+  "title": "Nottingham Forest vs Man City 3–1: Delap Double 😱 #shorts",
+  "description": "Nottingham Forest beat Manchester City 3–1 at the City Ground. Jair Cunha scored after six minutes, Liam Delap scored twice and Rayan Cherki replied for City, who have now lost three Premier League games in a row. It was Forest's first home league win since April.\n\nForest vs Man City final score and Premier League results: https://scorebuzz.net\n\n#NFFC #ManCity #LiamDelap #PremierLeague",
+  "tags": [
+   "nottingham forest vs man city",
+   "man city vs nottingham forest",
+   "liam delap",
+   "man city",
+   "nottingham forest",
+   "premier league results",
+   "oliver glasner",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Premier League · Saturday",
+    "title": "City lose AGAIN",
+    "sub": "2–0 down inside 20 minutes"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Full time · City Ground",
+    "home": "Nott'm Forest",
+    "homeAbbr": "NFO",
+    "homeScore": 3,
+    "away": "Man City",
+    "awayAbbr": "MCI",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "note": "Jair 6' · Delap 18', 73' · Cherki 52'"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Man City in the league",
+    "value": "3",
+    "unit": "defeats",
+    "text": "in a row"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Liam Delap",
+    "title": "First goals at the City Ground",
+    "sub": "Forest's first home league win since April"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Can City still win the league?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League",
+   "big": "3–1",
+   "hook": "City lose *again*",
+   "sticker": "UPSET",
+   "teams": [
+    "NFO",
+    "MCI"
+   ],
+   "emoji": "😱"
+  },
+  "fbtext": "😱 Man City lost again.\n\nNottingham Forest were 2–0 up inside 20 minutes and Liam Delap's second sealed a 3–1 win. That's three Premier League defeats in a row for City.\n\nWhat's gone wrong at City? 👇\n\n#ManCity #NFFC #Reels",
+  "time": "2026-11-08T11:50:00"
+ },
+ {
+  "id": "s03-madrid-barca",
+  "sport": "football",
+  "league": "laliga",
+  "bed": "hype",
+  "venue": "Riyadh Air Metropolitano",
+  "yt": "2026-11-08T14:20:00",
+  "fb": "2026-11-08T22:00:00",
+  "title": "LaLiga Table: Real Madrid Level With Barcelona Before Atlético vs Barça 🔥 #shorts",
+  "description": "Real Madrid won 3–0 at Valencia, their eighth straight win, with goals from Fede Valverde, Arda Güler and Kylian Mbappé. Real and Barcelona are level on 30 points, and Barcelona visit Atlético Madrid (28 points) on Sunday at 20:00 GMT / 3pm ET.\n\nAtlético vs Barcelona live score and LaLiga table: https://scorebuzz.net\n\n#LaLiga #RealMadrid #Barcelona #Atleti",
+  "tags": [
+   "laliga table",
+   "atletico vs barcelona",
+   "barcelona vs atletico",
+   "real madrid",
+   "valencia vs real madrid",
+   "arda guler",
+   "kylian mbappe",
+   "laliga title race",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "LaLiga",
+    "title": "Level on 30",
+    "sub": "and a huge night ahead"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Saturday · Mestalla",
+    "home": "Valencia",
+    "homeAbbr": "VAL",
+    "homeScore": 0,
+    "away": "Real Madrid",
+    "awayAbbr": "RMA",
+    "awayScore": 3,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+    "note": "Valverde · Güler · Mbappé"
+   },
+   {
+    "type": "table",
+    "dur": 4.0,
+    "label": "LaLiga · top 3",
+    "cols": [
+     "P",
+     "W",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Barcelona",
+      11,
+      10,
+      30
+     ],
+     [
+      2,
+      "Real Madrid",
+      12,
+      10,
+      30
+     ],
+     [
+      3,
+      "Atlético",
+      11,
+      9,
+      28
+     ]
+    ],
+    "highlight": [
+     1,
+     2
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Sunday · 20:00 GMT / 3pm ET",
+    "title": "Atlético v Barcelona",
+    "sub": "Real Madrid's 8th straight win piles on the pressure"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Who's top on Monday?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "LaLiga",
+   "big": "30–30",
+   "hook": "Madrid *catch* Barça",
+   "sticker": "TONIGHT",
+   "teams": [
+    "RMA",
+    "BAR"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Real Madrid have caught Barcelona.\n\nA 3–0 win at Valencia, their eighth in a row, puts them level on 30 points. Barcelona go to Atlético tonight at 20:00 GMT / 3pm ET.\n\nWho's top of LaLiga on Monday? 👇\n\n#RealMadrid #Barcelona #LaLiga #Reels",
+  "time": "2026-11-08T14:20:00"
+ },
+ {
+  "id": "s04-nashville-record",
+  "sport": "football",
+  "league": "mls",
+  "bed": "anthem",
+  "yt": "2026-11-08T16:40:00",
+  "fb": "2026-11-08T15:20:00",
+  "title": "Nashville SC Break the MLS Points Record: 77 🏆 #MLS #shorts",
+  "description": "Nashville SC won 2–0 at FC Cincinnati on Decision Day, with two goals from Sam Surridge, to finish the MLS regular season with 77 points. That beats the single-season record of 74 set by Inter Miami in 2024. Nashville (23 wins, 8 draws, 3 defeats) are the top seed in the East.\n\nMLS standings and playoff bracket: https://scorebuzz.net\n\n#NashvilleSC #MLS #SamSurridge",
+  "tags": [
+   "nashville sc",
+   "mls points record",
+   "nashville sc record",
+   "sam surridge",
+   "fc cincinnati vs nashville",
+   "mls decision day",
+   "mls standings",
+   "mls playoffs",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "MLS · Decision Day",
+    "title": "A new MLS record",
+    "sub": "Goodbye, Inter Miami's 74"
+   },
+   {
+    "type": "score",
+    "dur": 3.2,
+    "label": "Full time · Cincinnati",
+    "home": "FC Cincinnati",
+    "homeAbbr": "CIN",
+    "homeScore": 0,
+    "away": "Nashville SC",
+    "awayAbbr": "NSH",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
+    "note": "Sam Surridge 61', 86'"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Nashville SC · 2026",
+    "value": "77",
+    "unit": "points",
+    "text": "Most ever in an MLS regular season"
+   },
+   {
+    "type": "list",
+    "dur": 3.2,
+    "label": "Most points in a season",
+    "title": "",
+    "rows": [
+     [
+      "Nashville SC",
+      "2026",
+      "77"
+     ],
+     [
+      "Inter Miami",
+      "2024",
+      "74"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Can they win MLS Cup now?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "MLS",
+   "big": "77",
+   "hook": "A *new* MLS record",
+   "sticker": "RECORD",
+   "emoji": "🏆"
+  },
+  "fbtext": "🏆 Nashville SC just broke Inter Miami's record.\n\nSam Surridge scored twice in a 2–0 win at Cincinnati and Nashville finished with 77 points. The old MLS record was 74, set by Messi's Miami in 2024.\n\nAre they MLS Cup favourites now? 👇\n\n#NashvilleSC #MLS #Reels",
+  "time": "2026-11-08T16:40:00"
+ },
+ {
+  "id": "s05-notre-dame-miami",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "bed": "drama",
+  "venue": "Notre Dame Stadium",
+  "yt": "2026-11-08T21:15:00",
+  "fb": "2026-11-08T23:40:00",
+  "title": "Notre Dame vs Miami: No. 1 Miami Falls 31–24 😳 #CFB #shorts",
+  "description": "Notre Dame beat No. 1 Miami 31–24 in South Bend. CJ Carr threw for 319 yards and three touchdowns, two of them to Micah Gilbert, and the Fighting Irish never trailed after building a 21-point lead. Both teams are now 8-1.\n\nNotre Dame vs Miami final score and college football scores: https://scorebuzz.net\n\n#NotreDame #MiamiHurricanes #CollegeFootball",
+  "tags": [
+   "notre dame vs miami",
+   "miami vs notre dame",
+   "notre dame",
+   "miami hurricanes",
+   "cj carr",
+   "college football scores",
+   "college football playoff",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "College Football",
+    "title": "No. 1 is down",
+    "sub": "in South Bend"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final · Notre Dame Stadium",
+    "home": "Notre Dame",
+    "homeAbbr": "ND",
+    "homeScore": 31,
+    "away": "Miami",
+    "awayAbbr": "MIA",
+    "awayScore": 24,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
+    "note": "Notre Dame never trailed"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "CJ Carr",
+    "value": "319",
+    "unit": "yards",
+    "text": "3 touchdown passes"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Revenge",
+    "title": "Miami beat them 27–24 last year",
+    "sub": "Both teams are now 8-1"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Who's the new No. 1?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "College Football",
+   "big": "31–24",
+   "hook": "No. 1 *falls*",
+   "sticker": "UPSET",
+   "teams": [
+    "ND",
+    "MIA"
+   ],
+   "emoji": "😳"
+  },
+  "fbtext": "😳 No. 1 Miami is down.\n\nCJ Carr threw for 319 yards and three TDs as Notre Dame led by 21 and held on to win 31–24. Both teams are now 8-1.\n\nWho should be No. 1 now? 👇\n\n#NotreDame #CFB #Reels",
+  "time": "2026-11-08T21:15:00"
+ },
+ {
+  "id": "s06-curry-41",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "venue": "Chase Center",
+  "yt": "2026-11-08T23:30:00",
+  "fb": "2026-11-09T03:50:00",
+  "title": "Stephen Curry 41 Points in OT Win | Warriors vs Magic 🔥 #shorts",
+  "description": "Stephen Curry scored 41 points as the Golden State Warriors beat the Orlando Magic 126–119 in overtime for their seventh straight win. Curry's three-point play with 1:38 left in overtime put Golden State ahead, and rookie Yaxel Lendeborg added 23. Franz Wagner had 30 for Orlando.\n\nWarriors vs Magic final score and NBA scores: https://scorebuzz.net\n\n#StephenCurry #Warriors #NBA #DubNation",
+  "tags": [
+   "stephen curry",
+   "stephen curry 41 points",
+   "warriors vs magic",
+   "magic vs warriors",
+   "golden state warriors",
+   "yaxel lendeborg",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA · Saturday",
+    "title": "Steph in OT 🔥",
+    "sub": "41 points"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final/OT · Chase Center",
+    "home": "Warriors",
+    "homeAbbr": "GS",
+    "homeScore": 126,
+    "away": "Magic",
+    "awayAbbr": "ORL",
+    "awayScore": 119,
+    "status": "FINAL/OT",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+    "note": "Curry 41 · Lendeborg 23"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Golden State",
+    "value": "7",
+    "unit": "straight wins",
+    "text": "7-3 on the season"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Overtime",
+    "title": "And-one with 1:38 left",
+    "sub": "then a layup in the final minute"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Is Steph still a top-3 player?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA",
+   "big": "41",
+   "hook": "Steph *takes over* OT",
+   "sticker": "FINAL",
+   "teams": [
+    "GS",
+    "ORL"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Stephen Curry, 41 points, in overtime.\n\nHis and-one with 1:38 left put Golden State ahead and the Warriors beat Orlando 126–119 for a seventh straight win.\n\nIs Steph still a top-3 player? 👇\n\n#StephenCurry #Warriors #Reels",
+  "time": "2026-11-08T23:30:00"
+ },
+ {
+  "id": "s07-canes-nine",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "anthem",
+  "yt": "2026-11-09T04:15:00",
+  "fb": "2026-11-09T07:30:00",
+  "title": "Hurricanes vs Blackhawks 9–2: Carolina Tie Franchise Record 🌀 #NHL #shorts",
+  "description": "The Carolina Hurricanes beat the Chicago Blackhawks 9–2, tying their franchise record for goals since relocating from Hartford in 1997. Jordan Martinook and Andrei Svechnikov scored twice each, and Connor Bedard scored for Chicago. Carolina (14-3-2) are the best team in the NHL.\n\nHurricanes vs Blackhawks final score and NHL scores: https://scorebuzz.net\n\n#Canes #NHL #Hurricanes #Blackhawks",
+  "tags": [
+   "hurricanes vs blackhawks",
+   "blackhawks vs hurricanes",
+   "carolina hurricanes",
+   "andrei svechnikov",
+   "jordan martinook",
+   "connor bedard",
+   "nhl scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NHL · Saturday",
+    "title": "NINE goals",
+    "sub": "Carolina went off"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final · Raleigh",
+    "home": "Hurricanes",
+    "homeAbbr": "CAR",
+    "homeScore": 9,
+    "away": "Blackhawks",
+    "awayAbbr": "CHI",
+    "awayScore": 2,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/car.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
+    "note": "Martinook 2 · Svechnikov 2"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Since moving to Carolina in 1997",
+    "value": "9",
+    "unit": "goals",
+    "text": "Ties the franchise record"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Best in the NHL",
+    "title": "14-3-2",
+    "sub": "Six wins in their last seven"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Stanley Cup favourites?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL",
+   "big": "9–2",
+   "hook": "Canes *tie* record",
+   "sticker": "RECORD",
+   "teams": [
+    "CAR",
+    "CHI"
+   ],
+   "emoji": "🌀"
+  },
+  "fbtext": "🌀 Carolina scored NINE.\n\nThe Hurricanes beat Chicago 9–2, tying their franchise record since moving from Hartford in 1997. They're 14-3-2, the best record in the NHL.\n\nStanley Cup favourites? 👇\n\n#Canes #NHL #Reels",
+  "time": "2026-11-09T04:15:00"
+ },
+ {
+  "id": "s08-f1-brazil-grid",
+  "sport": "racing",
+  "league": "f1",
+  "bed": "drama",
+  "yt": "2026-11-08T19:00:00",
+  "fb": "2026-11-08T17:50:00",
+  "title": "Brazil GP Starting Grid: Norris on Pole, Verstappen 16th 🏁 #F1 #shorts",
+  "description": "Lando Norris starts the São Paulo Grand Prix at Interlagos from pole position, with George Russell second and championship leader Kimi Antonelli third. Max Verstappen, second in the standings, starts 16th. Antonelli leads Verstappen by 119 points. The race starts at 17:00 GMT / 12pm ET.\n\nF1 results and standings: https://scorebuzz.net\n\n#F1 #BrazilGP #LandoNorris #Antonelli",
+  "tags": [
+   "brazil grand prix",
+   "sao paulo grand prix",
+   "f1 starting grid",
+   "lando norris pole",
+   "kimi antonelli",
+   "max verstappen",
+   "f1 standings",
+   "interlagos",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "Formula 1 · São Paulo",
+    "title": "Norris on pole",
+    "sub": "Verstappen way back"
+   },
+   {
+    "type": "list",
+    "dur": 3.6,
+    "label": "Starting grid",
+    "title": "Interlagos",
+    "rows": [
+     [
+      "P1",
+      "Lando Norris",
+      ""
+     ],
+     [
+      "P2",
+      "George Russell",
+      ""
+     ],
+     [
+      "P3",
+      "Kimi Antonelli",
+      ""
+     ],
+     [
+      "P4",
+      "Charles Leclerc",
+      ""
+     ],
+     [
+      "P16",
+      "Max Verstappen",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Antonelli's lead over Verstappen",
+    "value": "119",
+    "unit": "points",
+    "text": "380 to 261 before the race"
+   },
+   {
+    "type": "text",
+    "dur": 2.8,
+    "label": "Race start",
+    "title": "17:00 GMT · 12pm ET",
+    "sub": "Today at Interlagos"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Who wins in Brazil?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "Formula 1 · Brazil",
+   "big": "P16",
+   "hook": "Max starts *16th*",
+   "sticker": "RACE DAY",
+   "emoji": "🏁"
+  },
+  "fbtext": "🏁 Lando Norris is on pole in Brazil, and Max Verstappen starts 16th.\n\nChampionship leader Kimi Antonelli lines up third, 119 points clear. Lights out at 17:00 GMT / 12pm ET.\n\nWho wins at Interlagos? 👇\n\n#F1 #BrazilGP #Reels",
+  "time": "2026-11-08T19:00:00"
+ },
+ {
+  "id": "s09-cfb-board",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "bed": "hype",
+  "yt": "2026-11-09T01:45:00",
+  "fb": "2026-11-09T05:30:00",
+  "title": "College Football Scores: No. 1 Miami Falls + 7 Big Results 🏈 #shorts",
+  "description": "College football scores from Saturday's top games: Notre Dame beat No. 1 Miami 31–24, Georgia won 42–7 at Ole Miss, Alabama beat LSU 31–13, Tennessee beat Kentucky 34–6, Texas won 34–20 at Missouri, Oregon beat Ohio State 41–28, Utah beat BYU 28–20 and UCLA won 34–20 at Minnesota.\n\nCollege football scores today: https://scorebuzz.net\n\n#CollegeFootball #CFB #NotreDame #Georgia",
+  "tags": [
+   "college football scores",
+   "college football results",
+   "notre dame vs miami",
+   "georgia vs ole miss",
+   "alabama vs lsu",
+   "oregon vs ohio state",
+   "tennessee vs kentucky",
+   "texas vs missouri",
+   "utah vs byu",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 18.2,
+    "kicker": "College Football · Saturday",
+    "title": "8 big results",
+    "badge": "FINAL",
+    "first": 1.0,
+    "step": 2.0,
+    "rows": [
+     {
+      "home": "Notre Dame",
+      "homeAbbr": "ND",
+      "hs": 31,
+      "away": "Miami",
+      "awayAbbr": "MIA",
+      "as": 24,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png"
+     },
+     {
+      "home": "Ole Miss",
+      "homeAbbr": "MISS",
+      "hs": 7,
+      "away": "Georgia",
+      "awayAbbr": "UGA",
+      "as": 42,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
+     },
+     {
+      "home": "Utah",
+      "homeAbbr": "UTAH",
+      "hs": 28,
+      "away": "BYU",
+      "awayAbbr": "BYU",
+      "as": 20,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png"
+     },
+     {
+      "home": "LSU",
+      "homeAbbr": "LSU",
+      "hs": 13,
+      "away": "Alabama",
+      "awayAbbr": "ALA",
+      "as": 31,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png"
+     },
+     {
+      "home": "Tennessee",
+      "homeAbbr": "TENN",
+      "hs": 34,
+      "away": "Kentucky",
+      "awayAbbr": "UK",
+      "as": 6,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png"
+     },
+     {
+      "home": "Missouri",
+      "homeAbbr": "MIZ",
+      "hs": 20,
+      "away": "Texas",
+      "awayAbbr": "TEX",
+      "as": 34,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
+     },
+     {
+      "home": "Ohio State",
+      "homeAbbr": "OSU",
+      "hs": 28,
+      "away": "Oregon",
+      "awayAbbr": "ORE",
+      "as": 41,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png"
+     },
+     {
+      "home": "Minnesota",
+      "homeAbbr": "MINN",
+      "hs": 20,
+      "away": "UCLA",
+      "awayAbbr": "UCLA",
+      "as": 34,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Which result shocked you? 👇",
+    "sub": ""
+   }
+  ],
+  "thumb": {
+   "kicker": "College Football",
+   "big": "42–7",
+   "hook": "Georgia *rolls*, Miami falls",
+   "sticker": "RESULTS",
+   "teams": [
+    "UGA",
+    "MISS"
+   ],
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 What a Saturday in college football.\n\nNo. 1 Miami lost at Notre Dame, Georgia won 42–7 at Ole Miss, Oregon won at Ohio State and Tennessee crushed Kentucky 34–6.\n\nWhich result shocked you most? 👇\n\n#CFB #CollegeFootball #Reels",
+  "time": "2026-11-09T01:45:00"
+ },
+ {
+  "id": "s10-thunder-75",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "venue": "Paycom Center",
+  "yt": null,
+  "fb": "2026-11-09T01:20:00",
+  "title": "Thunder vs Wizards 114–75: Lowest Score of the NBA Season 😬 #shorts",
+  "description": "The Oklahoma City Thunder beat the Washington Wizards 114–75, holding them to the lowest total in the NBA this season. Shai Gilgeous-Alexander scored 30 in three quarters.\n\nLive scores, fixtures and results: https://scorebuzz.net\n\n#Thunder #NBA #SGA",
+  "tags": [
+   "thunder vs wizards",
+   "shai gilgeous-alexander",
+   "okc thunder",
+   "wizards",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA · Saturday",
+    "title": "Just 75 points",
+    "sub": "OKC's defence did that"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final · Oklahoma City",
+    "home": "Thunder",
+    "homeAbbr": "OKC",
+    "homeScore": 114,
+    "away": "Wizards",
+    "awayAbbr": "WSH",
+    "awayScore": 75,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
+    "note": "SGA 30 in three quarters"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Washington's total",
+    "value": "75",
+    "unit": "points",
+    "text": "Lowest by any team this NBA season"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "OKC are 8-2",
+    "title": "5 wins in 7",
+    "sub": "without Jalen Williams, Cason Wallace and Chet Holmgren"
+   },
+   {
+    "type": "outro",
+    "dur": 2.5,
+    "title": "Can anyone stop OKC?",
+    "sub": "Follow ScoreBuzz for daily updates"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA",
+   "big": "75",
+   "hook": "Wizards *held* to 75",
+   "sticker": "FINAL",
+   "teams": [
+    "OKC",
+    "WSH"
+   ],
+   "emoji": "😬"
+  },
+  "fbtext": "😬 The Thunder held Washington to 75 points.\n\nThat's the lowest total by any team this NBA season. SGA had 30 in three quarters in a 114–75 win, and OKC are 8-2 despite three injured starters.\n\nCan anyone stop OKC? 👇\n\n#ThunderUp #NBA #Reels",
+  "time": "2026-11-09T01:20:00"
+ }
+]
