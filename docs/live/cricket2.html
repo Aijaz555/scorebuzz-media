@@ -160,11 +160,20 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '
 const J = async u => { const r = await fetch(u, { cache: 'no-store' }); if (!r.ok) throw new Error(r.status); return r.json(); };
 
 // fit 1920x1080 into the window (or a fixed ?w=&h=)
+// same rules as app.html: settings.json "fit" ({win, w, h, x, y, fit}) overrides ?w=&h=; fit=fill stretches, default contains
+let FITR = {};
 function fit() {
-  const w = +Q.get('w') || innerWidth, h = +Q.get('h') || innerHeight;
-  document.body.style.transform = `scale(${Math.min(w / 1920, h / 1080)})`;
+  const R = FITR, b = document.body, mode = R.fit || Q.get('fit') || 'contain';
+  const W = +R.w || (R.win ? 0 : +Q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +Q.get('h')) || innerHeight, X = +R.x || 0, Y = +R.y || 0;
+  const sx = W / 1920, sy = H / 1080;
+  b.style.marginLeft = X + 'px'; b.style.marginTop = Y + 'px';
+  if (mode === 'none') b.style.transform = '';
+  else if (mode === 'fill') b.style.transform = `scale(${sx},${sy})`;
+  else { const k = Math.min(sx, sy); b.style.transform = `scale(${k})`; b.style.marginLeft = (X + (W - 1920 * k) / 2) + 'px'; b.style.marginTop = (Y + (H - 1080 * k) / 2) + 'px'; }
 }
-addEventListener('resize', fit); fit();
+addEventListener('resize', fit); addEventListener('load', fit); setInterval(fit, 2000); fit();
+// pick up the remote fit settings even outside slot mode
+fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/settings.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.json()).then(c => { FITR = c.fit || {}; fit(); }).catch(() => {});
 
 // national colours by abbreviation prefix (ESPN leaves cricket team colours empty)
 const COLORS = { IND: '#1F5BD8', PAK: '#01803E', AUS: '#E8B400', ENG: '#1B3A8C', NZ: '#2B2B2B', SA: '#007A4D', SL: '#0A3D91', BAN: '#006A4E', AFG: '#1E5AA8', WI: '#7B0041', ZIM: '#C8102E', IRE: '#169B62', NEP: '#DC143C', UAE: '#00732F', SCO: '#0065BF', NED: '#F36C21', USA: '#B22234', OMA: '#C8102E', NAM: '#003580', CAN: '#D80621', HK: '#DE2910', HKG: '#DE2910' };
@@ -462,6 +471,7 @@ async function slotSettings() {
   if (!SLOT) return;
   try {
     const c = await J('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/settings.json?t=' + Date.now());
+    FITR = c.fit || {}; fit();
     if (reloadSeen === undefined) reloadSeen = c.reload ?? null; else if ((c.reload ?? null) !== reloadSeen) return location.reload();
     const sl = (c.slots || {})[SLOT];
     if (!sl || !/^cricket/.test(sl.league || '')) return location.replace('index.html' + location.search);
