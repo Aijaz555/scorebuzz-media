@@ -354,7 +354,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 44)",
-  "at": "2026-11-08T14:36:27+00:00"
+  "at": "2026-11-08T15:14:09+00:00"
  },
  "401878759": {
   "slot": "5",
@@ -363,8 +363,8 @@
   "url": "https://scorebuzz.net/football/english-premier-league/ipswich-vs-bournemouth-401878759/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-08T14:36:30+00:00"
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-08T15:14:12+00:00"
  },
  "401879239": {
   "slot": "6",
@@ -373,8 +373,8 @@
   "url": "https://scorebuzz.net/football/english-premier-league/sunderland-vs-chelsea-401879239/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-08T14:36:33+00:00"
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-08T15:14:15+00:00"
  },
  "401873038": {
   "slot": "7",
@@ -384,7 +384,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 44)",
-  "at": "2026-11-08T14:36:35+00:00"
+  "at": "2026-11-08T15:14:18+00:00"
  },
  "401879244": {
   "slot": "8",
@@ -394,7 +394,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 46)",
-  "at": "2026-11-08T14:36:38+00:00"
+  "at": "2026-11-08T15:14:21+00:00"
  },
  "401875018": {
   "slot": "9",
@@ -403,8 +403,8 @@
   "url": "https://scorebuzz.net/football/serie-a/genoa-vs-milan-401875018/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 40)",
-  "at": "2026-11-08T14:36:41+00:00"
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-08T15:14:24+00:00"
  },
  "401874800": {
   "slot": "10",
@@ -413,7 +413,7 @@
   "url": "https://scorebuzz.net/football/serie-a/monza-vs-atalanta-401874800/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-08T14:36:44+00:00"
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-08T15:14:27+00:00"
  }
 }
