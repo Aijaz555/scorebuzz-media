@@ -168,10 +168,13 @@
    },
    "cricket": {
     "ScoreBuzz Stadium Cricket A": "6af065e6f370b34507b78d6a"
+   },
+   "nfl_crowd": {
+    "ScoreBuzz Stadium NFL A": "6af06c6ef370b34507b9047e"
    }
   },
   "sports": {
-   "nfl": "american_football",
+   "nfl": "nfl_crowd",
    "ncaaf": "american_football",
    "nba": "basketball",
    "nhl": "hockey",
@@ -205,7 +208,8 @@
   "volume": 3,
   "volumes": {
    "soccer": 6,
-   "cricket": 6
+   "cricket": 6,
+   "nfl_crowd": 6
   }
  },
  "thumbs": false,
