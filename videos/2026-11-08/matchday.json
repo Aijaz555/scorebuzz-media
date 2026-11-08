@@ -1,0 +1,691 @@
+[
+  {
+    "id": "bundesliga-20261108",
+    "sport": "football",
+    "league": "bundesliga",
+    "format": "video",
+    "title": "Bundesliga Table Updated Today 8 Nov 2026 | Bundesliga Results & Standings Matchweek 9 ⚽",
+    "description": "Bundesliga results from Sun 8 Nov (Matchweek 9), the updated Bundesliga table and the next fixtures. Bayern lead on 21 points after 9 games; the big result was Cologne 1–2 Leverkusen. Next round starts Fri 20 Nov.\n\nSun 8 Nov scores: Cologne 1–2 Leverkusen, Freiburg 2–0 Union Berlin, Hoffenheim 2–1 Schalke.\n\n0:00 Intro\n0:06 Sun 8 Nov results\n0:20 Every game\n1:02 Earlier in Matchweek 9\n1:14 Bundesliga table\n1:44 Title race & relegation\n2:00 Matchweek 10 fixtures\n\nBundesliga live scores, table and fixtures: https://scorebuzz.net\n\n#Bundesliga #Football #bundesligatable #ScoreBuzz\n\nMusic: \"Crusade\" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0/)",
+    "tags": [
+      "bundesliga table",
+      "bundesliga table updated today",
+      "bundesliga standings",
+      "bundesliga results",
+      "bundesliga fixtures",
+      "bundesliga matchweek 9",
+      "bundesliga results today",
+      "Cologne vs Leverkusen",
+      "Bayern bundesliga",
+      "scorebuzz"
+    ],
+    "tt": {
+      "league": "bundesliga",
+      "name": "Bundesliga",
+      "mw": 9,
+      "season": "2026/27",
+      "zones": {
+        "ucl": 4,
+        "rel": 2
+      },
+      "result": {
+        "home": "Cologne",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+        "hs": 1,
+        "away": "Leverkusen",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+        "as": 2,
+        "venue": "RheinEnergieStadion"
+      },
+      "table": [
+        {
+          "rank": 1,
+          "team": "Bayern",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+          "p": 9,
+          "gd": "+20",
+          "pts": 21
+        },
+        {
+          "rank": 2,
+          "team": "Dortmund",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+          "p": 9,
+          "gd": "+9",
+          "pts": 21
+        },
+        {
+          "rank": 3,
+          "team": "Freiburg",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
+          "p": 9,
+          "gd": "+10",
+          "pts": 19
+        },
+        {
+          "rank": 4,
+          "team": "RB Leipzig",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+          "p": 9,
+          "gd": "+14",
+          "pts": 18
+        },
+        {
+          "rank": 5,
+          "team": "Leverkusen",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+          "p": 9,
+          "gd": "+3",
+          "pts": 16
+        },
+        {
+          "rank": 6,
+          "team": "Bremen",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+          "p": 9,
+          "gd": "+2",
+          "pts": 15
+        },
+        {
+          "rank": 7,
+          "team": "Elversberg",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+          "p": 9,
+          "gd": "-1",
+          "pts": 13
+        },
+        {
+          "rank": 8,
+          "team": "Stuttgart",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+          "p": 9,
+          "gd": "0",
+          "pts": 12
+        },
+        {
+          "rank": 9,
+          "team": "Hoffenheim",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+          "p": 9,
+          "gd": "-1",
+          "pts": 12
+        },
+        {
+          "rank": 10,
+          "team": "Frankfurt",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
+          "p": 9,
+          "gd": "-5",
+          "pts": 12
+        },
+        {
+          "rank": 11,
+          "team": "Hamburg",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
+          "p": 9,
+          "gd": "-10",
+          "pts": 12
+        },
+        {
+          "rank": 12,
+          "team": "Mainz",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png",
+          "p": 9,
+          "gd": "-1",
+          "pts": 10
+        },
+        {
+          "rank": 13,
+          "team": "Paderborn",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
+          "p": 9,
+          "gd": "-3",
+          "pts": 10
+        },
+        {
+          "rank": 14,
+          "team": "Augsburg",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
+          "p": 9,
+          "gd": "0",
+          "pts": 9
+        },
+        {
+          "rank": 15,
+          "team": "Cologne",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+          "p": 9,
+          "gd": "-4",
+          "pts": 9
+        },
+        {
+          "rank": 16,
+          "team": "Union Berlin",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
+          "p": 9,
+          "gd": "-14",
+          "pts": 7
+        },
+        {
+          "rank": 17,
+          "team": "Schalke",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
+          "p": 9,
+          "gd": "-6",
+          "pts": 6
+        },
+        {
+          "rank": 18,
+          "team": "Gladbach",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+          "p": 9,
+          "gd": "-13",
+          "pts": 4
+        }
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-20T19:30Z",
+          "home": "Bayern",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+          "away": "Cologne",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png"
+        },
+        {
+          "date": "2026-11-21T14:30Z",
+          "home": "Union Berlin",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
+          "away": "RB Leipzig",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png"
+        },
+        {
+          "date": "2026-11-21T14:30Z",
+          "home": "Leverkusen",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+          "away": "Paderborn",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png"
+        },
+        {
+          "date": "2026-11-21T14:30Z",
+          "home": "Gladbach",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+          "away": "Dortmund",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
+        },
+        {
+          "date": "2026-11-21T14:30Z",
+          "home": "Frankfurt",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
+          "away": "Hoffenheim",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
+        },
+        {
+          "date": "2026-11-21T14:30Z",
+          "home": "Elversberg",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+          "away": "Freiburg",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
+        },
+        {
+          "date": "2026-11-21T17:30Z",
+          "home": "Schalke",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
+          "away": "Stuttgart",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
+        },
+        {
+          "date": "2026-11-22T14:30Z",
+          "home": "Augsburg",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
+          "away": "Mainz",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png"
+        },
+        {
+          "date": "2026-11-22T16:30Z",
+          "home": "Bremen",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+          "away": "Hamburg",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png"
+        }
+      ]
+    },
+    "thumb": {
+      "kicker": "Bundesliga · Matchweek 9",
+      "big": "21 PTS",
+      "hook": "Bayern *top*",
+      "sticker": "TABLE",
+      "emoji": "⚽"
+    },
+    "scenes": [
+      {
+        "type": "hook",
+        "dur": 6,
+        "kicker": "Bundesliga · Sun 8 Nov",
+        "title": "Table updated today",
+        "sub": "Bayern top on 21 points"
+      },
+      {
+        "type": "table",
+        "dur": 14,
+        "label": "Bundesliga · Sun 8 Nov results",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Cologne v Leverkusen",
+            1,
+            2
+          ],
+          [
+            "",
+            "Freiburg v Union Berlin",
+            2,
+            0
+          ],
+          [
+            "",
+            "Hoffenheim v Schalke",
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "Bundesliga · Sun 8 Nov",
+        "home": "Cologne",
+        "homeAbbr": "KOE",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+        "homeScore": 1,
+        "away": "Leverkusen",
+        "awayAbbr": "B04",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+        "awayScore": 2,
+        "status": "FULL TIME",
+        "note": "KOE: S. El Mala 90'+2'  |  B04: A. García 7' · P. Schick 85'"
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "Bundesliga · Sun 8 Nov",
+        "home": "Freiburg",
+        "homeAbbr": "SCF",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
+        "homeScore": 2,
+        "away": "Union Berlin",
+        "awayAbbr": "FCU",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "SCF: R. Khedira (og) 55' · Y. Suzuki 67'"
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "Bundesliga · Sun 8 Nov",
+        "home": "Hoffenheim",
+        "homeAbbr": "TSG",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+        "homeScore": 2,
+        "away": "Schalke",
+        "awayAbbr": "S04",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "TSG: F. Asllani 10' · T. Lemperle 26'  |  S04: J. Adamu 81'"
+      },
+      {
+        "type": "table",
+        "dur": 12,
+        "label": "Bundesliga · earlier in Matchweek 9",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Hamburg v Gladbach",
+            3,
+            1
+          ],
+          [
+            "",
+            "Dortmund v Elversberg",
+            2,
+            1
+          ],
+          [
+            "",
+            "Mainz v Bayern",
+            1,
+            2
+          ],
+          [
+            "",
+            "RB Leipzig v Augsburg",
+            5,
+            2
+          ],
+          [
+            "",
+            "Paderborn v Frankfurt",
+            2,
+            2
+          ],
+          [
+            "",
+            "Stuttgart v Bremen",
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Bundesliga table · after Matchweek 9",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            1,
+            "Bayern",
+            9,
+            6,
+            3,
+            0,
+            "+20",
+            21
+          ],
+          [
+            2,
+            "Dortmund",
+            9,
+            6,
+            3,
+            0,
+            "+9",
+            21
+          ],
+          [
+            3,
+            "Freiburg",
+            9,
+            6,
+            1,
+            2,
+            "+10",
+            19
+          ],
+          [
+            4,
+            "RB Leipzig",
+            9,
+            6,
+            0,
+            3,
+            "+14",
+            18
+          ],
+          [
+            5,
+            "Leverkusen",
+            9,
+            5,
+            1,
+            3,
+            "+3",
+            16
+          ],
+          [
+            6,
+            "Bremen",
+            9,
+            4,
+            3,
+            2,
+            "+2",
+            15
+          ],
+          [
+            7,
+            "Elversberg",
+            9,
+            4,
+            1,
+            4,
+            "-1",
+            13
+          ],
+          [
+            8,
+            "Stuttgart",
+            9,
+            4,
+            0,
+            5,
+            "0",
+            12
+          ],
+          [
+            9,
+            "Hoffenheim",
+            9,
+            4,
+            0,
+            5,
+            "-1",
+            12
+          ]
+        ],
+        "highlight": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "note": "Top 4: Champions League places"
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Bundesliga table · after Matchweek 9 (10–18)",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            10,
+            "Frankfurt",
+            9,
+            3,
+            3,
+            3,
+            "-5",
+            12
+          ],
+          [
+            11,
+            "Hamburg",
+            9,
+            4,
+            0,
+            5,
+            "-10",
+            12
+          ],
+          [
+            12,
+            "Mainz",
+            9,
+            3,
+            1,
+            5,
+            "-1",
+            10
+          ],
+          [
+            13,
+            "Paderborn",
+            9,
+            2,
+            4,
+            3,
+            "-3",
+            10
+          ],
+          [
+            14,
+            "Augsburg",
+            9,
+            2,
+            3,
+            4,
+            "0",
+            9
+          ],
+          [
+            15,
+            "Cologne",
+            9,
+            2,
+            3,
+            4,
+            "-4",
+            9
+          ],
+          [
+            16,
+            "Union Berlin",
+            9,
+            1,
+            4,
+            4,
+            "-14",
+            7
+          ],
+          [
+            17,
+            "Schalke",
+            9,
+            1,
+            3,
+            5,
+            "-6",
+            6
+          ],
+          [
+            18,
+            "Gladbach",
+            9,
+            1,
+            1,
+            7,
+            "-13",
+            4
+          ]
+        ],
+        "danger": [
+          17,
+          18
+        ],
+        "note": "Bottom 2: relegation zone"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Title race",
+        "title": "Bayern top on goal difference",
+        "sub": "Dortmund are second on 21 points after 9 games"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Relegation zone",
+        "title": "Gladbach bottom on 4 points",
+        "sub": "In the drop zone: Schalke 6 · Gladbach 4. Union Berlin are first above it on 7."
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Bundesliga · Matchweek 10 fixtures (UK · ET)",
+        "rows": [
+          [
+            "Fri 20 Nov",
+            "Bayern v Cologne",
+            "19:30 · 2:30 PM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Union Berlin v RB Leipzig",
+            "14:30 · 9:30 AM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Leverkusen v Paderborn",
+            "14:30 · 9:30 AM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Gladbach v Dortmund",
+            "14:30 · 9:30 AM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Frankfurt v Hoffenheim",
+            "14:30 · 9:30 AM"
+          ]
+        ]
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Bundesliga · Matchweek 10 fixtures (UK · ET) cont.",
+        "rows": [
+          [
+            "Sat 21 Nov",
+            "Elversberg v Freiburg",
+            "14:30 · 9:30 AM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Schalke v Stuttgart",
+            "17:30 · 12:30 PM"
+          ],
+          [
+            "Sun 22 Nov",
+            "Augsburg v Mainz",
+            "14:30 · 9:30 AM"
+          ],
+          [
+            "Sun 22 Nov",
+            "Bremen v Hamburg",
+            "16:30 · 11:30 AM"
+          ]
+        ]
+      },
+      {
+        "type": "cta",
+        "dur": 6,
+        "title": "Who wins the Bundesliga this season?",
+        "sub": "Live scores, tables & fixtures every day"
+      }
+    ],
+    "music": "Crusade"
+  }
+]
