@@ -40,6 +40,46 @@
    "league": "laliga",
    "event": "401882814",
    "note": "Elche vs Real Betis, 2026-11-08T13:00:00Z"
+  },
+  "4": {
+   "league": "epl",
+   "event": "401879243",
+   "note": "Crystal Palace vs Liverpool, 2026-11-08T14:00:00Z"
+  },
+  "5": {
+   "league": "epl",
+   "event": "401878759",
+   "note": "Ipswich Town vs AFC Bournemouth, 2026-11-08T14:00:00Z"
+  },
+  "6": {
+   "league": "epl",
+   "event": "401879239",
+   "note": "Sunderland vs Chelsea, 2026-11-08T14:00:00Z"
+  },
+  "7": {
+   "league": "nfl",
+   "event": "401873038",
+   "note": "Cincinnati Bengals vs Atlanta Falcons, 2026-11-08T14:30:00Z"
+  },
+  "8": {
+   "league": "epl",
+   "event": "401879244",
+   "note": "Brighton & Hove Albion vs Brentford, 2026-11-08T14:00:00Z"
+  },
+  "9": {
+   "league": "seriea",
+   "event": "401875018",
+   "note": "Genoa vs AC Milan, 2026-11-08T14:00:00Z"
+  },
+  "10": {
+   "league": "seriea",
+   "event": "401874800",
+   "note": "Monza vs Atalanta, 2026-11-08T14:00:00Z"
+  },
+  "11": {
+   "league": "ligue1",
+   "event": "401876406",
+   "note": "Stade Rennais vs Lille, 2026-11-08T14:00:00Z"
   }
  },
  "fit": {
@@ -48,7 +88,7 @@
  },
  "reload": 23,
  "music": {
-  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks \u2014 no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old.",
+  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old.",
   "playlists": {
    "american_football": {
     "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
