@@ -31,9 +31,9 @@
  },
  "slots": {
   "1": {
-   "league": "nba",
-   "event": "401909942",
-   "note": "Orlando Magic vs Golden State Warriors, 2026-11-08T01:30:00Z"
+   "league": "mls",
+   "event": "761947",
+   "note": "San Diego FC vs Sporting Kansas City, 2026-11-08T00:00:00Z"
   },
   "2": {
    "league": "ncaaf",
@@ -41,29 +41,14 @@
    "note": "Kentucky Wildcats vs Tennessee Volunteers, 2026-11-07T23:15:00Z"
   },
   "3": {
-   "league": "nhl",
-   "event": "401892669",
-   "note": "San Jose Sharks vs Dallas Stars, 2026-11-08T01:00:00Z"
-  },
-  "4": {
-   "league": "ncaaf",
-   "event": "401856740",
-   "note": "Alabama Crimson Tide vs LSU Tigers, 2026-11-07T20:30:00Z"
-  },
-  "5": {
-   "league": "nba",
-   "event": "401909938",
-   "note": "Denver Nuggets vs Indiana Pacers, 2026-11-07T22:00:00Z"
+   "league": "mls",
+   "event": "761948",
+   "note": "Seattle Sounders FC vs LAFC, 2026-11-08T00:00:00Z"
   },
   "6": {
    "league": "nba",
    "event": "401909939",
    "note": "Brooklyn Nets vs Atlanta Hawks, 2026-11-08T00:30:00Z"
-  },
-  "7": {
-   "league": "nhl",
-   "event": "401892664",
-   "note": "New York Rangers vs Seattle Kraken, 2026-11-07T22:00:00Z"
   },
   "8": {
    "league": "ncaaf",
@@ -92,13 +77,13 @@
   },
   "13": {
    "league": "nba",
-   "event": "401909940",
-   "note": "New York Knicks vs Cleveland Cavaliers, 2026-11-08T01:00:00Z"
+   "event": "401909942",
+   "note": "Orlando Magic vs Golden State Warriors, 2026-11-08T01:30:00Z"
   },
   "14": {
-   "league": "nba",
-   "event": "401909941",
-   "note": "Washington Wizards vs Oklahoma City Thunder, 2026-11-08T01:00:00Z"
+   "league": "nhl",
+   "event": "401892669",
+   "note": "San Jose Sharks vs Dallas Stars, 2026-11-08T01:00:00Z"
   },
   "15": {
    "league": "nhl",
@@ -106,14 +91,14 @@
    "note": "New Jersey Devils vs New York Islanders, 2026-11-08T00:00:00Z"
   },
   "16": {
-   "league": "nhl",
-   "event": "401892668",
-   "note": "Chicago Blackhawks vs Carolina Hurricanes, 2026-11-08T01:00:00Z"
+   "league": "nba",
+   "event": "401909940",
+   "note": "New York Knicks vs Cleveland Cavaliers, 2026-11-08T01:00:00Z"
   },
   "17": {
-   "league": "nhl",
-   "event": "401892670",
-   "note": "Tampa Bay Lightning vs Minnesota Wild, 2026-11-08T01:00:00Z"
+   "league": "nba",
+   "event": "401909941",
+   "note": "Washington Wizards vs Oklahoma City Thunder, 2026-11-08T01:00:00Z"
   },
   "18": {
    "league": "mls",
