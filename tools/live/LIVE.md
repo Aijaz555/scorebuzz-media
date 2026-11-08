@@ -243,7 +243,8 @@ Only runs when `"thumbs": true` in `docs/live/settings.json` (so the hourly mana
 - `docs/live/dark.html` (source `tools/live/dark.html`): navy/gold "big score" layout for NBA, NFL, NHL, MLB — big crests, score,
   quarter-by-quarter table, team stats, the scorebuzz.net live tracker in the centre (during play; scoring plays before/after),
   latest plays, top players, league scores ticker. `?slot=N` reads settings.json like the main overlay.
-- Switch a league to it with `"dark": ["nba", ...]` in docs/live/settings.json: the main overlay hands those slots over
+- College football (built-in field from ESPN's situation: ball, line of scrimmage, first-down line, down & distance) and MLB (built-in diamond: runners, count, outs) are included; NFL/NHL/NBA use the website tracker, and fall back to the built-in field when the tracker check sets `sbtrk: 0`.
+- Switch a league to it with `"dark": ["nba", ...]` in docs/live/settings.json (all five on since 8 Nov 2026): the main overlay hands those slots over
   (`location.replace('dark.html?slot=N…')`) and dark.html hands back when the slot's league isn't listed. Web-layer URLs stay as they are.
 - Football (NFL / college) in the main overlay keeps the field in the centre during play (no rotation to stats / win probability).
 - Play-by-play rows wrap to two lines (3 plays) so sentences are readable.
