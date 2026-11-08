@@ -66,46 +66,6 @@
   "reason": "ok (contrast 89)",
   "at": "2026-11-08T00:21:12+00:00"
  },
- "761947": {
-  "slot": "1",
-  "league": "mls",
-  "game": "San Diego v Kansas City",
-  "url": "https://scorebuzz.net/football/mls/san-diego-vs-kansas-city-761947/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 46)",
-  "at": "2026-11-08T01:24:04+00:00"
- },
- "401856745": {
-  "slot": "2",
-  "league": "ncaaf",
-  "game": "Tennessee v Kentucky",
-  "url": "https://scorebuzz.net/american-football/college-football/tennessee-vs-kentucky-401856745/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 48)",
-  "at": "2026-11-08T01:24:07+00:00"
- },
- "761948": {
-  "slot": "3",
-  "league": "mls",
-  "game": "Seattle v LAFC",
-  "url": "https://scorebuzz.net/football/mls/seattle-vs-lafc-761948/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-08T01:24:10+00:00"
- },
- "401909939": {
-  "slot": "6",
-  "league": "nba",
-  "game": "Hawks v Nets",
-  "url": "https://scorebuzz.net/basketball/nba/hawks-vs-nets-401909939/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 63)",
-  "at": "2026-11-08T01:24:13+00:00"
- },
  "401858291": {
   "slot": "8",
   "league": "ncaaf",
@@ -115,126 +75,6 @@
   "status": "switched",
   "reason": "tracker card has no drawing",
   "at": "2026-11-08T01:25:53+00:00"
- },
- "401856741": {
-  "slot": "9",
-  "league": "ncaaf",
-  "game": "Ole Miss v Georgia",
-  "url": "https://scorebuzz.net/american-football/college-football/ole-miss-vs-georgia-401856741/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-08T01:25:56+00:00"
- },
- "401892665": {
-  "slot": "10",
-  "league": "nhl",
-  "game": "Maple Leafs v Canadiens",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/maple-leafs-vs-canadiens-401892665/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-08T01:25:59+00:00"
- },
- "761943": {
-  "slot": "11",
-  "league": "mls",
-  "game": "Dallas v Colorado",
-  "url": "https://scorebuzz.net/football/mls/dallas-vs-colorado-761943/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-08T01:26:03+00:00"
- },
- "401892666": {
-  "slot": "12",
-  "league": "nhl",
-  "game": "Senators v Mammoth",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/senators-vs-mammoth-401892666/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-08T01:26:06+00:00"
- },
- "401892669": {
-  "slot": "14",
-  "league": "nhl",
-  "game": "Stars v Sharks",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/stars-vs-sharks-401892669/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-08T01:26:09+00:00"
- },
- "401892667": {
-  "slot": "15",
-  "league": "nhl",
-  "game": "Islanders v Devils",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/islanders-vs-devils-401892667/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 79)",
-  "at": "2026-11-08T01:26:12+00:00"
- },
- "401909940": {
-  "slot": "16",
-  "league": "nba",
-  "game": "Cavaliers v Knicks",
-  "url": "https://scorebuzz.net/basketball/nba/cavaliers-vs-knicks-401909940/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-08T01:26:15+00:00"
- },
- "401909941": {
-  "slot": "17",
-  "league": "nba",
-  "game": "Thunder v Wizards",
-  "url": "https://scorebuzz.net/basketball/nba/thunder-vs-wizards-401909941/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-08T01:26:18+00:00"
- },
- "761942": {
-  "slot": "18",
-  "league": "mls",
-  "game": "Austin v Portland",
-  "url": "https://scorebuzz.net/football/mls/austin-vs-portland-761942/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 41)",
-  "at": "2026-11-08T01:26:22+00:00"
- },
- "761944": {
-  "slot": "19",
-  "league": "mls",
-  "game": "Houston v St. Louis",
-  "url": "https://scorebuzz.net/football/mls/houston-vs-st-louis-761944/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-08T01:26:25+00:00"
- },
- "761945": {
-  "slot": "20",
-  "league": "mls",
-  "game": "Minnesota v San Jose",
-  "url": "https://scorebuzz.net/football/mls/minnesota-vs-san-jose-761945/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 50)",
-  "at": "2026-11-08T01:26:28+00:00"
- },
- "761946": {
-  "slot": "pin",
-  "league": "mls",
-  "game": "Salt Lake v LA Galaxy",
-  "url": "https://scorebuzz.net/football/mls/salt-lake-vs-la-galaxy-761946/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-08T01:26:31+00:00"
  },
  "401892668": {
   "slot": "4",
@@ -265,5 +105,165 @@
   "status": "ok",
   "reason": "ok (contrast 71)",
   "at": "2026-11-08T01:45:36+00:00"
+ },
+ "761947": {
+  "slot": "1",
+  "league": "mls",
+  "game": "San Diego v Kansas City",
+  "url": "https://scorebuzz.net/football/mls/san-diego-vs-kansas-city-761947/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-08T02:01:46+00:00"
+ },
+ "401856745": {
+  "slot": "2",
+  "league": "ncaaf",
+  "game": "Tennessee v Kentucky",
+  "url": "https://scorebuzz.net/american-football/college-football/tennessee-vs-kentucky-401856745/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 48)",
+  "at": "2026-11-08T02:01:49+00:00"
+ },
+ "761948": {
+  "slot": "3",
+  "league": "mls",
+  "game": "Seattle v LAFC",
+  "url": "https://scorebuzz.net/football/mls/seattle-vs-lafc-761948/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-08T02:01:52+00:00"
+ },
+ "401909939": {
+  "slot": "6",
+  "league": "nba",
+  "game": "Hawks v Nets",
+  "url": "https://scorebuzz.net/basketball/nba/hawks-vs-nets-401909939/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-08T02:01:55+00:00"
+ },
+ "401856741": {
+  "slot": "9",
+  "league": "ncaaf",
+  "game": "Ole Miss v Georgia",
+  "url": "https://scorebuzz.net/american-football/college-football/ole-miss-vs-georgia-401856741/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T02:01:58+00:00"
+ },
+ "401892665": {
+  "slot": "10",
+  "league": "nhl",
+  "game": "Maple Leafs v Canadiens",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/maple-leafs-vs-canadiens-401892665/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 90)",
+  "at": "2026-11-08T02:02:01+00:00"
+ },
+ "761943": {
+  "slot": "11",
+  "league": "mls",
+  "game": "Dallas v Colorado",
+  "url": "https://scorebuzz.net/football/mls/dallas-vs-colorado-761943/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-08T02:02:04+00:00"
+ },
+ "401892666": {
+  "slot": "12",
+  "league": "nhl",
+  "game": "Senators v Mammoth",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/senators-vs-mammoth-401892666/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 90)",
+  "at": "2026-11-08T02:02:07+00:00"
+ },
+ "401892669": {
+  "slot": "14",
+  "league": "nhl",
+  "game": "Stars v Sharks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/stars-vs-sharks-401892669/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 89)",
+  "at": "2026-11-08T02:02:09+00:00"
+ },
+ "401892667": {
+  "slot": "15",
+  "league": "nhl",
+  "game": "Islanders v Devils",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/islanders-vs-devils-401892667/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 89)",
+  "at": "2026-11-08T02:02:12+00:00"
+ },
+ "401909940": {
+  "slot": "16",
+  "league": "nba",
+  "game": "Cavaliers v Knicks",
+  "url": "https://scorebuzz.net/basketball/nba/cavaliers-vs-knicks-401909940/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 71)",
+  "at": "2026-11-08T02:02:15+00:00"
+ },
+ "401909941": {
+  "slot": "17",
+  "league": "nba",
+  "game": "Thunder v Wizards",
+  "url": "https://scorebuzz.net/basketball/nba/thunder-vs-wizards-401909941/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 71)",
+  "at": "2026-11-08T02:02:18+00:00"
+ },
+ "761942": {
+  "slot": "18",
+  "league": "mls",
+  "game": "Austin v Portland",
+  "url": "https://scorebuzz.net/football/mls/austin-vs-portland-761942/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-08T02:02:21+00:00"
+ },
+ "761944": {
+  "slot": "19",
+  "league": "mls",
+  "game": "Houston v St. Louis",
+  "url": "https://scorebuzz.net/football/mls/houston-vs-st-louis-761944/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T02:02:24+00:00"
+ },
+ "761945": {
+  "slot": "20",
+  "league": "mls",
+  "game": "Minnesota v San Jose",
+  "url": "https://scorebuzz.net/football/mls/minnesota-vs-san-jose-761945/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-08T02:02:27+00:00"
+ },
+ "761946": {
+  "slot": "pin",
+  "league": "mls",
+  "game": "Salt Lake v LA Galaxy",
+  "url": "https://scorebuzz.net/football/mls/salt-lake-vs-la-galaxy-761946/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-08T02:02:30+00:00"
  }
 }
