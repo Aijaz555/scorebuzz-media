@@ -685,5 +685,15 @@
   "status": "ok",
   "reason": "ok (contrast 45)",
   "at": "2026-11-08T23:10:25+00:00"
+ },
+ "401909946": {
+  "slot": "6",
+  "league": "nba",
+  "game": "Pistons v Lakers",
+  "url": "https://scorebuzz.net/basketball/nba/pistons-vs-lakers-401909946/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-08T23:18:31+00:00"
  }
 }
