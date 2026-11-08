@@ -26,6 +26,11 @@
  "top25": 15,
  "pin": null,
  "slots": {
+  "1": {
+   "league": "epl",
+   "event": "401879240",
+   "note": "Manchester United vs Aston Villa, 2026-11-08T16:30:00Z"
+  },
   "2": {
    "league": "laliga",
    "event": "401882810",
@@ -76,6 +81,26 @@
    "event": "401876406",
    "note": "Stade Rennais vs Lille, 2026-11-08T14:00:00Z",
    "sbtrk": 0
+  },
+  "12": {
+   "league": "ligue1",
+   "event": "401876412",
+   "note": "Angers vs Nice, 2026-11-08T16:15:00Z"
+  },
+  "13": {
+   "league": "ligue1",
+   "event": "401876410",
+   "note": "Brest vs Lyon, 2026-11-08T16:15:00Z"
+  },
+  "14": {
+   "league": "ligue1",
+   "event": "401876409",
+   "note": "Le Havre AC vs Lorient, 2026-11-08T16:15:00Z"
+  },
+  "15": {
+   "league": "ligue1",
+   "event": "401876408",
+   "note": "Le Mans vs AS Monaco, 2026-11-08T16:15:00Z"
   }
  },
  "fit": {
