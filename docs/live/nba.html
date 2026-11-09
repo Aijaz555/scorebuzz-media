@@ -51,6 +51,13 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 .qt th{color:#7fb2ff;font-weight:700;padding:2px 6px;border-bottom:2px solid #ffffff55}
 .qt td{text-align:center;padding:2px 6px;color:#7fb2ff}.qt td.t{color:#fff;text-align:left;width:90px}.qt td.tot{color:#fff}
 .pbp{padding:0 14px 0 64px;display:flex;flex-direction:column}
+/* tracker mode (live games): scorebuzz.net court tracker on the left, 3 latest plays on the right */
+.low{display:grid;grid-template-columns:700px 1fr;gap:12px;padding:0 12px 0 12px;height:368px}
+.trk{position:relative;border-radius:12px;overflow:hidden;background:#0b1326;border:2px solid #ffffff22}
+.trk .cap{position:absolute;left:0;right:0;bottom:0;text-align:center;font:700 16px Inter,sans-serif;letter-spacing:3px;color:var(--mute);text-transform:uppercase;padding:4px;background:#0b1326dd;z-index:2}
+#trkL{position:absolute;overflow:hidden;border-radius:12px;pointer-events:none}#trkL iframe{position:absolute;border:0;width:1000px;transform-origin:0 0;background:#0b1326}
+.low .pbp{padding:0 0 0 52px}.low .pl{height:122px;grid-template-columns:1fr 92px;padding:0 12px}.low .pl img{left:-48px;top:40px}
+.low .pl .l2{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:22px;line-height:1.25}.low .pl .l1{gap:16px}.low .pl .s{font-size:28px}
 .pl{position:relative;height:63px;display:grid;grid-template-columns:1fr 130px;align-items:center;border-bottom:1px solid #ffffff22;padding:0 16px}
 .pl img{position:absolute;left:-52px;top:13px;width:38px;height:38px;object-fit:contain}
 .pl .l1{font:700 25px 'Barlow Condensed',sans-serif;color:#dbe5ff;display:flex;gap:28px;white-space:nowrap}.pl .l1 b{font-weight:800;color:#fff;letter-spacing:.5px}
@@ -88,7 +95,7 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 <script>
 const q = new URLSearchParams(location.search);
 const SLOT = q.get('slot');
-let event = q.get('event');
+let event = q.get('event'), noSite = q.get('sbtrk') === '0';
 function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
   const mode = R.fit || q.get('fit') || 'contain', b = document.body;
   if (mode === 'fill') b.style.transform = `scale(${sx},${sy})`; else { const k = Math.min(sx, sy); b.style.transform = `scale(${k})`; b.style.marginLeft = ((W - 1920 * k) / 2) + 'px'; b.style.marginTop = ((H - 1080 * k) / 2) + 'px'; } }
@@ -182,7 +189,12 @@ function render(s, sb) {
   const qh = Array.from({ length: cols }, (_, i) => `<th>${i < 4 ? i + 1 : ORD(i + 1)}</th>`).join('');
   const qr = (T) => `<tr><td class="t">${esc(T.abbr)}</td>${Array.from({ length: cols }, (_, i) => `<td>${esc(T.lines[i] ?? '')}</td>`).join('')}<td class="tot">${pre ? '' : T.score}</td></tr>`;
   // play-by-play: latest 6, newest first
-  const plays = (s.plays || []).slice(-6).reverse();
+  // live: the website's court tracker takes the left of the lower board and the play-by-play shrinks to the 3 latest plays
+  const sbEv = (sb?.events || []).find((e) => e.id === c.id);
+  const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  const shortOf = (T) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === String(T.id))?.team?.shortDisplayName || T.nick;
+  const trkUrl = st.type?.state === 'in' && !noSite && sbEv ? `https://scorebuzz.net/basketball/nba/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/` : '';
+  const plays = (s.plays || []).slice(trkUrl ? -3 : -6).reverse();
   const logo = (id) => (id === H.id ? H.logoD : id === A.id ? A.logoD : '');
   const pbp = plays.map((p, i) => {
     const sc = p.scoringPlay ? (p.team?.id === H.id ? 'h' : 'a') : '';
@@ -225,11 +237,27 @@ function render(s, sb) {
     <div class="sc"><div class="big ${H.score < A.score ? 'lo' : ''}">${pre ? 0 : H.score}</div>
       <div class="qt"><table><tr><th></th>${qh}<th>T</th></tr>${qr(H)}${qr(A)}</table></div>
       <div class="big ${A.score < H.score ? 'lo' : ''}">${pre ? 0 : A.score}</div></div>
-    <div class="pbp">${hasBox || (s.plays || []).length ? pbp : preBox}</div>
+    ${trkUrl ? `<div class="low"><div class="trk" id="trk"><div class="cap">Live tracker · scorebuzz.net</div></div><div class="pbp">${pbp}</div></div>` : `<div class="pbp">${hasBox || (s.plays || []).length ? pbp : preBox}</div>`}
   </div>
   <div class="court">${hasBox ? `<h2>${fin ? 'FINAL BOX SCORE' : 'ON THE COURT'}</h2>${ctab(H)}${ctab(A)}` : `<h2>PRE-GAME</h2>${inj(H)}${inj(A)}`}</div>
   <div class="ldr">${hasBox ? lead('pts', 'POINTS', fgft) + lead('reb', 'REBOUNDS', (p) => `${p.dreb} DREB, ${p.oreb} OREB`) + lead('ast', 'ASSISTS', (p) => `${p.to} TO, ${p.min} MIN`)
     : slead('pointsPerGame', 'PPG') + slead('reboundsPerGame', 'RPG') + slead('assistsPerGame', 'APG')}</div>`;
+  placeTracker(trkUrl);
+}
+// the website's live tracker (court + possession bar), cropped out of the match page exactly like dark.html does
+const CROP = { top: 64, vh: 512 }; // nba tracker card crop (page 1000 px wide, sticky header 64 px), measured 6 Nov 2026
+let trkF = null, trkSrc = '';
+function placeTracker(url) {
+  const box = $('trk'); if (!box || !url) { if (trkF) trkF.parentNode.style.display = 'none'; return; }
+  if (!trkF) { const L = document.createElement('div'); L.id = 'trkL'; trkF = document.createElement('iframe'); L.appendChild(trkF); document.body.appendChild(L); }
+  if (trkSrc !== url) { trkSrc = url; trkF.src = url + '#trkSlot'; }
+  trkF.parentNode.style.display = 'block';
+  const X = 14, VW = 972, { top: TOP, vh: VH } = CROP;
+  const m = /scale\(([\d.]+)(?:,\s*([\d.]+))?\)/.exec(document.body.style.transform || ''), sx = m ? +m[1] : 1, sy = m ? +(m[2] || m[1]) : 1;
+  const r = box.getBoundingClientRect(), br = document.body.getBoundingClientRect();
+  const left = (r.left - br.left) / sx, top = (r.top - br.top) / sy, w = r.width / sx, h = r.height / sy - 26, k = Math.min(w / VW, h / VH);
+  Object.assign(trkF.parentNode.style, { left: left + 'px', top: top + 'px', width: w + 'px', height: h + 'px' });
+  Object.assign(trkF.style, { height: (TOP + VH + 20) + 'px', left: ((w - VW * k) / 2 - X * k) + 'px', top: ((h - VH * k) / 2 - TOP * k) + 'px', transform: `scale(${k})` });
 }
 let last = 0;
 async function tick() {
@@ -246,6 +274,7 @@ async function slotTick() {
     const sl = (c.slots || {})[SLOT];
     if (!sl || !sl.event) { $('app').innerHTML = '<div class="err">ScoreBuzz live scoreboard · next game coming up</div>'; event = null; return; }
     if (sl.league !== 'nba') { location.replace(`dark.html${location.search}`); return; }
+    noSite = sl.sbtrk === 0;
     if (String(sl.event) !== String(event)) { event = String(sl.event); tick(); }
   } catch (e) { /* keep current */ }
 }
