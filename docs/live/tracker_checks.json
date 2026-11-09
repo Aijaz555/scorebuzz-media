@@ -746,16 +746,6 @@
   "reason": "ok (contrast 62)",
   "at": "2026-11-09T03:15:50+00:00"
  },
- "401873050": {
-  "slot": "7",
-  "league": "nfl",
-  "game": "Bears v Buccaneers",
-  "url": "https://scorebuzz.net/american-football/nfl/bears-vs-buccaneers-401873050/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-09T03:15:53+00:00"
- },
  "401909951": {
   "slot": "1",
   "league": "nba",
@@ -785,5 +775,15 @@
   "status": "ok",
   "reason": "ok (contrast 79)",
   "at": "2026-11-09T03:24:07+00:00"
+ },
+ "401873050": {
+  "slot": "7",
+  "league": "nfl",
+  "game": "Bears v Buccaneers",
+  "url": "https://scorebuzz.net/american-football/nfl/bears-vs-buccaneers-401873050/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-09T03:48:16+00:00"
  }
 }
