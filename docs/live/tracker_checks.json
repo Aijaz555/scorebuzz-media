@@ -646,16 +646,6 @@
   "reason": "ok (contrast 50)",
   "at": "2026-11-08T23:42:50+00:00"
  },
- "401909946": {
-  "slot": "6",
-  "league": "nba",
-  "game": "Pistons v Lakers",
-  "url": "https://scorebuzz.net/basketball/nba/pistons-vs-lakers-401909946/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-09T00:00:38+00:00"
- },
  "401873046": {
   "slot": "1",
   "league": "nfl",
@@ -725,5 +715,15 @@
   "status": "ok",
   "reason": "ok (contrast 90)",
   "at": "2026-11-09T00:25:12+00:00"
+ },
+ "401909946": {
+  "slot": "6",
+  "league": "nba",
+  "game": "Pistons v Lakers",
+  "url": "https://scorebuzz.net/basketball/nba/pistons-vs-lakers-401909946/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-09T00:33:19+00:00"
  }
 }
