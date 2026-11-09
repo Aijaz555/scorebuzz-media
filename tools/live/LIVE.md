@@ -210,6 +210,12 @@ starting 30 min before kick-off and stopped when the game is over.
   `python3 tools/make_live_music.py`; 6 upbeat ones imported to the LiveReacting library), looping at volume 3/10,
   a different order per project. Duplicated Slot projects inherit it. No commercial music, ever.
 
+## NBA broadcast layout (on air 9 Nov 2026)
+NBA slots now show docs/live/nba.html (games bar, timeouts/bonus, big score + quarters, scorebuzz.net live tracker beside the
+3 latest plays, players on the court, leaders with ESPN headshots — owner OK'd headshots 9 Nov 2026). app.html loads it fresh from
+raw GitHub (document.write, like cricket2) so edits go live without the host's cache; its script is wrapped in an IIFE for that reason.
+Kill switch: `"nbaPage": false` in settings.json sends NBA slots back to dark.html. Pre-game: countdown, injuries, season leaders.
+
 ## Stream check (added 9 Nov 2026)
 
 Each hourly run checks what every LIVE stream actually shows on YouTube (needs `i.ytimg.com` on the session's allowed

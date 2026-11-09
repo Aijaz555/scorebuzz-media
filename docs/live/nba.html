@@ -93,6 +93,7 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 </style></head>
 <body><div id="app"><div class="err">Loading ScoreBuzz live scoreboard…</div></div>
 <script>
+(() => { // wrapped: app.html document.write()s this page into its own window, so top-level names must not clash
 const q = new URLSearchParams(location.search);
 const SLOT = q.get('slot');
 let event = q.get('event'), noSite = q.get('sbtrk') === '0';
@@ -271,14 +272,16 @@ async function slotTick() {
   try {
     const c = await J('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/settings.json?t=' + Date.now());
     window.__fitRemote = c.fit || {}; fit();
+    if (window.__reloadSeen === undefined) window.__reloadSeen = c.reload ?? null; else if ((c.reload ?? null) !== window.__reloadSeen) location.reload();
     const sl = (c.slots || {})[SLOT];
     if (!sl || !sl.event) { $('app').innerHTML = '<div class="err">ScoreBuzz live scoreboard · next game coming up</div>'; event = null; return; }
-    if (sl.league !== 'nba') { location.replace(`dark.html${location.search}`); return; }
+    if (sl.league !== 'nba' || c.nbaPage === false) { location.replace(`dark.html${location.search}`); return; }
     noSite = sl.sbtrk === 0;
     if (String(sl.event) !== String(event)) { event = String(sl.event); tick(); }
   } catch (e) { /* keep current */ }
 }
 if (SLOT) { slotTick(); setInterval(slotTick, 60000); setInterval(tick, 5000); }
 else if (!event) $('app').innerHTML = '<div class="err">Add ?event=&lt;ESPN game id&gt; or ?slot=N</div>'; else { tick(); setInterval(tick, 5000); }
+})();
 </script>
 </body></html>

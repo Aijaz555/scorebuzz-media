@@ -265,7 +265,7 @@ async function slotTick() { // same remote control as the main overlay: docs/liv
     if (reloadSeen === undefined) reloadSeen = c.reload ?? null; else if ((c.reload ?? null) !== reloadSeen) location.reload();
     const sl = (c.slots || {})[SLOT];
     if (!sl || !sl.event) { $('app').innerHTML = '<div class="err">ScoreBuzz live scoreboard · next game coming up</div>'; event = null; return; }
-    if (!SPORT[sl.league] || c.dark === false) { location.replace(`index.html?slot=${SLOT}&${q.toString().replace(/slot=\d+&?/, '')}`); return; } // not ours: back to the main overlay
+    if (!SPORT[sl.league] || c.dark === false || (sl.league === 'nba' && c.nbaPage !== false)) { location.replace(`index.html?slot=${SLOT}&${q.toString().replace(/slot=\d+&?/, '')}`); return; } // not ours: back to the main overlay
     noSite = sl.sbtrk === 0;
     if (String(sl.event) !== String(event) || sl.league !== league) { league = sl.league; event = String(sl.event); last = null; tick(); }
   } catch (e) { /* keep current */ }

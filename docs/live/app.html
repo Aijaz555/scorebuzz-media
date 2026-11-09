@@ -1435,6 +1435,15 @@ async function loadSettings() {
     else if ((c.reload ?? null) !== window.__reloadSeen) location.reload();
     if (SLOT) { const sl = (c.slots || {})[SLOT]; PIN = sl && sl.event ? sl : null;
       // dark broadcast layout (docs/live/dark.html) for the leagues listed in settings "dark": hand the slot over to it
+      // NBA broadcast layout (docs/live/nba.html, owner 9 Nov 2026): loaded fresh from raw GitHub like the cricket page,
+      // because the stream host caches docs/live/*.html for hours. settings "nbaPage": false falls back to dark.html.
+      if (PIN && PIN.league === 'nba' && c.nbaPage !== false) { if (window.__toNba) return; window.__toNba = 1;
+        window.fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/nba.html?t=' + Date.now(), { cache: 'no-store' })
+          .then((r) => { if (!r.ok) throw 0; return r.text(); })
+          .then((html) => { const top = setTimeout(() => {}, 0); for (let i = 1; i <= top + 50; i++) { clearTimeout(i); clearInterval(i); }
+            document.open(); document.write(html); document.close(); })
+          .catch(() => { window.__toNba = 0; });
+        return; }
       if (PIN && Array.isArray(c.dark) && c.dark.includes(PIN.league)) { location.replace('dark.html' + location.search); return; }
       // cricket games (league "cricket:<espn league id>") use the cricket tracker page (docs/live/cricket2.html)
       // loaded fresh from raw GitHub (like index.html loads this page), because the stream host caches docs/live/*.html for hours
