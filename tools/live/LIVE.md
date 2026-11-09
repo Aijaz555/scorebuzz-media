@@ -232,6 +232,9 @@ games bar, header with table position + points, cards / corners / possession str
 bars beside the 3 latest commentary lines, line-ups with formation, cards, goals and subs (league table around both clubs before line-ups
 are out), leaders with shirt numbers (goals, shots, saves) or last-5 form before kick-off. Kick-off times in UK time (ET for MLS).
 Try: soccer.html?league=epl&event=401879240 (Man Utd 4-4 Villa). Not wired into app.html yet.
+Live tracker (owner 9 Nov 2026): during live games the scorebuzz.net pitch tracker sits left of the stats (same URL and crop as app.html:
+`scorebuzz.net/football/<league>/<home>-vs-<away>-<id>/#trkSlot`, top 64 / height 536), and the column beside it alternates every 15 s between
+match stats and the latest commentary. `sbtrk: 0` on a slot (or ?sbtrk=0) turns it off; ?sbtrk=1 forces it for testing.
 
 ## Stream check (added 9 Nov 2026)
 
