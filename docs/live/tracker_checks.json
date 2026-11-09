@@ -676,16 +676,6 @@
   "reason": "ok (contrast 46)",
   "at": "2026-11-09T00:17:04+00:00"
  },
- "401909948": {
-  "slot": "2",
-  "league": "nba",
-  "game": "Mavericks v Nets",
-  "url": "https://scorebuzz.net/basketball/nba/mavericks-vs-nets-401909948/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-09T00:41:28+00:00"
- },
  "401892678": {
   "slot": "4",
   "league": "nhl",
@@ -745,5 +735,25 @@
   "status": "ok",
   "reason": "ok (contrast 101)",
   "at": "2026-11-09T01:08:13+00:00"
+ },
+ "401909948": {
+  "slot": "2",
+  "league": "nba",
+  "game": "Mavericks v Nets",
+  "url": "https://scorebuzz.net/basketball/nba/mavericks-vs-nets-401909948/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-09T01:16:20+00:00"
+ },
+ "401909949": {
+  "slot": "5",
+  "league": "nba",
+  "game": "Bucks v Celtics",
+  "url": "https://scorebuzz.net/basketball/nba/bucks-vs-celtics-401909949/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-09T01:16:23+00:00"
  }
 }
