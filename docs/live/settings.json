@@ -91,7 +91,7 @@
   "win": true,
   "fit": "fill"
  },
- "reload": 24,
+ "reload": 25,
  "music": {
   "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old.",
   "playlists": {
@@ -263,6 +263,11 @@
   "nfl",
   "ncaaf",
   "nhl",
+  "mlb"
+ ],
+ "usLeagues": [
+  "nhl",
+  "nfl",
   "mlb"
  ]
 }

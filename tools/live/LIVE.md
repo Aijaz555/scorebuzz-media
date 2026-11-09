@@ -217,6 +217,13 @@ NBA slots now show docs/live/nba.html (games bar, timeouts/bonus, big score + qu
 raw GitHub (document.write, like cricket2) so edits go live without the host's cache; its script is wrapped in an IIFE for that reason.
 Kill switch: `"nbaPage": false` in settings.json sends NBA slots back to dark.html. Pre-game: countdown, injuries, season leaders.
 
+## NHL / NFL / MLB broadcast layout (on air 9 Nov 2026, owner's request)
+NHL, NFL and MLB slots now show docs/live/us.html (same look as nba.html: games bar, sport strip — NHL shots + power play,
+NFL down & distance, MLB count/outs/bases — big score + line score, live tracker beside the latest plays, player panel,
+leaders with headshots). app.html loads it fresh from raw GitHub for leagues listed in settings `"usLeagues"` (nhl, nfl, mlb;
+add "ncaaf" to put college football on it too). Kill switch: `"usPage": false` sends those slots back to dark.html.
+dark.html hands usLeagues slots back to the main overlay so they reach us.html.
+
 ## Stream check (added 9 Nov 2026)
 
 Each hourly run checks what every LIVE stream actually shows on YouTube (needs `i.ytimg.com` on the session's allowed

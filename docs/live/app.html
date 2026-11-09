@@ -1444,6 +1444,16 @@ async function loadSettings() {
             document.open(); document.write(html); document.close(); })
           .catch(() => { window.__toNba = 0; });
         return; }
+      // NHL / NFL / MLB broadcast layout (docs/live/us.html, owner 9 Nov 2026), loaded the same way as nba.html.
+      // settings "usLeagues" lists the leagues on it; "usPage": false falls back to dark.html.
+      const US = Array.isArray(c.usLeagues) ? c.usLeagues : [];
+      if (PIN && US.includes(PIN.league) && c.usPage !== false) { if (window.__toUs) return; window.__toUs = 1;
+        window.fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/us.html?t=' + Date.now(), { cache: 'no-store' })
+          .then((r) => { if (!r.ok) throw 0; return r.text(); })
+          .then((html) => { const top = setTimeout(() => {}, 0); for (let i = 1; i <= top + 50; i++) { clearTimeout(i); clearInterval(i); }
+            document.open(); document.write(html); document.close(); })
+          .catch(() => { window.__toUs = 0; });
+        return; }
       if (PIN && Array.isArray(c.dark) && c.dark.includes(PIN.league)) { location.replace('dark.html' + location.search); return; }
       // cricket games (league "cricket:<espn league id>") use the cricket tracker page (docs/live/cricket2.html)
       // loaded fresh from raw GitHub (like index.html loads this page), because the stream host caches docs/live/*.html for hours
