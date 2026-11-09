@@ -1,11 +1,5 @@
 [
  {
-  "slug": "el-sadar",
-  "name": "El Sadar",
-  "city": "Pamplona",
-  "country": "Spain"
- },
- {
   "slug": "reale-arena",
   "name": "Reale Arena",
   "city": "San Sebastian",
@@ -30,40 +24,10 @@
   "country": "France"
  },
  {
-  "slug": "seatgeek-stadium",
-  "name": "SeatGeek Stadium",
-  "city": "Bridgeview, Illinois",
-  "country": "USA"
- },
- {
-  "slug": "allianz-field",
-  "name": "Allianz Field",
-  "city": "Saint Paul, Minnesota",
-  "country": "USA"
- },
- {
   "slug": "lincoln-financial-field",
   "name": "Lincoln Financial Field",
   "city": "Philadelphia",
   "country": "USA"
- },
- {
-  "slug": "galaxy-stadium",
-  "name": "Galaxy Stadium",
-  "city": "Lubbock",
-  "country": "USA"
- },
- {
-  "slug": "allegacy-federal-credit-union-stadium",
-  "name": "Allegacy Federal Credit Union Stadium",
-  "city": "Winston-Salem",
-  "country": "USA"
- },
- {
-  "slug": "arena-cdmx",
-  "name": "Arena CDMX",
-  "city": "Mexico City",
-  "country": ""
  },
  {
   "slug": "mortgage-matchup-center",
@@ -78,15 +42,9 @@
   "country": ""
  },
  {
-  "slug": "lenovo-center",
-  "name": "Lenovo Center",
-  "city": "Raleigh",
-  "country": "USA"
- },
- {
-  "slug": "grand-casino-arena",
-  "name": "Grand Casino Arena",
-  "city": "Saint Paul",
-  "country": "USA"
+  "slug": "gainbridge-fieldhouse",
+  "name": "Gainbridge Fieldhouse",
+  "city": "Indianapolis",
+  "country": ""
  }
 ]
