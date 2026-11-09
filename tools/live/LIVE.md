@@ -184,9 +184,18 @@ starting 30 min before kick-off and stopped when the game is over.
   and the hashtag line (league, matchup, both teams), which the planner writes; actions also carry `tags` for later.
 - LiveReacting refuses title/description edits on a SCHEDULED project ("Can not update title/description"): cancel the
   schedule, update, then schedule again. (Edits on a LIVE project work.)
-- Concurrency cap (found 7 Nov 2026 01:45 UTC): the LiveReacting plan allows only **9 concurrent live streams** (scheduling and
-  starting both refuse a 10th). Slots 10+ only stream when one of Slots 1–9 is free, until the owner raises the limit with
-  LiveReacting support (live chat) or upgrades the plan.
+- **Plan limits (LiveReacting support, 9 Nov 2026): Large plan raised to 15 concurrent streams, fair-use cap 680 streaming
+  hours per week** (≈ 15 streams × 6.5 h/day on average; busy weekends are fine as long as the week stays under 680 h). Over the
+  cap, LiveReacting tells the owner and offers the custom $199/mo plan.
+  - plan_streams.js caps new assignments at `maxLive` (15; override with `"streams": {"maxLive": N}` in settings.json): running +
+    scheduled + restarted projects count, and the lowest-priority games go to `skipped` with `reason: "cap 15"` (vs
+    `"no free project"` when the 21 projects run out).
+  - `node tools/live/usage.js <broadcasts.json> [status.json]` sums livereacting_list_broadcasts (per project) for the week
+    (Mon 00:00 UTC) and rolling 7 days: hours, % of 680, projection, level ok/warn (≥80%)/over. The hourly manager runs it once
+    a day (first run after 00:00 UTC) and notifies the owner at warn/over (once per day, word "usage" in the commit/summary).
+  - Baseline (before the raise, 9-stream cap): 5–9 Nov ≈ 347 h in total, of which Fri 53 h, Sat 113 h, Sun 140 h; peak 11 at once.
+    With 15 streams a full weekend could reach ~180–220 h/day, so a week with every game is close to the 680 h cap.
+- Older cap (found 7 Nov 2026 01:45 UTC): the plan allowed only 9 concurrent live streams; the log below is from that period.
   - 8 Nov 2026 14:43 UTC: cap hit again — Real Sociedad-Rayo (Slot 2, now) and 4 Ligue 1 16:15 UK games (Slots 12-15) refused; only Slot 1 (Man Utd-Villa) scheduled.
   - 8 Nov 2026 16:45 UTC: 4 Ligue 1 restarts (Slots 14-17) went through (10 streams counted), then all 8 18:00 UK schedules (7 NFL 1pm ET games + Panthers-Bruins, Slots 4-6,8-11,18) were refused by the cap; the next hourly runs start them as slots free up.
   - 8 Nov 2026 17:43 UTC: Bengals-Falcons (Slot 7) stopped, Cowboys-Colts started on Slot 2 (9/9); Jets-Chiefs, Giants-Eagles, Panthers-Bruins, Lions-Dolphins, Browns-Saints, Rams-Commanders (Slots 4-6,8-11) prepared but refused by the cap. Schedules for 19:15 UTC (Slots 18-19) were accepted.

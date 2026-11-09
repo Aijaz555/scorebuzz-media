@@ -27,6 +27,7 @@ const cfg = {
   leadMinutes: 30,
   lookaheadMinutes: 95,                         // plan streams that start before the next hourly run (+ margin)
   ncaafTop: 10,                                 // college: only games with a top-10 team
+  maxLive: 15,                                  // LiveReacting Large plan: 15 concurrent streams (raised from 9 on 9 Nov 2026)
   // planned stream length after kick-off, in hours (generous: overtime; the hourly run stops it early when it ends)
   hours: { nfl: 4, ncaaf: 4.5, nba: 3.25, nhl: 3.25, mlb: 3.75, soccer: 2.25 },
   ...(settings.streams || {}),
@@ -147,6 +148,12 @@ async function games(extra) {
     free.push(p);
   }
 
+  // concurrency cap: running + scheduled + restarted projects all count against maxLive; new games beyond it go
+  // to skipped (lowest priority first, since `want` is sorted by priority)
+  const stopped = new Set(actions.filter((x) => x.type === 'stop' || x.type === 'cancel').map((x) => x.projectId));
+  let occupied = projects.filter((p) => !stopped.has(p.id) && (p.liveStatus === 'LIVE' || p.liveStatus === 'PREPARING' || p.liveStatus === 'SCHEDULED' || p.scheduledLivesCount > 0)).length
+    + actions.filter((x) => x.type === 'restart').length;
+
   const fav = (g) => g.abbrs.some((x) => favs.includes(String(x).toUpperCase()));
   const pri = (g) => cfg.leagues.indexOf(g.league);
   const want = [...all.values()].filter((g) => {
@@ -160,8 +167,10 @@ async function games(extra) {
   free.sort((a, b) => (a.key === 'main') - (b.key === 'main') || Number(a.key) - Number(b.key));
   const skipped = [];
   for (const g of want) {
+    if (occupied >= cfg.maxLive) { skipped.push({ league: g.league, event: g.id, matchup: g.matchup, start: g.start, reason: `cap ${cfg.maxLive}` }); continue; }
     const p = free.shift();
-    if (!p) { skipped.push({ league: g.league, event: g.id, matchup: g.matchup, start: g.start }); continue; }
+    if (!p) { skipped.push({ league: g.league, event: g.id, matchup: g.matchup, start: g.start, reason: 'no free project' }); continue; }
+    occupied++;
     const kick = new Date(g.start).getTime();
     const startAt = kick - cfg.leadMinutes * MIN;
     const endAt = kick + hoursFor(g.league) * 3600e3;
@@ -177,7 +186,8 @@ async function games(extra) {
   if (process.argv.includes('--write')) fs.writeFileSync(SETTINGS, JSON.stringify(settings, null, 1) + '\n');
   console.log(JSON.stringify({
     now: iso(now), actions, skipped,
-    pool: { projects: projects.length, free_after: free.length },
-    note: skipped.length ? `${skipped.length} game(s) had no free project: add more "Slot N" projects in LiveReacting` : undefined,
+    pool: { projects: projects.length, free_after: free.length, occupied, maxLive: cfg.maxLive },
+    note: skipped.some((x) => x.reason === 'no free project') ? `${skipped.filter((x) => x.reason === 'no free project').length} game(s) had no free project: add more "Slot N" projects in LiveReacting`
+      : skipped.length ? `${skipped.length} game(s) skipped by the ${cfg.maxLive}-stream cap` : undefined,
   }, null, 2));
 })();
