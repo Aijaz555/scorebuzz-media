@@ -1,0 +1,255 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ScoreBuzz NBA live</title>
+<!-- ScoreBuzz NBA "broadcast" scoreboard (owner's request, 9 Nov 2026, modelled on the busiest NBA scoreboard streams):
+     today's games bar, team header with records, timeouts + bonus, big score + quarters, rolling play-by-play,
+     players on the court (worked out from starters + substitutions), and points/rebounds/assists leaders with headshots.
+     Reads ESPN directly from the browser. Usage: nba.html?event=<ESPN id>  or  nba.html?slot=N (docs/live/settings.json).
+     Designed at 1920x1080, scaled to the window (?fit=fill&w=&h=). -->
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a1430;--panel:#0f1d44;--row:#13245a;--line:#24366e;--ink:#f4f7ff;--mute:#9fb0d9;--lime:#c6f432;--red:#e5262e;--hc:#1d428a;--ac:#c8102e}
+*{margin:0;padding:0;box-sizing:border-box}
+html{overflow:hidden;background:var(--bg)}
+body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:relative;background:var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif}
+.cond{font-family:'Barlow Condensed','Arial Narrow',sans-serif}
+#app{position:absolute;inset:0}
+/* top: today's games */
+.top{position:absolute;left:0;top:0;width:1920px;height:132px;background:#f4f6fb;color:#121826;display:flex}
+.gm{width:226px;padding:12px 18px 8px;border-right:2px solid #d6dbe8;display:flex;flex-direction:column;gap:4px}
+.gm.cur{background:#fff;box-shadow:inset 0 -6px 0 var(--red)}
+.gm .st{font:700 26px 'Barlow Condensed',sans-serif;text-align:center;color:#20283a;height:30px;white-space:nowrap;overflow:hidden}
+.gm .st.live{color:var(--red)}
+.gm .r{display:flex;align-items:center;gap:10px;font:700 30px 'Barlow Condensed',sans-serif;height:38px}
+.gm .r img{width:32px;height:32px;object-fit:contain}.gm .r b{flex:1;letter-spacing:.5px}.gm .r span{font-weight:600;color:#3a4256}
+.gm .r span.w{color:#000;font-weight:800}
+.sub{position:absolute;right:30px;top:24px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.sub .btn{background:var(--red);color:#fff;font:900 34px Inter,sans-serif;letter-spacing:1px;padding:12px 34px;border-radius:12px;box-shadow:0 8px 20px #e5262e66;animation:pulse 2.4s infinite;transform:rotate(-2deg)}
+.sub .bz{font:900 22px Inter,sans-serif;color:#121826;letter-spacing:-.3px}.sub .bz b{color:#5b8a00}
+@keyframes pulse{0%,100%{transform:rotate(-2deg) scale(1)}50%{transform:rotate(-2deg) scale(1.06)}}
+/* main board */
+.board{position:absolute;left:14px;top:146px;width:1250px;height:740px;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,#132a6b,#0c1a45);border:4px solid #c8102e;border-top:none}
+.hdr{height:118px;display:grid;grid-template-columns:1fr 280px 1fr;background:linear-gradient(90deg,var(--hc) 0%,color-mix(in srgb,var(--hc) 75%,#000) 48%,color-mix(in srgb,var(--ac) 75%,#000) 52%,var(--ac) 100%)}
+.tm{display:flex;align-items:center;gap:16px;padding:0 22px;min-width:0}
+.tm.h{justify-content:flex-end}.tm.a{justify-content:flex-start}
+.tm img{width:92px;height:92px;object-fit:contain;filter:drop-shadow(0 4px 10px #0008)}
+.tm .nm{font:800 58px 'Barlow Condensed',sans-serif;line-height:.95;text-transform:uppercase;letter-spacing:.5px}
+.tm .rc{font:600 26px 'Barlow Condensed',sans-serif;color:#ffffffd0;white-space:nowrap}
+.tm.h .tx{text-align:right}
+.clock{margin:14px 0;border-radius:14px;background:#0008;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.clock .c{font:800 56px 'Barlow Condensed',sans-serif;color:var(--lime);line-height:1;white-space:nowrap}.clock .c.sm{font-size:44px}
+.clock .p{font:700 24px 'Barlow Condensed',sans-serif;color:#fff;letter-spacing:2px;text-transform:uppercase}
+.tob{height:52px;background:#dfe4ef;color:#141b2c;display:grid;grid-template-columns:150px 230px 1fr 230px 150px;align-items:center;text-align:center;font:800 32px 'Barlow Condensed',sans-serif;letter-spacing:1px}
+.tob .bn{opacity:.25}.tob .bn.on{opacity:1;color:var(--red)}
+.dots{display:flex;gap:7px;justify-content:center;background:#141b2c;border-radius:20px;padding:7px 12px;margin:0 14px}
+.dots i{width:16px;height:16px;border-radius:50%;background:#f2c14e}.dots i.u{background:transparent;border:2px solid #f2c14e88}
+.tob .tl{letter-spacing:6px;font-size:36px}
+.sc{height:190px;display:grid;grid-template-columns:330px 1fr 330px;align-items:center}
+.big{font:800 190px 'Barlow Condensed',Inter,sans-serif;text-align:center;line-height:1;letter-spacing:-2px}
+.big.lo{color:#c9d3ee}
+.qt{font:700 38px 'Barlow Condensed',sans-serif}
+.qt table{width:100%;border-collapse:collapse}
+.qt th{color:#7fb2ff;font-weight:700;padding:2px 6px;border-bottom:2px solid #ffffff55}
+.qt td{text-align:center;padding:2px 6px;color:#7fb2ff}.qt td.t{color:#fff;text-align:left;width:90px}.qt td.tot{color:#fff}
+.pbp{padding:0 14px 0 64px;display:flex;flex-direction:column}
+.pl{position:relative;height:63px;display:grid;grid-template-columns:1fr 130px;align-items:center;border-bottom:1px solid #ffffff22;padding:0 16px}
+.pl img{position:absolute;left:-52px;top:13px;width:38px;height:38px;object-fit:contain}
+.pl .l1{font:700 25px 'Barlow Condensed',sans-serif;color:#dbe5ff;display:flex;gap:28px;white-space:nowrap}.pl .l1 b{font-weight:800;color:#fff;letter-spacing:.5px}
+.pl .l2{font:500 23px Inter,sans-serif;color:#f0f4ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pl .s{font:700 30px 'Barlow Condensed',sans-serif;text-align:right;white-space:nowrap}.pl .s .g{color:var(--lime)}
+.pl.new{background:linear-gradient(90deg,var(--nc),color-mix(in srgb,var(--nc) 70%,#000));border-radius:8px;border:none}
+.pl.new .l1,.pl.new .l1 b{color:#fff}
+/* on the court */
+.court{position:absolute;left:1276px;top:146px;width:630px;height:740px;background:#0b1636;border-radius:12px;overflow:hidden}
+.court h2{font:800 34px 'Barlow Condensed',sans-serif;padding:4px 14px 0;border-bottom:2px dashed #ffffff44;letter-spacing:.5px}
+.court .tn{display:flex;align-items:center;gap:14px;font:800 32px 'Barlow Condensed',sans-serif;padding:2px 14px;border-bottom:2px dashed #ffffff33}
+.court .tn img{width:40px;height:40px;object-fit:contain}
+.court table{width:100%;border-collapse:collapse;font-family:'Barlow Condensed',sans-serif}
+.court th{font-weight:800;font-size:25px;text-align:center;padding:2px 0;background:#091128}.court th:first-child{text-align:left;padding-left:14px}
+.court td{text-align:center;font-weight:700;font-size:30px;border-bottom:1px solid #ffffff14;height:53px;background:#101e47}
+.court tr:nth-child(odd) td{background:#0d1a3f}
+.court td.n{text-align:left;padding-left:14px;line-height:1.05}.court td.n{white-space:nowrap}.court td.n b{font-size:31px;font-weight:700}.court td.n span{font-size:18px;color:var(--mute);font-family:Inter,sans-serif;font-weight:600;margin-left:10px}
+/* leaders */
+.ldr{position:absolute;left:14px;top:896px;width:1892px;height:178px;display:grid;grid-template-columns:1fr 1fr 1fr;background:linear-gradient(180deg,#0f1d44,#081232);border-radius:12px;overflow:hidden}
+.lc{position:relative;display:grid;grid-template-columns:128px 1fr 128px;align-items:end;border-right:2px dashed #ffffff33;padding:0 4px}
+.lc:last-child{border-right:none}
+.lc .hs{height:168px;width:128px;object-fit:cover;object-position:top;align-self:end}
+.lc .mid{display:grid;grid-template-columns:1fr auto 1fr;align-self:stretch;padding:10px 6px 0}
+.lc .v{font:800 52px 'Barlow Condensed',sans-serif;line-height:1}.lc .v.r{text-align:right}
+.lc .cat{font:800 28px 'Barlow Condensed',sans-serif;letter-spacing:2px;align-self:center;color:#dbe5ff}
+.lc .who{grid-column:1/4;display:grid;grid-template-columns:1fr 1fr;font-family:'Barlow Condensed',sans-serif;margin-top:4px}
+.lc .who div{line-height:1.08}.lc .who .r{text-align:right}
+.lc .who div{white-space:nowrap;overflow:hidden}.lc .who b{font-size:27px;font-weight:800;display:block}.lc .who span{font-size:20px;font-weight:600;color:#c5d1f0;display:block}.lc .who i{font-style:normal;font-weight:800;font-size:22px;color:var(--lime)}
+.foot{position:absolute;left:0;right:0;bottom:0;height:0}
+.pre{padding:30px 40px;font-family:'Barlow Condensed',sans-serif}.pre .k{font:800 64px 'Barlow Condensed',sans-serif;color:var(--lime)}.pre .v{font:600 34px Inter,sans-serif;color:#dbe5ff;margin-top:12px}
+.court .inj td{height:46px;font-size:24px}.court .inj td.n b{font-size:27px}
+.err{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:800 48px Inter,sans-serif;color:var(--mute)}
+</style></head>
+<body><div id="app"><div class="err">Loading ScoreBuzz live scoreboard…</div></div>
+<script>
+const q = new URLSearchParams(location.search);
+const SLOT = q.get('slot');
+let event = q.get('event');
+function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
+  const mode = R.fit || q.get('fit') || 'contain', b = document.body;
+  if (mode === 'fill') b.style.transform = `scale(${sx},${sy})`; else { const k = Math.min(sx, sy); b.style.transform = `scale(${k})`; b.style.marginLeft = ((W - 1920 * k) / 2) + 'px'; b.style.marginTop = ((H - 1080 * k) / 2) + 'px'; } }
+addEventListener('resize', fit); setInterval(fit, 2000); fit();
+const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const $ = (id) => document.getElementById(id);
+const hex = (c, d) => (c && /^[0-9a-f]{6}$/i.test(c) ? '#' + c : d);
+const J = async (u) => (await fetch(u, { cache: 'no-store' })).json();
+const API = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba';
+const ORD = (p) => (p > 4 ? (p === 5 ? 'OT' : `${p - 4}OT`) : ['1st', '2nd', '3rd', '4th'][p - 1]);
+const lum = (h) => { const n = parseInt(h.slice(1), 16); return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255; };
+const darkish = (c, alt) => (lum(c) > 0.7 ? (lum(alt) > 0.7 ? '#1d2a4a' : alt) : c);
+
+function team(x) {
+  const t = x.team, rec = (k) => (x.record || []).find((r) => r.type === k)?.summary;
+  const color = darkish(hex(t.color, '#1d428a'), hex(t.alternateColor, '#1d428a'));
+  const lines = (x.linescores || []).map((l) => l.displayValue), qsum = lines.reduce((n, v) => n + (+v || 0), 0);
+  const dark = (t.logos || []).find((l) => (l.rel || []).includes('dark') && !(l.rel || []).includes('scoreboard'))?.href;
+  return { id: t.id, abbr: t.abbreviation, nick: t.name || t.shortDisplayName, logo: t.logos?.[0]?.href || t.logo, logoD: dark || t.logos?.[0]?.href || t.logo, color, score: Math.max(Number(x.score || 0), qsum),
+    lines, rec: [rec('total'), x.homeAway === 'home' ? (rec('home') && rec('home') + ' Home') : (rec('road') && rec('road') + ' Away')].filter(Boolean).join(', ') };
+}
+// players: stats by label, on court from starters + substitutions ("A enters the game for B": participants [in, out])
+function roster(s) {
+  const out = {};
+  for (const b of s.boxscore?.players || []) {
+    const st = b.statistics?.[0]; if (!st) continue; const L = st.labels;
+    const g = (a, k) => a.stats?.[L.indexOf(k)] ?? '-';
+    out[b.team.id] = (st.athletes || []).filter((a) => !a.didNotPlay).map((a) => ({ id: a.athlete.id, name: a.athlete.shortName, jersey: a.athlete.jersey, pos: a.athlete.position?.abbreviation || '', head: a.athlete.headshot?.href || '',
+      starter: a.starter, min: +g(a, 'MIN') || 0, pts: +g(a, 'PTS') || 0, fg: g(a, 'FG'), ft: g(a, 'FT'), reb: +g(a, 'REB') || 0, oreb: +g(a, 'OREB') || 0, dreb: +g(a, 'DREB') || 0, ast: +g(a, 'AST') || 0, to: +g(a, 'TO') || 0, pf: g(a, 'PF') }));
+  }
+  return out;
+}
+function onCourt(s, ros, teamId) {
+  const ps = ros[teamId] || []; const on = ps.filter((p) => p.starter).map((p) => p.id);
+  for (const p of s.plays || []) {
+    if (p.team?.id !== teamId || !/Substitution/i.test(p.type?.text || '')) continue;
+    const [i, o] = (p.participants || []).map((x) => x.athlete?.id);
+    const k = on.indexOf(o); if (k >= 0 && i) on[k] = i; else if (i && !on.includes(i)) on.push(i);
+  }
+  let five = on.slice(-5).map((id) => ps.find((p) => p.id === id)).filter(Boolean);
+  if (five.length !== 5) five = [...ps].sort((a, b) => b.min - a.min).slice(0, 5);
+  return five;
+}
+function teamFoulsAndTimeouts(s, period) {
+  const fouls = {}, tos = {};
+  for (const p of s.plays || []) {
+    const t = p.type?.text || '', id = p.team?.id; if (!id) continue;
+    if (/timeout/i.test(t) && !/official/i.test(t)) tos[id] = (tos[id] || 0) + 1;
+    if (p.period?.number === period && /foul/i.test(t) && !/offensive|technical|flagrant|double/i.test(t)) fouls[id] = (fouls[id] || 0) + 1;
+  }
+  return { fouls, tos };
+}
+function playLabel(p) {
+  if (p.scoringPlay) return `+${p.scoreValue} POINT${p.scoreValue > 1 ? 'S' : ''}`;
+  const t = (p.type?.text || '').replace(/\n/g, ' ');
+  if (/Substitution/i.test(t)) return 'SUBSTITUTION';
+  if (/Timeout/i.test(t)) return 'TIMEOUT';
+  if (/Rebound/i.test(t)) return 'REBOUND';
+  if (/Turnover/i.test(t)) return 'TURNOVER';
+  if (/Foul/i.test(t)) return 'FOUL';
+  if (/Block/i.test(t) || /blocks/i.test(p.text || '')) return 'BLOCKED SHOT';
+  if (/Steal/i.test(t)) return 'STEAL';
+  if (/Free Throw/i.test(t)) return 'FREE THROW MISSED';
+  if (/End Period/i.test(t)) return 'END OF PERIOD';
+  if (/Jumpball/i.test(t)) return 'JUMP BALL';
+  if (/Shot|Layup|Dunk|Jumper/i.test(t)) return 'MISSED SHOT';
+  return t.toUpperCase();
+}
+function gameCell(e, cur) {
+  const c = e.competitions[0], h = c.competitors.find((x) => x.homeAway === 'home'), a = c.competitors.find((x) => x.homeAway === 'away');
+  const st = e.status.type, pre = st.state === 'pre', fin = st.completed;
+  const s = pre ? new Date(e.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET' : fin ? 'Final' : st.shortDetail.replace(' - ', ' · ');
+  const row = (x, o) => `<div class="r"><img src="${x.team.logo}"><b>${esc(x.team.abbreviation)}</b><span class="${!pre && +x.score > +o.score ? 'w' : ''}">${pre ? esc(x.records?.[0]?.summary || '') : esc(x.score)}</span></div>`;
+  return `<div class="gm ${cur ? 'cur' : ''}"><div class="st ${!pre && !fin ? 'live' : ''}">${esc(s)}</div>${row(h, a)}${row(a, h)}</div>`;
+}
+
+function render(s, sb) {
+  const c = s.header.competitions[0], st = c.status;
+  const H = team(c.competitors.find((x) => x.homeAway === 'home')), A = team(c.competitors.find((x) => x.homeAway === 'away'));
+  document.documentElement.style.setProperty('--hc', H.color); document.documentElement.style.setProperty('--ac', A.color);
+  const ros = roster(s), per = st.period || 1, n = st.type?.name || '';
+  const pre = st.type?.state === 'pre', fin = st.type?.completed;
+  const clk = pre ? new Date(c.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET'
+    : fin ? 'FINAL' : /HALFTIME/.test(n) ? 'HALF' : /END/.test(n) ? `END ${ORD(per)}` : `${st.displayClock} - ${ORD(per)}`;
+  const sub = pre ? 'Tip-off' : fin ? (per > 4 ? ORD(per) : '') : /HALFTIME/.test(n) ? 'Halftime' : '';
+  const { fouls, tos } = teamFoulsAndTimeouts(s, per);
+  const lim = per > 4 ? 4 : 5;
+  const bonusH = (fouls[A.id] || 0) >= lim, bonusA = (fouls[H.id] || 0) >= lim; // a team is in the bonus when the OTHER team reaches the limit
+  const dots = (id) => { const left = Math.max(0, 7 - (tos[id] || 0)); return `<div class="dots">${Array.from({ length: 7 }, (_, i) => `<i class="${i < left ? '' : 'u'}"></i>`).join('')}</div>`; };
+  const cols = Math.max(4, H.lines.length, A.lines.length);
+  const qh = Array.from({ length: cols }, (_, i) => `<th>${i < 4 ? i + 1 : ORD(i + 1)}</th>`).join('');
+  const qr = (T) => `<tr><td class="t">${esc(T.abbr)}</td>${Array.from({ length: cols }, (_, i) => `<td>${esc(T.lines[i] ?? '')}</td>`).join('')}<td class="tot">${pre ? '' : T.score}</td></tr>`;
+  // play-by-play: latest 6, newest first
+  const plays = (s.plays || []).slice(-6).reverse();
+  const logo = (id) => (id === H.id ? H.logoD : id === A.id ? A.logoD : '');
+  const pbp = plays.map((p, i) => {
+    const sc = p.scoringPlay ? (p.team?.id === H.id ? 'h' : 'a') : '';
+    return `<div class="pl ${i === 0 ? 'new' : ''}" style="--nc:${p.team?.id === A.id ? A.color : H.color}">${logo(p.team?.id) ? `<img src="${logo(p.team?.id)}">` : ''}
+      <div><div class="l1"><span>${esc(p.clock?.displayValue || '')} - ${esc(ORD(p.period?.number || per))}</span><b>${esc(playLabel(p))}</b></div><div class="l2">${esc(p.text || '')}</div></div>
+      <div class="s"><span class="${sc === 'h' ? 'g' : ''}">${p.homeScore ?? ''}</span>&nbsp;&nbsp;<span class="${sc === 'a' ? 'g' : ''}">${p.awayScore ?? ''}</span></div></div>`;
+  }).join('') || `<div class="pl"><div><div class="l1"><b>${pre ? 'TIP-OFF ' + esc(clk) : 'PLAY-BY-PLAY'}</b></div><div class="l2">${esc(A.nick)} @ ${esc(H.nick)} · ${esc(s.gameInfo?.venue?.fullName || '')}</div></div></div>`;
+  const crow = (p) => `<tr><td class="n"><b>${esc(p.name)}</b><span>#${esc(p.jersey)} • ${esc(p.pos)}</span></td><td>${p.pts}</td><td>${esc(p.fg)}</td><td>${p.reb}</td><td>${p.ast}</td><td>${esc(p.pf)}</td></tr>`;
+  const ctab = (T) => `<div class="tn"><img src="${T.logoD}">${esc(T.nick)}</div><table><tr><th>PLAYER</th><th>PTS</th><th>FG</th><th>REB</th><th>AST</th><th>PF</th></tr>${(fin ? [...(ros[T.id] || [])].sort((x, y) => y.pts - x.pts).slice(0, 5) : onCourt(s, ros, T.id)).map(crow).join('')}</table>`;
+  // leaders: points / rebounds / assists, home left, away right
+  const best = (id, k) => [...(ros[id] || [])].sort((a, b) => b[k] - a[k] || b.min - a.min)[0];
+  const lead = (k, cat, line) => { const h = best(H.id, k), a = best(A.id, k); if (!h || !a) return '<div class="lc"></div>';
+    return `<div class="lc"><img class="hs" src="${h.head}" onerror="this.style.visibility='hidden'"><div class="mid"><div class="v">${h[k]}</div><div class="cat">${cat}</div><div class="v r">${a[k]}</div>
+      <div class="who"><div><b>${esc(h.name)}</b><span>${esc(line(h))}</span><i>#${esc(h.jersey)}</i></div><div class="r"><b>${esc(a.name)}</b><span>${esc(line(a))}</span><i>#${esc(a.jersey)}</i></div></div></div>
+      <img class="hs" src="${a.head}" onerror="this.style.visibility='hidden'"></div>`; };
+  const fgft = (p) => `${String(p.fg).replace('-', '/')} FG, ${String(p.ft).replace('-', '/')} FT`;
+  const games = (sb?.events || []).map((e) => gameCell(e, e.id === String(event))).join('');
+  // before tip-off (no box score yet): injury report on the right, season leaders below, countdown in the play-by-play box
+  const hasBox = Object.keys(ros).length > 0;
+  const mins = Math.round((new Date(c.date) - Date.now()) / 60000);
+  const preBox = `<div class="pre"><div class="k">TIP-OFF ${esc(clk)}${mins > 0 ? ` · IN ${mins >= 60 ? Math.floor(mins / 60) + 'H ' : ''}${mins % 60} MIN` : ''}</div>
+    <div class="v">${esc(A.nick)} @ ${esc(H.nick)}</div><div class="v">${esc([s.gameInfo?.venue?.fullName, s.gameInfo?.venue?.address?.city].filter(Boolean).join(', '))}</div>
+    ${(c.broadcasts || []).length ? `<div class="v">TV: ${esc(c.broadcasts.map((x) => x.media?.shortName).filter(Boolean).join(', '))}</div>` : ''}</div>`;
+  const inj = (T) => { const L = (s.injuries || []).find((x) => x.team?.id === T.id)?.injuries || [];
+    return `<div class="tn"><img src="${T.logoD}">${esc(T.nick)}</div><table class="inj"><tr><th>INJURY REPORT</th><th>POS</th><th>STATUS</th></tr>${L.length ? L.slice(0, 5).map((i) => `<tr><td class="n"><b>${esc(i.athlete?.shortName)}</b></td><td>${esc(i.athlete?.position?.abbreviation || '')}</td><td>${esc(i.status)}</td></tr>`).join('') : '<tr><td class="n"><b>No injuries reported</b></td><td></td><td></td></tr>'}</table>`; };
+  const sl = (T, name) => (s.leaders || []).find((x) => x.team?.id === T.id)?.leaders?.find((x) => x.name === name)?.leaders?.[0];
+  const slead = (name, cat) => { const h = sl(H, name), a = sl(A, name); if (!h || !a) return '<div class="lc"></div>';
+    const w = (x, r) => `<div class="${r ? 'r' : ''}"><b>${esc(x.athlete.shortName)}</b><span>Season average</span><i>#${esc(x.athlete.jersey || '')}</i></div>`;
+    return `<div class="lc"><img class="hs" src="${h.athlete.headshot?.href || ''}" onerror="this.style.visibility='hidden'"><div class="mid"><div class="v">${esc(h.displayValue)}</div><div class="cat">${cat}</div><div class="v r">${esc(a.displayValue)}</div>
+      <div class="who">${w(h)}${w(a, 1)}</div></div><img class="hs" src="${a.athlete.headshot?.href || ''}" onerror="this.style.visibility='hidden'"></div>`; };
+  $('app').innerHTML = `
+  <div class="top">${games}<div class="sub"><div class="btn">SUBSCRIBE</div><div class="bz">Score<b>Buzz</b> · scorebuzz.net</div></div></div>
+  <div class="board">
+    <div class="hdr">
+      <div class="tm h"><div class="tx"><div class="nm">${esc(H.nick)}</div><div class="rc">${esc(H.rec)}</div></div><img src="${H.logoD}"></div>
+      <div class="clock"><div class="c ${clk.length > 9 ? 'sm' : ''}">${esc(clk)}</div>${sub ? `<div class="p">${esc(sub)}</div>` : ''}</div>
+      <div class="tm a"><img src="${A.logoD}"><div class="tx"><div class="nm">${esc(A.nick)}</div><div class="rc">${esc(A.rec)}</div></div></div>
+    </div>
+    <div class="tob"><div class="bn ${bonusH ? 'on' : ''}">BONUS</div>${dots(H.id)}<div class="tl">TIMEOUTS</div>${dots(A.id)}<div class="bn ${bonusA ? 'on' : ''}">BONUS</div></div>
+    <div class="sc"><div class="big ${H.score < A.score ? 'lo' : ''}">${pre ? 0 : H.score}</div>
+      <div class="qt"><table><tr><th></th>${qh}<th>T</th></tr>${qr(H)}${qr(A)}</table></div>
+      <div class="big ${A.score < H.score ? 'lo' : ''}">${pre ? 0 : A.score}</div></div>
+    <div class="pbp">${hasBox || (s.plays || []).length ? pbp : preBox}</div>
+  </div>
+  <div class="court">${hasBox ? `<h2>${fin ? 'FINAL BOX SCORE' : 'ON THE COURT'}</h2>${ctab(H)}${ctab(A)}` : `<h2>PRE-GAME</h2>${inj(H)}${inj(A)}`}</div>
+  <div class="ldr">${hasBox ? lead('pts', 'POINTS', fgft) + lead('reb', 'REBOUNDS', (p) => `${p.dreb} DREB, ${p.oreb} OREB`) + lead('ast', 'ASSISTS', (p) => `${p.to} TO, ${p.min} MIN`)
+    : slead('pointsPerGame', 'PPG') + slead('reboundsPerGame', 'RPG') + slead('assistsPerGame', 'APG')}</div>`;
+}
+let last = 0;
+async function tick() {
+  if (!event) return;
+  try {
+    const [s, sb] = await Promise.all([J(`${API}/summary?event=${event}`), J(`${API}/scoreboard`).catch(() => null)]);
+    render(s, sb); last = Date.now();
+  } catch (e) { if (!last) $('app').innerHTML = '<div class="err">Loading ScoreBuzz live scoreboard…</div>'; }
+}
+async function slotTick() {
+  try {
+    const c = await J('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/settings.json?t=' + Date.now());
+    window.__fitRemote = c.fit || {}; fit();
+    const sl = (c.slots || {})[SLOT];
+    if (!sl || !sl.event) { $('app').innerHTML = '<div class="err">ScoreBuzz live scoreboard · next game coming up</div>'; event = null; return; }
+    if (sl.league !== 'nba') { location.replace(`dark.html${location.search}`); return; }
+    if (String(sl.event) !== String(event)) { event = String(sl.event); tick(); }
+  } catch (e) { /* keep current */ }
+}
+if (SLOT) { slotTick(); setInterval(slotTick, 60000); setInterval(tick, 5000); }
+else if (!event) $('app').innerHTML = '<div class="err">Add ?event=&lt;ESPN game id&gt; or ?slot=N</div>'; else { tick(); setInterval(tick, 5000); }
+</script>
+</body></html>
