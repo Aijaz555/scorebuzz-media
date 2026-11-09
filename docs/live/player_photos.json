@@ -1,0 +1,99 @@
+{
+ "401879240": {
+  "at": "2026-11-09T07:54:57+00:00",
+  "teams": {
+   "Manchester United": {
+    "2": {
+     "id": "400243",
+     "name": "Diogo Dalot"
+    },
+    "3": {
+     "id": "381105",
+     "name": "Noussair Mazraoui"
+    },
+    "1": {
+     "id": "571865",
+     "name": "Senne Lammens"
+    },
+    "5": {
+     "id": "182047",
+     "name": "Harry Maguire"
+    },
+    "15": {
+     "id": "782130",
+     "name": "Leny Yoro"
+    },
+    "8": {
+     "id": "276371",
+     "name": "Bruno Fernandes"
+    },
+    "37": {
+     "id": "674546",
+     "name": "Kobbie Mainoo"
+    },
+    "18": {
+     "id": "297294",
+     "name": "Youri Tielemans"
+    },
+    "19": {
+     "id": "457466",
+     "name": "Bryan Mbeumo"
+    },
+    "10": {
+     "id": "491026",
+     "name": "Matheus Cunha"
+    },
+    "16": {
+     "id": "632969",
+     "name": "Amad Diallo"
+    }
+   },
+   "Aston Villa": {
+    "22": {
+     "id": "525926",
+     "name": "Ian Maatsen"
+    },
+    "4": {
+     "id": "523653",
+     "name": "Taylor Harwood-Bellis"
+    },
+    "1": {
+     "id": "502022",
+     "name": "Zion Suzuki"
+    },
+    "14": {
+     "id": "423623",
+     "name": "Pau Torres"
+    },
+    "3": {
+     "id": "127315",
+     "name": "Victor Lindelöf"
+    },
+    "7": {
+     "id": "256156",
+     "name": "John McGinn"
+    },
+    "27": {
+     "id": "213637",
+     "name": "Leon Goretzka"
+    },
+    "8": {
+     "id": "426522",
+     "name": "Boubacar Kamara"
+    },
+    "11": {
+     "id": "673753",
+     "name": "Nicolas Jackson"
+    },
+    "44": {
+     "id": "891902",
+     "name": "Johan Manzambi"
+    },
+    "47": {
+     "id": "960356",
+     "name": "Alysson"
+    }
+   }
+  }
+ }
+}

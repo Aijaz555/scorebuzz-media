@@ -17,6 +17,11 @@ from datetime import datetime, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SETTINGS = os.path.join(ROOT, "docs", "live", "settings.json")
 LOG = os.path.join(ROOT, "docs", "live", "tracker_checks.json")
+# football player photos for docs/live/soccer.html (owner 9 Nov 2026): ESPN has almost no football headshots, but the scorebuzz.net
+# match page shows each starter with a photo (/img/p/<site id>.png). The stream page can't read that page (no CORS), so this
+# script copies the line-ups' jersey -> photo id into this file, which the stream page reads from raw GitHub.
+PHOTOS = os.path.join(ROOT, "docs", "live", "player_photos.json")
+SOCCER = {"epl", "ucl", "uel", "laliga", "seriea", "bundesliga", "ligue1", "mls"}
 DRY = "--dry" in sys.argv
 
 ESPN = {"epl": "soccer/eng.1", "ucl": "soccer/uefa.champions", "uel": "soccer/uefa.europa", "laliga": "soccer/esp.1",
@@ -69,6 +74,26 @@ def game(league, event):
             "home": name(t["home"]), "away": name(t["away"])}
 
 
+def lineup_photos(url):
+    """{team name: {jersey: {"id", "name"}}} from the line-up cards on the scorebuzz.net match page (starters only)."""
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        html = r.read().decode("utf-8", "replace")
+    out = {}
+    for blk in re.split(r"<div class='card'><h3", html)[1:]:
+        m = re.match(r"[^>]*>([^<]+?)\s*<span class='meta'>", blk)
+        if not m:
+            continue
+        ps = {}
+        for title, pid in re.findall(r'title="([^"]+)"><img class="pph" src="/img/p/(\d+)\.png"', blk):
+            jm = re.match(r"(\d+)\s+(.+?)\s+\u2014", title)
+            if jm:
+                ps[jm.group(1)] = {"id": pid, "name": jm.group(2)}
+        if ps:
+            out[m.group(1).strip()] = ps
+    return out
+
+
 def check_site(page, url):
     """True/False + reason. Uses the same page the stream embeds (opened at #trkSlot)."""
     page.goto(url + "#trkSlot", wait_until="domcontentloaded", timeout=60000)
@@ -104,6 +129,8 @@ def main():
     targets = [(k, v) for k, v in (st.get("slots") or {}).items() if v and v.get("event")]
     if st.get("pin") and st["pin"].get("event"):
         targets.append(("pin", st["pin"]))
+    photos = json.load(open(PHOTOS)) if os.path.exists(PHOTOS) else {}
+    photos_changed = False
     todo = []
     for key, a in targets:
         lg, ev = a.get("league"), str(a.get("event"))
@@ -115,6 +142,16 @@ def main():
         except Exception as e:
             print(f"{key} {lg} {ev}: ESPN error {e}")
             continue
+        if lg in SOCCER and lg in SITE and g["state"] in ("pre", "in"):
+            have = photos.get(ev, {}).get("teams", {})
+            if sum(len(v) for v in have.values()) < 22:  # line-ups come out about an hour before kick-off
+                try:
+                    got = lineup_photos(f"https://scorebuzz.net/{SITE[lg]}/{slug(g['home'])}-vs-{slug(g['away'])}-{ev}/")
+                    if got and got != have:
+                        photos[ev] = {"at": now().isoformat(timespec="seconds"), "teams": got}
+                        photos_changed = True
+                except Exception as e:
+                    print(f"{key} {lg} {ev}: photos error {str(e)[:80]}")
         if g["state"] != "in":
             continue  # not started yet / finished
         if lg not in SITE:
@@ -156,6 +193,9 @@ def main():
     log = dict(sorted(log.items(), key=lambda kv: kv[1].get("at", ""))[-300:])
     if not DRY:
         json.dump(log, open(LOG, "w"), indent=1)
+        if photos_changed:
+            photos = dict(sorted(photos.items(), key=lambda kv: kv[1].get("at", ""))[-200:])
+            json.dump(photos, open(PHOTOS, "w"), indent=1, ensure_ascii=False)
         if changed:
             json.dump(st, open(SETTINGS, "w"), indent=1, ensure_ascii=False)
             open(SETTINGS, "a").write("\n")

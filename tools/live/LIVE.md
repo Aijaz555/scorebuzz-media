@@ -235,6 +235,10 @@ Try: soccer.html?league=epl&event=401879240 (Man Utd 4-4 Villa). Not wired into 
 Live tracker (owner 9 Nov 2026): during live games the scorebuzz.net pitch tracker sits left of the stats (same URL and crop as app.html:
 `scorebuzz.net/football/<league>/<home>-vs-<away>-<id>/#trkSlot`, top 64 / height 536), and the column beside it alternates every 15 s between
 match stats and the latest commentary. `sbtrk: 0` on a slot (or ?sbtrk=0) turns it off; ?sbtrk=1 forces it for testing.
+Player photos (owner 9 Nov 2026): ESPN has almost no football headshots, so the leaders strip uses the scorebuzz.net line-up photos
+(`scorebuzz.net/img/p/<site id>.png`). The tracker check (tools/live/check_trackers.py) copies each football slot's starters
+(team -> jersey -> photo id) into docs/live/player_photos.json from about an hour before kick-off; soccer.html reads it from raw GitHub
+and falls back to a team-coloured shirt with the number (subs, or no line-up yet).
 
 ## Stream check (added 9 Nov 2026)
 

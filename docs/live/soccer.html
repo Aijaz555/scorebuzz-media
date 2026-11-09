@@ -151,6 +151,7 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 .tbl td{height:44px;font-size:26px}.tbl tr.me td{background:#1d3478!important;color:#fff}.tbl td.n b{font-size:26px}
 .tbl td.n img{width:28px;height:28px;object-fit:contain;vertical-align:-6px;margin-right:10px}
 /* leaders: shirts instead of headshots */
+.lc .hs.ph{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:top;background:#e8ecf2;border:5px solid var(--tc);box-shadow:0 0 0 3px #ffffff30;align-self:center;justify-self:center}
 .lc .shirt{width:128px;height:150px;align-self:center;display:flex;align-items:center;justify-content:center}
 .lc .shirt div{width:104px;height:110px;background:var(--tc);clip-path:polygon(28% 0,72% 0,100% 18%,88% 42%,80% 36%,80% 100%,20% 100%,20% 36%,12% 42%,0 18%);display:flex;align-items:center;justify-content:center;font:800 46px 'Barlow Condensed',sans-serif;color:#fff;text-shadow:0 2px 0 #0006;padding-top:14px}
 .frm{display:flex;gap:8px;justify-content:center;margin-top:10px}.frm{gap:14px}.frm i{width:52px;height:52px;font-size:30px!important;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 26px 'Barlow Condensed',sans-serif;font-style:normal}
@@ -279,7 +280,10 @@ function render(s, sb) {
     panel = `<table class="tbl fx"><colgroup><col><col style="width:52px"><col style="width:48px"><col style="width:48px"><col style="width:48px"><col style="width:68px"><col style="width:70px"></colgroup><tr><th>#&nbsp; CLUB</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>PTS</th></tr>${pick.map((k, j) => { const e = E[k]; return `${j && k - pick[j - 1] > 1 ? '<tr><td class="n" colspan="7" style="height:26px;text-align:center;color:#9fb0d9">• • •</td></tr>' : ''}<tr class="${String(e.id) === H.id || String(e.id) === A.id ? 'me' : ''}"><td class="n"><b>${k + 1}&nbsp; ${esc(e.team)}</b></td><td>${g(e, 'GP')}</td><td>${g(e, 'W')}</td><td>${g(e, 'D')}</td><td>${g(e, 'L')}</td><td>${g(e, 'GD')}</td><td><b>${g(e, 'P')}</b></td></tr>`; }).join('')}</table>`;
   }
   // ---- bottom: player leaders (shirt + number), or form before kick-off ----
-  const shirt = (T, p) => `<div class="shirt" style="--tc:${T.color}"><div>${esc(p?.jersey || '')}</div></div>`;
+  // real player photos (scorebuzz.net line-ups, collected by tools/live/check_trackers.py); the shirt when there is none
+  const photoOf = (T, p) => { const t = (PHOTOS[c.id]?.teams || {}), m = t[T.full] || t[Object.keys(t).find((k) => k.toLowerCase().includes(T.nick.toLowerCase()) || T.full.toLowerCase().includes(k.toLowerCase()))] || {};
+    const x = m[String(p?.jersey ?? '')]; return x ? `https://scorebuzz.net/img/p/${x.id}.png` : ''; };
+  const shirt = (T, p) => { const u = photoOf(T, p); return u ? `<img class="hs ph" style="--tc:${T.color}" src="${u}" onerror="this.outerHTML='<div class=&quot;shirt&quot; style=&quot;--tc:${T.color}&quot;><div>${esc(p?.jersey || '')}</div></div>'">` : `<div class="shirt" style="--tc:${T.color}"><div>${esc(p?.jersey || '')}</div></div>`; };
   const best = (T, k, line, gk) => { const L = (R(T)?.roster || []).filter((p) => (gk ? p.position?.abbreviation === 'G' : p.position?.abbreviation !== 'G') && (p.starter || p.subbedIn));
     const p = [...L].sort((a, b) => sv(b, k) - sv(a, k) || sv(b, 'totalShots') - sv(a, 'totalShots'))[0]; return p && { p, v: sv(p, k), name: p.athlete.shortName, line: line(p) }; };
   const card = (cat, T1, h, T2, a) => (!h || !a ? '<div class="lc"></div>' : `<div class="lc">${shirt(T1, h.p)}<div class="mid"><div class="v">${esc(h.v)}</div><div class="cat">${cat}</div><div class="v r">${esc(a.v)}</div>
@@ -329,11 +333,14 @@ function placeTracker(url) {
   Object.assign(trkF.parentNode.style, { left: left + 'px', top: top + 'px', width: w + 'px', height: h + 'px' });
   Object.assign(trkF.style, { width: '1000px', height: (TOP + VH + 20) + 'px', left: ((w - VW * k) / 2 - X * k) + 'px', top: ((h - VH * k) / 2 - TOP * k) + 'px', transform: `scale(${k})` });
 }
+let PHOTOS = {}, photosAt = 0;
+async function loadPhotos() { if (Date.now() - photosAt < 120000) return; photosAt = Date.now();
+  try { PHOTOS = await J('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/player_photos.json?t=' + Date.now()); } catch (e) { /* keep */ } }
 let last = 0;
 async function tick() {
   if (!event) return;
   try {
-    const [s, sb] = await Promise.all([J(`${API()}/summary?event=${event}`), J(`${API()}/scoreboard`).catch(() => null)]);
+    const [s, sb] = await Promise.all([J(`${API()}/summary?event=${event}`), J(`${API()}/scoreboard`).catch(() => null), loadPhotos()]);
     let board = sb; // the scoreboard defaults to today; show the game's own matchday when it isn't on it
     if (sb && !(sb.events || []).some((e) => e.id === String(event))) { const d = (s.header?.competitions?.[0]?.date || '').slice(0, 10).replace(/-/g, ''); if (d) board = await J(`${API()}/scoreboard?dates=${d}`).catch(() => sb); }
     render(s, board); last = Date.now();
