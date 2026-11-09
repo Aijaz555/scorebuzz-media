@@ -686,16 +686,6 @@
   "reason": "ok (contrast 62)",
   "at": "2026-11-09T01:08:10+00:00"
  },
- "401892679": {
-  "slot": "15",
-  "league": "nhl",
-  "game": "Ducks v Penguins",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/ducks-vs-penguins-401892679/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 101)",
-  "at": "2026-11-09T01:08:13+00:00"
- },
  "401909948": {
   "slot": "2",
   "league": "nba",
@@ -765,5 +755,15 @@
   "status": "ok",
   "reason": "ok (contrast 78)",
   "at": "2026-11-09T01:32:46+00:00"
+ },
+ "401892679": {
+  "slot": "15",
+  "league": "nhl",
+  "game": "Ducks v Penguins",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/ducks-vs-penguins-401892679/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 79)",
+  "at": "2026-11-09T01:40:53+00:00"
  }
 }
