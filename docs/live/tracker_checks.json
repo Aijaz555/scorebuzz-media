@@ -715,5 +715,15 @@
   "status": "ok",
   "reason": "ok (contrast 46)",
   "at": "2026-11-09T00:17:04+00:00"
+ },
+ "401892676": {
+  "slot": "10",
+  "league": "nhl",
+  "game": "Maple Leafs v Devils",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/maple-leafs-vs-devils-401892676/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 90)",
+  "at": "2026-11-09T00:25:12+00:00"
  }
 }
