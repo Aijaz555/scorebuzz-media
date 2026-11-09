@@ -676,16 +676,6 @@
   "reason": "ok (contrast 46)",
   "at": "2026-11-09T00:17:04+00:00"
  },
- "401909946": {
-  "slot": "6",
-  "league": "nba",
-  "game": "Pistons v Lakers",
-  "url": "https://scorebuzz.net/basketball/nba/pistons-vs-lakers-401909946/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-09T00:33:19+00:00"
- },
  "401909948": {
   "slot": "2",
   "league": "nba",
@@ -735,5 +725,25 @@
   "status": "ok",
   "reason": "ok (contrast 89)",
   "at": "2026-11-09T01:00:03+00:00"
+ },
+ "401909946": {
+  "slot": "6",
+  "league": "nba",
+  "game": "Pistons v Lakers",
+  "url": "https://scorebuzz.net/basketball/nba/pistons-vs-lakers-401909946/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-09T01:08:10+00:00"
+ },
+ "401892679": {
+  "slot": "15",
+  "league": "nhl",
+  "game": "Ducks v Penguins",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/ducks-vs-penguins-401892679/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 101)",
+  "at": "2026-11-09T01:08:13+00:00"
  }
 }
