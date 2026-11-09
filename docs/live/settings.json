@@ -45,6 +45,26 @@
    "league": "nba",
    "event": "401909955",
    "note": "Toronto Raptors vs Memphis Grizzlies, 2026-11-10T00:30:00Z"
+  },
+  "5": {
+   "league": "nba",
+   "event": "401909956",
+   "note": "Dallas Mavericks vs Indiana Pacers, 2026-11-10T01:00:00Z"
+  },
+  "6": {
+   "league": "nfl",
+   "event": "401873051",
+   "note": "Minnesota Vikings vs Buffalo Bills, 2026-11-10T01:15:00Z"
+  },
+  "7": {
+   "league": "nba",
+   "event": "401909957",
+   "note": "Houston Rockets vs Denver Nuggets, 2026-11-10T01:30:00Z"
+  },
+  "8": {
+   "league": "nhl",
+   "event": "401892680",
+   "note": "Edmonton Oilers vs New York Rangers, 2026-11-10T01:00:00Z"
   }
  },
  "fit": {
