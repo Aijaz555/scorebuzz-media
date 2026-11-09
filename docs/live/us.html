@@ -54,7 +54,10 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 /* tracker mode (live games): scorebuzz.net court tracker on the left, 3 latest plays on the right */
 .low{display:grid;grid-template-columns:700px 1fr;gap:12px;padding:0 12px 0 12px;height:368px}
 .trk{position:relative;border-radius:12px;overflow:hidden;background:#0b1326;border:2px solid #ffffff22}
-.trk .cap{position:absolute;left:0;right:0;bottom:0;text-align:center;font:700 16px Inter,sans-serif;letter-spacing:3px;color:var(--mute);text-transform:uppercase;padding:4px;background:#0b1326dd;z-index:2}
+/* NHL (owner 9 Nov 2026): bigger rink tracker, smaller score row to make room */
+.board.nhl .sc{height:130px}.board.nhl .big{font-size:132px}.board.nhl .qt{font-size:32px}
+.board.nhl .low{grid-template-columns:770px 1fr;height:428px}.board.nhl .low .pl{height:140px}.board.nhl .low .pl img{top:48px}
+.board.nhl .low .pl{grid-template-columns:1fr 64px;gap:8px}.board.nhl .low .pl .l1{column-gap:10px;flex-wrap:wrap;white-space:normal;line-height:1.1}.board.nhl .low .pl .s{font-size:26px}
 #trkL{position:absolute;overflow:hidden;border-radius:12px;pointer-events:none}#trkL iframe{position:absolute;border:0;width:1000px;transform-origin:0 0;background:#0b1326}
 .low .pbp{padding:0 0 0 52px}.low .pl{height:122px;grid-template-columns:1fr 92px;padding:0 12px}.low .pl img{left:-48px;top:40px}
 .low .pl .l2{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:22px;line-height:1.25}.low .pl .l1{gap:16px}.low .pl .s{font-size:28px}
@@ -300,7 +303,7 @@ function render(s, sb) {
   const games = evs.map((e) => gameCell(e, e.id === c.id)).join('');
   $('app').innerHTML = `
   <div class="top">${games}<div class="sub"><div class="btn">SUBSCRIBE</div><div class="bz">Score<b>Buzz</b> · scorebuzz.net</div></div></div>
-  <div class="board">
+  <div class="board ${league}">
     <div class="hdr">
       <div class="tm h"><div class="tx"><div class="nm ${H.nick.length + (H.rank ? 4 : 0) > 12 ? 'l' : H.nick.length + (H.rank ? 4 : 0) > 9 ? 'm' : ''}">${H.rank ? `<span style="color:#f2c14e">#${H.rank} </span>` : ''}${esc(H.nick)}</div><div class="rc">${esc(H.rec)}</div></div><img src="${H.logoD}"></div>
       <div class="clock"><div class="c ${clk.length > 9 ? 'sm' : ''}">${esc(clk)}</div>${sub ? `<div class="p">${esc(sub)}</div>` : ''}</div>
@@ -310,7 +313,7 @@ function render(s, sb) {
     <div class="sc"><div class="big ${H.score < A.score ? 'lo' : ''}">${pre ? 0 : H.score}</div>
       <div class="qt" ${qstyle}><table><tr><th></th>${qh}</tr>${qr(H)}${qr(A)}</table></div>
       <div class="big ${A.score < H.score ? 'lo' : ''}">${pre ? 0 : A.score}</div></div>
-    ${trkUrl ? `<div class="low"><div class="trk" id="trk"><div class="cap">Live tracker · scorebuzz.net</div></div><div class="pbp">${pbp}</div></div>` : `<div class="pbp">${P.length && !pre ? pbp : preBox}</div>`}
+    ${trkUrl ? `<div class="low"><div class="trk" id="trk"></div><div class="pbp">${pbp}</div></div>` : `<div class="pbp">${P.length && !pre ? pbp : preBox}</div>`}
   </div>
   <div class="court ${league === 'nhl' || league === 'mlb' ? 'cmp' : ''}"><h2>${panelTitle}</h2>${panel}</div>
   <div class="ldr">${ldr}</div>`;
@@ -326,7 +329,7 @@ function placeTracker(url) {
   const X = 14, VW = 972, { top: TOP, vh: VH } = CROP[league];
   const m = /scale\(([\d.]+)(?:,\s*([\d.]+))?\)/.exec(document.body.style.transform || ''), sx = m ? +m[1] : 1, sy = m ? +(m[2] || m[1]) : 1;
   const r = box.getBoundingClientRect(), br = document.body.getBoundingClientRect();
-  const left = (r.left - br.left) / sx, top = (r.top - br.top) / sy, w = r.width / sx, h = r.height / sy - 26, k = Math.min(w / VW, h / VH);
+  const left = (r.left - br.left) / sx, top = (r.top - br.top) / sy, w = r.width / sx, h = r.height / sy, k = Math.min(w / VW, h / VH);
   Object.assign(trkF.parentNode.style, { left: left + 'px', top: top + 'px', width: w + 'px', height: h + 'px' });
   Object.assign(trkF.style, { height: (TOP + VH + 20) + 'px', left: ((w - VW * k) / 2 - X * k) + 'px', top: ((h - VH * k) / 2 - TOP * k) + 'px', transform: `scale(${k})` });
 }

@@ -223,6 +223,7 @@ NFL down & distance, MLB count/outs/bases — big score + line score, live track
 leaders with headshots). app.html loads it fresh from raw GitHub for leagues listed in settings `"usLeagues"` (nhl, nfl, mlb;
 add "ncaaf" to put college football on it too). Kill switch: `"usPage": false` sends those slots back to dark.html.
 dark.html hands usLeagues slots back to the main overlay so they reach us.html.
+NHL (owner 9 Nov 2026): bigger rink tracker (770px column, shorter score row) and no "Live tracker · scorebuzz.net" caption (removed for all us.html leagues).
 
 ## Stream check (added 9 Nov 2026)
 
