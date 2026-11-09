@@ -26,15 +26,15 @@
  "top25": 15,
  "pin": null,
  "slots": {
+  "1": {
+   "league": "nba",
+   "event": "401909951",
+   "note": "Sacramento Kings vs Miami Heat, 2026-11-09T02:00:00Z"
+  },
   "2": {
    "league": "nba",
    "event": "401909948",
    "note": "Brooklyn Nets vs Dallas Mavericks, 2026-11-09T00:30:00Z"
-  },
-  "3": {
-   "league": "nfl",
-   "event": "401873049",
-   "note": "Green Bay Packers vs New England Patriots, 2026-11-08T21:25:00Z"
   },
   "4": {
    "league": "nhl",
@@ -45,11 +45,6 @@
    "league": "nba",
    "event": "401909949",
    "note": "Milwaukee Bucks vs Boston Celtics, 2026-11-09T01:00:00Z"
-  },
-  "6": {
-   "league": "nba",
-   "event": "401909946",
-   "note": "Los Angeles Lakers vs Detroit Pistons, 2026-11-08T23:00:00Z"
   },
   "7": {
    "league": "nfl",
@@ -70,16 +65,6 @@
    "league": "nhl",
    "event": "401892676",
    "note": "New Jersey Devils vs Toronto Maple Leafs, 2026-11-09T00:00:00Z"
-  },
-  "11": {
-   "league": "nhl",
-   "event": "401892677",
-   "note": "Tampa Bay Lightning vs Winnipeg Jets, 2026-11-08T23:00:00Z"
-  },
-  "14": {
-   "league": "nba",
-   "event": "401909951",
-   "note": "Sacramento Kings vs Miami Heat, 2026-11-09T02:00:00Z"
   },
   "15": {
    "league": "nhl",
