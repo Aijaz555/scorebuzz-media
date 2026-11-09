@@ -725,5 +725,15 @@
   "status": "ok",
   "reason": "ok (contrast 62)",
   "at": "2026-11-09T00:33:19+00:00"
+ },
+ "401909948": {
+  "slot": "2",
+  "league": "nba",
+  "game": "Mavericks v Nets",
+  "url": "https://scorebuzz.net/basketball/nba/mavericks-vs-nets-401909948/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-09T00:41:28+00:00"
  }
 }
