@@ -523,23 +523,29 @@ async function list(league, date) {
     const c = e.competitions[0];
     const h = c.competitors.find((x) => x.homeAway === 'home').team;
     const a = c.competitors.find((x) => x.homeAway === 'away').team;
-    // US leagues: away vs home ("Knicks at Celtics" order); football: home v away
-    const [t1, t2] = L.soccer ? [h, a] : [a, h];
-    // Same pattern as the channels that do this well: "<Team> vs <Team> | NBA Live Scoreboard & Play-by-Play".
-    // Say "Scoreboard" plainly so nobody expects game footage.
+    // Owner (9 Nov 2026), copying the channels that do this well (BL Football Talks): home team first in every league,
+    // matching the scoreboard (home on the left), and a short title "<Home> vs <Away> <League> Live Scoreboard".
+    const [t1, t2] = [h, a];
     const week = e.week?.number || sb.week?.number;
     const tag = league === 'nfl' && week ? `NFL Week ${week}` : L.name || L.label;
-    // Owner (7 Nov 2026): every stream title says LIVE right after the matchup ("Team vs Team LIVE | ...").
-    const title = `${t1.displayName} vs ${t2.displayName} LIVE | ${tag} Scoreboard & Play-by-Play`;
+    const title = `${t1.displayName} vs ${t2.displayName} ${tag} Live Scoreboard`;
+    const nick = (t) => t.shortDisplayName || t.name || t.displayName;
+    const v = c.venue || {};
+    const place = [v.fullName, [v.address?.city, v.address?.state || v.address?.country].filter(Boolean).join(', ')].filter(Boolean).join(', ');
     return {
       league, id: e.id, start: e.date, state: e.status?.type?.state, status: e.status?.type?.name || '',
       abbrs: [a.abbreviation, h.abbreviation].filter(Boolean),
       // best (lowest) top-25 ranking of the two teams, college only (99 = unranked)
       rank: Math.min(...c.competitors.map((x) => x.curatedRank?.current || 99).map((r) => (r > 0 && r < 26 ? r : 99))),
       matchup: `${t1.displayName} vs ${t2.displayName}`,
-      title: title.length > 100 ? `${t1.displayName} vs ${t2.displayName} LIVE | ${tag} Scoreboard` : title,
+      title: title.length > 100 ? `${nick(t1)} vs ${nick(t2)} ${tag} Live Scoreboard` : title,
       description: [
-        `Live score updates for ${t1.displayName} vs ${t2.displayName} (${L.label}): score, clock, period scores, top performers and play-by-play, updated every few seconds.`,
+        `${tag} Live Scoreboard`,
+        L.soccer ? `${h.displayName} vs ${a.displayName} ${L.name || L.label} Live Scoreboard` : `${a.displayName} @ ${h.displayName} ${L.name || L.label} Live Scoreboard`,
+        place,
+        `${h.displayName} vs ${a.displayName} live · ${nick(h)} vs ${nick(a)}`,
+        '',
+        'Live score, clock, period scores, top performers and play-by-play, updated every few seconds.',
         '',
         'This stream is a live scoreboard. It does not show game footage.',
         '',

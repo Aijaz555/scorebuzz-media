@@ -74,8 +74,9 @@ function describe(g, music) {
   const t = new Date(g.start);
   const et = t.toLocaleString('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric', minute: '2-digit' });
   const uk = t.toLocaleString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit' });
-  const lines = g.description.split('\n').filter((l) => !l.startsWith('#'));
-  lines.splice(1, 0, `Start: ${et} ET / ${uk} UK.`);
+  const lines = g.description.split('\n').filter((l) => !l.startsWith('#') && l !== undefined);
+  const blank = lines.indexOf('');
+  lines.splice(blank < 0 ? 1 : blank, 0, `Start: ${et} ET / ${uk} UK.`);
   // hashtags: YouTube shows the first three above the title and indexes them like tags (the LiveReacting API
   // can't set YouTube tags or category, so the per-game keywords live here and in the title)
   lines.push(hashtags(g).join(' '));

@@ -245,7 +245,10 @@ Only runs when `"thumbs": true` in `docs/live/settings.json` (so the hourly mana
    `YT_REFRESH_TOKEN`. Then set `"thumbs": true` in `docs/live/settings.json` (or ask Claude to).
 
 ## Titles and tags (owner's request, 7 Nov 2026)
-- Every stream title reads `<Team> vs <Team> LIVE | <League> Scoreboard & Play-by-Play` (feed.js builds it; plan_streams passes it to livereacting_update_project).
+- Every stream title reads `<Home> vs <Away> <League> Live Scoreboard` (NFL: `NFL Week N`), home team first in every league to match the
+  scoreboard (owner, 9 Nov 2026, copying BL Football Talks; was `<Team> vs <Team> LIVE | <League> Scoreboard & Play-by-Play`).
+  The description opens with `<League> Live Scoreboard`, `<Away> @ <Home> <League> Live Scoreboard`, the arena and city, and
+  `<Home> vs <Away> live · <Nick> vs <Nick>`, then the start time (feed.js list() + plan_streams describe()).
 - YouTube tags: the LiveReacting tool can't write `youtubeAdvancedSettings.tags` (the field exists on each project but the API tool doesn't accept it), so the "live" keywords go in the title and the description hashtags (#<A>Vs<B>Live, #<League>Live, #LiveStream). `ytTags()` in plan_streams.js holds the per-game tag list for when the tool or the YouTube Data API can set them.
 
 - **docs/live/app.html has edits that tools/live/overlay.html lacks** (league colour touch, 7 Nov 2026). Before running build_web.js, port those into overlay.html, or patch app.html directly, otherwise the rebuild drops them.
