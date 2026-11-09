@@ -1,0 +1,1115 @@
+[
+ {
+  "id": "s01-epl-board",
+  "sport": "football",
+  "league": "epl",
+  "bed": "hype",
+  "yt": "2026-11-09T14:20:00",
+  "fb": "2026-11-09T12:50:00",
+  "title": "Premier League Results: Man United 4–4 Villa + Forest Stun City ⚽ #shorts",
+  "description": "All 10 Premier League results from Matchweek 10: Manchester United drew 4–4 with Aston Villa, Nottingham Forest beat Manchester City 3–1, Liverpool won 3–1 at Crystal Palace, Sunderland beat Chelsea 1–0 and Arsenal stayed top with a 1–0 win over Hull City.\n\nPremier League results, table and live scores: https://scorebuzz.net\n\n#PremierLeague #MUFC #AVFC #EPL",
+  "tags": [
+   "premier league results",
+   "premier league results today",
+   "man united vs aston villa",
+   "aston villa vs man united",
+   "nottingham forest vs man city",
+   "crystal palace vs liverpool",
+   "sunderland vs chelsea",
+   "premier league matchweek 10",
+   "epl scores",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 21.5,
+    "kicker": "Premier League · Matchweek 10",
+    "title": "Every result",
+    "badge": "Full time",
+    "first": 1.0,
+    "step": 1.85,
+    "rows": [
+     {
+      "home": "Everton",
+      "homeAbbr": "EVE",
+      "hs": 3,
+      "away": "Coventry",
+      "awayAbbr": "COV",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png"
+     },
+     {
+      "home": "Leeds",
+      "homeAbbr": "LEE",
+      "hs": 1,
+      "away": "Spurs",
+      "awayAbbr": "TOT",
+      "as": 0,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
+     },
+     {
+      "home": "Arsenal",
+      "homeAbbr": "ARS",
+      "hs": 1,
+      "away": "Hull",
+      "awayAbbr": "HUL",
+      "as": 0,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png"
+     },
+     {
+      "home": "Fulham",
+      "homeAbbr": "FUL",
+      "hs": 1,
+      "away": "Newcastle",
+      "awayAbbr": "NEW",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+     },
+     {
+      "home": "Forest",
+      "homeAbbr": "NFO",
+      "hs": 3,
+      "away": "Man City",
+      "awayAbbr": "MNC",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+     },
+     {
+      "home": "Brighton",
+      "homeAbbr": "BHA",
+      "hs": 2,
+      "away": "Brentford",
+      "awayAbbr": "BRE",
+      "as": 0,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png"
+     },
+     {
+      "home": "Palace",
+      "homeAbbr": "CRY",
+      "hs": 1,
+      "away": "Liverpool",
+      "awayAbbr": "LIV",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+     },
+     {
+      "home": "Ipswich",
+      "homeAbbr": "IPS",
+      "hs": 1,
+      "away": "Bournemouth",
+      "awayAbbr": "BOU",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+     },
+     {
+      "home": "Sunderland",
+      "homeAbbr": "SUN",
+      "hs": 1,
+      "away": "Chelsea",
+      "awayAbbr": "CHE",
+      "as": 0,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+     },
+     {
+      "home": "Man United",
+      "homeAbbr": "MAN",
+      "hs": 4,
+      "away": "Villa",
+      "awayAbbr": "AVL",
+      "as": 4,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Result of the weekend?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League",
+   "big": "4–4",
+   "hook": "Every *result*",
+   "sticker": "FULL TIME",
+   "teams": [
+    "MUN",
+    "AVL"
+   ],
+   "emoji": "⚽"
+  },
+  "fbtext": "⚽ Every Premier League result from the weekend.\n\nMan United 4–4 Villa, Forest 3–1 City, Sunderland 1–0 Chelsea and Arsenal still top. What a matchweek.\n\nResult of the weekend? 👇\n\n#PremierLeague #MUFC #Reels",
+  "time": "2026-11-09T14:20:00"
+ },
+ {
+  "id": "s02-fergie-5-5",
+  "sport": "football",
+  "league": "epl",
+  "bed": "drama",
+  "evergreen": true,
+  "yt": "2026-11-09T16:40:00",
+  "fb": "2026-11-09T18:20:00",
+  "title": "Man United Were 5–2 Up… and Drew 5–5 😱 Ferguson’s Last Game #MUFC #shorts",
+  "description": "Manchester United's 4–4 draw with Aston Villa brought back memories of West Brom 5–5 Manchester United on 19 May 2013, Sir Alex Ferguson's final game in charge. United led 3–0 and then 5–2 before a 19-year-old Romelu Lukaku came off the bench to complete a hat-trick as West Brom scored three times in five minutes.\n\nPremier League scores and results: https://scorebuzz.net\n\n#MUFC #PremierLeague #Ferguson #Lukaku",
+  "tags": [
+   "west brom vs man united 5-5",
+   "man united 5-5 west brom",
+   "sir alex ferguson last game",
+   "romelu lukaku hat trick",
+   "man united vs aston villa",
+   "man united 4-4 aston villa",
+   "premier league history",
+   "premier league crazy draws",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Premier League history",
+    "title": "5–2 UP. Then 5–5.",
+    "sub": "Sir Alex Ferguson's last game"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "19 May 2013 · The Hawthorns",
+    "title": "West Brom v Man United",
+    "sub": "Ferguson's final match as United manager"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "How it happened",
+    "title": "The collapse",
+    "rows": [
+     [
+      "3–0",
+      "Kagawa, Büttner, own goal",
+      "early"
+     ],
+     [
+      "5–2",
+      "Van Persie & Hernández",
+      "cruising"
+     ],
+     [
+      "5–5",
+      "Lukaku hat-trick",
+      "3 goals in 5 mins"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Romelu Lukaku",
+    "value": "19",
+    "unit": "years old",
+    "text": "Came off the bench and scored a hat-trick"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Sunday · 8 Nov 2026",
+    "title": "Man United 4–4 Villa",
+    "sub": "4–2 down in stoppage time. Zirkzee and Dorgu saved a point."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Craziest draw you’ve ever seen?",
+    "sub": "Follow ScoreBuzz for daily football"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League history",
+   "big": "5–5",
+   "hook": "From *5–2* up",
+   "sticker": "HISTORY",
+   "emoji": "😱"
+  },
+  "fbtext": "😱 Man United were 5–2 up in Sir Alex Ferguson's last game… and drew 5–5.\n\nWest Brom, 19 May 2013: a 19-year-old Romelu Lukaku came off the bench and scored a hat-trick. On Sunday United were 4–2 down in stoppage time against Villa and drew 4–4.\n\nCraziest draw you've seen? 👇\n\n#MUFC #PremierLeague #Reels",
+  "time": "2026-11-09T16:40:00"
+ },
+ {
+  "id": "s03-barca-atleti",
+  "sport": "football",
+  "league": "laliga",
+  "bed": "anthem",
+  "venue": "Riyadh Air Metropolitano",
+  "yt": "2026-11-09T19:00:00",
+  "fb": "2026-11-09T15:35:00",
+  "title": "Atlético vs Barcelona 1–2: Fermín López Double 🔥 #LaLiga #shorts",
+  "description": "Barcelona came from behind to beat Atlético Madrid 2–1 at the Metropolitano. Giuliano Simeone scored first for Atlético, but Fermín López scored in the 45th and 66th minutes to put Barça three points clear of Real Madrid at the top of LaLiga going into the international break.\n\nAtlético vs Barcelona final score and LaLiga table: https://scorebuzz.net\n\n#Barça #LaLiga #FerminLopez #Atleti",
+  "tags": [
+   "atletico vs barcelona",
+   "barcelona vs atletico madrid",
+   "fermin lopez",
+   "giuliano simeone",
+   "laliga table",
+   "laliga results today",
+   "barcelona",
+   "atletico madrid",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.3,
+    "kicker": "LaLiga · Sunday",
+    "title": "Atlético scored first…",
+    "sub": "Then Fermín López happened"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Full time · Metropolitano",
+    "home": "Atlético",
+    "homeAbbr": "ATM",
+    "homeScore": 1,
+    "away": "Barcelona",
+    "awayAbbr": "BAR",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+    "note": "Simeone 10' · López 45', 66'"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Fermín López",
+    "value": "2",
+    "unit": "goals",
+    "text": "Equaliser before half-time, winner on 66 minutes"
+   },
+   {
+    "type": "table",
+    "dur": 4.2,
+    "label": "LaLiga top 4",
+    "cols": [
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Barcelona",
+      11,
+      0,
+      1,
+      33
+     ],
+     [
+      2,
+      "Real Madrid",
+      10,
+      0,
+      2,
+      30
+     ],
+     [
+      3,
+      "Atlético",
+      9,
+      1,
+      2,
+      28
+     ],
+     [
+      4,
+      "Real Betis",
+      8,
+      2,
+      2,
+      26
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Barça’s title to lose?",
+    "sub": "Follow ScoreBuzz for daily football"
+   }
+  ],
+  "thumb": {
+   "kicker": "LaLiga",
+   "big": "1–2",
+   "hook": "López *double*",
+   "sticker": "FULL TIME",
+   "teams": [
+    "ATM",
+    "BAR"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Atlético scored first. Fermín López scored twice.\n\nBarcelona won 2–1 at the Metropolitano and are three points clear at the top of LaLiga going into the break.\n\nIs the title Barça's to lose? 👇\n\n#Barça #LaLiga #Reels",
+  "time": "2026-11-09T19:00:00"
+ },
+ {
+  "id": "s04-nunes-two-belts",
+  "sport": "mma",
+  "league": "ufc",
+  "bed": "drama",
+  "evergreen": true,
+  "yt": "2026-11-09T21:15:00",
+  "fb": "2026-11-10T03:30:00",
+  "title": "Amanda Nunes: First Woman to Hold TWO UFC Belts 🥊 #UFC334 #shorts",
+  "description": "Amanda Nunes became the first woman in UFC history to hold titles in two divisions at once when she knocked out Cris Cyborg at UFC 232 on 29 December 2018. Her wins include Miesha Tate at UFC 200, Ronda Rousey at UFC 207 and Holly Holm at UFC 239, and her record is 23–5. Nunes faces Kayla Harrison at UFC 334 on Saturday, 14 November.\n\nUFC results and fight schedule: https://scorebuzz.net\n\n#AmandaNunes #UFC334 #UFC #KaylaHarrison",
+  "tags": [
+   "amanda nunes",
+   "nunes vs harrison",
+   "kayla harrison",
+   "ufc 334",
+   "amanda nunes record",
+   "amanda nunes vs cris cyborg",
+   "amanda nunes vs ronda rousey",
+   "ufc history",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "UFC history",
+    "title": "TWO belts. At once.",
+    "sub": "The first woman to do it"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "29 Dec 2018 · UFC 232",
+    "title": "Amanda Nunes",
+    "sub": "Bantamweight AND featherweight champion after a first-round KO of Cris Cyborg"
+   },
+   {
+    "type": "list",
+    "dur": 5.2,
+    "label": "Her biggest wins",
+    "title": "The résumé",
+    "rows": [
+     [
+      "UFC 200",
+      "Miesha Tate",
+      "Sub · R1"
+     ],
+     [
+      "UFC 207",
+      "Ronda Rousey",
+      "TKO · R1"
+     ],
+     [
+      "UFC 232",
+      "Cris Cyborg",
+      "KO · R1"
+     ],
+     [
+      "UFC 239",
+      "Holly Holm",
+      "TKO · R1"
+     ],
+     [
+      "UFC 215",
+      "Valentina Shevchenko",
+      "Decision"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Career record",
+    "value": "23",
+    "unit": "wins",
+    "text": "23–5, with 13 wins by knockout"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "This Saturday · 14 Nov",
+    "title": "UFC 334: Nunes vs Harrison",
+    "sub": "Back from retirement to face Kayla Harrison"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Nunes or Harrison?",
+    "sub": "Follow ScoreBuzz for fight news"
+   }
+  ],
+  "thumb": {
+   "kicker": "UFC history",
+   "big": "2",
+   "hook": "belts at *once*",
+   "sticker": "FIRST",
+   "emoji": "🥊"
+  },
+  "fbtext": "🥊 Amanda Nunes was the first woman to hold two UFC belts at the same time.\n\nShe knocked out Cris Cyborg in the first round at UFC 232 to add featherweight gold to her bantamweight title. On Saturday she faces Kayla Harrison at UFC 334.\n\nNunes or Harrison? 👇\n\n#UFC334 #AmandaNunes #Reels",
+  "time": "2026-11-09T21:15:00"
+ },
+ {
+  "id": "s05-f1-verstappen-21-2",
+  "sport": "racing",
+  "league": "f1",
+  "bed": "hype",
+  "yt": "2026-11-09T23:30:00",
+  "fb": "2026-11-09T20:10:00",
+  "title": "São Paulo GP: Verstappen 21st to 2nd, Norris Wins 🏁 #F1 #shorts",
+  "description": "Lando Norris won a wet São Paulo Grand Prix at Interlagos, while Max Verstappen started 21st and finished second. Isack Hadjar completed a double Red Bull podium, Kimi Antonelli was fifth, and Mercedes clinched the 2026 constructors' championship with three rounds left.\n\nF1 results and standings: https://scorebuzz.net\n\n#F1 #BrazilGP #Verstappen #Norris",
+  "tags": [
+   "sao paulo grand prix",
+   "brazil gp results",
+   "f1 results today",
+   "max verstappen",
+   "lando norris",
+   "isack hadjar",
+   "kimi antonelli",
+   "f1 standings",
+   "mercedes constructors champions",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.3,
+    "kicker": "São Paulo Grand Prix",
+    "title": "21st → 2nd",
+    "sub": "Max Verstappen, in the rain"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "Race result · Interlagos",
+    "title": "The podium",
+    "rows": [
+     [
+      "1",
+      "Lando Norris",
+      "McLaren"
+     ],
+     [
+      "2",
+      "Max Verstappen",
+      "Red Bull"
+     ],
+     [
+      "3",
+      "Isack Hadjar",
+      "Red Bull"
+     ],
+     [
+      "5",
+      "Kimi Antonelli",
+      "Mercedes"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Max Verstappen",
+    "value": "19",
+    "unit": "places gained",
+    "text": "From 21st on the grid to second"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Mercedes",
+    "title": "Constructors' champions",
+    "sub": "Their ninth title, sealed with three rounds to go"
+   },
+   {
+    "type": "table",
+    "dur": 4.2,
+    "label": "Drivers' standings",
+    "cols": [
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Kimi Antonelli",
+      390
+     ],
+     [
+      2,
+      "Max Verstappen",
+      279
+     ],
+     [
+      3,
+      "George Russell",
+      262
+     ],
+     [
+      4,
+      "Lewis Hamilton",
+      261
+     ],
+     [
+      5,
+      "Charles Leclerc",
+      249
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Verstappen’s best drive of 2026?",
+    "sub": "Follow ScoreBuzz for F1"
+   }
+  ],
+  "thumb": {
+   "kicker": "Formula 1 · Brazil",
+   "big": "21→2",
+   "hook": "Max in the *rain*",
+   "sticker": "COMEBACK",
+   "emoji": "🏁"
+  },
+  "fbtext": "🏁 Max Verstappen started 21st in Brazil… and finished second.\n\nLando Norris won a wet São Paulo Grand Prix, Hadjar made it two Red Bulls on the podium and Mercedes sealed the constructors' title.\n\nBest drive of the season? 👇\n\n#F1 #BrazilGP #Reels",
+  "time": "2026-11-09T23:30:00"
+ },
+ {
+  "id": "s06-bills-vikings-0-8",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "drama",
+  "evergreen": true,
+  "yt": "2026-11-10T01:45:00",
+  "fb": "2026-11-09T23:50:00",
+  "title": "Bills vs Vikings: 8 Super Bowls, 0 Wins 😳 #MNF #NFL #shorts",
+  "description": "The Buffalo Bills and Minnesota Vikings meet on Monday Night Football, and between them they have played in eight Super Bowls without winning one. The Bills lost four in a row from Super Bowl XXV to XXVIII, and the Vikings lost Super Bowls IV, VIII, IX and XI. Both teams are 6–1 before kickoff at U.S. Bank Stadium.\n\nBills vs Vikings live score and NFL scores: https://scorebuzz.net\n\n#BillsMafia #Skol #MNF #NFL",
+  "tags": [
+   "bills vs vikings",
+   "vikings vs bills",
+   "monday night football",
+   "buffalo bills super bowl",
+   "minnesota vikings super bowl",
+   "super bowl history",
+   "nfl history",
+   "bills super bowl losses",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Monday Night Football",
+    "title": "8 Super Bowls. 0 wins.",
+    "sub": "Bills vs Vikings"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Buffalo Bills · 4 straight, 1991–94",
+    "title": "Bills",
+    "rows": [
+     [
+      "XXV",
+      "Giants",
+      "19–20"
+     ],
+     [
+      "XXVI",
+      "Washington",
+      "24–37"
+     ],
+     [
+      "XXVII",
+      "Cowboys",
+      "17–52"
+     ],
+     [
+      "XXVIII",
+      "Cowboys",
+      "13–30"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Minnesota Vikings · 1970–77",
+    "title": "Vikings",
+    "rows": [
+     [
+      "IV",
+      "Chiefs",
+      "7–23"
+     ],
+     [
+      "VIII",
+      "Dolphins",
+      "7–24"
+     ],
+     [
+      "IX",
+      "Steelers",
+      "6–16"
+     ],
+     [
+      "XI",
+      "Raiders",
+      "14–32"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Monday · 8:15 PM ET",
+    "title": "Bills (6–1) at Vikings (6–1)",
+    "sub": "U.S. Bank Stadium, Minneapolis"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins a ring first?",
+    "sub": "Follow ScoreBuzz for NFL"
+   }
+  ],
+  "thumb": {
+   "kicker": "Bills vs Vikings",
+   "big": "0–8",
+   "hook": "in Super *Bowls*",
+   "sticker": "HISTORY",
+   "teams": [
+    "BUF",
+    "MIN"
+   ],
+   "emoji": "😳"
+  },
+  "fbtext": "😳 Bills vs Vikings tonight: 8 Super Bowl trips between them, 0 wins.\n\nBuffalo lost four in a row (XXV–XXVIII). Minnesota lost IV, VIII, IX and XI. Both are 6–1 this season.\n\nWho wins a ring first? 👇\n\n#BillsMafia #Skol #Reels",
+  "time": "2026-11-10T01:45:00"
+ },
+ {
+  "id": "s07-nfl-week9-board",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "yt": "2026-11-10T03:15:00",
+  "fb": "2026-11-09T22:00:00",
+  "title": "NFL Week 9 Scores: Packers 45, Texans 44 + Bears Walk-Off 🏈 #NFL #shorts",
+  "description": "NFL Week 9 Sunday scores: the Packers beat the Patriots 45–27, the Texans routed the winless Chargers 44–22, the Bengals beat the Falcons 34–17 in Madrid, the Giants handed the Eagles a seventh straight loss and the Bears beat the Buccaneers 27–24 on a last-second field goal.\n\nNFL scores today and standings: https://scorebuzz.net\n\n#NFL #NFLWeek9 #Packers #Bears",
+  "tags": [
+   "nfl scores",
+   "nfl scores today",
+   "nfl week 9 scores",
+   "packers vs patriots",
+   "texans vs chargers",
+   "bears vs buccaneers",
+   "bengals vs falcons madrid",
+   "giants vs eagles",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 23.5,
+    "kicker": "NFL · Week 9 Sunday",
+    "title": "The scores",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "Falcons",
+      "homeAbbr": "ATL",
+      "hs": 17,
+      "away": "Bengals",
+      "awayAbbr": "CIN",
+      "as": 34,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+      "note": "Madrid"
+     },
+     {
+      "home": "Colts",
+      "homeAbbr": "IND",
+      "hs": 23,
+      "away": "Cowboys",
+      "awayAbbr": "DAL",
+      "as": 27,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+     },
+     {
+      "home": "Chiefs",
+      "homeAbbr": "KC",
+      "hs": 35,
+      "away": "Jets",
+      "awayAbbr": "NYJ",
+      "as": 12,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+     },
+     {
+      "home": "Dolphins",
+      "homeAbbr": "MIA",
+      "hs": 9,
+      "away": "Lions",
+      "awayAbbr": "DET",
+      "as": 19,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+     },
+     {
+      "home": "Saints",
+      "homeAbbr": "NO",
+      "hs": 23,
+      "away": "Browns",
+      "awayAbbr": "CLE",
+      "as": 22,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+      "note": "OT"
+     },
+     {
+      "home": "Eagles",
+      "homeAbbr": "PHI",
+      "hs": 11,
+      "away": "Giants",
+      "awayAbbr": "NYG",
+      "as": 19,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+     },
+     {
+      "home": "Panthers",
+      "homeAbbr": "CAR",
+      "hs": 21,
+      "away": "Broncos",
+      "awayAbbr": "DEN",
+      "as": 26,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+     },
+     {
+      "home": "Chargers",
+      "homeAbbr": "LAC",
+      "hs": 22,
+      "away": "Texans",
+      "awayAbbr": "HOU",
+      "as": 44,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+     },
+     {
+      "home": "Patriots",
+      "homeAbbr": "NE",
+      "hs": 27,
+      "away": "Packers",
+      "awayAbbr": "GB",
+      "as": 45,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+     },
+     {
+      "home": "49ers",
+      "homeAbbr": "SF",
+      "hs": 38,
+      "away": "Raiders",
+      "awayAbbr": "LV",
+      "as": 17,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+     },
+     {
+      "home": "Bears",
+      "homeAbbr": "CHI",
+      "hs": 27,
+      "away": "Bucs",
+      "awayAbbr": "TB",
+      "as": 24,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Most impressive win?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Week 9",
+   "big": "45",
+   "hook": "Sunday *scores*",
+   "sticker": "FINAL",
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 Every NFL score from Sunday.\n\nPackers 45, Texans 44, Bengals win in Madrid, the Eagles lose a seventh straight and the Bears win it at the buzzer.\n\nMost impressive win? 👇\n\n#NFL #NFLWeek9 #Reels",
+  "time": "2026-11-10T03:15:00"
+ },
+ {
+  "id": "s08-reaves-43",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "anthem",
+  "venue": "Little Caesars Arena",
+  "yt": "2026-11-10T04:45:00",
+  "fb": "2026-11-10T05:20:00",
+  "title": "Austin Reaves 43 Points Without Luka | Lakers vs Pistons 🔥 #shorts",
+  "description": "Austin Reaves scored 43 points as the Los Angeles Lakers beat the Detroit Pistons 121–116 without Luka Doncic. Reaves went 14 of 27 from the field and 11 of 11 from the free-throw line, and Walker Kessler added 12 points and 16 rebounds. The Lakers improved to 9–2.\n\nLakers vs Pistons final score and NBA scores: https://scorebuzz.net\n\n#AustinReaves #Lakers #NBA #Pistons",
+  "tags": [
+   "austin reaves",
+   "austin reaves 43 points",
+   "lakers vs pistons",
+   "pistons vs lakers",
+   "los angeles lakers",
+   "walker kessler",
+   "luka doncic",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.2,
+    "kicker": "NBA · Sunday",
+    "title": "No Luka. No problem.",
+    "sub": "Austin Reaves took over in Detroit"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Austin Reaves",
+    "value": "43",
+    "unit": "points",
+    "text": "14 of 27 from the field · 11 of 11 free throws"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final · Detroit",
+    "home": "Pistons",
+    "homeAbbr": "DET",
+    "homeScore": 116,
+    "away": "Lakers",
+    "awayAbbr": "LAL",
+    "awayScore": 121,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+    "note": "Reaves 43 · Kessler 12 pts, 16 reb"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Los Angeles Lakers",
+    "title": "9–2",
+    "sub": "Daniss Jenkins scored 31 for Detroit"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is Reaves an All-Star this year?",
+    "sub": "Follow ScoreBuzz for daily NBA"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA",
+   "big": "43",
+   "hook": "*No Luka* needed",
+   "sticker": "BIG NIGHT",
+   "teams": [
+    "LAL",
+    "DET"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 No Luka? Austin Reaves scored 43.\n\n14 of 27 from the field, 11 of 11 from the line, and a 121–116 Lakers win in Detroit. LA are 9–2.\n\nIs Reaves an All-Star this season? 👇\n\n#Lakers #NBA #Reels",
+  "time": "2026-11-10T04:45:00"
+ },
+ {
+  "id": "s09-bears-walkoff",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "drama",
+  "venue": "Soldier Field",
+  "fb": "2026-11-10T01:40:00",
+  "title": "Bears vs Buccaneers 27–24: Caleb Throws 4 INTs and STILL Wins 😳 #shorts",
+  "description": "The Chicago Bears beat the Tampa Bay Buccaneers 27–24 on Sunday Night Football when Cairo Santos kicked a 38-yard field goal as time expired, despite four interceptions from Caleb Williams. Jaylon Johnson returned an interception 67 yards for a touchdown, and the Bears improved to 7–2.\n\nBears vs Buccaneers final score and NFL scores: https://scorebuzz.net\n\n#Bears #SNF #NFL #CalebWilliams",
+  "tags": [
+   "bears vs buccaneers",
+   "buccaneers vs bears",
+   "caleb williams",
+   "cairo santos",
+   "jaylon johnson",
+   "sunday night football",
+   "nfl scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.3,
+    "kicker": "Sunday Night Football",
+    "title": "4 interceptions…",
+    "sub": "…and the Bears still won"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final · Soldier Field",
+    "home": "Bears",
+    "homeAbbr": "CHI",
+    "homeScore": 27,
+    "away": "Buccaneers",
+    "awayAbbr": "TB",
+    "awayScore": 24,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+    "note": "Santos 38-yd FG at 0:00"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "3rd quarter",
+    "title": "67-yard pick-six",
+    "sub": "Jaylon Johnson made it 24–13"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Final whistle",
+    "title": "0:00 · 38-yard FG",
+    "sub": "Cairo Santos won it after Tampa Bay tied it 24–24"
+   },
+   {
+    "type": "text",
+    "dur": 2.6,
+    "label": "Chicago Bears",
+    "title": "7–2",
+    "sub": "Caleb Williams: 279 yards, 2 TD, 4 INT"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Real contenders?",
+    "sub": "Follow ScoreBuzz for NFL"
+   }
+  ],
+  "thumb": {
+   "kicker": "Sunday Night Football",
+   "big": "27–24",
+   "hook": "Won at *0:00*",
+   "sticker": "WALK-OFF",
+   "teams": [
+    "CHI",
+    "TB"
+   ],
+   "emoji": "😳"
+  },
+  "fbtext": "😳 Caleb Williams threw four interceptions… and the Bears still won.\n\nJaylon Johnson's 67-yard pick-six, then Cairo Santos from 38 yards as time expired. Bears 27, Bucs 24. Chicago are 7–2.\n\nReal contenders? 👇\n\n#Bears #SNF #Reels",
+  "time": "2026-11-10T01:40:00"
+ },
+ {
+  "id": "s10-stroud-five",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "anthem",
+  "venue": "SoFi Stadium",
+  "fb": "2026-11-10T07:10:00",
+  "title": "C.J. Stroud 5 TD Passes While Sick | Texans vs Chargers 44–22 🤒 #shorts",
+  "description": "C.J. Stroud threw five touchdown passes for 384 yards as the Houston Texans beat the Los Angeles Chargers 44–22, after feeling ill all week. Kayshon Boutte caught two touchdowns, and the Chargers fell to 0–8.\n\nTexans vs Chargers final score and NFL scores: https://scorebuzz.net\n\n#Texans #CJStroud #NFL #Chargers",
+  "tags": [
+   "cj stroud",
+   "texans vs chargers",
+   "chargers vs texans",
+   "houston texans",
+   "kayshon boutte",
+   "tank dell",
+   "chargers 0-8",
+   "nfl scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.3,
+    "kicker": "NFL · Week 9",
+    "title": "Sick all week…",
+    "sub": "…then C.J. Stroud threw 5 TDs"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "C.J. Stroud",
+    "value": "5",
+    "unit": "TD passes",
+    "text": "384 yards, one TD short of the Texans record of six"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final · SoFi Stadium",
+    "home": "Chargers",
+    "homeAbbr": "LAC",
+    "homeScore": 22,
+    "away": "Texans",
+    "awayAbbr": "HOU",
+    "awayScore": 44,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+    "note": "Boutte 2 TD · two 63-yard scores"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Los Angeles Chargers",
+    "title": "0–8",
+    "sub": "Still winless after Week 9"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Do the Chargers win a game this year?",
+    "sub": "Follow ScoreBuzz for NFL"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Week 9",
+   "big": "5 TD",
+   "hook": "while *sick*",
+   "sticker": "FLU GAME",
+   "teams": [
+    "HOU",
+    "LAC"
+   ],
+   "emoji": "🤒"
+  },
+  "fbtext": "🤒 C.J. Stroud barely practised and woke up with chills. Then he threw five touchdowns.\n\n384 yards in a 44–22 Texans win. The Chargers are 0–8.\n\nWill the Chargers win a game this season? 👇\n\n#Texans #NFL #Reels",
+  "time": "2026-11-10T07:10:00"
+ }
+]

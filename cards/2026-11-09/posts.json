@@ -1,0 +1,382 @@
+[
+ {
+  "id": "01-united-villa",
+  "time": "2026-11-09T11:00:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "score",
+  "home": "Man United",
+  "homeAbbr": "MAN",
+  "homeScore": 4,
+  "away": "Aston Villa",
+  "awayAbbr": "AVL",
+  "awayScore": 4,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+  "label": "PREMIER LEAGUE · OLD TRAFFORD",
+  "status": "FULL TIME",
+  "headline": "2–0 down after 4 minutes. 4–2 down in stoppage time. 4–4.",
+  "sub": "Zirkzee (90+2′) and Dorgu (90+6′) rescued a point for United.",
+  "caption": "🤯 Man United 4–4 Aston Villa. What a game at Old Trafford.\n\nVilla led 2–0 after four minutes and 4–2 going into stoppage time, then Joshua Zirkzee and Patrick Dorgu scored in the 92nd and 96th minutes. United are still 18th going into the international break.\n\nPoint gained or two dropped for Villa? 👇\n\n#MUFC #AVFC #PremierLeague",
+  "venue": "Old Trafford"
+ },
+ {
+  "id": "02-atleti-barca",
+  "time": "2026-11-09T11:55:00",
+  "sport": "football",
+  "league": "laliga",
+  "kind": "score",
+  "home": "Atlético",
+  "homeAbbr": "ATM",
+  "homeScore": 1,
+  "away": "Barcelona",
+  "awayAbbr": "BAR",
+  "awayScore": 2,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+  "label": "LALIGA · METROPOLITANO",
+  "status": "FULL TIME",
+  "headline": "Fermín López double. Barça 3 points clear.",
+  "sub": "Giuliano Simeone scored first for Atlético; López hit back on 45′ and 66′.",
+  "caption": "🔵🔴 Barcelona win the big one in Madrid.\n\nGiuliano Simeone put Atlético ahead, but Fermín López scored twice and Barça won 2–1. They go into the international break three points clear of Real Madrid at the top of LaLiga.\n\nIs this Barça's title to lose? 👇\n\n#Barça #LaLiga #AtletiBarça",
+  "venue": "Riyadh Air Metropolitano"
+ },
+ {
+  "id": "03-pl-top5",
+  "time": "2026-11-09T13:45:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE TABLE · AFTER 10 GAMES",
+  "headline": "Brighton up to 2nd",
+  "rows": [
+   [
+    "1",
+    "Arsenal",
+    "27 pts"
+   ],
+   [
+    "2",
+    "Brighton",
+    "22 pts"
+   ],
+   [
+    "3",
+    "Man City",
+    "21 pts"
+   ],
+   [
+    "4",
+    "Liverpool",
+    "18 pts"
+   ],
+   [
+    "5",
+    "Chelsea",
+    "16 pts"
+   ]
+  ],
+  "sub": "Brighton beat 10-man Brentford 2–0 to climb above Man City.",
+  "caption": "📈 Brighton are second in the Premier League.\n\nDiego Gómez scored another stunner and Pascal Groß added a penalty in a 2–0 win over 10-man Brentford. That's seven wins from 10 for Brighton, five points behind leaders Arsenal.\n\nCan Brighton stay in the title race? 👇\n\n#BHAFC #PremierLeague #PLTable"
+ },
+ {
+  "id": "04-sunderland-chelsea",
+  "time": "2026-11-09T14:40:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "score",
+  "home": "Sunderland",
+  "homeAbbr": "SUN",
+  "homeScore": 1,
+  "away": "Chelsea",
+  "awayAbbr": "CHE",
+  "awayScore": 0,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+  "label": "PREMIER LEAGUE · STADIUM OF LIGHT",
+  "status": "FULL TIME",
+  "headline": "Sunderland end their winless run",
+  "sub": "Enzo Le Fée scored from the spot on 36′. Chelsea drop out of the top four.",
+  "caption": "😳 Sunderland 1–0 Chelsea.\n\nEnzo Le Fée's first-half penalty gave Sunderland their first Premier League win since August. Chelsea drop out of the top four after a fourth league defeat.\n\nHow worried should Chelsea be? 👇\n\n#SAFC #CFC #PremierLeague",
+  "venue": "Stadium of Light"
+ },
+ {
+  "id": "05-seriea-top5",
+  "time": "2026-11-09T16:30:00",
+  "sport": "football",
+  "league": "seriea",
+  "kind": "list",
+  "label": "SERIE A TABLE · AFTER 11 GAMES",
+  "headline": "Four teams, five points",
+  "rows": [
+   [
+    "1",
+    "Lazio",
+    "29 pts"
+   ],
+   [
+    "2",
+    "Inter",
+    "28 pts"
+   ],
+   [
+    "3",
+    "Roma",
+    "27 pts"
+   ],
+   [
+    "4",
+    "AC Milan",
+    "24 pts"
+   ],
+   [
+    "5",
+    "Como",
+    "23 pts"
+   ]
+  ],
+  "sub": "Inter beat Como 2–0, Milan won at Genoa, Lazio drew 1–1 at Napoli.",
+  "caption": "🇮🇹 The Serie A title race is tight.\n\nLazio drew 1–1 at Napoli but stay top and unbeaten. Inter beat Como 2–0 to sit one point behind, Roma are third, and Christian Pulisic scored again as Milan won 2–1 at Genoa.\n\nWho's top at Christmas? 👇\n\n#SerieA #Lazio #Inter"
+ },
+ {
+  "id": "06-palace-liverpool",
+  "time": "2026-11-09T17:25:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "score",
+  "home": "Crystal Palace",
+  "homeAbbr": "CRY",
+  "homeScore": 1,
+  "away": "Liverpool",
+  "awayAbbr": "LIV",
+  "awayScore": 3,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+  "label": "PREMIER LEAGUE · SELHURST PARK",
+  "status": "FULL TIME",
+  "headline": "Mac Allister, Wirtz, Isak. Liverpool win 3–1.",
+  "sub": "Palace stay bottom of the table on 7 points.",
+  "caption": "🔴 Liverpool 3–1 at Selhurst Park.\n\nAlexis Mac Allister headed the opener, Florian Wirtz made it 2–0 and Alexander Isak added a third before Eddie Nketiah's late penalty. Liverpool are fourth; Palace are bottom.\n\nCan Liverpool still catch Arsenal? 👇\n\n#LFC #CPFC #PremierLeague",
+  "venue": "Selhurst Park"
+ },
+ {
+  "id": "07-f1-norris-brazil",
+  "time": "2026-11-09T19:15:00",
+  "sport": "racing",
+  "league": "f1",
+  "kind": "list",
+  "label": "SÃO PAULO GRAND PRIX · RESULT",
+  "headline": "Norris wins in the rain",
+  "rows": [
+   [
+    "1",
+    "Lando Norris",
+    "McLaren"
+   ],
+   [
+    "2",
+    "Max Verstappen",
+    "Red Bull"
+   ],
+   [
+    "3",
+    "Isack Hadjar",
+    "Red Bull"
+   ],
+   [
+    "4",
+    "George Russell",
+    "Mercedes"
+   ],
+   [
+    "5",
+    "Kimi Antonelli",
+    "Mercedes"
+   ]
+  ],
+  "sub": "Verstappen started 21st and finished 2nd. Mercedes clinched the constructors’ title.",
+  "caption": "🏁 Lando Norris wins the São Paulo Grand Prix.\n\nIt was wet, wild and Max Verstappen came from 21st on the grid to finish second. Isack Hadjar made it a double Red Bull podium, and Mercedes sealed the constructors' title.\n\nDrive of the season from Verstappen? 👇\n\n#F1 #BrazilGP #Norris"
+ },
+ {
+  "id": "08-packers-patriots",
+  "time": "2026-11-09T21:05:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "home": "Patriots",
+  "homeAbbr": "NE",
+  "homeScore": 27,
+  "away": "Packers",
+  "awayAbbr": "GB",
+  "awayScore": 45,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+  "label": "NFL WEEK 9 · GILLETTE STADIUM",
+  "status": "FINAL",
+  "headline": "Jordan Love: 372 yards, 4 TDs",
+  "sub": "Green Bay scored 21 points off four Patriots turnovers.",
+  "caption": "🧀 Packers 45, Patriots 27.\n\nJordan Love threw for 372 yards and three touchdowns and ran for another. Christian Watson had 171 receiving yards and Matthew Golden 164 as Green Bay piled up 478 yards.\n\nBest game of Love's career? 👇\n\n#GoPackGo #NFL #Packers",
+  "venue": "Gillette Stadium"
+ },
+ {
+  "id": "09-texans-chargers",
+  "time": "2026-11-09T22:55:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "home": "Chargers",
+  "homeAbbr": "LAC",
+  "homeScore": 22,
+  "away": "Texans",
+  "awayAbbr": "HOU",
+  "awayScore": 44,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+  "label": "NFL WEEK 9 · SOFI STADIUM",
+  "status": "FINAL",
+  "headline": "Stroud throws 5 TDs. Chargers fall to 0–8.",
+  "sub": "C.J. Stroud: 384 yards and five touchdown passes despite feeling ill all week.",
+  "caption": "🤒 C.J. Stroud was sick all week. Then he threw five touchdown passes.\n\n384 yards, two 63-yard scores, and a 44–22 win for Houston. The Chargers are now 0–8.\n\nWill the Chargers win a game this season? 👇\n\n#Texans #Chargers #NFL",
+  "venue": "SoFi Stadium"
+ },
+ {
+  "id": "10-mnf-bills-vikings",
+  "time": "2026-11-10T00:45:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "MONDAY NIGHT FOOTBALL · TONIGHT",
+  "headline": "Bills (6–1) at Vikings (6–1)",
+  "sub": "8:15 PM ET · U.S. Bank Stadium, Minneapolis. Two of the NFL’s best records meet on Monday night.",
+  "stat": [
+   "6–1",
+   "both teams’ records"
+  ],
+  "caption": "🏈 Monday Night Football: Bills at Vikings.\n\nBoth teams are 6–1, and they meet at U.S. Bank Stadium tonight at 8:15 PM ET.\n\nWho wins? Drop your score 👇\n\n#BillsMafia #Skol #MNF"
+ },
+ {
+  "id": "11-nba-tonight",
+  "time": "2026-11-10T02:35:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · MONDAY NIGHT (ET)",
+  "headline": "Tonight in the NBA",
+  "rows": [
+   [
+    "7:00",
+    "Lakers (9–2) at Hawks (7–4)",
+    ""
+   ],
+   [
+    "7:00",
+    "Cavaliers at Hornets",
+    ""
+   ],
+   [
+    "7:00",
+    "Wizards at Pistons",
+    ""
+   ],
+   [
+    "8:30",
+    "Nuggets at Rockets (7–3)",
+    ""
+   ],
+   [
+    "9:00",
+    "Spurs (8–2) at Suns",
+    ""
+   ],
+   [
+    "10:00",
+    "Pelicans at Warriors",
+    ""
+   ]
+  ],
+  "sub": "Eight games tonight. All times ET.",
+  "caption": "🏀 Eight NBA games tonight.\n\nThe 9–2 Lakers visit Atlanta, the 8–2 Spurs are in Phoenix, Denver go to Houston and the Warriors host the Pelicans.\n\nWhich game are you watching? 👇\n\n#NBA #Lakers #Spurs"
+ },
+ {
+  "id": "12-sixers-9-2",
+  "time": "2026-11-10T04:25:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "home": "Bulls",
+  "homeAbbr": "CHI",
+  "homeScore": 121,
+  "away": "76ers",
+  "awayAbbr": "PHI",
+  "awayScore": 127,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+  "label": "NBA · UNITED CENTER",
+  "status": "FINAL",
+  "headline": "Sixers 9–2: best start since 2000–01",
+  "sub": "Jaylen Brown 29, Tyrese Maxey 27, LeBron James a season-high 22.",
+  "caption": "🔔 The 76ers are 9–2.\n\nJaylen Brown scored 29, Tyrese Maxey 27 and LeBron James had 22 in a 127–121 win in Chicago. It's Philadelphia's best start since 2000–01, and they lead the East.\n\nAre the Sixers for real? 👇\n\n#Sixers #NBA #LeBron",
+  "venue": "United Center"
+ },
+ {
+  "id": "13-devils-leafs",
+  "time": "2026-11-10T06:15:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "home": "Maple Leafs",
+  "homeAbbr": "TOR",
+  "homeScore": 0,
+  "away": "Devils",
+  "awayAbbr": "NJ",
+  "awayScore": 4,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
+  "label": "NHL · SCOTIABANK ARENA",
+  "status": "FINAL",
+  "headline": "Hellebuyck: 5 games, 5 wins, 1 shutout",
+  "sub": "23 saves for his first Devils shutout. Timo Meier scored twice.",
+  "caption": "🧱 Connor Hellebuyck shut out the Maple Leafs.\n\n23 saves in a 4–0 win, and he's the first goalie in Devils history to win each of his first five games with the club. New Jersey have won nine of their last 10.\n\nBest team in the East right now? 👇\n\n#NJDevils #LeafsForever #NHL",
+  "venue": "Scotiabank Arena"
+ },
+ {
+  "id": "14-bournemouth-eight",
+  "time": "2026-11-10T08:05:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "score",
+  "home": "Ipswich",
+  "homeAbbr": "IPS",
+  "homeScore": 1,
+  "away": "Bournemouth",
+  "awayAbbr": "BOU",
+  "awayScore": 2,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+  "label": "PREMIER LEAGUE · PORTMAN ROAD",
+  "status": "FULL TIME",
+  "headline": "Bournemouth: 8 straight wins",
+  "sub": "Evanilson has scored in five Premier League games in a row.",
+  "caption": "🍒 Bournemouth have won eight in a row.\n\nEvanilson scored again (five straight Premier League games) and a Leif Davis own goal made it 2–0 before a Jack Clarke penalty. Ipswich 1–2 Bournemouth.\n\nWho stops Bournemouth? 👇\n\n#AFCB #PremierLeague #Evanilson"
+ },
+ {
+  "id": "15-broncos-close",
+  "time": "2026-11-10T09:00:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "home": "Panthers",
+  "homeAbbr": "CAR",
+  "homeScore": 21,
+  "away": "Broncos",
+  "awayAbbr": "DEN",
+  "awayScore": 26,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+  "label": "NFL WEEK 9 · CHARLOTTE",
+  "status": "FINAL",
+  "headline": "16 straight one-score wins for Denver",
+  "sub": "Bo Nix threw two TDs. The Broncos are 7–2 and alone atop the AFC West.",
+  "caption": "🐴 The Broncos just keep winning close games.\n\nBo Nix threw two touchdowns in a 26–21 win at Carolina. That's five straight wins, 7–2, and 16 straight wins in one-score games.\n\nLuck or clutch? 👇\n\n#BroncosCountry #NFL #BoNix"
+ }
+]
