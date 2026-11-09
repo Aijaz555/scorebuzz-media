@@ -353,7 +353,8 @@ async function slotTick() {
     if (window.__reloadSeen === undefined) window.__reloadSeen = c.reload ?? null; else if ((c.reload ?? null) !== window.__reloadSeen) location.reload();
     const sl = (c.slots || {})[SLOT];
     if (!sl || !sl.event) { $('app').innerHTML = '<div class="err">ScoreBuzz live scoreboard · next game coming up</div>'; event = null; return; }
-    if (!PATH[sl.league]) return;
+    // not football any more, or switched off: back to the main overlay, which picks the right page
+    if (!PATH[sl.league] || c.soccerPage === false || (Array.isArray(c.soccerLeagues) && !c.soccerLeagues.includes(sl.league))) { location.replace(`index.html${location.search}`); return; }
     noSite = sl.sbtrk === 0;
     if (String(sl.event) !== String(event) || sl.league !== league) { league = sl.league; event = String(sl.event); tick(); }
   } catch (e) { /* keep current */ }

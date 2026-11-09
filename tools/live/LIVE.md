@@ -226,7 +226,10 @@ add "ncaaf" to put college football on it too). Kill switch: `"usPage": false` s
 dark.html hands usLeagues slots back to the main overlay so they reach us.html.
 NHL (owner 9 Nov 2026): bigger rink tracker (770px column, shorter score row) and no "Live tracker · scorebuzz.net" caption (removed for all us.html leagues).
 
-## Football broadcast layout demo (9 Nov 2026, owner's request, not on air)
+## Football broadcast layout (on air 9 Nov 2026, owner's request)
+Football slots (leagues in settings `"soccerLeagues"`) now show docs/live/soccer.html, loaded fresh from raw GitHub by app.html like nba.html / us.html.
+Kill switch: `"soccerPage": false` keeps football on the main overlay. soccer.html hands a slot back to index.html when its game isn't football.
+
 docs/live/soccer.html: the nba.html / us.html look for EPL, LaLiga, Serie A, Ligue 1, Bundesliga, MLS, UCL, UEL — ESPN data only (no tracker):
 games bar, header with table position + points, cards / corners / possession strip, big score with goal scorers (P, OG), match stats
 bars beside the 3 latest commentary lines, line-ups with formation, cards, goals and subs (league table around both clubs before line-ups
