@@ -225,6 +225,13 @@ add "ncaaf" to put college football on it too). Kill switch: `"usPage": false` s
 dark.html hands usLeagues slots back to the main overlay so they reach us.html.
 NHL (owner 9 Nov 2026): bigger rink tracker (770px column, shorter score row) and no "Live tracker · scorebuzz.net" caption (removed for all us.html leagues).
 
+## Football broadcast layout demo (9 Nov 2026, owner's request, not on air)
+docs/live/soccer.html: the nba.html / us.html look for EPL, LaLiga, Serie A, Ligue 1, Bundesliga, MLS, UCL, UEL — ESPN data only (no tracker):
+games bar, header with table position + points, cards / corners / possession strip, big score with goal scorers (P, OG), match stats
+bars beside the 3 latest commentary lines, line-ups with formation, cards, goals and subs (league table around both clubs before line-ups
+are out), leaders with shirt numbers (goals, shots, saves) or last-5 form before kick-off. Kick-off times in UK time (ET for MLS).
+Try: soccer.html?league=epl&event=401879240 (Man Utd 4-4 Villa). Not wired into app.html yet.
+
 ## Stream check (added 9 Nov 2026)
 
 Each hourly run checks what every LIVE stream actually shows on YouTube (needs `i.ytimg.com` on the session's allowed

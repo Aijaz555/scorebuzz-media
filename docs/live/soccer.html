@@ -1,0 +1,331 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ScoreBuzz live</title>
+<!-- ScoreBuzz "broadcast" scoreboard for football/soccer (owner's request, 9 Nov 2026), same layout as nba.html / us.html, ESPN data only:
+     games bar, header with table position, cards + corners + possession strip, big score with goal scorers, match stats bars
+     beside the latest commentary, line-ups with formation (league table before they are out), player leaders (form before kick-off).
+     Usage: soccer.html?league=epl|laliga|seriea|ligue1|bundesliga|mls|ucl|uel&event=<ESPN id>  or  soccer.html?slot=N. Designed at 1920x1080. Demo, not on air. -->
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a1430;--panel:#0f1d44;--row:#13245a;--line:#24366e;--ink:#f4f7ff;--mute:#9fb0d9;--lime:#c6f432;--red:#e5262e;--hc:#1d428a;--ac:#c8102e}
+*{margin:0;padding:0;box-sizing:border-box}
+html{overflow:hidden;background:var(--bg)}
+body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:relative;background:var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif}
+.cond{font-family:'Barlow Condensed','Arial Narrow',sans-serif}
+#app{position:absolute;inset:0}
+/* top: today's games */
+.top{position:absolute;left:0;top:0;width:1920px;height:132px;background:#f4f6fb;color:#121826;display:flex}
+.gm{width:226px;padding:12px 18px 8px;border-right:2px solid #d6dbe8;display:flex;flex-direction:column;gap:4px}
+.gm.cur{background:#fff;box-shadow:inset 0 -6px 0 var(--red)}
+.gm .st{font:700 26px 'Barlow Condensed',sans-serif;text-align:center;color:#20283a;height:30px;white-space:nowrap;overflow:hidden}
+.gm .st.live{color:var(--red)}
+.gm .r{display:flex;align-items:center;gap:10px;font:700 30px 'Barlow Condensed',sans-serif;height:38px}
+.gm .r img{width:32px;height:32px;object-fit:contain}.gm .r b{flex:1;letter-spacing:.5px}.gm .r span{font-weight:600;color:#3a4256}
+.gm .r span.w{color:#000;font-weight:800}
+.sub{position:absolute;right:30px;top:24px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.sub .btn{background:var(--red);color:#fff;font:900 34px Inter,sans-serif;letter-spacing:1px;padding:12px 34px;border-radius:12px;box-shadow:0 8px 20px #e5262e66;animation:pulse 2.4s infinite;transform:rotate(-2deg)}
+.sub .bz{font:900 22px Inter,sans-serif;color:#121826;letter-spacing:-.3px}.sub .bz b{color:#5b8a00}
+@keyframes pulse{0%,100%{transform:rotate(-2deg) scale(1)}50%{transform:rotate(-2deg) scale(1.06)}}
+/* main board */
+.board{position:absolute;left:14px;top:146px;width:1250px;height:740px;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,#132a6b,#0c1a45);border:4px solid #c8102e;border-top:none}
+.hdr{height:118px;display:grid;grid-template-columns:1fr 280px 1fr;background:linear-gradient(90deg,var(--hc) 0%,color-mix(in srgb,var(--hc) 75%,#000) 48%,color-mix(in srgb,var(--ac) 75%,#000) 52%,var(--ac) 100%)}
+.tm{display:flex;align-items:center;gap:16px;padding:0 22px;min-width:0}
+.tm.h{justify-content:flex-end}.tm.a{justify-content:flex-start}
+.tm img{width:92px;height:92px;object-fit:contain;filter:drop-shadow(0 4px 10px #0008)}
+.tm .nm{font:800 58px 'Barlow Condensed',sans-serif;line-height:.95;text-transform:uppercase;letter-spacing:.5px}
+.tm .rc{font:600 26px 'Barlow Condensed',sans-serif;color:#ffffffd0;white-space:nowrap}
+.tm.h .tx{text-align:right}
+.clock{margin:14px 0;border-radius:14px;background:#0008;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.clock .c{font:800 56px 'Barlow Condensed',sans-serif;color:var(--lime);line-height:1;white-space:nowrap}.clock .c.sm{font-size:44px}
+.clock .p{font:700 24px 'Barlow Condensed',sans-serif;color:#fff;letter-spacing:2px;text-transform:uppercase}
+.tob{height:52px;background:#dfe4ef;color:#141b2c;display:grid;grid-template-columns:150px 230px 1fr 230px 150px;align-items:center;text-align:center;font:800 32px 'Barlow Condensed',sans-serif;letter-spacing:1px}
+.tob .bn{opacity:.25}.tob .bn.on{opacity:1;color:var(--red)}
+.dots{display:flex;gap:7px;justify-content:center;background:#141b2c;border-radius:20px;padding:7px 12px;margin:0 14px}
+.dots i{width:16px;height:16px;border-radius:50%;background:#f2c14e}.dots i.u{background:transparent;border:2px solid #f2c14e88}
+.tob .tl{letter-spacing:6px;font-size:36px}
+.sc{height:190px;display:grid;grid-template-columns:330px 1fr 330px;align-items:center}
+.big{font:800 190px 'Barlow Condensed',Inter,sans-serif;text-align:center;line-height:1;letter-spacing:-2px}
+.big.lo{color:#c9d3ee}
+.qt{font:700 38px 'Barlow Condensed',sans-serif}
+.qt table{width:100%;border-collapse:collapse}
+.qt th{color:#7fb2ff;font-weight:700;padding:2px 6px;border-bottom:2px solid #ffffff55}
+.qt td{text-align:center;padding:2px 6px;color:#7fb2ff}.qt td.t{color:#fff;text-align:left;width:90px}.qt td.tot{color:#fff}
+.pbp{padding:0 14px 0 64px;display:flex;flex-direction:column}
+/* tracker mode (live games): scorebuzz.net court tracker on the left, 3 latest plays on the right */
+.low{display:grid;grid-template-columns:700px 1fr;gap:12px;padding:0 12px 0 12px;height:368px}
+.trk{position:relative;border-radius:12px;overflow:hidden;background:#0b1326;border:2px solid #ffffff22}
+/* NHL (owner 9 Nov 2026): bigger rink tracker, smaller score row to make room */
+#trkL{position:absolute;overflow:hidden;border-radius:12px;pointer-events:none}#trkL iframe{position:absolute;border:0;width:1000px;transform-origin:0 0;background:#0b1326}
+.low .pbp{padding:0 0 0 52px}.low .pl{height:122px;grid-template-columns:1fr 92px;padding:0 12px}.low .pl img{left:-48px;top:40px}
+.low .pl .l2{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:22px;line-height:1.25}.low .pl .l1{gap:16px}.low .pl .s{font-size:28px}
+.pl{position:relative;height:63px;display:grid;grid-template-columns:1fr 130px;align-items:center;border-bottom:1px solid #ffffff22;padding:0 16px}
+.pl img{position:absolute;left:-52px;top:13px;width:38px;height:38px;object-fit:contain}
+.pl .l1{font:700 25px 'Barlow Condensed',sans-serif;color:#dbe5ff;display:flex;gap:28px;white-space:nowrap}.pl .l1 b{font-weight:800;color:#fff;letter-spacing:.5px}
+.pl .l2{font:500 23px Inter,sans-serif;color:#f0f4ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pl .s{font:700 30px 'Barlow Condensed',sans-serif;text-align:right;white-space:nowrap}.pl .s .g{color:var(--lime)}
+.pl.new{background:linear-gradient(90deg,var(--nc),color-mix(in srgb,var(--nc) 70%,#000));border-radius:8px;border:none}
+.pl.new .l1,.pl.new .l1 b{color:#fff}
+/* on the court */
+.court{position:absolute;left:1276px;top:146px;width:630px;height:740px;background:#0b1636;border-radius:12px;overflow:hidden}
+.court h2{font:800 34px 'Barlow Condensed',sans-serif;padding:4px 14px 0;border-bottom:2px dashed #ffffff44;letter-spacing:.5px}
+.court .tn{display:flex;align-items:center;gap:14px;font:800 32px 'Barlow Condensed',sans-serif;padding:2px 14px;border-bottom:2px dashed #ffffff33}
+.court .tn img{width:40px;height:40px;object-fit:contain}
+.court table{width:100%;border-collapse:collapse;font-family:'Barlow Condensed',sans-serif}
+.court th{font-weight:800;font-size:25px;text-align:center;padding:2px 0;background:#091128}.court th:first-child{text-align:left;padding-left:14px}
+.court td{text-align:center;font-weight:700;font-size:30px;border-bottom:1px solid #ffffff14;height:53px;background:#101e47}
+.court tr:nth-child(odd) td{background:#0d1a3f}
+.court td.n{text-align:left;padding-left:14px;line-height:1.05}.court td.n{white-space:nowrap}.court td.n b{font-size:31px;font-weight:700}.court td.n span{font-size:18px;color:var(--mute);font-family:Inter,sans-serif;font-weight:600;margin-left:10px}
+/* leaders */
+.ldr{position:absolute;left:14px;top:896px;width:1892px;height:178px;display:grid;grid-template-columns:1fr 1fr 1fr;background:linear-gradient(180deg,#0f1d44,#081232);border-radius:12px;overflow:hidden}
+.lc{position:relative;display:grid;grid-template-columns:128px 1fr 128px;align-items:end;border-right:2px dashed #ffffff33;padding:0 4px}
+.lc:last-child{border-right:none}
+.lc .hs{height:168px;width:128px;object-fit:cover;object-position:top;align-self:end}
+.lc .mid{display:grid;grid-template-columns:1fr auto 1fr;align-self:stretch;padding:10px 6px 0}
+.lc .v{font:800 52px 'Barlow Condensed',sans-serif;line-height:1}.lc .v.r{text-align:right}
+.lc .cat{font:800 28px 'Barlow Condensed',sans-serif;letter-spacing:2px;align-self:center;color:#dbe5ff}
+.lc .who{grid-column:1/4;display:grid;grid-template-columns:1fr 1fr;font-family:'Barlow Condensed',sans-serif;margin-top:4px}
+.lc .who div{line-height:1.08}.lc .who .r{text-align:right}
+.lc .who div{white-space:nowrap;overflow:hidden}.lc .who b{font-size:27px;font-weight:800;display:block}.lc .who span{font-size:20px;font-weight:600;color:#c5d1f0;display:block}.lc .who i{font-style:normal;font-weight:800;font-size:22px;color:var(--lime)}
+.foot{position:absolute;left:0;right:0;bottom:0;height:0}
+.pre{padding:30px 40px;font-family:'Barlow Condensed',sans-serif}.pre .k{font:800 64px 'Barlow Condensed',sans-serif;color:var(--lime)}.pre .v{font:600 34px Inter,sans-serif;color:#dbe5ff;margin-top:12px}
+.court .inj td{height:46px;font-size:24px}.court .inj td.n b{font-size:27px}
+.err{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:800 48px Inter,sans-serif;color:var(--mute)}
+</style>
+<style>
+.tob .mid{display:flex;align-items:center;justify-content:center;gap:16px;letter-spacing:2px;font-size:34px}
+.tob .mid img{width:36px;height:36px;object-fit:contain}
+.tob .sv{font-size:30px}.tob .sv b{font-size:36px}
+.tob .bn{font-size:26px;white-space:nowrap}
+.pl{grid-template-columns:minmax(0,1fr) 130px!important}.low .pl{grid-template-columns:minmax(0,1fr) 92px!important}
+.tm .nm{white-space:nowrap}.tm .nm.m{font-size:48px}.tm .nm.l{font-size:40px}
+.gm .r span.rec{font-size:22px}
+.court.cmp td{height:41px;font-size:26px}.court.cmp td.n b{font-size:27px}.court.cmp th{font-size:22px}.court.cmp .tn{font-size:28px}.court.cmp .tn img{width:32px;height:32px}
+.court table.fx{table-layout:fixed}.court table.fx th:first-child,.court table.fx td.n{width:auto}.court table.fx td.n{overflow:hidden;text-overflow:ellipsis}
+.lc .who span{overflow:hidden;text-overflow:ellipsis}.lc .cat{font-size:24px;letter-spacing:1px}
+.cnt{display:flex;gap:22px;align-items:center}.cnt span{display:flex;gap:6px;align-items:center}.cnt i{width:16px;height:16px;border-radius:50%;border:2px solid #141b2c66}.cnt i.on{background:#141b2c;border-color:#141b2c}.cnt i.b.on{background:#1f9d55;border-color:#1f9d55}.cnt i.s.on{background:var(--red);border-color:var(--red)}
+.bases{position:relative;width:62px;height:44px}.bases i{position:absolute;width:18px;height:18px;transform:rotate(45deg);border:2px solid #141b2c;background:transparent}.bases i.on{background:#f2a900}
+.court td.ln{text-align:left;font-size:26px;padding-left:8px;white-space:nowrap}
+.court .gl td{background:#16285e}
+</style>
+<style>
+/* soccer (owner 9 Nov 2026): same frame as nba.html / us.html */
+.gm .st{font-size:24px}
+.tob{grid-template-columns:170px 200px 1fr 200px 170px}.tob .sv{white-space:nowrap;font-size:24px;letter-spacing:1px}.tob .sv b{font-size:34px;margin-left:6px}
+.sc{grid-template-columns:250px 1fr 250px}
+.cards{display:flex;gap:14px;justify-content:center;align-items:center}.cards span{display:flex;align-items:center;gap:6px}
+.cards i{display:inline-block;width:20px;height:28px;border-radius:3px;background:#f2c94c;box-shadow:0 1px 0 #0003}.cards i.r{background:var(--red)}
+.poss{display:flex;align-items:center;gap:14px;width:100%;padding:0 18px;font-size:30px}
+.poss .bar{flex:1;height:18px;border-radius:9px;overflow:hidden;display:flex;background:#c3cad9}.poss .bar i{display:block;height:100%}
+.poss .lb{font-size:22px;letter-spacing:3px;color:#4a5370}
+.scr{display:grid;grid-template-columns:1fr 1fr;gap:30px;font:700 28px 'Barlow Condensed',sans-serif;color:#dbe5ff;align-self:center;max-height:180px;overflow:hidden}
+.scr div{line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.scr .h{text-align:right}.scr b{color:#fff;font-weight:800}
+.scr .ic{display:inline-block;width:22px;height:22px;border-radius:50%;background:#fff;vertical-align:-2px;margin:0 8px;box-shadow:inset 0 0 0 4px #0b1636}
+.scr .mid{grid-column:1/3;text-align:center;font-size:26px;color:var(--mute);letter-spacing:2px}
+.low.sx{grid-template-columns:560px 1fr}
+.stt{background:#0b1326;border-radius:12px;border:2px solid #ffffff22;padding:10px 18px;display:flex;flex-direction:column;justify-content:space-around}
+.stt h3{font:800 24px 'Barlow Condensed',sans-serif;letter-spacing:3px;color:var(--mute);text-align:center}
+.sr{display:grid;grid-template-columns:70px 1fr 70px;align-items:center;font:800 30px 'Barlow Condensed',sans-serif}
+.sr .v{text-align:left}.sr .v.r{text-align:right}
+.sr .m{display:flex;flex-direction:column;gap:4px}.sr .m span{text-align:center;font:700 20px Inter,sans-serif;letter-spacing:1px;color:#c5d1f0;text-transform:uppercase}
+.sr .b{display:flex;gap:6px;height:10px}.sr .b>div{flex:1;background:#ffffff1a;border-radius:5px;overflow:hidden;display:flex}.sr .b>div:first-child{justify-content:flex-end}
+.sr .b i{display:block;height:100%;border-radius:5px}
+.low.sx .pl{grid-template-columns:minmax(0,1fr) 84px!important}
+.pl .ev{font:800 20px 'Barlow Condensed',sans-serif;text-align:center;border-radius:6px;padding:2px 0;background:#ffffff1f;color:#fff}
+.pl .ev.goal{background:var(--lime);color:#0a1430}.pl .ev.yc{background:#f2c94c;color:#0a1430}.pl .ev.rc{background:var(--red)}
+/* line-ups */
+.lu{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.lu .col{border-right:2px dashed #ffffff22}.lu .col:last-child{border-right:none}
+.lu .th{display:flex;align-items:center;gap:10px;font:800 28px 'Barlow Condensed',sans-serif;padding:6px 12px;background:#091128}
+.lu .th img{width:34px;height:34px;object-fit:contain}.lu .th span{margin-left:auto;color:var(--lime);font-size:26px}
+.lu .p{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:8px;height:47px;padding:0 10px;border-bottom:1px solid #ffffff14;font:700 26px 'Barlow Condensed',sans-serif;background:#101e47}
+.lu .p:nth-child(odd){background:#0d1a3f}
+.lu .p .j{width:38px;height:32px;border-radius:7px;background:var(--tc);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;color:#fff;box-shadow:inset 0 0 0 2px #ffffff40}
+.lu .p .n{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lu .p .n small{font:600 15px Inter,sans-serif;color:var(--mute);margin-left:6px}
+.lu .p .x{display:flex;gap:4px;align-items:center;font-size:20px;color:#c5d1f0}
+.lu .p .x i{display:inline-block;width:13px;height:18px;border-radius:2px;background:#f2c94c}.lu .p .x i.r{background:var(--red)}
+.lu .p .x .g{display:inline-block;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 3px #0b1636}
+.lu .p .x .o{color:#ff8a8a;font-weight:800}.lu .p .x .in{color:#7ee08a;font-weight:800}
+.lu .sb{font:600 18px Inter,sans-serif;color:#c5d1f0;padding:6px 12px;line-height:1.35}.lu .sb b{color:#7ee08a}
+/* league table (pre-game) */
+.tbl td{height:44px;font-size:26px}.tbl tr.me td{background:#1d3478!important;color:#fff}.tbl td.n b{font-size:26px}
+.tbl td.n img{width:28px;height:28px;object-fit:contain;vertical-align:-6px;margin-right:10px}
+/* leaders: shirts instead of headshots */
+.lc .shirt{width:128px;height:150px;align-self:center;display:flex;align-items:center;justify-content:center}
+.lc .shirt div{width:104px;height:110px;background:var(--tc);clip-path:polygon(28% 0,72% 0,100% 18%,88% 42%,80% 36%,80% 100%,20% 100%,20% 36%,12% 42%,0 18%);display:flex;align-items:center;justify-content:center;font:800 46px 'Barlow Condensed',sans-serif;color:#fff;text-shadow:0 2px 0 #0006;padding-top:14px}
+.frm{display:flex;gap:8px;justify-content:center;margin-top:10px}.frm{gap:14px}.frm i{width:52px;height:52px;font-size:30px!important;border-radius:8px;display:flex;align-items:center;justify-content:center;font:800 26px 'Barlow Condensed',sans-serif;font-style:normal}
+.frm .fi{display:flex;flex-direction:column;align-items:center;gap:4px}.frm .fi span{font:700 20px 'Barlow Condensed',sans-serif;color:#c5d1f0;letter-spacing:1px}
+.frm i.W{background:#1f9d55}.frm i.D{background:#7a8399}.frm i.L{background:var(--red)}
+.fc{display:flex;flex-direction:column;align-items:center;justify-content:center;font:800 28px 'Barlow Condensed',sans-serif;letter-spacing:2px;color:#dbe5ff}
+.fc img{width:56px;height:56px;object-fit:contain;margin-bottom:4px}
+</style>
+</head>
+<body><div id="app"><div class="err">Loading ScoreBuzz live scoreboard…</div></div>
+<script>
+(() => { // wrapped like nba.html / us.html so it can be document.write()n into app.html later
+const q = new URLSearchParams(location.search);
+const SLOT = q.get('slot');
+let league = q.get('league') || 'epl', event = q.get('event');
+function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
+  const mode = R.fit || q.get('fit') || 'contain', b = document.body;
+  if (mode === 'fill') b.style.transform = `scale(${sx},${sy})`; else { const k = Math.min(sx, sy); b.style.transform = `scale(${k})`; b.style.marginLeft = ((W - 1920 * k) / 2) + 'px'; b.style.marginTop = ((H - 1080 * k) / 2) + 'px'; } }
+addEventListener('resize', fit); setInterval(fit, 2000); fit();
+const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const $ = (id) => document.getElementById(id);
+const hex = (c, d) => (c && /^[0-9a-f]{6}$/i.test(c) ? '#' + c : d);
+const J = async (u) => (await fetch(u, { cache: 'no-store' })).json();
+const lum = (h) => { const n = parseInt(h.slice(1), 16); return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255; };
+const darkish = (c, alt) => (lum(c) > 0.7 ? (lum(alt) > 0.7 ? '#1d2a4a' : alt) : c);
+const PATH = { epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', ucl: 'uefa.champions', uel: 'uefa.europa' };
+const API = () => `https://site.api.espn.com/apis/site/v2/sports/soccer/${PATH[league]}`;
+const TZ = () => (league === 'mls' ? ['America/New_York', 'ET'] : ['Europe/London', 'UK']);
+const kick = (d) => new Date(d).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: TZ()[0] }) + ' ' + TZ()[1];
+const ORD = (n) => n + (['th', 'st', 'nd', 'rd'][(n % 100 >> 3 ^ 1 && n % 10) || 0] || 'th');
+const stat = (s, id, name) => (s.boxscore?.teams || []).find((t) => String(t.team.id) === String(id))?.statistics?.find((x) => x.name === name)?.displayValue;
+
+function team(x, s) {
+  const t = x.team, color = darkish(hex(t.color, '#1d428a'), hex(t.alternateColor, '#1d428a'));
+  const E = s.standings?.groups?.flatMap((g) => g.standings?.entries || []) || [];
+  const pos = E.findIndex((e) => String(e.id) === String(t.id)), pts = (x.record || []).find((r) => r.type === 'points')?.summary;
+  return { id: String(t.id), abbr: t.abbreviation, nick: t.shortDisplayName || t.name, full: t.displayName, logo: t.logos?.[0]?.href || t.logo, logoD: (t.logos || []).find((l) => (l.rel || []).includes('dark'))?.href || t.logos?.[0]?.href || t.logo,
+    color, score: Number(x.score || 0),
+    form: (() => { const L = (s.lastFiveGames || []).find((g) => String(g.team?.id) === String(t.id))?.events || []; return L.length ? [...L].reverse().map((e) => ({ r: e.gameResult, o: e.opponent?.abbreviation || '', sc: e.score || '' })) : [...(t.form || '')].map((r) => ({ r, o: '', sc: '' })); })(),
+    rec: [pos >= 0 ? ORD(pos + 1) : '', pts != null ? pts + ' pts' : '', (x.record || []).find((r) => r.type === 'total')?.summary ? 'W-D-L ' + x.record.find((r) => r.type === 'total').summary : ''].filter(Boolean).join(' · ') };
+}
+function gameCell(e, cur) {
+  const c = e.competitions[0], h = c.competitors.find((x) => x.homeAway === 'home'), a = c.competitors.find((x) => x.homeAway === 'away');
+  const st = e.status.type, pre = st.state === 'pre', fin = st.completed;
+  const s = pre ? kick(e.date) : fin ? st.shortDetail : (e.status.displayClock || st.shortDetail);
+  const row = (x, o) => `<div class="r"><img src="${x.team.logo}"><b>${esc(x.team.abbreviation)}</b><span class="${!pre && +x.score > +o.score ? 'w' : ''}">${pre ? '' : esc(x.score)}</span></div>`;
+  return `<div class="gm ${cur ? 'cur' : ''}"><div class="st ${!pre && !fin ? 'live' : ''}">${esc(s)}</div>${row(h, a)}${row(a, h)}</div>`;
+}
+const EV = (t) => (/goal|penalty---scored/.test(t) ? ['GOAL', 'goal'] : t === 'own-goal' ? ['OWN GOAL', 'goal'] : t === 'yellow-card' ? ['CARD', 'yc'] : /red-card/.test(t) ? ['CARD', 'rc'] : t === 'substitution' ? ['SUB', ''] : /halftime/.test(t) ? ['HT', ''] : /kickoff|start-2nd/.test(t) ? ['KO', ''] : /attempt|shot/.test(t) ? ['SHOT', ''] : /corner/.test(t) ? ['CORNER', ''] : /foul/.test(t) ? ['FOUL', ''] : /offside/.test(t) ? ['OFFSIDE', ''] : /save/.test(t) ? ['SAVE', ''] : ['', '']);
+
+function render(s, sb) {
+  const c = s.header.competitions[0];
+  const sbEv = (sb?.events || []).find((e) => e.id === c.id), st = sbEv?.status || c.status;
+  const H = team(c.competitors.find((x) => x.homeAway === 'home'), s), A = team(c.competitors.find((x) => x.homeAway === 'away'), s);
+  document.documentElement.style.setProperty('--hc', H.color); document.documentElement.style.setProperty('--ac', A.color);
+  const n = st.type?.name || '', pre = st.type?.state === 'pre', fin = st.type?.completed, live = st.type?.state === 'in';
+  const ht = /HALFTIME/.test(n), per = st.period || c.status?.period || 1;
+  const clk = pre ? kick(c.date) : fin ? 'FT' : ht ? 'HT' : (st.displayClock || st.type?.shortDetail || '');
+  const sub = pre ? 'Kick-off' : fin ? (st.type?.detail && st.type.detail !== 'FT' ? st.type.detail : 'Full time') : ht ? 'Half-time' : per === 1 ? '1st half' : per === 2 ? '2nd half' : per <= 4 ? 'Extra time' : 'Penalties';
+  // ---- strip: cards, corners, possession ----
+  const has = !pre && (s.boxscore?.teams || []).some((t) => (t.statistics || []).length);
+  const v = (id, k) => (has ? stat(s, id, k) ?? '0' : '–');
+  const cardsOf = (id) => `<div class="cards"><span><i></i>${v(id, 'yellowCards')}</span><span><i class="r"></i>${v(id, 'redCards')}</span></div>`;
+  const ph = has ? parseFloat(stat(s, H.id, 'possessionPct')) || 50 : 50, pa = has ? parseFloat(stat(s, A.id, 'possessionPct')) || 100 - ph : 50;
+  const strip = `<div class="tob">${cardsOf(H.id)}<div class="sv">CORNERS <b>${v(H.id, 'wonCorners')}</b></div>
+    <div class="poss"><b>${has ? Math.round(ph) + '%' : ''}</b><div class="bar"><i style="width:${ph / (ph + pa) * 100}%;background:var(--hc)"></i><i style="flex:1;background:var(--ac)"></i></div><b>${has ? Math.round(pa) + '%' : ''}</b>${has ? '' : '<span class="lb">POSSESSION</span>'}</div>
+    <div class="sv">CORNERS <b>${v(A.id, 'wonCorners')}</b></div>${cardsOf(A.id)}</div>`;
+  // ---- goal scorers ----
+  const K = s.keyEvents || [];
+  const goals = (id) => { const m = new Map(); for (const k of K) { const t = k.type?.type || ''; if (!(k.scoringPlay || /goal|penalty---scored/.test(t)) || /miss|saved/.test(t)) continue;
+      const own = t === 'own-goal' || /own goal/i.test(k.text || ''), tid = String(k.team?.id || '');
+      if (tid !== id) continue; const who = (k.participants?.[0]?.athlete?.displayName || k.shortText || '').replace(/ (Goal|Own Goal).*$/, '').split(' ').slice(-1)[0];
+      const tag = k.clock?.displayValue + (/penalty/.test(t) ? ' (P)' : own ? ' (OG)' : ''); m.set(who, [...(m.get(who) || []), tag]); }
+    return [...m].map(([w, ts]) => ({ w, ts })); };
+  const gh = goals(H.id), ga = goals(A.id);
+  const scr = pre ? `<div class="scr"><div class="mid">${esc(H.full)} v ${esc(A.full)}</div><div class="mid">${esc([s.gameInfo?.venue?.fullName, s.gameInfo?.venue?.address?.city].filter(Boolean).join(', '))}</div></div>`
+    : `<div class="scr"><div class="h">${gh.map((g) => `<div><b>${esc(g.w)}</b> ${esc(g.ts.join(', '))}<span class="ic"></span></div>`).join('')}</div><div>${ga.map((g) => `<div><span class="ic"></span><b>${esc(g.w)}</b> ${esc(g.ts.join(', '))}</div>`).join('')}</div>${!gh.length && !ga.length ? '<div class="mid">NO GOALS YET</div>' : ''}</div>`;
+  // ---- match stats bars ----
+  const ROWS = [['totalShots', 'Shots'], ['shotsOnTarget', 'On target'], ['saves', 'Saves'], ['foulsCommitted', 'Fouls'], ['offsides', 'Offsides'], ['accuratePasses', 'Passes completed']];
+  const bar = (k, label) => { const a = parseFloat(stat(s, H.id, k)) || 0, b = parseFloat(stat(s, A.id, k)) || 0, mx = Math.max(a, b, 1);
+    return `<div class="sr"><div class="v">${esc(stat(s, H.id, k) ?? 0)}</div><div class="m"><span>${label}</span><div class="b"><div><i style="width:${a / mx * 100}%;background:var(--hc)"></i></div><div><i style="width:${b / mx * 100}%;background:var(--ac)"></i></div></div></div><div class="v r">${esc(stat(s, A.id, k) ?? 0)}</div></div>`; };
+  const stt = `<div class="stt"><h3>MATCH STATS</h3>${ROWS.map(([k, l]) => bar(k, l)).join('')}</div>`;
+  // ---- latest commentary ----
+  const com = (s.commentary || []).filter((x) => x.text && x.time?.displayValue).slice(-3).reverse();
+  const logo = (id) => (id === H.id ? H.logoD : id === A.id ? A.logoD : '');
+  const pbp = com.map((x, i) => { const tid = String(x.play?.team?.id || ''), [lab, cls] = EV(x.play?.type?.type || '');
+    return `<div class="pl ${i === 0 ? 'new' : ''}" style="--nc:${tid === A.id ? A.color : H.color}">${logo(tid) ? `<img src="${logo(tid)}">` : ''}
+      <div><div class="l1"><span>${esc(x.time.displayValue)}</span><b>${esc((x.play?.type?.text || '').toUpperCase())}</b></div><div class="l2">${esc(x.text)}</div></div>
+      <div>${lab ? `<div class="ev ${cls}">${lab}</div>` : ''}</div></div>`; }).join('');
+  const mins = Math.round((new Date(c.date) - Date.now()) / 60000);
+  const day = new Date(c.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: TZ()[0] }).toUpperCase();
+  const preBox = `<div class="pre"><div class="k">KICK-OFF ${esc(clk)}${mins >= 1440 ? ` · ${esc(day)}` : mins > 0 ? ` · IN ${mins >= 60 ? Math.floor(mins / 60) + 'H ' : ''}${mins % 60} MIN` : ''}</div>
+    <div class="v">${esc(s.header?.league?.name || '')}${s.header?.week ? ` · Matchday ${esc(s.header.week)}` : ''}</div>
+    ${(c.broadcasts || []).length ? `<div class="v">TV: ${esc(c.broadcasts.map((x) => x.media?.shortName).filter(Boolean).join(', '))}</div>` : ''}</div>`;
+  // ---- right panel: line-ups, or the league table before they are out ----
+  const R = (T) => (s.rosters || []).find((r) => String(r.team?.id) === T.id);
+  const sv = (p, k) => +((p.stats || []).find((x) => x.name === k)?.value || 0);
+  const subMin = (p, inn) => { const k = K.find((e) => e.type?.type === 'substitution' && (e.participants || []).some((x, i) => String(x.athlete?.id) === String(p.athlete.id) && (inn ? i === 0 : i === 1))); return k?.clock?.displayValue || ''; };
+  let panelTitle, panel;
+  if ((s.rosters || []).some((r) => (r.roster || []).length)) {
+    panelTitle = 'LINE-UPS';
+    const col = (T) => { const r = R(T) || {}, L = r.roster || [], st11 = L.filter((p) => p.starter).sort((a, b) => (+a.formationPlace || 99) - (+b.formationPlace || 99)), ins = L.filter((p) => p.subbedIn);
+      return `<div class="col" style="--tc:${T.color}"><div class="th"><img src="${T.logoD}">${esc(T.abbr)}<span>${esc(r.formation || '')}</span></div>${st11.map((p) => {
+        const g = sv(p, 'totalGoals'), y = sv(p, 'yellowCards'), rc = sv(p, 'redCards'), out = p.subbedOut;
+        return `<div class="p"><div class="j">${esc(p.jersey)}</div><div class="n">${esc(p.athlete.shortName || p.athlete.displayName)}<small>${esc(p.position?.abbreviation || '')}</small></div>
+          <div class="x">${'<span class="g"></span>'.repeat(Math.min(g, 3))}${y ? '<i></i>' : ''}${rc ? '<i class="r"></i>' : ''}${out ? `<span class="o">▼${esc(subMin(p, false).replace(/'.*/, "'"))}</span>` : ''}</div></div>`; }).join('')}
+        ${ins.length ? `<div class="sb">${ins.slice(0, 4).map((p) => `<b>▲</b> ${esc(p.athlete.shortName)} ${esc(subMin(p, true).replace(/'.*/, "'"))}`).join('<br>')}</div>` : ''}</div>`; };
+    panel = `<div class="lu">${col(H)}${col(A)}</div>`;
+  } else {
+    panelTitle = 'LEAGUE TABLE';
+    const E = s.standings?.groups?.flatMap((g) => g.standings?.entries || []) || [];
+    const idx = E.map((e, i) => (String(e.id) === H.id || String(e.id) === A.id ? i : -1)).filter((i) => i >= 0);
+    // rows around each club (14 in all), with a gap row when they are far apart
+    let pick = new Set(); if (idx.length === 2 && Math.abs(idx[0] - idx[1]) > 10) idx.forEach((i) => { const lo = Math.max(0, Math.min(E.length - 6, i - 3)); for (let k = lo; k < lo + 6; k++) pick.add(k); });
+    else { let lo = Math.max(0, Math.min(...idx, 99) - 3), hi = Math.min(E.length, lo + 14); lo = Math.max(0, hi - 14); for (let k = lo; k < hi; k++) pick.add(k); }
+    pick = [...pick].filter((k) => k < E.length).sort((x, y) => x - y);
+    const g = (e, k) => e.stats?.find((x) => x.abbreviation === k)?.displayValue ?? '';
+    panel = `<table class="tbl fx"><colgroup><col><col style="width:52px"><col style="width:48px"><col style="width:48px"><col style="width:48px"><col style="width:68px"><col style="width:70px"></colgroup><tr><th>#&nbsp; CLUB</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>PTS</th></tr>${pick.map((k, j) => { const e = E[k]; return `${j && k - pick[j - 1] > 1 ? '<tr><td class="n" colspan="7" style="height:26px;text-align:center;color:#9fb0d9">• • •</td></tr>' : ''}<tr class="${String(e.id) === H.id || String(e.id) === A.id ? 'me' : ''}"><td class="n"><b>${k + 1}&nbsp; ${esc(e.team)}</b></td><td>${g(e, 'GP')}</td><td>${g(e, 'W')}</td><td>${g(e, 'D')}</td><td>${g(e, 'L')}</td><td>${g(e, 'GD')}</td><td><b>${g(e, 'P')}</b></td></tr>`; }).join('')}</table>`;
+  }
+  // ---- bottom: player leaders (shirt + number), or form before kick-off ----
+  const shirt = (T, p) => `<div class="shirt" style="--tc:${T.color}"><div>${esc(p?.jersey || '')}</div></div>`;
+  const best = (T, k, line, gk) => { const L = (R(T)?.roster || []).filter((p) => (gk ? p.position?.abbreviation === 'G' : p.position?.abbreviation !== 'G') && (p.starter || p.subbedIn));
+    const p = [...L].sort((a, b) => sv(b, k) - sv(a, k) || sv(b, 'totalShots') - sv(a, 'totalShots'))[0]; return p && { p, v: sv(p, k), name: p.athlete.shortName, line: line(p) }; };
+  const card = (cat, T1, h, T2, a) => (!h || !a ? '<div class="lc"></div>' : `<div class="lc">${shirt(T1, h.p)}<div class="mid"><div class="v">${esc(h.v)}</div><div class="cat">${cat}</div><div class="v r">${esc(a.v)}</div>
+      <div class="who"><div><b>${esc(h.name)}</b><span>${esc(h.line)}</span></div><div class="r"><b>${esc(a.name)}</b><span>${esc(a.line)}</span></div></div></div>${shirt(T2, a.p)}</div>`);
+  let ldr;
+  if (!pre && (s.rosters || []).some((r) => (r.roster || []).some((p) => (p.stats || []).length))) {
+    ldr = card('GOALS', H, best(H, 'totalGoals', (p) => `${sv(p, 'goalAssists')} A, ${sv(p, 'totalShots')} shots`), A, best(A, 'totalGoals', (p) => `${sv(p, 'goalAssists')} A, ${sv(p, 'totalShots')} shots`))
+      + card('SHOTS', H, best(H, 'totalShots', (p) => `${sv(p, 'shotsOnTarget')} on target`), A, best(A, 'totalShots', (p) => `${sv(p, 'shotsOnTarget')} on target`))
+      + card('SAVES', H, best(H, 'saves', (p) => `${sv(p, 'goalsConceded')} conceded`, true), A, best(A, 'saves', (p) => `${sv(p, 'goalsConceded')} conceded`, true));
+  } else {
+    const frm = (T) => `<div class="fc"><div style="display:flex;align-items:center;gap:12px"><img src="${T.logoD}" style="width:44px;height:44px;margin:0">${esc(T.nick.toUpperCase())} · LAST 5</div><div class="frm">${T.form.slice(-5).map((x) => `<div class="fi"><i class="${esc(x.r)}">${esc(x.r)}</i><span>${esc(x.o)}</span></div>`).join('')}</div></div>`;
+    ldr = frm(H) + `<div class="fc">${esc((s.header?.league?.name || '').toUpperCase())}<div style="font-size:44px;color:var(--lime);margin-top:6px">${esc(clk)}</div></div>` + frm(A);
+  }
+  // ---- games bar ----
+  let evs = sb?.events || [];
+  const rankE = (e) => (e.id === c.id ? 0 : e.status.type.state === 'in' ? 1 : e.status.type.state === 'pre' ? 2 : 3);
+  if (evs.length > 7) evs = [...evs].sort((a, b) => rankE(a) - rankE(b)).slice(0, 7).sort((a, b) => new Date(a.date) - new Date(b.date));
+  const nm = (T) => (T.nick.length > 12 ? 'l' : T.nick.length > 9 ? 'm' : '');
+  $('app').innerHTML = `
+  <div class="top">${evs.map((e) => gameCell(e, e.id === c.id)).join('')}<div class="sub"><div class="btn">SUBSCRIBE</div><div class="bz">Score<b>Buzz</b> · scorebuzz.net</div></div></div>
+  <div class="board">
+    <div class="hdr">
+      <div class="tm h"><div class="tx"><div class="nm ${nm(H)}">${esc(H.nick)}</div><div class="rc">${esc(H.rec)}</div></div><img src="${H.logoD}"></div>
+      <div class="clock"><div class="c ${clk.length > 9 ? 'sm' : ''}">${esc(clk)}</div><div class="p">${esc(sub)}</div></div>
+      <div class="tm a"><img src="${A.logoD}"><div class="tx"><div class="nm ${nm(A)}">${esc(A.nick)}</div><div class="rc">${esc(A.rec)}</div></div></div>
+    </div>
+    ${strip}
+    <div class="sc"><div class="big ${H.score < A.score ? 'lo' : ''}">${H.score}</div>${scr}<div class="big ${A.score < H.score ? 'lo' : ''}">${A.score}</div></div>
+    ${pre ? `<div class="pbp">${preBox}</div>` : `<div class="low sx">${stt}<div class="pbp">${pbp}</div></div>`}
+  </div>
+  <div class="court"><h2>${panelTitle}</h2>${panel}</div>
+  <div class="ldr">${ldr}</div>`;
+}
+let last = 0;
+async function tick() {
+  if (!event) return;
+  try {
+    const [s, sb] = await Promise.all([J(`${API()}/summary?event=${event}`), J(`${API()}/scoreboard`).catch(() => null)]);
+    let board = sb; // the scoreboard defaults to today; show the game's own matchday when it isn't on it
+    if (sb && !(sb.events || []).some((e) => e.id === String(event))) { const d = (s.header?.competitions?.[0]?.date || '').slice(0, 10).replace(/-/g, ''); if (d) board = await J(`${API()}/scoreboard?dates=${d}`).catch(() => sb); }
+    render(s, board); last = Date.now();
+  } catch (e) { console.error(e); if (!last) $('app').innerHTML = '<div class="err">Loading ScoreBuzz live scoreboard…</div>'; }
+}
+async function slotTick() {
+  try {
+    const c = await J('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/settings.json?t=' + Date.now());
+    window.__fitRemote = c.fit || {}; fit();
+    if (window.__reloadSeen === undefined) window.__reloadSeen = c.reload ?? null; else if ((c.reload ?? null) !== window.__reloadSeen) location.reload();
+    const sl = (c.slots || {})[SLOT];
+    if (!sl || !sl.event) { $('app').innerHTML = '<div class="err">ScoreBuzz live scoreboard · next game coming up</div>'; event = null; return; }
+    if (!PATH[sl.league]) return;
+    if (String(sl.event) !== String(event) || sl.league !== league) { league = sl.league; event = String(sl.event); tick(); }
+  } catch (e) { /* keep current */ }
+}
+if (SLOT) { slotTick(); setInterval(slotTick, 60000); setInterval(tick, 10000); }
+else if (!event) $('app').innerHTML = '<div class="err">Add ?league=epl|laliga|seriea|ligue1|mls|ucl&event=&lt;ESPN match id&gt; or ?slot=N</div>'; else { tick(); setInterval(tick, 10000); }
+})();
+</script>
+</html>
