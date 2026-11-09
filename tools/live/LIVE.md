@@ -193,6 +193,11 @@ starting 30 min before kick-off and stopped when the game is over.
   - `node tools/live/usage.js <broadcasts.json> [status.json]` sums livereacting_list_broadcasts (per project) for the week
     (Mon 00:00 UTC) and rolling 7 days: hours, % of 680, projection, level ok/warn (≥80%)/over. The hourly manager runs it once
     a day (first run after 00:00 UTC) and notifies the owner at warn/over (once per day, word "usage" in the commit/summary).
+  - For the hourly manager: step 5's "skipped" notification is only for `reason: "no free project"`; games skipped with
+    `reason: "cap 15"` are expected on busy weekends — list them in the summary, don't notify. Usage check (once per UTC day,
+    when today's git log has no "usage:" commit): livereacting_list_broadcasts (limit 50) for every project → scratch
+    {"<project name>": [...]} → `node tools/live/usage.js <file>` → add "usage: <h> h of 680 this week (<pct>%), last 7 days <h> h"
+    to the run's commit message; notify the owner when level is warn or over.
   - Baseline (before the raise, 9-stream cap): 5–9 Nov ≈ 347 h in total, of which Fri 53 h, Sat 113 h, Sun 140 h; peak 11 at once.
     With 15 streams a full weekend could reach ~180–220 h/day, so a week with every game is close to the 680 h cap.
 - Older cap (found 7 Nov 2026 01:45 UTC): the plan allowed only 9 concurrent live streams; the log below is from that period.
