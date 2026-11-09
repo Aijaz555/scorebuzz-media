@@ -755,5 +755,15 @@
   "status": "ok",
   "reason": "ok (contrast 62)",
   "at": "2026-11-09T01:16:23+00:00"
+ },
+ "401873050": {
+  "slot": "7",
+  "league": "nfl",
+  "game": "Bears v Buccaneers",
+  "url": "https://scorebuzz.net/american-football/nfl/bears-vs-buccaneers-401873050/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 46)",
+  "at": "2026-11-09T01:24:31+00:00"
  }
 }
