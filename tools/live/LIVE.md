@@ -211,6 +211,15 @@ starting 30 min before kick-off and stopped when the game is over.
   - 8 Nov 2026 23:43 UTC: Golden Knights-Sabres (Slot 14) and 76ers-Bulls (Slot 7) stopped; Jazz-Timberwolves (Slot 9) and Devils-Leafs (Slot 10) started (9/9 incl. Slot 2's 00:00 schedule). Celtics-Bucks (Slot 5, 00:30), Penguins-Ducks (Slot 15, 00:30) and Buccaneers-Bears (Slot 8, 00:50) set up (title, description, music) but schedules refused by the cap.
   - 9 Nov 2026 00:43 UTC: Seahawks-Cardinals (Slot 13), 49ers-Raiders (Slot 12), Chargers-Texans (Slot 1) stopped; Mavericks-Nets restarted (Slot 2), Celtics-Bucks (Slot 5) and Penguins-Ducks (Slot 15) started (9/9); Pelicans-Clippers (Slot 8, 01:30) scheduled; Bucs-Bears (Slot 7, 00:50) and Heat-Kings (Slot 14, 01:30) set up but schedules refused by the cap. Stream check: Slots 3,4,6,9,10,11 all correct.
   - 9 Nov 2026 02:43 UTC: Timberwolves-Jazz (Slot 9) stopped (final). Stream check: Slot 1 (Kings-Heat) preview showed a static Napoli vs Lazio card → restarted; Slots 2,4,5,7,8,10,15 correct.
+- **Stop within minutes of the final whistle (owner, 9 Nov 2026: never more than ~10–15 min after a game ends).** The hourly
+  run must NOT end right after its actions while assigned games are in progress. Last step of every run ("end watch"):
+  loop `node tools/live/watch_ends.js --max <min(9, minutes left)> --skip <slots already handled>` until 50 minutes after the
+  run started (the next run starts at :41). Each call returns within ~9 min:
+  `ended` → livereacting_stop_stream for each listed project that is LIVE/PREPARING (check with get_stream_status; on a
+  timeout read status, don't retry), add its slot to --skip, keep looping; `idle` (no assigned game in progress) → finish
+  the run; `timeout` → call again. ESPN marks a game final at the whistle and the watcher polls every 60 s, so streams stop
+  within ~1–2 min (worst case ~10 min, in the gap between one run's watch and the next run). settings.json is cleaned up by
+  the next planner run (no commit needed for these stops). Mention the stops in the run summary.
 - Stuck starts: a project can sit in PREPARING forever after a YouTube error (6 Nov: TNF on Slot 1 scheduled →
   ERROR UNKNOWN_ERROR, then PREPARING for 37 min). Each hourly run checks every PREPARING project with
   livereacting_get_stream_status; if preparingStartedAt is over 10 min ago, stop it and start it again (once per run).
