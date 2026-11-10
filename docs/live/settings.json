@@ -26,30 +26,10 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "6": {
-   "league": "nfl",
-   "event": "401873051",
-   "note": "Minnesota Vikings vs Buffalo Bills, 2026-11-10T01:15:00Z"
-  },
-  "7": {
-   "league": "nba",
-   "event": "401909957",
-   "note": "Houston Rockets vs Denver Nuggets, 2026-11-10T01:30:00Z"
-  },
-  "8": {
-   "league": "nhl",
-   "event": "401892680",
-   "note": "Edmonton Oilers vs New York Rangers, 2026-11-10T01:00:00Z"
-  },
   "9": {
    "league": "nhl",
    "event": "401892681",
    "note": "Vancouver Canucks vs Philadelphia Flyers, 2026-11-10T02:30:00Z"
-  },
-  "10": {
-   "league": "nba",
-   "event": "401909958",
-   "note": "Phoenix Suns vs San Antonio Spurs, 2026-11-10T02:00:00Z"
   },
   "11": {
    "league": "nba",
