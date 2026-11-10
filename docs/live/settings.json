@@ -45,6 +45,16 @@
    "league": "nhl",
    "event": "401892688",
    "note": "Winnipeg Jets vs New Jersey Devils, 2026-11-11T00:00:00Z"
+  },
+  "5": {
+   "league": "nba",
+   "event": "401909960",
+   "note": "New York Knicks vs Milwaukee Bucks, 2026-11-11T00:30:00Z"
+  },
+  "6": {
+   "league": "nhl",
+   "event": "401892686",
+   "note": "Columbus Blue Jackets vs Florida Panthers, 2026-11-11T00:30:00Z"
   }
  },
  "fit": {
