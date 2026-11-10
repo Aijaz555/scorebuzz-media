@@ -26,16 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "nba",
-   "event": "401909952",
-   "note": "Atlanta Hawks vs Los Angeles Lakers, 2026-11-10T00:00:00Z"
-  },
-  "2": {
-   "league": "nba",
-   "event": "401909953",
-   "note": "Charlotte Hornets vs Cleveland Cavaliers, 2026-11-10T00:00:00Z"
-  },
   "3": {
    "league": "nba",
    "event": "401909954",
