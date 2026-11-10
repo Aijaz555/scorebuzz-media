@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;800;900&display=swap');
+*{margin:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#05070f;font-family:Inter,Arial,sans-serif}
+#bg{position:absolute;inset:0;background:radial-gradient(120% 60% at 50% 50%,#13204a 0%,#05070f 70%)}
+.cam{position:absolute;left:0;top:300px;width:1080px;height:1320px;overflow:hidden}
+.cam img{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;image-rendering:auto}
+#top{position:absolute;left:0;right:0;top:0;height:300px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 50px}
+#bot{position:absolute;left:0;right:0;bottom:0;height:300px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.k{font-size:40px;font-weight:800;letter-spacing:6px;color:#C6F432;text-transform:uppercase}
+.t{font-size:78px;font-weight:900;color:#fff;line-height:1.02;margin-top:10px}
+.brand{font-size:58px;font-weight:900;color:#fff}.brand b{color:#C6F432}
+.url{font-size:34px;color:#9fb3d9;font-weight:600;margin-top:6px}
+.live{display:inline-block;background:#E5132E;color:#fff;font-weight:900;font-size:34px;padding:6px 18px;border-radius:8px;margin-right:14px;vertical-align:middle}
+#cta{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;opacity:0;background:radial-gradient(100% 60% at 50% 45%,#1b2d6b 0%,#05070f 75%)}
+#cta .big{font-size:110px;font-weight:900;color:#fff;line-height:1}
+#cta .sub{font-size:44px;color:#C6F432;font-weight:800;margin-top:30px;letter-spacing:2px}
+#cta .btn{margin-top:70px;background:#E5132E;color:#fff;font-size:64px;font-weight:900;padding:26px 70px;border-radius:22px;box-shadow:0 12px 40px rgba(229,19,46,.5)}
+#cta .lg{font-size:38px;color:#dfe7ff;font-weight:700;margin-top:60px}
+.vign{position:absolute;left:0;top:300px;width:1080px;height:1320px;pointer-events:none;box-shadow:inset 0 0 120px 40px #05070f}
+</style></head><body><div id="bg"></div>
+<div class="cam" id="c1"><img id="i1"></div><div class="cam" id="c2"><img id="i2"></div><div class="vign"></div>
+<div id="top"><div class="k" id="k"></div><div class="t" id="t"></div></div>
+<div id="bot"><div class="brand"><span class="live">LIVE</span>Score<b>Buzz</b></div><div class="url">every game · its own live stream</div></div>
+<div id="cta"><div class="big">Never miss<br>a goal.</div><div class="sub">LIVE SCORES · STATS · LINE-UPS</div><div class="btn">SUBSCRIBE</div><div class="lg">ScoreBuzz · scorebuzz.net<br>Champions League · Premier League · LaLiga</div></div>
+<script>
+const F='epl_mun.png',P='laliga_atm.png';
+const S=[[0,2.6,F,[960,540,1920],[960,560,1350],'Can’t watch the match?','Never miss a goal'],
+[2.6,5.6,F,[420,330,700],[620,360,640],'Goals','Every scorer, to the minute'],
+[5.6,8.6,F,[310,700,640],[310,700,600],'Match stats','Shots · possession · cards'],
+[8.6,11.4,F,[950,600,640],[950,760,640],'Live commentary','Every big moment'],
+[11.4,14.2,F,[1590,300,640],[1590,720,640],'Line-ups','Formations · subs · cards'],
+[14.2,17.2,P,[640,520,960],[640,540,800],'LaLiga · Serie A · UCL','Every big league']];
+const CTA=17.2, END=20.0, XF=.3;
+const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+function cam(img,c){const s=1080/c[2];if(c[2]<1300){const hw=c[2]/2,hh=660/s;c=[Math.min(1920-hw,Math.max(hw,c[0])),Math.min(1080-hh,Math.max(hh,c[1])),c[2]];}img.style.transform=`translate(${540-c[0]*s}px,${660-c[1]*s}px) scale(${s})`;}
+function at(sh,t){const u=ease(Math.min(1,Math.max(0,(t-sh[0])/(sh[1]-sh[0]))));return sh[3].map((a,i)=>a+(sh[4][i]-a)*u);}
+window.setFrame=t=>{let i=S.findIndex(s=>t>=s[0]&&t<s[1]);const ct=document.getElementById('cta');
+ ct.style.opacity=t<CTA?0:Math.min(1,(t-CTA)/XF);
+ if(i<0)i=S.length-1;const sh=S[i];
+ const i1=document.getElementById('i1'),i2=document.getElementById('i2');
+ if(!i1.src.endsWith(sh[2]))i1.src=sh[2];cam(i1,at(sh,t));document.getElementById('c1').style.opacity=1;
+ const nx=S[i+1];const c2=document.getElementById('c2');
+ if(nx&&t>sh[1]-XF){if(!i2.src.endsWith(nx[2]))i2.src=nx[2];cam(i2,at(nx,nx[0]));c2.style.opacity=(t-(sh[1]-XF))/XF;}else c2.style.opacity=0;
+ const ti=Math.min(1,(t-sh[0])/.35);const top=document.getElementById('top');top.style.opacity=ti;top.style.transform=`translateY(${(1-ti)*30}px)`;
+ document.getElementById('k').textContent=sh[5];document.getElementById('t').textContent=sh[6];};
+</script></body></html>
