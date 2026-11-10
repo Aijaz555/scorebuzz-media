@@ -793,8 +793,8 @@
   "url": "https://scorebuzz.net/basketball/nba/hawks-vs-lakers-401909952/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 63)",
-  "at": "2026-11-10T00:11:25+00:00"
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-10T00:45:29+00:00"
  },
  "401909953": {
   "slot": "2",
@@ -803,8 +803,8 @@
   "url": "https://scorebuzz.net/basketball/nba/hornets-vs-cavaliers-401909953/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 63)",
-  "at": "2026-11-10T00:11:28+00:00"
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-10T00:45:32+00:00"
  },
  "401909954": {
   "slot": "3",
@@ -814,6 +814,16 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 63)",
-  "at": "2026-11-10T00:13:19+00:00"
+  "at": "2026-11-10T00:45:34+00:00"
+ },
+ "401909955": {
+  "slot": "4",
+  "league": "nba",
+  "game": "Raptors v Grizzlies",
+  "url": "https://scorebuzz.net/basketball/nba/raptors-vs-grizzlies-401909955/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 63)",
+  "at": "2026-11-10T00:45:38+00:00"
  }
 }
