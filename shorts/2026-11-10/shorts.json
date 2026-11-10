@@ -1,0 +1,888 @@
+[
+ {
+  "id": "s01-bills-vikings",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "venue": "U.S. Bank Stadium",
+  "yt": "2026-11-10T19:10:00",
+  "fb": "2026-11-10T21:05:00",
+  "title": "Bills vs Vikings 23–6: Josh Allen Ties Peyton Manning 🦬 #MNF #shorts",
+  "description": "The Buffalo Bills beat the Minnesota Vikings 23–6 on Monday Night Football to move to 7–1. Josh Allen threw a touchdown pass to Keleki Latu before halftime, James Cook ran 31 times for 107 yards, and Carson Wentz went 8 of 25 for 81 yards for Minnesota. Allen's 322 regular-season touchdowns tie Peyton Manning for the most in a player's first 10 years.\n\nBills vs Vikings final score and NFL scores: https://scorebuzz.net\n\n#BillsMafia #JoshAllen #MNF #NFL",
+  "tags": [
+   "bills vs vikings",
+   "vikings vs bills",
+   "monday night football",
+   "josh allen",
+   "josh allen peyton manning",
+   "james cook",
+   "carson wentz",
+   "buffalo bills",
+   "nfl week 9",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Monday Night Football",
+    "title": "Bills 23, Vikings 6",
+    "sub": "Buffalo are 7–1"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Monday Night Football · Minneapolis",
+    "home": "Vikings",
+    "homeAbbr": "MIN",
+    "homeScore": 6,
+    "away": "Bills",
+    "awayAbbr": "BUF",
+    "awayScore": 23,
+    "status": "FINAL",
+    "note": "Allen TD to Keleki Latu with 44 seconds left in the half",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "James Cook",
+    "value": "107",
+    "unit": "rushing yards",
+    "text": "31 carries and a late touchdown"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Carson Wentz",
+    "value": "81",
+    "unit": "passing yards",
+    "text": "8 of 25 before he was replaced in the 4th quarter"
+   },
+   {
+    "type": "stat",
+    "dur": 3.6,
+    "label": "Josh Allen · first 10 seasons",
+    "value": "322",
+    "unit": "touchdowns",
+    "text": "Ties Peyton Manning's record, and Allen is only halfway through year 9"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Buffalo · 7–1",
+    "title": "Best 8-game start since 1993",
+    "sub": "Tyler Bass: 4 field goals, 25 in a row"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Are the Bills the AFC favorites?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Monday Night Football",
+   "big": "23–6",
+   "hook": "Bills *roll* on",
+   "sticker": "FINAL",
+   "teams": [
+    "BUF",
+    "MIN"
+   ],
+   "emoji": "🦬"
+  },
+  "fbtext": "🦬 Bills 23, Vikings 6 on Monday Night Football.\n\nJames Cook ran for 107 yards, Carson Wentz was held to 81, and Josh Allen tied Peyton Manning's record for touchdowns in a player's first 10 years (322).\n\nAre the Bills the AFC favorites now? 👇\n\n#BillsMafia #MNF #Reels",
+  "time": "2026-11-10T19:10:00"
+ },
+ {
+  "id": "s02-nba-monday-board",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "yt": "2026-11-11T02:30:00",
+  "fb": "2026-11-11T02:35:00",
+  "title": "NBA Scores Last Night: Wemby 40, Flagg 43, Lakers Win 6th Straight 🏀 #shorts",
+  "description": "Every NBA score from Monday night: the Spurs beat the Suns 122–96 for a ninth straight win behind Victor Wembanyama's 40 points, Cooper Flagg scored 43 as the Mavericks edged the Pacers 125–122, and Luka Doncic led the Lakers past the Hawks 124–114. The Hornets, Pistons, Grizzlies, Rockets and Warriors also won.\n\nNBA scores today and standings: https://scorebuzz.net\n\n#NBA #Wembanyama #CooperFlagg #Lakers",
+  "tags": [
+   "nba scores",
+   "nba scores today",
+   "nba scores last night",
+   "spurs vs suns",
+   "mavericks vs pacers",
+   "lakers vs hawks",
+   "rockets vs nuggets",
+   "warriors vs pelicans",
+   "victor wembanyama",
+   "cooper flagg",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 17.0,
+    "kicker": "NBA · Monday night",
+    "title": "Every score",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Hawks",
+      "homeAbbr": "ATL",
+      "hs": 114,
+      "away": "Lakers",
+      "awayAbbr": "LAL",
+      "as": 124,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
+     },
+     {
+      "home": "Hornets",
+      "homeAbbr": "CHA",
+      "hs": 124,
+      "away": "Cavaliers",
+      "awayAbbr": "CLE",
+      "as": 112,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
+     },
+     {
+      "home": "Pistons",
+      "homeAbbr": "DET",
+      "hs": 122,
+      "away": "Wizards",
+      "awayAbbr": "WSH",
+      "as": 111,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
+     },
+     {
+      "home": "Raptors",
+      "homeAbbr": "TOR",
+      "hs": 102,
+      "away": "Grizzlies",
+      "awayAbbr": "MEM",
+      "as": 118,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
+     },
+     {
+      "home": "Mavericks",
+      "homeAbbr": "DAL",
+      "hs": 125,
+      "away": "Pacers",
+      "awayAbbr": "IND",
+      "as": 122,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
+     },
+     {
+      "home": "Rockets",
+      "homeAbbr": "HOU",
+      "hs": 110,
+      "away": "Nuggets",
+      "awayAbbr": "DEN",
+      "as": 100,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
+     },
+     {
+      "home": "Suns",
+      "homeAbbr": "PHX",
+      "hs": 96,
+      "away": "Spurs",
+      "awayAbbr": "SA",
+      "as": 122,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
+     },
+     {
+      "home": "Warriors",
+      "homeAbbr": "GS",
+      "hs": 133,
+      "away": "Pelicans",
+      "awayAbbr": "NO",
+      "as": 83,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Best performance of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA · Monday night",
+   "big": "40 & 43",
+   "hook": "Wemby and *Flagg* go off",
+   "sticker": "FINAL",
+   "emoji": "🔥"
+  },
+  "fbtext": "🏀 Every NBA score from Monday night.\n\nWemby 40 in 25 minutes, Cooper Flagg 43, the Lakers win a sixth straight and Golden State cruise past New Orleans.\n\nBest performance of the night? 👇\n\n#NBA #Wembanyama #Reels",
+  "time": "2026-11-11T02:30:00"
+ },
+ {
+  "id": "s03-kane-caps",
+  "sport": "football",
+  "bed": "anthem",
+  "evergreen": true,
+  "yt": "2026-11-10T14:30:00",
+  "fb": "2026-11-10T15:35:00",
+  "title": "England's Most Capped Players: Harry Kane Level With Shilton on 125 🦁 #shorts",
+  "description": "Harry Kane is level with Peter Shilton as England's most-capped men's player on 125 caps, ahead of Wayne Rooney (120), David Beckham (115) and Steven Gerrard (114). Kane, England's record scorer with 91 goals, can break the record against Croatia in the Nations League at Wembley on Thursday 12 November.\n\nEngland fixtures, results and live scores: https://scorebuzz.net\n\n#HarryKane #England #ThreeLions #NationsLeague",
+  "tags": [
+   "england most capped players",
+   "harry kane",
+   "harry kane caps record",
+   "peter shilton",
+   "england vs croatia",
+   "croatia vs england",
+   "wayne rooney",
+   "david beckham",
+   "nations league",
+   "england record",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "England records",
+    "title": "125 caps. Level with a legend.",
+    "sub": "Who has played the most for England?"
+   },
+   {
+    "type": "list",
+    "dur": 5.4,
+    "label": "Most England caps · men (as of Nov 2026)",
+    "title": "The top five",
+    "rows": [
+     [
+      "=1",
+      "Peter Shilton",
+      "125"
+     ],
+     [
+      "=1",
+      "Harry Kane",
+      "125"
+     ],
+     [
+      "3",
+      "Wayne Rooney",
+      "120"
+     ],
+     [
+      "4",
+      "David Beckham",
+      "115"
+     ],
+     [
+      "5",
+      "Steven Gerrard",
+      "114"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Peter Shilton · goalkeeper",
+    "title": "1970 to 1990",
+    "sub": "His record has stood for more than 36 years"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Harry Kane · since March 2015",
+    "value": "91",
+    "unit": "England goals",
+    "text": "Already the all-time record"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Thursday · 19:45 GMT · Wembley",
+    "title": "England v Croatia",
+    "sub": "One more appearance and the record is Kane's"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Will anyone ever pass Kane?",
+    "sub": "Follow ScoreBuzz for football records"
+   }
+  ],
+  "thumb": {
+   "kicker": "England's caps record",
+   "big": "125",
+   "hook": "One game from *history*",
+   "sticker": "RECORD",
+   "emoji": "🦁"
+  },
+  "fbtext": "🦁 Harry Kane is level with Peter Shilton on 125 England caps.\n\nShilton's record has stood since 1990. Kane, already England's record scorer with 91 goals, can take it outright against Croatia at Wembley on Thursday.\n\nWill anyone ever pass Kane? 👇\n\n#HarryKane #England #Reels",
+  "time": "2026-11-10T14:30:00"
+ },
+ {
+  "id": "s04-wemby-40-8",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "anthem",
+  "fb": "2026-11-11T08:05:00",
+  "title": "Wembanyama 40 Points & 8 Blocks in 25 Minutes | Spurs vs Suns 👽 #shorts",
+  "description": "Victor Wembanyama scored 40 points with 11 rebounds and eight blocks in 25 minutes as the San Antonio Spurs beat the Phoenix Suns 122–96 for their ninth straight win.\n\nSpurs vs Suns final score and NBA scores: https://scorebuzz.net\n\n#Wembanyama #Spurs #NBA",
+  "tags": [
+   "victor wembanyama",
+   "wembanyama 40 points",
+   "spurs vs suns",
+   "suns vs spurs",
+   "san antonio spurs",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Monday",
+    "title": "40 points in 25 minutes",
+    "sub": "Victor Wembanyama"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "NBA · Phoenix",
+    "home": "Suns",
+    "homeAbbr": "PHX",
+    "homeScore": 96,
+    "away": "Spurs",
+    "awayAbbr": "SA",
+    "awayScore": 122,
+    "status": "FINAL",
+    "note": "San Antonio led 61–46 at halftime",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Wembanyama",
+    "value": "8",
+    "unit": "blocks",
+    "text": "Plus 11 rebounds"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Shooting",
+    "value": "15/19",
+    "unit": "from the field",
+    "text": "22 points and 5 blocks by halftime"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "San Antonio · 9–2",
+    "title": "Nine straight wins",
+    "sub": "After losing their first two games"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is Wemby the MVP favorite?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Spurs 122, Suns 96",
+   "big": "40",
+   "hook": "in *25* minutes",
+   "sticker": "MONSTER",
+   "emoji": "👽"
+  },
+  "fbtext": "👽 40 points. 8 blocks. 25 minutes.\n\nVictor Wembanyama went 15 of 19 and the Spurs beat the Suns 122–96 for their ninth straight win.\n\nIs Wemby the MVP favorite? 👇\n\n#Wembanyama #Spurs #Reels",
+  "time": "2026-11-11T08:05:00"
+ },
+ {
+  "id": "s05-italy-france-2006",
+  "sport": "football",
+  "bed": "drama",
+  "evergreen": true,
+  "yt": "2026-11-10T16:50:00",
+  "fb": "2026-11-10T18:20:00",
+  "title": "Italy vs France: The 2006 World Cup Final, Zidane's Last Game ⚽ #shorts",
+  "description": "Italy vs France on Thursday brings back the 2006 World Cup final in Berlin. On 9 July 2006 Zinedine Zidane scored a 7th-minute Panenka penalty, Marco Materazzi headed the equaliser, Zidane was sent off in extra time for a headbutt on Materazzi, and Italy won the shootout 5–3 for their fourth World Cup.\n\nItaly vs France and Nations League live scores: https://scorebuzz.net\n\n#Italy #France #WorldCup #Zidane",
+  "tags": [
+   "italy vs france",
+   "france vs italy",
+   "2006 world cup final",
+   "zidane headbutt",
+   "zidane materazzi",
+   "fabio grosso penalty",
+   "world cup history",
+   "nations league",
+   "italy world cup",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "World Cup history",
+    "title": "The last time Italy v France decided a World Cup…",
+    "sub": "Berlin · 9 July 2006"
+   },
+   {
+    "type": "list",
+    "dur": 5.4,
+    "label": "2006 World Cup final · Olympiastadion",
+    "title": "How it happened",
+    "rows": [
+     [
+      "7'",
+      "Zidane",
+      "Panenka penalty"
+     ],
+     [
+      "19'",
+      "Materazzi",
+      "header from a Pirlo corner"
+     ],
+     [
+      "110'",
+      "Zidane",
+      "red card for a headbutt"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Penalty shoot-out",
+    "value": "5–3",
+    "unit": "to Italy",
+    "text": "Trezeguet hit the bar. Fabio Grosso scored the winner."
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Italy",
+    "value": "4",
+    "unit": "World Cups",
+    "text": "Their first title since 1982"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Thursday · 19:45 GMT · San Siro",
+    "title": "Italy v France",
+    "sub": "Nations League"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins Thursday?",
+    "sub": "Follow ScoreBuzz for football history"
+   }
+  ],
+  "thumb": {
+   "kicker": "2006 World Cup final",
+   "big": "5–3",
+   "hook": "Zidane's *last* game",
+   "sticker": "HISTORY",
+   "teams": [
+    "ITA",
+    "FRA"
+   ],
+   "emoji": "😱"
+  },
+  "fbtext": "😱 The last time Italy and France met with a World Cup on the line…\n\nBerlin, 9 July 2006: Zidane scored a Panenka penalty, Materazzi equalised, Zidane was sent off for a headbutt in extra time, and Italy won the shootout 5–3. They meet again on Thursday.\n\nWho wins this time? 👇\n\n#Italy #France #Reels",
+  "time": "2026-11-10T16:50:00"
+ },
+ {
+  "id": "s06-mcdavid-19",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "drama",
+  "venue": "Rogers Place",
+  "yt": "2026-11-11T06:45:00",
+  "fb": "2026-11-11T04:25:00",
+  "title": "Connor McDavid 19-Game Point Streak Joins Gretzky | Oilers vs Rangers 🔥 #shorts",
+  "description": "Connor McDavid scored as the Edmonton Oilers beat the New York Rangers 3–1 and extended his point streak to all 19 games this season. He is the fourth player in NHL history to start a season with a 19-game point streak, after Wayne Gretzky, Dany Heatley and Mats Sundin, and leads the league with 48 points (as of 10 Nov 2026). Leon Draisaitl scored twice.\n\nOilers vs Rangers final score and NHL scores: https://scorebuzz.net\n\n#McDavid #Oilers #NHL #Gretzky",
+  "tags": [
+   "connor mcdavid",
+   "mcdavid point streak",
+   "oilers vs rangers",
+   "rangers vs oilers",
+   "edmonton oilers",
+   "leon draisaitl",
+   "wayne gretzky",
+   "nhl scores today",
+   "nhl records",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · point streak",
+    "title": "19 games. A point in every one.",
+    "sub": "Connor McDavid"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "19-game point streak to start a season",
+    "title": "Only four players",
+    "rows": [
+     [
+      "1",
+      "Wayne Gretzky",
+      ""
+     ],
+     [
+      "2",
+      "Dany Heatley",
+      ""
+     ],
+     [
+      "3",
+      "Mats Sundin",
+      ""
+     ],
+     [
+      "4",
+      "Connor McDavid",
+      "2026–27"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "McDavid · 19 games",
+    "value": "48",
+    "unit": "points",
+    "text": "11 goals and 37 assists. Most in the NHL."
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "NHL · Edmonton",
+    "home": "Oilers",
+    "homeAbbr": "EDM",
+    "homeScore": 3,
+    "away": "Rangers",
+    "awayAbbr": "NYR",
+    "awayScore": 1,
+    "status": "FINAL",
+    "note": "McDavid opened the scoring; Draisaitl scored twice",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nyr.png"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "How long can the streak go?",
+    "sub": "Follow ScoreBuzz for NHL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL · Connor McDavid",
+   "big": "19",
+   "hook": "Joins *Gretzky*",
+   "sticker": "STREAK",
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Connor McDavid has a point in all 19 games this season.\n\nOnly Wayne Gretzky, Dany Heatley and Mats Sundin had started a season with a 19-game point streak. He scored again as the Oilers beat the Rangers 3–1.\n\nHow long can it go? 👇\n\n#McDavid #Oilers #Reels",
+  "time": "2026-11-11T06:45:00"
+ },
+ {
+  "id": "s07-flagg-43",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "venue": "American Airlines Center",
+  "yt": "2026-11-11T04:30:00",
+  "fb": "2026-11-11T06:15:00",
+  "title": "Cooper Flagg 43 Points | Mavericks vs Pacers 125–122 🔥 #shorts",
+  "description": "Cooper Flagg scored a season-high 43 points with 10 rebounds and Kyrie Irving added 35 as the Dallas Mavericks rallied past the Indiana Pacers 125–122. Irving hit seven 3-pointers in the second game of his first back-to-back this season, and Dallas improved to 7–4.\n\nMavericks vs Pacers final score and NBA scores: https://scorebuzz.net\n\n#CooperFlagg #Mavs #KyrieIrving #NBA",
+  "tags": [
+   "cooper flagg",
+   "cooper flagg 43 points",
+   "mavericks vs pacers",
+   "pacers vs mavericks",
+   "dallas mavericks",
+   "kyrie irving",
+   "pascal siakam",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Monday",
+    "title": "Cooper Flagg: 43",
+    "sub": "A new season high"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "NBA · Dallas",
+    "home": "Mavericks",
+    "homeAbbr": "DAL",
+    "homeScore": 125,
+    "away": "Pacers",
+    "awayAbbr": "IND",
+    "awayScore": 122,
+    "status": "FINAL",
+    "note": "Dallas outscored Indiana 35–29 in the 4th",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Cooper Flagg",
+    "value": "43",
+    "unit": "points",
+    "text": "Plus 10 rebounds"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Kyrie Irving",
+    "value": "35",
+    "unit": "points",
+    "text": "Seven 3-pointers on the second night of a back-to-back"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Final seconds",
+    "title": "Two missed free throws, one tipped pass",
+    "sub": "Caleb Martin tipped away Indiana's last chance"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "How good will Flagg be?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Mavericks 125, Pacers 122",
+   "big": "43",
+   "hook": "Flagg *takes over*",
+   "sticker": "CAREER NIGHT",
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Cooper Flagg dropped 43.\n\nA season high with 10 rebounds, Kyrie Irving added 35 and the Mavericks held on to beat the Pacers 125–122.\n\nHow good will Flagg be? 👇\n\n#CooperFlagg #Mavs #Reels",
+  "time": "2026-11-11T04:30:00"
+ },
+ {
+  "id": "s08-blocks-record",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "drama",
+  "evergreen": true,
+  "yt": "2026-11-11T00:15:00",
+  "fb": "2026-11-10T22:55:00",
+  "title": "NBA Record for Blocks in a Game: 17 🤯 Can Wembanyama Catch It? #shorts",
+  "description": "The NBA record for blocks in a game is 17, set by Elmore Smith for the Lakers against the Trail Blazers on 28 October 1973. Manute Bol twice blocked 15 and Shaquille O'Neal blocked 15 in 1993, while Victor Wembanyama set the playoff record with 12 blocks against the Timberwolves on 4 May 2026. On Monday Wembanyama had 40 points and eight blocks against the Suns.\n\nNBA scores and stats: https://scorebuzz.net\n\n#Wembanyama #NBA #NBAHistory #Spurs",
+  "tags": [
+   "nba record blocks in a game",
+   "most blocks in an nba game",
+   "elmore smith 17 blocks",
+   "manute bol",
+   "shaquille o'neal blocks",
+   "victor wembanyama",
+   "wembanyama blocks",
+   "nba records",
+   "spurs",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA records",
+    "title": "17 blocks in ONE game",
+    "sub": "The record nobody has touched since 1973"
+   },
+   {
+    "type": "stat",
+    "dur": 3.6,
+    "label": "Elmore Smith · Lakers v Trail Blazers",
+    "value": "17",
+    "unit": "blocks",
+    "text": "28 October 1973. Still the NBA record."
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "15+ blocks in a game",
+    "title": "The only others",
+    "rows": [
+     [
+      "15",
+      "Manute Bol",
+      "25 Jan 1986"
+     ],
+     [
+      "15",
+      "Manute Bol",
+      "26 Feb 1987"
+     ],
+     [
+      "15",
+      "Shaquille O'Neal",
+      "20 Nov 1993"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Playoff record · 4 May 2026",
+    "value": "12",
+    "unit": "blocks",
+    "text": "Victor Wembanyama v Minnesota. Nobody else ever had more than 10."
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Monday · Spurs 122, Suns 96",
+    "title": "Wemby: 40 points, 8 blocks",
+    "sub": "In 25 minutes"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Will Wemby ever get to 17?",
+    "sub": "Follow ScoreBuzz for NBA records"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA single-game record",
+   "big": "17",
+   "hook": "blocks in *one* game",
+   "sticker": "RECORD",
+   "emoji": "🤯"
+  },
+  "fbtext": "🤯 17 blocks in one NBA game.\n\nElmore Smith did it for the Lakers on 28 October 1973, and nobody has topped 15 since. Victor Wembanyama owns the playoff record with 12, and he blocked eight in 25 minutes on Monday.\n\nWill Wemby ever get to 17? 👇\n\n#Wembanyama #NBA #Reels",
+  "time": "2026-11-11T00:15:00"
+ },
+ {
+  "id": "s09-nations-predict",
+  "sport": "football",
+  "bed": "hype",
+  "fb": "2026-11-10T12:50:00",
+  "title": "Nations League Predictions: England vs Croatia, Italy vs France ⚽ #shorts",
+  "description": "Predict Thursday's UEFA Nations League scores: England vs Croatia at Wembley, Italy vs France at San Siro and Czechia vs Spain kick off at 19:45 GMT, with Türkiye vs Belgium at 17:00 GMT.\n\nNations League fixtures and live scores: https://scorebuzz.net\n\n#NationsLeague #England #Italy #Spain",
+  "tags": [
+   "nations league predictions",
+   "england vs croatia",
+   "italy vs france",
+   "czechia vs spain",
+   "turkey vs belgium",
+   "nations league",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 13.0,
+    "kicker": "Nations League · Thursday",
+    "title": "Predict the scores",
+    "badge": "Score prediction",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "England",
+      "homeAbbr": "ENG",
+      "hs": "?",
+      "away": "Croatia",
+      "awayAbbr": "CRO",
+      "as": "?",
+      "note": "19:45 GMT · Wembley",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png"
+     },
+     {
+      "home": "Italy",
+      "homeAbbr": "ITA",
+      "hs": "?",
+      "away": "France",
+      "awayAbbr": "FRA",
+      "as": "?",
+      "note": "19:45 GMT · San Siro",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ita.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png"
+     },
+     {
+      "home": "Czechia",
+      "homeAbbr": "CZE",
+      "hs": "?",
+      "away": "Spain",
+      "awayAbbr": "ESP",
+      "as": "?",
+      "note": "19:45 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png"
+     },
+     {
+      "home": "Türkiye",
+      "homeAbbr": "TUR",
+      "hs": "?",
+      "away": "Belgium",
+      "awayAbbr": "BEL",
+      "as": "?",
+      "note": "17:00 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png"
+     },
+     {
+      "home": "Albania",
+      "homeAbbr": "ALB",
+      "hs": "?",
+      "away": "Finland",
+      "awayAbbr": "FIN",
+      "as": "?",
+      "note": "19:45 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alb.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fin.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Drop your scores below",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Nations League · Thursday",
+   "big": "?–?",
+   "hook": "Predict *every* score",
+   "sticker": "PREDICT",
+   "teams": [
+    "ENG",
+    "CRO"
+   ],
+   "emoji": "⚽"
+  },
+  "fbtext": "⚽ Predict Thursday's Nations League scores.\n\nEngland v Croatia, Italy v France and Czechia v Spain all kick off at 19:45 GMT, with Türkiye v Belgium earlier at 17:00.\n\nDrop your scores below 👇\n\n#NationsLeague #England #Reels",
+  "time": "2026-11-10T12:50:00"
+ }
+]

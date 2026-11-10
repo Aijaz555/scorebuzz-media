@@ -1,0 +1,537 @@
+[
+ {
+  "id": "v1-nfl-week9",
+  "sport": "nfl",
+  "league": "nfl",
+  "format": "video",
+  "bed": "hype",
+  "time": "2026-11-10T22:00:00",
+  "fbTime": "2026-11-10T23:50:00",
+  "title": "NFL Week 9 Recap: Bills Crush Vikings, Packers Score 45, Stroud's 5 TDs & a Bears Walk-Off 🏈",
+  "description": "Everything you missed from NFL Week 9: the Bills beat the Vikings 23–6 on Monday Night Football to move to 7–1, Jordan Love and the Packers scored 45 in New England, C.J. Stroud threw five touchdown passes against the winless Chargers, the Bengals won in Madrid and the Bears beat the Buccaneers on a last-second field goal. Plus every result, the playoff picture and the Week 10 games to watch.\n\nNFL scores, standings and live scores: https://scorebuzz.net\n\n#NFL #NFLWeek9 #BillsMafia #Packers #Texans",
+  "tags": [
+   "nfl week 9 recap",
+   "nfl week 9 results",
+   "nfl scores",
+   "bills vs vikings",
+   "packers vs patriots",
+   "texans vs chargers",
+   "bears vs buccaneers",
+   "bengals vs falcons madrid",
+   "nfl standings",
+   "nfl week 10",
+   "scorebuzz"
+  ],
+  "fbCaption": "🏈 NFL Week 9 in just over three minutes.\n\nThe Bills crushed the Vikings on Monday night, the Packers scored 45, C.J. Stroud threw five TDs with the flu, the Bengals won in Madrid and the Bears won it as time expired.\n\nBest game of the week? 👇\n\n#NFL #NFLWeek9 #BillsMafia #Packers",
+  "thumb": {
+   "kicker": "NFL Week 9 recap",
+   "big": "45",
+   "hook": "Packers *explode*, Bills roll",
+   "sticker": "Wild week",
+   "emoji": "🏈"
+  },
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 5,
+    "kicker": "NFL Week 9 recap",
+    "title": "Everything you missed",
+    "sub": "Every result, the big stories and the playoff picture"
+   },
+   {
+    "type": "table",
+    "dur": 10.5,
+    "label": "Week 9 results · home team first (1/2)",
+    "cols": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "",
+      "Ravens v Jaguars",
+      10,
+      33
+     ],
+     [
+      "",
+      "Falcons v Bengals (Madrid)",
+      17,
+      34
+     ],
+     [
+      "",
+      "Colts v Cowboys",
+      23,
+      27
+     ],
+     [
+      "",
+      "Chiefs v Jets",
+      35,
+      12
+     ],
+     [
+      "",
+      "Dolphins v Lions",
+      9,
+      19
+     ],
+     [
+      "",
+      "Saints v Browns (OT)",
+      23,
+      22
+     ],
+     [
+      "",
+      "Eagles v Giants",
+      11,
+      19
+     ],
+     [
+      "",
+      "Commanders v Rams",
+      13,
+      20
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "dur": 10.5,
+    "label": "Week 9 results · home team first (2/2)",
+    "cols": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "",
+      "Panthers v Broncos",
+      21,
+      26
+     ],
+     [
+      "",
+      "Chargers v Texans",
+      22,
+      44
+     ],
+     [
+      "",
+      "Patriots v Packers",
+      27,
+      45
+     ],
+     [
+      "",
+      "49ers v Raiders",
+      38,
+      17
+     ],
+     [
+      "",
+      "Seahawks v Cardinals",
+      17,
+      3
+     ],
+     [
+      "",
+      "Bears v Buccaneers",
+      27,
+      24
+     ],
+     [
+      "",
+      "Vikings v Bills",
+      6,
+      23
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Monday Night Football",
+    "home": "Vikings",
+    "homeAbbr": "MIN",
+    "homeScore": 6,
+    "away": "Bills",
+    "awayAbbr": "BUF",
+    "awayScore": 23,
+    "status": "FINAL",
+    "note": "James Cook: 31 carries, 107 yards and a late TD",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Josh Allen · first 10 seasons",
+    "value": "322",
+    "unit": "touchdowns",
+    "text": "Ties Peyton Manning's record. Allen is halfway through year nine."
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Minnesota · 6–2",
+    "title": "Carson Wentz: 8 of 25, 81 yards",
+    "sub": "Starting for the injured Kyler Murray, he was replaced by Max Brosmer in the 4th quarter. The Bills are 7–1."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Foxborough",
+    "home": "Patriots",
+    "homeAbbr": "NE",
+    "homeScore": 27,
+    "away": "Packers",
+    "awayAbbr": "GB",
+    "awayScore": 45,
+    "status": "FINAL",
+    "note": "21 Green Bay points off four Patriots turnovers",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Jordan Love",
+    "value": "372",
+    "unit": "passing yards",
+    "text": "Three TD passes and a rushing TD. Christian Watson 171 receiving yards, Matthew Golden 164."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Inglewood",
+    "home": "Chargers",
+    "homeAbbr": "LAC",
+    "homeScore": 22,
+    "away": "Texans",
+    "awayAbbr": "HOU",
+    "awayScore": 44,
+    "status": "FINAL",
+    "note": "Two 63-yard TDs: Tank Dell and Kayshon Boutte",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "C.J. Stroud",
+    "title": "Sick all week. Five touchdown passes.",
+    "sub": "He barely practised and woke up with chills. The Chargers are 0–8."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday Night Football",
+    "home": "Bears",
+    "homeAbbr": "CHI",
+    "homeScore": 27,
+    "away": "Buccaneers",
+    "awayAbbr": "TB",
+    "awayScore": 24,
+    "status": "FINAL",
+    "note": "Cairo Santos, 38 yards, as time expired",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/tb.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Chicago · 7–2",
+    "title": "Five turnovers… and a win",
+    "sub": "Caleb Williams threw a career-high four interceptions, then found Colston Loveland for 38 yards to set up the winner."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Madrid",
+    "home": "Falcons",
+    "homeAbbr": "ATL",
+    "homeScore": 17,
+    "away": "Bengals",
+    "awayAbbr": "CIN",
+    "awayScore": 34,
+    "status": "FINAL",
+    "note": "Burrow: 3 TD passes and a rushing TD at the Bernabéu",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · overtime",
+    "home": "Saints",
+    "homeAbbr": "NO",
+    "homeScore": 23,
+    "away": "Browns",
+    "awayAbbr": "CLE",
+    "awayScore": 22,
+    "status": "FINAL/OT",
+    "note": "Shough to Juwan Johnson in OT, then a 2-point stop",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · NFC East",
+    "home": "Eagles",
+    "homeAbbr": "PHI",
+    "homeScore": 11,
+    "away": "Giants",
+    "awayAbbr": "NYG",
+    "awayScore": 19,
+    "status": "FINAL",
+    "note": "Jameis Winston's go-ahead TD. Philadelphia have lost 7 straight.",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Charlotte",
+    "home": "Panthers",
+    "homeAbbr": "CAR",
+    "homeScore": 21,
+    "away": "Broncos",
+    "awayAbbr": "DEN",
+    "awayScore": 26,
+    "status": "FINAL",
+    "note": "Bo Nix 2 TDs. Denver: 16 straight one-score wins.",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Kansas City",
+    "home": "Chiefs",
+    "homeAbbr": "KC",
+    "homeScore": 35,
+    "away": "Jets",
+    "awayAbbr": "NYJ",
+    "awayScore": 12,
+    "status": "FINAL",
+    "note": "Kenneth Walker 3 TDs after a Mahomes elbow scare",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Landover",
+    "home": "Commanders",
+    "homeAbbr": "WSH",
+    "homeScore": 13,
+    "away": "Rams",
+    "awayAbbr": "LAR",
+    "awayScore": 20,
+    "status": "FINAL",
+    "note": "Puka Nacua 14 catches, 150 yards. Myles Garrett 3 sacks.",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Santa Clara",
+    "home": "49ers",
+    "homeAbbr": "SF",
+    "homeScore": 38,
+    "away": "Raiders",
+    "awayAbbr": "LV",
+    "awayScore": 17,
+    "status": "FINAL",
+    "note": "Five second-half takeaways for San Francisco",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png"
+   },
+   {
+    "type": "text",
+    "dur": 9.0,
+    "label": "Around the league",
+    "title": "Jaguars, Lions and Seahawks win",
+    "sub": "Jacksonville won 33–10 in Baltimore, Detroit beat Miami 19–9 for a 4th straight win, and Seattle beat Arizona 17–3 with Drew Lock at QB."
+   },
+   {
+    "type": "table",
+    "dur": 9.0,
+    "label": "Playoff picture after Week 9 · AFC",
+    "cols": [
+     "W",
+     "L",
+     "T"
+    ],
+    "rows": [
+     [
+      1,
+      "Bills",
+      7,
+      1,
+      0
+     ],
+     [
+      2,
+      "Broncos",
+      7,
+      2,
+      0
+     ],
+     [
+      3,
+      "Jaguars",
+      6,
+      2,
+      0
+     ],
+     [
+      4,
+      "Steelers",
+      6,
+      2,
+      0
+     ],
+     [
+      5,
+      "Chiefs",
+      6,
+      2,
+      0
+     ],
+     [
+      6,
+      "Bengals",
+      6,
+      2,
+      0
+     ],
+     [
+      7,
+      "Patriots",
+      5,
+      4,
+      0
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "danger": [],
+    "note": ""
+   },
+   {
+    "type": "table",
+    "dur": 9.0,
+    "label": "Playoff picture after Week 9 · NFC",
+    "cols": [
+     "W",
+     "L",
+     "T"
+    ],
+    "rows": [
+     [
+      1,
+      "49ers",
+      7,
+      1,
+      0
+     ],
+     [
+      2,
+      "Bears",
+      7,
+      2,
+      0
+     ],
+     [
+      3,
+      "Giants",
+      5,
+      2,
+      1
+     ],
+     [
+      4,
+      "Panthers",
+      3,
+      5,
+      0
+     ],
+     [
+      5,
+      "Lions",
+      6,
+      2,
+      0
+     ],
+     [
+      6,
+      "Vikings",
+      6,
+      2,
+      0
+     ],
+     [
+      7,
+      "Packers",
+      6,
+      3,
+      0
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "danger": [],
+    "note": "Seeds 1–4 are division leaders"
+   },
+   {
+    "type": "list",
+    "dur": 9.0,
+    "label": "Week 10 · away @ home (ET)",
+    "title": "Games to watch",
+    "rows": [
+     [
+      "Patriots 5–4",
+      "v",
+      "Lions 6–2"
+     ],
+     [
+      "Vikings 6–2",
+      "@",
+      "Packers 6–3"
+     ],
+     [
+      "49ers 7–1",
+      "@",
+      "Cowboys 4–5"
+     ],
+     [
+      "Steelers 6–2",
+      "@",
+      "Bengals 6–2"
+     ]
+    ],
+    "note": "Patriots v Lions is in Munich, Sunday 9:30am ET. Steelers at Bengals is Sunday night."
+   },
+   {
+    "type": "cta",
+    "dur": 5,
+    "title": "Best game of Week 9?",
+    "sub": "Tell us in the comments"
+   },
+   {
+    "type": "outro",
+    "dur": 4,
+    "title": "Live scores & standings",
+    "sub": "Follow ScoreBuzz for daily results and recaps"
+   }
+  ]
+ }
+]
