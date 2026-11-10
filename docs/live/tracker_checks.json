@@ -836,16 +836,6 @@
   "reason": "ok (contrast 71)",
   "at": "2026-11-10T03:15:59+00:00"
  },
- "401873051": {
-  "slot": "6",
-  "league": "nfl",
-  "game": "Vikings v Bills",
-  "url": "https://scorebuzz.net/american-football/nfl/vikings-vs-bills-401873051/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-10T03:16:02+00:00"
- },
  "401892680": {
   "slot": "8",
   "league": "nhl",
@@ -855,36 +845,6 @@
   "status": "ok",
   "reason": "ok (contrast 80)",
   "at": "2026-11-10T03:16:05+00:00"
- },
- "401892681": {
-  "slot": "9",
-  "league": "nhl",
-  "game": "Canucks v Flyers",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/canucks-vs-flyers-401892681/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 79)",
-  "at": "2026-11-10T03:16:08+00:00"
- },
- "401909959": {
-  "slot": "11",
-  "league": "nba",
-  "game": "Warriors v Pelicans",
-  "url": "https://scorebuzz.net/basketball/nba/warriors-vs-pelicans-401909959/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 63)",
-  "at": "2026-11-10T03:16:11+00:00"
- },
- "401892682": {
-  "slot": "12",
-  "league": "nhl",
-  "game": "Sharks v Islanders",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/sharks-vs-islanders-401892682/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-10T03:16:14+00:00"
  },
  "401909957": {
   "slot": "7",
@@ -905,5 +865,45 @@
   "status": "ok",
   "reason": "ok (contrast 71)",
   "at": "2026-11-10T03:24:29+00:00"
+ },
+ "401873051": {
+  "slot": "6",
+  "league": "nfl",
+  "game": "Vikings v Bills",
+  "url": "https://scorebuzz.net/american-football/nfl/vikings-vs-bills-401873051/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-10T03:49:46+00:00"
+ },
+ "401892681": {
+  "slot": "9",
+  "league": "nhl",
+  "game": "Canucks v Flyers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/canucks-vs-flyers-401892681/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 79)",
+  "at": "2026-11-10T03:49:49+00:00"
+ },
+ "401909959": {
+  "slot": "11",
+  "league": "nba",
+  "game": "Warriors v Pelicans",
+  "url": "https://scorebuzz.net/basketball/nba/warriors-vs-pelicans-401909959/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 63)",
+  "at": "2026-11-10T03:49:52+00:00"
+ },
+ "401892682": {
+  "slot": "12",
+  "league": "nhl",
+  "game": "Sharks v Islanders",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/sharks-vs-islanders-401892682/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 90)",
+  "at": "2026-11-10T03:49:55+00:00"
  }
 }
