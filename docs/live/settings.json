@@ -25,13 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "12": {
-   "league": "nhl",
-   "event": "401892682",
-   "note": "San Jose Sharks vs New York Islanders, 2026-11-10T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
