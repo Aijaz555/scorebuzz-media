@@ -26,21 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "3": {
-   "league": "nba",
-   "event": "401909954",
-   "note": "Detroit Pistons vs Washington Wizards, 2026-11-10T00:00:00Z"
-  },
-  "4": {
-   "league": "nba",
-   "event": "401909955",
-   "note": "Toronto Raptors vs Memphis Grizzlies, 2026-11-10T00:30:00Z"
-  },
-  "5": {
-   "league": "nba",
-   "event": "401909956",
-   "note": "Dallas Mavericks vs Indiana Pacers, 2026-11-10T01:00:00Z"
-  },
   "6": {
    "league": "nfl",
    "event": "401873051",
