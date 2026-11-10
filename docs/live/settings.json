@@ -26,16 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "9": {
-   "league": "nhl",
-   "event": "401892681",
-   "note": "Vancouver Canucks vs Philadelphia Flyers, 2026-11-10T02:30:00Z"
-  },
-  "11": {
-   "league": "nba",
-   "event": "401909959",
-   "note": "Golden State Warriors vs New Orleans Pelicans, 2026-11-10T03:00:00Z"
-  },
   "12": {
    "league": "nhl",
    "event": "401892682",
