@@ -55,6 +55,16 @@
    "league": "nhl",
    "event": "401892686",
    "note": "Columbus Blue Jackets vs Florida Panthers, 2026-11-11T00:30:00Z"
+  },
+  "7": {
+   "league": "nba",
+   "event": "401909961",
+   "note": "Philadelphia 76ers vs Boston Celtics, 2026-11-11T01:00:00Z"
+  },
+  "8": {
+   "league": "nhl",
+   "event": "401892687",
+   "note": "St. Louis Blues vs Detroit Red Wings, 2026-11-11T01:00:00Z"
   }
  },
  "fit": {
