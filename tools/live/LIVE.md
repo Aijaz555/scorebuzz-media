@@ -271,7 +271,8 @@ and falls back to a team-coloured shirt with the number (subs, or no line-up yet
 New tracker (owner 10 Nov 2026): NBA (nba.html), NHL (us.html) and football (soccer.html) now crop scorebuzz.net's new "live action"
 tracker (970x582 canvas at the top of #trkSlot; the site's 64.5 px sticky header hides its first rows, so the crop is x 15, y 65..582)
 and scale it to fill the tracker box edge to edge (cover). The box border and the NBA "Live tracker · scorebuzz.net" caption are gone,
-so no white line / page background shows around it. NFL / NCAAF keep the old field tracker crop. Reload 28.
+so no white line / page background shows around it. Reload 28.
+NFL / NCAAF (us.html) moved to the same new "live action" field tracker crop and cover scaling (owner 10 Nov 2026). Reload 29.
 
 ## Stream check (added 9 Nov 2026)
 
