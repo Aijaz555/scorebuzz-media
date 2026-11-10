@@ -201,6 +201,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - Baseline (before the raise, 9-stream cap): 5–9 Nov ≈ 347 h in total, of which Fri 53 h, Sat 113 h, Sun 140 h; peak 11 at once.
     With 15 streams a full weekend could reach ~180–220 h/day, so a week with every game is close to the 680 h cap.
   - 9 Nov 2026 09:44 UTC usage check: 34.4 h of 680 this week (5%), last 7 days 346.8 h, level ok.
+  - 10 Nov 2026 00:47 UTC usage check: 34.4 h of 680 this week (5%), last 7 days 346.8 h, level ok (finished broadcasts only; Mon night games still live).
 - Older cap (found 7 Nov 2026 01:45 UTC): the plan allowed only 9 concurrent live streams; the log below is from that period.
   - 8 Nov 2026 14:43 UTC: cap hit again — Real Sociedad-Rayo (Slot 2, now) and 4 Ligue 1 16:15 UK games (Slots 12-15) refused; only Slot 1 (Man Utd-Villa) scheduled.
   - 8 Nov 2026 16:45 UTC: 4 Ligue 1 restarts (Slots 14-17) went through (10 streams counted), then all 8 18:00 UK schedules (7 NFL 1pm ET games + Panthers-Bruins, Slots 4-6,8-11,18) were refused by the cap; the next hourly runs start them as slots free up.
