@@ -793,8 +793,8 @@
   "url": "https://scorebuzz.net/basketball/nba/hawks-vs-lakers-401909952/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-10T00:45:29+00:00"
+  "reason": "ok (contrast 71)",
+  "at": "2026-11-10T01:35:21+00:00"
  },
  "401909953": {
   "slot": "2",
@@ -803,8 +803,8 @@
   "url": "https://scorebuzz.net/basketball/nba/hornets-vs-cavaliers-401909953/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-10T00:45:32+00:00"
+  "reason": "ok (contrast 71)",
+  "at": "2026-11-10T01:35:24+00:00"
  },
  "401909954": {
   "slot": "3",
@@ -813,8 +813,8 @@
   "url": "https://scorebuzz.net/basketball/nba/pistons-vs-wizards-401909954/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 63)",
-  "at": "2026-11-10T00:45:34+00:00"
+  "reason": "ok (contrast 71)",
+  "at": "2026-11-10T01:35:27+00:00"
  },
  "401909955": {
   "slot": "4",
@@ -823,7 +823,37 @@
   "url": "https://scorebuzz.net/basketball/nba/raptors-vs-grizzlies-401909955/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 63)",
-  "at": "2026-11-10T00:45:38+00:00"
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-10T01:35:30+00:00"
+ },
+ "401909956": {
+  "slot": "5",
+  "league": "nba",
+  "game": "Mavericks v Pacers",
+  "url": "https://scorebuzz.net/basketball/nba/mavericks-vs-pacers-401909956/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-10T01:35:33+00:00"
+ },
+ "401873051": {
+  "slot": "6",
+  "league": "nfl",
+  "game": "Vikings v Bills",
+  "url": "https://scorebuzz.net/american-football/nfl/vikings-vs-bills-401873051/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-10T01:35:36+00:00"
+ },
+ "401892680": {
+  "slot": "8",
+  "league": "nhl",
+  "game": "Oilers v Rangers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/oilers-vs-rangers-401892680/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 79)",
+  "at": "2026-11-10T01:35:39+00:00"
  }
 }
