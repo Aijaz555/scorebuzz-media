@@ -65,6 +65,16 @@
    "league": "nhl",
    "event": "401892680",
    "note": "Edmonton Oilers vs New York Rangers, 2026-11-10T01:00:00Z"
+  },
+  "9": {
+   "league": "nhl",
+   "event": "401892681",
+   "note": "Vancouver Canucks vs Philadelphia Flyers, 2026-11-10T02:30:00Z"
+  },
+  "10": {
+   "league": "nba",
+   "event": "401909958",
+   "note": "Phoenix Suns vs San Antonio Spurs, 2026-11-10T02:00:00Z"
   }
  },
  "fit": {
