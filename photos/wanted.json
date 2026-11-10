@@ -1,35 +1,5 @@
 [
  {
-  "slug": "reale-arena",
-  "name": "Reale Arena",
-  "city": "San Sebastian",
-  "country": "Spain"
- },
- {
-  "slug": "estadio-de-la-ceramica",
-  "name": "Estadio de la Cerámica",
-  "city": "Villarreal",
-  "country": "Spain"
- },
- {
-  "slug": "stade-raymond-kopa",
-  "name": "Stade Raymond Kopa",
-  "city": "Angers",
-  "country": "France"
- },
- {
-  "slug": "stade-marie-marvingt",
-  "name": "Stade Marie-Marvingt",
-  "city": "Le Mans",
-  "country": "France"
- },
- {
-  "slug": "lincoln-financial-field",
-  "name": "Lincoln Financial Field",
-  "city": "Philadelphia",
-  "country": "USA"
- },
- {
   "slug": "mortgage-matchup-center",
   "name": "Mortgage Matchup Center",
   "city": "Phoenix",
