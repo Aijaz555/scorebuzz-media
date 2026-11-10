@@ -53,12 +53,12 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 .pbp{padding:0 14px 0 64px;display:flex;flex-direction:column}
 /* tracker mode (live games): scorebuzz.net court tracker on the left, 3 latest plays on the right */
 .low{display:grid;grid-template-columns:700px 1fr;gap:12px;padding:0 12px 0 12px;height:368px}
-.trk{position:relative;border-radius:12px;overflow:hidden;background:#0b1326;border:2px solid #ffffff22}
+.trk{position:relative;border-radius:0;overflow:hidden;background:#070A14;border:0} /* owner 10 Nov 2026: no border, flush */
 /* NHL (owner 9 Nov 2026): bigger rink tracker, smaller score row to make room */
 .board.nhl .sc{height:130px}.board.nhl .big{font-size:132px}.board.nhl .qt{font-size:32px}
 .board.nhl .low{grid-template-columns:770px 1fr;height:428px}.board.nhl .low .pl{height:140px}.board.nhl .low .pl img{top:48px}
 .board.nhl .low .pl{grid-template-columns:1fr 64px;gap:8px}.board.nhl .low .pl .l1{column-gap:10px;flex-wrap:wrap;white-space:normal;line-height:1.1}.board.nhl .low .pl .s{font-size:26px}
-#trkL{position:absolute;overflow:hidden;border-radius:12px;pointer-events:none}#trkL iframe{position:absolute;border:0;width:1000px;transform-origin:0 0;background:#0b1326}
+#trkL{position:absolute;overflow:hidden;border-radius:0;pointer-events:none;background:#070A14}#trkL iframe{position:absolute;border:0;width:1000px;transform-origin:0 0;background:#070A14}
 .low .pbp{padding:0 0 0 52px}.low .pl{height:122px;grid-template-columns:1fr 92px;padding:0 12px}.low .pl img{left:-48px;top:40px}
 .low .pl .l2{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:22px;line-height:1.25}.low .pl .l1{gap:16px}.low .pl .s{font-size:28px}
 .pl{position:relative;height:63px;display:grid;grid-template-columns:1fr 130px;align-items:center;border-bottom:1px solid #ffffff22;padding:0 16px}
@@ -129,7 +129,7 @@ const lum = (h) => { const n = parseInt(h.slice(1), 16); return (0.299 * (n >> 1
 const darkish = (c, alt) => (lum(c) > 0.7 ? (lum(alt) > 0.7 ? '#1d2a4a' : alt) : c);
 const SPORT = { nhl: 'hockey/nhl', nfl: 'football/nfl', ncaaf: 'football/college-football', mlb: 'baseball/mlb' };
 const SITE = { nhl: 'ice-hockey/nhl', nfl: 'american-football/nfl', ncaaf: 'american-football/college-football' }; // scorebuzz.net trackers
-const CROP = { nhl: { top: 74, vh: 582 }, nfl: { top: 100, vh: 456 }, ncaaf: { top: 100, vh: 456 } }; // same crops as dark.html
+const CROP = { nhl: { top: 65, vh: 517, x: 15, vw: 970 }, nfl: { top: 100, vh: 456, x: 14, vw: 972 }, ncaaf: { top: 100, vh: 456, x: 14, vw: 972 } }; // nhl: new 'live action' rink (10 Nov 2026); nfl: same crop as dark.html
 const NAME = { nhl: 'NHL', nfl: 'NFL', ncaaf: 'College Football', mlb: 'MLB' };
 const ORD = (n) => n + (['th', 'st', 'nd', 'rd'][(n % 100 >> 3 ^ 1 && n % 10) || 0] || 'th');
 const perName = (p) => (league === 'nhl' ? (p <= 3 ? ORD(p) : p === 4 ? 'OT' : 'SO') : league === 'mlb' ? ORD(p) : p <= 4 ? ORD(p) : p === 5 ? 'OT' : `${p - 4}OT`);
@@ -326,10 +326,10 @@ function placeTracker(url) {
   if (!trkF) { const L = document.createElement('div'); L.id = 'trkL'; trkF = document.createElement('iframe'); L.appendChild(trkF); document.body.appendChild(L); }
   if (trkSrc !== url) { trkSrc = url; trkF.src = url + '#trkSlot'; }
   trkF.parentNode.style.display = 'block';
-  const X = 14, VW = 972, { top: TOP, vh: VH } = CROP[league];
+  const { top: TOP, vh: VH, x: X, vw: VW } = CROP[league];
   const m = /scale\(([\d.]+)(?:,\s*([\d.]+))?\)/.exec(document.body.style.transform || ''), sx = m ? +m[1] : 1, sy = m ? +(m[2] || m[1]) : 1;
   const r = box.getBoundingClientRect(), br = document.body.getBoundingClientRect();
-  const left = (r.left - br.left) / sx, top = (r.top - br.top) / sy, w = r.width / sx, h = r.height / sy, k = Math.min(w / VW, h / VH);
+  const left = (r.left - br.left) / sx, top = (r.top - br.top) / sy, w = r.width / sx, h = r.height / sy, k = (league === 'nhl' ? Math.max : Math.min)(w / VW, h / VH);
   Object.assign(trkF.parentNode.style, { left: left + 'px', top: top + 'px', width: w + 'px', height: h + 'px' });
   Object.assign(trkF.style, { height: (TOP + VH + 20) + 'px', left: ((w - VW * k) / 2 - X * k) + 'px', top: ((h - VH * k) / 2 - TOP * k) + 'px', transform: `scale(${k})` });
 }

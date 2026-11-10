@@ -53,9 +53,9 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 .pbp{padding:0 14px 0 64px;display:flex;flex-direction:column}
 /* tracker mode (live games): scorebuzz.net court tracker on the left, 3 latest plays on the right */
 .low{display:grid;grid-template-columns:700px 1fr;gap:12px;padding:0 12px 0 12px;height:368px}
-.trk{position:relative;border-radius:12px;overflow:hidden;background:#0b1326;border:2px solid #ffffff22}
+.trk{position:relative;border-radius:0;overflow:hidden;background:#070A14;border:0} /* owner 10 Nov 2026: no border, flush */
 .trk .cap{position:absolute;left:0;right:0;bottom:0;text-align:center;font:700 16px Inter,sans-serif;letter-spacing:3px;color:var(--mute);text-transform:uppercase;padding:4px;background:#0b1326dd;z-index:2}
-#trkL{position:absolute;overflow:hidden;border-radius:12px;pointer-events:none}#trkL iframe{position:absolute;border:0;width:1000px;transform-origin:0 0;background:#0b1326}
+#trkL{position:absolute;overflow:hidden;border-radius:0;pointer-events:none;background:#070A14}#trkL iframe{position:absolute;border:0;width:1000px;transform-origin:0 0;background:#070A14}
 .low .pbp{padding:0 0 0 52px}.low .pl{height:122px;grid-template-columns:1fr 92px;padding:0 12px}.low .pl img{left:-48px;top:40px}
 .low .pl .l2{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:22px;line-height:1.25}.low .pl .l1{gap:16px}.low .pl .s{font-size:28px}
 .pl{position:relative;height:63px;display:grid;grid-template-columns:1fr 130px;align-items:center;border-bottom:1px solid #ffffff22;padding:0 16px}
@@ -238,7 +238,7 @@ function render(s, sb) {
     <div class="sc"><div class="big ${H.score < A.score ? 'lo' : ''}">${pre ? 0 : H.score}</div>
       <div class="qt"><table><tr><th></th>${qh}<th>T</th></tr>${qr(H)}${qr(A)}</table></div>
       <div class="big ${A.score < H.score ? 'lo' : ''}">${pre ? 0 : A.score}</div></div>
-    ${trkUrl ? `<div class="low"><div class="trk" id="trk"><div class="cap">Live tracker · scorebuzz.net</div></div><div class="pbp">${pbp}</div></div>` : `<div class="pbp">${hasBox || (s.plays || []).length ? pbp : preBox}</div>`}
+    ${trkUrl ? `<div class="low"><div class="trk" id="trk"></div><div class="pbp">${pbp}</div></div>` : `<div class="pbp">${hasBox || (s.plays || []).length ? pbp : preBox}</div>`}
   </div>
   <div class="court">${hasBox ? `<h2>${fin ? 'FINAL BOX SCORE' : 'ON THE COURT'}</h2>${ctab(H)}${ctab(A)}` : `<h2>PRE-GAME</h2>${inj(H)}${inj(A)}`}</div>
   <div class="ldr">${hasBox ? lead('pts', 'POINTS', fgft) + lead('reb', 'REBOUNDS', (p) => `${p.dreb} DREB, ${p.oreb} OREB`) + lead('ast', 'ASSISTS', (p) => `${p.to} TO, ${p.min} MIN`)
@@ -246,17 +246,17 @@ function render(s, sb) {
   placeTracker(trkUrl);
 }
 // the website's live tracker (court + possession bar), cropped out of the match page exactly like dark.html does
-const CROP = { top: 64, vh: 512 }; // nba tracker card crop (page 1000 px wide, sticky header 64 px), measured 6 Nov 2026
+const CROP = { top: 65, vh: 517, x: 15, vw: 970 }; // new 'live action' court (970x582 canvas at x 15, sticky header 64.5 px), measured 10 Nov 2026
 let trkF = null, trkSrc = '';
 function placeTracker(url) {
   const box = $('trk'); if (!box || !url) { if (trkF) trkF.parentNode.style.display = 'none'; return; }
   if (!trkF) { const L = document.createElement('div'); L.id = 'trkL'; trkF = document.createElement('iframe'); L.appendChild(trkF); document.body.appendChild(L); }
   if (trkSrc !== url) { trkSrc = url; trkF.src = url + '#trkSlot'; }
   trkF.parentNode.style.display = 'block';
-  const X = 14, VW = 972, { top: TOP, vh: VH } = CROP;
+  const { top: TOP, vh: VH, x: X, vw: VW } = CROP;
   const m = /scale\(([\d.]+)(?:,\s*([\d.]+))?\)/.exec(document.body.style.transform || ''), sx = m ? +m[1] : 1, sy = m ? +(m[2] || m[1]) : 1;
   const r = box.getBoundingClientRect(), br = document.body.getBoundingClientRect();
-  const left = (r.left - br.left) / sx, top = (r.top - br.top) / sy, w = r.width / sx, h = r.height / sy - 26, k = Math.min(w / VW, h / VH);
+  const left = (r.left - br.left) / sx, top = (r.top - br.top) / sy, w = r.width / sx, h = r.height / sy, k = Math.max(w / VW, h / VH);
   Object.assign(trkF.parentNode.style, { left: left + 'px', top: top + 'px', width: w + 'px', height: h + 'px' });
   Object.assign(trkF.style, { height: (TOP + VH + 20) + 'px', left: ((w - VW * k) / 2 - X * k) + 'px', top: ((h - VH * k) / 2 - TOP * k) + 'px', transform: `scale(${k})` });
 }
