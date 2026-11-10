@@ -105,7 +105,7 @@
   "yt": "2026-11-11T02:30:00",
   "fb": "2026-11-11T02:35:00",
   "title": "NBA Scores Last Night: Wemby 40, Flagg 43, Lakers Win 6th Straight 🏀 #shorts",
-  "description": "Every NBA score from Monday night: the Spurs beat the Suns 122–96 for a ninth straight win behind Victor Wembanyama's 40 points, Cooper Flagg scored 43 as the Mavericks edged the Pacers 125–122, and Luka Doncic led the Lakers past the Hawks 124–114. The Hornets, Pistons, Grizzlies, Rockets and Warriors also won.\n\nNBA scores today and standings: https://scorebuzz.net\n\n#NBA #Wembanyama #CooperFlagg #Lakers",
+  "description": "Every NBA score from Monday night: the Spurs beat the Suns 122–96 for a ninth straight win behind Victor Wembanyama's 40 points, Cooper Flagg scored 43 as the Mavericks edged the Pacers 125–122, and Luka Doncic led the Lakers past the Hawks 124–114. The Warriors routed the Pelicans 138–87, and the Hornets, Pistons, Grizzlies and Rockets also won.\n\nNBA scores today and standings: https://scorebuzz.net\n\n#NBA #Wembanyama #CooperFlagg #Lakers",
   "tags": [
    "nba scores",
    "nba scores today",
@@ -202,10 +202,10 @@
      {
       "home": "Warriors",
       "homeAbbr": "GS",
-      "hs": 133,
+      "hs": 138,
       "away": "Pelicans",
       "awayAbbr": "NO",
-      "as": 83,
+      "as": 87,
       "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png"
      }
@@ -225,7 +225,7 @@
    "sticker": "FINAL",
    "emoji": "🔥"
   },
-  "fbtext": "🏀 Every NBA score from Monday night.\n\nWemby 40 in 25 minutes, Cooper Flagg 43, the Lakers win a sixth straight and Golden State cruise past New Orleans.\n\nBest performance of the night? 👇\n\n#NBA #Wembanyama #Reels",
+  "fbtext": "🏀 Every NBA score from Monday night.\n\nWemby 40 in 25 minutes, Cooper Flagg 43, the Lakers win a sixth straight and the Warriors beat the Pelicans by 51 (138–87).\n\nBest performance of the night? 👇\n\n#NBA #Wembanyama #Reels",
   "time": "2026-11-11T02:30:00"
  },
  {
@@ -621,7 +621,8 @@
    "pacers vs mavericks",
    "dallas mavericks",
    "kyrie irving",
-   "pascal siakam",
+   "indiana pacers",
+   "caleb martin",
    "nba scores today",
    "scorebuzz"
   ],
