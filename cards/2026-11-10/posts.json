@@ -1,0 +1,400 @@
+[
+ {
+  "id": "01-kane-record",
+  "time": "2026-11-10T11:00:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "ENGLAND · NATIONS LEAGUE",
+  "headline": "125 caps. One more and the record is Harry Kane's.",
+  "sub": "Kane is level with Peter Shilton as England's most-capped man. England host Croatia at Wembley on Thursday.",
+  "stat": [
+   "91",
+   "England goals, an all-time record"
+  ],
+  "caption": "🦁 Harry Kane is one appearance away from history.\n\nHe's level with Peter Shilton on 125 England caps, and the record is his if he plays against Croatia at Wembley on Thursday. He's also England's all-time top scorer with 91 goals.\n\nWill anyone ever catch Kane? 👇\n\n#HarryKane #England #ThreeLions"
+ },
+ {
+  "id": "02-england-squad",
+  "time": "2026-11-10T11:55:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "ENGLAND SQUAD · CROATIA & SPAIN",
+  "headline": "Tuchel's big calls",
+  "rows": [
+   [
+    "IN",
+    "Jobe Bellingham",
+    "1st call-up"
+   ],
+   [
+    "IN",
+    "Josh King (19)",
+    "1st call-up"
+   ],
+   [
+    "BACK",
+    "Ben White",
+    "first since March"
+   ],
+   [
+    "OUT",
+    "Cole Palmer",
+    "fit, left out"
+   ],
+   [
+    "OUT",
+    "Phil Foden",
+    "not picked"
+   ],
+   [
+    "OUT",
+    "Kobbie Mainoo",
+    "not picked"
+   ]
+  ],
+  "sub": "Croatia at Wembley on Thursday, then Spain away. One draw sends England to the quarter-finals.",
+  "caption": "📋 Cole Palmer is fit… and not in the England squad.\n\nThomas Tuchel has called up Jobe Bellingham and 19-year-old Josh King for the first time, brought back Ben White, and left out Palmer, Phil Foden and Kobbie Mainoo for Croatia and Spain.\n\nRight call on Palmer? 👇\n\n#England #ColePalmer #ThreeLions"
+ },
+ {
+  "id": "03-europe-leaders",
+  "time": "2026-11-10T13:45:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "WHO'S TOP AT THE INTERNATIONAL BREAK",
+  "headline": "Europe's leaders",
+  "rows": [
+   [
+    "Premier League",
+    "Arsenal",
+    "27 pts"
+   ],
+   [
+    "LaLiga",
+    "Barcelona",
+    "33 pts"
+   ],
+   [
+    "Serie A",
+    "Lazio",
+    "29 pts"
+   ],
+   [
+    "Bundesliga",
+    "Bayern",
+    "21 pts"
+   ],
+   [
+    "Ligue 1",
+    "PSG",
+    "23 pts"
+   ]
+  ],
+  "sub": "Bayern are level on points with Dortmund; Barça are 3 clear of Real Madrid.",
+  "caption": "🏆 Top of the table at the international break:\n\nArsenal (27 pts) in England, Barcelona (33) in Spain, Lazio (29) in Italy, Bayern (21, level with Dortmund) in Germany and PSG (23) in France.\n\nWhich of these leaders WON'T win the title? 👇\n\n#PremierLeague #LaLiga #SerieA"
+ },
+ {
+  "id": "04-bills-vikings",
+  "time": "2026-11-10T14:40:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "home": "Vikings",
+  "homeAbbr": "MIN",
+  "homeScore": 6,
+  "away": "Bills",
+  "awayAbbr": "BUF",
+  "awayScore": 23,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+  "label": "MONDAY NIGHT FOOTBALL",
+  "status": "FINAL",
+  "venue": "U.S. Bank Stadium",
+  "headline": "Bills 7–1. Vikings held to 6.",
+  "sub": "James Cook ran for 107 yards; Carson Wentz went 8 of 25 for 81 yards.",
+  "caption": "🦬 Bills 23, Vikings 6.\n\nJosh Allen threw a touchdown just before halftime, James Cook ran 31 times for 107 yards, and Buffalo picked off Carson Wentz twice. The Bills are 7–1, their best start since 1993.\n\nAre the Bills the AFC favorites now? 👇\n\n#BillsMafia #Skol #MNF"
+ },
+ {
+  "id": "05-nations-thursday",
+  "time": "2026-11-10T16:30:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "UEFA NATIONS LEAGUE · THURSDAY 12 NOV",
+  "headline": "Big games this week",
+  "rows": [
+   [
+    "England",
+    "v",
+    "Croatia"
+   ],
+   [
+    "Italy",
+    "v",
+    "France"
+   ],
+   [
+    "Czechia",
+    "v",
+    "Spain"
+   ],
+   [
+    "Türkiye",
+    "v",
+    "Belgium"
+   ]
+  ],
+  "sub": "England, Italy and Czechia kick off at 19:45 GMT (2:45pm ET). Türkiye v Belgium at 17:00 GMT.",
+  "caption": "⚽ The international break is here, and Thursday is stacked.\n\nEngland v Croatia, Italy v France and Czechia v Spain all kick off at 19:45 GMT (2:45pm ET).\n\nWhich one are you watching? 👇\n\n#NationsLeague #England #Italy"
+ },
+ {
+  "id": "06-bundesliga-race",
+  "time": "2026-11-10T17:25:00",
+  "sport": "football",
+  "league": "bundesliga",
+  "kind": "list",
+  "label": "BUNDESLIGA TABLE · AFTER 9 GAMES",
+  "headline": "Bayern and Dortmund: level and unbeaten",
+  "rows": [
+   [
+    "1",
+    "Bayern Munich",
+    "21 pts"
+   ],
+   [
+    "2",
+    "Dortmund",
+    "21 pts"
+   ],
+   [
+    "3",
+    "Freiburg",
+    "19 pts"
+   ],
+   [
+    "4",
+    "RB Leipzig",
+    "18 pts"
+   ]
+  ],
+  "sub": "Both have six wins and three draws. Nobody has beaten either of them yet.",
+  "caption": "🇩🇪 Bayern and Dortmund can't be separated.\n\nBoth are unbeaten after nine Bundesliga games: six wins, three draws, 21 points. Freiburg are two points back.\n\nWho's top at Christmas? 👇\n\n#Bundesliga #FCBayern #BVB"
+ },
+ {
+  "id": "07-seriea-race",
+  "time": "2026-11-10T19:15:00",
+  "sport": "football",
+  "league": "seriea",
+  "kind": "list",
+  "label": "SERIE A TABLE · AFTER 11 GAMES",
+  "headline": "Three points cover the top three",
+  "rows": [
+   [
+    "1",
+    "Lazio",
+    "29 pts"
+   ],
+   [
+    "2",
+    "Inter",
+    "28 pts"
+   ],
+   [
+    "3",
+    "Roma",
+    "27 pts"
+   ],
+   [
+    "4",
+    "AC Milan",
+    "24 pts"
+   ]
+  ],
+  "sub": "Lazio and Roma are both still unbeaten.",
+  "caption": "🇮🇹 The tightest title race in Europe?\n\nLazio 29, Inter 28, Roma 27 after 11 Serie A games, and Lazio and Roma are both unbeaten. Milan are five points off the top.\n\nWho wins Serie A? 👇\n\n#SerieA #Lazio #Inter"
+ },
+ {
+  "id": "08-mcdavid-streak",
+  "time": "2026-11-10T20:10:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "headline",
+  "label": "NHL · EDMONTON OILERS",
+  "headline": "McDavid: a point in all 19 games",
+  "sub": "Only Gretzky, Heatley and Sundin had started a season with a 19-game point streak.",
+  "stat": [
+   "48",
+   "points: 11 goals, 37 assists"
+  ],
+  "venue": "Rogers Place",
+  "caption": "🔥 Connor McDavid has a point in every game this season: 19 for 19.\n\nHe's the fourth player in NHL history to start a season with a 19-game point streak, joining Wayne Gretzky, Dany Heatley and Mats Sundin. He leads the league with 48 points.\n\nHow long can it go? 👇\n\n#McDavid #Oilers #NHL"
+ },
+ {
+  "id": "09-ufc334",
+  "time": "2026-11-10T22:00:00",
+  "sport": "mma",
+  "league": "ufc",
+  "kind": "headline",
+  "label": "UFC 334 · SATURDAY · MADISON SQUARE GARDEN",
+  "headline": "Two title fights at MSG",
+  "sub": "Heavyweight: Ciryl Gane (14–2) v unbeaten Josh Hokit (10–0). Bantamweight: Kayla Harrison (19–1) v Amanda Nunes (23–5).",
+  "venue": "Madison Square Garden",
+  "caption": "🥊 UFC 334 is on Saturday at Madison Square Garden.\n\nCiryl Gane defends the heavyweight title against unbeaten Josh Hokit, and Kayla Harrison defends her bantamweight belt against the returning Amanda Nunes.\n\nYour picks? 👇\n\n#UFC334 #UFC #AmandaNunes"
+ },
+ {
+  "id": "10-allen-manning",
+  "time": "2026-11-11T00:45:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "NFL · BUFFALO BILLS",
+  "headline": "Josh Allen just tied Peyton Manning",
+  "sub": "322 regular-season touchdowns (232 passing, 88 rushing, 2 receiving): the most in a player's first 10 years. Allen is halfway through year nine.",
+  "stat": [
+   "322",
+   "total touchdowns"
+  ],
+  "caption": "🦬 Josh Allen has tied Peyton Manning.\n\nWith 322 regular-season touchdowns (232 passing, 88 rushing, two receiving), Allen matched Manning's NFL record for a player's first 10 years, and he's only halfway through his ninth season.\n\nIs Allen the best QB in the league right now? 👇\n\n#BillsMafia #JoshAllen #NFL"
+ },
+ {
+  "id": "11-flagg-43",
+  "time": "2026-11-11T01:40:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "home": "Mavericks",
+  "homeAbbr": "DAL",
+  "homeScore": 125,
+  "away": "Pacers",
+  "awayAbbr": "IND",
+  "awayScore": 122,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+  "label": "NBA · DALLAS",
+  "status": "FINAL",
+  "venue": "American Airlines Center",
+  "headline": "Cooper Flagg: 43 points, 10 rebounds",
+  "sub": "Kyrie Irving added 35 with seven 3-pointers. Dallas are 7–4.",
+  "caption": "🔥 Cooper Flagg scored 43.\n\nA season high, plus 10 rebounds, and Kyrie Irving added 35 as the Mavericks came back to beat the Pacers 125–122. Dallas are three games over .500.\n\nHow good will Flagg be? 👇\n\n#CooperFlagg #Mavs #NBA"
+ },
+ {
+  "id": "12-nba-tonight",
+  "time": "2026-11-11T03:30:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · TONIGHT (ET)",
+  "headline": "Six games tonight",
+  "rows": [
+   [
+    "Bucks @ Knicks",
+    "",
+    "7:30pm"
+   ],
+   [
+    "Celtics @ 76ers",
+    "",
+    "8:00pm"
+   ],
+   [
+    "Clippers @ Suns",
+    "",
+    "9:00pm"
+   ],
+   [
+    "Heat @ Jazz",
+    "",
+    "9:00pm"
+   ],
+   [
+    "Magic @ Kings",
+    "",
+    "10:00pm"
+   ],
+   [
+    "Thunder @ Blazers",
+    "",
+    "11:00pm"
+   ]
+  ],
+  "sub": "The 9–2 Sixers host Boston in the late East game.",
+  "caption": "🏀 Six NBA games tonight.\n\nBucks at Knicks tips off at 7:30pm ET, then Celtics at 76ers at 8:00pm, and the Thunder close the night in Portland.\n\nWhich game are you watching? 👇\n\n#NBA #Sixers #Celtics"
+ },
+ {
+  "id": "13-wemby-spurs",
+  "time": "2026-11-11T05:20:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "home": "Suns",
+  "homeAbbr": "PHX",
+  "homeScore": 96,
+  "away": "Spurs",
+  "awayAbbr": "SA",
+  "awayScore": 122,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+  "label": "NBA · PHOENIX",
+  "status": "FINAL",
+  "headline": "Wemby: 40 points, 11 rebounds, 8 blocks",
+  "sub": "15 of 19 from the floor in 25 minutes. The Spurs have won nine straight.",
+  "caption": "👽 Victor Wembanyama: 40 points, 11 rebounds, 8 blocks… in 25 minutes.\n\nHe shot 15 of 19 and the Spurs beat the Suns 122–96 for their ninth straight win. San Antonio are 9–2.\n\nIs Wemby the MVP favorite? 👇\n\n#Wembanyama #Spurs #NBA"
+ },
+ {
+  "id": "14-cfb-saturday",
+  "time": "2026-11-11T07:10:00",
+  "sport": "other",
+  "league": "ncaaf",
+  "kind": "list",
+  "label": "COLLEGE FOOTBALL · SATURDAY · AP RANKINGS",
+  "headline": "Saturday's biggest games",
+  "rows": [
+   [
+    "#15 USC",
+    "at",
+    "#6 Indiana"
+   ],
+   [
+    "#8 Texas",
+    "at",
+    "#24 LSU"
+   ],
+   [
+    "#2 Utah",
+    "at",
+    "#22 Arizona"
+   ],
+   [
+    "Missouri",
+    "at",
+    "#1 Georgia"
+   ],
+   [
+    "#11 Wake Forest",
+    "at",
+    "#25 SMU"
+   ]
+  ],
+  "sub": "Plus #9 Tennessee at Texas A&M and Michigan at #18 Oregon.",
+  "caption": "🏈 Big Saturday in college football.\n\n#15 USC visit #6 Indiana, #8 Texas go to #24 LSU, #2 Utah are at #22 Arizona and #1 Georgia host Missouri (AP rankings).\n\nWhich ranked team goes down? 👇\n\n#CollegeFootball #CFB #Texas"
+ },
+ {
+  "id": "15-lakers-six",
+  "time": "2026-11-11T09:00:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "home": "Hawks",
+  "homeAbbr": "ATL",
+  "homeScore": 114,
+  "away": "Lakers",
+  "awayAbbr": "LAL",
+  "awayScore": 124,
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+  "label": "NBA · ATLANTA",
+  "status": "FINAL",
+  "venue": "State Farm Arena",
+  "headline": "Six straight wins. Lakers 10–2.",
+  "sub": "Luka Doncic had 32 points and 10 assists with Austin Reaves out ill.",
+  "caption": "💜💛 The Lakers have won six in a row.\n\nLuka Doncic had 32 points, eight rebounds and 10 assists, Walker Kessler added 21 and 10, and LA beat Atlanta 124–114 without Austin Reaves. They're 10–2.\n\nAre the Lakers title contenders? 👇\n\n#Lakers #LukaDoncic #NBA"
+ }
+]
