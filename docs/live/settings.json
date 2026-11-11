@@ -26,35 +26,10 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "2": {
-   "league": "nhl",
-   "event": "401892684",
-   "note": "Montreal Canadiens vs Minnesota Wild, 2026-11-11T00:00:00Z"
-  },
-  "3": {
-   "league": "nhl",
-   "event": "401892685",
-   "note": "Ottawa Senators vs Washington Capitals, 2026-11-11T00:00:00Z"
-  },
   "4": {
    "league": "nba",
    "event": "401909964",
    "note": "Sacramento Kings vs Orlando Magic, 2026-11-11T03:00:00Z"
-  },
-  "5": {
-   "league": "nba",
-   "event": "401909960",
-   "note": "New York Knicks vs Milwaukee Bucks, 2026-11-11T00:30:00Z"
-  },
-  "6": {
-   "league": "nhl",
-   "event": "401892686",
-   "note": "Columbus Blue Jackets vs Florida Panthers, 2026-11-11T00:30:00Z"
-  },
-  "7": {
-   "league": "nba",
-   "event": "401909961",
-   "note": "Philadelphia 76ers vs Boston Celtics, 2026-11-11T01:00:00Z"
   },
   "8": {
    "league": "nhl",
