@@ -905,5 +905,15 @@
   "status": "ok",
   "reason": "ok (contrast 87)",
   "at": "2026-11-10T05:26:17+00:00"
+ },
+ "401892685": {
+  "slot": "3",
+  "league": "nhl",
+  "game": "Senators v Capitals",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/senators-vs-capitals-401892685/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 95)",
+  "at": "2026-11-11T00:08:28+00:00"
  }
 }
