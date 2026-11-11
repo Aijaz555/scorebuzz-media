@@ -749,30 +749,108 @@
   "bed": "hype",
   "yt": "2026-11-12T02:35:00",
   "fb": "2026-11-12T05:20:00",
-  "title": "NBA Scores Last Night: Paul George 36, Knicks Rout Bucks 🏀 #shorts",
-  "description": "BOARD_DESC",
+  "title": "NBA Scores Last Night: Blazers Rout Thunder, Paul George 36 🏀 #shorts",
+  "description": "Every NBA score from Tuesday night: the Portland Trail Blazers beat the Oklahoma City Thunder 123–103 behind Damian Lillard's 25 points, Paul George scored 36 as the Boston Celtics won 123–101 in Philadelphia, and the New York Knicks beat the Milwaukee Bucks 117–85. Franz Wagner scored a season-high 33 as the Orlando Magic beat the Sacramento Kings 107–100, the Phoenix Suns beat the LA Clippers 133–110 and the Miami Heat won 115–109 in Utah.\n\nNBA scores today and standings: https://scorebuzz.net\n\n#NBA #PaulGeorge #RipCity #Knicks",
   "tags": [
    "nba scores",
    "nba scores today",
    "nba scores last night",
+   "thunder vs trail blazers",
+   "trail blazers vs thunder",
    "celtics vs 76ers",
    "knicks vs bucks",
+   "magic vs kings",
    "suns vs clippers",
    "heat vs jazz",
-   "thunder vs trail blazers",
-   "paul george",
-   "jalen brunson",
    "scorebuzz"
   ],
-  "scenes": [],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 13.5,
+    "kicker": "NBA · Tuesday night",
+    "title": "Every score",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "Knicks",
+      "homeAbbr": "NY",
+      "hs": 117,
+      "away": "Bucks",
+      "awayAbbr": "MIL",
+      "as": 85,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
+     },
+     {
+      "home": "76ers",
+      "homeAbbr": "PHI",
+      "hs": 101,
+      "away": "Celtics",
+      "awayAbbr": "BOS",
+      "as": 123,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+     },
+     {
+      "home": "Suns",
+      "homeAbbr": "PHX",
+      "hs": 133,
+      "away": "Clippers",
+      "awayAbbr": "LAC",
+      "as": 110,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png"
+     },
+     {
+      "home": "Jazz",
+      "homeAbbr": "UTAH",
+      "hs": 109,
+      "away": "Heat",
+      "awayAbbr": "MIA",
+      "as": 115,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png"
+     },
+     {
+      "home": "Kings",
+      "homeAbbr": "SAC",
+      "hs": 100,
+      "away": "Magic",
+      "awayAbbr": "ORL",
+      "as": 107,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
+     },
+     {
+      "home": "Trail Blazers",
+      "homeAbbr": "POR",
+      "hs": 123,
+      "away": "Thunder",
+      "awayAbbr": "OKC",
+      "as": 103,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Biggest result of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
   "thumb": {
    "kicker": "NBA · Tuesday night",
-   "big": "6",
-   "hook": "Every *score*",
+   "big": "123–103",
+   "hook": "Blazers *stun* OKC",
    "sticker": "FINAL",
-   "emoji": "🏀"
+   "emoji": "🌲"
   },
-  "fbtext": "BOARD_FB",
+  "fbtext": "🏀 Every NBA score from Tuesday night.\n\nThe Blazers beat the Thunder 123–103, Paul George scored 36 in Philly, the Knicks routed the 1–10 Bucks and Franz Wagner dropped a season-high 33 for the Magic.\n\nBiggest result of the night? 👇\n\n#NBA #RipCity #Reels",
   "time": "2026-11-12T02:35:00"
  },
  {
