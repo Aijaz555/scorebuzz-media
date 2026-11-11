@@ -915,5 +915,15 @@
   "status": "ok",
   "reason": "ok (contrast 95)",
   "at": "2026-11-11T00:08:28+00:00"
+ },
+ "401892688": {
+  "slot": "4",
+  "league": "nhl",
+  "game": "Jets v Devils",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/jets-vs-devils-401892688/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 92)",
+  "at": "2026-11-11T00:09:55+00:00"
  }
 }
