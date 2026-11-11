@@ -925,5 +925,15 @@
   "status": "ok",
   "reason": "ok (contrast 92)",
   "at": "2026-11-11T00:09:55+00:00"
+ },
+ "401892683": {
+  "slot": "1",
+  "league": "nhl",
+  "game": "Maple Leafs v Avalanche",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/maple-leafs-vs-avalanche-401892683/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-11T00:18:03+00:00"
  }
 }
