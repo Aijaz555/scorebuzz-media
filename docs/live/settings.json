@@ -25,18 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "11": {
-   "league": "nba",
-   "event": "401909965",
-   "note": "Portland Trail Blazers vs Oklahoma City Thunder, 2026-11-11T04:00:00Z"
-  },
-  "12": {
-   "league": "nhl",
-   "event": "401892689",
-   "note": "Los Angeles Kings vs Nashville Predators, 2026-11-11T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
