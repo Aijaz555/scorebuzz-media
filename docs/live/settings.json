@@ -32,7 +32,7 @@
  },
  "reload": 29,
  "music": {
-  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old.",
+  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old; NBA uses 30-min arena crowd mixes built from Envato Elements recordings the owner licensed (11 Nov 2026), old funk playlist kept as basketball.",
   "playlists": {
    "american_football": {
     "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
@@ -155,12 +155,16 @@
    },
    "nfl_crowd": {
     "ScoreBuzz Stadium NFL A": "6af06c6ef370b34507b9047e"
+   },
+   "basketball_crowd": {
+    "ScoreBuzz Stadium Basketball A": "6af4c0c51ad365c2175fbf57",
+    "ScoreBuzz Stadium Basketball B": "6af4c0c61ad365c2175fbf80"
    }
   },
   "sports": {
    "nfl": "nfl_crowd",
    "ncaaf": "nfl_crowd",
-   "nba": "basketball",
+   "nba": "basketball_crowd",
    "nhl": "hockey",
    "mlb": "baseball",
    "soccer": "soccer",
@@ -193,7 +197,8 @@
   "volumes": {
    "soccer": 6,
    "cricket": 6,
-   "nfl_crowd": 6
+   "nfl_crowd": 6,
+   "basketball_crowd": 6
   }
  },
  "thumbs": false,

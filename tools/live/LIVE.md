@@ -357,7 +357,10 @@ broadcast style. It reads ESPN's public cricket JSON from the browser (`/apis/si
 ## Stadium crowd audio (owner's request, 8 Nov 2026)
 - The owner wants stadium crowd ambience instead of music, sport by sport. Done so far: **nfl** (`music.playlists.nfl_crowd`: ScoreBuzz Stadium NFL A, from one 39 s clip chopped into 12-30 s sections with ±4% speed and L/R variation; NCAAF uses it too), **soccer** (`music.playlists.soccer`:
   ScoreBuzz Stadium Soccer A/B, 30 min each) and **cricket** (`music.playlists.cricket`: ScoreBuzz Stadium Cricket A), volume 6
-  (`music.volumes`). Other sports still use the Kevin MacLeod playlists until the owner supplies crowd recordings.
+  (`music.volumes`). **nba** (11 Nov 2026: `music.playlists.basketball_crowd`: ScoreBuzz Stadium
+  Basketball A/B, 30 min each, built from 3 arena crowd/walla recordings (OCP-0333-75/-80/-93) the owner licensed on Envato
+  Elements; same recipe without cheer overlays, idle walla weighted low; old funk playlist kept as `basketball`). Other sports still use the Kevin MacLeod playlists until the owner supplies crowd recordings.
+- Envato Elements files: licensed for the owner's YouTube use, never commit or redistribute the raw recordings or the mixes.
 - Mixes are built from Pixabay recordings the owner downloads (Pixabay Content License: commercial/YouTube use, no credit; not
   allowed to redistribute the files on their own, so they are NOT committed here). Recipe: loudness-normalise each clip (-18 LUFS),
   chain random 40-110 s sections of the long stadium beds with 5 s equal-power crossfades, overlay cheer clips every 1.5-3 min,
