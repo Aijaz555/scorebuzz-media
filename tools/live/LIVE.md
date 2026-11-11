@@ -364,6 +364,9 @@ broadcast style. It reads ESPN's public cricket JSON from the browser (`/apis/si
 - **nhl** (11 Nov 2026: `music.playlists.hockey_crowd`: ScoreBuzz Hockey Crowd 01-08, the owner's 8 Envato hockey
   game/crowd recordings, each only loudness-normalised (-18 LUFS, MP3 192k), not mixed; played in that order on loop
   (`music.ordered` turns off the per-game shuffle); old music kept as `hockey`).
+- **soccer** (11 Nov 2026, owner: "popular sound for all games, no mix"): `music.playlists.soccer_cheer` = ScoreBuzz Football
+  Crowd Cheer, the owner's 80 s Envato clip uploaded unchanged, looping at volume 3 (it is ~6 dB louder than the
+  normalised crowd tracks). The Pixabay mixes ScoreBuzz Stadium Soccer A/B stay in `music.playlists.soccer`. NFL/NCAAF unchanged.
 - Envato Elements files: licensed for the owner's YouTube use, never commit or redistribute the raw recordings or the mixes.
 - Mixes are built from Pixabay recordings the owner downloads (Pixabay Content License: commercial/YouTube use, no credit; not
   allowed to redistribute the files on their own, so they are NOT committed here). Recipe: loudness-normalise each clip (-18 LUFS),

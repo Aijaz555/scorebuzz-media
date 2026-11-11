@@ -32,7 +32,7 @@
  },
  "reload": 29,
  "music": {
-  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old; NBA uses the 3 Envato arena crowd recordings the owner licensed (11 Nov 2026), unmixed, in a fixed order, old funk playlist kept as basketball. NHL uses 8 Envato hockey crowd recordings (owner, 11 Nov 2026) played in a fixed order, not shuffled (music.ordered), old music kept as hockey.",
+  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old; NBA uses the 3 Envato arena crowd recordings the owner licensed (11 Nov 2026), unmixed, in a fixed order, old funk playlist kept as basketball. NHL uses 8 Envato hockey crowd recordings (owner, 11 Nov 2026) played in a fixed order, not shuffled (music.ordered), old music kept as hockey. Soccer (owner, 11 Nov 2026) loops the single Envato \"Football Crowd Cheer\" clip, uploaded unchanged (louder than the other crowd tracks, so volume 3); the Pixabay mixes are kept as soccer.",
   "playlists": {
    "american_football": {
     "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
@@ -170,6 +170,9 @@
     "ScoreBuzz Hockey Crowd 06": "6af4c5591ad365c21760f02e",
     "ScoreBuzz Hockey Crowd 07": "6af4c55a1ad365c21760f040",
     "ScoreBuzz Hockey Crowd 08": "6af4c55b1ad365c21760f05d"
+   },
+   "soccer_cheer": {
+    "ScoreBuzz Football Crowd Cheer": "6af4c6b31ad365c217614ea4"
    }
   },
   "sports": {
@@ -178,7 +181,7 @@
    "nba": "basketball_crowd",
    "nhl": "hockey_crowd",
    "mlb": "baseball",
-   "soccer": "soccer",
+   "soccer": "soccer_cheer",
    "cricket": "cricket"
   },
   "layers": {
@@ -210,7 +213,8 @@
    "cricket": 6,
    "nfl_crowd": 6,
    "basketball_crowd": 6,
-   "hockey_crowd": 6
+   "hockey_crowd": 6,
+   "soccer_cheer": 3
   },
   "ordered": [
    "hockey_crowd",
