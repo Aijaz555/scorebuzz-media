@@ -357,9 +357,10 @@ broadcast style. It reads ESPN's public cricket JSON from the browser (`/apis/si
 ## Stadium crowd audio (owner's request, 8 Nov 2026)
 - The owner wants stadium crowd ambience instead of music, sport by sport. Done so far: **nfl** (`music.playlists.nfl_crowd`: ScoreBuzz Stadium NFL A, from one 39 s clip chopped into 12-30 s sections with ±4% speed and L/R variation; NCAAF uses it too), **soccer** (`music.playlists.soccer`:
   ScoreBuzz Stadium Soccer A/B, 30 min each) and **cricket** (`music.playlists.cricket`: ScoreBuzz Stadium Cricket A), volume 6
-  (`music.volumes`). **nba** (11 Nov 2026: `music.playlists.basketball_crowd`: ScoreBuzz Stadium
-  Basketball A/B, 30 min each, built from 3 arena crowd/walla recordings (OCP-0333-75/-80/-93) the owner licensed on Envato
-  Elements; same recipe without cheer overlays, idle walla weighted low; old funk playlist kept as `basketball`). Other sports still use the Kevin MacLeod playlists until the owner supplies crowd recordings.
+  (`music.volumes`). **nba** (11 Nov 2026: `music.playlists.basketball_crowd`: ScoreBuzz
+  Basketball Crowd 01-03, the owner's 3 Envato arena crowd/walla recordings (OCP-0333-80/-93/-75), each only
+  loudness-normalised, not mixed, played in that order on loop via `music.ordered`; the earlier mixed versions
+  Stadium Basketball A/B were dropped at the owner's request; old funk playlist kept as `basketball`). Other sports still use the Kevin MacLeod playlists until the owner supplies crowd recordings.
 - **nhl** (11 Nov 2026: `music.playlists.hockey_crowd`: ScoreBuzz Hockey Crowd 01-08, the owner's 8 Envato hockey
   game/crowd recordings, each only loudness-normalised (-18 LUFS, MP3 192k), not mixed; played in that order on loop
   (`music.ordered` turns off the per-game shuffle); old music kept as `hockey`).
