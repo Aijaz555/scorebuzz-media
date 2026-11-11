@@ -935,5 +935,15 @@
   "status": "ok",
   "reason": "ok (contrast 86)",
   "at": "2026-11-11T00:18:03+00:00"
+ },
+ "401892684": {
+  "slot": "2",
+  "league": "nhl",
+  "game": "Canadiens v Wild",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/canadiens-vs-wild-401892684/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 85)",
+  "at": "2026-11-11T00:26:10+00:00"
  }
 }
