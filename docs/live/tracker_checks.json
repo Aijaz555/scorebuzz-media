@@ -986,26 +986,6 @@
   "reason": "ok (contrast 81)",
   "at": "2026-11-11T03:45:28+00:00"
  },
- "401909962": {
-  "slot": "9",
-  "league": "nba",
-  "game": "Suns v Clippers",
-  "url": "https://scorebuzz.net/basketball/nba/suns-vs-clippers-401909962/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-11T03:53:37+00:00"
- },
- "401909963": {
-  "slot": "10",
-  "league": "nba",
-  "game": "Jazz v Heat",
-  "url": "https://scorebuzz.net/basketball/nba/jazz-vs-heat-401909963/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-11T03:53:40+00:00"
- },
  "401909964": {
   "slot": "4",
   "league": "nba",
@@ -1035,5 +1015,25 @@
   "status": "ok",
   "reason": "ok (contrast 81)",
   "at": "2026-11-11T04:17:54+00:00"
+ },
+ "401909962": {
+  "slot": "9",
+  "league": "nba",
+  "game": "Suns v Clippers",
+  "url": "https://scorebuzz.net/basketball/nba/suns-vs-clippers-401909962/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-11T04:26:00+00:00"
+ },
+ "401909963": {
+  "slot": "10",
+  "league": "nba",
+  "game": "Jazz v Heat",
+  "url": "https://scorebuzz.net/basketball/nba/jazz-vs-heat-401909963/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-11T04:26:03+00:00"
  }
 }
