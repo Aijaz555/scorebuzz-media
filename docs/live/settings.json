@@ -26,16 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "4": {
-   "league": "nba",
-   "event": "401909964",
-   "note": "Sacramento Kings vs Orlando Magic, 2026-11-11T03:00:00Z"
-  },
-  "10": {
-   "league": "nba",
-   "event": "401909963",
-   "note": "Utah Jazz vs Miami Heat, 2026-11-11T02:00:00Z"
-  },
   "11": {
    "league": "nba",
    "event": "401909965",
