@@ -906,6 +906,16 @@
   "reason": "ok (contrast 87)",
   "at": "2026-11-10T05:26:17+00:00"
  },
+ "401892683": {
+  "slot": "1",
+  "league": "nhl",
+  "game": "Maple Leafs v Avalanche",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/maple-leafs-vs-avalanche-401892683/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 80)",
+  "at": "2026-11-11T01:35:09+00:00"
+ },
  "401892684": {
   "slot": "2",
   "league": "nhl",
@@ -913,8 +923,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/canadiens-vs-wild-401892684/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 85)",
-  "at": "2026-11-11T00:26:10+00:00"
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-11T01:35:13+00:00"
  },
  "401892685": {
   "slot": "3",
@@ -923,8 +933,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/senators-vs-capitals-401892685/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 86)",
-  "at": "2026-11-11T00:42:20+00:00"
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-11T01:35:16+00:00"
  },
  "401892688": {
   "slot": "4",
@@ -934,7 +944,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 83)",
-  "at": "2026-11-11T00:42:23+00:00"
+  "at": "2026-11-11T01:35:19+00:00"
  },
  "401909960": {
   "slot": "5",
@@ -944,7 +954,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 65)",
-  "at": "2026-11-11T00:42:26+00:00"
+  "at": "2026-11-11T01:35:22+00:00"
  },
  "401892686": {
   "slot": "6",
@@ -953,17 +963,27 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/blue-jackets-vs-panthers-401892686/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 81)",
-  "at": "2026-11-11T00:42:29+00:00"
+  "reason": "ok (contrast 85)",
+  "at": "2026-11-11T01:35:25+00:00"
  },
- "401892683": {
-  "slot": "1",
-  "league": "nhl",
-  "game": "Maple Leafs v Avalanche",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/maple-leafs-vs-avalanche-401892683/",
+ "401909961": {
+  "slot": "7",
+  "league": "nba",
+  "game": "76ers v Celtics",
+  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-celtics-401909961/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-11T00:50:36+00:00"
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-11T01:35:28+00:00"
+ },
+ "401892687": {
+  "slot": "8",
+  "league": "nhl",
+  "game": "Blues v Red Wings",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blues-vs-red-wings-401892687/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-11T01:35:31+00:00"
  }
 }
