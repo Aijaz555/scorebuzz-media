@@ -1,0 +1,358 @@
+[
+ {
+  "id": "01-pl-top4",
+  "time": "2026-11-11T11:00:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · AFTER 10 GAMES",
+  "headline": "Arsenal 5 clear, Brighton second",
+  "rows": [
+   [
+    "1",
+    "Arsenal",
+    "27 pts"
+   ],
+   [
+    "2",
+    "Brighton",
+    "22 pts"
+   ],
+   [
+    "3",
+    "Man City",
+    "21 pts"
+   ],
+   [
+    "4",
+    "Liverpool",
+    "18 pts"
+   ],
+   [
+    "5",
+    "Chelsea",
+    "16 pts"
+   ]
+  ],
+  "sub": "Arsenal have won 9 of 10. Brighton have the best goal difference in the league (+19).",
+  "caption": "🔴 Arsenal lead the Premier League by five points at the international break.\n\nNine wins from 10, 27 points. And the team second? Brighton, on 22 with the best goal difference in the league (+19). Man City are third, Liverpool fourth.\n\nCan Brighton stay in the title race? 👇\n\n#PremierLeague #Arsenal #Brighton"
+ },
+ {
+  "id": "02-manutd-18th",
+  "time": "2026-11-11T11:55:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · RELEGATION ZONE",
+  "headline": "Man United are 18th",
+  "rows": [
+   [
+    "17",
+    "Coventry City",
+    "9 pts"
+   ],
+   [
+    "18",
+    "Man United",
+    "8 pts"
+   ],
+   [
+    "19",
+    "Sunderland",
+    "8 pts"
+   ],
+   [
+    "20",
+    "Crystal Palace",
+    "7 pts"
+   ]
+  ],
+  "sub": "One win in 10 league games. ESPN reports the club's bosses meet Sir Jim Ratcliffe this week to discuss Michael Carrick's future.",
+  "caption": "😬 Manchester United are in the Premier League relegation zone.\n\nOne win, five draws and four defeats in 10 games leave them 18th on 8 points. ESPN reports United executives meet Sir Jim Ratcliffe this week to discuss Michael Carrick's future.\n\nShould Carrick get more time? 👇\n\n#MUFC #ManUnited #PremierLeague"
+ },
+ {
+  "id": "03-france-injuries",
+  "time": "2026-11-11T13:45:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "FRANCE · NATIONS LEAGUE",
+  "headline": "Thuram and Tchouaméni are out for France",
+  "sub": "Marcus Thuram (hamstring) and Aurélien Tchouaméni have left Zinedine Zidane's squad before Italy away on Thursday and Türkiye on Sunday.",
+  "venue": "San Siro",
+  "caption": "🇫🇷 Bad news for Zidane's France.\n\nMarcus Thuram is out of both Nations League games with a hamstring injury, and Aurélien Tchouaméni has left the squad too. France play Italy at San Siro on Thursday, then host Türkiye on Sunday.\n\nWho wins Italy v France? 👇\n\n#France #NationsLeague #Italy"
+ },
+ {
+  "id": "04-cubarsi-golden-boy",
+  "time": "2026-11-11T14:40:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "GOLDEN BOY 2026",
+  "headline": "Pau Cubarsí wins the 2026 Golden Boy",
+  "sub": "Barcelona's centre-back has won the 2026 Golden Boy, the award for the best under-21 men's player in the world.",
+  "caption": "🏆 Pau Cubarsí has won the 2026 Golden Boy.\n\nThe Barcelona centre-back takes the award given to the best under-21 men's player in the world.\n\nRight winner? Who was your pick? 👇\n\n#Cubarsi #Barca #GoldenBoy"
+ },
+ {
+  "id": "05-yamal-out",
+  "time": "2026-11-11T16:30:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "SPAIN · NATIONS LEAGUE",
+  "headline": "No Lamine Yamal for Spain on Thursday",
+  "sub": "A knee injury rules him out of Czechia v Spain, the Spanish federation says. England visit Spain on Sunday.",
+  "venue": "Generali Arena",
+  "caption": "🇪🇸 Spain will be without Lamine Yamal on Thursday.\n\nThe Barcelona winger misses the Nations League game in Czechia with a knee injury, the Spanish federation announced. Spain host England on Sunday.\n\nWill Yamal be back for England? 👇\n\n#Spain #LamineYamal #NationsLeague"
+ },
+ {
+  "id": "06-messi-golden-boot",
+  "time": "2026-11-11T17:25:00",
+  "sport": "football",
+  "league": "mls",
+  "kind": "headline",
+  "label": "MLS GOLDEN BOOT",
+  "headline": "Messi: the first back-to-back Golden Boot winner in MLS history",
+  "stat": [
+   "26",
+   "regular-season goals for Inter Miami"
+  ],
+  "sub": "",
+  "caption": "🐐 Lionel Messi has done something nobody in MLS had done before.\n\nHe's the first player to win back-to-back MLS Golden Boots, finishing the regular season with 26 goals for Inter Miami.\n\nCan Inter Miami win MLS Cup? 👇\n\n#Messi #InterMiami #MLS"
+ },
+ {
+  "id": "07-top-scorers",
+  "time": "2026-11-11T19:15:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "EUROPE'S SURPRISE SCORERS",
+  "headline": "Two names you need to know",
+  "rows": [
+   [
+    "Ligue 1",
+    "Lassine Sinayoko",
+    "9 in 10"
+   ],
+   [
+    "LaLiga",
+    "Yassir Zabiri",
+    "9 in 12"
+   ]
+  ],
+  "sub": "Sinayoko (Mali) leads Ligue 1. Zabiri (Morocco) is behind only Raphinha, Mbappé and Lamine Yamal in LaLiga.",
+  "caption": "⚽ Nine goals each, and you might not have heard of them.\n\nMali's Lassine Sinayoko leads Ligue 1 with nine in 10 games. Morocco's Yassir Zabiri has nine in 12 in LaLiga, behind only Raphinha, Kylian Mbappé and Lamine Yamal.\n\nWhich big club should sign one of them? 👇\n\n#Ligue1 #LaLiga #Football"
+ },
+ {
+  "id": "08-nations-weekend",
+  "time": "2026-11-11T20:10:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "NATIONS LEAGUE · SUN & MON",
+  "headline": "The big games after Thursday",
+  "rows": [
+   [
+    "SUN",
+    "Spain v England",
+    "19:45 GMT"
+   ],
+   [
+    "SUN",
+    "Belgium v Italy",
+    "19:45 GMT"
+   ],
+   [
+    "SUN",
+    "France v Türkiye",
+    "19:45 GMT"
+   ],
+   [
+    "MON",
+    "Germany v Netherlands",
+    "19:45 GMT"
+   ]
+  ],
+  "sub": "Spain v England is at the Metropolitano in Madrid; Germany host the Dutch in Berlin. 19:45 GMT = 2:45pm ET.",
+  "caption": "📅 Thursday is only the start.\n\nOn Sunday it's Spain v England in Madrid, Belgium v Italy and France v Türkiye, all at 19:45 GMT (2:45pm ET). Then Germany host the Netherlands in Berlin on Monday.\n\nWhich game are you most excited for? 👇\n\n#NationsLeague #England #Spain"
+ },
+ {
+  "id": "09-trade-deadline",
+  "time": "2026-11-11T22:00:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "NFL TRADE DEADLINE",
+  "headline": "The big moves",
+  "rows": [
+   [
+    "QB",
+    "Kirk Cousins",
+    "Raiders → Vikings"
+   ],
+   [
+    "WR",
+    "Josh Downs",
+    "→ Chiefs"
+   ],
+   [
+    "QB",
+    "Fernando Mendoza",
+    "now the Raiders' starter"
+   ],
+   [
+    "RB",
+    "Jonathan Taylor",
+    "stays in Indy"
+   ]
+  ],
+  "sub": "18 in-season trades this year, six of them on deadline day.",
+  "caption": "🏈 The NFL trade deadline has passed.\n\nThe Raiders traded Kirk Cousins to the Vikings and named No. 1 pick Fernando Mendoza their starter, Josh Downs joined the Chiefs, and Jonathan Taylor and Daniel Jones stayed with the Colts.\n\nWho won the deadline? 👇\n\n#NFL #Vikings #Raiders"
+ },
+ {
+  "id": "10-cfp-top12",
+  "time": "2026-11-11T22:55:00",
+  "sport": "other",
+  "league": "ncaaf",
+  "kind": "list",
+  "label": "CFP RANKINGS · 2ND RELEASE",
+  "headline": "Georgia are No. 1",
+  "rows": [
+   [
+    "1",
+    "Georgia",
+    "8–1"
+   ],
+   [
+    "2",
+    "Utah",
+    "9–0"
+   ],
+   [
+    "3",
+    "Alabama",
+    "7–2"
+   ],
+   [
+    "4",
+    "UCLA",
+    "9–0"
+   ],
+   [
+    "5",
+    "Notre Dame",
+    "8–1"
+   ],
+   [
+    "6",
+    "Texas",
+    "7–2"
+   ]
+  ],
+  "sub": "Miami drop from 1st to 7th and Indiana from 4th to 9th. Notre Dame jump from 11th to 5th.",
+  "caption": "🏈 Georgia are the new No. 1 in the College Football Playoff rankings.\n\nUtah, Alabama and UCLA complete the top four. Miami fell from 1st to 7th, Indiana from 4th to 9th, and Notre Dame jumped from 11th to 5th.\n\nWho's too high? 👇\n\n#CFB #CollegeFootball #GoDawgs"
+ },
+ {
+  "id": "11-knicks-bucks",
+  "time": "2026-11-12T00:45:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · TUESDAY",
+  "home": "Knicks",
+  "homeScore": 117,
+  "away": "Bucks",
+  "awayScore": 85,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+  "headline": "Four straight for the Knicks",
+  "sub": "Brunson 23, Towns 21 & 16 rebounds, Anunoby five 3s. The Bucks have lost seven in a row and are 1–10.",
+  "venue": "Madison Square Garden",
+  "caption": "🗽 Knicks 117, Bucks 85.\n\nJalen Brunson scored 23, Karl-Anthony Towns had 21 and 16 rebounds, and OG Anunoby hit five 3s. New York have won four straight; Milwaukee have lost seven in a row and are 1–10.\n\nHow worried should Bucks fans be? 👇\n\n#Knicks #Bucks #NBA"
+ },
+ {
+  "id": "12-jets-hellebuyck",
+  "time": "2026-11-12T02:35:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · WINNIPEG",
+  "home": "Jets",
+  "homeScore": 4,
+  "away": "Devils",
+  "awayScore": 2,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
+  "headline": "Hellebuyck booed. Jets win.",
+  "sub": "The ex-Jets goalie didn't play in his return. Dawson Mercer and Kyle Connor scored twice each.",
+  "venue": "Canada Life Centre",
+  "caption": "🔥 Winnipeg booed Connor Hellebuyck… then beat his new team.\n\nThe former Jets goalie was booed in warmups but didn't play. Dawson Mercer and Kyle Connor scored twice each in a 4–2 win that ended the Devils' five-game winning streak.\n\nFair reception? 👇\n\n#GoJetsGo #NJDevils #NHL"
+ },
+ {
+  "id": "13-nba-tonight",
+  "time": "2026-11-12T04:25:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · TONIGHT (ET)",
+  "headline": "10 games tonight",
+  "rows": [
+   [
+    "7:00",
+    "Celtics at Raptors",
+    "9–2 Boston"
+   ],
+   [
+    "8:00",
+    "Lakers at Bucks",
+    "10–2 vs 1–10"
+   ],
+   [
+    "8:00",
+    "Spurs at Bulls",
+    "Wemby & 9–2 SA"
+   ],
+   [
+    "9:30",
+    "Warriors at Rockets",
+    "8–3 v 8–3"
+   ],
+   [
+    "10:00",
+    "Thunder at Blazers",
+    "8–2 OKC"
+   ]
+  ],
+  "sub": "Also Cavaliers at Knicks, Nuggets at Grizzlies and more.",
+  "caption": "🏀 10 NBA games tonight.\n\nThe Lakers (10–2) visit the 1–10 Bucks, Wemby's Spurs (9–2) are in Chicago, and the Warriors and Rockets, both 8–3, meet at 9:30pm ET.\n\nWhich game are you watching? 👇\n\n#NBA #Lakers #Spurs"
+ },
+ {
+  "id": "14-mcdavid-20",
+  "time": "2026-11-12T06:15:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "headline",
+  "label": "NHL · TONIGHT, 9PM ET",
+  "headline": "McDavid goes for 20 in a row",
+  "sub": "Connor McDavid has a point in all 19 Oilers games this season. Philadelphia visit Edmonton tonight.",
+  "stat": [
+   "19",
+   "straight games with a point"
+  ],
+  "venue": "Rogers Place",
+  "caption": "🔥 Can anyone stop Connor McDavid?\n\nHe has a point in all 19 games this season, and the Flyers visit Edmonton tonight at 9pm ET. Wayne Gretzky's record streak was 51 games in 1983–84.\n\nDoes McDavid make it 20? 👇\n\n#McDavid #Oilers #NHL"
+ },
+ {
+  "id": "15-tnf-preview",
+  "time": "2026-11-12T08:05:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "THURSDAY NIGHT FOOTBALL · 8:15PM ET",
+  "headline": "Commanders at Giants",
+  "sub": "Week 10 kicks off with an NFC East game at MetLife Stadium. The Giants are 5–2–1, Washington 2–5–1.",
+  "venue": "MetLife Stadium",
+  "caption": "🏈 Week 10 kicks off on Thursday night.\n\nThe Giants (5–2–1) host the Commanders (2–5–1) at MetLife Stadium at 8:15pm ET.\n\nGiants or Commanders? Score prediction 👇\n\n#NFL #TNF #Giants",
+  "stat": [
+   "8:15",
+   "pm ET Thursday"
+  ]
+ }
+]
