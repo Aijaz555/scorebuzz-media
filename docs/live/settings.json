@@ -65,6 +65,16 @@
    "league": "nhl",
    "event": "401892687",
    "note": "St. Louis Blues vs Detroit Red Wings, 2026-11-11T01:00:00Z"
+  },
+  "9": {
+   "league": "nba",
+   "event": "401909962",
+   "note": "Phoenix Suns vs LA Clippers, 2026-11-11T02:00:00Z"
+  },
+  "10": {
+   "league": "nba",
+   "event": "401909963",
+   "note": "Utah Jazz vs Miami Heat, 2026-11-11T02:00:00Z"
   }
  },
  "fit": {
