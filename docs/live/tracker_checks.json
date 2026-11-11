@@ -1013,8 +1013,8 @@
   "url": "https://scorebuzz.net/basketball/nba/kings-vs-magic-401909964/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-11T04:50:33+00:00"
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-11T05:22:55+00:00"
  },
  "401909965": {
   "slot": "11",
@@ -1024,7 +1024,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 64)",
-  "at": "2026-11-11T04:50:37+00:00"
+  "at": "2026-11-11T05:22:58+00:00"
  },
  "401892689": {
   "slot": "12",
@@ -1033,7 +1033,7 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-predators-401892689/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-11T04:50:40+00:00"
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-11T05:23:02+00:00"
  }
 }
