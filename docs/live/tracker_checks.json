@@ -966,16 +966,6 @@
   "reason": "ok (contrast 82)",
   "at": "2026-11-11T02:42:19+00:00"
  },
- "401909964": {
-  "slot": "4",
-  "league": "nba",
-  "game": "Kings v Magic",
-  "url": "https://scorebuzz.net/basketball/nba/kings-vs-magic-401909964/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-11T03:14:52+00:00"
- },
  "401909961": {
   "slot": "7",
   "league": "nba",
@@ -985,26 +975,6 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-11T03:14:55+00:00"
- },
- "401892687": {
-  "slot": "8",
-  "league": "nhl",
-  "game": "Blues v Red Wings",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/blues-vs-red-wings-401892687/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-11T03:14:58+00:00"
- },
- "401892689": {
-  "slot": "12",
-  "league": "nhl",
-  "game": "Kings v Predators",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-predators-401892689/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 82)",
-  "at": "2026-11-11T03:15:02+00:00"
  },
  "401909962": {
   "slot": "9",
@@ -1025,5 +995,35 @@
   "status": "ok",
   "reason": "ok (contrast 66)",
   "at": "2026-11-11T03:23:12+00:00"
+ },
+ "401909964": {
+  "slot": "4",
+  "league": "nba",
+  "game": "Kings v Magic",
+  "url": "https://scorebuzz.net/basketball/nba/kings-vs-magic-401909964/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-11T03:45:25+00:00"
+ },
+ "401892687": {
+  "slot": "8",
+  "league": "nhl",
+  "game": "Blues v Red Wings",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blues-vs-red-wings-401892687/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-11T03:45:28+00:00"
+ },
+ "401892689": {
+  "slot": "12",
+  "league": "nhl",
+  "game": "Kings v Predators",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-predators-401892689/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-11T03:45:31+00:00"
  }
 }
