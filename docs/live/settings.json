@@ -50,6 +50,26 @@
    "league": "nhl",
    "event": "401892691",
    "note": "Calgary Flames vs New York Rangers, 2026-11-12T00:30:00Z"
+  },
+  "6": {
+   "league": "nba",
+   "event": "401909971",
+   "note": "Milwaukee Bucks vs Los Angeles Lakers, 2026-11-12T01:00:00Z"
+  },
+  "7": {
+   "league": "nba",
+   "event": "401909969",
+   "note": "Chicago Bulls vs San Antonio Spurs, 2026-11-12T01:00:00Z"
+  },
+  "8": {
+   "league": "nba",
+   "event": "401909970",
+   "note": "Memphis Grizzlies vs Denver Nuggets, 2026-11-12T01:00:00Z"
+  },
+  "9": {
+   "league": "nba",
+   "event": "401909972",
+   "note": "New Orleans Pelicans vs Brooklyn Nets, 2026-11-12T01:00:00Z"
   }
  },
  "fit": {
