@@ -32,7 +32,7 @@
  },
  "reload": 29,
  "music": {
-  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old; NBA uses the 3 Envato arena crowd recordings the owner licensed (11 Nov 2026), unmixed, in a fixed order, old funk playlist kept as basketball. NHL uses 8 Envato hockey crowd recordings (owner, 11 Nov 2026) played in a fixed order, not shuffled (music.ordered), old music kept as hockey. Soccer (owner, 11 Nov 2026) loops the single Envato \"Football Crowd Cheer\" clip, uploaded unchanged (louder than the other crowd tracks, volume 4 per owner); the Pixabay mixes are kept as soccer.",
+  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old; NBA uses the 8 Envato arena crowd recordings the owner licensed (11 Nov 2026), unmixed, in a fixed order, old funk playlist kept as basketball. NHL uses 8 Envato hockey crowd recordings (owner, 11 Nov 2026) played in a fixed order, not shuffled (music.ordered), old music kept as hockey. Soccer (owner, 11 Nov 2026) loops the single Envato \"Football Crowd Cheer\" clip, uploaded unchanged (louder than the other crowd tracks, volume 4 per owner); the Pixabay mixes are kept as soccer.",
   "playlists": {
    "american_football": {
     "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
@@ -159,7 +159,12 @@
    "basketball_crowd": {
     "ScoreBuzz Basketball Crowd 01": "6af4c6081ad365c217611fb2",
     "ScoreBuzz Basketball Crowd 02": "6af4c6081ad365c217611fd8",
-    "ScoreBuzz Basketball Crowd 03": "6af4c6091ad365c21761204a"
+    "ScoreBuzz Basketball Crowd 03": "6af4c6091ad365c21761204a",
+    "ScoreBuzz Basketball Crowd 04": "6af4d0641ad365c21763e933",
+    "ScoreBuzz Basketball Crowd 05": "6af4d0651ad365c21763e949",
+    "ScoreBuzz Basketball Crowd 06": "6af4d0661ad365c21763e9fa",
+    "ScoreBuzz Basketball Crowd 07": "6af4d0671ad365c21763ea95",
+    "ScoreBuzz Basketball Crowd 08": "6af4d0671ad365c21763eab3"
    },
    "hockey_crowd": {
     "ScoreBuzz Hockey Crowd 01": "6af4c5571ad365c21760efa6",
