@@ -25,7 +25,33 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "nba",
+   "event": "401909968",
+   "note": "Toronto Raptors vs Boston Celtics, 2026-11-12T00:00:00Z"
+  },
+  "2": {
+   "league": "nba",
+   "event": "401909966",
+   "note": "Indiana Pacers vs Washington Wizards, 2026-11-12T00:00:00Z"
+  },
+  "3": {
+   "league": "nba",
+   "event": "401909967",
+   "note": "New York Knicks vs Cleveland Cavaliers, 2026-11-12T00:00:00Z"
+  },
+  "4": {
+   "league": "nhl",
+   "event": "401892690",
+   "note": "Buffalo Sabres vs Tampa Bay Lightning, 2026-11-12T00:00:00Z"
+  },
+  "5": {
+   "league": "nhl",
+   "event": "401892691",
+   "note": "Calgary Flames vs New York Rangers, 2026-11-12T00:30:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
