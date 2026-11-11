@@ -1,0 +1,860 @@
+[
+ {
+  "id": "s01-ev-nations-winners",
+  "sport": "football",
+  "bed": "anthem",
+  "evergreen": true,
+  "yt": "2026-11-11T14:35:00",
+  "fb": "2026-11-11T12:50:00",
+  "title": "Every UEFA Nations League Winner 🏆 England Have Never Won It #shorts",
+  "description": "Every UEFA Nations League winner since the competition began: Portugal beat the Netherlands 1–0 in Porto in 2019, France beat Spain 2–1 in Milan in 2021, Spain beat Croatia on penalties in Rotterdam in 2023, and Portugal beat Spain on penalties in Munich in 2025. Portugal are the only two-time winners; England's best finish is third in 2019. The Nations League returns this week with England vs Croatia and Italy vs France.\n\nNations League fixtures, results and live scores: https://scorebuzz.net\n\n#NationsLeague #Portugal #Spain #England",
+  "tags": [
+   "uefa nations league winners",
+   "nations league winners list",
+   "nations league final",
+   "portugal nations league",
+   "spain nations league",
+   "france nations league",
+   "england vs croatia",
+   "italy vs france",
+   "nations league history",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "UEFA Nations League",
+    "title": "Only 3 countries have ever won it",
+    "sub": "And England aren't one of them"
+   },
+   {
+    "type": "list",
+    "dur": 6.0,
+    "label": "Every Nations League final",
+    "title": "The winners",
+    "rows": [
+     [
+      "2019",
+      "Portugal",
+      "1–0 Netherlands"
+     ],
+     [
+      "2021",
+      "France",
+      "2–1 Spain"
+     ],
+     [
+      "2023",
+      "Spain",
+      "0–0 Croatia, 5–4 pens"
+     ],
+     [
+      "2025",
+      "Portugal",
+      "2–2 Spain, 5–3 pens"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Portugal",
+    "value": "2",
+    "unit": "titles",
+    "text": "The only country to win it twice (2019 and 2025)"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "2025 final · Munich",
+    "title": "Ronaldo scored the equaliser",
+    "sub": "Diogo Costa saved from Morata and Rúben Neves scored the winning penalty"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "England's best",
+    "title": "3rd place in 2019",
+    "sub": "They beat Switzerland 6–5 on penalties in the third-place play-off"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins it next?",
+    "sub": "Follow ScoreBuzz for Nations League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "UEFA Nations League",
+   "big": "3",
+   "hook": "Only 3 *winners* ever",
+   "sticker": "HISTORY",
+   "emoji": "🏆"
+  },
+  "fbtext": "🏆 Only three countries have ever won the Nations League.\n\nPortugal (2019 and 2025), France (2021) and Spain (2023). England's best is third place in 2019, and they host Croatia at Wembley on Thursday.\n\nWho wins it next? 👇\n\n#NationsLeague #England #Reels",
+  "time": "2026-11-11T14:35:00"
+ },
+ {
+  "id": "s02-manutd-relegation",
+  "sport": "football",
+  "league": "epl",
+  "bed": "drama",
+  "venue": "Old Trafford",
+  "yt": "2026-11-11T16:55:00",
+  "fb": "2026-11-11T18:20:00",
+  "title": "Man United in the Relegation Zone: Premier League Table 😬 #shorts",
+  "description": "Manchester United are 18th in the Premier League table after 10 games, with one win, five draws and four defeats for 8 points, level with Sunderland and one point behind Coventry City. ESPN reports United executives are meeting minority owner Sir Jim Ratcliffe this week to discuss head coach Michael Carrick's future, and that USMNT coach Mauricio Pochettino is the favoured candidate if he goes.\n\nPremier League table and live scores: https://scorebuzz.net\n\n#MUFC #ManUnited #PremierLeague #Carrick",
+  "tags": [
+   "man united",
+   "manchester united",
+   "premier league table",
+   "man united relegation",
+   "michael carrick",
+   "mauricio pochettino",
+   "pochettino man united",
+   "premier league relegation zone",
+   "sunderland",
+   "coventry city",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Premier League",
+    "title": "Man United are in the relegation zone",
+    "sub": "After 10 games"
+   },
+   {
+    "type": "table",
+    "dur": 6.0,
+    "label": "Premier League · bottom six",
+    "cols": [
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      15,
+      "Fulham",
+      2,
+      4,
+      4,
+      10
+     ],
+     [
+      16,
+      "Nottm Forest",
+      2,
+      3,
+      5,
+      9
+     ],
+     [
+      17,
+      "Coventry City",
+      3,
+      0,
+      7,
+      9
+     ],
+     [
+      18,
+      "Man United",
+      1,
+      5,
+      4,
+      8
+     ],
+     [
+      19,
+      "Sunderland",
+      2,
+      2,
+      6,
+      8
+     ],
+     [
+      20,
+      "Crystal Palace",
+      2,
+      1,
+      7,
+      7
+     ]
+    ],
+    "highlight": [
+     18
+    ],
+    "danger": [
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Man United · 10 games",
+    "value": "1",
+    "unit": "win",
+    "text": "Five draws and four defeats"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "ESPN reports",
+    "title": "Carrick's future is under review",
+    "sub": "Club bosses meet Sir Jim Ratcliffe this week"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "ESPN sources",
+    "title": "Pochettino is the favourite to replace him",
+    "sub": "The current USMNT head coach"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Should Carrick get more time?",
+    "sub": "Follow ScoreBuzz for Premier League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League table",
+   "big": "18th",
+   "hook": "United in *trouble*",
+   "sticker": "DROP ZONE",
+   "emoji": "😬"
+  },
+  "fbtext": "😬 Manchester United are 18th in the Premier League.\n\nOne win in 10 games. ESPN reports the club's bosses meet Sir Jim Ratcliffe this week about Michael Carrick's future, with Mauricio Pochettino the favoured replacement.\n\nShould Carrick stay? 👇\n\n#MUFC #ManUnited #Reels",
+  "time": "2026-11-11T16:55:00"
+ },
+ {
+  "id": "s03-ev-nfl-germany",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "evergreen": true,
+  "venue": "Allianz Arena",
+  "yt": "2026-11-11T19:15:00",
+  "fb": "2026-11-11T15:35:00",
+  "title": "Every NFL Game Ever Played in Germany 🇩🇪 Patriots vs Lions Next #shorts",
+  "description": "Every NFL regular-season game played in Germany: the Buccaneers beat the Seahawks 21–16 in Munich in 2022, the Chiefs beat the Dolphins 21–14 and the Colts beat the Patriots 10–6 in Frankfurt in 2023, the Panthers beat the Giants 20–17 in overtime in Munich in 2024, and the Colts beat the Falcons 31–25 in overtime in Berlin in 2025. Next up: the New England Patriots vs the Detroit Lions in Munich on Sunday, 15 November, at 9:30am ET.\n\nNFL scores and schedule: https://scorebuzz.net\n\n#NFL #NFLGermany #Patriots #Lions",
+  "tags": [
+   "nfl germany",
+   "nfl munich game",
+   "patriots vs lions",
+   "lions vs patriots",
+   "nfl germany games list",
+   "nfl international games",
+   "detroit lions",
+   "new england patriots",
+   "nfl week 10",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NFL in Germany",
+    "title": "Every game ever played there",
+    "sub": "Five so far. Number 6 is on Sunday"
+   },
+   {
+    "type": "list",
+    "dur": 7.0,
+    "label": "NFL regular season in Germany",
+    "title": "The results",
+    "rows": [
+     [
+      "2022 · Munich",
+      "Buccaneers 21–16 Seahawks",
+      ""
+     ],
+     [
+      "2023 · Frankfurt",
+      "Chiefs 21–14 Dolphins",
+      ""
+     ],
+     [
+      "2023 · Frankfurt",
+      "Colts 10–6 Patriots",
+      ""
+     ],
+     [
+      "2024 · Munich",
+      "Panthers 20–17 Giants",
+      "OT"
+     ],
+     [
+      "2025 · Berlin",
+      "Colts 31–25 Falcons",
+      "OT"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Patriots in Germany, 2023",
+    "value": "6",
+    "unit": "points",
+    "text": "They lost 10–6 to the Colts in Frankfurt"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "Sunday · Munich · 9:30am ET",
+    "title": "Patriots v Lions",
+    "sub": "New England are 5–4, Detroit 6–2"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Lions or Patriots?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL in Germany",
+   "big": "5",
+   "hook": "Every *German* game",
+   "sticker": "HISTORY",
+   "emoji": "🇩🇪"
+  },
+  "fbtext": "🇩🇪 The NFL has played five regular-season games in Germany.\n\nThe last time the Patriots went, they lost 10–6 to the Colts in Frankfurt. On Sunday they face the Lions in Munich.\n\nLions or Patriots? 👇\n\n#NFL #Patriots #Reels",
+  "time": "2026-11-11T19:15:00"
+ },
+ {
+  "id": "s04-celtics-76ers",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "yt": "2026-11-11T22:05:00",
+  "fb": "2026-11-11T21:05:00",
+  "title": "Celtics vs 76ers 123–101: Paul George Scores 36 in Philly Return 🔥 #shorts",
+  "description": "Paul George scored 36 points on 14-of-22 shooting with six 3-pointers as the Boston Celtics beat the Philadelphia 76ers 123–101 in Philadelphia. Jayson Tatum had 21 points in his first regular-season meeting with Jaylen Brown since Brown's trade to the 76ers; Brown scored 13 and Tyrese Maxey led Philadelphia with 24. Boston are 9–2.\n\nCeltics vs 76ers final score and NBA scores: https://scorebuzz.net\n\n#Celtics #PaulGeorge #Sixers #NBA",
+  "tags": [
+   "celtics vs 76ers",
+   "76ers vs celtics",
+   "paul george",
+   "paul george 36 points",
+   "jayson tatum",
+   "jaylen brown",
+   "tatum vs brown",
+   "tyrese maxey",
+   "boston celtics",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Tuesday",
+    "title": "Paul George dropped 36 in Philly",
+    "sub": "Celtics win by 22"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "NBA · Philadelphia",
+    "home": "76ers",
+    "homeAbbr": "PHI",
+    "homeScore": 101,
+    "away": "Celtics",
+    "awayAbbr": "BOS",
+    "awayScore": 123,
+    "status": "FINAL",
+    "note": "Boston are 9–2",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Paul George",
+    "value": "36",
+    "unit": "points",
+    "text": "14 of 22 and six 3s in 30 minutes"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "Tatum v Brown · round 1",
+    "title": "Tatum 21, Brown 13",
+    "sub": "Their first regular-season meeting since Brown's trade to Philly"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Tyrese Maxey",
+    "value": "24",
+    "unit": "points",
+    "text": "Philadelphia's top scorer"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best team in the East?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Celtics vs 76ers",
+   "big": "36",
+   "hook": "George *torches* Philly",
+   "sticker": "FINAL",
+   "teams": [
+    "BOS",
+    "PHI"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Paul George went back to Philadelphia and scored 36.\n\n14 of 22, six 3s, and the Celtics beat the 76ers 123–101. Tatum had 21, Jaylen Brown 13 in their first meeting since Brown's trade.\n\nAre the Celtics the best team in the East? 👇\n\n#Celtics #PaulGeorge #Reels",
+  "time": "2026-11-11T22:05:00"
+ },
+ {
+  "id": "s05-nfl-trade-deadline",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "yt": "2026-11-12T00:20:00",
+  "fb": "2026-11-12T01:40:00",
+  "title": "NFL Trade Deadline: Kirk Cousins to the Vikings, Mendoza Starts 🏈 #shorts",
+  "description": "The NFL trade deadline has passed after 18 in-season trades, six of them on deadline day. The Las Vegas Raiders traded quarterback Kirk Cousins to the Minnesota Vikings and named No. 1 overall pick Fernando Mendoza their starter, receiver Josh Downs joined the Kansas City Chiefs, and the Indianapolis Colts kept Jonathan Taylor and Daniel Jones.\n\nNFL scores and news: https://scorebuzz.net\n\n#NFL #Vikings #Raiders #Chiefs",
+  "tags": [
+   "nfl trade deadline",
+   "kirk cousins vikings",
+   "kirk cousins trade",
+   "fernando mendoza",
+   "raiders",
+   "minnesota vikings",
+   "josh downs chiefs",
+   "jonathan taylor",
+   "nfl trades",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NFL trade deadline",
+    "title": "Kirk Cousins is a Viking again",
+    "sub": "Here's what changed"
+   },
+   {
+    "type": "list",
+    "dur": 6.0,
+    "label": "Deadline day",
+    "title": "The big moves",
+    "rows": [
+     [
+      "QB",
+      "Kirk Cousins",
+      "Raiders → Vikings"
+     ],
+     [
+      "WR",
+      "Josh Downs",
+      "→ Chiefs"
+     ],
+     [
+      "QB",
+      "Fernando Mendoza",
+      "Raiders' new starter"
+     ],
+     [
+      "RB",
+      "Jonathan Taylor",
+      "stays with the Colts"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Las Vegas",
+    "title": "The No. 1 pick takes over",
+    "sub": "Fernando Mendoza is the Raiders' starting QB"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "2026 season",
+    "value": "18",
+    "unit": "in-season trades",
+    "text": "Six of them on deadline day"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who won the deadline?",
+    "sub": "Follow ScoreBuzz for NFL news"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL trade deadline",
+   "big": "18",
+   "hook": "Cousins back in *Minnesota*",
+   "sticker": "TRADED",
+   "emoji": "🔄"
+  },
+  "fbtext": "🔄 Kirk Cousins is back in Minnesota.\n\nThe Raiders traded him to the Vikings and handed the job to No. 1 pick Fernando Mendoza. Josh Downs joined the Chiefs; Jonathan Taylor stayed in Indy.\n\nWho won the trade deadline? 👇\n\n#NFL #Vikings #Reels",
+  "time": "2026-11-12T00:20:00"
+ },
+ {
+  "id": "s06-cfp-rankings",
+  "sport": "other",
+  "league": "ncaaf",
+  "bed": "anthem",
+  "venue": "Sanford Stadium",
+  "yt": "2026-11-12T06:50:00",
+  "fb": "2026-11-12T03:30:00",
+  "title": "CFP Rankings: Georgia No. 1, Miami Falls to 7 🏈 #CFB #shorts",
+  "description": "The second College Football Playoff rankings have Georgia at No. 1, followed by Utah, Alabama and UCLA. Notre Dame jumped from 11th to 5th, Miami fell from 1st to 7th and Indiana dropped from 4th to 9th. This week: Missouri at Georgia, Utah at Arizona and Texas at LSU.\n\nCollege football scores and rankings: https://scorebuzz.net\n\n#CFB #CollegeFootball #Georgia #CFPRankings",
+  "tags": [
+   "cfp rankings",
+   "college football playoff rankings",
+   "cfp top 25",
+   "georgia bulldogs",
+   "utah utes",
+   "alabama",
+   "ucla",
+   "notre dame",
+   "miami hurricanes",
+   "indiana hoosiers",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "College Football Playoff rankings",
+    "title": "Georgia are the new No. 1",
+    "sub": "And last week's No. 1 fell to 7th"
+   },
+   {
+    "type": "table",
+    "dur": 6.0,
+    "label": "CFP rankings · 2nd release",
+    "cols": [
+     "REC",
+     "LAST"
+    ],
+    "rows": [
+     [
+      1,
+      "Georgia",
+      "8–1",
+      2
+     ],
+     [
+      2,
+      "Utah",
+      "9–0",
+      3
+     ],
+     [
+      3,
+      "Alabama",
+      "7–2",
+      5
+     ],
+     [
+      4,
+      "UCLA",
+      "9–0",
+      8
+     ],
+     [
+      5,
+      "Notre Dame",
+      "8–1",
+      11
+     ],
+     [
+      6,
+      "Texas",
+      "7–2",
+      7
+     ],
+     [
+      7,
+      "Miami",
+      "8–1",
+      1
+     ],
+     [
+      8,
+      "Tennessee",
+      "7–2",
+      13
+     ],
+     [
+      9,
+      "Indiana",
+      "8–1",
+      4
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Biggest fall",
+    "title": "Miami: 1st → 7th",
+    "sub": "Indiana also dropped five spots, to 9th"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Biggest jump",
+    "title": "Notre Dame: 11th → 5th",
+    "sub": "UCLA up from 8th to 4th"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who's ranked too high?",
+    "sub": "Follow ScoreBuzz for college football"
+   }
+  ],
+  "thumb": {
+   "kicker": "CFP rankings",
+   "big": "No. 1",
+   "hook": "Georgia *take over*",
+   "sticker": "NEW",
+   "emoji": "🐶"
+  },
+  "fbtext": "🏈 Georgia are No. 1 in the new College Football Playoff rankings.\n\nUtah, Alabama and UCLA make up the top four. Miami fell from 1st to 7th and Notre Dame jumped from 11th to 5th.\n\nWho's ranked too high? 👇\n\n#CFB #CollegeFootball #Reels",
+  "time": "2026-11-12T06:50:00"
+ },
+ {
+  "id": "s07-ev-nhl-point-streaks",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "drama",
+  "evergreen": true,
+  "venue": "Rogers Place",
+  "yt": "2026-11-12T04:35:00",
+  "fb": "2026-11-11T23:50:00",
+  "title": "Longest Point Streaks in NHL History: Gretzky 51 🤯 McDavid Chasing #shorts",
+  "description": "The longest point streaks in NHL history: Wayne Gretzky's 51 games for the Edmonton Oilers in 1983–84 (61 goals and 92 assists), Mario Lemieux's 46 games for the Pittsburgh Penguins in 1989–90, Mats Sundin's 30, and 28-game runs by Paul Coffey, Guy Lafleur and Steve Yzerman. Connor McDavid has a point in all 19 Oilers games this season (as of 11 Nov 2026) and goes for 20 against the Philadelphia Flyers.\n\nNHL scores and stats: https://scorebuzz.net\n\n#McDavid #Gretzky #NHL #Oilers",
+  "tags": [
+   "longest point streak nhl",
+   "nhl point streak record",
+   "wayne gretzky 51 game point streak",
+   "mario lemieux",
+   "connor mcdavid",
+   "mcdavid point streak",
+   "oilers vs flyers",
+   "flyers vs oilers",
+   "nhl records",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL records",
+    "title": "The longest point streaks ever",
+    "sub": "Connor McDavid is at 19"
+   },
+   {
+    "type": "list",
+    "dur": 6.5,
+    "label": "Longest point streaks in NHL history",
+    "title": "The top six",
+    "rows": [
+     [
+      "51",
+      "Wayne Gretzky",
+      "1983–84"
+     ],
+     [
+      "46",
+      "Mario Lemieux",
+      "1989–90"
+     ],
+     [
+      "30",
+      "Mats Sundin",
+      "Nordiques"
+     ],
+     [
+      "28",
+      "Paul Coffey",
+      "1985–86"
+     ],
+     [
+      "28",
+      "Guy Lafleur",
+      "Canadiens"
+     ],
+     [
+      "28",
+      "Steve Yzerman",
+      "Red Wings"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.6,
+    "label": "Wayne Gretzky · 1983–84",
+    "value": "153",
+    "unit": "points in 51 games",
+    "text": "61 goals and 92 assists, all in one streak"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Connor McDavid · 2026–27",
+    "value": "19",
+    "unit": "games",
+    "text": "A point in every game this season. Next: the Flyers"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can anyone catch Gretzky?",
+    "sub": "Follow ScoreBuzz for NHL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL record",
+   "big": "51",
+   "hook": "Can McDavid *catch* it?",
+   "sticker": "RECORD",
+   "emoji": "🤯"
+  },
+  "fbtext": "🤯 Wayne Gretzky once scored a point in 51 straight games.\n\n61 goals and 92 assists in 1983–84. Mario Lemieux got to 46. Connor McDavid is at 19 this season and goes for 20 against the Flyers tonight.\n\nCan anyone ever catch Gretzky? 👇\n\n#McDavid #Gretzky #Reels",
+  "time": "2026-11-12T04:35:00"
+ },
+ {
+  "id": "s08-nba-tuesday-board",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "yt": "2026-11-12T02:35:00",
+  "fb": "2026-11-12T05:20:00",
+  "title": "NBA Scores Last Night: Paul George 36, Knicks Rout Bucks 🏀 #shorts",
+  "description": "BOARD_DESC",
+  "tags": [
+   "nba scores",
+   "nba scores today",
+   "nba scores last night",
+   "celtics vs 76ers",
+   "knicks vs bucks",
+   "suns vs clippers",
+   "heat vs jazz",
+   "thunder vs trail blazers",
+   "paul george",
+   "jalen brunson",
+   "scorebuzz"
+  ],
+  "scenes": [],
+  "thumb": {
+   "kicker": "NBA · Tuesday night",
+   "big": "6",
+   "hook": "Every *score*",
+   "sticker": "FINAL",
+   "emoji": "🏀"
+  },
+  "fbtext": "BOARD_FB",
+  "time": "2026-11-12T02:35:00"
+ },
+ {
+  "id": "s09-ufc334",
+  "sport": "mma",
+  "league": "ufc",
+  "bed": "hype",
+  "venue": "Madison Square Garden",
+  "fb": "2026-11-12T07:10:00",
+  "title": "UFC 334 Preview: Gane vs Hokit, Harrison vs Nunes #shorts",
+  "description": "UFC 334 at Madison Square Garden on Saturday has two title fights: Ciryl Gane (14–2) against unbeaten Josh Hokit (10–0) for the heavyweight title, and Kayla Harrison (19–1) against Amanda Nunes (23–5) for the women's bantamweight title.\n\nUFC results: https://scorebuzz.net\n\n#UFC334 #UFC #AmandaNunes",
+  "tags": [
+   "ufc 334",
+   "gane vs hokit",
+   "harrison vs nunes",
+   "amanda nunes",
+   "kayla harrison",
+   "ciryl gane",
+   "josh hokit",
+   "ufc madison square garden",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "UFC 334 · Saturday",
+    "title": "Two title fights at Madison Square Garden",
+    "sub": ""
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "Heavyweight title",
+    "title": "Ciryl Gane v Josh Hokit",
+    "sub": "Gane is 14–2. Hokit is unbeaten at 10–0"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "Women's bantamweight title",
+    "title": "Kayla Harrison v Amanda Nunes",
+    "sub": "Harrison 19–1 · Nunes 23–5"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Also on the main card",
+    "title": "Don't miss",
+    "rows": [
+     [
+      "MW",
+      "Caio Borralho",
+      "v Yousri Belgaroui"
+     ],
+     [
+      "WW",
+      "Kevin Holland",
+      "v Uroš Medić"
+     ],
+     [
+      "FLW",
+      "Bilal Hasan (10–0)",
+      "v Luis Gurule"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Your picks?",
+    "sub": "Follow ScoreBuzz for UFC results"
+   }
+  ],
+  "thumb": {
+   "kicker": "UFC 334 · MSG",
+   "big": "2",
+   "hook": "*Title* fights Saturday",
+   "sticker": "THIS WEEK",
+   "emoji": "🥊"
+  },
+  "fbtext": "🥊 UFC 334 has two title fights at Madison Square Garden on Saturday.\n\nCiryl Gane (14–2) faces unbeaten Josh Hokit (10–0) for the heavyweight belt, and Kayla Harrison (19–1) meets Amanda Nunes (23–5).\n\nYour picks? 👇\n\n#UFC334 #AmandaNunes #Reels",
+  "time": "2026-11-12T07:10:00"
+ }
+]
