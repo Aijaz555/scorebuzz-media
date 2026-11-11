@@ -985,5 +985,25 @@
   "status": "ok",
   "reason": "ok (contrast 85)",
   "at": "2026-11-11T02:08:11+00:00"
+ },
+ "401909962": {
+  "slot": "9",
+  "league": "nba",
+  "game": "Suns v Clippers",
+  "url": "https://scorebuzz.net/basketball/nba/suns-vs-clippers-401909962/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-11T02:16:19+00:00"
+ },
+ "401909963": {
+  "slot": "10",
+  "league": "nba",
+  "game": "Jazz v Heat",
+  "url": "https://scorebuzz.net/basketball/nba/jazz-vs-heat-401909963/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-11T02:16:22+00:00"
  }
 }
