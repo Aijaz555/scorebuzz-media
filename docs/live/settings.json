@@ -32,7 +32,7 @@
  },
  "reload": 29,
  "music": {
-  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old; NBA uses 30-min arena crowd mixes built from Envato Elements recordings the owner licensed (11 Nov 2026), old funk playlist kept as basketball.",
+  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old; NBA uses 30-min arena crowd mixes built from Envato Elements recordings the owner licensed (11 Nov 2026), old funk playlist kept as basketball. NHL uses 8 Envato hockey crowd recordings (owner, 11 Nov 2026) played in a fixed order, not shuffled (music.ordered), old music kept as hockey.",
   "playlists": {
    "american_football": {
     "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
@@ -159,13 +159,23 @@
    "basketball_crowd": {
     "ScoreBuzz Stadium Basketball A": "6af4c0c51ad365c2175fbf57",
     "ScoreBuzz Stadium Basketball B": "6af4c0c61ad365c2175fbf80"
+   },
+   "hockey_crowd": {
+    "ScoreBuzz Hockey Crowd 01": "6af4c5571ad365c21760efa6",
+    "ScoreBuzz Hockey Crowd 02": "6af4c5571ad365c21760efb6",
+    "ScoreBuzz Hockey Crowd 03": "6af4c5581ad365c21760efef",
+    "ScoreBuzz Hockey Crowd 04": "6af4c5581ad365c21760effc",
+    "ScoreBuzz Hockey Crowd 05": "6af4c5591ad365c21760f028",
+    "ScoreBuzz Hockey Crowd 06": "6af4c5591ad365c21760f02e",
+    "ScoreBuzz Hockey Crowd 07": "6af4c55a1ad365c21760f040",
+    "ScoreBuzz Hockey Crowd 08": "6af4c55b1ad365c21760f05d"
    }
   },
   "sports": {
    "nfl": "nfl_crowd",
    "ncaaf": "nfl_crowd",
    "nba": "basketball_crowd",
-   "nhl": "hockey",
+   "nhl": "hockey_crowd",
    "mlb": "baseball",
    "soccer": "soccer",
    "cricket": "cricket"
@@ -198,8 +208,12 @@
    "soccer": 6,
    "cricket": 6,
    "nfl_crowd": 6,
-   "basketball_crowd": 6
-  }
+   "basketball_crowd": 6,
+   "hockey_crowd": 6
+  },
+  "ordered": [
+   "hockey_crowd"
+  ]
  },
  "thumbs": false,
  "dark": [

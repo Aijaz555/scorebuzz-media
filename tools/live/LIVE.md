@@ -360,6 +360,9 @@ broadcast style. It reads ESPN's public cricket JSON from the browser (`/apis/si
   (`music.volumes`). **nba** (11 Nov 2026: `music.playlists.basketball_crowd`: ScoreBuzz Stadium
   Basketball A/B, 30 min each, built from 3 arena crowd/walla recordings (OCP-0333-75/-80/-93) the owner licensed on Envato
   Elements; same recipe without cheer overlays, idle walla weighted low; old funk playlist kept as `basketball`). Other sports still use the Kevin MacLeod playlists until the owner supplies crowd recordings.
+- **nhl** (11 Nov 2026: `music.playlists.hockey_crowd`: ScoreBuzz Hockey Crowd 01-08, the owner's 8 Envato hockey
+  game/crowd recordings, each only loudness-normalised (-18 LUFS, MP3 192k), not mixed; played in that order on loop
+  (`music.ordered` turns off the per-game shuffle); old music kept as `hockey`).
 - Envato Elements files: licensed for the owner's YouTube use, never commit or redistribute the raw recordings or the mixes.
 - Mixes are built from Pixabay recordings the owner downloads (Pixabay Content License: commercial/YouTube use, no credit; not
   allowed to redistribute the files on their own, so they are NOT committed here). Recipe: loudness-normalise each clip (-18 LUFS),

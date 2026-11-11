@@ -41,13 +41,13 @@ function hoursFor(league) {
   return cfg.hours[league] ?? (feed.LEAGUES[league]?.soccer ? cfg.hours.soccer : 3.5);
 }
 
-// per-sport music: a freshly shuffled copy of that sport's playlist for the project's Music layer
+// per-sport music (playlists listed in music.ordered keep their order): a freshly shuffled copy of that sport's playlist for the project's Music layer
 function musicFor(g, key) {
   const M = settings.music || {};
   const sport = feed.LEAGUES[g.league]?.soccer ? 'soccer' : g.league;
   const pl = (M.sports || {})[sport];
   const list = Object.entries((M.playlists || {})[pl] || {});
-  for (let i = list.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [list[i], list[j]] = [list[j], list[i]]; }
+  if (!(M.ordered || []).includes(pl)) for (let i = list.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [list[i], list[j]] = [list[j], list[i]]; }
   const layerId = (M.layers || {})[key];
   return list.length && layerId ? { layerId, volume: (M.volumes || {})[pl] ?? M.volume ?? 3, titles: list.map((x) => x[0]), files: list.map((x) => ({ fileId: x[1] })) } : null;
 }
