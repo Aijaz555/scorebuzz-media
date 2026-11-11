@@ -913,8 +913,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/maple-leafs-vs-avalanche-401892683/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-11T01:35:09+00:00"
+  "reason": "ok (contrast 83)",
+  "at": "2026-11-11T02:07:49+00:00"
  },
  "401892684": {
   "slot": "2",
@@ -923,8 +923,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/canadiens-vs-wild-401892684/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 86)",
-  "at": "2026-11-11T01:35:13+00:00"
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-11T02:07:52+00:00"
  },
  "401892685": {
   "slot": "3",
@@ -933,8 +933,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/senators-vs-capitals-401892685/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 81)",
-  "at": "2026-11-11T01:35:16+00:00"
+  "reason": "ok (contrast 84)",
+  "at": "2026-11-11T02:07:55+00:00"
  },
  "401892688": {
   "slot": "4",
@@ -943,8 +943,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/jets-vs-devils-401892688/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 83)",
-  "at": "2026-11-11T01:35:19+00:00"
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-11T02:07:58+00:00"
  },
  "401909960": {
   "slot": "5",
@@ -954,7 +954,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 65)",
-  "at": "2026-11-11T01:35:22+00:00"
+  "at": "2026-11-11T02:08:01+00:00"
  },
  "401892686": {
   "slot": "6",
@@ -963,8 +963,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/blue-jackets-vs-panthers-401892686/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 85)",
-  "at": "2026-11-11T01:35:25+00:00"
+  "reason": "ok (contrast 80)",
+  "at": "2026-11-11T02:08:04+00:00"
  },
  "401909961": {
   "slot": "7",
@@ -973,8 +973,8 @@
   "url": "https://scorebuzz.net/basketball/nba/76ers-vs-celtics-401909961/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-11T01:35:28+00:00"
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-11T02:08:07+00:00"
  },
  "401892687": {
   "slot": "8",
@@ -983,7 +983,7 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/blues-vs-red-wings-401892687/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 82)",
-  "at": "2026-11-11T01:35:31+00:00"
+  "reason": "ok (contrast 85)",
+  "at": "2026-11-11T02:08:11+00:00"
  }
 }
