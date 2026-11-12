@@ -1195,5 +1195,15 @@
   "status": "ok",
   "reason": "ok (contrast 83)",
   "at": "2026-11-12T05:30:54+00:00"
+ },
+ "401891808": {
+  "slot": "1",
+  "league": "nhl",
+  "game": "Kraken v Hurricanes",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kraken-vs-hurricanes-401891808/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 93)",
+  "at": "2026-11-12T17:16:33+00:00"
  }
 }
