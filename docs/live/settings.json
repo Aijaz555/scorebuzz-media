@@ -70,6 +70,26 @@
    "league": "nba",
    "event": "401909972",
    "note": "New Orleans Pelicans vs Brooklyn Nets, 2026-11-12T01:00:00Z"
+  },
+  "10": {
+   "league": "nba",
+   "event": "401909974",
+   "note": "Houston Rockets vs Golden State Warriors, 2026-11-12T02:30:00Z"
+  },
+  "11": {
+   "league": "nhl",
+   "event": "401892692",
+   "note": "Edmonton Oilers vs Philadelphia Flyers, 2026-11-12T02:00:00Z"
+  },
+  "12": {
+   "league": "nba",
+   "event": "401909973",
+   "note": "Utah Jazz vs Orlando Magic, 2026-11-12T02:00:00Z"
+  },
+  "13": {
+   "league": "nhl",
+   "event": "401892693",
+   "note": "Vegas Golden Knights vs Utah Mammoth, 2026-11-12T02:30:00Z"
   }
  },
  "fit": {
