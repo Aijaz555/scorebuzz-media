@@ -25,13 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "1": {
-   "league": "nhl",
-   "event": "401891808",
-   "note": "Seattle Kraken vs Carolina Hurricanes, 2026-11-12T17:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
