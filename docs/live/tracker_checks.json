@@ -1055,5 +1055,25 @@
   "status": "ok",
   "reason": "ok (contrast 83)",
   "at": "2026-11-12T00:12:52+00:00"
+ },
+ "401909968": {
+  "slot": "1",
+  "league": "nba",
+  "game": "Raptors v Celtics",
+  "url": "https://scorebuzz.net/basketball/nba/raptors-vs-celtics-401909968/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-12T00:20:59+00:00"
+ },
+ "401909967": {
+  "slot": "3",
+  "league": "nba",
+  "game": "Knicks v Cavaliers",
+  "url": "https://scorebuzz.net/basketball/nba/knicks-vs-cavaliers-401909967/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-12T00:21:02+00:00"
  }
 }
