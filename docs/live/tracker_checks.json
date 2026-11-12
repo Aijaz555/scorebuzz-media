@@ -1126,46 +1126,6 @@
   "reason": "ok (contrast 66)",
   "at": "2026-11-12T03:23:56+00:00"
  },
- "401909974": {
-  "slot": "10",
-  "league": "nba",
-  "game": "Rockets v Warriors",
-  "url": "https://scorebuzz.net/basketball/nba/rockets-vs-warriors-401909974/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-12T03:23:59+00:00"
- },
- "401892692": {
-  "slot": "11",
-  "league": "nhl",
-  "game": "Oilers v Flyers",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/oilers-vs-flyers-401892692/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 86)",
-  "at": "2026-11-12T03:24:02+00:00"
- },
- "401909973": {
-  "slot": "12",
-  "league": "nba",
-  "game": "Jazz v Magic",
-  "url": "https://scorebuzz.net/basketball/nba/jazz-vs-magic-401909973/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-12T03:24:05+00:00"
- },
- "401892693": {
-  "slot": "13",
-  "league": "nhl",
-  "game": "Golden Knights v Mammoth",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-mammoth-401892693/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 83)",
-  "at": "2026-11-12T03:24:09+00:00"
- },
  "401892694": {
   "slot": "14",
   "league": "nhl",
@@ -1195,5 +1155,45 @@
   "status": "ok",
   "reason": "ok (contrast 88)",
   "at": "2026-11-12T03:52:35+00:00"
+ },
+ "401909974": {
+  "slot": "10",
+  "league": "nba",
+  "game": "Rockets v Warriors",
+  "url": "https://scorebuzz.net/basketball/nba/rockets-vs-warriors-401909974/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-12T04:00:41+00:00"
+ },
+ "401892692": {
+  "slot": "11",
+  "league": "nhl",
+  "game": "Oilers v Flyers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/oilers-vs-flyers-401892692/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-12T04:00:45+00:00"
+ },
+ "401909973": {
+  "slot": "12",
+  "league": "nba",
+  "game": "Jazz v Magic",
+  "url": "https://scorebuzz.net/basketball/nba/jazz-vs-magic-401909973/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-12T04:00:48+00:00"
+ },
+ "401892693": {
+  "slot": "13",
+  "league": "nhl",
+  "game": "Golden Knights v Mammoth",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-mammoth-401892693/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-12T04:00:51+00:00"
  }
 }
