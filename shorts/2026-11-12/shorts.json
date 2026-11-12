@@ -1,0 +1,970 @@
+[
+ {
+  "id": "s01-ev-english-ballondor",
+  "sport": "football",
+  "bed": "anthem",
+  "evergreen": true,
+  "venue": "Wembley Stadium",
+  "fb": "2026-11-12T12:50:00",
+  "yt": "2026-11-12T14:50:00",
+  "title": "Every English Ballon d'Or Winner 🏆 Harry Kane Ends 25-Year Wait #shorts",
+  "description": "Every English Ballon d'Or winner: Stanley Matthews (Blackpool, 1956), Bobby Charlton (Manchester United, 1966), Kevin Keegan (Hamburg, 1978 and 1979), Michael Owen (Liverpool, 2001) and now Harry Kane, who won the 2026 Ballon d'Or at the London Palladium on 26 October after scoring 73 goals for Bayern Munich and England. Kane is the first English winner in 25 years, and Keegan is still the only Englishman to win it twice.\n\nFootball scores, tables and results: https://scorebuzz.net\n\n#HarryKane #BallondOr #England #Football",
+  "tags": [
+   "english ballon d'or winners",
+   "ballon d'or winners",
+   "harry kane ballon d'or",
+   "harry kane",
+   "ballon d'or 2026",
+   "michael owen ballon d'or",
+   "kevin keegan",
+   "bobby charlton",
+   "stanley matthews",
+   "england football",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Ballon d'Or history",
+    "title": "Only FIVE Englishmen have ever won it",
+    "sub": "Harry Kane just became No. 5"
+   },
+   {
+    "type": "text",
+    "dur": 2.6,
+    "label": "1956",
+    "title": "Stanley Matthews",
+    "sub": "Blackpool"
+   },
+   {
+    "type": "text",
+    "dur": 2.6,
+    "label": "1966",
+    "title": "Bobby Charlton",
+    "sub": "Manchester United"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "1978 & 1979",
+    "title": "Kevin Keegan",
+    "sub": "Hamburg · still the only Englishman to win it twice"
+   },
+   {
+    "type": "text",
+    "dur": 2.6,
+    "label": "2001",
+    "title": "Michael Owen",
+    "sub": "Liverpool"
+   },
+   {
+    "type": "stat",
+    "dur": 3.6,
+    "label": "2026 · Harry Kane · Bayern Munich",
+    "value": "73",
+    "unit": "goals for club and country",
+    "text": "The first English winner in 25 years"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who's the next English winner?",
+    "sub": "Follow ScoreBuzz for football scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Ballon d'Or",
+   "big": "5",
+   "hook": "English *winners* ever",
+   "sticker": "HISTORY",
+   "emoji": "🏆"
+  },
+  "fbtext": "🏆 Only five Englishmen have ever won the Ballon d'Or.\n\nMatthews, Charlton, Keegan (twice), Owen… and now Harry Kane, the first English winner in 25 years after 73 goals for Bayern and England.\n\nWho's the next English winner? 👇\n\n#HarryKane #BallondOr #Reels"
+ },
+ {
+  "id": "s02-ev-f1-youngest",
+  "sport": "racing",
+  "league": "f1",
+  "bed": "drama",
+  "evergreen": true,
+  "fb": "2026-11-12T18:20:00",
+  "yt": "2026-11-12T19:30:00",
+  "title": "F1's Youngest World Champions: Antonelli Smashes Vettel's Record 🤯 #F1 #shorts",
+  "description": "Formula 1's youngest world champions: Kimi Antonelli became champion at 20 years and 68 days when he clinched the 2026 title at the Mexico City Grand Prix, beating Sebastian Vettel's record of 23 years and 133 days from 2010. Lewis Hamilton (23y 300d, 2008), Fernando Alonso (24y 57d, 2005) and Max Verstappen (24y 73d, 2021) complete the top five.\n\nF1 results and standings: https://scorebuzz.net\n\n#F1 #KimiAntonelli #Mercedes #Formula1",
+  "tags": [
+   "youngest f1 world champion",
+   "youngest f1 champions",
+   "kimi antonelli",
+   "antonelli world champion",
+   "sebastian vettel",
+   "lewis hamilton",
+   "f1 records",
+   "mercedes f1",
+   "las vegas grand prix",
+   "f1 shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Formula 1 records",
+    "title": "F1's youngest world champions",
+    "sub": "The record just fell by three years"
+   },
+   {
+    "type": "list",
+    "dur": 7.5,
+    "label": "Age when they clinched the title",
+    "title": "The five youngest",
+    "rows": [
+     [
+      "20y 68d",
+      "Kimi Antonelli",
+      "2026"
+     ],
+     [
+      "23y 133d",
+      "Sebastian Vettel",
+      "2010"
+     ],
+     [
+      "23y 300d",
+      "Lewis Hamilton",
+      "2008"
+     ],
+     [
+      "24y 57d",
+      "Fernando Alonso",
+      "2005"
+     ],
+     [
+      "24y 73d",
+      "Max Verstappen",
+      "2021"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.6,
+    "label": "Kimi Antonelli · Mercedes",
+    "value": "20",
+    "unit": "years old",
+    "text": "Title clinched with 3rd place at the Mexico City GP"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Vettel's record",
+    "title": "Beaten by more than 3 years",
+    "sub": "23 years, 133 days in 2010"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Will anyone ever beat this?",
+    "sub": "Follow ScoreBuzz for F1 results"
+   }
+  ],
+  "thumb": {
+   "kicker": "Formula 1 record",
+   "big": "20",
+   "hook": "The *youngest* champion",
+   "sticker": "RECORD",
+   "emoji": "🤯"
+  },
+  "fbtext": "🤯 Kimi Antonelli is F1 champion at 20 years and 68 days.\n\nSebastian Vettel's old record was 23 years, 133 days. Hamilton, Alonso and Verstappen were all 23 or older.\n\nWill anyone ever beat Antonelli's record? 👇\n\n#F1 #KimiAntonelli #Reels"
+ },
+ {
+  "id": "s03-ev-nba-win-streaks",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "evergreen": true,
+  "venue": "Frost Bank Center",
+  "fb": "2026-11-13T02:35:00",
+  "yt": "2026-11-13T02:50:00",
+  "title": "Longest Winning Streaks in NBA History: Lakers 33 🤯 Spurs at 10 #shorts",
+  "description": "The longest winning streaks in NBA history: the Los Angeles Lakers won 33 straight in 1971–72 (5 Nov 1971 to 9 Jan 1972), the Golden State Warriors won 28 across 2014–15 and 2015–16, the Miami Heat won 27 in 2012–13, the Houston Rockets 22 in 2007–08 and the Milwaukee Bucks 20 in 1970–71. Victor Wembanyama's San Antonio Spurs have won 10 in a row (as of 12 Nov 2026).\n\nNBA scores and standings: https://scorebuzz.net\n\n#Spurs #Wembanyama #NBA #Lakers",
+  "tags": [
+   "longest winning streak nba",
+   "nba winning streak record",
+   "lakers 33 game winning streak",
+   "spurs winning streak",
+   "victor wembanyama",
+   "san antonio spurs",
+   "heat 27 game winning streak",
+   "warriors 28 game streak",
+   "nba records",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA records",
+    "title": "The Spurs have won 10 straight",
+    "sub": "The record is 33"
+   },
+   {
+    "type": "list",
+    "dur": 7.0,
+    "label": "Longest winning streaks in NBA history",
+    "title": "The top five",
+    "rows": [
+     [
+      "33",
+      "Lakers",
+      "1971–72"
+     ],
+     [
+      "28",
+      "Warriors",
+      "2015 (2 seasons)"
+     ],
+     [
+      "27",
+      "Heat",
+      "2012–13"
+     ],
+     [
+      "22",
+      "Rockets",
+      "2007–08"
+     ],
+     [
+      "20",
+      "Bucks",
+      "1970–71"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.6,
+    "label": "Los Angeles Lakers · 1971–72",
+    "value": "33",
+    "unit": "wins in a row",
+    "text": "5 Nov 1971 to 9 Jan 1972"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "San Antonio Spurs · 2026–27",
+    "value": "10",
+    "unit": "and counting",
+    "text": "Latest: came back from 22 down to beat the Bulls"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "How far can Wemby's Spurs go?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA record",
+   "big": "33",
+   "hook": "Can the Spurs *get there*?",
+   "sticker": "RECORD",
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 The NBA record winning streak is 33 games.\n\nThe 1971–72 Lakers won every game from 5 November to 9 January. The Heat got to 27 in 2013. Wembanyama's Spurs are at 10 and counting.\n\nHow far can the Spurs go? 👇\n\n#Spurs #Wembanyama #Reels"
+ },
+ {
+  "id": "s04-nations-predict",
+  "sport": "football",
+  "bed": "anthem",
+  "fb": "2026-11-12T15:35:00",
+  "yt": "2026-11-12T17:10:00",
+  "title": "Nations League Predictions: England vs Croatia, Italy vs France ⚽ #shorts",
+  "description": "UEFA Nations League predictions for Thursday 12 November: Türkiye vs Belgium and Armenia vs Cyprus at 17:00 GMT, then England vs Croatia at Wembley, Italy vs France at San Siro, Czechia vs Spain, Albania vs Finland, Montenegro vs Latvia and San Marino vs Belarus at 19:45 GMT (2:45pm ET). France are without Kylian Mbappé and Spain without Lamine Yamal. Predict every score in the comments.\n\nNations League live scores and results: https://scorebuzz.net\n\n#NationsLeague #England #Italy #France",
+  "tags": [
+   "nations league predictions",
+   "england vs croatia",
+   "croatia vs england",
+   "italy vs france",
+   "france vs italy",
+   "czechia vs spain",
+   "turkey vs belgium",
+   "uefa nations league",
+   "nations league today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 16.6,
+    "kicker": "Nations League · Thursday",
+    "title": "Predict every score",
+    "badge": "TONIGHT",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Türkiye",
+      "homeAbbr": "TUR",
+      "hs": "?",
+      "away": "Belgium",
+      "awayAbbr": "BEL",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png"
+     },
+     {
+      "home": "Armenia",
+      "homeAbbr": "ARM",
+      "hs": "?",
+      "away": "Cyprus",
+      "awayAbbr": "CYP",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fifa.armenia.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cyp.png"
+     },
+     {
+      "home": "England",
+      "homeAbbr": "ENG",
+      "hs": "?",
+      "away": "Croatia",
+      "awayAbbr": "CRO",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png"
+     },
+     {
+      "home": "Italy",
+      "homeAbbr": "ITA",
+      "hs": "?",
+      "away": "France",
+      "awayAbbr": "FRA",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ita.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png"
+     },
+     {
+      "home": "Czechia",
+      "homeAbbr": "CZE",
+      "hs": "?",
+      "away": "Spain",
+      "awayAbbr": "ESP",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png"
+     },
+     {
+      "home": "Albania",
+      "homeAbbr": "ALB",
+      "hs": "?",
+      "away": "Finland",
+      "awayAbbr": "FIN",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alb.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fin.png"
+     },
+     {
+      "home": "Montenegro",
+      "homeAbbr": "MNE",
+      "hs": "?",
+      "away": "Latvia",
+      "awayAbbr": "LVA",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mtg.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/lva.png"
+     },
+     {
+      "home": "San Marino",
+      "homeAbbr": "SMR",
+      "hs": "?",
+      "away": "Belarus",
+      "awayAbbr": "BLR",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/smr.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/blr.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Drop your predictions 👇",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Nations League",
+   "big": "?–?",
+   "hook": "Predict *every* score",
+   "sticker": "TONIGHT",
+   "teams": [
+    "ENG",
+    "CRO"
+   ],
+   "emoji": "⚽"
+  },
+  "fbtext": "⚽ Nations League night: predict every score.\n\nEngland v Croatia, Italy v France (no Mbappé), Czechia v Spain (no Yamal) and Türkiye v Belgium, all tonight.\n\nYour predictions? 👇\n\n#NationsLeague #England #Reels"
+ },
+ {
+  "id": "s05-nba-board",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "fb": "2026-11-12T22:55:00",
+  "yt": "2026-11-12T22:20:00",
+  "title": "NBA Scores Last Night: Spurs Win 10th Straight, Harden 32 🏀 #shorts",
+  "description": "Every NBA score from Wednesday night: Victor Wembanyama's San Antonio Spurs came back from 22 down to beat the Chicago Bulls 124–119 for their 10th straight win, the Boston Celtics also erased a 22-point deficit to win 98–93 in Toronto, and James Harden's season-high 32 led the Cleveland Cavaliers past the New York Knicks 115–107. Luka Doncic scored 32 as the Los Angeles Lakers (11–2) won 123–112 in Milwaukee, Franz Wagner matched his career high with 38 for the Orlando Magic, the Brooklyn Nets beat New Orleans 145–111, the Houston Rockets beat the Golden State Warriors 115–108 and the Portland Trail Blazers beat the Oklahoma City Thunder again, 118–108.\n\nNBA scores today and standings: https://scorebuzz.net\n\n#NBA #Spurs #Wembanyama #Lakers",
+  "tags": [
+   "nba scores",
+   "nba scores today",
+   "nba scores last night",
+   "spurs vs bulls",
+   "celtics vs raptors",
+   "cavaliers vs knicks",
+   "lakers vs bucks",
+   "rockets vs warriors",
+   "thunder vs trail blazers",
+   "nuggets vs grizzlies",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 20.2,
+    "kicker": "NBA · Wednesday night",
+    "title": "Every score",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Pacers",
+      "homeAbbr": "IND",
+      "hs": 114,
+      "away": "Wizards",
+      "awayAbbr": "WSH",
+      "as": 101,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
+     },
+     {
+      "home": "Knicks",
+      "homeAbbr": "NY",
+      "hs": 107,
+      "away": "Cavaliers",
+      "awayAbbr": "CLE",
+      "as": 115,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
+     },
+     {
+      "home": "Raptors",
+      "homeAbbr": "TOR",
+      "hs": 93,
+      "away": "Celtics",
+      "awayAbbr": "BOS",
+      "as": 98,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+     },
+     {
+      "home": "Bulls",
+      "homeAbbr": "CHI",
+      "hs": 119,
+      "away": "Spurs",
+      "awayAbbr": "SA",
+      "as": 124,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
+     },
+     {
+      "home": "Grizzlies",
+      "homeAbbr": "MEM",
+      "hs": 118,
+      "away": "Nuggets",
+      "awayAbbr": "DEN",
+      "as": 123,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
+     },
+     {
+      "home": "Bucks",
+      "homeAbbr": "MIL",
+      "hs": 112,
+      "away": "Lakers",
+      "awayAbbr": "LAL",
+      "as": 123,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
+     },
+     {
+      "home": "Pelicans",
+      "homeAbbr": "NO",
+      "hs": 111,
+      "away": "Nets",
+      "awayAbbr": "BKN",
+      "as": 145,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
+     },
+     {
+      "home": "Jazz",
+      "homeAbbr": "UTAH",
+      "hs": 108,
+      "away": "Magic",
+      "awayAbbr": "ORL",
+      "as": 123,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
+     },
+     {
+      "home": "Rockets",
+      "homeAbbr": "HOU",
+      "hs": 115,
+      "away": "Warriors",
+      "awayAbbr": "GS",
+      "as": 108,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
+     },
+     {
+      "home": "Trail Blazers",
+      "homeAbbr": "POR",
+      "hs": 118,
+      "away": "Thunder",
+      "awayAbbr": "OKC",
+      "as": 108,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Best win of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA · Wednesday night",
+   "big": "-22",
+   "hook": "Spurs AND Celtics *came back*",
+   "sticker": "FINAL",
+   "emoji": "🏀"
+  },
+  "fbtext": "🏀 Every NBA score from Wednesday night.\n\nThe Spurs and Celtics both came back from 22 down, James Harden dropped 32 at MSG, the Lakers made it seven straight and Brooklyn put up 145 in New Orleans.\n\nBest win of the night? 👇\n\n#NBA #Spurs #Reels"
+ },
+ {
+  "id": "s06-spurs-comeback",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "drama",
+  "venue": "United Center",
+  "fb": "2026-11-12T21:05:00",
+  "title": "Spurs vs Bulls 124–119: Down 22, Wembanyama Wins It 🔥 #shorts",
+  "description": "Victor Wembanyama scored 32 points with nine rebounds and five blocks as the San Antonio Spurs came back from 22 points down to beat the Chicago Bulls 124–119 in Chicago for their 10th straight win. Dylan Harper had 18 points, 10 assists and four steals and De'Aaron Fox added 17. The Bulls (1–9) have lost eight in a row.\n\nSpurs vs Bulls final score and NBA scores: https://scorebuzz.net\n\n#Spurs #Wembanyama #Bulls #NBA",
+  "tags": [
+   "spurs vs bulls",
+   "bulls vs spurs",
+   "victor wembanyama",
+   "wembanyama 32 points",
+   "dylan harper",
+   "san antonio spurs",
+   "chicago bulls",
+   "spurs winning streak",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Wednesday",
+    "title": "Down 22. Won by 5.",
+    "sub": "The Spurs don't lose right now"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final · United Center",
+    "home": "Bulls",
+    "homeAbbr": "CHI",
+    "homeScore": 119,
+    "away": "Spurs",
+    "awayAbbr": "SA",
+    "awayScore": 124,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+    "note": "Chicago led 64–42 in the 2nd quarter"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Victor Wembanyama",
+    "value": "32",
+    "unit": "points",
+    "text": "9 rebounds, 5 blocks"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Dylan Harper",
+    "title": "18 pts · 10 ast · 4 stl",
+    "sub": "De'Aaron Fox added 17 and 9 assists"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "San Antonio Spurs",
+    "value": "10",
+    "unit": "wins in a row",
+    "text": "10–2 after a 4–0 road trip"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can anyone stop the Spurs?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Spurs vs Bulls",
+   "big": "-22",
+   "hook": "Then they *won*",
+   "sticker": "COMEBACK",
+   "teams": [
+    "SA",
+    "CHI"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Down 22 in Chicago. Didn't matter.\n\nVictor Wembanyama scored 32 with five blocks, Dylan Harper had 18 and 10, and the Spurs beat the Bulls 124–119 for their 10th straight win.\n\nAre the Spurs the best team in the NBA? 👇\n\n#Spurs #Wembanyama #Reels"
+ },
+ {
+  "id": "s07-mcdavid-20",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "drama",
+  "venue": "Rogers Place",
+  "fb": "2026-11-13T00:45:00",
+  "yt": "2026-11-13T00:35:00",
+  "title": "McDavid Point Streak Hits 20 | Oilers vs Flyers 3–2 OT 🔥 #NHL #shorts",
+  "description": "Connor McDavid has a point in all 20 Edmonton Oilers games this season after assisting on Zach Hyman's second goal in a 3–2 overtime win over the Philadelphia Flyers. Evan Bouchard scored 47 seconds into overtime. McDavid has 11 goals and 38 assists (49 points) in 20 games; Wayne Gretzky's record point streak is 51 games (1983–84).\n\nOilers vs Flyers final score and NHL scores: https://scorebuzz.net\n\n#McDavid #Oilers #NHL #Flyers",
+  "tags": [
+   "connor mcdavid",
+   "mcdavid point streak",
+   "oilers vs flyers",
+   "flyers vs oilers",
+   "edmonton oilers",
+   "evan bouchard",
+   "zach hyman",
+   "nhl point streak record",
+   "nhl scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · Wednesday",
+    "title": "20 games. A point in all 20.",
+    "sub": "Connor McDavid is still going"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final/OT · Rogers Place",
+    "home": "Oilers",
+    "homeAbbr": "EDM",
+    "homeScore": 3,
+    "away": "Flyers",
+    "awayAbbr": "PHI",
+    "awayScore": 2,
+    "status": "FINAL/OT",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png",
+    "note": "Evan Bouchard won it 47 seconds into OT"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Point No. 20",
+    "title": "An assist on Zach Hyman's 2nd goal",
+    "sub": "Hyman scored twice in the 2nd period"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Connor McDavid · 2026–27",
+    "value": "49",
+    "unit": "points in 20 games",
+    "text": "11 goals, 38 assists"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Wayne Gretzky's record · 1983–84",
+    "value": "51",
+    "unit": "games",
+    "text": "31 more to tie it"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Does he catch Gretzky?",
+    "sub": "Follow ScoreBuzz for NHL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Oilers vs Flyers",
+   "big": "20",
+   "hook": "Games *in a row*",
+   "sticker": "STREAK",
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Connor McDavid: 20 games, a point in all 20.\n\nHis assist on Zach Hyman's goal kept it alive, and Evan Bouchard won it 3–2 in overtime. That's 49 points already. Gretzky's record is 51 games.\n\nCan McDavid get to 51? 👇\n\n#McDavid #Oilers #Reels"
+ },
+ {
+  "id": "s08-tnf-preview",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "venue": "MetLife Stadium",
+  "fb": "2026-11-13T04:25:00",
+  "yt": "2026-11-13T04:50:00",
+  "title": "Commanders vs Giants TNF Preview: Their Last Game Was a TIE 🏈 #NFL #shorts",
+  "description": "Washington Commanders vs New York Giants on Thursday Night Football, NFL Week 10: the 2–5–1 Commanders visit the 5–2–1 Giants at MetLife Stadium at 8:15pm ET on Prime Video. Their October meeting ended in a tie. J.J. McCarthy makes his first Giants home start, with New York top of the NFC East without Jaxson Dart and Brian Burns.\n\nCommanders vs Giants live score: https://scorebuzz.net\n\n#Giants #Commanders #TNF #NFL",
+  "tags": [
+   "commanders vs giants",
+   "giants vs commanders",
+   "thursday night football",
+   "tnf week 10",
+   "nfl week 10",
+   "jj mccarthy",
+   "malik nabers",
+   "jayden daniels",
+   "new york giants",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Thursday Night Football",
+    "title": "Last time they met, NOBODY won",
+    "sub": "Commanders at Giants, tonight"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Tonight · 8:15pm ET · Prime Video",
+    "title": "Commanders (2–5–1) at Giants (5–2–1)",
+    "sub": "Their October game ended in a tie"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "New York Giants",
+    "title": "Top of the NFC East",
+    "sub": "…without Jaxson Dart and Brian Burns"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Quarterback",
+    "title": "J.J. McCarthy's first Giants home start",
+    "sub": "He hurt his right hip on Sunday but is set to play"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Washington",
+    "title": "3rd-worst pass defense in the NFL",
+    "sub": "A must-win at 2–5–1"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Giants or Commanders? Score prediction 👇",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "TNF · Week 10",
+   "big": "TIE",
+   "hook": "Who breaks it *tonight*?",
+   "sticker": "TONIGHT",
+   "teams": [
+    "WSH",
+    "NYG"
+   ],
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 Their last game ended in a tie. Tonight someone wins.\n\nThe 5–2–1 Giants host the 2–5–1 Commanders at 8:15pm ET, with J.J. McCarthy making his first home start for New York.\n\nGiants or Commanders? Score prediction 👇\n\n#Giants #Commanders #Reels"
+ },
+ {
+  "id": "s09-kucherov-hattrick",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "anthem",
+  "venue": "KeyBank Center",
+  "fb": "2026-11-13T06:15:00",
+  "title": "Lightning vs Sabres 8–3: Kucherov Natural Hat Trick in One Period 🎩 #shorts",
+  "description": "Nikita Kucherov had a natural hat trick and an assist, all in the third period, as the Tampa Bay Lightning beat the Buffalo Sabres 8–3 in Buffalo. It was Kucherov's eighth NHL hat trick, after the Sabres had cut the lead to 4–3. John Carlson had a goal and four assists, Jake Guentzel four assists and Brandon Hagel two goals.\n\nLightning vs Sabres final score and NHL scores: https://scorebuzz.net\n\n#Kucherov #GoBolts #Sabres #NHL",
+  "tags": [
+   "lightning vs sabres",
+   "sabres vs lightning",
+   "nikita kucherov",
+   "kucherov hat trick",
+   "tampa bay lightning",
+   "buffalo sabres",
+   "john carlson",
+   "brandon hagel",
+   "nhl scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · Wednesday",
+    "title": "3 goals. 1 period. 0 interruptions.",
+    "sub": "Nikita Kucherov's natural hat trick"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final · KeyBank Center",
+    "home": "Sabres",
+    "homeAbbr": "BUF",
+    "homeScore": 3,
+    "away": "Lightning",
+    "awayAbbr": "TB",
+    "awayScore": 8,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+    "note": "Buffalo had cut it to 4–3"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Nikita Kucherov · 3rd period",
+    "value": "4",
+    "unit": "points",
+    "text": "A natural hat trick and an assist. His 8th NHL hat trick"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "John Carlson",
+    "value": "5",
+    "unit": "points",
+    "text": "1 goal, 4 assists. Jake Guentzel had 4 assists"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best natural hat trick you've seen? 👇",
+    "sub": "Follow ScoreBuzz for NHL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Lightning vs Sabres",
+   "big": "8–3",
+   "hook": "Kucherov *hat trick*",
+   "sticker": "FINAL",
+   "teams": [
+    "TB",
+    "BUF"
+   ],
+   "emoji": "🎩"
+  },
+  "fbtext": "🎩 Nikita Kucherov needed one period.\n\nBuffalo cut it to 4–3, then Kucherov scored a natural hat trick and added an assist in the third as Tampa Bay won 8–3. John Carlson had five points.\n\nIs Kucherov the most underrated star in the NHL? 👇\n\n#Kucherov #GoBolts #Reels"
+ },
+ {
+  "id": "s10-harden-32",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "venue": "Madison Square Garden",
+  "yt": "2026-11-13T07:05:00",
+  "title": "Cavaliers vs Knicks 115–107: James Harden Season-High 32 🔥 #shorts",
+  "description": "James Harden scored a season-high 32 points and hit the go-ahead 3-pointer with 4:21 left as the Cleveland Cavaliers beat the New York Knicks 115–107 at Madison Square Garden. Harden came in averaging 15.3 points. Donovan Mitchell added 23; Jalen Brunson scored 27 for the Knicks and Karl-Anthony Towns had 21 points and 11 rebounds, tying Willis Reed's franchise record with his 11th straight double-double to start a season.\n\nCavaliers vs Knicks final score and NBA scores: https://scorebuzz.net\n\n#JamesHarden #Cavs #Knicks #NBA",
+  "tags": [
+   "cavaliers vs knicks",
+   "knicks vs cavaliers",
+   "james harden",
+   "james harden 32 points",
+   "donovan mitchell",
+   "jalen brunson",
+   "karl-anthony towns",
+   "cleveland cavaliers",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Wednesday",
+    "title": "James Harden turned back the clock",
+    "sub": "At Madison Square Garden"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final · Madison Square Garden",
+    "home": "Knicks",
+    "homeAbbr": "NY",
+    "homeScore": 107,
+    "away": "Cavaliers",
+    "awayAbbr": "CLE",
+    "awayScore": 115,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+    "note": "Donovan Mitchell added 23"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "James Harden",
+    "value": "32",
+    "unit": "points",
+    "text": "A season high. He came in averaging 15.3"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "The dagger",
+    "title": "Go-ahead 3 at 101–101",
+    "sub": "With 4:21 left"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Karl-Anthony Towns",
+    "value": "11",
+    "unit": "straight double-doubles",
+    "text": "Ties Willis Reed's Knicks record to start a season"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is the old Harden back?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Cavs vs Knicks",
+   "big": "32",
+   "hook": "Harden's *back*",
+   "sticker": "SEASON HIGH",
+   "emoji": "🔥"
+  }
+ }
+]

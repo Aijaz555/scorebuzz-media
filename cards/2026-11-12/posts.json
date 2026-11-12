@@ -1,0 +1,273 @@
+[
+ {
+  "id": "01-pochettino",
+  "time": "2026-11-12T11:00:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "MAN UNITED · SOURCES: ESPN",
+  "venue": "Old Trafford",
+  "headline": "Man United move for Pochettino",
+  "sub": "Sources told ESPN United have contacted U.S. Soccer before triggering his $10m release clause. Michael Carrick's meeting with the club is on Thursday.",
+  "caption": "🔴 Mauricio Pochettino to Manchester United is getting closer.\n\nSources told ESPN that United have contacted U.S. Soccer before triggering the USMNT coach's $10 million release clause. Michael Carrick, 18th in the Premier League after 10 games, meets the club on Thursday.\n\nShould United make the change? 👇\n\n#MUFC #Pochettino #PremierLeague"
+ },
+ {
+  "id": "02-zubimendi",
+  "time": "2026-11-12T11:55:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "ARSENAL",
+  "venue": "Emirates Stadium",
+  "headline": "Zubimendi: I'm not leaving Arsenal",
+  "sub": "Martín Zubimendi has denied he is thinking about a January move, amid reported interest from Atlético Madrid.",
+  "caption": "🔴 Martín Zubimendi has shut down the January talk.\n\nThe Arsenal midfielder denied he is considering leaving the Premier League leaders, despite reported interest from Atlético Madrid.\n\nHow important is Zubimendi to Arsenal's title push? 👇\n\n#Arsenal #Zubimendi #AFC"
+ },
+ {
+  "id": "03-nations-thursday",
+  "time": "2026-11-12T13:45:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "NATIONS LEAGUE · THURSDAY",
+  "headline": "Tonight's big games",
+  "rows": [
+   [
+    "Türkiye v Belgium",
+    "17:00 GMT",
+    "12pm ET"
+   ],
+   [
+    "England v Croatia",
+    "19:45 GMT",
+    "2:45pm ET"
+   ],
+   [
+    "Italy v France",
+    "19:45 GMT",
+    "2:45pm ET"
+   ],
+   [
+    "Czechia v Spain",
+    "19:45 GMT",
+    "2:45pm ET"
+   ]
+  ],
+  "sub": "England host Croatia at Wembley. France go to San Siro; Spain are in Prague.",
+  "caption": "⚽ International football is back tonight.\n\nTürkiye v Belgium at 17:00 GMT, then England v Croatia, Italy v France and Czechia v Spain all kick off at 19:45 GMT (2:45pm ET).\n\nWhich one are you watching? 👇\n\n#NationsLeague #England #Italy"
+ },
+ {
+  "id": "04-mbappe-out",
+  "time": "2026-11-12T14:40:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "FRANCE · NATIONS LEAGUE",
+  "venue": "San Siro",
+  "headline": "No Mbappé for France v Italy",
+  "sub": "Zinedine Zidane confirmed Kylian Mbappé (hamstring) misses tonight's game at San Siro. Marcus Thuram and Aurélien Tchouaméni are already out.",
+  "caption": "🇫🇷 France are without Kylian Mbappé tonight.\n\nZinedine Zidane confirmed his captain misses the Nations League game against Italy at San Siro with a hamstring problem, after sitting out Wednesday's training. Marcus Thuram and Aurélien Tchouaméni have already left the squad.\n\nCan Italy take advantage? 👇\n\n#France #Mbappe #NationsLeague"
+ },
+ {
+  "id": "05-isak-penalty",
+  "time": "2026-11-12T16:30:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "PREMIER LEAGUE · REFEREEING",
+  "venue": "Anfield",
+  "headline": "Liverpool should have had a penalty v Arsenal",
+  "sub": "An expert panel says the shirt-tug on Alexander Isak earlier this month should have been given.",
+  "caption": "😤 Liverpool fans, you were right.\n\nAn expert panel has ruled that Liverpool should have had a penalty for the shirt-tug on Alexander Isak in their Premier League game against Arsenal earlier this month.\n\nDo these panels make things better or worse? 👇\n\n#LFC #Arsenal #PremierLeague"
+ },
+ {
+  "id": "06-yamal-delafuente",
+  "time": "2026-11-12T17:25:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "SPAIN · NATIONS LEAGUE",
+  "venue": "Generali Arena",
+  "headline": "De la Fuente defends Lamine Yamal",
+  "sub": "Spain's coach rejected claims of 'special privileges' after Yamal joined the squad late. The injured winger misses tonight's game in Czechia.",
+  "caption": "🇪🇸 Luis de la Fuente is not having it.\n\nThe Spain coach hit back at suggestions that Lamine Yamal gets special treatment after the Barcelona star joined the squad late. Yamal misses tonight's game in Czechia with a knee injury.\n\nIs the criticism fair? 👇\n\n#Spain #LamineYamal #NationsLeague"
+ },
+ {
+  "id": "07-cy-young",
+  "time": "2026-11-12T19:15:00",
+  "sport": "mlb",
+  "league": "mlb",
+  "kind": "list",
+  "label": "MLB AWARDS · CY YOUNG",
+  "headline": "Two unanimous Cy Youngs",
+  "rows": [
+   [
+    "NL",
+    "Jacob Misiorowski",
+    "Brewers"
+   ],
+   [
+    "AL",
+    "Cam Schlittler",
+    "Yankees"
+   ]
+  ],
+  "sub": "Both pitchers got all 30 first-place votes.",
+  "caption": "⚾ Unanimous. Both of them.\n\nMilwaukee's Jacob Misiorowski (NL) and the Yankees' Cam Schlittler (AL) won the 2026 Cy Young Awards with all 30 first-place votes each.\n\nWho had the better season? 👇\n\n#CyYoung #Brewers #Yankees"
+ },
+ {
+  "id": "08-lakers-seven",
+  "time": "2026-11-12T20:10:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · WEDNESDAY",
+  "venue": "Fiserv Forum",
+  "home": "Bucks",
+  "homeScore": 112,
+  "away": "Lakers",
+  "awayScore": 123,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+  "headline": "Seven straight. 11–2. Best record in the NBA.",
+  "sub": "Luka Doncic 32, Sandro Mamukelashvili 23, Austin Reaves 18 on his return. The Bucks have lost eight in a row.",
+  "caption": "💜💛 The Lakers have won seven in a row.\n\nLuka Doncic scored 32, Sandro Mamukelashvili added 23 against his old team and Austin Reaves had 18 in his return as LA won 123–112 in Milwaukee. At 11–2 they have the best record in the NBA. The Bucks are 1–11.\n\nLakers or Spurs: who's the best team in the West? 👇\n\n#Lakers #LukaDoncic #NBA"
+ },
+ {
+  "id": "09-harden-32",
+  "time": "2026-11-12T22:00:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · WEDNESDAY",
+  "venue": "Madison Square Garden",
+  "home": "Knicks",
+  "homeScore": 107,
+  "away": "Cavaliers",
+  "awayScore": 115,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+  "headline": "James Harden is back: season-high 32",
+  "sub": "He came in averaging 15.3. His 3 broke a 101–101 tie with 4:21 left. Karl-Anthony Towns tied a Willis Reed Knicks record.",
+  "caption": "🧔 Vintage James Harden.\n\nHe came into the night averaging 15.3 points, then scored a season-high 32 and hit the go-ahead 3 as the Cavaliers beat the Knicks 115–107 at MSG. Karl-Anthony Towns (21 & 11) tied Willis Reed's Knicks record with his 11th straight double-double to start a season.\n\nIs Harden's slow start over? 👇\n\n#Cavs #JamesHarden #Knicks"
+ },
+ {
+  "id": "10-kane-caps",
+  "time": "2026-11-12T23:50:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "ENGLAND v CROATIA · 19:45 GMT",
+  "venue": "Wembley Stadium",
+  "headline": "One more cap and Kane stands alone",
+  "sub": "Harry Kane is level with Peter Shilton on 125 England caps, the men's record. England host Croatia at Wembley tonight.",
+  "stat": [
+   "125",
+   "caps, level with Shilton"
+  ],
+  "caption": "🦁 History could be made at Wembley tonight.\n\nHarry Kane, the 2026 Ballon d'Or winner, is level with Peter Shilton on 125 caps, the England men's record. England play Croatia in the Nations League at 19:45 GMT (2:45pm ET).\n\nDoes Kane score on his record night? 👇\n\n#England #HarryKane #NationsLeague"
+ },
+ {
+  "id": "11-rivers-ncstate",
+  "time": "2026-11-13T01:40:00",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "kind": "headline",
+  "label": "COLLEGE FOOTBALL · SOURCES: ESPN",
+  "headline": "Philip Rivers is set to coach NC State",
+  "sub": "The former Wolfpack and NFL quarterback is set to return as head coach. Sources say the deal will be finalised after a trustees meeting on Friday.",
+  "caption": "🐺 Philip Rivers is going home.\n\nThe former NC State and NFL quarterback is set to become the Wolfpack's head coach, sources told ESPN, with his contract to be finalised after a trustees meeting on Friday.\n\nWill Rivers be a success as a college head coach? 👇\n\n#NCState #PhilipRivers #CFB"
+ },
+ {
+  "id": "12-nba-tonight",
+  "time": "2026-11-13T03:30:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · THURSDAY (ET)",
+  "headline": "Four games tonight",
+  "rows": [
+   [
+    "Pistons (7–3)",
+    "7:00",
+    "Wizards (4–8)"
+   ],
+   [
+    "Raptors (5–6)",
+    "7:00",
+    "76ers (9–3)"
+   ],
+   [
+    "Mavericks (7–4)",
+    "8:00",
+    "Timberwolves (8–3)"
+   ],
+   [
+    "Hornets (4–7)",
+    "9:00",
+    "Suns (4–6)"
+   ]
+  ],
+  "sub": "Away team first. Tip-off times Eastern.",
+  "caption": "🏀 A short NBA night, but some good ones.\n\nThe 9–3 76ers host Toronto, Detroit (7–3) visit Washington and Dallas go to 8–3 Minnesota at 8pm ET.\n\nWhich game are you watching? 👇\n\n#NBA #Sixers #Timberwolves"
+ },
+ {
+  "id": "13-ufc-334",
+  "time": "2026-11-13T05:20:00",
+  "sport": "mma",
+  "league": "ufc",
+  "kind": "list",
+  "label": "UFC 334 · MADISON SQUARE GARDEN · SATURDAY",
+  "headline": "Two title fights at MSG",
+  "rows": [
+   [
+    "Gane (14–2)",
+    "HW title",
+    "Hokit (10–0)"
+   ],
+   [
+    "Nunes (23–5)",
+    "BW title",
+    "Harrison (19–1)"
+   ],
+   [
+    "Borralho (18–2)",
+    "MW",
+    "Belgaroui (11–3)"
+   ],
+   [
+    "Holland (29–15)",
+    "WW",
+    "Medić (14–3)"
+   ]
+  ],
+  "sub": "Main card Saturday, 9pm ET (02:00 GMT Sunday).",
+  "caption": "🥊 UFC 334 is two days away.\n\nCiryl Gane fights unbeaten Josh Hokit for the heavyweight title, and Amanda Nunes meets Kayla Harrison at Madison Square Garden on Saturday.\n\nYour picks for both title fights? 👇\n\n#UFC334 #UFC #AmandaNunes"
+ },
+ {
+  "id": "14-worst-starts",
+  "time": "2026-11-13T07:10:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · BOTTOM OF THE STANDINGS",
+  "headline": "Three teams, one win each",
+  "rows": [
+   [
+    "Bucks",
+    "1–11",
+    "lost 8 in a row"
+   ],
+   [
+    "Jazz",
+    "1–11",
+    "lost 10 in a row"
+   ],
+   [
+    "Bulls",
+    "1–9",
+    "lost 8 in a row"
+   ]
+  ],
+  "sub": "Records after Wednesday's games.",
+  "caption": "😬 Three NBA teams have won once all season.\n\nThe Bucks (1–11) and Bulls (1–9) have lost eight straight, and the Jazz (1–11) have lost 10 in a row.\n\nWhich one gets win No. 2 first? 👇\n\n#NBA #Bucks #Bulls"
+ }
+]
