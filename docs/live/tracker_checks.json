@@ -1156,26 +1156,6 @@
   "reason": "ok (contrast 65)",
   "at": "2026-11-12T04:50:18+00:00"
  },
- "401892693": {
-  "slot": "13",
-  "league": "nhl",
-  "game": "Golden Knights v Mammoth",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-mammoth-401892693/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 82)",
-  "at": "2026-11-12T04:50:21+00:00"
- },
- "401892694": {
-  "slot": "14",
-  "league": "nhl",
-  "game": "Ducks v Predators",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/ducks-vs-predators-401892694/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-12T04:50:24+00:00"
- },
  "401909975": {
   "slot": "2",
   "league": "nba",
@@ -1195,5 +1175,25 @@
   "status": "ok",
   "reason": "ok (contrast 88)",
   "at": "2026-11-12T04:58:33+00:00"
+ },
+ "401892693": {
+  "slot": "13",
+  "league": "nhl",
+  "game": "Golden Knights v Mammoth",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-mammoth-401892693/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-12T05:22:42+00:00"
+ },
+ "401892694": {
+  "slot": "14",
+  "league": "nhl",
+  "game": "Ducks v Predators",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/ducks-vs-predators-401892694/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-12T05:22:45+00:00"
  }
 }
