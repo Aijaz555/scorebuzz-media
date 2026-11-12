@@ -90,6 +90,16 @@
    "league": "nhl",
    "event": "401892693",
    "note": "Vegas Golden Knights vs Utah Mammoth, 2026-11-12T02:30:00Z"
+  },
+  "14": {
+   "league": "nba",
+   "event": "401909975",
+   "note": "Portland Trail Blazers vs Oklahoma City Thunder, 2026-11-12T03:00:00Z"
+  },
+  "15": {
+   "league": "nhl",
+   "event": "401892694",
+   "note": "Anaheim Ducks vs Nashville Predators, 2026-11-12T03:00:00Z"
   }
  },
  "fit": {
