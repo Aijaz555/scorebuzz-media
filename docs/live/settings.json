@@ -36,7 +36,7 @@
   "win": true,
   "fit": "fill"
  },
- "reload": 29,
+ "reload": 30,
  "music": {
   "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old; NBA uses the 8 Envato arena crowd recordings the owner licensed (11 Nov 2026), unmixed, in a fixed order, old funk playlist kept as basketball. NHL uses 8 Envato hockey crowd recordings (owner, 11 Nov 2026) played in a fixed order, not shuffled (music.ordered), old music kept as hockey. Soccer (owner, 11 Nov 2026) loops the single Envato \"Football Crowd Cheer\" clip, uploaded unchanged (louder than the other crowd tracks, volume 4 per owner); the Pixabay mixes are kept as soccer.",
   "playlists": {
@@ -239,6 +239,10 @@
   "ncaaf",
   "nhl",
   "mlb"
+ ],
+ "centerLeagues": [
+  "nba",
+  "nhl"
  ],
  "usLeagues": [
   "nhl",

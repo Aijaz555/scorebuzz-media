@@ -1437,6 +1437,16 @@ async function loadSettings() {
       // dark broadcast layout (docs/live/dark.html) for the leagues listed in settings "dark": hand the slot over to it
       // NBA broadcast layout (docs/live/nba.html, owner 9 Nov 2026): loaded fresh from raw GitHub like the cricket page,
       // because the stream host caches docs/live/*.html for hours. settings "nbaPage": false falls back to dark.html.
+      // Centre-tracker layout (docs/live/center.html, owner 12 Nov 2026) for the leagues in settings "centerLeagues" (nba, nhl):
+      // tracker in the middle, team sidebars with game leaders. "centerPage": false sends them back to nba.html / us.html.
+      const CEN = Array.isArray(c.centerLeagues) ? c.centerLeagues : [];
+      if (PIN && CEN.includes(PIN.league) && c.centerPage !== false) { if (window.__toCen) return; window.__toCen = 1;
+        window.fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/center.html?t=' + Date.now(), { cache: 'no-store' })
+          .then((r) => { if (!r.ok) throw 0; return r.text(); })
+          .then((html) => { const top = setTimeout(() => {}, 0); for (let i = 1; i <= top + 50; i++) { clearTimeout(i); clearInterval(i); }
+            document.open(); document.write(html); document.close(); })
+          .catch(() => { window.__toCen = 0; });
+        return; }
       if (PIN && PIN.league === 'nba' && c.nbaPage !== false) { if (window.__toNba) return; window.__toNba = 1;
         window.fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/nba.html?t=' + Date.now(), { cache: 'no-store' })
           .then((r) => { if (!r.ok) throw 0; return r.text(); })

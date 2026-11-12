@@ -378,9 +378,12 @@ broadcast style. It reads ESPN's public cricket JSON from the browser (`/apis/si
   `*.r2.cloudflarestorage.com` allowed), then add title → file id to the sport's playlist. Titles start with "ScoreBuzz" so the
   planner doesn't add a Kevin MacLeod credit.
 
-## Centre-tracker layout — DEMO (owner's request, 12 Nov 2026)
-`docs/live/center.html` (NBA + NHL, not on air): same colours/fonts as nba.html / us.html, rearranged so the live tracker sits in the
+## Centre-tracker layout (on air 12 Nov 2026, owner's request)
+NBA and NHL slots now show `docs/live/center.html`: same colours/fonts as nba.html / us.html, rearranged so the live tracker sits in the
 centre — team sidebars (logo, record, big score, period chips, 5 game leaders with headshots), clock on top, sport strip, big tracker,
 3 latest plays below, today's games + SUBSCRIBE along the bottom. Tracker = scorebuzz.net live tracker while in play, a built-in shot
 map before/after the game (or `&trk=own` / `sbtrk: 0`). Preview: `center.html?league=nba|nhl&event=<ESPN id>` or `?slot=N`.
-To put it on air later, app.html would load it for nba/nhl slots instead of nba.html / us.html (not done yet).
+- app.html loads it fresh from raw GitHub for the leagues in settings `"centerLeagues"` (nba, nhl), before the nba.html / us.html hand-offs.
+  Kill switch: `"centerPage": false` (or remove a league from `centerLeagues`) sends those slots back to nba.html / us.html.
+- Sync with the tracker (owner: the board must not run behind it): the page polls ESPN every 2 s (ESPN caches ~3 s) and takes the
+  further-on clock/score of ESPN's scoreboard and summary feeds.

@@ -200,6 +200,11 @@ function render(s, sb) {
   const H = team(c.competitors.find((x) => x.homeAway === 'home')), A = team(c.competitors.find((x) => x.homeAway === 'away'));
   document.documentElement.style.setProperty('--hc', H.color); document.documentElement.style.setProperty('--ac', A.color);
   const sbEv = (sb?.events || []).find((e) => e.id === c.id);
+  { // ESPN's scoreboard and summary feeds refresh at different moments: use whichever is further on (keeps the board level with the tracker)
+    const b = sbEv?.status, secs = (v) => { const m = /^(\d+):(\d+)/.exec(v || ''); return m ? +m[1] * 60 + +m[2] : parseFloat(v) || 0; };
+    if (b && st.type?.state === 'in' && b.type?.state === 'in' && ((b.period || 0) > (st.period || 0) || ((b.period || 0) === (st.period || 0) && secs(b.displayClock) < secs(st.displayClock)))) { st.period = b.period; st.displayClock = b.displayClock; st.type = b.type; }
+    for (const T of [H, A]) { const x = sbEv?.competitions?.[0]?.competitors?.find((k) => String(k.team.id) === T.id); if (x && +x.score > T.score) T.score = +x.score; }
+  }
   const per = st.period || 1, n = st.type?.name || '', pre = st.type?.state === 'pre', fin = st.type?.completed, live = st.type?.state === 'in';
   const et = (d) => new Date(d).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET';
   const B = box(s), hasBox = Object.keys(B).length > 0 && !pre, all = s.plays || [], lastP = all[all.length - 1];
@@ -292,28 +297,33 @@ function placeTracker(url) {
   Object.assign(trkF.parentNode.style, { left: left + 'px', top: top + 'px', width: w + 'px', height: h + 'px' });
   Object.assign(trkF.style, { height: (TOP + VH + 20) + 'px', left: ((w - VW * k) / 2 - X * k) + 'px', top: ((h - VH * k) / 2 - TOP * k) + 'px', transform: `scale(${k})` });
 }
-let last = 0;
+let last = 0, busy = false;
+const POLL = 2000; // ESPN caches its feeds for ~3 s, so polling every 2 s shows each update as soon as it exists
 async function tick() {
-  if (!event) return;
+  if (!event || busy) return;
+  busy = true;
   try {
     const [s, sb] = await Promise.all([J(`${API()}/summary?event=${event}`), J(`${API()}/scoreboard`).catch(() => null)]);
     render(s, sb); last = Date.now();
   } catch (e) { console.error(e); if (!last) $('app').innerHTML = '<div class="err">Loading ScoreBuzz live scoreboard…</div>'; }
+  busy = false;
 }
 async function slotTick() {
   try {
     const c = await J('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/settings.json?t=' + Date.now());
     window.__fitRemote = c.fit || {}; fit();
+    if (window.__reloadSeen === undefined) window.__reloadSeen = c.reload ?? null; else if ((c.reload ?? null) !== window.__reloadSeen) location.reload();
     const sl = (c.slots || {})[SLOT];
     if (!sl || !sl.event) { $('app').innerHTML = '<div class="err">ScoreBuzz live scoreboard · next game coming up</div>'; event = null; return; }
-    if (!SPORT[sl.league]) { location.replace(`dark.html${location.search}`); return; }
+    // this layout is on air for the leagues in settings "centerLeagues" ("centerPage": false = off): anything else goes back through app.html
+    if (!SPORT[sl.league] || c.centerPage === false || !(c.centerLeagues || []).includes(sl.league)) { location.reload(); return; }
     noSite = sl.sbtrk === 0;
     if (String(sl.event) !== String(event) || sl.league !== league) { league = sl.league; event = String(sl.event); tick(); }
   } catch (e) { /* keep current */ }
 }
 if (!SPORT[league]) league = 'nba';
-if (SLOT) { slotTick(); setInterval(slotTick, 60000); setInterval(tick, 5000); }
-else if (!event) $('app').innerHTML = '<div class="err">Add ?league=nba|nhl&event=&lt;ESPN game id&gt; or ?slot=N</div>'; else { tick(); setInterval(tick, 5000); }
+if (SLOT) { slotTick(); setInterval(slotTick, 60000); setInterval(tick, POLL); }
+else if (!event) $('app').innerHTML = '<div class="err">Add ?league=nba|nhl&event=&lt;ESPN game id&gt; or ?slot=N</div>'; else { tick(); setInterval(tick, POLL); }
 })();
 </script>
 </body></html>
