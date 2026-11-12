@@ -1175,5 +1175,25 @@
   "status": "ok",
   "reason": "ok (contrast 94)",
   "at": "2026-11-12T03:07:32+00:00"
+ },
+ "401909975": {
+  "slot": "2",
+  "league": "nba",
+  "game": "Trail Blazers v Thunder",
+  "url": "https://scorebuzz.net/basketball/nba/trail-blazers-vs-thunder-401909975/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-12T03:15:40+00:00"
+ },
+ "401892695": {
+  "slot": "15",
+  "league": "nhl",
+  "game": "Sharks v Penguins",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/sharks-vs-penguins-401892695/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 80)",
+  "at": "2026-11-12T03:15:43+00:00"
  }
 }
