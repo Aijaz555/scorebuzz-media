@@ -1434,6 +1434,14 @@ async function loadSettings() {
     if (window.__reloadSeen === undefined) window.__reloadSeen = c.reload ?? null;
     else if ((c.reload ?? null) !== window.__reloadSeen) location.reload();
     if (SLOT) { const sl = (c.slots || {})[SLOT]; PIN = sl && sl.event ? sl : null;
+      // audio test (docs/live/audiotest.html): settings "audioTest": {"slot": "N"} shows the test page on that slot
+      if (c.audioTest && String(c.audioTest.slot) === String(SLOT)) { if (window.__toAud) return; window.__toAud = 1;
+        window.fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/audiotest.html?t=' + Date.now(), { cache: 'no-store' })
+          .then((r) => { if (!r.ok) throw 0; return r.text(); })
+          .then((html) => { const top = setTimeout(() => {}, 0); for (let i = 1; i <= top + 50; i++) { clearTimeout(i); clearInterval(i); }
+            document.open(); document.write(html); document.close(); })
+          .catch(() => { window.__toAud = 0; });
+        return; }
       // dark broadcast layout (docs/live/dark.html) for the leagues listed in settings "dark": hand the slot over to it
       // NBA broadcast layout (docs/live/nba.html, owner 9 Nov 2026): loaded fresh from raw GitHub like the cricket page,
       // because the stream host caches docs/live/*.html for hours. settings "nbaPage": false falls back to dark.html.
