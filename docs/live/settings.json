@@ -240,10 +240,6 @@
   "nhl",
   "mlb"
  ],
- "audioTest": {
-  "slot": "20",
-  "note": "temporary: Slot 20 shows docs/live/audiotest.html (page-audio test, 12 Nov 2026); remove after the test"
- },
  "centerLeagues": [
   "nba",
   "nhl"

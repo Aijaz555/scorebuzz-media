@@ -90,6 +90,7 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 (() => {
 const q = new URLSearchParams(location.search);
 const SLOT = q.get('slot'), OWN = q.get('trk') === 'own';
+const VOICE = q.get('voice') === '1', REPLAY = q.get('replay') === '1'; // demo: spoken commentary (browser voice) / replay a finished game play by play
 let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('sbtrk') === '0';
 function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
   const mode = R.fit || q.get('fit') || 'contain', b = document.body;
@@ -284,6 +285,59 @@ function render(s, sb) {
   ${side(A, H, 'a')}
   <div class="bot">${evs.map((e) => gameCell(e, e.id === c.id)).join('')}<div class="sub"><div class="bz">Score<b>Buzz</b><span>scorebuzz.net</span></div><div class="btn">SUBSCRIBE</div></div></div>`;
   placeTracker(trkUrl);
+  if (VOICE) commentary(all, H, A, per, pre, fin);
+}
+// ---- DEMO: spoken commentary (&voice=1). Turns each new play into a short line and reads it with the browser's own voice. ----
+// On the real streams the same lines would be sent to a text-to-speech service and played as audio clips.
+const said = new Set(); let sayQ = [], talking = false, voiceOn = false, firstCall = true;
+function scoreLine(H, A) { return H.score === A.score ? `We are tied at ${H.score}.` : `${H.score > A.score ? H.nick : A.nick} lead, ${Math.max(H.score, A.score)} to ${Math.min(H.score, A.score)}.`; }
+function lineFor(p, H, A) {
+  const T = p.type?.text || '', who = String(p.team?.id || '') === H.id ? H.nick : String(p.team?.id || '') === A.id ? A.nick : '', per = p.period?.number || 1;
+  const hs = p.homeScore ?? H.score, as = p.awayScore ?? A.score, sl = scoreLine({ ...H, score: +hs }, { ...A, score: +as });
+  let x = (p.text || '').replace(/\s*\(\d+\)/g, '');
+  if (NHL()) {
+    if (p.scoringPlay) return `Goal! ${who} score! ${x.replace(/ Goal /, ', ').replace(/assists:/, 'assisted by')}. ${sl}`;
+    if (/Period Start/i.test(T)) return `The ${perLong(per)} is under way.`;
+    if (/Period End/i.test(T)) return `That is the end of the ${perLong(per)}. ${sl}`;
+    if (p.type?.penaltyMinutes || /penalty|minor|major/i.test(T)) return `Penalty, ${who}. ${x}.`;
+    if (/^(Shot|Missed|Blocked)$/i.test(T)) return x.replace(/shot blocked by/i, 'has his shot blocked by') + '.';
+    return '';
+  }
+  if (p.scoringPlay) return `${x.replace(/\((.+?) assists?\)/, ', assisted by $1')}. ${p.scoreValue === 3 || (+hs + +as) % 10 < 3 ? `${H.nick} ${hs}, ${A.nick} ${as}.` : ''}`;
+  if (/End Period|End Game/i.test(T)) return `That is the end of the ${perLong(per)}. ${sl}`;
+  if (/Timeout/i.test(T) && who) return `Timeout, ${who}.`;
+  if (/Turnover|Steal|Block/i.test(T) || /blocks|steals/i.test(x)) return x.replace(/\((.+?) steals\)/, ', stolen by $1') + '.';
+  return '';
+}
+function pump() {
+  if (!voiceOn || talking || !sayQ.length || !window.speechSynthesis) return;
+  if (sayQ.length > 2) sayQ = sayQ.filter((l, i) => l.big || i >= sayQ.length - 2); // running behind: keep the big calls and the newest
+  const l = sayQ.shift(), u = new SpeechSynthesisUtterance(l.t), vs = speechSynthesis.getVoices();
+  u.voice = vs.find((v) => /Google US English|Daniel|Samantha|Aria|Guy/i.test(v.name)) || vs.find((v) => /^en[-_](US|GB)/i.test(v.lang)) || null;
+  u.rate = l.big ? 1.05 : 1.12; u.pitch = l.big ? 1.15 : 1; talking = true;
+  u.onend = u.onerror = () => { talking = false; pump(); }; speechSynthesis.speak(u);
+  const cap = $('vcap'); if (cap) cap.textContent = '🎙 ' + l.t;
+}
+function commentary(all, H, A, per, pre, fin) {
+  if (!$('vbtn') && !voiceOn) { const b = document.createElement('div'); b.id = 'vbtn'; b.textContent = '🔊 Tap here to turn the commentary on';
+    b.style.cssText = 'position:absolute;left:560px;top:420px;width:800px;padding:34px 0;text-align:center;font:900 44px Inter,sans-serif;background:#c6f432;color:#0a1430;border-radius:22px;cursor:pointer;z-index:50;box-shadow:0 20px 60px #000c';
+    b.onclick = () => { voiceOn = true; b.remove(); const c = document.createElement('div'); c.id = 'vcap';
+      c.style.cssText = 'position:absolute;left:430px;top:724px;width:1060px;padding:8px 18px;font:700 24px Inter,sans-serif;background:#000c;color:#fff;z-index:40;white-space:nowrap;overflow:hidden;text-overflow:ellipsis';
+      document.body.appendChild(c); sayQ.unshift({ t: `Welcome to Score Buzz. ${A.nick} at ${H.nick}. ${pre ? 'We are getting ready to start.' : scoreLine(H, A)}`, big: true }); pump(); };
+    document.body.appendChild(b); }
+  for (const p of all) { if (said.has(p.id)) continue; said.add(p.id); if (firstCall) continue; const t = lineFor(p, H, A); if (t) sayQ.push({ t, big: !!p.scoringPlay && NHL() }); }
+  firstCall = false; pump();
+}
+// ---- DEMO: &replay=1 plays a finished game back one play every few seconds (score and clock follow the plays) ----
+let rpS = null, rpI = 0;
+function replayStep(s) {
+  if (!rpS) { rpS = s; rpI = Math.max(1, Math.min(+q.get('from') || 40, (s.plays || []).length - 1)); }
+  const S = JSON.parse(JSON.stringify(rpS)), all = rpS.plays || []; rpI = Math.min(rpI + 1, all.length);
+  const p = all[rpI - 1] || {}, c = S.header.competitions[0], per = p.period?.number || 1;
+  S.plays = all.slice(0, rpI);
+  c.status = { period: per, displayClock: NHL() ? left(p.clock?.displayValue, per) : p.clock?.displayValue || '', type: { state: 'in', name: 'STATUS_IN_PROGRESS', completed: false, shortDetail: '' } };
+  for (const x of c.competitors) { x.score = String((x.homeAway === 'home' ? p.homeScore : p.awayScore) ?? 0); x.linescores = []; }
+  return S;
 }
 // the website's live tracker, cropped out of the match page like nba.html / us.html
 let trkF = null, trkSrc = '';
@@ -303,8 +357,10 @@ async function tick() {
   if (!event || busy) return;
   busy = true;
   try {
+    if (REPLAY && rpS) { render(replayStep(rpS), null); busy = false; return; }
     const [s, sb] = await Promise.all([J(`${API()}/summary?event=${event}`), J(`${API()}/scoreboard`).catch(() => null)]);
-    render(s, sb); last = Date.now();
+    if (REPLAY) render(replayStep(s), null); else render(s, sb);
+    last = Date.now();
   } catch (e) { console.error(e); if (!last) $('app').innerHTML = '<div class="err">Loading ScoreBuzz live scoreboard…</div>'; }
   busy = false;
 }
@@ -323,7 +379,7 @@ async function slotTick() {
 }
 if (!SPORT[league]) league = 'nba';
 if (SLOT) { slotTick(); setInterval(slotTick, 60000); setInterval(tick, POLL); }
-else if (!event) $('app').innerHTML = '<div class="err">Add ?league=nba|nhl&event=&lt;ESPN game id&gt; or ?slot=N</div>'; else { tick(); setInterval(tick, POLL); }
+else if (!event) $('app').innerHTML = '<div class="err">Add ?league=nba|nhl&event=&lt;ESPN game id&gt; or ?slot=N</div>'; else { tick(); setInterval(tick, REPLAY ? 4500 : POLL); }
 })();
 </script>
 </body></html>
