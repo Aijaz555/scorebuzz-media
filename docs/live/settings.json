@@ -26,26 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "2": {
-   "league": "nba",
-   "event": "401909975",
-   "note": "Portland Trail Blazers vs Oklahoma City Thunder, 2026-11-12T03:00:00Z"
-  },
-  "10": {
-   "league": "nba",
-   "event": "401909974",
-   "note": "Houston Rockets vs Golden State Warriors, 2026-11-12T02:30:00Z"
-  },
-  "11": {
-   "league": "nhl",
-   "event": "401892692",
-   "note": "Edmonton Oilers vs Philadelphia Flyers, 2026-11-12T02:00:00Z"
-  },
-  "13": {
-   "league": "nhl",
-   "event": "401892693",
-   "note": "Vegas Golden Knights vs Utah Mammoth, 2026-11-12T02:30:00Z"
-  },
   "14": {
    "league": "nhl",
    "event": "401892694",
