@@ -58,5 +58,11 @@
   "name": "PPG Paints Arena",
   "city": "Pittsburgh",
   "country": "USA"
+ },
+ {
+  "slug": "wembley-stadium",
+  "name": "Wembley Stadium",
+  "city": "London",
+  "country": "England"
  }
 ]
