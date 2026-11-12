@@ -65,6 +65,26 @@
    "league": "nhl",
    "event": "401892699",
    "note": "Florida Panthers vs Detroit Red Wings, 2026-11-13T00:30:00Z"
+  },
+  "9": {
+   "league": "nba",
+   "event": "401909978",
+   "note": "Minnesota Timberwolves vs Dallas Mavericks, 2026-11-13T01:00:00Z"
+  },
+  "10": {
+   "league": "nhl",
+   "event": "401892703",
+   "note": "Dallas Stars vs Winnipeg Jets, 2026-11-13T01:00:00Z"
+  },
+  "11": {
+   "league": "nfl",
+   "event": "401873052",
+   "note": "New York Giants vs Washington Commanders, 2026-11-13T01:15:00Z"
+  },
+  "12": {
+   "league": "nhl",
+   "event": "401892702",
+   "note": "Chicago Blackhawks vs Buffalo Sabres, 2026-11-13T01:00:00Z"
   }
  },
  "fit": {
