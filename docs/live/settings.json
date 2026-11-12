@@ -25,18 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "14": {
-   "league": "nhl",
-   "event": "401892694",
-   "note": "Anaheim Ducks vs Nashville Predators, 2026-11-12T03:00:00Z"
-  },
-  "15": {
-   "league": "nhl",
-   "event": "401892695",
-   "note": "San Jose Sharks vs Pittsburgh Penguins, 2026-11-12T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
