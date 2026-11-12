@@ -1035,5 +1035,25 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-11T06:30:29+00:00"
+ },
+ "401909966": {
+  "slot": "2",
+  "league": "nba",
+  "game": "Pacers v Wizards",
+  "url": "https://scorebuzz.net/basketball/nba/pacers-vs-wizards-401909966/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-12T00:12:49+00:00"
+ },
+ "401892690": {
+  "slot": "4",
+  "league": "nhl",
+  "game": "Sabres v Lightning",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/sabres-vs-lightning-401892690/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 83)",
+  "at": "2026-11-12T00:12:52+00:00"
  }
 }
