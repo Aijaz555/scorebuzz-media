@@ -1043,8 +1043,8 @@
   "url": "https://scorebuzz.net/basketball/nba/raptors-vs-celtics-401909968/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-12T01:46:16+00:00"
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-12T02:18:55+00:00"
  },
  "401909966": {
   "slot": "2",
@@ -1054,7 +1054,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 66)",
-  "at": "2026-11-12T01:46:19+00:00"
+  "at": "2026-11-12T02:18:58+00:00"
  },
  "401909967": {
   "slot": "3",
@@ -1063,8 +1063,8 @@
   "url": "https://scorebuzz.net/basketball/nba/knicks-vs-cavaliers-401909967/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-12T01:46:22+00:00"
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-12T02:19:02+00:00"
  },
  "401892690": {
   "slot": "4",
@@ -1073,8 +1073,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/sabres-vs-lightning-401892690/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 84)",
-  "at": "2026-11-12T01:46:25+00:00"
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-12T02:19:05+00:00"
  },
  "401892691": {
   "slot": "5",
@@ -1084,7 +1084,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 82)",
-  "at": "2026-11-12T01:46:29+00:00"
+  "at": "2026-11-12T02:19:08+00:00"
  },
  "401909971": {
   "slot": "6",
@@ -1093,8 +1093,8 @@
   "url": "https://scorebuzz.net/basketball/nba/bucks-vs-lakers-401909971/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-12T01:46:32+00:00"
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-12T02:19:11+00:00"
  },
  "401909969": {
   "slot": "7",
@@ -1103,8 +1103,8 @@
   "url": "https://scorebuzz.net/basketball/nba/bulls-vs-spurs-401909969/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-12T01:46:35+00:00"
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-12T02:19:15+00:00"
  },
  "401909970": {
   "slot": "8",
@@ -1113,8 +1113,8 @@
   "url": "https://scorebuzz.net/basketball/nba/grizzlies-vs-nuggets-401909970/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-12T01:46:38+00:00"
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-12T02:19:18+00:00"
  },
  "401909972": {
   "slot": "9",
@@ -1124,6 +1124,26 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 67)",
-  "at": "2026-11-12T01:46:41+00:00"
+  "at": "2026-11-12T02:19:21+00:00"
+ },
+ "401892692": {
+  "slot": "11",
+  "league": "nhl",
+  "game": "Oilers v Flyers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/oilers-vs-flyers-401892692/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 80)",
+  "at": "2026-11-12T02:19:24+00:00"
+ },
+ "401909973": {
+  "slot": "12",
+  "league": "nba",
+  "game": "Jazz v Magic",
+  "url": "https://scorebuzz.net/basketball/nba/jazz-vs-magic-401909973/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-12T02:19:28+00:00"
  }
 }
