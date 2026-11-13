@@ -9,7 +9,8 @@
 // steered by settings.slots[N]) form the pool. --write saves the new assignments to docs/live/settings.json.
 //
 // Prints JSON: { actions: [...], skipped: [...], pool: {...} }. Action types, in the order to run them:
-//   stop      livereacting_stop_stream(projectId)             game is over (or cancelled)
+//   stop      livereacting_stop_stream(projectId)             game is over and its 10-15 min grace has passed
+//             (end_grace.js; until then the game is listed under "ending" and watch_ends.js stops it), or cancelled
 //   cancel    livereacting_cancel_schedules(projectId)        scheduled for a game that is off
 //   restart   livereacting_update_project(duration) + start   stream ended early but the game is still on
 //   assign    commit+push settings.json FIRST, then livereacting_update_project(projectId, title, description,
@@ -18,6 +19,7 @@
 const fs = require('fs');
 const path = require('path');
 const feed = require('./feed');
+const endGrace = require('./end_grace');
 
 const SETTINGS = path.join(__dirname, '..', '..', 'docs', 'live', 'settings.json');
 const settings = JSON.parse(fs.readFileSync(SETTINGS, 'utf8'));
@@ -118,6 +120,9 @@ async function games(extra) {
   const busy = new Set();     // game keys already covered by a project
   const free = [];
   const OFF = /CANCELED|CANCELLED|POSTPONED|ABANDONED|FORFEIT/;
+  const ending = [];          // finished games still in their grace period: watch_ends.js stops them
+  const est = endGrace.load();
+  const grace = endGrace.graceOf(settings);
   for (const p of projects) {
     const a = getA(p.key);
     const gk = a ? `${a.league}:${a.event}` : null;
@@ -126,7 +131,9 @@ async function games(extra) {
     const running = st === 'LIVE' || st === 'PREPARING';
     const over = g && (g.state === 'post' || OFF.test(g.status));
     if (running) {
-      if (over) { actions.push({ type: 'stop', projectId: p.id, project: p.name, reason: `${g.matchup} is over (${g.status})` }); setA(p.key, null); }
+      const o = g && !OFF.test(g.status) ? endGrace.observe(est, gk, over, grace, now) : null;
+      if (over && o && !o.due) { ending.push({ project: p.name, matchup: g.matchup, status: g.status, stopAt: iso(o.stopAt) }); busy.add(gk); }
+      else if (over) { actions.push({ type: 'stop', projectId: p.id, project: p.name, reason: `${g.matchup} is over (${g.status})` }); setA(p.key, null); }
       else if (gk) busy.add(gk);   // still on (or a game we can't see: leave it alone)
       continue;
     }
@@ -183,9 +190,9 @@ async function games(extra) {
   }
 
   settings.slots = Object.fromEntries(Object.entries(slots).sort((a, b) => Number(a[0]) - Number(b[0])));
-  if (process.argv.includes('--write')) fs.writeFileSync(SETTINGS, JSON.stringify(settings, null, 1) + '\n');
+  if (process.argv.includes('--write')) { fs.writeFileSync(SETTINGS, JSON.stringify(settings, null, 1) + '\n'); endGrace.save(est); }
   console.log(JSON.stringify({
-    now: iso(now), actions, skipped,
+    now: iso(now), actions, ending, skipped,
     pool: { projects: projects.length, free_after: free.length, occupied, maxLive: cfg.maxLive },
     note: skipped.some((x) => x.reason === 'no free project') ? `${skipped.filter((x) => x.reason === 'no free project').length} game(s) had no free project: add more "Slot N" projects in LiveReacting`
       : skipped.length ? `${skipped.length} game(s) skipped by the ${cfg.maxLive}-stream cap` : undefined,
