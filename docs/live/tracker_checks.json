@@ -1206,36 +1206,6 @@
   "reason": "ok (contrast 82)",
   "at": "2026-11-12T19:45:53+00:00"
  },
- "401909976": {
-  "slot": "1",
-  "league": "nba",
-  "game": "76ers v Raptors",
-  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-raptors-401909976/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-13T00:17:26+00:00"
- },
- "401909977": {
-  "slot": "3",
-  "league": "nba",
-  "game": "Wizards v Pistons",
-  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-pistons-401909977/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-13T00:17:29+00:00"
- },
- "401892698": {
-  "slot": "5",
-  "league": "nhl",
-  "game": "Senators v Avalanche",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/senators-vs-avalanche-401892698/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 87)",
-  "at": "2026-11-13T00:17:32+00:00"
- },
  "401892696": {
   "slot": "2",
   "league": "nhl",
@@ -1285,5 +1255,35 @@
   "status": "ok",
   "reason": "ok (contrast 81)",
   "at": "2026-11-13T00:47:37+00:00"
+ },
+ "401909976": {
+  "slot": "1",
+  "league": "nba",
+  "game": "76ers v Raptors",
+  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-raptors-401909976/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-13T00:55:45+00:00"
+ },
+ "401909977": {
+  "slot": "3",
+  "league": "nba",
+  "game": "Wizards v Pistons",
+  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-pistons-401909977/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-13T00:55:48+00:00"
+ },
+ "401892698": {
+  "slot": "5",
+  "league": "nhl",
+  "game": "Senators v Avalanche",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/senators-vs-avalanche-401892698/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 89)",
+  "at": "2026-11-13T00:55:51+00:00"
  }
 }
