@@ -25,7 +25,18 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "nba",
+   "event": "401909296",
+   "note": "Indiana Pacers vs New York Knicks, 2026-11-14T00:00:00Z"
+  },
+  "2": {
+   "league": "nba",
+   "event": "401909297",
+   "note": "Orlando Magic vs Milwaukee Bucks, 2026-11-14T00:00:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
