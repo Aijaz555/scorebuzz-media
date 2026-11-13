@@ -205,6 +205,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 11 Nov 2026 00:44 UTC usage check: 71.8 h of 680 this week (11%), last 7 days 384.2 h, level ok (finished broadcasts only; 8 streams live).
   - 12 Nov 2026 00:44 UTC usage check: 112.4 h of 680 this week (17%), last 7 days 422 h, level ok (finished broadcasts only; 9 streams live).
   - 12 Nov 2026 01:42 UTC: YouTube refused new broadcasts at 10 live ("User has too many live or scheduled broadcasts"): Oilers-Flyers (Slot 11, stuck PREPARING → stopped, restart refused), 02:00 schedules Rockets-Warriors (Slot 10) and Golden Knights-Mammoth (Slot 13) failed to start. Owner notified (likely stale Upcoming broadcasts in YouTube Studio).
+  - 13 Nov 2026 00:44 UTC usage check: 164.2 h of 680 this week (24%), last 7 days 444.3 h, level ok (finished broadcasts only; 10 streams live). Same YouTube refusal at 10 live: Stars-Jets (Slot 10, stuck PREPARING → stopped) and Giants-Commanders TNF (Slot 11, 00:45 schedule) refused; owner notified.
 - Older cap (found 7 Nov 2026 01:45 UTC): the plan allowed only 9 concurrent live streams; the log below is from that period.
   - 8 Nov 2026 14:43 UTC: cap hit again — Real Sociedad-Rayo (Slot 2, now) and 4 Ligue 1 16:15 UK games (Slots 12-15) refused; only Slot 1 (Man Utd-Villa) scheduled.
   - 8 Nov 2026 16:45 UTC: 4 Ligue 1 restarts (Slots 14-17) went through (10 streams counted), then all 8 18:00 UK schedules (7 NFL 1pm ET games + Panthers-Bruins, Slots 4-6,8-11,18) were refused by the cap; the next hourly runs start them as slots free up.
