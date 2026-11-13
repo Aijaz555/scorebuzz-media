@@ -1306,36 +1306,6 @@
   "reason": "ok (contrast 88)",
   "at": "2026-11-13T03:07:29+00:00"
  },
- "401873052": {
-  "slot": "11",
-  "league": "nfl",
-  "game": "Giants v Commanders",
-  "url": "https://scorebuzz.net/american-football/nfl/giants-vs-commanders-401873052/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-13T03:07:32+00:00"
- },
- "401892702": {
-  "slot": "12",
-  "league": "nhl",
-  "game": "Blackhawks v Sabres",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-sabres-401892702/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-13T03:07:35+00:00"
- },
- "401892705": {
-  "slot": "15",
-  "league": "nhl",
-  "game": "Kings v Islanders",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-islanders-401892705/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 93)",
-  "at": "2026-11-13T03:07:38+00:00"
- },
  "401892704": {
   "slot": "14",
   "league": "nhl",
@@ -1355,5 +1325,35 @@
   "status": "ok",
   "reason": "ok (contrast 66)",
   "at": "2026-11-13T03:23:53+00:00"
+ },
+ "401873052": {
+  "slot": "11",
+  "league": "nfl",
+  "game": "Giants v Commanders",
+  "url": "https://scorebuzz.net/american-football/nfl/giants-vs-commanders-401873052/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-13T03:44:06+00:00"
+ },
+ "401892702": {
+  "slot": "12",
+  "league": "nhl",
+  "game": "Blackhawks v Sabres",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-sabres-401892702/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 80)",
+  "at": "2026-11-13T03:44:09+00:00"
+ },
+ "401892705": {
+  "slot": "15",
+  "league": "nhl",
+  "game": "Kings v Islanders",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-islanders-401892705/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-13T03:44:13+00:00"
  }
 }
