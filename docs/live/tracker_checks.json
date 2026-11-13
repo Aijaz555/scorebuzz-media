@@ -1336,16 +1336,6 @@
   "reason": "ok (contrast 43)",
   "at": "2026-11-13T04:16:33+00:00"
  },
- "401892705": {
-  "slot": "15",
-  "league": "nhl",
-  "game": "Kings v Islanders",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-islanders-401892705/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 86)",
-  "at": "2026-11-13T04:16:36+00:00"
- },
  "401892704": {
   "slot": "14",
   "league": "nhl",
@@ -1355,5 +1345,15 @@
   "status": "ok",
   "reason": "ok (contrast 82)",
   "at": "2026-11-13T04:24:42+00:00"
+ },
+ "401892705": {
+  "slot": "15",
+  "league": "nhl",
+  "game": "Kings v Islanders",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-islanders-401892705/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-13T04:49:48+00:00"
  }
 }
