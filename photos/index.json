@@ -375,6 +375,10 @@
   "venue": "Kia Center",
   "credit": "Photo: Michael Rivera / Wikimedia Commons, CC BY-SA 4.0"
  },
+ "kinnick-stadium": {
+  "venue": "Kinnick Stadium",
+  "credit": "Photo: U.S. Army National Guard photo by Sgt. 1st Class Jason Evere / Wikimedia Commons, Public domain"
+ },
  "kyle-field": {
   "venue": "Kyle Field",
   "credit": "Photo: Janreagan at English Wikipedia / Wikimedia Commons, CC BY-SA 4.0"
@@ -522,6 +526,10 @@
  "portman-road": {
   "venue": "Portman Road",
   "credit": "Photo: John Fielding from Norwich, UK / Wikimedia Commons, CC BY 2.0"
+ },
+ "ppg-paints-arena": {
+  "venue": "PPG Paints Arena",
+  "credit": "Photo: Designism / Wikimedia Commons, CC0"
  },
  "prezero-arena": {
   "venue": "PreZero Arena",
