@@ -1276,16 +1276,6 @@
   "reason": "ok (contrast 87)",
   "at": "2026-11-13T02:40:29+00:00"
  },
- "401892704": {
-  "slot": "14",
-  "league": "nhl",
-  "game": "Mammoth v Blues",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/mammoth-vs-blues-401892704/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 85)",
-  "at": "2026-11-13T02:40:32+00:00"
- },
  "401909979": {
   "slot": "13",
   "league": "nba",
@@ -1355,5 +1345,15 @@
   "status": "ok",
   "reason": "ok (contrast 93)",
   "at": "2026-11-13T03:07:38+00:00"
+ },
+ "401892704": {
+  "slot": "14",
+  "league": "nhl",
+  "game": "Mammoth v Blues",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/mammoth-vs-blues-401892704/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-13T03:15:45+00:00"
  }
 }
