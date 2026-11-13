@@ -26,26 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "3": {
-   "league": "nba",
-   "event": "401909977",
-   "note": "Washington Wizards vs Detroit Pistons, 2026-11-13T00:00:00Z"
-  },
-  "5": {
-   "league": "nhl",
-   "event": "401892698",
-   "note": "Ottawa Senators vs Colorado Avalanche, 2026-11-13T00:00:00Z"
-  },
-  "8": {
-   "league": "nhl",
-   "event": "401892699",
-   "note": "Florida Panthers vs Detroit Red Wings, 2026-11-13T00:30:00Z"
-  },
-  "9": {
-   "league": "nba",
-   "event": "401909978",
-   "note": "Minnesota Timberwolves vs Dallas Mavericks, 2026-11-13T01:00:00Z"
-  },
   "10": {
    "league": "nhl",
    "event": "401892703",
