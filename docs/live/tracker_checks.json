@@ -1206,36 +1206,6 @@
   "reason": "ok (contrast 82)",
   "at": "2026-11-12T19:45:53+00:00"
  },
- "401909976": {
-  "slot": "1",
-  "league": "nba",
-  "game": "76ers v Raptors",
-  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-raptors-401909976/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-13T01:28:40+00:00"
- },
- "401909977": {
-  "slot": "3",
-  "league": "nba",
-  "game": "Wizards v Pistons",
-  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-pistons-401909977/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-13T01:28:43+00:00"
- },
- "401892698": {
-  "slot": "5",
-  "league": "nhl",
-  "game": "Senators v Avalanche",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/senators-vs-avalanche-401892698/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 81)",
-  "at": "2026-11-13T01:28:45+00:00"
- },
  "401892696": {
   "slot": "2",
   "league": "nhl",
@@ -1325,5 +1295,45 @@
   "status": "ok",
   "reason": "ok (contrast 88)",
   "at": "2026-11-13T01:59:08+00:00"
+ },
+ "401909976": {
+  "slot": "1",
+  "league": "nba",
+  "game": "76ers v Raptors",
+  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-raptors-401909976/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-13T02:07:18+00:00"
+ },
+ "401909977": {
+  "slot": "3",
+  "league": "nba",
+  "game": "Wizards v Pistons",
+  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-pistons-401909977/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-13T02:07:21+00:00"
+ },
+ "401892698": {
+  "slot": "5",
+  "league": "nhl",
+  "game": "Senators v Avalanche",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/senators-vs-avalanche-401892698/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-13T02:07:24+00:00"
+ },
+ "401892704": {
+  "slot": "14",
+  "league": "nhl",
+  "game": "Mammoth v Blues",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/mammoth-vs-blues-401892704/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 92)",
+  "at": "2026-11-13T02:07:27+00:00"
  }
 }
