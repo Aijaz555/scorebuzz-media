@@ -166,7 +166,7 @@ function footPlays(s, H, A) {
     const m = /^(?:Goal!|Own Goal)[^.]*?(\d+),[^.]*?(\d+)\./.exec(x.text) || /(?:ends|Half), [^.]*?(\d+), [^.]*?(\d+)\./.exec(x.text); if (m) { h = +m[1]; a = +m[2]; }
     const tn = nm(x.play?.team?.displayName), tid = x.play?.team?.id ? String(x.play.team.id) : tn && tn === nm(H.full) ? H.id : tn && tn === nm(A.full) ? A.id : '';
     const t = x.play?.type?.type || '', scoring = /goal|penalty---scored/.test(t) && !/miss|saved/.test(t);
-    return { clk: x.time.displayValue, label: FLAB(t) || (/Second Half ends|Match ends/i.test(x.text) ? 'FULL TIME' : /First Half ends/i.test(x.text) ? 'HALF-TIME' : /Half begins|First Half starts/i.test(x.text) ? 'KICK-OFF' : (x.play?.type?.text || 'COMMENTARY').toUpperCase()), text: x.text, team: tid, home: h, away: a, scoring }; });
+    return { clk: x.time.displayValue, label: (/Second Half ends|Match ends/i.test(x.text) ? 'FULL TIME' : /First Half ends/i.test(x.text) ? 'HALF-TIME' : /Half begins|First Half starts/i.test(x.text) ? 'KICK-OFF' : '') || FLAB(t) || (x.play?.type?.text || 'COMMENTARY').toUpperCase(), text: x.text, team: tid, home: h, away: a, scoring }; });
 }
 function gameCell(e, cur) {
   const c = e.competitions[0], h = c.competitors.find((x) => x.homeAway === 'home'), a = c.competitors.find((x) => x.homeAway === 'away');
@@ -321,7 +321,7 @@ function render(s, sb) {
     return [...(G.all || [])].sort((a, b) => b.n('PTS') - a.n('PTS') || b.n('MIN') - a.n('MIN')).slice(0, 5)
       .map((p) => pc({ ...p, s: `${p.n('PTS')} PTS · ${p.n('REB')} REB · ${p.n('AST')} AST`, d: `${String(p.st('FG')).replace('-', '/')} FG · ${String(p.st('3PT')).replace('-', '/')} 3PT · ${p.st('MIN')} MIN` })).join('');
   };
-  const nmCls = (T) => (T.nick.length > (FOOT() ? 10 : 12) ? 'l' : T.nick.length > 9 ? 'm' : '');
+  const nmCls = (T) => (T.nick.length > (FOOT() ? 8 : 12) ? 'l' : T.nick.length > (FOOT() ? 7 : 9) ? 'm' : '');
   const tag = (T, O) => (pre ? '' : T.score > O.score ? `<b>${fin ? 'WIN' : 'LEAD'}</b>+${T.score - O.score}` : '');
   const side = (T, O, k) => `<div class="side ${k}">
     <div class="th">${k === 'h' ? `<img src="${T.logoD}">` : ''}<div class="tx" style="${k === 'a' ? 'margin-left:auto;text-align:right' : ''}"><div class="ct">${esc(T.city)}</div><div class="nm ${nmCls(T)}">${esc(T.nick)}</div><div class="rc">${esc(T.rec)}</div></div>${k === 'a' ? `<img src="${T.logoD}">` : ''}</div>
@@ -350,7 +350,9 @@ function render(s, sb) {
   const ovF = FOOT() && !pre && !trkUrlPre ? `<div class="ov"><div class="k">${fin ? 'FULL TIME' : esc(clk)} · ${esc(H.abbr)} ${H.score}-${A.score} ${esc(A.abbr)}</div>${[[H, scorers(H.id)], [A, scorers(A.id)]].filter((x) => x[1]).map(([T, x]) => `<div class="gs">⚽ ${esc(T.nick)}: ${esc(x)}</div>`).join('')}</div>` : '';
   const ov = !pre && FOOT() ? ovF : pre ? `<div class="ov"><div class="k">${esc(start.toUpperCase())} ${esc(et(c.date))}${mins >= 1440 ? ` · ${dayOf(c.date).toUpperCase()}` : mins > 0 ? ` · IN ${mins >= 60 ? Math.floor(mins / 60) + 'H ' : ''}${mins % 60} MIN` : ''}</div><div class="v">${FOOT() ? `${esc(H.nick)} v ${esc(A.nick)}` : `${esc(A.nick)} @ ${esc(H.nick)}`}${venue ? ' · ' + esc(venue) : ''}</div></div>` : '';
   // ---- games along the bottom: this game first, then live, then the rest ----
-  let evs = sb?.events || [];
+  // owner 13 Nov 2026: the bottom bar shows only this league's games (ESPN's league scoreboard; the league uid check keeps any stray event out)
+  const lu = sb?.leagues?.[0]?.uid || '';
+  let evs = (sb?.events || []).filter((e) => !lu || !e.uid || e.uid.startsWith(lu + '~'));
   const rk = (e) => (e.id === c.id ? 0 : e.status.type.state === 'in' ? 1 : e.status.type.state === 'pre' ? 2 : 3);
   if (evs.length > 6) evs = [...evs].sort((a, b) => rk(a) - rk(b)).slice(0, 6).sort((a, b) => new Date(a.date) - new Date(b.date));
   $('app').innerHTML = `${side(H, A, 'h')}

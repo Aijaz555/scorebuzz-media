@@ -398,4 +398,5 @@ map before/after the game (or `&trk=own` / `sbtrk: 0`). Preview: `center.html?le
   goalkeeper (scorebuzz.net line-up photos, shirt number fallback; starting XI or last-5 results before kick-off), cards / corners /
   possession strip, scorebuzz.net pitch tracker in the centre while in play (built-in pitch with score + scorers otherwise), latest
   3 commentary lines below. Demo: `center.html?league=epl&event=401879240` (Man Utd 4-4 Villa) or add `&replay=1&from=60` to run it
-  as a live game from the commentary. NOT on air yet: football goes live on it when the leagues are added to settings `centerLeagues`.
+  as a live game from the commentary. On air 13 Nov 2026 (owner): all football leagues are in settings `centerLeagues` (reload 31);
+  remove them to send football back to soccer.html. Bottom bar = only this league's games (owner 13 Nov 2026, league uid filter).
