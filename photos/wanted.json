@@ -1,5 +1,11 @@
 [
  {
+  "slug": "huntington-bank-field",
+  "name": "Huntington Bank Field",
+  "city": "Cleveland",
+  "country": "USA"
+ },
+ {
   "slug": "kroger-field",
   "name": "Kroger Field",
   "city": "Lexington",
@@ -18,27 +24,21 @@
   "country": "USA"
  },
  {
-  "slug": "donald-w-reynolds-razorback-stadium",
-  "name": "Donald W. Reynolds Razorback Stadium",
-  "city": "Fayetteville",
-  "country": "USA"
- },
- {
-  "slug": "gainbridge-fieldhouse",
-  "name": "Gainbridge Fieldhouse",
-  "city": "Indianapolis",
-  "country": ""
- },
- {
   "slug": "xfinity-mobile-arena",
   "name": "Xfinity Mobile Arena",
   "city": "Philadelphia",
-  "country": ""
+  "country": "USA"
  },
  {
   "slug": "mortgage-matchup-center",
   "name": "Mortgage Matchup Center",
   "city": "Phoenix",
+  "country": ""
+ },
+ {
+  "slug": "gainbridge-fieldhouse",
+  "name": "Gainbridge Fieldhouse",
+  "city": "Indianapolis",
   "country": ""
  },
  {
@@ -58,11 +58,5 @@
   "name": "PPG Paints Arena",
   "city": "Pittsburgh",
   "country": "USA"
- },
- {
-  "slug": "wembley-stadium",
-  "name": "Wembley Stadium",
-  "city": "London",
-  "country": "England"
  }
 ]
