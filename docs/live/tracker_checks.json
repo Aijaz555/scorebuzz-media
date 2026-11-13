@@ -1285,5 +1285,35 @@
   "status": "ok",
   "reason": "ok (contrast 89)",
   "at": "2026-11-13T00:55:51+00:00"
+ },
+ "401909978": {
+  "slot": "9",
+  "league": "nba",
+  "game": "Timberwolves v Mavericks",
+  "url": "https://scorebuzz.net/basketball/nba/timberwolves-vs-mavericks-401909978/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-13T01:12:02+00:00"
+ },
+ "401892703": {
+  "slot": "10",
+  "league": "nhl",
+  "game": "Stars v Jets",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/stars-vs-jets-401892703/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-13T01:12:05+00:00"
+ },
+ "401892702": {
+  "slot": "12",
+  "league": "nhl",
+  "game": "Blackhawks v Sabres",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-sabres-401892702/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-13T01:12:07+00:00"
  }
 }
