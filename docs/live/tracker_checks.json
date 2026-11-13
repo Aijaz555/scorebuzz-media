@@ -1276,16 +1276,6 @@
   "reason": "ok (contrast 87)",
   "at": "2026-11-13T02:40:29+00:00"
  },
- "401909979": {
-  "slot": "13",
-  "league": "nba",
-  "game": "Suns v Hornets",
-  "url": "https://scorebuzz.net/basketball/nba/suns-vs-hornets-401909979/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-13T02:51:12+00:00"
- },
  "401892699": {
   "slot": "8",
   "league": "nhl",
@@ -1355,5 +1345,15 @@
   "status": "ok",
   "reason": "ok (contrast 86)",
   "at": "2026-11-13T03:15:45+00:00"
+ },
+ "401909979": {
+  "slot": "13",
+  "league": "nba",
+  "game": "Suns v Hornets",
+  "url": "https://scorebuzz.net/basketball/nba/suns-vs-hornets-401909979/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-13T03:23:53+00:00"
  }
 }
