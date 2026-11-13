@@ -1,0 +1,302 @@
+[
+ {
+  "id": "01-pochettino-clause",
+  "time": "2026-11-13T11:00:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "MAN UNITED · SOURCES: ESPN",
+  "venue": "Old Trafford",
+  "headline": "Carrick out. Pochettino next?",
+  "sub": "United want to trigger the USMNT coach's $10m release clause once personal terms are agreed. His first game would be Liverpool at Anfield on 22 November.",
+  "caption": "🔴 Michael Carrick is gone and Manchester United want Mauricio Pochettino in fast.\n\nSources told ESPN United plan to trigger the USMNT coach's $10 million (£7m) release clause once terms are agreed, with Pochettino expected at Carrington by next week. First up: Liverpool at Anfield on 22 November.\n\nRight man for the job? 👇\n\n#MUFC #Pochettino #PremierLeague"
+ },
+ {
+  "id": "02-palace-sage",
+  "time": "2026-11-13T11:50:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "CRYSTAL PALACE",
+  "venue": "Selhurst Park",
+  "headline": "Palace sack Pierre Sage",
+  "sub": "Two wins in 10 Premier League games, bottom of the table and 24 goals conceded, the most in the division. Sage was appointed in June.",
+  "stat": [
+   "2",
+   "league wins in 10 games"
+  ],
+  "caption": "🦅 Crystal Palace have sacked Pierre Sage.\n\nHe won two of his 10 Premier League games, Palace are bottom, and their 24 goals conceded is the worst record in the league. He only arrived in June to replace Oliver Glasner.\n\nWho should Palace bring in? 👇\n\n#CPFC #CrystalPalace #PremierLeague"
+ },
+ {
+  "id": "03-england-croatia",
+  "time": "2026-11-13T13:30:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · WEMBLEY",
+  "venue": "Wembley Stadium",
+  "home": "England",
+  "homeScore": 2,
+  "away": "Croatia",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+  "headline": "Kane: 126th cap, 92nd goal",
+  "sub": "Morgan Rogers opened the scoring, Petar Sucic levelled, then Kane's 64th-minute penalty won it.",
+  "caption": "🦁 Harry Kane's record night ends with a goal.\n\nIn his 126th cap, the most ever for an England man, Kane scored his 92nd international goal from the spot to beat Croatia 2–1 at Wembley. Morgan Rogers scored first; Petar Sucic equalised.\n\nWhat's Kane's final England goal tally going to be? 👇\n\n#England #HarryKane #NationsLeague"
+ },
+ {
+  "id": "04-spain-czechia",
+  "time": "2026-11-13T14:20:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · PRAGUE",
+  "venue": "Generali Arena",
+  "home": "Czechia",
+  "homeScore": 0,
+  "away": "Spain",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+  "headline": "Spain: 43 games unbeaten",
+  "sub": "Álex Baena's penalty and a stoppage-time Marc Pubill goal against 10-man Czechia. Five wins from five in the group.",
+  "caption": "🇪🇸 Spain just keep going.\n\nÁlex Baena's penalty and Marc Pubill's late goal beat 10-man Czechia 2–0, and the world champions are now unbeaten in 43 games. They've won all five of their Nations League group games.\n\nWho stops Spain? 👇\n\n#Spain #NationsLeague #LaRoja"
+ },
+ {
+  "id": "05-turkiye-belgium",
+  "time": "2026-11-13T16:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · İZMİR",
+  "home": "Türkiye",
+  "homeScore": 1,
+  "away": "Belgium",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+  "headline": "De Bruyne answers Arda Güler",
+  "sub": "Güler's free kick put Türkiye ahead. Kevin De Bruyne levelled and Charles De Ketelaere scored the winner, all inside 30 minutes.",
+  "caption": "🇧🇪 Three goals in 10 minutes in İzmir.\n\nArda Güler curled in a free kick for Türkiye, then Kevin De Bruyne and Charles De Ketelaere scored three minutes apart to win it 2–1 for Belgium.\n\nIs De Bruyne still Belgium's most important player? 👇\n\n#Belgium #DeBruyne #NationsLeague"
+ },
+ {
+  "id": "06-tonight-nations",
+  "time": "2026-11-13T16:50:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "INTERNATIONALS · FRIDAY",
+  "headline": "Tonight's big games",
+  "rows": [
+   [
+    "Serbia v Germany",
+    "19:45 GMT",
+    "2:45pm ET"
+   ],
+   [
+    "Netherlands v Greece",
+    "19:45 GMT",
+    "2:45pm ET"
+   ],
+   [
+    "Scotland v N. Macedonia",
+    "19:45 GMT",
+    "2:45pm ET"
+   ],
+   [
+    "Argentina v Uruguay",
+    "23:00 GMT",
+    "6pm ET"
+   ]
+  ],
+  "sub": "Three Nations League games at 19:45 GMT, then a South American friendly in Argentina.",
+  "caption": "⚽ Friday night internationals.\n\nSerbia v Germany, Netherlands v Greece and Scotland v North Macedonia in the Nations League at 19:45 GMT (2:45pm ET), then Argentina host Uruguay in a friendly at 23:00 GMT (6pm ET).\n\nWhich one are you watching? 👇\n\n#NationsLeague #Scotland #Germany"
+ },
+ {
+  "id": "07-mvps-unanimous",
+  "time": "2026-11-13T18:30:00",
+  "sport": "mlb",
+  "league": "mlb",
+  "kind": "headline",
+  "label": "MLB AWARDS · 2026 MVP",
+  "headline": "Two unanimous MVPs: PCA and Yordan",
+  "sub": "Pete Crow-Armstrong (Cubs): 45 HR, 41 SB, MLB-best 10.6 fWAR. Yordan Alvarez (Astros): led MLB in AVG (.316), OBP (.432) and SLG (.607).",
+  "caption": "⚾ Both MVPs were unanimous.\n\nPete Crow-Armstrong went 40-40 (45 HR, 41 SB) and is the first unanimous MVP in Cubs history. Yordan Alvarez led all of MLB in average, on-base and slugging for Houston.\n\nWho had the better season? 👇\n\n#Cubs #Astros #MLB"
+ },
+ {
+  "id": "08-canadiens-bruins",
+  "time": "2026-11-13T19:20:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · THURSDAY",
+  "venue": "TD Garden",
+  "home": "Bruins",
+  "homeScore": 2,
+  "away": "Canadiens",
+  "awayScore": 5,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+  "headline": "Montreal leapfrog Boston",
+  "sub": "Five different scorers ended Boston's seven-game home win streak. The Canadiens are 9-0-3 in their last 12.",
+  "caption": "🔵⚪🔴 The Canadiens went into Boston one point behind the Bruins in the Atlantic and left ahead of them.\n\nJosh Anderson, Jake Evans, Kirby Dach, Cole Caufield and Phillip Danault scored in a 5–2 win that ended Boston's seven-game home winning streak. Montreal are 9-0-3 in their last 12.\n\nAre the Habs for real? 👇\n\n#GoHabsGo #NHLBruins #NHL"
+ },
+ {
+  "id": "09-wolves-mavs",
+  "time": "2026-11-13T21:00:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · THURSDAY",
+  "venue": "Target Center",
+  "home": "Timberwolves",
+  "homeScore": 133,
+  "away": "Mavericks",
+  "awayScore": 94,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+  "headline": "Wolves win by 39 for five straight",
+  "sub": "Bones Hyland 24 off the bench, LaMelo Ball 22 and nine assists. Cooper Flagg was held to 12.",
+  "caption": "🐺 That was a statement.\n\nMinnesota beat Dallas 133–94, their biggest win of the season and fifth in a row. Bones Hyland scored 24 off the bench and LaMelo Ball hit six 3s for 22. Cooper Flagg, who had 43 in his last game, was held to 12.\n\nAre the Wolves a real contender? 👇\n\n#Timberwolves #LaMeloBall #NBA"
+ },
+ {
+  "id": "10-steelers-bengals",
+  "time": "2026-11-13T22:40:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "NFL WEEK 10 · SUNDAY NIGHT",
+  "venue": "Paycor Stadium",
+  "headline": "Steelers at Bengals: winner leads the AFC North",
+  "sub": "Both 6-2, both on four-game win streaks. Aaron Rodgers vs Joe Burrow (23 TD passes), Sunday 8:20pm ET on NBC.",
+  "caption": "🏈 Sunday Night Football is for first place.\n\nThe Steelers and Bengals are both 6–2 and both have won four straight. Aaron Rodgers vs Joe Burrow in Cincinnati, Sunday at 8:20pm ET on NBC (01:20 GMT Monday).\n\nWho takes the AFC North lead? 👇\n\n#Steelers #Bengals #SNF"
+ },
+ {
+  "id": "11-cfb-saturday",
+  "time": "2026-11-14T00:20:00",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "kind": "list",
+  "label": "COLLEGE FOOTBALL · SATURDAY",
+  "headline": "Top-25 games to watch",
+  "rows": [
+   [
+    "#22 Missouri at #1 Georgia",
+    "3:30pm ET",
+    "20:30 GMT"
+   ],
+   [
+    "#18 USC at #9 Indiana",
+    "3:30pm ET",
+    "20:30 GMT"
+   ],
+   [
+    "#6 Texas at #21 LSU",
+    "7:30pm ET",
+    "00:30 GMT"
+   ],
+   [
+    "#2 Utah at #23 Arizona",
+    "7:30pm ET",
+    "00:30 GMT"
+   ]
+  ],
+  "sub": "No. 3 Alabama also visit Vanderbilt at 12:45pm ET.",
+  "caption": "🏈 Saturday's college football slate has some real tests for the top teams.\n\nNo. 1 Georgia host No. 22 Missouri, No. 9 Indiana host No. 18 USC, No. 6 Texas go to No. 21 LSU and unbeaten No. 2 Utah visit No. 23 Arizona.\n\nWhich ranked team goes down? 👇\n\n#CFB #CollegeFootball #Georgia"
+ },
+ {
+  "id": "12-nba-tonight",
+  "time": "2026-11-14T02:00:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · FRIDAY NIGHT",
+  "headline": "Tonight's best games",
+  "rows": [
+   [
+    "Knicks at Pacers",
+    "7pm ET",
+    "00:00 GMT"
+   ],
+   [
+    "Cavaliers at Heat",
+    "8pm ET",
+    "01:00 GMT"
+   ],
+   [
+    "Warriors at Spurs",
+    "9:30pm ET",
+    "02:30 GMT"
+   ],
+   [
+    "Thunder at Clippers",
+    "10:30pm ET",
+    "03:30 GMT"
+   ]
+  ],
+  "sub": "Nine games tonight. The 10-2 Spurs host Golden State going for 11 straight.",
+  "caption": "🏀 Nine NBA games tonight.\n\nThe Knicks visit Indiana, Cleveland are in Miami, the 10–2 Spurs host Golden State going for an 11th straight win, and OKC play the Clippers late.\n\nWhich game are you watching? 👇\n\n#NBA #Spurs #Knicks"
+ },
+ {
+  "id": "13-curry-out",
+  "time": "2026-11-14T02:50:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "headline",
+  "label": "WARRIORS · INJURY",
+  "venue": "Frost Bank Center",
+  "headline": "No Curry for at least two weeks",
+  "sub": "Steph Curry has an oblique tear and will be re-evaluated in two weeks. He was averaging 27.8 points. Golden State play at San Antonio tonight.",
+  "stat": [
+   "27.8",
+   "points per game"
+  ],
+  "caption": "😬 Big blow for Golden State.\n\nSteph Curry has an oblique tear and will be re-evaluated in two weeks, missing at least seven games, starting tonight at the 10–2 Spurs. He was averaging 27.8 points.\n\nCan the Warriors stay afloat without him? 👇\n\n#Warriors #StephCurry #NBA"
+ },
+ {
+  "id": "14-spain-england",
+  "time": "2026-11-14T04:30:00",
+  "sport": "football",
+  "kind": "headline",
+  "label": "NATIONS LEAGUE · SUNDAY",
+  "venue": "Riyadh Air Metropolitano",
+  "headline": "Spain v England: top spot on the line",
+  "sub": "Spain (5 wins from 5) lead England by three points. Lamine Yamal is expected back. Sunday, 19:45 GMT (2:45pm ET) in Madrid.",
+  "caption": "🔥 Spain v England on Sunday decides who wins the group.\n\nSpain have won all five and lead England by three points, both already through to the quarter-finals. Lamine Yamal is expected back after missing Thursday with a knee problem. Kick-off 19:45 GMT (2:45pm ET) at the Metropolitano.\n\nCan England end Spain's 43-game unbeaten run? 👇\n\n#ESPENG #England #NationsLeague"
+ },
+ {
+  "id": "15-nfl-sunday",
+  "time": "2026-11-14T06:20:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "NFL WEEK 10 · SUNDAY",
+  "headline": "Sunday's must-watch games",
+  "rows": [
+   [
+    "Patriots at Lions (Munich)",
+    "9:30am ET",
+    "14:30 GMT"
+   ],
+   [
+    "Vikings at Packers",
+    "1pm ET",
+    "18:00 GMT"
+   ],
+   [
+    "49ers at Cowboys",
+    "4:25pm ET",
+    "21:25 GMT"
+   ],
+   [
+    "Steelers at Bengals",
+    "8:20pm ET",
+    "01:20 GMT"
+   ]
+  ],
+  "sub": "Week 10 starts early in Germany: Detroit (6-2) face New England (5-4) in Munich.",
+  "caption": "🏈 NFL Sunday starts in Munich.\n\nThe 6–2 Lions face the Patriots in Germany at 9:30am ET (14:30 GMT), then Vikings at Packers, 49ers at Cowboys, and Steelers at Bengals for the AFC North lead.\n\nWhat's your lock of the week? 👇\n\n#NFL #Lions #Packers"
+ }
+]
