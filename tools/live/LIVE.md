@@ -393,3 +393,9 @@ map before/after the game (or `&trk=own` / `sbtrk: 0`). Preview: `center.html?le
   Kill switch: `"centerPage": false` (or remove a league from `centerLeagues`) sends those slots back to nba.html / us.html.
 - Sync with the tracker (owner: the board must not run behind it): the page polls ESPN every 2 s (ESPN caches ~3 s) and takes the
   further-on clock/score of ESPN's scoreboard and summary feeds.
+- Football on the centre layout (owner 13 Nov 2026, demo first): center.html now also handles the football leagues (epl, laliga,
+  seriea, ligue1, bundesliga, mls, ucl, uel): sidebars with table points / W-D-L, big score, 1st/2nd-half chips, 4 game leaders +
+  goalkeeper (scorebuzz.net line-up photos, shirt number fallback; starting XI or last-5 results before kick-off), cards / corners /
+  possession strip, scorebuzz.net pitch tracker in the centre while in play (built-in pitch with score + scorers otherwise), latest
+  3 commentary lines below. Demo: `center.html?league=epl&event=401879240` (Man Utd 4-4 Villa) or add `&replay=1&from=60` to run it
+  as a live game from the commentary. NOT on air yet: football goes live on it when the leagues are added to settings `centerLeagues`.

@@ -83,6 +83,15 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 .sub .btn{background:var(--red);color:#fff;font:900 32px Inter,sans-serif;letter-spacing:1px;padding:11px 30px;border-radius:12px;box-shadow:0 8px 20px #e5262e66;animation:pulse 2.4s infinite;transform:rotate(-2deg)}
 .sub .bz{font:900 22px Inter,sans-serif;color:#121826;letter-spacing:-.3px;line-height:1.2}.sub .bz b{color:#5b8a00}.sub .bz span{display:block;font-weight:700;font-size:18px;color:#3a4256}
 @keyframes pulse{0%,100%{transform:rotate(-2deg) scale(1)}50%{transform:rotate(-2deg) scale(1.06)}}
+/* football */
+.pc .shirt{width:104px;height:100%;display:flex;align-items:center;justify-content:center;align-self:stretch}
+.pc .shirt div{width:78px;height:84px;background:var(--tc);clip-path:polygon(28% 0,72% 0,100% 18%,88% 42%,80% 36%,80% 100%,20% 100%,20% 36%,12% 42%,0 18%);display:flex;align-items:center;justify-content:center;font:800 36px 'Barlow Condensed',sans-serif;color:#fff;text-shadow:0 2px 0 #0006;padding-top:10px}
+.pc .fr{width:74px;height:74px;margin:0 15px;align-self:center;border-radius:12px;display:flex;align-items:center;justify-content:center;font:800 44px 'Barlow Condensed',sans-serif;color:#fff}
+.pc .fr.W{background:#1f9d55}.pc .fr.D{background:#7a8399}.pc .fr.L{background:var(--red)}
+.tob .cd{display:flex;gap:16px;justify-content:center;font-size:32px}.tob .cd span{display:flex;align-items:center;gap:6px}.tob .cd i{width:20px;height:28px;border-radius:3px;background:#f2c14e;display:inline-block}.tob .cd i.r{background:var(--red)}
+.tob .poss{display:flex;align-items:center;gap:12px;padding:0 10px;font-size:30px}.tob .poss .bar{flex:1;height:16px;border-radius:8px;overflow:hidden;display:flex;background:#c3cad9}.tob .poss .bar i{display:block;height:100%}
+.tob .poss .lb{position:absolute;left:50%;transform:translateX(-50%);letter-spacing:6px;font-size:30px}
+.trk .gs{margin-top:14px;font:700 28px 'Barlow Condensed',sans-serif;color:#eef3ff;letter-spacing:1px;line-height:1.3}
 .err{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:800 48px Inter,sans-serif;color:var(--mute)}
 </style></head>
 <body><div id="app"><div class="err">Loading ScoreBuzz live scoreboard…</div></div>
@@ -91,7 +100,7 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 const q = new URLSearchParams(location.search);
 const SLOT = q.get('slot'), OWN = q.get('trk') === 'own';
 const VOICE = q.get('voice') === '1', REPLAY = q.get('replay') === '1'; // demo: spoken commentary (browser voice) / replay a finished game play by play
-let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('sbtrk') === '0';
+let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('sbtrk') === '0' || q.get('replay') === '1';
 function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
   const mode = R.fit || q.get('fit') || 'contain', b = document.body;
   if (mode === 'fill') b.style.transform = `scale(${sx},${sy})`; else { const k = Math.min(sx, sy); b.style.transform = `scale(${k})`; b.style.marginLeft = ((W - 1920 * k) / 2) + 'px'; b.style.marginTop = ((H - 1080 * k) / 2) + 'px'; } }
@@ -103,10 +112,14 @@ const J = async (u) => (await fetch(u, { cache: 'no-store' })).json();
 const lum = (h) => { const n = parseInt(h.slice(1), 16); return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255; };
 const darkish = (c, alt) => (lum(c) > 0.7 ? (lum(alt) > 0.7 ? '#1d2a4a' : alt) : c);
 const vivid = (c) => { if (lum(c) >= 0.38) return c; const n = parseInt(c.slice(1), 16), k = 0.45, m = (v) => Math.round(v + (255 - v) * k); return '#' + [n >> 16, (n >> 8) & 255, n & 255].map((v) => m(v).toString(16).padStart(2, '0')).join(''); }; // marker colour that still shows on the dark tracker
-const SPORT = { nba: 'basketball/nba', nhl: 'hockey/nhl' };
-const SITE = { nba: 'basketball/nba', nhl: 'ice-hockey/nhl' }; // scorebuzz.net match pages
+// football (owner 13 Nov 2026): the same centre layout for the leagues in settings "soccerLeagues" that are also in "centerLeagues"
+const FPATH = { epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', ucl: 'uefa.champions', uel: 'uefa.europa' };
+const SPORT = { nba: 'basketball/nba', nhl: 'hockey/nhl' }; for (const [k, v] of Object.entries(FPATH)) SPORT[k] = 'soccer/' + v;
+const SITE = { nba: 'basketball/nba', nhl: 'ice-hockey/nhl', epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls' }; // scorebuzz.net match pages
 const CROP = { top: 65, vh: 517, x: 15, vw: 970 }; // scorebuzz.net 'live action' tracker (see nba.html / us.html)
-const NHL = () => league === 'nhl';
+const NHL = () => league === 'nhl', FOOT = () => !!FPATH[league];
+const TZ = () => (league === 'mls' ? ['America/New_York', 'ET'] : ['Europe/London', 'UK']); // football kick-off times: UK (ET for MLS)
+let PHOTOS = {}; // scorebuzz.net line-up photos (docs/live/player_photos.json, filled by tools/live/check_trackers.py)
 const ORD = (n) => n + (['th', 'st', 'nd', 'rd'][(n % 100 >> 3 ^ 1 && n % 10) || 0] || 'th');
 const perName = (p) => (NHL() ? (p <= 3 ? ORD(p) : p === 4 ? 'OT' : 'SO') : p <= 4 ? ORD(p) : p === 5 ? 'OT' : `${p - 4}OT`);
 const perLong = (p) => (NHL() ? (p <= 3 ? `${ORD(p)} period` : p === 4 ? 'Overtime' : 'Shootout') : p <= 4 ? `${ORD(p)} quarter` : p === 5 ? 'Overtime' : `${p - 4}OT`);
@@ -117,8 +130,8 @@ function team(x) {
   const color = darkish(hex(t.color, '#1d428a'), hex(t.alternateColor, '#1d428a'));
   const lines = (x.linescores || []).map((l) => l.displayValue ?? l.value), qsum = lines.reduce((n, v) => n + (+v || 0), 0);
   const dark = (t.logos || []).find((l) => (l.rel || []).includes('dark') && !(l.rel || []).includes('scoreboard'))?.href;
-  return { id: String(t.id), abbr: t.abbreviation, city: t.location || '', nick: t.name || t.shortDisplayName, logoD: dark || t.logos?.[0]?.href || t.logo, color, score: Math.max(Number(x.score || 0), qsum), lines,
-    rec: [rec('total'), x.homeAway === 'home' ? (rec('home') && rec('home') + ' Home') : (rec('road') && rec('road') + ' Away')].filter(Boolean).join(', ') };
+  return { id: String(t.id), abbr: t.abbreviation, city: FOOT() ? '' : t.location || '', nick: FOOT() ? t.shortDisplayName || t.name : t.name || t.shortDisplayName, full: t.displayName || t.name, logoD: dark || t.logos?.[0]?.href || t.logo, color, score: Math.max(Number(x.score || 0), qsum), lines,
+    rec: FOOT() ? [rec('points') != null ? rec('points') + ' pts' : '', rec('total') ? 'W-D-L ' + rec('total') : ''].filter(Boolean).join(' · ') : [rec('total'), x.homeAway === 'home' ? (rec('home') && rec('home') + ' Home') : (rec('road') && rec('road') + ' Away')].filter(Boolean).join(', ') };
 }
 // box score: { teamId: { group: [player] } }; NBA has one group ('all')
 function box(s) {
@@ -145,10 +158,20 @@ function plays(s) {
     return { clk: `${NHL() ? left(p.clock?.displayValue, per) : p.clock?.displayValue || ''} - ${perName(per)}`, label: NHL() ? (p.scoringPlay ? 'GOAL' : NHLL[p.type?.text] || (p.type?.text || '').toUpperCase()) : nbaLabel(p),
       text: p.text || '', team: String(p.team?.id || ''), home: p.homeScore, away: p.awayScore, scoring: !!p.scoringPlay }; });
 }
+// football: the latest commentary lines (team by name; running score from the "Goal! X 1, Y 0." lines)
+const FLAB = (t) => (/own-goal/.test(t) ? 'OWN GOAL' : /goal|penalty---scored/.test(t) ? 'GOAL!' : /yellow/.test(t) ? 'YELLOW CARD' : /red-card/.test(t) ? 'RED CARD' : /substitution/.test(t) ? 'SUBSTITUTION' : /corner/.test(t) ? 'CORNER' : /offside/.test(t) ? 'OFFSIDE' : /foul/.test(t) ? 'FOUL' : /save/.test(t) ? 'SAVE' : /attempt|shot/.test(t) ? 'CHANCE' : /halftime|end/.test(t) ? 'HALF-TIME' : /kickoff|start/.test(t) ? 'KICK-OFF' : '');
+function footPlays(s, H, A) {
+  let h = 0, a = 0; const nm = (x) => String(x || '').toLowerCase();
+  return (s.commentary || []).filter((x) => x.text && x.time?.displayValue).map((x) => {
+    const m = /^(?:Goal!|Own Goal)[^.]*?(\d+),[^.]*?(\d+)\./.exec(x.text) || /(?:ends|Half), [^.]*?(\d+), [^.]*?(\d+)\./.exec(x.text); if (m) { h = +m[1]; a = +m[2]; }
+    const tn = nm(x.play?.team?.displayName), tid = x.play?.team?.id ? String(x.play.team.id) : tn && tn === nm(H.full) ? H.id : tn && tn === nm(A.full) ? A.id : '';
+    const t = x.play?.type?.type || '', scoring = /goal|penalty---scored/.test(t) && !/miss|saved/.test(t);
+    return { clk: x.time.displayValue, label: FLAB(t) || (/Second Half ends|Match ends/i.test(x.text) ? 'FULL TIME' : /First Half ends/i.test(x.text) ? 'HALF-TIME' : /Half begins|First Half starts/i.test(x.text) ? 'KICK-OFF' : (x.play?.type?.text || 'COMMENTARY').toUpperCase()), text: x.text, team: tid, home: h, away: a, scoring }; });
+}
 function gameCell(e, cur) {
   const c = e.competitions[0], h = c.competitors.find((x) => x.homeAway === 'home'), a = c.competitors.find((x) => x.homeAway === 'away');
   const st = e.status.type, pre = st.state === 'pre', fin = st.completed;
-  const s = pre ? new Date(e.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET' : fin ? st.shortDetail : st.shortDetail.replace(' - ', ' · ');
+  const s = pre ? (FOOT() ? new Date(e.date).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: TZ()[0] }) + ' ' + TZ()[1] : new Date(e.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET') : fin ? st.shortDetail : FOOT() ? (e.status.displayClock || st.shortDetail) : st.shortDetail.replace(' - ', ' · ');
   const row = (x, o) => `<div class="r"><img src="${x.team.logo}"><b>${esc(x.team.abbreviation)}</b><span class="${pre ? 'rec' : +x.score > +o.score ? 'w' : ''}">${pre ? esc(x.records?.[0]?.summary || '') : esc(x.score)}</span></div>`;
   return `<div class="gm ${cur ? 'cur' : ''}"><div class="st ${!pre && !fin ? 'live' : ''}">${esc(s)}</div>${row(h, a)}${row(a, h)}</div>`;
 }
@@ -166,6 +189,18 @@ function ownTracker(s, H, A, overlay) {
     + (made ? `<circle cx="${X}" cy="${Y}" r="${lastOne ? 13 : 10}" fill="${c}" stroke="#fff" stroke-width="3"/>`
       : `<g stroke="${c}" stroke-width="4" stroke-linecap="round" opacity="${lastOne ? 1 : .7}"><line x1="${X - 7}" y1="${Y - 7}" x2="${X + 7}" y2="${Y + 7}"/><line x1="${X + 7}" y1="${Y - 7}" x2="${X - 7}" y2="${Y + 7}"/></g>`);
   let svg;
+  if (FOOT()) {
+    const W = 1000, Hh = 520, ox = (BW - W) / 2, oy = 21, sx = W / 105, sy = Hh / 68, L = 'fill="none" stroke="#ffffff88" stroke-width="3"';
+    const box = (l, w, h) => `<rect x="${l ? ox : ox + W - w * sx}" y="${oy + (68 - h) / 2 * sy}" width="${w * sx}" height="${h * sy}" ${L}/>`;
+    svg = `<defs><linearGradient id="grass" x1="0" x2="1"><stop offset="0" stop-color="${hc}" stop-opacity=".22"/><stop offset=".5" stop-color="#123a2a"/><stop offset="1" stop-color="${ac}" stop-opacity=".22"/></linearGradient></defs>
+      <rect x="${ox}" y="${oy}" width="${W}" height="${Hh}" rx="6" fill="url(#grass)" stroke="#ffffffaa" stroke-width="4"/>
+      ${Array.from({ length: 10 }, (_, i) => (i % 2 ? `<rect x="${ox + i * W / 10}" y="${oy}" width="${W / 10}" height="${Hh}" fill="#ffffff" opacity=".03"/>` : '')).join('')}
+      <line x1="${ox + W / 2}" y1="${oy}" x2="${ox + W / 2}" y2="${oy + Hh}" ${L}/><circle cx="${ox + W / 2}" cy="${oy + Hh / 2}" r="${9.15 * sx}" ${L}/><circle cx="${ox + W / 2}" cy="${oy + Hh / 2}" r="5" fill="#ffffffaa"/>
+      ${box(1, 16.5, 40.3)}${box(0, 16.5, 40.3)}${box(1, 5.5, 18.3)}${box(0, 5.5, 18.3)}
+      <circle cx="${ox + 11 * sx}" cy="${oy + Hh / 2}" r="4" fill="#ffffffaa"/><circle cx="${ox + W - 11 * sx}" cy="${oy + Hh / 2}" r="4" fill="#ffffffaa"/>
+      <text x="${ox + W / 2}" y="${oy + Hh / 2 + 11}" text-anchor="middle" font-size="30" font-weight="900" fill="#ffffff2e" font-family="Inter" letter-spacing="3">SCOREBUZZ</text>`;
+    return `<svg width="${BW}" height="${BH}" viewBox="0 0 ${BW} ${BH}" ${overlay ? 'opacity=".45"' : ''}>${svg}</svg>${overlay || ''}`;
+  }
   if (NHL()) {
     const W = 1010, Hh = 430, ox = (BW - W) / 2, oy = 44, sx = W / 200, sy = Hh / 85, L = 'fill="none" stroke="#ff3b4e" stroke-width="3" opacity=".75"';
     const m = sh.map((p, i) => { const X = ox + (p.x + 100) * sx, Y = oy + (p.y + 42.5) * sy; return mark(X, Y, p.home ? hc : ac, p.made, i === sh.length - 1, ox + (p.x < 0 ? 11 : 189) * sx, oy + Hh / 2); }).join('');
@@ -196,6 +231,32 @@ function ownTracker(s, H, A, overlay) {
   return `<svg width="${BW}" height="${BH}" viewBox="0 0 ${BW} ${BH}" ${overlay ? 'opacity=".45"' : ''}>${svg}</svg>${overlay || ''}${lg}`;
 }
 
+// ---- football side cards: 4 outfield players + goalkeeper during/after the game (goals, assists, shots), line-up or last-5 form before ----
+const fsv = (p, k) => +((p.stats || []).find((x) => x.name === k)?.value || 0);
+function footTitle(s, T, pre) { const L = (s.rosters || []).find((r) => String(r.team?.id) === T.id)?.roster || [];
+  return !L.length ? 'LAST 5 GAMES' : pre ? `LINE-UP ${(s.rosters || []).find((r) => String(r.team?.id) === T.id)?.formation || ''}` : 'GAME LEADERS'; }
+function footCards(s, c, T, pre) {
+  const pc = (img, n, j, s1, d) => `<div class="pc">${img}<div class="t"><div class="n">${esc(n)}${j ? `<i>#${esc(j)}</i>` : ''}</div><div class="s">${esc(s1)}</div><div class="d">${esc(d)}</div></div></div>`;
+  const t = PHOTOS[c.id]?.teams || {}, pm = t[T.full] || t[Object.keys(t).find((k) => k.toLowerCase().includes(T.nick.toLowerCase()) || T.full.toLowerCase().includes(k.toLowerCase()))] || {};
+  const shirt = (j) => `<div class="shirt" style="--tc:${T.color}"><div>${esc(j || '')}</div></div>`;
+  const img = (j) => (pm[String(j ?? '')] ? `<img src="https://scorebuzz.net/img/p/${pm[String(j)].id}.png" onerror="this.outerHTML='<div class=&quot;shirt&quot; style=&quot;--tc:${T.color}&quot;><div>${esc(j || '')}</div></div>'">` : shirt(j));
+  const L = (s.rosters || []).find((r) => String(r.team?.id) === T.id)?.roster || [];
+  if (!L.length) { // no line-up yet: last five results
+    const F = (s.lastFiveGames || []).find((g) => String(g.team?.id) === T.id)?.events || [];
+    return [...F].reverse().slice(0, 5).map((e) => `<div class="pc"><div class="fr ${esc(e.gameResult)}">${esc(e.gameResult)}</div><div class="t"><div class="n">${e.atVs === '@' ? 'at' : 'vs'} ${esc(e.opponent?.abbreviation || '')}</div><div class="s">${esc(e.score || '')}</div><div class="d">${esc(new Date(e.gameDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }))} · ${esc(e.leagueAbbreviation || e.leagueName || '')}</div></div></div>`).join('');
+  }
+  const on = L.filter((p) => p.starter || p.subbedIn), gk = on.find((p) => p.position?.abbreviation === 'G');
+  if (pre || !on.some((p) => (p.stats || []).length)) { // line-up out, game not started: 4 attackers + keeper
+    const st = L.filter((p) => p.starter).sort((a, b) => (+b.formationPlace || 0) - (+a.formationPlace || 0));
+    return [...st.filter((p) => p.position?.abbreviation !== 'G').slice(0, 4), st.find((p) => p.position?.abbreviation === 'G')].filter(Boolean)
+      .map((p) => pc(img(p.jersey), p.athlete.shortName || p.athlete.displayName, p.jersey, p.position?.displayName || p.position?.abbreviation || '', 'Starting XI')).join('');
+  }
+  const sc = (p) => fsv(p, 'totalGoals') * 100 + fsv(p, 'goalAssists') * 50 + fsv(p, 'shotsOnTarget') * 5 + fsv(p, 'totalShots') * 2 + (p.subbedIn ? 0 : 1);
+  const top = on.filter((p) => p.position?.abbreviation !== 'G').sort((a, b) => sc(b) - sc(a)).slice(0, gk ? 4 : 5);
+  return top.map((p) => pc(img(p.jersey), p.athlete.shortName || p.athlete.displayName, p.jersey, `${fsv(p, 'totalGoals')} G · ${fsv(p, 'goalAssists')} A · ${fsv(p, 'totalShots')} SH`,
+      `${fsv(p, 'shotsOnTarget')} on target · ${p.position?.abbreviation || ''}${fsv(p, 'yellowCards') ? ' · 🟨' : ''}${fsv(p, 'redCards') ? ' · 🟥' : ''}`)).join('')
+    + (gk ? pc(img(gk.jersey), gk.athlete.shortName || gk.athlete.displayName, gk.jersey, `${fsv(gk, 'saves')} SAVES · ${fsv(gk, 'goalsConceded')} CONC`, `Goalkeeper · ${fsv(gk, 'shotsFaced')} shots faced`).replace('class="pc"', 'class="pc g"') : '');
+}
 function render(s, sb) {
   const c = s.header.competitions[0], st = c.status;
   const H = team(c.competitors.find((x) => x.homeAway === 'home')), A = team(c.competitors.find((x) => x.homeAway === 'away'));
@@ -203,20 +264,29 @@ function render(s, sb) {
   const sbEv = (sb?.events || []).find((e) => e.id === c.id);
   { // ESPN's scoreboard and summary feeds refresh at different moments: use whichever is further on (keeps the board level with the tracker)
     const b = sbEv?.status, secs = (v) => { const m = /^(\d+):(\d+)/.exec(v || ''); return m ? +m[1] * 60 + +m[2] : parseFloat(v) || 0; };
-    if (b && st.type?.state === 'in' && b.type?.state === 'in' && ((b.period || 0) > (st.period || 0) || ((b.period || 0) === (st.period || 0) && secs(b.displayClock) < secs(st.displayClock)))) { st.period = b.period; st.displayClock = b.displayClock; st.type = b.type; }
+    if (b && st.type?.state === 'in' && b.type?.state === 'in' && ((b.period || 0) > (st.period || 0) || ((b.period || 0) === (st.period || 0) && (FOOT() ? secs(b.displayClock) > secs(st.displayClock) : secs(b.displayClock) < secs(st.displayClock))))) { st.period = b.period; st.displayClock = b.displayClock; st.type = b.type; }
     for (const T of [H, A]) { const x = sbEv?.competitions?.[0]?.competitors?.find((k) => String(k.team.id) === T.id); if (x && +x.score > T.score) T.score = +x.score; }
   }
   const per = st.period || 1, n = st.type?.name || '', pre = st.type?.state === 'pre', fin = st.type?.completed, live = st.type?.state === 'in';
-  const et = (d) => new Date(d).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET';
+  const et = (d) => (FOOT() ? new Date(d).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: TZ()[0] }) + ' ' + TZ()[1] : new Date(d).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET');
   const B = box(s), hasBox = Object.keys(B).length > 0 && !pre, all = s.plays || [], lastP = all[all.length - 1];
-  const start = NHL() ? 'Puck drop' : 'Tip-off';
-  const clk = pre ? et(c.date) : fin ? 'FINAL' : /HALFTIME/.test(n) ? 'HALFTIME' : /END/.test(n) ? `END ${perName(per).toUpperCase()}` : st.displayClock;
+  const start = FOOT() ? 'Kick-off' : NHL() ? 'Puck drop' : 'Tip-off';
+  const half = (p) => (p === 1 ? '1st half' : p === 2 ? '2nd half' : p <= 4 ? 'Extra time' : 'Penalties');
+  const clk = FOOT() ? (pre ? et(c.date) : fin ? 'FT' : /HALFTIME/.test(n) ? 'HT' : (st.displayClock || st.type?.shortDetail || '')) : pre ? et(c.date) : fin ? 'FINAL' : /HALFTIME/.test(n) ? 'HALFTIME' : /END/.test(n) ? `END ${perName(per).toUpperCase()}` : st.displayClock;
   const lead = H.score === A.score ? 'Tied' : `${H.score > A.score ? H.abbr : A.abbr} lead by ${Math.abs(H.score - A.score)}`;
-  const sub = pre ? start : fin ? (st.type?.shortDetail || '').replace(/^Final\/?/, '') || `${H.score > A.score ? H.nick : A.nick} win` : /HALFTIME|END/.test(n) ? (NHL() ? 'Intermission' : lead)
+  const sub = FOOT() ? (pre ? start : fin ? (st.type?.detail && st.type.detail !== 'FT' ? st.type.detail : 'Full time') + (H.score === A.score ? ' · Draw' : ` · ${H.score > A.score ? H.nick : A.nick} win`) : /HALFTIME/.test(n) ? `Half-time · ${lead}` : `${half(per)} · ${lead}`)
+    : pre ? start : fin ? (st.type?.shortDetail || '').replace(/^Final\/?/, '') || `${H.score > A.score ? H.nick : A.nick} win` : /HALFTIME|END/.test(n) ? (NHL() ? 'Intermission' : lead)
     : `${perLong(per)} · ${NHL() ? (lastP?.strength?.text || lead) : lead}`;
   // ---- sport strip ----
   let strip;
-  if (NHL()) {
+  if (FOOT()) { // cards, corners, possession
+    const hasT = !pre && (s.boxscore?.teams || []).some((t) => (t.statistics || []).length), v = (id, k) => (hasT ? tstat(s, id, k) || '0' : '–');
+    const cd = (id) => `<div class="cd"><span><i></i>${v(id, 'yellowCards')}</span><span><i class="r"></i>${v(id, 'redCards')}</span></div>`;
+    const ph = hasT ? parseFloat(tstat(s, H.id, 'possessionPct')) || 50 : 50, pa = hasT ? parseFloat(tstat(s, A.id, 'possessionPct')) || 100 - ph : 50;
+    strip = `<div class="tob" style="position:relative">${cd(H.id)}<div class="sv">CORNERS <b>${v(H.id, 'wonCorners')}</b></div>
+      <div class="poss">${hasT ? `<b>${Math.round(ph)}%</b><div class="bar"><i style="width:${ph / (ph + pa) * 100}%;background:var(--hc)"></i><i style="flex:1;background:var(--ac)"></i></div><b>${Math.round(pa)}%</b>` : '<span class="lb">POSSESSION</span>'}</div>
+      <div class="sv"><b>${v(A.id, 'wonCorners')}</b> CORNERS</div>${cd(A.id)}</div>`;
+  } else if (NHL()) {
     const sog = (id) => (hasBox ? tstat(s, id, 'shotsTotal') || '0' : '–'), pp = (id) => (hasBox ? `${tstat(s, id, 'powerPlayGoals') || 0}/${tstat(s, id, 'powerPlayOpportunities') || 0}` : '–');
     strip = `<div class="tob"><div class="sv">PP <b>${pp(H.id)}</b></div><div class="sv">${esc(H.abbr)} <b>${sog(H.id)}</b></div><div class="tl">SHOTS ON GOAL</div><div class="sv"><b>${sog(A.id)}</b> ${esc(A.abbr)}</div><div class="sv">PP <b>${pp(A.id)}</b></div></div>`;
   } else {
@@ -228,17 +298,19 @@ function render(s, sb) {
     strip = `<div class="tob"><div class="bn ${(fouls[A.id] || 0) >= lim ? 'on' : ''}">BONUS</div>${d(H.id)}<div class="tl">TIMEOUTS</div>${d(A.id)}<div class="bn ${(fouls[H.id] || 0) >= lim ? 'on' : ''}">BONUS</div></div>`;
   }
   // ---- period chips ----
-  const reg = NHL() ? 3 : 4, cols = Math.max(reg, H.lines.length, A.lines.length);
-  const plab = (i) => (i < reg ? (NHL() ? 'P' : 'Q') + (i + 1) : NHL() ? (i === 3 ? 'OT' : 'SO') : (i === 4 ? 'OT' : `${i - 3}OT`));
+  const reg = FOOT() ? 2 : NHL() ? 3 : 4, cols = Math.max(reg, H.lines.length, A.lines.length);
+  const plab = (i) => FOOT() ? ['1ST HALF', '2ND HALF', 'ET 1', 'ET 2', 'PENS'][i] || '' : (i < reg ? (NHL() ? 'P' : 'Q') + (i + 1) : NHL() ? (i === 3 ? 'OT' : 'SO') : (i === 4 ? 'OT' : `${i - 3}OT`));
   const chips = (T) => `<div class="chips">${Array.from({ length: cols }, (_, i) => `<div class="${live && i === per - 1 ? 'cur' : ''}">${plab(i)}<b>${esc(T.lines[i] ?? '–')}</b></div>`).join('')}</div>`;
   // ---- game leaders (5 cards per team) ----
   const pc = (p, cls = '') => `<div class="pc ${cls}"><img src="${esc(p.head)}" onerror="this.style.visibility='hidden'"><div class="t"><div class="n">${esc(p.name)}${p.jersey ? `<i>#${esc(p.jersey)}</i>` : ''}</div><div class="s">${esc(p.s)}</div><div class="d">${esc(p.d)}</div></div></div>`;
   const cards = (T) => {
+    if (FOOT() && !hasBox) return footCards(s, c, T, pre);
     if (!hasBox) { // before the game: season leaders
       const L = (s.leaders || []).find((x) => String(x.team?.id) === T.id)?.leaders || [];
       return L.slice(0, 5).map((x) => { const a = x.leaders?.[0]; return a ? pc({ head: a.athlete?.headshot?.href || '', name: a.athlete?.shortName, jersey: a.athlete?.jersey, s: `${a.displayValue} ${(x.abbreviation || x.shortDisplayName || '').toUpperCase()}`.slice(0, 26), d: `Season · ${x.displayName || ''}` }) : ''; }).join('');
     }
     const G = B[T.id] || {};
+    if (FOOT()) return footCards(s, c, T, pre);
     if (NHL()) {
       const sk = [...(G.forwards || []), ...(G.defenses || [])].sort((a, b) => (b.n('G') + b.n('A')) - (a.n('G') + a.n('A')) || b.n('SOG') - a.n('SOG') || b.n('S') - a.n('S')).slice(0, 4);
       const g = [...(G.goalies || [])].sort((a, b) => b.n('SA') - a.n('SA'))[0];
@@ -249,19 +321,20 @@ function render(s, sb) {
     return [...(G.all || [])].sort((a, b) => b.n('PTS') - a.n('PTS') || b.n('MIN') - a.n('MIN')).slice(0, 5)
       .map((p) => pc({ ...p, s: `${p.n('PTS')} PTS · ${p.n('REB')} REB · ${p.n('AST')} AST`, d: `${String(p.st('FG')).replace('-', '/')} FG · ${String(p.st('3PT')).replace('-', '/')} 3PT · ${p.st('MIN')} MIN` })).join('');
   };
-  const nmCls = (T) => (T.nick.length > 12 ? 'l' : T.nick.length > 9 ? 'm' : '');
+  const nmCls = (T) => (T.nick.length > (FOOT() ? 10 : 12) ? 'l' : T.nick.length > 9 ? 'm' : '');
   const tag = (T, O) => (pre ? '' : T.score > O.score ? `<b>${fin ? 'WIN' : 'LEAD'}</b>+${T.score - O.score}` : '');
   const side = (T, O, k) => `<div class="side ${k}">
     <div class="th">${k === 'h' ? `<img src="${T.logoD}">` : ''}<div class="tx" style="${k === 'a' ? 'margin-left:auto;text-align:right' : ''}"><div class="ct">${esc(T.city)}</div><div class="nm ${nmCls(T)}">${esc(T.nick)}</div><div class="rc">${esc(T.rec)}</div></div>${k === 'a' ? `<img src="${T.logoD}">` : ''}</div>
     <div class="scr" style="${k === 'a' ? 'flex-direction:row-reverse' : ''}"><div class="big ${T.score < O.score ? 'lo' : ''}">${pre ? 0 : T.score}</div><div class="tag" style="${k === 'a' ? 'text-align:left' : ''}">${tag(T, O)}</div></div>
     ${chips(T)}
-    <div class="gl">${hasBox ? 'GAME LEADERS' : 'SEASON LEADERS'}<span>${NHL() && hasBox ? 'SKATERS / GOALIE' : esc(T.abbr)}</span></div>
+    <div class="gl">${FOOT() ? footTitle(s, T, pre) : hasBox ? 'GAME LEADERS' : 'SEASON LEADERS'}<span>${FOOT() ? esc(T.abbr) : NHL() && hasBox ? 'SKATERS / GOALIE' : esc(T.abbr)}</span></div>
     <div class="cards">${cards(T)}</div></div>`;
   // ---- plays ----
-  const P = plays(s).slice(-3).reverse(), logo = (id) => (id === H.id ? H.logoD : id === A.id ? A.logoD : '');
+  const P = (FOOT() ? footPlays(s, H, A) : plays(s)).slice(-3).reverse(), logo = (id) => (id === H.id ? H.logoD : id === A.id ? A.logoD : '');
   const mins = Math.round((new Date(c.date) - Date.now()) / 60000);
+  const dayOf = (d) => new Date(d).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: FOOT() ? TZ()[0] : 'America/New_York' });
   const venue = [s.gameInfo?.venue?.fullName, s.gameInfo?.venue?.address?.city].filter(Boolean).join(', ');
-  const info = [[start.toUpperCase(), `${et(c.date)}${mins > 0 ? ` · in ${mins >= 60 ? Math.floor(mins / 60) + 'h ' : ''}${mins % 60} min` : ''}`], ['VENUE', venue], ['WATCH', (c.broadcasts || []).map((x) => x.media?.shortName).filter(Boolean).join(', ') || 'Live scores here on ScoreBuzz']];
+  const info = [[start.toUpperCase(), `${et(c.date)}${mins >= 1440 ? ` · ${dayOf(c.date)}` : mins > 0 ? ` · in ${mins >= 60 ? Math.floor(mins / 60) + 'h ' : ''}${mins % 60} min` : ''}`], ['VENUE', venue], ['WATCH', (c.broadcasts || []).map((x) => x.media?.shortName).filter(Boolean).join(', ') || 'Live scores here on ScoreBuzz']];
   const pbp = P.length && !pre ? P.map((p, i) => `<div class="pl ${i === 0 ? 'new' : ''}" style="--nc:${p.team === A.id ? A.color : p.team === H.id ? H.color : '#24366e'}">
       <div class="l0">${logo(p.team) ? `<img src="${logo(p.team)}">` : ''}<span>${esc(p.clk)}</span><em><span class="${p.scoring && p.team === H.id ? 'g' : ''}">${p.home ?? ''}</span> - <span class="${p.scoring && p.team === A.id ? 'g' : ''}">${p.away ?? ''}</span></em></div>
       <div class="l1">${esc(p.label)}</div><div class="l2">${esc(p.text)}</div></div>`).join('')
@@ -269,8 +342,13 @@ function render(s, sb) {
   // ---- tracker: website tracker while in play, built-in shot map otherwise ----
   const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   const shortOf = (T) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === T.id)?.team?.shortDisplayName || T.nick;
+  const trkUrlPre = false;
   const trkUrl = live && !noSite && !OWN && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/` : '';
-  const ov = pre ? `<div class="ov"><div class="k">${esc(start.toUpperCase())} ${esc(et(c.date))}${mins > 0 ? ` · IN ${mins >= 60 ? Math.floor(mins / 60) + 'H ' : ''}${mins % 60} MIN` : ''}</div><div class="v">${esc(A.nick)} @ ${esc(H.nick)}${venue ? ' · ' + esc(venue) : ''}</div></div>` : '';
+  const scorers = (id) => { const m = new Map(); for (const k of s.keyEvents || []) { const t = k.type?.type || ''; if (!(k.scoringPlay || /goal|penalty---scored/.test(t)) || /miss|saved/.test(t) || String(k.team?.id || '') !== id) continue;
+      const who = (k.participants?.[0]?.athlete?.displayName || '').split(' ').slice(-1)[0] || '?'; m.set(who, [...(m.get(who) || []), k.clock?.displayValue + (/penalty/.test(t) ? ' P' : t === 'own-goal' ? ' OG' : '')]); }
+    return [...m].map(([w, ts]) => `${w} ${ts.join(', ')}`).join(' · '); };
+  const ovF = FOOT() && !pre && !trkUrlPre ? `<div class="ov"><div class="k">${fin ? 'FULL TIME' : esc(clk)} · ${esc(H.abbr)} ${H.score}-${A.score} ${esc(A.abbr)}</div>${[[H, scorers(H.id)], [A, scorers(A.id)]].filter((x) => x[1]).map(([T, x]) => `<div class="gs">⚽ ${esc(T.nick)}: ${esc(x)}</div>`).join('')}</div>` : '';
+  const ov = !pre && FOOT() ? ovF : pre ? `<div class="ov"><div class="k">${esc(start.toUpperCase())} ${esc(et(c.date))}${mins >= 1440 ? ` · ${dayOf(c.date).toUpperCase()}` : mins > 0 ? ` · IN ${mins >= 60 ? Math.floor(mins / 60) + 'H ' : ''}${mins % 60} MIN` : ''}</div><div class="v">${FOOT() ? `${esc(H.nick)} v ${esc(A.nick)}` : `${esc(A.nick)} @ ${esc(H.nick)}`}${venue ? ' · ' + esc(venue) : ''}</div></div>` : '';
   // ---- games along the bottom: this game first, then live, then the rest ----
   let evs = sb?.events || [];
   const rk = (e) => (e.id === c.id ? 0 : e.status.type.state === 'in' ? 1 : e.status.type.state === 'pre' ? 2 : 3);
@@ -285,7 +363,7 @@ function render(s, sb) {
   ${side(A, H, 'a')}
   <div class="bot">${evs.map((e) => gameCell(e, e.id === c.id)).join('')}<div class="sub"><div class="bz">Score<b>Buzz</b><span>scorebuzz.net</span></div><div class="btn">SUBSCRIBE</div></div></div>`;
   placeTracker(trkUrl);
-  if (VOICE) commentary(all, H, A, per, pre, fin);
+  if (VOICE && !FOOT()) commentary(all, H, A, per, pre, fin);
 }
 // ---- DEMO: spoken commentary (&voice=1). Turns each new play into a short line and reads it with the browser's own voice. ----
 // On the real streams the same lines would be sent to a text-to-speech service and played as audio clips.
@@ -331,12 +409,27 @@ function commentary(all, H, A, per, pre, fin) {
 // ---- DEMO: &replay=1 plays a finished game back one play every few seconds (score and clock follow the plays) ----
 let rpS = null, rpI = 0;
 function replayStep(s) {
+  if (FOOT()) return footReplay(s);
   if (!rpS) { rpS = s; rpI = Math.max(1, Math.min(+q.get('from') || 40, (s.plays || []).length - 1)); }
   const S = JSON.parse(JSON.stringify(rpS)), all = rpS.plays || []; rpI = Math.min(rpI + 1, all.length);
   const p = all[rpI - 1] || {}, c = S.header.competitions[0], per = p.period?.number || 1;
   S.plays = all.slice(0, rpI);
   c.status = { period: per, displayClock: NHL() ? left(p.clock?.displayValue, per) : p.clock?.displayValue || '', type: { state: 'in', name: 'STATUS_IN_PROGRESS', completed: false, shortDetail: '' } };
   for (const x of c.competitors) { x.score = String((x.homeAway === 'home' ? p.homeScore : p.awayScore) ?? 0); x.linescores = []; }
+  return S;
+}
+// football replay: one commentary line every few seconds; clock, half and score follow the commentary, stats/line-ups stay at full time
+function footReplay(s) {
+  const all = (s.commentary || []).filter((x) => x.text && x.time?.displayValue);
+  if (!rpS) { rpS = s; rpI = Math.max(1, Math.min(+q.get('from') || 1, all.length - 1)); }
+  rpI = Math.min(rpI + 1, all.length);
+  const S = JSON.parse(JSON.stringify(rpS)), c = S.header.competitions[0];
+  S.commentary = all.slice(0, rpI); const x = all[rpI - 1], H0 = c.competitors.find((k) => k.homeAway === 'home'), A0 = c.competitors.find((k) => k.homeAway === 'away');
+  const P = footPlays(S, { full: H0.team.displayName }, { full: A0.team.displayName }), lastP = P[P.length - 1] || { home: 0, away: 0 };
+  const per = x.play?.period?.number || (x.time.value > 2700 ? 2 : 1), ht = /First Half ends/i.test(x.text);
+  S.keyEvents = (S.keyEvents || []).filter((k) => (k.clock?.value ?? 0) <= x.time.value && (k.period?.number || 1) <= per);
+  c.status = { period: per, displayClock: x.time.displayValue, type: ht ? { state: 'in', name: 'STATUS_HALFTIME', completed: false } : { state: 'in', name: 'STATUS_IN_PROGRESS', completed: false, shortDetail: '' } };
+  H0.score = String(lastP.home); A0.score = String(lastP.away); H0.linescores = []; A0.linescores = [];
   return S;
 }
 // the website's live tracker, cropped out of the match page like nba.html / us.html
@@ -378,8 +471,10 @@ async function slotTick() {
   } catch (e) { /* keep current */ }
 }
 if (!SPORT[league]) league = 'nba';
+const loadPhotos = async () => { try { PHOTOS = await J('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/player_photos.json?t=' + Date.now()); } catch (e) { /* keep */ } };
+loadPhotos(); setInterval(loadPhotos, 300000);
 if (SLOT) { slotTick(); setInterval(slotTick, 60000); setInterval(tick, POLL); }
-else if (!event) $('app').innerHTML = '<div class="err">Add ?league=nba|nhl&event=&lt;ESPN game id&gt; or ?slot=N</div>'; else { tick(); setInterval(tick, REPLAY ? 4500 : POLL); }
+else if (!event) $('app').innerHTML = '<div class="err">Add ?league=nba|nhl|epl|laliga|…&event=&lt;ESPN game id&gt; or ?slot=N</div>'; else { tick(); setInterval(tick, REPLAY ? 4500 : POLL); }
 })();
 </script>
 </body></html>
