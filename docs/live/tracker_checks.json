@@ -1306,16 +1306,6 @@
   "reason": "ok (contrast 88)",
   "at": "2026-11-13T03:07:29+00:00"
  },
- "401873052": {
-  "slot": "11",
-  "league": "nfl",
-  "game": "Giants v Commanders",
-  "url": "https://scorebuzz.net/american-football/nfl/giants-vs-commanders-401873052/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-13T03:44:06+00:00"
- },
  "401892702": {
   "slot": "12",
   "league": "nhl",
@@ -1325,16 +1315,6 @@
   "status": "ok",
   "reason": "ok (contrast 80)",
   "at": "2026-11-13T03:44:09+00:00"
- },
- "401892705": {
-  "slot": "15",
-  "league": "nhl",
-  "game": "Kings v Islanders",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-islanders-401892705/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 86)",
-  "at": "2026-11-13T03:44:13+00:00"
  },
  "401892704": {
   "slot": "14",
@@ -1355,5 +1335,25 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-13T04:00:26+00:00"
+ },
+ "401873052": {
+  "slot": "11",
+  "league": "nfl",
+  "game": "Giants v Commanders",
+  "url": "https://scorebuzz.net/american-football/nfl/giants-vs-commanders-401873052/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-13T04:16:33+00:00"
+ },
+ "401892705": {
+  "slot": "15",
+  "league": "nhl",
+  "game": "Kings v Islanders",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-islanders-401892705/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-13T04:16:36+00:00"
  }
 }
