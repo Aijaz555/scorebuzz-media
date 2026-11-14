@@ -63,8 +63,8 @@
   },
   "8": {
    "league": "nhl",
-   "event": "401892708",
-   "note": "Chicago Blackhawks vs Winnipeg Jets, 2026-11-14T20:30:00Z"
+   "event": "401892717",
+   "note": "Dallas Stars vs Buffalo Sabres, 2026-11-15T01:00:00Z"
   },
   "9": {
    "league": "nhl",
@@ -80,6 +80,21 @@
    "league": "nhl",
    "event": "401892716",
    "note": "St. Louis Blues vs Florida Panthers, 2026-11-15T00:00:00Z"
+  },
+  "12": {
+   "league": "nba",
+   "event": "401909982",
+   "note": "Miami Heat vs Detroit Pistons, 2026-11-15T01:00:00Z"
+  },
+  "13": {
+   "league": "nba",
+   "event": "401909983",
+   "note": "Memphis Grizzlies vs Brooklyn Nets, 2026-11-15T01:00:00Z"
+  },
+  "14": {
+   "league": "nba",
+   "event": "401909984",
+   "note": "Minnesota Timberwolves vs Chicago Bulls, 2026-11-15T01:00:00Z"
   }
  },
  "fit": {
