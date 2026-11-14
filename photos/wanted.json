@@ -12,16 +12,28 @@
   "country": "USA"
  },
  {
+  "slug": "kinnick-stadium",
+  "name": "Kinnick Stadium",
+  "city": "Iowa City",
+  "country": "USA"
+ },
+ {
   "slug": "casino-del-sol-stadium",
   "name": "Casino Del Sol Stadium",
   "city": "Tucson",
   "country": "USA"
  },
  {
-  "slug": "kinnick-stadium",
-  "name": "Kinnick Stadium",
-  "city": "Iowa City",
-  "country": "USA"
+  "slug": "gainbridge-fieldhouse",
+  "name": "Gainbridge Fieldhouse",
+  "city": "Indianapolis",
+  "country": ""
+ },
+ {
+  "slug": "frost-bank-center",
+  "name": "Frost Bank Center",
+  "city": "San Antonio",
+  "country": ""
  },
  {
   "slug": "xfinity-mobile-arena",
@@ -36,15 +48,9 @@
   "country": ""
  },
  {
-  "slug": "gainbridge-fieldhouse",
-  "name": "Gainbridge Fieldhouse",
-  "city": "Indianapolis",
-  "country": ""
- },
- {
-  "slug": "frost-bank-center",
-  "name": "Frost Bank Center",
-  "city": "San Antonio",
+  "slug": "barclays-center",
+  "name": "Barclays Center",
+  "city": "Brooklyn",
   "country": ""
  },
  {
