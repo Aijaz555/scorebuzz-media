@@ -75,10 +75,6 @@
   "venue": "Bank of America Stadium",
   "credit": "Photo: Quintin Soloviev / Wikimedia Commons, CC BY 4.0"
  },
- "barclays-center": {
-  "venue": "Barclays Center",
-  "credit": "Photo: Kidfly182 / Wikimedia Commons, CC BY 4.0"
- },
  "bayarena": {
   "venue": "BayArena",
   "credit": "Photo: Partonez / Wikimedia Commons, CC BY-SA 4.0"
@@ -530,10 +526,6 @@
  "portman-road": {
   "venue": "Portman Road",
   "credit": "Photo: John Fielding from Norwich, UK / Wikimedia Commons, CC BY 2.0"
- },
- "ppg-paints-arena": {
-  "venue": "PPG Paints Arena",
-  "credit": "Photo: Designism / Wikimedia Commons, CC0"
  },
  "prezero-arena": {
   "venue": "PreZero Arena",
