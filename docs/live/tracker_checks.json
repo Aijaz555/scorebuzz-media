@@ -1364,37 +1364,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 67)",
-  "at": "2026-11-14T01:13:21+00:00"
- },
- "401909298": {
-  "slot": "3",
-  "league": "nba",
-  "game": "Heat v Cavaliers",
-  "url": "https://scorebuzz.net/basketball/nba/heat-vs-cavaliers-401909298/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-14T01:13:24+00:00"
- },
- "401909299": {
-  "slot": "4",
-  "league": "nba",
-  "game": "Bulls v Hawks",
-  "url": "https://scorebuzz.net/basketball/nba/bulls-vs-hawks-401909299/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-14T01:13:27+00:00"
- },
- "401909300": {
-  "slot": "5",
-  "league": "nba",
-  "game": "Pelicans v Grizzlies",
-  "url": "https://scorebuzz.net/basketball/nba/pelicans-vs-grizzlies-401909300/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-14T01:13:30+00:00"
+  "at": "2026-11-14T01:53:56+00:00"
  },
  "401909297": {
   "slot": "2",
@@ -1404,6 +1374,46 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 65)",
-  "at": "2026-11-14T01:21:36+00:00"
+  "at": "2026-11-14T01:53:59+00:00"
+ },
+ "401909298": {
+  "slot": "3",
+  "league": "nba",
+  "game": "Heat v Cavaliers",
+  "url": "https://scorebuzz.net/basketball/nba/heat-vs-cavaliers-401909298/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-14T01:54:02+00:00"
+ },
+ "401909299": {
+  "slot": "4",
+  "league": "nba",
+  "game": "Bulls v Hawks",
+  "url": "https://scorebuzz.net/basketball/nba/bulls-vs-hawks-401909299/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-14T01:54:05+00:00"
+ },
+ "401909300": {
+  "slot": "5",
+  "league": "nba",
+  "game": "Pelicans v Grizzlies",
+  "url": "https://scorebuzz.net/basketball/nba/pelicans-vs-grizzlies-401909300/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-14T01:54:08+00:00"
+ },
+ "401909301": {
+  "slot": "6",
+  "league": "nba",
+  "game": "Rockets v Jazz",
+  "url": "https://scorebuzz.net/basketball/nba/rockets-vs-jazz-401909301/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-14T01:54:11+00:00"
  }
 }
