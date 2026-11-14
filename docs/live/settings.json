@@ -42,6 +42,31 @@
    "event": "401891809",
    "note": "Carolina Hurricanes vs Seattle Kraken, 2026-11-14T18:00:00Z"
   },
+  "4": {
+   "league": "ncaaf",
+   "event": "401856888",
+   "note": "Texas A&M Aggies vs Tennessee Volunteers, 2026-11-14T20:00:00Z"
+  },
+  "5": {
+   "league": "ncaaf",
+   "event": "401856883",
+   "note": "Georgia Bulldogs vs Missouri Tigers, 2026-11-14T20:30:00Z"
+  },
+  "6": {
+   "league": "ncaaf",
+   "event": "401858294",
+   "note": "Notre Dame Fighting Irish vs Boston College Eagles, 2026-11-14T20:30:00Z"
+  },
+  "7": {
+   "league": "ncaaf",
+   "event": "401858518",
+   "note": "Indiana Hoosiers vs USC Trojans, 2026-11-14T20:30:00Z"
+  },
+  "8": {
+   "league": "nhl",
+   "event": "401892708",
+   "note": "Chicago Blackhawks vs Winnipeg Jets, 2026-11-14T20:30:00Z"
+  },
   "20": {
    "league": "ufc",
    "event": "600061400",
