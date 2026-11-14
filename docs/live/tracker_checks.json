@@ -1486,16 +1486,6 @@
   "reason": "tracker card has no drawing",
   "at": "2026-11-14T17:17:04+00:00"
  },
- "401856889": {
-  "slot": "2",
-  "league": "ncaaf",
-  "game": "Vanderbilt v Alabama",
-  "url": "https://scorebuzz.net/american-football/college-football/vanderbilt-vs-alabama-401856889/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-14T17:49:11+00:00"
- },
  "401891809": {
   "slot": "3",
   "league": "nhl",
@@ -1505,5 +1495,15 @@
   "status": "ok",
   "reason": "ok (contrast 93)",
   "at": "2026-11-14T18:09:04+00:00"
+ },
+ "401856889": {
+  "slot": "2",
+  "league": "ncaaf",
+  "game": "Vanderbilt v Alabama",
+  "url": "https://scorebuzz.net/american-football/college-football/vanderbilt-vs-alabama-401856889/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-14T18:25:11+00:00"
  }
 }
