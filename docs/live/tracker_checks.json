@@ -1366,16 +1366,6 @@
   "reason": "tracker card has no drawing",
   "at": "2026-11-14T02:11:59+00:00"
  },
- "401892706": {
-  "slot": "9",
-  "league": "nhl",
-  "game": "Canucks v Rangers",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/canucks-vs-rangers-401892706/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 95)",
-  "at": "2026-11-14T02:12:02+00:00"
- },
  "401909296": {
   "slot": "1",
   "league": "nba",
@@ -1435,5 +1425,25 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-14T02:28:28+00:00"
+ },
+ "401909302": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Spurs v Warriors",
+  "url": "https://scorebuzz.net/basketball/nba/spurs-vs-warriors-401909302/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 68)",
+  "at": "2026-11-14T02:49:56+00:00"
+ },
+ "401892706": {
+  "slot": "9",
+  "league": "nhl",
+  "game": "Canucks v Rangers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/canucks-vs-rangers-401892706/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-14T02:49:59+00:00"
  }
 }
