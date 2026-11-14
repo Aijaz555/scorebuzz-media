@@ -1386,26 +1386,6 @@
   "reason": "ok (contrast 65)",
   "at": "2026-11-14T02:28:16+00:00"
  },
- "401909303": {
-  "slot": "10",
-  "league": "nba",
-  "game": "Kings v Trail Blazers",
-  "url": "https://scorebuzz.net/basketball/nba/kings-vs-trail-blazers-401909303/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-14T03:14:27+00:00"
- },
- "401892707": {
-  "slot": "12",
-  "league": "nhl",
-  "game": "Golden Knights v Predators",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-predators-401892707/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 86)",
-  "at": "2026-11-14T03:14:30+00:00"
- },
  "401909302": {
   "slot": "7",
   "league": "nba",
@@ -1475,5 +1455,25 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-14T03:41:43+00:00"
+ },
+ "401909303": {
+  "slot": "10",
+  "league": "nba",
+  "game": "Kings v Trail Blazers",
+  "url": "https://scorebuzz.net/basketball/nba/kings-vs-trail-blazers-401909303/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-14T03:49:50+00:00"
+ },
+ "401892707": {
+  "slot": "12",
+  "league": "nhl",
+  "game": "Golden Knights v Predators",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-predators-401892707/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-14T03:49:58+00:00"
  }
 }
