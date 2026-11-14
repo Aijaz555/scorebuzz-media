@@ -1516,26 +1516,6 @@
   "reason": "ok (contrast 62)",
   "at": "2026-11-14T20:47:33+00:00"
  },
- "401856888": {
-  "slot": "4",
-  "league": "ncaaf",
-  "game": "Texas A&M v Tennessee",
-  "url": "https://scorebuzz.net/american-football/college-football/texas-a-m-vs-tennessee-401856888/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-14T20:47:36+00:00"
- },
- "401856883": {
-  "slot": "5",
-  "league": "ncaaf",
-  "game": "Georgia v Missouri",
-  "url": "https://scorebuzz.net/american-football/college-football/georgia-vs-missouri-401856883/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-14T20:47:38+00:00"
- },
  "401858294": {
   "slot": "6",
   "league": "ncaaf",
@@ -1555,5 +1535,25 @@
   "status": "ok",
   "reason": "ok (contrast 83)",
   "at": "2026-11-14T21:11:55+00:00"
+ },
+ "401856888": {
+  "slot": "4",
+  "league": "ncaaf",
+  "game": "Texas A&M v Tennessee",
+  "url": "https://scorebuzz.net/american-football/college-football/texas-a-m-vs-tennessee-401856888/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-14T21:21:18+00:00"
+ },
+ "401856883": {
+  "slot": "5",
+  "league": "ncaaf",
+  "game": "Georgia v Missouri",
+  "url": "https://scorebuzz.net/american-football/college-football/georgia-vs-missouri-401856883/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-14T21:21:21+00:00"
  }
 }
