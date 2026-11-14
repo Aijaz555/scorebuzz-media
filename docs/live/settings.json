@@ -184,6 +184,14 @@
    },
    "soccer_cheer": {
     "ScoreBuzz Football Crowd Cheer": "6af4c6b31ad365c217614ea4"
+   },
+   "ufc_crowd": {
+    "ScoreBuzz UFC Crowd 01": "6af877169bca35b490d32c6d",
+    "ScoreBuzz UFC Crowd 02": "6af877179bca35b490d32c78",
+    "ScoreBuzz UFC Crowd 03": "6af877179bca35b490d32c7e",
+    "ScoreBuzz UFC Crowd 04": "6af877189bca35b490d32cbe",
+    "ScoreBuzz UFC Crowd 05": "6af877189bca35b490d32cd3",
+    "ScoreBuzz UFC Crowd 06": "6af877199bca35b490d32cdc"
    }
   },
   "sports": {
@@ -193,7 +201,8 @@
    "nhl": "hockey_crowd",
    "mlb": "baseball",
    "soccer": "soccer_cheer",
-   "cricket": "cricket"
+   "cricket": "cricket",
+   "ufc": "ufc_crowd"
   },
   "layers": {
    "1": "6aece926a44fc7f985e2be6a",
@@ -225,11 +234,13 @@
    "nfl_crowd": 6,
    "basketball_crowd": 6,
    "hockey_crowd": 6,
-   "soccer_cheer": 4
+   "soccer_cheer": 4,
+   "ufc_crowd": 6
   },
   "ordered": [
    "hockey_crowd",
-   "basketball_crowd"
+   "basketball_crowd",
+   "ufc_crowd"
   ]
  },
  "thumbs": false,
