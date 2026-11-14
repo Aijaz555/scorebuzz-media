@@ -1475,5 +1475,15 @@
   "status": "ok",
   "reason": "ok (contrast 88)",
   "at": "2026-11-14T05:41:45+00:00"
+ },
+ "401858296": {
+  "slot": "1",
+  "league": "ncaaf",
+  "game": "Miami v Duke",
+  "url": "https://scorebuzz.net/american-football/college-football/miami-vs-duke-401858296/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "tracker card has no drawing",
+  "at": "2026-11-14T17:17:04+00:00"
  }
 }
