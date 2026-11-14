@@ -417,4 +417,4 @@ autoSample off) full screen. It follows whichever fight is in the cage, shows "U
   recordings (01 Wrestling Crowd Interior Huge Crowd Cheers OCP-0098-04, 02/04 Boxing Crowds During Fight 01/02, 03/05/06 Crowd Reaction
   MMA Fight OCM-0046-118-23/-120-25/-097-02), each only loudness-normalised (-18 LUFS, stereo, MP3 192k), not mixed; played in that
   order on loop at volume 6 on Slot 20's Music layer (set by hand, replacing the rock playlist). Not committed (Envato licence).
-- UFC 334 (Gane vs Hokit, MSG): Slot 20, scheduled 14 Nov 2026 21:30 UTC (30 min before the 22:00 UTC early prelims), manual duration: the owner stops it himself.
+- UFC 334 (Gane vs Hokit, MSG): Slot 20, scheduled 14 Nov 2026 21:30 UTC (30 min before the 22:00 UTC early prelims), manual duration: the owner stops it himself. Stopped 14 Nov 2026 ~22:24 UTC on the owner's request (Slot 21's RTMP feed to ufc2cobra left running).
