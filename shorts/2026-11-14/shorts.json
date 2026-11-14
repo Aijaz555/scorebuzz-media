@@ -1,0 +1,767 @@
+[
+ {
+  "id": "s01-nations-board",
+  "sport": "football",
+  "bed": "hype",
+  "fb": "2026-11-14T12:50:00",
+  "yt": "2026-11-14T15:10:00",
+  "title": "Nations League Results: Netherlands 7–0 Greece, Serbia vs Germany ⚽ #shorts",
+  "description": "Every UEFA Nations League result from Friday 13 November: the Netherlands beat Greece 7–0 in Amsterdam with a Tijjani Reijnders hat-trick, Germany won 3–1 in Serbia, Scotland beat North Macedonia 2–1 with two John McGinn goals and Iceland won 5–0 in Bulgaria with an Andri Gudjohnsen hat-trick. Slovenia and Switzerland drew 0–0 and the Faroe Islands drew 2–2 in Slovakia.\n\nNations League scores and tables: https://scorebuzz.net\n\n#NationsLeague #Netherlands #Germany #Scotland",
+  "tags": [
+   "nations league results",
+   "nations league scores",
+   "netherlands vs greece",
+   "greece vs netherlands",
+   "serbia vs germany",
+   "germany vs serbia",
+   "scotland vs north macedonia",
+   "bulgaria vs iceland",
+   "uefa nations league",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 21.2,
+    "kicker": "Nations League · Friday",
+    "title": "Every score",
+    "badge": "Full time",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "Netherlands",
+      "homeAbbr": "NED",
+      "hs": 7,
+      "away": "Greece",
+      "awayAbbr": "GRE",
+      "as": 0,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png"
+     },
+     {
+      "home": "Serbia",
+      "homeAbbr": "SRB",
+      "hs": 1,
+      "away": "Germany",
+      "awayAbbr": "GER",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sba.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png"
+     },
+     {
+      "home": "Scotland",
+      "homeAbbr": "SCO",
+      "hs": 2,
+      "away": "North Macedonia",
+      "awayAbbr": "MKD",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mkd.png"
+     },
+     {
+      "home": "Bulgaria",
+      "homeAbbr": "BUL",
+      "hs": 0,
+      "away": "Iceland",
+      "awayAbbr": "ISL",
+      "as": 5,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bul.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/isl.png"
+     },
+     {
+      "home": "Slovenia",
+      "homeAbbr": "SVN",
+      "hs": 0,
+      "away": "Switzerland",
+      "awayAbbr": "SUI",
+      "as": 0,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/svn.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png"
+     },
+     {
+      "home": "Slovakia",
+      "homeAbbr": "SVK",
+      "hs": 2,
+      "away": "Faroe Islands",
+      "awayAbbr": "FRO",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/svk.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fro.png"
+     },
+     {
+      "home": "Moldova",
+      "homeAbbr": "MDA",
+      "hs": 2,
+      "away": "Kazakhstan",
+      "awayAbbr": "KAZ",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mda.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kaz.png"
+     },
+     {
+      "home": "Andorra",
+      "homeAbbr": "AND",
+      "hs": 2,
+      "away": "Gibraltar",
+      "awayAbbr": "GIB",
+      "as": 0,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/and.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gib.png"
+     },
+     {
+      "home": "Luxembourg",
+      "homeAbbr": "LUX",
+      "hs": 0,
+      "away": "Estonia",
+      "awayAbbr": "EST",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/lux.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/est.png"
+     },
+     {
+      "home": "Liechtenstein",
+      "homeAbbr": "LIE",
+      "hs": 0,
+      "away": "Azerbaijan",
+      "awayAbbr": "AZE",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/lie.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aze.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Result of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Nations League · Friday",
+   "big": "10",
+   "hook": "Games, every *score*",
+   "sticker": "RESULTS",
+   "emoji": "⚽"
+  },
+  "fbtext": "⚽ Every Nations League score from Friday.\n\nThe Dutch put seven past Greece, Germany won in Belgrade, McGinn scored twice for Scotland and Iceland hit Bulgaria for five.\n\nResult of the night? 👇\n\n#NationsLeague #Netherlands #Reels"
+ },
+ {
+  "id": "s02-ned-greece-7",
+  "sport": "football",
+  "bed": "anthem",
+  "fb": "2026-11-14T15:35:00",
+  "yt": "2026-11-14T17:30:00",
+  "title": "Netherlands vs Greece 7–0: Reijnders Hat-Trick in 21 Minutes 🤯 #shorts",
+  "description": "The Netherlands beat Greece 7–0 in the UEFA Nations League at the Johan Cruijff Arena on 13 November 2026, tying the record for the biggest win in Nations League history. Tijjani Reijnders scored a hat-trick between the 12th and 33rd minutes, Jurriën Timber scored twice and Crysencio Summerville and Donyell Malen also scored. It was the first time Greece had conceded seven since May 1989, and Xavi's Netherlands play Germany in Berlin on Monday.\n\nNetherlands vs Greece final score and Nations League results: https://scorebuzz.net\n\n#Netherlands #Reijnders #NationsLeague #Greece",
+  "tags": [
+   "netherlands vs greece",
+   "greece vs netherlands",
+   "netherlands 7-0 greece",
+   "tijjani reijnders",
+   "reijnders hat trick",
+   "jurrien timber",
+   "xavi netherlands",
+   "nations league",
+   "germany vs netherlands",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Nations League · Amsterdam",
+    "title": "7–0. The Dutch destroyed Greece",
+    "sub": "And one man did it in 21 minutes"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Full time · Johan Cruijff Arena",
+    "home": "Netherlands",
+    "homeAbbr": "NED",
+    "homeScore": 7,
+    "away": "Greece",
+    "awayAbbr": "GRE",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
+    "note": "Ties the biggest win in Nations League history"
+   },
+   {
+    "type": "list",
+    "dur": 6.4,
+    "label": "The goals",
+    "title": "Seven in 61 minutes",
+    "rows": [
+     [
+      "6'",
+      "Crysencio Summerville",
+      "1–0"
+     ],
+     [
+      "12'",
+      "Tijjani Reijnders",
+      "2–0"
+     ],
+     [
+      "18'",
+      "Tijjani Reijnders",
+      "3–0"
+     ],
+     [
+      "33'",
+      "Tijjani Reijnders",
+      "4–0"
+     ],
+     [
+      "40'",
+      "Jurriën Timber",
+      "5–0"
+     ],
+     [
+      "59'",
+      "Jurriën Timber",
+      "6–0"
+     ],
+     [
+      "61'",
+      "Donyell Malen",
+      "7–0"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Tijjani Reijnders",
+    "value": "21",
+    "unit": "minutes",
+    "text": "for his hat-trick (12', 18', 33')"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Greece",
+    "title": "First time conceding 7 since May 1989",
+    "sub": "Xavi's Netherlands are still unbeaten"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Monday: Germany v Netherlands. Who wins?",
+    "sub": "Follow ScoreBuzz for football scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Netherlands vs Greece",
+   "big": "7–0",
+   "hook": "Hat-trick in *21* minutes",
+   "sticker": "RECORD",
+   "teams": [
+    "NED",
+    "GRE"
+   ],
+   "emoji": "🤯"
+  },
+  "fbtext": "🤯 Netherlands 7, Greece 0.\n\nTijjani Reijnders scored a hat-trick in 21 minutes and it ties the biggest win in Nations League history. Greece hadn't conceded seven since 1989.\n\nGermany v Netherlands on Monday: who wins? 👇\n\n#Netherlands #Reijnders #Reels"
+ },
+ {
+  "id": "s03-pochettino-united",
+  "sport": "football",
+  "league": "epl",
+  "bed": "drama",
+  "venue": "Old Trafford",
+  "fb": "2026-11-14T18:20:00",
+  "yt": "2026-11-14T19:50:00",
+  "title": "Pochettino Is Man United's New Manager: First Game Liverpool 😳 #MUFC #shorts",
+  "description": "Mauricio Pochettino has been appointed Manchester United head coach on a contract to summer 2029, replacing Michael Carrick with United in the Premier League relegation zone after 10 games. Pochettino leaves the USMNT, starts work next week and his first game is Liverpool at Anfield on Sunday 22 November. He has managed Southampton, Tottenham, Paris Saint-Germain and Chelsea, reaching a Champions League final with Spurs and winning Ligue 1 with PSG.\n\nPremier League table and scores: https://scorebuzz.net\n\n#MUFC #Pochettino #ManUnited #PremierLeague",
+  "tags": [
+   "mauricio pochettino",
+   "pochettino man united",
+   "man united new manager",
+   "manchester united",
+   "michael carrick",
+   "liverpool vs man united",
+   "man united vs liverpool",
+   "premier league table",
+   "usmnt",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Man United · Official",
+    "title": "Pochettino is United's new boss",
+    "sub": "And his first game is at Anfield"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "The deal",
+    "title": "Contract to summer 2029",
+    "sub": "He leaves the USMNT job to take it"
+   },
+   {
+    "type": "list",
+    "dur": 5.4,
+    "label": "Previous clubs",
+    "title": "Where he's been",
+    "rows": [
+     [
+      "🇬🇧",
+      "Southampton",
+      ""
+     ],
+     [
+      "🇬🇧",
+      "Tottenham",
+      "UCL final"
+     ],
+     [
+      "🇫🇷",
+      "Paris Saint-Germain",
+      "Ligue 1 title"
+     ],
+     [
+      "🇬🇧",
+      "Chelsea",
+      ""
+     ],
+     [
+      "🇺🇸",
+      "USMNT",
+      "national team"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Where United are",
+    "title": "Relegation zone after 10 games",
+    "sub": "Michael Carrick was sacked this week"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "First game",
+    "title": "Liverpool v Man United",
+    "sub": "Anfield · Sunday 22 November"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Pochettino save United's season?",
+    "sub": "Follow ScoreBuzz for Premier League news"
+   }
+  ],
+  "thumb": {
+   "kicker": "Man United · Official",
+   "big": "2029",
+   "hook": "Pochettino *signs*",
+   "sticker": "OFFICIAL",
+   "emoji": "✍️"
+  },
+  "fbtext": "✍️ Mauricio Pochettino is Manchester United's new head coach.\n\nHe's signed until 2029, United are in the relegation zone, and his first game is Liverpool at Anfield.\n\nCan he save United's season? 👇\n\n#MUFC #Pochettino #Reels"
+ },
+ {
+  "id": "s04-argentina-no-messi",
+  "sport": "football",
+  "bed": "drama",
+  "fb": "2026-11-14T20:10:00",
+  "yt": "2026-11-14T22:40:00",
+  "title": "Argentina vs Uruguay 1–2: First Game Without Messi 😳 #shorts",
+  "description": "Uruguay beat Argentina 2–1 in a friendly at La Bombonera on 13 November 2026, Argentina's first match since Lionel Messi's international retirement in October. Leonardo Balerdi scored an own goal and Maximiliano Araújo doubled the lead for Diego Forlán's Uruguay before Julián Álvarez pulled one back. Lionel Scaloni, who has extended his contract through 2030, left the No. 10 shirt unassigned.\n\nArgentina vs Uruguay final score: https://scorebuzz.net\n\n#Argentina #Uruguay #Messi #Football",
+  "tags": [
+   "argentina vs uruguay",
+   "uruguay vs argentina",
+   "argentina without messi",
+   "messi retirement",
+   "julian alvarez",
+   "diego forlan uruguay",
+   "lionel scaloni",
+   "la bombonera",
+   "argentina national team",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Friendly · La Bombonera",
+    "title": "Argentina's first game without Messi",
+    "sub": "It didn't go to plan"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Full time · La Bombonera",
+    "home": "Argentina",
+    "homeAbbr": "ARG",
+    "homeScore": 1,
+    "away": "Uruguay",
+    "awayAbbr": "URU",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+    "note": "Balerdi o.g. 48', Maxi Araújo 53' · Álvarez 73'"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "The No. 10",
+    "title": "Nobody wore it",
+    "sub": "Scaloni left Messi's shirt unassigned"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Uruguay's coach",
+    "title": "Diego Forlán",
+    "sub": "A win at La Bombonera for the new boss"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Next",
+    "title": "Argentina v Costa Rica",
+    "sub": "Tuesday in Córdoba"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who should wear the No. 10 next?",
+    "sub": "Follow ScoreBuzz for football scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Argentina vs Uruguay",
+   "big": "1–2",
+   "hook": "Life *after* Messi",
+   "sticker": "UPSET",
+   "teams": [
+    "ARG",
+    "URU"
+   ],
+   "emoji": "😳"
+  },
+  "fbtext": "😳 Argentina's first game without Lionel Messi: a 2–1 defeat to Uruguay at La Bombonera.\n\nNobody wore the No. 10 shirt, and Diego Forlán's Uruguay won it.\n\nWho should wear Messi's 10? 👇\n\n#Argentina #Messi #Reels"
+ },
+ {
+  "id": "s06-heat-37s",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "anthem",
+  "venue": "Kaseya Center",
+  "fb": "2026-11-14T23:50:00",
+  "yt": "2026-11-15T05:10:00",
+  "title": "Bam Adebayo & Giannis 37 Each | Heat vs Cavaliers 🔥 #shorts",
+  "description": "Bam Adebayo scored 37 points with 14 rebounds and Giannis Antetokounmpo also scored 37 as the Miami Heat beat the Cleveland Cavaliers 133–121 in an NBA Cup game. It was only the second time two Heat players scored 37 in the same game, after LeBron James and Dwyane Wade in 2013. Davion Mitchell added 22 points and a career-high-tying 17 assists, and Donovan Mitchell scored 25 for Cleveland.\n\nHeat vs Cavaliers final score and NBA scores: https://scorebuzz.net\n\n#HeatCulture #Giannis #BamAdebayo #NBA",
+  "tags": [
+   "heat vs cavaliers",
+   "cavaliers vs heat",
+   "giannis antetokounmpo",
+   "bam adebayo",
+   "giannis heat",
+   "miami heat",
+   "davion mitchell",
+   "nba cup",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA Cup · Miami",
+    "title": "37 points. And 37 points.",
+    "sub": "Miami had two players do it"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final · Kaseya Center",
+    "home": "Heat",
+    "homeAbbr": "MIA",
+    "homeScore": 133,
+    "away": "Cavaliers",
+    "awayAbbr": "CLE",
+    "awayScore": 121,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+    "note": "Miami top East Group B in the NBA Cup"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Miami's big three",
+    "title": "The numbers",
+    "rows": [
+     [
+      "37",
+      "Bam Adebayo",
+      "14 reb"
+     ],
+     [
+      "37",
+      "Giannis Antetokounmpo",
+      "pts"
+     ],
+     [
+      "17",
+      "Davion Mitchell",
+      "ast (22 pts)"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Heat history",
+    "title": "Last time: LeBron and Wade, 2013",
+    "sub": "Only the second Heat pair with 37 each"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best duo in the East?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Heat vs Cavaliers",
+   "big": "37+37",
+   "hook": "Bam *and* Giannis",
+   "sticker": "HISTORY",
+   "teams": [
+    "MIA",
+    "CLE"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 37 for Bam. 37 for Giannis.\n\nThe last Heat pair to both score 37 in a game? LeBron James and Dwyane Wade in 2013. Miami beat Cleveland 133–121.\n\nBest duo in the East? 👇\n\n#HeatCulture #Giannis #Reels"
+ },
+ {
+  "id": "s07-spurs-11",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "fb": "2026-11-15T01:40:00",
+  "yt": "2026-11-15T07:25:00",
+  "title": "Spurs vs Warriors 123–85: San Antonio Win 11 Straight 🖤 #shorts",
+  "description": "The San Antonio Spurs beat the Golden State Warriors 123–85 for their 11th straight win and an 11–2 record. Stephon Castle scored 32 points with five 3-pointers, Victor Wembanyama had 12 points and 12 rebounds in 21 minutes, and Keldon Johnson added 18. Golden State, playing without the injured Stephen Curry, shot 33% from the field.\n\nSpurs vs Warriors final score and NBA scores: https://scorebuzz.net\n\n#Spurs #Wembanyama #StephonCastle #NBA",
+  "tags": [
+   "spurs vs warriors",
+   "warriors vs spurs",
+   "san antonio spurs",
+   "spurs win streak",
+   "stephon castle",
+   "victor wembanyama",
+   "golden state warriors",
+   "nba scores today",
+   "nba standings",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · San Antonio",
+    "title": "11 straight wins",
+    "sub": "And this one was by 38"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final · San Antonio",
+    "home": "Spurs",
+    "homeAbbr": "SA",
+    "homeScore": 123,
+    "away": "Warriors",
+    "awayAbbr": "GS",
+    "awayScore": 85,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+    "note": "Spurs are 11–2"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Stephon Castle",
+    "value": "32",
+    "unit": "points",
+    "text": "5 of 8 from three"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Victor Wembanyama",
+    "title": "12 points, 12 rebounds",
+    "sub": "In just 21 minutes"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Golden State, without Steph Curry",
+    "value": "33",
+    "unit": "% shooting",
+    "text": "31 of 93 from the field"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can anyone stop the Spurs?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Spurs vs Warriors",
+   "big": "11",
+   "hook": "Straight *wins*",
+   "sticker": "STREAK",
+   "teams": [
+    "SA",
+    "GS"
+   ],
+   "emoji": "🖤"
+  },
+  "fbtext": "🖤 Make it 11 straight for San Antonio.\n\nStephon Castle scored 32 and the Spurs beat Golden State 123–85. The Warriors, without Steph Curry, shot 33%.\n\nCan anyone stop the Spurs? 👇\n\n#Spurs #Wembanyama #Reels"
+ },
+ {
+  "id": "s08-cfb-night-predict",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "bed": "hype",
+  "fb": "2026-11-15T04:25:00",
+  "yt": "2026-11-15T03:10:00",
+  "title": "College Football Predictions: Texas vs LSU, Utah vs Arizona 🏈 #CFB #shorts",
+  "description": "Saturday night college football score predictions: No. 6 Texas at No. 21 LSU (7:30pm ET, ABC), No. 2 Utah at No. 23 Arizona (10:30pm ET, Fox), No. 12 Texas Tech at No. 25 Oklahoma State (9:30pm ET, ESPN), Baylor at No. 10 BYU, Purdue at No. 15 Iowa, No. 17 South Carolina at Arkansas and Minnesota at Penn State. These are predictions, not results: drop yours.\n\nCollege football scores: https://scorebuzz.net\n\n#CollegeFootball #CFB #HookEm #GoUtes",
+  "tags": [
+   "college football predictions",
+   "texas vs lsu",
+   "lsu vs texas",
+   "utah vs arizona",
+   "texas tech vs oklahoma state",
+   "byu vs baylor",
+   "iowa vs purdue",
+   "college football week 12",
+   "cfb picks",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 15.5,
+    "kicker": "College Football · Saturday night",
+    "title": "Predict the scores",
+    "badge": "Score prediction",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "#21 LSU",
+      "homeAbbr": "LSU",
+      "hs": "?",
+      "away": "#6 Texas",
+      "awayAbbr": "TEX",
+      "as": "?",
+      "note": "7:30pm ET · ABC",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
+     },
+     {
+      "home": "#23 Arizona",
+      "homeAbbr": "ARIZ",
+      "hs": "?",
+      "away": "#2 Utah",
+      "awayAbbr": "UTAH",
+      "as": "?",
+      "note": "10:30pm ET · Fox",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png"
+     },
+     {
+      "home": "#25 Oklahoma St",
+      "homeAbbr": "OKST",
+      "hs": "?",
+      "away": "#12 Texas Tech",
+      "awayAbbr": "TTU",
+      "as": "?",
+      "note": "9:30pm ET · ESPN",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png"
+     },
+     {
+      "home": "#10 BYU",
+      "homeAbbr": "BYU",
+      "hs": "?",
+      "away": "Baylor",
+      "awayAbbr": "BAY",
+      "as": "?",
+      "note": "7pm ET · Fox",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png"
+     },
+     {
+      "home": "#15 Iowa",
+      "homeAbbr": "IOWA",
+      "hs": "?",
+      "away": "Purdue",
+      "awayAbbr": "PUR",
+      "as": "?",
+      "note": "7:30pm ET · NBC",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png"
+     },
+     {
+      "home": "Arkansas",
+      "homeAbbr": "ARK",
+      "hs": "?",
+      "away": "#17 South Carolina",
+      "awayAbbr": "SC",
+      "as": "?",
+      "note": "7:45pm ET · SECN",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png"
+     },
+     {
+      "home": "Penn State",
+      "homeAbbr": "PSU",
+      "hs": "?",
+      "away": "Minnesota",
+      "awayAbbr": "MINN",
+      "as": "?",
+      "note": "7pm ET · FS1",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Drop your scores below",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "College Football · Saturday night",
+   "big": "?–?",
+   "hook": "Predict *every* score",
+   "sticker": "PREDICT",
+   "teams": [
+    "TEX",
+    "LSU"
+   ],
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 Saturday night college football. Your score predictions?\n\nNo. 6 Texas at No. 21 LSU, unbeaten No. 2 Utah at No. 23 Arizona and No. 12 Texas Tech at No. 25 Oklahoma State headline the night.\n\nWho's going down? 👇\n\n#CFB #CollegeFootball #Reels"
+ }
+]
