@@ -160,7 +160,9 @@ Hosting: a $5–12/month Ubuntu VPS (2 vCPU / 2–4 GB) runs 3–4 streams at on
 ## Every game, its own stream (owner's request, 5 Nov 2026)
 
 Leagues: NFL, NBA, NHL, MLB, Premier League, LaLiga, Serie A, Ligue 1, MLS (plus Champions League and
-top-10 college football). Each game gets its own LiveReacting stream with its own title and description,
+top-10 college football).
+**College football dropped (owner, 14 Nov 2026: too few views; only NFL for American football):** `"streams": {"leagues": [...]}`
+in settings.json leaves out `ncaaf`; the 4 live NCAAF streams (Slots 4-7) were stopped 14 Nov 2026 ~21:55 UTC. Each game gets its own LiveReacting stream with its own title and description,
 starting 30 min before kick-off and stopped when the game is over.
 
 - Pool: LiveReacting projects named `ScoreBuzz Main` (web layer `?auto=1…`, steered by `settings.pin`) and
