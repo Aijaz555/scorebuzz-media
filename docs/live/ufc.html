@@ -53,7 +53,7 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 <script>
 (function () {
   var q = new URLSearchParams(location.search);
-  function fit() { var R = window.__fitRemote || {}; var W = +R.w || +q.get('w') || innerWidth, H = +R.h || +q.get('h') || innerHeight, sx = W / 1920, sy = H / 1080;
+  function fit() { var R = window.__fitRemote || {}; var W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
     var mode = R.fit || q.get('fit') || 'contain', b = document.body;
     if (mode === 'fill') b.style.transform = 'scale(' + sx + ',' + sy + ')'; else { var k = Math.min(sx, sy); b.style.transform = 'scale(' + k + ')'; b.style.marginLeft = ((W - 1920 * k) / 2) + 'px'; b.style.marginTop = ((H - 1080 * k) / 2) + 'px'; } }
   addEventListener('resize', fit); setInterval(fit, 2000); fit();
