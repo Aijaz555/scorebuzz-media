@@ -402,3 +402,12 @@ map before/after the game (or `&trk=own` / `sbtrk: 0`). Preview: `center.html?le
   3 commentary lines below. Demo: `center.html?league=epl&event=401879240` (Man Utd 4-4 Villa) or add `&replay=1&from=60` to run it
   as a live game from the commentary. On air 13 Nov 2026 (owner): all football leagues are in settings `centerLeagues` (reload 31);
   remove them to send football back to soccer.html. Bottom bar = only this league's games (owner 13 Nov 2026, league uid filter).
+
+## UFC fight nights (owner's request, 14 Nov 2026)
+A slot with `"league": "ufc"` in settings.slots shows docs/live/ufc.html (app.html hand-off; `"ufcPage": false` turns it off):
+scorebuzz.net's own UFC fight tracker (`https://scorebuzz.net/tracker-ufc.js`, feed `https://scorebuzz.net/api/ufc/card`,
+autoSample off) full screen. It follows whichever fight is in the cage, shows "UP NEXT" + tale of the tape between fights and FINAL after the card.
+- UFC isn't in plan_streams.js leagues or feed.js, so the planner and watch_ends.js leave a UFC slot alone (game "we can't see"):
+  it is set up by hand (title, description, music, schedule) and ends on its planned duration.
+- Stream check: any bout of the card on screen is correct for a UFC slot ("UP NEXT" between fights is expected there, not a problem).
+- UFC 334 (Gane vs Hokit, MSG): Slot 20, scheduled 14 Nov 2026 21:30 UTC (30 min before the 22:00 UTC early prelims), duration to ~05:25 UTC.

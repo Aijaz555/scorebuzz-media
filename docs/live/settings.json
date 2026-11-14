@@ -25,7 +25,13 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "20": {
+   "league": "ufc",
+   "event": "600061400",
+   "note": "UFC 334 Gane vs Hokit card (any bout on screen), 2026-11-14T22:00:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"

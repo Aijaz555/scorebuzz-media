@@ -1447,6 +1447,15 @@ async function loadSettings() {
       // because the stream host caches docs/live/*.html for hours. settings "nbaPage": false falls back to dark.html.
       // Centre-tracker layout (docs/live/center.html, owner 12 Nov 2026) for the leagues in settings "centerLeagues" (nba, nhl):
       // tracker in the middle, team sidebars with game leaders. "centerPage": false sends them back to nba.html / us.html.
+      // UFC fight nights (docs/live/ufc.html, owner 14 Nov 2026): scorebuzz.net's UFC fight tracker full screen.
+      // A slot with league "ufc" goes there; "ufcPage": false turns it off.
+      if (PIN && PIN.league === 'ufc' && c.ufcPage !== false) { if (window.__toUfc) return; window.__toUfc = 1;
+        window.fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/ufc.html?t=' + Date.now(), { cache: 'no-store' })
+          .then((r) => { if (!r.ok) throw 0; return r.text(); })
+          .then((html) => { const top = setTimeout(() => {}, 0); for (let i = 1; i <= top + 50; i++) { clearTimeout(i); clearInterval(i); }
+            document.open(); document.write(html); document.close(); })
+          .catch(() => { window.__toUfc = 0; });
+        return; }
       const CEN = Array.isArray(c.centerLeagues) ? c.centerLeagues : [];
       if (PIN && CEN.includes(PIN.league) && c.centerPage !== false) { if (window.__toCen) return; window.__toCen = 1;
         window.fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/center.html?t=' + Date.now(), { cache: 'no-store' })
