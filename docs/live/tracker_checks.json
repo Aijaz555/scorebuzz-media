@@ -1365,5 +1365,15 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-14T00:12:44+00:00"
+ },
+ "401909296": {
+  "slot": "1",
+  "league": "nba",
+  "game": "Pacers v Knicks",
+  "url": "https://scorebuzz.net/basketball/nba/pacers-vs-knicks-401909296/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 68)",
+  "at": "2026-11-14T00:41:06+00:00"
  }
 }
