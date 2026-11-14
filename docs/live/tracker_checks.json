@@ -1516,26 +1516,6 @@
   "reason": "ok (contrast 62)",
   "at": "2026-11-14T20:47:33+00:00"
  },
- "401858294": {
-  "slot": "6",
-  "league": "ncaaf",
-  "game": "Notre Dame v Boston College",
-  "url": "https://scorebuzz.net/american-football/college-football/notre-dame-vs-boston-college-401858294/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-14T21:11:51+00:00"
- },
- "401892708": {
-  "slot": "8",
-  "league": "nhl",
-  "game": "Blackhawks v Jets",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-jets-401892708/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 83)",
-  "at": "2026-11-14T21:11:55+00:00"
- },
  "401856888": {
   "slot": "4",
   "league": "ncaaf",
@@ -1555,5 +1535,25 @@
   "status": "ok",
   "reason": "ok (contrast 62)",
   "at": "2026-11-14T21:21:21+00:00"
+ },
+ "401858294": {
+  "slot": "6",
+  "league": "ncaaf",
+  "game": "Notre Dame v Boston College",
+  "url": "https://scorebuzz.net/american-football/college-football/notre-dame-vs-boston-college-401858294/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-14T21:45:31+00:00"
+ },
+ "401892708": {
+  "slot": "8",
+  "league": "nhl",
+  "game": "Blackhawks v Jets",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-jets-401892708/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-14T21:45:34+00:00"
  }
 }
