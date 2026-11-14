@@ -1,0 +1,296 @@
+[
+ {
+  "id": "01-ned-greece",
+  "time": "2026-11-14T11:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · AMSTERDAM",
+  "venue": "Johan Cruijff Arena",
+  "home": "Netherlands",
+  "homeScore": 7,
+  "away": "Greece",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
+  "headline": "Reijnders hat-trick in 7–0 rout",
+  "sub": "Ties the biggest win in Nations League history. Greece hadn't conceded seven in a game since May 1989.",
+  "caption": "🇳🇱 SEVEN. Netherlands 7–0 Greece.\n\nTijjani Reijnders scored a hat-trick in 21 minutes, Jurriën Timber got two, and Crysencio Summerville and Donyell Malen also scored. It ties the record for the biggest win in Nations League history, and Xavi's side are still unbeaten.\n\nCan anyone stop this Dutch team? 👇\n\n#Netherlands #Reijnders #NationsLeague"
+ },
+ {
+  "id": "02-pochettino-united",
+  "time": "2026-11-14T11:55:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "MAN UNITED · OFFICIAL",
+  "venue": "Old Trafford",
+  "headline": "It's official: Pochettino takes over at United",
+  "sub": "Contract to summer 2029. He leaves the USMNT and his first game is Liverpool at Anfield on Sunday 22 November.",
+  "caption": "✍️ Mauricio Pochettino is Manchester United's new head coach.\n\nHe has signed until summer 2029 after leaving the USMNT job, and replaces Michael Carrick with United in the relegation zone. First up: Liverpool at Anfield on 22 November.\n\nWill he turn United around? 👇\n\n#MUFC #Pochettino #PremierLeague"
+ },
+ {
+  "id": "03-arg-uru",
+  "time": "2026-11-14T13:45:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "FRIENDLY · LA BOMBONERA",
+  "home": "Argentina",
+  "homeScore": 1,
+  "away": "Uruguay",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+  "headline": "First game after Messi: a defeat",
+  "sub": "Balerdi own goal, Maxi Araújo, then a late Julián Álvarez reply. The No. 10 shirt was left empty.",
+  "caption": "🇺🇾 Uruguay won at La Bombonera.\n\nArgentina's first game since Lionel Messi retired from international football ended 2–1 to Diego Forlán's Uruguay. Lionel Scaloni didn't give anyone the No. 10 shirt.\n\nWho should wear Messi's 10 next? 👇\n\n#Argentina #Uruguay #Messi"
+ },
+ {
+  "id": "04-ger-serbia",
+  "time": "2026-11-14T14:40:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · BELGRADE",
+  "venue": "Rajko Mitic Stadium",
+  "home": "Serbia",
+  "homeScore": 1,
+  "away": "Germany",
+  "awayScore": 3,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sba.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+  "headline": "Wirtz scores, Serbia finish with nine",
+  "sub": "A Babic own goal, Wirtz and Brajan Gruda. Next: Germany v Netherlands in Berlin on Monday for a quarter-final place.",
+  "caption": "🇩🇪 Germany won 3–1 in Belgrade.\n\nSrdjan Babic's own goal, Florian Wirtz and Brajan Gruda did the damage, and Serbia ended with nine men. It sets up Germany v Netherlands in Berlin on Monday with a quarter-final place on the line.\n\nWho goes through? 👇\n\n#Germany #Wirtz #NationsLeague"
+ },
+ {
+  "id": "05-sco-mkd",
+  "time": "2026-11-14T16:30:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · HAMPDEN",
+  "venue": "Hampden Park",
+  "home": "Scotland",
+  "homeScore": 2,
+  "away": "N. Macedonia",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mkd.png",
+  "headline": "McGinn double, Robertson matches Dalglish",
+  "sub": "Andy Robertson's 102nd cap equals Kenny Dalglish's Scotland record. McGinn's 24 goals put him joint-third all time.",
+  "caption": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 John McGinn did it again.\n\nTwo goals in a 2–1 win over North Macedonia, his 24th for Scotland, level with Hughie Gallacher in joint-third all time. Andy Robertson won his 102nd cap to equal Kenny Dalglish's record.\n\nIs Robertson Scotland's greatest-ever captain? 👇\n\n#Scotland #McGinn #NationsLeague"
+ },
+ {
+  "id": "06-saturday-slate",
+  "time": "2026-11-14T17:25:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "NATIONS LEAGUE · SATURDAY",
+  "headline": "Saturday's Nations League games",
+  "rows": [
+   [
+    "17:00",
+    "Norway v Wales",
+    "12pm ET"
+   ],
+   [
+    "19:45",
+    "Portugal v Denmark",
+    "2:45 ET"
+   ],
+   [
+    "19:45",
+    "Austria v Rep. of Ireland",
+    "2:45 ET"
+   ],
+   [
+    "19:45",
+    "N. Ireland v Ukraine",
+    "2:45 ET"
+   ],
+   [
+    "19:45",
+    "Sweden v Bosnia",
+    "2:45 ET"
+   ]
+  ],
+  "sub": "Kick-off times GMT (left) and US Eastern (right).",
+  "caption": "⚽ Five Nations League games today.\n\nHaaland's Norway host Wales at 17:00 GMT (12pm ET). Then at 19:45 GMT (2:45pm ET): Portugal v Denmark, Austria v Republic of Ireland, Northern Ireland v Ukraine and Sweden v Bosnia.\n\nWhich one are you watching? 👇\n\n#NationsLeague #Wales #Ireland"
+ },
+ {
+  "id": "07-heat-cavs",
+  "time": "2026-11-14T19:15:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA CUP · MIAMI",
+  "venue": "Kaseya Center",
+  "home": "Heat",
+  "homeScore": 133,
+  "away": "Cavaliers",
+  "awayScore": 121,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+  "headline": "Bam 37, Giannis 37",
+  "sub": "Only the second time two Heat players scored 37 in the same game. LeBron and Wade did it in 2013. Davion Mitchell had 17 assists.",
+  "caption": "🔥 37 and 37.\n\nBam Adebayo (37 points, 14 rebounds) and Giannis Antetokounmpo (37) became the first Heat pair to score 37 in the same game since LeBron James and Dwyane Wade in 2013. Miami beat Cleveland 133–121 and top their NBA Cup group.\n\nIs this the best duo in the East? 👇\n\n#HeatCulture #Giannis #NBA"
+ },
+ {
+  "id": "08-pacers-knicks",
+  "time": "2026-11-14T21:05:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA CUP · INDIANAPOLIS",
+  "home": "Pacers",
+  "homeScore": 106,
+  "away": "Knicks",
+  "awayScore": 104,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
+  "headline": "Towns misses at the buzzer",
+  "sub": "Siakam 19, Nesmith 18. Jalen Brunson's 33 points and 11 assists weren't enough for New York.",
+  "caption": "😬 Karl-Anthony Towns had the shot to tie it at the buzzer. It didn't go.\n\nPascal Siakam (19) and Aaron Nesmith (18) led Indiana to a 106–104 NBA Cup win over the Knicks, despite 33 points and 11 assists from Jalen Brunson.\n\nKnicks fans, how worried are you? 👇\n\n#Knicks #Pacers #NBA"
+ },
+ {
+  "id": "09-sengun-43",
+  "time": "2026-11-14T22:55:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA CUP · HOUSTON",
+  "venue": "Toyota Center (Houston)",
+  "home": "Rockets",
+  "homeScore": 125,
+  "away": "Jazz",
+  "awayScore": 118,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+  "headline": "Alperen Sengun: 43 points",
+  "sub": "17 of 24 from the field plus 12 rebounds. It's the second 40-point game of his career, and Utah's 11th straight loss.",
+  "caption": "🚀 Alperen Sengun went off.\n\n43 points on 17-of-24 shooting and 12 rebounds as Houston beat Utah 125–118. It's only the second 40-point game of his career, and the Jazz have now lost 11 in a row.\n\nIs Sengun the best passing big man in the NBA? 👇\n\n#Rockets #Sengun #NBA"
+ },
+ {
+  "id": "10-spurs-warriors",
+  "time": "2026-11-15T00:45:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · SAN ANTONIO",
+  "home": "Spurs",
+  "homeScore": 123,
+  "away": "Warriors",
+  "awayScore": 85,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+  "headline": "11 straight for the Spurs",
+  "sub": "Stephon Castle scored 32. Golden State, without Steph Curry, shot 33% and lost by 38.",
+  "caption": "🖤 The Spurs have won 11 in a row.\n\nStephon Castle scored 32 and Victor Wembanyama had 12 points and 12 rebounds in 21 minutes as San Antonio beat Golden State 123–85. The Warriors, without Steph Curry, shot 33%.\n\nAre the Spurs the best team in the West? 👇\n\n#PorVida #Spurs #Wembanyama"
+ },
+ {
+  "id": "11-nhl-saturday",
+  "time": "2026-11-15T02:35:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "list",
+  "label": "NHL · SATURDAY NIGHT",
+  "headline": "Four big ones at 7pm ET",
+  "rows": [
+   [
+    "EDM 14-3-3",
+    "Oilers at Maple Leafs",
+    "TOR 8-11-2"
+   ],
+   [
+    "MIN 14-3-4",
+    "Wild at Bruins",
+    "BOS 13-5-1"
+   ],
+   [
+    "COL 11-6-3",
+    "Avalanche at Canadiens",
+    "MTL 12-3-4"
+   ],
+   [
+    "NJ 14-6-0",
+    "Devils at Capitals",
+    "WSH 10-7-0"
+   ]
+  ],
+  "sub": "All at 7pm ET (00:00 GMT). Records as of Saturday.",
+  "caption": "🏒 Saturday night hockey.\n\nMcDavid's Oilers (14–3–3) are in Toronto, the Wild visit Boston, Colorado go to Montreal and the Devils are in Washington. All four drop the puck at 7pm ET.\n\nWho's your lock tonight? 👇\n\n#NHL #LetsGoOilers #GoHabsGo"
+ },
+ {
+  "id": "12-texas-lsu",
+  "time": "2026-11-15T03:30:00",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "kind": "headline",
+  "label": "COLLEGE FOOTBALL · TONIGHT",
+  "venue": "Tiger Stadium (LA)",
+  "headline": "No. 6 Texas at No. 21 LSU",
+  "sub": "Saturday night in Death Valley. 7:30pm ET on ABC (00:30 GMT).",
+  "stat": [
+   "7–2",
+   "Texas · LSU are 6–3"
+  ],
+  "caption": "🐯 Saturday night in Death Valley.\n\nNo. 6 Texas (7–2) visit No. 21 LSU (6–3) at 7:30pm ET on ABC.\n\nWho wins in Baton Rouge? 👇\n\n#HookEm #LSU #CFB"
+ },
+ {
+  "id": "13-ufc334",
+  "time": "2026-11-15T05:20:00",
+  "sport": "mma",
+  "league": "ufc",
+  "kind": "list",
+  "label": "UFC 334 · MADISON SQUARE GARDEN",
+  "venue": "Madison Square Garden",
+  "headline": "UFC 334 main card",
+  "rows": [
+   [
+    "Gane",
+    "Heavyweight title",
+    "Hokit"
+   ],
+   [
+    "Harrison",
+    "Bantamweight title",
+    "Nunes"
+   ],
+   [
+    "Borralho",
+    "Middleweight",
+    "Belgaroui"
+   ],
+   [
+    "Holland",
+    "Welterweight",
+    "Medić"
+   ],
+   [
+    "Gurule",
+    "Flyweight",
+    "Hasan"
+   ]
+  ],
+  "sub": "Main card 9pm ET (02:00 GMT). Records: Gane 14-2, Hokit 10-0, Harrison 19-1, Nunes 23-5.",
+  "caption": "🥊 UFC 334 main card starts at 9pm ET.\n\nCiryl Gane defends the heavyweight title against unbeaten Josh Hokit (10–0), and Kayla Harrison meets Amanda Nunes for the bantamweight belt at Madison Square Garden.\n\nWho are you picking? 👇\n\n#UFC334 #UFC #AmandaNunes"
+ },
+ {
+  "id": "14-cousins-packers",
+  "time": "2026-11-15T06:15:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "NFL · WEEK 11 SUNDAY",
+  "venue": "Lambeau Field",
+  "headline": "Kirk Cousins starts for Minnesota at Lambeau",
+  "sub": "Reacquired from the Raiders at the deadline. Vikings (6–2) at Packers (6–3), Sunday 1pm ET (18:00 GMT).",
+  "caption": "🏈 Kirk Cousins is back in purple, and he starts on Sunday.\n\nThe Vikings got him back from the Raiders for a 2027 third-round pick, and ESPN reports he'll start at Green Bay. Vikings (6–2) at Packers (6–3), 1pm ET.\n\nGood move by Minnesota? 👇\n\n#Skol #GoPackGo #NFL"
+ }
+]
