@@ -26,10 +26,60 @@
  "top25": 15,
  "pin": null,
  "slots": {
+  "1": {
+   "league": "nba",
+   "event": "401909981",
+   "note": "Cleveland Cavaliers vs Dallas Mavericks, 2026-11-15T00:30:00Z"
+  },
+  "2": {
+   "league": "nhl",
+   "event": "401892709",
+   "note": "Boston Bruins vs Minnesota Wild, 2026-11-15T00:00:00Z"
+  },
+  "3": {
+   "league": "nhl",
+   "event": "401892715",
+   "note": "Columbus Blue Jackets vs Philadelphia Flyers, 2026-11-15T00:00:00Z"
+  },
+  "4": {
+   "league": "nba",
+   "event": "401909980",
+   "note": "New Orleans Pelicans vs Denver Nuggets, 2026-11-15T00:00:00Z"
+  },
+  "5": {
+   "league": "nhl",
+   "event": "401892710",
+   "note": "Toronto Maple Leafs vs Edmonton Oilers, 2026-11-15T00:00:00Z"
+  },
+  "6": {
+   "league": "nhl",
+   "event": "401892711",
+   "note": "Montreal Canadiens vs Colorado Avalanche, 2026-11-15T00:00:00Z"
+  },
+  "7": {
+   "league": "nhl",
+   "event": "401892712",
+   "note": "Tampa Bay Lightning vs Detroit Red Wings, 2026-11-15T00:00:00Z"
+  },
   "8": {
    "league": "nhl",
    "event": "401892708",
    "note": "Chicago Blackhawks vs Winnipeg Jets, 2026-11-14T20:30:00Z"
+  },
+  "9": {
+   "league": "nhl",
+   "event": "401892713",
+   "note": "Pittsburgh Penguins vs Ottawa Senators, 2026-11-15T00:00:00Z"
+  },
+  "10": {
+   "league": "nhl",
+   "event": "401892714",
+   "note": "Washington Capitals vs New Jersey Devils, 2026-11-15T00:00:00Z"
+  },
+  "11": {
+   "league": "nhl",
+   "event": "401892716",
+   "note": "St. Louis Blues vs Florida Panthers, 2026-11-15T00:00:00Z"
   }
  },
  "fit": {
