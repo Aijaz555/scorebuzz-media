@@ -1436,16 +1436,6 @@
   "reason": "ok (contrast 88)",
   "at": "2026-11-14T03:58:08+00:00"
  },
- "401909304": {
-  "slot": "11",
-  "league": "nba",
-  "game": "Clippers v Thunder",
-  "url": "https://scorebuzz.net/basketball/nba/clippers-vs-thunder-401909304/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-14T04:14:20+00:00"
- },
  "401909303": {
   "slot": "10",
   "league": "nba",
@@ -1475,5 +1465,15 @@
   "status": "ok",
   "reason": "ok (contrast 66)",
   "at": "2026-11-14T04:43:51+00:00"
+ },
+ "401909304": {
+  "slot": "11",
+  "league": "nba",
+  "game": "Clippers v Thunder",
+  "url": "https://scorebuzz.net/basketball/nba/clippers-vs-thunder-401909304/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-14T04:51:56+00:00"
  }
 }
