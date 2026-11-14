@@ -1,7 +1,7 @@
 <!doctype html>
 <html><head><meta charset="utf-8"><title>ScoreBuzz live · UFC fight tracker</title>
 <!-- UFC fight-night stream page (owner's request, 14 Nov 2026: "we have UFC live tracker on demo page, use that").
-     Mounts scorebuzz.net's own UFC tracker (https://scorebuzz.net/tracker-ufc.js, ScoreBuzzUFC.mount) full screen,
+     Mounts scorebuzz.net's own UFC tracker (https://scorebuzz.net/tracker-ufc.js, ScoreBuzzUFC.mount, v2 since 14 Nov 2026: round timeline + next-fight crawl) full screen,
      fed by https://scorebuzz.net/api/ufc/card (ESPN, CORS open): follows the fight in the cage, "UP NEXT" + tale of the tape
      between fights, FINAL after the card. autoSample is off so the stream never shows an old sample fight.
      app.html hands a slot to this page when settings.slots[N].league is "ufc" ("ufcPage": false turns it off).
@@ -21,20 +21,24 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 #hd .nf{font:700 20px 'Barlow Condensed',sans-serif;letter-spacing:2px;color:var(--mute)}
 /* tracker host: the widget's own blocks laid out as a broadcast grid */
 #trk{position:absolute;left:14px;right:14px;top:90px;bottom:84px}
-#trk .uf{height:100%;display:grid;grid-template-columns:1408px 1fr;grid-template-rows:56px 792px 1fr;gap:0 14px;background:transparent;border-radius:0;font-size:20px}
+#trk .uf{height:100%;display:grid;grid-template-columns:1360px 1fr;grid-template-rows:56px 765px 40px 1fr;gap:0 14px;background:transparent;border-radius:0;font-size:20px}
 #trk .uf-top{grid-column:1;grid-row:1;border-radius:12px 12px 0 0;font-size:22px;padding:0 16px;gap:14px}
 #trk .uf-top b{font-size:24px}#trk .uf-live{font-size:16px;padding:4px 10px}
-#trk .uf-view{grid-column:1;grid-row:2;height:792px;overflow:hidden}
-#trk .uf-view canvas{width:1408px}
-#trk .uf-tick{grid-column:1;grid-row:3;background:var(--panel);border-radius:0 0 12px 12px;padding:10px 18px;font-size:24px;display:flex;align-items:center;overflow:hidden}
+#trk .uf-view{grid-column:1;grid-row:2;height:765px;overflow:hidden}
+#trk .uf-view canvas{width:1360px}
+#trk .uf-tick{grid-column:1;grid-row:3;background:var(--panel);padding:0 18px;font-size:24px;display:flex;align-items:center;overflow:hidden;white-space:nowrap}
+#trk .uf-tl{grid-column:1;grid-row:4;background:var(--panel);border-radius:0 0 12px 12px;padding:6px 12px;overflow:hidden;zoom:1.1}
+#trk .uf-crawl{grid-column:2;grid-row:4;align-self:stretch;border-radius:0 0 12px 12px;overflow:hidden;display:flex;align-items:center;zoom:1.35}
 #trk .uf-ctl{display:none!important}
-#trk .uf-card{grid-column:2;grid-row:1 / span 3;background:var(--panel);border-radius:12px;padding:14px 14px 10px;overflow:hidden;max-height:none}
+#trk .uf-card{grid-column:2;grid-row:1 / span 3;background:var(--panel);border-radius:12px 12px 0 0;padding:14px 14px 10px;overflow:hidden;max-height:none}
 #trk .uf-card h4{font:800 30px 'Barlow Condensed',sans-serif;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;color:var(--lime)}
 #trk .uf-list{font-size:19px;max-height:none!important;overflow:hidden}
 /* widget overlays scaled up for TV */
 #trk .uf-wc{font-size:20px;padding:8px 16px}#trk .uf-wm{font-size:22px}
 #trk .uf-bug{zoom:1.5;bottom:14px}
-#trk .uf-tape table{zoom:1.6}
+#trk .uf-tp{zoom:1.6}
+#trk .uf-l3,#trk .uf-res{zoom:1.5}
+#trk .uf-rp{zoom:1.5}
 #trk .uf-ban{zoom:1.5}
 /* bottom bar */
 #ft{position:absolute;left:0;right:0;bottom:0;height:70px;display:flex;align-items:center;gap:22px;padding:0 26px;background:#0d0f15;border-top:1px solid var(--line);font:700 26px 'Barlow Condensed',sans-serif;letter-spacing:1px}
