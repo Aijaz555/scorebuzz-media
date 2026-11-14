@@ -1415,5 +1415,25 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-14T01:54:11+00:00"
+ },
+ "401858526": {
+  "slot": "8",
+  "league": "ncaaf",
+  "game": "UCLA v Illinois",
+  "url": "https://scorebuzz.net/american-football/college-football/ucla-vs-illinois-401858526/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "tracker card has no drawing",
+  "at": "2026-11-14T02:11:59+00:00"
+ },
+ "401892706": {
+  "slot": "9",
+  "league": "nhl",
+  "game": "Canucks v Rangers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/canucks-vs-rangers-401892706/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 95)",
+  "at": "2026-11-14T02:12:02+00:00"
  }
 }
