@@ -26,26 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "3": {
-   "league": "nba",
-   "event": "401909298",
-   "note": "Miami Heat vs Cleveland Cavaliers, 2026-11-14T01:00:00Z"
-  },
-  "4": {
-   "league": "nba",
-   "event": "401909299",
-   "note": "Chicago Bulls vs Atlanta Hawks, 2026-11-14T01:00:00Z"
-  },
-  "5": {
-   "league": "nba",
-   "event": "401909300",
-   "note": "New Orleans Pelicans vs Memphis Grizzlies, 2026-11-14T01:00:00Z"
-  },
-  "6": {
-   "league": "nba",
-   "event": "401909301",
-   "note": "Houston Rockets vs Utah Jazz, 2026-11-14T01:30:00Z"
-  },
   "7": {
    "league": "nba",
    "event": "401909302",
