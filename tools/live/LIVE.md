@@ -408,6 +408,6 @@ A slot with `"league": "ufc"` in settings.slots shows docs/live/ufc.html (app.ht
 scorebuzz.net's own UFC fight tracker (`https://scorebuzz.net/tracker-ufc.js`, feed `https://scorebuzz.net/api/ufc/card`,
 autoSample off) full screen. It follows whichever fight is in the cage, shows "UP NEXT" + tale of the tape between fights and FINAL after the card.
 - UFC isn't in plan_streams.js leagues or feed.js, so the planner and watch_ends.js leave a UFC slot alone (game "we can't see"):
-  it is set up by hand (title, description, music, schedule) and ends on its planned duration.
+  it is set up by hand (title, description, music, schedule); the hourly manager never stops it.
 - Stream check: any bout of the card on screen is correct for a UFC slot ("UP NEXT" between fights is expected there, not a problem).
-- UFC 334 (Gane vs Hokit, MSG): Slot 20, scheduled 14 Nov 2026 21:30 UTC (30 min before the 22:00 UTC early prelims), duration to ~05:25 UTC.
+- UFC 334 (Gane vs Hokit, MSG): Slot 20, scheduled 14 Nov 2026 21:30 UTC (30 min before the 22:00 UTC early prelims), manual duration: the owner stops it himself.
