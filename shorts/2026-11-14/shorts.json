@@ -453,6 +453,146 @@
   "fbtext": "😳 Argentina's first game without Lionel Messi: a 2–1 defeat to Uruguay at La Bombonera.\n\nNobody wore the No. 10 shirt, and Diego Forlán's Uruguay won it.\n\nWho should wear Messi's 10? 👇\n\n#Argentina #Messi #Reels"
  },
  {
+  "id": "s05-nba-board",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "fb": "2026-11-14T22:00:00",
+  "yt": "2026-11-15T01:00:00",
+  "title": "NBA Scores Today: Spurs vs Warriors, Clippers vs Thunder 🏀 #shorts",
+  "description": "Every NBA final from Friday 13 November: the San Antonio Spurs beat the Golden State Warriors 123–85 for an 11th straight win, the LA Clippers edged the Oklahoma City Thunder 113–112 despite 40 points from Shai Gilgeous-Alexander, the Miami Heat beat the Cleveland Cavaliers 133–121 with 37 each from Bam Adebayo and Giannis Antetokounmpo, and the Indiana Pacers beat the New York Knicks 106–104. Alperen Sengun scored 43 in Houston's win over Utah and the Chicago Bulls beat Atlanta in overtime.\n\nNBA scores and standings: https://scorebuzz.net\n\n#NBA #Spurs #Thunder #Heat",
+  "tags": [
+   "nba scores today",
+   "nba results",
+   "spurs vs warriors",
+   "clippers vs thunder",
+   "thunder vs clippers",
+   "heat vs cavaliers",
+   "pacers vs knicks",
+   "rockets vs jazz",
+   "nba cup",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 19.4,
+    "kicker": "NBA · Friday night",
+    "title": "Every final",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "Spurs",
+      "homeAbbr": "SA",
+      "hs": 123,
+      "away": "Warriors",
+      "awayAbbr": "GS",
+      "as": 85,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
+     },
+     {
+      "home": "Clippers",
+      "homeAbbr": "LAC",
+      "hs": 113,
+      "away": "Thunder",
+      "awayAbbr": "OKC",
+      "as": 112,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+     },
+     {
+      "home": "Heat",
+      "homeAbbr": "MIA",
+      "hs": 133,
+      "away": "Cavaliers",
+      "awayAbbr": "CLE",
+      "as": 121,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
+     },
+     {
+      "home": "Pacers",
+      "homeAbbr": "IND",
+      "hs": 106,
+      "away": "Knicks",
+      "awayAbbr": "NY",
+      "as": 104,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png"
+     },
+     {
+      "home": "Rockets",
+      "homeAbbr": "HOU",
+      "hs": 125,
+      "away": "Jazz",
+      "awayAbbr": "UTAH",
+      "as": 118,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
+     },
+     {
+      "home": "Bulls",
+      "homeAbbr": "CHI",
+      "hs": 125,
+      "away": "Hawks",
+      "awayAbbr": "ATL",
+      "as": 117,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+      "note": "OT"
+     },
+     {
+      "home": "Magic",
+      "homeAbbr": "ORL",
+      "hs": 107,
+      "away": "Bucks",
+      "awayAbbr": "MIL",
+      "as": 99,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
+     },
+     {
+      "home": "Pelicans",
+      "homeAbbr": "NO",
+      "hs": 111,
+      "away": "Grizzlies",
+      "awayAbbr": "MEM",
+      "as": 142,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
+     },
+     {
+      "home": "Kings",
+      "homeAbbr": "SAC",
+      "hs": 107,
+      "away": "Trail Blazers",
+      "awayAbbr": "POR",
+      "as": 120,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Biggest result of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA · Friday night",
+   "big": "9",
+   "hook": "Games, every *final*",
+   "sticker": "RESULTS",
+   "emoji": "🏀"
+  },
+  "fbtext": "🏀 Every NBA final from Friday night.\n\nThe Spurs won an 11th straight, the Clippers beat OKC by one, Bam and Giannis scored 37 each for Miami and the Pacers held off the Knicks.\n\nBiggest result of the night? 👇\n\n#NBA #Spurs #Reels"
+ },
+ {
   "id": "s06-heat-37s",
   "sport": "nba",
   "league": "nba",
@@ -763,5 +903,90 @@
    "emoji": "🏈"
   },
   "fbtext": "🏈 Saturday night college football. Your score predictions?\n\nNo. 6 Texas at No. 21 LSU, unbeaten No. 2 Utah at No. 23 Arizona and No. 12 Texas Tech at No. 25 Oklahoma State headline the night.\n\nWho's going down? 👇\n\n#CFB #CollegeFootball #Reels"
+ },
+ {
+  "id": "s09-ucla-10-0",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "bed": "anthem",
+  "venue": "Rose Bowl",
+  "fb": "2026-11-15T07:10:00",
+  "title": "UCLA vs Illinois 22–14: No. 4 UCLA Move to 10–0 🐻 #CFB #shorts",
+  "description": "No. 4 UCLA beat Illinois 22–14 at the Rose Bowl on Friday night to improve to 10–0. Ty Dieffenbach threw two touchdown passes, including a 54-yarder to Aidan Mizell, before leaving with an injury, Mizell finished with 176 receiving yards, and Illinois quarterback Katin Houser threw three interceptions.\n\nUCLA vs Illinois final score: https://scorebuzz.net\n\n#UCLA #GoBruins #CollegeFootball",
+  "tags": [
+   "ucla vs illinois",
+   "illinois vs ucla",
+   "ucla football",
+   "ucla 10-0",
+   "ty dieffenbach",
+   "aidan mizell",
+   "college football scores",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "College Football · Rose Bowl",
+    "title": "UCLA are 10–0",
+    "sub": "No. 4 UCLA survived Illinois on Friday night"
+   },
+   {
+    "type": "score",
+    "dur": 3.4,
+    "label": "Final · Rose Bowl",
+    "home": "UCLA",
+    "homeAbbr": "UCLA",
+    "homeScore": 22,
+    "away": "Illinois",
+    "awayAbbr": "ILL",
+    "awayScore": 14,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
+    "note": "Illinois fall to 6–4"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Aidan Mizell",
+    "value": "176",
+    "unit": "receiving yards",
+    "text": "6 catches, including a 54-yard TD"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "UCLA's defense",
+    "value": "3",
+    "unit": "interceptions",
+    "text": "Plus a safety on Katin Houser"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "The worry",
+    "title": "QB Ty Dieffenbach left injured",
+    "sub": "After 232 yards and 2 TDs"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is UCLA a real playoff team?",
+    "sub": "Follow ScoreBuzz for college football scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "UCLA vs Illinois",
+   "big": "10–0",
+   "hook": "Still *perfect*",
+   "sticker": "UNBEATEN",
+   "teams": [
+    "UCLA",
+    "ILL"
+   ],
+   "emoji": "🐻"
+  },
+  "fbtext": "🐻 UCLA are 10–0.\n\nThe No. 4 Bruins beat Illinois 22–14 at the Rose Bowl. Aidan Mizell had 176 receiving yards and UCLA picked off Katin Houser three times, but QB Ty Dieffenbach left the game injured.\n\nIs UCLA a real playoff team? 👇\n\n#UCLA #GoBruins #Reels"
  }
 ]
