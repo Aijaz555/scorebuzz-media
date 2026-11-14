@@ -1356,16 +1356,6 @@
   "reason": "ok (contrast 85)",
   "at": "2026-11-13T05:22:05+00:00"
  },
- "401909297": {
-  "slot": "2",
-  "league": "nba",
-  "game": "Magic v Bucks",
-  "url": "https://scorebuzz.net/basketball/nba/magic-vs-bucks-401909297/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-14T00:12:44+00:00"
- },
  "401909296": {
   "slot": "1",
   "league": "nba",
@@ -1375,5 +1365,15 @@
   "status": "ok",
   "reason": "ok (contrast 68)",
   "at": "2026-11-14T00:41:06+00:00"
+ },
+ "401909297": {
+  "slot": "2",
+  "league": "nba",
+  "game": "Magic v Bucks",
+  "url": "https://scorebuzz.net/basketball/nba/magic-vs-bucks-401909297/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-14T00:49:13+00:00"
  }
 }
