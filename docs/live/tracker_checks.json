@@ -1426,16 +1426,6 @@
   "reason": "ok (contrast 65)",
   "at": "2026-11-14T03:41:40+00:00"
  },
- "401909302": {
-  "slot": "7",
-  "league": "nba",
-  "game": "Spurs v Warriors",
-  "url": "https://scorebuzz.net/basketball/nba/spurs-vs-warriors-401909302/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 68)",
-  "at": "2026-11-14T03:58:05+00:00"
- },
  "401892706": {
   "slot": "9",
   "league": "nhl",
@@ -1475,5 +1465,15 @@
   "status": "ok",
   "reason": "ok (contrast 86)",
   "at": "2026-11-14T04:22:31+00:00"
+ },
+ "401909302": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Spurs v Warriors",
+  "url": "https://scorebuzz.net/basketball/nba/spurs-vs-warriors-401909302/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-14T04:43:51+00:00"
  }
 }
