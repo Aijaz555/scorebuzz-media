@@ -26,6 +26,16 @@
  "top25": 15,
  "pin": null,
  "slots": {
+  "1": {
+   "league": "ncaaf",
+   "event": "401858296",
+   "note": "Miami Hurricanes vs Duke Blue Devils, 2026-11-14T17:00:00Z"
+  },
+  "2": {
+   "league": "ncaaf",
+   "event": "401856889",
+   "note": "Vanderbilt Commodores vs Alabama Crimson Tide, 2026-11-14T17:45:00Z"
+  },
   "20": {
    "league": "ufc",
    "event": "600061400",
