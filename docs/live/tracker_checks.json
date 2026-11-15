@@ -1736,26 +1736,6 @@
   "reason": "ok (contrast 42)",
   "at": "2026-11-15T17:09:42+00:00"
  },
- "401861173": {
-  "slot": "4",
-  "league": "unl",
-  "game": "Belarus v Albania",
-  "url": "https://scorebuzz.net/football/uefa-nations-league/belarus-vs-albania-401861173/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 37)",
-  "at": "2026-11-15T17:42:14+00:00"
- },
- "401861174": {
-  "slot": "15",
-  "league": "unl",
-  "game": "Finland v San Marino",
-  "url": "https://scorebuzz.net/football/uefa-nations-league/finland-vs-san-marino-401861174/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 36)",
-  "at": "2026-11-15T17:42:17+00:00"
- },
  "401873058": {
   "slot": "5",
   "league": "nfl",
@@ -1825,5 +1805,35 @@
   "status": "ok",
   "reason": "ok (contrast 43)",
   "at": "2026-11-15T18:09:33+00:00"
+ },
+ "401861173": {
+  "slot": "4",
+  "league": "unl",
+  "game": "Belarus v Albania",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/belarus-vs-albania-401861173/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 39)",
+  "at": "2026-11-15T18:17:41+00:00"
+ },
+ "401909985": {
+  "slot": "8",
+  "league": "nba",
+  "game": "76ers v Pacers",
+  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-pacers-401909985/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-15T18:17:44+00:00"
+ },
+ "401861174": {
+  "slot": "15",
+  "league": "unl",
+  "game": "Finland v San Marino",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/finland-vs-san-marino-401861174/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-15T18:17:47+00:00"
  }
 }
