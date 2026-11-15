@@ -1,0 +1,396 @@
+[
+ {
+  "id": "01-por-den",
+  "time": "2026-11-15T11:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · BRAGA",
+  "home": "Portugal",
+  "homeScore": 1,
+  "away": "Denmark",
+  "awayScore": 4,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/den.png",
+  "headline": "Life after Ronaldo starts with a 4–1 hammering",
+  "sub": "Højlund scored twice. Portugal's heaviest-ever competitive home defeat, in their first game since Ronaldo retired from international football.",
+  "caption": "😳 Portugal 1–4 Denmark.\n\nThe first game since Cristiano Ronaldo retired from international football ended in Portugal's heaviest-ever competitive home defeat. Pierre-Emile Højbjerg scored a penalty, Rasmus Højlund got two and Joachim Andersen headed in the fourth.\n\nHow much will Portugal miss Ronaldo? 👇\n\n#Portugal #Ronaldo #NationsLeague"
+ },
+ {
+  "id": "02-jpn-bra",
+  "time": "2026-11-15T11:50:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "FRIENDLY · SINGAPORE",
+  "home": "Japan",
+  "homeScore": 3,
+  "away": "Brazil",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+  "headline": "Japan win it in the 91st minute",
+  "sub": "Kubo and Nakamura put Japan 2–0 up, Vinícius Júnior scored twice to level, then Sakamoto won it. Raphinha was sent off.",
+  "caption": "🇯🇵 Japan 3–2 Brazil.\n\nTakefusa Kubo and Keito Nakamura scored early, Vinícius Júnior hit back with two long-range goals, and Tatsuhiro Sakamoto won it in stoppage time after a VAR check. Raphinha was sent off a minute later.\n\nIs Japan the best team in Asia right now? 👇\n\n#Japan #Brazil #Vinicius"
+ },
+ {
+  "id": "03-nor-wal",
+  "time": "2026-11-15T13:30:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · OSLO",
+  "venue": "Ullevaal Stadion",
+  "home": "Norway",
+  "homeScore": 3,
+  "away": "Wales",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/wal.png",
+  "headline": "Haaland pen seals it in Oslo",
+  "sub": "Nusa and Schjelderup scored before Brooks pulled one back. Haaland's penalty took his Nations League record to 23 goals. Wales will finish bottom of Group A4.",
+  "caption": "🏴󠁧󠁢󠁷󠁬󠁳󠁿 Tough night for Wales in Oslo.\n\nNorway won 3–1 with goals from Antonio Nusa, Andreas Schjelderup and an Erling Haaland penalty, his 23rd Nations League goal (a record). David Brooks scored for Wales, who now face a possible relegation play-off in March.\n\nCan Wales stay in League A? 👇\n\n#Wales #Haaland #NationsLeague"
+ },
+ {
+  "id": "04-home-nations",
+  "time": "2026-11-15T14:20:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "NATIONS LEAGUE · SATURDAY",
+  "headline": "How the home nations & Ireland got on",
+  "rows": [
+   [
+    "N. Ireland",
+    "1–0",
+    "Ukraine"
+   ],
+   [
+    "Austria",
+    "1–0",
+    "Rep. of Ireland"
+   ],
+   [
+    "Norway",
+    "3–1",
+    "Wales"
+   ]
+  ],
+  "sub": "Terry Devlin's long-range strike won it at Windsor Park. Sasa Kalajdzic scored Austria's 78th-minute winner in Linz.",
+  "caption": "🇬🇧🇮🇪 Saturday's Nations League scorecard.\n\nNorthern Ireland beat Ukraine 1–0 thanks to a Terry Devlin strike from outside the box. Ireland lost 1–0 in Austria to a late Sasa Kalajdzic goal, and Wales went down 3–1 in Norway.\n\nWho had the best night? 👇\n\n#GAWA #COYBIG #NationsLeague"
+ },
+ {
+  "id": "05-spa-eng",
+  "time": "2026-11-15T16:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "NATIONS LEAGUE · TONIGHT",
+  "venue": "Riyadh Air Metropolitano",
+  "headline": "Spain v England in Madrid, 19:45 GMT",
+  "rows": [
+   [
+    "Spain",
+    "5 played",
+    "15 pts"
+   ],
+   [
+    "England",
+    "5 played",
+    "12 pts"
+   ],
+   [
+    "Kane 7",
+    "NL goals",
+    "Yamal 4"
+   ]
+  ],
+  "sub": "The top two in Group A3 meet at the Metropolitano. Kick-off 19:45 GMT / 2:45pm ET.",
+  "caption": "🔥 Spain v England. Tonight. Madrid.\n\nSpain have won all five Nations League games (15 pts), England have 12. Harry Kane has 7 goals in the competition, Lamine Yamal has 4. Kick-off 19:45 GMT / 2:45pm ET.\n\nYour score prediction? 👇\n\n#ESPENG #England #Spain"
+ },
+ {
+  "id": "06-nfl-munich",
+  "time": "2026-11-15T16:50:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "NFL WEEK 10 · MUNICH",
+  "venue": "FC Bayern Munich Stadium",
+  "headline": "The NFL is in Munich today",
+  "sub": "Detroit v New England at the home of Bayern Munich.",
+  "caption": "🏈 NFL in Germany today.\n\nThe Detroit Lions (6–2, four wins in a row) play the New England Patriots (5–4) in Munich at 14:30 GMT / 9:30am ET. The Patriots lost 45–27 to Green Bay last week.\n\nLions or Patriots? 👇\n\n#OnePride #Patriots #NFLMunich",
+  "rows": [
+   [
+    "Lions",
+    "6–2",
+    "4 straight wins"
+   ],
+   [
+    "Patriots",
+    "5–4",
+    "lost 45–27 to GB"
+   ],
+   [
+    "Kick-off",
+    "14:30 GMT",
+    "9:30am ET · Fox"
+   ]
+  ]
+ },
+ {
+  "id": "07-nfc-north",
+  "time": "2026-11-15T18:30:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "NFC NORTH · BEFORE SUNDAY",
+  "headline": "The tightest division in football",
+  "rows": [
+   [
+    "Bears",
+    "7–2",
+    ".778"
+   ],
+   [
+    "Lions",
+    "6–2",
+    ".750"
+   ],
+   [
+    "Vikings",
+    "6–2",
+    ".750"
+   ],
+   [
+    "Packers",
+    "6–3",
+    ".667"
+   ]
+  ],
+  "sub": "Lions play the Patriots in Munich and the Vikings visit the Packers today.",
+  "caption": "👀 All four NFC North teams have winning records.\n\nBears 7–2, Lions 6–2, Vikings 6–2, Packers 6–3. Today the Lions play New England in Munich and Minnesota go to Lambeau.\n\nWho wins the division? 👇\n\n#NFCNorth #DaBears #GoPackGo #Skol"
+ },
+ {
+  "id": "08-sunday-nations",
+  "time": "2026-11-15T19:20:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "NATIONS LEAGUE · SUNDAY 19:45 GMT",
+  "headline": "Tonight's big four",
+  "rows": [
+   [
+    "Spain",
+    "v",
+    "England"
+   ],
+   [
+    "Belgium",
+    "v",
+    "Italy"
+   ],
+   [
+    "France",
+    "v",
+    "Türkiye"
+   ],
+   [
+    "Croatia",
+    "v",
+    "Czechia"
+   ]
+  ],
+  "sub": "All kick off at 19:45 GMT / 2:45pm ET.",
+  "caption": "⚽ Four big Nations League games tonight, all at 19:45 GMT (2:45pm ET).\n\nSpain v England in Madrid, Belgium v Italy in Brussels, France v Türkiye in Bordeaux and Croatia v Czechia.\n\nWhich one are you watching? 👇\n\n#NationsLeague #England #France"
+ },
+ {
+  "id": "09-nfl-1pm",
+  "time": "2026-11-15T21:00:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "NFL WEEK 10 · 1PM ET",
+  "headline": "Today's 1pm ET games",
+  "rows": [
+   [
+    "Chiefs (6–2)",
+    "@",
+    "Falcons (3–6)"
+   ],
+   [
+    "Vikings (6–2)",
+    "@",
+    "Packers (6–3)"
+   ],
+   [
+    "Bills (7–1)",
+    "@",
+    "Jets (2–7)"
+   ],
+   [
+    "Jaguars (6–2)",
+    "@",
+    "Titans (1–7)"
+   ],
+   [
+    "Texans (3–5)",
+    "@",
+    "Browns (5–4)"
+   ]
+  ],
+  "sub": "Also at 1pm ET: Dolphins @ Colts and Panthers @ Saints.",
+  "caption": "🏈 NFL Sunday. Seven games kick off at 1pm ET.\n\nThe Chiefs visit Atlanta, the Vikings are at Lambeau, the 7–1 Bills go to the Jets and Jacksonville visit Tennessee.\n\nWhat's your lock of the day? 👇\n\n#NFL #ChiefsKingdom #BillsMafia"
+ },
+ {
+  "id": "10-heat-pistons",
+  "time": "2026-11-15T22:40:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · MIAMI",
+  "venue": "Kaseya Center",
+  "home": "Miami Heat",
+  "homeScore": 137,
+  "away": "Detroit Pistons",
+  "awayScore": 117,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
+  "headline": "Giannis: 71 points in two nights",
+  "sub": "34 points, 14 rebounds, 8 assists. Klay Thompson scored 26 on his return and Miami blocked 14 shots, one off the franchise record.",
+  "caption": "🔥 Giannis Antetokounmpo is rolling in Miami.\n\n34 points, 14 rebounds and 8 assists in a 137–117 win over Detroit, after 37 on Friday. Klay Thompson added 26 in his return and the Heat blocked 14 shots. Four straight wins.\n\nAre the Heat for real? 👇\n\n#HeatCulture #Giannis #NBA"
+ },
+ {
+  "id": "11-georgia-no1",
+  "time": "2026-11-16T00:20:00",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "kind": "score",
+  "label": "COLLEGE FOOTBALL · ATHENS",
+  "venue": "Sanford Stadium",
+  "home": "Georgia",
+  "homeScore": 48,
+  "away": "Missouri",
+  "awayScore": 21,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
+  "headline": "No. 1 Georgia score on their first five drives",
+  "sub": "Nate Frazier ran for three TDs and Gunner Stockton threw for 252 yards. Georgia are 9–1.",
+  "caption": "🐶 No. 1 Georgia didn't mess around.\n\nThey scored on their first five possessions and beat Missouri 48–21. Nate Frazier ran for three touchdowns and Gunner Stockton was 18 of 24 for 252 yards.\n\nIs Georgia the team to beat? 👇\n\n#GoDawgs #Georgia #CFB"
+ },
+ {
+  "id": "12-nba-sunday",
+  "time": "2026-11-16T01:10:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · SUNDAY",
+  "headline": "Tonight's NBA headliners",
+  "rows": [
+   [
+    "Lakers (11–2)",
+    "@ 4pm ET",
+    "Suns (5–6)"
+   ],
+   [
+    "Spurs (11–2)",
+    "@ 5pm ET",
+    "Jazz (1–12)"
+   ],
+   [
+    "Mavericks (7–6)",
+    "@ 6pm ET",
+    "Celtics (10–2)"
+   ],
+   [
+    "Thunder (8–5)",
+    "@ 9pm ET",
+    "Kings (1–11)"
+   ]
+  ],
+  "sub": "Austin Reaves (heel) sits out for the Lakers. San Antonio go for a 12th straight win.",
+  "caption": "🏀 Sunday's NBA slate.\n\nThe 11–2 Lakers are in Phoenix without Austin Reaves (4pm ET), the Spurs go for a 12th straight win in Utah (5pm ET) and the Celtics host Dallas (6pm ET).\n\nWhich game are you watching? 👇\n\n#NBA #Lakers #Spurs"
+ },
+ {
+  "id": "13-clemson-gt",
+  "time": "2026-11-16T02:50:00",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "kind": "score",
+  "label": "COLLEGE FOOTBALL · DEATH VALLEY",
+  "home": "Clemson",
+  "homeScore": 6,
+  "away": "Georgia Tech",
+  "awayScore": 20,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png",
+  "headline": "Georgia Tech's first win at Clemson since 2008",
+  "sub": "Justice Haynes ran for 116 yards and a 53-yard TD. The 3–7 Yellow Jackets came in on a four-game losing streak.",
+  "caption": "😮 Georgia Tech 20, Clemson 6.\n\nThe Yellow Jackets came in 2–7 on a four-game losing streak and won at Death Valley for the first time since 2008. Justice Haynes ran for 116 yards and GT rushed for 269.\n\nBiggest upset of the weekend? 👇\n\n#Clemson #GeorgiaTech #CFB"
+ },
+ {
+  "id": "14-devils-caps",
+  "time": "2026-11-16T04:30:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · WASHINGTON",
+  "home": "Capitals",
+  "homeScore": 4,
+  "away": "Devils",
+  "awayScore": 7,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nj.png",
+  "headline": "Hellebuyck is 7–0 as a Devil",
+  "sub": "43 saves after a shaky first period. New Jersey are 11–2 since 20 October. Evan Rodrigues scored twice.",
+  "caption": "🧱 Connor Hellebuyck: 7 starts, 7 wins for New Jersey.\n\nHe made 43 saves as the Devils beat Washington 7–4, with two goals from Evan Rodrigues. NJ are 11–2 since 20 October.\n\nBest trade of the season? 👇\n\n#NJDevils #Hellebuyck #NHL"
+ },
+ {
+  "id": "15-snf",
+  "time": "2026-11-16T05:20:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "SUNDAY NIGHT FOOTBALL · 8:20PM ET",
+  "headline": "6–2 v 6–2 tonight",
+  "sub": "DT Derrick Harmon is back from IR for Pittsburgh.",
+  "caption": "🏈 Sunday Night Football: Steelers (6–2) at Bengals (6–2), 8:20pm ET on NBC.\n\nPittsburgh get defensive tackle Derrick Harmon back from injured reserve.\n\nWho wins in Cincinnati? 👇\n\n#HereWeGo #WhoDey #SNF",
+  "venue": "Paycor Stadium",
+  "rows": [
+   [
+    "Steelers",
+    "6–2",
+    "@"
+   ],
+   [
+    "Bengals",
+    "6–2",
+    "home"
+   ],
+   [
+    "Kick-off",
+    "8:20pm ET",
+    "NBC"
+   ]
+  ]
+ },
+ {
+  "id": "16-wild-bruins",
+  "time": "2026-11-16T07:00:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · BOSTON",
+  "venue": "TD Garden",
+  "home": "Bruins",
+  "homeScore": 2,
+  "away": "Wild",
+  "awayScore": 6,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/bos.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
+  "headline": "Eight road wins in a row for the Wild",
+  "sub": "Hartman and Yurov scored two each. Minnesota have the NHL's most road wins (10) and points in 11 straight games.",
+  "caption": "🌲 The Wild can't stop winning on the road.\n\nRyan Hartman and Danila Yurov scored twice each in a 6–2 win in Boston, Minnesota's eighth straight road win. Kirill Kaprizov has points in 11 straight games.\n\nBest team in the West? 👇\n\n#mnwild #Kaprizov #NHL"
+ }
+]
