@@ -37,9 +37,9 @@
    "note": "Phoenix Suns vs Los Angeles Lakers, 2026-11-15T21:00:00Z"
   },
   "3": {
-   "league": "unl",
-   "event": "401861178",
-   "note": "Croatia vs Czechia, 2026-11-15T19:45:00Z"
+   "league": "nhl",
+   "event": "401892721",
+   "note": "Philadelphia Flyers vs Edmonton Oilers, 2026-11-16T00:30:00Z"
   },
   "4": {
    "league": "nfl",
@@ -57,9 +57,9 @@
    "note": "Arizona Cardinals vs Los Angeles Rams, 2026-11-15T21:05:00Z"
   },
   "7": {
-   "league": "unl",
-   "event": "401861175",
-   "note": "Spain vs England, 2026-11-15T19:45:00Z"
+   "league": "nba",
+   "event": "401909991",
+   "note": "Washington Wizards vs Houston Rockets, 2026-11-16T00:00:00Z"
   },
   "8": {
    "league": "nba",
@@ -70,16 +70,6 @@
    "league": "nba",
    "event": "401909990",
    "note": "Toronto Raptors vs New York Knicks, 2026-11-15T23:00:00Z"
-  },
-  "10": {
-   "league": "unl",
-   "event": "401861176",
-   "note": "Belgium vs Italy, 2026-11-15T19:45:00Z"
-  },
-  "13": {
-   "league": "unl",
-   "event": "401861177",
-   "note": "France vs Türkiye, 2026-11-15T19:45:00Z"
   },
   "15": {
    "league": "nba",
