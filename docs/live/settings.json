@@ -47,9 +47,9 @@
    "note": "Las Vegas Raiders vs Seattle Seahawks, 2026-11-15T21:05:00Z"
   },
   "5": {
-   "league": "nfl",
-   "event": "401873058",
-   "note": "Atlanta Falcons vs Kansas City Chiefs, 2026-11-15T18:00:00Z"
+   "league": "nba",
+   "event": "401909989",
+   "note": "Boston Celtics vs Dallas Mavericks, 2026-11-15T23:00:00Z"
   },
   "6": {
    "league": "nfl",
@@ -63,38 +63,23 @@
   },
   "8": {
    "league": "nba",
-   "event": "401909985",
-   "note": "Philadelphia 76ers vs Indiana Pacers, 2026-11-15T18:00:00Z"
+   "event": "401909988",
+   "note": "Utah Jazz vs San Antonio Spurs, 2026-11-15T22:00:00Z"
   },
   "9": {
-   "league": "nfl",
-   "event": "401873056",
-   "note": "Cleveland Browns vs Houston Texans, 2026-11-15T18:00:00Z"
+   "league": "nba",
+   "event": "401909990",
+   "note": "Toronto Raptors vs New York Knicks, 2026-11-15T23:00:00Z"
   },
   "10": {
    "league": "unl",
    "event": "401861176",
    "note": "Belgium vs Italy, 2026-11-15T19:45:00Z"
   },
-  "11": {
-   "league": "nfl",
-   "event": "401873057",
-   "note": "Tennessee Titans vs Jacksonville Jaguars, 2026-11-15T18:00:00Z"
-  },
-  "12": {
-   "league": "nfl",
-   "event": "401873059",
-   "note": "Indianapolis Colts vs Miami Dolphins, 2026-11-15T18:00:00Z"
-  },
   "13": {
    "league": "unl",
    "event": "401861177",
    "note": "France vs Türkiye, 2026-11-15T19:45:00Z"
-  },
-  "14": {
-   "league": "nfl",
-   "event": "401873054",
-   "note": "New York Jets vs Buffalo Bills, 2026-11-15T18:00:00Z"
   },
   "15": {
    "league": "nba",
