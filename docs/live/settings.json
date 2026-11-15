@@ -25,18 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "3": {
-   "league": "nhl",
-   "event": "401892719",
-   "note": "Anaheim Ducks vs New York Islanders, 2026-11-15T03:00:00Z"
-  },
-  "4": {
-   "league": "nhl",
-   "event": "401892720",
-   "note": "Los Angeles Kings vs Calgary Flames, 2026-11-15T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
