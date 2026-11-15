@@ -1733,7 +1733,27 @@
   "url": "https://scorebuzz.net/american-football/nfl/lions-vs-patriots-401873053/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-15T16:25:09+00:00"
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-15T17:09:42+00:00"
+ },
+ "401861173": {
+  "slot": "4",
+  "league": "unl",
+  "game": "Belarus v Albania",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/belarus-vs-albania-401861173/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-15T17:09:45+00:00"
+ },
+ "401861174": {
+  "slot": "15",
+  "league": "unl",
+  "game": "Finland v San Marino",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/finland-vs-san-marino-401861174/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-15T17:09:48+00:00"
  }
 }
