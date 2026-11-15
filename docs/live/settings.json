@@ -25,7 +25,13 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "nfl",
+   "event": "401873053",
+   "note": "Detroit Lions vs New England Patriots, 2026-11-15T14:30:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
