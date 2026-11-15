@@ -26,10 +26,15 @@
  "top25": 15,
  "pin": null,
  "slots": {
+  "1": {
+   "league": "nfl",
+   "event": "401873063",
+   "note": "Dallas Cowboys vs San Francisco 49ers, 2026-11-15T21:25:00Z"
+  },
   "2": {
-   "league": "unl",
-   "event": "401861176",
-   "note": "Belgium vs Italy, 2026-11-15T19:45:00Z"
+   "league": "nba",
+   "event": "401909986",
+   "note": "Phoenix Suns vs Los Angeles Lakers, 2026-11-15T21:00:00Z"
   },
   "3": {
    "league": "unl",
@@ -37,9 +42,9 @@
    "note": "Croatia vs Czechia, 2026-11-15T19:45:00Z"
   },
   "4": {
-   "league": "unl",
-   "event": "401861173",
-   "note": "Belarus vs Albania, 2026-11-15T17:00:00Z"
+   "league": "nfl",
+   "event": "401873062",
+   "note": "Las Vegas Raiders vs Seattle Seahawks, 2026-11-15T21:05:00Z"
   },
   "5": {
    "league": "nfl",
@@ -47,9 +52,9 @@
    "note": "Atlanta Falcons vs Kansas City Chiefs, 2026-11-15T18:00:00Z"
   },
   "6": {
-   "league": "unl",
-   "event": "401861177",
-   "note": "France vs Türkiye, 2026-11-15T19:45:00Z"
+   "league": "nfl",
+   "event": "401873061",
+   "note": "Arizona Cardinals vs Los Angeles Rams, 2026-11-15T21:05:00Z"
   },
   "7": {
    "league": "unl",
@@ -92,9 +97,9 @@
    "note": "New York Jets vs Buffalo Bills, 2026-11-15T18:00:00Z"
   },
   "15": {
-   "league": "unl",
-   "event": "401861174",
-   "note": "Finland vs San Marino, 2026-11-15T17:00:00Z"
+   "league": "nba",
+   "event": "401909987",
+   "note": "LA Clippers vs Charlotte Hornets, 2026-11-15T21:30:00Z"
   }
  },
  "fit": {
