@@ -1555,5 +1555,45 @@
   "status": "ok",
   "reason": "ok (contrast 86)",
   "at": "2026-11-14T23:02:58+00:00"
+ },
+ "401892709": {
+  "slot": "2",
+  "league": "nhl",
+  "game": "Bruins v Wild",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/bruins-vs-wild-401892709/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 94)",
+  "at": "2026-11-15T00:08:37+00:00"
+ },
+ "401892715": {
+  "slot": "3",
+  "league": "nhl",
+  "game": "Blue Jackets v Flyers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blue-jackets-vs-flyers-401892715/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 92)",
+  "at": "2026-11-15T00:08:40+00:00"
+ },
+ "401892714": {
+  "slot": "10",
+  "league": "nhl",
+  "game": "Capitals v Devils",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/capitals-vs-devils-401892714/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 96)",
+  "at": "2026-11-15T00:08:43+00:00"
+ },
+ "401892716": {
+  "slot": "11",
+  "league": "nhl",
+  "game": "Blues v Panthers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blues-vs-panthers-401892716/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 93)",
+  "at": "2026-11-15T00:08:46+00:00"
  }
 }
