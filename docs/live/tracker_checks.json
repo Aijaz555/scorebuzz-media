@@ -1756,16 +1756,6 @@
   "reason": "ok (contrast 38)",
   "at": "2026-11-15T18:51:47+00:00"
  },
- "401909985": {
-  "slot": "8",
-  "league": "nba",
-  "game": "76ers v Pacers",
-  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-pacers-401909985/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-15T18:51:50+00:00"
- },
  "401873058": {
   "slot": "5",
   "league": "nfl",
@@ -1835,5 +1825,15 @@
   "status": "ok",
   "reason": "ok (contrast 43)",
   "at": "2026-11-15T19:16:26+00:00"
+ },
+ "401909985": {
+  "slot": "8",
+  "league": "nba",
+  "game": "76ers v Pacers",
+  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-pacers-401909985/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-15T19:24:34+00:00"
  }
 }
