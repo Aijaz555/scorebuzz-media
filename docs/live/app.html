@@ -267,6 +267,7 @@ const LEAGUES = {
   epl: { path: 'soccer/eng.1', label: 'PREMIER LEAGUE', name: 'Premier League', sport: 'football', periods: 2, soccer: true },
   ucl: { path: 'soccer/uefa.champions', label: 'CHAMPIONS LEAGUE', name: 'Champions League', sport: 'football', periods: 2, soccer: true },
   uel: { path: 'soccer/uefa.europa', label: 'EUROPA LEAGUE', name: 'Europa League', sport: 'football', periods: 2, soccer: true },
+  unl: { path: 'soccer/uefa.nations', label: 'NATIONS LEAGUE', name: 'UEFA Nations League', sport: 'football', periods: 2, soccer: true },
   laliga: { path: 'soccer/esp.1', label: 'LALIGA', name: 'LaLiga', sport: 'football', periods: 2, soccer: true },
   seriea: { path: 'soccer/ita.1', label: 'SERIE A', name: 'Serie A', sport: 'football', periods: 2, soccer: true },
   bundesliga: { path: 'soccer/ger.1', label: 'BUNDESLIGA', name: 'Bundesliga', sport: 'football', periods: 2, soccer: true },
@@ -1274,7 +1275,7 @@ function statusBar(g, ph) {
 
 // league brand colours (approximate official palettes): lg1 = primary (readable on white), lg2/lg3 = accents
 const LG_COLORS = { // [primary, accent, stripe end, chip text]
-  epl: ['#37003C', '#00FF85', '#E90052', '#00FF85'], ucl: ['#0E1E5B', '#00C8FF', '#B8C2D6', '#00C8FF'], uel: ['#E06A00', '#1B1B1B', '#E06A00', '#FFFFFF'],
+  epl: ['#37003C', '#00FF85', '#E90052', '#00FF85'], ucl: ['#0E1E5B', '#00C8FF', '#B8C2D6', '#00C8FF'], uel: ['#E06A00', '#1B1B1B', '#E06A00', '#FFFFFF'], unl: ['#0A1A3C', '#00B2FF', '#C9D3E6', '#FFFFFF'],
   laliga: ['#E8312B', '#1B1B1B', '#E8312B', '#FFFFFF'], seriea: ['#0A3D91', '#00B2E3', '#0A3D91', '#FFFFFF'], ligue1: ['#091C3E', '#DAE025', '#091C3E', '#DAE025'],
   bundesliga: ['#D20515', '#1B1B1B', '#D20515', '#FFFFFF'], mls: ['#001F5B', '#C8102E', '#001F5B', '#FFFFFF'],
   nba: ['#1D428A', '#C8102E', '#1D428A', '#FFFFFF'], nfl: ['#013369', '#D50A0A', '#013369', '#FFFFFF'],
@@ -1323,7 +1324,7 @@ function render(g) {
 // The match page on scorebuzz.net is embedded and cropped to its tracker card: the page is opened at
 // #trkSlot (the browser scrolls the tracker to the top), the site's sticky header covers the first 64 px,
 // so the visible window starts just below it. ?sbtrk=0 turns it off (our own tracker is used instead).
-const SB_LEAGUE = { epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls',
+const SB_LEAGUE = { epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', unl: 'football/uefa-nations-league', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls',
   nba: 'basketball/nba', nfl: 'american-football/nfl', ncaaf: 'american-football/college-football', nhl: 'ice-hockey/nhl' };
 const SB_US = ['nba', 'nfl', 'ncaaf', 'nhl'];
 // crop of the site's tracker card (page opened at #trkSlot, 1000 px wide; measured 6 Nov 2026):

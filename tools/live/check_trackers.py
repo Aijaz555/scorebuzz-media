@@ -21,15 +21,15 @@ LOG = os.path.join(ROOT, "docs", "live", "tracker_checks.json")
 # match page shows each starter with a photo (/img/p/<site id>.png). The stream page can't read that page (no CORS), so this
 # script copies the line-ups' jersey -> photo id into this file, which the stream page reads from raw GitHub.
 PHOTOS = os.path.join(ROOT, "docs", "live", "player_photos.json")
-SOCCER = {"epl", "ucl", "uel", "laliga", "seriea", "bundesliga", "ligue1", "mls"}
+SOCCER = {"epl", "ucl", "uel", "unl", "laliga", "seriea", "bundesliga", "ligue1", "mls"}
 DRY = "--dry" in sys.argv
 
-ESPN = {"epl": "soccer/eng.1", "ucl": "soccer/uefa.champions", "uel": "soccer/uefa.europa", "laliga": "soccer/esp.1",
+ESPN = {"epl": "soccer/eng.1", "ucl": "soccer/uefa.champions", "uel": "soccer/uefa.europa", "unl": "soccer/uefa.nations", "laliga": "soccer/esp.1",
         "seriea": "soccer/ita.1", "bundesliga": "soccer/ger.1", "ligue1": "soccer/fra.1", "mls": "soccer/usa.1",
         "nba": "basketball/nba", "nfl": "football/nfl", "ncaaf": "football/college-football", "nhl": "hockey/nhl",
         "mlb": "baseball/mlb"}
 # must match SB_LEAGUE in tools/live/overlay.html (leagues whose streams show the website's tracker)
-SITE = {"epl": "football/english-premier-league", "ucl": "football/champions-league", "uel": "football/europa-league",
+SITE = {"epl": "football/english-premier-league", "ucl": "football/champions-league", "uel": "football/europa-league", "unl": "football/uefa-nations-league",
         "laliga": "football/la-liga", "seriea": "football/serie-a", "bundesliga": "football/bundesliga",
         "ligue1": "football/ligue-1", "mls": "football/mls", "nba": "basketball/nba", "nfl": "american-football/nfl",
         "ncaaf": "american-football/college-football",

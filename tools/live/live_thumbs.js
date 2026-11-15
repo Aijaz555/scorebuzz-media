@@ -17,7 +17,7 @@ const ROOT = path.join(__dirname, '..', '..');
 const OUT = path.join(ROOT, 'thumbs', 'live');
 const LEAGUES = {
   epl: ['soccer/eng.1', 'Premier League', 'football'], ucl: ['soccer/uefa.champions', 'Champions League', 'football'],
-  uel: ['soccer/uefa.europa', 'Europa League', 'football'], laliga: ['soccer/esp.1', 'LaLiga', 'football'],
+  uel: ['soccer/uefa.europa', 'Europa League', 'football'], unl: ['soccer/uefa.nations', 'Nations League', 'football'], laliga: ['soccer/esp.1', 'LaLiga', 'football'],
   seriea: ['soccer/ita.1', 'Serie A', 'football'], bundesliga: ['soccer/ger.1', 'Bundesliga', 'football'],
   ligue1: ['soccer/fra.1', 'Ligue 1', 'football'], mls: ['soccer/usa.1', 'MLS', 'football'],
   nfl: ['football/nfl', 'NFL', 'nfl'], ncaaf: ['football/college-football', 'College Football', 'nfl'],

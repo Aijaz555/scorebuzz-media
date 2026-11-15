@@ -254,6 +254,12 @@ starting 30 min before kick-off and stopped when the game is over.
   `python3 tools/make_live_music.py`; 6 upbeat ones imported to the LiveReacting library), looping at volume 3/10,
   a different order per project. Duplicated Slot projects inherit it. No commercial music, ever.
 
+- **UEFA Nations League (owner, 15 Nov 2026: no EPL this week, stream the Nations League instead):** league key `unl`
+  (ESPN `soccer/uefa.nations`, scorebuzz.net `football/uefa-nations-league`) added to feed.js, app.html, center.html, soccer.html,
+  match3d.html, overlay.html, live_thumbs.js, check_trackers.py and settings `streams.leagues` (after epl), `centerLeagues`,
+  `soccerLeagues`. Centre layout checked with Cyprus-Montenegro (live) and Spain-England (pre-game). Remove `unl` from
+  `streams.leagues` after the window to stop it.
+
 ## NBA broadcast layout (on air 9 Nov 2026)
 NBA slots now show docs/live/nba.html (games bar, timeouts/bonus, big score + quarters, scorebuzz.net live tracker beside the
 3 latest plays, players on the court, leaders with ESPN headshots — owner OK'd headshots 9 Nov 2026). app.html loads it fresh from

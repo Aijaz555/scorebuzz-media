@@ -56,8 +56,8 @@ footer .sub{margin-left:auto;background:#e53935;padding:10px 20px;border-radius:
 import * as THREE from './vendor/three.module.min.js';
 const q = new URLSearchParams(location.search);
 const league = q.get('league') || 'epl', event = q.get('event');
-const PATHS = { epl: 'soccer/eng.1', ucl: 'soccer/uefa.champions', uel: 'soccer/uefa.europa', laliga: 'soccer/esp.1', seriea: 'soccer/ita.1', bundesliga: 'soccer/ger.1', ligue1: 'soccer/fra.1', mls: 'soccer/usa.1' };
-const NAMES = { epl: 'PREMIER LEAGUE', ucl: 'CHAMPIONS LEAGUE', uel: 'EUROPA LEAGUE', laliga: 'LALIGA', seriea: 'SERIE A', bundesliga: 'BUNDESLIGA', ligue1: 'LIGUE 1', mls: 'MLS' };
+const PATHS = { epl: 'soccer/eng.1', ucl: 'soccer/uefa.champions', uel: 'soccer/uefa.europa', unl: 'soccer/uefa.nations', laliga: 'soccer/esp.1', seriea: 'soccer/ita.1', bundesliga: 'soccer/ger.1', ligue1: 'soccer/fra.1', mls: 'soccer/usa.1' };
+const NAMES = { epl: 'PREMIER LEAGUE', ucl: 'CHAMPIONS LEAGUE', uel: 'EUROPA LEAGUE', unl: 'NATIONS LEAGUE', laliga: 'LALIGA', seriea: 'SERIE A', bundesliga: 'BUNDESLIGA', ligue1: 'LIGUE 1', mls: 'MLS' };
 const REPLAY = q.has('replay');
 const $ = (id) => document.getElementById(id);
 const rnd = (a, b) => a + Math.random() * (b - a);

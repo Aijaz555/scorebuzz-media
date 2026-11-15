@@ -30,6 +30,16 @@
    "league": "nfl",
    "event": "401873053",
    "note": "Detroit Lions vs New England Patriots, 2026-11-15T14:30:00Z"
+  },
+  "4": {
+   "league": "unl",
+   "event": "401861173",
+   "note": "Belarus vs Albania, 2026-11-15T17:00:00Z"
+  },
+  "5": {
+   "league": "unl",
+   "event": "401861174",
+   "note": "Finland vs San Marino, 2026-11-15T17:00:00Z"
   }
  },
  "fit": {
@@ -261,7 +271,8 @@
   "bundesliga",
   "mls",
   "ucl",
-  "uel"
+  "uel",
+  "unl"
  ],
  "usLeagues": [
   "nhl",
@@ -276,13 +287,15 @@
   "seriea",
   "bundesliga",
   "ligue1",
-  "mls"
+  "mls",
+  "unl"
  ],
  "streams": {
   "leagues": [
    "nfl",
    "nba",
    "epl",
+   "unl",
    "ucl",
    "nhl",
    "laliga",
