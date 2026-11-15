@@ -31,6 +31,16 @@
    "event": "401873053",
    "note": "Detroit Lions vs New England Patriots, 2026-11-15T14:30:00Z"
   },
+  "2": {
+   "league": "unl",
+   "event": "401861176",
+   "note": "Belgium vs Italy, 2026-11-15T19:45:00Z"
+  },
+  "3": {
+   "league": "unl",
+   "event": "401861178",
+   "note": "Croatia vs Czechia, 2026-11-15T19:45:00Z"
+  },
   "4": {
    "league": "unl",
    "event": "401861173",
@@ -40,6 +50,16 @@
    "league": "unl",
    "event": "401861174",
    "note": "Finland vs San Marino, 2026-11-15T17:00:00Z"
+  },
+  "6": {
+   "league": "unl",
+   "event": "401861177",
+   "note": "France vs Türkiye, 2026-11-15T19:45:00Z"
+  },
+  "7": {
+   "league": "unl",
+   "event": "401861175",
+   "note": "Spain vs England, 2026-11-15T19:45:00Z"
   }
  },
  "fit": {
