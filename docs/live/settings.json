@@ -38,13 +38,13 @@
   },
   "3": {
    "league": "nhl",
-   "event": "401892715",
-   "note": "Columbus Blue Jackets vs Philadelphia Flyers, 2026-11-15T00:00:00Z"
+   "event": "401892719",
+   "note": "Anaheim Ducks vs New York Islanders, 2026-11-15T03:00:00Z"
   },
   "4": {
-   "league": "nba",
-   "event": "401909980",
-   "note": "New Orleans Pelicans vs Denver Nuggets, 2026-11-15T00:00:00Z"
+   "league": "nhl",
+   "event": "401892720",
+   "note": "Los Angeles Kings vs Calgary Flames, 2026-11-15T03:00:00Z"
   },
   "5": {
    "league": "nhl",
@@ -55,11 +55,6 @@
    "league": "nhl",
    "event": "401892711",
    "note": "Montreal Canadiens vs Colorado Avalanche, 2026-11-15T00:00:00Z"
-  },
-  "7": {
-   "league": "nhl",
-   "event": "401892712",
-   "note": "Tampa Bay Lightning vs Detroit Red Wings, 2026-11-15T00:00:00Z"
   },
   "8": {
    "league": "nhl",
@@ -75,11 +70,6 @@
    "league": "nhl",
    "event": "401892714",
    "note": "Washington Capitals vs New Jersey Devils, 2026-11-15T00:00:00Z"
-  },
-  "11": {
-   "league": "nhl",
-   "event": "401892716",
-   "note": "St. Louis Blues vs Florida Panthers, 2026-11-15T00:00:00Z"
   },
   "12": {
    "league": "nba",
