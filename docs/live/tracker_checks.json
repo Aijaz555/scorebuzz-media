@@ -1725,5 +1725,15 @@
   "status": "ok",
   "reason": "ok (contrast 82)",
   "at": "2026-11-15T05:27:11+00:00"
+ },
+ "401873053": {
+  "slot": "1",
+  "league": "nfl",
+  "game": "Lions v Patriots",
+  "url": "https://scorebuzz.net/american-football/nfl/lions-vs-patriots-401873053/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-15T14:41:26+00:00"
  }
 }
