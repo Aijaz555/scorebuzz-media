@@ -1556,16 +1556,6 @@
   "reason": "ok (contrast 86)",
   "at": "2026-11-14T23:02:58+00:00"
  },
- "401892717": {
-  "slot": "8",
-  "league": "nhl",
-  "game": "Stars v Sabres",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/stars-vs-sabres-401892717/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 85)",
-  "at": "2026-11-15T01:40:06+00:00"
- },
  "401892709": {
   "slot": "2",
   "league": "nhl",
@@ -1705,5 +1695,15 @@
   "status": "ok",
   "reason": "ok (contrast 95)",
   "at": "2026-11-15T02:08:02+00:00"
+ },
+ "401892717": {
+  "slot": "8",
+  "league": "nhl",
+  "game": "Stars v Sabres",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/stars-vs-sabres-401892717/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-15T02:16:11+00:00"
  }
 }
