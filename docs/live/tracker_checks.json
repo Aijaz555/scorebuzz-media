@@ -1846,36 +1846,6 @@
   "reason": "ok (contrast 36)",
   "at": "2026-11-15T21:03:40+00:00"
  },
- "401909986": {
-  "slot": "2",
-  "league": "nba",
-  "game": "Suns v Lakers",
-  "url": "https://scorebuzz.net/basketball/nba/suns-vs-lakers-401909986/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-15T21:11:49+00:00"
- },
- "401873062": {
-  "slot": "4",
-  "league": "nfl",
-  "game": "Raiders v Seahawks",
-  "url": "https://scorebuzz.net/american-football/nfl/raiders-vs-seahawks-401873062/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-15T21:11:52+00:00"
- },
- "401873061": {
-  "slot": "6",
-  "league": "nfl",
-  "game": "Cardinals v Rams",
-  "url": "https://scorebuzz.net/american-football/nfl/cardinals-vs-rams-401873061/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-15T21:11:55+00:00"
- },
  "401873063": {
   "slot": "1",
   "league": "nfl",
@@ -1915,5 +1885,45 @@
   "status": "ok",
   "reason": "ok (contrast 36)",
   "at": "2026-11-15T21:39:22+00:00"
+ },
+ "401909986": {
+  "slot": "2",
+  "league": "nba",
+  "game": "Suns v Lakers",
+  "url": "https://scorebuzz.net/basketball/nba/suns-vs-lakers-401909986/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 67)",
+  "at": "2026-11-15T21:47:30+00:00"
+ },
+ "401873062": {
+  "slot": "4",
+  "league": "nfl",
+  "game": "Raiders v Seahawks",
+  "url": "https://scorebuzz.net/american-football/nfl/raiders-vs-seahawks-401873062/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-15T21:47:33+00:00"
+ },
+ "401873061": {
+  "slot": "6",
+  "league": "nfl",
+  "game": "Cardinals v Rams",
+  "url": "https://scorebuzz.net/american-football/nfl/cardinals-vs-rams-401873061/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 40)",
+  "at": "2026-11-15T21:47:36+00:00"
+ },
+ "401909987": {
+  "slot": "15",
+  "league": "nba",
+  "game": "Clippers v Hornets",
+  "url": "https://scorebuzz.net/basketball/nba/clippers-vs-hornets-401909987/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-15T21:47:39+00:00"
  }
 }
