@@ -1786,16 +1786,6 @@
   "reason": "ok (contrast 66)",
   "at": "2026-11-15T19:55:13+00:00"
  },
- "401861178": {
-  "slot": "3",
-  "league": "unl",
-  "game": "Croatia v Czechia",
-  "url": "https://scorebuzz.net/football/uefa-nations-league/croatia-vs-czechia-401861178/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 38)",
-  "at": "2026-11-15T20:55:08+00:00"
- },
  "401873058": {
   "slot": "5",
   "league": "nfl",
@@ -1905,5 +1895,25 @@
   "status": "ok",
   "reason": "ok (contrast 43)",
   "at": "2026-11-15T21:11:55+00:00"
+ },
+ "401873063": {
+  "slot": "1",
+  "league": "nfl",
+  "game": "Cowboys v 49ers",
+  "url": "https://scorebuzz.net/american-football/nfl/cowboys-vs-49ers-401873063/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-15T21:31:06+00:00"
+ },
+ "401861178": {
+  "slot": "3",
+  "league": "unl",
+  "game": "Croatia v Czechia",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/croatia-vs-czechia-401861178/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-15T21:31:09+00:00"
  }
 }
