@@ -1836,26 +1836,6 @@
   "reason": "ok (contrast 43)",
   "at": "2026-11-15T20:55:23+00:00"
  },
- "401861175": {
-  "slot": "7",
-  "league": "unl",
-  "game": "Spain v England",
-  "url": "https://scorebuzz.net/football/uefa-nations-league/spain-vs-england-401861175/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 38)",
-  "at": "2026-11-15T21:03:34+00:00"
- },
- "401861176": {
-  "slot": "10",
-  "league": "unl",
-  "game": "Belgium v Italy",
-  "url": "https://scorebuzz.net/football/uefa-nations-league/belgium-vs-italy-401861176/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 36)",
-  "at": "2026-11-15T21:03:37+00:00"
- },
  "401861177": {
   "slot": "13",
   "league": "unl",
@@ -1915,5 +1895,25 @@
   "status": "ok",
   "reason": "ok (contrast 37)",
   "at": "2026-11-15T21:31:09+00:00"
+ },
+ "401861175": {
+  "slot": "7",
+  "league": "unl",
+  "game": "Spain v England",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/spain-vs-england-401861175/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-15T21:39:19+00:00"
+ },
+ "401861176": {
+  "slot": "10",
+  "league": "unl",
+  "game": "Belgium v Italy",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/belgium-vs-italy-401861176/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-15T21:39:22+00:00"
  }
 }
