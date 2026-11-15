@@ -1876,16 +1876,6 @@
   "reason": "ok (contrast 36)",
   "at": "2026-11-15T21:39:22+00:00"
  },
- "401873063": {
-  "slot": "1",
-  "league": "nfl",
-  "game": "Cowboys v 49ers",
-  "url": "https://scorebuzz.net/american-football/nfl/cowboys-vs-49ers-401873063/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-15T22:04:33+00:00"
- },
  "401909988": {
   "slot": "8",
   "league": "nba",
@@ -1935,5 +1925,15 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-15T22:20:58+00:00"
+ },
+ "401873063": {
+  "slot": "1",
+  "league": "nfl",
+  "game": "Cowboys v 49ers",
+  "url": "https://scorebuzz.net/american-football/nfl/cowboys-vs-49ers-401873063/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-15T22:37:10+00:00"
  }
 }
