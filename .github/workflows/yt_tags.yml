@@ -1,9 +1,11 @@
 name: YouTube live tags
 # Every 10 minutes: adds tags + Sports category to upcoming/live ScoreBuzz broadcasts that have no tags.
 # Never changes titles, descriptions or thumbnails. See tools/live/yt_tags.js.
+# Schedule paused 15 Nov 2026 (owner's request): Google reports "OAuth client was disabled", so every
+# run failed and emailed the owner. Re-enable the cron below after fixing the OAuth client / refresh token.
 on:
-  schedule:
-    - cron: '*/10 * * * *'
+  # schedule:
+  #   - cron: '*/10 * * * *'
   workflow_dispatch:
 concurrency:
   group: yt-tags
