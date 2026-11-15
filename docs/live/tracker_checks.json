@@ -1616,36 +1616,6 @@
   "reason": "ok (contrast 80)",
   "at": "2026-11-15T02:32:34+00:00"
  },
- "401909982": {
-  "slot": "12",
-  "league": "nba",
-  "game": "Heat v Pistons",
-  "url": "https://scorebuzz.net/basketball/nba/heat-vs-pistons-401909982/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-15T02:32:37+00:00"
- },
- "401909983": {
-  "slot": "13",
-  "league": "nba",
-  "game": "Grizzlies v Nets",
-  "url": "https://scorebuzz.net/basketball/nba/grizzlies-vs-nets-401909983/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-15T02:32:40+00:00"
- },
- "401909984": {
-  "slot": "14",
-  "league": "nba",
-  "game": "Timberwolves v Bulls",
-  "url": "https://scorebuzz.net/basketball/nba/timberwolves-vs-bulls-401909984/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-15T02:32:43+00:00"
- },
  "401909981": {
   "slot": "1",
   "league": "nba",
@@ -1705,5 +1675,35 @@
   "status": "ok",
   "reason": "ok (contrast 88)",
   "at": "2026-11-15T02:47:27+00:00"
+ },
+ "401909982": {
+  "slot": "12",
+  "league": "nba",
+  "game": "Heat v Pistons",
+  "url": "https://scorebuzz.net/basketball/nba/heat-vs-pistons-401909982/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-15T03:03:36+00:00"
+ },
+ "401909983": {
+  "slot": "13",
+  "league": "nba",
+  "game": "Grizzlies v Nets",
+  "url": "https://scorebuzz.net/basketball/nba/grizzlies-vs-nets-401909983/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-15T03:03:39+00:00"
+ },
+ "401909984": {
+  "slot": "14",
+  "league": "nba",
+  "game": "Timberwolves v Bulls",
+  "url": "https://scorebuzz.net/basketball/nba/timberwolves-vs-bulls-401909984/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-15T03:03:42+00:00"
  }
 }
