@@ -375,22 +375,18 @@
   ]
  },
  {
-  "id": "16-wild-bruins",
+  "id": "16-ufc-harrison",
   "time": "2026-11-16T07:00:00",
-  "sport": "nhl",
-  "league": "nhl",
-  "kind": "score",
-  "label": "NHL · BOSTON",
-  "venue": "TD Garden",
-  "home": "Bruins",
-  "homeScore": 2,
-  "away": "Wild",
-  "awayScore": 6,
-  "status": "FINAL",
-  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/bos.png",
-  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
-  "headline": "Eight road wins in a row for the Wild",
-  "sub": "Hartman and Yurov scored two each. Minnesota have the NHL's most road wins (10) and points in 11 straight games.",
-  "caption": "🌲 The Wild can't stop winning on the road.\n\nRyan Hartman and Danila Yurov scored twice each in a 6–2 win in Boston, Minnesota's eighth straight road win. Kirill Kaprizov has points in 11 straight games.\n\nBest team in the West? 👇\n\n#mnwild #Kaprizov #NHL"
+  "sport": "mma",
+  "league": "ufc",
+  "kind": "headline",
+  "label": "UFC 334 · MADISON SQUARE GARDEN",
+  "headline": "Kayla Harrison submits Amanda Nunes",
+  "sub": "Round 4, 1:29 in their bantamweight title fight in New York. Harrison is now 20–1.",
+  "stat": [
+   "20–1",
+   "Kayla Harrison's record"
+  ],
+  "caption": "🥊 Kayla Harrison submitted Amanda Nunes.\n\nThe UFC 334 bantamweight title fight at Madison Square Garden ended at 1:29 of round 4. Harrison is now 20–1, and Nunes drops to 23–6.\n\nIs Harrison the greatest women's fighter right now? 👇\n\n#UFC334 #KaylaHarrison #UFC"
  }
 ]
