@@ -1706,16 +1706,6 @@
   "reason": "ok (contrast 82)",
   "at": "2026-11-15T04:46:48+00:00"
  },
- "401892720": {
-  "slot": "4",
-  "league": "nhl",
-  "game": "Kings v Flames",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-flames-401892720/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 82)",
-  "at": "2026-11-15T04:54:54+00:00"
- },
  "401892719": {
   "slot": "3",
   "league": "nhl",
@@ -1725,5 +1715,15 @@
   "status": "ok",
   "reason": "ok (contrast 83)",
   "at": "2026-11-15T05:19:05+00:00"
+ },
+ "401892720": {
+  "slot": "4",
+  "league": "nhl",
+  "game": "Kings v Flames",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-flames-401892720/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-15T05:27:11+00:00"
  }
 }
