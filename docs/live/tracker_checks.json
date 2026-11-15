@@ -1756,26 +1756,6 @@
   "reason": "ok (contrast 38)",
   "at": "2026-11-15T18:51:47+00:00"
  },
- "401873058": {
-  "slot": "5",
-  "league": "nfl",
-  "game": "Falcons v Chiefs",
-  "url": "https://scorebuzz.net/american-football/nfl/falcons-vs-chiefs-401873058/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 47)",
-  "at": "2026-11-15T19:16:08+00:00"
- },
- "401873056": {
-  "slot": "9",
-  "league": "nfl",
-  "game": "Browns v Texans",
-  "url": "https://scorebuzz.net/american-football/nfl/browns-vs-texans-401873056/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-15T19:16:11+00:00"
- },
  "401873060": {
   "slot": "10",
   "league": "nfl",
@@ -1785,26 +1765,6 @@
   "status": "ok",
   "reason": "ok (contrast 42)",
   "at": "2026-11-15T19:16:14+00:00"
- },
- "401873057": {
-  "slot": "11",
-  "league": "nfl",
-  "game": "Titans v Jaguars",
-  "url": "https://scorebuzz.net/american-football/nfl/titans-vs-jaguars-401873057/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-15T19:16:17+00:00"
- },
- "401873059": {
-  "slot": "12",
-  "league": "nfl",
-  "game": "Colts v Dolphins",
-  "url": "https://scorebuzz.net/american-football/nfl/colts-vs-dolphins-401873059/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-15T19:16:20+00:00"
  },
  "401873055": {
   "slot": "13",
@@ -1816,16 +1776,6 @@
   "reason": "ok (contrast 44)",
   "at": "2026-11-15T19:16:23+00:00"
  },
- "401873054": {
-  "slot": "14",
-  "league": "nfl",
-  "game": "Jets v Bills",
-  "url": "https://scorebuzz.net/american-football/nfl/jets-vs-bills-401873054/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-15T19:16:26+00:00"
- },
  "401909985": {
   "slot": "8",
   "league": "nba",
@@ -1835,5 +1785,65 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-15T19:24:34+00:00"
+ },
+ "401861178": {
+  "slot": "3",
+  "league": "unl",
+  "game": "Croatia v Czechia",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/croatia-vs-czechia-401861178/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-15T19:46:45+00:00"
+ },
+ "401873058": {
+  "slot": "5",
+  "league": "nfl",
+  "game": "Falcons v Chiefs",
+  "url": "https://scorebuzz.net/american-football/nfl/falcons-vs-chiefs-401873058/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 45)",
+  "at": "2026-11-15T19:46:49+00:00"
+ },
+ "401873056": {
+  "slot": "9",
+  "league": "nfl",
+  "game": "Browns v Texans",
+  "url": "https://scorebuzz.net/american-football/nfl/browns-vs-texans-401873056/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-15T19:46:52+00:00"
+ },
+ "401873057": {
+  "slot": "11",
+  "league": "nfl",
+  "game": "Titans v Jaguars",
+  "url": "https://scorebuzz.net/american-football/nfl/titans-vs-jaguars-401873057/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-15T19:46:55+00:00"
+ },
+ "401873059": {
+  "slot": "12",
+  "league": "nfl",
+  "game": "Colts v Dolphins",
+  "url": "https://scorebuzz.net/american-football/nfl/colts-vs-dolphins-401873059/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-15T19:46:58+00:00"
+ },
+ "401873054": {
+  "slot": "14",
+  "league": "nfl",
+  "game": "Jets v Bills",
+  "url": "https://scorebuzz.net/american-football/nfl/jets-vs-bills-401873054/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-15T19:47:01+00:00"
  }
 }
