@@ -1876,16 +1876,6 @@
   "reason": "ok (contrast 36)",
   "at": "2026-11-15T21:39:22+00:00"
  },
- "401909988": {
-  "slot": "8",
-  "league": "nba",
-  "game": "Jazz v Spurs",
-  "url": "https://scorebuzz.net/basketball/nba/jazz-vs-spurs-401909988/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-15T22:45:18+00:00"
- },
  "401909986": {
   "slot": "2",
   "league": "nba",
@@ -1945,5 +1935,25 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-15T23:11:44+00:00"
+ },
+ "401909988": {
+  "slot": "8",
+  "league": "nba",
+  "game": "Jazz v Spurs",
+  "url": "https://scorebuzz.net/basketball/nba/jazz-vs-spurs-401909988/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-15T23:19:51+00:00"
+ },
+ "401909990": {
+  "slot": "9",
+  "league": "nba",
+  "game": "Raptors v Knicks",
+  "url": "https://scorebuzz.net/basketball/nba/raptors-vs-knicks-401909990/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-15T23:19:54+00:00"
  }
 }
