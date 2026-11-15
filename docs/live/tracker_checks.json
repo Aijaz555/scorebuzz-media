@@ -1656,16 +1656,6 @@
   "reason": "ok (contrast 80)",
   "at": "2026-11-15T02:41:02+00:00"
  },
- "401892718": {
-  "slot": "15",
-  "league": "nhl",
-  "game": "Mammoth v Sharks",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/mammoth-vs-sharks-401892718/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-15T02:41:05+00:00"
- },
  "401892717": {
   "slot": "8",
   "league": "nhl",
@@ -1705,5 +1695,25 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-15T03:03:42+00:00"
+ },
+ "401892719": {
+  "slot": "3",
+  "league": "nhl",
+  "game": "Ducks v Islanders",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/ducks-vs-islanders-401892719/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 85)",
+  "at": "2026-11-15T03:11:48+00:00"
+ },
+ "401892718": {
+  "slot": "15",
+  "league": "nhl",
+  "game": "Mammoth v Sharks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/mammoth-vs-sharks-401892718/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-15T03:11:51+00:00"
  }
 }
