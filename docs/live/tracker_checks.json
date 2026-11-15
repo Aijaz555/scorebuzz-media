@@ -1736,76 +1736,6 @@
   "reason": "ok (contrast 42)",
   "at": "2026-11-15T17:09:42+00:00"
  },
- "401873058": {
-  "slot": "5",
-  "league": "nfl",
-  "game": "Falcons v Chiefs",
-  "url": "https://scorebuzz.net/american-football/nfl/falcons-vs-chiefs-401873058/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-15T18:09:16+00:00"
- },
- "401873056": {
-  "slot": "9",
-  "league": "nfl",
-  "game": "Browns v Texans",
-  "url": "https://scorebuzz.net/american-football/nfl/browns-vs-texans-401873056/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-15T18:09:19+00:00"
- },
- "401873060": {
-  "slot": "10",
-  "league": "nfl",
-  "game": "Packers v Vikings",
-  "url": "https://scorebuzz.net/american-football/nfl/packers-vs-vikings-401873060/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-15T18:09:22+00:00"
- },
- "401873057": {
-  "slot": "11",
-  "league": "nfl",
-  "game": "Titans v Jaguars",
-  "url": "https://scorebuzz.net/american-football/nfl/titans-vs-jaguars-401873057/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-15T18:09:25+00:00"
- },
- "401873059": {
-  "slot": "12",
-  "league": "nfl",
-  "game": "Colts v Dolphins",
-  "url": "https://scorebuzz.net/american-football/nfl/colts-vs-dolphins-401873059/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-15T18:09:28+00:00"
- },
- "401873055": {
-  "slot": "13",
-  "league": "nfl",
-  "game": "Saints v Panthers",
-  "url": "https://scorebuzz.net/american-football/nfl/saints-vs-panthers-401873055/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 52)",
-  "at": "2026-11-15T18:09:31+00:00"
- },
- "401873054": {
-  "slot": "14",
-  "league": "nfl",
-  "game": "Jets v Bills",
-  "url": "https://scorebuzz.net/american-football/nfl/jets-vs-bills-401873054/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-15T18:09:33+00:00"
- },
  "401861173": {
   "slot": "4",
   "league": "unl",
@@ -1835,5 +1765,75 @@
   "status": "ok",
   "reason": "ok (contrast 36)",
   "at": "2026-11-15T18:17:47+00:00"
+ },
+ "401873058": {
+  "slot": "5",
+  "league": "nfl",
+  "game": "Falcons v Chiefs",
+  "url": "https://scorebuzz.net/american-football/nfl/falcons-vs-chiefs-401873058/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-15T18:42:01+00:00"
+ },
+ "401873056": {
+  "slot": "9",
+  "league": "nfl",
+  "game": "Browns v Texans",
+  "url": "https://scorebuzz.net/american-football/nfl/browns-vs-texans-401873056/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 39)",
+  "at": "2026-11-15T18:42:04+00:00"
+ },
+ "401873060": {
+  "slot": "10",
+  "league": "nfl",
+  "game": "Packers v Vikings",
+  "url": "https://scorebuzz.net/american-football/nfl/packers-vs-vikings-401873060/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-15T18:42:06+00:00"
+ },
+ "401873057": {
+  "slot": "11",
+  "league": "nfl",
+  "game": "Titans v Jaguars",
+  "url": "https://scorebuzz.net/american-football/nfl/titans-vs-jaguars-401873057/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-15T18:42:09+00:00"
+ },
+ "401873059": {
+  "slot": "12",
+  "league": "nfl",
+  "game": "Colts v Dolphins",
+  "url": "https://scorebuzz.net/american-football/nfl/colts-vs-dolphins-401873059/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-15T18:42:12+00:00"
+ },
+ "401873055": {
+  "slot": "13",
+  "league": "nfl",
+  "game": "Saints v Panthers",
+  "url": "https://scorebuzz.net/american-football/nfl/saints-vs-panthers-401873055/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-15T18:42:15+00:00"
+ },
+ "401873054": {
+  "slot": "14",
+  "league": "nfl",
+  "game": "Jets v Bills",
+  "url": "https://scorebuzz.net/american-football/nfl/jets-vs-bills-401873054/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-15T18:42:18+00:00"
  }
 }
