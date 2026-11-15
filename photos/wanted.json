@@ -6,34 +6,16 @@
   "country": "USA"
  },
  {
-  "slug": "kroger-field",
-  "name": "Kroger Field",
-  "city": "Lexington",
-  "country": "USA"
- },
- {
-  "slug": "kinnick-stadium",
-  "name": "Kinnick Stadium",
-  "city": "Iowa City",
-  "country": "USA"
- },
- {
   "slug": "casino-del-sol-stadium",
   "name": "Casino Del Sol Stadium",
   "city": "Tucson",
   "country": "USA"
  },
  {
-  "slug": "gainbridge-fieldhouse",
-  "name": "Gainbridge Fieldhouse",
-  "city": "Indianapolis",
-  "country": ""
- },
- {
-  "slug": "frost-bank-center",
-  "name": "Frost Bank Center",
-  "city": "San Antonio",
-  "country": ""
+  "slug": "kroger-field",
+  "name": "Kroger Field",
+  "city": "Lexington",
+  "country": "USA"
  },
  {
   "slug": "xfinity-mobile-arena",
@@ -54,6 +36,12 @@
   "country": ""
  },
  {
+  "slug": "frost-bank-center",
+  "name": "Frost Bank Center",
+  "city": "San Antonio",
+  "country": ""
+ },
+ {
   "slug": "benchmark-international-arena",
   "name": "Benchmark International Arena",
   "city": "Tampa",
@@ -64,5 +52,23 @@
   "name": "PPG Paints Arena",
   "city": "Pittsburgh",
   "country": "USA"
+ },
+ {
+  "slug": "grand-casino-arena",
+  "name": "Grand Casino Arena",
+  "city": "Saint Paul",
+  "country": "USA"
+ },
+ {
+  "slug": "estadio-municipal-de-braga",
+  "name": "Estádio Municipal de Braga",
+  "city": "Braga",
+  "country": "Portugal"
+ },
+ {
+  "slug": "ullevaal-stadion",
+  "name": "Ullevaal Stadion",
+  "city": "Oslo",
+  "country": "Norway"
  }
 ]
