@@ -258,7 +258,8 @@ starting 30 min before kick-off and stopped when the game is over.
   (ESPN `soccer/uefa.nations`, scorebuzz.net `football/uefa-nations-league`) added to feed.js, app.html, center.html, soccer.html,
   match3d.html, overlay.html, live_thumbs.js, check_trackers.py and settings `streams.leagues` (after epl), `centerLeagues`,
   `soccerLeagues`. Centre layout checked with Cyprus-Montenegro (live) and Spain-England (pre-game). Remove `unl` from
-  `streams.leagues` after the window to stop it.
+  `streams.leagues` after the window to stop it. Auto-off (owner said yes, 15 Nov 2026): `"streams": {"until": {"unl": "2026-11-17T23:59:00Z"}}`
+  — plan_streams.js drops a league from new assignments after its `until` time (games already on a slot still finish and stop normally).
 
 ## NBA broadcast layout (on air 9 Nov 2026)
 NBA slots now show docs/live/nba.html (games bar, timeouts/bonus, big score + quarters, scorebuzz.net live tracker beside the
@@ -414,6 +415,13 @@ map before/after the game (or `&trk=own` / `sbtrk: 0`). Preview: `center.html?le
   3 commentary lines below. Demo: `center.html?league=epl&event=401879240` (Man Utd 4-4 Villa) or add `&replay=1&from=60` to run it
   as a live game from the commentary. On air 13 Nov 2026 (owner): all football leagues are in settings `centerLeagues` (reload 31);
   remove them to send football back to soccer.html. Bottom bar = only this league's games (owner 13 Nov 2026, league uid filter).
+
+## NFL on the centre layout (owner, 15 Nov 2026: NFL tracker in the centre like NBA / NHL)
+center.html now handles `nfl`: scorebuzz.net field tracker (`american-football/nfl/<home>-vs-<away>-<id>/`, same 'live action' crop as us.html)
+in the centre while in play; strip with timeouts (3 dots each), down & distance with the ball carrier's logo, RED ZONE lights; Q1–Q4/OT chips;
+game leaders = top passer, 2 rushers, 2 receivers (season leaders before kick-off); plays from ESPN drives; built-in gridiron (team-colour end
+zones) before/after the game or with `sbtrk: 0`. On air via settings `centerLeagues` (+ `nfl`, reload 32); remove `nfl` there to send NFL back to us.html.
+Preview: `center.html?league=nfl&event=401873053` (Lions-Patriots, Munich).
 
 ## UFC fight nights (owner's request, 14 Nov 2026)
 A slot with `"league": "ufc"` in settings.slots shows docs/live/ufc.html (app.html hand-off; `"ufcPage": false` turns it off):

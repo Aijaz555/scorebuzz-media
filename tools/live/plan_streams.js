@@ -36,6 +36,9 @@ const cfg = {
 };
 const now = process.env.PLAN_NOW ? Date.parse(process.env.PLAN_NOW) : Date.now();
 const MIN = 60000;
+// "streams": {"until": {"<league>": "<ISO time>"}} stops new assignments for a league after that time
+// (e.g. a tournament window: UEFA Nations League until the end of the November 2026 break)
+if (cfg.until) cfg.leagues = cfg.leagues.filter((l) => !cfg.until[l] || now < Date.parse(cfg.until[l]));
 const iso = (t) => new Date(t).toISOString().replace(/\.\d+Z$/, 'Z');
 const favs = (settings.teams || []).map((t) => String(t).toUpperCase());
 

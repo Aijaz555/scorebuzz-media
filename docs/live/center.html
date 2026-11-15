@@ -3,7 +3,7 @@
 <!-- DEMO (owner's request, 12 Nov 2026): NBA + NHL layout with the live tracker in the centre of the screen:
      team sidebars (logo, record, big score, period chips, 5 game leaders with headshots), clock on top, sport strip,
      big tracker, 3 latest plays underneath, today's games + SUBSCRIBE along the bottom. Same colours/fonts as nba.html / us.html.
-     Not on air: nothing links here. Usage: center.html?league=nba|nhl&event=<ESPN id>  or  center.html?slot=N
+     Not on air: nothing links here. Usage: center.html?league=nba|nhl|nfl|<football league>&event=<ESPN id>  or  center.html?slot=N
      Tracker: the scorebuzz.net live tracker while the game is in play; a built-in shot map before/after (or with &trk=own). -->
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -53,7 +53,7 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 .clock .p{font:700 28px 'Barlow Condensed',sans-serif;color:#fff;letter-spacing:3px;text-transform:uppercase;white-space:nowrap;max-width:1000px;overflow:hidden;text-overflow:ellipsis}
 .tob{margin-top:10px;height:52px;border-radius:12px 12px 0 0;background:#dfe4ef;color:#141b2c;display:grid;grid-template-columns:150px 230px 1fr 230px 150px;align-items:center;text-align:center;font:800 32px 'Barlow Condensed',sans-serif;letter-spacing:1px}
 .tob .bn{opacity:.25}.tob .bn.on{opacity:1;color:var(--red)}
-.tob .tl{white-space:nowrap;letter-spacing:6px;font-size:34px}.tob .sv{font-size:30px}.tob .sv b{font-size:36px}
+.tob .tl{white-space:nowrap;letter-spacing:6px;font-size:34px}.tob .tl.dd{letter-spacing:1px;display:flex;align-items:center;justify-content:center;gap:10px;overflow:hidden}.tob .tl.dd img{height:38px}.tob.nfl{grid-template-columns:140px 170px 1fr 170px 140px}.tob.nfl .bn{white-space:nowrap;font-size:24px}.tob.nfl .tl.dd{font-size:32px}.tob .sv{font-size:30px}.tob .sv b{font-size:36px}
 .dots{display:flex;gap:7px;justify-content:center;background:#141b2c;border-radius:20px;padding:7px 12px;margin:0 14px}
 .dots i{width:16px;height:16px;border-radius:50%;background:#f2c14e}.dots i.u{background:transparent;border:2px solid #f2c14e88}
 .trk{position:relative;height:566px;background:#070A14;overflow:hidden;border:4px solid #c8102e;border-top:none;border-radius:0 0 16px 16px}
@@ -114,10 +114,10 @@ const darkish = (c, alt) => (lum(c) > 0.7 ? (lum(alt) > 0.7 ? '#1d2a4a' : alt) :
 const vivid = (c) => { if (lum(c) >= 0.38) return c; const n = parseInt(c.slice(1), 16), k = 0.45, m = (v) => Math.round(v + (255 - v) * k); return '#' + [n >> 16, (n >> 8) & 255, n & 255].map((v) => m(v).toString(16).padStart(2, '0')).join(''); }; // marker colour that still shows on the dark tracker
 // football (owner 13 Nov 2026): the same centre layout for the leagues in settings "soccerLeagues" that are also in "centerLeagues"
 const FPATH = { epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', ucl: 'uefa.champions', uel: 'uefa.europa', unl: 'uefa.nations' };
-const SPORT = { nba: 'basketball/nba', nhl: 'hockey/nhl' }; for (const [k, v] of Object.entries(FPATH)) SPORT[k] = 'soccer/' + v;
-const SITE = { nba: 'basketball/nba', nhl: 'ice-hockey/nhl', epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', unl: 'football/uefa-nations-league', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls' }; // scorebuzz.net match pages
+const SPORT = { nba: 'basketball/nba', nhl: 'hockey/nhl', nfl: 'football/nfl' }; for (const [k, v] of Object.entries(FPATH)) SPORT[k] = 'soccer/' + v;
+const SITE = { nba: 'basketball/nba', nhl: 'ice-hockey/nhl', nfl: 'american-football/nfl', epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', unl: 'football/uefa-nations-league', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls' }; // scorebuzz.net match pages
 const CROP = { top: 65, vh: 517, x: 15, vw: 970 }; // scorebuzz.net 'live action' tracker (see nba.html / us.html)
-const NHL = () => league === 'nhl', FOOT = () => !!FPATH[league];
+const NHL = () => league === 'nhl', NFL = () => league === 'nfl', FOOT = () => !!FPATH[league];
 const TZ = () => (league === 'mls' ? ['America/New_York', 'ET'] : ['Europe/London', 'UK']); // football kick-off times: UK (ET for MLS)
 let PHOTOS = {}; // scorebuzz.net line-up photos (docs/live/player_photos.json, filled by tools/live/check_trackers.py)
 const ORD = (n) => n + (['th', 'st', 'nd', 'rd'][(n % 100 >> 3 ^ 1 && n % 10) || 0] || 'th');
@@ -157,6 +157,15 @@ function plays(s) {
   return (s.plays || []).map((p) => { const per = p.period?.number || 1;
     return { clk: `${NHL() ? left(p.clock?.displayValue, per) : p.clock?.displayValue || ''} - ${perName(per)}`, label: NHL() ? (p.scoringPlay ? 'GOAL' : NHLL[p.type?.text] || (p.type?.text || '').toUpperCase()) : nbaLabel(p),
       text: p.text || '', team: String(p.team?.id || ''), home: p.homeScore, away: p.awayScore, scoring: !!p.scoringPlay }; });
+}
+// NFL (owner 15 Nov 2026): plays come from ESPN's drives, ordered by quarter then game clock (as us.html)
+function nflPlays(s) {
+  const ds = [...(s.drives?.previous || []), ...(s.drives?.current ? [s.drives.current] : [])], seen = new Set(), out = [];
+  for (const d of ds) for (const p of d.plays || []) { if (seen.has(p.id)) continue; seen.add(p.id);
+    out.push({ clk: `${p.clock?.displayValue || ''} - ${perName(p.period?.number || 1)}`, per: p.period?.number || 1, label: (p.scoringPlay ? (p.scoringType?.displayName || p.type?.text) : p.type?.text || '').toUpperCase(), text: (p.text || '').trim(),
+      team: String(p.start?.team?.id || d.team?.id || ''), home: p.homeScore, away: p.awayScore, scoring: !!p.scoringPlay }); }
+  const secs = (c) => { const m = /(\d+):(\d+)/.exec(c || ''); return m ? +m[1] * 60 + +m[2] : 0; };
+  return out.map((p, i) => ({ ...p, i })).sort((a, b) => a.per - b.per || secs(b.clk) - secs(a.clk) || a.i - b.i);
 }
 // football: the latest commentary lines (team by name; running score from the "Goal! X 1, Y 0." lines)
 const FLAB = (t) => (/own-goal/.test(t) ? 'OWN GOAL' : /goal|penalty---scored/.test(t) ? 'GOAL!' : /yellow/.test(t) ? 'YELLOW CARD' : /red-card/.test(t) ? 'RED CARD' : /substitution/.test(t) ? 'SUBSTITUTION' : /corner/.test(t) ? 'CORNER' : /offside/.test(t) ? 'OFFSIDE' : /foul/.test(t) ? 'FOUL' : /save/.test(t) ? 'SAVE' : /attempt|shot/.test(t) ? 'CHANCE' : /halftime|end/.test(t) ? 'HALF-TIME' : /kickoff|start/.test(t) ? 'KICK-OFF' : '');
@@ -198,6 +207,19 @@ function ownTracker(s, H, A, overlay) {
       <line x1="${ox + W / 2}" y1="${oy}" x2="${ox + W / 2}" y2="${oy + Hh}" ${L}/><circle cx="${ox + W / 2}" cy="${oy + Hh / 2}" r="${9.15 * sx}" ${L}/><circle cx="${ox + W / 2}" cy="${oy + Hh / 2}" r="5" fill="#ffffffaa"/>
       ${box(1, 16.5, 40.3)}${box(0, 16.5, 40.3)}${box(1, 5.5, 18.3)}${box(0, 5.5, 18.3)}
       <circle cx="${ox + 11 * sx}" cy="${oy + Hh / 2}" r="4" fill="#ffffffaa"/><circle cx="${ox + W - 11 * sx}" cy="${oy + Hh / 2}" r="4" fill="#ffffffaa"/>
+      <text x="${ox + W / 2}" y="${oy + Hh / 2 + 11}" text-anchor="middle" font-size="30" font-weight="900" fill="#ffffff2e" font-family="Inter" letter-spacing="3">SCOREBUZZ</text>`;
+    return `<svg width="${BW}" height="${BH}" viewBox="0 0 ${BW} ${BH}" ${overlay ? 'opacity=".45"' : ''}>${svg}</svg>${overlay || ''}`;
+  }
+  if (NFL()) { // gridiron: end zones in team colours, yard lines every 5, numbers every 10
+    const W = 1000, Hh = 470, ox = (BW - W) / 2, oy = 46, sx = W / 120, L = 'stroke="#ffffff66" stroke-width="3"';
+    const lines = Array.from({ length: 21 }, (_, i) => { const x = ox + (10 + i * 5) * sx; return `<line x1="${x}" y1="${oy}" x2="${x}" y2="${oy + Hh}" ${L} ${i % 2 ? 'opacity=".5"' : ''}/>`; }).join('');
+    const nums = [10, 20, 30, 40, 50, 40, 30, 20, 10].map((n, i) => `<text x="${ox + (20 + i * 10) * sx}" y="${oy + Hh - 34}" text-anchor="middle" font-size="34" font-weight="800" fill="#ffffff55" font-family="Inter">${n}</text>`).join('');
+    svg = `<defs><linearGradient id="turf" x1="0" x2="1"><stop offset="0" stop-color="${hc}" stop-opacity=".2"/><stop offset=".5" stop-color="#123a2a"/><stop offset="1" stop-color="${ac}" stop-opacity=".2"/></linearGradient></defs>
+      <rect x="${ox}" y="${oy}" width="${W}" height="${Hh}" rx="6" fill="url(#turf)" stroke="#ffffffaa" stroke-width="4"/>
+      <rect x="${ox}" y="${oy}" width="${10 * sx}" height="${Hh}" fill="${hc}" opacity=".55"/><rect x="${ox + 110 * sx}" y="${oy}" width="${10 * sx}" height="${Hh}" fill="${ac}" opacity=".55"/>
+      <text transform="translate(${ox + 5 * sx + 12},${oy + Hh / 2}) rotate(-90)" text-anchor="middle" font-size="40" font-weight="900" fill="#ffffffcc" font-family="Inter" letter-spacing="6">${esc(H.abbr)}</text>
+      <text transform="translate(${ox + 115 * sx - 12},${oy + Hh / 2}) rotate(90)" text-anchor="middle" font-size="40" font-weight="900" fill="#ffffffcc" font-family="Inter" letter-spacing="6">${esc(A.abbr)}</text>
+      ${lines}${nums}
       <text x="${ox + W / 2}" y="${oy + Hh / 2 + 11}" text-anchor="middle" font-size="30" font-weight="900" fill="#ffffff2e" font-family="Inter" letter-spacing="3">SCOREBUZZ</text>`;
     return `<svg width="${BW}" height="${BH}" viewBox="0 0 ${BW} ${BH}" ${overlay ? 'opacity=".45"' : ''}>${svg}</svg>${overlay || ''}`;
   }
@@ -261,7 +283,7 @@ function render(s, sb) {
   const c = s.header.competitions[0], st = c.status;
   const H = team(c.competitors.find((x) => x.homeAway === 'home')), A = team(c.competitors.find((x) => x.homeAway === 'away'));
   document.documentElement.style.setProperty('--hc', H.color); document.documentElement.style.setProperty('--ac', A.color);
-  const sbEv = (sb?.events || []).find((e) => e.id === c.id);
+  const sbEv = (sb?.events || []).find((e) => e.id === c.id), sit = sbEv?.competitions?.[0]?.situation || s.situation || {};
   { // ESPN's scoreboard and summary feeds refresh at different moments: use whichever is further on (keeps the board level with the tracker)
     const b = sbEv?.status, secs = (v) => { const m = /^(\d+):(\d+)/.exec(v || ''); return m ? +m[1] * 60 + +m[2] : parseFloat(v) || 0; };
     if (b && st.type?.state === 'in' && b.type?.state === 'in' && ((b.period || 0) > (st.period || 0) || ((b.period || 0) === (st.period || 0) && (FOOT() ? secs(b.displayClock) > secs(st.displayClock) : secs(b.displayClock) < secs(st.displayClock))))) { st.period = b.period; st.displayClock = b.displayClock; st.type = b.type; }
@@ -270,7 +292,7 @@ function render(s, sb) {
   const per = st.period || 1, n = st.type?.name || '', pre = st.type?.state === 'pre', fin = st.type?.completed, live = st.type?.state === 'in';
   const et = (d) => (FOOT() ? new Date(d).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: TZ()[0] }) + ' ' + TZ()[1] : new Date(d).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET');
   const B = box(s), hasBox = Object.keys(B).length > 0 && !pre, all = s.plays || [], lastP = all[all.length - 1];
-  const start = FOOT() ? 'Kick-off' : NHL() ? 'Puck drop' : 'Tip-off';
+  const start = FOOT() || NFL() ? 'Kick-off' : NHL() ? 'Puck drop' : 'Tip-off';
   const half = (p) => (p === 1 ? '1st half' : p === 2 ? '2nd half' : p <= 4 ? 'Extra time' : 'Penalties');
   const clk = FOOT() ? (pre ? et(c.date) : fin ? 'FT' : /HALFTIME/.test(n) ? 'HT' : (st.displayClock || st.type?.shortDetail || '')) : pre ? et(c.date) : fin ? 'FINAL' : /HALFTIME/.test(n) ? 'HALFTIME' : /END/.test(n) ? `END ${perName(per).toUpperCase()}` : st.displayClock;
   const lead = H.score === A.score ? 'Tied' : `${H.score > A.score ? H.abbr : A.abbr} lead by ${Math.abs(H.score - A.score)}`;
@@ -286,6 +308,10 @@ function render(s, sb) {
     strip = `<div class="tob" style="position:relative">${cd(H.id)}<div class="sv">CORNERS <b>${v(H.id, 'wonCorners')}</b></div>
       <div class="poss">${hasT ? `<b>${Math.round(ph)}%</b><div class="bar"><i style="width:${ph / (ph + pa) * 100}%;background:var(--hc)"></i><i style="flex:1;background:var(--ac)"></i></div><b>${Math.round(pa)}%</b>` : '<span class="lb">POSSESSION</span>'}</div>
       <div class="sv"><b>${v(A.id, 'wonCorners')}</b> CORNERS</div>${cd(A.id)}</div>`;
+  } else if (NFL()) { // timeouts, down & distance (with the team that has the ball), red zone
+    const pos = String(sit.possession || ''), rz = sit.isRedZone, ht = sit.homeTimeouts ?? (pre ? 3 : null), at = sit.awayTimeouts ?? (pre ? 3 : null);
+    const dd = live && sit.downDistanceText ? `${pos ? `<img src="${pos === H.id ? H.logoD : A.logoD}">` : ''}${esc(sit.downDistanceText)}` : fin ? 'FINAL' : /HALFTIME/.test(n) ? 'HALFTIME' : 'TIMEOUTS';
+    strip = `<div class="tob nfl"><div class="bn ${rz && pos === H.id ? 'on' : ''}">RED ZONE</div>${ht == null ? '<div></div>' : dots(ht, 3)}<div class="tl dd">${dd}</div>${at == null ? '<div></div>' : dots(at, 3)}<div class="bn ${rz && pos === A.id ? 'on' : ''}">RED ZONE</div></div>`;
   } else if (NHL()) {
     const sog = (id) => (hasBox ? tstat(s, id, 'shotsTotal') || '0' : '–'), pp = (id) => (hasBox ? `${tstat(s, id, 'powerPlayGoals') || 0}/${tstat(s, id, 'powerPlayOpportunities') || 0}` : '–');
     strip = `<div class="tob"><div class="sv">PP <b>${pp(H.id)}</b></div><div class="sv">${esc(H.abbr)} <b>${sog(H.id)}</b></div><div class="tl">SHOTS ON GOAL</div><div class="sv"><b>${sog(A.id)}</b> ${esc(A.abbr)}</div><div class="sv">PP <b>${pp(A.id)}</b></div></div>`;
@@ -307,7 +333,9 @@ function render(s, sb) {
     if (FOOT() && !hasBox) return footCards(s, c, T, pre);
     if (!hasBox) { // before the game: season leaders
       const L = (s.leaders || []).find((x) => String(x.team?.id) === T.id)?.leaders || [];
-      return L.slice(0, 5).map((x) => { const a = x.leaders?.[0]; return a ? pc({ head: a.athlete?.headshot?.href || '', name: a.athlete?.shortName, jersey: a.athlete?.jersey, s: `${a.displayValue} ${(x.abbreviation || x.shortDisplayName || '').toUpperCase()}`.slice(0, 26), d: `Season · ${x.displayName || ''}` }) : ''; }).join('');
+      return L.slice(0, 5).map((x) => { const a = x.leaders?.[0]; if (a && NFL()) { const parts = String(a.displayValue || '').split(/,\s+/), main = parts.filter((v) => /YDS|TD/.test(v) && !/INT/.test(v));
+        return pc({ head: a.athlete?.headshot?.href || '', name: a.athlete?.shortName, jersey: a.athlete?.jersey, s: (main.length ? main.slice(0, 2).join(' · ') : `${a.displayValue} ${(x.shortDisplayName || '').toUpperCase()}`).slice(0, 22), d: `Season · ${(main.length && parts.filter((v) => !main.includes(v)).join(', ')) || x.displayName || ''}`.slice(0, 40) }); }
+      return a ? pc({ head: a.athlete?.headshot?.href || '', name: a.athlete?.shortName, jersey: a.athlete?.jersey, s: `${a.displayValue} ${(x.abbreviation || x.shortDisplayName || '').toUpperCase()}`.slice(0, 26), d: `Season · ${x.displayName || ''}` }) : ''; }).join('');
     }
     const G = B[T.id] || {};
     if (FOOT()) return footCards(s, c, T, pre);
@@ -317,6 +345,12 @@ function render(s, sb) {
       const shots = (p) => (p.st('SOG') !== '-' ? p.st('SOG') : p.st('S'));
       return sk.map((p) => pc({ ...p, s: `${p.n('G')} G · ${p.n('A')} A · ${p.n('G') + p.n('A')} PTS`, d: `${shots(p)} shots · ${p.st('TOI')} TOI` })).join('')
         + (g ? pc({ ...g, s: `${g.st('SV')} SV · ${g.st('SA')} SA · ${g.st('SV%')}`, d: `Goaltender · ${g.st('TOI')} TOI` }, 'g') : '');
+    }
+    if (NFL()) { // top passer, 2 rushers, 2 receivers
+      const top = (k, m) => [...(G[k] || [])].sort((a, b) => b.n('YDS') - a.n('YDS')).slice(0, m);
+      return [...top('passing', 1).map((p) => pc({ ...p, s: `${p.n('YDS')} YDS · ${p.n('TD')} TD`, d: `${p.st('C/ATT')} passing · ${p.n('INT')} INT${p.st('RTG') !== '-' ? ' · RTG ' + p.st('RTG') : ''}` })),
+        ...top('rushing', 2).map((p) => pc({ ...p, s: `${p.n('YDS')} YDS · ${p.n('TD')} TD`, d: `${p.n('CAR')} car · ${p.st('AVG')} avg · long ${p.st('LONG')}` })),
+        ...top('receiving', 2).map((p) => pc({ ...p, s: `${p.n('YDS')} YDS · ${p.n('TD')} TD`, d: `${p.n('REC')} rec · ${p.st('TGTS')} tgt · long ${p.st('LONG')}` }))].join('');
     }
     return [...(G.all || [])].sort((a, b) => b.n('PTS') - a.n('PTS') || b.n('MIN') - a.n('MIN')).slice(0, 5)
       .map((p) => pc({ ...p, s: `${p.n('PTS')} PTS · ${p.n('REB')} REB · ${p.n('AST')} AST`, d: `${String(p.st('FG')).replace('-', '/')} FG · ${String(p.st('3PT')).replace('-', '/')} 3PT · ${p.st('MIN')} MIN` })).join('');
@@ -330,7 +364,7 @@ function render(s, sb) {
     <div class="gl">${FOOT() ? footTitle(s, T, pre) : hasBox ? 'GAME LEADERS' : 'SEASON LEADERS'}<span>${FOOT() ? esc(T.abbr) : NHL() && hasBox ? 'SKATERS / GOALIE' : esc(T.abbr)}</span></div>
     <div class="cards">${cards(T)}</div></div>`;
   // ---- plays ----
-  const P = (FOOT() ? footPlays(s, H, A) : plays(s)).slice(-3).reverse(), logo = (id) => (id === H.id ? H.logoD : id === A.id ? A.logoD : '');
+  const P = (FOOT() ? footPlays(s, H, A) : NFL() ? nflPlays(s) : plays(s)).slice(-3).reverse(), logo = (id) => (id === H.id ? H.logoD : id === A.id ? A.logoD : '');
   const mins = Math.round((new Date(c.date) - Date.now()) / 60000);
   const dayOf = (d) => new Date(d).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: FOOT() ? TZ()[0] : 'America/New_York' });
   const venue = [s.gameInfo?.venue?.fullName, s.gameInfo?.venue?.address?.city].filter(Boolean).join(', ');
@@ -348,7 +382,8 @@ function render(s, sb) {
       const who = (k.participants?.[0]?.athlete?.displayName || '').split(' ').slice(-1)[0] || '?'; m.set(who, [...(m.get(who) || []), k.clock?.displayValue + (/penalty/.test(t) ? ' P' : t === 'own-goal' ? ' OG' : '')]); }
     return [...m].map(([w, ts]) => `${w} ${ts.join(', ')}`).join(' · '); };
   const ovF = FOOT() && !pre && !trkUrlPre ? `<div class="ov"><div class="k">${fin ? 'FULL TIME' : esc(clk)} · ${esc(H.abbr)} ${H.score}-${A.score} ${esc(A.abbr)}</div>${[[H, scorers(H.id)], [A, scorers(A.id)]].filter((x) => x[1]).map(([T, x]) => `<div class="gs">⚽ ${esc(T.nick)}: ${esc(x)}</div>`).join('')}</div>` : '';
-  const ov = !pre && FOOT() ? ovF : pre ? `<div class="ov"><div class="k">${esc(start.toUpperCase())} ${esc(et(c.date))}${mins >= 1440 ? ` · ${dayOf(c.date).toUpperCase()}` : mins > 0 ? ` · IN ${mins >= 60 ? Math.floor(mins / 60) + 'H ' : ''}${mins % 60} MIN` : ''}</div><div class="v">${FOOT() ? `${esc(H.nick)} v ${esc(A.nick)}` : `${esc(A.nick)} @ ${esc(H.nick)}`}${venue ? ' · ' + esc(venue) : ''}</div></div>` : '';
+  const ovN = NFL() && !pre ? `<div class="ov"><div class="k">${fin ? 'FINAL' : esc(clk)} · ${esc(A.abbr)} ${A.score}-${H.score} ${esc(H.abbr)}</div>${live && sit.downDistanceText ? `<div class="v">${esc(sit.downDistanceText)}</div>` : ''}</div>` : '';
+  const ov = !pre && FOOT() ? ovF : !pre && NFL() ? ovN : pre ? `<div class="ov"><div class="k">${esc(start.toUpperCase())} ${esc(et(c.date))}${mins >= 1440 ? ` · ${dayOf(c.date).toUpperCase()}` : mins > 0 ? ` · IN ${mins >= 60 ? Math.floor(mins / 60) + 'H ' : ''}${mins % 60} MIN` : ''}</div><div class="v">${FOOT() ? `${esc(H.nick)} v ${esc(A.nick)}` : `${esc(A.nick)} @ ${esc(H.nick)}`}${venue ? ' · ' + esc(venue) : ''}</div></div>` : '';
   // ---- games along the bottom: this game first, then live, then the rest ----
   // owner 13 Nov 2026: the bottom bar shows only this league's games (ESPN's league scoreboard; the league uid check keeps any stray event out)
   const lu = sb?.leagues?.[0]?.uid || '';
