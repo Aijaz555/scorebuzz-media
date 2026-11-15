@@ -1625,5 +1625,25 @@
   "status": "ok",
   "reason": "ok (contrast 80)",
   "at": "2026-11-15T00:16:58+00:00"
+ },
+ "401892711": {
+  "slot": "6",
+  "league": "nhl",
+  "game": "Canadiens v Avalanche",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/canadiens-vs-avalanche-401892711/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 83)",
+  "at": "2026-11-15T00:25:03+00:00"
+ },
+ "401892713": {
+  "slot": "9",
+  "league": "nhl",
+  "game": "Penguins v Senators",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/penguins-vs-senators-401892713/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-15T00:25:06+00:00"
  }
 }
