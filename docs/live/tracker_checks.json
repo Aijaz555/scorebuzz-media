@@ -1776,16 +1776,6 @@
   "reason": "ok (contrast 44)",
   "at": "2026-11-15T19:16:23+00:00"
  },
- "401909985": {
-  "slot": "8",
-  "league": "nba",
-  "game": "76ers v Pacers",
-  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-pacers-401909985/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-15T19:24:34+00:00"
- },
  "401861178": {
   "slot": "3",
   "league": "unl",
@@ -1845,5 +1835,45 @@
   "status": "ok",
   "reason": "ok (contrast 43)",
   "at": "2026-11-15T19:47:01+00:00"
+ },
+ "401861175": {
+  "slot": "7",
+  "league": "unl",
+  "game": "Spain v England",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/spain-vs-england-401861175/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-15T19:55:09+00:00"
+ },
+ "401909985": {
+  "slot": "8",
+  "league": "nba",
+  "game": "76ers v Pacers",
+  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-pacers-401909985/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-15T19:55:13+00:00"
+ },
+ "401861176": {
+  "slot": "10",
+  "league": "unl",
+  "game": "Belgium v Italy",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/belgium-vs-italy-401861176/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 35)",
+  "at": "2026-11-15T19:55:15+00:00"
+ },
+ "401861177": {
+  "slot": "13",
+  "league": "unl",
+  "game": "France v T\u00fcrkiye",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/france-vs-t-rkiye-401861177/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 35)",
+  "at": "2026-11-15T19:55:19+00:00"
  }
 }
