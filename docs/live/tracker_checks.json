@@ -1696,16 +1696,6 @@
   "reason": "ok (contrast 65)",
   "at": "2026-11-15T03:43:57+00:00"
  },
- "401892719": {
-  "slot": "3",
-  "league": "nhl",
-  "game": "Ducks v Islanders",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/ducks-vs-islanders-401892719/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 87)",
-  "at": "2026-11-15T04:46:45+00:00"
- },
  "401892718": {
   "slot": "15",
   "league": "nhl",
@@ -1725,5 +1715,15 @@
   "status": "ok",
   "reason": "ok (contrast 82)",
   "at": "2026-11-15T04:54:54+00:00"
+ },
+ "401892719": {
+  "slot": "3",
+  "league": "nhl",
+  "game": "Ducks v Islanders",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/ducks-vs-islanders-401892719/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 83)",
+  "at": "2026-11-15T05:19:05+00:00"
  }
 }
