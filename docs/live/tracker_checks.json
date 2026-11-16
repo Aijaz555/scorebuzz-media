@@ -2016,26 +2016,6 @@
   "reason": "ok (contrast 65)",
   "at": "2026-11-16T03:58:00+00:00"
  },
- "401892724": {
-  "slot": "4",
-  "league": "nhl",
-  "game": "Golden Knights v Canucks",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-canucks-401892724/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-16T03:58:04+00:00"
- },
- "401892725": {
-  "slot": "6",
-  "league": "nhl",
-  "game": "Sharks v Predators",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/sharks-vs-predators-401892725/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 87)",
-  "at": "2026-11-16T03:58:07+00:00"
- },
  "401873064": {
   "slot": "11",
   "league": "nfl",
@@ -2045,5 +2025,25 @@
   "status": "ok",
   "reason": "ok (contrast 43)",
   "at": "2026-11-16T03:58:10+00:00"
+ },
+ "401892724": {
+  "slot": "4",
+  "league": "nhl",
+  "game": "Golden Knights v Canucks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-canucks-401892724/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-16T04:30:26+00:00"
+ },
+ "401892725": {
+  "slot": "6",
+  "league": "nhl",
+  "game": "Sharks v Predators",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/sharks-vs-predators-401892725/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-16T04:30:29+00:00"
  }
 }
