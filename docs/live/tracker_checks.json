@@ -2104,7 +2104,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 37)",
-  "at": "2026-11-16T19:53:33+00:00"
+  "at": "2026-11-16T20:29:06+00:00"
  },
  "401861179": {
   "slot": "2",
@@ -2113,8 +2113,8 @@
   "url": "https://scorebuzz.net/football/uefa-nations-league/gibraltar-vs-malta-401861179/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 39)",
-  "at": "2026-11-16T19:53:36+00:00"
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-16T20:29:09+00:00"
  },
  "401861188": {
   "slot": "6",
@@ -2124,7 +2124,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 36)",
-  "at": "2026-11-16T19:53:39+00:00"
+  "at": "2026-11-16T20:29:11+00:00"
  },
  "401861187": {
   "slot": "7",
@@ -2133,8 +2133,8 @@
   "url": "https://scorebuzz.net/football/uefa-nations-league/north-macedonia-vs-slovenia-401861187/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 37)",
-  "at": "2026-11-16T19:53:42+00:00"
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-16T20:29:14+00:00"
  },
  "401861186": {
   "slot": "8",
@@ -2144,6 +2144,6 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 36)",
-  "at": "2026-11-16T19:53:45+00:00"
+  "at": "2026-11-16T20:29:17+00:00"
  }
 }
