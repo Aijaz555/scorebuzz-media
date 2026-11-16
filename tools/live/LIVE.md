@@ -422,6 +422,11 @@ map before/after the game (or `&trk=own` / `sbtrk: 0`). Preview: `center.html?le
   as a live game from the commentary. On air 13 Nov 2026 (owner): all football leagues are in settings `centerLeagues` (reload 31);
   remove them to send football back to soccer.html. Bottom bar = only this league's games (owner 13 Nov 2026, league uid filter).
 
+- Score pill on the football tracker (owner, 16 Nov 2026: live score inside the tracker like on the website): the site draws its
+  "clock · GER 0 - 0 NED · LIVE" pill at the very top of the pitch canvas, which sits under the site's 65 px sticky header in the
+  cropped iframe. center.html now draws the same pill over the tracker (`trackerChip`, ESPN data every 2 s, score flashes lime 8 s
+  after a goal). Reload 33.
+
 ## NFL on the centre layout (owner, 15 Nov 2026: NFL tracker in the centre like NBA / NHL)
 center.html now handles `nfl`: scorebuzz.net field tracker (`american-football/nfl/<home>-vs-<away>-<id>/`, same 'live action' crop as us.html)
 in the centre while in play; strip with timeouts (3 dots each), down & distance with the ball carrier's logo, RED ZONE lights; Q1–Q4/OT chips;
