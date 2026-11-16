@@ -27,29 +27,34 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "unl",
-   "event": "401861185",
-   "note": "Germany vs Netherlands, 2026-11-16T19:45:00Z"
+   "league": "nba",
+   "event": "401909994",
+   "note": "Boston Celtics vs Orlando Magic, 2026-11-17T00:00:00Z"
   },
   "2": {
-   "league": "unl",
-   "event": "401861179",
-   "note": "Gibraltar vs Malta, 2026-11-16T19:45:00Z"
+   "league": "nba",
+   "event": "401909997",
+   "note": "Brooklyn Nets vs Philadelphia 76ers, 2026-11-17T00:30:00Z"
+  },
+  "3": {
+   "league": "nba",
+   "event": "401909995",
+   "note": "Cleveland Cavaliers vs Chicago Bulls, 2026-11-17T00:00:00Z"
+  },
+  "4": {
+   "league": "nba",
+   "event": "401909996",
+   "note": "Washington Wizards vs Memphis Grizzlies, 2026-11-17T00:00:00Z"
+  },
+  "5": {
+   "league": "nba",
+   "event": "401909998",
+   "note": "Miami Heat vs Houston Rockets, 2026-11-17T00:30:00Z"
   },
   "6": {
-   "league": "unl",
-   "event": "401861188",
-   "note": "Greece vs Serbia, 2026-11-16T19:45:00Z"
-  },
-  "7": {
-   "league": "unl",
-   "event": "401861187",
-   "note": "North Macedonia vs Slovenia, 2026-11-16T19:45:00Z"
-  },
-  "8": {
-   "league": "unl",
-   "event": "401861186",
-   "note": "Switzerland vs Scotland, 2026-11-16T19:45:00Z"
+   "league": "nhl",
+   "event": "401892726",
+   "note": "New York Rangers vs Montreal Canadiens, 2026-11-17T00:30:00Z"
   }
  },
  "fit": {
