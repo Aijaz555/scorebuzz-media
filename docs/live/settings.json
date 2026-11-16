@@ -28,13 +28,13 @@
  "slots": {
   "1": {
    "league": "unl",
-   "event": "401861180",
-   "note": "Faroe Islands vs Moldova, 2026-11-16T15:00:00Z"
+   "event": "401861185",
+   "note": "Germany vs Netherlands, 2026-11-16T19:45:00Z"
   },
   "2": {
    "league": "unl",
-   "event": "401861181",
-   "note": "Kazakhstan vs Slovakia, 2026-11-16T15:00:00Z"
+   "event": "401861179",
+   "note": "Gibraltar vs Malta, 2026-11-16T19:45:00Z"
   },
   "3": {
    "league": "unl",
@@ -50,6 +50,21 @@
    "league": "unl",
    "event": "401861184",
    "note": "Lithuania vs Liechtenstein, 2026-11-16T17:00:00Z"
+  },
+  "6": {
+   "league": "unl",
+   "event": "401861188",
+   "note": "Greece vs Serbia, 2026-11-16T19:45:00Z"
+  },
+  "7": {
+   "league": "unl",
+   "event": "401861187",
+   "note": "North Macedonia vs Slovenia, 2026-11-16T19:45:00Z"
+  },
+  "8": {
+   "league": "unl",
+   "event": "401861186",
+   "note": "Switzerland vs Scotland, 2026-11-16T19:45:00Z"
   }
  },
  "fit": {
