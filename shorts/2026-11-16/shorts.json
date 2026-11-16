@@ -1,0 +1,1084 @@
+[
+ {
+  "id": "s01-spain-england",
+  "sport": "football",
+  "bed": "anthem",
+  "venue": "Riyadh Air Metropolitano",
+  "fb": "2026-11-16T15:40:00",
+  "yt": "2026-11-16T15:45:00",
+  "title": "Spain vs England 2–3: Spain's 43-Game Unbeaten Run Is Over 😱 #shorts",
+  "description": "England beat Spain 3–2 at the Riyadh Air Metropolitano in Madrid on 15 November 2026 to end Spain's 43-game unbeaten run and win UEFA Nations League Group A3. Harry Kane scored a penalty, Ezri Konsa headed in and Ben White made it 3–0 before Elliot Anderson was sent off. Mikel Oyarzabal (penalty) and Nico Williams pulled two back for Spain, and James Trafford made six saves as Thomas Tuchel's 10 men held on.\n\nSpain vs England final score and Nations League results: https://scorebuzz.net\n\n#ESPENG #England #Spain #NationsLeague",
+  "tags": [
+   "spain vs england",
+   "england vs spain",
+   "spain 2-3 england",
+   "harry kane",
+   "ben white",
+   "ezri konsa",
+   "elliot anderson red card",
+   "spain unbeaten run",
+   "nations league",
+   "thomas tuchel",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Nations League · Madrid",
+    "title": "43 games unbeaten. Over.",
+    "sub": "England did it in Spain"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Full time · Madrid",
+    "home": "Spain",
+    "homeAbbr": "ESP",
+    "homeScore": 2,
+    "away": "England",
+    "awayAbbr": "ENG",
+    "awayScore": 3,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+    "note": "England top Group A3"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "How it happened",
+    "title": "3–0 up, then 10 men",
+    "rows": [
+     [
+      "45'",
+      "Kane (pen)",
+      "0–1"
+     ],
+     [
+      "53'",
+      "Konsa",
+      "0–2"
+     ],
+     [
+      "57'",
+      "White",
+      "0–3"
+     ],
+     [
+      "63'",
+      "Anderson red card",
+      ""
+     ],
+     [
+      "65'",
+      "Oyarzabal (pen)",
+      "1–3"
+     ],
+     [
+      "75'",
+      "Nico Williams",
+      "2–3"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Spain's unbeaten run",
+    "value": "43",
+    "unit": "games unbeaten",
+    "text": "Started March 2024. Ended by England."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "England's best win under Tuchel?",
+    "sub": "Follow ScoreBuzz for football scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Spain v England",
+   "big": "2–3",
+   "hook": "Spain *beaten* at home",
+   "sticker": "UPSET",
+   "teams": [
+    "ESP",
+    "ENG"
+   ],
+   "emoji": "😱"
+  },
+  "fbtext": "😱 Spain hadn't lost in 43 games. Then England came to Madrid.\n\nKane, Konsa and White made it 3–0, Elliot Anderson was sent off, and 10-man England held on to win 3–2 and top the group.\n\nEngland's best win under Tuchel? 👇\n\n#ESPENG #England #Reels",
+  "time": "2026-11-16T15:45:00"
+ },
+ {
+  "id": "s02-nations-sun-board",
+  "sport": "football",
+  "bed": "hype",
+  "fb": "2026-11-16T12:52:00",
+  "title": "Nations League Results: Spain 2–3 England & More ⚽ #shorts",
+  "description": "Every UEFA Nations League result from Sunday 15 November 2026: England won 3–2 in Spain, Belgium beat Italy 4–1, France beat Türkiye 2–1 and Croatia edged Czechia 2–1. Finland beat San Marino 7–2, Montenegro won 4–1 in Cyprus, Albania won 2–0 in Belarus and Latvia drew 0–0 with Armenia.\n\nNations League scores and tables: https://scorebuzz.net\n\n#NationsLeague #England #Belgium",
+  "tags": [
+   "nations league results",
+   "spain vs england",
+   "belgium vs italy",
+   "france vs turkiye",
+   "croatia vs czechia",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 17.4,
+    "kicker": "Nations League · Sunday",
+    "title": "Every score",
+    "badge": "Full time",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "Spain",
+      "homeAbbr": "ESP",
+      "hs": 2,
+      "away": "England",
+      "awayAbbr": "ENG",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png"
+     },
+     {
+      "home": "Belgium",
+      "homeAbbr": "BEL",
+      "hs": 4,
+      "away": "Italy",
+      "awayAbbr": "ITA",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ita.png"
+     },
+     {
+      "home": "France",
+      "homeAbbr": "FRA",
+      "hs": 2,
+      "away": "Türkiye",
+      "awayAbbr": "TUR",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png"
+     },
+     {
+      "home": "Croatia",
+      "homeAbbr": "CRO",
+      "hs": 2,
+      "away": "Czechia",
+      "awayAbbr": "CZE",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png"
+     },
+     {
+      "home": "Finland",
+      "homeAbbr": "FIN",
+      "hs": 7,
+      "away": "San Marino",
+      "awayAbbr": "SMR",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fin.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/smr.png"
+     },
+     {
+      "home": "Cyprus",
+      "homeAbbr": "CYP",
+      "hs": 1,
+      "away": "Montenegro",
+      "awayAbbr": "MNE",
+      "as": 4,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cyp.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mtg.png"
+     },
+     {
+      "home": "Belarus",
+      "homeAbbr": "BLR",
+      "hs": 0,
+      "away": "Albania",
+      "awayAbbr": "ALB",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/blr.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alb.png"
+     },
+     {
+      "home": "Latvia",
+      "homeAbbr": "LVA",
+      "hs": 0,
+      "away": "Armenia",
+      "awayAbbr": "ARM",
+      "as": 0,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/lva.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fifa.armenia.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Result of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Nations League · Sunday",
+   "big": "4–1",
+   "hook": "Italy *knocked out*",
+   "sticker": "RESULTS",
+   "teams": [
+    "BEL",
+    "ITA"
+   ],
+   "emoji": "😳"
+  },
+  "fbtext": "⚽ Every Nations League score from Sunday.\n\nEngland won in Madrid, Belgium put four past Italy, France and Croatia both won 2–1, and Finland scored seven.\n\nResult of the night? 👇\n\n#NationsLeague #England #Reels",
+  "time": "2026-11-16T12:52:00"
+ },
+ {
+  "id": "s03-nfl-week10-board",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "fb": "2026-11-16T21:16:00",
+  "yt": "2026-11-16T20:15:00",
+  "title": "NFL Week 10 Scores: Chiefs, Bills, Bengals All Win 🏈 #shorts",
+  "description": "NFL Week 10 scores from Sunday 15 November 2026: the Detroit Lions beat the New England Patriots 35–10 in Munich, the Kansas City Chiefs won 35–13 in Atlanta, the Minnesota Vikings beat the Green Bay Packers 30–10 and the Buffalo Bills beat the New York Jets 31–12. The Jacksonville Jaguars won 40–23 in Tennessee, the Cleveland Browns edged the Houston Texans 27–24, the Carolina Panthers won 20–17 in New Orleans, the Seattle Seahawks won 21–13 in Las Vegas, the Los Angeles Rams won 34–6 in Arizona, the San Francisco 49ers beat the Dallas Cowboys 46–40 and the Cincinnati Bengals beat the Pittsburgh Steelers 38–18 on Sunday Night Football.\n\nNFL scores today: https://scorebuzz.net\n\n#NFL #NFLShorts #ChiefsKingdom #BillsMafia",
+  "tags": [
+   "nfl week 10 scores",
+   "nfl scores today",
+   "chiefs vs falcons",
+   "vikings vs packers",
+   "bills vs jets",
+   "49ers vs cowboys",
+   "bengals vs steelers",
+   "lions vs patriots",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 21.0,
+    "kicker": "NFL · Week 10 · Sunday",
+    "title": "Every score",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.7,
+    "rows": [
+     {
+      "home": "Lions",
+      "homeAbbr": "DET",
+      "hs": 35,
+      "away": "Patriots",
+      "awayAbbr": "NE",
+      "as": 10,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png"
+     },
+     {
+      "home": "Falcons",
+      "homeAbbr": "ATL",
+      "hs": 13,
+      "away": "Chiefs",
+      "awayAbbr": "KC",
+      "as": 35,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png"
+     },
+     {
+      "home": "Packers",
+      "homeAbbr": "GB",
+      "hs": 10,
+      "away": "Vikings",
+      "awayAbbr": "MIN",
+      "as": 30,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png"
+     },
+     {
+      "home": "Jets",
+      "homeAbbr": "NYJ",
+      "hs": 12,
+      "away": "Bills",
+      "awayAbbr": "BUF",
+      "as": 31,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png"
+     },
+     {
+      "home": "Titans",
+      "homeAbbr": "TEN",
+      "hs": 23,
+      "away": "Jaguars",
+      "awayAbbr": "JAX",
+      "as": 40,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png"
+     },
+     {
+      "home": "Browns",
+      "homeAbbr": "CLE",
+      "hs": 27,
+      "away": "Texans",
+      "awayAbbr": "HOU",
+      "as": 24,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png"
+     },
+     {
+      "home": "Saints",
+      "homeAbbr": "NO",
+      "hs": 17,
+      "away": "Panthers",
+      "awayAbbr": "CAR",
+      "as": 20,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/car.png"
+     },
+     {
+      "home": "Raiders",
+      "homeAbbr": "LV",
+      "hs": 13,
+      "away": "Seahawks",
+      "awayAbbr": "SEA",
+      "as": 21,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png"
+     },
+     {
+      "home": "Cardinals",
+      "homeAbbr": "ARI",
+      "hs": 6,
+      "away": "Rams",
+      "awayAbbr": "LAR",
+      "as": 34,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png"
+     },
+     {
+      "home": "Cowboys",
+      "homeAbbr": "DAL",
+      "hs": 40,
+      "away": "49ers",
+      "awayAbbr": "SF",
+      "as": 46,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png"
+     },
+     {
+      "home": "Bengals",
+      "homeAbbr": "CIN",
+      "hs": 38,
+      "away": "Steelers",
+      "awayAbbr": "PIT",
+      "as": 18,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Most impressive win?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Week 10 · Sunday",
+   "big": "11",
+   "hook": "Games, *every* score",
+   "sticker": "FINAL",
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 Every NFL score from Week 10 Sunday.\n\nThe Chiefs and Bills rolled, Cincinnati beat Pittsburgh on SNF, and the 49ers won a 46–40 shootout in Dallas.\n\nMost impressive win? 👇\n\n#NFL #NFLWeek10 #Reels",
+  "time": "2026-11-16T20:15:00"
+ },
+ {
+  "id": "s04-49ers-cowboys",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "venue": "AT&T Stadium",
+  "fb": "2026-11-17T01:00:00",
+  "title": "49ers vs Cowboys 46–40: McCaffrey's 74 and 66-Yard TDs 🔥 #shorts",
+  "description": "The San Francisco 49ers beat the Dallas Cowboys 46–40 at AT&T Stadium on 15 November 2026. Brock Purdy threw for 389 yards and three touchdowns, including scores of 74 and 66 yards to Christian McCaffrey, and Deebo Samuel ran 70 yards for a touchdown. Dak Prescott threw five touchdown passes and George Pickens caught three. San Francisco are 8–1.\n\n49ers vs Cowboys final score and NFL scores: https://scorebuzz.net\n\n#49ers #McCaffrey #Cowboys #NFL",
+  "tags": [
+   "49ers vs cowboys",
+   "cowboys vs 49ers",
+   "christian mccaffrey",
+   "brock purdy",
+   "dak prescott",
+   "george pickens",
+   "deebo samuel",
+   "nfl week 10",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NFL · Week 10 · Arlington",
+    "title": "86 points in Dallas",
+    "sub": "And McCaffrey ran away with it"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final · AT&T Stadium",
+    "home": "Cowboys",
+    "homeAbbr": "DAL",
+    "homeScore": 40,
+    "away": "49ers",
+    "awayAbbr": "SF",
+    "awayScore": 46,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+    "note": "San Francisco move to 8–1"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "The numbers",
+    "title": "A shootout",
+    "rows": [
+     [
+      "Purdy",
+      "389 yds",
+      "3 TD"
+     ],
+     [
+      "McCaffrey",
+      "161 rec yds",
+      "TDs of 74 & 66"
+     ],
+     [
+      "Samuel",
+      "70-yd run",
+      "TD"
+     ],
+     [
+      "Prescott",
+      "343 yds",
+      "5 TD"
+     ],
+     [
+      "Pickens",
+      "145 rec yds",
+      "3 TD"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "The clincher",
+    "title": "66 yards on third down",
+    "sub": "Dallas had cut a 19-point lead to six"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Are the 49ers the NFC favourite?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "49ers v Cowboys",
+   "big": "46–40",
+   "hook": "*Shootout* in Dallas",
+   "sticker": "FINAL",
+   "teams": [
+    "SF",
+    "DAL"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 49ers 46, Cowboys 40.\n\nChristian McCaffrey caught touchdowns of 74 and 66 yards and Brock Purdy threw for 389. Dak Prescott threw five TDs in the loss.\n\nAre the 49ers the team to beat in the NFC? 👇\n\n#49ers #McCaffrey #Reels",
+  "time": "2026-11-17T01:00:00"
+ },
+ {
+  "id": "s05-trae-young-511",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "drama",
+  "venue": "Capital One Arena",
+  "fb": "2026-11-17T09:24:00",
+  "yt": "2026-11-17T07:50:00",
+  "title": "Trae Young Held Scoreless for the First Time Ever | Rockets vs Wizards 😳 #shorts",
+  "description": "Trae Young was held scoreless for the first time in his NBA career as the Houston Rockets beat the Washington Wizards 147–119 at Capital One Arena on 15 November 2026. Young missed all five of his shots, after scoring in all 511 of his previous career games with the Atlanta Hawks and Washington. Amen Thompson scored 26 and Kevin Durant 25 for Houston, who set a season high for points.\n\nRockets vs Wizards final score and NBA scores: https://scorebuzz.net\n\n#TraeYoung #Wizards #Rockets #NBA",
+  "tags": [
+   "trae young",
+   "trae young scoreless",
+   "rockets vs wizards",
+   "wizards vs rockets",
+   "amen thompson",
+   "kevin durant",
+   "washington wizards",
+   "houston rockets",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Washington",
+    "title": "511 straight games. Then zero.",
+    "sub": "Trae Young's streak is over"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Trae Young · career",
+    "value": 511,
+    "unit": "games in a row with a point",
+    "text": "Every game with the Hawks and Wizards, until Sunday"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final · Capital One Arena",
+    "home": "Wizards",
+    "homeAbbr": "WSH",
+    "homeScore": 119,
+    "away": "Rockets",
+    "awayAbbr": "HOU",
+    "awayScore": 147,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+    "note": "Young: 0 points, 0 for 5"
+   },
+   {
+    "type": "list",
+    "dur": 3.8,
+    "label": "Houston",
+    "title": "Season-high 147",
+    "rows": [
+     [
+      "Amen Thompson",
+      "26 pts",
+      ""
+     ],
+     [
+      "Kevin Durant",
+      "25 pts",
+      ""
+     ],
+     [
+      "Alperen Sengun",
+      "19 pts",
+      "8 ast"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Off night, or a bigger problem?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Trae Young",
+   "big": "0",
+   "hook": "First time *ever*",
+   "sticker": "STREAK OVER",
+   "emoji": "😳"
+  },
+  "fbtext": "😳 Trae Young had scored in all 511 games of his NBA career. On Sunday he scored zero.\n\nHe missed all five shots as Houston beat Washington 147–119.\n\nOff night, or a bigger problem? 👇\n\n#TraeYoung #Wizards #Reels",
+  "time": "2026-11-17T07:50:00"
+ },
+ {
+  "id": "s06-mcdavid-gretzky-40",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "anthem",
+  "fb": "2026-11-17T05:40:00",
+  "yt": "2026-11-17T01:25:00",
+  "title": "McDavid Ties Wayne Gretzky's Record | Oilers vs Flyers 5–2 🔥 #NHL #shorts",
+  "description": "Connor McDavid tied Wayne Gretzky's 1984–85 mark for the fastest player to 40 assists in an NHL season, both in their 22nd game, as the Edmonton Oilers beat the Philadelphia Flyers 5–2 on 15 November 2026. McDavid had a goal and two assists, Leon Draisaitl scored twice and became the first player to 20 goals this season, and McDavid leads the NHL with 53 points (12 goals, 41 assists). Edmonton have won five straight.\n\nOilers vs Flyers final score and NHL scores: https://scorebuzz.net\n\n#McDavid #Oilers #Gretzky #NHL",
+  "tags": [
+   "connor mcdavid",
+   "mcdavid gretzky record",
+   "oilers vs flyers",
+   "flyers vs oilers",
+   "leon draisaitl",
+   "edmonton oilers",
+   "wayne gretzky",
+   "nhl points leaders",
+   "nhl scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · Philadelphia",
+    "title": "McDavid just matched Gretzky",
+    "sub": "A record from 1984–85"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Fastest to 40 assists in a season",
+    "value": 22,
+    "unit": "games",
+    "text": "McDavid ties Gretzky (1984–85)"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Final · Philadelphia",
+    "home": "Flyers",
+    "homeAbbr": "PHI",
+    "homeScore": 2,
+    "away": "Oilers",
+    "awayAbbr": "EDM",
+    "awayScore": 5,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/phi.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "note": "Draisaitl 2 goals · McDavid 1G 2A"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "McDavid · as of 15 Nov",
+    "value": 53,
+    "unit": "points",
+    "text": "12 goals, 41 assists · NHL lead"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can anyone stop McDavid?",
+    "sub": "Follow ScoreBuzz for NHL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL record",
+   "big": "40",
+   "hook": "Assists in *22* games",
+   "sticker": "RECORD",
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Connor McDavid just matched Wayne Gretzky.\n\n40 assists in 22 games, tying The Great One's 1984–85 record for the fastest to 40. He had a goal and two assists in a 5–2 win in Philadelphia.\n\nCan anyone stop him? 👇\n\n#McDavid #Gretzky #Reels",
+  "time": "2026-11-17T01:25:00"
+ },
+ {
+  "id": "s07-mnf-chargers-ravens",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "drama",
+  "venue": "M&T Bank Stadium",
+  "fb": "2026-11-17T03:48:00",
+  "yt": "2026-11-17T03:35:00",
+  "title": "Chargers vs Ravens Prediction: 0–8 vs Four Straight Losses 🏈 #MNF #shorts",
+  "description": "The Los Angeles Chargers (0–8) visit the Baltimore Ravens (4–5) on Monday Night Football at M&T Bank Stadium on 16 November 2026, 8:15pm ET on ESPN. It's a reunion for Chargers coach Jim Harbaugh and Ravens coach Jesse Minter, his defensive coordinator at Michigan's 2023 national title team and with the Chargers. Baltimore have lost four straight and are set to start their fourth quarterback in four weeks. This is a preview, not a result: drop your prediction.\n\nChargers vs Ravens live score: https://scorebuzz.net\n\n#MNF #Chargers #Ravens #NFL",
+  "tags": [
+   "chargers vs ravens",
+   "ravens vs chargers",
+   "monday night football",
+   "chargers vs ravens prediction",
+   "jim harbaugh",
+   "jesse minter",
+   "los angeles chargers",
+   "baltimore ravens",
+   "nfl week 10",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Monday Night Football · 8:15pm ET",
+    "title": "0–8 vs four straight losses",
+    "sub": "Somebody has to win"
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "Tonight in Baltimore",
+    "title": "Chargers at Ravens",
+    "rows": [
+     [
+      "Chargers",
+      "0–8",
+      "0–4 on the road"
+     ],
+     [
+      "Ravens",
+      "4–5",
+      "lost 4 straight"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "The storyline",
+    "title": "Harbaugh v Minter",
+    "sub": "Minter was Harbaugh's defensive coordinator at Michigan and the Chargers"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Baltimore",
+    "title": "A 4th QB in 4 weeks",
+    "sub": "The Ravens are set to start another new quarterback"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Your score prediction?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Monday Night Football",
+   "big": "0–8",
+   "hook": "First win *tonight*?",
+   "sticker": "TONIGHT",
+   "teams": [
+    "LAC",
+    "BAL"
+   ],
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 Monday Night Football: the 0–8 Chargers at the Ravens, who have lost four straight. 8:15pm ET on ESPN.\n\nJim Harbaugh faces Jesse Minter, his old defensive coordinator.\n\nYour score prediction? 👇\n\n#MNF #Chargers #Reels",
+  "time": "2026-11-17T03:35:00"
+ },
+ {
+  "id": "s08-ev-nhl-goal-streaks",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "anthem",
+  "evergreen": true,
+  "venue": "Honda Center",
+  "fb": "2026-11-17T07:32:00",
+  "yt": "2026-11-17T05:35:00",
+  "title": "Cutter Gauthier's 9-Game Goal Streak vs the NHL Record 🤯 #NHL #shorts",
+  "description": "Cutter Gauthier of the Anaheim Ducks has scored in nine straight games (as of 15 November 2026), the NHL's longest goal streak in 29 years, with 16 goals during the run. The NHL record is 16 straight games by Punch Broadbent of the Ottawa Senators in 1921–22, and the Ducks record is Teemu Selanne's 11 in 1997. Gauthier is only the fifth player under 23 to score in nine straight games, after Selanne, Wayne Gretzky, Mike Bossy and Babe Dye.\n\nDucks scores and NHL results: https://scorebuzz.net\n\n#CutterGauthier #Ducks #NHL #NHLRecords",
+  "tags": [
+   "cutter gauthier",
+   "cutter gauthier goal streak",
+   "nhl goal streak record",
+   "punch broadbent",
+   "teemu selanne",
+   "anaheim ducks",
+   "nhl records",
+   "ducks vs flames",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL records",
+    "title": "9 straight games with a goal",
+    "sub": "Cutter Gauthier's run is historic"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Gauthier during the streak",
+    "value": 16,
+    "unit": "goals",
+    "text": "Longest NHL goal streak in 29 years"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "How far from the record?",
+    "title": "Goal streaks",
+    "rows": [
+     [
+      "16",
+      "Punch Broadbent",
+      "1921–22 · record"
+     ],
+     [
+      "11",
+      "Teemu Selanne",
+      "1997 · Ducks record"
+     ],
+     [
+      "9",
+      "Cutter Gauthier",
+      "2026 · active"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "Under 23 · 9 straight games with a goal",
+    "title": "Only five players",
+    "rows": [
+     [
+      "Babe Dye",
+      "",
+      ""
+     ],
+     [
+      "Wayne Gretzky",
+      "",
+      ""
+     ],
+     [
+      "Mike Bossy",
+      "",
+      ""
+     ],
+     [
+      "Teemu Selanne",
+      "",
+      ""
+     ],
+     [
+      "Cutter Gauthier",
+      "",
+      "2026"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can he reach 16?",
+    "sub": "Follow ScoreBuzz for NHL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL records",
+   "big": "9",
+   "hook": "Straight games *scoring*",
+   "sticker": "STREAK",
+   "emoji": "🤯"
+  },
+  "fbtext": "🤯 Cutter Gauthier has scored in 9 straight games, the NHL's longest goal streak in 29 years.\n\nThe record is 16, set by Punch Broadbent in 1921–22. Only five players under 23 have ever done nine.\n\nCan Gauthier get to 16? 👇\n\n#CutterGauthier #Ducks #Reels",
+  "time": "2026-11-17T05:35:00"
+ },
+ {
+  "id": "s09-ev-nfl-7-td",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "anthem",
+  "evergreen": true,
+  "fb": "2026-11-16T23:08:00",
+  "yt": "2026-11-16T23:05:00",
+  "title": "Only 8 QBs Have Thrown 7 TD Passes in an NFL Game 🤯 #NFL #shorts",
+  "description": "The NFL record for touchdown passes in a game is seven, and only eight quarterbacks have done it (as of November 2026): Sid Luckman (Bears, 1943), Adrian Burk (Eagles, 1954), George Blanda (Oilers, 1961), Y. A. Tittle (Giants, 1962), Joe Kapp (Vikings, 1969), Peyton Manning (Broncos, 2013), Nick Foles (Eagles, 2013) and Drew Brees (Saints, 2015). In Week 10 of 2026, Patrick Mahomes and Dak Prescott each threw five.\n\nNFL scores and records: https://scorebuzz.net\n\n#NFL #NFLRecords #PeytonManning #NFLShorts",
+  "tags": [
+   "most touchdown passes in a game",
+   "nfl record touchdown passes",
+   "7 touchdown passes",
+   "peyton manning 7 touchdowns",
+   "drew brees 7 touchdowns",
+   "nick foles 7 touchdowns",
+   "patrick mahomes",
+   "dak prescott",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NFL records",
+    "title": "7 TD passes in one game",
+    "sub": "Only 8 QBs have ever done it"
+   },
+   {
+    "type": "list",
+    "dur": 4.8,
+    "label": "Seven TD passes · part 1",
+    "title": "The old school",
+    "rows": [
+     [
+      "1943",
+      "Sid Luckman",
+      "Bears"
+     ],
+     [
+      "1954",
+      "Adrian Burk",
+      "Eagles"
+     ],
+     [
+      "1961",
+      "George Blanda",
+      "Oilers"
+     ],
+     [
+      "1962",
+      "Y. A. Tittle",
+      "Giants"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 4.8,
+    "label": "Seven TD passes · part 2",
+    "title": "The modern era",
+    "rows": [
+     [
+      "1969",
+      "Joe Kapp",
+      "Vikings"
+     ],
+     [
+      "2013",
+      "Peyton Manning",
+      "Broncos"
+     ],
+     [
+      "2013",
+      "Nick Foles",
+      "Eagles"
+     ],
+     [
+      "2015",
+      "Drew Brees",
+      "Saints"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Week 10, 2026",
+    "value": 5,
+    "unit": "TD passes",
+    "text": "Mahomes and Dak Prescott both threw five on Sunday"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who throws 7 next?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL record",
+   "big": "7",
+   "hook": "TD passes in *one* game",
+   "sticker": "RECORD",
+   "emoji": "🤯"
+  },
+  "fbtext": "🤯 Only eight quarterbacks have thrown 7 touchdown passes in an NFL game.\n\nThe last was Drew Brees in 2015. Mahomes and Dak Prescott both threw five on Sunday.\n\nWho throws seven next? 👇\n\n#NFL #NFLRecords #Reels",
+  "time": "2026-11-16T23:05:00"
+ },
+ {
+  "id": "s10-ev-ger-ned-history",
+  "sport": "football",
+  "bed": "drama",
+  "evergreen": true,
+  "fb": "2026-11-16T18:28:00",
+  "yt": "2026-11-16T18:00:00",
+  "title": "Germany vs Netherlands: The Biggest Games in Their Rivalry ⚽ #shorts",
+  "description": "Germany vs Netherlands is one of football's great rivalries. West Germany beat the Netherlands 2–1 in the 1974 World Cup final in Munich, Marco van Basten's late goal won the Euro 1988 semi-final 2–1 for the Dutch in Hamburg, West Germany won 2–1 in the 1990 World Cup last 16 in Milan, the Netherlands won 3–1 at Euro 1992 and Germany won 2–1 at Euro 2012. The biggest win is West Germany's 7–0 in Cologne in 1959. They meet again in the Nations League in Berlin on 16 November 2026.\n\nGermany vs Netherlands live score: https://scorebuzz.net\n\n#GERNED #Germany #Netherlands #NationsLeague",
+  "tags": [
+   "germany vs netherlands",
+   "netherlands vs germany",
+   "germany netherlands rivalry",
+   "1974 world cup final",
+   "euro 1988 semi final",
+   "marco van basten",
+   "nations league",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Germany v Netherlands",
+    "title": "Football's fiercest rivalry?",
+    "sub": "The big tournament games"
+   },
+   {
+    "type": "list",
+    "dur": 5.6,
+    "label": "World Cup & Euros",
+    "title": "The classics",
+    "rows": [
+     [
+      "1974",
+      "W. Germany 2–1",
+      "WC final"
+     ],
+     [
+      "1988",
+      "Netherlands 2–1",
+      "Euro semi"
+     ],
+     [
+      "1990",
+      "W. Germany 2–1",
+      "WC last 16"
+     ],
+     [
+      "1992",
+      "Netherlands 3–1",
+      "Euro group"
+     ],
+     [
+      "2012",
+      "Germany 2–1",
+      "Euro group"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Euro 1988",
+    "title": "Van Basten, late",
+    "sub": "His goal won the semi-final in Hamburg"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Biggest win · Cologne, 1959",
+    "value": "7–0",
+    "unit": "",
+    "text": "West Germany 7, Netherlands 0"
+   },
+   {
+    "type": "text",
+    "dur": 2.8,
+    "label": "Last meeting · Sept 2026",
+    "title": "1–1 in Amsterdam",
+    "sub": "Tonight: Berlin, 19:45 GMT"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins tonight?",
+    "sub": "Follow ScoreBuzz for football scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Germany v Netherlands",
+   "big": "1974",
+   "hook": "The *rivalry* games",
+   "sticker": "HISTORY",
+   "teams": [
+    "GER",
+    "NED"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Germany v Netherlands: 1974 World Cup final, Van Basten in 1988, Milan 1990.\n\nThey meet again tonight in Berlin, and a Nations League quarter-final place is at stake.\n\nWhat's the greatest game in this rivalry? 👇\n\n#GERNED #Germany #Reels",
+  "time": "2026-11-16T18:00:00"
+ }
+]
