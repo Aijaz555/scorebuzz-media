@@ -2073,8 +2073,8 @@
   "url": "https://scorebuzz.net/football/uefa-nations-league/estonia-vs-bulgaria-401861183/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 35)",
-  "at": "2026-11-16T17:41:37+00:00"
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-16T18:22:07+00:00"
  },
  "401861182": {
   "slot": "4",
@@ -2083,8 +2083,8 @@
   "url": "https://scorebuzz.net/football/uefa-nations-league/iceland-vs-luxembourg-401861182/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 35)",
-  "at": "2026-11-16T17:41:40+00:00"
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-16T18:22:10+00:00"
  },
  "401861184": {
   "slot": "5",
@@ -2093,7 +2093,7 @@
   "url": "https://scorebuzz.net/football/uefa-nations-league/lithuania-vs-liechtenstein-401861184/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 37)",
-  "at": "2026-11-16T17:41:43+00:00"
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-16T18:22:13+00:00"
  }
 }
