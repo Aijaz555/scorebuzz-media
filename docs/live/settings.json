@@ -55,6 +55,21 @@
    "league": "nhl",
    "event": "401892726",
    "note": "New York Rangers vs Montreal Canadiens, 2026-11-17T00:30:00Z"
+  },
+  "7": {
+   "league": "nba",
+   "event": "401910000",
+   "note": "New Orleans Pelicans vs Golden State Warriors, 2026-11-17T01:00:00Z"
+  },
+  "8": {
+   "league": "nfl",
+   "event": "401873065",
+   "note": "Baltimore Ravens vs Los Angeles Chargers, 2026-11-17T01:15:00Z"
+  },
+  "9": {
+   "league": "nba",
+   "event": "401909999",
+   "note": "Minnesota Timberwolves vs Portland Trail Blazers, 2026-11-17T01:00:00Z"
   }
  },
  "fit": {
