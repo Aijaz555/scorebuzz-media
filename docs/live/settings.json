@@ -25,7 +25,18 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "unl",
+   "event": "401861180",
+   "note": "Faroe Islands vs Moldova, 2026-11-16T15:00:00Z"
+  },
+  "2": {
+   "league": "unl",
+   "event": "401861181",
+   "note": "Kazakhstan vs Slovakia, 2026-11-16T15:00:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
