@@ -1916,26 +1916,6 @@
   "reason": "ok (contrast 65)",
   "at": "2026-11-15T23:36:14+00:00"
  },
- "401873063": {
-  "slot": "1",
-  "league": "nfl",
-  "game": "Cowboys v 49ers",
-  "url": "https://scorebuzz.net/american-football/nfl/cowboys-vs-49ers-401873063/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-15T23:44:21+00:00"
- },
- "401909989": {
-  "slot": "5",
-  "league": "nba",
-  "game": "Celtics v Mavericks",
-  "url": "https://scorebuzz.net/basketball/nba/celtics-vs-mavericks-401909989/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-15T23:44:25+00:00"
- },
  "401909988": {
   "slot": "8",
   "league": "nba",
@@ -1955,5 +1935,35 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-16T00:10:03+00:00"
+ },
+ "401873063": {
+  "slot": "1",
+  "league": "nfl",
+  "game": "Cowboys v 49ers",
+  "url": "https://scorebuzz.net/american-football/nfl/cowboys-vs-49ers-401873063/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-16T00:18:12+00:00"
+ },
+ "401909989": {
+  "slot": "5",
+  "league": "nba",
+  "game": "Celtics v Mavericks",
+  "url": "https://scorebuzz.net/basketball/nba/celtics-vs-mavericks-401909989/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-16T00:18:15+00:00"
+ },
+ "401909991": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Wizards v Rockets",
+  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-rockets-401909991/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-16T00:18:19+00:00"
  }
 }
