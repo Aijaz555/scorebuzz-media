@@ -1966,36 +1966,6 @@
   "reason": "ok (contrast 66)",
   "at": "2026-11-16T02:27:32+00:00"
  },
- "401909993": {
-  "slot": "2",
-  "league": "nba",
-  "game": "Kings v Thunder",
-  "url": "https://scorebuzz.net/basketball/nba/kings-vs-thunder-401909993/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-16T02:47:18+00:00"
- },
- "401892724": {
-  "slot": "4",
-  "league": "nhl",
-  "game": "Golden Knights v Canucks",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-canucks-401892724/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 82)",
-  "at": "2026-11-16T02:47:22+00:00"
- },
- "401892725": {
-  "slot": "6",
-  "league": "nhl",
-  "game": "Sharks v Predators",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/sharks-vs-predators-401892725/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-16T02:47:25+00:00"
- },
  "401892721": {
   "slot": "3",
   "league": "nhl",
@@ -2045,5 +2015,35 @@
   "status": "ok",
   "reason": "ok (contrast 82)",
   "at": "2026-11-16T03:03:47+00:00"
+ },
+ "401909993": {
+  "slot": "2",
+  "league": "nba",
+  "game": "Kings v Thunder",
+  "url": "https://scorebuzz.net/basketball/nba/kings-vs-thunder-401909993/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-16T03:19:56+00:00"
+ },
+ "401892724": {
+  "slot": "4",
+  "league": "nhl",
+  "game": "Golden Knights v Canucks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-canucks-401892724/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 80)",
+  "at": "2026-11-16T03:19:59+00:00"
+ },
+ "401892725": {
+  "slot": "6",
+  "league": "nhl",
+  "game": "Sharks v Predators",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/sharks-vs-predators-401892725/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-16T03:20:02+00:00"
  }
 }
