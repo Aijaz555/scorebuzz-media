@@ -204,6 +204,7 @@ starting 30 min before kick-off and stopped when the game is over.
     With 15 streams a full weekend could reach ~180–220 h/day, so a week with every game is close to the 680 h cap.
   - 9 Nov 2026 09:44 UTC usage check: 34.4 h of 680 this week (5%), last 7 days 346.8 h, level ok.
   - 10 Nov 2026 00:47 UTC usage check: 34.4 h of 680 this week (5%), last 7 days 346.8 h, level ok (finished broadcasts only; Mon night games still live).
+  - 16 Nov 2026 11:47 UTC usage check: 35.4 h of 680 this week (5%), last 7 days 392.7 h, level ok.
   - 11 Nov 2026 00:44 UTC usage check: 71.8 h of 680 this week (11%), last 7 days 384.2 h, level ok (finished broadcasts only; 8 streams live).
   - 12 Nov 2026 00:44 UTC usage check: 112.4 h of 680 this week (17%), last 7 days 422 h, level ok (finished broadcasts only; 9 streams live).
   - 12 Nov 2026 01:42 UTC: YouTube refused new broadcasts at 10 live ("User has too many live or scheduled broadcasts"): Oilers-Flyers (Slot 11, stuck PREPARING → stopped, restart refused), 02:00 schedules Rockets-Warriors (Slot 10) and Golden Knights-Mammoth (Slot 13) failed to start. Owner notified (likely stale Upcoming broadcasts in YouTube Studio).
