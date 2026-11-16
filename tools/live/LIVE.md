@@ -303,6 +303,7 @@ tracker (970x582 canvas at the top of #trkSlot; the site's 64.5 px sticky header
 and scale it to fill the tracker box edge to edge (cover). The box border and the NBA "Live tracker · scorebuzz.net" caption are gone,
 so no white line / page background shows around it. Reload 28.
 NFL / NCAAF (us.html) moved to the same new "live action" field tracker crop and cover scaling (owner 10 Nov 2026). Reload 29.
+Event caption removed (owner 16 Nov 2026: "Corner K Shaw (Malta)" text under the pitch on every game): soccer.html crop height 517 → 474, so the site's caption strip below the pitch is cut off. Reload 34.
 
 ## Stream check (added 9 Nov 2026)
 
