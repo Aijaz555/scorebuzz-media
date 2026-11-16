@@ -2095,5 +2095,55 @@
   "status": "ok",
   "reason": "ok (contrast 37)",
   "at": "2026-11-16T18:54:32+00:00"
+ },
+ "401861185": {
+  "slot": "1",
+  "league": "unl",
+  "game": "Germany v Netherlands",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/germany-vs-netherlands-401861185/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-16T19:53:33+00:00"
+ },
+ "401861179": {
+  "slot": "2",
+  "league": "unl",
+  "game": "Gibraltar v Malta",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/gibraltar-vs-malta-401861179/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 39)",
+  "at": "2026-11-16T19:53:36+00:00"
+ },
+ "401861188": {
+  "slot": "6",
+  "league": "unl",
+  "game": "Greece v Serbia",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/greece-vs-serbia-401861188/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-16T19:53:39+00:00"
+ },
+ "401861187": {
+  "slot": "7",
+  "league": "unl",
+  "game": "North Macedonia v Slovenia",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/north-macedonia-vs-slovenia-401861187/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-16T19:53:42+00:00"
+ },
+ "401861186": {
+  "slot": "8",
+  "league": "unl",
+  "game": "Switzerland v Scotland",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/switzerland-vs-scotland-401861186/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-16T19:53:45+00:00"
  }
 }
