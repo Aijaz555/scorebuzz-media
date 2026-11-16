@@ -2045,5 +2045,25 @@
   "status": "ok",
   "reason": "ok (contrast 81)",
   "at": "2026-11-16T04:30:29+00:00"
+ },
+ "401861180": {
+  "slot": "1",
+  "league": "unl",
+  "game": "Faroe Islands v Moldova",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/faroe-islands-vs-moldova-401861180/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-16T16:00:33+00:00"
+ },
+ "401861181": {
+  "slot": "2",
+  "league": "unl",
+  "game": "Kazakhstan v Slovakia",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/kazakhstan-vs-slovakia-401861181/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-16T16:00:36+00:00"
  }
 }
