@@ -1986,16 +1986,6 @@
   "reason": "ok (contrast 82)",
   "at": "2026-11-16T03:03:37+00:00"
  },
- "401873064": {
-  "slot": "11",
-  "league": "nfl",
-  "game": "Bengals v Steelers",
-  "url": "https://scorebuzz.net/american-football/nfl/bengals-vs-steelers-401873064/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-16T03:03:40+00:00"
- },
  "401909992": {
   "slot": "12",
   "league": "nba",
@@ -2024,7 +2014,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 65)",
-  "at": "2026-11-16T03:19:56+00:00"
+  "at": "2026-11-16T03:58:00+00:00"
  },
  "401892724": {
   "slot": "4",
@@ -2033,8 +2023,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-canucks-401892724/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-16T03:19:59+00:00"
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-16T03:58:04+00:00"
  },
  "401892725": {
   "slot": "6",
@@ -2043,7 +2033,17 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/sharks-vs-predators-401892725/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 86)",
-  "at": "2026-11-16T03:20:02+00:00"
+  "reason": "ok (contrast 87)",
+  "at": "2026-11-16T03:58:07+00:00"
+ },
+ "401873064": {
+  "slot": "11",
+  "league": "nfl",
+  "game": "Bengals v Steelers",
+  "url": "https://scorebuzz.net/american-football/nfl/bengals-vs-steelers-401873064/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-16T03:58:10+00:00"
  }
 }
