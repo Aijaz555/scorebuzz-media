@@ -2235,5 +2235,15 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-17T01:47:30+00:00"
+ },
+ "401910001": {
+  "slot": "10",
+  "league": "nba",
+  "game": "Nuggets v Suns",
+  "url": "https://scorebuzz.net/basketball/nba/nuggets-vs-suns-401910001/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-17T02:11:42+00:00"
  }
 }
