@@ -2196,46 +2196,6 @@
   "reason": "ok (contrast 66)",
   "at": "2026-11-17T02:54:32+00:00"
  },
- "401892726": {
-  "slot": "6",
-  "league": "nhl",
-  "game": "Rangers v Canadiens",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/rangers-vs-canadiens-401892726/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-17T02:54:35+00:00"
- },
- "401910000": {
-  "slot": "7",
-  "league": "nba",
-  "game": "Pelicans v Warriors",
-  "url": "https://scorebuzz.net/basketball/nba/pelicans-vs-warriors-401910000/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-17T02:54:38+00:00"
- },
- "401873065": {
-  "slot": "8",
-  "league": "nfl",
-  "game": "Ravens v Chargers",
-  "url": "https://scorebuzz.net/american-football/nfl/ravens-vs-chargers-401873065/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-17T02:54:41+00:00"
- },
- "401909999": {
-  "slot": "9",
-  "league": "nba",
-  "game": "Timberwolves v Trail Blazers",
-  "url": "https://scorebuzz.net/basketball/nba/timberwolves-vs-trail-blazers-401909999/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-17T02:54:45+00:00"
- },
  "401910001": {
   "slot": "10",
   "league": "nba",
@@ -2255,5 +2215,45 @@
   "status": "ok",
   "reason": "ok (contrast 88)",
   "at": "2026-11-17T03:19:04+00:00"
+ },
+ "401892726": {
+  "slot": "6",
+  "league": "nhl",
+  "game": "Rangers v Canadiens",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/rangers-vs-canadiens-401892726/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-17T03:27:13+00:00"
+ },
+ "401910000": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Pelicans v Warriors",
+  "url": "https://scorebuzz.net/basketball/nba/pelicans-vs-warriors-401910000/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-17T03:27:16+00:00"
+ },
+ "401873065": {
+  "slot": "8",
+  "league": "nfl",
+  "game": "Ravens v Chargers",
+  "url": "https://scorebuzz.net/american-football/nfl/ravens-vs-chargers-401873065/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-17T03:27:19+00:00"
+ },
+ "401909999": {
+  "slot": "9",
+  "league": "nba",
+  "game": "Timberwolves v Trail Blazers",
+  "url": "https://scorebuzz.net/basketball/nba/timberwolves-vs-trail-blazers-401909999/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 63)",
+  "at": "2026-11-17T03:27:22+00:00"
  }
 }
