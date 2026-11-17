@@ -2216,16 +2216,6 @@
   "reason": "ok (contrast 65)",
   "at": "2026-11-17T03:27:16+00:00"
  },
- "401873065": {
-  "slot": "8",
-  "league": "nfl",
-  "game": "Ravens v Chargers",
-  "url": "https://scorebuzz.net/american-football/nfl/ravens-vs-chargers-401873065/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-17T03:27:19+00:00"
- },
  "401909999": {
   "slot": "9",
   "league": "nba",
@@ -2255,5 +2245,15 @@
   "status": "ok",
   "reason": "ok (contrast 80)",
   "at": "2026-11-17T03:54:04+00:00"
+ },
+ "401873065": {
+  "slot": "8",
+  "league": "nfl",
+  "game": "Ravens v Chargers",
+  "url": "https://scorebuzz.net/american-football/nfl/ravens-vs-chargers-401873065/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 39)",
+  "at": "2026-11-17T04:02:12+00:00"
  }
 }
