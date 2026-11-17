@@ -27,44 +27,44 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "unl",
-   "event": "401861196",
-   "note": "Bosnia-Herzegovina vs Romania, 2026-11-17T19:45:00Z"
+   "league": "nhl",
+   "event": "401892728",
+   "note": "Boston Bruins vs Los Angeles Kings, 2026-11-18T00:00:00Z"
   },
   "2": {
-   "league": "unl",
-   "event": "401861194",
-   "note": "Denmark vs Norway, 2026-11-17T19:45:00Z"
+   "league": "nhl",
+   "event": "401892732",
+   "note": "Philadelphia Flyers vs Buffalo Sabres, 2026-11-18T00:00:00Z"
   },
   "3": {
-   "league": "unl",
-   "event": "401861191",
-   "note": "Hungary vs Northern Ireland, 2026-11-17T19:45:00Z"
+   "league": "nba",
+   "event": "401910002",
+   "note": "Toronto Raptors vs New York Knicks, 2026-11-18T00:30:00Z"
   },
   "4": {
-   "league": "unl",
-   "event": "401861193",
-   "note": "Israel vs Austria, 2026-11-17T19:45:00Z"
+   "league": "nhl",
+   "event": "401892730",
+   "note": "Florida Panthers vs Edmonton Oilers, 2026-11-18T00:00:00Z"
   },
   "5": {
-   "league": "unl",
-   "event": "401861195",
-   "note": "Poland vs Sweden, 2026-11-17T19:45:00Z"
+   "league": "nhl",
+   "event": "401892731",
+   "note": "New York Islanders vs Columbus Blue Jackets, 2026-11-18T00:00:00Z"
   },
   "6": {
-   "league": "unl",
-   "event": "401861192",
-   "note": "Republic of Ireland vs Kosovo, 2026-11-17T19:45:00Z"
+   "league": "nhl",
+   "event": "401892736",
+   "note": "Winnipeg Jets vs Ottawa Senators, 2026-11-18T00:00:00Z"
   },
   "7": {
-   "league": "unl",
-   "event": "401861190",
-   "note": "Ukraine vs Georgia, 2026-11-17T19:45:00Z"
+   "league": "nhl",
+   "event": "401892729",
+   "note": "Tampa Bay Lightning vs Washington Capitals, 2026-11-18T00:30:00Z"
   },
   "8": {
-   "league": "unl",
-   "event": "401861189",
-   "note": "Wales vs Portugal, 2026-11-17T19:45:00Z"
+   "league": "nhl",
+   "event": "401892733",
+   "note": "Chicago Blackhawks vs Toronto Maple Leafs, 2026-11-18T00:30:00Z"
   }
  },
  "fit": {
