@@ -2146,16 +2146,6 @@
   "reason": "ok (contrast 36)",
   "at": "2026-11-16T21:33:16+00:00"
  },
- "401910001": {
-  "slot": "10",
-  "league": "nba",
-  "game": "Nuggets v Suns",
-  "url": "https://scorebuzz.net/basketball/nba/nuggets-vs-suns-401910001/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-17T02:11:42+00:00"
- },
  "401909994": {
   "slot": "1",
   "league": "nba",
@@ -2245,5 +2235,25 @@
   "status": "ok",
   "reason": "ok (contrast 64)",
   "at": "2026-11-17T02:20:15+00:00"
+ },
+ "401910001": {
+  "slot": "10",
+  "league": "nba",
+  "game": "Nuggets v Suns",
+  "url": "https://scorebuzz.net/basketball/nba/nuggets-vs-suns-401910001/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 67)",
+  "at": "2026-11-17T02:46:16+00:00"
+ },
+ "401892727": {
+  "slot": "11",
+  "league": "nhl",
+  "game": "Mammoth v Canucks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/mammoth-vs-canucks-401892727/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 83)",
+  "at": "2026-11-17T02:46:20+00:00"
  }
 }
