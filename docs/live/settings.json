@@ -25,7 +25,48 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "unl",
+   "event": "401861196",
+   "note": "Bosnia-Herzegovina vs Romania, 2026-11-17T19:45:00Z"
+  },
+  "2": {
+   "league": "unl",
+   "event": "401861194",
+   "note": "Denmark vs Norway, 2026-11-17T19:45:00Z"
+  },
+  "3": {
+   "league": "unl",
+   "event": "401861191",
+   "note": "Hungary vs Northern Ireland, 2026-11-17T19:45:00Z"
+  },
+  "4": {
+   "league": "unl",
+   "event": "401861193",
+   "note": "Israel vs Austria, 2026-11-17T19:45:00Z"
+  },
+  "5": {
+   "league": "unl",
+   "event": "401861195",
+   "note": "Poland vs Sweden, 2026-11-17T19:45:00Z"
+  },
+  "6": {
+   "league": "unl",
+   "event": "401861192",
+   "note": "Republic of Ireland vs Kosovo, 2026-11-17T19:45:00Z"
+  },
+  "7": {
+   "league": "unl",
+   "event": "401861190",
+   "note": "Ukraine vs Georgia, 2026-11-17T19:45:00Z"
+  },
+  "8": {
+   "league": "unl",
+   "event": "401861189",
+   "note": "Wales vs Portugal, 2026-11-17T19:45:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
