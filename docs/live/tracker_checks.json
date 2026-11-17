@@ -2264,7 +2264,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 36)",
-  "at": "2026-11-17T19:51:12+00:00"
+  "at": "2026-11-17T20:45:37+00:00"
  },
  "401861194": {
   "slot": "2",
@@ -2273,8 +2273,8 @@
   "url": "https://scorebuzz.net/football/uefa-nations-league/denmark-vs-norway-401861194/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 38)",
-  "at": "2026-11-17T19:51:15+00:00"
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-17T20:45:41+00:00"
  },
  "401861191": {
   "slot": "3",
@@ -2284,7 +2284,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 37)",
-  "at": "2026-11-17T19:51:18+00:00"
+  "at": "2026-11-17T20:45:44+00:00"
  },
  "401861193": {
   "slot": "4",
@@ -2293,8 +2293,8 @@
   "url": "https://scorebuzz.net/football/uefa-nations-league/israel-vs-austria-401861193/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 36)",
-  "at": "2026-11-17T19:51:21+00:00"
+  "reason": "ok (contrast 34)",
+  "at": "2026-11-17T20:45:47+00:00"
  },
  "401861195": {
   "slot": "5",
@@ -2303,8 +2303,8 @@
   "url": "https://scorebuzz.net/football/uefa-nations-league/poland-vs-sweden-401861195/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 37)",
-  "at": "2026-11-17T19:51:24+00:00"
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-17T20:45:50+00:00"
  },
  "401861192": {
   "slot": "6",
@@ -2314,7 +2314,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 36)",
-  "at": "2026-11-17T19:51:27+00:00"
+  "at": "2026-11-17T20:45:54+00:00"
  },
  "401861190": {
   "slot": "7",
@@ -2323,8 +2323,8 @@
   "url": "https://scorebuzz.net/football/uefa-nations-league/ukraine-vs-georgia-401861190/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 37)",
-  "at": "2026-11-17T19:51:30+00:00"
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-17T20:45:57+00:00"
  },
  "401861189": {
   "slot": "8",
@@ -2333,7 +2333,7 @@
   "url": "https://scorebuzz.net/football/uefa-nations-league/wales-vs-portugal-401861189/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 38)",
-  "at": "2026-11-17T19:51:33+00:00"
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-17T20:46:01+00:00"
  }
 }
