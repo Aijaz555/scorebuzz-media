@@ -221,6 +221,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 15 Nov 2026 20:44 UTC: refused again at 10 live + 1-2 scheduled (~11-12 YouTube broadcasts): Suns-Lakers (Slot 2) 20:30 schedule errored, Cowboys-49ers (Slot 1) and Clippers-Hornets (Slot 15) schedules errored, Raiders-Seahawks (Slot 4), Cardinals-Rams (Slot 6) refused. Each started once the end watch stopped a finished game (20:48-21:30). Packers-Vikings and Saints-Panthers kept off (owner's 19:44 request). Owner notified.
   - 16 Nov 2026 00:44 UTC usage check (new week): 5.4 h of 680 this week (1%), last 7 days 390.3 h, level ok (incl. 8 streams live).
   - 17 Nov 2026 00:53 UTC usage check: 68.9 h of 680 this week (10%), last 7 days 420.1 h, level ok (incl. 8 streams live).
+  - 17 Nov 2026 02:43 UTC: refused again at 10 live: Mammoth-Canucks (Slot 11) 02:00 schedule errored (UNKNOWN_ERROR), restart refused ("User has too many live or scheduled broadcasts"); started at 02:48 once the end watch stopped Slots 1,3,4. Owner notified.
 - Older cap (found 7 Nov 2026 01:45 UTC): the plan allowed only 9 concurrent live streams; the log below is from that period.
   - 8 Nov 2026 14:43 UTC: cap hit again — Real Sociedad-Rayo (Slot 2, now) and 4 Ligue 1 16:15 UK games (Slots 12-15) refused; only Slot 1 (Man Utd-Villa) scheduled.
   - 8 Nov 2026 16:45 UTC: 4 Ligue 1 restarts (Slots 14-17) went through (10 streams counted), then all 8 18:00 UK schedules (7 NFL 1pm ET games + Panthers-Bruins, Slots 4-6,8-11,18) were refused by the cap; the next hourly runs start them as slots free up.
