@@ -2175,5 +2175,25 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-17T00:18:32+00:00"
+ },
+ "401909997": {
+  "slot": "2",
+  "league": "nba",
+  "game": "Nets v 76ers",
+  "url": "https://scorebuzz.net/basketball/nba/nets-vs-76ers-401909997/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-17T00:42:42+00:00"
+ },
+ "401909998": {
+  "slot": "5",
+  "league": "nba",
+  "game": "Heat v Rockets",
+  "url": "https://scorebuzz.net/basketball/nba/heat-vs-rockets-401909998/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-17T00:42:45+00:00"
  }
 }
