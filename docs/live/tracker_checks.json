@@ -2255,5 +2255,85 @@
   "status": "ok",
   "reason": "ok (contrast 83)",
   "at": "2026-11-17T04:59:13+00:00"
+ },
+ "401861196": {
+  "slot": "1",
+  "league": "unl",
+  "game": "Bosnia-Herz v Romania",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/bosnia-herz-vs-romania-401861196/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-17T19:51:12+00:00"
+ },
+ "401861194": {
+  "slot": "2",
+  "league": "unl",
+  "game": "Denmark v Norway",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/denmark-vs-norway-401861194/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-17T19:51:15+00:00"
+ },
+ "401861191": {
+  "slot": "3",
+  "league": "unl",
+  "game": "Hungary v N Ireland",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/hungary-vs-n-ireland-401861191/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-17T19:51:18+00:00"
+ },
+ "401861193": {
+  "slot": "4",
+  "league": "unl",
+  "game": "Israel v Austria",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/israel-vs-austria-401861193/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-17T19:51:21+00:00"
+ },
+ "401861195": {
+  "slot": "5",
+  "league": "unl",
+  "game": "Poland v Sweden",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/poland-vs-sweden-401861195/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-17T19:51:24+00:00"
+ },
+ "401861192": {
+  "slot": "6",
+  "league": "unl",
+  "game": "Rep Ireland v Kosovo",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/rep-ireland-vs-kosovo-401861192/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-17T19:51:27+00:00"
+ },
+ "401861190": {
+  "slot": "7",
+  "league": "unl",
+  "game": "Ukraine v Georgia",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/ukraine-vs-georgia-401861190/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-17T19:51:30+00:00"
+ },
+ "401861189": {
+  "slot": "8",
+  "league": "unl",
+  "game": "Wales v Portugal",
+  "url": "https://scorebuzz.net/football/uefa-nations-league/wales-vs-portugal-401861189/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-17T19:51:33+00:00"
  }
 }
