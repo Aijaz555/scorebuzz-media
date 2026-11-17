@@ -2145,5 +2145,35 @@
   "status": "ok",
   "reason": "ok (contrast 36)",
   "at": "2026-11-16T21:33:16+00:00"
+ },
+ "401909994": {
+  "slot": "1",
+  "league": "nba",
+  "game": "Celtics v Magic",
+  "url": "https://scorebuzz.net/basketball/nba/celtics-vs-magic-401909994/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-17T00:18:25+00:00"
+ },
+ "401909995": {
+  "slot": "3",
+  "league": "nba",
+  "game": "Cavaliers v Bulls",
+  "url": "https://scorebuzz.net/basketball/nba/cavaliers-vs-bulls-401909995/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-17T00:18:29+00:00"
+ },
+ "401909996": {
+  "slot": "4",
+  "league": "nba",
+  "game": "Wizards v Grizzlies",
+  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-grizzlies-401909996/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-17T00:18:32+00:00"
  }
 }
