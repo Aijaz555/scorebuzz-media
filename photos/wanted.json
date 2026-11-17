@@ -1,23 +1,5 @@
 [
  {
-  "slug": "huntington-bank-field",
-  "name": "Huntington Bank Field",
-  "city": "Cleveland",
-  "country": "USA"
- },
- {
-  "slug": "xfinity-mobile-arena",
-  "name": "Xfinity Mobile Arena",
-  "city": "Philadelphia",
-  "country": "USA"
- },
- {
-  "slug": "mortgage-matchup-center",
-  "name": "Mortgage Matchup Center",
-  "city": "Phoenix",
-  "country": ""
- },
- {
   "slug": "barclays-center",
   "name": "Barclays Center",
   "city": "Brooklyn",
@@ -36,6 +18,12 @@
   "country": ""
  },
  {
+  "slug": "xfinity-mobile-arena",
+  "name": "Xfinity Mobile Arena",
+  "city": "Philadelphia",
+  "country": "USA"
+ },
+ {
   "slug": "benchmark-international-arena",
   "name": "Benchmark International Arena",
   "city": "Tampa",
@@ -45,6 +33,12 @@
   "slug": "grand-casino-arena",
   "name": "Grand Casino Arena",
   "city": "Saint Paul",
+  "country": "USA"
+ },
+ {
+  "slug": "lenovo-center",
+  "name": "Lenovo Center",
+  "city": "Raleigh",
   "country": "USA"
  }
 ]
