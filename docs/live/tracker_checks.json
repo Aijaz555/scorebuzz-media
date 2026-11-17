@@ -2146,36 +2146,6 @@
   "reason": "ok (contrast 36)",
   "at": "2026-11-16T21:33:16+00:00"
  },
- "401909994": {
-  "slot": "1",
-  "league": "nba",
-  "game": "Celtics v Magic",
-  "url": "https://scorebuzz.net/basketball/nba/celtics-vs-magic-401909994/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-17T00:18:25+00:00"
- },
- "401909995": {
-  "slot": "3",
-  "league": "nba",
-  "game": "Cavaliers v Bulls",
-  "url": "https://scorebuzz.net/basketball/nba/cavaliers-vs-bulls-401909995/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-17T00:18:29+00:00"
- },
- "401909996": {
-  "slot": "4",
-  "league": "nba",
-  "game": "Wizards v Grizzlies",
-  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-grizzlies-401909996/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-17T00:18:32+00:00"
- },
  "401909997": {
   "slot": "2",
   "league": "nba",
@@ -2195,5 +2165,45 @@
   "status": "ok",
   "reason": "ok (contrast 64)",
   "at": "2026-11-17T00:42:45+00:00"
+ },
+ "401909994": {
+  "slot": "1",
+  "league": "nba",
+  "game": "Celtics v Magic",
+  "url": "https://scorebuzz.net/basketball/nba/celtics-vs-magic-401909994/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-17T00:50:52+00:00"
+ },
+ "401909995": {
+  "slot": "3",
+  "league": "nba",
+  "game": "Cavaliers v Bulls",
+  "url": "https://scorebuzz.net/basketball/nba/cavaliers-vs-bulls-401909995/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-17T00:50:56+00:00"
+ },
+ "401909996": {
+  "slot": "4",
+  "league": "nba",
+  "game": "Wizards v Grizzlies",
+  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-grizzlies-401909996/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-17T00:50:59+00:00"
+ },
+ "401892726": {
+  "slot": "6",
+  "league": "nhl",
+  "game": "Rangers v Canadiens",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/rangers-vs-canadiens-401892726/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 93)",
+  "at": "2026-11-17T00:51:02+00:00"
  }
 }
