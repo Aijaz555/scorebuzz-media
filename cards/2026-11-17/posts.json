@@ -1,0 +1,401 @@
+[
+ {
+  "id": "01-ger-ned",
+  "time": "2026-11-17T11:00:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · BERLIN",
+  "home": "Germany",
+  "homeScore": 5,
+  "away": "Netherlands",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+  "headline": "Germany hit five to top the group",
+  "sub": "Scherhant, Wirtz (2), Schlotterbeck and Gruda scored. Jürgen Klopp's side needed a five-goal win, and got it.",
+  "caption": "🇩🇪 Germany 5–0 Netherlands.\n\nDerry Scherhant scored his first international goal, Florian Wirtz got two, and Nico Schlotterbeck and Brajan Gruda added the rest in Berlin. Jürgen Klopp's Germany needed to win by five to top the group, and did.\n\nGermany's best result in years? 👇\n\n#GERNED #Germany #Wirtz #NationsLeague"
+ },
+ {
+  "id": "02-sui-sco",
+  "time": "2026-11-17T11:56:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · ST. GALLEN",
+  "home": "Switzerland",
+  "homeScore": 4,
+  "away": "Scotland",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+  "headline": "A record night for Robertson ends in a 4–0 loss",
+  "sub": "Andy Robertson's 103rd cap made him Scotland's most-capped man, passing Kenny Dalglish. Scotland finish third in the group.",
+  "caption": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Switzerland 4–0 Scotland.\n\nAndy Robertson became Scotland's most-capped man with his 103rd cap, passing Sir Kenny Dalglish, but a Lewis Ferguson own goal, Winsley Boteli, Alvyn Sanches and Zeki Amdouni made it a night to forget.\n\nIs it time to worry about Scotland? 👇\n\n#SUISCO #Scotland #AndyRobertson"
+ },
+ {
+  "id": "03-group-a2",
+  "time": "2026-11-17T13:48:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "NATIONS LEAGUE · GROUP A2 FINAL TABLE",
+  "headline": "Three teams on 11 points",
+  "rows": [
+   [
+    "1",
+    "Germany",
+    "11 pts"
+   ],
+   [
+    "2",
+    "Netherlands",
+    "11 pts"
+   ],
+   [
+    "3",
+    "Greece",
+    "11 pts"
+   ],
+   [
+    "4",
+    "Serbia",
+    "0 pts"
+   ]
+  ],
+  "sub": "Germany top on goal difference after the 5–0. The Netherlands also go through to the quarter-finals; Greece beat Serbia 1–0 but finish third.",
+  "caption": "🤯 Three teams finished on 11 points in Nations League Group A2.\n\nGermany's 5–0 win over the Netherlands put them top on goal difference, the Dutch also go through, and Greece beat Serbia 1–0 but miss out in third.\n\nToughest group in the Nations League? 👇\n\n#NationsLeague #Germany #Greece"
+ },
+ {
+  "id": "04-pl-table",
+  "time": "2026-11-17T14:44:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · TABLE AT THE BREAK",
+  "headline": "Arsenal five clear after 10 games",
+  "rows": [
+   [
+    "1",
+    "Arsenal",
+    "27"
+   ],
+   [
+    "2",
+    "Brighton",
+    "22"
+   ],
+   [
+    "3",
+    "Man City",
+    "21"
+   ],
+   [
+    "4",
+    "Liverpool",
+    "18"
+   ],
+   [
+    "18",
+    "Man United",
+    "8"
+   ],
+   [
+    "19",
+    "Sunderland",
+    "8"
+   ],
+   [
+    "20",
+    "Crystal Palace",
+    "7"
+   ]
+  ],
+  "sub": "Points after 10 games. Brighton are second; Manchester United are in the bottom three.",
+  "caption": "📊 The Premier League table at the international break.\n\nArsenal have 27 points from 10 games, five clear of second-placed Brighton. Manchester United are 18th with 8 points.\n\nWho finishes in the top four? 👇\n\n#PremierLeague #Arsenal #Brighton #MUFC"
+ },
+ {
+  "id": "05-euro-leaders",
+  "time": "2026-11-17T16:36:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "EUROPE'S BIG FIVE LEAGUES",
+  "headline": "Who's top in Europe right now",
+  "rows": [
+   [
+    "England",
+    "Arsenal",
+    "27 pts"
+   ],
+   [
+    "Spain",
+    "Barcelona",
+    "33 pts"
+   ],
+   [
+    "Italy",
+    "Lazio",
+    "29 pts"
+   ],
+   [
+    "Germany",
+    "Bayern Munich",
+    "21 pts"
+   ],
+   [
+    "France",
+    "PSG",
+    "23 pts"
+   ]
+  ],
+  "sub": "As of the November international break. Lazio are unbeaten; Bayern lead Dortmund only on goal difference.",
+  "caption": "🏆 Every big European league leader at the international break.\n\nArsenal top the Premier League, Barcelona have won 11 of 12 in LaLiga, unbeaten Lazio lead Serie A, Bayern top the Bundesliga on goal difference and PSG lead Ligue 1.\n\nWhich leader is most likely to win the title? 👇\n\n#Arsenal #Barcelona #Lazio #Bayern"
+ },
+ {
+  "id": "06-pl-mw11",
+  "time": "2026-11-17T17:32:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · THIS WEEKEND (UK TIME)",
+  "headline": "The Premier League is back",
+  "rows": [
+   [
+    "Sat 12:30",
+    "Man City v Fulham",
+    ""
+   ],
+   [
+    "Sat 15:00",
+    "Chelsea v Leeds",
+    ""
+   ],
+   [
+    "Sat 17:30",
+    "Newcastle v Arsenal",
+    ""
+   ],
+   [
+    "Sun 14:00",
+    "Hull v Brighton",
+    ""
+   ],
+   [
+    "Sun 16:30",
+    "Liverpool v Man United",
+    ""
+   ],
+   [
+    "Mon 20:00",
+    "Brentford v Everton",
+    ""
+   ]
+  ],
+  "sub": "Selected matchweek 11 games. Bournemouth v Forest, Villa v Sunderland, Coventry v Palace and Spurs v Ipswich are Saturday at 15:00.",
+  "caption": "⚽ The Premier League returns this weekend.\n\nLeaders Arsenal go to Newcastle on Saturday evening, and Liverpool host Manchester United at Anfield on Sunday at 16:30 GMT (11:30am ET).\n\nWhich game are you watching? 👇\n\n#PremierLeague #LIVMUN #Arsenal"
+ },
+ {
+  "id": "07-chargers-ravens",
+  "time": "2026-11-17T19:24:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "MONDAY NIGHT FOOTBALL · BALTIMORE",
+  "venue": "M&T Bank Stadium",
+  "home": "Ravens",
+  "homeScore": 20,
+  "away": "Chargers",
+  "awayScore": 23,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
+  "headline": "The Chargers finally win one",
+  "sub": "0–8 no more. LA outrushed Baltimore 160–16; Derrick Henry had 10 yards on 10 carries. The Ravens have lost five straight.",
+  "caption": "⚡ Chargers 23, Ravens 20. The Chargers are 0–8 no more.\n\nJustin Herbert and Omarion Hampton (105 yards) ran for touchdowns, LA outrushed Baltimore 160–16 and the Ravens lost a fifth straight game.\n\nToo little, too late for the Chargers? 👇\n\n#BoltUp #Chargers #MNF"
+ },
+ {
+  "id": "08-bills-8-1",
+  "time": "2026-11-17T20:20:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "NFL · BUFFALO BILLS",
+  "venue": "Highmark Stadium",
+  "headline": "Bills 8–1 for the first time since 1991",
+  "sub": "Josh Allen ran for two TDs and James Cook had 157 yards in a 31–12 win over the Jets. Buffalo are the AFC's No. 1 seed after Week 10.",
+  "caption": "🦬 The Bills are 8–1 for the first time since 1991.\n\nJosh Allen ran for two scores and threw one, and James Cook added 157 rushing yards in a 31–12 win over the Jets. Buffalo hold the AFC's No. 1 seed.\n\nIs this the year for Buffalo? 👇\n\n#BillsMafia #JoshAllen #NFL"
+ },
+ {
+  "id": "09-magic-celtics",
+  "time": "2026-11-17T22:12:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · BOSTON",
+  "venue": "TD Garden",
+  "home": "Celtics",
+  "homeScore": 105,
+  "away": "Magic",
+  "awayScore": 115,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+  "headline": "Magic hand Boston first home loss",
+  "sub": "Desmond Bane 24, Franz Wagner 21 and Anthony Black 20. Orlando's first win in Boston since December 2022, and a fourth straight win.",
+  "caption": "🪄 Magic 115, Celtics 105.\n\nDesmond Bane scored 24 and Orlando rallied in the fourth to end Boston's six-game win streak and hand the Celtics their first home loss of the season.\n\nAre the Magic for real? 👇\n\n#MagicTogether #Celtics #NBA"
+ },
+ {
+  "id": "10-klay-3s",
+  "time": "2026-11-18T00:04:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "headline",
+  "label": "NBA · MIAMI HEAT",
+  "venue": "Kaseya Center",
+  "headline": "Klay Thompson is 21 threes from Ray Allen",
+  "sub": "Five more on Monday took him to 2,952 career 3-pointers. Ray Allen (2,973) is third all-time. Miami have won five straight.",
+  "stat": [
+   "2,952",
+   "career threes for Klay"
+  ],
+  "caption": "🎯 Klay Thompson is closing in on Ray Allen.\n\nHe hit five threes in Miami's 128–110 win over Houston, his 2,952nd career 3-pointer. Allen is third all-time with 2,973, so Klay needs 21 more.\n\nHow many games will it take? 👇\n\n#Klay #HeatCulture #NBA"
+ },
+ {
+  "id": "11-nba-tonight",
+  "time": "2026-11-18T01:56:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · TUESDAY (ET)",
+  "headline": "Five games tonight",
+  "rows": [
+   [
+    "7:30pm",
+    "Knicks at Raptors",
+    ""
+   ],
+   [
+    "8:00pm",
+    "Pistons at Spurs",
+    ""
+   ],
+   [
+    "8:00pm",
+    "Blazers at Wolves",
+    ""
+   ],
+   [
+    "10:30pm",
+    "Jazz at Clippers",
+    ""
+   ],
+   [
+    "11:00pm",
+    "Hornets at Lakers",
+    ""
+   ]
+  ],
+  "sub": "The Spurs (12–2) bring a 12-game win streak into Pistons night. The Lakers are also 12–2.",
+  "caption": "🏀 Five NBA games tonight.\n\nThe 12–2 Spurs put a 12-game winning streak on the line against Detroit at 8pm ET, and the 12–2 Lakers host Charlotte at 11pm ET.\n\nWho are you watching? 👇\n\n#NBA #PorVida #LakeShow"
+ },
+ {
+  "id": "12-nhl-tonight",
+  "time": "2026-11-18T03:48:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "list",
+  "label": "NHL · TUESDAY (ET)",
+  "headline": "Oilers at Panthers headlines 11 games",
+  "rows": [
+   [
+    "7:00pm",
+    "Oilers at Panthers",
+    ""
+   ],
+   [
+    "7:00pm",
+    "Kings at Bruins",
+    ""
+   ],
+   [
+    "7:30pm",
+    "Capitals at Lightning",
+    ""
+   ],
+   [
+    "8:00pm",
+    "Predators at Wild",
+    ""
+   ],
+   [
+    "10:00pm",
+    "Stars at Golden Knights",
+    ""
+   ]
+  ],
+  "sub": "Edmonton (16–3–3) lead the NHL with 35 points. Minnesota are 15–3–4.",
+  "caption": "🏒 11 NHL games tonight.\n\nThe league-leading Oilers (16–3–3) visit Florida at 7pm ET, and the 15–3–4 Wild host Nashville at 8pm ET.\n\nWho wins in Sunrise? 👇\n\n#LetsGoOilers #FlaPanthers #NHL"
+ },
+ {
+  "id": "13-nfl-week11",
+  "time": "2026-11-18T05:40:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "NFL · WEEK 11 PRIME TIME (ET)",
+  "headline": "Week 11's big games",
+  "rows": [
+   [
+    "Thu 8:15pm",
+    "Colts at Texans",
+    "Prime Video"
+   ],
+   [
+    "Sun 1:00pm",
+    "Dolphins at Bills",
+    "CBS"
+   ],
+   [
+    "Sun 8:20pm",
+    "Vikings at 49ers",
+    "NBC"
+   ],
+   [
+    "Mon 8:15pm",
+    "Bengals at Commanders",
+    "ESPN"
+   ]
+  ],
+  "sub": "Sunday night's Vikings v 49ers is in Mexico City, at Estadio Banorte.",
+  "caption": "🏈 Week 11 is coming.\n\nThe 8–1 49ers 'host' the 7–2 Vikings in Mexico City on Sunday night, and the 8–1 Bills host Miami at 1pm ET.\n\nWhich game are you most excited for? 👇\n\n#NFL #49ers #Skol"
+ },
+ {
+  "id": "14-ufc-qatar",
+  "time": "2026-11-18T07:32:00",
+  "sport": "mma",
+  "league": "ufc",
+  "kind": "headline",
+  "label": "UFC · DOHA, SATURDAY",
+  "headline": "Prochazka vs Stirling headlines UFC Qatar",
+  "sub": "Former champion Jiri Prochazka meets Navajo Stirling. Aljamain Sterling v Kevin Vallejos is the co-main; Dan Hooker v Brian Ortega is also on the card.",
+  "caption": "🥊 UFC Qatar is on Saturday.\n\nFormer light heavyweight champion Jiri Prochazka meets Navajo Stirling in the main event. Aljamain Sterling faces Kevin Vallejos, and Dan Hooker fights Brian Ortega.\n\nWho wins the main event? 👇\n\n#UFCQatar #Prochazka #UFC"
+ },
+ {
+  "id": "15-sixers-nets",
+  "time": "2026-11-18T09:24:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · BROOKLYN",
+  "venue": "Barclays Center",
+  "home": "Nets",
+  "homeScore": 123,
+  "away": "76ers",
+  "awayScore": 135,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+  "headline": "Embiid 37 as Sixers win without LeBron",
+  "sub": "Season highs for Joel Embiid (37) and Jaylen Brown (31, matching his best). Philadelphia are 12–3 and 4–0 without LeBron James.",
+  "caption": "🔔 76ers 135, Nets 123.\n\nJoel Embiid scored a season-high 37 and Jaylen Brown had 31 and 13 rebounds as Philadelphia won without LeBron James. The Sixers are 4–0 without him.\n\nCan Philly win the East? 👇\n\n#Sixers #Embiid #NBA"
+ }
+]
