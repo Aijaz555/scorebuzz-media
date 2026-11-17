@@ -65,6 +65,26 @@
    "league": "nhl",
    "event": "401892733",
    "note": "Chicago Blackhawks vs Toronto Maple Leafs, 2026-11-18T00:30:00Z"
+  },
+  "9": {
+   "league": "nba",
+   "event": "401910003",
+   "note": "Minnesota Timberwolves vs Portland Trail Blazers, 2026-11-18T01:00:00Z"
+  },
+  "10": {
+   "league": "nba",
+   "event": "401910004",
+   "note": "San Antonio Spurs vs Detroit Pistons, 2026-11-18T01:00:00Z"
+  },
+  "11": {
+   "league": "nhl",
+   "event": "401892734",
+   "note": "St. Louis Blues vs Anaheim Ducks, 2026-11-18T01:00:00Z"
+  },
+  "12": {
+   "league": "nhl",
+   "event": "401892735",
+   "note": "Minnesota Wild vs Nashville Predators, 2026-11-18T01:00:00Z"
   }
  },
  "fit": {
