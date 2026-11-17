@@ -1,0 +1,521 @@
+[
+ {
+  "id": "v1-nfl-week10",
+  "sport": "nfl",
+  "league": "nfl",
+  "format": "video",
+  "bed": "hype",
+  "time": "2026-11-17T23:10:00",
+  "fbTime": "2026-11-18T08:28:00",
+  "title": "NFL Week 10 Recap: Chargers' First Win, Mahomes 5 TDs, 49ers Win 46–40 Shootout & Bills 8–1 🏈",
+  "description": "Everything you missed from NFL Week 10: the Los Angeles Chargers beat the Baltimore Ravens 23–20 on Monday Night Football for their first win of the season, Patrick Mahomes threw five touchdown passes in Atlanta, the San Francisco 49ers beat the Dallas Cowboys 46–40, Joe Burrow threw for 409 yards as the Cincinnati Bengals beat the Pittsburgh Steelers, the Detroit Lions won in Munich and the Buffalo Bills moved to 8–1 for the first time since 1991. Plus every result, the playoff picture and the Week 11 games to watch.\n\nNFL scores, standings and live scores: https://scorebuzz.net\n\n#NFL #NFLWeek10 #Chargers #49ers #BillsMafia",
+  "tags": [
+   "nfl week 10 recap",
+   "nfl week 10 results",
+   "nfl scores",
+   "chargers vs ravens",
+   "49ers vs cowboys",
+   "bengals vs steelers",
+   "chiefs vs falcons",
+   "lions vs patriots munich",
+   "nfl standings",
+   "nfl playoff picture",
+   "nfl week 11",
+   "scorebuzz"
+  ],
+  "fbCaption": "🏈 NFL Week 10 in about three minutes.\n\nThe Chargers finally won, Mahomes threw five TDs, the 49ers outlasted Dallas 46–40, Burrow threw for 409 and the Bills are 8–1.\n\nBest game of the week? 👇\n\n#NFL #NFLWeek10 #Chargers #49ers",
+  "thumb": {
+   "kicker": "NFL Week 10 recap",
+   "big": "46–40",
+   "hook": "Shootouts, *firsts* & 8–1",
+   "sticker": "Wild week",
+   "emoji": "🏈"
+  },
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 5,
+    "kicker": "NFL Week 10 recap",
+    "title": "Everything you missed",
+    "sub": "Every result, the big stories and the playoff picture"
+   },
+   {
+    "type": "table",
+    "dur": 10.5,
+    "label": "Week 10 results · home team first (1/2)",
+    "cols": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "",
+      "Giants v Commanders (Thu)",
+      21,
+      24
+     ],
+     [
+      "",
+      "Lions v Patriots (Munich)",
+      35,
+      10
+     ],
+     [
+      "",
+      "Falcons v Chiefs",
+      13,
+      35
+     ],
+     [
+      "",
+      "Browns v Texans",
+      27,
+      24
+     ],
+     [
+      "",
+      "Packers v Vikings",
+      10,
+      30
+     ],
+     [
+      "",
+      "Titans v Jaguars",
+      23,
+      40
+     ],
+     [
+      "",
+      "Colts v Dolphins",
+      24,
+      22
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "dur": 10.5,
+    "label": "Week 10 results · home team first (2/2)",
+    "cols": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "",
+      "Saints v Panthers",
+      17,
+      20
+     ],
+     [
+      "",
+      "Jets v Bills",
+      12,
+      31
+     ],
+     [
+      "",
+      "Raiders v Seahawks",
+      13,
+      21
+     ],
+     [
+      "",
+      "Cardinals v Rams",
+      6,
+      34
+     ],
+     [
+      "",
+      "Cowboys v 49ers",
+      40,
+      46
+     ],
+     [
+      "",
+      "Bengals v Steelers (SNF)",
+      38,
+      18
+     ],
+     [
+      "",
+      "Ravens v Chargers (MNF)",
+      20,
+      23
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Monday Night Football",
+    "home": "Ravens",
+    "homeAbbr": "BAL",
+    "homeScore": 20,
+    "away": "Chargers",
+    "awayAbbr": "LAC",
+    "awayScore": 23,
+    "status": "FINAL",
+    "note": "Herbert and Omarion Hampton ran for first-half TDs",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Los Angeles · 1–8",
+    "title": "The Chargers' first win",
+    "sub": "LA outrushed Baltimore 160–16. Derrick Henry: 10 carries, 10 yards. The Ravens have lost five straight."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Thursday Night Football",
+    "home": "Giants",
+    "homeAbbr": "NYG",
+    "homeScore": 21,
+    "away": "Commanders",
+    "awayAbbr": "WSH",
+    "awayScore": 24,
+    "status": "FINAL",
+    "note": "Jayden Daniels to Stefon Diggs, 32 yards, with 57 seconds left",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Munich",
+    "home": "Lions",
+    "homeAbbr": "DET",
+    "homeScore": 35,
+    "away": "Patriots",
+    "awayAbbr": "NE",
+    "awayScore": 10,
+    "status": "FINAL",
+    "note": "Amon-Ra St. Brown 2 TDs, Jahmyr Gibbs 153 yards and 2 TDs",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Detroit · 7–2",
+    "title": "Five straight wins, but at a cost",
+    "sub": "Aidan Hutchinson hurt his right knee. New England lost Drake Maye to an ankle injury on their first drive."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Atlanta",
+    "home": "Falcons",
+    "homeAbbr": "ATL",
+    "homeScore": 13,
+    "away": "Chiefs",
+    "awayAbbr": "KC",
+    "awayScore": 35,
+    "status": "FINAL",
+    "note": "Rookie Emmett Johnson: 101 yards in his first start",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Patrick Mahomes",
+    "value": 5,
+    "unit": "TD passes",
+    "text": "348 yards. Kansas City are 7–2 and tied for first in the AFC West."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Arlington",
+    "home": "Cowboys",
+    "homeAbbr": "DAL",
+    "homeScore": 40,
+    "away": "49ers",
+    "awayAbbr": "SF",
+    "awayScore": 46,
+    "status": "FINAL",
+    "note": "McCaffrey TD catches of 74 and 66 yards; Samuel ran 70 for another",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Dallas · 4–6",
+    "title": "Dak threw five TDs and lost",
+    "sub": "George Pickens caught three of them. Brock Purdy threw for 389 yards. San Francisco are 8–1."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday Night Football",
+    "home": "Bengals",
+    "homeAbbr": "CIN",
+    "homeScore": 38,
+    "away": "Steelers",
+    "awayAbbr": "PIT",
+    "awayScore": 18,
+    "status": "FINAL",
+    "note": "Ja'Marr Chase: 11 catches, 231 yards",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Joe Burrow",
+    "value": 409,
+    "unit": "yards",
+    "text": "Four TD passes. Cincinnati lead the AFC North alone and have won five straight."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · East Rutherford",
+    "home": "Jets",
+    "homeAbbr": "NYJ",
+    "homeScore": 12,
+    "away": "Bills",
+    "awayAbbr": "BUF",
+    "awayScore": 31,
+    "status": "FINAL",
+    "note": "James Cook 157 yards, including a 74-yard TD",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Buffalo Bills",
+    "value": "8–1",
+    "text": "Their best start since 1991. Josh Allen ran for two TDs and threw one."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Lambeau Field",
+    "home": "Packers",
+    "homeAbbr": "GB",
+    "homeScore": 10,
+    "away": "Vikings",
+    "awayAbbr": "MIN",
+    "awayScore": 30,
+    "status": "FINAL",
+    "note": "Minnesota sacked Jordan Love eight times",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Minnesota · 7–2",
+    "title": "Kirk Cousins is back",
+    "sub": "Five days after rejoining the Vikings in a trade with Las Vegas: 21 of 31, 207 yards, 2 TDs."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Cleveland",
+    "home": "Browns",
+    "homeAbbr": "CLE",
+    "homeScore": 27,
+    "away": "Texans",
+    "awayAbbr": "HOU",
+    "awayScore": 24,
+    "status": "FINAL",
+    "note": "Deshaun Watson threw for 312 yards against his old team",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png"
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · New Orleans",
+    "home": "Saints",
+    "homeAbbr": "NO",
+    "homeScore": 17,
+    "away": "Panthers",
+    "awayAbbr": "CAR",
+    "awayScore": 20,
+    "status": "FINAL",
+    "note": "Ryan Fitzgerald's 54-yard field goal as time expired",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/car.png"
+   },
+   {
+    "type": "text",
+    "dur": 9.0,
+    "label": "Around the league",
+    "title": "Jaguars, Rams, Seahawks and Colts win",
+    "sub": "Trevor Lawrence threw for 352 yards in a 40–23 win in Tennessee, the Rams won a 4th straight 34–6 in Arizona, Drew Lock beat Fernando Mendoza's Raiders 21–13, and the Colts edged Miami 24–22 to snap a five-game skid."
+   },
+   {
+    "type": "table",
+    "dur": 9.0,
+    "label": "Playoff picture after Week 10 · AFC",
+    "cols": [
+     "W",
+     "L"
+    ],
+    "rows": [
+     [
+      1,
+      "Bills",
+      8,
+      1
+     ],
+     [
+      2,
+      "Chiefs",
+      7,
+      2
+     ],
+     [
+      3,
+      "Jaguars",
+      7,
+      2
+     ],
+     [
+      4,
+      "Bengals",
+      7,
+      2
+     ],
+     [
+      5,
+      "Broncos",
+      7,
+      2
+     ],
+     [
+      6,
+      "Steelers",
+      6,
+      3
+     ],
+     [
+      7,
+      "Browns",
+      6,
+      4
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "note": "Seeds 1–4 are division leaders. Denver had a bye."
+   },
+   {
+    "type": "table",
+    "dur": 9.0,
+    "label": "Playoff picture after Week 10 · NFC",
+    "cols": [
+     "W",
+     "L",
+     "T"
+    ],
+    "rows": [
+     [
+      1,
+      "49ers",
+      8,
+      1,
+      0
+     ],
+     [
+      2,
+      "Lions",
+      7,
+      2,
+      0
+     ],
+     [
+      3,
+      "Giants",
+      5,
+      3,
+      1
+     ],
+     [
+      4,
+      "Panthers",
+      4,
+      5,
+      0
+     ],
+     [
+      5,
+      "Vikings",
+      7,
+      2,
+      0
+     ],
+     [
+      6,
+      "Bears",
+      7,
+      2,
+      0
+     ],
+     [
+      7,
+      "Packers",
+      6,
+      4,
+      0
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "note": "Seeds 1–4 are division leaders"
+   },
+   {
+    "type": "list",
+    "dur": 9.0,
+    "label": "Week 11 · away @ home (ET)",
+    "title": "Games to watch",
+    "rows": [
+     [
+      "Thu 8:15pm",
+      "Colts @ Texans",
+      "Prime Video"
+     ],
+     [
+      "Sun 1:00pm",
+      "Dolphins @ Bills",
+      "CBS"
+     ],
+     [
+      "Sun 8:20pm",
+      "Vikings @ 49ers",
+      "NBC"
+     ],
+     [
+      "Mon 8:15pm",
+      "Bengals @ Commanders",
+      "ESPN"
+     ]
+    ],
+    "note": "Vikings v 49ers is in Mexico City. Byes: Falcons, Browns, Patriots, Packers, Seahawks, Rams."
+   },
+   {
+    "type": "cta",
+    "dur": 5,
+    "title": "Best game of Week 10?",
+    "sub": "Tell us in the comments"
+   },
+   {
+    "type": "outro",
+    "dur": 4,
+    "title": "Live scores & standings",
+    "sub": "Follow ScoreBuzz for daily results and recaps"
+   }
+  ]
+ }
+]
