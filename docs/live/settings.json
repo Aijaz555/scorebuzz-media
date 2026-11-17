@@ -25,13 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "11": {
-   "league": "nhl",
-   "event": "401892727",
-   "note": "Utah Mammoth vs Vancouver Canucks, 2026-11-17T02:30:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
