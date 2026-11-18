@@ -1,9 +1,15 @@
 [
  {
-  "slug": "barclays-center",
-  "name": "Barclays Center",
-  "city": "Brooklyn",
-  "country": ""
+  "slug": "san-mames",
+  "name": "San Mamés",
+  "city": "Bilbao",
+  "country": "Spain"
+ },
+ {
+  "slug": "spartan-stadium",
+  "name": "Spartan Stadium",
+  "city": "East Lansing",
+  "country": "USA"
  },
  {
   "slug": "frost-bank-center",
