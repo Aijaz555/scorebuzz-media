@@ -2335,5 +2335,25 @@
   "status": "ok",
   "reason": "ok (contrast 37)",
   "at": "2026-11-17T21:18:56+00:00"
+ },
+ "401892728": {
+  "slot": "1",
+  "league": "nhl",
+  "game": "Bruins v Kings",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/bruins-vs-kings-401892728/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 95)",
+  "at": "2026-11-18T00:07:26+00:00"
+ },
+ "401892730": {
+  "slot": "4",
+  "league": "nhl",
+  "game": "Panthers v Oilers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/panthers-vs-oilers-401892730/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 93)",
+  "at": "2026-11-18T00:07:29+00:00"
  }
 }
