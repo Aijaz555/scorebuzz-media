@@ -912,5 +912,155 @@
   },
   "fbtext": "",
   "time": "2026-11-19T08:05:00"
+ },
+ {
+  "id": "s10-nhl-tuesday-board",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "hype",
+  "fb": "2026-11-19T05:05:00",
+  "yt": null,
+  "title": "NHL Scores Tuesday: Oilers Win in Florida, 14 Goals in St. Louis 🏒 #shorts",
+  "description": "NHL scores from Tuesday 17 November 2026: the Edmonton Oilers beat the Florida Panthers 5–2, the St. Louis Blues beat the Anaheim Ducks 8–6, the Minnesota Wild beat the Nashville Predators 7–3, the New York Islanders beat the Columbus Blue Jackets 5–1, the Chicago Blackhawks beat the Toronto Maple Leafs 6–3, the Tampa Bay Lightning beat the Washington Capitals 5–2, the Los Angeles Kings beat the Boston Bruins 3–0, the Philadelphia Flyers beat the Buffalo Sabres 4–3, the Ottawa Senators beat the Winnipeg Jets 2–1, the Dallas Stars beat the Vegas Golden Knights 4–3 (OT) and the Calgary Flames beat the San Jose Sharks 5–2. Connor McDavid had a goal and an assist to extend his season-opening point streak to 23 games, Cutter Gauthier scored a hat trick for Anaheim and Matthew Schaefer scored three for the Islanders.\n\nNHL scores today: https://scorebuzz.net\n\n#NHL #Oilers #McDavid #Islanders",
+  "tags": [],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 21.0,
+    "kicker": "NHL · Tuesday night",
+    "title": "Every score",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.7,
+    "rows": [
+     {
+      "home": "Panthers",
+      "homeAbbr": "FLA",
+      "hs": 2,
+      "away": "Oilers",
+      "awayAbbr": "EDM",
+      "as": 5,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png"
+     },
+     {
+      "home": "Blues",
+      "homeAbbr": "STL",
+      "hs": 8,
+      "away": "Ducks",
+      "awayAbbr": "ANA",
+      "as": 6,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png"
+     },
+     {
+      "home": "Wild",
+      "homeAbbr": "MIN",
+      "hs": 7,
+      "away": "Predators",
+      "awayAbbr": "NSH",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png"
+     },
+     {
+      "home": "Islanders",
+      "homeAbbr": "NYI",
+      "hs": 5,
+      "away": "Blue Jackets",
+      "awayAbbr": "CBJ",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png"
+     },
+     {
+      "home": "Blackhawks",
+      "homeAbbr": "CHI",
+      "hs": 6,
+      "away": "Maple Leafs",
+      "awayAbbr": "TOR",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png"
+     },
+     {
+      "home": "Lightning",
+      "homeAbbr": "TB",
+      "hs": 5,
+      "away": "Capitals",
+      "awayAbbr": "WSH",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wsh.png"
+     },
+     {
+      "home": "Bruins",
+      "homeAbbr": "BOS",
+      "hs": 0,
+      "away": "Kings",
+      "awayAbbr": "LA",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png"
+     },
+     {
+      "home": "Flyers",
+      "homeAbbr": "PHI",
+      "hs": 4,
+      "away": "Sabres",
+      "awayAbbr": "BUF",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png"
+     },
+     {
+      "home": "Jets",
+      "homeAbbr": "WPG",
+      "hs": 1,
+      "away": "Senators",
+      "awayAbbr": "OTT",
+      "as": 2,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png"
+     },
+     {
+      "home": "Golden Knights",
+      "homeAbbr": "VGK",
+      "hs": 3,
+      "away": "Stars",
+      "awayAbbr": "DAL",
+      "as": 4,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+      "note": "OT"
+     },
+     {
+      "home": "Sharks",
+      "homeAbbr": "SJ",
+      "hs": 2,
+      "away": "Flames",
+      "awayAbbr": "CGY",
+      "as": 5,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Best result of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL scores",
+   "big": "11",
+   "hook": "games, *every* score",
+   "sticker": "FINAL",
+   "emoji": "🏒"
+  },
+  "fbtext": "🏒 Every NHL score from Tuesday night.\n\nThe Oilers won 5–2 in Florida, the Blues beat the Ducks 8–6, and Dallas came from 3–1 down to beat Vegas in overtime.\n\nBiggest result of the night? 👇\n\n#NHL #Oilers #Reels",
+  "time": "2026-11-19T05:05:00"
  }
 ]
