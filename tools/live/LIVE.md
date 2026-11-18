@@ -432,6 +432,11 @@ map before/after the game (or `&trk=own` / `sbtrk: 0`). Preview: `center.html?le
   cropped iframe. center.html now draws the same pill over the tracker (`trackerChip`, ESPN data every 2 s, score flashes lime 8 s
   after a goal). Reload 33.
 
+- Tracker drift fix (owner, 18 Nov 2026: Spurs-Pistons, Wild-Predators, Timberwolves-Blazers, Flyers-Sabres, Islanders-Blue Jackets
+  "live tracker showing wrong"): after 1-2 h on air the scorebuzz.net page's content above `#trkSlot` changes height, so the
+  one-time anchor scroll drifted and the centre box showed the site's score card or stats table instead of the tracker.
+  center.html now re-anchors every 20 s (fragment-only `#_` → `#trkSlot`, scrolls without reloading the page). Reload 35.
+
 ## NFL on the centre layout (owner, 15 Nov 2026: NFL tracker in the centre like NBA / NHL)
 center.html now handles `nfl`: scorebuzz.net field tracker (`american-football/nfl/<home>-vs-<away>-<id>/`, same 'live action' crop as us.html)
 in the centre while in play; strip with timeouts (3 dots each), down & distance with the ball carrier's logo, RED ZONE lights; Q1–Q4/OT chips;

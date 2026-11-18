@@ -478,11 +478,15 @@ function footReplay(s) {
   return S;
 }
 // the website's live tracker, cropped out of the match page like nba.html / us.html
-let trkF = null, trkSrc = '';
+let trkF = null, trkSrc = '', trkAt = 0;
 function placeTracker(url) {
   const box = $('trk'); if (!box || !url) { if (trkF) trkF.parentNode.style.display = 'none'; return; }
   if (!trkF) { const L = document.createElement('div'); L.id = 'trkL'; trkF = document.createElement('iframe'); L.appendChild(trkF); document.body.appendChild(L); }
-  if (trkSrc !== url) { trkSrc = url; trkF.src = url + '#trkSlot'; }
+  if (trkSrc !== url) { trkSrc = url; trkF.src = url + '#trkSlot'; trkAt = Date.now(); }
+  // owner 18 Nov 2026: after an hour or two the site's content above the tracker changes height, so the anchor scroll drifts
+  // (stream showed the score card or the stats table instead of the tracker). Re-anchor every 20 s: a fragment-only change
+  // ('#_' then '#trkSlot') scrolls the cross-origin page back to the tracker without reloading it.
+  else if (Date.now() - trkAt > 20000) { trkAt = Date.now(); trkF.src = url + '#_'; setTimeout(() => { if (trkSrc === url) trkF.src = url + '#trkSlot'; }, 300); }
   trkF.parentNode.style.display = 'block';
   const { top: TOP, vh: VH, x: X, vw: VW } = CROP;
   const left = box.offsetLeft + box.offsetParent.offsetLeft + box.clientLeft, top = box.offsetTop + box.offsetParent.offsetTop, w = box.clientWidth, h = box.clientHeight, k = Math.max(w / VW, h / VH);
