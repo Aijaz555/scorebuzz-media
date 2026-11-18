@@ -25,7 +25,58 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "nhl",
+   "event": "401892739",
+   "note": "Detroit Red Wings vs Boston Bruins, 2026-11-19T00:30:00Z"
+  },
+  "2": {
+   "league": "nba",
+   "event": "401910010",
+   "note": "Orlando Magic vs Philadelphia 76ers, 2026-11-19T00:00:00Z"
+  },
+  "3": {
+   "league": "nhl",
+   "event": "401892740",
+   "note": "New Jersey Devils vs Montreal Canadiens, 2026-11-19T00:30:00Z"
+  },
+  "4": {
+   "league": "bra",
+   "event": "401841314",
+   "note": "Cruzeiro vs Palmeiras, 2026-11-18T23:30:00Z"
+  },
+  "5": {
+   "league": "bra",
+   "event": "401841313",
+   "note": "Flamengo vs Athletico-PR, 2026-11-18T23:30:00Z"
+  },
+  "6": {
+   "league": "nba",
+   "event": "401910007",
+   "note": "Cleveland Cavaliers vs Memphis Grizzlies, 2026-11-19T00:00:00Z"
+  },
+  "7": {
+   "league": "nba",
+   "event": "401910008",
+   "note": "Indiana Pacers vs Houston Rockets, 2026-11-19T00:00:00Z"
+  },
+  "8": {
+   "league": "nba",
+   "event": "401910009",
+   "note": "Miami Heat vs Milwaukee Bucks, 2026-11-19T00:00:00Z"
+  },
+  "9": {
+   "league": "nba",
+   "event": "401910012",
+   "note": "Toronto Raptors vs Washington Wizards, 2026-11-19T00:30:00Z"
+  },
+  "10": {
+   "league": "nba",
+   "event": "401910011",
+   "note": "Brooklyn Nets vs Chicago Bulls, 2026-11-19T00:30:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
