@@ -2415,5 +2415,45 @@
   "status": "ok",
   "reason": "ok (contrast 77)",
   "at": "2026-11-18T00:57:31+00:00"
+ },
+ "401910003": {
+  "slot": "9",
+  "league": "nba",
+  "game": "Timberwolves v Trail Blazers",
+  "url": "https://scorebuzz.net/basketball/nba/timberwolves-vs-trail-blazers-401910003/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 62)",
+  "at": "2026-11-18T01:13:42+00:00"
+ },
+ "401910004": {
+  "slot": "10",
+  "league": "nba",
+  "game": "Spurs v Pistons",
+  "url": "https://scorebuzz.net/basketball/nba/spurs-vs-pistons-401910004/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-18T01:13:45+00:00"
+ },
+ "401892734": {
+  "slot": "11",
+  "league": "nhl",
+  "game": "Blues v Ducks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blues-vs-ducks-401892734/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-18T01:13:48+00:00"
+ },
+ "401892735": {
+  "slot": "12",
+  "league": "nhl",
+  "game": "Wild v Predators",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/wild-vs-predators-401892735/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 80)",
+  "at": "2026-11-18T01:13:51+00:00"
  }
 }
