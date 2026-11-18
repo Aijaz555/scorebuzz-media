@@ -317,6 +317,14 @@ Event caption removed (owner 16 Nov 2026: "Corner K Shaw (Malta)" text under the
   up to 13 live, set as maxLiveTemp 14 until 19 Nov 08:00 UTC because the planner also counts the 02:00 schedule for Celtics-Nuggets
   while the Brazil games (done ~01:45) still run. `bra` auto-off 19 Nov 06:00 UTC (`streams.until`).
 
+- **Drop order (owner, 18 Nov 2026: "drop only low ranked NBA games and cover all NHL"):** `streams.leagues` now has `nhl` (and
+  tonight `bra`) ahead of `nba`, and within a league the planner ranks games by the two teams' average win % (`winPct` from ESPN
+  records in feed.js), so the cap skips the lowest-ranked NBA games first. When YouTube refuses a start ("User has too many live or
+  scheduled broadcasts", or a stuck PREPARING whose restart is refused): `node tools/live/bump.js <refused slot> [--skip <slots>]`
+  names the lowest-ranked NBA stream to give up (never NHL; for an NBA game only a lower-ranked one). Stop it (LIVE/PREPARING) or
+  cancel its schedule, start the refused game once, and put "bump: Slot N <dropped> for Slot M <refused>" in the commit. No
+  candidate → notify the owner as before.
+
 ## Stream check (added 9 Nov 2026)
 
 Each hourly run checks what every LIVE stream actually shows on YouTube (needs `i.ytimg.com` on the session's allowed

@@ -175,7 +175,8 @@ async function games(extra) {
     if (cfg.onlyEvents && cfg.onlyEvents[g.league] && !cfg.onlyEvents[g.league].map(String).includes(String(g.id))) return false;
     if (g.state === 'in') return true;
     return g.state === 'pre' && new Date(g.start).getTime() - cfg.leadMinutes * MIN <= now + cfg.lookaheadMinutes * MIN;
-  }).sort((a, b) => (b.state === 'in') - (a.state === 'in') || fav(b) - fav(a) || pri(a) - pri(b) || a.start.localeCompare(b.start));
+  }).sort((a, b) => (b.state === 'in') - (a.state === 'in') || fav(b) - fav(a) || pri(a) - pri(b) || (b.winPct ?? 0.5) - (a.winPct ?? 0.5) || a.start.localeCompare(b.start));
+  // within a league, better teams (higher average win %) first, so the cap drops the lowest-ranked games (owner, 18 Nov 2026)
 
   // slots first; Main last (it is the "best game" channel and falls back to auto when unassigned)
   free.sort((a, b) => (a.key === 'main') - (b.key === 'main') || Number(a.key) - Number(b.key));

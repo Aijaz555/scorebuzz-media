@@ -280,17 +280,17 @@
  "streams": {
   "leagues": [
    "nfl",
+   "nhl",
+   "bra",
    "nba",
    "epl",
    "unl",
    "ucl",
-   "nhl",
    "laliga",
    "seriea",
    "ligue1",
    "mls",
-   "mlb",
-   "bra"
+   "mlb"
   ],
   "until": {
    "unl": "2026-11-17T23:59:00Z",

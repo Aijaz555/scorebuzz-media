@@ -539,6 +539,8 @@ async function list(league, date) {
       abbrs: [a.abbreviation, h.abbreviation].filter(Boolean),
       // best (lowest) top-25 ranking of the two teams, college only (99 = unranked)
       rank: Math.min(...c.competitors.map((x) => x.curatedRank?.current || 99).map((r) => (r > 0 && r < 26 ? r : 99))),
+      // average win % of the two teams from their overall records ("W-L" or "W-L-OTL"), 0.5 when unknown; ranks games within a league
+      winPct: (() => { const p = c.competitors.map((x) => { const r = String(x.records?.[0]?.summary || '').split('-').map(Number); const n = r.reduce((u, v) => u + (v || 0), 0); return n ? r[0] / n : 0.5; }); return Math.round((p.reduce((u, v) => u + v, 0) / p.length) * 1000) / 1000; })(),
       matchup: `${t1.displayName} vs ${t2.displayName}`,
       title: title.length > 100 ? `${nick(t1)} vs ${nick(t2)} ${tag} Live Scoreboard` : title,
       description: [
