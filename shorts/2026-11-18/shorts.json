@@ -1,0 +1,916 @@
+[
+ {
+  "id": "s01-haaland-96th-min",
+  "sport": "football",
+  "bed": "drama",
+  "fb": "2026-11-18T13:30:00",
+  "yt": "2026-11-18T16:00:00",
+  "title": "Denmark vs Norway 2–3: Haaland Wins It in the 96th Minute 😱 #shorts",
+  "description": "Erling Haaland scored a 96th-minute penalty as Norway came from 2–0 down to beat Denmark 3–2 at Parken in Copenhagen on Tuesday and reach the UEFA Nations League quarter-finals. Rasmus Højlund and Pierre-Emile Højbjerg put Denmark 2–0 up inside 14 minutes, Haaland pulled one back, Martin Ødegaard equalised on 83 minutes and Haaland won it from the spot. The quarter-final draw is on Friday.\n\nDenmark vs Norway final score and Nations League results: https://scorebuzz.net\n\n#Haaland #Norway #NationsLeague #Denmark",
+  "tags": [
+   "denmark vs norway",
+   "norway vs denmark",
+   "erling haaland",
+   "haaland penalty",
+   "martin odegaard",
+   "rasmus hojlund",
+   "nations league",
+   "nations league quarter finals",
+   "nations league results",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Nations League · Copenhagen",
+    "title": "2–0 down. Then Haaland.",
+    "sub": "Denmark vs Norway"
+   },
+   {
+    "type": "score",
+    "dur": 4.2,
+    "label": "Nations League · Tuesday",
+    "home": "Denmark",
+    "homeAbbr": "DEN",
+    "homeScore": 2,
+    "away": "Norway",
+    "awayAbbr": "NOR",
+    "awayScore": 3,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/den.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+    "note": "Højlund 11', Højbjerg 14' · Haaland 37', Ødegaard 83', Haaland 90+6' (pen)"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "The winner",
+    "value": "90+6'",
+    "text": "Haaland scores the penalty on one of the last plays of the game"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "What it means",
+    "title": "Norway are in the quarter-finals",
+    "sub": "Portugal top the group, Norway go through in second. The draw is on Friday."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Norway win the Nations League?",
+    "sub": "Follow ScoreBuzz for football scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Nations League",
+   "big": "90+6'",
+   "hook": "Haaland *wins it*",
+   "sticker": "LATE DRAMA",
+   "teams": [
+    "DEN",
+    "NOR"
+   ],
+   "emoji": "😱"
+  },
+  "fbtext": "😱 Denmark led Norway 2–0 after 14 minutes. Erling Haaland had other ideas.\n\nHe scored twice, the winner a penalty in the 96th minute, and Norway are into the Nations League quarter-finals.\n\nBest striker in the world right now? 👇\n\n#Haaland #Norway #Reels",
+  "time": "2026-11-18T16:00:00"
+ },
+ {
+  "id": "s02-nations-league-board",
+  "sport": "football",
+  "bed": "hype",
+  "fb": "2026-11-18T16:15:00",
+  "yt": null,
+  "title": "Nations League Results Tuesday: Portugal Win in Wales ⚽ #shorts",
+  "description": "",
+  "tags": [],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 17.2,
+    "kicker": "Nations League · Tuesday",
+    "title": "Every score",
+    "badge": "Full time",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "Wales",
+      "homeAbbr": "WAL",
+      "hs": 2,
+      "away": "Portugal",
+      "awayAbbr": "POR",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/wal.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png"
+     },
+     {
+      "home": "Denmark",
+      "homeAbbr": "DEN",
+      "hs": 2,
+      "away": "Norway",
+      "awayAbbr": "NOR",
+      "as": 3,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/den.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png"
+     },
+     {
+      "home": "Rep. Ireland",
+      "homeAbbr": "IRL",
+      "hs": 3,
+      "away": "Kosovo",
+      "awayAbbr": "KOS",
+      "as": 0,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irl.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kosovo.png"
+     },
+     {
+      "home": "Hungary",
+      "homeAbbr": "HUN",
+      "hs": 1,
+      "away": "N. Ireland",
+      "awayAbbr": "NIR",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hun.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nir.png"
+     },
+     {
+      "home": "Bosnia",
+      "homeAbbr": "BIH",
+      "hs": 2,
+      "away": "Romania",
+      "awayAbbr": "ROU",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rom.png"
+     },
+     {
+      "home": "Ukraine",
+      "homeAbbr": "UKR",
+      "hs": 1,
+      "away": "Georgia",
+      "awayAbbr": "GEO",
+      "as": 0,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/geo.png"
+     },
+     {
+      "home": "Israel",
+      "homeAbbr": "ISR",
+      "hs": 1,
+      "away": "Austria",
+      "awayAbbr": "AUT",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/isr.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png"
+     },
+     {
+      "home": "Poland",
+      "homeAbbr": "POL",
+      "hs": 1,
+      "away": "Sweden",
+      "awayAbbr": "SWE",
+      "as": 1,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pol.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Which result surprised you?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Nations League",
+   "big": "8",
+   "hook": "results, *one* night",
+   "sticker": "FULL TIME",
+   "emoji": "⚽"
+  },
+  "fbtext": "⚽ Every Nations League score from Tuesday night.\n\nPortugal won 3–2 in Wales, Haaland's 96th-minute penalty beat Denmark, and Troy Parrott's two penalties sent Ireland into the play-offs.\n\nBiggest result of the night? 👇\n\n#NationsLeague #Portugal #Reels",
+  "time": "2026-11-18T16:15:00"
+ },
+ {
+  "id": "s03-ev-world-cup-winners",
+  "sport": "football",
+  "bed": "anthem",
+  "evergreen": true,
+  "venue": "MetLife Stadium",
+  "fb": "2026-11-18T19:00:00",
+  "yt": "2026-11-18T20:30:00",
+  "title": "Every Country That Has Won the World Cup 🏆 Only 8 Ever #shorts",
+  "description": "Only eight countries have won the FIFA World Cup. Brazil have won it five times (1958, 1962, 1970, 1994, 2002), Germany and Italy four each, Argentina three, France, Uruguay and Spain two each and England once, in 1966. Spain won their second title in July 2026, beating Argentina 1–0 after extra time in the final at MetLife Stadium in New Jersey; Argentina have now been runners-up four times.\n\nFootball scores and results: https://scorebuzz.net\n\n#WorldCup #Spain #Brazil #Football",
+  "tags": [
+   "world cup winners",
+   "every world cup winner",
+   "world cup winners list",
+   "countries that have won the world cup",
+   "most world cup titles",
+   "brazil 5 world cups",
+   "spain world cup 2026",
+   "world cup 2026 final",
+   "england 1966",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "World Cup history",
+    "title": "Only 8 countries have ever won it",
+    "sub": "Every World Cup winner"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "World Cup titles · 1930–2026",
+    "title": "The giants",
+    "rows": [
+     [
+      "5",
+      "Brazil",
+      "last: 2002"
+     ],
+     [
+      "4",
+      "Germany",
+      "last: 2014"
+     ],
+     [
+      "4",
+      "Italy",
+      "last: 2006"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "World Cup titles · 1930–2026",
+    "title": "The rest",
+    "rows": [
+     [
+      "3",
+      "Argentina",
+      "last: 2022"
+     ],
+     [
+      "2",
+      "France",
+      "1998, 2018"
+     ],
+     [
+      "2",
+      "Uruguay",
+      "1930, 1950"
+     ],
+     [
+      "2",
+      "Spain",
+      "2010, 2026"
+     ],
+     [
+      "1",
+      "England",
+      "1966"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "The 2026 final · New Jersey",
+    "title": "Spain 1–0 Argentina (a.e.t.)",
+    "sub": "Spain's second title. Argentina have now lost four finals."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins the 2030 World Cup?",
+    "sub": "Follow ScoreBuzz for football history"
+   }
+  ],
+  "thumb": {
+   "kicker": "World Cup history",
+   "big": "8",
+   "hook": "countries *ever*",
+   "sticker": "HISTORY",
+   "emoji": "🏆"
+  },
+  "fbtext": "🏆 Only eight countries have ever won the World Cup.\n\nBrazil have five, Germany and Italy four each, and Spain joined the two-title club by beating Argentina in July's final. England are still on one, from 1966.\n\nWho wins in 2030? 👇\n\n#WorldCup #Spain #Reels",
+  "time": "2026-11-18T20:30:00"
+ },
+ {
+  "id": "s04-ev-intl-goals-record",
+  "sport": "football",
+  "bed": "drama",
+  "evergreen": true,
+  "fb": "2026-11-18T20:50:00",
+  "yt": "2026-11-18T18:15:00",
+  "title": "Most International Goals Ever: Ronaldo 146, Messi 126 🐐 #shorts",
+  "description": "Cristiano Ronaldo finished his Portugal career with 146 international goals, the most in men's football history, and 234 caps, also a record. He announced his international retirement on 5 November 2026. Lionel Messi, who retired from Argentina duty in October, ended on 126 goals from 208 games. Iran's Ali Daei is third with more than 100.\n\nFootball scores and records: https://scorebuzz.net\n\n#Ronaldo #Messi #Portugal #Argentina",
+  "tags": [
+   "most international goals",
+   "cristiano ronaldo international goals",
+   "ronaldo 146 goals",
+   "messi international goals",
+   "ronaldo vs messi",
+   "ronaldo retirement portugal",
+   "messi retirement argentina",
+   "all time top scorers international football",
+   "ali daei",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "International football · all-time",
+    "title": "146 goals. Nobody is close.",
+    "sub": "The men's international scoring record"
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "Most men's international goals",
+    "title": "The top three",
+    "rows": [
+     [
+      "146",
+      "Cristiano Ronaldo",
+      "Portugal"
+     ],
+     [
+      "126",
+      "Lionel Messi",
+      "Argentina"
+     ],
+     [
+      "100+",
+      "Ali Daei",
+      "Iran"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Cristiano Ronaldo · Portugal",
+    "value": 234,
+    "unit": "caps",
+    "text": "Also the most games in men's international football"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "2026",
+    "title": "Both have now retired",
+    "sub": "Messi in October, Ronaldo on 5 November. Messi finished 20 goals behind."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Will anyone ever reach 146?",
+    "sub": "Follow ScoreBuzz for football records"
+   }
+  ],
+  "thumb": {
+   "kicker": "All-time record",
+   "big": "146",
+   "hook": "goals. *Untouchable?*",
+   "sticker": "RECORD",
+   "emoji": "🐐"
+  },
+  "fbtext": "🐐 146 international goals. Cristiano Ronaldo's Portugal career is over, and nobody is close to his record.\n\nLionel Messi, who also retired from international football this year, finished on 126.\n\nWill anyone ever catch Ronaldo? 👇\n\n#Ronaldo #Messi #Reels",
+  "time": "2026-11-18T18:15:00"
+ },
+ {
+  "id": "s05-pistons-end-spurs-streak",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "fb": "2026-11-18T22:40:00",
+  "yt": "2026-11-19T01:40:00",
+  "title": "Pistons vs Spurs 105–93: Cade Ends San Antonio's 12-Game Streak 🔥 #shorts",
+  "description": "The Detroit Pistons beat the San Antonio Spurs 105–93 at the Frost Bank Center on Tuesday, ending the Spurs' 12-game winning streak. Cade Cunningham scored 27 and Ausar Thompson had 12 assists, while Victor Wembanyama had 25 points and 18 rebounds for San Antonio (12–3). Spurs guard Dylan Harper limped off late after slipping on the court.\n\nPistons vs Spurs final score and NBA scores: https://scorebuzz.net\n\n#Pistons #Spurs #Wembanyama #NBA",
+  "tags": [
+   "pistons vs spurs",
+   "spurs vs pistons",
+   "cade cunningham",
+   "victor wembanyama",
+   "spurs win streak",
+   "ausar thompson",
+   "dylan harper",
+   "nba scores today",
+   "nba shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Tuesday",
+    "title": "The streak is over",
+    "sub": "Spurs had won 12 straight"
+   },
+   {
+    "type": "score",
+    "dur": 4.2,
+    "label": "NBA · San Antonio",
+    "home": "Spurs",
+    "homeAbbr": "SA",
+    "homeScore": 93,
+    "away": "Pistons",
+    "awayAbbr": "DET",
+    "awayScore": 105,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
+    "note": "Cunningham 27 pts · Wembanyama 25 pts, 18 reb"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Ausar Thompson",
+    "value": 12,
+    "unit": "assists",
+    "text": "plus 9 rebounds for Detroit"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Injury watch",
+    "title": "Dylan Harper limped off",
+    "sub": "The Spurs guard slipped on the court late in the game."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who's the best team in the West?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA",
+   "big": "12",
+   "hook": "straight… *snapped*",
+   "sticker": "STREAK OVER",
+   "teams": [
+    "DET",
+    "SA"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 The Spurs' 12-game winning streak is over.\n\nCade Cunningham scored 27 as Detroit won 105–93 in San Antonio, despite 25 points and 18 rebounds from Victor Wembanyama.\n\nAre the Pistons the East's best? 👇\n\n#Pistons #Wembanyama #Reels",
+  "time": "2026-11-19T01:40:00"
+ },
+ {
+  "id": "s06-mcdavid-23-games",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "anthem",
+  "fb": "2026-11-19T02:20:00",
+  "yt": "2026-11-19T03:50:00",
+  "title": "McDavid's Point Streak Hits 23 Games, Tying Gretzky 😮 #NHL #shorts",
+  "description": "Connor McDavid had a goal and an assist as the Edmonton Oilers beat the Florida Panthers 5–2 on Tuesday, extending his season-opening point streak to 23 games. That ties Wayne Gretzky for the fourth-longest season-opening point streak in NHL history. Vasily Podkolzin scored twice and Leon Draisaitl had a goal and two assists for Edmonton, who lead the NHL at 17–3–3.\n\nOilers vs Panthers final score and NHL scores: https://scorebuzz.net\n\n#McDavid #Oilers #NHL #Gretzky",
+  "tags": [
+   "connor mcdavid",
+   "mcdavid point streak",
+   "oilers vs panthers",
+   "panthers vs oilers",
+   "wayne gretzky",
+   "leon draisaitl",
+   "vasily podkolzin",
+   "nhl scores today",
+   "nhl records",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · season-opening streak",
+    "title": "23 games. Every one with a point.",
+    "sub": "Connor McDavid"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "NHL · Sunrise, Florida",
+    "home": "Panthers",
+    "homeAbbr": "FLA",
+    "homeScore": 2,
+    "away": "Oilers",
+    "awayAbbr": "EDM",
+    "awayScore": 5,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/fla.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "note": "McDavid 1G 1A · Podkolzin 2G · Draisaitl 1G 2A"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Season-opening point streak",
+    "value": 23,
+    "unit": "games",
+    "text": "Ties Wayne Gretzky for 4th-longest in NHL history"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Next · Thursday 7:30pm ET",
+    "title": "Oilers at Lightning",
+    "sub": "Edmonton lead the NHL at 17–3–3."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "How long can McDavid keep it going?",
+    "sub": "Follow ScoreBuzz for NHL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL",
+   "big": "23",
+   "hook": "games, *Gretzky* tied",
+   "sticker": "STREAK",
+   "emoji": "😮"
+  },
+  "fbtext": "😮 Connor McDavid has a point in all 23 games this season.\n\nA goal and an assist in a 5–2 win in Florida tied Wayne Gretzky for the fourth-longest season-opening point streak in NHL history.\n\nHow long does it last? 👇\n\n#McDavid #Oilers #Reels",
+  "time": "2026-11-19T03:50:00"
+ },
+ {
+  "id": "s07-cfp-rankings-top-12",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "bed": "hype",
+  "fb": "2026-11-19T00:30:00",
+  "yt": "2026-11-18T23:15:00",
+  "title": "College Football Playoff Rankings: Georgia No. 1, Wake Forest Top 12 🏈 #shorts",
+  "description": "Georgia stayed No. 1 in the College Football Playoff committee's third rankings of 2026, ahead of unbeaten Utah, Alabama and unbeaten UCLA. Two-loss Texas jumped one-loss Notre Dame to No. 5, Wake Forest rose from 13th to 11th, and Ohio State climbed from 20th to 14th. The full top 12: Georgia, Utah, Alabama, UCLA, Texas, Notre Dame, Miami, Indiana, Tennessee, BYU, Wake Forest and Texas Tech.\n\nCollege football scores and CFP rankings: https://scorebuzz.net\n\n#CFP #CollegeFootball #Georgia #WakeForest",
+  "tags": [
+   "college football playoff rankings",
+   "cfp rankings",
+   "cfp rankings this week",
+   "georgia bulldogs",
+   "utah utes",
+   "alabama",
+   "ucla bruins",
+   "wake forest football",
+   "texas longhorns",
+   "notre dame",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "College Football Playoff",
+    "title": "The new CFP top 12",
+    "sub": "Third committee rankings of 2026"
+   },
+   {
+    "type": "table",
+    "dur": 7.5,
+    "label": "CFP rankings · 17 Nov",
+    "cols": [
+     "REC"
+    ],
+    "rows": [
+     [
+      "1",
+      "Georgia",
+      "9-1"
+     ],
+     [
+      "2",
+      "Utah",
+      "10-0"
+     ],
+     [
+      "3",
+      "Alabama",
+      "8-2"
+     ],
+     [
+      "4",
+      "UCLA",
+      "10-0"
+     ],
+     [
+      "5",
+      "Texas",
+      "8-2"
+     ],
+     [
+      "6",
+      "Notre Dame",
+      "9-1"
+     ],
+     [
+      "7",
+      "Miami",
+      "9-1"
+     ],
+     [
+      "8",
+      "Indiana",
+      "9-1"
+     ],
+     [
+      "9",
+      "Tennessee",
+      "8-2"
+     ],
+     [
+      "10",
+      "BYU",
+      "8-2"
+     ],
+     [
+      "11",
+      "Wake Forest",
+      "9-1"
+     ],
+     [
+      "12",
+      "Texas Tech",
+      "9-1"
+     ]
+    ],
+    "highlight": [
+     "1"
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Movers",
+    "title": "Texas jumps Notre Dame",
+    "sub": "Two-loss Texas is No. 5. Wake Forest rises 13 → 11."
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Ohio State",
+    "value": 14,
+    "unit": "th",
+    "text": "Up from 20th last week"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins the national title?",
+    "sub": "Follow ScoreBuzz for college football"
+   }
+  ],
+  "thumb": {
+   "kicker": "CFP rankings",
+   "big": "No. 1",
+   "hook": "Georgia *stays* top",
+   "sticker": "NEW TOP 25",
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 The new College Football Playoff rankings are out.\n\nGeorgia stay No. 1 ahead of unbeaten Utah, Alabama and unbeaten UCLA, Texas jumped Notre Dame, and Wake Forest is up to 11th.\n\nWho's too low? 👇\n\n#CFP #CollegeFootball #Reels",
+  "time": "2026-11-18T23:15:00"
+ },
+ {
+  "id": "s08-nfl-week11-predict",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "fb": "2026-11-19T06:55:00",
+  "yt": "2026-11-19T05:55:00",
+  "title": "NFL Week 11 Predictions: Vikings vs 49ers in Mexico City & More 🏈 #shorts",
+  "description": "NFL Week 11 predictions: the Colts visit the Texans on Thursday Night Football, the 8–1 Bills host the Dolphins, the Lions host the Buccaneers, the Chiefs host the Cardinals and the Steelers visit the Eagles on Sunday. The 7–2 Vikings and 8–1 49ers meet in Mexico City on Sunday night, and the Bengals visit the Commanders on Monday night. This is a score-prediction board, not results: drop your picks in the comments.\n\nNFL schedule and live scores: https://scorebuzz.net\n\n#NFL #NFLWeek11 #49ers #Vikings",
+  "tags": [
+   "nfl week 11 predictions",
+   "nfl week 11 picks",
+   "vikings vs 49ers",
+   "49ers vs vikings",
+   "nfl mexico city game",
+   "colts vs texans",
+   "dolphins vs bills",
+   "steelers vs eagles",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 19.0,
+    "kicker": "NFL · Week 11",
+    "title": "Predict every score",
+    "badge": "Score prediction",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "Texans",
+      "homeAbbr": "HOU",
+      "hs": "?",
+      "away": "Colts",
+      "awayAbbr": "IND",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
+      "note": "Thu 8:15pm ET"
+     },
+     {
+      "home": "Bills",
+      "homeAbbr": "BUF",
+      "hs": "?",
+      "away": "Dolphins",
+      "awayAbbr": "MIA",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
+      "note": "Sun 1pm ET"
+     },
+     {
+      "home": "Lions",
+      "homeAbbr": "DET",
+      "hs": "?",
+      "away": "Buccaneers",
+      "awayAbbr": "TB",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/tb.png",
+      "note": "Sun 1pm ET"
+     },
+     {
+      "home": "Chiefs",
+      "homeAbbr": "KC",
+      "hs": "?",
+      "away": "Cardinals",
+      "awayAbbr": "ARI",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
+      "note": "Sun 1pm ET"
+     },
+     {
+      "home": "Eagles",
+      "homeAbbr": "PHI",
+      "hs": "?",
+      "away": "Steelers",
+      "awayAbbr": "PIT",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
+      "note": "Sun 1pm ET"
+     },
+     {
+      "home": "Broncos",
+      "homeAbbr": "DEN",
+      "hs": "?",
+      "away": "Raiders",
+      "awayAbbr": "LV",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
+      "note": "Sun 4:25pm ET"
+     },
+     {
+      "home": "Giants",
+      "homeAbbr": "NYG",
+      "hs": "?",
+      "away": "Jaguars",
+      "awayAbbr": "JAX",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+      "note": "Sun 4:25pm ET"
+     },
+     {
+      "home": "49ers",
+      "homeAbbr": "SF",
+      "hs": "?",
+      "away": "Vikings",
+      "awayAbbr": "MIN",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+      "note": "Sun 8:20pm ET · Mexico City"
+     },
+     {
+      "home": "Commanders",
+      "homeAbbr": "WSH",
+      "hs": "?",
+      "away": "Bengals",
+      "awayAbbr": "CIN",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+      "note": "Mon 8:15pm ET"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Drop your Week 11 picks",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Week 11",
+   "big": "?–?",
+   "hook": "your *picks*",
+   "sticker": "PREDICT",
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 NFL Week 11: predict every score.\n\nThe 8–1 49ers and 7–2 Vikings meet in Mexico City on Sunday night, and the 8–1 Bills host Miami.\n\nWho wins in Mexico City? 👇\n\n#NFL #NFLWeek11 #Reels",
+  "time": "2026-11-19T05:55:00"
+ },
+ {
+  "id": "s09-f1-vegas-schedule",
+  "sport": "racing",
+  "league": "f1",
+  "bed": "hype",
+  "fb": null,
+  "yt": "2026-11-19T08:05:00",
+  "title": "Las Vegas Grand Prix 2026 Start Times (ET & UK) 🏁 #F1 #shorts",
+  "description": "The 2026 Las Vegas Grand Prix runs on the Las Vegas Street Circuit this weekend. First practice is on Thursday at 7:30pm ET (00:30 UK on Friday), qualifying on Friday at 11pm ET (04:00 UK on Saturday) and the race on Saturday at 11pm ET (04:00 UK on Sunday). Kimi Antonelli has already won the drivers' title and Mercedes the constructors' title; Max Verstappen won in Vegas in 2023 and 2025 and George Russell in 2024.\n\nF1 results and standings: https://scorebuzz.net\n\n#F1 #LasVegasGP #Formula1 #Antonelli",
+  "tags": [
+   "las vegas grand prix 2026",
+   "las vegas gp start time",
+   "f1 las vegas",
+   "f1 schedule this weekend",
+   "las vegas grand prix time",
+   "kimi antonelli",
+   "max verstappen",
+   "george russell",
+   "f1 2026",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Formula 1 · Las Vegas",
+    "title": "F1 races down the Strip this week",
+    "sub": "Every session, in your time"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Las Vegas Grand Prix",
+    "title": "Start times",
+    "rows": [
+     [
+      "FP1",
+      "Thu 7:30pm ET",
+      "Fri 00:30 UK"
+     ],
+     [
+      "Quali",
+      "Fri 11pm ET",
+      "Sat 04:00 UK"
+     ],
+     [
+      "Race",
+      "Sat 11pm ET",
+      "Sun 04:00 UK"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Already decided",
+    "title": "Antonelli is champion",
+    "sub": "Mercedes have the constructors' title too."
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Max Verstappen in Las Vegas",
+    "value": 2,
+    "unit": "wins",
+    "text": "2023 and 2025. George Russell won in 2024."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins in Vegas?",
+    "sub": "Follow ScoreBuzz for F1 results"
+   }
+  ],
+  "thumb": {
+   "kicker": "Las Vegas GP",
+   "big": "11pm",
+   "hook": "ET race *start*",
+   "sticker": "THIS WEEK",
+   "emoji": "🏁"
+  },
+  "fbtext": "",
+  "time": "2026-11-19T08:05:00"
+ }
+]

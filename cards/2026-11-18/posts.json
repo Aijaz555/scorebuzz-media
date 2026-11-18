@@ -1,0 +1,305 @@
+[
+ {
+  "id": "01-wal-por",
+  "time": "2026-11-18T11:40:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · CARDIFF",
+  "home": "Wales",
+  "homeScore": 2,
+  "away": "Portugal",
+  "awayScore": 3,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/wal.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+  "venue": "Cardiff City Stadium",
+  "headline": "Portugal's new No. 7 wins it",
+  "sub": "Carlos Forbs scored 11 minutes after coming on. Portugal's first win since Cristiano Ronaldo's international retirement, and they top the group.",
+  "caption": "🇵🇹 Wales 2–3 Portugal.\n\nPortugal's new No. 7, Carlos Forbs, scored the winner on 70 minutes for their first win since Cristiano Ronaldo retired from international football. Bruno Fernandes and Pedro Neto also scored; Neto was later sent off.\n\nCan Portugal cope without Ronaldo? 👇\n\n#WALPOR #Portugal #Forbs #NationsLeague"
+ },
+ {
+  "id": "02-arg-crc",
+  "time": "2026-11-18T12:35:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "FRIENDLY · CÓRDOBA",
+  "home": "Argentina",
+  "homeScore": 7,
+  "away": "Costa Rica",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/crc.png",
+  "headline": "Seven for Argentina",
+  "sub": "Nico Paz, Julián Álvarez and Franco Mastantuono scored two each, Alexis Mac Allister one. Three days after a 2–1 loss to Uruguay.",
+  "caption": "🇦🇷 Argentina 7–0 Costa Rica.\n\nNico Paz, Julián Álvarez and Franco Mastantuono all scored twice and Alexis Mac Allister added one, three days after Argentina lost 2–1 to Uruguay.\n\nWho's Argentina's next superstar? 👇\n\n#Argentina #NicoPaz #Alvarez"
+ },
+ {
+  "id": "03-hun-nir",
+  "time": "2026-11-18T14:25:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · BUDAPEST",
+  "home": "Hungary",
+  "homeScore": 1,
+  "away": "N. Ireland",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hun.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nir.png",
+  "headline": "Northern Ireland are going up",
+  "sub": "Justin Devenny's long-range equaliser earned the point that promotes Northern Ireland to the Nations League's top tier, League A.",
+  "caption": "💚 Northern Ireland are promoted to League A of the Nations League.\n\nBarnabás Varga put Hungary ahead, but Justin Devenny's strike from outside the box made it 1–1 in Budapest, and that was enough.\n\nHow far can this team go? 👇\n\n#GAWA #NorthernIreland #NationsLeague"
+ },
+ {
+  "id": "04-sin-bra",
+  "time": "2026-11-18T15:20:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "FRIENDLY · SINGAPORE",
+  "home": "Singapore",
+  "homeScore": 0,
+  "away": "Brazil",
+  "awayScore": 7,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sin.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+  "headline": "Vinícius: hat trick in 21 minutes",
+  "sub": "Endrick, Estêvão, Rayan and an own goal made it seven. Carlo Ancelotti's biggest win as Brazil coach.",
+  "caption": "🇧🇷 Singapore 0–7 Brazil.\n\nVinícius Júnior scored a hat trick in the first 21 minutes, and Endrick, Estêvão and Rayan also scored in Ancelotti's biggest win as Brazil coach.\n\nIs Vini back to his best? 👇\n\n#Brazil #Vinicius #Endrick"
+ },
+ {
+  "id": "05-irl-kos",
+  "time": "2026-11-18T17:10:00",
+  "sport": "football",
+  "kind": "score",
+  "label": "NATIONS LEAGUE · DUBLIN",
+  "home": "Rep. Ireland",
+  "homeScore": 3,
+  "away": "Kosovo",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irl.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kosovo.png",
+  "venue": "Aviva Stadium",
+  "headline": "Parrott fires Ireland into the play-offs",
+  "sub": "Two Troy Parrott penalties and a Jack Moylan header against 10-man Kosovo at the Aviva Stadium.",
+  "caption": "🇮🇪 Republic of Ireland 3–0 Kosovo.\n\nTroy Parrott scored two penalties and Jack Moylan headed the third after Kosovo went down to 10 men, and Ireland clinched a Nations League play-off spot.\n\nGood night for Ireland? 👇\n\n#COYBIG #Ireland #Parrott"
+ },
+ {
+  "id": "06-pochettino",
+  "time": "2026-11-18T18:05:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "PREMIER LEAGUE · MAN UNITED",
+  "venue": "Old Trafford",
+  "headline": "Pochettino is the new Man United boss",
+  "sub": "United are 18th with 8 points after 10 games. Next up: Liverpool at Anfield, Sunday 16:30 GMT (11:30am ET).",
+  "caption": "🔴 Mauricio Pochettino is back in the Premier League as Manchester United's new manager.\n\nUnited are 18th with 8 points from 10 games, and their next league game is Liverpool away on Sunday.\n\nCan Poch turn United around? 👇\n\n#MUFC #Pochettino #PremierLeague"
+ },
+ {
+  "id": "07-cfp-top",
+  "time": "2026-11-18T19:55:00",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "kind": "list",
+  "label": "COLLEGE FOOTBALL PLAYOFF RANKINGS",
+  "headline": "Georgia stay No. 1",
+  "rows": [
+   [
+    "1",
+    "Georgia",
+    "9–1"
+   ],
+   [
+    "2",
+    "Utah",
+    "10–0"
+   ],
+   [
+    "3",
+    "Alabama",
+    "8–2"
+   ],
+   [
+    "4",
+    "UCLA",
+    "10–0"
+   ],
+   [
+    "5",
+    "Texas",
+    "8–2"
+   ],
+   [
+    "6",
+    "Notre Dame",
+    "9–1"
+   ],
+   [
+    "7",
+    "Miami",
+    "9–1"
+   ],
+   [
+    "8",
+    "Indiana",
+    "9–1"
+   ]
+  ],
+  "sub": "Texas jumped Notre Dame for No. 5. Wake Forest is up to 11th.",
+  "caption": "🏈 The College Football Playoff top 8.\n\nGeorgia stay No. 1 ahead of unbeaten Utah, Alabama and unbeaten UCLA. Two-loss Texas jumped one-loss Notre Dame for No. 5.\n\nWho should be No. 1? 👇\n\n#CFP #CollegeFootball #GoDawgs #Utes"
+ },
+ {
+  "id": "08-det-sa",
+  "time": "2026-11-18T21:45:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · SAN ANTONIO",
+  "home": "Spurs",
+  "homeScore": 93,
+  "away": "Pistons",
+  "awayScore": 105,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
+  "venue": "Frost Bank Center",
+  "headline": "Detroit end the Spurs' 12-game streak",
+  "sub": "Cade Cunningham scored 27 and Ausar Thompson had 12 assists. Victor Wembanyama: 25 points, 18 rebounds.",
+  "caption": "🚫 The Spurs' 12-game winning streak is over.\n\nCade Cunningham scored 27 and Ausar Thompson had 12 assists as the Pistons won 105–93 in San Antonio. Wembanyama had 25 and 18.\n\nPistons or Spurs: who's better? 👇\n\n#Pistons #Spurs #NBA"
+ },
+ {
+  "id": "09-edm-fla",
+  "time": "2026-11-18T23:35:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · SUNRISE, FLORIDA",
+  "home": "Panthers",
+  "homeScore": 2,
+  "away": "Oilers",
+  "awayScore": 5,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/fla.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+  "headline": "McDavid's streak hits 23 games",
+  "sub": "A goal and an assist tie Wayne Gretzky for the 4th-longest season-opening point streak in NHL history.",
+  "caption": "🏒 Oilers 5, Panthers 2.\n\nConnor McDavid had a goal and an assist to run his season-opening point streak to 23 games, tying Wayne Gretzky for fourth-longest ever. Vasily Podkolzin scored twice.\n\nCan anyone stop the Oilers? 👇\n\n#LetsGoOilers #McDavid #NHL"
+ },
+ {
+  "id": "10-nyi-cbj",
+  "time": "2026-11-19T01:25:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · ELMONT, NY",
+  "home": "Islanders",
+  "homeScore": 5,
+  "away": "Blue Jackets",
+  "awayScore": 1,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nyi.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/cbj.png",
+  "venue": "UBS Arena",
+  "headline": "A hat trick for Matthew Schaefer",
+  "sub": "He's now the second-youngest defenseman in NHL history to score three in a game.",
+  "caption": "🎩 Matthew Schaefer scored a hat trick as the Islanders beat Columbus 5–1.\n\nThat makes him the second-youngest defenseman in NHL history to score three goals in a game.\n\nHow good can Schaefer become? 👇\n\n#Isles #Schaefer #NHL"
+ },
+ {
+  "id": "11-nba-tonight",
+  "time": "2026-11-19T03:15:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · WEDNESDAY",
+  "headline": "12 games tonight",
+  "rows": [
+   [
+    "7pm ET",
+    "Bucks at Heat",
+    "MIL 1–13"
+   ],
+   [
+    "7pm ET",
+    "76ers at Magic",
+    "no J. Brown"
+   ],
+   [
+    "9:30pm ET",
+    "Celtics at Nuggets",
+    ""
+   ],
+   [
+    "10pm ET",
+    "Jazz at Lakers",
+    ""
+   ]
+  ],
+  "sub": "Philadelphia are without Jaylen Brown (hamstring). Milwaukee have won once in 14 games.",
+  "caption": "🏀 12 NBA games tonight.\n\nThe 1–13 Bucks visit Miami at 7pm ET, the 76ers play in Orlando without Jaylen Brown, and the Celtics visit Denver at 9:30pm ET.\n\nWhich game are you watching? 👇\n\n#NBA #Celtics #Sixers"
+ },
+ {
+  "id": "12-stl-ana",
+  "time": "2026-11-19T06:00:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · ST. LOUIS",
+  "home": "Blues",
+  "homeScore": 8,
+  "away": "Ducks",
+  "awayScore": 6,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
+  "venue": "Enterprise Center",
+  "headline": "14 goals in St. Louis",
+  "sub": "Cutter Gauthier scored a hat trick for Anaheim and now has 21 goals, but Robert Thomas and the Blues won.",
+  "caption": "🤯 Blues 8, Ducks 6.\n\nCutter Gauthier scored a hat trick and added an assist for Anaheim, taking him to 21 goals this season, but St. Louis won a 14-goal game. Robert Thomas had a goal and two assists.\n\nGame of the night? 👇\n\n#stlblues #FlyTogether #NHL"
+ },
+ {
+  "id": "13-f1-vegas",
+  "time": "2026-11-19T07:50:00",
+  "sport": "racing",
+  "league": "f1",
+  "kind": "list",
+  "label": "F1 · LAS VEGAS GRAND PRIX",
+  "headline": "Vegas start times",
+  "rows": [
+   [
+    "Practice 1",
+    "Thu 7:30pm ET",
+    "Fri 00:30 UK"
+   ],
+   [
+    "Qualifying",
+    "Fri 11pm ET",
+    "Sat 04:00 UK"
+   ],
+   [
+    "Race",
+    "Sat 11pm ET",
+    "Sun 04:00 UK"
+   ]
+  ],
+  "sub": "Kimi Antonelli is already champion. Max Verstappen has won two of the three races on the Strip.",
+  "caption": "🏁 F1 is back in Las Vegas this week.\n\nThe race starts at 11pm ET on Saturday (04:00 UK on Sunday). Kimi Antonelli has already won the title, and Verstappen has won two of the three Vegas races so far.\n\nWho wins on the Strip? 👇\n\n#F1 #LasVegasGP #Verstappen"
+ },
+ {
+  "id": "14-tnf",
+  "time": "2026-11-19T08:45:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "NFL · THURSDAY NIGHT FOOTBALL",
+  "headline": "Colts at Texans",
+  "sub": "Thursday, 8:15pm ET in Houston. Indianapolis are 3–7, Houston 3–6. Both need a win.",
+  "stat": [
+   "3–7 v 3–6",
+   "Colts v Texans"
+  ],
+  "caption": "🏈 Week 11 kicks off tomorrow night: Colts at Texans, 8:15pm ET.\n\nIndianapolis are 3–7 and Houston 3–6. Both need a win.\n\nWho takes it? 👇\n\n#ForTheShoe #HTownMade #TNF"
+ }
+]
