@@ -189,7 +189,7 @@ function gameCell(e, cur) {
   const st = e.status.type, pre = st.state === 'pre', fin = st.completed;
   const s = pre ? (FOOT() ? new Date(e.date).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: TZ()[0] }) + ' ' + TZ()[1] : new Date(e.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET') : fin ? st.shortDetail : FOOT() ? (e.status.displayClock || st.shortDetail) : st.shortDetail.replace(' - ', ' · ');
   const row = (x, o) => `<div class="r"><img src="${x.team.logo}"><b>${esc(x.team.abbreviation)}</b><span class="${pre ? 'rec' : +x.score > +o.score ? 'w' : ''}">${pre ? esc(x.records?.[0]?.summary || '') : esc(x.score)}</span></div>`;
-  return `<div class="gm ${cur ? 'cur' : ''}"><div class="st ${!pre && !fin ? 'live' : ''}">${esc(s)}</div>${row(h, a)}${row(a, h)}</div>`;
+  return `<div class="gm ${cur ? 'cur' : ''}"><div class="st ${!pre && !fin ? 'live' : ''}">${esc(s)}</div>${FOOT() ? row(h, a) + row(a, h) : row(a, h) + row(h, a)}</div>`;
 }
 const dots = (n, max) => `<div class="dots">${Array.from({ length: max }, (_, i) => `<i class="${i < n ? '' : 'u'}"></i>`).join('')}</div>`;
 const tstat = (s, id, name) => (s.boxscore?.teams || []).find((t) => String(t.team.id) === id)?.statistics?.find((x) => x.name === name)?.displayValue ?? '';
@@ -289,7 +289,10 @@ function footCards(s, c, T, pre) {
 function render(s, sb) {
   const c = s.header.competitions[0], st = c.status;
   const H = team(c.competitors.find((x) => x.homeAway === 'home')), A = team(c.competitors.find((x) => x.homeAway === 'away'));
-  document.documentElement.style.setProperty('--hc', H.color); document.documentElement.style.setProperty('--ac', A.color);
+  // owner 18 Nov 2026: US leagues (NBA/NHL/NFL/MLB) show the AWAY team on the left and HOME on the right, like US TV and the
+  // scorebuzz.net tracker (WSH @ TB); football keeps home on the left. L / R are the display sides; H / A stay home / away.
+  const AWL = !FOOT(), L = AWL ? A : H, R = AWL ? H : A;
+  document.documentElement.style.setProperty('--hc', L.color); document.documentElement.style.setProperty('--ac', R.color);
   const sbEv = (sb?.events || []).find((e) => e.id === c.id), sit = sbEv?.competitions?.[0]?.situation || s.situation || {};
   { // ESPN's scoreboard and summary feeds refresh at different moments: use whichever is further on (keeps the board level with the tracker)
     const b = sbEv?.status, secs = (v) => { const m = /^(\d+):(\d+)/.exec(v || ''); return m ? +m[1] * 60 + +m[2] : parseFloat(v) || 0; };
@@ -318,17 +321,18 @@ function render(s, sb) {
   } else if (NFL()) { // timeouts, down & distance (with the team that has the ball), red zone
     const pos = String(sit.possession || ''), rz = sit.isRedZone, ht = sit.homeTimeouts ?? (pre ? 3 : null), at = sit.awayTimeouts ?? (pre ? 3 : null);
     const dd = live && sit.downDistanceText ? `${pos ? `<img src="${pos === H.id ? H.logoD : A.logoD}">` : ''}${esc(sit.downDistanceText)}` : fin ? 'FINAL' : /HALFTIME/.test(n) ? 'HALFTIME' : 'TIMEOUTS';
-    strip = `<div class="tob nfl"><div class="bn ${rz && pos === H.id ? 'on' : ''}">RED ZONE</div>${ht == null ? '<div></div>' : dots(ht, 3)}<div class="tl dd">${dd}</div>${at == null ? '<div></div>' : dots(at, 3)}<div class="bn ${rz && pos === A.id ? 'on' : ''}">RED ZONE</div></div>`;
+    const lt = L === H ? ht : at, rt = L === H ? at : ht;
+    strip = `<div class="tob nfl"><div class="bn ${rz && pos === L.id ? 'on' : ''}">RED ZONE</div>${lt == null ? '<div></div>' : dots(lt, 3)}<div class="tl dd">${dd}</div>${rt == null ? '<div></div>' : dots(rt, 3)}<div class="bn ${rz && pos === R.id ? 'on' : ''}">RED ZONE</div></div>`;
   } else if (NHL()) {
     const sog = (id) => (hasBox ? tstat(s, id, 'shotsTotal') || '0' : '–'), pp = (id) => (hasBox ? `${tstat(s, id, 'powerPlayGoals') || 0}/${tstat(s, id, 'powerPlayOpportunities') || 0}` : '–');
-    strip = `<div class="tob"><div class="sv">PP <b>${pp(H.id)}</b></div><div class="sv">${esc(H.abbr)} <b>${sog(H.id)}</b></div><div class="tl">SHOTS ON GOAL</div><div class="sv"><b>${sog(A.id)}</b> ${esc(A.abbr)}</div><div class="sv">PP <b>${pp(A.id)}</b></div></div>`;
+    strip = `<div class="tob"><div class="sv">PP <b>${pp(L.id)}</b></div><div class="sv">${esc(L.abbr)} <b>${sog(L.id)}</b></div><div class="tl">SHOTS ON GOAL</div><div class="sv"><b>${sog(R.id)}</b> ${esc(R.abbr)}</div><div class="sv">PP <b>${pp(R.id)}</b></div></div>`;
   } else {
     const fouls = {}, tos = {};
     for (const p of all) { const t = p.type?.text || '', id = String(p.team?.id || ''); if (!id) continue;
       if (/timeout/i.test(t) && !/official/i.test(t)) tos[id] = (tos[id] || 0) + 1;
       if (p.period?.number === per && /foul/i.test(t) && !/offensive|technical|flagrant|double/i.test(t)) fouls[id] = (fouls[id] || 0) + 1; }
     const lim = per > 4 ? 4 : 5, d = (id) => dots(Math.max(0, 7 - (tos[id] || 0)), 7);
-    strip = `<div class="tob"><div class="bn ${(fouls[A.id] || 0) >= lim ? 'on' : ''}">BONUS</div>${d(H.id)}<div class="tl">TIMEOUTS</div>${d(A.id)}<div class="bn ${(fouls[H.id] || 0) >= lim ? 'on' : ''}">BONUS</div></div>`;
+    strip = `<div class="tob"><div class="bn ${(fouls[R.id] || 0) >= lim ? 'on' : ''}">BONUS</div>${d(L.id)}<div class="tl">TIMEOUTS</div>${d(R.id)}<div class="bn ${(fouls[L.id] || 0) >= lim ? 'on' : ''}">BONUS</div></div>`;
   }
   // ---- period chips ----
   const reg = FOOT() ? 2 : NHL() ? 3 : 4, cols = Math.max(reg, H.lines.length, A.lines.length);
@@ -377,7 +381,7 @@ function render(s, sb) {
   const venue = [s.gameInfo?.venue?.fullName, s.gameInfo?.venue?.address?.city].filter(Boolean).join(', ');
   const info = [[start.toUpperCase(), `${et(c.date)}${mins >= 1440 ? ` · ${dayOf(c.date)}` : mins > 0 ? ` · in ${mins >= 60 ? Math.floor(mins / 60) + 'h ' : ''}${mins % 60} min` : ''}`], ['VENUE', venue], ['WATCH', (c.broadcasts || []).map((x) => x.media?.shortName).filter(Boolean).join(', ') || 'Live scores here on ScoreBuzz']];
   const pbp = P.length && !pre ? P.map((p, i) => `<div class="pl ${i === 0 ? 'new' : ''}" style="--nc:${p.team === A.id ? A.color : p.team === H.id ? H.color : '#24366e'}">
-      <div class="l0">${logo(p.team) ? `<img src="${logo(p.team)}">` : ''}<span>${esc(p.clk)}</span><em><span class="${p.scoring && p.team === H.id ? 'g' : ''}">${p.home ?? ''}</span> - <span class="${p.scoring && p.team === A.id ? 'g' : ''}">${p.away ?? ''}</span></em></div>
+      <div class="l0">${logo(p.team) ? `<img src="${logo(p.team)}">` : ''}<span>${esc(p.clk)}</span><em><span class="${p.scoring && p.team === L.id ? 'g' : ''}">${(L === H ? p.home : p.away) ?? ''}</span> - <span class="${p.scoring && p.team === R.id ? 'g' : ''}">${(L === H ? p.away : p.home) ?? ''}</span></em></div>
       <div class="l1">${esc(p.label)}</div><div class="l2">${esc(p.text)}</div></div>`).join('')
     : info.map(([k, v]) => `<div class="pl" style="--nc:#24366e"><div class="l0"><span>${esc(k)}</span></div><div class="l2" style="font-size:26px;font-weight:700;margin-top:6px">${esc(v)}</div></div>`).join('');
   // ---- tracker: website tracker while in play, built-in shot map otherwise ----
@@ -397,14 +401,14 @@ function render(s, sb) {
   let evs = (sb?.events || []).filter((e) => !lu || !e.uid || e.uid.startsWith(lu + '~'));
   const rk = (e) => (e.id === c.id ? 0 : e.status.type.state === 'in' ? 1 : e.status.type.state === 'pre' ? 2 : 3);
   if (evs.length > 6) evs = [...evs].sort((a, b) => rk(a) - rk(b)).slice(0, 6).sort((a, b) => new Date(a.date) - new Date(b.date));
-  $('app').innerHTML = `${side(H, A, 'h')}
+  $('app').innerHTML = `${side(L, R, 'h')}
   <div class="mid">
     <div class="clock"><div class="c ${clk.length > 8 ? 'sm' : ''}">${esc(clk)}</div><div class="p">${esc(sub)}</div></div>
     ${strip}
     <div class="trk" id="trk">${trkUrl ? '' : ownTracker(s, H, A, ov)}</div>
     <div class="pbp">${pbp}</div>
   </div>
-  ${side(A, H, 'a')}
+  ${side(R, L, 'a')}
   <div class="bot">${evs.map((e) => gameCell(e, e.id === c.id)).join('')}<div class="sub"><div class="bz">Score<b>Buzz</b><span>scorebuzz.net</span></div><div class="btn">SUBSCRIBE</div></div></div>`;
   placeTracker(trkUrl);
   trackerChip(trkUrl && FOOT() ? { H, A, clk } : null);

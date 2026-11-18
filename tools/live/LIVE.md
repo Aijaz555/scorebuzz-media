@@ -437,6 +437,15 @@ map before/after the game (or `&trk=own` / `sbtrk: 0`). Preview: `center.html?le
   one-time anchor scroll drifted and the centre box showed the site's score card or stats table instead of the tracker.
   center.html now re-anchors every 20 s (fragment-only `#_` → `#trkSlot`, scrolls without reloading the page). Reload 35.
 
+- Away left / home right for US leagues (owner, 18 Nov 2026: Lightning-Capitals overlay had TB left, the tracker had WSH left):
+  center.html now puts the AWAY team on the left and HOME on the right for NBA / NHL / NFL / MLB (sidebars, strip, play scores,
+  bottom bar), matching US TV and the scorebuzz.net tracker; football keeps home on the left. Reload 36.
+- Clock gap vs the tracker (~10-20 s): both use ESPN, but the site's tracker gets a `stopped` flag from its own in-play feed
+  (`scorebuzz.net/api/live/t-<id>.json`, id from `/api/live/<sport>.json` → `m[].p`) and runs the clock locally between updates;
+  the overlay only shows ESPN's clock, which jumps every 10-30 s. The overlay can't read that feed: scorebuzz.net sends no
+  `Access-Control-Allow-Origin` header, so a fetch from raw.githack.com is blocked. Fix needs a site change: CORS `*` on
+  `/api/live/*`, or the tracker page posting its clock to the parent (`postMessage`).
+
 ## NFL on the centre layout (owner, 15 Nov 2026: NFL tracker in the centre like NBA / NHL)
 center.html now handles `nfl`: scorebuzz.net field tracker (`american-football/nfl/<home>-vs-<away>-<id>/`, same 'live action' crop as us.html)
 in the centre while in play; strip with timeouts (3 dots each), down & distance with the ball carrier's logo, RED ZONE lights; Q1–Q4/OT chips;
