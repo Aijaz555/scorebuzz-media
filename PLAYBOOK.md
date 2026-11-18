@@ -117,10 +117,10 @@ Goal: get found in YouTube/Google search, not just the Shorts feed. Sports searc
 - Every Short and long video gets a designed thumbnail, not a video frame: add a `thumb` object to each entry in `shorts.json` / `videos.json` and run `node tools/make_thumbs.js <json> <dir>` → `<id>.thumb.jpg` (1080x1920 Shorts, 1280x720 videos). Fields are documented at the top of the script.
 - Formula: yellow kicker (league/event) → one giant number or score (`big`, ≤ 6–8 chars; team abbreviation badges optional) → a 2–5 word hook with one *highlighted* word (+ one emoji) → a red corner sticker (RECORD, FINAL, TONIGHT, COMEBACK, UPSET…). One idea per thumbnail, and it must say something the title doesn't repeat word for word.
 - Same accuracy rules: the number and hook must be true facts from the Short. No logos, crests or player photos.
-- Check a contact sheet (nothing clipped or overlapping), commit, then pass the commit-pinned URL as `videoThumbnailUrl` in `createScheduledPost` (YouTube Shorts/videos and Facebook video posts). YouTube only displays custom Shorts thumbnails on verified channels where Shorts thumbnails are enabled; it is harmless otherwise.
+- Check a contact sheet (nothing clipped or overlapping), commit, then pass the commit-pinned URL as `videoThumbnailUrl` in `createScheduledPost` for YouTube long videos (`type: "video"`, incl. match-day table videos) and Facebook Reels/video posts. **Never for YouTube Shorts (`type: "short"`)** (owner, 18 Nov 2026): YouTube rejects custom Shorts thumbnails set from outside Studio, so Metricool emailed "published with some warnings: Could not upload its thumbnail" every day. Leave `videoThumbnailUrl` out of YouTube Short posts; still build the Short's `.thumb.jpg` (it's the Facebook Reel cover).
 
 ## Scheduling (Metricool `createScheduledPost`)
-- provider `youtube`, `youtubeData: {"title": ..., "type": "short"|"video", "privacy": "public", "tags": [...], "category": "SPORTS", "madeForKids": false, "isAiGeneratedContent": false}`, media = `https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/shorts/YYYY-MM-DD/<id>.mp4`, text = description.
+- provider `youtube` (Shorts: no `videoThumbnailUrl`, see Thumbnails), `youtubeData: {"title": ..., "type": "short"|"video", "privacy": "public", "tags": [...], "category": "SPORTS", "madeForKids": false, "isAiGeneratedContent": false}`, media = `https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/shorts/YYYY-MM-DD/<id>.mp4`, text = description.
 
 # TikTok (@scorebuzznet, connected in Metricool brand 7677948)
 
