@@ -75,6 +75,21 @@
    "league": "nba",
    "event": "401910011",
    "note": "Brooklyn Nets vs Chicago Bulls, 2026-11-19T00:30:00Z"
+  },
+  "11": {
+   "league": "nba",
+   "event": "401910016",
+   "note": "Dallas Mavericks vs Golden State Warriors, 2026-11-19T01:00:00Z"
+  },
+  "12": {
+   "league": "nba",
+   "event": "401910014",
+   "note": "Oklahoma City Thunder vs Atlanta Hawks, 2026-11-19T01:00:00Z"
+  },
+  "13": {
+   "league": "nba",
+   "event": "401910013",
+   "note": "New Orleans Pelicans vs Detroit Pistons, 2026-11-19T01:00:00Z"
   }
  },
  "fit": {
