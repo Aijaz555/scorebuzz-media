@@ -28,33 +28,13 @@
  "slots": {
   "1": {
    "league": "nhl",
-   "event": "401892728",
-   "note": "Boston Bruins vs Los Angeles Kings, 2026-11-18T00:00:00Z"
-  },
-  "2": {
-   "league": "nhl",
-   "event": "401892732",
-   "note": "Philadelphia Flyers vs Buffalo Sabres, 2026-11-18T00:00:00Z"
+   "event": "401892738",
+   "note": "San Jose Sharks vs Calgary Flames, 2026-11-18T03:00:00Z"
   },
   "3": {
    "league": "nba",
    "event": "401910002",
    "note": "Toronto Raptors vs New York Knicks, 2026-11-18T00:30:00Z"
-  },
-  "4": {
-   "league": "nhl",
-   "event": "401892730",
-   "note": "Florida Panthers vs Edmonton Oilers, 2026-11-18T00:00:00Z"
-  },
-  "5": {
-   "league": "nhl",
-   "event": "401892731",
-   "note": "New York Islanders vs Columbus Blue Jackets, 2026-11-18T00:00:00Z"
-  },
-  "6": {
-   "league": "nhl",
-   "event": "401892736",
-   "note": "Winnipeg Jets vs Ottawa Senators, 2026-11-18T00:00:00Z"
   },
   "7": {
    "league": "nhl",
