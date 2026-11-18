@@ -25,13 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "13": {
-   "league": "nba",
-   "event": "401910005",
-   "note": "Los Angeles Lakers vs Charlotte Hornets, 2026-11-18T04:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
