@@ -38,6 +38,8 @@ const now = process.env.PLAN_NOW ? Date.parse(process.env.PLAN_NOW) : Date.now()
 const MIN = 60000;
 // "streams": {"until": {"<league>": "<ISO time>"}} stops new assignments for a league after that time
 // (e.g. a tournament window: UEFA Nations League until the end of the November 2026 break)
+// "streams": {"maxLiveTemp": {"value": N, "until": "<ISO>"}} overrides maxLive until that time (e.g. one busy night)
+if (cfg.maxLiveTemp && now < Date.parse(cfg.maxLiveTemp.until)) cfg.maxLive = cfg.maxLiveTemp.value;
 if (cfg.until) cfg.leagues = cfg.leagues.filter((l) => !cfg.until[l] || now < Date.parse(cfg.until[l]));
 const iso = (t) => new Date(t).toISOString().replace(/\.\d+Z$/, 'Z');
 const favs = (settings.teams || []).map((t) => String(t).toUpperCase());
@@ -169,6 +171,8 @@ async function games(extra) {
   const want = [...all.values()].filter((g) => {
     if (!cfg.leagues.includes(g.league) || busy.has(`${g.league}:${g.id}`) || OFF.test(g.status)) return false;
     if (g.league === 'ncaaf' && g.rank > cfg.ncaafTop) return false;
+    // "streams": {"onlyEvents": {"<league>": [ESPN event ids]}} streams only those games of that league (e.g. top Brasileirão games)
+    if (cfg.onlyEvents && cfg.onlyEvents[g.league] && !cfg.onlyEvents[g.league].map(String).includes(String(g.id))) return false;
     if (g.state === 'in') return true;
     return g.state === 'pre' && new Date(g.start).getTime() - cfg.leadMinutes * MIN <= now + cfg.lookaheadMinutes * MIN;
   }).sort((a, b) => (b.state === 'in') - (a.state === 'in') || fav(b) - fav(a) || pri(a) - pri(b) || a.start.localeCompare(b.start));

@@ -309,6 +309,14 @@ so no white line / page background shows around it. Reload 28.
 NFL / NCAAF (us.html) moved to the same new "live action" field tracker crop and cover scaling (owner 10 Nov 2026). Reload 29.
 Event caption removed (owner 16 Nov 2026: "Corner K Shaw (Malta)" text under the pitch on every game): soccer.html crop height 517 → 474, so the site's caption strip below the pitch is cut off. Reload 34.
 
+- **Brasileirão + 10-stream limit (owner, 18 Nov 2026):** keep 10 streams at a time (`streams.maxLive: 10`). League key `bra`
+  (ESPN `soccer/bra.1`, scorebuzz.net `football/brasileirao`) wired into feed.js, app/center/soccer/match3d.html, overlay.html,
+  live_thumbs.js, check_trackers.py; lowest priority (after mlb). New planner options: `streams.onlyEvents {"<league>": [ESPN ids]}`
+  (only those games of that league) and `streams.maxLiveTemp {"value", "until"}` (temporary cap). Night of 18-19 Nov: every NBA/NHL
+  game (they alone peak at 11 live) + top 2 Brazil games, Palmeiras-Cruzeiro and Athletico-PR-Flamengo (23:30 UTC); owner approved
+  up to 13 live, set as maxLiveTemp 14 until 19 Nov 08:00 UTC because the planner also counts the 02:00 schedule for Celtics-Nuggets
+  while the Brazil games (done ~01:45) still run. `bra` auto-off 19 Nov 06:00 UTC (`streams.until`).
+
 ## Stream check (added 9 Nov 2026)
 
 Each hourly run checks what every LIVE stream actually shows on YouTube (needs `i.ytimg.com` on the session's allowed

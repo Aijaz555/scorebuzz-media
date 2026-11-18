@@ -177,9 +177,9 @@ const hex = (c, d) => (c && /^[0-9a-f]{6}$/i.test(c) ? '#' + c : d);
 const J = async (u) => (await fetch(u, { cache: 'no-store' })).json();
 const lum = (h) => { const n = parseInt(h.slice(1), 16); return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255; };
 const darkish = (c, alt) => (lum(c) > 0.7 ? (lum(alt) > 0.7 ? '#1d2a4a' : alt) : c);
-const PATH = { epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', ucl: 'uefa.champions', uel: 'uefa.europa', unl: 'uefa.nations' };
+const PATH = { epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', ucl: 'uefa.champions', uel: 'uefa.europa', unl: 'uefa.nations', bra: 'bra.1' };
 // scorebuzz.net match pages with the live pitch tracker (same paths and crop as app.html, measured 6 Nov 2026)
-const SITE = { epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', unl: 'football/uefa-nations-league', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls' };
+const SITE = { epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', unl: 'football/uefa-nations-league', bra: 'football/brasileirao', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls' };
 const CROP = { top: 65, vh: 474 }, VW = 970, X = 15; // vh 474 (was 517): cuts the site's event caption ("Corner K Shaw (Malta)") under the pitch, owner 16 Nov 2026; // new 'live action' pitch (970x582 canvas at x 15, sticky header 64.5 px), measured 10 Nov 2026
 const API = () => `https://site.api.espn.com/apis/site/v2/sports/soccer/${PATH[league]}`;
 const TZ = () => (league === 'mls' ? ['America/New_York', 'ET'] : ['Europe/London', 'UK']);

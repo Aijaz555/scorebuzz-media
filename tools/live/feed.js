@@ -17,6 +17,7 @@ const LEAGUES = {
   ucl: { path: 'soccer/uefa.champions', label: 'CHAMPIONS LEAGUE', name: 'Champions League', sport: 'football', periods: 2, soccer: true },
   uel: { path: 'soccer/uefa.europa', label: 'EUROPA LEAGUE', name: 'Europa League', sport: 'football', periods: 2, soccer: true },
   unl: { path: 'soccer/uefa.nations', label: 'NATIONS LEAGUE', name: 'UEFA Nations League', sport: 'football', periods: 2, soccer: true },
+  bra: { path: 'soccer/bra.1', label: 'BRASILEIRÃO', name: 'Brasileirão Série A', sport: 'football', periods: 2, soccer: true },
   laliga: { path: 'soccer/esp.1', label: 'LALIGA', name: 'LaLiga', sport: 'football', periods: 2, soccer: true },
   seriea: { path: 'soccer/ita.1', label: 'SERIE A', name: 'Serie A', sport: 'football', periods: 2, soccer: true },
   bundesliga: { path: 'soccer/ger.1', label: 'BUNDESLIGA', name: 'Bundesliga', sport: 'football', periods: 2, soccer: true },

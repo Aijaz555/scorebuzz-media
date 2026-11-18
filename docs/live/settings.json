@@ -257,7 +257,8 @@
   "ucl",
   "uel",
   "unl",
-  "nfl"
+  "nfl",
+  "bra"
  ],
  "usLeagues": [
   "nhl",
@@ -273,7 +274,8 @@
   "bundesliga",
   "ligue1",
   "mls",
-  "unl"
+  "unl",
+  "bra"
  ],
  "streams": {
   "leagues": [
@@ -287,10 +289,23 @@
    "seriea",
    "ligue1",
    "mls",
-   "mlb"
+   "mlb",
+   "bra"
   ],
   "until": {
-   "unl": "2026-11-17T23:59:00Z"
+   "unl": "2026-11-17T23:59:00Z",
+   "bra": "2026-11-19T06:00:00Z"
+  },
+  "onlyEvents": {
+   "bra": [
+    "401841314",
+    "401841313"
+   ]
+  },
+  "maxLive": 10,
+  "maxLiveTemp": {
+   "value": 14,
+   "until": "2026-11-19T08:00:00Z"
   }
  }
 }
