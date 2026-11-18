@@ -2343,18 +2343,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/bruins-vs-kings-401892728/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 95)",
-  "at": "2026-11-18T00:07:26+00:00"
- },
- "401892730": {
-  "slot": "4",
-  "league": "nhl",
-  "game": "Panthers v Oilers",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/panthers-vs-oilers-401892730/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 93)",
-  "at": "2026-11-18T00:07:29+00:00"
+  "reason": "ok (contrast 89)",
+  "at": "2026-11-18T00:57:10+00:00"
  },
  "401892732": {
   "slot": "2",
@@ -2363,8 +2353,28 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/flyers-vs-sabres-401892732/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-18T00:15:37+00:00"
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-18T00:57:13+00:00"
+ },
+ "401910002": {
+  "slot": "3",
+  "league": "nba",
+  "game": "Raptors v Knicks",
+  "url": "https://scorebuzz.net/basketball/nba/raptors-vs-knicks-401910002/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-18T00:57:16+00:00"
+ },
+ "401892730": {
+  "slot": "4",
+  "league": "nhl",
+  "game": "Panthers v Oilers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/panthers-vs-oilers-401892730/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-18T00:57:19+00:00"
  },
  "401892731": {
   "slot": "5",
@@ -2373,8 +2383,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/islanders-vs-blue-jackets-401892731/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 81)",
-  "at": "2026-11-18T00:15:40+00:00"
+  "reason": "ok (contrast 89)",
+  "at": "2026-11-18T00:57:22+00:00"
  },
  "401892736": {
   "slot": "6",
@@ -2383,7 +2393,27 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/jets-vs-senators-401892736/",
   "mode": "website",
   "status": "ok",
+  "reason": "ok (contrast 87)",
+  "at": "2026-11-18T00:57:25+00:00"
+ },
+ "401892729": {
+  "slot": "7",
+  "league": "nhl",
+  "game": "Lightning v Capitals",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/lightning-vs-capitals-401892729/",
+  "mode": "website",
+  "status": "ok",
   "reason": "ok (contrast 80)",
-  "at": "2026-11-18T00:15:43+00:00"
+  "at": "2026-11-18T00:57:28+00:00"
+ },
+ "401892733": {
+  "slot": "8",
+  "league": "nhl",
+  "game": "Blackhawks v Maple Leafs",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-maple-leafs-401892733/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 77)",
+  "at": "2026-11-18T00:57:31+00:00"
  }
 }
