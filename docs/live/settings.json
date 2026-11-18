@@ -85,6 +85,21 @@
    "league": "nhl",
    "event": "401892735",
    "note": "Minnesota Wild vs Nashville Predators, 2026-11-18T01:00:00Z"
+  },
+  "13": {
+   "league": "nhl",
+   "event": "401892737",
+   "note": "Vegas Golden Knights vs Dallas Stars, 2026-11-18T03:00:00Z"
+  },
+  "14": {
+   "league": "nba",
+   "event": "401910006",
+   "note": "LA Clippers vs Utah Jazz, 2026-11-18T03:30:00Z"
+  },
+  "15": {
+   "league": "nhl",
+   "event": "401892738",
+   "note": "San Jose Sharks vs Calgary Flames, 2026-11-18T03:00:00Z"
   }
  },
  "fit": {
