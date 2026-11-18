@@ -2465,5 +2465,15 @@
   "status": "ok",
   "reason": "ok (contrast 38)",
   "at": "2026-11-18T23:31:32+00:00"
+ },
+ "401841314": {
+  "slot": "4",
+  "league": "bra",
+  "game": "Cruzeiro v Palmeiras",
+  "url": "https://scorebuzz.net/football/brasileirao/cruzeiro-vs-palmeiras-401841314/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-18T23:39:40+00:00"
  }
 }
