@@ -241,6 +241,25 @@
   "caption": "🏀 12 NBA games tonight.\n\nThe 1–13 Bucks visit Miami at 7pm ET, the 76ers play in Orlando without Jaylen Brown, and the Celtics visit Denver at 9:30pm ET.\n\nWhich game are you watching? 👇\n\n#NBA #Celtics #Sixers"
  },
  {
+  "id": "15-lakers",
+  "time": "2026-11-19T04:10:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · LOS ANGELES",
+  "home": "Lakers",
+  "homeScore": 118,
+  "away": "Hornets",
+  "awayScore": 114,
+  "status": "FINAL/OT",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+  "venue": "crypto.com Arena",
+  "headline": "Quentin Grimes scores 47 in OT comeback",
+  "sub": "The Lakers trailed by 18 in the third quarter. Luka Dončić added 36 and LA are 13–2.",
+  "caption": "🤯 Quentin Grimes scored 47 points as the Lakers beat the Hornets 118–114 in overtime.\n\nLA trailed by 18 in the third quarter. Luka Dončić added 36, and the Lakers are 13–2.\n\nWhere did that come from? 👇\n\n#LakeShow #Lakers #NBA"
+ },
+ {
   "id": "12-stl-ana",
   "time": "2026-11-19T06:00:00",
   "sport": "nhl",
