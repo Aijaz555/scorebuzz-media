@@ -2514,7 +2514,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 66)",
-  "at": "2026-11-19T04:27:46+00:00"
+  "at": "2026-11-19T05:00:07+00:00"
  },
  "401892741": {
   "slot": "5",
@@ -2523,8 +2523,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/mammoth-vs-avalanche-401892741/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 82)",
-  "at": "2026-11-19T04:27:49+00:00"
+  "reason": "ok (contrast 80)",
+  "at": "2026-11-19T05:00:10+00:00"
  },
  "401910018": {
   "slot": "7",
@@ -2534,7 +2534,7 @@
   "mode": "website",
   "status": "ok",
   "reason": "ok (contrast 66)",
-  "at": "2026-11-19T04:27:52+00:00"
+  "at": "2026-11-19T05:00:13+00:00"
  },
  "401910015": {
   "slot": "14",
@@ -2543,7 +2543,7 @@
   "url": "https://scorebuzz.net/basketball/nba/nuggets-vs-celtics-401910015/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 67)",
-  "at": "2026-11-19T04:27:55+00:00"
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-19T05:00:16+00:00"
  }
 }
