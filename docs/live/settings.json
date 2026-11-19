@@ -25,18 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "4": {
-   "league": "nba",
-   "event": "401910017",
-   "note": "Los Angeles Lakers vs Utah Jazz, 2026-11-19T03:00:00Z"
-  },
-  "5": {
-   "league": "nhl",
-   "event": "401892741",
-   "note": "Utah Mammoth vs Colorado Avalanche, 2026-11-19T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
