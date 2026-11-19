@@ -25,7 +25,48 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "nhl",
+   "event": "401892743",
+   "note": "Ottawa Senators vs Philadelphia Flyers, 2026-11-20T00:00:00Z"
+  },
+  "2": {
+   "league": "nhl",
+   "event": "401892744",
+   "note": "Tampa Bay Lightning vs Edmonton Oilers, 2026-11-20T00:30:00Z"
+  },
+  "3": {
+   "league": "nhl",
+   "event": "401892747",
+   "note": "Carolina Hurricanes vs Montreal Canadiens, 2026-11-20T00:00:00Z"
+  },
+  "4": {
+   "league": "nhl",
+   "event": "401892749",
+   "note": "Winnipeg Jets vs New York Islanders, 2026-11-20T00:00:00Z"
+  },
+  "5": {
+   "league": "nhl",
+   "event": "401892746",
+   "note": "Washington Capitals vs Buffalo Sabres, 2026-11-20T00:00:00Z"
+  },
+  "6": {
+   "league": "nhl",
+   "event": "401892745",
+   "note": "Pittsburgh Penguins vs St. Louis Blues, 2026-11-20T00:00:00Z"
+  },
+  "7": {
+   "league": "nhl",
+   "event": "401892742",
+   "note": "Toronto Maple Leafs vs Los Angeles Kings, 2026-11-20T00:00:00Z"
+  },
+  "8": {
+   "league": "mls",
+   "event": "401933535",
+   "note": "Orlando City SC vs FC Cincinnati, 2026-11-20T00:30:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
