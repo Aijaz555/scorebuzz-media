@@ -6,16 +6,106 @@
   "country": "Spain"
  },
  {
+  "slug": "mendizorrotza",
+  "name": "Mendizorrotza",
+  "city": "Vitoria-Gasteiz",
+  "country": "Spain"
+ },
+ {
+  "slug": "stade-louis-ii",
+  "name": "Stade Louis II",
+  "city": "Monaco",
+  "country": "France"
+ },
+ {
+  "slug": "borussia-park",
+  "name": "BORUSSIA-PARK",
+  "city": "Mönchengladbach",
+  "country": "Germany"
+ },
+ {
+  "slug": "ursapharm-arena-an-der-kaiserlinde",
+  "name": "URSAPHARM-Arena an der Kaiserlinde",
+  "city": "Spiesen-Elversberg",
+  "country": "Germany"
+ },
+ {
   "slug": "spartan-stadium",
   "name": "Spartan Stadium",
   "city": "East Lansing",
   "country": "USA"
  },
  {
-  "slug": "frost-bank-center",
-  "name": "Frost Bank Center",
-  "city": "San Antonio",
-  "country": ""
+  "slug": "david-booth-kansas-memorial-stadium",
+  "name": "David Booth Kansas Memorial Stadium",
+  "city": "Lawrence",
+  "country": "USA"
+ },
+ {
+  "slug": "bobby-dodd-stadium",
+  "name": "Bobby Dodd Stadium",
+  "city": "Atlanta",
+  "country": "USA"
+ },
+ {
+  "slug": "memorial-stadium-lincoln-ne",
+  "name": "Memorial Stadium (Lincoln, NE)",
+  "city": "Lincoln",
+  "country": "USA"
+ },
+ {
+  "slug": "milan-puskar-stadium",
+  "name": "Milan Puskar Stadium",
+  "city": "Morgantown",
+  "country": "USA"
+ },
+ {
+  "slug": "bryant-denny-stadium",
+  "name": "Bryant-Denny Stadium",
+  "city": "Tuscaloosa",
+  "country": "USA"
+ },
+ {
+  "slug": "gies-memorial-stadium",
+  "name": "Gies Memorial Stadium",
+  "city": "Champaign",
+  "country": "USA"
+ },
+ {
+  "slug": "michigan-stadium",
+  "name": "Michigan Stadium",
+  "city": "Ann Arbor",
+  "country": "USA"
+ },
+ {
+  "slug": "husky-stadium",
+  "name": "Husky Stadium",
+  "city": "Seattle",
+  "country": "USA"
+ },
+ {
+  "slug": "mclane-stadium",
+  "name": "McLane Stadium",
+  "city": "Waco",
+  "country": "USA"
+ },
+ {
+  "slug": "bill-snyder-family-stadium",
+  "name": "Bill Snyder Family Stadium",
+  "city": "Manhattan",
+  "country": "USA"
+ },
+ {
+  "slug": "l-n-federal-credit-union-stadium",
+  "name": "L&N Federal Credit Union Stadium",
+  "city": "Louisville",
+  "country": "USA"
+ },
+ {
+  "slug": "amon-g-carter-stadium",
+  "name": "Amon G. Carter Stadium",
+  "city": "Fort Worth",
+  "country": "USA"
  },
  {
   "slug": "gainbridge-fieldhouse",
@@ -24,27 +114,27 @@
   "country": ""
  },
  {
+  "slug": "frost-bank-center",
+  "name": "Frost Bank Center",
+  "city": "San Antonio",
+  "country": ""
+ },
+ {
   "slug": "xfinity-mobile-arena",
   "name": "Xfinity Mobile Arena",
   "city": "Philadelphia",
+  "country": ""
+ },
+ {
+  "slug": "lenovo-center",
+  "name": "Lenovo Center",
+  "city": "Raleigh",
   "country": "USA"
  },
  {
   "slug": "benchmark-international-arena",
   "name": "Benchmark International Arena",
   "city": "Tampa",
-  "country": "USA"
- },
- {
-  "slug": "grand-casino-arena",
-  "name": "Grand Casino Arena",
-  "city": "Saint Paul",
-  "country": "USA"
- },
- {
-  "slug": "lenovo-center",
-  "name": "Lenovo Center",
-  "city": "Raleigh",
   "country": "USA"
  }
 ]
