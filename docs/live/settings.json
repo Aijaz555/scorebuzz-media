@@ -42,14 +42,14 @@
    "note": "New Jersey Devils vs Montreal Canadiens, 2026-11-19T00:30:00Z"
   },
   "4": {
-   "league": "bra",
-   "event": "401841314",
-   "note": "Cruzeiro vs Palmeiras, 2026-11-18T23:30:00Z"
+   "league": "nba",
+   "event": "401910017",
+   "note": "Los Angeles Lakers vs Utah Jazz, 2026-11-19T03:00:00Z"
   },
   "5": {
-   "league": "bra",
-   "event": "401841313",
-   "note": "Flamengo vs Athletico-PR, 2026-11-18T23:30:00Z"
+   "league": "nhl",
+   "event": "401892741",
+   "note": "Utah Mammoth vs Colorado Avalanche, 2026-11-19T03:00:00Z"
   },
   "6": {
    "league": "nba",
@@ -58,8 +58,8 @@
   },
   "7": {
    "league": "nba",
-   "event": "401910008",
-   "note": "Indiana Pacers vs Houston Rockets, 2026-11-19T00:00:00Z"
+   "event": "401910018",
+   "note": "Sacramento Kings vs Phoenix Suns, 2026-11-19T03:00:00Z"
   },
   "8": {
    "league": "nba",
