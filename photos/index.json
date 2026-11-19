@@ -39,6 +39,10 @@
   "venue": "American Express Stadium",
   "credit": "Photo: Hassocks5489 / Wikimedia Commons, CC0"
  },
+ "amon-g-carter-stadium": {
+  "venue": "Amon G. Carter Stadium",
+  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "arasen-stadion": {
   "venue": "Arasen Stadion",
   "credit": "Photo: GAD / Wikimedia Commons, CC BY-SA 4.0"
@@ -95,6 +99,10 @@
   "venue": "Ben Hill Griffin Stadium",
   "credit": "Photo: soulbust / Wikimedia Commons, CC BY-SA 4.0"
  },
+ "bill-snyder-family-stadium": {
+  "venue": "Bill Snyder Family Stadium",
+  "credit": "Photo: Unknown author / Wikimedia Commons, Public domain"
+ },
  "bmo-field": {
   "venue": "BMO Field",
   "credit": "Photo: Abazz / Wikimedia Commons, CC BY-SA 4.0"
@@ -103,13 +111,25 @@
   "venue": "BMO Stadium",
   "credit": "Photo: BagmanTheEditor / Wikimedia Commons, CC BY-SA 4.0"
  },
+ "bobby-dodd-stadium": {
+  "venue": "Bobby Dodd Stadium",
+  "credit": "Photo: JJonahJackalope / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "boone-pickens-stadium": {
   "venue": "Boone Pickens Stadium",
   "credit": "Photo: Wesley Fryer at flickr.com / Wikimedia Commons, CC BY-SA 2.0"
  },
+ "borussia-park": {
+  "venue": "BORUSSIA-PARK",
+  "credit": "Photo: Flor!an / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "bridgestone-arena": {
   "venue": "Bridgestone Arena",
   "credit": "Photo: Quinntropy / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "bryant-denny-stadium": {
+  "venue": "Bryant-Denny Stadium",
+  "credit": "Photo: DXR / Wikimedia Commons, CC BY-SA 4.0"
  },
  "caesars-superdome": {
   "venue": "Caesars Superdome",
@@ -158,6 +178,10 @@
  "crypto-com-arena": {
   "venue": "crypto.com Arena",
   "credit": "Photo: InvadingInvader / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "david-booth-kansas-memorial-stadium": {
+  "venue": "David Booth Kansas Memorial Stadium",
+  "credit": "Photo: Quintinsoloviev / Wikimedia Commons, CC BY-SA 4.0"
  },
  "de-kuip": {
   "venue": "De Kuip",
@@ -295,6 +319,10 @@
   "venue": "Gerald J. Ford Stadium",
   "credit": "Photo: HavanaHeat / Wikimedia Commons, CC BY-SA 4.0"
  },
+ "gies-memorial-stadium": {
+  "venue": "Gies Memorial Stadium",
+  "credit": "Photo: Pwojdacz / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "gillette-stadium": {
   "venue": "Gillette Stadium",
   "credit": "Photo: Abzeronow / Wikimedia Commons, CC BY-SA 4.0"
@@ -346,6 +374,10 @@
  "huntington-bank-stadium": {
   "venue": "Huntington Bank Stadium",
   "credit": "Photo: Lectrician2 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "husky-stadium": {
+  "venue": "Husky Stadium",
+  "credit": "Photo: Dllu / Wikimedia Commons, CC BY-SA 4.0"
  },
  "inter-co-stadium": {
   "venue": "Inter&Co Stadium",
@@ -427,9 +459,17 @@
   "venue": "Madison Square Garden",
   "credit": "Photo: Ajay Suresh from New York, NY, USA / Wikimedia Commons, CC BY 2.0"
  },
+ "mclane-stadium": {
+  "venue": "McLane Stadium",
+  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "memorial-stadium-bloomington-in": {
   "venue": "Memorial Stadium (Bloomington, IN)",
   "credit": "Photo: Tails Wx / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "memorial-stadium-lincoln-ne": {
+  "venue": "Memorial Stadium (Lincoln, NE)",
+  "credit": "Photo: Shelby L. Bell / Wikimedia Commons, CC BY 2.0"
  },
  "memorial-stadium-norman-ok": {
   "venue": "Memorial Stadium (Norman, OK)",
@@ -438,6 +478,10 @@
  "memorial-stadium": {
   "venue": "Memorial Stadium",
   "credit": "Photo: Quintin Soloviev / Wikimedia Commons, CC BY 4.0"
+ },
+ "mendizorrotza": {
+  "venue": "Mendizorrotza",
+  "credit": "Photo: MarcosMarinM / Wikimedia Commons, CC BY-SA 4.0"
  },
  "mercedes-benz-stadium": {
   "venue": "Mercedes-Benz Stadium",
@@ -462,6 +506,14 @@
  "mhparena": {
   "venue": "MHPArena",
   "credit": "Photo: RudolfSimon / Wikimedia Commons, CC BY-SA 3.0"
+ },
+ "michigan-stadium": {
+  "venue": "Michigan Stadium",
+  "credit": "Photo: Lectrician2 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "milan-puskar-stadium": {
+  "venue": "Milan Puskar Stadium",
+  "credit": "Photo: Quintin Soloviev / Wikimedia Commons, CC BY 4.0"
  },
  "moda-center": {
   "venue": "Moda Center",
@@ -723,6 +775,10 @@
   "venue": "Stade Jean Bouin",
   "credit": "Photo: Chabe01 / Wikimedia Commons, CC BY-SA 4.0"
  },
+ "stade-louis-ii": {
+  "venue": "Stade Louis II",
+  "credit": "Photo: Uhooep / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "stade-oceane": {
   "venue": "Stade Océane",
   "credit": "Photo: Philippe Alès / Wikimedia Commons, CC BY-SA 4.0"
@@ -866,6 +922,10 @@
  "united-center": {
   "venue": "United Center",
   "credit": "Photo: Jordano53 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "ursapharm-arena-an-der-kaiserlinde": {
+  "venue": "URSAPHARM-Arena an der Kaiserlinde",
+  "credit": "Photo: Simon Mannweiler / Wikimedia Commons, CC BY-SA 4.0"
  },
  "vasil-levski-national-stadium": {
   "venue": "Vasil Levski National Stadium",
