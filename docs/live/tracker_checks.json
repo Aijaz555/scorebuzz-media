@@ -2505,5 +2505,45 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-19T00:12:17+00:00"
+ },
+ "401910017": {
+  "slot": "4",
+  "league": "nba",
+  "game": "Lakers v Jazz",
+  "url": "https://scorebuzz.net/basketball/nba/lakers-vs-jazz-401910017/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-19T04:27:46+00:00"
+ },
+ "401892741": {
+  "slot": "5",
+  "league": "nhl",
+  "game": "Mammoth v Avalanche",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/mammoth-vs-avalanche-401892741/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-19T04:27:49+00:00"
+ },
+ "401910018": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Kings v Suns",
+  "url": "https://scorebuzz.net/basketball/nba/kings-vs-suns-401910018/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-19T04:27:52+00:00"
+ },
+ "401910015": {
+  "slot": "14",
+  "league": "nba",
+  "game": "Nuggets v Celtics",
+  "url": "https://scorebuzz.net/basketball/nba/nuggets-vs-celtics-401910015/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 67)",
+  "at": "2026-11-19T04:27:55+00:00"
  }
 }
