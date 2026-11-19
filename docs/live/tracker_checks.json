@@ -2456,16 +2456,6 @@
   "reason": "ok (contrast 88)",
   "at": "2026-11-18T01:30:22+00:00"
  },
- "401841314": {
-  "slot": "4",
-  "league": "bra",
-  "game": "Cruzeiro v Palmeiras",
-  "url": "https://scorebuzz.net/football/brasileirao/cruzeiro-vs-palmeiras-401841314/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 36)",
-  "at": "2026-11-18T23:39:40+00:00"
- },
  "401841313": {
   "slot": "5",
   "league": "bra",
@@ -2475,5 +2465,45 @@
   "status": "ok",
   "reason": "ok (contrast 37)",
   "at": "2026-11-19T00:03:57+00:00"
+ },
+ "401910010": {
+  "slot": "2",
+  "league": "nba",
+  "game": "Magic v 76ers",
+  "url": "https://scorebuzz.net/basketball/nba/magic-vs-76ers-401910010/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 63)",
+  "at": "2026-11-19T00:12:06+00:00"
+ },
+ "401841314": {
+  "slot": "4",
+  "league": "bra",
+  "game": "Cruzeiro v Palmeiras",
+  "url": "https://scorebuzz.net/football/brasileirao/cruzeiro-vs-palmeiras-401841314/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 35)",
+  "at": "2026-11-19T00:12:10+00:00"
+ },
+ "401910007": {
+  "slot": "6",
+  "league": "nba",
+  "game": "Cavaliers v Grizzlies",
+  "url": "https://scorebuzz.net/basketball/nba/cavaliers-vs-grizzlies-401910007/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-19T00:12:13+00:00"
+ },
+ "401910008": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Pacers v Rockets",
+  "url": "https://scorebuzz.net/basketball/nba/pacers-vs-rockets-401910008/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-19T00:12:17+00:00"
  }
 }
