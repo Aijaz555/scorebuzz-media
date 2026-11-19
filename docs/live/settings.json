@@ -65,6 +65,26 @@
    "league": "mls",
    "event": "401933535",
    "note": "Orlando City SC vs FC Cincinnati, 2026-11-20T00:30:00Z"
+  },
+  "9": {
+   "league": "nba",
+   "event": "401910019",
+   "note": "Memphis Grizzlies vs Golden State Warriors, 2026-11-20T01:00:00Z"
+  },
+  "10": {
+   "league": "nfl",
+   "event": "401873066",
+   "note": "Houston Texans vs Indianapolis Colts, 2026-11-20T01:15:00Z"
+  },
+  "11": {
+   "league": "nhl",
+   "event": "401892750",
+   "note": "Calgary Flames vs Minnesota Wild, 2026-11-20T01:00:00Z"
+  },
+  "12": {
+   "league": "nhl",
+   "event": "401892748",
+   "note": "Chicago Blackhawks vs Columbus Blue Jackets, 2026-11-20T01:00:00Z"
   }
  },
  "fit": {
@@ -345,8 +365,8 @@
   },
   "maxLive": 10,
   "maxLiveTemp": {
-   "value": 14,
-   "until": "2026-11-19T08:00:00Z"
+   "value": 12,
+   "until": "2026-11-20T08:00:00Z"
   }
  }
 }
