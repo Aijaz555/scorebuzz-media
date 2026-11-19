@@ -1,0 +1,369 @@
+[
+ {
+  "id": "01-epl-table",
+  "time": "2026-11-19T11:00:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · TABLE AFTER 10 GAMES",
+  "headline": "Arsenal are 5 points clear",
+  "rows": [
+   [
+    "1",
+    "Arsenal",
+    "27 pts"
+   ],
+   [
+    "2",
+    "Brighton",
+    "22 pts"
+   ],
+   [
+    "3",
+    "Man City",
+    "21 pts"
+   ],
+   [
+    "4",
+    "Liverpool",
+    "18 pts"
+   ],
+   [
+    "5",
+    "Chelsea",
+    "16 pts"
+   ]
+  ],
+  "sub": "Arsenal have won 9 of 10. They go to Newcastle on Saturday at 17:30 GMT (12:30pm ET).",
+  "caption": "⚽ The Premier League is back this weekend, and Arsenal are 5 points clear at the top.\n\nArsenal have won 9 of their 10 games. Brighton are 2nd on 22, Man City 3rd on 21. Arsenal visit Newcastle on Saturday evening.\n\nCan anyone catch the Gunners? 👇\n\n#Arsenal #PremierLeague #COYG"
+ },
+ {
+  "id": "02-liv-mun-sunday",
+  "time": "2026-11-19T11:55:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "PREMIER LEAGUE · SUNDAY 16:30 GMT",
+  "headline": "Pochettino's first game: Liverpool away",
+  "sub": "\"You will see, give me time,\" the new Man United head coach said on his first day. United are 18th with 8 points; Liverpool are 4th.",
+  "stat": [
+   "8",
+   "points from 10 games for United"
+  ],
+  "caption": "🔴 Mauricio Pochettino's first game as Manchester United head coach? Liverpool at Anfield on Sunday.\n\n\"You will see, give me time,\" he said on his first day at the club. United are 18th with 8 points from 10 games; Liverpool are 4th on 18.\n\nWhat's your prediction for Sunday? 👇\n\n#MUFC #LFC #Pochettino #PremierLeague"
+ },
+ {
+  "id": "03-frank-palace",
+  "time": "2026-11-19T13:45:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "PREMIER LEAGUE · NEW MANAGER",
+  "headline": "Thomas Frank takes the Crystal Palace job",
+  "sub": "Frank said the job was \"too good\" to turn down. Palace are bottom with 7 points, and his first game is at Coventry on Saturday.",
+  "stat": [
+   "20th",
+   "Palace, 7 points from 10 games"
+  ],
+  "caption": "🦅 Thomas Frank is Crystal Palace's new manager, and he says the job was \"too good\" to turn down.\n\nPalace are bottom of the Premier League with 7 points from 10 games. First up: Coventry away on Saturday at 3pm.\n\nCan Frank keep Palace up? 👇\n\n#CPFC #ThomasFrank #PremierLeague"
+ },
+ {
+  "id": "04-laliga-race",
+  "time": "2026-11-19T14:40:00",
+  "sport": "football",
+  "league": "laliga",
+  "kind": "list",
+  "label": "LALIGA · THE TITLE RACE",
+  "headline": "Barça 3 points clear of Real Madrid",
+  "rows": [
+   [
+    "1",
+    "Barcelona",
+    "33 pts"
+   ],
+   [
+    "2",
+    "Real Madrid",
+    "30 pts"
+   ],
+   [
+    "3",
+    "Atlético",
+    "28 pts"
+   ],
+   [
+    "4",
+    "Real Betis",
+    "26 pts"
+   ]
+  ],
+  "sub": "This weekend: Real Madrid v Celta (Sat 20:00 GMT), Barcelona v Villarreal (Sun 13:00 GMT), Getafe v Atlético (Sun 20:00 GMT).",
+  "caption": "🔵🔴 Barcelona have won 11 of their 12 LaLiga games and lead Real Madrid by 3 points.\n\nMadrid host Celta on Saturday night, Barça host Villarreal on Sunday, and Atlético (28 points) go to Getafe.\n\nWho wins LaLiga this season? 👇\n\n#LaLiga #Barca #RealMadrid"
+ },
+ {
+  "id": "05-seriea-lazio",
+  "time": "2026-11-19T16:30:00",
+  "sport": "football",
+  "league": "seriea",
+  "kind": "list",
+  "label": "SERIE A · TOP 4 AFTER 11 GAMES",
+  "headline": "Lazio top, and still unbeaten",
+  "rows": [
+   [
+    "1",
+    "Lazio",
+    "29 pts"
+   ],
+   [
+    "2",
+    "Inter",
+    "28 pts"
+   ],
+   [
+    "3",
+    "Roma",
+    "27 pts"
+   ],
+   [
+    "4",
+    "AC Milan",
+    "24 pts"
+   ]
+  ],
+  "sub": "Lazio (9 wins, 2 draws) and Roma (8 wins, 3 draws) have not lost. Lazio host Lecce on Saturday; Inter go to Atalanta on Sunday.",
+  "caption": "🦅 Lazio are top of Serie A and haven't lost a game: 9 wins and 2 draws.\n\nInter are a point behind and Roma, also unbeaten, are 2 back. Lazio host Lecce on Saturday.\n\nCan Lazio win the Scudetto? 👇\n\n#Lazio #SerieA #Inter #Roma"
+ },
+ {
+  "id": "06-bayern-koln",
+  "time": "2026-11-19T17:25:00",
+  "sport": "football",
+  "league": "bundesliga",
+  "kind": "score",
+  "label": "BUNDESLIGA · FRIDAY 19:30 GMT",
+  "home": "Bayern Munich",
+  "homeScore": "",
+  "away": "Köln",
+  "awayScore": "",
+  "status": "FRI · 2:30PM ET",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+  "venue": "Allianz Arena",
+  "headline": "Bayern and Dortmund: 21 points, both unbeaten",
+  "sub": "Bayern top on goal difference (+20 to +9). Köln are 15th. Dortmund go to Gladbach on Saturday.",
+  "caption": "🔴 The Bundesliga is back on Friday night: Bayern Munich v Köln at the Allianz Arena.\n\nBayern and Dortmund both have 21 points from 9 games and neither has lost. Bayern are top on goal difference.\n\nBayern or Dortmund for the title? 👇\n\n#FCBayern #BVB #Bundesliga"
+ },
+ {
+  "id": "07-grizzlies-road",
+  "time": "2026-11-19T19:15:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · CLEVELAND",
+  "home": "Cavaliers",
+  "homeScore": 121,
+  "away": "Grizzlies",
+  "awayScore": 124,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+  "venue": "Rocket Arena",
+  "headline": "8 straight road wins: a Grizzlies record",
+  "sub": "Cam Spencer scored 26 and Taylor Hendricks hit two free throws with 2.3 seconds left. Donovan Mitchell had 34 for Cleveland.",
+  "caption": "🐻 Grizzlies 124, Cavaliers 121.\n\nThat's 8 road wins in a row for Memphis, a franchise record. Cam Spencer scored 26 and Taylor Hendricks sealed it at the line with 2.3 seconds left. Memphis are 11–4.\n\nAre the Grizzlies for real? 👇\n\n#GrzNGrind #Grizzlies #NBA"
+ },
+ {
+  "id": "08-mls-wildcard",
+  "time": "2026-11-19T20:10:00",
+  "sport": "football",
+  "league": "mls",
+  "kind": "list",
+  "label": "MLS CUP PLAYOFFS · WILD CARD",
+  "headline": "Win or go home, tonight",
+  "rows": [
+   [
+    "7:30pm ET",
+    "Orlando City v FC Cincinnati",
+    "East"
+   ],
+   [
+    "10pm ET",
+    "Seattle v Real Salt Lake",
+    "West"
+   ]
+  ],
+  "sub": "Two wild-card games on Thursday night. The winners stay in the MLS Cup playoffs.",
+  "venue": "Lumen Field",
+  "caption": "⚽ The MLS Cup playoffs start tonight with two wild-card games.\n\nOrlando City host FC Cincinnati at 7:30pm ET, then Seattle host Real Salt Lake at 10pm ET. Lose and your season is over.\n\nWho goes through? 👇\n\n#MLSCupPlayoffs #MLS #Sounders"
+ },
+ {
+  "id": "09-sixers-13-3",
+  "time": "2026-11-19T22:00:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · ORLANDO",
+  "home": "Magic",
+  "homeScore": 116,
+  "away": "76ers",
+  "awayScore": 121,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+  "venue": "Kia Center",
+  "headline": "13–3: the Sixers' best start in 26 years",
+  "sub": "Embiid 26, VJ Edgecombe a season-high 24, LeBron James 22, with Maxey, Jaylen Brown and Dean Wade all out. Philly came back from 17 down.",
+  "caption": "🔔 76ers 121, Magic 116.\n\nPhiladelphia came back from 17 down without Tyrese Maxey or Jaylen Brown. Joel Embiid scored 26, VJ Edgecombe 24 and LeBron James 22. At 13–3, it's their best start in 26 years.\n\nAre the Sixers the best team in the East? 👇\n\n#Sixers #Embiid #NBA"
+ },
+ {
+  "id": "10-bruins-wings-100",
+  "time": "2026-11-19T23:50:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · DETROIT",
+  "home": "Red Wings",
+  "homeScore": 1,
+  "away": "Bruins",
+  "awayScore": 4,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
+  "venue": "Little Caesars Arena",
+  "headline": "Boston spoil Detroit's 100th birthday",
+  "sub": "100 years to the day since Detroit's first NHL game, a 2–0 loss to Boston. Pastrnak had a goal and an assist.",
+  "caption": "🏒 Bruins 4, Red Wings 1.\n\nDetroit marked 100 years since their first NHL game, which they lost 2–0 to the Bruins. A century later, Boston spoiled the party again. David Pastrnak had a goal and an assist.\n\nBest Original Six rivalry? 👇\n\n#NHLBruins #LGRW #NHL"
+ },
+ {
+  "id": "11-flagg-33",
+  "time": "2026-11-20T00:45:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · DALLAS",
+  "home": "Mavericks",
+  "homeScore": 116,
+  "away": "Warriors",
+  "awayScore": 94,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+  "venue": "American Airlines Center",
+  "headline": "Cooper Flagg drops 33",
+  "sub": "P.J. Washington added 21, Dallas snapped a three-game losing streak, and Golden State are still winless since Stephen Curry's injury.",
+  "caption": "🔥 Cooper Flagg scored 33 as the Mavericks beat the Warriors 116–94.\n\nP.J. Washington added 21 and Dallas ended a three-game skid. Golden State haven't won since Stephen Curry got hurt.\n\nHow good is Flagg going to be? 👇\n\n#MFFL #CooperFlagg #NBA"
+ },
+ {
+  "id": "12-nba-tonight",
+  "time": "2026-11-20T02:35:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · THURSDAY · ALL 8PM ET",
+  "headline": "4 games tonight",
+  "rows": [
+   [
+    "Warriors (8-7)",
+    "at",
+    "Grizzlies (11-4)"
+   ],
+   [
+    "Knicks (8-6)",
+    "at",
+    "Wolves (11-4)"
+   ],
+   [
+    "Clippers (4-9)",
+    "at",
+    "Spurs (12-3)"
+   ],
+   [
+    "Blazers (9-5)",
+    "at",
+    "Bucks (1-14)"
+   ]
+  ],
+  "sub": "Memphis go for a 12th win at home to Golden State. The Bucks try to stop an 11-game losing streak.",
+  "caption": "🏀 Four NBA games tonight, all at 8pm ET.\n\nThe Knicks visit 11–4 Minnesota, the Spurs host the Clippers, and the 1–14 Bucks try to end an 11-game losing streak against Portland.\n\nWhich one are you watching? 👇\n\n#NBA #Knicks #Spurs"
+ },
+ {
+  "id": "13-mcdavid-24",
+  "time": "2026-11-20T04:25:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "headline",
+  "label": "NHL · TONIGHT 7:30PM ET",
+  "headline": "McDavid goes for 24 in a row in Tampa",
+  "sub": "Connor McDavid has a point in all 23 games this season. The NHL-leading Oilers (17-3-3) visit the Lightning (14-5-2).",
+  "stat": [
+   "23",
+   "straight games with a point"
+  ],
+  "caption": "😮 Connor McDavid has a point in every game this season: 23 and counting.\n\nThe Oilers (17–3–3) visit Tampa Bay (14–5–2) tonight at 7:30pm ET. One point makes it 24.\n\nDoes the streak keep going? 👇\n\n#McDavid #LetsGoOilers #GoBolts"
+ },
+ {
+  "id": "14-f1-vegas-fp1",
+  "time": "2026-11-20T05:00:00",
+  "sport": "racing",
+  "league": "f1",
+  "kind": "list",
+  "label": "F1 · LAS VEGAS GRAND PRIX",
+  "headline": "Lights on in Vegas tonight",
+  "rows": [
+   [
+    "FP1",
+    "Thu 7:30pm ET",
+    "00:30 UK"
+   ],
+   [
+    "FP2",
+    "Thu 11pm ET",
+    "04:00 UK"
+   ],
+   [
+    "Quali",
+    "Fri 11pm ET",
+    "04:00 UK"
+   ],
+   [
+    "Race",
+    "Sat 11pm ET",
+    "04:00 UK"
+   ]
+  ],
+  "sub": "Practice starts tonight on the Las Vegas Strip. Kimi Antonelli is already world champion.",
+  "caption": "🏁 F1 practice in Las Vegas starts tonight at 7:30pm ET (00:30 UK), with a second session at 11pm ET.\n\nKimi Antonelli has already won the title. The race is Saturday at 11pm ET.\n\nWho wins on the Strip? 👇\n\n#F1 #LasVegasGP #Formula1"
+ },
+ {
+  "id": "15-cfb-saturday",
+  "time": "2026-11-20T06:55:00",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "kind": "list",
+  "label": "COLLEGE FOOTBALL · SATURDAY (ET)",
+  "headline": "Saturday's big games",
+  "rows": [
+   [
+    "3:30pm",
+    "No. 4 UCLA at Michigan",
+    "CBS"
+   ],
+   [
+    "3:30pm",
+    "LSU at No. 9 Tennessee",
+    "ABC"
+   ],
+   [
+    "7:30pm",
+    "No. 1 Georgia at No. 21 S. Carolina",
+    "ABC"
+   ],
+   [
+    "9pm",
+    "No. 2 Utah at TCU",
+    "Fox"
+   ]
+  ],
+  "sub": "Unbeaten UCLA (10-0) and Utah (10-0) are both on the road. Georgia (9-1) visit South Carolina at night.",
+  "caption": "🏈 Saturday's must-watch college football.\n\nUnbeaten UCLA visit Michigan at 3:30pm ET, No. 1 Georgia go to No. 21 South Carolina at 7:30pm, and unbeaten Utah are at TCU at 9pm.\n\nWhich top-5 team is in trouble? 👇\n\n#CollegeFootball #CFB #GoDawgs"
+ }
+]
