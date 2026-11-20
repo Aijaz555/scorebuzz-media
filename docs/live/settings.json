@@ -25,18 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "3": {
-   "league": "nhl",
-   "event": "401892752",
-   "note": "Seattle Kraken vs Vancouver Canucks, 2026-11-20T02:40:00Z"
-  },
-  "8": {
-   "league": "nhl",
-   "event": "401892753",
-   "note": "Vegas Golden Knights vs Dallas Stars, 2026-11-20T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
