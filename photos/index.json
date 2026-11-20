@@ -43,6 +43,10 @@
   "venue": "Amon G. Carter Stadium",
   "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
  },
+ "anfield": {
+  "venue": "Anfield",
+  "credit": "Photo: Damine178 / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "arasen-stadion": {
   "venue": "Arasen Stadion",
   "credit": "Photo: GAD / Wikimedia Commons, CC BY-SA 4.0"
@@ -215,6 +219,10 @@
   "venue": "Donald W. Reynolds Razorback Stadium",
   "credit": "Photo: Brandonrush / Wikimedia Commons, CC0"
  },
+ "el-sadar": {
+  "venue": "El Sadar",
+  "credit": "Photo: Visma17 / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "elland-road": {
   "venue": "Elland Road",
   "credit": "Photo: Mtaylor848 / Wikimedia Commons, CC BY-SA 4.0"
@@ -238,6 +246,10 @@
  "estadi-ciutat-de-valencia": {
   "venue": "Estadi Ciutat de València",
   "credit": "Photo: Francesc Fort / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "estadio-banorte": {
+  "venue": "Estadio Banorte",
+  "credit": "Photo: Arne Müseler / Wikimedia Commons, CC BY-SA 3.0 de"
  },
  "estadio-coliseum": {
   "venue": "Estadio Coliseum",
@@ -435,6 +447,10 @@
   "venue": "Levi's Stadium",
   "credit": "Photo: Dvortygirl / Wikimedia Commons, CC BY 4.0"
  },
+ "lincoln-financial-field": {
+  "venue": "Lincoln Financial Field",
+  "credit": "Photo: JJonahJackalope / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "little-caesars-arena": {
   "venue": "Little Caesars Arena",
   "credit": "Photo: Coreyfein01 / Wikimedia Commons, CC BY-SA 4.0"
@@ -458,6 +474,10 @@
  "madison-square-garden": {
   "venue": "Madison Square Garden",
   "credit": "Photo: Ajay Suresh from New York, NY, USA / Wikimedia Commons, CC BY 2.0"
+ },
+ "mclane-stadium": {
+  "venue": "McLane Stadium",
+  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
  },
  "memorial-stadium-bloomington-in": {
   "venue": "Memorial Stadium (Bloomington, IN)",
@@ -667,6 +687,10 @@
   "venue": "Ryan Field",
   "credit": "Photo: vxla from Chicago, US / Wikimedia Commons, CC BY 2.0"
  },
+ "san-mames": {
+  "venue": "San Mamés",
+  "credit": "Photo: Txapisotegi / Wikimedia Commons, CC BY-SA 3.0"
+ },
  "san-siro": {
   "venue": "San Siro",
   "credit": "Photo: Arne Müseler / Wikimedia Commons, Public domain"
@@ -719,6 +743,10 @@
   "venue": "Soldier Field",
   "credit": "Photo: Moses8910 / Wikimedia Commons, CC BY-SA 4.0"
  },
+ "spartan-stadium": {
+  "venue": "Spartan Stadium",
+  "credit": "Photo: Ken Lund from Reno, Nevada, USA / Wikimedia Commons, CC BY-SA 2.0"
+ },
  "spectrum-center": {
   "venue": "Spectrum Center",
   "credit": "Photo: Matthew D. Britt from Ballston Lake, NY, U.S.A. / Wikimedia Commons, CC BY 2.0"
@@ -754,6 +782,10 @@
  "stade-de-la-meinau": {
   "venue": "Stade de la Meinau",
   "credit": "Photo: Gzen92 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "stade-du-moustoir-yves-allainmat": {
+  "venue": "Stade du Moustoir - Yves Allainmat",
+  "credit": "Photo: NORMOTE / Wikimedia Commons, CC BY-SA 4.0"
  },
  "stade-francis-le-ble": {
   "venue": "Stade Francis-Le Blé",
@@ -910,6 +942,10 @@
  "united-center": {
   "venue": "United Center",
   "credit": "Photo: Jordano53 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "ursapharm-arena-an-der-kaiserlinde": {
+  "venue": "URSAPHARM-Arena an der Kaiserlinde",
+  "credit": "Photo: RoBri / Wikimedia Commons, CC BY-SA 4.0"
  },
  "vasil-levski-national-stadium": {
   "venue": "Vasil Levski National Stadium",
