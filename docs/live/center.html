@@ -388,7 +388,7 @@ function render(s, sb) {
   const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   const shortOf = (T) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === T.id)?.team?.shortDisplayName || T.nick;
   const trkUrlPre = false;
-  const trkUrl = live && !noSite && !OWN && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/` : '';
+  const trkUrl = live && !noSite && !OWN && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/?trk=3d` : ''; // ?trk=3d: keep the latest 3D tracker; the site drops to its 2D tracker on devices it thinks are slow (the stream browser), owner 20 Nov 2026
   const scorers = (id) => { const m = new Map(); for (const k of s.keyEvents || []) { const t = k.type?.type || ''; if (!(k.scoringPlay || /goal|penalty---scored/.test(t)) || /miss|saved/.test(t) || String(k.team?.id || '') !== id) continue;
       const who = (k.participants?.[0]?.athlete?.displayName || '').split(' ').slice(-1)[0] || '?'; m.set(who, [...(m.get(who) || []), k.clock?.displayValue + (/penalty/.test(t) ? ' P' : t === 'own-goal' ? ' OG' : '')]); }
     return [...m].map(([w, ts]) => `${w} ${ts.join(', ')}`).join(' · '); };

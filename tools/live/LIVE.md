@@ -491,3 +491,9 @@ autoSample off) full screen. It follows whichever fight is in the cage, shows "U
   MMA Fight OCM-0046-118-23/-120-25/-097-02), each only loudness-normalised (-18 LUFS, stereo, MP3 192k), not mixed; played in that
   order on loop at volume 6 on Slot 20's Music layer (set by hand, replacing the rock playlist). Not committed (Envato licence).
 - UFC 334 (Gane vs Hokit, MSG): Slot 20, scheduled 14 Nov 2026 21:30 UTC (30 min before the 22:00 UTC early prelims), manual duration: the owner stops it himself. Stopped 14 Nov 2026 ~22:24 UTC on the owner's request (Slot 21's RTMP feed to ufc2cobra left running).
+
+## Keep the latest 3D tracker on stream (owner, 20 Nov 2026)
+scorebuzz.net drops to its 2D tracker when the device can't keep 3D at 24 fps, and the stream browser (LiveReacting) counts as slow,
+so Slot 1 (Troyes-Le Havre) started on the 3D view and then fell back to 2D. Every tracker iframe (center/soccer/us/nba/dark/app.html)
+now opens the match page with `?trk=3d`, which the site treats as "keep 3D even on a slow device" (the slow-device fallback stays on
+for normal website visitors). Checked in headless Chromium: without it the three.js canvas is dropped after ~1 min, with it it stays. Reload 37.
