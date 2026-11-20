@@ -27,14 +27,24 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "ligue1",
-   "event": "401876395",
-   "note": "Troyes vs Le Havre AC, 2026-11-20T19:45:00Z"
+   "league": "nba",
+   "event": "401909308",
+   "note": "Detroit Pistons vs Toronto Raptors, 2026-11-21T00:30:00Z"
   },
   "2": {
-   "league": "laliga",
-   "event": "401882805",
-   "note": "Athletic Club vs Espanyol, 2026-11-20T20:00:00Z"
+   "league": "nba",
+   "event": "401909305",
+   "note": "Atlanta Hawks vs Charlotte Hornets, 2026-11-21T00:00:00Z"
+  },
+  "3": {
+   "league": "nba",
+   "event": "401909307",
+   "note": "Cleveland Cavaliers vs Indiana Pacers, 2026-11-21T00:30:00Z"
+  },
+  "4": {
+   "league": "nba",
+   "event": "401909306",
+   "note": "Brooklyn Nets vs Orlando Magic, 2026-11-21T00:30:00Z"
   }
  },
  "fit": {
