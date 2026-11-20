@@ -504,7 +504,8 @@ The streams are on the site's own choice (2D in the stream browser) since the ro
 changed nothing on screen: it was pushed minutes after that roll-back, before this session had seen it.
 What is new is on the site (scorebuzz-site 0f94075): when 3D is forced with `?trk=3d` and the browser reports a software renderer
 (no graphics card), scorebuzz.net draws the 3D view at two thirds of the resolution with no edge smoothing and lighter textures, and
-steps down to half if it still can't hold 24 fps; it never leaves 3D. In a 2-core headless test at 1000 px that ran at 7.0-7.5 fps,
-against 6.8 fps for the 2D tracker and 4.5 fps for full-quality 3D on the same machine, so it should cost the stream browser about
-what 2D costs. NOT tried on LiveReacting yet. To try it: put `?trk=3d` back on ONE layout or slot, watch that stream for a few
+steps down to half if it still can't hold 24 fps; it never leaves 3D. Measured on the site's demo trackers (scripted play, 1000 px,
+2-core headless Chromium with no GPU, frames a second): football 2D 5.9 / full 3D 2.3 / lighter 3D 5.7; NBA 4.7 / 3.5 / 8.3;
+NHL 5.3 / 3.5 / 7.4. So the lighter 3D costs the stream browser about what the 2D tracker costs, or less. NOT tried on LiveReacting yet.
+Without `?trk=3d` a browser with no GPU now gets the 2D tracker at once (no seconds of 3D first). To try it: put `?trk=3d` back on ONE layout or slot, watch that stream for a few
 minutes, and only then roll it out. `&q3d=full` forces the full-quality picture, `&q3d=lite` the light one (to preview on any device).
