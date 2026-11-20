@@ -498,3 +498,11 @@ scorebuzz.net drops to its 2D tracker when a device can't keep 3D at 24 fps, and
 Forcing 3D with `?trk=3d` on the tracker iframes worked, but it ran at ~3 fps (headless test: 3 fps at 1000 px, 5 fps at 640 px) and
 looked like buffering on YouTube, so it was reverted the same evening (reload 38). Streams use the site's own choice again (2D in the stream browser).
 Smooth 3D on stream would need a GPU-backed renderer.
+
+## 3D on stream without the buffering (21 Nov 2026)
+Forcing the full 3D tracker (`?trk=3d`) made the streams slow and buffer: the stream browser (LiveReacting) has no graphics card and
+draws WebGL on the processor, a few frames a second at full quality. Fixed on the site, not here: when 3D is forced and the browser
+reports a software renderer, scorebuzz.net now draws the 3D view at two thirds of the resolution with no edge smoothing (stepping down
+to half if it still can't hold 24 fps), which costs about what the 2D tracker costs. The stream pages keep `?trk=3d`. Add `&q3d=full`
+to a tracker URL to get the full-quality picture (only on a capture machine with a graphics card), or switch `?trk=3d` to `?trk=2d`
+in center/soccer/us/nba/dark/app.html to go back to the 2D tracker on stream. Reload 39.
