@@ -2605,5 +2605,55 @@
   "status": "ok",
   "reason": "ok (contrast 88)",
   "at": "2026-11-20T02:54:44+00:00"
+ },
+ "401892751": {
+  "slot": "1",
+  "league": "nhl",
+  "game": "Avalanche v Ducks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/avalanche-vs-ducks-401892751/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-20T03:02:55+00:00"
+ },
+ "401892752": {
+  "slot": "3",
+  "league": "nhl",
+  "game": "Kraken v Canucks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kraken-vs-canucks-401892752/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 86)",
+  "at": "2026-11-20T03:02:58+00:00"
+ },
+ "401910021": {
+  "slot": "4",
+  "league": "nba",
+  "game": "Timberwolves v Knicks",
+  "url": "https://scorebuzz.net/basketball/nba/timberwolves-vs-knicks-401910021/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-20T03:03:01+00:00"
+ },
+ "401910022": {
+  "slot": "5",
+  "league": "nba",
+  "game": "Spurs v Clippers",
+  "url": "https://scorebuzz.net/basketball/nba/spurs-vs-clippers-401910022/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 67)",
+  "at": "2026-11-20T03:03:05+00:00"
+ },
+ "401910020": {
+  "slot": "6",
+  "league": "nba",
+  "game": "Bucks v Trail Blazers",
+  "url": "https://scorebuzz.net/basketball/nba/bucks-vs-trail-blazers-401910020/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-20T03:03:08+00:00"
  }
 }
