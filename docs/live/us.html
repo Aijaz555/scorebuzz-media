@@ -227,7 +227,7 @@ function render(s, sb) {
   // ---- plays + tracker ----
   const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   const shortOf = (T) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === String(T.id))?.team?.shortDisplayName || T.nick;
-  const trkUrl = SITE[league] && live && !noSite && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/?trk=3d` : ''; // ?trk=3d: keep the latest 3D tracker; the site drops to its 2D tracker on devices it thinks are slow (the stream browser), owner 20 Nov 2026
+  const trkUrl = SITE[league] && live && !noSite && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/` : '';
   const P = plays(s, sb).slice(trkUrl ? -3 : -6).reverse();
   const logo = (id) => (id === H.id ? H.logoD : id === A.id ? A.logoD : '');
   const pbp = P.map((p, i) => `<div class="pl ${i === 0 ? 'new' : ''}" style="--nc:${p.team === A.id ? A.color : H.color}">${logo(p.team) ? `<img src="${logo(p.team)}">` : ''}

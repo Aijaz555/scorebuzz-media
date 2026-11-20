@@ -246,7 +246,7 @@ function render(s, sb) {
       <div>${lab ? `<div class="ev ${cls}">${lab}</div>` : ''}</div></div>`; }).join('');
   const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   const shortOf = (T) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === T.id)?.team?.shortDisplayName || T.nick;
-  const trkUrl = SITE[league] && (live || q.get('sbtrk') === '1') && !noSite && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/?trk=3d` : ''; // ?trk=3d: keep the latest 3D tracker; the site drops to its 2D tracker on devices it thinks are slow (the stream browser), owner 20 Nov 2026
+  const trkUrl = SITE[league] && (live || q.get('sbtrk') === '1') && !noSite && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/` : '';
   // with the tracker on screen, the column beside it alternates between match stats and the latest commentary
   const side = Math.floor(Date.now() / 15000) % 2 ? stt : `<div class="pbp">${pbp}</div>`;
   const mins = Math.round((new Date(c.date) - Date.now()) / 60000);

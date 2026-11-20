@@ -492,8 +492,8 @@ autoSample off) full screen. It follows whichever fight is in the cage, shows "U
   order on loop at volume 6 on Slot 20's Music layer (set by hand, replacing the rock playlist). Not committed (Envato licence).
 - UFC 334 (Gane vs Hokit, MSG): Slot 20, scheduled 14 Nov 2026 21:30 UTC (30 min before the 22:00 UTC early prelims), manual duration: the owner stops it himself. Stopped 14 Nov 2026 ~22:24 UTC on the owner's request (Slot 21's RTMP feed to ufc2cobra left running).
 
-## Keep the latest 3D tracker on stream (owner, 20 Nov 2026)
-scorebuzz.net drops to its 2D tracker when the device can't keep 3D at 24 fps, and the stream browser (LiveReacting) counts as slow,
-so Slot 1 (Troyes-Le Havre) started on the 3D view and then fell back to 2D. Every tracker iframe (center/soccer/us/nba/dark/app.html)
-now opens the match page with `?trk=3d`, which the site treats as "keep 3D even on a slow device" (the slow-device fallback stays on
-for normal website visitors). Checked in headless Chromium: without it the three.js canvas is dropped after ~1 min, with it it stays. Reload 37.
+## 3D tracker on stream: tried and rolled back (owner, 20 Nov 2026)
+scorebuzz.net drops to its 2D tracker when a device can't keep 3D at 24 fps, and LiveReacting's stream browser (no GPU) counts as slow.
+Forcing 3D with `?trk=3d` on the tracker iframes worked, but it ran at ~3 fps (headless test: 3 fps at 1000 px, 5 fps at 640 px) and
+looked like buffering on YouTube, so it was reverted the same evening (reload 38). Streams use the site's own choice again (2D in the stream browser).
+Smooth 3D on stream would need a GPU-backed renderer.

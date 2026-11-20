@@ -1347,7 +1347,7 @@ function sbUrl(g) {
     const fav = (typeof AUTO_TEAMS !== 'undefined' ? AUTO_TEAMS : []);
     if (!fav.length || ![g.home.abbr, g.away.abbr].some((a) => fav.includes(String(a).toUpperCase()))) return '';
   }
-  return `https://scorebuzz.net/${lg}/${slugify(g.home.name)}-vs-${slugify(g.away.name)}-${g.id}/?trk=3d${THEME_DARK ? '&ui=v1' : ''}`; // ?trk=3d: no slow-device 2D fallback (owner 20 Nov 2026)
+  return `https://scorebuzz.net/${lg}/${slugify(g.home.name)}-vs-${slugify(g.away.name)}-${g.id}/${THEME_DARK ? '?ui=v1' : ''}`;
 }
 let sbBase = '', sbAnchored = 0;
 function placeSite() {
