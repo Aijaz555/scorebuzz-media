@@ -2655,5 +2655,15 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-20T03:03:08+00:00"
+ },
+ "401892753": {
+  "slot": "8",
+  "league": "nhl",
+  "game": "Golden Knights v Stars",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/golden-knights-vs-stars-401892753/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-20T03:11:17+00:00"
  }
 }
