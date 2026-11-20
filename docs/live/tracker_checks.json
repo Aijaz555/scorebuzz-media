@@ -2566,26 +2566,6 @@
   "reason": "ok (contrast 83)",
   "at": "2026-11-20T02:54:31+00:00"
  },
- "401892751": {
-  "slot": "1",
-  "league": "nhl",
-  "game": "Avalanche v Ducks",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/avalanche-vs-ducks-401892751/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-20T03:02:55+00:00"
- },
- "401892752": {
-  "slot": "3",
-  "league": "nhl",
-  "game": "Kraken v Canucks",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/kraken-vs-canucks-401892752/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 86)",
-  "at": "2026-11-20T03:02:58+00:00"
- },
  "401910021": {
   "slot": "4",
   "league": "nba",
@@ -2665,5 +2645,25 @@
   "status": "ok",
   "reason": "ok (contrast 85)",
   "at": "2026-11-20T03:27:41+00:00"
+ },
+ "401892751": {
+  "slot": "1",
+  "league": "nhl",
+  "game": "Avalanche v Ducks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/avalanche-vs-ducks-401892751/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-20T03:35:50+00:00"
+ },
+ "401892752": {
+  "slot": "3",
+  "league": "nhl",
+  "game": "Kraken v Canucks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/kraken-vs-canucks-401892752/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-20T03:35:54+00:00"
  }
 }
