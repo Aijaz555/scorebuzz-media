@@ -1,0 +1,380 @@
+[
+ {
+  "id": "01-poch-winners",
+  "time": "2026-11-20T11:00:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "PREMIER LEAGUE · MAN UNITED",
+  "headline": "Pochettino: United must relearn how to win",
+  "sub": "The new head coach starts at Liverpool on Sunday (16:30 GMT). United are 18th with 8 points from 10 games.",
+  "stat": [
+   "1",
+   "league win in 10 games this season"
+  ],
+  "caption": "🔴 Mauricio Pochettino says his first job at Manchester United is reminding the players how to win.\n\nUnited have won 1 of their 10 Premier League games and sit 18th. His first game? Liverpool at Anfield on Sunday.\n\nCan Poch turn it around? 👇\n\n#MUFC #Pochettino #PremierLeague"
+ },
+ {
+  "id": "02-epl-saturday",
+  "time": "2026-11-20T11:50:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · SATURDAY",
+  "headline": "The Premier League is back",
+  "rows": [
+   [
+    "12:30",
+    "Man City v Fulham",
+    "7:30am ET"
+   ],
+   [
+    "15:00",
+    "Chelsea v Leeds",
+    "10am ET"
+   ],
+   [
+    "15:00",
+    "Spurs v Ipswich",
+    "10am ET"
+   ],
+   [
+    "15:00",
+    "Villa v Sunderland",
+    "10am ET"
+   ],
+   [
+    "15:00",
+    "Coventry v Palace",
+    "10am ET"
+   ],
+   [
+    "17:30",
+    "Newcastle v Arsenal",
+    "12:30pm ET"
+   ]
+  ],
+  "sub": "Times GMT. Also Saturday: Bournemouth v Forest (15:00).",
+  "caption": "⚽ The Premier League is back tomorrow after the international break.\n\nMan City v Fulham kicks it off at 12:30 GMT, and leaders Arsenal finish the day at Newcastle at 17:30.\n\nWhich game are you watching? 👇\n\n#PremierLeague #EPL #NEWARS"
+ },
+ {
+  "id": "03-seriea-top3",
+  "time": "2026-11-20T13:30:00",
+  "sport": "football",
+  "league": "seriea",
+  "kind": "list",
+  "label": "SERIE A · AFTER 11 GAMES",
+  "headline": "Three teams, two points",
+  "rows": [
+   [
+    "1",
+    "Lazio",
+    "29 pts"
+   ],
+   [
+    "2",
+    "Inter",
+    "28 pts"
+   ],
+   [
+    "3",
+    "Roma",
+    "27 pts"
+   ],
+   [
+    "4",
+    "AC Milan",
+    "24 pts"
+   ]
+  ],
+  "sub": "Lazio and Roma are still unbeaten. Saturday: Lazio v Lecce (14:00 GMT), Parma v Roma (17:00 GMT).",
+  "caption": "🇮🇹 Serie A's title race is tight: Lazio 29, Inter 28, Roma 27.\n\nLazio and Roma haven't lost a league game yet. Lazio host Lecce and Roma go to Parma on Saturday.\n\nWho wins the Scudetto? 👇\n\n#SerieA #Lazio #Inter #ASRoma"
+ },
+ {
+  "id": "04-guler-2032",
+  "time": "2026-11-20T14:20:00",
+  "sport": "football",
+  "league": "laliga",
+  "kind": "headline",
+  "label": "LALIGA · REAL MADRID",
+  "headline": "Arda Güler signs a new Real Madrid deal to 2032",
+  "sub": "Real Madrid announced the new six-year contract this week. Madrid host Celta Vigo on Saturday at 20:00 GMT.",
+  "stat": [
+   "2032",
+   "Güler's new contract end date"
+  ],
+  "caption": "✍️ Arda Güler is staying at Real Madrid until 2032.\n\nThe club announced his new six-year contract this week. Madrid (2nd, 30 points) host Celta on Saturday night.\n\nGood deal for Madrid? 👇\n\n#RealMadrid #ArdaGuler #LaLiga"
+ },
+ {
+  "id": "05-cincy-orlando",
+  "time": "2026-11-20T16:00:00",
+  "sport": "football",
+  "league": "mls",
+  "kind": "score",
+  "label": "MLS CUP PLAYOFFS · WILD CARD",
+  "home": "Orlando City",
+  "homeScore": 1,
+  "away": "FC Cincinnati",
+  "awayScore": 3,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
+  "venue": "Inter&Co Stadium",
+  "headline": "Evander scores twice as Cincinnati knock out Orlando",
+  "sub": "Cincinnati came from 1–0 down. Next: a best-of-three series against Supporters' Shield winners Nashville, starting Sunday.",
+  "caption": "⚽ FC Cincinnati are through! They won 3–1 at Orlando City in the MLS Cup wild-card game.\n\nEvander scored in each half and set up Samuel Gidi's 85th-minute goal. Nashville are next on Sunday.\n\nCan Cincy beat the Supporters' Shield winners? 👇\n\n#FCCincy #MLSCupPlayoffs #MLS"
+ },
+ {
+  "id": "06-epl-bottom",
+  "time": "2026-11-20T16:50:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · THE BOTTOM FIVE",
+  "headline": "Man United are in the bottom three",
+  "rows": [
+   [
+    "16",
+    "Nottm Forest",
+    "9 pts"
+   ],
+   [
+    "17",
+    "Coventry",
+    "9 pts"
+   ],
+   [
+    "18",
+    "Man United",
+    "8 pts"
+   ],
+   [
+    "19",
+    "Sunderland",
+    "8 pts"
+   ],
+   [
+    "20",
+    "Crystal Palace",
+    "7 pts"
+   ]
+  ],
+  "sub": "Two points cover the bottom five. Saturday: Coventry v Palace, Bournemouth v Forest, Villa v Sunderland.",
+  "caption": "😬 After 10 games, Manchester United are 18th in the Premier League.\n\nOnly 2 points separate Forest in 16th and Palace in 20th. Coventry v Palace on Saturday is a big one.\n\nWho goes down this season? 👇\n\n#PremierLeague #MUFC #CPFC"
+ },
+ {
+  "id": "07-bvb-gladbach",
+  "time": "2026-11-20T18:30:00",
+  "sport": "football",
+  "league": "bundesliga",
+  "kind": "headline",
+  "label": "BUNDESLIGA · SATURDAY 14:30 GMT",
+  "headline": "Unbeaten Dortmund visit the bottom club",
+  "sub": "Dortmund (21 points) are level with Bayern and haven't lost in 9 games. Gladbach are 18th.",
+  "stat": [
+   "4",
+   "points for Gladbach from 9 games"
+  ],
+  "caption": "🟡 Borussia Dortmund go to Borussia Mönchengladbach on Saturday.\n\nBVB are unbeaten and level on 21 points with Bayern. Gladbach are bottom with just 4 points.\n\nHow many does Dortmund score? 👇\n\n#BVB #Bundesliga #Gladbach"
+ },
+ {
+  "id": "08-texans-colts",
+  "time": "2026-11-20T20:10:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · THURSDAY NIGHT FOOTBALL",
+  "home": "Texans",
+  "homeScore": 26,
+  "away": "Colts",
+  "awayScore": 3,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+  "venue": "Reliant Stadium",
+  "headline": "Stroud throws 3 TDs as Texans rout the Colts",
+  "sub": "Houston's first home win of the season. Will Anderson Jr. added a safety and leads the NFL with 11½ sacks.",
+  "caption": "🏈 Texans 26, Colts 3.\n\nC.J. Stroud threw 3 touchdown passes and Houston held Indy to a season-low 167 yards. The Colts (3–8) have lost 6 of 7.\n\nAre the Texans (4–6) back in the race? 👇\n\n#Texans #HTownMade #TNF #NFL"
+ },
+ {
+  "id": "09-spurs-clippers",
+  "time": "2026-11-20T21:00:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · THURSDAY",
+  "home": "Spurs",
+  "homeScore": 124,
+  "away": "Clippers",
+  "awayScore": 112,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+  "headline": "Wembanyama 32 & 11 as the Spurs bounce back",
+  "sub": "Stephon Castle had 21 points and 12 assists. San Antonio are 13–3, two nights after Detroit ended their 12-game win streak.",
+  "caption": "👽 Victor Wembanyama: 32 points, 11 rebounds. Spurs 124, Clippers 112.\n\nIt's his 7th 30-point game this season, and San Antonio are 13–3.\n\nIs Wemby the MVP favourite? 👇\n\n#Wembanyama #Spurs #NBA"
+ },
+ {
+  "id": "10-knicks-wolves",
+  "time": "2026-11-20T22:40:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · THURSDAY",
+  "home": "Timberwolves",
+  "homeScore": 99,
+  "away": "Knicks",
+  "awayScore": 102,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+  "venue": "Target Center",
+  "headline": "Towns beats his old team as the Knicks hold on",
+  "sub": "Karl-Anthony Towns had 22 points and 12 rebounds. New York led by 19 in the third and didn't score in the last 3:26, but won a third straight.",
+  "caption": "🗽 Knicks 102, Timberwolves 99.\n\nKarl-Anthony Towns had 22 and 12 against his old team. New York blew most of a 19-point lead, but LaMelo Ball's tying three missed at the end.\n\nAre the Knicks (9–6) contenders? 👇\n\n#Knicks #KAT #NBA"
+ },
+ {
+  "id": "11-flyers-comeback",
+  "time": "2026-11-20T23:30:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · THURSDAY",
+  "home": "Senators",
+  "homeScore": 5,
+  "away": "Flyers",
+  "awayScore": 6,
+  "status": "FINAL/OT",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png",
+  "venue": "Canadian Tire Centre",
+  "headline": "Flyers come back from 5–2 down to win in OT",
+  "sub": "Travis Konecny scored 39 seconds into overtime to finish a four-point night. Cam York scored twice.",
+  "caption": "🔥 Down 5–2 in Ottawa, the Flyers won 6–5 in overtime.\n\nTravis Konecny ended it 39 seconds into OT: one goal, three assists. Cam York scored twice.\n\nComeback of the week? 👇\n\n#Flyers #LetsGoFlyers #NHL"
+ },
+ {
+  "id": "12-grizz-warriors",
+  "time": "2026-11-21T01:10:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · THURSDAY",
+  "home": "Grizzlies",
+  "homeScore": 126,
+  "away": "Warriors",
+  "awayScore": 98,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+  "venue": "FedExForum",
+  "headline": "Grizzlies win 5 straight; Warriors go 0–5 on the road trip",
+  "sub": "Jaylen Wells scored 22 for Memphis (12–4). Golden State, without Stephen Curry, shot 5 of 29 from three.",
+  "caption": "🐻 Grizzlies 126, Warriors 98.\n\nMemphis led by 34 and have now won 5 in a row. Golden State finished their road trip 0–5, with Steph Curry still out.\n\nHow worried are you, Dubs fans? 👇\n\n#GrzNGrind #Warriors #NBA"
+ },
+ {
+  "id": "13-wild-streaks",
+  "time": "2026-11-21T02:50:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "headline",
+  "label": "NHL · MINNESOTA WILD",
+  "headline": "Kaprizov and Hughes: 13 straight games with a point",
+  "sub": "The Wild beat Calgary 4–1 for a fifth straight win and a ninth in a row on the road. The club record is 12.",
+  "stat": [
+   "17–3–4",
+   "Minnesota's record"
+  ],
+  "caption": "🌲 Kirill Kaprizov and Quinn Hughes both have a point in 13 straight games.\n\nThe Wild won 4–1 in Calgary: 5 wins in a row, 9 straight on the road, and points in 13 straight (11–0–2).\n\nAre the Wild the best team in the West? 👇\n\n#mnwild #Kaprizov #NHL"
+ },
+ {
+  "id": "14-nba-tonight",
+  "time": "2026-11-21T03:40:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · TONIGHT (ET)",
+  "headline": "9 games on Friday night",
+  "rows": [
+   [
+    "7:30",
+    "Raptors at Pistons",
+    "DET 10–4"
+   ],
+   [
+    "8:00",
+    "Pelicans at Thunder",
+    "OKC 9–6"
+   ],
+   [
+    "9:30",
+    "Suns at Jazz",
+    ""
+   ],
+   [
+    "10:00",
+    "Rockets at Nuggets",
+    "HOU 12–4"
+   ],
+   [
+    "10:00",
+    "Kings at Lakers",
+    "LAL 13–3"
+   ]
+  ],
+  "sub": "Also: Hornets at Hawks (7:00), Magic at Nets, Pacers at Cavs (7:30), Wizards at Bulls (8:00).",
+  "caption": "🏀 Nine NBA games tonight, starting at 7pm ET.\n\nThe 13–3 Lakers host the 1–13 Kings, and the 12–4 Rockets visit Denver at 10pm ET.\n\nWhich one are you watching? 👇\n\n#NBA #Lakers #Rockets"
+ },
+ {
+  "id": "15-f1-vegas-quali",
+  "time": "2026-11-21T05:20:00",
+  "sport": "racing",
+  "league": "f1",
+  "kind": "headline",
+  "label": "F1 · LAS VEGAS GRAND PRIX",
+  "headline": "Las Vegas qualifying is tonight",
+  "sub": "Qualifying starts at 11pm ET (04:00 GMT Saturday). The race is Saturday at 11pm ET. Kimi Antonelli is already the 2026 champion.",
+  "stat": [
+   "11pm",
+   "ET: qualifying on the Strip"
+  ],
+  "caption": "🏁 F1 qualifying in Las Vegas starts at 11pm ET tonight (04:00 UK time).\n\nKimi Antonelli has already won the title, but there's still a race to win on the Strip on Saturday night.\n\nWho takes pole? 👇\n\n#F1 #LasVegasGP #Formula1"
+ },
+ {
+  "id": "16-nfl-week11",
+  "time": "2026-11-21T07:00:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "NFL WEEK 11 · SUNDAY (ET)",
+  "headline": "The games to watch",
+  "rows": [
+   [
+    "1:00",
+    "Dolphins at Bills",
+    "BUF 8–1"
+   ],
+   [
+    "1:00",
+    "Steelers at Eagles",
+    "PHI 2–7"
+   ],
+   [
+    "4:25",
+    "Jaguars at Giants",
+    "JAX 7–2"
+   ],
+   [
+    "4:25",
+    "Raiders at Broncos",
+    "DEN 7–2"
+   ],
+   [
+    "8:20",
+    "Vikings v 49ers",
+    "Mexico City"
+   ]
+  ],
+  "sub": "Sunday night: the 8–1 49ers 'host' the 7–2 Vikings in Mexico City.",
+  "caption": "🏈 NFL Week 11 is loaded.\n\nThe 8–1 Bills host Miami, the Steelers haven't won in Philadelphia since 1965, and the 49ers play the Vikings in Mexico City on Sunday night.\n\nWhat's your lock of the week? 👇\n\n#NFL #NFLWeek11 #SNF"
+ }
+]
