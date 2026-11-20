@@ -108,6 +108,9 @@ const q = new URLSearchParams(location.search);
 const SLOT = q.get('slot'), OWN = q.get('trk') === 'own';
 const VOICE = q.get('voice') === '1', REPLAY = q.get('replay') === '1'; // demo: spoken commentary (browser voice) / replay a finished game play by play
 let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('sbtrk') === '0' || q.get('replay') === '1';
+// 3D tracker on stream: settings "trk3d": true (every slot) or ["2", "5"] (those slots) opens the site's match page with ?trk=3d, which
+// keeps the 3D view in the stream browser (no graphics card) as the site's lighter 3D picture. Off = the site's own choice (2D there).
+let TRK3D = q.get('trk3d') === '1';
 function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
   const mode = R.fit || q.get('fit') || 'contain', b = document.body;
   if (mode === 'fill') b.style.transform = `scale(${sx},${sy})`; else { const k = Math.min(sx, sy); b.style.transform = `scale(${k})`; b.style.marginLeft = ((W - 1920 * k) / 2) + 'px'; b.style.marginTop = ((H - 1080 * k) / 2) + 'px'; } }
@@ -388,7 +391,7 @@ function render(s, sb) {
   const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   const shortOf = (T) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === T.id)?.team?.shortDisplayName || T.nick;
   const trkUrlPre = false;
-  const trkUrl = live && !noSite && !OWN && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/` : '';
+  const trkUrl = live && !noSite && !OWN && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/${TRK3D ? '?trk=3d' : ''}` : '';
   const scorers = (id) => { const m = new Map(); for (const k of s.keyEvents || []) { const t = k.type?.type || ''; if (!(k.scoringPlay || /goal|penalty---scored/.test(t)) || /miss|saved/.test(t) || String(k.team?.id || '') !== id) continue;
       const who = (k.participants?.[0]?.athlete?.displayName || '').split(' ').slice(-1)[0] || '?'; m.set(who, [...(m.get(who) || []), k.clock?.displayValue + (/penalty/.test(t) ? ' P' : t === 'own-goal' ? ' OG' : '')]); }
     return [...m].map(([w, ts]) => `${w} ${ts.join(', ')}`).join(' · '); };
@@ -531,6 +534,7 @@ async function slotTick() {
     // this layout is on air for the leagues in settings "centerLeagues" ("centerPage": false = off): anything else goes back through app.html
     if (!SPORT[sl.league] || c.centerPage === false || !(c.centerLeagues || []).includes(sl.league)) { location.reload(); return; }
     noSite = sl.sbtrk === 0;
+    TRK3D = c.trk3d === true || (Array.isArray(c.trk3d) && c.trk3d.map(String).includes(String(SLOT)));
     if (String(sl.event) !== String(event) || sl.league !== league) { league = sl.league; event = String(sl.event); tick(); }
   } catch (e) { /* keep current */ }
 }
