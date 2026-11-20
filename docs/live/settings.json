@@ -41,40 +41,10 @@
    "event": "401892752",
    "note": "Seattle Kraken vs Vancouver Canucks, 2026-11-20T02:40:00Z"
   },
-  "5": {
-   "league": "nba",
-   "event": "401910022",
-   "note": "San Antonio Spurs vs LA Clippers, 2026-11-20T01:00:00Z"
-  },
-  "6": {
-   "league": "nba",
-   "event": "401910020",
-   "note": "Milwaukee Bucks vs Portland Trail Blazers, 2026-11-20T01:00:00Z"
-  },
   "8": {
    "league": "nhl",
    "event": "401892753",
    "note": "Vegas Golden Knights vs Dallas Stars, 2026-11-20T03:00:00Z"
-  },
-  "9": {
-   "league": "nba",
-   "event": "401910019",
-   "note": "Memphis Grizzlies vs Golden State Warriors, 2026-11-20T01:00:00Z"
-  },
-  "10": {
-   "league": "nfl",
-   "event": "401873066",
-   "note": "Houston Texans vs Indianapolis Colts, 2026-11-20T01:15:00Z"
-  },
-  "11": {
-   "league": "nhl",
-   "event": "401892750",
-   "note": "Calgary Flames vs Minnesota Wild, 2026-11-20T01:00:00Z"
-  },
-  "12": {
-   "league": "nhl",
-   "event": "401892748",
-   "note": "Chicago Blackhawks vs Columbus Blue Jackets, 2026-11-20T01:00:00Z"
   }
  },
  "fit": {
