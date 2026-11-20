@@ -2566,46 +2566,6 @@
   "reason": "ok (contrast 83)",
   "at": "2026-11-20T02:54:31+00:00"
  },
- "401910019": {
-  "slot": "9",
-  "league": "nba",
-  "game": "Grizzlies v Warriors",
-  "url": "https://scorebuzz.net/basketball/nba/grizzlies-vs-warriors-401910019/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-20T02:54:34+00:00"
- },
- "401873066": {
-  "slot": "10",
-  "league": "nfl",
-  "game": "Texans v Colts",
-  "url": "https://scorebuzz.net/american-football/nfl/texans-vs-colts-401873066/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 41)",
-  "at": "2026-11-20T02:54:37+00:00"
- },
- "401892750": {
-  "slot": "11",
-  "league": "nhl",
-  "game": "Flames v Wild",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/flames-vs-wild-401892750/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-20T02:54:41+00:00"
- },
- "401892748": {
-  "slot": "12",
-  "league": "nhl",
-  "game": "Blackhawks v Blue Jackets",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-blue-jackets-401892748/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-20T02:54:44+00:00"
- },
  "401892751": {
   "slot": "1",
   "league": "nhl",
@@ -2665,5 +2625,45 @@
   "status": "ok",
   "reason": "ok (contrast 82)",
   "at": "2026-11-20T03:11:17+00:00"
+ },
+ "401910019": {
+  "slot": "9",
+  "league": "nba",
+  "game": "Grizzlies v Warriors",
+  "url": "https://scorebuzz.net/basketball/nba/grizzlies-vs-warriors-401910019/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-20T03:27:31+00:00"
+ },
+ "401873066": {
+  "slot": "10",
+  "league": "nfl",
+  "game": "Texans v Colts",
+  "url": "https://scorebuzz.net/american-football/nfl/texans-vs-colts-401873066/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-20T03:27:34+00:00"
+ },
+ "401892750": {
+  "slot": "11",
+  "league": "nhl",
+  "game": "Flames v Wild",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/flames-vs-wild-401892750/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-20T03:27:37+00:00"
+ },
+ "401892748": {
+  "slot": "12",
+  "league": "nhl",
+  "game": "Blackhawks v Blue Jackets",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-blue-jackets-401892748/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 85)",
+  "at": "2026-11-20T03:27:41+00:00"
  }
 }
