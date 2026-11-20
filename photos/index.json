@@ -43,10 +43,6 @@
   "venue": "Amon G. Carter Stadium",
   "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
  },
- "anfield": {
-  "venue": "Anfield",
-  "credit": "Photo: Damine178 / Wikimedia Commons, CC BY-SA 4.0"
- },
  "arasen-stadion": {
   "venue": "Arasen Stadion",
   "credit": "Photo: GAD / Wikimedia Commons, CC BY-SA 4.0"
@@ -475,10 +471,6 @@
   "venue": "Madison Square Garden",
   "credit": "Photo: Ajay Suresh from New York, NY, USA / Wikimedia Commons, CC BY 2.0"
  },
- "mclane-stadium": {
-  "venue": "McLane Stadium",
-  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
- },
  "memorial-stadium-bloomington-in": {
   "venue": "Memorial Stadium (Bloomington, IN)",
   "credit": "Photo: Tails Wx / Wikimedia Commons, CC BY-SA 4.0"
@@ -687,10 +679,6 @@
   "venue": "Ryan Field",
   "credit": "Photo: vxla from Chicago, US / Wikimedia Commons, CC BY 2.0"
  },
- "san-mames": {
-  "venue": "San Mamés",
-  "credit": "Photo: Txapisotegi / Wikimedia Commons, CC BY-SA 3.0"
- },
  "san-siro": {
   "venue": "San Siro",
   "credit": "Photo: Arne Müseler / Wikimedia Commons, Public domain"
@@ -742,10 +730,6 @@
  "soldier-field": {
   "venue": "Soldier Field",
   "credit": "Photo: Moses8910 / Wikimedia Commons, CC BY-SA 4.0"
- },
- "spartan-stadium": {
-  "venue": "Spartan Stadium",
-  "credit": "Photo: Ken Lund from Reno, Nevada, USA / Wikimedia Commons, CC BY-SA 2.0"
  },
  "spectrum-center": {
   "venue": "Spectrum Center",
