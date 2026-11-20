@@ -509,3 +509,10 @@ steps down to half if it still can't hold 24 fps; it never leaves 3D. Measured o
 NHL 5.3 / 3.5 / 7.4. So the lighter 3D costs the stream browser about what the 2D tracker costs, or less. NOT tried on LiveReacting yet.
 Without `?trk=3d` a browser with no GPU now gets the 2D tracker at once (no seconds of 3D first). To try it: put `?trk=3d` back on ONE layout or slot, watch that stream for a few
 minutes, and only then roll it out. `&q3d=full` forces the full-quality picture, `&q3d=lite` the light one (to preview on any device).
+
+## Trial: the lighter 3D tracker on Slot 2 only (owner said yes, 21 Nov 2026)
+`docs/live/settings.json` has `"trk3d": ["2"]`: the centre layout (center.html) opens the site's match page with `?trk=3d` on the
+slots listed there (`true` = every slot; remove the key = off, the site's own choice, 2D in the stream browser). The setting is read
+every minute, so adding or removing a slot needs no reload. It stays with the slot number, so the next game the planner puts on Slot 2
+is in 3D too. Reload 40 loaded the layout that knows the setting. The owner watches Slot 2: smooth -> `"trk3d": true`; not smooth ->
+remove the key. Only center.html reads it (soccer/us/nba/dark/app.html do not).
