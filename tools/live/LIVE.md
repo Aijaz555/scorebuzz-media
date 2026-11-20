@@ -516,3 +516,8 @@ slots listed there (`true` = every slot; remove the key = off, the site's own ch
 every minute, so adding or removing a slot needs no reload. It stays with the slot number, so the next game the planner puts on Slot 2
 is in 3D too. Reload 40 loaded the layout that knows the setting. The owner watches Slot 2: smooth -> `"trk3d": true`; not smooth ->
 remove the key. Only center.html reads it (soccer/us/nba/dark/app.html do not).
+
+**Result of the trial (21 Nov 2026, 21:25 UTC):** the owner watched Slot 2 (Athletic Club v Espanyol) with the lighter 3D picture and it
+was NOT smooth on YouTube, so `"trk3d"` was removed again and every slot is on the 2D tracker. The headless comparison (lighter 3D
+costs about what 2D costs) did not carry over to LiveReacting's stream browser. Do not turn 3D on for the streams again without a
+capture machine that has a graphics card. The `"trk3d"` setting in center.html stays for that day; it is off when the key is absent.
