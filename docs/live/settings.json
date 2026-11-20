@@ -25,7 +25,13 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "ligue1",
+   "event": "401876395",
+   "note": "Troyes vs Le Havre AC, 2026-11-20T19:45:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
