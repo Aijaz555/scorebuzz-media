@@ -28,8 +28,8 @@
  "slots": {
   "1": {
    "league": "nhl",
-   "event": "401892743",
-   "note": "Ottawa Senators vs Philadelphia Flyers, 2026-11-20T00:00:00Z"
+   "event": "401892751",
+   "note": "Colorado Avalanche vs Anaheim Ducks, 2026-11-20T02:00:00Z"
   },
   "2": {
    "league": "nhl",
@@ -38,23 +38,23 @@
   },
   "3": {
    "league": "nhl",
-   "event": "401892747",
-   "note": "Carolina Hurricanes vs Montreal Canadiens, 2026-11-20T00:00:00Z"
+   "event": "401892752",
+   "note": "Seattle Kraken vs Vancouver Canucks, 2026-11-20T02:40:00Z"
   },
   "4": {
-   "league": "nhl",
-   "event": "401892749",
-   "note": "Winnipeg Jets vs New York Islanders, 2026-11-20T00:00:00Z"
+   "league": "nba",
+   "event": "401910021",
+   "note": "Minnesota Timberwolves vs New York Knicks, 2026-11-20T01:00:00Z"
   },
   "5": {
-   "league": "nhl",
-   "event": "401892746",
-   "note": "Washington Capitals vs Buffalo Sabres, 2026-11-20T00:00:00Z"
+   "league": "nba",
+   "event": "401910022",
+   "note": "San Antonio Spurs vs LA Clippers, 2026-11-20T01:00:00Z"
   },
   "6": {
-   "league": "nhl",
-   "event": "401892745",
-   "note": "Pittsburgh Penguins vs St. Louis Blues, 2026-11-20T00:00:00Z"
+   "league": "nba",
+   "event": "401910020",
+   "note": "Milwaukee Bucks vs Portland Trail Blazers, 2026-11-20T01:00:00Z"
   },
   "7": {
    "league": "nhl",
@@ -62,9 +62,9 @@
    "note": "Toronto Maple Leafs vs Los Angeles Kings, 2026-11-20T00:00:00Z"
   },
   "8": {
-   "league": "mls",
-   "event": "401933535",
-   "note": "Orlando City SC vs FC Cincinnati, 2026-11-20T00:30:00Z"
+   "league": "nhl",
+   "event": "401892753",
+   "note": "Vegas Golden Knights vs Dallas Stars, 2026-11-20T03:00:00Z"
   },
   "9": {
    "league": "nba",
