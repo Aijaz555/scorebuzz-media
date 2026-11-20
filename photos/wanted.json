@@ -1,27 +1,45 @@
 [
  {
+  "slug": "anfield",
+  "name": "Anfield",
+  "city": "Liverpool",
+  "country": "England"
+ },
+ {
   "slug": "san-mames",
   "name": "San Mamés",
   "city": "Bilbao",
   "country": "Spain"
  },
  {
-  "slug": "mendizorrotza",
-  "name": "Mendizorrotza",
-  "city": "Vitoria-Gasteiz",
+  "slug": "el-sardineros",
+  "name": "El Sardineros",
+  "city": "Santander",
   "country": "Spain"
  },
  {
-  "slug": "stade-louis-ii",
-  "name": "Stade Louis II",
-  "city": "Monaco",
-  "country": "France"
+  "slug": "el-sadar",
+  "name": "El Sadar",
+  "city": "Pamplona",
+  "country": "Spain"
  },
  {
-  "slug": "borussia-park",
-  "name": "BORUSSIA-PARK",
-  "city": "Mönchengladbach",
-  "country": "Germany"
+  "slug": "mapei-stadium",
+  "name": "Mapei Stadium",
+  "city": "Reggio Emilia",
+  "country": "Italy"
+ },
+ {
+  "slug": "new-balance-arena",
+  "name": "New Balance Arena",
+  "city": "Bergamo",
+  "country": "Italy"
+ },
+ {
+  "slug": "stade-du-moustoir-yves-allainmat",
+  "name": "Stade du Moustoir - Yves Allainmat",
+  "city": "Lorient",
+  "country": "France"
  },
  {
   "slug": "ursapharm-arena-an-der-kaiserlinde",
@@ -30,57 +48,27 @@
   "country": "Germany"
  },
  {
+  "slug": "seatgeek-stadium",
+  "name": "SeatGeek Stadium",
+  "city": "Bridgeview, Illinois",
+  "country": "USA"
+ },
+ {
+  "slug": "lincoln-financial-field",
+  "name": "Lincoln Financial Field",
+  "city": "Philadelphia",
+  "country": "USA"
+ },
+ {
+  "slug": "estadio-banorte",
+  "name": "Estadio Banorte",
+  "city": "Mexico City",
+  "country": "Mexico"
+ },
+ {
   "slug": "spartan-stadium",
   "name": "Spartan Stadium",
   "city": "East Lansing",
-  "country": "USA"
- },
- {
-  "slug": "david-booth-kansas-memorial-stadium",
-  "name": "David Booth Kansas Memorial Stadium",
-  "city": "Lawrence",
-  "country": "USA"
- },
- {
-  "slug": "bobby-dodd-stadium",
-  "name": "Bobby Dodd Stadium",
-  "city": "Atlanta",
-  "country": "USA"
- },
- {
-  "slug": "memorial-stadium-lincoln-ne",
-  "name": "Memorial Stadium (Lincoln, NE)",
-  "city": "Lincoln",
-  "country": "USA"
- },
- {
-  "slug": "milan-puskar-stadium",
-  "name": "Milan Puskar Stadium",
-  "city": "Morgantown",
-  "country": "USA"
- },
- {
-  "slug": "bryant-denny-stadium",
-  "name": "Bryant-Denny Stadium",
-  "city": "Tuscaloosa",
-  "country": "USA"
- },
- {
-  "slug": "gies-memorial-stadium",
-  "name": "Gies Memorial Stadium",
-  "city": "Champaign",
-  "country": "USA"
- },
- {
-  "slug": "michigan-stadium",
-  "name": "Michigan Stadium",
-  "city": "Ann Arbor",
-  "country": "USA"
- },
- {
-  "slug": "husky-stadium",
-  "name": "Husky Stadium",
-  "city": "Seattle",
   "country": "USA"
  },
  {
@@ -90,28 +78,10 @@
   "country": "USA"
  },
  {
-  "slug": "bill-snyder-family-stadium",
-  "name": "Bill Snyder Family Stadium",
-  "city": "Manhattan",
-  "country": "USA"
- },
- {
   "slug": "l-n-federal-credit-union-stadium",
   "name": "L&N Federal Credit Union Stadium",
   "city": "Louisville",
   "country": "USA"
- },
- {
-  "slug": "amon-g-carter-stadium",
-  "name": "Amon G. Carter Stadium",
-  "city": "Fort Worth",
-  "country": "USA"
- },
- {
-  "slug": "gainbridge-fieldhouse",
-  "name": "Gainbridge Fieldhouse",
-  "city": "Indianapolis",
-  "country": ""
  },
  {
   "slug": "frost-bank-center",
