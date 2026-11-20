@@ -499,10 +499,12 @@ Forcing 3D with `?trk=3d` on the tracker iframes worked, but it ran at ~3 fps (h
 looked like buffering on YouTube, so it was reverted the same evening (reload 38). Streams use the site's own choice again (2D in the stream browser).
 Smooth 3D on stream would need a GPU-backed renderer.
 
-## 3D on stream without the buffering (21 Nov 2026)
-Forcing the full 3D tracker (`?trk=3d`) made the streams slow and buffer: the stream browser (LiveReacting) has no graphics card and
-draws WebGL on the processor, a few frames a second at full quality. Fixed on the site, not here: when 3D is forced and the browser
-reports a software renderer, scorebuzz.net now draws the 3D view at two thirds of the resolution with no edge smoothing (stepping down
-to half if it still can't hold 24 fps), which costs about what the 2D tracker costs. The stream pages keep `?trk=3d`. Add `&q3d=full`
-to a tracker URL to get the full-quality picture (only on a capture machine with a graphics card), or switch `?trk=3d` to `?trk=2d`
-in center/soccer/us/nba/dark/app.html to go back to the 2D tracker on stream. Reload 39.
+## A lighter 3D tracker for the stream browser: built, not on stream yet (21 Nov 2026)
+The streams are on the site's own choice (2D in the stream browser) since the roll-back above. The reload 39 that came with this note
+changed nothing on screen: it was pushed minutes after that roll-back, before this session had seen it.
+What is new is on the site (scorebuzz-site 0f94075): when 3D is forced with `?trk=3d` and the browser reports a software renderer
+(no graphics card), scorebuzz.net draws the 3D view at two thirds of the resolution with no edge smoothing and lighter textures, and
+steps down to half if it still can't hold 24 fps; it never leaves 3D. In a 2-core headless test at 1000 px that ran at 7.0-7.5 fps,
+against 6.8 fps for the 2D tracker and 4.5 fps for full-quality 3D on the same machine, so it should cost the stream browser about
+what 2D costs. NOT tried on LiveReacting yet. To try it: put `?trk=3d` back on ONE layout or slot, watch that stream for a few
+minutes, and only then roll it out. `&q3d=full` forces the full-quality picture, `&q3d=lite` the light one (to preview on any device).
