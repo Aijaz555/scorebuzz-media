@@ -586,5 +586,592 @@
       }
     ],
     "music": "Hitman"
+  },
+  {
+    "id": "ligue1-20261120",
+    "sport": "football",
+    "league": "ligue1",
+    "format": "video",
+    "title": "Ligue 1 Table Updated Today 20 Nov 2026 | Ligue 1 Results & Standings Matchweek 10 ⚽",
+    "description": "Ligue 1 results from Fri 20 Nov (Matchweek 10), the updated Ligue 1 table and the next fixtures. PSG lead on 23 points after 10 games; the big result was Troyes 3–1 Le Havre AC. Next round starts Sat 21 Nov.\n\nFri 20 Nov scores: Troyes 3–1 Le Havre AC.\n\n0:00 Intro\n0:06 Fri 20 Nov results\n0:20 Every game\n0:34 Ligue 1 table\n1:04 Title race & relegation\n1:20 Still to play · Matchweek 10\n\nLigue 1 live scores, table and fixtures: https://scorebuzz.net\n\n#Ligue1 #Football #ligue1table #ScoreBuzz\n\nMusic: \"Volatile Reaction\" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0/)",
+    "tags": [
+      "ligue 1 table",
+      "ligue 1 table updated today",
+      "ligue 1 standings",
+      "ligue 1 results",
+      "ligue 1 fixtures",
+      "ligue 1 matchweek 10",
+      "ligue 1 results today",
+      "Troyes vs Le Havre AC",
+      "PSG ligue 1",
+      "scorebuzz"
+    ],
+    "tt": {
+      "league": "ligue1",
+      "name": "Ligue 1",
+      "mw": 10,
+      "season": "2026/27",
+      "zones": {
+        "ucl": 3,
+        "rel": 2
+      },
+      "result": {
+        "home": "Troyes",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
+        "hs": 3,
+        "away": "Le Havre AC",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
+        "as": 1,
+        "venue": "Stade de l'Aube"
+      },
+      "table": [
+        {
+          "rank": 1,
+          "team": "PSG",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+          "p": 10,
+          "gd": "+12",
+          "pts": 23
+        },
+        {
+          "rank": 2,
+          "team": "Lille",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+          "p": 10,
+          "gd": "+7",
+          "pts": 21
+        },
+        {
+          "rank": 3,
+          "team": "Paris FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
+          "p": 10,
+          "gd": "+7",
+          "pts": 20
+        },
+        {
+          "rank": 4,
+          "team": "Marseille",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+          "p": 10,
+          "gd": "+8",
+          "pts": 18
+        },
+        {
+          "rank": 5,
+          "team": "Lyon",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
+          "p": 10,
+          "gd": "+6",
+          "pts": 17
+        },
+        {
+          "rank": 6,
+          "team": "Nice",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
+          "p": 10,
+          "gd": "+3",
+          "pts": 17
+        },
+        {
+          "rank": 7,
+          "team": "Monaco",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
+          "p": 10,
+          "gd": "+2",
+          "pts": 16
+        },
+        {
+          "rank": 8,
+          "team": "Rennes",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
+          "p": 10,
+          "gd": "0",
+          "pts": 16
+        },
+        {
+          "rank": 9,
+          "team": "Brest",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+          "p": 10,
+          "gd": "+6",
+          "pts": 15
+        },
+        {
+          "rank": 10,
+          "team": "Lorient",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+          "p": 10,
+          "gd": "+1",
+          "pts": 15
+        },
+        {
+          "rank": 11,
+          "team": "Lens",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+          "p": 10,
+          "gd": "+2",
+          "pts": 13
+        },
+        {
+          "rank": 12,
+          "team": "Toulouse",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
+          "p": 10,
+          "gd": "+1",
+          "pts": 13
+        },
+        {
+          "rank": 13,
+          "team": "Strasbourg",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
+          "p": 10,
+          "gd": "-4",
+          "pts": 10
+        },
+        {
+          "rank": 14,
+          "team": "Auxerre",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
+          "p": 10,
+          "gd": "-11",
+          "pts": 10
+        },
+        {
+          "rank": 15,
+          "team": "Le Mans",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
+          "p": 10,
+          "gd": "-7",
+          "pts": 8
+        },
+        {
+          "rank": 16,
+          "team": "Angers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
+          "p": 10,
+          "gd": "-10",
+          "pts": 8
+        },
+        {
+          "rank": 17,
+          "team": "Troyes",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
+          "p": 10,
+          "gd": "-10",
+          "pts": 8
+        },
+        {
+          "rank": 18,
+          "team": "Le Havre AC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
+          "p": 10,
+          "gd": "-13",
+          "pts": 2
+        }
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-21T16:15Z",
+          "home": "Nice",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
+          "away": "PSG",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
+        },
+        {
+          "date": "2026-11-21T19:45Z",
+          "home": "Monaco",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
+          "away": "Auxerre",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png"
+        },
+        {
+          "date": "2026-11-21T19:45Z",
+          "home": "Lens",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+          "away": "Toulouse",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png"
+        },
+        {
+          "date": "2026-11-21T19:45Z",
+          "home": "Lille",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+          "away": "Lyon",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
+        },
+        {
+          "date": "2026-11-21T19:45Z",
+          "home": "Strasbourg",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
+          "away": "Brest",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
+        },
+        {
+          "date": "2026-11-22T14:00Z",
+          "home": "Paris FC",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
+          "away": "Angers",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png"
+        },
+        {
+          "date": "2026-11-22T16:15Z",
+          "home": "Lorient",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+          "away": "Rennes",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
+        },
+        {
+          "date": "2026-11-22T19:45Z",
+          "home": "Marseille",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+          "away": "Le Mans",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png"
+        }
+      ]
+    },
+    "thumb": {
+      "kicker": "Ligue 1 · Matchweek 10",
+      "big": "23 PTS",
+      "hook": "PSG *top*",
+      "sticker": "TABLE",
+      "emoji": "⚽"
+    },
+    "scenes": [
+      {
+        "type": "hook",
+        "dur": 6,
+        "kicker": "Ligue 1 · Fri 20 Nov",
+        "title": "Table updated today",
+        "sub": "PSG top on 23 points"
+      },
+      {
+        "type": "table",
+        "dur": 14,
+        "label": "Ligue 1 · Fri 20 Nov results",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Troyes v Le Havre AC",
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "Ligue 1 · Fri 20 Nov",
+        "home": "Troyes",
+        "homeAbbr": "TRY",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
+        "homeScore": 3,
+        "away": "Le Havre AC",
+        "awayAbbr": "HAC",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "TRY: A. Mille 19', 69' · R. Ripart 90'+8' pen  |  HAC: J. Maja 3'"
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Ligue 1 table · after Matchweek 10",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            1,
+            "PSG",
+            10,
+            7,
+            2,
+            1,
+            "+12",
+            23
+          ],
+          [
+            2,
+            "Lille",
+            10,
+            6,
+            3,
+            1,
+            "+7",
+            21
+          ],
+          [
+            3,
+            "Paris FC",
+            10,
+            6,
+            2,
+            2,
+            "+7",
+            20
+          ],
+          [
+            4,
+            "Marseille",
+            10,
+            6,
+            0,
+            4,
+            "+8",
+            18
+          ],
+          [
+            5,
+            "Lyon",
+            10,
+            5,
+            2,
+            3,
+            "+6",
+            17
+          ],
+          [
+            6,
+            "Nice",
+            10,
+            5,
+            2,
+            3,
+            "+3",
+            17
+          ],
+          [
+            7,
+            "Monaco",
+            10,
+            4,
+            4,
+            2,
+            "+2",
+            16
+          ],
+          [
+            8,
+            "Rennes",
+            10,
+            5,
+            1,
+            4,
+            "0",
+            16
+          ],
+          [
+            9,
+            "Brest",
+            10,
+            4,
+            3,
+            3,
+            "+6",
+            15
+          ]
+        ],
+        "highlight": [
+          1,
+          2,
+          3
+        ],
+        "note": "Top 3: Champions League places"
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Ligue 1 table · after Matchweek 10 (10–18)",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            10,
+            "Lorient",
+            10,
+            4,
+            3,
+            3,
+            "+1",
+            15
+          ],
+          [
+            11,
+            "Lens",
+            10,
+            4,
+            1,
+            5,
+            "+2",
+            13
+          ],
+          [
+            12,
+            "Toulouse",
+            10,
+            3,
+            4,
+            3,
+            "+1",
+            13
+          ],
+          [
+            13,
+            "Strasbourg",
+            10,
+            3,
+            1,
+            6,
+            "-4",
+            10
+          ],
+          [
+            14,
+            "Auxerre",
+            10,
+            3,
+            1,
+            6,
+            "-11",
+            10
+          ],
+          [
+            15,
+            "Le Mans",
+            10,
+            1,
+            5,
+            4,
+            "-7",
+            8
+          ],
+          [
+            16,
+            "Angers",
+            10,
+            2,
+            2,
+            6,
+            "-10",
+            8
+          ],
+          [
+            17,
+            "Troyes",
+            10,
+            2,
+            2,
+            6,
+            "-10",
+            8
+          ],
+          [
+            18,
+            "Le Havre AC",
+            10,
+            0,
+            2,
+            8,
+            "-13",
+            2
+          ]
+        ],
+        "danger": [
+          17,
+          18
+        ],
+        "note": "Bottom 2: relegation zone"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Title race",
+        "title": "PSG lead by 2 points",
+        "sub": "Lille are second on 21 points after 10 games"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Relegation zone",
+        "title": "Le Havre AC bottom on 2 points",
+        "sub": "In the drop zone: Troyes 8 · Le Havre AC 2. Angers are first above it on 8."
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Ligue 1 · Still to play · Matchweek 10 (UK · ET)",
+        "rows": [
+          [
+            "Sat 21 Nov",
+            "Nice v PSG",
+            "16:15 · 11:15 AM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Monaco v Auxerre",
+            "19:45 · 2:45 PM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Lens v Toulouse",
+            "19:45 · 2:45 PM"
+          ],
+          [
+            "Sat 21 Nov",
+            "Lille v Lyon",
+            "19:45 · 2:45 PM"
+          ]
+        ]
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Ligue 1 · Still to play · Matchweek 10 (UK · ET) cont.",
+        "rows": [
+          [
+            "Sat 21 Nov",
+            "Strasbourg v Brest",
+            "19:45 · 2:45 PM"
+          ],
+          [
+            "Sun 22 Nov",
+            "Paris FC v Angers",
+            "14:00 · 9:00 AM"
+          ],
+          [
+            "Sun 22 Nov",
+            "Lorient v Rennes",
+            "16:15 · 11:15 AM"
+          ],
+          [
+            "Sun 22 Nov",
+            "Marseille v Le Mans",
+            "19:45 · 2:45 PM"
+          ]
+        ]
+      },
+      {
+        "type": "cta",
+        "dur": 6,
+        "title": "Who wins the Ligue 1 this season?",
+        "sub": "Live scores, tables & fixtures every day"
+      }
+    ],
+    "music": "Volatile Reaction"
   }
 ]
