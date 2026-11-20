@@ -26,16 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "nhl",
-   "event": "401892751",
-   "note": "Colorado Avalanche vs Anaheim Ducks, 2026-11-20T02:00:00Z"
-  },
-  "2": {
-   "league": "mls",
-   "event": "401933555",
-   "note": "Seattle Sounders FC vs Real Salt Lake, 2026-11-20T03:00:00Z"
-  },
   "3": {
    "league": "nhl",
    "event": "401892752",
