@@ -2545,5 +2545,65 @@
   "status": "ok",
   "reason": "ok (contrast 66)",
   "at": "2026-11-19T05:00:16+00:00"
+ },
+ "401892744": {
+  "slot": "2",
+  "league": "nhl",
+  "game": "Lightning v Oilers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/lightning-vs-oilers-401892744/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 83)",
+  "at": "2026-11-20T02:54:27+00:00"
+ },
+ "401892742": {
+  "slot": "7",
+  "league": "nhl",
+  "game": "Maple Leafs v Kings",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/maple-leafs-vs-kings-401892742/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 83)",
+  "at": "2026-11-20T02:54:31+00:00"
+ },
+ "401910019": {
+  "slot": "9",
+  "league": "nba",
+  "game": "Grizzlies v Warriors",
+  "url": "https://scorebuzz.net/basketball/nba/grizzlies-vs-warriors-401910019/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-20T02:54:34+00:00"
+ },
+ "401873066": {
+  "slot": "10",
+  "league": "nfl",
+  "game": "Texans v Colts",
+  "url": "https://scorebuzz.net/american-football/nfl/texans-vs-colts-401873066/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-20T02:54:37+00:00"
+ },
+ "401892750": {
+  "slot": "11",
+  "league": "nhl",
+  "game": "Flames v Wild",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/flames-vs-wild-401892750/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-20T02:54:41+00:00"
+ },
+ "401892748": {
+  "slot": "12",
+  "league": "nhl",
+  "game": "Blackhawks v Blue Jackets",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-blue-jackets-401892748/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-20T02:54:44+00:00"
  }
 }
