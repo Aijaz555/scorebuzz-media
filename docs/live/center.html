@@ -69,6 +69,7 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 #trkChip .sc{background:#0b1022;color:#fff;padding:5px 14px;border-radius:6px;font-size:26px}
 #trkChip .sc.flash{background:var(--lime);color:#0b1022}
 #trkLive{position:absolute;right:16px;top:12px;z-index:2;background:#e5262e;color:#fff;font:800 20px 'Barlow Condensed',Inter,sans-serif;padding:5px 12px;border-radius:6px;letter-spacing:1px}
+.trk .pre{position:absolute;left:0;right:0;top:22px;text-align:center;font-family:'Barlow Condensed',sans-serif;text-shadow:0 4px 18px #000}.trk .pre .k{font-weight:800;font-size:54px;color:var(--lime);line-height:1}.trk .pre .v{font:600 26px Inter,sans-serif;color:#eef3ff;margin-top:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 20px}
 #trkL{position:absolute;overflow:hidden;pointer-events:none;background:#070A14;border-radius:0 0 12px 12px}#trkL iframe{position:absolute;border:0;width:1000px;transform-origin:0 0;background:#070A14}
 @keyframes ping{0%{r:10;opacity:.9}100%{r:44;opacity:0}}
 .ping{animation:ping 1.6s ease-out infinite}
@@ -111,7 +112,7 @@ let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('s
 // 3D tracker on stream: settings "trk3d": true (every slot) or ["2", "5"] (those slots) opens the site's match page with ?trk=3d, which
 // keeps the 3D view in the stream browser (no graphics card) as the site's lighter 3D picture. Off = the site's own choice (2D there).
 // "trkgpu" (same form) adds a readout on the 3D picture: the graphics chip the stream browser draws on and its frames a second.
-let TRK3D = q.get('trk3d') === '1', TRKGPU = q.get('trkgpu') === '1';
+let TRK3D = q.get('trk3d') === '1', TRKGPU = q.get('trkgpu') === '1', SITEPRE = q.get('sitepre') !== '0';
 function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
   const mode = R.fit || q.get('fit') || 'contain', b = document.body;
   if (mode === 'fill') b.style.transform = `scale(${sx},${sy})`; else { const k = Math.min(sx, sy); b.style.transform = `scale(${k})`; b.style.marginLeft = ((W - 1920 * k) / 2) + 'px'; b.style.marginTop = ((H - 1080 * k) / 2) + 'px'; } }
@@ -128,6 +129,10 @@ const FPATH = { epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1',
 const SPORT = { nba: 'basketball/nba', nhl: 'hockey/nhl', nfl: 'football/nfl' }; for (const [k, v] of Object.entries(FPATH)) SPORT[k] = 'soccer/' + v;
 const SITE = { nba: 'basketball/nba', nhl: 'ice-hockey/nhl', nfl: 'american-football/nfl', epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', unl: 'football/uefa-nations-league', bra: 'football/brasileirao', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls' }; // scorebuzz.net match pages
 const CROP = { top: 65, vh: 517, x: 15, vw: 970 }; // scorebuzz.net 'live action' tracker (see nba.html / us.html)
+// owner 21 Nov 2026: before the start, show the match page's own preview slides (form guide, table, head to head, ...) that sit
+// where the live tracker appears at kick-off (#trkSlot, 972x330 at 1000 px; its top 65 px are under the site's sticky header).
+// Settings "sitePreview": false (or a list of slots) turns it off; default on.
+const CROP_PRE = { top: 65, vh: 266, x: 120, vw: 760, band: 128 };
 const NHL = () => league === 'nhl', NFL = () => league === 'nfl', FOOT = () => !!FPATH[league];
 const TZ = () => (league === 'mls' ? ['America/New_York', 'ET'] : ['Europe/London', 'UK']); // football kick-off times: UK (ET for MLS)
 let PHOTOS = {}; // scorebuzz.net line-up photos (docs/live/player_photos.json, filled by tools/live/check_trackers.py)
@@ -391,8 +396,9 @@ function render(s, sb) {
   // ---- tracker: website tracker while in play, built-in shot map otherwise ----
   const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   const shortOf = (T) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === T.id)?.team?.shortDisplayName || T.nick;
-  const trkUrlPre = false;
-  const trkUrl = live && !noSite && !OWN && sbEv ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/${TRK3D ? '?trk=3d' + (TRKGPU ? '&gpu=1' : '') : ''}` : '';
+  const siteUrl = !noSite && !OWN && sbEv && SITE[league] ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/${TRK3D ? '?trk=3d' + (TRKGPU ? '&gpu=1' : '') : ''}` : '';
+  const trkUrlPre = pre && SITEPRE && !REPLAY ? siteUrl : ''; // same address as the live tracker, so kick-off needs no reload
+  const trkUrl = live ? siteUrl : '';
   const scorers = (id) => { const m = new Map(); for (const k of s.keyEvents || []) { const t = k.type?.type || ''; if (!(k.scoringPlay || /goal|penalty---scored/.test(t)) || /miss|saved/.test(t) || String(k.team?.id || '') !== id) continue;
       const who = (k.participants?.[0]?.athlete?.displayName || '').split(' ').slice(-1)[0] || '?'; m.set(who, [...(m.get(who) || []), k.clock?.displayValue + (/penalty/.test(t) ? ' P' : t === 'own-goal' ? ' OG' : '')]); }
     return [...m].map(([w, ts]) => `${w} ${ts.join(', ')}`).join(' · '); };
@@ -409,12 +415,12 @@ function render(s, sb) {
   <div class="mid">
     <div class="clock"><div class="c ${clk.length > 8 ? 'sm' : ''}">${esc(clk)}</div><div class="p">${esc(sub)}</div></div>
     ${strip}
-    <div class="trk" id="trk">${trkUrl ? '' : ownTracker(s, H, A, ov)}</div>
+    <div class="trk" id="trk">${trkUrl ? '' : trkUrlPre ? ov.replace('class="ov"', 'class="pre"') : ownTracker(s, H, A, ov)}</div>
     <div class="pbp">${pbp}</div>
   </div>
   ${side(R, L, 'a')}
   <div class="bot">${evs.map((e) => gameCell(e, e.id === c.id)).join('')}<div class="sub"><div class="bz">Score<b>Buzz</b><span>scorebuzz.net</span></div><div class="btn">SUBSCRIBE</div></div></div>`;
-  placeTracker(trkUrl);
+  placeTracker(trkUrl || trkUrlPre, !trkUrl && !!trkUrlPre);
   trackerChip(trkUrl && FOOT() ? { H, A, clk } : null);
   if (VOICE && !FOOT()) commentary(all, H, A, per, pre, fin);
 }
@@ -487,7 +493,7 @@ function footReplay(s) {
 }
 // the website's live tracker, cropped out of the match page like nba.html / us.html
 let trkF = null, trkSrc = '', trkAt = 0;
-function placeTracker(url) {
+function placeTracker(url, isPre) {
   const box = $('trk'); if (!box || !url) { if (trkF) trkF.parentNode.style.display = 'none'; return; }
   if (!trkF) { const L = document.createElement('div'); L.id = 'trkL'; trkF = document.createElement('iframe'); L.appendChild(trkF); document.body.appendChild(L); }
   if (trkSrc !== url) { trkSrc = url; trkF.src = url + '#trkSlot'; trkAt = Date.now(); }
@@ -496,9 +502,16 @@ function placeTracker(url) {
   // ('#_' then '#trkSlot') scrolls the cross-origin page back to the tracker without reloading it.
   else if (Date.now() - trkAt > 20000) { trkAt = Date.now(); trkF.src = url + '#_'; setTimeout(() => { if (trkSrc === url) trkF.src = url + '#trkSlot'; }, 300); }
   trkF.parentNode.style.display = 'block';
-  const { top: TOP, vh: VH, x: X, vw: VW } = CROP;
-  const left = box.offsetLeft + box.offsetParent.offsetLeft + box.clientLeft, top = box.offsetTop + box.offsetParent.offsetTop, w = box.clientWidth, h = box.clientHeight, k = Math.max(w / VW, h / VH);
-  Object.assign(trkF.parentNode.style, { left: left + 'px', top: top + 'px', width: w + 'px', height: h + 'px' });
+  const { top: TOP, vh: VH, x: X, vw: VW, band = 0 } = isPre ? CROP_PRE : CROP;
+  // live: fill the box (cover); preview: fit the slides under the kick-off line (contain)
+  const left = box.offsetLeft + box.offsetParent.offsetLeft + box.clientLeft, top = box.offsetTop + box.offsetParent.offsetTop + band, w = box.clientWidth, h = box.clientHeight - band - (isPre ? 10 : 0), k = (isPre ? Math.min : Math.max)(w / VW, h / VH);
+  if (isPre) { // clip the layer to exactly the slides, centred under the kick-off line, so nothing around them on the page shows
+    const cw = VW * k, ch = VH * k;
+    Object.assign(trkF.parentNode.style, { left: (left + (w - cw) / 2) + 'px', top: (top + (h - ch) / 2) + 'px', width: cw + 'px', height: ch + 'px', borderRadius: '14px' });
+    Object.assign(trkF.style, { height: (TOP + VH + 20) + 'px', left: (-X * k) + 'px', top: (-TOP * k) + 'px', transform: `scale(${k})` });
+    return;
+  }
+  Object.assign(trkF.parentNode.style, { left: left + 'px', top: top + 'px', width: w + 'px', height: h + 'px', borderRadius: '' });
   Object.assign(trkF.style, { height: (TOP + VH + 20) + 'px', left: ((w - VW * k) / 2 - X * k) + 'px', top: ((h - VH * k) / 2 - TOP * k) + 'px', transform: `scale(${k})` });
 }
 // owner 16 Nov 2026: the website's own score pill (clock · home 1 - 0 away · LIVE) sits under the site's sticky header in the
@@ -537,6 +550,7 @@ async function slotTick() {
     noSite = sl.sbtrk === 0;
     TRK3D = c.trk3d === true || (Array.isArray(c.trk3d) && c.trk3d.map(String).includes(String(SLOT)));
     TRKGPU = c.trkgpu === true || (Array.isArray(c.trkgpu) && c.trkgpu.map(String).includes(String(SLOT)));
+    SITEPRE = c.sitePreview === undefined || c.sitePreview === true || (Array.isArray(c.sitePreview) && c.sitePreview.map(String).includes(String(SLOT)));
     if (String(sl.event) !== String(event) || sl.league !== league) { league = sl.league; event = String(sl.event); tick(); }
   } catch (e) { /* keep current */ }
 }

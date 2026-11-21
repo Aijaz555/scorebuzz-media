@@ -543,3 +543,11 @@ needed, the setting is read every minute; reload 41 already loaded the layout th
 **Started (owner, 21 Nov 2026):** LiveReacting is giving the owner a graphics-card server to test on Slot 1, so settings.json now has
 `"trk3d": ["1"]` and `"trkgpu": ["1"]`. Slot 1's next game (Manchester City v Fulham, 12:30 UTC) opens in 3D with the readout. Check the
 readout on YouTube: green "Graphics card" and smooth -> keep; red "No graphics card" -> the project is not on the GPU server yet.
+
+## Site preview slides before the start (owner's request, 21 Nov 2026)
+Before the start, center.html now shows the scorebuzz.net match page's own preview slides (form guide, in the table, head to head,
+season leaders…) in the tracker box, under the "KICK-OFF 12:30 UK · IN 24 MIN" line. These are the slides the site shows where its
+live tracker appears at kick-off (`#trkSlot`, cropped `CROP_PRE` = x 120-880, y 65-331 of the 1000 px page, fitted inside the box).
+It is the same page address as the live tracker, so at kick-off the box switches to the tracker without reloading. Default on;
+`"sitePreview": false` in settings.json turns it off (or `["1", "3"]` for only those slots); a `sbtrk: 0` slot keeps the built-in pitch.
+Reload 42 loaded it. Checked locally with Oilers @ Hurricanes (NHL) and Alavés v Deportivo (LaLiga).
