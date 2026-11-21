@@ -6,6 +6,12 @@ name: YouTube live tags
 on:
   schedule:
     - cron: '*/10 * * * *'
+  # GitHub did not start the schedule above for hours after it was switched back on (22 Nov 2026), so the job also runs
+  # whenever the stream manager commits a new plan (docs/live/settings.json changes when games are assigned): a few
+  # minutes later, once YouTube has the new broadcasts.
+  push:
+    branches: [main]
+    paths: ['docs/live/settings.json']
   workflow_dispatch:
     inputs:
       try_titles:
@@ -17,7 +23,11 @@ concurrency:
 jobs:
   tag:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 12
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,9 +38,9 @@ jobs:
           TRY: ${{ inputs.try_titles }}
         run: |
           node -e 'const a=process.env.TRY.split(";;").map(s=>s.trim()).filter(Boolean);require("child_process").execFileSync("node",["tools/live/yt_tags.js","--try",...a],{stdio:"inherit"})'
+      - if: ${{ github.event_name == 'push' }}
+        run: sleep 300
       - if: ${{ !inputs.try_titles }}
         run: node tools/live/yt_tags.js
-        env:
-          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
-          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      - if: ${{ github.event_name == 'push' }}
+        run: sleep 240 && node tools/live/yt_tags.js      # a second look for streams scheduled a little later in the same run
