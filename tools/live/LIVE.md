@@ -551,3 +551,7 @@ live tracker appears at kick-off (`#trkSlot`, cropped `CROP_PRE` = x 120-880, y 
 It is the same page address as the live tracker, so at kick-off the box switches to the tracker without reloading. Default on;
 `"sitePreview": false` in settings.json turns it off (or `["1", "3"]` for only those slots); a `sbtrk: 0` slot keeps the built-in pitch.
 Reload 42 loaded it (reload 43: 5 px less at the bottom, a white line from the page showed under the slides). Checked locally with Oilers @ Hurricanes (NHL) and Alavés v Deportivo (LaLiga).
+**Result on Slot 1 (21 Nov 2026, 12:36 UTC):** after kick-off (Man City v Fulham) the owner said the stream was still stuttering in 3D,
+so `trk3d`/`trkgpu` were removed again (2D on every slot). Slot 1 is most likely not on LiveReacting's graphics-card server yet;
+the readout was not visible in YouTube's preview frame. Try again once LiveReacting confirms the project runs on the GPU server.
+The pre-game site preview slides worked, and the box switched to the tracker at kick-off without a reload.
