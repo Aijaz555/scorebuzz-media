@@ -2785,5 +2785,15 @@
   "status": "ok",
   "reason": "ok (contrast 36)",
   "at": "2026-11-21T15:58:34+00:00"
+ },
+ "401876398": {
+  "slot": "1",
+  "league": "ligue1",
+  "game": "Nice v PSG",
+  "url": "https://scorebuzz.net/football/ligue-1/nice-vs-psg-401876398/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 35)",
+  "at": "2026-11-21T16:23:10+00:00"
  }
 }
