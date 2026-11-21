@@ -7,6 +7,10 @@ on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
+    inputs:
+      try_titles:
+        description: 'Only show the tags these titles would get (titles separated by ;;). Changes nothing on YouTube.'
+        required: false
 concurrency:
   group: yt-tags
   cancel-in-progress: false
@@ -19,7 +23,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node tools/live/yt_tags.js
+      - if: ${{ inputs.try_titles }}
+        env:
+          TRY: ${{ inputs.try_titles }}
+        run: |
+          node -e 'const a=process.env.TRY.split(";;").map(s=>s.trim()).filter(Boolean);require("child_process").execFileSync("node",["tools/live/yt_tags.js","--try",...a],{stdio:"inherit"})'
+      - if: ${{ !inputs.try_titles }}
+        run: node tools/live/yt_tags.js
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}

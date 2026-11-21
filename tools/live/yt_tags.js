@@ -49,7 +49,36 @@ function tagsFor(title, description) {
   for (const t of [...new Set(tags)]) { if (len + t.length + 1 > 480) break; out.push(t); len += t.length + 1; }
   return out;
 }
-if (require.main !== module) { module.exports = { tagsFor }; return; }
+
+
+// What people really type into YouTube's search box for this game (its own search suggestions; free, no login). Used to
+// research each stream's tags. Suggestions that promise what the stream is not (match video, highlights, a TV channel), or
+// that are about betting, video games or old games, are left out. Any failure gives [] and the stream keeps its base tags.
+const NOT_OURS = /\b(free|full (game|match)|highlights?|watch|reddit|hd|4k|stream|streams|streaming|tv|channel|replay|reaction|watch ?along|watch ?party|prediction|predictions|preview|odds|bet|bets|betting|picks?|parlay|props?|fantasy|2k\d*|fifa|pes|efootball|madden|fc ?2\d|simulation|sim|last (game|night|year|season)|fight|brawl|injury|radio|audio|commentary|hindi|espa[nñ]ol|20[01]\d|202[0-5])\b/i;
+async function suggest(q) {
+  try {
+    const r = await fetch(`https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=en&q=${encodeURIComponent(q)}`, { signal: AbortSignal.timeout(4000) });
+    if (!r.ok) return [];
+    const j = JSON.parse(Buffer.from(await r.arrayBuffer()).toString('latin1'));
+    return (Array.isArray(j?.[1]) ? j[1] : []).map((x) => String(x).toLowerCase().trim()).filter(Boolean);
+  } catch { return []; }
+}
+async function researched(base) {
+  const [m1, m2] = [base[0], base[1]];                 // "<a> vs <b>", "<a> vs <b> live"
+  const [n1, n2] = m1.split(' vs ');
+  const got = [...await suggest(m1), ...await suggest(m2)];
+  const keep = [];
+  for (const g of got) {
+    if (g.length > 60 || NOT_OURS.test(g) || !/^[\x20-\x7e]+$/.test(g)) continue;
+    if (!(g.includes(n1) && g.includes(n2))) continue;                     // about this game, not just one of the teams
+    if (!base.includes(g) && !keep.includes(g)) keep.push(g);
+    if (keep.length >= 8) break;
+  }
+  const out = [...base.slice(0, 5), ...keep, ...base.slice(5)];            // the matchup phrases, then what people type, then the rest
+  const cut = []; let len = 0;
+  for (const t of out) { if (len + t.length + 1 > 480) continue; cut.push(t); len += t.length + 1; }
+  return { tags: cut, found: keep };
+}
 
 async function call(token, method, url, body) {
   const r = await fetch(url, { method, headers: { authorization: `Bearer ${token}`, ...(body ? { 'content-type': 'application/json' } : {}) }, body: body ? JSON.stringify(body) : undefined });
@@ -58,7 +87,10 @@ async function call(token, method, url, body) {
   return j;
 }
 
+if (require.main !== module) { module.exports = { tagsFor, suggest, researched }; return; }
+
 (async () => {
+  if (process.argv[2] === '--try') { for (const t of process.argv.slice(3)) { const b = tagsFor(t); console.log(t, '\n ', b ? JSON.stringify(await researched(b)) : 'no teams'); } return; }
   if (!id || !secret || !refresh) { console.log('::error::YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN repository secrets are not set'); process.exit(1); }
   const t = await (await fetch('https://oauth2.googleapis.com/token', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({ client_id: id, client_secret: secret, refresh_token: refresh, grant_type: 'refresh_token' }) })).json();
@@ -78,14 +110,15 @@ async function call(token, method, url, body) {
     for (const item of v.items || []) {
       const s = item.snippet;
       if ((s.tags || []).some((t) => / vs /.test(t))) { console.log(`has tags  ${item.id}  ${s.title}`); continue; }      // the channel's default tags ("live now", "live score") do not count: a game needs its own
-      const tags = tagsFor(s.title, s.description);
-      if (!tags) { console.log(`::warning::${item.id}: could not read teams from "${s.title}"`); continue; }
+      const base = tagsFor(s.title, s.description);
+      if (!base) { console.log(`::warning::${item.id}: could not read teams from "${s.title}"`); continue; }
+      const { tags, found } = await researched(base);
       try {
         await call(tok, 'PUT', `${API}/videos?part=snippet`, { id: item.id, snippet: {
           title: s.title, description: s.description, categoryId: '17', tags,
           ...(s.defaultLanguage ? { defaultLanguage: s.defaultLanguage } : {}),
         } });
-        console.log(`TAGGED    ${item.id}  ${s.title}  [${tags.length} tags]`);
+        console.log(`TAGGED    ${item.id}  ${s.title}  [${tags.length} tags, ${found.length} from YouTube search: ${found.join(' | ') || 'none'}]`);
       } catch (e) { console.log(`::warning::${item.id}: ${e.message}`); failed++; }
     }
   }
