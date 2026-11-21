@@ -32,9 +32,9 @@
    "note": "Calgary Flames vs Chicago Blackhawks, 2026-11-21T20:30:00Z"
   },
   "2": {
-   "league": "laliga",
-   "event": "401882798",
-   "note": "Real Madrid vs Celta Vigo, 2026-11-21T20:00:00Z"
+   "league": "nhl",
+   "event": "401892758",
+   "note": "Boston Bruins vs Washington Capitals, 2026-11-22T00:00:00Z"
   },
   "3": {
    "league": "mls",
@@ -56,10 +56,25 @@
    "event": "401892757",
    "note": "Nashville Predators vs Pittsburgh Penguins, 2026-11-21T23:00:00Z"
   },
+  "7": {
+   "league": "nhl",
+   "event": "401892760",
+   "note": "Montreal Canadiens vs Philadelphia Flyers, 2026-11-22T00:00:00Z"
+  },
+  "8": {
+   "league": "nhl",
+   "event": "401892763",
+   "note": "St. Louis Blues vs New Jersey Devils, 2026-11-22T00:00:00Z"
+  },
+  "9": {
+   "league": "nhl",
+   "event": "401892764",
+   "note": "Winnipeg Jets vs Vegas Golden Knights, 2026-11-22T00:00:00Z"
+  },
   "10": {
-   "league": "ligue1",
-   "event": "401876399",
-   "note": "AS Monaco vs AJ Auxerre, 2026-11-21T19:45:00Z"
+   "league": "nhl",
+   "event": "401892761",
+   "note": "Ottawa Senators vs Los Angeles Kings, 2026-11-22T00:00:00Z"
   }
  },
  "fit": {
