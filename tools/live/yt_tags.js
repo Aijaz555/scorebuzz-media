@@ -20,7 +20,7 @@ const TWO_WORD = /(golden knights|trail blazers|red wings|maple leafs|blue jacke
 const last = (t) => { const s = t.trim().toLowerCase(); const m = s.match(TWO_WORD); return m ? m[1] : s.split(/\s+/).pop(); };
 
 // "Miami Heat vs Cleveland Cavaliers NBA Live Scoreboard" / "Nice vs Paris Saint-Germain Ligue 1 Live Scoreboard" -> tag list
-function tagsFor(title) {
+function tagsFor(title, description) {
   const m = title.match(/^(.+?)\s+(?:vs\.?|v|@)\s+(.+?)(?:\s+LIVE\b|\s*[|·]|\s+-\s|$)/i);
   if (!m) return null;
   const L = LEAGUES.find(([re]) => re.test(title));
@@ -29,11 +29,16 @@ function tagsFor(title) {
   if (!t1 || !t2) return null;
   const lg = L ? L[1] : '', short = L ? L[2] : '', soccer = L ? L[3] : 0;
   const a = t1.toLowerCase(), b = t2.toLowerCase();
+  // the title carries the short names since 22 Nov 2026 ("Hurricanes vs Oilers Live Score | NHL Live Scoreboard"); the full
+  // names are on the description's second line ("Carolina Hurricanes @ Edmonton Oilers NHL Live Scoreboard")
+  let full = [];
+  const dm = L && String(description || '').match(new RegExp('^(.+?)\\s+(?:vs|@)\\s+(.+?)\\s+(?:' + L[0].source + ').*Live Scoreboard\\s*$', 'im'));
+  if (dm) { const f1 = dm[1].trim().toLowerCase(), f2 = dm[2].trim().toLowerCase(); full = [f1, f2].filter((f) => f !== a && f !== b); if (full.length) full.unshift(`${f1} vs ${f2}`); }
   const n1 = soccer ? a : last(t1), n2 = soccer ? b : last(t2);       // clubs are searched by their full name, US teams by nickname
   const tags = [
     // vidIQ research, 22 Nov 2026: people search "<a> vs <b> live", "... live match today", "... live score"; "live scoreboard" and
     // "play by play" have almost no searches, so the matchup phrases come first
-    `${n1} vs ${n2}`, `${n1} vs ${n2} live`, `${n1} vs ${n2} live score`, `${n1} vs ${n2} live match today`, `${n2} vs ${n1} live`, `${a} vs ${b}`, a, b,
+    `${n1} vs ${n2}`, `${n1} vs ${n2} live`, `${n1} vs ${n2} live score`, `${n1} vs ${n2} live match today`, `${n2} vs ${n1} live`, `${a} vs ${b}`, a, b, ...full,
     ...(soccer ? [`${a} live score`, `${b} live score`] : []),
     ...(lg ? [`${lg} live score`, `${short} live scoreboard`, `${lg} live today`, `${short} live`] : []),
     ...(soccer ? [lg === 'mls' ? 'soccer live score' : 'football live score'] : []),
@@ -73,7 +78,7 @@ async function call(token, method, url, body) {
     for (const item of v.items || []) {
       const s = item.snippet;
       if ((s.tags || []).some((t) => / vs /.test(t))) { console.log(`has tags  ${item.id}  ${s.title}`); continue; }      // the channel's default tags ("live now", "live score") do not count: a game needs its own
-      const tags = tagsFor(s.title);
+      const tags = tagsFor(s.title, s.description);
       if (!tags) { console.log(`::warning::${item.id}: could not read teams from "${s.title}"`); continue; }
       try {
         await call(tok, 'PUT', `${API}/videos?part=snippet`, { id: item.id, snippet: {

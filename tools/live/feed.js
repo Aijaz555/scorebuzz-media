@@ -526,12 +526,15 @@ async function list(league, date) {
     const h = c.competitors.find((x) => x.homeAway === 'home').team;
     const a = c.competitors.find((x) => x.homeAway === 'away').team;
     // Owner (9 Nov 2026), copying the channels that do this well (BL Football Talks): home team first in every league,
-    // matching the scoreboard (home on the left), and a short title "<Home> vs <Away> <League> Live Scoreboard".
+    // matching the scoreboard (home on the left).
     const [t1, t2] = [h, a];
     const week = e.week?.number || sb.week?.number;
     const tag = league === 'nfl' && week ? `NFL Week ${week}` : L.name || L.label;
-    const title = `${t1.displayName} vs ${t2.displayName} ${tag} Live Scoreboard`;
+    // Owner (22 Nov 2026), after vidIQ keyword research: people search "<team> vs <team> live" with the short names
+    // ("madrid vs barcelona live"), and almost nobody searches "live scoreboard". So the short matchup + "Live Score" leads,
+    // and "Live Scoreboard" stays at the end so nobody expects match video. The description keeps the full names.
     const nick = (t) => t.shortDisplayName || t.name || t.displayName;
+    const title = `${nick(t1)} vs ${nick(t2)} Live Score | ${tag} Live Scoreboard`;
     const v = c.venue || {};
     const place = [v.fullName, [v.address?.city, v.address?.state || v.address?.country].filter(Boolean).join(', ')].filter(Boolean).join(', ');
     return {
@@ -542,7 +545,7 @@ async function list(league, date) {
       // average win % of the two teams from their overall records ("W-L" or "W-L-OTL"), 0.5 when unknown; ranks games within a league
       winPct: (() => { const p = c.competitors.map((x) => { const r = String(x.records?.[0]?.summary || '').split('-').map(Number); const n = r.reduce((u, v) => u + (v || 0), 0); return n ? r[0] / n : 0.5; }); return Math.round((p.reduce((u, v) => u + v, 0) / p.length) * 1000) / 1000; })(),
       matchup: `${t1.displayName} vs ${t2.displayName}`,
-      title: title.length > 100 ? `${nick(t1)} vs ${nick(t2)} ${tag} Live Scoreboard` : title,
+      title: title.length > 100 ? `${nick(t1)} vs ${nick(t2)} Live Score | ${tag}` : title,
       description: [
         `${tag} Live Scoreboard`,
         L.soccer ? `${h.displayName} vs ${a.displayName} ${L.name || L.label} Live Scoreboard` : `${a.displayName} @ ${h.displayName} ${L.name || L.label} Live Scoreboard`,

@@ -382,6 +382,13 @@ Only runs when `"thumbs": true` in `docs/live/settings.json` (so the hourly mana
    `YT_REFRESH_TOKEN`. Then set `"thumbs": true` in `docs/live/settings.json` (or ask Claude to).
 
 ## Titles and tags (owner's request, 7 Nov 2026)
+- **22 Nov 2026 (owner, after vidIQ keyword research):** titles now read `<Home short> vs <Away short> Live Score | <League> Live Scoreboard`
+  (e.g. `Newcastle vs Arsenal Live Score | Premier League Live Scoreboard`, `Hurricanes vs Oilers Live Score | NHL Live Scoreboard`).
+  Research: "live scoreboard", "nba live scoreboard", "play by play" all under 750 searches a month; people search
+  "<team> vs <team> live", "... live score", "... live match today" with short names. The description is unchanged (full names).
+  YouTube tags are written by the "YouTube live tags" GitHub Action every 10 min (yt_tags.js; back on 22 Nov 2026 with the Google
+  project "ScoreBuzz Live Streams"); it reads either title format and takes the full names from the description. vidIQ is NOT used
+  for tagging: 5 credits per video against 150 a month.
 - Every stream title reads `<Home> vs <Away> <League> Live Scoreboard` (NFL: `NFL Week N`), home team first in every league to match the
   scoreboard (owner, 9 Nov 2026, copying BL Football Talks; was `<Team> vs <Team> LIVE | <League> Scoreboard & Play-by-Play`).
   The description opens with `<League> Live Scoreboard`, `<Away> @ <Home> <League> Live Scoreboard`, the arena and city, and
