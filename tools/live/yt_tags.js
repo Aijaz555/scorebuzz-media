@@ -63,21 +63,26 @@ async function suggest(q) {
     return (Array.isArray(j?.[1]) ? j[1] : []).map((x) => String(x).toLowerCase().trim()).filter(Boolean);
   } catch { return []; }
 }
-async function researched(base) {
+// Only phrases made of the two teams plus plain "live game today" words pass: old scores ("4-4"), other competitions,
+// video games ("sega genesis"), shows and other channels' names ("pitchside ...") do not describe this stream.
+const PLAIN = new Set(['vs', 'v', 'live', 'today', 'tonight', 'now', 'game', 'match', 'score', 'scores', 'scoreboard', 'update', 'updates', 'result', 'results', 'the', 'fc', String(new Date().getUTCFullYear())]);
+async function researched(base, extraWords = []) {
   const [m1, m2] = [base[0], base[1]];                 // "<a> vs <b>", "<a> vs <b> live"
   const [n1, n2] = m1.split(' vs ');
+  const ok = new Set([...PLAIN, ...[n1, n2, ...extraWords].join(' ').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean)]);
   const got = [...await suggest(m1), ...await suggest(m2)];
   const keep = [];
   for (const g of got) {
     if (g.length > 60 || NOT_OURS.test(g) || !/^[\x20-\x7e]+$/.test(g)) continue;
     if (!(g.includes(n1) && g.includes(n2))) continue;                     // about this game, not just one of the teams
+    if (!g.split(/[^a-z0-9]+/).filter(Boolean).every((w) => ok.has(w))) continue;
     if (!base.includes(g) && !keep.includes(g)) keep.push(g);
-    if (keep.length >= 8) break;
   }
-  const out = [...base.slice(0, 5), ...keep, ...base.slice(5)];            // the matchup phrases, then what people type, then the rest
-  const cut = []; let len = 0;
-  for (const t of out) { if (len + t.length + 1 > 480) continue; cut.push(t); len += t.length + 1; }
-  return { tags: cut, found: keep };
+  // every base tag stays; what people type is added after the matchup phrases for as long as it fits YouTube's limit
+  let len = base.reduce((n, t) => n + t.length + 1, 0);
+  const fit = [];
+  for (const g of keep) { if (fit.length >= 8 || len + g.length + 1 > 480) break; fit.push(g); len += g.length + 1; }
+  return { tags: [...base.slice(0, 5), ...fit, ...base.slice(5)], found: fit };
 }
 
 async function call(token, method, url, body) {
@@ -90,7 +95,7 @@ async function call(token, method, url, body) {
 if (require.main !== module) { module.exports = { tagsFor, suggest, researched }; return; }
 
 (async () => {
-  if (process.argv[2] === '--try') { for (const t of process.argv.slice(3)) { const b = tagsFor(t); console.log(t, '\n ', b ? JSON.stringify(await researched(b)) : 'no teams'); } return; }
+  if (process.argv[2] === '--try') { for (const t of process.argv.slice(3)) { const b = tagsFor(t); console.log(t, '\n ', b ? JSON.stringify((await researched(b, b.slice(5))).found) : 'no teams'); } return; }
   if (!id || !secret || !refresh) { console.log('::error::YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN repository secrets are not set'); process.exit(1); }
   const t = await (await fetch('https://oauth2.googleapis.com/token', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({ client_id: id, client_secret: secret, refresh_token: refresh, grant_type: 'refresh_token' }) })).json();
@@ -112,7 +117,7 @@ if (require.main !== module) { module.exports = { tagsFor, suggest, researched }
       if ((s.tags || []).some((t) => / vs /.test(t))) { console.log(`has tags  ${item.id}  ${s.title}`); continue; }      // the channel's default tags ("live now", "live score") do not count: a game needs its own
       const base = tagsFor(s.title, s.description);
       if (!base) { console.log(`::warning::${item.id}: could not read teams from "${s.title}"`); continue; }
-      const { tags, found } = await researched(base);
+      const { tags, found } = await researched(base, base.slice(5));      // team full names and league words may appear in a phrase
       try {
         await call(tok, 'PUT', `${API}/videos?part=snippet`, { id: item.id, snippet: {
           title: s.title, description: s.description, categoryId: '17', tags,
