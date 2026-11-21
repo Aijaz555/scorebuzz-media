@@ -525,3 +525,17 @@ remove the key. Only center.html reads it (soccer/us/nba/dark/app.html do not).
 was NOT smooth on YouTube, so `"trk3d"` was removed again and every slot is on the 2D tracker. The headless comparison (lighter 3D
 costs about what 2D costs) did not carry over to LiveReacting's stream browser. Do not turn 3D on for the streams again without a
 capture machine that has a graphics card. The `"trk3d"` setting in center.html stays for that day; it is off when the key is absent.
+
+## Next trial: LiveReacting's graphics-card servers (owner asked them for a trial, 21 Nov 2026)
+LiveReacting told the owner they have servers with a graphics card that the account can be upgraded to; the owner asked for a trial
+first. Nothing is switched on yet: `"trk3d"` is still absent, every slot is on the 2D tracker.
+When the owner says which slot/project has the graphics card: add `"trk3d": ["N"]` and `"trkgpu": ["N"]` to settings.json (no reload
+needed, the setting is read every minute; reload 41 already loaded the layout that knows `trkgpu`).
+- `trkgpu` (same form as `trk3d`: `true` or a list of slots) makes center.html add `&gpu=1` to the match page address. The site's 3D
+  view then shows a small readout at the top centre of the picture: "Graphics card: <chip>" (green line) or "No graphics card: <chip>"
+  (red line), the frames a second it reaches, and "full 3D" or "light 3D" with the drawn size. So the YouTube picture itself shows
+  whether their card is used for the page (some services use the card only for encoding the video).
+- With a real card the site picks the full-quality picture by itself (`?trk=3d` only goes light on a software renderer).
+- Smooth and "Graphics card" on the readout -> remove `trkgpu`, set `"trk3d": true` once every slot is on such a server. Red line or
+  still not smooth -> remove both keys again (2D).
+
