@@ -63,6 +63,21 @@ async function suggest(q) {
     return (Array.isArray(j?.[1]) ? j[1] : []).map((x) => String(x).toLowerCase().trim()).filter(Boolean);
   } catch { return []; }
 }
+// YouTube refuses the whole list ("invalid video keywords") when it is over 500 characters, counting a comma per tag and two
+// quote marks around every tag with a space, or when a tag holds < > " or a comma. Keep to 460 to be safe; the list is in
+// order of importance, so what does not fit is dropped from where it stands.
+function fitTags(list) {
+  const out = []; let len = 0;
+  for (let t of list) {
+    t = String(t).replace(/[<>",]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (!t || t.length > 60 || out.includes(t)) continue;
+    const cost = t.length + 1 + (t.includes(' ') ? 2 : 0);
+    if (len + cost > 460) continue;
+    out.push(t); len += cost;
+  }
+  return out;
+}
+
 // Only phrases made of the two teams plus plain "live game today" words pass: old scores ("4-4"), other competitions,
 // video games ("sega genesis"), shows and other channels' names ("pitchside ...") do not describe this stream.
 const PLAIN = new Set(['vs', 'v', 'live', 'today', 'tonight', 'now', 'game', 'match', 'score', 'scores', 'scoreboard', 'update', 'updates', 'result', 'results', 'the', 'fc', String(new Date().getUTCFullYear())]);
@@ -82,7 +97,7 @@ async function researched(base, extraWords = []) {
   let len = base.reduce((n, t) => n + t.length + 1, 0);
   const fit = [];
   for (const g of keep) { if (fit.length >= 8 || len + g.length + 1 > 480) break; fit.push(g); len += g.length + 1; }
-  return { tags: [...base.slice(0, 5), ...fit, ...base.slice(5)], found: fit };
+  return { tags: fitTags([...base.slice(0, 5), ...fit, ...base.slice(5)]), found: fit };
 }
 
 async function call(token, method, url, body) {
