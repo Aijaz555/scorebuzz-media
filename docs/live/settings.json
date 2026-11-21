@@ -25,13 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "9": {
-   "league": "nba",
-   "event": "401909312",
-   "note": "Denver Nuggets vs Houston Rockets, 2026-11-21T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
