@@ -539,3 +539,7 @@ needed, the setting is read every minute; reload 41 already loaded the layout th
 - Smooth and "Graphics card" on the readout -> remove `trkgpu`, set `"trk3d": true` once every slot is on such a server. Red line or
   still not smooth -> remove both keys again (2D).
 
+
+**Started (owner, 21 Nov 2026):** LiveReacting is giving the owner a graphics-card server to test on Slot 1, so settings.json now has
+`"trk3d": ["1"]` and `"trkgpu": ["1"]`. Slot 1's next game (Manchester City v Fulham, 12:30 UTC) opens in 3D with the readout. Check the
+readout on YouTube: green "Graphics card" and smooth -> keep; red "No graphics card" -> the project is not on the GPU server yet.
