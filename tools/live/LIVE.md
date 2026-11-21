@@ -555,3 +555,4 @@ Reload 42 loaded it (reload 43: 5 px less at the bottom, a white line from the p
 so `trk3d`/`trkgpu` were removed again (2D on every slot). Slot 1 is most likely not on LiveReacting's graphics-card server yet;
 the readout was not visible in YouTube's preview frame. Try again once LiveReacting confirms the project runs on the GPU server.
 The pre-game site preview slides worked, and the box switched to the tracker at kick-off without a reload.
+**Owner, 21 Nov 2026 ~12:42 UTC: keep Slot 1 in 3D for now** (don't switch it to 2D): `trk3d`/`trkgpu` ["1"] put back.
