@@ -2695,5 +2695,15 @@
   "status": "ok",
   "reason": "ok (contrast 66)",
   "at": "2026-11-21T00:42:39+00:00"
+ },
+ "401909308": {
+  "slot": "1",
+  "league": "nba",
+  "game": "Pistons v Raptors",
+  "url": "https://scorebuzz.net/basketball/nba/pistons-vs-raptors-401909308/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-21T00:50:46+00:00"
  }
 }
