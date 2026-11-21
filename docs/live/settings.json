@@ -60,6 +60,16 @@
    "league": "nba",
    "event": "401909311",
    "note": "Utah Jazz vs Phoenix Suns, 2026-11-21T02:30:00Z"
+  },
+  "8": {
+   "league": "nba",
+   "event": "401909313",
+   "note": "Los Angeles Lakers vs Sacramento Kings, 2026-11-21T03:00:00Z"
+  },
+  "9": {
+   "league": "nba",
+   "event": "401909312",
+   "note": "Denver Nuggets vs Houston Rockets, 2026-11-21T03:00:00Z"
   }
  },
  "fit": {
