@@ -132,7 +132,7 @@ const CROP = { top: 65, vh: 517, x: 15, vw: 970 }; // scorebuzz.net 'live action
 // owner 21 Nov 2026: before the start, show the match page's own preview slides (form guide, table, head to head, ...) that sit
 // where the live tracker appears at kick-off (#trkSlot, 972x330 at 1000 px; its top 65 px are under the site's sticky header).
 // Settings "sitePreview": false (or a list of slots) turns it off; default on.
-const CROP_PRE = { top: 65, vh: 266, x: 120, vw: 760, band: 128 };
+const CROP_PRE = { top: 65, vh: 261, x: 120, vw: 760, band: 128 };
 const NHL = () => league === 'nhl', NFL = () => league === 'nfl', FOOT = () => !!FPATH[league];
 const TZ = () => (league === 'mls' ? ['America/New_York', 'ET'] : ['Europe/London', 'UK']); // football kick-off times: UK (ET for MLS)
 let PHOTOS = {}; // scorebuzz.net line-up photos (docs/live/player_photos.json, filled by tools/live/check_trackers.py)

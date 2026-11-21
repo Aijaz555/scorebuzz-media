@@ -547,7 +547,7 @@ readout on YouTube: green "Graphics card" and smooth -> keep; red "No graphics c
 ## Site preview slides before the start (owner's request, 21 Nov 2026)
 Before the start, center.html now shows the scorebuzz.net match page's own preview slides (form guide, in the table, head to head,
 season leaders…) in the tracker box, under the "KICK-OFF 12:30 UK · IN 24 MIN" line. These are the slides the site shows where its
-live tracker appears at kick-off (`#trkSlot`, cropped `CROP_PRE` = x 120-880, y 65-331 of the 1000 px page, fitted inside the box).
+live tracker appears at kick-off (`#trkSlot`, cropped `CROP_PRE` = x 120-880, y 65-326 of the 1000 px page, fitted inside the box).
 It is the same page address as the live tracker, so at kick-off the box switches to the tracker without reloading. Default on;
 `"sitePreview": false` in settings.json turns it off (or `["1", "3"]` for only those slots); a `sbtrk: 0` slot keeps the built-in pitch.
-Reload 42 loaded it. Checked locally with Oilers @ Hurricanes (NHL) and Alavés v Deportivo (LaLiga).
+Reload 42 loaded it (reload 43: 5 px less at the bottom, a white line from the page showed under the slides). Checked locally with Oilers @ Hurricanes (NHL) and Alavés v Deportivo (LaLiga).
