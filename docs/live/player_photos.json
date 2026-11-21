@@ -95,5 +95,444 @@
     }
    }
   }
+ },
+ "401879232": {
+  "at": "2026-11-21T17:47:22+00:00",
+  "teams": {
+   "Newcastle United": {
+    "21": {
+     "id": "577225",
+     "name": "Lukáš Horníček"
+    },
+    "37": {
+     "id": "566544",
+     "name": "Amar Dedić"
+    },
+    "12": {
+     "id": "563179",
+     "name": "Malick Thiaw"
+    },
+    "33": {
+     "id": "110513",
+     "name": "Dan Burn"
+    },
+    "3": {
+     "id": "621191",
+     "name": "Lewis Hall"
+    },
+    "14": {
+     "id": "934016",
+     "name": "Sean Steur"
+    },
+    "67": {
+     "id": "761851",
+     "name": "Lewis Miley"
+    },
+    "23": {
+     "id": "326321",
+     "name": "Jacob Murphy"
+    },
+    "28": {
+     "id": "376613",
+     "name": "Joe Willock"
+    },
+    "11": {
+     "id": "454522",
+     "name": "Harvey Barnes"
+    },
+    "10": {
+     "id": "682268",
+     "name": "William Osula"
+    },
+    "1": {
+     "id": "220636",
+     "name": "Nick Pope"
+    },
+    "2": {
+     "id": "525807",
+     "name": "Tino Livramento"
+    },
+    "4": {
+     "id": "463014",
+     "name": "Sven Botman"
+    },
+    "5": {
+     "id": "109708",
+     "name": "Fabian Schär"
+    },
+    "6": {
+     "id": "571788",
+     "name": "Nico González"
+    },
+    "41": {
+     "id": "459219",
+     "name": "Jacob Ramsey"
+    },
+    "9": {
+     "id": "320030",
+     "name": "Yoane Wissa"
+    },
+    "19": {
+     "id": "546875",
+     "name": "Anthony Elanga"
+    },
+    "20": {
+     "id": "792549",
+     "name": "Matías Fernández-Pardo"
+    }
+   },
+   "Arsenal": {
+    "1": {
+     "id": "330279",
+     "name": "David Raya"
+    },
+    "12": {
+     "id": "473481",
+     "name": "Jurriën Timber"
+    },
+    "15": {
+     "id": "431214",
+     "name": "Ezri Konsa"
+    },
+    "6": {
+     "id": "433485",
+     "name": "Gabriel Magalhães"
+    },
+    "33": {
+     "id": "572184",
+     "name": "Riccardo Calafiori"
+    },
+    "39": {
+     "id": "402388",
+     "name": "Bruno Guimarães"
+    },
+    "41": {
+     "id": "408158",
+     "name": "Declan Rice"
+    },
+    "20": {
+     "id": "509344",
+     "name": "Noni Madueke"
+    },
+    "8": {
+     "id": "334861",
+     "name": "Martin Ødegaard"
+    },
+    "10": {
+     "id": "471115",
+     "name": "Eberechi Eze"
+    },
+    "29": {
+     "id": "440864",
+     "name": "Kai Havertz"
+    },
+    "13": {
+     "id": "200705",
+     "name": "Kepa Arrizabalaga"
+    },
+    "2": {
+     "id": "551454",
+     "name": "William Saliba"
+    },
+    "3": {
+     "id": "707580",
+     "name": "Cristhian Mosquera"
+    },
+    "4": {
+     "id": "452343",
+     "name": "Ben White"
+    },
+    "5": {
+     "id": "600454",
+     "name": "Piero Hincapié"
+    },
+    "49": {
+     "id": "700960",
+     "name": "Myles Lewis-Skelly"
+    },
+    "17": {
+     "id": "574629",
+     "name": "Christos Tzolis"
+    },
+    "23": {
+     "id": "362649",
+     "name": "Mikel Merino"
+    },
+    "14": {
+     "id": "413136",
+     "name": "Viktor Gyökeres"
+    }
+   }
+  }
+ },
+ "401882797": {
+  "at": "2026-11-21T17:47:22+00:00",
+  "teams": {
+   "Sevilla": {
+    "1": {
+     "id": "159864",
+     "name": "Odysseas Vlachodimos"
+    },
+    "2": {
+     "id": "416188",
+     "name": "Juan Iglesias"
+    },
+    "5": {
+     "id": "791135",
+     "name": "Andrés Castrin"
+    },
+    "4": {
+     "id": "687125",
+     "name": "Kike Salas"
+    },
+    "17": {
+     "id": "334592",
+     "name": "Gabriel Suazo"
+    },
+    "24": {
+     "id": "500276",
+     "name": "Youssouf Fofana"
+    },
+    "6": {
+     "id": "564211",
+     "name": "Lucien Agoumé"
+    },
+    "11": {
+     "id": "489383",
+     "name": "Rubén Vargas"
+    },
+    "18": {
+     "id": "314202",
+     "name": "Jon Guridi"
+    },
+    "20": {
+     "id": "509535",
+     "name": "Félix Correia"
+    },
+    "19": {
+     "id": "667952",
+     "name": "Lucas Stassin"
+    },
+    "13": {
+     "id": "864224",
+     "name": "Fran González"
+    },
+    "12": {
+     "id": "565317",
+     "name": "Arouna Sangante"
+    },
+    "3": {
+     "id": "783293",
+     "name": "Julio Díaz"
+    },
+    "15": {
+     "id": "257118",
+     "name": "Fábio Cardoso"
+    },
+    "10": {
+     "id": "588351",
+     "name": "Peque Fernández"
+    },
+    "14": {
+     "id": "773398",
+     "name": "Manu Bueno"
+    },
+    "8": {
+     "id": "414814",
+     "name": "Giorgi Kochorashvili"
+    },
+    "16": {
+     "id": "629353",
+     "name": "Isaac Romero"
+    },
+    "9": {
+     "id": "651858",
+     "name": "Robbie Ure"
+    },
+    "21": {
+     "id": "477369",
+     "name": "Chidera Ejuke"
+    }
+   },
+   "Real Betis": {
+    "1": {
+     "id": "396038",
+     "name": "Álvaro Valles"
+    },
+    "2": {
+     "id": "235942",
+     "name": "Héctor Bellerín"
+    },
+    "5": {
+     "id": "116484",
+     "name": "Marc Bartra"
+    },
+    "4": {
+     "id": "648708",
+     "name": "Natan"
+    },
+    "11": {
+     "id": "439039",
+     "name": "Fran García"
+    },
+    "8": {
+     "id": "422765",
+     "name": "Pablo Fornals"
+    },
+    "21": {
+     "id": "363679",
+     "name": "Marc Roca"
+    },
+    "7": {
+     "id": "536532",
+     "name": "Antony"
+    },
+    "22": {
+     "id": "103164",
+     "name": "Isco"
+    },
+    "10": {
+     "id": "628194",
+     "name": "Abdessamad Ezzalzouli"
+    },
+    "24": {
+     "id": "393279",
+     "name": "Aitor Ruibal"
+    },
+    "13": {
+     "id": "372683",
+     "name": "Diego Conde"
+    },
+    "12": {
+     "id": "781779",
+     "name": "Angel Ortiz"
+    },
+    "16": {
+     "id": "816153",
+     "name": "Valentín Gómez"
+    },
+    "23": {
+     "id": "396788",
+     "name": "Junior Firpo"
+    },
+    "3": {
+     "id": "262202",
+     "name": "Diego Llorente"
+    },
+    "6": {
+     "id": "710590",
+     "name": "Facundo Bernal"
+    },
+    "18": {
+     "id": "688006",
+     "name": "Nelson Deossa"
+    },
+    "17": {
+     "id": "460259",
+     "name": "Rodrigo Riquelme"
+    },
+    "15": {
+     "id": "372851",
+     "name": "Álvaro Fidalgo"
+    },
+    "20": {
+     "id": "392369",
+     "name": "Giovani Lo Celso"
+    },
+    "9": {
+     "id": "402218",
+     "name": "Cucho Hernández"
+    },
+    "19": {
+     "id": "515624",
+     "name": "Troy Parrott"
+    }
+   }
+  }
+ },
+ "401874967": {
+  "at": "2026-11-21T17:48:37+00:00",
+  "teams": {
+   "Parma": {
+    "30": {
+     "id": "782709",
+     "name": "Giovanni Daffara"
+    },
+    "14": {
+     "id": "495073",
+     "name": "Emanuele Valeri"
+    },
+    "80": {
+     "id": "663464",
+     "name": "Giovanni Fabbian"
+    },
+    "37": {
+     "id": "917307",
+     "name": "Mariano Troilo"
+    },
+    "4": {
+     "id": "403560",
+     "name": "Vincent Sierro"
+    },
+    "16": {
+     "id": "695562",
+     "name": "Mandela Keita"
+    },
+    "23": {
+     "id": "689352",
+     "name": "Nesta Elphege"
+    },
+    "29": {
+     "id": "654694",
+     "name": "Franco Carboni"
+    }
+   },
+   "AS Roma": {
+    "99": {
+     "id": "372247",
+     "name": "Mile Svilar"
+    },
+    "77": {
+     "id": "1153183",
+     "name": "Emanuele Lulli"
+    },
+    "20": {
+     "id": "432521",
+     "name": "Nahuel Molina"
+    },
+    "22": {
+     "id": "314116",
+     "name": "Mario Hermoso"
+    },
+    "26": {
+     "id": "539937",
+     "name": "Leonardo Balerdi"
+    },
+    "23": {
+     "id": "380617",
+     "name": "Gianluca Mancini"
+    },
+    "4": {
+     "id": "213130",
+     "name": "Bryan Cristante"
+    },
+    "17": {
+     "id": "575341",
+     "name": "Manu Koné"
+    },
+    "14": {
+     "id": "399771",
+     "name": "Donyell Malen"
+    },
+    "21": {
+     "id": "201072",
+     "name": "Paulo Dybala"
+    },
+    "86": {
+     "id": "864654",
+     "name": "Rodrigo Mora"
+    }
+   }
+  }
  }
 }

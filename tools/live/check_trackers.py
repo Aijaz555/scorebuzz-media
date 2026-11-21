@@ -74,8 +74,91 @@ def game(league, event):
             "home": name(t["home"]), "away": name(t["away"])}
 
 
-def lineup_photos(url):
-    """{team name: {jersey: {"id", "name"}}} from the line-up cards on the scorebuzz.net match page (starters only)."""
+FEED = {}
+def lineup_photos_feed(event):
+    """{team name: {jersey: {"id", "name"}}} (starters + bench) from the site's live match feed.
+    Since ~21 Nov 2026 the match page draws its line-ups in the browser from /api/live/md-<fx>.json (photo = /img/p/<id>.png);
+    /api/live/football.json maps the page URL (…-<ESPN event>/) to that fx id."""
+    if "football" not in FEED:
+        FEED["football"] = get("https://scorebuzz.net/api/live/football.json")
+    fx = None
+    def walk(o):
+        nonlocal fx
+        if fx:
+            return
+        if isinstance(o, dict):
+            if str(o.get("u", "")).rstrip("/").endswith(f"-{event}") and o.get("fx"):
+                fx = str(o["fx"]); return
+            for v in o.values():
+                walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+    walk(FEED["football"])
+    if not fx:
+        return {}
+    md = get(f"https://scorebuzz.net/api/live/md-{fx}.json")
+    out = {}
+    for side in ("h", "a"):
+        t = md.get(side) or {}
+        ps = {}
+        for p in (t.get("xi") or []) + (t.get("bench") or []):
+            n, pid = str(p.get("number") or "").strip(), str(p.get("id") or "").strip()
+            if n and pid.isdigit() and n not in ps:
+                ps[n] = {"id": pid, "name": p.get("name", "")}
+        if ps and t.get("name"):
+            out[t["name"]] = ps
+    return out
+
+
+def lineup_photos_rendered(url):
+    """{team name: {jersey: {"id", "name"}}} read from the match page's line-up pitch after the browser has drawn it.
+    The feed often has empty player ids (Serie A, Ligue 1); the page then matches names to photos itself, so read the result."""
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        try:
+            page = b.new_page(viewport={"width": 1000, "height": 1100})
+            page.goto(url, wait_until="domcontentloaded", timeout=60000)
+            rows = []
+            for _ in range(8):
+                page.wait_for_timeout(2500)
+                rows = page.evaluate("""() => { const P = document.querySelector('[data-mp="pitch"] .mp-pitch'); if (!P) return [];
+                    const tn = (s) => (P.querySelector('.fm.' + s + ' .fmn') || {}).textContent || '';
+                    return [...P.querySelectorAll('.mp-pl')].map((e) => { const im = e.querySelector('img[src*="/img/p/"]');
+                      const a = e.querySelector('a[href*="/player/"]'); const j = (e.querySelector('.jn') || {}).textContent || '';
+                      return { team: e.classList.contains('sd-a') ? tn('r') : tn('l'), jersey: j.trim(),
+                               id: im ? (im.getAttribute('src').match(/\\/img\\/p\\/(\\d+)/) || [])[1] : null,
+                               name: im ? im.alt : (a ? a.textContent : '') }; }); }""")
+                if sum(1 for r in rows if r["id"]) >= 11:
+                    break
+        finally:
+            b.close()
+    out = {}
+    for r in rows:
+        if r["id"] and r["jersey"].isdigit() and r["team"].strip():
+            out.setdefault(r["team"].strip(), {}).setdefault(r["jersey"], {"id": r["id"], "name": r["name"]})
+    return out
+
+
+def lineup_photos(url, event=None):
+    """{team name: {jersey: {"id", "name"}}}: the site's live line-up feed first, then the drawn page, else the old line-up cards."""
+    best = {}
+    if event:
+        try:
+            best = lineup_photos_feed(event)
+        except Exception as e:
+            print(f"{event}: line-up feed error {str(e)[:80]}")
+        if sum(len(v) for v in best.values()) >= 30:
+            return best
+        try:
+            got = lineup_photos_rendered(url)
+            if sum(len(v) for v in got.values()) > sum(len(v) for v in best.values()):
+                best = got
+        except Exception as e:
+            print(f"{event}: line-up page error {str(e)[:80]}")
+        if best:
+            return best
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         html = r.read().decode("utf-8", "replace")
@@ -144,9 +227,9 @@ def main():
             continue
         if lg in SOCCER and lg in SITE and g["state"] in ("pre", "in"):
             have = photos.get(ev, {}).get("teams", {})
-            if sum(len(v) for v in have.values()) < 22:  # line-ups come out about an hour before kick-off
+            if sum(len(v) for v in have.values()) < 30:  # line-ups come out about an hour before kick-off (starters + bench now)
                 try:
-                    got = lineup_photos(f"https://scorebuzz.net/{SITE[lg]}/{slug(g['home'])}-vs-{slug(g['away'])}-{ev}/")
+                    got = lineup_photos(f"https://scorebuzz.net/{SITE[lg]}/{slug(g['home'])}-vs-{slug(g['away'])}-{ev}/", ev)
                     if got and got != have:
                         photos[ev] = {"at": now().isoformat(timespec="seconds"), "teams": got}
                         photos_changed = True
