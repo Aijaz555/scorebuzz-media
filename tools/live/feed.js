@@ -547,6 +547,8 @@ async function list(league, date) {
       matchup: `${t1.displayName} vs ${t2.displayName}`,
       title: title.length > 100 ? `${nick(t1)} vs ${nick(t2)} Live Score | ${tag}` : title,
       description: [
+        // first line = the phrases people search for a game ("<a> vs <b> live", "... live score", "... today"); YouTube shows it under the title
+        `${nick(t1)} vs ${nick(t2)} live score today (${tag})`,
         `${tag} Live Scoreboard`,
         L.soccer ? `${h.displayName} vs ${a.displayName} ${L.name || L.label} Live Scoreboard` : `${a.displayName} @ ${h.displayName} ${L.name || L.label} Live Scoreboard`,
         place,
