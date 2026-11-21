@@ -2795,5 +2795,85 @@
   "status": "ok",
   "reason": "ok (contrast 36)",
   "at": "2026-11-21T16:31:35+00:00"
+ },
+ "401892755": {
+  "slot": "1",
+  "league": "nhl",
+  "game": "Flames v Blackhawks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/flames-vs-blackhawks-401892755/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-21T21:29:38+00:00"
+ },
+ "401882798": {
+  "slot": "2",
+  "league": "laliga",
+  "game": "Real Madrid v Celta Vigo",
+  "url": "https://scorebuzz.net/football/la-liga/real-madrid-vs-celta-vigo-401882798/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-21T21:29:41+00:00"
+ },
+ "401876396": {
+  "slot": "3",
+  "league": "ligue1",
+  "game": "Strasbourg v Brest",
+  "url": "https://scorebuzz.net/football/ligue-1/strasbourg-vs-brest-401876396/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-21T21:29:44+00:00"
+ },
+ "401933732": {
+  "slot": "5",
+  "league": "mls",
+  "game": "Dallas v Portland",
+  "url": "https://scorebuzz.net/football/mls/dallas-vs-portland-401933732/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-21T21:29:47+00:00"
+ },
+ "401876403": {
+  "slot": "7",
+  "league": "ligue1",
+  "game": "Lens v Toulouse",
+  "url": "https://scorebuzz.net/football/ligue-1/lens-vs-toulouse-401876403/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-21T21:29:50+00:00"
+ },
+ "401875067": {
+  "slot": "8",
+  "league": "seriea",
+  "game": "Napoli v Torino",
+  "url": "https://scorebuzz.net/football/serie-a/napoli-vs-torino-401875067/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-21T21:29:53+00:00"
+ },
+ "401876402": {
+  "slot": "9",
+  "league": "ligue1",
+  "game": "Lille v Lyon",
+  "url": "https://scorebuzz.net/football/ligue-1/lille-vs-lyon-401876402/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-21T21:29:56+00:00"
+ },
+ "401876399": {
+  "slot": "10",
+  "league": "ligue1",
+  "game": "Monaco v Auxerre",
+  "url": "https://scorebuzz.net/football/ligue-1/monaco-vs-auxerre-401876399/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-21T21:29:59+00:00"
  }
 }

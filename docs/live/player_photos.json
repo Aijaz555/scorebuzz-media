@@ -534,5 +534,1067 @@
     }
    }
   }
+ },
+ "401882798": {
+  "at": "2026-11-21T21:29:10+00:00",
+  "teams": {
+   "Real Madrid": {
+    "1": {
+     "id": "77294",
+     "name": "Thibaut Courtois"
+    },
+    "12": {
+     "id": "376875",
+     "name": "Trent Alexander-Arnold"
+    },
+    "16": {
+     "id": "416730",
+     "name": "Ibrahima Konaté"
+    },
+    "4": {
+     "id": "803116",
+     "name": "Dean Huijsen"
+    },
+    "18": {
+     "id": "671002",
+     "name": "Álvaro Carreras"
+    },
+    "6": {
+     "id": "570734",
+     "name": "Eduardo Camavinga"
+    },
+    "15": {
+     "id": "681433",
+     "name": "Arda Güler"
+    },
+    "20": {
+     "id": "298753",
+     "name": "Bernardo Silva"
+    },
+    "5": {
+     "id": "590862",
+     "name": "Jude Bellingham"
+    },
+    "25": {
+     "id": "1030655",
+     "name": "Yan Diomande"
+    },
+    "10": {
+     "id": "377149",
+     "name": "Kylian Mbappé"
+    },
+    "13": {
+     "id": "427940",
+     "name": "Andriy Lunin"
+    },
+    "17": {
+     "id": "372743",
+     "name": "Marc Cucurella"
+    },
+    "3": {
+     "id": "425510",
+     "name": "Éder Militão"
+    },
+    "24": {
+     "id": "335401",
+     "name": "Denzel Dumfries"
+    },
+    "22": {
+     "id": "192187",
+     "name": "Antonio Rüdiger"
+    },
+    "27": {
+     "id": "969393",
+     "name": "Thiago Pitarch"
+    },
+    "21": {
+     "id": "426785",
+     "name": "Brahim Díaz"
+    },
+    "8": {
+     "id": "397869",
+     "name": "Federico Valverde"
+    },
+    "14": {
+     "id": "466684",
+     "name": "Aurélien Tchouaméni"
+    },
+    "19": {
+     "id": "943135",
+     "name": "Carlos Espí"
+    },
+    "9": {
+     "id": "831942",
+     "name": "Endrick"
+    },
+    "7": {
+     "id": "474972",
+     "name": "Vinícius Júnior"
+    }
+   },
+   "Celta de Vigo": {
+    "13": {
+     "id": "408805",
+     "name": "Ionuț Radu"
+    },
+    "20": {
+     "id": "859683",
+     "name": "Javi Rodríguez"
+    },
+    "18": {
+     "id": "759434",
+     "name": "Yoel Lago"
+    },
+    "3": {
+     "id": "125007",
+     "name": "Marcos Alonso"
+    },
+    "5": {
+     "id": "516934",
+     "name": "Sergio Carreira"
+    },
+    "30": {
+     "id": "1123406",
+     "name": "Hugo Burcio"
+    },
+    "6": {
+     "id": "571782",
+     "name": "Ilaix Moriba"
+    },
+    "22": {
+     "id": "429372",
+     "name": "Javi Galán"
+    },
+    "23": {
+     "id": "759438",
+     "name": "Hugo Álvarez"
+    },
+    "11": {
+     "id": "737646",
+     "name": "Pablo Durán"
+    },
+    "19": {
+     "id": "662708",
+     "name": "Williot Swedberg"
+    },
+    "9": {
+     "id": "569533",
+     "name": "Ferrán Jutglà"
+    },
+    "1": {
+     "id": "396595",
+     "name": "Altay Bayındır"
+    },
+    "4": {
+     "id": "927323",
+     "name": "Abdoulaye Faye"
+    },
+    "15": {
+     "id": "522872",
+     "name": "Álvaro Núñez"
+    },
+    "21": {
+     "id": "486249",
+     "name": "Sebastián Cáceres"
+    },
+    "17": {
+     "id": "633000",
+     "name": "Javier Rueda"
+    },
+    "28": {
+     "id": "981090",
+     "name": "Andrés Antañón"
+    },
+    "16": {
+     "id": "632421",
+     "name": "Hugo González"
+    },
+    "14": {
+     "id": "274941",
+     "name": "Aleix Febas"
+    },
+    "10": {
+     "id": "61909",
+     "name": "Iago Aspas"
+    },
+    "39": {
+     "id": "812634",
+     "name": "Jones El-Abdellaoui"
+    },
+    "24": {
+     "id": "632812",
+     "name": "Couhaib Driouech"
+    }
+   }
+  }
+ },
+ "401876396": {
+  "at": "2026-11-21T21:29:10+00:00",
+  "teams": {
+   "Strasbourg": {
+    "1": {
+     "id": "573307",
+     "name": "Filip Jørgensen"
+    },
+    "16": {
+     "id": "861709",
+     "name": "Genesis Antwi"
+    },
+    "6": {
+     "id": "663197",
+     "name": "Ismael Doukouré"
+    },
+    "31": {
+     "id": "885910",
+     "name": "Karim Coulibaly"
+    },
+    "24": {
+     "id": "878576",
+     "name": "Lucas Høgsberg"
+    },
+    "29": {
+     "id": "902709",
+     "name": "Samir El Mourabet"
+    },
+    "14": {
+     "id": "657648",
+     "name": "Dário Essugo"
+    },
+    "80": {
+     "id": "841855",
+     "name": "Gessime Yassine"
+    },
+    "11": {
+     "id": "504036",
+     "name": "Sebastian Nanasi"
+    },
+    "20": {
+     "id": "821545",
+     "name": "Martial Godo"
+    },
+    "30": {
+     "id": "1113332",
+     "name": "Jacobo Ortega"
+    },
+    "40": {
+     "id": "908753",
+     "name": "Conrad Harder"
+    },
+    "12": {
+     "id": "851839",
+     "name": "Miłosz Piekutowski"
+    },
+    "43": {
+     "id": "1153457",
+     "name": "Yoann Becker"
+    },
+    "15": {
+     "id": "816338",
+     "name": "Mateo Del Blanco"
+    },
+    "28": {
+     "id": "1167188",
+     "name": "Tyrese Noubissie"
+    },
+    "21": {
+     "id": "789063",
+     "name": "Pape Diop"
+    },
+    "26": {
+     "id": "766763",
+     "name": "Omari Kellyman"
+    },
+    "23": {
+     "id": "816646",
+     "name": "Diogo Sousa"
+    },
+    "7": {
+     "id": "709556",
+     "name": "Samuel Amo-Ameyaw"
+    }
+   },
+   "Brest": {
+    "1": {
+     "id": "408410",
+     "name": "Egil Selvik"
+    },
+    "70": {
+     "id": "139779",
+     "name": "Kenny Lala"
+    },
+    "29": {
+     "id": "370563",
+     "name": "Lucas Tousart"
+    },
+    "4": {
+     "id": "266544",
+     "name": "Gautier Lloris"
+    },
+    "2": {
+     "id": "664238",
+     "name": "Bradley Locko"
+    },
+    "13": {
+     "id": "574646",
+     "name": "Joris Chotard"
+    },
+    "8": {
+     "id": "432883",
+     "name": "Hugo Magnetti"
+    },
+    "11": {
+     "id": "920126",
+     "name": "Noah Edjouma"
+    },
+    "7": {
+     "id": "774349",
+     "name": "Joseph Nonge"
+    },
+    "9": {
+     "id": "852117",
+     "name": "Pathé Mboup"
+    },
+    "19": {
+     "id": "264466",
+     "name": "Ludovic Ajorque"
+    },
+    "20": {
+     "id": "910767",
+     "name": "Luc Zogbé"
+    },
+    "30": {
+     "id": "632496",
+     "name": "Mathieu Patouillet"
+    },
+    "49": {
+     "id": "320099",
+     "name": "Romain Cagnon"
+    },
+    "18": {
+     "id": "841954",
+     "name": "Justin Bourgault"
+    },
+    "10": {
+     "id": "1099270",
+     "name": "Giovani Versini"
+    },
+    "6": {
+     "id": "687585",
+     "name": "Mamady Diambou"
+    },
+    "17": {
+     "id": "340837",
+     "name": "Mama Baldé"
+    },
+    "21": {
+     "id": "1146473",
+     "name": "Ibrahim Yayiya Kante"
+    },
+    "39": {
+     "id": "1114376",
+     "name": "Djylian N'Guessan"
+    }
+   }
+  }
+ },
+ "401876403": {
+  "at": "2026-11-21T21:29:33+00:00",
+  "teams": {
+   "Lens": {
+    "40": {
+     "id": "805695",
+     "name": "Robin Risser"
+    },
+    "20": {
+     "id": "480539",
+     "name": "Jean-Clair Todibo"
+    },
+    "6": {
+     "id": "651894",
+     "name": "Samson Baidoo"
+    },
+    "13": {
+     "id": "640430",
+     "name": "Jhoanner Chávez"
+    },
+    "2": {
+     "id": "204771",
+     "name": "Ruben Aguilar"
+    },
+    "8": {
+     "id": "760532",
+     "name": "Yassine Titraoui"
+    },
+    "27": {
+     "id": "426525",
+     "name": "Michaël Cuisance"
+    },
+    "14": {
+     "id": "320199",
+     "name": "Matthieu Udol"
+    },
+    "38": {
+     "id": "1236523",
+     "name": "Mezian Mesloub"
+    },
+    "7": {
+     "id": "249503",
+     "name": "Florian Sotoca"
+    },
+    "10": {
+     "id": "180836",
+     "name": "Florian Thauvin"
+    },
+    "21": {
+     "id": "425830",
+     "name": "Amadou Haidara"
+    },
+    "23": {
+     "id": "576450",
+     "name": "Saud Abdulhamid"
+    },
+    "19": {
+     "id": "661602",
+     "name": "Abdallah Sima"
+    },
+    "16": {
+     "id": "149866",
+     "name": "Mathieu Gorgelin"
+    },
+    "25": {
+     "id": "841818",
+     "name": "Ismaelo Ganiou"
+    },
+    "32": {
+     "id": "931469",
+     "name": "Kyllian Antonio"
+    },
+    "22": {
+     "id": "468250",
+     "name": "Michał Skóraś"
+    },
+    "28": {
+     "id": "590286",
+     "name": "Junior Kadile"
+    },
+    "9": {
+     "id": "156709",
+     "name": "Thorgan Hazard"
+    }
+   },
+   "Toulouse": {
+    "16": {
+     "id": "753623",
+     "name": "Guillaume Restes"
+    },
+    "94": {
+     "id": "927029",
+     "name": "Ismail Diallo"
+    },
+    "3": {
+     "id": "441064",
+     "name": "Mark McKenzie"
+    },
+    "2": {
+     "id": "423934",
+     "name": "Rasmus Nicolaisen"
+    },
+    "12": {
+     "id": "971776",
+     "name": "Christ Tapé"
+    },
+    "8": {
+     "id": "863992",
+     "name": "Thomas Jørgensen"
+    },
+    "23": {
+     "id": "465416",
+     "name": "Cristian Cásseres Jr."
+    },
+    "14": {
+     "id": "904588",
+     "name": "Niko Sigur"
+    },
+    "9": {
+     "id": "828488",
+     "name": "Santiago Hidalgo"
+    },
+    "13": {
+     "id": "546771",
+     "name": "Jacen Russell Rowe"
+    },
+    "20": {
+     "id": "462665",
+     "name": "Casper Tengstedt"
+    },
+    "60": {
+     "id": "1099275",
+     "name": "Mathys Niflore"
+    },
+    "5": {
+     "id": "992486",
+     "name": "Seny Koumbassa"
+    },
+    "11": {
+     "id": "1021219",
+     "name": "Sion Oppong"
+    },
+    "6": {
+     "id": "900212",
+     "name": "Alexis Vossah"
+    },
+    "18": {
+     "id": "878293",
+     "name": "Mathis Amougou"
+    },
+    "17": {
+     "id": "617043",
+     "name": "Abu Francis"
+    },
+    "15": {
+     "id": "473311",
+     "name": "Aron Dønnum"
+    },
+    "7": {
+     "id": "951469",
+     "name": "Julian Vignolo"
+    },
+    "37": {
+     "id": "900226",
+     "name": "Ilyas Azizi"
+    }
+   }
+  }
+ },
+ "401875067": {
+  "at": "2026-11-21T21:29:33+00:00",
+  "teams": {
+   "Napoli": {
+    "32": {
+     "id": "317299",
+     "name": "Vanja Milinković-Savić"
+    },
+    "31": {
+     "id": "499089",
+     "name": "Sam Beukema"
+    },
+    "13": {
+     "id": "261244",
+     "name": "Amir Rrahmani"
+    },
+    "16": {
+     "id": "603157",
+     "name": "Rafa Marín"
+    },
+    "21": {
+     "id": "245593",
+     "name": "Matteo Politano"
+    },
+    "99": {
+     "id": "394835",
+     "name": "Frank Anguissa"
+    },
+    "6": {
+     "id": "486637",
+     "name": "Billy Gilmour"
+    },
+    "8": {
+     "id": "420214",
+     "name": "Scott McTominay"
+    },
+    "37": {
+     "id": "180984",
+     "name": "Leonardo Spinazzola"
+    },
+    "26": {
+     "id": "793117",
+     "name": "Antonio Vergara"
+    },
+    "19": {
+     "id": "634840",
+     "name": "Rasmus Højlund"
+    },
+    "11": {
+     "id": "78532",
+     "name": "Kevin De Bruyne"
+    },
+    "17": {
+     "id": "406775",
+     "name": "Mathías Olivera"
+    },
+    "70": {
+     "id": "463018",
+     "name": "Noa Lang"
+    },
+    "41": {
+     "id": "1112903",
+     "name": "David Spinelli"
+    },
+    "14": {
+     "id": "314519",
+     "name": "Nikita Contini"
+    },
+    "35": {
+     "id": "790430",
+     "name": "Luca Marianucci"
+    },
+    "2": {
+     "id": "796510",
+     "name": "Costantino Favasuli"
+    },
+    "36": {
+     "id": "1210529",
+     "name": "Milton Pereyra"
+    },
+    "23": {
+     "id": "700312",
+     "name": "Giovane"
+    },
+    "20": {
+     "id": "535006",
+     "name": "Lorenzo Lucca"
+    }
+   },
+   "Torino": {
+    "20": {
+     "id": "394320",
+     "name": "Lucas Perri"
+    },
+    "23": {
+     "id": "551928",
+     "name": "Saúl Coco"
+    },
+    "44": {
+     "id": "445212",
+     "name": "Ardian Ismajli"
+    },
+    "15": {
+     "id": "880701",
+     "name": "Pietro Comuzzo"
+    },
+    "45": {
+     "id": "690613",
+     "name": "Rafik Belghali"
+    },
+    "21": {
+     "id": "460389",
+     "name": "Daniel Bragança"
+    },
+    "8": {
+     "id": "335207",
+     "name": "Rolando Mandragora"
+    },
+    "66": {
+     "id": "792684",
+     "name": "Gvidas Gineitis"
+    },
+    "77": {
+     "id": "968726",
+     "name": "Alessio Cacciamani"
+    },
+    "19": {
+     "id": "390123",
+     "name": "Che Adams"
+    },
+    "18": {
+     "id": "303036",
+     "name": "Giovanni Simeone"
+    },
+    "7": {
+     "id": "463703",
+     "name": "Zakaria Aboukhlal"
+    },
+    "10": {
+     "id": "318353",
+     "name": "Nikola Vlašić"
+    },
+    "76": {
+     "id": "1114321",
+     "name": "Lapo Siviero"
+    },
+    "26": {
+     "id": "907082",
+     "name": "Diego Mascardi"
+    },
+    "29": {
+     "id": "926713",
+     "name": "Niccolò Fortini"
+    },
+    "5": {
+     "id": "372381",
+     "name": "Eray Cömert"
+    },
+    "2": {
+     "id": "517643",
+     "name": "Nathan Patterson"
+    },
+    "28": {
+     "id": "591724",
+     "name": "Kian Fitz-Jim"
+    },
+    "22": {
+     "id": "654701",
+     "name": "Cesare Casadei"
+    },
+    "6": {
+     "id": "694563",
+     "name": "Emirhan İlkhan"
+    },
+    "11": {
+     "id": "571794",
+     "name": "Gaetano Oristanio"
+    },
+    "9": {
+     "id": "467674",
+     "name": "Pietro Pellegri"
+    },
+    "91": {
+     "id": "33276",
+     "name": "Duván Zapata"
+    },
+    "17": {
+     "id": "427663",
+     "name": "Sandro Kulenović"
+    }
+   }
+  }
+ },
+ "401876402": {
+  "at": "2026-11-21T21:29:34+00:00",
+  "teams": {
+   "Lille": {
+    "1": {
+     "id": "454920",
+     "name": "Berke Özer"
+    },
+    "3": {
+     "id": "638264",
+     "name": "Nathan Ngoy"
+    },
+    "23": {
+     "id": "571815",
+     "name": "Tanguy Nianzou"
+    },
+    "4": {
+     "id": "594506",
+     "name": "Alexsandro Ribeiro"
+    },
+    "15": {
+     "id": "334253",
+     "name": "Romain Perraud"
+    },
+    "17": {
+     "id": "852833",
+     "name": "Ngal'ayel Mukau"
+    },
+    "6": {
+     "id": "232390",
+     "name": "Nabil Bentaleb"
+    },
+    "21": {
+     "id": "56963",
+     "name": "Benjamin André"
+    },
+    "7": {
+     "id": "508656",
+     "name": "Dilane Bakwa"
+    },
+    "10": {
+     "id": "601446",
+     "name": "Hakon Arnar Haraldsson"
+    },
+    "35": {
+     "id": "991286",
+     "name": "Soriba Diaoune"
+    },
+    "18": {
+     "id": "551425",
+     "name": "Ayase Ueda"
+    },
+    "38": {
+     "id": "993829",
+     "name": "Maxima Goffi"
+    },
+    "12": {
+     "id": "590231",
+     "name": "Orlando Gill"
+    },
+    "26": {
+     "id": "988852",
+     "name": "Isaac Cossier"
+    },
+    "24": {
+     "id": "319288",
+     "name": "Calvin Verdonk"
+    },
+    "8": {
+     "id": "704242",
+     "name": "Ethan Mbappé"
+    },
+    "19": {
+     "id": "822550",
+     "name": "Başar Önal"
+    },
+    "14": {
+     "id": "602878",
+     "name": "Maurits Kjaergaard"
+    },
+    "9": {
+     "id": "59504",
+     "name": "Olivier Giroud"
+    }
+   },
+   "Lyon": {
+    "1": {
+     "id": "399529",
+     "name": "Dominik Greif"
+    },
+    "13": {
+     "id": "879512",
+     "name": "Zachary Athekame"
+    },
+    "20": {
+     "id": "543497",
+     "name": "Felix Bacher"
+    },
+    "19": {
+     "id": "323555",
+     "name": "Moussa Niakhaté"
+    },
+    "16": {
+     "id": "592899",
+     "name": "Abner Vinícius"
+    },
+    "2": {
+     "id": "517672",
+     "name": "Mads Bidstrup"
+    },
+    "6": {
+     "id": "513361",
+     "name": "Tanner Tessmann"
+    },
+    "8": {
+     "id": "242498",
+     "name": "Corentin Tolisso"
+    },
+    "7": {
+     "id": "811018",
+     "name": "Ernest Nuamah"
+    },
+    "18": {
+     "id": "1037802",
+     "name": "Khalis Merah"
+    },
+    "11": {
+     "id": "479397",
+     "name": "Keito Nakamura"
+    },
+    "40": {
+     "id": "314383",
+     "name": "Rémy Descamps"
+    },
+    "21": {
+     "id": "567698",
+     "name": "Ruben Kluivert"
+    },
+    "37": {
+     "id": "1212757",
+     "name": "Steeve Kango"
+    },
+    "3": {
+     "id": "102599",
+     "name": "Nicolás Tagliafico"
+    },
+    "99": {
+     "id": "822271",
+     "name": "Noah Nartey"
+    },
+    "24": {
+     "id": "800977",
+     "name": "Julien Duranville"
+    },
+    "32": {
+     "id": "891631",
+     "name": "Alejandro Gomes Rodriguez"
+    },
+    "26": {
+     "id": "890592",
+     "name": "Kaïl Boudache"
+    },
+    "45": {
+     "id": "940318",
+     "name": "Rémi Himbert"
+    }
+   }
+  }
+ },
+ "401876399": {
+  "at": "2026-11-21T21:29:34+00:00",
+  "teams": {
+   "Monaco": {
+    "1": {
+     "id": "8570",
+     "name": "Lukáš Hrádecký"
+    },
+    "72": {
+     "id": "893905",
+     "name": "Sadibou Sané"
+    },
+    "15": {
+     "id": "245831",
+     "name": "Eric Dier"
+    },
+    "4": {
+     "id": "426583",
+     "name": "Jordan Teze"
+    },
+    "2": {
+     "id": "681633",
+     "name": "Vanderson"
+    },
+    "8": {
+     "id": "850764",
+     "name": "Lamine Camara"
+    },
+    "6": {
+     "id": "389723",
+     "name": "Denis Zakaria"
+    },
+    "20": {
+     "id": "642932",
+     "name": "Nazinho"
+    },
+    "18": {
+     "id": "193117",
+     "name": "Takumi Minamino"
+    },
+    "11": {
+     "id": "636751",
+     "name": "Matthis Abline"
+    },
+    "29": {
+     "id": "778992",
+     "name": "Paris Brunner"
+    },
+    "16": {
+     "id": "414682",
+     "name": "Philipp Köhn"
+    },
+    "22": {
+     "id": "534621",
+     "name": "Mohammed Salisu"
+    },
+    "49": {
+     "id": "1113413",
+     "name": "Ilane Touré"
+    },
+    "28": {
+     "id": "882845",
+     "name": "Mamadou Coulibaly"
+    },
+    "7": {
+     "id": "957731",
+     "name": "Mathys Detourbet"
+    },
+    "37": {
+     "id": "851924",
+     "name": "Edan Diop"
+    },
+    "19": {
+     "id": "1100894",
+     "name": "Pape Cabral"
+    },
+    "9": {
+     "id": "453085",
+     "name": "Folarin Balogun"
+    },
+    "48": {
+     "id": "1150817",
+     "name": "Ilies Belmokhtar"
+    }
+   },
+   "Auxerre": {
+    "1": {
+     "id": "176157",
+     "name": "Paul Nardi"
+    },
+    "4": {
+     "id": "420198",
+     "name": "Axel Tuanzebe"
+    },
+    "20": {
+     "id": "632510",
+     "name": "Sinaly Diomandé"
+    },
+    "13": {
+     "id": "887214",
+     "name": "Telli Siwe"
+    },
+    "29": {
+     "id": "613196",
+     "name": "Marvin Senaya"
+    },
+    "17": {
+     "id": "561943",
+     "name": "Pierre Ekwah"
+    },
+    "8": {
+     "id": "632673",
+     "name": "Naouirou Ahamada"
+    },
+    "22": {
+     "id": "575059",
+     "name": "Fredrik Oppegård"
+    },
+    "21": {
+     "id": "406092",
+     "name": "Romain Faivre"
+    },
+    "3": {
+     "id": "755637",
+     "name": "Remy Labeau Lascary"
+    },
+    "9": {
+     "id": "501933",
+     "name": "Cameron Archer"
+    },
+    "23": {
+     "id": "592625",
+     "name": "Mamadou Diop"
+    },
+    "15": {
+     "id": "899765",
+     "name": "Christ Makosso"
+    },
+    "27": {
+     "id": "645886",
+     "name": "Lamine Sy"
+    },
+    "34": {
+     "id": "1196815",
+     "name": "Lamfia Dioubaté"
+    },
+    "77": {
+     "id": "993739",
+     "name": "Aristide Zossou"
+    },
+    "32": {
+     "id": "925442",
+     "name": "Rayan Mandengue"
+    },
+    "46": {
+     "id": "774347",
+     "name": "Arthur Piedfort"
+    },
+    "5": {
+     "id": "748364",
+     "name": "Kévin Danois"
+    },
+    "47": {
+     "id": "1152373",
+     "name": "Youssef Khoudda"
+    }
+   }
+  }
  }
 }
