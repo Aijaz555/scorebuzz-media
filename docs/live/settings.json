@@ -37,9 +37,9 @@
    "note": "Real Madrid vs Celta Vigo, 2026-11-21T20:00:00Z"
   },
   "3": {
-   "league": "ligue1",
-   "event": "401876396",
-   "note": "Strasbourg vs Brest, 2026-11-21T19:45:00Z"
+   "league": "mls",
+   "event": "401933739",
+   "note": "Inter Miami CF vs Columbus Crew, 2026-11-21T23:00:00Z"
   },
   "4": {
    "league": "nhl",
@@ -55,21 +55,6 @@
    "league": "nhl",
    "event": "401892757",
    "note": "Nashville Predators vs Pittsburgh Penguins, 2026-11-21T23:00:00Z"
-  },
-  "7": {
-   "league": "ligue1",
-   "event": "401876403",
-   "note": "Lens vs Toulouse, 2026-11-21T19:45:00Z"
-  },
-  "8": {
-   "league": "seriea",
-   "event": "401875067",
-   "note": "Napoli vs Torino, 2026-11-21T19:45:00Z"
-  },
-  "9": {
-   "league": "ligue1",
-   "event": "401876402",
-   "note": "Lille vs Lyon, 2026-11-21T19:45:00Z"
   },
   "10": {
    "league": "ligue1",
