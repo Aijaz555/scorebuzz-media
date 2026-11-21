@@ -6,27 +6,35 @@
 const { YT_CLIENT_ID: id, YT_CLIENT_SECRET: secret, YT_REFRESH_TOKEN: refresh } = process.env;
 const API = 'https://www.googleapis.com/youtube/v3';
 
+// [title pattern, league tag, short tag, football (soccer)?]
 const LEAGUES = [
-  [/\bNBA\b/i, 'nba'], [/\bNHL\b/i, 'nhl'], [/\bNFL\b/i, 'nfl'], [/\bNCAAF\b|college football/i, 'college football', 'ncaaf'],
-  [/\bMLB\b/i, 'mlb'], [/\bMLS\b/i, 'mls'], [/premier league|\bEPL\b/i, 'premier league'], [/champions league|\bUCL\b/i, 'champions league'],
-  [/la ?liga/i, 'laliga'], [/serie a/i, 'serie a'], [/ligue 1/i, 'ligue 1'],
+  [/\bNBA\b/i, 'nba', 'nba', 0], [/\bNHL\b/i, 'nhl', 'nhl', 0], [/\bNFL\b(?:\s+Week\s+\d+)?/i, 'nfl', 'nfl', 0],
+  [/\bNCAAF\b|college football/i, 'college football', 'ncaaf', 0], [/\bNCAAB\b|college basketball/i, 'college basketball', 'ncaab', 0],
+  [/\bMLB\b/i, 'mlb', 'mlb', 0], [/\bMLS\b/i, 'mls', 'mls', 1], [/premier league|\bEPL\b/i, 'premier league', 'epl', 1],
+  [/champions league|\bUCL\b/i, 'champions league', 'ucl', 1], [/europa league/i, 'europa league', 'europa league', 1],
+  [/la ?liga/i, 'laliga', 'la liga', 1], [/serie a/i, 'serie a', 'serie a', 1], [/ligue 1/i, 'ligue 1', 'ligue 1', 1],
+  [/bundesliga/i, 'bundesliga', 'bundesliga', 1], [/eredivisie/i, 'eredivisie', 'eredivisie', 1], [/championship/i, 'championship', 'efl championship', 1],
+  [/fa cup/i, 'fa cup', 'fa cup', 1], [/world cup/i, 'world cup', 'world cup', 1],
 ];
-const TWO_WORD = /(golden knights|trail blazers|red wings|maple leafs|blue jackets|white sox|red sox|blue jays|blue devils|crimson tide|fighting illini|fighting irish|golden bears|golden gophers|tar heels|yellow jackets|red raiders|sun devils|horned frogs|nittany lions|scarlet knights|demon deacons|mean green|golden hurricane|rainbow warriors|black knights|green wave|red storm|golden eagles|blue hens|thundering herd|ragin cajuns)$/i;
+const TWO_WORD = /(golden knights|trail blazers|red wings|maple leafs|blue jackets|white sox|red sox|blue jays|blue devils|crimson tide|fighting illini|fighting irish|golden bears|golden gophers|tar heels|yellow jackets|red raiders|horned frogs|nittany lions|sun devils|scarlet knights|demon deacons|black knights|mean green|green wave|golden eagles|blue raiders|red wolves|rainbow warriors|golden hurricane|thundering herd|ragin' cajuns|golden flashes)$/;
 const last = (t) => { const s = t.trim().toLowerCase(); const m = s.match(TWO_WORD); return m ? m[1] : s.split(/\s+/).pop(); };
 
-// "Miami Heat vs Cleveland Cavaliers NBA Live Scoreboard" -> tag list
+// "Miami Heat vs Cleveland Cavaliers NBA Live Scoreboard" / "Nice vs Paris Saint-Germain Ligue 1 Live Scoreboard" -> tag list
 function tagsFor(title) {
-  const m = title.match(/^(.+?)\s+(?:vs\.?|v|@)\s+(.+?)(?:\s+(?:NBA|NHL|NFL|NCAAF|MLB|MLS|Live|\||-|·)\b|$)/i);
+  const m = title.match(/^(.+?)\s+(?:vs\.?|v|@)\s+(.+?)(?:\s+LIVE\b|\s*[|·]|\s+-\s|$)/i);
   if (!m) return null;
-  const [t1, t2] = [m[1].trim(), m[2].trim()];
   const L = LEAGUES.find(([re]) => re.test(title));
-  const lg = L ? L[1] : '';
-  const short = L?.[2] || lg;
-  const n1 = last(t1), n2 = last(t2);
+  let t1 = m[1].trim(), t2 = m[2].trim();
+  if (L) t2 = t2.replace(new RegExp('\\s+(?:' + L[0].source + ')\\s*$', 'i'), '').trim();      // the league name follows the second team
+  if (!t1 || !t2) return null;
+  const lg = L ? L[1] : '', short = L ? L[2] : '', soccer = L ? L[3] : 0;
+  const a = t1.toLowerCase(), b = t2.toLowerCase();
+  const n1 = soccer ? a : last(t1), n2 = soccer ? b : last(t2);       // clubs are searched by their full name, US teams by nickname
   const tags = [
-    `${n1} vs ${n2}`, `${n1} vs ${n2} live`, `${n2} vs ${n1}`, `${t1} vs ${t2}`.toLowerCase(),
-    t1.toLowerCase(), t2.toLowerCase(),
+    `${n1} vs ${n2}`, `${n1} vs ${n2} live`, `${n2} vs ${n1}`, `${a} vs ${b}`, a, b,
+    ...(soccer ? [`${a} live score`, `${b} live score`] : []),
     ...(lg ? [`${lg} live score`, `${short} live scoreboard`, `${lg} live today`, `${short} live`] : []),
+    ...(soccer ? [lg === 'mls' ? 'soccer live score' : 'football live score'] : []),
     'live score', 'live scoreboard', 'play by play', 'scorebuzz',
   ];
   const out = [];
@@ -34,6 +42,7 @@ function tagsFor(title) {
   for (const t of [...new Set(tags)]) { if (len + t.length + 1 > 480) break; out.push(t); len += t.length + 1; }
   return out;
 }
+if (require.main !== module) { module.exports = { tagsFor }; return; }
 
 async function call(token, method, url, body) {
   const r = await fetch(url, { method, headers: { authorization: `Bearer ${token}`, ...(body ? { 'content-type': 'application/json' } : {}) }, body: body ? JSON.stringify(body) : undefined });
@@ -61,7 +70,7 @@ async function call(token, method, url, body) {
     const v = await call(tok, 'GET', `${API}/videos?part=snippet&id=${ids.slice(i, i + 50).join(',')}`);
     for (const item of v.items || []) {
       const s = item.snippet;
-      if (s.tags?.length) { console.log(`has tags  ${item.id}  ${s.title}`); continue; }
+      if ((s.tags || []).some((t) => / vs /.test(t))) { console.log(`has tags  ${item.id}  ${s.title}`); continue; }      // the channel's default tags ("live now", "live score") do not count: a game needs its own
       const tags = tagsFor(s.title);
       if (!tags) { console.log(`::warning::${item.id}: could not read teams from "${s.title}"`); continue; }
       try {
