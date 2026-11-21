@@ -2796,16 +2796,6 @@
   "reason": "ok (contrast 36)",
   "at": "2026-11-21T16:31:35+00:00"
  },
- "401892755": {
-  "slot": "1",
-  "league": "nhl",
-  "game": "Flames v Blackhawks",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/flames-vs-blackhawks-401892755/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 88)",
-  "at": "2026-11-21T21:29:38+00:00"
- },
  "401882798": {
   "slot": "2",
   "league": "laliga",
@@ -2825,16 +2815,6 @@
   "status": "ok",
   "reason": "ok (contrast 36)",
   "at": "2026-11-21T21:29:44+00:00"
- },
- "401933732": {
-  "slot": "5",
-  "league": "mls",
-  "game": "Dallas v Portland",
-  "url": "https://scorebuzz.net/football/mls/dallas-vs-portland-401933732/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 36)",
-  "at": "2026-11-21T21:29:47+00:00"
  },
  "401876403": {
   "slot": "7",
@@ -2875,5 +2855,25 @@
   "status": "ok",
   "reason": "ok (contrast 36)",
   "at": "2026-11-21T21:29:59+00:00"
+ },
+ "401892755": {
+  "slot": "1",
+  "league": "nhl",
+  "game": "Flames v Blackhawks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/flames-vs-blackhawks-401892755/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 81)",
+  "at": "2026-11-21T22:04:20+00:00"
+ },
+ "401933732": {
+  "slot": "5",
+  "league": "mls",
+  "game": "Dallas v Portland",
+  "url": "https://scorebuzz.net/football/mls/dallas-vs-portland-401933732/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-21T22:04:23+00:00"
  }
 }
