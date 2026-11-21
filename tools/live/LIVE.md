@@ -232,6 +232,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 21 Nov 2026 13:43 UTC: 6 games scheduled (EPL 14:30 on Slots 5-9, Rayo-Valencia 14:45 on Slot 10); stream check Slots 2-4 correct, Slot 1 (Man City-Fulham) preview 404 on i.ytimg.com (not checked).
   - 21 Nov 2026 14:43 UTC: Nice-PSG (Slot 1) scheduled 15:45; stream check Slots 2-9 correct.
   - 21 Nov 2026 15:43 UTC: Newcastle-Arsenal (Slot 2) scheduled 17:00; Parma-Roma, Sevilla-Betis skipped (cap 10); stream check Slots 3-10 correct; end watch stopped Lazio-Lecce (Slot 4) and Como-Cagliari (Slot 3) ~12 min after the final.
+  - 21 Nov 2026 16:43 UTC: 76ers-Bucks (Slot 3), Hurricanes-Oilers (Slot 4) scheduled 17:30; Sevilla-Betis, Parma-Roma skipped (cap 10); stream check: Slot 1 (Nice-PSG) preview showed the finished Man City v Fulham scorebuzz.net match page (full page, no overlay) → stop + start; Slots 5-10 correct.
   - 20 Nov 2026 06:46 UTC usage check: 265.2 h of 680 this week (39%), last 7 days 450.2 h, level ok (no streams live).
   - 18 Nov 2026 22:46 UTC usage check: 169.4 h of 680 this week (25%), last 7 days 448.7 h, level ok (finished broadcasts only; 0 live, 10 scheduled for 23:00-00:00).
   - 19 Nov 2026 00:30 UTC: 00:30 schedules for Slots 11-13 errored (UNKNOWN_ERROR) at 10 live; Slot 11 start refused ("User has too many live or scheduled broadcasts") → bump.js dropped Nets-Bulls (Slot 10, lowest-ranked NBA); Slots 11, 12, 13 then started (12 live/preparing).
