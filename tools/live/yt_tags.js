@@ -32,7 +32,7 @@ function tagsFor(title, description) {
   // the title carries the short names since 22 Nov 2026 ("Hurricanes vs Oilers Live Score | NHL Live Scoreboard"); the full
   // names are on the description's second line ("Carolina Hurricanes @ Edmonton Oilers NHL Live Scoreboard")
   let full = [];
-  const dm = L && String(description || '').match(new RegExp('^(.+?)\\s+(?:vs|@)\\s+(.+?)\\s+(?:' + L[0].source + ').*Live Scoreboard\\s*$', 'im'));
+  const dm = L && String(description || '').match(new RegExp('^(.+?)[ \\t]+(?:vs|@)[ \\t]+(.+?)[ \\t]+(?:' + L[0].source + ')[^\\n]*Live Scoreboard[ \\t]*$', 'im'));
   if (dm) { const f1 = dm[1].trim().toLowerCase(), f2 = dm[2].trim().toLowerCase(); full = [f1, f2].filter((f) => f !== a && f !== b); if (full.length) full.unshift(`${f1} vs ${f2}`); }
   const n1 = soccer ? a : last(t1), n2 = soccer ? b : last(t2);       // clubs are searched by their full name, US teams by nickname
   const tags = [
