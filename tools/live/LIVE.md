@@ -557,3 +557,4 @@ so `trk3d`/`trkgpu` were removed again (2D on every slot). Slot 1 is most likely
 the readout was not visible in YouTube's preview frame. Try again once LiveReacting confirms the project runs on the GPU server.
 The pre-game site preview slides worked, and the box switched to the tracker at kick-off without a reload.
 **Owner, 21 Nov 2026 ~12:42 UTC: keep Slot 1 in 3D for now** (don't switch it to 2D): `trk3d`/`trkgpu` ["1"] put back.
+**21 Nov 2026 14:26 UTC:** Man City v Fulham (Slot 1) finished 1-1; `trk3d`/`trkgpu` removed (owner asked for 2D on Slot 1 after this game). Every slot is on the 2D tracker.
