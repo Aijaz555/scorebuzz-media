@@ -1,0 +1,294 @@
+[
+ {
+  "id": "01-bayern-koln",
+  "time": "2026-11-21T11:00:00",
+  "sport": "football",
+  "league": "bundesliga",
+  "kind": "score",
+  "label": "BUNDESLIGA · FRIDAY",
+  "home": "Bayern Munich",
+  "homeScore": 1,
+  "away": "FC Köln",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+  "venue": "Allianz Arena",
+  "headline": "Bayern held at home. Dortmund can go top today",
+  "sub": "Mikey Moore put Köln ahead, Nathaniel Brown levelled. BVB visit Gladbach at 14:30 GMT.",
+  "caption": "😮 Bayern Munich 1–1 FC Köln.\n\nMikey Moore scored for Köln after 12 minutes and Nathaniel Brown equalised before half-time. Bayern are top on 22 points, but unbeaten Dortmund (21) play bottom club Gladbach today with a game in hand.\n\nDoes BVB go top? 👇\n\n#FCBayern #BVB #Bundesliga"
+ },
+ {
+  "id": "02-harden-51",
+  "time": "2026-11-21T11:50:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA CUP · FRIDAY",
+  "home": "Cavaliers",
+  "homeScore": 128,
+  "away": "Pacers",
+  "awayScore": 119,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+  "venue": "Rocket Arena",
+  "headline": "James Harden drops 51 and passes Kobe",
+  "sub": "His 26th 50-point game, the 3rd-most in NBA history. 7 of 11 from three, 14 of 14 at the line.",
+  "caption": "🔥 James Harden scored 51 as the Cavaliers beat the Pacers 128–119.\n\nIt was his 26th career 50-point game, moving him past Kobe Bryant into 3rd on the NBA's all-time list.\n\nWhere does Harden rank among the best scorers ever? 👇\n\n#JamesHarden #Cavs #NBA"
+ },
+ {
+  "id": "04-sga-40",
+  "time": "2026-11-21T14:20:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA CUP · FRIDAY",
+  "home": "Thunder",
+  "homeScore": 126,
+  "away": "Pelicans",
+  "awayScore": 120,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+  "venue": "Paycom Center",
+  "headline": "SGA scores 40 as OKC erase a 16-point hole",
+  "sub": "Rookie Aday Mara added 22 points and 16 rebounds. The Thunder are 2–1 in the NBA Cup.",
+  "caption": "⚡ Down 16 in the third quarter, the Thunder came back to beat the Pelicans 126–120.\n\nShai Gilgeous-Alexander scored 40, including the 3-point play that sealed it, and rookie Aday Mara had 22 and 16.\n\nIs SGA the best player in the league right now? 👇\n\n#SGA #Thunder #NBA"
+ },
+ {
+  "id": "06-city-fulham",
+  "time": "2026-11-21T16:00:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "PREMIER LEAGUE · 12:30 GMT / 7:30AM ET",
+  "venue": "Etihad Stadium",
+  "headline": "Man City v Fulham opens the weekend",
+  "sub": "City are 3rd on 21 points, six behind leaders Arsenal. Fulham are 15th with 10.",
+  "stat": [
+   "6",
+   "points between City and Arsenal"
+  ],
+  "caption": "⚽ Manchester City v Fulham kicks off the Premier League weekend at 12:30 GMT (7:30am ET).\n\nCity are 3rd with 21 points, six behind Arsenal. Fulham sit 15th on 10.\n\nYour score prediction? 👇\n\n#MCIFUL #ManCity #PremierLeague"
+ },
+ {
+  "id": "07-lazio-lecce",
+  "time": "2026-11-21T16:50:00",
+  "sport": "football",
+  "league": "seriea",
+  "kind": "headline",
+  "label": "SERIE A · 14:00 GMT / 9AM ET",
+  "venue": "Olimpico",
+  "headline": "Unbeaten Lazio defend top spot",
+  "sub": "Lazio (29) lead Inter by 1 and Roma by 2. Lecce are 14th. Roma visit Parma at 17:00 GMT.",
+  "stat": [
+   "0",
+   "league defeats for Lazio in 11 games"
+  ],
+  "caption": "🦅 Serie A leaders Lazio host Lecce at the Olimpico (14:00 GMT, 9am ET).\n\nLazio are unbeaten after 11 games: 9 wins, 2 draws, 29 points. Inter have 28 and Roma 27.\n\nCan anyone catch Lazio? 👇\n\n#Lazio #SerieA #LazioLecce"
+ },
+ {
+  "id": "09-nice-psg",
+  "time": "2026-11-21T18:30:00",
+  "sport": "football",
+  "league": "ligue1",
+  "kind": "headline",
+  "label": "LIGUE 1 · 16:15 GMT / 11:15AM ET",
+  "venue": "Allianz Riviera",
+  "headline": "Leaders PSG travel to Nice",
+  "sub": "PSG have 23 points, two clear of Lille. Nice are 6th on 17.",
+  "stat": [
+   "2",
+   "point lead for PSG"
+  ],
+  "caption": "🔵🔴 Paris Saint-Germain go to Nice today (16:15 GMT, 11:15am ET).\n\nPSG top Ligue 1 with 23 points, two ahead of Lille. Nice are 6th with 17.\n\nDo PSG stretch the lead? 👇\n\n#PSG #Ligue1 #OGCNice"
+ },
+ {
+  "id": "10-seville-derby",
+  "time": "2026-11-21T19:20:00",
+  "sport": "football",
+  "league": "laliga",
+  "kind": "headline",
+  "label": "LALIGA · 17:30 GMT / 12:30PM ET",
+  "headline": "It's Seville derby day",
+  "sub": "Betis are 4th on 26 points. Sevilla are 6th with 18. Kick-off at the Sánchez-Pizjuán.",
+  "stat": [
+   "8",
+   "points between the two clubs"
+  ],
+  "caption": "🔥 Sevilla v Real Betis: the Seville derby is today (17:30 GMT, 12:30pm ET).\n\nBetis come in 4th with 26 points, eight ahead of their neighbours in 6th.\n\nWho wins the derby? 👇\n\n#ElGranDerbi #Sevilla #RealBetis #LaLiga"
+ },
+ {
+  "id": "12-newcastle-arsenal",
+  "time": "2026-11-21T21:00:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "PREMIER LEAGUE · 17:30 GMT / 12:30PM ET",
+  "venue": "St. James' Park",
+  "headline": "Can Newcastle stop the leaders?",
+  "sub": "Arsenal have won 9 of 10 and started the weekend 5 points clear. Newcastle are 12th.",
+  "stat": [
+   "9",
+   "wins in 10 league games for Arsenal"
+  ],
+  "caption": "⚽ Newcastle v Arsenal at St. James' Park, 17:30 GMT (12:30pm ET).\n\nArsenal have won 9 of their 10 Premier League games. Newcastle are 12th with 12 points.\n\nWho's winning this one? 👇\n\n#NEWARS #Arsenal #NUFC"
+ },
+ {
+  "id": "13-oilers-canes",
+  "time": "2026-11-21T21:50:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "headline",
+  "label": "NHL · 1PM ET / 18:00 GMT",
+  "headline": "Oilers at Hurricanes: two of the NHL's best",
+  "sub": "Edmonton are 17–4–3, Carolina 16–3–3. It's the Oilers' first game since McDavid's 23-game point streak ended.",
+  "stat": [
+   "37",
+   "points for Edmonton (Carolina 35)"
+  ],
+  "caption": "🏒 The Edmonton Oilers (17–4–3) visit the Carolina Hurricanes (16–3–3) at 1pm ET.\n\nConnor McDavid's 23-game point streak ended on Thursday in Tampa. Does he start a new one in Raleigh?\n\nOilers or Canes? 👇\n\n#Oilers #Canes #NHL"
+ },
+ {
+  "id": "15-madrid-celta",
+  "time": "2026-11-21T23:30:00",
+  "sport": "football",
+  "league": "laliga",
+  "kind": "headline",
+  "label": "LALIGA · 20:00 GMT / 3PM ET",
+  "venue": "Santiago Bernabéu",
+  "headline": "Madrid chase Barça",
+  "sub": "Barcelona lead LaLiga with 33 points, three ahead of Real Madrid. Celta are 12th.",
+  "stat": [
+   "3",
+   "points between Barça and Madrid"
+  ],
+  "caption": "⚪ Real Madrid host Celta Vigo at the Bernabéu tonight (20:00 GMT, 3pm ET).\n\nBarcelona lead LaLiga by three points and play Villarreal on Sunday.\n\nCan Madrid keep the pressure on? 👇\n\n#RealMadrid #HalaMadrid #LaLiga"
+ },
+ {
+  "id": "17-ucla-michigan",
+  "time": "2026-11-22T01:10:00",
+  "sport": "other",
+  "league": "ncaaf",
+  "kind": "headline",
+  "label": "COLLEGE FOOTBALL · 3:30PM ET · CBS",
+  "venue": "Michigan Stadium",
+  "headline": "Unbeaten UCLA visit the Big House",
+  "sub": "No. 4 UCLA are 10–0. Michigan are 5–5. Kick-off at 3:30pm ET in Ann Arbor.",
+  "stat": [
+   "10–0",
+   "UCLA's record this season"
+  ],
+  "caption": "🏈 No. 4 UCLA (10–0) go to Michigan (5–5) at 3:30pm ET on CBS.\n\nUCLA and No. 2 Utah both put perfect 10–0 records on the line today. Utah play at TCU at 9pm ET.\n\nDoes UCLA stay perfect? 👇\n\n#UCLA #GoBlue #CollegeFootball"
+ },
+ {
+  "id": "19-georgia-southcarolina",
+  "time": "2026-11-22T02:50:00",
+  "sport": "other",
+  "league": "ncaaf",
+  "kind": "headline",
+  "label": "COLLEGE FOOTBALL · 7:30PM ET · ABC",
+  "venue": "Williams-Brice Stadium",
+  "headline": "No. 1 Georgia go to South Carolina",
+  "sub": "Georgia are 9–1. No. 21 South Carolina are 6–4 and play at home in Columbia.",
+  "stat": [
+   "9–1",
+   "Georgia's record"
+  ],
+  "caption": "🐶 No. 1 Georgia (9–1) visit No. 21 South Carolina (6–4) tonight at 7:30pm ET on ABC.\n\nThe Gamecocks get the No. 1 team in America at Williams-Brice.\n\nUpset alert or comfortable Georgia win? 👇\n\n#GoDawgs #Gamecocks #CollegeFootball"
+ },
+ {
+  "id": "20-nba-saturday",
+  "time": "2026-11-22T03:40:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · TONIGHT (ET)",
+  "headline": "Saturday night in the NBA",
+  "rows": [
+   [
+    "7:30",
+    "Blazers at Knicks",
+    "POR 10–5"
+   ],
+   [
+    "8:00",
+    "Grizzlies at Wolves",
+    "MEM 12–4"
+   ],
+   [
+    "8:00",
+    "Pelicans at Spurs",
+    "SA 13–3"
+   ],
+   [
+    "8:00",
+    "Clippers at Mavericks",
+    "DAL 8–7"
+   ],
+   [
+    "10:00",
+    "Celtics at Kings",
+    "BOS 11–4"
+   ]
+  ],
+  "sub": "Memphis (12–4) and Minnesota (11–5) is the pick of the night.",
+  "caption": "🏀 Five NBA games tonight, starting with Blazers at Knicks at 7:30pm ET.\n\nThe 12–4 Grizzlies visit the 11–5 Timberwolves, and the 13–3 Spurs host New Orleans.\n\nWhich game are you watching? 👇\n\n#NBA #Grizzlies #Timberwolves"
+ },
+ {
+  "id": "22-wizards-bulls",
+  "time": "2026-11-22T05:20:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA CUP · FRIDAY",
+  "home": "Bulls",
+  "homeScore": 94,
+  "away": "Wizards",
+  "awayScore": 98,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
+  "headline": "Anthony Davis 36, AJ Dybantsa 20 and 10",
+  "sub": "The No. 1 pick had 20 points, 10 rebounds and 6 assists. Washington have won two straight.",
+  "caption": "🧙 Wizards 98, Bulls 94.\n\nAnthony Davis had 36 and 11, and No. 1 pick AJ Dybantsa added 20 points, 10 rebounds and 6 assists. Washington have won two in a row after losing eight straight.\n\nHow good will Dybantsa be? 👇\n\n#Dybantsa #Wizards #NBA"
+ },
+ {
+  "id": "24-sunday-football",
+  "time": "2026-11-22T07:00:00",
+  "sport": "football",
+  "kind": "list",
+  "label": "SUNDAY · TIMES GMT",
+  "headline": "Sunday's big football",
+  "rows": [
+   [
+    "13:00",
+    "Barcelona v Villarreal",
+    "LaLiga"
+   ],
+   [
+    "14:00",
+    "Hull v Brighton",
+    "PL"
+   ],
+   [
+    "16:30",
+    "Liverpool v Man United",
+    "PL"
+   ],
+   [
+    "17:00",
+    "AC Milan v Frosinone",
+    "Serie A"
+   ],
+   [
+    "19:45",
+    "Atalanta v Inter",
+    "Serie A"
+   ]
+  ],
+  "sub": "Pochettino's first game in charge of Man United is at Anfield.",
+  "caption": "⚽ Sunday's football: Barcelona v Villarreal (13:00 GMT), Liverpool v Man United (16:30 GMT) and Atalanta v Inter (19:45 GMT).\n\nMauricio Pochettino takes charge of United for the first time, at Anfield.\n\nWhich game are you watching? 👇\n\n#LIVMUN #Barca #SerieA"
+ }
+]

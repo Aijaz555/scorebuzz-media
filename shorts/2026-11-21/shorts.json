@@ -1,0 +1,655 @@
+[
+ {
+  "id": "s01-harden-51",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "anthem",
+  "venue": "Rocket Arena",
+  "fb": "2026-11-21T12:40:00",
+  "yt": "2026-11-21T23:50:00",
+  "title": "James Harden 51 vs Pacers: Passes Kobe for 3rd All-Time 🔥 #shorts",
+  "description": "James Harden scored 51 points as the Cleveland Cavaliers beat the Indiana Pacers 128–119 in the NBA Cup on Friday. It was Harden's 26th career 50-point game, moving him past Kobe Bryant for the third-most in NBA history. He shot 15 of 26, made 7 of 11 threes and all 14 free throws; Donovan Mitchell added 20 for the Cavs.\n\nCavaliers vs Pacers final score and NBA scores: https://scorebuzz.net\n\n#JamesHarden #Cavs #NBA #NBACup",
+  "tags": [
+   "james harden",
+   "james harden 51 points",
+   "harden 50 point games",
+   "cavaliers vs pacers",
+   "pacers vs cavaliers",
+   "harden passes kobe",
+   "kobe bryant",
+   "cleveland cavaliers",
+   "nba cup",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA Cup · Friday",
+    "title": "James Harden just passed Kobe",
+    "sub": "50-point games, all time"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "NBA Cup",
+    "home": "Cavaliers",
+    "homeAbbr": "CLE",
+    "homeScore": 128,
+    "away": "Pacers",
+    "awayAbbr": "IND",
+    "awayScore": 119,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+    "note": "Harden 51 · Mitchell 20"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "James Harden",
+    "value": 51,
+    "unit": "points",
+    "text": "15/26 FG · 7/11 from three · 14/14 FT"
+   },
+   {
+    "type": "stat",
+    "dur": 3.6,
+    "label": "Career 50-point games",
+    "value": 26,
+    "unit": "games",
+    "text": "3rd-most in NBA history, one more than Kobe Bryant"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Where does Harden rank all-time?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA Cup",
+   "big": "51",
+   "hook": "Passes *Kobe*",
+   "sticker": "RECORD",
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 James Harden dropped 51 on the Pacers and passed Kobe Bryant.\n\nIt's his 26th 50-point game, the third-most in NBA history. 14 of 14 at the line, 7 of 11 from three.\n\nWhere does Harden rank among the best scorers ever? 👇\n\n#JamesHarden #Cavs #NBA #Reels",
+  "time": "2026-11-21T23:50:00"
+ },
+ {
+  "id": "s03-bayern-koln-bvb",
+  "sport": "football",
+  "league": "bundesliga",
+  "bed": "drama",
+  "venue": "Allianz Arena",
+  "fb": "2026-11-21T15:10:00",
+  "yt": "2026-11-21T16:45:00",
+  "title": "Bayern vs Köln 1–1: Dortmund Can Go Top of the Bundesliga ⚽ #shorts",
+  "description": "Bayern Munich were held 1–1 at home by FC Köln on Friday night. Mikey Moore put Köln ahead after 12 minutes and Nathaniel Brown equalised in the 37th. Bayern lead the Bundesliga with 22 points from 10 games, but unbeaten Borussia Dortmund have 21 from 9 and visit bottom club Borussia Mönchengladbach today at 14:30 GMT.\n\nBayern vs Köln final score and Bundesliga table: https://scorebuzz.net\n\n#FCBayern #BVB #Bundesliga #FCBKOE",
+  "tags": [
+   "bayern vs koln",
+   "koln vs bayern",
+   "bayern vs cologne",
+   "bayern munich",
+   "bundesliga table",
+   "bundesliga today",
+   "dortmund",
+   "gladbach vs dortmund",
+   "dortmund vs gladbach",
+   "mikey moore",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Bundesliga",
+    "title": "Bayern dropped points at home",
+    "sub": "Dortmund can go top today"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Friday night",
+    "home": "Bayern Munich",
+    "homeAbbr": "MUN",
+    "homeScore": 1,
+    "away": "FC Köln",
+    "awayAbbr": "KOE",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+    "note": "Moore 12' · Brown 37'"
+   },
+   {
+    "type": "table",
+    "dur": 4.4,
+    "label": "Bundesliga top 5",
+    "cols": [
+     "P",
+     "PTS"
+    ],
+    "rows": [
+     [
+      "1",
+      "Bayern",
+      "10",
+      "22"
+     ],
+     [
+      "2",
+      "Dortmund",
+      "9",
+      "21"
+     ],
+     [
+      "3",
+      "Freiburg",
+      "9",
+      "19"
+     ],
+     [
+      "4",
+      "RB Leipzig",
+      "9",
+      "18"
+     ],
+     [
+      "5",
+      "Leverkusen",
+      "9",
+      "16"
+     ]
+    ],
+    "highlight": [
+     "2"
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Today · 14:30 GMT",
+    "title": "Gladbach v Dortmund",
+    "sub": "Gladbach are bottom with 4 points. A Dortmund win puts them top."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Does BVB go top?",
+    "sub": "Follow ScoreBuzz for Bundesliga scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Bundesliga",
+   "big": "1–1",
+   "teams": [
+    "MUN",
+    "KOE"
+   ],
+   "hook": "Door open for *BVB*",
+   "sticker": "FINAL",
+   "emoji": "😮"
+  },
+  "fbtext": "🔴 Bayern were held 1–1 at home by FC Köln.\n\nBayern have 22 points, Dortmund 21 with a game in hand, and BVB play bottom club Gladbach today (14:30 GMT).\n\nDoes Dortmund go top? 👇\n\n#FCBayern #BVB #Reels",
+  "time": "2026-11-21T16:45:00"
+ },
+ {
+  "id": "s04-epl-predictions",
+  "sport": "football",
+  "league": "epl",
+  "bed": "hype",
+  "venue": "St. James' Park",
+  "fb": "2026-11-21T17:40:00",
+  "yt": "2026-11-21T19:00:00",
+  "title": "Premier League Predictions Today: Newcastle vs Arsenal ⚽ #shorts",
+  "description": "Premier League predictions for Saturday: Chelsea vs Leeds, Tottenham vs Ipswich, Aston Villa vs Sunderland, Coventry vs Crystal Palace and Bournemouth vs Nottingham Forest kick off at 15:00 GMT (10am ET), then Newcastle vs Arsenal at 17:30 GMT (12:30pm ET). Arsenal lead the table after winning 9 of their 10 games. Predict every score in the comments.\n\nPremier League live scores and table: https://scorebuzz.net\n\n#PremierLeague #NEWARS #Arsenal #EPL",
+  "tags": [
+   "premier league predictions",
+   "newcastle vs arsenal",
+   "arsenal vs newcastle",
+   "chelsea vs leeds",
+   "tottenham vs ipswich",
+   "aston villa vs sunderland",
+   "coventry vs crystal palace",
+   "bournemouth vs nottingham forest",
+   "premier league today",
+   "premier league score predictions",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 15.6,
+    "kicker": "Premier League · Saturday",
+    "title": "Predict every score",
+    "badge": "Score prediction",
+    "first": 1.0,
+    "step": 2.1,
+    "rows": [
+     {
+      "home": "Chelsea",
+      "homeAbbr": "CHE",
+      "hs": "?",
+      "away": "Leeds",
+      "awayAbbr": "LEE",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+      "note": "15:00 GMT"
+     },
+     {
+      "home": "Spurs",
+      "homeAbbr": "TOT",
+      "hs": "?",
+      "away": "Ipswich",
+      "awayAbbr": "IPS",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+      "note": "15:00 GMT"
+     },
+     {
+      "home": "Aston Villa",
+      "homeAbbr": "AVL",
+      "hs": "?",
+      "away": "Sunderland",
+      "awayAbbr": "SUN",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+      "note": "15:00 GMT"
+     },
+     {
+      "home": "Coventry",
+      "homeAbbr": "COV",
+      "hs": "?",
+      "away": "C. Palace",
+      "awayAbbr": "CRY",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+      "note": "15:00 GMT"
+     },
+     {
+      "home": "Bournemouth",
+      "homeAbbr": "BOU",
+      "hs": "?",
+      "away": "Nott'm Forest",
+      "awayAbbr": "NFO",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+      "note": "15:00 GMT"
+     },
+     {
+      "home": "Newcastle",
+      "homeAbbr": "NEW",
+      "hs": "?",
+      "away": "Arsenal",
+      "awayAbbr": "ARS",
+      "as": "?",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+      "note": "17:30 GMT"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Drop your scores 👇",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League",
+   "big": "6",
+   "hook": "games: *predict* them",
+   "sticker": "TODAY",
+   "emoji": "⚽"
+  },
+  "fbtext": "⚽ Premier League predictions: six games today, ending with Newcastle v Arsenal at 17:30 GMT.\n\nArsenal have won 9 of 10. Coventry v Palace is a big one at the bottom.\n\nDrop your scores for all six 👇\n\n#PremierLeague #NEWARS #Reels",
+  "time": "2026-11-21T19:00:00"
+ },
+ {
+  "id": "s05-cfb-saturday",
+  "sport": "other",
+  "league": "ncaaf",
+  "bed": "hype",
+  "venue": "Michigan Stadium",
+  "fb": "2026-11-21T20:10:00",
+  "yt": "2026-11-21T21:15:00",
+  "title": "College Football Today: UCLA, Georgia, Utah Games to Watch 🏈 #shorts",
+  "description": "College football games to watch on Saturday: No. 14 Ohio State at Nebraska (noon ET, Fox), unbeaten No. 4 UCLA at Michigan (3:30pm, CBS), LSU at No. 9 Tennessee (3:30pm, ABC), No. 1 Georgia at No. 21 South Carolina (7:30pm, ABC) and unbeaten No. 2 Utah at TCU (9pm, Fox). UCLA and Utah are both 10–0.\n\nCollege football scores today: https://scorebuzz.net\n\n#CollegeFootball #UCLA #Georgia #Utah",
+  "tags": [
+   "college football",
+   "college football today",
+   "ucla vs michigan",
+   "michigan vs ucla",
+   "georgia vs south carolina",
+   "utah vs tcu",
+   "lsu vs tennessee",
+   "ohio state vs nebraska",
+   "college football scores",
+   "scorebuzz",
+   "college football saturday"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "College football · Saturday",
+    "title": "5 games you can't miss",
+    "sub": "Two unbeatens on the road"
+   },
+   {
+    "type": "list",
+    "dur": 5.6,
+    "label": "Times ET",
+    "title": "Saturday's slate",
+    "rows": [
+     [
+      "12:00",
+      "No. 14 Ohio State at Nebraska",
+      "FOX"
+     ],
+     [
+      "3:30",
+      "No. 4 UCLA at Michigan",
+      "CBS"
+     ],
+     [
+      "3:30",
+      "LSU at No. 9 Tennessee",
+      "ABC"
+     ],
+     [
+      "7:30",
+      "No. 1 Georgia at No. 21 S. Carolina",
+      "ABC"
+     ],
+     [
+      "9:00",
+      "No. 2 Utah at TCU",
+      "FOX"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "UCLA and Utah",
+    "value": "10–0",
+    "unit": "",
+    "text": "Both perfect records are on the line today"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "7:30pm ET · ABC",
+    "title": "No. 1 Georgia (9–1) at South Carolina",
+    "sub": "The Gamecocks are 6–4 and ranked No. 21"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who's your upset pick?",
+    "sub": "Follow ScoreBuzz for college football scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "College football",
+   "big": "10–0",
+   "hook": "Two *unbeatens* travel",
+   "sticker": "TODAY",
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 College football Saturday is loaded.\n\nUnbeaten UCLA go to Michigan (3:30pm ET), No. 1 Georgia visit South Carolina (7:30pm) and unbeaten Utah play at TCU (9pm).\n\nWho's your upset pick? 👇\n\n#CollegeFootball #UCLA #Utes #Reels",
+  "time": "2026-11-21T21:15:00"
+ },
+ {
+  "id": "s07-miami-columbus",
+  "sport": "football",
+  "league": "mls",
+  "bed": "anthem",
+  "venue": "Nu Stadium",
+  "fb": "2026-11-22T02:00:00",
+  "yt": "2026-11-22T02:20:00",
+  "title": "Inter Miami vs Columbus Crew: Messi's Playoffs Start Tonight ⚽ #shorts",
+  "description": "Inter Miami vs Columbus Crew is Game 1 of their best-of-three MLS Cup Playoffs Round One series, at 6pm ET at Nu Stadium. Defending champions Inter Miami are the East's No. 2 seed (60 points); Columbus are No. 7 and have won 8 of their last 9. Lionel Messi scored 26 goals this season and won his second straight Golden Boot.\n\nInter Miami vs Columbus Crew live score: https://scorebuzz.net\n\n#InterMiami #Messi #Crew96 #MLSCupPlayoffs",
+  "tags": [
+   "inter miami vs columbus crew",
+   "columbus crew vs inter miami",
+   "inter miami",
+   "messi",
+   "lionel messi",
+   "mls cup playoffs",
+   "mls playoffs 2026",
+   "columbus crew",
+   "inter miami game today",
+   "mls",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "MLS Cup Playoffs",
+    "title": "Messi's title defence starts tonight",
+    "sub": "Inter Miami v Columbus Crew"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Round One · Game 1",
+    "title": "Inter Miami v Columbus Crew",
+    "sub": "6pm ET · Nu Stadium · best of three"
+   },
+   {
+    "type": "list",
+    "dur": 4.0,
+    "label": "Eastern Conference",
+    "title": "The seeds",
+    "rows": [
+     [
+      "2",
+      "Inter Miami",
+      "60 pts"
+     ],
+     [
+      "7",
+      "Columbus Crew",
+      "47 pts"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Lionel Messi · 2026",
+    "value": 26,
+    "unit": "goals",
+    "text": "His second straight Golden Boot"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Upset alert?",
+    "title": "Columbus have won 8 of their last 9",
+    "sub": "Miami are the defending MLS Cup champions"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Miami or Columbus?",
+    "sub": "Follow ScoreBuzz for MLS scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "MLS Cup Playoffs",
+   "big": "26",
+   "hook": "Messi goals. *Game 1*",
+   "sticker": "TONIGHT",
+   "emoji": "🐐"
+  },
+  "fbtext": "🐐 Messi's playoffs start tonight: Inter Miami v Columbus Crew, Game 1 at 6pm ET.\n\nMiami are the defending champions and Messi scored 26 goals this season. But Columbus have won 8 of their last 9.\n\nWho takes Game 1? 👇\n\n#InterMiami #Messi #MLS #Reels",
+  "time": "2026-11-22T02:20:00"
+ },
+ {
+  "id": "s08-ufc-doha",
+  "sport": "mma",
+  "league": "ufc",
+  "bed": "drama",
+  "fb": "2026-11-21T22:40:00",
+  "title": "UFC Doha: Procházka vs Stirling Main Card 🥊 #shorts",
+  "description": "UFC Fight Night in Doha: Jiří Procházka (32-6-1) faces unbeaten Navajo Stirling (11-0) in a five-round light heavyweight main event.",
+  "tags": [
+   "ufc doha",
+   "prochazka vs stirling",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "UFC Fight Night · Doha",
+    "title": "Procházka vs an unbeaten prospect",
+    "sub": "Main card 1pm ET"
+   },
+   {
+    "type": "list",
+    "dur": 5.4,
+    "label": "Main card",
+    "title": "Tonight in Doha",
+    "rows": [
+     [
+      "LHW",
+      "Procházka v Stirling",
+      "32-6-1 · 11-0"
+     ],
+     [
+      "FW",
+      "Sterling v Vallejos",
+      "26-5 · 18-1"
+     ],
+     [
+      "LW",
+      "Ortega v Hooker",
+      "16-5 · 24-15"
+     ],
+     [
+      "FLW",
+      "Horiguchi v Almabayev",
+      "36-6 · 24-3"
+     ],
+     [
+      "MW",
+      "Cannonier v Aliskerov",
+      "18-10 · 18-2"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Navajo Stirling",
+    "value": "11-0",
+    "unit": "",
+    "text": "Unbeaten in 11 pro fights"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Main event",
+    "title": "Five rounds at light heavyweight",
+    "sub": "Jiří Procházka has 32 career wins"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins: Procházka or Stirling?",
+    "sub": "Follow ScoreBuzz for UFC results"
+   }
+  ],
+  "thumb": {
+   "kicker": "UFC Doha",
+   "big": "11-0",
+   "hook": "Can he stop *Jiří*?",
+   "sticker": "TONIGHT",
+   "emoji": "🥊"
+  },
+  "fbtext": "🥊 UFC Doha main card starts at 1pm ET: Jiří Procházka (32-6-1) vs unbeaten Navajo Stirling (11-0) over five rounds.\n\nAlso on the card: Aljamain Sterling, Brian Ortega v Dan Hooker and Kyoji Horiguchi.\n\nWho wins the main event? 👇\n\n#UFCDoha #Prochazka #UFC #Reels",
+  "time": "2026-11-21T22:40:00"
+ },
+ {
+  "id": "s09-franz-wagner",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "drama",
+  "venue": "Barclays Center",
+  "fb": "2026-11-22T06:10:00",
+  "title": "Franz Wagner Game-Winner vs Brother Mo | Magic vs Nets 🏀 #shorts",
+  "description": "Franz Wagner scored 35 and hit the game-winner as the Magic beat the Nets 113-111.",
+  "tags": [
+   "franz wagner",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA Cup · Friday",
+    "title": "Brother vs brother",
+    "sub": "And Franz Wagner won it"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "NBA Cup",
+    "home": "Nets",
+    "homeAbbr": "BKN",
+    "homeScore": 111,
+    "away": "Magic",
+    "awayAbbr": "ORL",
+    "awayScore": 113,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+    "note": "Franz Wagner 35 · winner with 2.4s left"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "First time facing Mo",
+    "title": "Mo Wagner joined Brooklyn in July",
+    "sub": "after eight seasons in Orlando"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Orlando Magic",
+    "value": 5,
+    "unit": "wins",
+    "text": "in their last six games"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best sibling rivalry in sports?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA Cup",
+   "big": "35",
+   "hook": "Beats his *brother*",
+   "sticker": "WINNER",
+   "emoji": "🏀"
+  },
+  "fbtext": "🏀 Franz Wagner vs Mo Wagner, for the first time. Franz won it.\n\n35 points and a step-back jumper with 2.4 seconds left: Magic 113, Nets 111. Mo left Orlando for Brooklyn in July.\n\nBest sibling rivalry in sports? 👇\n\n#FranzWagner #Magic #NBA #Reels",
+  "time": "2026-11-22T06:10:00"
+ }
+]
