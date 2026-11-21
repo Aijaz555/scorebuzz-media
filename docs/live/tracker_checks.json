@@ -2666,36 +2666,6 @@
   "reason": "ok (contrast 88)",
   "at": "2026-11-20T03:35:54+00:00"
  },
- "401909305": {
-  "slot": "2",
-  "league": "nba",
-  "game": "Hawks v Hornets",
-  "url": "https://scorebuzz.net/basketball/nba/hawks-vs-hornets-401909305/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-21T00:42:34+00:00"
- },
- "401909307": {
-  "slot": "3",
-  "league": "nba",
-  "game": "Cavaliers v Pacers",
-  "url": "https://scorebuzz.net/basketball/nba/cavaliers-vs-pacers-401909307/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 65)",
-  "at": "2026-11-21T00:42:36+00:00"
- },
- "401909306": {
-  "slot": "4",
-  "league": "nba",
-  "game": "Nets v Magic",
-  "url": "https://scorebuzz.net/basketball/nba/nets-vs-magic-401909306/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 66)",
-  "at": "2026-11-21T00:42:39+00:00"
- },
  "401909308": {
   "slot": "1",
   "league": "nba",
@@ -2705,5 +2675,55 @@
   "status": "ok",
   "reason": "ok (contrast 64)",
   "at": "2026-11-21T00:50:46+00:00"
+ },
+ "401909305": {
+  "slot": "2",
+  "league": "nba",
+  "game": "Hawks v Hornets",
+  "url": "https://scorebuzz.net/basketball/nba/hawks-vs-hornets-401909305/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-21T01:14:53+00:00"
+ },
+ "401909307": {
+  "slot": "3",
+  "league": "nba",
+  "game": "Cavaliers v Pacers",
+  "url": "https://scorebuzz.net/basketball/nba/cavaliers-vs-pacers-401909307/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-21T01:14:56+00:00"
+ },
+ "401909306": {
+  "slot": "4",
+  "league": "nba",
+  "game": "Nets v Magic",
+  "url": "https://scorebuzz.net/basketball/nba/nets-vs-magic-401909306/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-21T01:14:59+00:00"
+ },
+ "401909310": {
+  "slot": "5",
+  "league": "nba",
+  "game": "Thunder v Pelicans",
+  "url": "https://scorebuzz.net/basketball/nba/thunder-vs-pelicans-401909310/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-21T01:15:02+00:00"
+ },
+ "401909309": {
+  "slot": "6",
+  "league": "nba",
+  "game": "Bulls v Wizards",
+  "url": "https://scorebuzz.net/basketball/nba/bulls-vs-wizards-401909309/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 66)",
+  "at": "2026-11-21T01:15:05+00:00"
  }
 }
