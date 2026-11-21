@@ -2725,5 +2725,65 @@
   "status": "ok",
   "reason": "ok (contrast 64)",
   "at": "2026-11-21T01:23:11+00:00"
+ },
+ "401879238": {
+  "slot": "5",
+  "league": "epl",
+  "game": "Bournemouth v Nottm Forest",
+  "url": "https://scorebuzz.net/football/english-premier-league/bournemouth-vs-nottm-forest-401879238/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-21T15:58:19+00:00"
+ },
+ "401878756": {
+  "slot": "6",
+  "league": "epl",
+  "game": "Aston Villa v Sunderland",
+  "url": "https://scorebuzz.net/football/english-premier-league/aston-villa-vs-sunderland-401878756/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 35)",
+  "at": "2026-11-21T15:58:22+00:00"
+ },
+ "401879235": {
+  "slot": "7",
+  "league": "epl",
+  "game": "Coventry v C Palace",
+  "url": "https://scorebuzz.net/football/english-premier-league/coventry-vs-c-palace-401879235/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-21T15:58:25+00:00"
+ },
+ "401879236": {
+  "slot": "8",
+  "league": "epl",
+  "game": "Chelsea v Leeds",
+  "url": "https://scorebuzz.net/football/english-premier-league/chelsea-vs-leeds-401879236/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 35)",
+  "at": "2026-11-21T15:58:28+00:00"
+ },
+ "401878754": {
+  "slot": "9",
+  "league": "epl",
+  "game": "Spurs v Ipswich",
+  "url": "https://scorebuzz.net/football/english-premier-league/spurs-vs-ipswich-401878754/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 35)",
+  "at": "2026-11-21T15:58:31+00:00"
+ },
+ "401882799": {
+  "slot": "10",
+  "league": "laliga",
+  "game": "Rayo v Valencia",
+  "url": "https://scorebuzz.net/football/la-liga/rayo-vs-valencia-401882799/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-21T15:58:34+00:00"
  }
 }
