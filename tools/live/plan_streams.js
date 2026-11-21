@@ -168,6 +168,7 @@ async function games(extra) {
 
   const fav = (g) => g.abbrs.some((x) => favs.includes(String(x).toUpperCase()));
   const pri = (g) => cfg.leagues.indexOf(g.league);
+  const favX = (g) => g.league !== 'nba' && fav(g);
   const want = [...all.values()].filter((g) => {
     if (!cfg.leagues.includes(g.league) || busy.has(`${g.league}:${g.id}`) || OFF.test(g.status)) return false;
     if (g.league === 'ncaaf' && g.rank > cfg.ncaafTop) return false;
@@ -175,7 +176,8 @@ async function games(extra) {
     if (cfg.onlyEvents && cfg.onlyEvents[g.league] && !cfg.onlyEvents[g.league].map(String).includes(String(g.id))) return false;
     if (g.state === 'in') return true;
     return g.state === 'pre' && new Date(g.start).getTime() - cfg.leadMinutes * MIN <= now + cfg.lookaheadMinutes * MIN;
-  }).sort((a, b) => (b.state === 'in') - (a.state === 'in') || fav(b) - fav(a) || pri(a) - pri(b) || (b.winPct ?? 0.5) - (a.winPct ?? 0.5) || a.start.localeCompare(b.start));
+  }).sort((a, b) => (b.state === 'in') - (a.state === 'in') || favX(b) - favX(a) || pri(a) - pri(b) || fav(b) - fav(a) || (b.winPct ?? 0.5) - (a.winPct ?? 0.5) || a.start.localeCompare(b.start));
+  // favourite NBA teams lead only within the NBA, never ahead of NHL (owner, 18 Nov 2026: never miss an NHL game; drop only NBA)
   // within a league, better teams (higher average win %) first, so the cap drops the lowest-ranked games (owner, 18 Nov 2026)
 
   // slots first; Main last (it is the "best game" channel and falls back to auto when unassigned)
