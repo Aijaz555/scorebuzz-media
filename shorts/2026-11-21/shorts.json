@@ -651,5 +651,238 @@
   },
   "fbtext": "🏀 Franz Wagner vs Mo Wagner, for the first time. Franz won it.\n\n35 points and a step-back jumper with 2.4 seconds left: Magic 113, Nets 111. Mo left Orlando for Brooklyn in July.\n\nBest sibling rivalry in sports? 👇\n\n#FranzWagner #Magic #NBA #Reels",
   "time": "2026-11-22T06:10:00"
+ },
+ {
+  "id": "s06-f1-vegas",
+  "sport": "racing",
+  "league": "f1",
+  "bed": "hype",
+  "fb": "2026-11-22T04:30:00",
+  "yt": "2026-11-22T04:35:00",
+  "title": "Las Vegas GP Qualifying: Antonelli Fastest, But a Grid Penalty 🏁 #F1 #shorts",
+  "description": "Kimi Antonelli set the fastest time in qualifying for the 2026 Las Vegas Grand Prix, ahead of Max Verstappen, George Russell, Lando Norris and Isack Hadjar. Antonelli has a grid penalty for the race, so he will not start from the front. The Las Vegas Grand Prix starts at 11pm ET on Saturday (04:00 GMT Sunday).\n\nLas Vegas Grand Prix live results: https://scorebuzz.net\n\n#F1 #LasVegasGP #Antonelli #Verstappen",
+  "tags": [
+   "las vegas grand prix",
+   "las vegas gp qualifying",
+   "f1 qualifying",
+   "kimi antonelli",
+   "antonelli grid penalty",
+   "max verstappen",
+   "george russell",
+   "lando norris",
+   "f1 las vegas 2026",
+   "f1 shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "F1 · Las Vegas",
+    "title": "Fastest in qualifying… but not on pole",
+    "sub": "Kimi Antonelli has a grid penalty"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Qualifying",
+    "title": "Las Vegas top 6",
+    "rows": [
+     [
+      "1",
+      "Kimi Antonelli",
+      "ITA"
+     ],
+     [
+      "2",
+      "Max Verstappen",
+      "NED"
+     ],
+     [
+      "3",
+      "George Russell",
+      "GBR"
+     ],
+     [
+      "4",
+      "Lando Norris",
+      "GBR"
+     ],
+     [
+      "5",
+      "Isack Hadjar",
+      "FRA"
+     ],
+     [
+      "6",
+      "Arvid Lindblad",
+      "GBR"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "The twist",
+    "title": "Antonelli has a grid penalty for the race",
+    "sub": "He won't start from the front"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Race time",
+    "title": "Lights out at 11pm ET",
+    "sub": "04:00 GMT Sunday · Las Vegas Strip"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins in Vegas?",
+    "sub": "Follow ScoreBuzz for F1 results"
+   }
+  ],
+  "thumb": {
+   "kicker": "F1 · Las Vegas",
+   "big": "P1",
+   "hook": "But a *penalty*",
+   "sticker": "TONIGHT",
+   "emoji": "🏁"
+  },
+  "fbtext": "🏁 Kimi Antonelli was fastest in Las Vegas qualifying, but he has a grid penalty and won't start from the front.\n\nVerstappen, Russell and Norris were next. Lights out at 11pm ET.\n\nWho wins in Vegas? 👇\n\n#F1 #LasVegasGP #Reels"
+ },
+ {
+  "id": "s02-nba-friday-board",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "fb": "2026-11-22T00:20:00",
+  "title": "NBA Scores Friday: Harden 51, SGA 40, Franz Wagner Winner 🏀 #shorts",
+  "description": "Every NBA score from Friday night.",
+  "tags": [
+   "nba scores",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 18.4,
+    "kicker": "NBA · Friday night",
+    "title": "Every score",
+    "badge": "Final",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Hawks",
+      "homeAbbr": "ATL",
+      "hs": 111,
+      "away": "Hornets",
+      "awayAbbr": "CHA",
+      "as": 97,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png"
+     },
+     {
+      "home": "Nets",
+      "homeAbbr": "BKN",
+      "hs": 111,
+      "away": "Magic",
+      "awayAbbr": "ORL",
+      "as": 113,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+      "note": "F. Wagner winner"
+     },
+     {
+      "home": "Cavaliers",
+      "homeAbbr": "CLE",
+      "hs": 128,
+      "away": "Pacers",
+      "awayAbbr": "IND",
+      "as": 119,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+      "note": "Harden 51"
+     },
+     {
+      "home": "Pistons",
+      "homeAbbr": "DET",
+      "hs": 102,
+      "away": "Raptors",
+      "awayAbbr": "TOR",
+      "as": 105,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png"
+     },
+     {
+      "home": "Bulls",
+      "homeAbbr": "CHI",
+      "hs": 94,
+      "away": "Wizards",
+      "awayAbbr": "WSH",
+      "as": 98,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
+      "note": "Davis 36"
+     },
+     {
+      "home": "Thunder",
+      "homeAbbr": "OKC",
+      "hs": 126,
+      "away": "Pelicans",
+      "awayAbbr": "NO",
+      "as": 120,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+      "note": "SGA 40"
+     },
+     {
+      "home": "Jazz",
+      "homeAbbr": "UTAH",
+      "hs": 101,
+      "away": "Suns",
+      "awayAbbr": "PHX",
+      "as": 111,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png"
+     },
+     {
+      "home": "Nuggets",
+      "homeAbbr": "DEN",
+      "hs": 133,
+      "away": "Rockets",
+      "awayAbbr": "HOU",
+      "as": 124,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png"
+     },
+     {
+      "home": "Lakers",
+      "homeAbbr": "LAL",
+      "hs": 106,
+      "away": "Kings",
+      "awayAbbr": "SAC",
+      "as": 104,
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+      "note": "Doncic 25"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Best performance of the night? 👇",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA · Friday",
+   "big": "9",
+   "hook": "games, every *score*",
+   "sticker": "FINAL",
+   "emoji": "🏀"
+  },
+  "fbtext": "🏀 Every NBA score from Friday night.\n\nJames Harden scored 51, SGA had 40 in an OKC comeback, Franz Wagner beat his brother at the buzzer and the Lakers survived the Kings 106–104.\n\nBest performance of the night? 👇\n\n#NBA #JamesHarden #Reels"
  }
 ]
