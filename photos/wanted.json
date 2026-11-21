@@ -18,12 +18,6 @@
   "country": "Spain"
  },
  {
-  "slug": "el-sadar",
-  "name": "El Sadar",
-  "city": "Pamplona",
-  "country": "Spain"
- },
- {
   "slug": "mapei-stadium",
   "name": "Mapei Stadium",
   "city": "Reggio Emilia",
@@ -36,34 +30,16 @@
   "country": "Italy"
  },
  {
-  "slug": "stade-du-moustoir-yves-allainmat",
-  "name": "Stade du Moustoir - Yves Allainmat",
-  "city": "Lorient",
-  "country": "France"
- },
- {
-  "slug": "ursapharm-arena-an-der-kaiserlinde",
-  "name": "URSAPHARM-Arena an der Kaiserlinde",
-  "city": "Spiesen-Elversberg",
-  "country": "Germany"
- },
- {
   "slug": "seatgeek-stadium",
   "name": "SeatGeek Stadium",
   "city": "Bridgeview, Illinois",
   "country": "USA"
  },
  {
-  "slug": "lincoln-financial-field",
-  "name": "Lincoln Financial Field",
-  "city": "Philadelphia",
+  "slug": "energizer-park",
+  "name": "Energizer Park",
+  "city": "St. Louis, Missouri",
   "country": "USA"
- },
- {
-  "slug": "estadio-banorte",
-  "name": "Estadio Banorte",
-  "city": "Mexico City",
-  "country": "Mexico"
  },
  {
   "slug": "spartan-stadium",
@@ -84,15 +60,21 @@
   "country": "USA"
  },
  {
+  "slug": "xfinity-mobile-arena",
+  "name": "Xfinity Mobile Arena",
+  "city": "Philadelphia",
+  "country": ""
+ },
+ {
   "slug": "frost-bank-center",
   "name": "Frost Bank Center",
   "city": "San Antonio",
   "country": ""
  },
  {
-  "slug": "xfinity-mobile-arena",
-  "name": "Xfinity Mobile Arena",
-  "city": "Philadelphia",
+  "slug": "gainbridge-fieldhouse",
+  "name": "Gainbridge Fieldhouse",
+  "city": "Indianapolis",
   "country": ""
  },
  {
