@@ -1,0 +1,1316 @@
+[
+  {
+    "id": "bundesliga-20261121",
+    "sport": "football",
+    "league": "bundesliga",
+    "format": "video",
+    "title": "Bundesliga Table Updated Today 21 Nov 2026 | Bundesliga Results & Standings Matchweek 10 ⚽",
+    "description": "Bundesliga results from Sat 21 Nov (Matchweek 10), the updated Bundesliga table and the next fixtures. Dortmund lead on 24 points after 10 games; the big result was Union Berlin 1–5 RB Leipzig. Next round starts Sun 22 Nov.\n\nSat 21 Nov scores: Union Berlin 1–5 RB Leipzig, Leverkusen 4–0 Paderborn, Gladbach 0–1 Dortmund, Frankfurt 1–0 Hoffenheim, Elversberg 0–1 Freiburg, Schalke 0–0 Stuttgart.\n\n0:00 Intro\n0:06 Sat 21 Nov results\n0:20 Every game\n1:26 Earlier in Matchweek 10\n1:38 Bundesliga table\n2:08 Title race & relegation\n2:24 Still to play · Matchweek 10\n\nBundesliga live scores, table and fixtures: https://scorebuzz.net\n\n#Bundesliga #Football #bundesligatable #ScoreBuzz\n\nMusic: \"Shiny Tech\" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0/)",
+    "tags": [
+      "bundesliga table",
+      "bundesliga table updated today",
+      "bundesliga standings",
+      "bundesliga results",
+      "bundesliga fixtures",
+      "bundesliga matchweek 10",
+      "bundesliga results today",
+      "Union Berlin vs RB Leipzig",
+      "Dortmund bundesliga",
+      "scorebuzz"
+    ],
+    "tt": {
+      "league": "bundesliga",
+      "name": "Bundesliga",
+      "mw": 10,
+      "season": "2026/27",
+      "zones": {
+        "ucl": 4,
+        "rel": 2
+      },
+      "result": {
+        "home": "Union Berlin",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
+        "hs": 1,
+        "away": "RB Leipzig",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+        "as": 5,
+        "venue": "Stadion An der Alten Försterei"
+      },
+      "table": [
+        {
+          "rank": 1,
+          "team": "Dortmund",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+          "p": 10,
+          "gd": "+10",
+          "pts": 24
+        },
+        {
+          "rank": 2,
+          "team": "Bayern",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+          "p": 10,
+          "gd": "+20",
+          "pts": 22
+        },
+        {
+          "rank": 3,
+          "team": "Freiburg",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
+          "p": 10,
+          "gd": "+11",
+          "pts": 22
+        },
+        {
+          "rank": 4,
+          "team": "RB Leipzig",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+          "p": 10,
+          "gd": "+18",
+          "pts": 21
+        },
+        {
+          "rank": 5,
+          "team": "Leverkusen",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+          "p": 10,
+          "gd": "+7",
+          "pts": 19
+        },
+        {
+          "rank": 6,
+          "team": "Bremen",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+          "p": 9,
+          "gd": "+2",
+          "pts": 15
+        },
+        {
+          "rank": 7,
+          "team": "Frankfurt",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
+          "p": 10,
+          "gd": "-4",
+          "pts": 15
+        },
+        {
+          "rank": 8,
+          "team": "Elversberg",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+          "p": 10,
+          "gd": "-2",
+          "pts": 13
+        },
+        {
+          "rank": 9,
+          "team": "Stuttgart",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+          "p": 9,
+          "gd": "0",
+          "pts": 12
+        },
+        {
+          "rank": 10,
+          "team": "Hoffenheim",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+          "p": 10,
+          "gd": "-2",
+          "pts": 12
+        },
+        {
+          "rank": 11,
+          "team": "Hamburg",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
+          "p": 9,
+          "gd": "-10",
+          "pts": 12
+        },
+        {
+          "rank": 12,
+          "team": "Mainz",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png",
+          "p": 9,
+          "gd": "-1",
+          "pts": 10
+        },
+        {
+          "rank": 13,
+          "team": "Cologne",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+          "p": 10,
+          "gd": "-4",
+          "pts": 10
+        },
+        {
+          "rank": 14,
+          "team": "Paderborn",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
+          "p": 10,
+          "gd": "-7",
+          "pts": 10
+        },
+        {
+          "rank": 15,
+          "team": "Augsburg",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
+          "p": 9,
+          "gd": "0",
+          "pts": 9
+        },
+        {
+          "rank": 16,
+          "team": "Union Berlin",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
+          "p": 10,
+          "gd": "-18",
+          "pts": 7
+        },
+        {
+          "rank": 17,
+          "team": "Schalke",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
+          "p": 9,
+          "gd": "-6",
+          "pts": 6
+        },
+        {
+          "rank": 18,
+          "team": "Gladbach",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+          "p": 10,
+          "gd": "-14",
+          "pts": 4
+        }
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-22T14:30Z",
+          "home": "Augsburg",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
+          "away": "Mainz",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png"
+        },
+        {
+          "date": "2026-11-22T16:30Z",
+          "home": "Bremen",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+          "away": "Hamburg",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png"
+        }
+      ]
+    },
+    "thumb": {
+      "kicker": "Bundesliga · Matchweek 10",
+      "big": "24 PTS",
+      "hook": "Dortmund *top*",
+      "sticker": "TABLE",
+      "emoji": "⚽"
+    },
+    "scenes": [
+      {
+        "type": "hook",
+        "dur": 6,
+        "kicker": "Bundesliga · Sat 21 Nov",
+        "title": "Table updated today",
+        "sub": "Dortmund top on 24 points"
+      },
+      {
+        "type": "table",
+        "dur": 14,
+        "label": "Bundesliga · Sat 21 Nov results",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Union Berlin v RB Leipzig",
+            1,
+            5
+          ],
+          [
+            "",
+            "Leverkusen v Paderborn",
+            4,
+            0
+          ],
+          [
+            "",
+            "Gladbach v Dortmund",
+            0,
+            1
+          ],
+          [
+            "",
+            "Frankfurt v Hoffenheim",
+            1,
+            0
+          ],
+          [
+            "",
+            "Elversberg v Freiburg",
+            0,
+            1
+          ],
+          [
+            "",
+            "Schalke v Stuttgart",
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Bundesliga · Sat 21 Nov",
+        "home": "Union Berlin",
+        "homeAbbr": "FCU",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
+        "homeScore": 1,
+        "away": "RB Leipzig",
+        "awayAbbr": "RBL",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+        "awayScore": 5,
+        "status": "FULL TIME",
+        "note": "FCU: M. Aebischer 41'  |  RBL: A. Nusa 18' pen · Rômulo 50' · B. Gruda 72' · R. Reitz 76' · R. Baku 89'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Bundesliga · Sat 21 Nov",
+        "home": "Leverkusen",
+        "homeAbbr": "B04",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+        "homeScore": 4,
+        "away": "Paderborn",
+        "awayAbbr": "SCP",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "B04: A. Moreira 14', 47' · P. Schick 51' · E. Fernández 59'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Bundesliga · Sat 21 Nov",
+        "home": "Gladbach",
+        "homeAbbr": "BMG",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+        "homeScore": 0,
+        "away": "Dortmund",
+        "awayAbbr": "DOR",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "DOR: F. Nmecha 80'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Bundesliga · Sat 21 Nov",
+        "home": "Frankfurt",
+        "homeAbbr": "SGE",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
+        "homeScore": 1,
+        "away": "Hoffenheim",
+        "awayAbbr": "TSG",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "SGE: J. Burkardt 25'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Bundesliga · Sat 21 Nov",
+        "home": "Elversberg",
+        "homeAbbr": "ELV",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+        "homeScore": 0,
+        "away": "Freiburg",
+        "awayAbbr": "SCF",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "SCF: I. Matanovic 68'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Bundesliga · Sat 21 Nov",
+        "home": "Schalke",
+        "homeAbbr": "S04",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
+        "homeScore": 0,
+        "away": "Stuttgart",
+        "awayAbbr": "VFB",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "No goals"
+      },
+      {
+        "type": "table",
+        "dur": 12,
+        "label": "Bundesliga · earlier in Matchweek 10",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Bayern v Cologne",
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Bundesliga table · after Matchweek 10",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            1,
+            "Dortmund",
+            10,
+            7,
+            3,
+            0,
+            "+10",
+            24
+          ],
+          [
+            2,
+            "Bayern",
+            10,
+            6,
+            4,
+            0,
+            "+20",
+            22
+          ],
+          [
+            3,
+            "Freiburg",
+            10,
+            7,
+            1,
+            2,
+            "+11",
+            22
+          ],
+          [
+            4,
+            "RB Leipzig",
+            10,
+            7,
+            0,
+            3,
+            "+18",
+            21
+          ],
+          [
+            5,
+            "Leverkusen",
+            10,
+            6,
+            1,
+            3,
+            "+7",
+            19
+          ],
+          [
+            6,
+            "Bremen",
+            9,
+            4,
+            3,
+            2,
+            "+2",
+            15
+          ],
+          [
+            7,
+            "Frankfurt",
+            10,
+            4,
+            3,
+            3,
+            "-4",
+            15
+          ],
+          [
+            8,
+            "Elversberg",
+            10,
+            4,
+            1,
+            5,
+            "-2",
+            13
+          ],
+          [
+            9,
+            "Stuttgart",
+            9,
+            4,
+            0,
+            5,
+            "0",
+            12
+          ]
+        ],
+        "highlight": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "note": "Top 4: Champions League places"
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Bundesliga table · after Matchweek 10 (10–18)",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            10,
+            "Hoffenheim",
+            10,
+            4,
+            0,
+            6,
+            "-2",
+            12
+          ],
+          [
+            11,
+            "Hamburg",
+            9,
+            4,
+            0,
+            5,
+            "-10",
+            12
+          ],
+          [
+            12,
+            "Mainz",
+            9,
+            3,
+            1,
+            5,
+            "-1",
+            10
+          ],
+          [
+            13,
+            "Cologne",
+            10,
+            2,
+            4,
+            4,
+            "-4",
+            10
+          ],
+          [
+            14,
+            "Paderborn",
+            10,
+            2,
+            4,
+            4,
+            "-7",
+            10
+          ],
+          [
+            15,
+            "Augsburg",
+            9,
+            2,
+            3,
+            4,
+            "0",
+            9
+          ],
+          [
+            16,
+            "Union Berlin",
+            10,
+            1,
+            4,
+            5,
+            "-18",
+            7
+          ],
+          [
+            17,
+            "Schalke",
+            9,
+            1,
+            3,
+            5,
+            "-6",
+            6
+          ],
+          [
+            18,
+            "Gladbach",
+            10,
+            1,
+            1,
+            8,
+            "-14",
+            4
+          ]
+        ],
+        "danger": [
+          17,
+          18
+        ],
+        "note": "Bottom 2: relegation zone"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Title race",
+        "title": "Dortmund lead by 2 points",
+        "sub": "Bayern are second on 22 points after 10 games"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Relegation zone",
+        "title": "Gladbach bottom on 4 points",
+        "sub": "In the drop zone: Schalke 6 · Gladbach 4. Union Berlin are first above it on 7."
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Bundesliga · Still to play · Matchweek 10 (UK · ET)",
+        "rows": [
+          [
+            "Sun 22 Nov",
+            "Augsburg v Mainz",
+            "14:30 · 9:30 AM"
+          ],
+          [
+            "Sun 22 Nov",
+            "Bremen v Hamburg",
+            "16:30 · 11:30 AM"
+          ]
+        ]
+      },
+      {
+        "type": "cta",
+        "dur": 6,
+        "title": "Who wins the Bundesliga this season?",
+        "sub": "Live scores, tables & fixtures every day"
+      }
+    ],
+    "music": "Shiny Tech"
+  },
+  {
+    "id": "epl-20261121",
+    "sport": "football",
+    "league": "epl",
+    "format": "video",
+    "title": "Premier League Table Updated Today 21 Nov 2026 | Premier League Results & Standings Matchweek 11 ⚽",
+    "description": "Premier League results from Sat 21 Nov (Matchweek 11), the updated Premier League table and the next fixtures. Arsenal lead on 28 points after 11 games; the big result was Chelsea 1–4 Leeds. Next round starts Sun 22 Nov.\n\nSat 21 Nov scores: Man City 1–1 Fulham, Bournemouth 2–0 Nottm Forest, Aston Villa 0–0 Sunderland, Chelsea 1–4 Leeds, Coventry 3–2 C Palace, Spurs 2–0 Ipswich, Newcastle 2–2 Arsenal.\n\n0:00 Intro\n0:06 Sat 21 Nov results\n0:20 Every game\n1:37 Premier League table\n2:07 Title race & relegation\n2:23 Still to play · Matchweek 11\n\nPremier League live scores, table and fixtures: https://scorebuzz.net\n\n#PremierLeague #Football #premierleaguetable #ScoreBuzz",
+    "tags": [
+      "premier league table",
+      "premier league table updated today",
+      "premier league standings",
+      "premier league results",
+      "premier league fixtures",
+      "premier league matchweek 11",
+      "premier league results today",
+      "Chelsea vs Leeds",
+      "Arsenal premier league",
+      "scorebuzz"
+    ],
+    "tt": {
+      "league": "epl",
+      "name": "Premier League",
+      "mw": 11,
+      "season": "2026/27",
+      "zones": {
+        "ucl": 4,
+        "rel": 3
+      },
+      "result": {
+        "home": "Chelsea",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+        "hs": 1,
+        "away": "Leeds",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+        "as": 4,
+        "venue": "Stamford Bridge"
+      },
+      "table": [
+        {
+          "rank": 1,
+          "team": "Arsenal",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+          "p": 11,
+          "gd": "+10",
+          "pts": 28
+        },
+        {
+          "rank": 2,
+          "team": "Brighton",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
+          "p": 10,
+          "gd": "+19",
+          "pts": 22
+        },
+        {
+          "rank": 3,
+          "team": "Man City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+          "p": 11,
+          "gd": "+8",
+          "pts": 22
+        },
+        {
+          "rank": 4,
+          "team": "Bournemouth",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+          "p": 11,
+          "gd": "+4",
+          "pts": 18
+        },
+        {
+          "rank": 5,
+          "team": "Liverpool",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+          "p": 10,
+          "gd": "+4",
+          "pts": 18
+        },
+        {
+          "rank": 6,
+          "team": "Leeds",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+          "p": 11,
+          "gd": "+5",
+          "pts": 17
+        },
+        {
+          "rank": 7,
+          "team": "Everton",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+          "p": 10,
+          "gd": "+2",
+          "pts": 16
+        },
+        {
+          "rank": 8,
+          "team": "Chelsea",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+          "p": 11,
+          "gd": "0",
+          "pts": 16
+        },
+        {
+          "rank": 9,
+          "team": "Spurs",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
+          "p": 11,
+          "gd": "+1",
+          "pts": 15
+        },
+        {
+          "rank": 10,
+          "team": "Brentford",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+          "p": 10,
+          "gd": "+5",
+          "pts": 14
+        },
+        {
+          "rank": 11,
+          "team": "Aston Villa",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+          "p": 11,
+          "gd": "-3",
+          "pts": 14
+        },
+        {
+          "rank": 12,
+          "team": "Newcastle",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
+          "p": 11,
+          "gd": "-3",
+          "pts": 13
+        },
+        {
+          "rank": 13,
+          "team": "Coventry",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+          "p": 11,
+          "gd": "-8",
+          "pts": 12
+        },
+        {
+          "rank": 14,
+          "team": "Hull",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
+          "p": 10,
+          "gd": "0",
+          "pts": 11
+        },
+        {
+          "rank": 15,
+          "team": "Fulham",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
+          "p": 11,
+          "gd": "-2",
+          "pts": 11
+        },
+        {
+          "rank": 16,
+          "team": "Ipswich",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+          "p": 11,
+          "gd": "-7",
+          "pts": 11
+        },
+        {
+          "rank": 17,
+          "team": "Nottm Forest",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+          "p": 11,
+          "gd": "-6",
+          "pts": 9
+        },
+        {
+          "rank": 18,
+          "team": "Sunderland",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+          "p": 11,
+          "gd": "-9",
+          "pts": 9
+        },
+        {
+          "rank": 19,
+          "team": "Man Utd",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+          "p": 10,
+          "gd": "-5",
+          "pts": 8
+        },
+        {
+          "rank": 20,
+          "team": "C Palace",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+          "p": 11,
+          "gd": "-15",
+          "pts": 7
+        }
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-22T14:00Z",
+          "home": "Hull",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
+          "away": "Brighton",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+        },
+        {
+          "date": "2026-11-22T16:30Z",
+          "home": "Liverpool",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+          "away": "Man Utd",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
+        },
+        {
+          "date": "2026-11-23T20:00Z",
+          "home": "Brentford",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+          "away": "Everton",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+        }
+      ]
+    },
+    "thumb": {
+      "kicker": "Premier League · Matchweek 11",
+      "big": "28 PTS",
+      "hook": "Arsenal *top*",
+      "sticker": "TABLE",
+      "emoji": "⚽"
+    },
+    "scenes": [
+      {
+        "type": "hook",
+        "dur": 6,
+        "kicker": "Premier League · Sat 21 Nov",
+        "title": "Table updated today",
+        "sub": "Arsenal top on 28 points"
+      },
+      {
+        "type": "table",
+        "dur": 14,
+        "label": "Premier League · Sat 21 Nov results",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Man City v Fulham",
+            1,
+            1
+          ],
+          [
+            "",
+            "Bournemouth v Nottm Forest",
+            2,
+            0
+          ],
+          [
+            "",
+            "Aston Villa v Sunderland",
+            0,
+            0
+          ],
+          [
+            "",
+            "Chelsea v Leeds",
+            1,
+            4
+          ],
+          [
+            "",
+            "Coventry v C Palace",
+            3,
+            2
+          ],
+          [
+            "",
+            "Spurs v Ipswich",
+            2,
+            0
+          ],
+          [
+            "",
+            "Newcastle v Arsenal",
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Premier League · Sat 21 Nov",
+        "home": "Man City",
+        "homeAbbr": "MNC",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+        "homeScore": 1,
+        "away": "Fulham",
+        "awayAbbr": "FUL",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "MNC: E. Anderson 57'  |  FUL: R. Muniz 16'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Premier League · Sat 21 Nov",
+        "home": "Bournemouth",
+        "homeAbbr": "BOU",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+        "homeScore": 2,
+        "away": "Nottm Forest",
+        "awayAbbr": "NFO",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "BOU: Evanilson 19' · J. Kluivert 45'+3'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Premier League · Sat 21 Nov",
+        "home": "Aston Villa",
+        "homeAbbr": "AVL",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+        "homeScore": 0,
+        "away": "Sunderland",
+        "awayAbbr": "SUN",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "No goals"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Premier League · Sat 21 Nov",
+        "home": "Chelsea",
+        "homeAbbr": "CHE",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+        "homeScore": 1,
+        "away": "Leeds",
+        "awayAbbr": "LEE",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+        "awayScore": 4,
+        "status": "FULL TIME",
+        "note": "CHE: E. Emegha 25'  |  LEE: N. Okafor 28', 58' · D. Calvert-Lewin 53' pen · B. Aaronson 90'+1'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Premier League · Sat 21 Nov",
+        "home": "Coventry",
+        "homeAbbr": "COV",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+        "homeScore": 3,
+        "away": "C Palace",
+        "awayAbbr": "CRY",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+        "awayScore": 2,
+        "status": "FULL TIME",
+        "note": "COV: T. Awoniyi 5' · T. Sakamoto 30' · D. McNeil (og) 85'  |  CRY: Y. Pino 13' · J. Larsen 45'+1'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Premier League · Sat 21 Nov",
+        "home": "Spurs",
+        "homeAbbr": "TOT",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
+        "homeScore": 2,
+        "away": "Ipswich",
+        "awayAbbr": "IPS",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "TOT: L. Williams-Barnett 15' · D. Solanke 51'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Premier League · Sat 21 Nov",
+        "home": "Newcastle",
+        "homeAbbr": "NEW",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
+        "homeScore": 2,
+        "away": "Arsenal",
+        "awayAbbr": "ARS",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+        "awayScore": 2,
+        "status": "FULL TIME",
+        "note": "NEW: H. Barnes 49' · M. Thiaw 62'  |  ARS: E. Eze 33' · N. Madueke 78'"
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Premier League table · after Matchweek 11",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            1,
+            "Arsenal",
+            11,
+            9,
+            1,
+            1,
+            "+10",
+            28
+          ],
+          [
+            2,
+            "Brighton",
+            10,
+            7,
+            1,
+            2,
+            "+19",
+            22
+          ],
+          [
+            3,
+            "Man City",
+            11,
+            7,
+            1,
+            3,
+            "+8",
+            22
+          ],
+          [
+            4,
+            "Bournemouth",
+            11,
+            5,
+            3,
+            3,
+            "+4",
+            18
+          ],
+          [
+            5,
+            "Liverpool",
+            10,
+            5,
+            3,
+            2,
+            "+4",
+            18
+          ],
+          [
+            6,
+            "Leeds",
+            11,
+            4,
+            5,
+            2,
+            "+5",
+            17
+          ],
+          [
+            7,
+            "Everton",
+            10,
+            4,
+            4,
+            2,
+            "+2",
+            16
+          ],
+          [
+            8,
+            "Chelsea",
+            11,
+            5,
+            1,
+            5,
+            "0",
+            16
+          ],
+          [
+            9,
+            "Spurs",
+            11,
+            4,
+            3,
+            4,
+            "+1",
+            15
+          ],
+          [
+            10,
+            "Brentford",
+            10,
+            3,
+            5,
+            2,
+            "+5",
+            14
+          ]
+        ],
+        "highlight": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "note": "Top 4: Champions League places"
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Premier League table · after Matchweek 11 (11–20)",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            11,
+            "Aston Villa",
+            11,
+            3,
+            5,
+            3,
+            "-3",
+            14
+          ],
+          [
+            12,
+            "Newcastle",
+            11,
+            3,
+            4,
+            4,
+            "-3",
+            13
+          ],
+          [
+            13,
+            "Coventry",
+            11,
+            4,
+            0,
+            7,
+            "-8",
+            12
+          ],
+          [
+            14,
+            "Hull",
+            10,
+            2,
+            5,
+            3,
+            "0",
+            11
+          ],
+          [
+            15,
+            "Fulham",
+            11,
+            2,
+            5,
+            4,
+            "-2",
+            11
+          ],
+          [
+            16,
+            "Ipswich",
+            11,
+            3,
+            2,
+            6,
+            "-7",
+            11
+          ],
+          [
+            17,
+            "Nottm Forest",
+            11,
+            2,
+            3,
+            6,
+            "-6",
+            9
+          ],
+          [
+            18,
+            "Sunderland",
+            11,
+            2,
+            3,
+            6,
+            "-9",
+            9
+          ],
+          [
+            19,
+            "Man Utd",
+            10,
+            1,
+            5,
+            4,
+            "-5",
+            8
+          ],
+          [
+            20,
+            "C Palace",
+            11,
+            2,
+            1,
+            8,
+            "-15",
+            7
+          ]
+        ],
+        "danger": [
+          18,
+          19,
+          20
+        ],
+        "note": "Bottom 3: relegation zone"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Title race",
+        "title": "Arsenal lead by 6 points",
+        "sub": "Brighton are second on 22 points after 11 games"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Relegation zone",
+        "title": "C Palace bottom on 7 points",
+        "sub": "In the drop zone: Sunderland 9 · Man Utd 8 · C Palace 7. Nottm Forest are first above it on 9."
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Premier League · Still to play · Matchweek 11 (UK · ET)",
+        "rows": [
+          [
+            "Sun 22 Nov",
+            "Hull v Brighton",
+            "14:00 · 9:00 AM"
+          ],
+          [
+            "Sun 22 Nov",
+            "Liverpool v Man Utd",
+            "16:30 · 11:30 AM"
+          ],
+          [
+            "Mon 23 Nov",
+            "Brentford v Everton",
+            "20:00 · 3:00 PM"
+          ]
+        ]
+      },
+      {
+        "type": "cta",
+        "dur": 6,
+        "title": "Who wins the Premier League this season?",
+        "sub": "Live scores, tables & fixtures every day"
+      }
+    ]
+  }
+]
