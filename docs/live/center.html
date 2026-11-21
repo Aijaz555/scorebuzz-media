@@ -111,8 +111,9 @@ const VOICE = q.get('voice') === '1', REPLAY = q.get('replay') === '1'; // demo:
 let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('sbtrk') === '0' || q.get('replay') === '1';
 // 3D tracker on stream: settings "trk3d": true (every slot) or ["2", "5"] (those slots) opens the site's match page with ?trk=3d, which
 // keeps the 3D view in the stream browser (no graphics card) as the site's lighter 3D picture. Off = the site's own choice (2D there).
+// "trkhd" (same form) draws the 3D picture at twice the size for a sharp 1080p stream (needs a graphics card).
 // "trkgpu" (same form) adds a readout on the 3D picture: the graphics chip the stream browser draws on and its frames a second.
-let TRK3D = q.get('trk3d') === '1', TRKGPU = q.get('trkgpu') === '1', SITEPRE = q.get('sitepre') !== '0';
+let TRK3D = q.get('trk3d') === '1', TRKGPU = q.get('trkgpu') === '1', TRKHD = q.get('trkhd') === '1', SITEPRE = q.get('sitepre') !== '0';
 function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
   const mode = R.fit || q.get('fit') || 'contain', b = document.body;
   if (mode === 'fill') b.style.transform = `scale(${sx},${sy})`; else { const k = Math.min(sx, sy); b.style.transform = `scale(${k})`; b.style.marginLeft = ((W - 1920 * k) / 2) + 'px'; b.style.marginTop = ((H - 1080 * k) / 2) + 'px'; } }
@@ -396,7 +397,7 @@ function render(s, sb) {
   // ---- tracker: website tracker while in play, built-in shot map otherwise ----
   const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   const shortOf = (T) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === T.id)?.team?.shortDisplayName || T.nick;
-  const siteUrl = !noSite && !OWN && sbEv && SITE[league] ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/${TRK3D ? '?trk=3d' + (TRKGPU ? '&gpu=1' : '') : ''}` : '';
+  const siteUrl = !noSite && !OWN && sbEv && SITE[league] ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/${TRK3D ? '?trk=3d' + (TRKGPU ? '&gpu=1' : '') + (TRKHD ? '&q3d=hd' : '') : ''}` : '';
   const trkUrlPre = pre && SITEPRE && !REPLAY ? siteUrl : ''; // same address as the live tracker, so kick-off needs no reload
   const trkUrl = live ? siteUrl : '';
   const scorers = (id) => { const m = new Map(); for (const k of s.keyEvents || []) { const t = k.type?.type || ''; if (!(k.scoringPlay || /goal|penalty---scored/.test(t)) || /miss|saved/.test(t) || String(k.team?.id || '') !== id) continue;
@@ -550,6 +551,7 @@ async function slotTick() {
     noSite = sl.sbtrk === 0;
     TRK3D = c.trk3d === true || (Array.isArray(c.trk3d) && c.trk3d.map(String).includes(String(SLOT)));
     TRKGPU = c.trkgpu === true || (Array.isArray(c.trkgpu) && c.trkgpu.map(String).includes(String(SLOT)));
+    TRKHD = c.trkhd === true || (Array.isArray(c.trkhd) && c.trkhd.map(String).includes(String(SLOT)));      // 3D drawn at twice the size (graphics-card servers)
     SITEPRE = c.sitePreview === undefined || c.sitePreview === true || (Array.isArray(c.sitePreview) && c.sitePreview.map(String).includes(String(SLOT)));
     if (String(sl.event) !== String(event) || sl.league !== league) { league = sl.league; event = String(sl.event); tick(); }
   } catch (e) { /* keep current */ }
