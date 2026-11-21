@@ -31,7 +31,9 @@ function tagsFor(title) {
   const a = t1.toLowerCase(), b = t2.toLowerCase();
   const n1 = soccer ? a : last(t1), n2 = soccer ? b : last(t2);       // clubs are searched by their full name, US teams by nickname
   const tags = [
-    `${n1} vs ${n2}`, `${n1} vs ${n2} live`, `${n2} vs ${n1}`, `${a} vs ${b}`, a, b,
+    // vidIQ research, 22 Nov 2026: people search "<a> vs <b> live", "... live match today", "... live score"; "live scoreboard" and
+    // "play by play" have almost no searches, so the matchup phrases come first
+    `${n1} vs ${n2}`, `${n1} vs ${n2} live`, `${n1} vs ${n2} live score`, `${n1} vs ${n2} live match today`, `${n2} vs ${n1} live`, `${a} vs ${b}`, a, b,
     ...(soccer ? [`${a} live score`, `${b} live score`] : []),
     ...(lg ? [`${lg} live score`, `${short} live scoreboard`, `${lg} live today`, `${short} live`] : []),
     ...(soccer ? [lg === 'mls' ? 'soccer live score' : 'football live score'] : []),
