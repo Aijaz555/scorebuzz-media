@@ -26,11 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "nba",
-   "event": "401910027",
-   "note": "San Antonio Spurs vs New Orleans Pelicans, 2026-11-22T01:00:00Z"
-  },
   "2": {
    "league": "nba",
    "event": "401910028",
@@ -55,16 +50,6 @@
    "league": "nhl",
    "event": "401892767",
    "note": "San Jose Sharks vs Seattle Kraken, 2026-11-22T03:00:00Z"
-  },
-  "7": {
-   "league": "nba",
-   "event": "401910026",
-   "note": "Minnesota Timberwolves vs Memphis Grizzlies, 2026-11-22T01:00:00Z"
-  },
-  "9": {
-   "league": "nhl",
-   "event": "401892764",
-   "note": "Winnipeg Jets vs Vegas Golden Knights, 2026-11-22T00:00:00Z"
   }
  },
  "fit": {
