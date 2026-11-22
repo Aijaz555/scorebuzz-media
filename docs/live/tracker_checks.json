@@ -1,14 +1,4 @@
 {
- "761938": {
-  "slot": "17",
-  "league": "mls",
-  "game": "Miami v Charlotte",
-  "url": "https://scorebuzz.net/football/mls/miami-vs-charlotte-761938/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 49)",
-  "at": "2026-11-07T23:07:27+00:00"
- },
  "401856740": {
   "slot": "4",
   "league": "ncaaf",
@@ -2966,16 +2956,6 @@
   "reason": "ok (contrast 38)",
   "at": "2026-11-22T16:54:20+00:00"
  },
- "401874989": {
-  "slot": "10",
-  "league": "seriea",
-  "game": "Milan v Frosinone",
-  "url": "https://scorebuzz.net/football/serie-a/milan-vs-frosinone-401874989/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 36)",
-  "at": "2026-11-22T17:02:55+00:00"
- },
  "401878755": {
   "slot": "7",
   "league": "epl",
@@ -2995,5 +2975,25 @@
   "status": "ok",
   "reason": "ok (contrast 38)",
   "at": "2026-11-22T17:27:31+00:00"
+ },
+ "401882801": {
+  "slot": "9",
+  "league": "laliga",
+  "game": "Osasuna v M\u00e1laga",
+  "url": "https://scorebuzz.net/football/la-liga/osasuna-vs-m-laga-401882801/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-22T17:35:38+00:00"
+ },
+ "401874989": {
+  "slot": "10",
+  "league": "seriea",
+  "game": "Milan v Frosinone",
+  "url": "https://scorebuzz.net/football/serie-a/milan-vs-frosinone-401874989/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-22T17:35:41+00:00"
  }
 }
