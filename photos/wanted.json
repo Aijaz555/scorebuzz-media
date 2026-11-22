@@ -6,12 +6,6 @@
   "country": "England"
  },
  {
-  "slug": "san-mames",
-  "name": "San Mamés",
-  "city": "Bilbao",
-  "country": "Spain"
- },
- {
   "slug": "el-sardineros",
   "name": "El Sardineros",
   "city": "Santander",
@@ -42,10 +36,16 @@
   "country": "USA"
  },
  {
-  "slug": "spartan-stadium",
-  "name": "Spartan Stadium",
-  "city": "East Lansing",
-  "country": "USA"
+  "slug": "rams-park",
+  "name": "RAMS Park",
+  "city": "Istanbul",
+  "country": "Türkiye"
+ },
+ {
+  "slug": "narodny-futbalovy-stadion",
+  "name": "Národny Futbalovy Stadión",
+  "city": "Bratislava",
+  "country": "Slovakia"
  },
  {
   "slug": "mclane-stadium",
