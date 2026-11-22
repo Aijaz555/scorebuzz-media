@@ -43,6 +43,10 @@
   "venue": "Amon G. Carter Stadium",
   "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
  },
+ "anfield": {
+  "venue": "Anfield",
+  "credit": "Photo: FYI2023 / Wikimedia Commons, CC0"
+ },
  "arasen-stadion": {
   "venue": "Arasen Stadion",
   "credit": "Photo: GAD / Wikimedia Commons, CC BY-SA 4.0"
@@ -471,6 +475,10 @@
   "venue": "Madison Square Garden",
   "credit": "Photo: Ajay Suresh from New York, NY, USA / Wikimedia Commons, CC BY 2.0"
  },
+ "mclane-stadium": {
+  "venue": "McLane Stadium",
+  "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "memorial-stadium-bloomington-in": {
   "venue": "Memorial Stadium (Bloomington, IN)",
   "credit": "Photo: Tails Wx / Wikimedia Commons, CC BY-SA 4.0"
@@ -526,6 +534,10 @@
  "moda-center": {
   "venue": "Moda Center",
   "credit": "Photo: Oregon Department of Transportation / Wikimedia Commons, CC BY 2.0"
+ },
+ "narodny-futbalovy-stadion": {
+  "venue": "Národny Futbalovy Stadión",
+  "credit": "Photo: Vincenzo.togni / Wikimedia Commons, CC BY-SA 4.0"
  },
  "nationwide-arena": {
   "venue": "Nationwide Arena",
