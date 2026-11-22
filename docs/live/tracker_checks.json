@@ -1,61 +1,4 @@
 {
- "401856740": {
-  "slot": "4",
-  "league": "ncaaf",
-  "mode": "built-in",
-  "status": "ok",
-  "at": "2026-11-07T23:45:58+00:00"
- },
- "401909938": {
-  "slot": "5",
-  "league": "nba",
-  "game": "Pacers v Nuggets",
-  "url": "https://scorebuzz.net/basketball/nba/pacers-vs-nuggets-401909938/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-08T00:21:09+00:00"
- },
- "401892664": {
-  "slot": "7",
-  "league": "nhl",
-  "game": "Kraken v Rangers",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/kraken-vs-rangers-401892664/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 89)",
-  "at": "2026-11-08T00:21:12+00:00"
- },
- "401858291": {
-  "slot": "8",
-  "league": "ncaaf",
-  "game": "Notre Dame v Miami",
-  "url": "https://scorebuzz.net/american-football/college-football/notre-dame-vs-miami-401858291/",
-  "mode": "built-in (website tracker failed)",
-  "status": "switched",
-  "reason": "tracker card has no drawing",
-  "at": "2026-11-08T01:25:53+00:00"
- },
- "761947": {
-  "slot": "1",
-  "league": "mls",
-  "game": "San Diego v Kansas City",
-  "url": "https://scorebuzz.net/football/mls/san-diego-vs-kansas-city-761947/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-08T02:01:46+00:00"
- },
- "761948": {
-  "slot": "3",
-  "league": "mls",
-  "game": "Seattle v LAFC",
-  "url": "https://scorebuzz.net/football/mls/seattle-vs-lafc-761948/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-08T02:01:52+00:00"
- },
  "761943": {
   "slot": "11",
   "league": "mls",
@@ -2995,5 +2938,65 @@
   "status": "ok",
   "reason": "ok (contrast 37)",
   "at": "2026-11-22T17:35:41+00:00"
+ },
+ "401933731": {
+  "slot": "1",
+  "league": "mls",
+  "game": "Nashville v Cincinnati",
+  "url": "https://scorebuzz.net/football/mls/nashville-vs-cincinnati-401933731/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "no tracker card on the match page",
+  "at": "2026-11-22T22:20:25+00:00"
+ },
+ "401873075": {
+  "slot": "6",
+  "league": "nfl",
+  "game": "Broncos v Raiders",
+  "url": "https://scorebuzz.net/american-football/nfl/broncos-vs-raiders-401873075/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 43)",
+  "at": "2026-11-22T22:20:28+00:00"
+ },
+ "401910029": {
+  "slot": "7",
+  "league": "nba",
+  "game": "Hawks v Pistons",
+  "url": "https://scorebuzz.net/basketball/nba/hawks-vs-pistons-401910029/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-22T22:20:31+00:00"
+ },
+ "401892769": {
+  "slot": "8",
+  "league": "nhl",
+  "game": "Lightning v Sabres",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/lightning-vs-sabres-401892769/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 75)",
+  "at": "2026-11-22T22:20:34+00:00"
+ },
+ "401873069": {
+  "slot": "9",
+  "league": "nfl",
+  "game": "Giants v Jaguars",
+  "url": "https://scorebuzz.net/american-football/nfl/giants-vs-jaguars-401873069/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-22T22:20:37+00:00"
+ },
+ "401873074": {
+  "slot": "10",
+  "league": "nfl",
+  "game": "Chargers v Jets",
+  "url": "https://scorebuzz.net/american-football/nfl/chargers-vs-jets-401873074/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-22T22:20:40+00:00"
  }
 }
