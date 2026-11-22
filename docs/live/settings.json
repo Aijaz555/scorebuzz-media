@@ -27,9 +27,9 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "nfl",
-   "event": "401873072",
-   "note": "Detroit Lions vs Tampa Bay Buccaneers, 2026-11-22T18:00:00Z"
+   "league": "mls",
+   "event": "401933731",
+   "note": "Nashville SC vs FC Cincinnati, 2026-11-22T21:00:00Z"
   },
   "2": {
    "league": "laliga",
@@ -42,9 +42,9 @@
    "note": "Atalanta vs Internazionale, 2026-11-22T19:45:00Z"
   },
   "4": {
-   "league": "nfl",
-   "event": "401873076",
-   "note": "Philadelphia Eagles vs Pittsburgh Steelers, 2026-11-22T18:00:00Z"
+   "league": "mls",
+   "event": "401933730",
+   "note": "Chicago Fire FC vs Charlotte FC, 2026-11-22T23:30:00Z"
   },
   "5": {
    "league": "ligue1",
@@ -57,9 +57,9 @@
    "note": "Denver Broncos vs Las Vegas Raiders, 2026-11-22T21:25:00Z"
   },
   "7": {
-   "league": "nfl",
-   "event": "401873068",
-   "note": "Carolina Panthers vs Baltimore Ravens, 2026-11-22T18:00:00Z"
+   "league": "nba",
+   "event": "401910029",
+   "note": "Atlanta Hawks vs Detroit Pistons, 2026-11-22T20:30:00Z"
   },
   "8": {
    "league": "nhl",
