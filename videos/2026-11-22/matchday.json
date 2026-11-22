@@ -1280,5 +1280,1345 @@
       }
     ],
     "music": "Rocket"
+  },
+  {
+    "id": "seriea-20261122",
+    "sport": "football",
+    "league": "seriea",
+    "format": "video",
+    "title": "Serie A Table Updated Today 22 Nov 2026 | Serie A Results & Standings Matchweek 12 ⚽",
+    "description": "Serie A results from Sun 22 Nov (Matchweek 12), the updated Serie A table and the next fixtures. Lazio lead on 32 points after 12 games; the big result was Atalanta 4–4 Inter Milan. Next round starts Mon 23 Nov.\n\nSun 22 Nov scores: Juventus 4–0 Venezia, Bologna 1–1 Udinese, Sassuolo 0–2 Genoa, Milan 5–1 Frosinone, Atalanta 4–4 Inter Milan.\n\n0:00 Intro\n0:06 Sun 22 Nov results\n0:20 Every game\n1:15 Earlier in Matchweek 12\n1:27 Serie A table\n1:57 Title race & relegation\n2:13 Still to play · Matchweek 12\n\nSerie A live scores, table and fixtures: https://scorebuzz.net\n\n#SerieA #Football #serieatable #ScoreBuzz\n\nMusic: \"Raving Energy\" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0/)",
+    "tags": [
+      "serie a table",
+      "serie a table updated today",
+      "serie a standings",
+      "serie a results",
+      "serie a fixtures",
+      "serie a matchweek 12",
+      "serie a results today",
+      "Atalanta vs Inter Milan",
+      "Lazio serie a",
+      "scorebuzz"
+    ],
+    "tt": {
+      "league": "seriea",
+      "name": "Serie A",
+      "mw": 12,
+      "season": "2026/27",
+      "zones": {
+        "ucl": 4,
+        "rel": 3
+      },
+      "result": {
+        "home": "Atalanta",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
+        "hs": 4,
+        "away": "Inter Milan",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+        "as": 4,
+        "venue": "New Balance Arena"
+      },
+      "table": [
+        {
+          "rank": 1,
+          "team": "Lazio",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
+          "p": 12,
+          "gd": "+19",
+          "pts": 32
+        },
+        {
+          "rank": 2,
+          "team": "AS Roma",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+          "p": 12,
+          "gd": "+25",
+          "pts": 30
+        },
+        {
+          "rank": 3,
+          "team": "Inter Milan",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+          "p": 12,
+          "gd": "+15",
+          "pts": 29
+        },
+        {
+          "rank": 4,
+          "team": "Milan",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
+          "p": 12,
+          "gd": "+14",
+          "pts": 27
+        },
+        {
+          "rank": 5,
+          "team": "Como",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+          "p": 12,
+          "gd": "+10",
+          "pts": 26
+        },
+        {
+          "rank": 6,
+          "team": "Juventus",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png",
+          "p": 12,
+          "gd": "+7",
+          "pts": 21
+        },
+        {
+          "rank": 7,
+          "team": "Frosinone",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
+          "p": 12,
+          "gd": "+5",
+          "pts": 20
+        },
+        {
+          "rank": 8,
+          "team": "Napoli",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+          "p": 12,
+          "gd": "+5",
+          "pts": 18
+        },
+        {
+          "rank": 9,
+          "team": "Bologna",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
+          "p": 12,
+          "gd": "+2",
+          "pts": 18
+        },
+        {
+          "rank": 10,
+          "team": "Genoa",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
+          "p": 12,
+          "gd": "-3",
+          "pts": 16
+        },
+        {
+          "rank": 11,
+          "team": "Cagliari",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
+          "p": 12,
+          "gd": "-7",
+          "pts": 16
+        },
+        {
+          "rank": 12,
+          "team": "Atalanta",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
+          "p": 12,
+          "gd": "-3",
+          "pts": 15
+        },
+        {
+          "rank": 13,
+          "team": "Torino",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png",
+          "p": 12,
+          "gd": "-3",
+          "pts": 14
+        },
+        {
+          "rank": 14,
+          "team": "Lecce",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
+          "p": 12,
+          "gd": "-13",
+          "pts": 10
+        },
+        {
+          "rank": 15,
+          "team": "Fiorentina",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
+          "p": 11,
+          "gd": "-8",
+          "pts": 9
+        },
+        {
+          "rank": 16,
+          "team": "Parma",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
+          "p": 12,
+          "gd": "-12",
+          "pts": 8
+        },
+        {
+          "rank": 17,
+          "team": "Sassuolo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
+          "p": 12,
+          "gd": "-15",
+          "pts": 8
+        },
+        {
+          "rank": 18,
+          "team": "Monza",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png",
+          "p": 11,
+          "gd": "-8",
+          "pts": 7
+        },
+        {
+          "rank": 19,
+          "team": "Udinese",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
+          "p": 12,
+          "gd": "-13",
+          "pts": 6
+        },
+        {
+          "rank": 20,
+          "team": "Venezia",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
+          "p": 12,
+          "gd": "-17",
+          "pts": 6
+        }
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-23T19:45Z",
+          "home": "Monza",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png",
+          "away": "Fiorentina",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png"
+        }
+      ]
+    },
+    "thumb": {
+      "kicker": "Serie A · Matchweek 12",
+      "big": "32 PTS",
+      "hook": "Lazio *top*",
+      "sticker": "TABLE",
+      "emoji": "⚽"
+    },
+    "scenes": [
+      {
+        "type": "hook",
+        "dur": 6,
+        "kicker": "Serie A · Sun 22 Nov",
+        "title": "Table updated today",
+        "sub": "Lazio top on 32 points"
+      },
+      {
+        "type": "table",
+        "dur": 14,
+        "label": "Serie A · Sun 22 Nov results",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Juventus v Venezia",
+            4,
+            0
+          ],
+          [
+            "",
+            "Bologna v Udinese",
+            1,
+            1
+          ],
+          [
+            "",
+            "Sassuolo v Genoa",
+            0,
+            2
+          ],
+          [
+            "",
+            "Milan v Frosinone",
+            5,
+            1
+          ],
+          [
+            "",
+            "Atalanta v Inter Milan",
+            4,
+            4
+          ]
+        ]
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Serie A · Sun 22 Nov",
+        "home": "Juventus",
+        "homeAbbr": "JUV",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png",
+        "homeScore": 4,
+        "away": "Venezia",
+        "awayAbbr": "VEN",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "JUV: N. Woltemade 53' · T. Koopmeiners 59' · J. Cabal 65' · R. Kolo Muani 71' pen"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Serie A · Sun 22 Nov",
+        "home": "Bologna",
+        "homeAbbr": "BOL",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
+        "homeScore": 1,
+        "away": "Udinese",
+        "awayAbbr": "UDI",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "BOL: N. Zortea 43'  |  UDI: N. Zaniolo 67'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Serie A · Sun 22 Nov",
+        "home": "Sassuolo",
+        "homeAbbr": "SAS",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
+        "homeScore": 0,
+        "away": "Genoa",
+        "awayAbbr": "GEN",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
+        "awayScore": 2,
+        "status": "FULL TIME",
+        "note": "GEN: M. Osmajic 26', 38'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Serie A · Sun 22 Nov",
+        "home": "Milan",
+        "homeAbbr": "MIL",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
+        "homeScore": 5,
+        "away": "Frosinone",
+        "awayAbbr": "FRO",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "MIL: G. Calvani (og) 4' · G. Ramos 19' · A. Jashari 48' · A. Cissè 60' · C. Pulisic 68'  |  FRO: P. Masini 25'"
+      },
+      {
+        "type": "score",
+        "dur": 11,
+        "label": "Serie A · Sun 22 Nov",
+        "home": "Atalanta",
+        "homeAbbr": "ATA",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
+        "homeScore": 4,
+        "away": "Inter Milan",
+        "awayAbbr": "INT",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+        "awayScore": 4,
+        "status": "FULL TIME",
+        "note": "ATA: E. Elmas 35' · C. De Ketelaere 72', 80' · F. Kessié 90'+1' pen  |  INT: P. Esposito 16', 32', 52' · P. Sucic 76' pen"
+      },
+      {
+        "type": "table",
+        "dur": 12,
+        "label": "Serie A · earlier in Matchweek 12",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Como v Cagliari",
+            2,
+            0
+          ],
+          [
+            "",
+            "Lazio v Lecce",
+            3,
+            0
+          ],
+          [
+            "",
+            "Parma v AS Roma",
+            1,
+            5
+          ],
+          [
+            "",
+            "Napoli v Torino",
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Serie A table · after Matchweek 12",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            1,
+            "Lazio",
+            12,
+            10,
+            2,
+            0,
+            "+19",
+            32
+          ],
+          [
+            2,
+            "AS Roma",
+            12,
+            9,
+            3,
+            0,
+            "+25",
+            30
+          ],
+          [
+            3,
+            "Inter Milan",
+            12,
+            9,
+            2,
+            1,
+            "+15",
+            29
+          ],
+          [
+            4,
+            "Milan",
+            12,
+            8,
+            3,
+            1,
+            "+14",
+            27
+          ],
+          [
+            5,
+            "Como",
+            12,
+            8,
+            2,
+            2,
+            "+10",
+            26
+          ],
+          [
+            6,
+            "Juventus",
+            12,
+            6,
+            3,
+            3,
+            "+7",
+            21
+          ],
+          [
+            7,
+            "Frosinone",
+            12,
+            6,
+            2,
+            4,
+            "+5",
+            20
+          ],
+          [
+            8,
+            "Napoli",
+            12,
+            5,
+            3,
+            4,
+            "+5",
+            18
+          ],
+          [
+            9,
+            "Bologna",
+            12,
+            5,
+            3,
+            4,
+            "+2",
+            18
+          ],
+          [
+            10,
+            "Genoa",
+            12,
+            5,
+            1,
+            6,
+            "-3",
+            16
+          ]
+        ],
+        "highlight": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "note": "Top 4: Champions League places"
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Serie A table · after Matchweek 12 (11–20)",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            11,
+            "Cagliari",
+            12,
+            5,
+            1,
+            6,
+            "-7",
+            16
+          ],
+          [
+            12,
+            "Atalanta",
+            12,
+            4,
+            3,
+            5,
+            "-3",
+            15
+          ],
+          [
+            13,
+            "Torino",
+            12,
+            4,
+            2,
+            6,
+            "-3",
+            14
+          ],
+          [
+            14,
+            "Lecce",
+            12,
+            3,
+            1,
+            8,
+            "-13",
+            10
+          ],
+          [
+            15,
+            "Fiorentina",
+            11,
+            2,
+            3,
+            6,
+            "-8",
+            9
+          ],
+          [
+            16,
+            "Parma",
+            12,
+            2,
+            2,
+            8,
+            "-12",
+            8
+          ],
+          [
+            17,
+            "Sassuolo",
+            12,
+            2,
+            2,
+            8,
+            "-15",
+            8
+          ],
+          [
+            18,
+            "Monza",
+            11,
+            2,
+            1,
+            8,
+            "-8",
+            7
+          ],
+          [
+            19,
+            "Udinese",
+            12,
+            1,
+            3,
+            8,
+            "-13",
+            6
+          ],
+          [
+            20,
+            "Venezia",
+            12,
+            2,
+            0,
+            10,
+            "-17",
+            6
+          ]
+        ],
+        "danger": [
+          18,
+          19,
+          20
+        ],
+        "note": "Bottom 3: relegation zone"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Title race",
+        "title": "Lazio lead by 2 points",
+        "sub": "AS Roma are second on 30 points after 12 games"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Relegation zone",
+        "title": "Venezia bottom on 6 points",
+        "sub": "In the drop zone: Monza 7 · Udinese 6 · Venezia 6. Sassuolo are first above it on 8."
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Serie A · Still to play · Matchweek 12 (UK · ET)",
+        "rows": [
+          [
+            "Mon 23 Nov",
+            "Monza v Fiorentina",
+            "19:45 · 2:45 PM"
+          ]
+        ]
+      },
+      {
+        "type": "cta",
+        "dur": 6,
+        "title": "Who wins the Serie A this season?",
+        "sub": "Live scores, tables & fixtures every day"
+      }
+    ],
+    "music": "Raving Energy"
+  },
+  {
+    "id": "ligue1-20261122",
+    "sport": "football",
+    "league": "ligue1",
+    "format": "video",
+    "title": "Ligue 1 Table Updated Today 22 Nov 2026 | Ligue 1 Results & Standings Matchweek 11 ⚽",
+    "description": "Ligue 1 results from Sun 22 Nov (Matchweek 11), the updated Ligue 1 table and the next fixtures. PSG lead on 26 points after 11 games; the big result was Marseille 2–3 Le Mans. Next round starts Fri 27 Nov.\n\nSun 22 Nov scores: Paris FC 4–0 Angers, Lorient 1–1 Rennes, Marseille 2–3 Le Mans.\n\n0:00 Intro\n0:06 Sun 22 Nov results\n0:20 Every game\n1:02 Earlier in Matchweek 11\n1:14 Ligue 1 table\n1:44 Title race & relegation\n2:00 Matchweek 12 fixtures\n\nLigue 1 live scores, table and fixtures: https://scorebuzz.net\n\n#Ligue1 #Football #ligue1table #ScoreBuzz",
+    "tags": [
+      "ligue 1 table",
+      "ligue 1 table updated today",
+      "ligue 1 standings",
+      "ligue 1 results",
+      "ligue 1 fixtures",
+      "ligue 1 matchweek 11",
+      "ligue 1 results today",
+      "Marseille vs Le Mans",
+      "PSG ligue 1",
+      "scorebuzz"
+    ],
+    "tt": {
+      "league": "ligue1",
+      "name": "Ligue 1",
+      "mw": 11,
+      "season": "2026/27",
+      "zones": {
+        "ucl": 3,
+        "rel": 2
+      },
+      "result": {
+        "home": "Marseille",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+        "hs": 2,
+        "away": "Le Mans",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
+        "as": 3,
+        "venue": "Stade Vélodrome"
+      },
+      "table": [
+        {
+          "rank": 1,
+          "team": "PSG",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+          "p": 11,
+          "gd": "+13",
+          "pts": 26
+        },
+        {
+          "rank": 2,
+          "team": "Paris FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
+          "p": 11,
+          "gd": "+11",
+          "pts": 23
+        },
+        {
+          "rank": 3,
+          "team": "Lille",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+          "p": 11,
+          "gd": "+6",
+          "pts": 21
+        },
+        {
+          "rank": 4,
+          "team": "Lyon",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
+          "p": 11,
+          "gd": "+7",
+          "pts": 20
+        },
+        {
+          "rank": 5,
+          "team": "Marseille",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+          "p": 10,
+          "gd": "+8",
+          "pts": 18
+        },
+        {
+          "rank": 6,
+          "team": "Brest",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+          "p": 11,
+          "gd": "+7",
+          "pts": 18
+        },
+        {
+          "rank": 7,
+          "team": "Nice",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
+          "p": 11,
+          "gd": "+2",
+          "pts": 17
+        },
+        {
+          "rank": 8,
+          "team": "Monaco",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
+          "p": 11,
+          "gd": "+2",
+          "pts": 17
+        },
+        {
+          "rank": 9,
+          "team": "Rennes",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
+          "p": 11,
+          "gd": "0",
+          "pts": 17
+        },
+        {
+          "rank": 10,
+          "team": "Lorient",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+          "p": 11,
+          "gd": "+1",
+          "pts": 16
+        },
+        {
+          "rank": 11,
+          "team": "Lens",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+          "p": 11,
+          "gd": "+2",
+          "pts": 14
+        },
+        {
+          "rank": 12,
+          "team": "Toulouse",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
+          "p": 11,
+          "gd": "+1",
+          "pts": 14
+        },
+        {
+          "rank": 13,
+          "team": "Troyes",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
+          "p": 11,
+          "gd": "-8",
+          "pts": 11
+        },
+        {
+          "rank": 14,
+          "team": "Auxerre",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
+          "p": 11,
+          "gd": "-11",
+          "pts": 11
+        },
+        {
+          "rank": 15,
+          "team": "Strasbourg",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
+          "p": 11,
+          "gd": "-5",
+          "pts": 10
+        },
+        {
+          "rank": 16,
+          "team": "Le Mans",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
+          "p": 10,
+          "gd": "-7",
+          "pts": 8
+        },
+        {
+          "rank": 17,
+          "team": "Angers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
+          "p": 11,
+          "gd": "-14",
+          "pts": 8
+        },
+        {
+          "rank": 18,
+          "team": "Le Havre AC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
+          "p": 11,
+          "gd": "-15",
+          "pts": 2
+        }
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-27T19:45Z",
+          "home": "Brest",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+          "away": "Paris FC",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png"
+        },
+        {
+          "date": "2026-11-28T16:15Z",
+          "home": "Angers",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
+          "away": "Lens",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
+        },
+        {
+          "date": "2026-11-28T19:45Z",
+          "home": "Le Havre AC",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
+          "away": "Strasbourg",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png"
+        },
+        {
+          "date": "2026-11-28T19:45Z",
+          "home": "Le Mans",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
+          "away": "Lille",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
+        },
+        {
+          "date": "2026-11-28T19:45Z",
+          "home": "Nice",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
+          "away": "Troyes",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png"
+        },
+        {
+          "date": "2026-11-28T19:45Z",
+          "home": "PSG",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+          "away": "Lorient",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png"
+        },
+        {
+          "date": "2026-11-29T14:00Z",
+          "home": "Auxerre",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
+          "away": "Marseille",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png"
+        },
+        {
+          "date": "2026-11-29T16:15Z",
+          "home": "Toulouse",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
+          "away": "Rennes",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
+        },
+        {
+          "date": "2026-11-29T19:45Z",
+          "home": "Lyon",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
+          "away": "Monaco",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png"
+        }
+      ]
+    },
+    "thumb": {
+      "kicker": "Ligue 1 · Matchweek 11",
+      "big": "26 PTS",
+      "hook": "PSG *top*",
+      "sticker": "TABLE",
+      "emoji": "⚽"
+    },
+    "scenes": [
+      {
+        "type": "hook",
+        "dur": 6,
+        "kicker": "Ligue 1 · Sun 22 Nov",
+        "title": "Table updated today",
+        "sub": "PSG top on 26 points"
+      },
+      {
+        "type": "table",
+        "dur": 14,
+        "label": "Ligue 1 · Sun 22 Nov results",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Paris FC v Angers",
+            4,
+            0
+          ],
+          [
+            "",
+            "Lorient v Rennes",
+            1,
+            1
+          ],
+          [
+            "",
+            "Marseille v Le Mans",
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "Ligue 1 · Sun 22 Nov",
+        "home": "Paris FC",
+        "homeAbbr": "PAR",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
+        "homeScore": 4,
+        "away": "Angers",
+        "awayAbbr": "ANG",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "PAR: Z. Gueu 47' · L. Koleosho 55' · M. López 65' · D. Coppola 72'"
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "Ligue 1 · Sun 22 Nov",
+        "home": "Lorient",
+        "homeAbbr": "LOR",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+        "homeScore": 1,
+        "away": "Rennes",
+        "awayAbbr": "REN",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
+        "awayScore": 1,
+        "status": "FULL TIME",
+        "note": "LOR: M. Talbi 45'  |  REN: B. Dia 27'"
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "Ligue 1 · Sun 22 Nov",
+        "home": "Marseille",
+        "homeAbbr": "OLM",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+        "homeScore": 2,
+        "away": "Le Mans",
+        "awayAbbr": "MNS",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
+        "awayScore": 3,
+        "status": "FULL TIME",
+        "note": "OLM: A. Gouiri 33' · Igor Paixão 40'  |  MNS: L. Mafouta 70' · E. Colas 84' · J. Vercruysse 90'+5'"
+      },
+      {
+        "type": "table",
+        "dur": 12,
+        "label": "Ligue 1 · earlier in Matchweek 11",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Troyes v Le Havre AC",
+            3,
+            1
+          ],
+          [
+            "",
+            "Nice v PSG",
+            2,
+            3
+          ],
+          [
+            "",
+            "Monaco v Auxerre",
+            1,
+            1
+          ],
+          [
+            "",
+            "Lens v Toulouse",
+            1,
+            1
+          ],
+          [
+            "",
+            "Lille v Lyon",
+            0,
+            1
+          ],
+          [
+            "",
+            "Strasbourg v Brest",
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Ligue 1 table · after Matchweek 11",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            1,
+            "PSG",
+            11,
+            8,
+            2,
+            1,
+            "+13",
+            26
+          ],
+          [
+            2,
+            "Paris FC",
+            11,
+            7,
+            2,
+            2,
+            "+11",
+            23
+          ],
+          [
+            3,
+            "Lille",
+            11,
+            6,
+            3,
+            2,
+            "+6",
+            21
+          ],
+          [
+            4,
+            "Lyon",
+            11,
+            6,
+            2,
+            3,
+            "+7",
+            20
+          ],
+          [
+            5,
+            "Marseille",
+            10,
+            6,
+            0,
+            4,
+            "+8",
+            18
+          ],
+          [
+            6,
+            "Brest",
+            11,
+            5,
+            3,
+            3,
+            "+7",
+            18
+          ],
+          [
+            7,
+            "Nice",
+            11,
+            5,
+            2,
+            4,
+            "+2",
+            17
+          ],
+          [
+            8,
+            "Monaco",
+            11,
+            4,
+            5,
+            2,
+            "+2",
+            17
+          ],
+          [
+            9,
+            "Rennes",
+            11,
+            5,
+            2,
+            4,
+            "0",
+            17
+          ]
+        ],
+        "highlight": [
+          1,
+          2,
+          3
+        ],
+        "note": "Top 3: Champions League places"
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Ligue 1 table · after Matchweek 11 (10–18)",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            10,
+            "Lorient",
+            11,
+            4,
+            4,
+            3,
+            "+1",
+            16
+          ],
+          [
+            11,
+            "Lens",
+            11,
+            4,
+            2,
+            5,
+            "+2",
+            14
+          ],
+          [
+            12,
+            "Toulouse",
+            11,
+            3,
+            5,
+            3,
+            "+1",
+            14
+          ],
+          [
+            13,
+            "Troyes",
+            11,
+            3,
+            2,
+            6,
+            "-8",
+            11
+          ],
+          [
+            14,
+            "Auxerre",
+            11,
+            3,
+            2,
+            6,
+            "-11",
+            11
+          ],
+          [
+            15,
+            "Strasbourg",
+            11,
+            3,
+            1,
+            7,
+            "-5",
+            10
+          ],
+          [
+            16,
+            "Le Mans",
+            10,
+            1,
+            5,
+            4,
+            "-7",
+            8
+          ],
+          [
+            17,
+            "Angers",
+            11,
+            2,
+            2,
+            7,
+            "-14",
+            8
+          ],
+          [
+            18,
+            "Le Havre AC",
+            11,
+            0,
+            2,
+            9,
+            "-15",
+            2
+          ]
+        ],
+        "danger": [
+          17,
+          18
+        ],
+        "note": "Bottom 2: relegation zone"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Title race",
+        "title": "PSG lead by 3 points",
+        "sub": "Paris FC are second on 23 points after 11 games"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Relegation zone",
+        "title": "Le Havre AC bottom on 2 points",
+        "sub": "In the drop zone: Angers 8 · Le Havre AC 2. Le Mans are first above it on 8."
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Ligue 1 · Matchweek 12 fixtures (UK · ET)",
+        "rows": [
+          [
+            "Fri 27 Nov",
+            "Brest v Paris FC",
+            "19:45 · 2:45 PM"
+          ],
+          [
+            "Sat 28 Nov",
+            "Angers v Lens",
+            "16:15 · 11:15 AM"
+          ],
+          [
+            "Sat 28 Nov",
+            "Le Havre AC v Strasbourg",
+            "19:45 · 2:45 PM"
+          ],
+          [
+            "Sat 28 Nov",
+            "Le Mans v Lille",
+            "19:45 · 2:45 PM"
+          ],
+          [
+            "Sat 28 Nov",
+            "Nice v Troyes",
+            "19:45 · 2:45 PM"
+          ]
+        ]
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Ligue 1 · Matchweek 12 fixtures (UK · ET) cont.",
+        "rows": [
+          [
+            "Sat 28 Nov",
+            "PSG v Lorient",
+            "19:45 · 2:45 PM"
+          ],
+          [
+            "Sun 29 Nov",
+            "Auxerre v Marseille",
+            "14:00 · 9:00 AM"
+          ],
+          [
+            "Sun 29 Nov",
+            "Toulouse v Rennes",
+            "16:15 · 11:15 AM"
+          ],
+          [
+            "Sun 29 Nov",
+            "Lyon v Monaco",
+            "19:45 · 2:45 PM"
+          ]
+        ]
+      },
+      {
+        "type": "cta",
+        "dur": 6,
+        "title": "Who wins the Ligue 1 this season?",
+        "sub": "Live scores, tables & fixtures every day"
+      }
+    ]
   }
 ]
