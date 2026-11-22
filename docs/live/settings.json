@@ -25,23 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "2": {
-   "league": "nba",
-   "event": "401910028",
-   "note": "Sacramento Kings vs Boston Celtics, 2026-11-22T03:00:00Z"
-  },
-  "5": {
-   "league": "nhl",
-   "event": "401892766",
-   "note": "Vancouver Canucks vs Minnesota Wild, 2026-11-22T03:00:00Z"
-  },
-  "6": {
-   "league": "nhl",
-   "event": "401892767",
-   "note": "San Jose Sharks vs Seattle Kraken, 2026-11-22T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
