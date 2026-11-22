@@ -2975,5 +2975,15 @@
   "status": "ok",
   "reason": "ok (contrast 82)",
   "at": "2026-11-22T02:04:04+00:00"
+ },
+ "401892765": {
+  "slot": "4",
+  "league": "nhl",
+  "game": "Mammoth v Ducks",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/mammoth-vs-ducks-401892765/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 93)",
+  "at": "2026-11-22T02:12:13+00:00"
  }
 }
