@@ -48,8 +48,8 @@
   },
   "5": {
    "league": "nhl",
-   "event": "401892762",
-   "note": "Detroit Red Wings vs New York Islanders, 2026-11-22T00:00:00Z"
+   "event": "401892766",
+   "note": "Vancouver Canucks vs Minnesota Wild, 2026-11-22T03:00:00Z"
   },
   "6": {
    "league": "nhl",
@@ -57,9 +57,9 @@
    "note": "San Jose Sharks vs Seattle Kraken, 2026-11-22T03:00:00Z"
   },
   "7": {
-   "league": "nhl",
-   "event": "401892760",
-   "note": "Montreal Canadiens vs Philadelphia Flyers, 2026-11-22T00:00:00Z"
+   "league": "nba",
+   "event": "401910026",
+   "note": "Minnesota Timberwolves vs Memphis Grizzlies, 2026-11-22T01:00:00Z"
   },
   "8": {
    "league": "nhl",
