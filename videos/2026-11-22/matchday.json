@@ -2621,5 +2621,643 @@
       }
     ],
     "music": "Heroic Age"
+  },
+  {
+    "id": "laliga-20261122",
+    "sport": "football",
+    "league": "laliga",
+    "format": "video",
+    "title": "LaLiga Table Updated Today 22 Nov 2026 | LaLiga Results & Standings Matchweek 13 ⚽",
+    "description": "LaLiga results from Sun 22 Nov (Matchweek 13), the updated LaLiga table and the next fixtures. Barcelona lead on 36 points after 13 games; the big result was Barcelona 3–2 Villarreal. Next round starts Mon 23 Nov.\n\nSun 22 Nov scores: Barcelona 3–2 Villarreal, Racing 3–2 Real Sociedad, Osasuna 1–0 Málaga, Getafe 0–3 Atlético.\n\n0:00 Intro\n0:06 Sun 22 Nov results\n0:20 Every game\n1:16 Earlier in Matchweek 13\n1:28 LaLiga table\n1:58 Title race & relegation\n2:14 Still to play · Matchweek 13\n\nLaLiga live scores, table and fixtures: https://scorebuzz.net\n\n#LaLiga #Football #laligatable #ScoreBuzz\n\nMusic: \"Hard Boiled\" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0/)",
+    "tags": [
+      "laliga table",
+      "laliga table updated today",
+      "laliga standings",
+      "laliga results",
+      "laliga fixtures",
+      "laliga matchweek 13",
+      "laliga results today",
+      "Barcelona vs Villarreal",
+      "Barcelona laliga",
+      "scorebuzz"
+    ],
+    "tt": {
+      "league": "laliga",
+      "name": "LaLiga",
+      "mw": 13,
+      "season": "2026/27",
+      "zones": {
+        "ucl": 4,
+        "rel": 3
+      },
+      "result": {
+        "home": "Barcelona",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "hs": 3,
+        "away": "Villarreal",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+        "as": 2,
+        "venue": "Spotify Camp Nou"
+      },
+      "table": [
+        {
+          "rank": 1,
+          "team": "Barcelona",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+          "p": 13,
+          "gd": "+36",
+          "pts": 36
+        },
+        {
+          "rank": 2,
+          "team": "Real Madrid",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+          "p": 13,
+          "gd": "+22",
+          "pts": 33
+        },
+        {
+          "rank": 3,
+          "team": "Atlético",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+          "p": 12,
+          "gd": "+13",
+          "pts": 28
+        },
+        {
+          "rank": 4,
+          "team": "Betis",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+          "p": 13,
+          "gd": "+5",
+          "pts": 27
+        },
+        {
+          "rank": 5,
+          "team": "Real Sociedad",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+          "p": 13,
+          "gd": "0",
+          "pts": 22
+        },
+        {
+          "rank": 6,
+          "team": "Sevilla",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+          "p": 13,
+          "gd": "-2",
+          "pts": 19
+        },
+        {
+          "rank": 7,
+          "team": "Racing",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+          "p": 13,
+          "gd": "-12",
+          "pts": 17
+        },
+        {
+          "rank": 8,
+          "team": "Athletic",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+          "p": 12,
+          "gd": "+3",
+          "pts": 16
+        },
+        {
+          "rank": 9,
+          "team": "Alavés",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+          "p": 13,
+          "gd": "0",
+          "pts": 16
+        },
+        {
+          "rank": 10,
+          "team": "Villarreal",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+          "p": 13,
+          "gd": "+1",
+          "pts": 15
+        },
+        {
+          "rank": 11,
+          "team": "Espanyol",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+          "p": 13,
+          "gd": "0",
+          "pts": 15
+        },
+        {
+          "rank": 12,
+          "team": "Deportivo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+          "p": 13,
+          "gd": "-1",
+          "pts": 15
+        },
+        {
+          "rank": 13,
+          "team": "Osasuna",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
+          "p": 13,
+          "gd": "-10",
+          "pts": 15
+        },
+        {
+          "rank": 14,
+          "team": "Celta Vigo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
+          "p": 13,
+          "gd": "-1",
+          "pts": 13
+        },
+        {
+          "rank": 15,
+          "team": "Rayo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+          "p": 12,
+          "gd": "-7",
+          "pts": 12
+        },
+        {
+          "rank": 16,
+          "team": "Getafe",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
+          "p": 12,
+          "gd": "-10",
+          "pts": 12
+        },
+        {
+          "rank": 17,
+          "team": "Valencia",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
+          "p": 13,
+          "gd": "-11",
+          "pts": 12
+        },
+        {
+          "rank": 18,
+          "team": "Levante",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+          "p": 12,
+          "gd": "-5",
+          "pts": 11
+        },
+        {
+          "rank": 19,
+          "team": "Elche",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
+          "p": 12,
+          "gd": "-6",
+          "pts": 10
+        },
+        {
+          "rank": 20,
+          "team": "Málaga",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
+          "p": 13,
+          "gd": "-15",
+          "pts": 5
+        }
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-23T20:00Z",
+          "home": "Levante",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+          "away": "Elche",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+        }
+      ]
+    },
+    "thumb": {
+      "kicker": "LaLiga · Matchweek 13",
+      "big": "36 PTS",
+      "hook": "Barcelona *top*",
+      "sticker": "TABLE",
+      "emoji": "⚽"
+    },
+    "scenes": [
+      {
+        "type": "hook",
+        "dur": 6,
+        "kicker": "LaLiga · Sun 22 Nov",
+        "title": "Table updated today",
+        "sub": "Barcelona top on 36 points"
+      },
+      {
+        "type": "table",
+        "dur": 14,
+        "label": "LaLiga · Sun 22 Nov results",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Barcelona v Villarreal",
+            3,
+            2
+          ],
+          [
+            "",
+            "Racing v Real Sociedad",
+            3,
+            2
+          ],
+          [
+            "",
+            "Osasuna v Málaga",
+            1,
+            0
+          ],
+          [
+            "",
+            "Getafe v Atlético",
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "LaLiga · Sun 22 Nov",
+        "home": "Barcelona",
+        "homeAbbr": "BAR",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "homeScore": 3,
+        "away": "Villarreal",
+        "awayAbbr": "VIL",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+        "awayScore": 2,
+        "status": "FULL TIME",
+        "note": "BAR: G. Martín 57' · F. López 61' · P. Navarro (og) 67'  |  VIL: T. Buchanan 5' · T. Oluwaseyi 7'"
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "LaLiga · Sun 22 Nov",
+        "home": "Racing",
+        "homeAbbr": "RAC",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+        "homeScore": 3,
+        "away": "Real Sociedad",
+        "awayAbbr": "RSO",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+        "awayScore": 2,
+        "status": "FULL TIME",
+        "note": "RAC: Y. Zabiri 6', 8' · S. Canales 68' pen  |  RSO: M. Oyarzabal 45'+1' · G. Guedes 60'"
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "LaLiga · Sun 22 Nov",
+        "home": "Osasuna",
+        "homeAbbr": "OSA",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
+        "homeScore": 1,
+        "away": "Málaga",
+        "awayAbbr": "MCF",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "OSA: A. Budimir 20'"
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "LaLiga · Sun 22 Nov",
+        "home": "Getafe",
+        "homeAbbr": "GET",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
+        "homeScore": 0,
+        "away": "Atlético",
+        "awayAbbr": "ATM",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+        "awayScore": 3,
+        "status": "FULL TIME",
+        "note": "ATM: Á. Baena 10' · J. Cardoso 30' · A. Grimaldo 90'+2' pen"
+      },
+      {
+        "type": "table",
+        "dur": 12,
+        "label": "LaLiga · earlier in Matchweek 13",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Athletic v Espanyol",
+            0,
+            1
+          ],
+          [
+            "",
+            "Alavés v Deportivo",
+            3,
+            1
+          ],
+          [
+            "",
+            "Rayo v Valencia",
+            0,
+            1
+          ],
+          [
+            "",
+            "Sevilla v Betis",
+            1,
+            1
+          ],
+          [
+            "",
+            "Real Madrid v Celta Vigo",
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "LaLiga table · after Matchweek 13",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            1,
+            "Barcelona",
+            13,
+            12,
+            0,
+            1,
+            "+36",
+            36
+          ],
+          [
+            2,
+            "Real Madrid",
+            13,
+            11,
+            0,
+            2,
+            "+22",
+            33
+          ],
+          [
+            3,
+            "Atlético",
+            12,
+            9,
+            1,
+            2,
+            "+13",
+            28
+          ],
+          [
+            4,
+            "Betis",
+            13,
+            8,
+            3,
+            2,
+            "+5",
+            27
+          ],
+          [
+            5,
+            "Real Sociedad",
+            13,
+            7,
+            1,
+            5,
+            "0",
+            22
+          ],
+          [
+            6,
+            "Sevilla",
+            13,
+            5,
+            4,
+            4,
+            "-2",
+            19
+          ],
+          [
+            7,
+            "Racing",
+            13,
+            5,
+            2,
+            6,
+            "-12",
+            17
+          ],
+          [
+            8,
+            "Athletic",
+            12,
+            4,
+            4,
+            4,
+            "+3",
+            16
+          ],
+          [
+            9,
+            "Alavés",
+            13,
+            4,
+            4,
+            5,
+            "0",
+            16
+          ],
+          [
+            10,
+            "Villarreal",
+            13,
+            4,
+            3,
+            6,
+            "+1",
+            15
+          ]
+        ],
+        "highlight": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "note": "Top 4: Champions League places"
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "LaLiga table · after Matchweek 13 (11–20)",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            11,
+            "Espanyol",
+            13,
+            4,
+            3,
+            6,
+            "0",
+            15
+          ],
+          [
+            12,
+            "Deportivo",
+            13,
+            3,
+            6,
+            4,
+            "-1",
+            15
+          ],
+          [
+            13,
+            "Osasuna",
+            13,
+            4,
+            3,
+            6,
+            "-10",
+            15
+          ],
+          [
+            14,
+            "Celta Vigo",
+            13,
+            2,
+            7,
+            4,
+            "-1",
+            13
+          ],
+          [
+            15,
+            "Rayo",
+            12,
+            3,
+            3,
+            6,
+            "-7",
+            12
+          ],
+          [
+            16,
+            "Getafe",
+            12,
+            3,
+            3,
+            6,
+            "-10",
+            12
+          ],
+          [
+            17,
+            "Valencia",
+            13,
+            3,
+            3,
+            7,
+            "-11",
+            12
+          ],
+          [
+            18,
+            "Levante",
+            12,
+            2,
+            5,
+            5,
+            "-5",
+            11
+          ],
+          [
+            19,
+            "Elche",
+            12,
+            2,
+            4,
+            6,
+            "-6",
+            10
+          ],
+          [
+            20,
+            "Málaga",
+            13,
+            0,
+            5,
+            8,
+            "-15",
+            5
+          ]
+        ],
+        "danger": [
+          18,
+          19,
+          20
+        ],
+        "note": "Bottom 3: relegation zone"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Title race",
+        "title": "Barcelona lead by 3 points",
+        "sub": "Real Madrid are second on 33 points after 13 games"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Relegation zone",
+        "title": "Málaga bottom on 5 points",
+        "sub": "In the drop zone: Levante 11 · Elche 10 · Málaga 5. Valencia are first above it on 12."
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "LaLiga · Still to play · Matchweek 13 (UK · ET)",
+        "rows": [
+          [
+            "Mon 23 Nov",
+            "Levante v Elche",
+            "20:00 · 3:00 PM"
+          ]
+        ]
+      },
+      {
+        "type": "cta",
+        "dur": 6,
+        "title": "Who wins the LaLiga this season?",
+        "sub": "Live scores, tables & fixtures every day"
+      }
+    ],
+    "music": "Hard Boiled"
   }
 ]
