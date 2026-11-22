@@ -1,0 +1,875 @@
+[
+ {
+  "id": "s01-leeds-chelsea",
+  "sport": "football",
+  "league": "epl",
+  "bed": "anthem",
+  "venue": "Stamford Bridge",
+  "fb": "2026-11-22T13:10:00",
+  "yt": "2026-11-22T13:00:00",
+  "title": "Chelsea vs Leeds 1–4: First Leeds Win at Stamford Bridge in 27 Years 😮 #shorts",
+  "description": "Leeds United beat Chelsea 4–1 at Stamford Bridge in the Premier League on Saturday, their first league win there in 27 years. Emmanuel Emegha put Chelsea ahead, but Noah Okafor scored twice, Dominic Calvert-Lewin converted a penalty and Brenden Aaronson added a fourth in stoppage time.\n\nChelsea vs Leeds final score and Premier League table: https://scorebuzz.net\n\n#LUFC #Chelsea #PremierLeague",
+  "tags": [
+   "chelsea vs leeds",
+   "leeds vs chelsea",
+   "leeds united",
+   "chelsea",
+   "noah okafor",
+   "dominic calvert-lewin",
+   "xabi alonso",
+   "premier league results today",
+   "premier league scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Premier League · Saturday",
+    "title": "Leeds just won 4–1 at Chelsea",
+    "sub": "First league win there in 27 years"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Premier League",
+    "home": "Chelsea",
+    "homeAbbr": "CHE",
+    "homeScore": 1,
+    "away": "Leeds",
+    "awayAbbr": "LEE",
+    "awayScore": 4,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+    "note": "Stamford Bridge"
+   },
+   {
+    "type": "list",
+    "dur": 4.2,
+    "label": "The goals",
+    "title": "How it happened",
+    "rows": [
+     [
+      "25'",
+      "Emegha",
+      "CHE"
+     ],
+     [
+      "28'",
+      "Okafor",
+      "LEE"
+     ],
+     [
+      "53'",
+      "Calvert-Lewin (pen)",
+      "LEE"
+     ],
+     [
+      "58'",
+      "Okafor",
+      "LEE"
+     ],
+     [
+      "90+1'",
+      "Aaronson",
+      "LEE"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Leeds at Stamford Bridge",
+    "value": 27,
+    "unit": "years",
+    "text": "since their last Premier League win there"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is Xabi Alonso's Chelsea in trouble?",
+    "sub": "Follow ScoreBuzz for Premier League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League",
+   "big": "1–4",
+   "hook": "Leeds *stun* Chelsea",
+   "sticker": "UPSET",
+   "teams": [
+    "CHE",
+    "LEE"
+   ],
+   "emoji": "😮"
+  },
+  "fbtext": "😮 Leeds won 4–1 at Stamford Bridge, their first Premier League win there in 27 years.\n\nNoah Okafor scored twice, Calvert-Lewin hit a penalty and Aaronson added a fourth.\n\nIs Xabi Alonso's Chelsea in trouble? 👇\n\n#LUFC #Chelsea #PremierLeague #Reels",
+  "time": "2026-11-22T13:00:00"
+ },
+ {
+  "id": "s02-malen-four",
+  "sport": "football",
+  "league": "seriea",
+  "bed": "anthem",
+  "venue": "Ennio Tardini",
+  "fb": "2026-11-22T15:50:00",
+  "title": "Donyell Malen Scores 4 | Parma vs Roma 1–5 ⚽ #SerieA #shorts",
+  "description": "Donyell Malen scored four goals as AS Roma won 5–1 at Parma in Serie A on Saturday. Rodrigo Mora also scored; Nesta Elphege got Parma's goal. Roma are unbeaten after 12 games, two points behind leaders Lazio.\n\nParma vs Roma final score and Serie A table: https://scorebuzz.net\n\n#ASRoma #Malen #SerieA",
+  "tags": [
+   "donyell malen",
+   "parma vs roma",
+   "roma vs parma",
+   "as roma",
+   "serie a",
+   "serie a table",
+   "serie a results today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Serie A · Saturday",
+    "title": "Donyell Malen scored FOUR",
+    "sub": "Roma won 5–1 away"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Serie A",
+    "home": "Parma",
+    "homeAbbr": "PAR",
+    "homeScore": 1,
+    "away": "Roma",
+    "awayAbbr": "ROMA",
+    "awayScore": 5,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+    "note": "Malen 4 · Mora"
+   },
+   {
+    "type": "list",
+    "dur": 4.0,
+    "label": "Malen's goals",
+    "title": "39' · 68' · 77' · 90'",
+    "rows": [
+     [
+      "39'",
+      "Malen",
+      "1–0"
+     ],
+     [
+      "68'",
+      "Malen",
+      "2–1"
+     ],
+     [
+      "77'",
+      "Malen",
+      "4–1"
+     ],
+     [
+      "90'",
+      "Malen",
+      "5–1"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "dur": 4.2,
+    "label": "Serie A top 3 (Sun morning)",
+    "cols": [
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Lazio",
+      10,
+      2,
+      0,
+      32
+     ],
+     [
+      2,
+      "Roma",
+      9,
+      3,
+      0,
+      30
+     ],
+     [
+      3,
+      "Inter",
+      9,
+      1,
+      1,
+      28
+     ]
+    ],
+    "highlight": [
+     2
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Roma win the Scudetto?",
+    "sub": "Follow ScoreBuzz for Serie A scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Serie A",
+   "big": "4",
+   "hook": "Goals for *Malen*",
+   "sticker": "HAT-TRICK+",
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Donyell Malen scored four as Roma won 5–1 at Parma.\n\nRoma are still unbeaten after 12 games, two points behind leaders Lazio.\n\nCan Roma win the Scudetto? 👇\n\n#ASRoma #Malen #SerieA #Reels",
+  "time": "2026-11-22T15:50:00"
+ },
+ {
+  "id": "s04-liverpool-united",
+  "sport": "football",
+  "league": "epl",
+  "bed": "drama",
+  "venue": "Anfield",
+  "fb": "2026-11-22T19:40:00",
+  "yt": "2026-11-22T19:45:00",
+  "title": "Liverpool vs Man United Today: United Are 19th 😬 #PremierLeague #shorts",
+  "description": "Liverpool vs Manchester United kicks off at Anfield today at 16:30 GMT (11:30 AM ET) in the Premier League. Liverpool are fifth on 18 points; Man United are 19th on 8 points with one win from 10 games.\n\nLiverpool vs Man United live score and Premier League table: https://scorebuzz.net\n\n#LFC #MUFC #PremierLeague",
+  "tags": [
+   "liverpool vs manchester united",
+   "manchester united vs liverpool",
+   "liverpool vs man united",
+   "liverpool",
+   "manchester united",
+   "premier league table",
+   "premier league today",
+   "premier league predictions",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Premier League · Today",
+    "title": "Liverpool v Man United",
+    "sub": "16:30 GMT · 11:30 AM ET · Anfield"
+   },
+   {
+    "type": "table",
+    "dur": 4.2,
+    "label": "Where they stand",
+    "cols": [
+     "P",
+     "W",
+     "PTS"
+    ],
+    "rows": [
+     [
+      5,
+      "Liverpool",
+      10,
+      5,
+      18
+     ],
+     [
+      19,
+      "Man United",
+      10,
+      1,
+      8
+     ]
+    ],
+    "highlight": [
+     5
+    ],
+    "danger": [
+     19
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Man United this season",
+    "value": 1,
+    "unit": "win",
+    "text": "from 10 Premier League games"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Kick-off",
+    "title": "16:30 GMT · 11:30 AM ET",
+    "sub": "Liverpool at home, 10 points ahead of United"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Score prediction?",
+    "sub": "Follow ScoreBuzz for live Premier League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League · Today",
+   "big": "19th",
+   "hook": "United at *Anfield*",
+   "sticker": "TODAY",
+   "teams": [
+    "LIV",
+    "MUN"
+   ],
+   "emoji": "😬"
+  },
+  "fbtext": "⚽ Liverpool v Man United at Anfield today, 16:30 GMT / 11:30am ET.\n\nLiverpool are fifth on 18 points. United are 19th on 8, with one win from 10 games.\n\nScore prediction? 👇\n\n#LFC #MUFC #PremierLeague #Reels",
+  "time": "2026-11-22T19:45:00"
+ },
+ {
+  "id": "s05-nfl-week11",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "fb": "2026-11-22T21:40:00",
+  "yt": "2026-11-22T22:00:00",
+  "title": "NFL Week 11 Sunday: Every Game Today 🏈 #NFL #shorts",
+  "description": "Every NFL Week 11 Sunday game: Dolphins at Bills, Saints at Bears, Titans at Cowboys, Buccaneers at Lions, Cardinals at Chiefs, Steelers at Eagles and Ravens at Panthers at 1 PM ET; Jets at Chargers, Raiders at Broncos and Jaguars at Giants in the afternoon; and Vikings vs 49ers in Mexico City on Sunday Night Football.\n\nNFL scores today, live: https://scorebuzz.net\n\n#NFL #NFLSunday #SNF",
+  "tags": [
+   "nfl week 11",
+   "nfl games today",
+   "nfl scores today",
+   "nfl week 11 schedule",
+   "dolphins vs bills",
+   "steelers vs eagles",
+   "cardinals vs chiefs",
+   "vikings vs 49ers",
+   "sunday night football",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NFL · Week 11",
+    "title": "Every game today",
+    "sub": "11 games · records in brackets"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "1:00 PM ET",
+    "title": "Early window",
+    "rows": [
+     [
+      "Dolphins 1-8",
+      "at",
+      "Bills 8-1"
+     ],
+     [
+      "Saints 3-6",
+      "at",
+      "Bears 7-2"
+     ],
+     [
+      "Titans 1-8",
+      "at",
+      "Cowboys 4-6"
+     ],
+     [
+      "Bucs 3-6",
+      "at",
+      "Lions 7-2"
+     ],
+     [
+      "Cardinals 3-7",
+      "at",
+      "Chiefs 7-2"
+     ],
+     [
+      "Steelers 6-3",
+      "at",
+      "Eagles 2-7"
+     ],
+     [
+      "Ravens 4-6",
+      "at",
+      "Panthers 4-5"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "4:05 / 4:25 PM ET",
+    "title": "Late window + SNF",
+    "rows": [
+     [
+      "Jets 2-8",
+      "at",
+      "Chargers 1-8"
+     ],
+     [
+      "Raiders 4-6",
+      "at",
+      "Broncos 7-2"
+     ],
+     [
+      "Jaguars 7-2",
+      "at",
+      "Giants 5-3-1"
+     ],
+     [
+      "Vikings 7-2",
+      "v",
+      "49ers 8-1"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Sunday Night Football · 8:20 PM ET",
+    "title": "Vikings v 49ers in Mexico City",
+    "sub": "Estadio Banorte · NBC"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Which game are you watching?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL · Week 11",
+   "big": "11",
+   "hook": "Games *today*",
+   "sticker": "TODAY",
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 NFL Week 11 Sunday: 11 games, from Dolphins-Bills at 1pm ET to Vikings-49ers in Mexico City on Sunday Night Football.\n\nWhich game are you watching? 👇\n\n#NFL #NFLSunday #SNF #Reels",
+  "time": "2026-11-22T22:00:00"
+ },
+ {
+  "id": "s06-cfb-chaos-board",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "bed": "hype",
+  "fb": "2026-11-22T23:40:00",
+  "yt": "2026-11-22T15:15:00",
+  "title": "College Football Scores: Michigan Stuns UCLA, Nebraska Beats Ohio State 🏈 #shorts",
+  "description": "College football scores from Week 13 Saturday: Michigan beat No. 4 UCLA 18–16 in three overtimes, Washington beat Indiana 27–24 in overtime, Nebraska beat Ohio State 31–28 and Rutgers edged Penn State 25–24. BYU won 31–29 at Kansas in three overtimes and No. 1 Georgia beat South Carolina 34–6.\n\nCollege football scores today: https://scorebuzz.net\n\n#CFB #CollegeFootball #GoBlue",
+  "tags": [
+   "college football scores",
+   "college football scores today",
+   "michigan vs ucla",
+   "nebraska vs ohio state",
+   "washington vs indiana",
+   "rutgers vs penn state",
+   "georgia vs south carolina",
+   "byu vs kansas",
+   "cfb",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 18.0,
+    "kicker": "College Football · Saturday",
+    "title": "Upset Saturday",
+    "badge": "FINAL",
+    "rows": [
+     {
+      "home": "Michigan",
+      "homeAbbr": "MICH",
+      "hs": 18,
+      "away": "UCLA",
+      "awayAbbr": "UCLA",
+      "as": 16,
+      "note": "3OT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png"
+     },
+     {
+      "home": "Washington",
+      "homeAbbr": "WASH",
+      "hs": 27,
+      "away": "Indiana",
+      "awayAbbr": "IU",
+      "as": 24,
+      "note": "OT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png"
+     },
+     {
+      "home": "Nebraska",
+      "homeAbbr": "NEB",
+      "hs": 31,
+      "away": "Ohio State",
+      "awayAbbr": "OSU",
+      "as": 28,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png"
+     },
+     {
+      "home": "Penn State",
+      "homeAbbr": "PSU",
+      "hs": 24,
+      "away": "Rutgers",
+      "awayAbbr": "RUTG",
+      "as": 25,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png"
+     },
+     {
+      "home": "Kansas",
+      "homeAbbr": "KU",
+      "hs": 29,
+      "away": "BYU",
+      "awayAbbr": "BYU",
+      "as": 31,
+      "note": "3OT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png"
+     },
+     {
+      "home": "South Carolina",
+      "homeAbbr": "SC",
+      "hs": 6,
+      "away": "Georgia",
+      "awayAbbr": "UGA",
+      "as": 34,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
+     },
+     {
+      "home": "Texas",
+      "homeAbbr": "TEX",
+      "hs": 45,
+      "away": "Arkansas",
+      "awayAbbr": "ARK",
+      "as": 3,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png"
+     },
+     {
+      "home": "Notre Dame",
+      "homeAbbr": "ND",
+      "hs": 24,
+      "away": "SMU",
+      "awayAbbr": "SMU",
+      "as": 3,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png"
+     }
+    ],
+    "first": 1.0,
+    "step": 1.9
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Which upset was biggest?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "College Football",
+   "big": "18–16",
+   "hook": "UCLA's perfect run *over*",
+   "sticker": "UPSET",
+   "teams": [
+    "MICH",
+    "UCLA"
+   ],
+   "emoji": "😱"
+  },
+  "fbtext": "😱 What a Saturday in college football: Michigan beat No. 4 UCLA in 3OT, Washington beat Indiana in OT, Nebraska beat Ohio State and Rutgers stunned Penn State.\n\nWhich upset was the biggest? 👇\n\n#CFB #CollegeFootball #GoBlue #Reels",
+  "time": "2026-11-22T15:15:00"
+ },
+ {
+  "id": "s08-wemby-50",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "anthem",
+  "fb": "2026-11-23T06:00:00",
+  "yt": "2026-11-23T00:15:00",
+  "title": "Victor Wembanyama 50 Points, 19 Rebounds | Spurs vs Pelicans 🔥 #NBA #shorts",
+  "description": "Victor Wembanyama scored 50 points with 19 rebounds, five blocks and four steals as the San Antonio Spurs beat the New Orleans Pelicans 114–91 on Saturday. He had 32 points in the first half. The Spurs have won 14 of 15 and are 14–3, level with the Lakers at the top of the West.\n\nSpurs vs Pelicans final score and NBA scores: https://scorebuzz.net\n\n#Wembanyama #Spurs #NBA",
+  "tags": [
+   "victor wembanyama",
+   "wembanyama 50 points",
+   "spurs vs pelicans",
+   "pelicans vs spurs",
+   "san antonio spurs",
+   "wemby",
+   "nba scores today",
+   "nba standings",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Saturday",
+    "title": "Wemby: 50 and 19",
+    "sub": "32 of them in the first half"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "NBA",
+    "home": "Spurs",
+    "homeAbbr": "SA",
+    "homeScore": 114,
+    "away": "Pelicans",
+    "awayAbbr": "NO",
+    "awayScore": 91,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+    "note": "Wembanyama 50 · Castle 19"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Victor Wembanyama",
+    "value": 50,
+    "unit": "points",
+    "text": "19 rebounds · 5 blocks · 4 steals"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "First half only",
+    "value": 32,
+    "unit": "points",
+    "text": "30+ pts, 10+ reb, 3+ blk, 3+ stl by halftime"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Spurs",
+    "title": "Won 14 of 15",
+    "sub": "14-3, level with the Lakers atop the West"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is Wemby the MVP favourite?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA",
+   "big": "50",
+   "hook": "*Wemby* goes off",
+   "sticker": "50 PTS",
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Victor Wembanyama: 50 points, 19 rebounds, 5 blocks, 4 steals. 32 of the points came in the first half.\n\nThe Spurs beat the Pelicans 114–91 and have won 14 of 15.\n\nIs Wemby the MVP favourite? 👇\n\n#Wembanyama #Spurs #NBA #Reels",
+  "time": "2026-11-23T00:15:00"
+ },
+ {
+  "id": "s09-miami-columbus",
+  "sport": "football",
+  "league": "mls",
+  "bed": "drama",
+  "venue": "Nu Stadium",
+  "fb": "2026-11-23T03:40:00",
+  "title": "Inter Miami vs Columbus Crew 0–3: Messi on the Brink ⚽ #MLS #shorts",
+  "description": "The Columbus Crew beat Lionel Messi's Inter Miami 3–0 in Game 1 of their MLS Cup Playoffs first-round series. Gonzalo Tapia scored twice and Taha Habroune once; Miami played the second half with 10 men. Game 2 of the best-of-three is in Columbus on Friday.\n\nInter Miami vs Columbus Crew final score: https://scorebuzz.net\n\n#InterMiami #Messi #MLS",
+  "tags": [
+   "inter miami vs columbus crew",
+   "columbus crew vs inter miami",
+   "inter miami",
+   "messi",
+   "mls playoffs",
+   "mls cup playoffs",
+   "columbus crew",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "MLS Cup Playoffs · Game 1",
+    "title": "Messi's Miami lost 3–0 at home",
+    "sub": "One more loss and they're out"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Round One · Game 1",
+    "home": "Inter Miami",
+    "homeAbbr": "MIA",
+    "homeScore": 0,
+    "away": "Columbus",
+    "awayAbbr": "CLB",
+    "awayScore": 3,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+    "note": "Tapia 2 · Habroune"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Red card",
+    "title": "Miami down to 10 at 36'",
+    "sub": "Gonzalo Luján sent off for a second yellow"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Columbus",
+    "value": 6,
+    "unit": "straight wins",
+    "text": "to end the regular season, then this"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Best of three",
+    "title": "Game 2: Friday in Columbus",
+    "sub": "Miami must win twice"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Messi turn it around?",
+    "sub": "Follow ScoreBuzz for MLS scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "MLS Playoffs",
+   "big": "0–3",
+   "hook": "Messi on the *brink*",
+   "sticker": "UPSET",
+   "teams": [
+    "MIA",
+    "CLB"
+   ],
+   "emoji": "😳"
+  },
+  "fbtext": "😳 Columbus beat Messi's Inter Miami 3–0 in Miami in Game 1 of the MLS playoffs.\n\nGonzalo Tapia scored twice and Miami played the second half with 10 men. Game 2 is Friday in Columbus.\n\nCan Messi turn it around? 👇\n\n#InterMiami #Messi #MLS #Reels",
+  "time": "2026-11-23T03:40:00"
+ },
+ {
+  "id": "s10-herro-50",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "drama",
+  "fb": "2026-11-23T08:30:00",
+  "title": "Tyler Herro 50 Points in a Loss | Bucks vs 76ers 132–129 😮 #shorts",
+  "description": "Tyler Herro scored 50 points with 11 rebounds and 7 assists, but the Milwaukee Bucks lost 132–129 to the Philadelphia 76ers on Saturday. Joel Embiid had 26 points and 17 rebounds, and LeBron James scored 13 of his 21 points in the fourth quarter. The 76ers are 14–3 and lead the East; the Bucks are 1–16.\n\n76ers vs Bucks final score and NBA scores: https://scorebuzz.net\n\n#TylerHerro #Sixers #NBA",
+  "tags": [
+   "tyler herro",
+   "tyler herro 50 points",
+   "bucks vs 76ers",
+   "76ers vs bucks",
+   "joel embiid",
+   "lebron james",
+   "philadelphia 76ers",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Saturday",
+    "title": "Tyler Herro scored 50…",
+    "sub": "…and still lost"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "NBA",
+    "home": "76ers",
+    "homeAbbr": "PHI",
+    "homeScore": 132,
+    "away": "Bucks",
+    "awayAbbr": "MIL",
+    "awayScore": 129,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+    "note": "Embiid 26/17 · Herro 50"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Tyler Herro",
+    "value": 50,
+    "unit": "points",
+    "text": "11 rebounds · 7 assists"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Fourth quarter",
+    "title": "LeBron: 13 of his 21",
+    "sub": "Embiid 26 points, 17 rebounds, 9 assists"
+   },
+   {
+    "type": "table",
+    "dur": 3.6,
+    "label": "Records",
+    "cols": [
+     "W",
+     "L"
+    ],
+    "rows": [
+     [
+      1,
+      "76ers",
+      14,
+      3
+     ],
+     [
+      15,
+      "Bucks",
+      1,
+      16
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "danger": [
+     15
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Worst 50-point loss you've seen?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA",
+   "big": "50",
+   "hook": "And *still* lost",
+   "sticker": "WILD",
+   "teams": [
+    "MIL",
+    "PHI"
+   ],
+   "emoji": "😮"
+  },
+  "fbtext": "😮 Tyler Herro scored 50 and the Bucks still lost, 132–129 in Philadelphia.\n\nEmbiid had 26 and 17, and LeBron scored 13 of his 21 in the fourth. Milwaukee are 1-16.\n\nWorst 50-point loss you've seen? 👇\n\n#TylerHerro #Sixers #NBA #Reels",
+  "time": "2026-11-23T08:30:00"
+ }
+]
