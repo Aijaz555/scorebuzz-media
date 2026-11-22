@@ -176,7 +176,9 @@ async function games(extra) {
     if (cfg.onlyEvents && cfg.onlyEvents[g.league] && !cfg.onlyEvents[g.league].map(String).includes(String(g.id))) return false;
     if (g.state === 'in') return true;
     return g.state === 'pre' && new Date(g.start).getTime() - cfg.leadMinutes * MIN <= now + cfg.lookaheadMinutes * MIN;
-  }).sort((a, b) => (b.state === 'in') - (a.state === 'in') || favX(b) - favX(a) || pri(a) - pri(b) || fav(b) - fav(a) || (b.winPct ?? 0.5) - (a.winPct ?? 0.5) || a.start.localeCompare(b.start));
+  }).sort((a, b) => (a.league === 'nba') - (b.league === 'nba') || (b.state === 'in') - (a.state === 'in') || favX(b) - favX(a) || pri(a) - pri(b) || fav(b) - fav(a) || (b.winPct ?? 0.5) - (a.winPct ?? 0.5) || a.start.localeCompare(b.start));
+  // NBA always ranks after every other league, even when its games are already in progress (22 Nov 2026: an in-progress
+  // NBA game had pushed the 02:00 NHL Mammoth-Ducks out at the cap)
   // favourite NBA teams lead only within the NBA, never ahead of NHL (owner, 18 Nov 2026: never miss an NHL game; drop only NBA)
   // within a league, better teams (higher average win %) first, so the cap drops the lowest-ranked games (owner, 18 Nov 2026)
 
