@@ -2949,16 +2949,6 @@
   "reason": "no tracker card on the match page",
   "at": "2026-11-22T22:20:25+00:00"
  },
- "401873075": {
-  "slot": "6",
-  "league": "nfl",
-  "game": "Broncos v Raiders",
-  "url": "https://scorebuzz.net/american-football/nfl/broncos-vs-raiders-401873075/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-22T22:20:28+00:00"
- },
  "401910029": {
   "slot": "7",
   "league": "nba",
@@ -2969,6 +2959,16 @@
   "reason": "ok (contrast 65)",
   "at": "2026-11-22T22:20:31+00:00"
  },
+ "401873075": {
+  "slot": "6",
+  "league": "nfl",
+  "game": "Broncos v Raiders",
+  "url": "https://scorebuzz.net/american-football/nfl/broncos-vs-raiders-401873075/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 47)",
+  "at": "2026-11-22T22:55:51+00:00"
+ },
  "401892769": {
   "slot": "8",
   "league": "nhl",
@@ -2976,8 +2976,8 @@
   "url": "https://scorebuzz.net/ice-hockey/nhl/lightning-vs-sabres-401892769/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 75)",
-  "at": "2026-11-22T22:20:34+00:00"
+  "reason": "ok (contrast 89)",
+  "at": "2026-11-22T22:55:54+00:00"
  },
  "401873069": {
   "slot": "9",
@@ -2986,8 +2986,8 @@
   "url": "https://scorebuzz.net/american-football/nfl/giants-vs-jaguars-401873069/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-22T22:20:37+00:00"
+  "reason": "ok (contrast 42)",
+  "at": "2026-11-22T22:55:57+00:00"
  },
  "401873074": {
   "slot": "10",
@@ -2996,7 +2996,7 @@
   "url": "https://scorebuzz.net/american-football/nfl/chargers-vs-jets-401873074/",
   "mode": "website",
   "status": "ok",
-  "reason": "ok (contrast 41)",
-  "at": "2026-11-22T22:20:40+00:00"
+  "reason": "ok (contrast 44)",
+  "at": "2026-11-22T22:56:01+00:00"
  }
 }
