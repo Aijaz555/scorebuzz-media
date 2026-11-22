@@ -7,7 +7,7 @@
   "venue": "Stamford Bridge",
   "fb": "2026-11-22T13:10:00",
   "yt": "2026-11-22T13:00:00",
-  "title": "Chelsea vs Leeds 1–4: First Leeds Win at Stamford Bridge in 27 Years 😮 #shorts",
+  "title": "Chelsea vs Leeds 1–4: Leeds' First Win There in 27 Years 😮 #shorts",
   "description": "Leeds United beat Chelsea 4–1 at Stamford Bridge in the Premier League on Saturday, their first league win there in 27 years. Emmanuel Emegha put Chelsea ahead, but Noah Okafor scored twice, Dominic Calvert-Lewin converted a penalty and Brenden Aaronson added a fourth in stoppage time.\n\nChelsea vs Leeds final score and Premier League table: https://scorebuzz.net\n\n#LUFC #Chelsea #PremierLeague",
   "tags": [
    "chelsea vs leeds",
@@ -462,8 +462,8 @@
   "bed": "hype",
   "fb": "2026-11-22T23:40:00",
   "yt": "2026-11-22T15:15:00",
-  "title": "College Football Scores: Michigan Stuns UCLA, Nebraska Beats Ohio State 🏈 #shorts",
-  "description": "College football scores from Week 13 Saturday: Michigan beat No. 4 UCLA 18–16 in three overtimes, Washington beat Indiana 27–24 in overtime, Nebraska beat Ohio State 31–28 and Rutgers edged Penn State 25–24. BYU won 31–29 at Kansas in three overtimes and No. 1 Georgia beat South Carolina 34–6.\n\nCollege football scores today: https://scorebuzz.net\n\n#CFB #CollegeFootball #GoBlue",
+  "title": "College Football Scores: Michigan Stuns UCLA in 3OT 🏈 #shorts",
+  "description": "College football scores from Saturday: Michigan beat No. 4 UCLA 18–16 in three overtimes, Washington beat Indiana 27–24 in overtime, Nebraska beat Ohio State 31–28 and Rutgers edged Penn State 25–24. BYU won 31–29 at Kansas in three overtimes and No. 1 Georgia beat South Carolina 34–6.\n\nCollege football scores today: https://scorebuzz.net\n\n#CFB #CollegeFootball #GoBlue",
   "tags": [
    "college football scores",
    "college football scores today",
@@ -871,5 +871,216 @@
   },
   "fbtext": "😮 Tyler Herro scored 50 and the Bucks still lost, 132–129 in Philadelphia.\n\nEmbiid had 26 and 17, and LeBron scored 13 of his 21 in the fourth. Milwaukee are 1-16.\n\nWorst 50-point loss you've seen? 👇\n\n#TylerHerro #Sixers #NBA #Reels",
   "time": "2026-11-23T08:30:00"
+ },
+ {
+  "id": "s03-f1-vegas",
+  "sport": "racing",
+  "league": "f1",
+  "bed": "hype",
+  "fb": "2026-11-22T17:40:00",
+  "yt": "2026-11-22T17:30:00",
+  "time": "2026-11-22T17:30:00",
+  "title": "Las Vegas GP Results: Max Verstappen Wins From Pole 🏁 #F1 #shorts",
+  "description": "Max Verstappen won the 2026 Las Vegas Grand Prix from pole position. World champion Kimi Antonelli started sixth and finished second, with Lando Norris third and Oscar Piastri fourth. Both Ferraris started outside the top 10 after qualifying; Charles Leclerc finished sixth and Lewis Hamilton eighth.\n\nLas Vegas Grand Prix results and F1 standings: https://scorebuzz.net\n\n#F1 #LasVegasGP #Verstappen",
+  "tags": [
+   "las vegas grand prix",
+   "las vegas gp results",
+   "f1 results",
+   "max verstappen",
+   "kimi antonelli",
+   "lando norris",
+   "f1 2026",
+   "formula 1",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "F1 · Las Vegas Grand Prix",
+    "title": "Verstappen wins in Vegas",
+    "sub": "From pole, under the lights"
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "Race result",
+    "title": "Top 6",
+    "rows": [
+     [
+      "P1",
+      "Max Verstappen",
+      ""
+     ],
+     [
+      "P2",
+      "Kimi Antonelli",
+      ""
+     ],
+     [
+      "P3",
+      "Lando Norris",
+      ""
+     ],
+     [
+      "P4",
+      "Oscar Piastri",
+      ""
+     ],
+     [
+      "P5",
+      "Pierre Gasly",
+      ""
+     ],
+     [
+      "P6",
+      "Charles Leclerc",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Kimi Antonelli",
+    "value": 4,
+    "unit": "places gained",
+    "text": "Started 6th after a grid drop, finished 2nd"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Ferrari",
+    "title": "Leclerc 6th, Hamilton 8th",
+    "sub": "Both cars missed Q3 for the first time this season"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins in Qatar next week?",
+    "sub": "Follow ScoreBuzz for F1 results"
+   }
+  ],
+  "thumb": {
+   "kicker": "F1 · Las Vegas",
+   "big": "P1",
+   "hook": "*Max* wins Vegas",
+   "sticker": "WINNER",
+   "emoji": "🏁"
+  },
+  "fbtext": "🏁 Max Verstappen won the Las Vegas Grand Prix from pole.\n\nWorld champion Kimi Antonelli climbed from sixth to second, and Lando Norris was third.\n\nWho wins in Qatar next week? 👇\n\n#F1 #LasVegasGP #Verstappen #Reels"
+ },
+ {
+  "id": "s07-nba-saturday-board",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "fb": "2026-11-23T01:40:00",
+  "time": "2026-11-23T01:40:00",
+  "title": "NBA Scores Saturday: Wemby 50, Herro 50, Knicks Buzzer-Beater 🏀 #shorts",
+  "description": "Every NBA score from Saturday night: 76ers 132–129 Bucks, Knicks 97–96 Trail Blazers, Mavericks 110–100 Clippers, Timberwolves 104–95 Grizzlies, Spurs 114–91 Pelicans and Kings 97–96 Celtics.\n\nNBA scores today: https://scorebuzz.net\n\n#NBA #Wembanyama #Knicks",
+  "tags": [
+   "nba scores",
+   "nba scores today",
+   "nba results",
+   "spurs vs pelicans",
+   "knicks vs trail blazers",
+   "76ers vs bucks",
+   "kings vs celtics",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 14.2,
+    "kicker": "NBA · Saturday",
+    "title": "Every score",
+    "badge": "FINAL",
+    "rows": [
+     {
+      "home": "76ers",
+      "homeAbbr": "PHI",
+      "hs": 132,
+      "away": "Bucks",
+      "awayAbbr": "MIL",
+      "as": 129,
+      "note": "Herro 50 in loss",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
+     },
+     {
+      "home": "Knicks",
+      "homeAbbr": "NY",
+      "hs": 97,
+      "away": "Blazers",
+      "awayAbbr": "POR",
+      "as": 96,
+      "note": "Bridges at buzzer",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
+     },
+     {
+      "home": "Mavericks",
+      "homeAbbr": "DAL",
+      "hs": 110,
+      "away": "Clippers",
+      "awayAbbr": "LAC",
+      "as": 100,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png"
+     },
+     {
+      "home": "Wolves",
+      "homeAbbr": "MIN",
+      "hs": 104,
+      "away": "Grizzlies",
+      "awayAbbr": "MEM",
+      "as": 95,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
+     },
+     {
+      "home": "Spurs",
+      "homeAbbr": "SA",
+      "hs": 114,
+      "away": "Pelicans",
+      "awayAbbr": "NO",
+      "as": 91,
+      "note": "Wemby 50",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png"
+     },
+     {
+      "home": "Kings",
+      "homeAbbr": "SAC",
+      "hs": 97,
+      "away": "Celtics",
+      "awayAbbr": "BOS",
+      "as": 96,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+     }
+    ],
+    "first": 1.0,
+    "step": 1.9
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Best game of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA · Saturday",
+   "big": "6",
+   "hook": "Games, *two* 50-pointers",
+   "sticker": "FINAL",
+   "emoji": "🏀"
+  },
+  "fbtext": "🏀 Every NBA score from Saturday night: two 50-point games (Wembanyama and Herro), a Mikal Bridges buzzer-beater and the Kings edging the Celtics 97–96.\n\nBest game of the night? 👇\n\n#NBA #Wembanyama #Knicks #Reels"
  }
 ]
