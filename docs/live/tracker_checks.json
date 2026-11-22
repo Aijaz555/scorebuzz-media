@@ -1,14 +1,4 @@
 {
- "761937": {
-  "slot": "16",
-  "league": "mls",
-  "game": "Cincinnati v Nashville",
-  "url": "https://scorebuzz.net/football/mls/cincinnati-vs-nashville-761937/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 42)",
-  "at": "2026-11-07T23:07:24+00:00"
- },
  "761938": {
   "slot": "17",
   "league": "mls",
@@ -2995,5 +2985,15 @@
   "status": "ok",
   "reason": "ok (contrast 37)",
   "at": "2026-11-22T16:54:27+00:00"
+ },
+ "401874989": {
+  "slot": "10",
+  "league": "seriea",
+  "game": "Milan v Frosinone",
+  "url": "https://scorebuzz.net/football/serie-a/milan-vs-frosinone-401874989/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 36)",
+  "at": "2026-11-22T17:02:55+00:00"
  }
 }
