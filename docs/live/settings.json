@@ -27,14 +27,14 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "nhl",
-   "event": "401892759",
-   "note": "Toronto Maple Leafs vs Columbus Blue Jackets, 2026-11-22T00:00:00Z"
+   "league": "nba",
+   "event": "401910027",
+   "note": "San Antonio Spurs vs New Orleans Pelicans, 2026-11-22T01:00:00Z"
   },
   "2": {
-   "league": "nhl",
-   "event": "401892758",
-   "note": "Boston Bruins vs Washington Capitals, 2026-11-22T00:00:00Z"
+   "league": "nba",
+   "event": "401910028",
+   "note": "Sacramento Kings vs Boston Celtics, 2026-11-22T03:00:00Z"
   },
   "3": {
    "league": "nba",
@@ -61,20 +61,10 @@
    "event": "401910026",
    "note": "Minnesota Timberwolves vs Memphis Grizzlies, 2026-11-22T01:00:00Z"
   },
-  "8": {
-   "league": "nhl",
-   "event": "401892763",
-   "note": "St. Louis Blues vs New Jersey Devils, 2026-11-22T00:00:00Z"
-  },
   "9": {
    "league": "nhl",
    "event": "401892764",
    "note": "Winnipeg Jets vs Vegas Golden Knights, 2026-11-22T00:00:00Z"
-  },
-  "10": {
-   "league": "nhl",
-   "event": "401892761",
-   "note": "Ottawa Senators vs Los Angeles Kings, 2026-11-22T00:00:00Z"
   }
  },
  "fit": {
