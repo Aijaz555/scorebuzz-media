@@ -27,10 +27,9 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "mls",
-   "event": "401933731",
-   "note": "Nashville SC vs FC Cincinnati, 2026-11-22T21:00:00Z",
-   "sbtrk": 0
+   "league": "nfl",
+   "event": "401873077",
+   "note": "San Francisco 49ers vs Minnesota Vikings, 2026-11-23T01:20:00Z"
   },
   "2": {
    "league": "nhl",
