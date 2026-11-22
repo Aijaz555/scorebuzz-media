@@ -2966,26 +2966,6 @@
   "reason": "ok (contrast 38)",
   "at": "2026-11-22T16:54:20+00:00"
  },
- "401878755": {
-  "slot": "7",
-  "league": "epl",
-  "game": "Liverpool v Man Utd",
-  "url": "https://scorebuzz.net/football/english-premier-league/liverpool-vs-man-utd-401878755/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 38)",
-  "at": "2026-11-22T16:54:24+00:00"
- },
- "401876401": {
-  "slot": "8",
-  "league": "ligue1",
-  "game": "Lorient v Rennes",
-  "url": "https://scorebuzz.net/football/ligue-1/lorient-vs-rennes-401876401/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 37)",
-  "at": "2026-11-22T16:54:27+00:00"
- },
  "401874989": {
   "slot": "10",
   "league": "seriea",
@@ -2995,5 +2975,25 @@
   "status": "ok",
   "reason": "ok (contrast 36)",
   "at": "2026-11-22T17:02:55+00:00"
+ },
+ "401878755": {
+  "slot": "7",
+  "league": "epl",
+  "game": "Liverpool v Man Utd",
+  "url": "https://scorebuzz.net/football/english-premier-league/liverpool-vs-man-utd-401878755/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-22T17:27:28+00:00"
+ },
+ "401876401": {
+  "slot": "8",
+  "league": "ligue1",
+  "game": "Lorient v Rennes",
+  "url": "https://scorebuzz.net/football/ligue-1/lorient-vs-rennes-401876401/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-22T17:27:31+00:00"
  }
 }
