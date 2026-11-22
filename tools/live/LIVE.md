@@ -248,6 +248,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 22 Nov 2026 04:42 UTC: no planner actions (4 live, nothing left to schedule; Slot 3 cleared). Stream check: Slots 2, 5, 6 correct. End watch stopped Mammoth-Ducks (Slot 4) at 04:47 (~5 min after the run's first look); no other games ended by 05:30.
   - 22 Nov 2026 05:42 UTC: no planner actions (3 live, nothing left to schedule; Slot 4 cleared). Stream check: Slots 5, 6 correct. End watch stopped Kings-Celtics (Slot 2) at 05:48 (~5 min after the run's first look), Sharks-Kraken (Slot 6) at 05:58 and Canucks-Wild (Slot 5) at 06:08 (~12 min after the final); idle by 06:09.
   - 22 Nov 2026 06:42 UTC: no planner actions (0 live, nothing to schedule; Slots 2, 5, 6 cleared from settings). End watch idle.
+  - 22 Nov 2026 09:42 UTC: Juventus-Venezia (Slot 1) scheduled 11:00 (Serie A). Nothing live, no stream check. End watch idle.
   - 20 Nov 2026 06:46 UTC usage check: 265.2 h of 680 this week (39%), last 7 days 450.2 h, level ok (no streams live).
   - 18 Nov 2026 22:46 UTC usage check: 169.4 h of 680 this week (25%), last 7 days 448.7 h, level ok (finished broadcasts only; 0 live, 10 scheduled for 23:00-00:00).
   - 19 Nov 2026 00:30 UTC: 00:30 schedules for Slots 11-13 errored (UNKNOWN_ERROR) at 10 live; Slot 11 start refused ("User has too many live or scheduled broadcasts") → bump.js dropped Nets-Bulls (Slot 10, lowest-ranked NBA); Slots 11, 12, 13 then started (12 live/preparing).
