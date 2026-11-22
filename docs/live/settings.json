@@ -25,7 +25,13 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "seriea",
+   "event": "401875008",
+   "note": "Juventus vs Venezia, 2026-11-22T11:30:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
