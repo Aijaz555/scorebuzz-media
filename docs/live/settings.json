@@ -33,9 +33,9 @@
    "sbtrk": 0
   },
   "2": {
-   "league": "laliga",
-   "event": "401882803",
-   "note": "Getafe vs Atlético Madrid, 2026-11-22T20:00:00Z"
+   "league": "nhl",
+   "event": "401892771",
+   "note": "Dallas Stars vs Pittsburgh Penguins, 2026-11-23T00:00:00Z"
   },
   "3": {
    "league": "nba",
@@ -46,6 +46,11 @@
    "league": "mls",
    "event": "401933730",
    "note": "Chicago Fire FC vs Charlotte FC, 2026-11-22T23:30:00Z"
+  },
+  "5": {
+   "league": "nhl",
+   "event": "401892770",
+   "note": "St. Louis Blues vs Edmonton Oilers, 2026-11-23T00:00:00Z"
   },
   "6": {
    "league": "nfl",
