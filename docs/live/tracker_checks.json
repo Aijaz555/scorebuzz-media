@@ -1,24 +1,4 @@
 {
- "761941": {
-  "slot": "1",
-  "league": "mls",
-  "game": "Philadelphia v Toronto",
-  "url": "https://scorebuzz.net/football/mls/philadelphia-vs-toronto-761941/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-07T23:07:12+00:00"
- },
- "761935": {
-  "slot": "14",
-  "league": "mls",
-  "game": "Chicago v Columbus",
-  "url": "https://scorebuzz.net/football/mls/chicago-vs-columbus-761935/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-07T23:07:21+00:00"
- },
  "761937": {
   "slot": "16",
   "league": "mls",
@@ -2985,5 +2965,35 @@
   "status": "ok",
   "reason": "ok (contrast 93)",
   "at": "2026-11-22T02:12:13+00:00"
+ },
+ "401882800": {
+  "slot": "1",
+  "league": "laliga",
+  "game": "Racing v Real Sociedad",
+  "url": "https://scorebuzz.net/football/la-liga/racing-vs-real-sociedad-401882800/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-22T16:54:20+00:00"
+ },
+ "401878755": {
+  "slot": "7",
+  "league": "epl",
+  "game": "Liverpool v Man Utd",
+  "url": "https://scorebuzz.net/football/english-premier-league/liverpool-vs-man-utd-401878755/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 38)",
+  "at": "2026-11-22T16:54:24+00:00"
+ },
+ "401876401": {
+  "slot": "8",
+  "league": "ligue1",
+  "game": "Lorient v Rennes",
+  "url": "https://scorebuzz.net/football/ligue-1/lorient-vs-rennes-401876401/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-22T16:54:27+00:00"
  }
 }
