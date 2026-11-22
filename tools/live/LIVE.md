@@ -251,6 +251,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 22 Nov 2026 09:42 UTC: Juventus-Venezia (Slot 1) scheduled 11:00 (Serie A). Nothing live, no stream check. End watch idle.
   - 22 Nov 2026 11:42 UTC: Barcelona-Villarreal (Slot 2) scheduled 12:30 (LaLiga). Stream check: Slot 1 (Juventus-Venezia) correct. End watch: no games ended by 12:31.
   - 22 Nov 2026 12:42 UTC: Hull-Brighton, Bologna-Udinese, Sassuolo-Genoa, Paris FC-Angers (Slots 3-6) scheduled 13:30 (Slots 4, 6 LIVE; 3, 5 still PREPARING at 13:35). Stream check: Slots 1, 2 correct. End watch stopped Juventus-Venezia (Slot 1) at 13:34 (~12 min after the final).
+  - 22 Nov 2026 14:42 UTC: Lorient-Rennes (Slot 8, 15:45) and Liverpool-Man Utd (Slot 7, 16:00) scheduled. Stream check: Slots 2-6 correct. End watch stopped Barcelona-Villarreal (Slot 2) at 15:14 (~12 min after the final); no other games ended by 15:32.
   - 20 Nov 2026 06:46 UTC usage check: 265.2 h of 680 this week (39%), last 7 days 450.2 h, level ok (no streams live).
   - 18 Nov 2026 22:46 UTC usage check: 169.4 h of 680 this week (25%), last 7 days 448.7 h, level ok (finished broadcasts only; 0 live, 10 scheduled for 23:00-00:00).
   - 19 Nov 2026 00:30 UTC: 00:30 schedules for Slots 11-13 errored (UNKNOWN_ERROR) at 10 live; Slot 11 start refused ("User has too many live or scheduled broadcasts") → bump.js dropped Nets-Bulls (Slot 10, lowest-ranked NBA); Slots 11, 12, 13 then started (12 live/preparing).
