@@ -2312,5 +2312,198 @@
     }
    }
   }
+ },
+ "401882801": {
+  "at": "2026-11-22T17:19:21+00:00",
+  "teams": {
+   "Osasuna": {
+    "1": {
+     "id": "262395",
+     "name": "Sergio Herrera"
+    },
+    "19": {
+     "id": "416709",
+     "name": "Valentin Rosier"
+    },
+    "24": {
+     "id": "456519",
+     "name": "Alejandro Catena"
+    },
+    "22": {
+     "id": "509175",
+     "name": "Enzo Boyomo"
+    },
+    "15": {
+     "id": "238788",
+     "name": "Diego Rico"
+    },
+    "7": {
+     "id": "523935",
+     "name": "Jon Moncayola"
+    },
+    "16": {
+     "id": "187228",
+     "name": "Moi Gómez"
+    },
+    "14": {
+     "id": "260118",
+     "name": "Rubén García"
+    },
+    "10": {
+     "id": "612509",
+     "name": "Aimar Oroz"
+    },
+    "11": {
+     "id": "362651",
+     "name": "Kike Barja"
+    },
+    "17": {
+     "id": "36544",
+     "name": "Ante Budimir"
+    },
+    "31": {
+     "id": "1123434",
+     "name": "Rafa Fernandez"
+    },
+    "35": {
+     "id": "1123436",
+     "name": "Unai Santos"
+    },
+    "27": {
+     "id": "909778",
+     "name": "Iñigo Arguibide"
+    },
+    "29": {
+     "id": "857577",
+     "name": "Asier Osambela"
+    },
+    "5": {
+     "id": "549021",
+     "name": "Jorge Herrando"
+    },
+    "18": {
+     "id": "571791",
+     "name": "Raúl Moro"
+    },
+    "6": {
+     "id": "212612",
+     "name": "Lucas Torró"
+    },
+    "26": {
+     "id": "917793",
+     "name": "Mauro Echegoyen"
+    },
+    "8": {
+     "id": "645588",
+     "name": "Iker Muñoz"
+    },
+    "21": {
+     "id": "630001",
+     "name": "Jonathan Dubasin"
+    },
+    "20": {
+     "id": "328270",
+     "name": "Romain Del Castillo"
+    },
+    "9": {
+     "id": "610212",
+     "name": "Raúl García de Haro"
+    }
+   },
+   "Malaga": {
+    "1": {
+     "id": "160233",
+     "name": "Alfonso Herrero"
+    },
+    "16": {
+     "id": "639984",
+     "name": "Diego Murillo"
+    },
+    "5": {
+     "id": "555756",
+     "name": "Álex Pastor"
+    },
+    "15": {
+     "id": "712111",
+     "name": "Ángel Recio"
+    },
+    "10": {
+     "id": "631587",
+     "name": "David Larrubia"
+    },
+    "14": {
+     "id": "782319",
+     "name": "Rafa Rodríguez"
+    },
+    "18": {
+     "id": "538522",
+     "name": "Pablo Martínez"
+    },
+    "11": {
+     "id": "460271",
+     "name": "Joaquín Muñoz"
+    },
+    "12": {
+     "id": "635832",
+     "name": "Jose Salinas"
+    },
+    "8": {
+     "id": "633011",
+     "name": "Carlos Dotor"
+    },
+    "21": {
+     "id": "864496",
+     "name": "Adrián Niño"
+    },
+    "13": {
+     "id": "800788",
+     "name": "Carlos Lopez"
+    },
+    "3": {
+     "id": "629101",
+     "name": "Carlos Puga"
+    },
+    "4": {
+     "id": "297151",
+     "name": "Einar Galilea"
+    },
+    "26": {
+     "id": "1236165",
+     "name": "Oscar Gonzalez"
+    },
+    "25": {
+     "id": "460188",
+     "name": "Juan Berrocal"
+    },
+    "22": {
+     "id": "787327",
+     "name": "Dani Lorenzo"
+    },
+    "23": {
+     "id": "877154",
+     "name": "Izan Merino"
+    },
+    "6": {
+     "id": "551571",
+     "name": "Ramón Enríquez"
+    },
+    "2": {
+     "id": "466396",
+     "name": "Jens-Lys Cajuste"
+    },
+    "19": {
+     "id": "551135",
+     "name": "Juan Cruz"
+    },
+    "9": {
+     "id": "850008",
+     "name": "Chupete"
+    },
+    "17": {
+     "id": "414875",
+     "name": "Eneko Jauregi"
+    }
+   }
+  }
  }
 }
