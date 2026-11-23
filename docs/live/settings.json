@@ -25,34 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "1": {
-   "league": "nfl",
-   "event": "401873077",
-   "note": "San Francisco 49ers vs Minnesota Vikings, 2026-11-23T01:20:00Z"
-  },
-  "3": {
-   "league": "nba",
-   "event": "401910034",
-   "note": "New York Knicks vs Indiana Pacers, 2026-11-23T01:00:00Z"
-  },
-  "4": {
-   "league": "nba",
-   "event": "401910035",
-   "note": "Golden State Warriors vs Boston Celtics, 2026-11-23T01:30:00Z"
-  },
-  "7": {
-   "league": "nhl",
-   "event": "401892772",
-   "note": "Vancouver Canucks vs Chicago Blackhawks, 2026-11-23T01:00:00Z"
-  },
-  "10": {
-   "league": "mls",
-   "event": "401933729",
-   "note": "Vancouver Whitecaps vs Real Salt Lake, 2026-11-23T01:30:00Z",
-   "sbtrk": 0
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
