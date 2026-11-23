@@ -51,11 +51,6 @@
    "event": "401892770",
    "note": "St. Louis Blues vs Edmonton Oilers, 2026-11-23T00:00:00Z"
   },
-  "6": {
-   "league": "nba",
-   "event": "401910033",
-   "note": "Utah Jazz vs Dallas Mavericks, 2026-11-23T00:00:00Z"
-  },
   "7": {
    "league": "nhl",
    "event": "401892772",
@@ -65,11 +60,6 @@
    "league": "nba",
    "event": "401910032",
    "note": "Chicago Bulls vs Denver Nuggets, 2026-11-23T00:00:00Z"
-  },
-  "9": {
-   "league": "nba",
-   "event": "401910031",
-   "note": "Washington Wizards vs Orlando Magic, 2026-11-23T00:00:00Z"
   },
   "10": {
    "league": "mls",
