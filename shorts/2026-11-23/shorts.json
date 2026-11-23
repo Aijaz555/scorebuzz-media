@@ -1,0 +1,1151 @@
+[
+ {
+  "id": "s01-ev-ucl-comebacks",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "drama",
+  "evergreen": true,
+  "yt": "2026-11-23T13:45:00",
+  "fb": "2026-11-23T15:40:00",
+  "title": "Biggest Champions League Comebacks Ever 🤯 Barça 6–1 PSG #UCL #shorts",
+  "description": "The biggest comebacks in Champions League history: Barcelona overturned a 4–0 first-leg defeat to beat PSG 6–1 in 2017, Liverpool beat Barcelona 4–0 at Anfield in 2019 after losing 3–0, Bayern Munich beat Porto 6–1 after a 3–1 loss in 2015, and Barcelona beat AC Milan 4–0 in 2013. The Champions League returns this week.\n\nChampions League scores and fixtures: https://scorebuzz.net\n\n#ChampionsLeague #UCL #Barcelona",
+  "tags": [
+   "champions league comebacks",
+   "biggest comebacks in champions league history",
+   "barcelona 6-1 psg",
+   "liverpool 4-0 barcelona",
+   "la remontada",
+   "miracle of anfield",
+   "bayern 6-1 porto",
+   "champions league",
+   "ucl",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Champions League history",
+    "title": "They were 4–0 down… and still went through",
+    "sub": "The greatest comebacks ever"
+   },
+   {
+    "type": "list",
+    "dur": 5.2,
+    "label": "Second-leg comebacks",
+    "title": "Lost the 1st leg → won the 2nd",
+    "rows": [
+     [
+      "2012-13",
+      "Barça 4–0 Milan",
+      "after 0–2"
+     ],
+     [
+      "2014-15",
+      "Bayern 6–1 Porto",
+      "after 1–3"
+     ],
+     [
+      "2016-17",
+      "Barça 6–1 PSG",
+      "after 0–4"
+     ],
+     [
+      "2018-19",
+      "Liverpool 4–0 Barça",
+      "after 0–3"
+     ]
+    ],
+    "note": "Round of 16 · QF · R16 · Semi-final"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "La Remontada, 2017",
+    "value": 4,
+    "unit": "goals down",
+    "text": "Barcelona lost 4–0 in Paris, then won 6–1 at home"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Miracle of Anfield, 2019",
+    "title": "Liverpool 4–0 Barcelona",
+    "sub": "3–0 down after the first leg. Liverpool won the tie 4–3."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Greatest comeback ever?",
+    "sub": "Follow ScoreBuzz for Champions League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League",
+   "big": "6–1",
+   "hook": "The *greatest* comebacks",
+   "sticker": "HISTORY",
+   "emoji": "🤯"
+  },
+  "fbtext": "🤯 Barcelona were 4–0 down to PSG after the first leg… then won 6–1.\n\nLiverpool did it to Barça too: 3–0 down, 4–0 at Anfield. The Champions League is back this week.\n\nWhat's the greatest comeback you've ever seen? 👇\n\n#ChampionsLeague #UCL #Barcelona #Reels",
+  "time": "2026-11-23T13:45:00"
+ },
+ {
+  "id": "s02-liverpool-united",
+  "sport": "football",
+  "league": "epl",
+  "bed": "anthem",
+  "venue": "Anfield",
+  "yt": "2026-11-23T11:30:00",
+  "fb": "2026-11-23T12:52:00",
+  "title": "Liverpool vs Man United 4–0: Pochettino Debut Nightmare 😬 #PremierLeague #shorts",
+  "description": "Liverpool beat 10-man Manchester United 4–0 at Anfield in Mauricio Pochettino's first game as United manager. Leny Yoro was sent off after 8 minutes, Dominik Szoboszlai scored a free kick and Florian Wirtz, Rio Ngumoha and Víctor Muñoz also scored. United are 19th and nine Premier League games without a win.\n\nLiverpool vs Man United final score and Premier League table: https://scorebuzz.net\n\n#LFC #MUFC #PremierLeague",
+  "tags": [
+   "liverpool vs manchester united",
+   "manchester united vs liverpool",
+   "liverpool vs man united",
+   "pochettino",
+   "liverpool",
+   "manchester united",
+   "szoboszlai free kick",
+   "premier league results today",
+   "premier league table",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Premier League · Sunday",
+    "title": "Pochettino's first game: Liverpool 4–0",
+    "sub": "United down to 10 men after 8 minutes"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Premier League",
+    "home": "Liverpool",
+    "homeAbbr": "LIV",
+    "homeScore": 4,
+    "away": "Man United",
+    "awayAbbr": "MUN",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+    "note": "Anfield"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "How it happened",
+    "title": "13 nightmare minutes",
+    "rows": [
+     [
+      "8'",
+      "Yoro sent off",
+      "MUN"
+     ],
+     [
+      "10'",
+      "Szoboszlai (free kick)",
+      "1–0"
+     ],
+     [
+      "13'",
+      "Wirtz",
+      "2–0"
+     ],
+     [
+      "66'",
+      "Ngumoha",
+      "3–0"
+     ],
+     [
+      "82'",
+      "Muñoz",
+      "4–0"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Man United in the Premier League",
+    "value": 9,
+    "unit": "games",
+    "text": "without a win · 19th on 8 points"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Pochettino save United?",
+    "sub": "Follow ScoreBuzz for Premier League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League",
+   "big": "4–0",
+   "hook": "Poch's *nightmare* debut",
+   "sticker": "FINAL",
+   "teams": [
+    "LIV",
+    "MUN"
+   ],
+   "emoji": "😬"
+  },
+  "fbtext": "😬 Mauricio Pochettino's first game in charge: Liverpool 4, Man United 0.\n\nLeny Yoro was sent off after 8 minutes, Szoboszlai curled in a free kick and United are now nine league games without a win.\n\nCan Pochettino save United? 👇\n\n#LFC #MUFC #PremierLeague #Reels",
+  "time": "2026-11-23T11:30:00"
+ },
+ {
+  "id": "s03-ev-triple-doubles",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "drama",
+  "evergreen": true,
+  "yt": "2026-11-23T22:45:00",
+  "fb": "2026-11-24T05:40:00",
+  "title": "Most Triple-Doubles in NBA History: Jokic Is 7 Away 😮 #NBA #shorts",
+  "description": "Nikola Jokic had 37 points, 18 rebounds and 11 assists for the Denver Nuggets on Sunday, the 202nd triple-double of his career. Only Russell Westbrook (209) has more in NBA history. Oscar Robertson (181), Magic Johnson (138), LeBron James (125), Wilt Chamberlain (109) and Jason Kidd (107) complete the list, as of Nov. 23, 2026.\n\nNBA scores and stats: https://scorebuzz.net\n\n#Jokic #Nuggets #NBA",
+  "tags": [
+   "nikola jokic",
+   "most triple doubles in nba history",
+   "jokic triple double record",
+   "russell westbrook triple doubles",
+   "nba triple double leaders",
+   "denver nuggets",
+   "nuggets vs bulls",
+   "nba records",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NBA record watch",
+    "title": "Jokic is SEVEN away from history",
+    "sub": "Most triple-doubles ever"
+   },
+   {
+    "type": "list",
+    "dur": 5.6,
+    "label": "Career triple-doubles · as of Nov 23, 2026",
+    "title": "The all-time list",
+    "rows": [
+     [
+      "1",
+      "Russell Westbrook",
+      "209"
+     ],
+     [
+      "2",
+      "Nikola Jokic",
+      "202"
+     ],
+     [
+      "3",
+      "Oscar Robertson",
+      "181"
+     ],
+     [
+      "4",
+      "Magic Johnson",
+      "138"
+     ],
+     [
+      "5",
+      "LeBron James",
+      "125"
+     ],
+     [
+      "6",
+      "Wilt Chamberlain",
+      "109"
+     ],
+     [
+      "7",
+      "Jason Kidd",
+      "107"
+     ]
+    ],
+    "note": "Regular season, Basketball-Reference / ESPN"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "No. 202 came on Sunday in Chicago",
+    "value": 37,
+    "unit": "points",
+    "text": "plus 18 rebounds and 11 assists in a 151–145 OT win"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "The gap",
+    "title": "209 − 202 = 7",
+    "sub": "Jokic has passed Oscar Robertson and Magic Johnson already. Westbrook is next."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "When does Jokic break the record?",
+    "sub": "Follow ScoreBuzz for NBA records"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA record watch",
+   "big": "202",
+   "hook": "Jokic *chasing* history",
+   "sticker": "RECORD",
+   "emoji": "😮"
+  },
+  "fbtext": "😮 Nikola Jokic just got triple-double No. 202. Only Russell Westbrook (209) has more in NBA history.\n\nOscar Robertson (181) and Magic Johnson (138) are already behind him.\n\nWhen does Jokic break the record? 👇\n\n#Jokic #Nuggets #NBA #Reels",
+  "time": "2026-11-23T22:45:00"
+ },
+ {
+  "id": "s04-nfl-week11-board",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "yt": "2026-11-23T18:15:00",
+  "fb": "2026-11-23T21:16:00",
+  "title": "NFL Week 11 Scores: Every Sunday Result 🏈 #NFL #shorts",
+  "description": "Every NFL Week 11 Sunday score: Bills 26–9 Dolphins, Bears 21–13 Saints, Cowboys 51–30 Titans, Lions 31–21 Buccaneers, Chiefs 34–7 Cardinals, Eagles 19–16 Steelers, Panthers 35–33 Ravens, Jets 27–24 Chargers, Broncos 38–24 Raiders, Giants 23–18 Jaguars and 49ers 35–10 Vikings in Mexico City.\n\nNFL scores today: https://scorebuzz.net\n\n#NFL #NFLWeek11 #49ers",
+  "tags": [
+   "nfl scores",
+   "nfl week 11",
+   "nfl week 11 scores",
+   "nfl scores today",
+   "cowboys vs titans",
+   "eagles vs steelers",
+   "panthers vs ravens",
+   "49ers vs vikings",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 22.2,
+    "kicker": "NFL · Week 11 · Sunday",
+    "title": "Every score",
+    "badge": "FINAL",
+    "rows": [
+     {
+      "home": "Bills",
+      "homeAbbr": "BUF",
+      "hs": 26,
+      "away": "Dolphins",
+      "awayAbbr": "MIA",
+      "as": 9,
+      "note": "9-1",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+     },
+     {
+      "home": "Bears",
+      "homeAbbr": "CHI",
+      "hs": 21,
+      "away": "Saints",
+      "awayAbbr": "NO",
+      "as": 13,
+      "note": "8-2",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+     },
+     {
+      "home": "Cowboys",
+      "homeAbbr": "DAL",
+      "hs": 51,
+      "away": "Titans",
+      "awayAbbr": "TEN",
+      "as": 30,
+      "note": "Dak 5 TDs",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+     },
+     {
+      "home": "Lions",
+      "homeAbbr": "DET",
+      "hs": 31,
+      "away": "Buccaneers",
+      "awayAbbr": "TB",
+      "as": 21,
+      "note": "8-2",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+     },
+     {
+      "home": "Chiefs",
+      "homeAbbr": "KC",
+      "hs": 34,
+      "away": "Cardinals",
+      "awayAbbr": "ARI",
+      "as": 7,
+      "note": "8-2",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+     },
+     {
+      "home": "Eagles",
+      "homeAbbr": "PHI",
+      "hs": 19,
+      "away": "Steelers",
+      "awayAbbr": "PIT",
+      "as": 16,
+      "note": "skid over",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+     },
+     {
+      "home": "Panthers",
+      "homeAbbr": "CAR",
+      "hs": 35,
+      "away": "Ravens",
+      "awayAbbr": "BAL",
+      "as": 33,
+      "note": "BAL lose 6th",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+     },
+     {
+      "home": "Chargers",
+      "homeAbbr": "LAC",
+      "hs": 24,
+      "away": "Jets",
+      "awayAbbr": "NYJ",
+      "as": 27,
+      "note": "LAC 1-9",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+     },
+     {
+      "home": "Broncos",
+      "homeAbbr": "DEN",
+      "hs": 38,
+      "away": "Raiders",
+      "awayAbbr": "LV",
+      "as": 24,
+      "note": "8-2",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+     },
+     {
+      "home": "Giants",
+      "homeAbbr": "NYG",
+      "hs": 23,
+      "away": "Jaguars",
+      "awayAbbr": "JAX",
+      "as": 18,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+     },
+     {
+      "home": "49ers",
+      "homeAbbr": "SF",
+      "hs": 35,
+      "away": "Vikings",
+      "awayAbbr": "MIN",
+      "as": 10,
+      "note": "Mexico City",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+     }
+    ],
+    "first": 1.0,
+    "step": 1.8
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Most impressive win?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Week 11",
+   "big": "11",
+   "hook": "Games, *every* score",
+   "sticker": "FINAL",
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 Every NFL Week 11 Sunday score: Dallas put up 51, the Eagles ended their skid against the Steelers and the 49ers rolled in Mexico City.\n\nMost impressive win? 👇\n\n#NFL #NFLWeek11 #49ers #Reels",
+  "time": "2026-11-23T18:15:00"
+ },
+ {
+  "id": "s05-barca-villarreal",
+  "sport": "football",
+  "league": "laliga",
+  "bed": "anthem",
+  "venue": "Spotify Camp Nou",
+  "yt": "2026-11-23T16:00:00",
+  "fb": "2026-11-23T18:28:00",
+  "title": "Barcelona vs Villarreal 3–2: Barça Come Back From 2–0 Down 🔥 #LaLiga #shorts",
+  "description": "Barcelona came from 2–0 down to beat Villarreal 3–2 at the Camp Nou and go three points clear at the top of LaLiga. Tajon Buchanan and Tani Oluwaseyi scored early and Lamine Yamal hit the post with a penalty, before Gerard Martín, Fermín López and a Pau Navarro own goal turned it around in 11 minutes.\n\nBarcelona vs Villarreal final score and LaLiga table: https://scorebuzz.net\n\n#Barcelona #LaLiga #LamineYamal",
+  "tags": [
+   "barcelona vs villarreal",
+   "villarreal vs barcelona",
+   "barcelona",
+   "fc barcelona",
+   "lamine yamal",
+   "fermin lopez",
+   "laliga table",
+   "laliga results today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "LaLiga · Sunday",
+    "title": "2–0 down after 7 minutes…",
+    "sub": "…and Yamal hit the post from the spot"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "LaLiga",
+    "home": "Barcelona",
+    "homeAbbr": "BAR",
+    "homeScore": 3,
+    "away": "Villarreal",
+    "awayAbbr": "VIL",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+    "note": "Three goals in 11 minutes"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "How it happened",
+    "title": "The comeback",
+    "rows": [
+     [
+      "5'",
+      "Buchanan",
+      "0–1"
+     ],
+     [
+      "7'",
+      "Oluwaseyi",
+      "0–2"
+     ],
+     [
+      "57'",
+      "Gerard Martín",
+      "1–2"
+     ],
+     [
+      "61'",
+      "Fermín López",
+      "2–2"
+     ],
+     [
+      "67'",
+      "Navarro (OG)",
+      "3–2"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "dur": 4.0,
+    "label": "LaLiga top 3 · after 13 games",
+    "cols": [
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Barcelona",
+      12,
+      0,
+      1,
+      36
+     ],
+     [
+      2,
+      "Real Madrid",
+      11,
+      0,
+      2,
+      33
+     ],
+     [
+      3,
+      "Atlético",
+      10,
+      1,
+      2,
+      31
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can anyone stop Barça?",
+    "sub": "Follow ScoreBuzz for LaLiga scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "LaLiga",
+   "big": "3–2",
+   "hook": "Barça *comeback* from 2–0",
+   "sticker": "COMEBACK",
+   "teams": [
+    "BAR",
+    "VIL"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Barcelona were 2–0 down after 7 minutes and Lamine Yamal hit the post with a penalty.\n\nThen three goals in 11 minutes: Barça 3, Villarreal 2. They're three points clear at the top.\n\nCan anyone stop Barça? 👇\n\n#Barcelona #LaLiga #LamineYamal #Reels",
+  "time": "2026-11-23T16:00:00"
+ },
+ {
+  "id": "s06-atalanta-inter",
+  "sport": "football",
+  "league": "seriea",
+  "bed": "drama",
+  "fb": "2026-11-23T23:08:00",
+  "title": "Atalanta vs Inter 4–4: Pio Esposito Hat-Trick, Kessie Pen in 91st 😱 #SerieA #shorts",
+  "description": "Atalanta and Inter drew 4–4 in Serie A on Sunday night. Francesco Pio Esposito scored a hat-trick for Inter and Petar Sucic converted a penalty, but Charles De Ketelaere scored twice and Franck Kessie equalised from the spot in the 91st minute.\n\nAtalanta vs Inter final score and Serie A table: https://scorebuzz.net\n\n#Inter #Atalanta #SerieA",
+  "tags": [
+   "atalanta vs inter",
+   "inter vs atalanta",
+   "pio esposito",
+   "francesco pio esposito hat trick",
+   "inter milan",
+   "atalanta",
+   "serie a results today",
+   "serie a table",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Serie A · Sunday night",
+    "title": "EIGHT goals. Penalty in the 91st minute.",
+    "sub": "Atalanta 4–4 Inter"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Serie A",
+    "home": "Atalanta",
+    "homeAbbr": "ATA",
+    "homeScore": 4,
+    "away": "Inter",
+    "awayAbbr": "INT",
+    "awayScore": 4,
+    "status": "FULL TIME",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+    "note": "Pio Esposito hat-trick"
+   },
+   {
+    "type": "list",
+    "dur": 5.4,
+    "label": "Every goal",
+    "title": "Inter led 2–0, 3–1 and 4–2",
+    "rows": [
+     [
+      "16'",
+      "Pio Esposito",
+      "0–1"
+     ],
+     [
+      "32'",
+      "Pio Esposito",
+      "0–2"
+     ],
+     [
+      "35'",
+      "Elmas",
+      "1–2"
+     ],
+     [
+      "52'",
+      "Pio Esposito",
+      "1–3"
+     ],
+     [
+      "72'",
+      "De Ketelaere",
+      "2–3"
+     ],
+     [
+      "76'",
+      "Sucic (pen)",
+      "2–4"
+     ],
+     [
+      "80'",
+      "De Ketelaere",
+      "3–4"
+     ],
+     [
+      "90+1'",
+      "Kessie (pen)",
+      "4–4"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "dur": 4.0,
+    "label": "Serie A top 4",
+    "cols": [
+     "W",
+     "D",
+     "L",
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Lazio",
+      10,
+      2,
+      0,
+      32
+     ],
+     [
+      2,
+      "Roma",
+      9,
+      3,
+      0,
+      30
+     ],
+     [
+      3,
+      "Inter",
+      9,
+      2,
+      1,
+      29
+     ],
+     [
+      4,
+      "Milan",
+      8,
+      3,
+      1,
+      27
+     ]
+    ],
+    "highlight": [
+     3
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Game of the season in Serie A?",
+    "sub": "Follow ScoreBuzz for Serie A scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Serie A",
+   "big": "4–4",
+   "hook": "*Eight* goal thriller",
+   "sticker": "DRAMA",
+   "teams": [
+    "ATA",
+    "INT"
+   ],
+   "emoji": "😱"
+  },
+  "fbtext": "😱 Atalanta 4, Inter 4.\n\nFrancesco Pio Esposito scored a hat-trick and Inter led 4–2 with 14 minutes left… then De Ketelaere scored and Kessie equalised from the spot in the 91st minute.\n\nGame of the season in Serie A? 👇\n\n#Inter #Atalanta #SerieA #Reels",
+  "time": "2026-11-23T23:08:00"
+ },
+ {
+  "id": "s07-ev-nfl-thanksgiving",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "anthem",
+  "evergreen": true,
+  "venue": "Ford Field",
+  "yt": "2026-11-24T01:00:00",
+  "fb": "2026-11-24T03:48:00",
+  "title": "Why the Lions and Cowboys Always Play on Thanksgiving 🦃 #NFL #shorts",
+  "description": "The Detroit Lions have hosted on Thanksgiving since 1934, when they lost 19–16 to the Chicago Bears. The Dallas Cowboys joined as annual hosts in 1966 with a 26–14 win over the Cleveland Browns, and have hosted every year except 1975 and 1977. A third, prime-time game was added in 2006 and a Black Friday game in 2023. This Thursday it's Bears at Lions again, Eagles at Cowboys and Chiefs at Bills.\n\nNFL Thanksgiving schedule and scores: https://scorebuzz.net\n\n#NFL #Thanksgiving #Lions",
+  "tags": [
+   "nfl thanksgiving",
+   "why do the lions play on thanksgiving",
+   "why do the cowboys play on thanksgiving",
+   "thanksgiving football",
+   "bears vs lions",
+   "eagles vs cowboys",
+   "chiefs vs bills",
+   "nfl thanksgiving history",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NFL history",
+    "title": "Why do the Lions ALWAYS play on Thanksgiving?",
+    "sub": "It started in 1934"
+   },
+   {
+    "type": "list",
+    "dur": 5.6,
+    "label": "Thanksgiving football",
+    "title": "How the tradition grew",
+    "rows": [
+     [
+      "1934",
+      "Lions host the Bears",
+      "lost 19–16"
+     ],
+     [
+      "1966",
+      "Cowboys join as hosts",
+      "beat CLE 26–14"
+     ],
+     [
+      "1975 & 77",
+      "Only years Dallas didn’t host",
+      "St. Louis did"
+     ],
+     [
+      "2006",
+      "Night game added",
+      "3 games"
+     ],
+     [
+      "2023",
+      "Black Friday game",
+      "added"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Thanksgiving 1929 · Cardinals 40, Bears 6",
+    "value": 40,
+    "unit": "points",
+    "text": "Ernie Nevers scored ALL of them. The record still stands."
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "This Thursday",
+    "title": "Bears at Lions. Again.",
+    "sub": "Just like 1934. Then Eagles at Cowboys and Chiefs at Bills."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins Bears vs Lions?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Thanksgiving",
+   "big": "1934",
+   "hook": "Why the Lions *always* play",
+   "sticker": "HISTORY",
+   "emoji": "🦃"
+  },
+  "fbtext": "🦃 The Lions have hosted on Thanksgiving since 1934, when they lost 19–16 to the Bears. The Cowboys joined in 1966.\n\nThis Thursday? Bears at Lions. Again.\n\nWhat's your favourite Thanksgiving game ever? 👇\n\n#NFL #Thanksgiving #OnePride #Reels",
+  "time": "2026-11-24T01:00:00"
+ },
+ {
+  "id": "s08-49ers-vikings",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "venue": "Estadio Banorte",
+  "yt": "2026-11-23T20:30:00",
+  "fb": "2026-11-24T07:32:00",
+  "title": "49ers vs Vikings 35–10: Brock Purdy 3 TDs in Mexico City 🔥 #NFL #shorts",
+  "description": "Brock Purdy threw three first-half touchdown passes as the San Francisco 49ers beat the Minnesota Vikings 35–10 on Sunday Night Football in Mexico City. Purdy went 21 of 26 for 255 yards, Ji'Ayir Brown returned an interception for a touchdown and Christian McCaffrey capped a 98-yard drive. The 49ers are 9-1.\n\n49ers vs Vikings final score and NFL scores: https://scorebuzz.net\n\n#49ers #BrockPurdy #SNF",
+  "tags": [
+   "49ers vs vikings",
+   "vikings vs 49ers",
+   "brock purdy",
+   "san francisco 49ers",
+   "minnesota vikings",
+   "nfl mexico city",
+   "sunday night football",
+   "nfl week 11",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Sunday Night Football · Mexico City",
+    "title": "Purdy shredded the NFL’s best defense",
+    "sub": "3 TD passes in the first half"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "NFL · Week 11",
+    "home": "49ers",
+    "homeAbbr": "SF",
+    "homeScore": 35,
+    "away": "Vikings",
+    "awayAbbr": "MIN",
+    "awayScore": 10,
+    "status": "FINAL",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+    "note": "Mexico City"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Brock Purdy",
+    "value": 21,
+    "unit": "of 26",
+    "text": "255 yards · 3 TD · 146 passer rating"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Also",
+    "title": "Ji'Ayir Brown pick-six",
+    "sub": "And a 98-yard drive capped by Christian McCaffrey. San Francisco are 9-1."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Are the 49ers the best team in the NFL?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Sunday Night Football",
+   "big": "35–10",
+   "hook": "Purdy *rolls* in Mexico",
+   "sticker": "FINAL",
+   "teams": [
+    "SF",
+    "MIN"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 49ers 35, Vikings 10 in Mexico City.\n\nBrock Purdy went 21 of 26 with three first-half TDs against the league's stingiest defense. San Francisco are 9-1.\n\nAre the 49ers the best team in the NFL? 👇\n\n#49ers #BrockPurdy #SNF #Reels",
+  "time": "2026-11-23T20:30:00"
+ },
+ {
+  "id": "s09-nba-sunday-board",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "fb": "2026-11-24T01:00:00",
+  "title": "NBA Scores Sunday: Nuggets 151 in OT, Warriors by One 🏀 #shorts",
+  "description": "Every NBA score from Sunday: Hawks 107–97 Pistons, Heat 123–113 Thunder, Wizards 116–96 Magic, Nuggets 151–145 Bulls in overtime, Mavericks 116–114 Jazz, Knicks 113–106 Pacers and Warriors 88–87 Celtics.\n\nNBA scores today: https://scorebuzz.net\n\n#NBA #Nuggets #Heat",
+  "tags": [
+   "nba scores",
+   "nba scores today",
+   "nuggets vs bulls",
+   "warriors vs celtics",
+   "heat vs thunder",
+   "knicks vs pacers",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 15.7,
+    "kicker": "NBA · Sunday",
+    "title": "Every score",
+    "badge": "FINAL",
+    "rows": [
+     {
+      "home": "Hawks",
+      "homeAbbr": "ATL",
+      "hs": 107,
+      "away": "Pistons",
+      "awayAbbr": "DET",
+      "as": 97,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png"
+     },
+     {
+      "home": "Heat",
+      "homeAbbr": "MIA",
+      "hs": 123,
+      "away": "Thunder",
+      "awayAbbr": "OKC",
+      "as": 113,
+      "note": "7 straight",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+     },
+     {
+      "home": "Wizards",
+      "homeAbbr": "WSH",
+      "hs": 116,
+      "away": "Magic",
+      "awayAbbr": "ORL",
+      "as": 96,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
+     },
+     {
+      "home": "Bulls",
+      "homeAbbr": "CHI",
+      "hs": 145,
+      "away": "Nuggets",
+      "awayAbbr": "DEN",
+      "as": 151,
+      "note": "OT · Murray 45",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
+     },
+     {
+      "home": "Jazz",
+      "homeAbbr": "UTAH",
+      "hs": 114,
+      "away": "Mavericks",
+      "awayAbbr": "DAL",
+      "as": 116,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
+     },
+     {
+      "home": "Knicks",
+      "homeAbbr": "NY",
+      "hs": 113,
+      "away": "Pacers",
+      "awayAbbr": "IND",
+      "as": 106,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
+     },
+     {
+      "home": "Warriors",
+      "homeAbbr": "GS",
+      "hs": 88,
+      "away": "Celtics",
+      "awayAbbr": "BOS",
+      "as": 87,
+      "note": "by one",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+     }
+    ],
+    "first": 1.0,
+    "step": 1.9
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Best game of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA · Sunday",
+   "big": "151",
+   "hook": "Nuggets win *OT* shootout",
+   "sticker": "FINAL",
+   "emoji": "🏀"
+  },
+  "fbtext": "🏀 Every NBA score from Sunday: Denver scored 151 in overtime in Chicago, the Heat won a seventh straight and Golden State beat Boston by one.\n\nBest game of the night? 👇\n\n#NBA #Nuggets #Heat #Reels",
+  "time": "2026-11-24T01:00:00"
+ },
+ {
+  "id": "s10-blues-oilers",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "drama",
+  "venue": "Enterprise Center",
+  "fb": "2026-11-24T09:24:00",
+  "title": "Blues vs Oilers 5–4 SO: 3-Goal Comeback in the Last 10 Minutes 😱 #NHL #shorts",
+  "description": "The St. Louis Blues came back from 4–1 down in the final 10 minutes of regulation, a first in franchise history, and beat the Edmonton Oilers 5–4 in a shootout. Philip Broberg, Pavel Buchnevich and Jimmy Snuggerud scored within 5:11 of the third period. It was the Blues' fourth straight win.\n\nBlues vs Oilers final score and NHL scores: https://scorebuzz.net\n\n#stlblues #Oilers #NHL",
+  "tags": [
+   "blues vs oilers",
+   "oilers vs blues",
+   "st louis blues",
+   "edmonton oilers",
+   "jimmy snuggerud",
+   "nhl scores today",
+   "nhl comeback",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · Sunday",
+    "title": "Down 3 goals with 10 minutes left…",
+    "sub": "The Blues had never done this before"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "NHL",
+    "home": "Blues",
+    "homeAbbr": "STL",
+    "homeScore": 5,
+    "away": "Oilers",
+    "awayAbbr": "EDM",
+    "awayScore": 4,
+    "status": "FINAL / SO",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "note": "Enterprise Center"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Third-period comeback",
+    "value": 3,
+    "unit": "goals",
+    "text": "in 5:11: Broberg, Buchnevich, Snuggerud"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Shootout",
+    "title": "Neighbours & McTavish score",
+    "sub": "Joel Hofer stopped Draisaitl. Four straight wins and 26 goals for St. Louis."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best comeback of the NHL season?",
+    "sub": "Follow ScoreBuzz for NHL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL",
+   "big": "5–4",
+   "hook": "Blues *never* did this before",
+   "sticker": "COMEBACK",
+   "teams": [
+    "STL",
+    "EDM"
+   ],
+   "emoji": "😱"
+  },
+  "fbtext": "😱 The Blues were 4–1 down with 10 minutes left against McDavid's Oilers.\n\nThree goals in 5:11, then a shootout win: 5–4. St. Louis had never come back from three down that late before.\n\nBest comeback of the NHL season? 👇\n\n#stlblues #Oilers #NHL #Reels",
+  "time": "2026-11-24T09:24:00"
+ }
+]

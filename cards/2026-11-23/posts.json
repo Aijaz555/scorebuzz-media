@@ -1,0 +1,336 @@
+[
+ {
+  "id": "01-hull-brighton",
+  "time": "2026-11-23T11:00:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "score",
+  "label": "PREMIER LEAGUE · SUNDAY",
+  "home": "Hull City",
+  "homeScore": 2,
+  "away": "Brighton",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
+  "venue": "The MKM Stadium",
+  "headline": "Oli McBurnie scores twice in stoppage time",
+  "sub": "90+2' and 90+5'. Brighton (2nd) had Costinha sent off a minute from time. Hull up to 11th.",
+  "caption": "😱 Hull 2–0 Brighton.\n\nOli McBurnie scored in the 92nd AND 95th minute to beat the second-placed Seagulls, after Costinha was sent off a minute from time.\n\nBiggest shock of the weekend? 👇\n\n#HullCity #BHAFC #PremierLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "02-laliga-top4",
+  "time": "2026-11-23T11:56:00",
+  "sport": "football",
+  "league": "laliga",
+  "kind": "list",
+  "label": "LALIGA · TOP FOUR AFTER 13 GAMES",
+  "headline": "Barça three points clear again",
+  "rows": [
+   [
+    "1. Barcelona",
+    "12-0-1",
+    "36 pts"
+   ],
+   [
+    "2. Real Madrid",
+    "11-0-2",
+    "33 pts"
+   ],
+   [
+    "3. Atlético",
+    "10-1-2",
+    "31 pts"
+   ],
+   [
+    "4. Real Betis",
+    "8-3-2",
+    "27 pts"
+   ]
+  ],
+  "sub": "Barça came from 2–0 down to beat Villarreal 3–2. Atlético won 3–0 at Getafe.",
+  "caption": "🔵🔴 Barcelona are three points clear at the top of LaLiga again.\n\nThey came from 2–0 down to beat Villarreal 3–2, and Atlético won 3–0 at Getafe to stay two behind Real Madrid.\n\nWho wins LaLiga this season? 👇\n\n#LaLiga #Barcelona #RealMadrid",
+  "firstCommentText": ""
+ },
+ {
+  "id": "03-milan-frosinone",
+  "time": "2026-11-23T13:48:00",
+  "sport": "football",
+  "league": "seriea",
+  "kind": "score",
+  "label": "SERIE A · SUNDAY",
+  "home": "AC Milan",
+  "homeScore": 5,
+  "away": "Frosinone",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
+  "venue": "San Siro",
+  "headline": "Pulisic caps the rout as Milan go fourth",
+  "sub": "OG, Ramos, Jashari, Cissè, Pulisic. Five wins in six. Lazio 32, Roma 30, Inter 29, Milan 27.",
+  "caption": "🔴⚫ AC Milan 5–1 Frosinone.\n\nChristian Pulisic finished it off with a solo run and chip. Milan have won five of six and are up to fourth, five points behind Lazio.\n\nCan Milan win the Scudetto? 👇\n\n#ACMilan #Pulisic #SerieA",
+  "firstCommentText": ""
+ },
+ {
+  "id": "04-bremen-hamburg",
+  "time": "2026-11-23T14:44:00",
+  "sport": "football",
+  "league": "bundesliga",
+  "kind": "score",
+  "label": "BUNDESLIGA · NORTH DERBY",
+  "home": "Werder Bremen",
+  "homeScore": 4,
+  "away": "Hamburg",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
+  "venue": "Weserstadion",
+  "headline": "Bremen thrash Hamburg in the Nordderby",
+  "sub": "Friedl 55', Njinmah 66' & 70', Füllkrug 90+2'. Bremen up to sixth.",
+  "caption": "🟢 Werder Bremen 4–0 Hamburg.\n\nAll four goals came after half-time: Friedl, Justin Njinmah twice and a Niclas Füllkrug stoppage-time stunner. Bremen are up to sixth.\n\nBest derby result of the weekend? 👇\n\n#Werder #HSV #Bundesliga",
+  "firstCommentText": ""
+ },
+ {
+  "id": "05-marseille-lemans",
+  "time": "2026-11-23T16:36:00",
+  "sport": "football",
+  "league": "ligue1",
+  "kind": "score",
+  "label": "LIGUE 1 · SUNDAY NIGHT",
+  "home": "Marseille",
+  "homeScore": 2,
+  "away": "Le Mans",
+  "awayScore": 3,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
+  "venue": "Stade Vélodrome",
+  "headline": "Le Mans come back from 2–0 down at Marseille",
+  "sub": "Mafouta 70', Colas 84', Vercruysse 90+5' — after Le Mans had a penalty saved.",
+  "caption": "🤯 Marseille 2–3 Le Mans.\n\nMarseille led 2–0, Le Mans even had a penalty saved… then scored in the 70th, 84th and 95th minute to win at the Vélodrome.\n\nComeback of the weekend? 👇\n\n#OM #LeMans #Ligue1",
+  "firstCommentText": ""
+ },
+ {
+  "id": "06-brentford-everton",
+  "time": "2026-11-23T17:32:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "PREMIER LEAGUE · TONIGHT · 20:00 GMT / 3PM ET",
+  "venue": "Gtech Community Stadium",
+  "headline": "Brentford v Everton closes Matchweek 11",
+  "sub": "Everton are 7th on 16 points, Brentford 10th on 14. An Everton win lifts them above Bournemouth into 5th.",
+  "caption": "⚽ Monday night football: Brentford v Everton, 20:00 GMT / 3pm ET.\n\nEverton are 7th on 16 points and a win takes them up to 5th. Brentford are 10th on 14.\n\nScore prediction? 👇\n\n#BrentfordFC #EFC #PremierLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "07-ucl-tuesday",
+  "time": "2026-11-23T19:24:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · TOMORROW (GMT)",
+  "headline": "Arsenal v Dortmund: both lead their leagues",
+  "rows": [
+   [
+    "17:45",
+    "Galatasaray v Aston Villa",
+    "12:45 ET"
+   ],
+   [
+    "20:00",
+    "Arsenal v Dortmund",
+    "3PM ET"
+   ],
+   [
+    "20:00",
+    "Man City v Napoli",
+    "3PM ET"
+   ],
+   [
+    "20:00",
+    "Real Madrid v PSV",
+    "3PM ET"
+   ]
+  ],
+  "sub": "Arsenal top the Premier League on 28; Dortmund top the Bundesliga on 24.",
+  "caption": "⭐ Champions League is back tomorrow.\n\nArsenal v Dortmund is first v first: Arsenal lead the Premier League, Dortmund lead the Bundesliga. Man City host Napoli and Aston Villa go to Galatasaray.\n\nWhich game are you watching? 👇\n\n#UCL #Arsenal #BVB",
+  "firstCommentText": ""
+ },
+ {
+  "id": "08-steelers-philly",
+  "time": "2026-11-23T20:20:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · WEEK 11",
+  "home": "Eagles",
+  "homeScore": 19,
+  "away": "Steelers",
+  "awayScore": 16,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
+  "venue": "Lincoln Financial Field",
+  "headline": "Steelers still haven't won in Philly since 1965",
+  "sub": "12 straight losses there. The Eagles (3-7) snapped a seven-game skid; Saquon Barkley ran 38 yards for a TD.",
+  "caption": "🦅 Eagles 19, Steelers 16.\n\nPittsburgh's last win in Philadelphia was on Oct. 24, 1965. That's now 12 straight losses there. The Eagles also snapped a seven-game losing streak.\n\nWill the Steelers EVER win in Philly? 👇\n\n#Eagles #Steelers #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "09-cowboys-51",
+  "time": "2026-11-23T22:12:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · WEEK 11",
+  "home": "Cowboys",
+  "homeScore": 51,
+  "away": "Titans",
+  "awayScore": 30,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
+  "venue": "AT&T Stadium",
+  "headline": "Dak Prescott accounts for five TDs as Dallas hit 51",
+  "sub": "Four TD passes, one rushing. Touchdowns on the first six drives, a first for Dallas since at least 1993.",
+  "caption": "⭐ Cowboys 51, Titans 30.\n\nDak Prescott threw four touchdowns and ran for another, and Dallas scored TDs on their first six drives. CeeDee Lamb (132) and George Pickens (102) both topped 100 yards.\n\nAre the Cowboys (5-6) back in the playoff race? 👇\n\n#DallasCowboys #Prescott #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "10-panthers-ravens",
+  "time": "2026-11-24T00:04:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · WEEK 11",
+  "home": "Panthers",
+  "homeScore": 35,
+  "away": "Ravens",
+  "awayScore": 33,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+  "venue": "Bank of America Stadium",
+  "headline": "Ravens lose a sixth straight game",
+  "sub": "Chuba Hubbard 120 yards, 2 TDs. Carolina (5-5) lead the NFC South by two games, their first such lead since 2015.",
+  "caption": "🐾 Panthers 35, Ravens 33.\n\nChuba Hubbard ran for 120 yards and two scores, and Carolina now lead the NFC South by two games. Baltimore (4-7) have lost six in a row.\n\nAre the Ravens done? 👇\n\n#KeepPounding #Ravens #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "11-heat-thunder",
+  "time": "2026-11-24T01:56:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · SUNDAY",
+  "home": "Heat",
+  "homeScore": 123,
+  "away": "Thunder",
+  "awayScore": 113,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+  "venue": "Kaseya Center",
+  "headline": "Bam Adebayo triple-double, Heat win seven straight",
+  "sub": "24 pts, 15 reb, 12 ast. No Giannis for Miami, no Shai for OKC: their first missed games of the season.",
+  "caption": "🔥 Heat 123, Thunder 113.\n\nBam Adebayo had 24 points, 15 rebounds and 12 assists, and Miami have won seven straight. Both teams were missing their MVPs: no Giannis, no Shai.\n\nAre the Heat for real? 👇\n\n#HEATCulture #Adebayo #NBA",
+  "firstCommentText": ""
+ },
+ {
+  "id": "12-mnf-bengals",
+  "time": "2026-11-24T02:52:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "MONDAY NIGHT FOOTBALL · 8:15PM ET",
+  "venue": "Northwest Stadium",
+  "headline": "Bengals (7-2) at Commanders (3-5-1) tonight",
+  "sub": "The last game of NFL Week 11. Cincinnati can move to 8-2.",
+  "caption": "🏈 Monday Night Football: Bengals (7-2) at Commanders (3-5-1), 8:15pm ET.\n\nLast game of Week 11. A win puts Cincinnati at 8-2.\n\nWho wins tonight? 👇\n\n#Bengals #Commanders #MNF",
+  "firstCommentText": ""
+ },
+ {
+  "id": "13-nba-tonight",
+  "time": "2026-11-24T04:44:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA · TONIGHT (ET)",
+  "headline": "Three 14-3 teams play tonight",
+  "rows": [
+   [
+    "7:00",
+    "Blazers at 76ers",
+    "PHI 14–3"
+   ],
+   [
+    "7:30",
+    "Bucks at Raptors",
+    "MIL 1–16"
+   ],
+   [
+    "8:00",
+    "Cavaliers at Bulls",
+    "CLE 9–8"
+   ],
+   [
+    "10:00",
+    "Spurs at Kings",
+    "SA 14–3"
+   ],
+   [
+    "10:00",
+    "Jazz at Lakers",
+    "LAL 14–3"
+   ]
+  ],
+  "sub": "Philadelphia, San Antonio and the Lakers are all 14-3. Milwaukee are 1-16.",
+  "caption": "🏀 Monday night in the NBA: the 76ers, Spurs and Lakers are all 14-3 and all in action. The Bucks (1-16) are in Toronto.\n\nWhich 14-3 team is the best? 👇\n\n#NBA #Sixers #Spurs #Lakers",
+  "firstCommentText": ""
+ },
+ {
+  "id": "14-f1-qatar",
+  "time": "2026-11-24T06:36:00",
+  "sport": "racing",
+  "league": "f1",
+  "kind": "headline",
+  "label": "FORMULA 1 · 2026 RUN-IN",
+  "headline": "Two races left: Qatar this weekend, then Abu Dhabi",
+  "sub": "Max Verstappen won from pole in Las Vegas; champion Kimi Antonelli came from sixth to second.",
+  "caption": "🏁 Formula 1 heads to Qatar this weekend, then Abu Dhabi to finish the season.\n\nMax Verstappen won from pole in Las Vegas, and world champion Kimi Antonelli climbed from sixth to second.\n\nWho wins in Qatar? 👇\n\n#F1 #QatarGP #Verstappen",
+  "firstCommentText": ""
+ },
+ {
+  "id": "15-thanksgiving-slate",
+  "time": "2026-11-24T08:28:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "NFL · THANKSGIVING THURSDAY (ET)",
+  "headline": "A huge Thanksgiving triple-header",
+  "rows": [
+   [
+    "1:00",
+    "Bears (8-2) at Lions (8-2)",
+    "Ford Field"
+   ],
+   [
+    "4:30",
+    "Eagles (3-7) at Cowboys (5-6)",
+    "AT&T Stadium"
+   ],
+   [
+    "8:20",
+    "Chiefs (8-2) at Bills (9-1)",
+    "Highmark"
+   ]
+  ],
+  "sub": "Then Broncos at Steelers on Black Friday.",
+  "caption": "🦃 Thanksgiving football is set: Bears at Lions (both 8-2), Eagles at Cowboys and Chiefs at Bills at night. Then Broncos at Steelers on Black Friday.\n\nWhich game are you most excited for? 👇\n\n#NFL #Thanksgiving #OnePride",
+  "firstCommentText": ""
+ }
+]
