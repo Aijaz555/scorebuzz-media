@@ -27,19 +27,54 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "seriea",
-   "event": "401875009",
-   "note": "Monza vs Fiorentina, 2026-11-23T19:45:00Z"
+   "league": "nhl",
+   "event": "401892773",
+   "note": "New Jersey Devils vs Columbus Blue Jackets, 2026-11-24T00:00:00Z"
   },
   "2": {
-   "league": "epl",
-   "event": "401879237",
-   "note": "Brentford vs Everton, 2026-11-23T20:00:00Z"
+   "league": "nhl",
+   "event": "401892775",
+   "note": "Ottawa Senators vs Calgary Flames, 2026-11-24T00:30:00Z"
   },
   "3": {
-   "league": "laliga",
-   "event": "401882802",
-   "note": "Levante vs Elche, 2026-11-23T20:00:00Z"
+   "league": "nhl",
+   "event": "401892777",
+   "note": "Winnipeg Jets vs Utah Mammoth, 2026-11-24T00:30:00Z"
+  },
+  "4": {
+   "league": "nhl",
+   "event": "401892774",
+   "note": "Montreal Canadiens vs Los Angeles Kings, 2026-11-24T00:30:00Z"
+  },
+  "5": {
+   "league": "nhl",
+   "event": "401892776",
+   "note": "New York Islanders vs Toronto Maple Leafs, 2026-11-24T00:30:00Z"
+  },
+  "6": {
+   "league": "nba",
+   "event": "401910037",
+   "note": "Philadelphia 76ers vs Portland Trail Blazers, 2026-11-24T00:00:00Z"
+  },
+  "7": {
+   "league": "nba",
+   "event": "401910036",
+   "note": "Charlotte Hornets vs Memphis Grizzlies, 2026-11-24T00:00:00Z"
+  },
+  "8": {
+   "league": "nba",
+   "event": "401910040",
+   "note": "Minnesota Timberwolves vs Brooklyn Nets, 2026-11-24T00:30:00Z"
+  },
+  "9": {
+   "league": "nba",
+   "event": "401910038",
+   "note": "Indiana Pacers vs Oklahoma City Thunder, 2026-11-24T00:30:00Z"
+  },
+  "10": {
+   "league": "nba",
+   "event": "401910039",
+   "note": "Toronto Raptors vs Milwaukee Bucks, 2026-11-24T00:30:00Z"
   }
  },
  "fit": {
