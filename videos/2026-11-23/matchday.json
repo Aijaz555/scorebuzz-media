@@ -1,0 +1,716 @@
+[
+  {
+    "id": "seriea-20261123",
+    "sport": "football",
+    "league": "seriea",
+    "format": "video",
+    "title": "Serie A Table Updated Today 23 Nov 2026 | Serie A Results & Standings Matchweek 12 ⚽",
+    "description": "Serie A results from Mon 23 Nov (Matchweek 12), the updated Serie A table and the next fixtures. Lazio lead on 32 points after 12 games; the big result was Monza 3–0 Fiorentina. Next round starts Fri 27 Nov.\n\nMon 23 Nov scores: Monza 3–0 Fiorentina.\n\n0:00 Intro\n0:06 Mon 23 Nov results\n0:20 Every game\n0:34 Earlier in Matchweek 12\n0:46 Serie A table\n1:16 Title race & relegation\n1:32 Matchweek 13 fixtures\n\nSerie A live scores, table and fixtures: https://scorebuzz.net\n\n#SerieA #Football #serieatable #ScoreBuzz\n\nMusic: \"Gonna Start\" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0/)",
+    "tags": [
+      "serie a table",
+      "serie a table updated today",
+      "serie a standings",
+      "serie a results",
+      "serie a fixtures",
+      "serie a matchweek 12",
+      "serie a results today",
+      "Monza vs Fiorentina",
+      "Lazio serie a",
+      "scorebuzz"
+    ],
+    "tt": {
+      "league": "seriea",
+      "name": "Serie A",
+      "mw": 12,
+      "season": "2026/27",
+      "zones": {
+        "ucl": 4,
+        "rel": 3
+      },
+      "result": {
+        "home": "Monza",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png",
+        "hs": 3,
+        "away": "Fiorentina",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
+        "as": 0,
+        "venue": "U-Power Stadium"
+      },
+      "table": [
+        {
+          "rank": 1,
+          "team": "Lazio",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
+          "p": 12,
+          "gd": "+19",
+          "pts": 32
+        },
+        {
+          "rank": 2,
+          "team": "AS Roma",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+          "p": 12,
+          "gd": "+25",
+          "pts": 30
+        },
+        {
+          "rank": 3,
+          "team": "Inter Milan",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+          "p": 12,
+          "gd": "+15",
+          "pts": 29
+        },
+        {
+          "rank": 4,
+          "team": "Milan",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
+          "p": 12,
+          "gd": "+14",
+          "pts": 27
+        },
+        {
+          "rank": 5,
+          "team": "Como",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+          "p": 12,
+          "gd": "+10",
+          "pts": 26
+        },
+        {
+          "rank": 6,
+          "team": "Juventus",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png",
+          "p": 12,
+          "gd": "+7",
+          "pts": 21
+        },
+        {
+          "rank": 7,
+          "team": "Frosinone",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
+          "p": 12,
+          "gd": "+5",
+          "pts": 20
+        },
+        {
+          "rank": 8,
+          "team": "Napoli",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+          "p": 12,
+          "gd": "+5",
+          "pts": 18
+        },
+        {
+          "rank": 9,
+          "team": "Bologna",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
+          "p": 12,
+          "gd": "+2",
+          "pts": 18
+        },
+        {
+          "rank": 10,
+          "team": "Genoa",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
+          "p": 12,
+          "gd": "-3",
+          "pts": 16
+        },
+        {
+          "rank": 11,
+          "team": "Cagliari",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
+          "p": 12,
+          "gd": "-7",
+          "pts": 16
+        },
+        {
+          "rank": 12,
+          "team": "Atalanta",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
+          "p": 12,
+          "gd": "-3",
+          "pts": 15
+        },
+        {
+          "rank": 13,
+          "team": "Torino",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png",
+          "p": 12,
+          "gd": "-3",
+          "pts": 14
+        },
+        {
+          "rank": 14,
+          "team": "Monza",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png",
+          "p": 12,
+          "gd": "-5",
+          "pts": 10
+        },
+        {
+          "rank": 15,
+          "team": "Lecce",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
+          "p": 12,
+          "gd": "-13",
+          "pts": 10
+        },
+        {
+          "rank": 16,
+          "team": "Fiorentina",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
+          "p": 12,
+          "gd": "-11",
+          "pts": 9
+        },
+        {
+          "rank": 17,
+          "team": "Parma",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
+          "p": 12,
+          "gd": "-12",
+          "pts": 8
+        },
+        {
+          "rank": 18,
+          "team": "Sassuolo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
+          "p": 12,
+          "gd": "-15",
+          "pts": 8
+        },
+        {
+          "rank": 19,
+          "team": "Udinese",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
+          "p": 12,
+          "gd": "-13",
+          "pts": 6
+        },
+        {
+          "rank": 20,
+          "team": "Venezia",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
+          "p": 12,
+          "gd": "-17",
+          "pts": 6
+        }
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-27T19:45Z",
+          "home": "Venezia",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
+          "away": "Bologna",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png"
+        },
+        {
+          "date": "2026-11-28T14:00Z",
+          "home": "Frosinone",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
+          "away": "Parma",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png"
+        },
+        {
+          "date": "2026-11-28T17:00Z",
+          "home": "Torino",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png",
+          "away": "Lazio",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png"
+        },
+        {
+          "date": "2026-11-28T19:45Z",
+          "home": "Inter Milan",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+          "away": "Genoa",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png"
+        },
+        {
+          "date": "2026-11-29T11:30Z",
+          "home": "Udinese",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
+          "away": "Fiorentina",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png"
+        },
+        {
+          "date": "2026-11-29T14:00Z",
+          "home": "Sassuolo",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
+          "away": "Napoli",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
+        },
+        {
+          "date": "2026-11-29T17:00Z",
+          "home": "AS Roma",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+          "away": "Monza",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png"
+        },
+        {
+          "date": "2026-11-29T19:45Z",
+          "home": "Como",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+          "away": "Juventus",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png"
+        },
+        {
+          "date": "2026-11-30T17:30Z",
+          "home": "Lecce",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
+          "away": "Atalanta",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
+        },
+        {
+          "date": "2026-11-30T19:45Z",
+          "home": "Cagliari",
+          "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
+          "away": "Milan",
+          "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
+        }
+      ]
+    },
+    "thumb": {
+      "kicker": "Serie A · Matchweek 12",
+      "big": "32 PTS",
+      "hook": "Lazio *top*",
+      "sticker": "TABLE",
+      "emoji": "⚽"
+    },
+    "scenes": [
+      {
+        "type": "hook",
+        "dur": 6,
+        "kicker": "Serie A · Mon 23 Nov",
+        "title": "Table updated today",
+        "sub": "Lazio top on 32 points"
+      },
+      {
+        "type": "table",
+        "dur": 14,
+        "label": "Serie A · Mon 23 Nov results",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Monza v Fiorentina",
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "score",
+        "dur": 14,
+        "label": "Serie A · Mon 23 Nov",
+        "home": "Monza",
+        "homeAbbr": "MON",
+        "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png",
+        "homeScore": 3,
+        "away": "Fiorentina",
+        "awayAbbr": "FIO",
+        "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
+        "awayScore": 0,
+        "status": "FULL TIME",
+        "note": "MON: G. Varela 45' pen, 51' · J. Robinson 59'"
+      },
+      {
+        "type": "table",
+        "dur": 12,
+        "label": "Serie A · earlier in Matchweek 12",
+        "cols": [
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Como v Cagliari",
+            2,
+            0
+          ],
+          [
+            "",
+            "Lazio v Lecce",
+            3,
+            0
+          ],
+          [
+            "",
+            "Parma v AS Roma",
+            1,
+            5
+          ],
+          [
+            "",
+            "Napoli v Torino",
+            1,
+            0
+          ],
+          [
+            "",
+            "Juventus v Venezia",
+            4,
+            0
+          ],
+          [
+            "",
+            "Bologna v Udinese",
+            1,
+            1
+          ],
+          [
+            "",
+            "Sassuolo v Genoa",
+            0,
+            2
+          ],
+          [
+            "",
+            "Milan v Frosinone",
+            5,
+            1
+          ],
+          [
+            "",
+            "Atalanta v Inter Milan",
+            4,
+            4
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Serie A table · after Matchweek 12",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            1,
+            "Lazio",
+            12,
+            10,
+            2,
+            0,
+            "+19",
+            32
+          ],
+          [
+            2,
+            "AS Roma",
+            12,
+            9,
+            3,
+            0,
+            "+25",
+            30
+          ],
+          [
+            3,
+            "Inter Milan",
+            12,
+            9,
+            2,
+            1,
+            "+15",
+            29
+          ],
+          [
+            4,
+            "Milan",
+            12,
+            8,
+            3,
+            1,
+            "+14",
+            27
+          ],
+          [
+            5,
+            "Como",
+            12,
+            8,
+            2,
+            2,
+            "+10",
+            26
+          ],
+          [
+            6,
+            "Juventus",
+            12,
+            6,
+            3,
+            3,
+            "+7",
+            21
+          ],
+          [
+            7,
+            "Frosinone",
+            12,
+            6,
+            2,
+            4,
+            "+5",
+            20
+          ],
+          [
+            8,
+            "Napoli",
+            12,
+            5,
+            3,
+            4,
+            "+5",
+            18
+          ],
+          [
+            9,
+            "Bologna",
+            12,
+            5,
+            3,
+            4,
+            "+2",
+            18
+          ],
+          [
+            10,
+            "Genoa",
+            12,
+            5,
+            1,
+            6,
+            "-3",
+            16
+          ]
+        ],
+        "highlight": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "note": "Top 4: Champions League places"
+      },
+      {
+        "type": "table",
+        "dur": 15,
+        "label": "Serie A table · after Matchweek 12 (11–20)",
+        "cols": [
+          "P",
+          "W",
+          "D",
+          "L",
+          "GD",
+          "PTS"
+        ],
+        "rows": [
+          [
+            11,
+            "Cagliari",
+            12,
+            5,
+            1,
+            6,
+            "-7",
+            16
+          ],
+          [
+            12,
+            "Atalanta",
+            12,
+            4,
+            3,
+            5,
+            "-3",
+            15
+          ],
+          [
+            13,
+            "Torino",
+            12,
+            4,
+            2,
+            6,
+            "-3",
+            14
+          ],
+          [
+            14,
+            "Monza",
+            12,
+            3,
+            1,
+            8,
+            "-5",
+            10
+          ],
+          [
+            15,
+            "Lecce",
+            12,
+            3,
+            1,
+            8,
+            "-13",
+            10
+          ],
+          [
+            16,
+            "Fiorentina",
+            12,
+            2,
+            3,
+            7,
+            "-11",
+            9
+          ],
+          [
+            17,
+            "Parma",
+            12,
+            2,
+            2,
+            8,
+            "-12",
+            8
+          ],
+          [
+            18,
+            "Sassuolo",
+            12,
+            2,
+            2,
+            8,
+            "-15",
+            8
+          ],
+          [
+            19,
+            "Udinese",
+            12,
+            1,
+            3,
+            8,
+            "-13",
+            6
+          ],
+          [
+            20,
+            "Venezia",
+            12,
+            2,
+            0,
+            10,
+            "-17",
+            6
+          ]
+        ],
+        "danger": [
+          18,
+          19,
+          20
+        ],
+        "note": "Bottom 3: relegation zone"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Title race",
+        "title": "Lazio lead by 2 points",
+        "sub": "AS Roma are second on 30 points after 12 games"
+      },
+      {
+        "type": "text",
+        "dur": 8,
+        "label": "Relegation zone",
+        "title": "Venezia bottom on 6 points",
+        "sub": "In the drop zone: Sassuolo 8 · Udinese 6 · Venezia 6. Parma are first above it on 8."
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Serie A · Matchweek 13 fixtures (UK · ET)",
+        "rows": [
+          [
+            "Fri 27 Nov",
+            "Venezia v Bologna",
+            "19:45 · 2:45 PM"
+          ],
+          [
+            "Sat 28 Nov",
+            "Frosinone v Parma",
+            "14:00 · 9:00 AM"
+          ],
+          [
+            "Sat 28 Nov",
+            "Torino v Lazio",
+            "17:00 · 12:00 PM"
+          ],
+          [
+            "Sat 28 Nov",
+            "Inter Milan v Genoa",
+            "19:45 · 2:45 PM"
+          ],
+          [
+            "Sun 29 Nov",
+            "Udinese v Fiorentina",
+            "11:30 · 6:30 AM"
+          ]
+        ]
+      },
+      {
+        "type": "list",
+        "dur": 11,
+        "label": "Serie A · Matchweek 13 fixtures (UK · ET) cont.",
+        "rows": [
+          [
+            "Sun 29 Nov",
+            "Sassuolo v Napoli",
+            "14:00 · 9:00 AM"
+          ],
+          [
+            "Sun 29 Nov",
+            "AS Roma v Monza",
+            "17:00 · 12:00 PM"
+          ],
+          [
+            "Sun 29 Nov",
+            "Como v Juventus",
+            "19:45 · 2:45 PM"
+          ],
+          [
+            "Mon 30 Nov",
+            "Lecce v Atalanta",
+            "17:30 · 12:30 PM"
+          ],
+          [
+            "Mon 30 Nov",
+            "Cagliari v Milan",
+            "19:45 · 2:45 PM"
+          ]
+        ]
+      },
+      {
+        "type": "cta",
+        "dur": 6,
+        "title": "Who wins the Serie A this season?",
+        "sub": "Live scores, tables & fixtures every day"
+      }
+    ],
+    "music": "Gonna Start"
+  }
+]
