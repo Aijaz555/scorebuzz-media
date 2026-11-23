@@ -71,6 +71,10 @@
   "venue": "Autzen Stadium",
   "credit": "Photo: Kingofthedead / Wikimedia Commons, CC BY-SA 4.0"
  },
+ "baku-olympic-stadium": {
+  "venue": "Baku Olympic Stadium",
+  "credit": "Photo: Eminn / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "balaidos": {
   "venue": "Balaidos",
   "credit": "Photo: Steigi1900 / Wikimedia Commons, CC0"
@@ -271,6 +275,10 @@
   "venue": "Estádio Dr. Magalhaes Pessoa",
   "credit": "Photo: Threeohsix / Wikimedia Commons, CC BY-SA 4.0"
  },
+ "estadio-jose-alvalade": {
+  "venue": "Estádio José Alvalade",
+  "credit": "Photo: Threeohsix / Wikimedia Commons, CC BY-SA 4.0"
+ },
  "estadio-la-cartuja": {
   "venue": "Estadio La Cartuja",
   "credit": "Photo: LuisMora4B / Wikimedia Commons, CC BY-SA 4.0"
@@ -402,6 +410,10 @@
  "jack-trice-stadium": {
   "venue": "Jack Trice Stadium",
   "credit": "Photo: Tallness456 / Wikimedia Commons, CC BY-SA 4.0"
+ },
+ "jan-breydel-stadium": {
+  "venue": "Jan Breydel Stadium",
+  "credit": "Photo: Chivista / Wikimedia Commons, CC BY-SA 3.0"
  },
  "jma-wireless-dome": {
   "venue": "JMA Wireless Dome",
