@@ -31,11 +31,6 @@
    "event": "401873077",
    "note": "San Francisco 49ers vs Minnesota Vikings, 2026-11-23T01:20:00Z"
   },
-  "2": {
-   "league": "nhl",
-   "event": "401892771",
-   "note": "Dallas Stars vs Pittsburgh Penguins, 2026-11-23T00:00:00Z"
-  },
   "3": {
    "league": "nba",
    "event": "401910034",
@@ -46,20 +41,10 @@
    "event": "401910035",
    "note": "Golden State Warriors vs Boston Celtics, 2026-11-23T01:30:00Z"
   },
-  "5": {
-   "league": "nhl",
-   "event": "401892770",
-   "note": "St. Louis Blues vs Edmonton Oilers, 2026-11-23T00:00:00Z"
-  },
   "7": {
    "league": "nhl",
    "event": "401892772",
    "note": "Vancouver Canucks vs Chicago Blackhawks, 2026-11-23T01:00:00Z"
-  },
-  "8": {
-   "league": "nba",
-   "event": "401910032",
-   "note": "Chicago Bulls vs Denver Nuggets, 2026-11-23T00:00:00Z"
   },
   "10": {
    "league": "mls",
