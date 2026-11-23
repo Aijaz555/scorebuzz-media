@@ -1,11 +1,5 @@
 [
  {
-  "slug": "anfield",
-  "name": "Anfield",
-  "city": "Liverpool",
-  "country": "England"
- },
- {
   "slug": "el-sardineros",
   "name": "El Sardineros",
   "city": "Santander",
@@ -42,33 +36,27 @@
   "country": "Türkiye"
  },
  {
-  "slug": "narodny-futbalovy-stadion",
-  "name": "Národny Futbalovy Stadión",
-  "city": "Bratislava",
-  "country": "Slovakia"
+  "slug": "baku-olympic-stadium",
+  "name": "Baku Olympic Stadium",
+  "city": "Baku",
+  "country": "Azerbaijan"
  },
  {
-  "slug": "mclane-stadium",
-  "name": "McLane Stadium",
-  "city": "Waco",
-  "country": "USA"
+  "slug": "jan-breydel-stadium",
+  "name": "Jan Breydel Stadium",
+  "city": "Brugge",
+  "country": "Belgium"
  },
  {
-  "slug": "l-n-federal-credit-union-stadium",
-  "name": "L&N Federal Credit Union Stadium",
-  "city": "Louisville",
-  "country": "USA"
+  "slug": "estadio-jose-alvalade",
+  "name": "Estádio José Alvalade",
+  "city": "Lisbon",
+  "country": "Portugal"
  },
  {
   "slug": "xfinity-mobile-arena",
   "name": "Xfinity Mobile Arena",
   "city": "Philadelphia",
-  "country": ""
- },
- {
-  "slug": "frost-bank-center",
-  "name": "Frost Bank Center",
-  "city": "San Antonio",
   "country": ""
  },
  {
@@ -78,15 +66,15 @@
   "country": ""
  },
  {
-  "slug": "lenovo-center",
-  "name": "Lenovo Center",
-  "city": "Raleigh",
-  "country": "USA"
- },
- {
   "slug": "benchmark-international-arena",
   "name": "Benchmark International Arena",
   "city": "Tampa",
+  "country": "USA"
+ },
+ {
+  "slug": "grand-casino-arena",
+  "name": "Grand Casino Arena",
+  "city": "Saint Paul",
   "country": "USA"
  }
 ]
