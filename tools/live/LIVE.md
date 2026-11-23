@@ -268,6 +268,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 23 Nov 2026 15:42 UTC: nothing live or scheduled (all 21 projects OFFLINE), no planner actions, no games inside the 30-min lead window. No stream check, usage already done today. End watch idle.
   - 23 Nov 2026 16:42 UTC: nothing live or scheduled (all 21 projects OFFLINE), no planner actions, no games inside the 30-min lead window. No stream check, usage already done today. End watch idle.
   - 23 Nov 2026 17:42 UTC: Monza-Fiorentina (Slot 1, Serie A) scheduled 19:15. Nothing live, no stream check; usage already done today. End watch idle.
+  - 23 Nov 2026 20:41 UTC: no planner actions (3 live: Monza-Fiorentina, Brentford-Everton, Levante-Elche). Stream check: Slots 1-3 correct. End watch: no games ended by 21:30.
   - 20 Nov 2026 06:46 UTC usage check: 265.2 h of 680 this week (39%), last 7 days 450.2 h, level ok (no streams live).
   - 18 Nov 2026 22:46 UTC usage check: 169.4 h of 680 this week (25%), last 7 days 448.7 h, level ok (finished broadcasts only; 0 live, 10 scheduled for 23:00-00:00).
   - 19 Nov 2026 00:30 UTC: 00:30 schedules for Slots 11-13 errored (UNKNOWN_ERROR) at 10 live; Slot 11 start refused ("User has too many live or scheduled broadcasts") → bump.js dropped Nets-Bulls (Slot 10, lowest-ranked NBA); Slots 11, 12, 13 then started (12 live/preparing).
