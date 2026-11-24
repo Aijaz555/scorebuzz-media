@@ -2979,16 +2979,6 @@
   "reason": "ok (contrast 80)",
   "at": "2026-11-23T03:34:57+00:00"
  },
- "401915300": {
-  "slot": "1",
-  "league": "ucl",
-  "game": "Galatasaray v Aston Villa",
-  "url": "https://scorebuzz.net/football/champions-league/galatasaray-vs-aston-villa-401915300/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 38)",
-  "at": "2026-11-24T19:06:17+00:00"
- },
  "401915380": {
   "slot": "2",
   "league": "ucl",
@@ -2998,5 +2988,15 @@
   "status": "ok",
   "reason": "ok (contrast 38)",
   "at": "2026-11-24T19:06:20+00:00"
+ },
+ "401915300": {
+  "slot": "1",
+  "league": "ucl",
+  "game": "Galatasaray v Aston Villa",
+  "url": "https://scorebuzz.net/football/champions-league/galatasaray-vs-aston-villa-401915300/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 37)",
+  "at": "2026-11-24T19:39:51+00:00"
  }
 }
