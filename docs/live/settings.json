@@ -31,16 +31,6 @@
    "event": "401892779",
    "note": "San Jose Sharks vs Minnesota Wild, 2026-11-24T03:00:00Z"
   },
-  "2": {
-   "league": "nba",
-   "event": "401910042",
-   "note": "New Orleans Pelicans vs Phoenix Suns, 2026-11-24T01:00:00Z"
-  },
-  "6": {
-   "league": "nfl",
-   "event": "401873078",
-   "note": "Washington Commanders vs Cincinnati Bengals, 2026-11-24T01:15:00Z"
-  },
   "7": {
    "league": "nhl",
    "event": "401892778",
@@ -50,11 +40,6 @@
    "league": "nba",
    "event": "401910044",
    "note": "Los Angeles Lakers vs Utah Jazz, 2026-11-24T03:00:00Z"
-  },
-  "9": {
-   "league": "nba",
-   "event": "401910043",
-   "note": "Houston Rockets vs LA Clippers, 2026-11-24T01:30:00Z"
   },
   "10": {
    "league": "nba",
