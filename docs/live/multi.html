@@ -1,0 +1,144 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ScoreBuzz live scores</title>
+<!-- ScoreBuzz "all games" scoreboard (owner's request, 24 Nov 2026): every game of one league on one stream, live scores from ESPN.
+     Usage: multi.html?league=ucl (ucl|uel|epl|laliga|seriea|ligue1|bundesliga|mls)  [&date=YYYYMMDD]  [&demo=1 fakes a mid-game state for previews]
+     Designed at 1920x1080 (scaled to fit the window). Grid adapts to the number of games (up to 18). -->
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#081129;--card:#0f1d44;--card2:#13245a;--line:#24366e;--ink:#f4f7ff;--mute:#93a5d2;--lime:#c6f432;--red:#e5262e;--gold:#f2c14e}
+*{margin:0;padding:0;box-sizing:border-box}
+html{overflow:hidden;background:var(--bg)}
+body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:relative;color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif;
+  background:radial-gradient(1200px 700px at 15% -10%,#1b3a8a55,transparent 60%),radial-gradient(1000px 600px at 110% 110%,#c8102e33,transparent 60%),var(--bg)}
+.cond{font-family:'Barlow Condensed','Arial Narrow',sans-serif}
+/* header */
+.top{position:absolute;left:0;top:0;right:0;height:112px;display:flex;align-items:center;padding:0 40px;gap:28px;border-bottom:3px solid #ffffff14;background:linear-gradient(180deg,#0d1b45,#0a1536)}
+.top .live{background:var(--red);color:#fff;font:900 30px Inter,sans-serif;letter-spacing:2px;padding:8px 18px;border-radius:10px;display:flex;align-items:center;gap:10px}
+.top .live i{width:14px;height:14px;border-radius:50%;background:#fff;animation:blink 1.2s infinite}
+.top .ttl{min-width:0;overflow:hidden}.top .t1{font:800 56px 'Barlow Condensed',sans-serif;letter-spacing:1px;text-transform:uppercase;line-height:1;white-space:nowrap}
+.top .t2{font:700 28px 'Barlow Condensed',sans-serif;color:var(--mute);letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap}
+.top .sp{flex:1}
+.top .cnt{display:flex;gap:14px}
+.top .cnt div{background:#ffffff10;border:2px solid #ffffff18;border-radius:12px;padding:6px 16px;text-align:center;min-width:110px}
+.top .cnt span{white-space:nowrap}.top .cnt b{display:block;font:800 38px 'Barlow Condensed',sans-serif;line-height:1}.top .cnt span{font:700 16px Inter,sans-serif;color:var(--mute);letter-spacing:1px}
+.top .cnt .l b{color:var(--red)}
+.top .brand{font:900 34px Inter,sans-serif;letter-spacing:-.5px}.top .brand b{color:var(--lime)}
+/* grid */
+#grid{position:absolute;left:28px;right:28px;top:132px;bottom:92px;display:grid;gap:18px}
+.card{position:relative;border-radius:18px;background:linear-gradient(180deg,var(--card2),var(--card));border:3px solid #ffffff14;overflow:hidden;display:flex;flex-direction:column;padding:14px 22px 12px}
+.card.in{border-color:#e5262e88;box-shadow:0 0 0 1px #e5262e44,0 14px 40px #0007}
+.card.post{opacity:.82}
+.card.goal{animation:goal 1s ease-in-out 8;border-color:var(--lime)}
+.card .hd{display:flex;align-items:center;justify-content:space-between;font:700 24px 'Barlow Condensed',sans-serif;letter-spacing:1px;color:var(--mute);text-transform:uppercase;height:32px}
+.card .st{font:800 30px 'Barlow Condensed',sans-serif;color:#fff;display:flex;align-items:center;gap:8px}
+.card.in .st{color:var(--red)}.card.in .st i{width:12px;height:12px;border-radius:50%;background:var(--red);animation:blink 1.2s infinite}
+.card .venue{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60%}
+.row{display:grid;grid-template-columns:var(--logo) 1fr auto;align-items:center;gap:16px;flex:1;min-height:0}
+.row img{width:var(--logo);height:var(--logo);object-fit:contain;filter:drop-shadow(0 3px 8px #0009)}
+.row .nm{font:800 var(--nm) 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.5px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .nm .rc{display:inline-block;width:16px;height:22px;background:var(--red);border-radius:3px;margin-left:10px;vertical-align:middle}
+.row .sc{font:800 var(--sc) 'Barlow Condensed',sans-serif;min-width:70px;text-align:right;line-height:1}
+.row.lo .sc,.row.lo .nm{color:#b5c2e4}
+.card.pre .row .sc{color:#ffffff30}
+.sco{font:600 19px Inter,sans-serif;color:var(--mute);display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;min-height:24px;padding-top:6px;border-top:1px solid #ffffff14}
+.sco div{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.3}.sco div:nth-child(2n){text-align:right}
+.sco b{color:var(--lime);font-weight:800}
+.badge{position:absolute;left:50%;top:10px;transform:translateX(-50%) rotate(-3deg);background:var(--lime);color:#0a1430;font:900 28px Inter,sans-serif;letter-spacing:2px;padding:2px 18px;border-radius:8px;box-shadow:0 6px 18px #000a;display:none}
+.card.goal .badge{display:block}
+/* bottom */
+.bot{position:absolute;left:0;right:0;bottom:0;height:76px;background:#f4f6fb;color:#121826;display:flex;align-items:center;overflow:hidden}
+.bot .lab{background:var(--red);color:#fff;height:100%;display:flex;align-items:center;padding:0 26px;font:900 26px Inter,sans-serif;letter-spacing:1.5px;flex:none}
+.bot .tk{flex:1;overflow:hidden;white-space:nowrap;position:relative;height:100%}
+.bot .tk div{position:absolute;top:0;height:100%;display:flex;align-items:center;gap:60px;font:700 32px 'Barlow Condensed',sans-serif;letter-spacing:.5px;animation:tick var(--dur,40s) linear infinite;padding-left:100%}
+.bot .tk b{color:#c8102e}
+.bot .site{flex:none;padding:0 28px;font:900 28px Inter,sans-serif;border-left:2px solid #d6dbe8;height:100%;display:flex;align-items:center}.bot .site b{color:#5b8a00}
+.err{position:absolute;inset:0;display:grid;place-items:center;font:800 56px 'Barlow Condensed',sans-serif;color:var(--mute)}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes goal{0%,100%{box-shadow:0 0 0 0 #c6f43200}50%{box-shadow:0 0 0 10px #c6f43266}}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+</style></head>
+<body><div class="top"><div class="live"><i></i>LIVE</div>
+<div class="ttl"><div class="t1" id="t1">Live Scores</div><div class="t2" id="t2"></div></div><div class="sp"></div>
+<div class="cnt"><div class="l"><b id="nIn">0</b><span>LIVE</span></div><div><b id="nPre">0</b><span>UPCOMING</span></div><div><b id="nPost">0</b><span>FULL TIME</span></div></div>
+<div class="brand">Score<b>Buzz</b></div></div>
+<div id="grid"><div class="err">Loading live scores…</div></div>
+<div class="bot"><div class="lab" id="lab">GOALS</div><div class="tk"><div id="tk"></div></div><div class="site">score<b>buzz</b>.net</div></div>
+<script>
+const Q = new URLSearchParams(location.search);
+const PATH = { ucl: 'uefa.champions', uel: 'uefa.europa', uecl: 'uefa.europa.conf', epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', unl: 'uefa.nations' };
+const NAME = { ucl: 'Champions League', uel: 'Europa League', uecl: 'Conference League', epl: 'Premier League', laliga: 'LaLiga', seriea: 'Serie A', ligue1: 'Ligue 1', bundesliga: 'Bundesliga', mls: 'MLS', unl: 'Nations League' };
+const league = PATH[Q.get('league')] ? Q.get('league') : 'ucl';
+const DEMO = Q.get('demo') === '1';
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function fit() { const k = Math.min(innerWidth / 1920, innerHeight / 1080); document.body.style.transform = `scale(${k})`; }
+addEventListener('resize', fit); fit();
+$('t1').textContent = `${NAME[league]} Live Scores`;
+
+const lastScore = {}; const goalUntil = {};
+const short = (t) => { const n = t.shortDisplayName || t.displayName; return /^[A-Z]\.? \S/.test(n) ? t.displayName : n; };   // "S Bratislava" -> "Slovan Bratislava"
+const tz = (d, zone) => d.toLocaleTimeString('en-GB', { timeZone: zone, hour: '2-digit', minute: '2-digit' });
+
+function demoize(sb) {   // preview only: turns today's fixtures into a believable mid-game state
+  const states = [['in', "67'", [2, 1]], ['in', "64'", [0, 0]], ['in', 'HT', [1, 1]], ['in', "38'", [1, 0]], ['in', "41'", [0, 2]], ['post', 'FT', [3, 1]], ['in', "33'", [1, 0]], ['in', "36'", [0, 0]], ['pre', '', [0, 0]]];
+  const names = ['Saka', 'Haaland', 'Mbappé', 'Kane', 'Vinícius Jr.', 'Lewandowski', 'Gyökeres', 'Osimhen', 'Lautaro', 'Isak', 'Wirtz', 'Yamal'];
+  sb.events.forEach((e, i) => {
+    const [state, clock, sc] = states[i % states.length]; const c = e.competitions[0];
+    e.status = { displayClock: clock, type: { state, completed: state === 'post', shortDetail: clock, detail: clock } };
+    c.details = [];
+    c.competitors.forEach((t, j) => { t.score = String(sc[j]); for (let g = 0; g < sc[j]; g++) c.details.push({ scoringPlay: true, type: { text: 'Goal' }, clock: { displayValue: `${12 + g * 23 + j * 7}'` }, team: { id: t.team.id }, athletesInvolved: [{ shortName: names[(i * 3 + j * 2 + g) % names.length] }] }); });
+    if (i === 3) c.details.push({ redCard: true, type: { text: 'Red Card' }, clock: { displayValue: "52'" }, team: { id: c.competitors[1].team.id }, athletesInvolved: [{ shortName: 'Rüdiger' }] });
+  });
+  if (sb.events[0]) goalUntil[sb.events[0].id] = Date.now() + 1e9;
+  return sb;
+}
+
+async function load() {
+  const date = Q.get('date') ? `?dates=${Q.get('date')}` : '';
+  const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/soccer/${PATH[league]}/scoreboard${date}`, { cache: 'no-store' });
+  let sb = await r.json();
+  if (DEMO) sb = demoize(sb);
+  render(sb);
+}
+
+function render(sb) {
+  const ev = (sb.events || []).slice().sort((a, b) => a.date.localeCompare(b.date) || a.name.localeCompare(b.name)).slice(0, 18);
+  if (!ev.length) { $('grid').innerHTML = `<div class="err">No ${NAME[league]} games today · next matchday coming up</div>`; return; }
+  const day = new Date(ev[0].date);
+  $('t2').textContent = `All games · ${day.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Europe/London' })} · goals & red cards`;
+  const n = ev.length, cols = n <= 4 ? 2 : n <= 9 ? 3 : n <= 12 ? 4 : n <= 15 ? 5 : 6, rows = Math.ceil(n / cols);
+  const g = $('grid'); g.style.gridTemplateColumns = `repeat(${cols},1fr)`; g.style.gridTemplateRows = `repeat(${rows},1fr)`;
+  const big = rows <= 2 ? 1.35 : rows === 3 ? 1 : 0.8; const wide = cols <= 3 ? 1 : cols === 4 ? .85 : .72;
+  g.style.setProperty('--logo', `${Math.round(64 * big * wide)}px`); g.style.setProperty('--nm', `${Math.round(44 * big * wide)}px`); g.style.setProperty('--sc', `${Math.round(72 * big * wide)}px`);
+  let nIn = 0, nPre = 0, nPost = 0; const tick = [];
+  g.innerHTML = ev.map((e) => {
+    const c = e.competitions[0], st = e.status?.type?.state || 'pre';
+    st === 'in' ? nIn++ : st === 'post' ? nPost++ : nPre++;
+    const H = c.competitors.find((x) => x.homeAway === 'home'), A = c.competitors.find((x) => x.homeAway === 'away');
+    const hs = +H.score || 0, as = +A.score || 0, key = `${hs}-${as}`;
+    if (lastScore[e.id] !== undefined && lastScore[e.id] !== key && st === 'in') goalUntil[e.id] = Date.now() + 60e3;
+    lastScore[e.id] = key;
+    const det = (c.details || []);
+    const goals = (t) => det.filter((d) => d.scoringPlay && d.team?.id === t.team.id).map((d) => `${esc(d.athletesInvolved?.[0]?.shortName || d.athletesInvolved?.[0]?.displayName || '')} <b>${esc(d.clock?.displayValue || '')}</b>${d.ownGoal ? ' (OG)' : d.penaltyKick ? ' (P)' : ''}`);
+    const reds = (t) => det.filter((d) => d.redCard && d.team?.id === t.team.id).length;
+    det.filter((d) => d.scoringPlay).forEach((d) => tick.push({ t: d.clock?.value ?? (parseInt(d.clock?.displayValue) || 0), s: `<b>⚽ ${esc(d.clock?.displayValue || '')}</b> ${esc(d.athletesInvolved?.[0]?.shortName || '')} · ${esc(short(H.team))} ${hs}–${as} ${esc(short(A.team))}` }));
+    const kick = new Date(e.date);
+    const stTxt = st === 'pre' ? `KO ${tz(kick, 'Europe/London')} UK · ${tz(kick, 'Europe/Paris')} CET` : st === 'post' ? 'FULL TIME' : (e.status.displayClock === 'HT' || /half/i.test(e.status.type?.detail || '') ? 'HALF TIME' : e.status.displayClock);
+    const rowH = (t, s, o) => `<div class="row ${st !== 'pre' && s < o ? 'lo' : ''}"><img src="${esc(t.team.logo || '')}" alt=""><div class="nm" style="${short(t.team).length > 13 ? `font-size:calc(var(--nm) * ${Math.max(.7, 13 / short(t.team).length).toFixed(2)})` : ''}">${esc(short(t.team))}${'<span class="rc"></span>'.repeat(reds(t))}</div><div class="sc">${st === 'pre' ? '–' : s}</div></div>`;
+    const gH = goals(H), gA = goals(A), lines = (gH.length || gA.length) ? [`<div>${gH.join(', ')}</div><div>${gA.join(', ')}</div>`] : [];
+    const v = c.venue?.address?.city || c.venue?.fullName || '';
+    return `<div class="card ${st} ${goalUntil[e.id] > Date.now() ? 'goal' : ''}"><div class="hd"><div class="st">${st === 'in' ? '<i></i>' : ''}${esc(stTxt)}</div><div class="venue">${esc(v)}</div></div>
+      ${rowH(H, hs, as)}${rowH(A, as, hs)}<div class="sco">${lines.join('') || (st === 'pre' ? '<div>Kick-off soon</div><div></div>' : '')}</div><div class="badge">GOAL!</div></div>`;
+  }).join('');
+  $('nIn').textContent = nIn; $('nPre').textContent = nPre; $('nPost').textContent = nPost;
+  tick.sort((a, b) => b.t - a.t);
+  const items = tick.length ? tick.slice(0, 20).map((x) => `<span>${x.s}</span>`) : ev.map((e) => { const k = new Date(e.date); return `<span><b>${tz(k, 'Europe/London')} UK</b> ${esc(short(e.competitions[0].competitors.find((x) => x.homeAway === 'home').team))} vs ${esc(short(e.competitions[0].competitors.find((x) => x.homeAway === 'away').team))}</span>`; });
+  $('lab').textContent = tick.length ? 'GOALS' : 'TODAY';
+  const html = items.join('');
+  if ($('tk').dataset.h !== html) { $('tk').dataset.h = html; $('tk').innerHTML = html; $('tk').style.setProperty('--dur', `${Math.max(30, items.length * 9)}s`); }
+}
+
+load().catch(() => {});
+setInterval(() => load().catch(() => {}), DEMO ? 1e9 : 15000);
+setTimeout(() => location.reload(), 3 * 3600e3);   // fresh page every 3 h (memory)
+</script></body></html>
