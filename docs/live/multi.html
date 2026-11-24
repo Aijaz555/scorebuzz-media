@@ -67,7 +67,16 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 const Q = new URLSearchParams(location.search);
 const PATH = { ucl: 'uefa.champions', uel: 'uefa.europa', uecl: 'uefa.europa.conf', epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', unl: 'uefa.nations' };
 const NAME = { ucl: 'Champions League', uel: 'Europa League', uecl: 'Conference League', epl: 'Premier League', laliga: 'LaLiga', seriea: 'Serie A', ligue1: 'Ligue 1', bundesliga: 'Bundesliga', mls: 'MLS', unl: 'Nations League' };
-const league = PATH[Q.get('league')] ? Q.get('league') : 'ucl';
+let league = PATH[Q.get('league')] ? Q.get('league') : 'ucl';
+// on a stream slot (index.html?slot=N): the league comes from settings.json slots[N].multi
+const SLOT = Q.get('slot');
+async function slotLeague() {
+  if (!SLOT || Q.get('league')) return;
+  try { const c = await (await fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/settings.json?t=' + Date.now(), { cache: 'no-store' })).json();
+    const m = (c.slots || {})[SLOT]?.multi; if (PATH[m]) { league = m; $('t1').textContent = `${NAME[league]} Live Scores`; }
+    else if (!m) location.reload();   // slot handed back to a single game: reload into the normal page
+  } catch (e) {}
+}
 const DEMO = Q.get('demo') === '1';
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -138,7 +147,8 @@ function render(sb) {
   if ($('tk').dataset.h !== html) { $('tk').dataset.h = html; $('tk').innerHTML = html; $('tk').style.setProperty('--dur', `${Math.max(30, items.length * 9)}s`); }
 }
 
-load().catch(() => {});
+slotLeague().then(() => load()).catch(() => {});
 setInterval(() => load().catch(() => {}), DEMO ? 1e9 : 15000);
+if (SLOT) setInterval(slotLeague, 60000);
 setTimeout(() => location.reload(), 3 * 3600e3);   // fresh page every 3 h (memory)
 </script></body></html>

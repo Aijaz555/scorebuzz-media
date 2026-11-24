@@ -70,6 +70,12 @@
       "league": "ucl",
       "event": "401915299",
       "note": "RB Leipzig vs Lens, 2026-11-24T20:00:00Z"
+    },
+    "10": {
+      "league": "ucl",
+      "event": null,
+      "multi": "ucl",
+      "note": "All Champions League games (multi.html), 24 Nov 2026 until ~22:10Z"
     }
   },
   "fit": {
