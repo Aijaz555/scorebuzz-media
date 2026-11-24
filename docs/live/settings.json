@@ -26,46 +26,10 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "3": {
-   "league": "ucl",
-   "event": "401915295",
-   "note": "Arsenal vs Borussia Dortmund, 2026-11-24T20:00:00Z"
-  },
-  "4": {
-   "league": "ucl",
-   "event": "401915379",
-   "note": "Manchester City vs Napoli, 2026-11-24T20:00:00Z"
-  },
-  "5": {
-   "league": "ucl",
-   "event": "401915298",
-   "note": "Real Madrid vs PSV Eindhoven, 2026-11-24T20:00:00Z"
-  },
-  "6": {
-   "league": "ucl",
-   "event": "401915296",
-   "note": "Como vs AEK Athens, 2026-11-24T20:00:00Z"
-  },
-  "7": {
-   "league": "ucl",
-   "event": "401915297",
-   "note": "Slovan Bratislava vs Real Betis, 2026-11-24T20:00:00Z"
-  },
-  "8": {
-   "league": "ucl",
-   "event": "401915294",
-   "note": "Feyenoord Rotterdam vs FC Porto, 2026-11-24T20:00:00Z"
-  },
-  "9": {
-   "league": "ucl",
-   "event": "401915299",
-   "note": "RB Leipzig vs Lens, 2026-11-24T20:00:00Z"
-  },
-  "10": {
-   "league": "ucl",
-   "event": null,
-   "multi": "ucl",
-   "note": "All Champions League games (multi.html), 24 Nov 2026 until ~22:10Z"
+  "1": {
+   "league": "nba",
+   "event": "401909314",
+   "note": "Orlando Magic vs Detroit Pistons, 2026-11-25T00:00:00Z"
   }
  },
  "fit": {
