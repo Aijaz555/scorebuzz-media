@@ -433,6 +433,11 @@ Only runs when `"thumbs": true` in `docs/live/settings.json` (so the hourly mana
    `YT_REFRESH_TOKEN`. Then set `"thumbs": true` in `docs/live/settings.json` (or ask Claude to).
 
 ## Titles and tags (owner's request, 7 Nov 2026)
+- **24 Nov 2026 (owner: "proper SEO title, description, keywords, tags" for the UCL night):** title format unchanged (owner's 22 Nov
+  short-name format). Fixes: ESPN initial-abbreviated names ("S Bratislava") fall back to the full name in titles; football hashtags use the
+  title's short names (#ArsenalVsDortmund, was #ArsenalVsBorussia); football descriptions get a natural "Follow <Home> vs <Away> live in the
+  <League>: live score, goals, cards, line-ups and match stats" line and the start time in CET too; the repeated "X vs Y live · X vs Y" line
+  becomes "X vs Y live stream" when short and full names match. The "<Home> vs <Away> <League> Live Scoreboard" line stays (yt_tags.js reads it).
 - **22 Nov 2026 (owner, after vidIQ keyword research):** titles now read `<Home short> vs <Away short> Live Score | <League> Live Scoreboard`
   (e.g. `Newcastle vs Arsenal Live Score | Premier League Live Scoreboard`, `Hurricanes vs Oilers Live Score | NHL Live Scoreboard`).
   Research: "live scoreboard", "nba live scoreboard", "play by play" all under 750 searches a month; people search

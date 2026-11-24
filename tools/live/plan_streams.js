@@ -66,8 +66,12 @@ function hashtags(g) {
   // US teams by nickname (Lakers), football clubs by city/club name (Leeds, Man City, Real Madrid), not 'United'/'Hotspur'
   const TWO = /^(Manchester|Real|Atletico|Atlético|Athletic|Inter|AC|AS|Aston|West|Nottingham|Crystal|Sheffield|Paris|Red|New|Sporting|Rayo|Celta|San|Las|St\.?)$/;
   const nick = (t) => { const w = t.replace(/^(FC|AFC|CF|SC|CD|UD|RC|SD|SSC|US|OGC|RC) /, '').split(' '); return !L.soccer ? t.split(' ').pop() : TWO.test(w[0]) && w[1] ? w[0].replace('Manchester', 'Man') + ' ' + w[1] : w[0]; };
+  // football: the same short names as the title (Dortmund, Man City, RB Leipzig), without FC/AFC (24 Nov 2026: was
+  // first word only, which gave #ArsenalVsBorussia)
+  const short = (i, t) => (L.soccer && g.short?.[i] ? g.short[i].replace(/^(FC|AFC|CF|SC|SSC) /, '') : nick(t));
+  const n1 = short(0, t1), n2 = short(1, t2);
   const lg = tagify(L.name || L.label || g.league.toUpperCase());
-  return [...new Set([`#${lg}`, `#${tagify(nick(t1))}Vs${tagify(nick(t2))}`, `#${tagify(t1)}`, `#${tagify(t2)}`, `#${tagify(nick(t1))}Vs${tagify(nick(t2))}Live`, `#${lg}Live`, '#LiveStream', L.soccer ? '#Football' : '', '#ScoreBuzz'].filter(Boolean))];
+  return [...new Set([`#${lg}`, `#${tagify(n1)}Vs${tagify(n2)}`, `#${tagify(t1)}`, `#${tagify(t2)}`, `#${tagify(n1)}Vs${tagify(n2)}Live`, `#${lg}Live`, '#LiveStream', L.soccer ? '#Football' : '', '#ScoreBuzz'].filter(Boolean))];
 }
 
 // YouTube tags, for when the API (or the Studio) can take them: league, both teams, matchup and generic live-score terms
@@ -84,7 +88,9 @@ function describe(g, music) {
   const uk = t.toLocaleString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit' });
   const lines = g.description.split('\n').filter((l) => !l.startsWith('#') && l !== undefined);
   const blank = lines.indexOf('');
-  lines.splice(blank < 0 ? 1 : blank, 0, `Start: ${et} ET / ${uk} UK.`);
+  // football also gets Central European time (most UCL/LaLiga/Serie A viewers)
+  const cet = t.toLocaleString('en-GB', { timeZone: 'Europe/Paris', hour: '2-digit', minute: '2-digit' });
+  lines.splice(blank < 0 ? 1 : blank, 0, `Start: ${et} ET / ${uk} UK${feed.LEAGUES[g.league]?.soccer ? ` / ${cet} CET` : ''}.`);
   // hashtags: YouTube shows the first three above the title and indexes them like tags (the LiveReacting API
   // can't set YouTube tags or category, so the per-game keywords live here and in the title)
   lines.push(hashtags(g).join(' '));

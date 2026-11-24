@@ -533,7 +533,9 @@ async function list(league, date) {
     // Owner (22 Nov 2026), after vidIQ keyword research: people search "<team> vs <team> live" with the short names
     // ("madrid vs barcelona live"), and almost nobody searches "live scoreboard". So the short matchup + "Live Score" leads,
     // and "Live Scoreboard" stays at the end so nobody expects match video. The description keeps the full names.
-    const nick = (t) => t.shortDisplayName || t.name || t.displayName;
+    // ESPN abbreviates some club names to an initial ("S Bratislava"); nobody searches that, so use the full name then
+    // (24 Nov 2026, UCL night: owner asked for SEO-clean titles on every stream)
+    const nick = (t) => { const s = t.shortDisplayName || t.name || t.displayName; return /^[A-Z]\.? \S/.test(s) ? (t.displayName || t.name || s) : s; };
     const title = `${nick(t1)} vs ${nick(t2)} Live Score | ${tag} Live Scoreboard`;
     const v = c.venue || {};
     const place = [v.fullName, [v.address?.city, v.address?.state || v.address?.country].filter(Boolean).join(', ')].filter(Boolean).join(', ');
@@ -545,6 +547,7 @@ async function list(league, date) {
       // average win % of the two teams from their overall records ("W-L" or "W-L-OTL"), 0.5 when unknown; ranks games within a league
       winPct: (() => { const p = c.competitors.map((x) => { const r = String(x.records?.[0]?.summary || '').split('-').map(Number); const n = r.reduce((u, v) => u + (v || 0), 0); return n ? r[0] / n : 0.5; }); return Math.round((p.reduce((u, v) => u + v, 0) / p.length) * 1000) / 1000; })(),
       matchup: `${t1.displayName} vs ${t2.displayName}`,
+      short: [nick(t1), nick(t2)],
       title: title.length > 100 ? `${nick(t1)} vs ${nick(t2)} Live Score | ${tag}` : title,
       description: [
         // first line = the phrases people search for a game ("<a> vs <b> live", "... live score", "... today"); YouTube shows it under the title
@@ -552,9 +555,12 @@ async function list(league, date) {
         `${tag} Live Scoreboard`,
         L.soccer ? `${h.displayName} vs ${a.displayName} ${L.name || L.label} Live Scoreboard` : `${a.displayName} @ ${h.displayName} ${L.name || L.label} Live Scoreboard`,
         place,
-        `${h.displayName} vs ${a.displayName} live · ${nick(h)} vs ${nick(a)}`,
+        // (24 Nov 2026) no repeated "X vs Y live · X vs Y" when the short and full names are the same
+        nick(h) === h.displayName && nick(a) === a.displayName ? `${h.displayName} vs ${a.displayName} live stream` : `${h.displayName} vs ${a.displayName} live · ${nick(h)} vs ${nick(a)}`,
         '',
-        'Live score, clock, period scores, top performers and play-by-play, updated every few seconds.',
+        L.soccer
+          ? `Follow ${h.displayName} vs ${a.displayName} live in the ${L.name || L.label}: live score, goals, cards, line-ups and match stats, updated every few seconds.`
+          : 'Live score, clock, period scores, top performers and play-by-play, updated every few seconds.',
         '',
         'This stream is a live scoreboard. It does not show game footage.',
         '',
