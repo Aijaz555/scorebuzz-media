@@ -1,29 +1,5 @@
 [
  {
-  "slug": "el-sardineros",
-  "name": "El Sardineros",
-  "city": "Santander",
-  "country": "Spain"
- },
- {
-  "slug": "mapei-stadium",
-  "name": "Mapei Stadium",
-  "city": "Reggio Emilia",
-  "country": "Italy"
- },
- {
-  "slug": "new-balance-arena",
-  "name": "New Balance Arena",
-  "city": "Bergamo",
-  "country": "Italy"
- },
- {
-  "slug": "seatgeek-stadium",
-  "name": "SeatGeek Stadium",
-  "city": "Bridgeview, Illinois",
-  "country": "USA"
- },
- {
   "slug": "energizer-park",
   "name": "Energizer Park",
   "city": "St. Louis, Missouri",
@@ -36,22 +12,64 @@
   "country": "Türkiye"
  },
  {
-  "slug": "baku-olympic-stadium",
-  "name": "Baku Olympic Stadium",
-  "city": "Baku",
-  "country": "Azerbaijan"
- },
- {
-  "slug": "jan-breydel-stadium",
-  "name": "Jan Breydel Stadium",
-  "city": "Brugge",
-  "country": "Belgium"
- },
- {
   "slug": "estadio-jose-alvalade",
   "name": "Estádio José Alvalade",
   "city": "Lisbon",
   "country": "Portugal"
+ },
+ {
+  "slug": "batumi-stadium-adjarabet-arena",
+  "name": "Batumi Stadium (Adjarabet Arena)",
+  "city": "Batumi",
+  "country": "Georgia"
+ },
+ {
+  "slug": "maksimir-stadium",
+  "name": "Maksimir Stadium",
+  "city": "Zagreb",
+  "country": "Croatia"
+ },
+ {
+  "slug": "georgios-karaiskakis-stadium",
+  "name": "Georgios Karaiskakis Stadium",
+  "city": "Piraeus",
+  "country": "Greece"
+ },
+ {
+  "slug": "red-bull-arena-salzburg",
+  "name": "Red Bull Arena Salzburg",
+  "city": "Salzburg",
+  "country": "Austria"
+ },
+ {
+  "slug": "king-power-at-den-dreef-stadion",
+  "name": "King Power at Den Dreef Stadion",
+  "city": "Leuven",
+  "country": "Belgium"
+ },
+ {
+  "slug": "doosan-arena",
+  "name": "Doosan Arena",
+  "city": "Plzen",
+  "country": "Czechia"
+ },
+ {
+  "slug": "groupama-arena",
+  "name": "Groupama Arena",
+  "city": "Budapest",
+  "country": "Hungary"
+ },
+ {
+  "slug": "pankritio-stadium",
+  "name": "Pankritio Stadium",
+  "city": "Crete",
+  "country": "Greece"
+ },
+ {
+  "slug": "galaxy-stadium",
+  "name": "Galaxy Stadium",
+  "city": "Lubbock",
+  "country": "USA"
  },
  {
   "slug": "xfinity-mobile-arena",
