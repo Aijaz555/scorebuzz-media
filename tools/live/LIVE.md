@@ -624,3 +624,14 @@ bench, jersey → `/img/p/<id>.png`) and, when the feed's player ids are empty (
 Playwright and reads the photos the page matched itself. soccer.html / center.html already show those photos for the game
 leaders and line-up cards (shirt when there is none). Filled by hand for Newcastle-Arsenal, Sevilla-Betis, Parma-Roma on 21 Nov;
 the Live tracker check (every 10 min) keeps it going. Games the site itself has no photos for (e.g. Nice-PSG) keep the shirts.
+
+## Scores from Goalserve (owner, 24 Nov 2026)
+
+Speed test 23-24 Nov (every score change, Goalserve's in-play feed on the server vs ESPN checked every 3 s): football goals
+Goalserve 70-90 s ahead; NHL goals ~15 s ahead (20 of 21 first); NBA about level (ESPN ~3 s ahead while the server checked
+Goalserve's basketball feed only every 12 s, now 4 s); NFL not enough data.
+
+center.html therefore also reads `https://scorebuzz.net/api/live/sc-<soccer|hockey|basket>.json` (written by vps/multiticks.py the
+moment a score changes; the game is found through the site row whose page address ends in the ESPN id, field `p`) and shows
+whichever of Goalserve and ESPN changed last. NFL stays on ESPN only. Switch: settings `"gsScores": true` or a list of slots
+(URL `gs=1`). Started on slot 1 only; widen to `true` once it has run cleanly through a match day.

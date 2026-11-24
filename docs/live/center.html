@@ -113,6 +113,10 @@ let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('s
 // keeps the 3D view in the stream browser (no graphics card) as the site's lighter 3D picture. Off = the site's own choice (2D there).
 // "trkhd" (same form) draws the 3D picture at twice the size for a sharp 1080p stream (needs a graphics card).
 // "trkgpu" (same form) adds a readout on the 3D picture: the graphics chip the stream browser draws on and its frames a second.
+// "gsScores" (same form; URL gs=1): the score also comes from Goalserve's in-play feed (scorebuzz.net/api/live/sc-<sport>.json, written the
+// moment a score changes) and the board shows whichever of Goalserve and ESPN changed last. Owner 24 Nov 2026, after the speed test:
+// Goalserve was 70-90 s ahead of ESPN on football goals and ~15 s on NHL goals; NBA about level, so both are read. NFL stays on ESPN.
+let GSON = q.get('gs') === '1';
 let TRK3D = q.get('trk3d') === '1', TRKGPU = q.get('trkgpu') === '1', TRKHD = q.get('trkhd') === '1', SITEPRE = q.get('sitepre') !== '0';
 function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
   const mode = R.fit || q.get('fit') || 'contain', b = document.body;
@@ -309,6 +313,7 @@ function render(s, sb) {
     if (b && st.type?.state === 'in' && b.type?.state === 'in' && ((b.period || 0) > (st.period || 0) || ((b.period || 0) === (st.period || 0) && (FOOT() ? secs(b.displayClock) > secs(st.displayClock) : secs(b.displayClock) < secs(st.displayClock))))) { st.period = b.period; st.displayClock = b.displayClock; st.type = b.type; }
     for (const T of [H, A]) { const x = sbEv?.competitions?.[0]?.competitors?.find((k) => String(k.team.id) === T.id); if (x && +x.score > T.score) T.score = +x.score; }
   }
+  { const g = gsMerge(H, A, st.type?.state === 'in'); if (g) { H.score = g[0]; A.score = g[1]; } }      // Goalserve, when it is ahead (see GSON)
   const per = st.period || 1, n = st.type?.name || '', pre = st.type?.state === 'pre', fin = st.type?.completed, live = st.type?.state === 'in';
   const et = (d) => (FOOT() ? new Date(d).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: TZ()[0] }) + ' ' + TZ()[1] : new Date(d).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET');
   const B = box(s), hasBox = Object.keys(B).length > 0 && !pre, all = s.plays || [], lastP = all[all.length - 1];
@@ -527,13 +532,42 @@ function trackerChip(d) {
   el.innerHTML = `<div class="ck">${esc(clk)}</div><div class="tm" style="--c:${H.color}">${fl(H)}${esc(H.abbr)}</div><div class="sc${flash ? ' flash' : ''}">${esc(sc)}</div><div class="tm" style="--c:${A.color}">${esc(A.abbr)}${fl(A)}</div>`;
 }
 let last = 0, busy = false;
+const GSK = () => (FOOT() ? ['football', 'soccer'] : league === 'nhl' ? ['hockey', 'hockey'] : league === 'nba' ? ['basketball', 'basket'] : null);
+let gsId = null, gsFor = '', gsFindAt = 0, GSV = null, gsSeen = null, esSeen = null;
+async function gsFind() {
+  const k = GSK(); gsFindAt = Date.now(); if (!k || !event) return;
+  try { const f = await J(`https://scorebuzz.net/api/live/${k[0]}.json`), ev = String(event), r = (f.m || []).find((x) => String(x.u || '').replace(/\/$/, '').endsWith('-' + ev));
+    gsId = r && r.p ? String(r.p) : null; gsFor = ev; } catch (e) { /* ESPN only */ }
+}
+async function gsScore() {
+  const k = GSK(); if (!GSON || !k || REPLAY) return null;
+  if (gsFor !== String(event)) { gsId = null; gsSeen = null; esSeen = null; }
+  if (gsFor !== String(event) || Date.now() - gsFindAt > 60000) gsFind();
+  if (!gsId) return null;
+  try { const d = await J(`https://scorebuzz.net/api/live/sc-${k[1]}.json`); return (d.m || {})[gsId] || null; } catch (e) { return null; }
+}
+const gsNorm = (x) => String(x || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\(.*?\)/g, ' ').replace(/[^a-z0-9 ]/g, ' ');
+const gsLike = (n, T) => { const t = ' ' + gsNorm([T.full, T.nick, T.abbr, T.city].join(' ')) + ' '; return gsNorm(n).split(/\s+/).filter((w) => w.length >= 3 && t.includes(' ' + w + ' ')).length; };
+// the score to show: whichever source changed last (both are first seen together, then Goalserve wins ties except in the NBA,
+// where the higher total does); [home, away] in ESPN's orientation, or null to keep ESPN's
+function gsMerge(H, A, liveNow) {
+  const now = Date.now(), es = H.score + ':' + A.score;
+  if (!esSeen || esSeen.sc !== es) esSeen = { sc: es, at: now };
+  if (!GSV || !liveNow) return null;
+  const [gn, an, gh, ga] = GSV, swap = gsLike(gn, A) + gsLike(an, H) > gsLike(gn, H) + gsLike(an, A), h = swap ? ga : gh, a = swap ? gh : ga, g = h + ':' + a;
+  if (!gsSeen || gsSeen.id !== gsId || gsSeen.sc !== g) gsSeen = { id: gsId, sc: g, at: gsSeen && gsSeen.id === gsId ? now : esSeen.at };
+  if (g === es) return null;
+  if (gsSeen.at > esSeen.at || (gsSeen.at === esSeen.at && (league !== 'nba' || h + a > H.score + A.score))) return [h, a];
+  return null;
+}
 const POLL = 2000; // ESPN caches its feeds for ~3 s, so polling every 2 s shows each update as soon as it exists
 async function tick() {
   if (!event || busy) return;
   busy = true;
   try {
     if (REPLAY && rpS) { render(replayStep(rpS), null); busy = false; return; }
-    const [s, sb] = await Promise.all([J(`${API()}/summary?event=${event}`), J(`${API()}/scoreboard`).catch(() => null)]);
+    const [s, sb, gv] = await Promise.all([J(`${API()}/summary?event=${event}`), J(`${API()}/scoreboard`).catch(() => null), gsScore()]);
+    GSV = gv;
     if (REPLAY) render(replayStep(s), null); else render(s, sb);
     last = Date.now();
   } catch (e) { console.error(e); if (!last) $('app').innerHTML = '<div class="err">Loading ScoreBuzz live scoreboard…</div>'; }
@@ -551,6 +585,7 @@ async function slotTick() {
     noSite = sl.sbtrk === 0;
     TRK3D = c.trk3d === true || (Array.isArray(c.trk3d) && c.trk3d.map(String).includes(String(SLOT)));
     TRKGPU = c.trkgpu === true || (Array.isArray(c.trkgpu) && c.trkgpu.map(String).includes(String(SLOT)));
+    GSON = c.gsScores === true || (Array.isArray(c.gsScores) && c.gsScores.map(String).includes(String(SLOT)));
     TRKHD = c.trkhd === true || (Array.isArray(c.trkhd) && c.trkhd.map(String).includes(String(SLOT)));      // 3D drawn at twice the size (graphics-card servers)
     SITEPRE = c.sitePreview === undefined || c.sitePreview === true || (Array.isArray(c.sitePreview) && c.sitePreview.map(String).includes(String(SLOT)));
     if (String(sl.event) !== String(event) || sl.league !== league) { league = sl.league; event = String(sl.event); tick(); }
