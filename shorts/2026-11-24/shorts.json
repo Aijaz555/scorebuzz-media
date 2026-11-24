@@ -575,9 +575,148 @@
   "yt": "2026-11-25T01:10:00",
   "fb": "2026-11-25T03:48:00",
   "title": "NBA Scores Tonight: Every Monday Result 🏀 #NBA #shorts",
-  "description": "TBD",
-  "tags": [],
-  "scenes": [],
+  "description": "Every NBA score from Monday night: Grizzlies 117–111 Hornets, Trail Blazers 128–111 76ers, Pacers 125–120 Thunder, Bucks 116–111 Raptors, Timberwolves 142–116 Nets, Bulls 122–108 Cavaliers, Suns 123–119 Pelicans, Rockets 116–104 Clippers, Lakers 109–94 Jazz and Spurs 123–107 Kings. The Bucks ended a 13-game losing streak, Portland hit 19 threes in Philadelphia and Indiana beat Oklahoma City.\n\nNBA scores today: https://scorebuzz.net\n\n#NBA #Bucks #RipCity",
+  "tags": [
+   "nba scores",
+   "nba scores today",
+   "nba results",
+   "bucks vs raptors",
+   "blazers vs 76ers",
+   "thunder vs pacers",
+   "lakers vs jazz",
+   "spurs vs kings",
+   "rockets vs clippers",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 20.4,
+    "kicker": "NBA · Monday night",
+    "title": "Every score",
+    "badge": "FINAL",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Hornets",
+      "homeAbbr": "CHA",
+      "hs": 111,
+      "away": "Grizzlies",
+      "awayAbbr": "MEM",
+      "as": 117,
+      "note": "Grizzlies 13-5",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
+     },
+     {
+      "home": "76ers",
+      "homeAbbr": "PHI",
+      "hs": 111,
+      "away": "Trail Blazers",
+      "awayAbbr": "POR",
+      "as": 128,
+      "note": "Avdija 31",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
+     },
+     {
+      "home": "Pacers",
+      "homeAbbr": "IND",
+      "hs": 125,
+      "away": "Thunder",
+      "awayAbbr": "OKC",
+      "as": 120,
+      "note": "Siakam late 3",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+     },
+     {
+      "home": "Raptors",
+      "homeAbbr": "TOR",
+      "hs": 111,
+      "away": "Bucks",
+      "awayAbbr": "MIL",
+      "as": 116,
+      "note": "13-game skid over",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
+     },
+     {
+      "home": "Wolves",
+      "homeAbbr": "MIN",
+      "hs": 142,
+      "away": "Nets",
+      "awayAbbr": "BKN",
+      "as": 116,
+      "note": "McDaniels 34",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
+     },
+     {
+      "home": "Bulls",
+      "homeAbbr": "CHI",
+      "hs": 122,
+      "away": "Cavaliers",
+      "awayAbbr": "CLE",
+      "as": 108,
+      "note": "63 bench pts",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
+     },
+     {
+      "home": "Pelicans",
+      "homeAbbr": "NO",
+      "hs": 119,
+      "away": "Suns",
+      "awayAbbr": "PHX",
+      "as": 123,
+      "note": "OT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
+     },
+     {
+      "home": "Rockets",
+      "homeAbbr": "HOU",
+      "hs": 116,
+      "away": "Clippers",
+      "awayAbbr": "LAC",
+      "as": 104,
+      "note": "Durant 32",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png"
+     },
+     {
+      "home": "Lakers",
+      "homeAbbr": "LAL",
+      "hs": 109,
+      "away": "Jazz",
+      "awayAbbr": "UTAH",
+      "as": 94,
+      "note": "Lakers 15-3",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
+     },
+     {
+      "home": "Kings",
+      "homeAbbr": "SAC",
+      "hs": 107,
+      "away": "Spurs",
+      "awayAbbr": "SA",
+      "as": 123,
+      "note": "Spurs 15-3",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Best result of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
   "thumb": {
    "kicker": "NBA · Monday",
    "big": "10",
@@ -585,7 +724,7 @@
    "sticker": "FINAL",
    "emoji": "🏀"
   },
-  "fbtext": "TBD",
+  "fbtext": "🏀 Every NBA score from Monday: the Bucks finally won, Portland hit 19 threes in Philly, the Pacers beat OKC and the Lakers and Spurs both won.\n\nBest result of the night? 👇\n\n#NBA #Bucks #Lakers #Reels",
   "time": "2026-11-25T01:10:00"
  },
  {
