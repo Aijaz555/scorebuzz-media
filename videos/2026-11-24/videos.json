@@ -1,0 +1,492 @@
+[
+ {
+  "id": "v1-nfl-week11",
+  "sport": "nfl",
+  "league": "nfl",
+  "format": "video",
+  "bed": "hype",
+  "time": "2026-11-24T22:55:00",
+  "fbTime": "2026-11-25T04:44:00",
+  "title": "NFL Week 11 Recap: Commanders Walk-Off, Cowboys Score 51, 49ers 9–1 & Eagles Snap Skid 🏈",
+  "description": "Everything you missed from NFL Week 11: the Washington Commanders beat the Cincinnati Bengals 22–20 on Monday Night Football with a field goal as time expired, Brock Purdy threw three first-half touchdowns as the San Francisco 49ers beat the Minnesota Vikings 35–10 in Mexico City, Dak Prescott accounted for five touchdowns in the Dallas Cowboys' 51–30 win over the Tennessee Titans, the Philadelphia Eagles beat the Pittsburgh Steelers 19–16 to snap a seven-game losing streak, and the Carolina Panthers edged the Baltimore Ravens 35–33. Plus every result, the playoff picture and the Thanksgiving games to watch in Week 12.\n\nNFL scores, standings and live scores: https://scorebuzz.net\n\n#NFL #NFLWeek11 #Commanders #49ers #Cowboys",
+  "tags": [
+   "nfl week 11 recap",
+   "nfl week 11 results",
+   "nfl scores",
+   "commanders vs bengals",
+   "49ers vs vikings",
+   "cowboys vs titans",
+   "eagles vs steelers",
+   "panthers vs ravens",
+   "nfl standings",
+   "nfl playoff picture",
+   "nfl week 12",
+   "scorebuzz"
+  ],
+  "fbCaption": "🏈 NFL Week 11 in about three minutes.\n\nWashington won it at the buzzer on Monday night, Dallas put up 51, the 49ers rolled in Mexico City and the Eagles finally won again.\n\nBest game of the week? 👇\n\n#NFL #NFLWeek11 #Commanders #49ers",
+  "thumb": {
+   "kicker": "NFL Week 11 recap",
+   "big": "22–20",
+   "hook": "Buzzer-beaters & *51 points*",
+   "sticker": "Wild week",
+   "emoji": "🏈"
+  },
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 5,
+    "kicker": "NFL Week 11 recap",
+    "title": "Everything you missed",
+    "sub": "Every result, the big stories and the playoff picture"
+   },
+   {
+    "type": "table",
+    "dur": 10.5,
+    "label": "Week 11 results · home team first (1/2)",
+    "cols": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "",
+      "Texans v Colts (Thu)",
+      26,
+      3
+     ],
+     [
+      "",
+      "Bills v Dolphins",
+      26,
+      9
+     ],
+     [
+      "",
+      "Bears v Saints",
+      21,
+      13
+     ],
+     [
+      "",
+      "Cowboys v Titans",
+      51,
+      30
+     ],
+     [
+      "",
+      "Lions v Buccaneers",
+      31,
+      21
+     ],
+     [
+      "",
+      "Chiefs v Cardinals",
+      34,
+      7
+     ],
+     [
+      "",
+      "Eagles v Steelers",
+      19,
+      16
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "dur": 10.5,
+    "label": "Week 11 results · home team first (2/2)",
+    "cols": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "",
+      "Panthers v Ravens",
+      35,
+      33
+     ],
+     [
+      "",
+      "Chargers v Jets",
+      24,
+      27
+     ],
+     [
+      "",
+      "Broncos v Raiders",
+      38,
+      24
+     ],
+     [
+      "",
+      "Giants v Jaguars",
+      23,
+      18
+     ],
+     [
+      "",
+      "49ers v Vikings (Mexico City)",
+      35,
+      10
+     ],
+     [
+      "",
+      "Commanders v Bengals (Mon)",
+      22,
+      20
+     ]
+    ]
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Monday Night Football",
+    "home": "Commanders",
+    "homeAbbr": "WSH",
+    "homeScore": 22,
+    "away": "Bengals",
+    "awayAbbr": "CIN",
+    "awayScore": 20,
+    "status": "FINAL",
+    "note": "Drew Stevens' 26-yard field goal as time expired",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Washington · 4-5-1",
+    "title": "64 yards in 34 seconds",
+    "sub": "No timeouts: Jayden Daniels hit rookie Antonio Williams for 22 and 42 yards. Williams had 9 catches for 122. Cincinnati's five-game win streak is over."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday Night Football · Mexico City",
+    "home": "49ers",
+    "homeAbbr": "SF",
+    "homeScore": 35,
+    "away": "Vikings",
+    "awayAbbr": "MIN",
+    "awayScore": 10,
+    "status": "FINAL",
+    "note": "Ji'Ayir Brown pick-six, McCaffrey capped a 98-yard drive",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Brock Purdy",
+    "value": 3,
+    "unit": "first-half TD passes",
+    "text": "21 of 26 for 255 yards against the league's stingiest defense. San Francisco are 9-1."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Arlington",
+    "home": "Cowboys",
+    "homeAbbr": "DAL",
+    "homeScore": 51,
+    "away": "Titans",
+    "awayAbbr": "TEN",
+    "awayScore": 30,
+    "status": "FINAL",
+    "note": "TDs on their first six drives",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Dallas · 5-6",
+    "title": "Dak Prescott: 5 touchdowns",
+    "sub": "Four passing, one rushing. Dallas scored on all eight possessions before kneeling at the end. CeeDee Lamb 132 yards, George Pickens 102."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Philadelphia",
+    "home": "Eagles",
+    "homeAbbr": "PHI",
+    "homeScore": 19,
+    "away": "Steelers",
+    "awayAbbr": "PIT",
+    "awayScore": 16,
+    "status": "FINAL",
+    "note": "Joe Milton to DeVonta Smith closed it out",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Philadelphia · 3-7",
+    "title": "Seven-game skid: over",
+    "sub": "The Eagles' first win since September. Pittsburgh still haven't won in Philadelphia since 1965."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Charlotte",
+    "home": "Panthers",
+    "homeAbbr": "CAR",
+    "homeScore": 35,
+    "away": "Ravens",
+    "awayAbbr": "BAL",
+    "awayScore": 33,
+    "status": "FINAL",
+    "note": "Chuba Hubbard 120 yards and two TDs",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "Carolina · 5-5",
+    "title": "Panthers lead the NFC South by two",
+    "sub": "Baltimore (4-7) have lost six in a row."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Kansas City",
+    "home": "Chiefs",
+    "homeAbbr": "KC",
+    "homeScore": 34,
+    "away": "Cardinals",
+    "awayAbbr": "ARI",
+    "awayScore": 7,
+    "status": "FINAL",
+    "note": "Travis Kelce caught two touchdowns",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Patrick Mahomes",
+    "value": 324,
+    "unit": "yards",
+    "text": "Three TD passes in just over three quarters. Kansas City are 8-2, a third straight win."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · East Rutherford",
+    "home": "Giants",
+    "homeAbbr": "NYG",
+    "homeScore": 23,
+    "away": "Jaguars",
+    "awayAbbr": "JAX",
+    "awayScore": 18,
+    "status": "FINAL",
+    "note": "Trevor Lawrence intercepted twice",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+   },
+   {
+    "type": "text",
+    "dur": 7.0,
+    "label": "New York · 6-3-1",
+    "title": "Giants lead the NFC East",
+    "sub": "J.J. McCarthy found Malachi Fields for the key late first down. Washington are two games back."
+   },
+   {
+    "type": "score",
+    "dur": 7.0,
+    "label": "Sunday · Orchard Park",
+    "home": "Bills",
+    "homeAbbr": "BUF",
+    "homeScore": 26,
+    "away": "Dolphins",
+    "awayAbbr": "MIA",
+    "awayScore": 9,
+    "status": "FINAL",
+    "note": "No touchdown allowed again",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+   },
+   {
+    "type": "stat",
+    "dur": 7.0,
+    "label": "Buffalo Bills",
+    "value": "9–1",
+    "text": "The defense hasn't allowed a touchdown in more than 15 quarters."
+   },
+   {
+    "type": "text",
+    "dur": 9.0,
+    "label": "Around the league",
+    "title": "Lions, Bears, Texans, Jets and Broncos win",
+    "sub": "Detroit won a 6th straight (31–21 v Tampa), Jeffery Simmons had 3 sacks in the Bears' 5th straight win, C.J. Stroud threw 3 TDs in Houston's 26–3 win over the Colts, the Jets scored on their first five drives to beat the Chargers (1-9), and Denver beat Las Vegas 38–24 honoring the late Tom Jackson."
+   },
+   {
+    "type": "table",
+    "dur": 9.0,
+    "label": "Playoff picture after Week 11 · AFC",
+    "cols": [
+     "W",
+     "L"
+    ],
+    "rows": [
+     [
+      1,
+      "Bills",
+      9,
+      1
+     ],
+     [
+      2,
+      "Broncos",
+      8,
+      2
+     ],
+     [
+      3,
+      "Jaguars",
+      7,
+      3
+     ],
+     [
+      4,
+      "Bengals",
+      7,
+      3
+     ],
+     [
+      5,
+      "Chiefs",
+      8,
+      2
+     ],
+     [
+      6,
+      "Browns",
+      6,
+      4
+     ],
+     [
+      7,
+      "Steelers",
+      6,
+      4
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "note": "Seeds 1–4 are division leaders"
+   },
+   {
+    "type": "table",
+    "dur": 9.0,
+    "label": "Playoff picture after Week 11 · NFC",
+    "cols": [
+     "W",
+     "L",
+     "T"
+    ],
+    "rows": [
+     [
+      1,
+      "49ers",
+      9,
+      1,
+      0
+     ],
+     [
+      2,
+      "Lions",
+      8,
+      2,
+      0
+     ],
+     [
+      3,
+      "Giants",
+      6,
+      3,
+      1
+     ],
+     [
+      4,
+      "Panthers",
+      5,
+      5,
+      0
+     ],
+     [
+      5,
+      "Bears",
+      8,
+      2,
+      0
+     ],
+     [
+      6,
+      "Vikings",
+      7,
+      3,
+      0
+     ],
+     [
+      7,
+      "Packers",
+      6,
+      4,
+      0
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "note": "Seeds 1–4 are division leaders"
+   },
+   {
+    "type": "list",
+    "dur": 9.0,
+    "label": "Week 12 · away @ home (ET)",
+    "title": "Games to watch",
+    "rows": [
+     [
+      "Wed 8pm",
+      "Packers @ Rams",
+      "Netflix"
+     ],
+     [
+      "Thu 1pm",
+      "Bears @ Lions",
+      "CBS"
+     ],
+     [
+      "Thu 4:30pm",
+      "Eagles @ Cowboys",
+      "Fox"
+     ],
+     [
+      "Thu 8:20pm",
+      "Chiefs @ Bills",
+      "NBC"
+     ]
+    ],
+    "note": "Fri 3pm: Broncos @ Steelers (Prime Video)"
+   },
+   {
+    "type": "cta",
+    "dur": 5,
+    "title": "Best game of Week 11?",
+    "sub": "Tell us in the comments"
+   },
+   {
+    "type": "outro",
+    "dur": 4,
+    "title": "Live scores & standings",
+    "sub": "Follow ScoreBuzz for daily results and recaps"
+   }
+  ]
+ }
+]
