@@ -31,20 +31,10 @@
    "event": "401892779",
    "note": "San Jose Sharks vs Minnesota Wild, 2026-11-24T03:00:00Z"
   },
-  "7": {
-   "league": "nhl",
-   "event": "401892778",
-   "note": "Seattle Kraken vs Anaheim Ducks, 2026-11-24T02:40:00Z"
-  },
   "8": {
    "league": "nba",
    "event": "401910044",
    "note": "Los Angeles Lakers vs Utah Jazz, 2026-11-24T03:00:00Z"
-  },
-  "10": {
-   "league": "nba",
-   "event": "401910045",
-   "note": "Sacramento Kings vs San Antonio Spurs, 2026-11-24T03:00:00Z"
   }
  },
  "fit": {
