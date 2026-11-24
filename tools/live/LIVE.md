@@ -287,6 +287,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 24 Nov 2026 03:42 UTC: Pelicans-Suns (Slot 2, NBA, in OT) started now (LIVE 03:42). Stream check: Slots 1, 6-10 correct. End watch stopped Pelicans-Suns (Slot 2) at 04:01, Rockets-Clippers (Slot 9) at 04:04 and Commanders-Bengals MNF (Slot 6) at 04:32, each ~12 min after the final.
   - 24 Nov 2026 04:42 UTC: no planner actions (Slots 2, 6, 9 cleared from settings; 4 live). Stream check: Slots 1, 7, 8, 10 correct. End watch stopped Kraken-Ducks (Slot 7) at 05:34 and Kings-Spurs (Slot 10) at 05:37 (~12 min after the final); Lakers-Jazz (Slot 8, grace to 05:48) left for the next run.
   - 24 Nov 2026 05:42 UTC: no planner actions (2 live, both final, in grace). End watch stopped Sharks-Wild (Slot 1) and Lakers-Jazz (Slot 8) at 05:47 (~5 min after first seen final). Idle; no live streams.
+  - 24 Nov 2026 06:42 UTC: no planner actions (0 live, nothing to schedule; Slots 1, 8 cleared from settings). End watch idle.
 - Older cap (found 7 Nov 2026 01:45 UTC): the plan allowed only 9 concurrent live streams; the log below is from that period.
   - 8 Nov 2026 14:43 UTC: cap hit again — Real Sociedad-Rayo (Slot 2, now) and 4 Ligue 1 16:15 UK games (Slots 12-15) refused; only Slot 1 (Man Utd-Villa) scheduled.
   - 8 Nov 2026 16:45 UTC: 4 Ligue 1 restarts (Slots 14-17) went through (10 streams counted), then all 8 18:00 UK schedules (7 NFL 1pm ET games + Panthers-Bruins, Slots 4-6,8-11,18) were refused by the cap; the next hourly runs start them as slots free up.

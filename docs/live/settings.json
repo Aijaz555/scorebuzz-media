@@ -25,18 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "1": {
-   "league": "nhl",
-   "event": "401892779",
-   "note": "San Jose Sharks vs Minnesota Wild, 2026-11-24T03:00:00Z"
-  },
-  "8": {
-   "league": "nba",
-   "event": "401910044",
-   "note": "Los Angeles Lakers vs Utah Jazz, 2026-11-24T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
