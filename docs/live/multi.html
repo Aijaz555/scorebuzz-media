@@ -64,6 +64,7 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 <div id="grid"><div class="err">Loading live scores…</div></div>
 <div class="bot"><div class="lab" id="lab">GOALS</div><div class="tk"><div id="tk"></div></div><div class="site">score<b>buzz</b>.net</div></div>
 <script>
+(() => {   // own scope: on a stream slot this page is document.write()n over app.html, whose globals stay
 const Q = new URLSearchParams(location.search);
 const PATH = { ucl: 'uefa.champions', uel: 'uefa.europa', uecl: 'uefa.europa.conf', epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', unl: 'uefa.nations' };
 const NAME = { ucl: 'Champions League', uel: 'Europa League', uecl: 'Conference League', epl: 'Premier League', laliga: 'LaLiga', seriea: 'Serie A', ligue1: 'Ligue 1', bundesliga: 'Bundesliga', mls: 'MLS', unl: 'Nations League' };
@@ -151,4 +152,5 @@ slotLeague().then(() => load()).catch(() => {});
 setInterval(() => load().catch(() => {}), DEMO ? 1e9 : 15000);
 if (SLOT) setInterval(slotLeague, 60000);
 setTimeout(() => location.reload(), 3 * 3600e3);   // fresh page every 3 h (memory)
+})();
 </script></body></html>
