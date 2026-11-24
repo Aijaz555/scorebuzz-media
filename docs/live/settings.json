@@ -25,7 +25,18 @@
   ],
   "top25": 15,
   "pin": null,
-  "slots": {},
+  "slots": {
+    "1": {
+      "league": "ucl",
+      "event": "401915300",
+      "note": "Galatasaray vs Aston Villa, 2026-11-24T17:45:00Z"
+    },
+    "2": {
+      "league": "ucl",
+      "event": "401915380",
+      "note": "Bodo/Glimt vs LASK Linz, 2026-11-24T17:45:00Z"
+    }
+  },
   "fit": {
     "win": true,
     "fit": "fill"
