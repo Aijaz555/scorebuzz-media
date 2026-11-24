@@ -660,3 +660,10 @@ center.html therefore also reads `https://scorebuzz.net/api/live/sc-<soccer|hock
 moment a score changes; the game is found through the site row whose page address ends in the ESPN id, field `p`) and shows
 whichever of Goalserve and ESPN changed last. NFL stays on ESPN only. Switch: settings `"gsScores": true` or a list of slots
 (URL `gs=1`). Started on slot 1 only; widen to `true` once it has run cleanly through a match day.
+
+## Player photos on the streams (25 Nov 2026)
+
+Order for every player card (live tracker side panels, game leaders): the site's own photo `/img/p/<Goalserve id>.png`, else
+ESPN's headshot, else the shirt with his number. Line-ups come from `md-<fixture>.json`; when Goalserve has no line-up yet the
+live feed uses ESPN's and now fills each player's Goalserve id from his club's squad (surname, then shirt number), so the
+site's photos show. A game whose line-up is still thin is looked at again every minute (10 minutes once it is complete).

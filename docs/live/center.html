@@ -282,7 +282,11 @@ function footCards(s, c, T, pre) {
   const pc = (img, n, j, s1, d) => `<div class="pc">${img}<div class="t"><div class="n">${esc(n)}${j ? `<i>#${esc(j)}</i>` : ''}</div><div class="s">${esc(s1)}</div><div class="d">${esc(d)}</div></div></div>`;
   const t = PHOTOS[c.id]?.teams || {}, pm = t[T.full] || t[Object.keys(t).find((k) => k.toLowerCase().includes(T.nick.toLowerCase()) || T.full.toLowerCase().includes(k.toLowerCase()))] || {};
   const shirt = (j) => `<div class="shirt" style="--tc:${T.color}"><div>${esc(j || '')}</div></div>`;
-  const img = (j) => (pm[String(j ?? '')] ? `<img src="https://scorebuzz.net/img/p/${pm[String(j)].id}.png" onerror="this.outerHTML='<div class=&quot;shirt&quot; style=&quot;--tc:${T.color}&quot;><div>${esc(j || '')}</div></div>'">` : shirt(j));
+  // a player's photo: the site's own (by Goalserve id), else ESPN's headshot, else the shirt with his number (25 Nov 2026)
+  const img = (j) => { const q = pm[String(j ?? '')]; if (!q) return shirt(j);
+    const fb = `this.outerHTML='<div class=&quot;shirt&quot; style=&quot;--tc:${T.color}&quot;><div>${esc(j || '')}</div></div>'`;
+    if (q.id) return `<img src="https://scorebuzz.net/img/p/${q.id}.png" onerror="${q.img ? `this.onerror=function(){${fb}};this.src='${esc(q.img)}'` : fb}">`;
+    return q.img ? `<img src="${esc(q.img)}" onerror="${fb}">` : shirt(j); };
   const L = (s.rosters || []).find((r) => String(r.team?.id) === T.id)?.roster || [];
   if (!L.length) { // no line-up yet: last five results
     const F = (s.lastFiveGames || []).find((g) => String(g.team?.id) === T.id)?.events || [];
@@ -598,15 +602,16 @@ if (!SPORT[league]) league = 'nba';
 const LIVEPH = {};
 const livePhotos = async () => {
   const ev = String(event || ''); if (!ev || !/soccer/.test(String(SPORT[league] || ''))) return;
-  if (LIVEPH[ev] && Date.now() - LIVEPH[ev].t < 600000) return;
+  if (LIVEPH[ev] && Date.now() - LIVEPH[ev].t < (LIVEPH[ev].n >= 18 ? 600000 : 60000)) return;      // thin line-ups: look again every minute
   try {
     const feed = await J('https://scorebuzz.net/api/live/football.json'), row = (feed.m || []).find((r) => r.fx && String(r.u || '').replace(/\/$/, '').endsWith('-' + ev));
     if (!row) return;
     const md = await J('https://scorebuzz.net/api/live/md-' + row.fx + '.json'), teams = {};
     for (const side of ['h', 'a']) { const t = md[side] || {}, ps = {};
-      for (const p of [...(t.xi || []), ...(t.bench || [])]) { const n = String(p.number || '').trim(), id = String(p.id || '').trim(); if (n && /^\d+$/.test(id) && !ps[n]) ps[n] = { id, name: p.name || '' }; }
+      for (const p of [...(t.xi || []), ...(t.bench || [])]) { const n = String(p.number || '').trim(), id = String(p.id || '').trim(), img = /^https:\/\//.test(p.img || '') ? p.img : '';
+        if (n && (/^\d+$/.test(id) || img) && !ps[n]) ps[n] = { id: /^\d+$/.test(id) ? id : '', name: p.name || '', img }; }
       if (t.name && Object.keys(ps).length) teams[t.name] = ps; }
-    if (Object.keys(teams).length) { LIVEPH[ev] = { t: Date.now(), at: new Date().toISOString(), teams }; PHOTOS = Object.assign({}, PHOTOS, { [ev]: LIVEPH[ev] }); }
+    if (Object.keys(teams).length) { LIVEPH[ev] = { t: Date.now(), at: new Date().toISOString(), teams, n: Object.values(teams).reduce((k, v) => k + Object.keys(v).length, 0) }; PHOTOS = Object.assign({}, PHOTOS, { [ev]: LIVEPH[ev] }); }
   } catch (e) { /* keep what we have */ }
 };
 const loadPhotos = async () => { try { const j = await J('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/player_photos.json?t=' + Date.now()); const mine = {}; for (const k in LIVEPH) mine[k] = LIVEPH[k]; PHOTOS = Object.assign({}, j, mine); } catch (e) { /* keep */ } };
