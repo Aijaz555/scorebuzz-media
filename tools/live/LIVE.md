@@ -295,6 +295,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 24 Nov 2026 12:42 UTC: nothing live or scheduled (all 21 projects OFFLINE), no planner actions; usage already done today. End watch idle.
   - 24 Nov 2026 13:42 UTC: nothing live or scheduled (all 21 projects OFFLINE), no planner actions; usage already done today. End watch idle.
   - 24 Nov 2026 14:42 UTC: nothing live or scheduled (all 21 projects OFFLINE), no planner actions; usage already done today. End watch idle.
+  - 24 Nov 2026 15:42 UTC: Galatasaray-Aston Villa (Slot 1) and Bodo/Glimt-LASK Linz (Slot 2) UCL scheduled 17:15 (crowd audio). Nothing live, no stream check; usage already done today. End watch idle.
 - Older cap (found 7 Nov 2026 01:45 UTC): the plan allowed only 9 concurrent live streams; the log below is from that period.
   - 8 Nov 2026 14:43 UTC: cap hit again — Real Sociedad-Rayo (Slot 2, now) and 4 Ligue 1 16:15 UK games (Slots 12-15) refused; only Slot 1 (Man Utd-Villa) scheduled.
   - 8 Nov 2026 16:45 UTC: 4 Ligue 1 restarts (Slots 14-17) went through (10 streams counted), then all 8 18:00 UK schedules (7 NFL 1pm ET games + Panthers-Bruins, Slots 4-6,8-11,18) were refused by the cap; the next hourly runs start them as slots free up.
