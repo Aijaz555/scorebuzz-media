@@ -30,6 +30,16 @@
    "league": "nba",
    "event": "401909314",
    "note": "Orlando Magic vs Detroit Pistons, 2026-11-25T00:00:00Z"
+  },
+  "2": {
+   "league": "nhl",
+   "event": "401892780",
+   "note": "Edmonton Oilers vs Vegas Golden Knights, 2026-11-25T01:00:00Z"
+  },
+  "3": {
+   "league": "nba",
+   "event": "401909315",
+   "note": "Washington Wizards vs Boston Celtics, 2026-11-25T01:00:00Z"
   }
  },
  "fit": {
