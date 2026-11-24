@@ -28,8 +28,8 @@
  "slots": {
   "1": {
    "league": "nhl",
-   "event": "401892773",
-   "note": "New Jersey Devils vs Columbus Blue Jackets, 2026-11-24T00:00:00Z"
+   "event": "401892779",
+   "note": "San Jose Sharks vs Minnesota Wild, 2026-11-24T03:00:00Z"
   },
   "2": {
    "league": "nhl",
@@ -57,9 +57,9 @@
    "note": "Washington Commanders vs Cincinnati Bengals, 2026-11-24T01:15:00Z"
   },
   "7": {
-   "league": "nba",
-   "event": "401910036",
-   "note": "Charlotte Hornets vs Memphis Grizzlies, 2026-11-24T00:00:00Z"
+   "league": "nhl",
+   "event": "401892778",
+   "note": "Seattle Kraken vs Anaheim Ducks, 2026-11-24T02:40:00Z"
   },
   "8": {
    "league": "nba",
@@ -75,6 +75,11 @@
    "league": "nba",
    "event": "401910039",
    "note": "Toronto Raptors vs Milwaukee Bucks, 2026-11-24T00:30:00Z"
+  },
+  "11": {
+   "league": "mls",
+   "event": "401933728",
+   "note": "St. Louis CITY SC vs LAFC, 2026-11-24T01:15:00Z"
   }
  },
  "fit": {
@@ -355,8 +360,8 @@
   },
   "maxLive": 10,
   "maxLiveTemp": {
-   "value": 12,
-   "until": "2026-11-20T08:00:00Z"
+   "value": 11,
+   "until": "2026-11-24T04:00:00Z"
   }
  }
 }

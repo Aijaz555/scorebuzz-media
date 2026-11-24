@@ -169,6 +169,9 @@ async function games(extra) {
   const fav = (g) => g.abbrs.some((x) => favs.includes(String(x).toUpperCase()));
   const pri = (g) => cfg.leagues.indexOf(g.league);
   const favX = (g) => g.league !== 'nba' && fav(g);
+  // NFL and NHL rank ahead of every other league even when those games are already in progress (24 Nov 2026: an
+  // in-progress MLS game had pushed the 02:40 NHL Kraken-Ducks out at the cap; owner, 18 Nov: never miss an NHL game)
+  const top = (g) => (g.league === 'nfl' || g.league === 'nhl') ? 1 : 0;
   const want = [...all.values()].filter((g) => {
     if (!cfg.leagues.includes(g.league) || busy.has(`${g.league}:${g.id}`) || OFF.test(g.status)) return false;
     if (g.league === 'ncaaf' && g.rank > cfg.ncaafTop) return false;
@@ -176,7 +179,7 @@ async function games(extra) {
     if (cfg.onlyEvents && cfg.onlyEvents[g.league] && !cfg.onlyEvents[g.league].map(String).includes(String(g.id))) return false;
     if (g.state === 'in') return true;
     return g.state === 'pre' && new Date(g.start).getTime() - cfg.leadMinutes * MIN <= now + cfg.lookaheadMinutes * MIN;
-  }).sort((a, b) => (a.league === 'nba') - (b.league === 'nba') || (b.state === 'in') - (a.state === 'in') || favX(b) - favX(a) || pri(a) - pri(b) || fav(b) - fav(a) || (b.winPct ?? 0.5) - (a.winPct ?? 0.5) || a.start.localeCompare(b.start));
+  }).sort((a, b) => (a.league === 'nba') - (b.league === 'nba') || top(b) - top(a) || (b.state === 'in') - (a.state === 'in') || favX(b) - favX(a) || pri(a) - pri(b) || fav(b) - fav(a) || (b.winPct ?? 0.5) - (a.winPct ?? 0.5) || a.start.localeCompare(b.start));
   // NBA always ranks after every other league, even when its games are already in progress (22 Nov 2026: an in-progress
   // NBA game had pushed the 02:00 NHL Mammoth-Ducks out at the cap)
   // favourite NBA teams lead only within the NBA, never ahead of NHL (owner, 18 Nov 2026: never miss an NHL game; drop only NBA)
