@@ -1,0 +1,845 @@
+[
+ {
+  "id": "s01-commanders-bengals",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "drama",
+  "venue": "Northwest Stadium",
+  "yt": "2026-11-24T11:40:00",
+  "fb": "2026-11-24T12:52:00",
+  "title": "Commanders vs Bengals 22–20: Walk-Off Field Goal Stuns Burrow 😱 #shorts",
+  "description": "The Washington Commanders beat the Cincinnati Bengals 22–20 on Monday Night Football when Drew Stevens kicked a 26-yard field goal as time expired. With 39 seconds left and no timeouts, Jayden Daniels hit rookie Antonio Williams for 22 and 42 yards after Evan McPherson's 56-yard field goal had put Cincinnati ahead. Joe Burrow threw for 300 yards in defeat; the Bengals are 7-3.\n\nCommanders vs Bengals final score and NFL scores: https://scorebuzz.net\n\n#Commanders #Bengals #MNF",
+  "tags": [
+   "commanders vs bengals",
+   "bengals vs commanders",
+   "jayden daniels",
+   "antonio williams",
+   "drew stevens",
+   "joe burrow",
+   "monday night football",
+   "nfl week 11",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Monday Night Football",
+    "title": "39 seconds. No timeouts. Down 20–19.",
+    "sub": "Then this happened…"
+   },
+   {
+    "type": "score",
+    "dur": 4.2,
+    "label": "NFL · Week 11 · Monday",
+    "home": "Commanders",
+    "homeAbbr": "WSH",
+    "homeScore": 22,
+    "away": "Bengals",
+    "awayAbbr": "CIN",
+    "awayScore": 20,
+    "status": "FINAL",
+    "note": "Drew Stevens, 26 yards, as time expired",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "The final drive",
+    "title": "22 yards. Spike. 42 yards. Spike.",
+    "sub": "Jayden Daniels to rookie Antonio Williams: 64 yards in 34 seconds"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Drew Stevens",
+    "value": "5/5",
+    "unit": "field goals",
+    "text": "Including the winner from 26 yards"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Cincinnati · 7-3",
+    "title": "Bengals' 5-game win streak is over",
+    "sub": "They had scored 31+ in all five. Washington held them to 20."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Upset of the week?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Monday Night Football",
+   "big": "22–20",
+   "hook": "Won at the *buzzer*",
+   "sticker": "WALK-OFF",
+   "teams": [
+    "WSH",
+    "CIN"
+   ],
+   "emoji": "😱"
+  },
+  "fbtext": "😱 39 seconds left, no timeouts, down 20–19.\n\nJayden Daniels hit Antonio Williams twice and Drew Stevens won it as time expired: Commanders 22, Bengals 20.\n\nUpset of the week? 👇\n\n#Commanders #Bengals #MNF #Reels",
+  "time": "2026-11-24T11:40:00"
+ },
+ {
+  "id": "s02-ev-english-ucl",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "anthem",
+  "evergreen": true,
+  "yt": "2026-11-24T13:55:00",
+  "fb": "2026-11-24T15:40:00",
+  "title": "Every English Club to Win the Champions League 🏆 #UCL #shorts",
+  "description": "Every English club that has won the European Cup or Champions League: Liverpool 6 (1977, 1978, 1981, 1984, 2005, 2019), Manchester United 3 (1968, 1999, 2008), Chelsea 2 (2012, 2021), Nottingham Forest 2 (1979, 1980), Aston Villa 1 (1982) and Manchester City 1 (2023). That's 15 titles for six English clubs. Arsenal have reached two finals and lost both: to Barcelona in 2006 and to PSG on penalties in Budapest in May 2026.\n\nChampions League scores and table: https://scorebuzz.net\n\n#ChampionsLeague #UCL #Arsenal",
+  "tags": [
+   "champions league winners",
+   "english clubs champions league winners",
+   "every champions league winner",
+   "liverpool champions league titles",
+   "manchester united champions league",
+   "arsenal champions league final",
+   "arsenal vs psg final",
+   "nottingham forest european cup",
+   "champions league",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.8,
+    "kicker": "Champions League history",
+    "title": "6 English clubs have won it. Arsenal aren't one of them.",
+    "sub": "Every English winner"
+   },
+   {
+    "type": "list",
+    "dur": 6.0,
+    "label": "European Cup / Champions League",
+    "title": "English winners",
+    "rows": [
+     [
+      "Liverpool",
+      "6",
+      "1977–2019"
+     ],
+     [
+      "Man United",
+      "3",
+      "1968, 99, 2008"
+     ],
+     [
+      "Chelsea",
+      "2",
+      "2012, 2021"
+     ],
+     [
+      "Nottm Forest",
+      "2",
+      "1979, 1980"
+     ],
+     [
+      "Aston Villa",
+      "1",
+      "1982"
+     ],
+     [
+      "Man City",
+      "1",
+      "2023"
+     ]
+    ],
+    "note": "Titles · seasons won"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "England",
+    "value": 15,
+    "unit": "titles",
+    "text": "From six different clubs"
+   },
+   {
+    "type": "text",
+    "dur": 3.8,
+    "label": "Arsenal in finals",
+    "title": "Played 2, lost 2",
+    "sub": "2006: lost to Barcelona in Paris. 2026: 1–1 v PSG in Budapest, lost 4–3 on penalties."
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Arsenal (at the 2026 final)",
+    "value": 226,
+    "unit": "games",
+    "text": "In the competition without winning it: more than any other club"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is this Arsenal's year?",
+    "sub": "Follow ScoreBuzz for Champions League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League",
+   "big": "15",
+   "hook": "English titles. *Zero* for Arsenal",
+   "sticker": "HISTORY",
+   "emoji": "🏆"
+  },
+  "fbtext": "🏆 English clubs have won the Champions League 15 times: Liverpool 6, Man United 3, Chelsea 2, Forest 2, Villa 1, City 1.\n\nArsenal? Two finals, two defeats, the latest on penalties to PSG in May.\n\nIs this finally Arsenal's year? 👇\n\n#ChampionsLeague #UCL #Arsenal #Reels",
+  "time": "2026-11-24T13:55:00"
+ },
+ {
+  "id": "s03-brentford-everton",
+  "sport": "football",
+  "league": "epl",
+  "bed": "hype",
+  "venue": "Gtech Community Stadium",
+  "yt": "2026-11-24T16:10:00",
+  "fb": "2026-11-24T22:12:00",
+  "title": "Brentford vs Everton 4–0: Janelt 30-Yard Screamer 🚀 #shorts",
+  "description": "Brentford beat 10-man Everton 4–0 at the Gtech Community Stadium on Monday night in the Premier League. Keane Lewis-Potter scored twice in two minutes, James Tarkowski was sent off before half-time, Vitaly Janelt hit a 30-yard stunner and Fábio Carvalho added a fourth. Brentford move up to sixth.\n\nBrentford vs Everton final score and Premier League table: https://scorebuzz.net\n\n#BrentfordFC #EFC #PremierLeague",
+  "tags": [
+   "brentford vs everton",
+   "everton vs brentford",
+   "vitaly janelt",
+   "keane lewis-potter",
+   "james tarkowski red card",
+   "brentford",
+   "everton",
+   "premier league results today",
+   "premier league table",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Premier League · Monday night",
+    "title": "Two goals in two minutes… then a red card",
+    "sub": "Brentford v Everton"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Gtech Community Stadium",
+    "home": "Brentford",
+    "homeAbbr": "BRE",
+    "homeScore": 4,
+    "away": "Everton",
+    "awayAbbr": "EVE",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "note": "Lewis-Potter 23' 25' · Janelt 67' · Carvalho 90'",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "40 minutes",
+    "title": "Tarkowski sent off",
+    "sub": "Everton played the last 50 minutes with ten men"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "67 minutes",
+    "title": "Vitaly Janelt from 30 yards",
+    "sub": "Top corner. Game over."
+   },
+   {
+    "type": "table",
+    "dur": 4.2,
+    "label": "Premier League · after 11 games",
+    "cols": [
+     "PTS"
+    ],
+    "rows": [
+     [
+      4,
+      "Liverpool",
+      21
+     ],
+     [
+      5,
+      "Bournemouth",
+      18
+     ],
+     [
+      6,
+      "Brentford",
+      17
+     ],
+     [
+      7,
+      "Leeds",
+      17
+     ],
+     [
+      8,
+      "Chelsea",
+      16
+     ],
+     [
+      9,
+      "Everton",
+      16
+     ]
+    ],
+    "highlight": [
+     6
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Brentford finish top six?",
+    "sub": "Follow ScoreBuzz for Premier League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League",
+   "big": "4–0",
+   "hook": "Brentford *rout* 10-man Everton",
+   "sticker": "FULL TIME",
+   "teams": [
+    "BRE",
+    "EVE"
+   ],
+   "emoji": "🚀"
+  },
+  "fbtext": "🚀 Brentford 4–0 Everton.\n\nKeane Lewis-Potter scored twice in two minutes, James Tarkowski saw red and Vitaly Janelt hit one from 30 yards.\n\nCan Brentford finish in the top six? 👇\n\n#BrentfordFC #EFC #PremierLeague #Reels",
+  "time": "2026-11-24T16:10:00"
+ },
+ {
+  "id": "s04-ucl-md5-predict",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "hype",
+  "yt": "2026-11-24T18:25:00",
+  "fb": "2026-11-24T20:20:00",
+  "title": "Champions League Predictions Tonight: Arsenal vs Dortmund ⚽ #UCL #shorts",
+  "description": "Champions League predictions for Matchday 5 on Tuesday 24 November: Arsenal vs Borussia Dortmund, Manchester City vs Napoli, Real Madrid vs PSV, Galatasaray vs Aston Villa (17:45 GMT), Bodø/Glimt vs LASK, Como vs AEK Athens, RB Leipzig vs Lens, Feyenoord vs Porto and Slovan Bratislava vs Real Betis (20:00 GMT / 3pm ET). These are predictions, not results: drop your scores in the comments.\n\nChampions League live scores: https://scorebuzz.net\n\n#ChampionsLeague #UCL #Arsenal",
+  "tags": [
+   "champions league predictions",
+   "arsenal vs dortmund",
+   "dortmund vs arsenal",
+   "man city vs napoli",
+   "real madrid vs psv",
+   "galatasaray vs aston villa",
+   "champions league matchday 5",
+   "ucl predictions",
+   "champions league tonight",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 19.0,
+    "kicker": "Champions League · Matchday 5 · Tuesday",
+    "title": "Predict the scores",
+    "badge": "Score prediction",
+    "first": 1.0,
+    "step": 1.9,
+    "rows": [
+     {
+      "home": "Galatasaray",
+      "homeAbbr": "GAL",
+      "hs": "?",
+      "away": "Aston Villa",
+      "awayAbbr": "AVL",
+      "as": "?",
+      "note": "17:45 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+     },
+     {
+      "home": "Bodø/Glimt",
+      "homeAbbr": "BOD",
+      "hs": "?",
+      "away": "LASK",
+      "awayAbbr": "LASK",
+      "as": "?",
+      "note": "17:45 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png"
+     },
+     {
+      "home": "Arsenal",
+      "homeAbbr": "ARS",
+      "hs": "?",
+      "away": "Dortmund",
+      "awayAbbr": "BVB",
+      "as": "?",
+      "note": "20:00 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
+     },
+     {
+      "home": "Man City",
+      "homeAbbr": "MCI",
+      "hs": "?",
+      "away": "Napoli",
+      "awayAbbr": "NAP",
+      "as": "?",
+      "note": "20:00 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
+     },
+     {
+      "home": "Real Madrid",
+      "homeAbbr": "RMA",
+      "hs": "?",
+      "away": "PSV",
+      "awayAbbr": "PSV",
+      "as": "?",
+      "note": "20:00 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png"
+     },
+     {
+      "home": "Como",
+      "homeAbbr": "COM",
+      "hs": "?",
+      "away": "AEK Athens",
+      "awayAbbr": "AEK",
+      "as": "?",
+      "note": "20:00 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png"
+     },
+     {
+      "home": "Leipzig",
+      "homeAbbr": "RBL",
+      "hs": "?",
+      "away": "Lens",
+      "awayAbbr": "RCL",
+      "as": "?",
+      "note": "20:00 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
+     },
+     {
+      "home": "Feyenoord",
+      "homeAbbr": "FEY",
+      "hs": "?",
+      "away": "Porto",
+      "awayAbbr": "POR",
+      "as": "?",
+      "note": "20:00 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png"
+     },
+     {
+      "home": "Slovan",
+      "homeAbbr": "SLO",
+      "hs": "?",
+      "away": "Real Betis",
+      "awayAbbr": "BET",
+      "as": "?",
+      "note": "20:00 GMT",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Drop your predictions 👇",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League tonight",
+   "big": "9",
+   "hook": "Games. *Predict* them all",
+   "sticker": "PREDICT",
+   "emoji": "⚽"
+  },
+  "fbtext": "⚽ Champions League night: Arsenal v Dortmund, Man City v Napoli, Real Madrid v PSV and Galatasaray v Villa.\n\nPredict the scores 👇\n\n#UCL #ChampionsLeague #Arsenal #Reels",
+  "time": "2026-11-24T18:25:00"
+ },
+ {
+  "id": "s05-ev-nfl-never-sb",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "drama",
+  "evergreen": true,
+  "yt": "2026-11-24T20:40:00",
+  "fb": "2026-11-25T01:00:00",
+  "title": "4 NFL Teams Have Never Played in a Super Bowl 😳 #NFL #shorts",
+  "description": "Four NFL teams have never played in a Super Bowl: the Cleveland Browns, Detroit Lions, Houston Texans and Jacksonville Jaguars. The Browns and Lions both won NFL championships before the Super Bowl era, the Browns and Jaguars have each lost three AFC Championship Games, and the Texans have never gone beyond the divisional round since starting in 2002. The Lions are 8-2 this season and host the Bears on Thanksgiving.\n\nNFL scores and standings: https://scorebuzz.net\n\n#NFL #Lions #Browns",
+  "tags": [
+   "nfl teams never been to the super bowl",
+   "teams that have never played in a super bowl",
+   "detroit lions super bowl",
+   "cleveland browns super bowl",
+   "houston texans super bowl",
+   "jacksonville jaguars super bowl",
+   "nfl history",
+   "super bowl",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NFL history",
+    "title": "4 NFL teams have NEVER played in a Super Bowl",
+    "sub": "Can you name them?"
+   },
+   {
+    "type": "list",
+    "dur": 5.6,
+    "label": "Never reached a Super Bowl",
+    "title": "The four",
+    "rows": [
+     [
+      "Browns",
+      "since 1946",
+      "4 NFL titles pre-SB"
+     ],
+     [
+      "Lions",
+      "since 1930",
+      "4 NFL titles pre-SB"
+     ],
+     [
+      "Jaguars",
+      "since 1995",
+      "3 AFC title-game losses"
+     ],
+     [
+      "Texans",
+      "since 2002",
+      "never past divisional"
+     ]
+    ],
+    "note": "Browns: 1950, 54, 55, 64 · Lions: 1935, 52, 53, 57"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Browns & Jaguars",
+    "value": 3,
+    "unit": "AFC Championship losses each",
+    "text": "One game from the Super Bowl, three times each"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Super Bowl-less",
+    "value": 12,
+    "unit": "teams",
+    "text": "have never won one. Bills and Vikings are 0-4 in Super Bowls."
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "This season",
+    "title": "The Lions are 8-2",
+    "sub": "Six straight wins. Bears at Lions on Thanksgiving."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Which one gets there first?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL history",
+   "big": "4",
+   "hook": "Teams. *Never* in a Super Bowl",
+   "sticker": "HISTORY",
+   "emoji": "😳"
+  },
+  "fbtext": "😳 Four NFL teams have never played in a Super Bowl: the Browns, Lions, Jaguars and Texans.\n\nThe Lions are 8-2 and host the Bears on Thanksgiving.\n\nWhich one makes it first? 👇\n\n#NFL #Lions #Browns #Reels",
+  "time": "2026-11-24T20:40:00"
+ },
+ {
+  "id": "s06-nba-monday-board",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "yt": "2026-11-25T01:10:00",
+  "fb": "2026-11-25T03:48:00",
+  "title": "NBA Scores Tonight: Every Monday Result 🏀 #NBA #shorts",
+  "description": "TBD",
+  "tags": [],
+  "scenes": [],
+  "thumb": {
+   "kicker": "NBA · Monday",
+   "big": "10",
+   "hook": "Games, *every* score",
+   "sticker": "FINAL",
+   "emoji": "🏀"
+  },
+  "fbtext": "TBD",
+  "time": "2026-11-25T01:10:00"
+ },
+ {
+  "id": "s07-bucks-skid-over",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "anthem",
+  "venue": "Scotiabank Arena",
+  "fb": "2026-11-25T06:36:00",
+  "title": "Bucks vs Raptors 116–111: Milwaukee End 13-Game Skid 😅 #NBA #shorts",
+  "description": "The Milwaukee Bucks beat the Toronto Raptors 116–111 on Monday night to snap a 13-game losing streak, the second-longest in franchise history. Tyler Herro scored 32 two days after his career-high 50 in Philadelphia, and Myles Turner had a season-high 27 with five 3-pointers. Scottie Barnes scored 31 for Toronto. Milwaukee are 2-16.\n\nBucks vs Raptors final score and NBA scores: https://scorebuzz.net\n\n#Bucks #TylerHerro #NBA",
+  "tags": [
+   "bucks vs raptors",
+   "raptors vs bucks",
+   "milwaukee bucks",
+   "tyler herro",
+   "myles turner",
+   "bucks losing streak",
+   "scottie barnes",
+   "nba scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA · Monday night",
+    "title": "13 straight losses. Finally… a win.",
+    "sub": "Milwaukee Bucks"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Scotiabank Arena",
+    "home": "Raptors",
+    "homeAbbr": "TOR",
+    "homeScore": 111,
+    "away": "Bucks",
+    "awayAbbr": "MIL",
+    "awayScore": 116,
+    "status": "FINAL",
+    "note": "First Bucks win since Oct. 26",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Tyler Herro",
+    "value": 32,
+    "unit": "points",
+    "text": "Two days after his career-high 50. 15 came in the third quarter."
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Myles Turner",
+    "value": 27,
+    "unit": "points",
+    "text": "Season high. 5 of 6 from three."
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Milwaukee · 2-16",
+    "title": "2nd-longest skid in Bucks history",
+    "sub": "13 games. Over."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can the Bucks turn it around?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA",
+   "big": "13",
+   "hook": "Straight losses… *over*",
+   "sticker": "FINALLY",
+   "teams": [
+    "MIL",
+    "TOR"
+   ],
+   "emoji": "😅"
+  },
+  "fbtext": "😅 The Bucks finally won.\n\nTyler Herro scored 32 and Myles Turner 27 as Milwaukee beat Toronto 116–111 to end a 13-game losing streak, the second-longest in franchise history.\n\nCan they turn it around at 2-16? 👇\n\n#Bucks #TylerHerro #NBA #Reels",
+  "time": "2026-11-25T06:36:00"
+ },
+ {
+  "id": "s08-leafs-skid-over",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "anthem",
+  "venue": "UBS Arena",
+  "yt": "2026-11-25T03:25:00",
+  "fb": "2026-11-25T08:28:00",
+  "title": "Maple Leafs vs Islanders 4–2: Gavin McKenna Ends 9-Game Skid 🍁 #shorts",
+  "description": "Gavin McKenna scored the go-ahead goal on a delayed penalty with just over 11 minutes left as the Toronto Maple Leafs beat the New York Islanders 4–2 at UBS Arena, ending a nine-game losing streak. Anthony Stolarz made 14 of his 20 saves in the first period after Anthony Duclair put New York ahead. Toronto are 9-14-3.\n\nMaple Leafs vs Islanders final score and NHL scores: https://scorebuzz.net\n\n#LeafsForever #GavinMcKenna #NHL",
+  "tags": [
+   "maple leafs vs islanders",
+   "islanders vs maple leafs",
+   "gavin mckenna",
+   "toronto maple leafs",
+   "anthony stolarz",
+   "new york islanders",
+   "leafs losing streak",
+   "nhl scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NHL · Monday night",
+    "title": "Nine straight losses. Then Gavin McKenna.",
+    "sub": "Toronto Maple Leafs"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "UBS Arena",
+    "home": "Islanders",
+    "homeAbbr": "NYI",
+    "homeScore": 2,
+    "away": "Maple Leafs",
+    "awayAbbr": "TOR",
+    "awayScore": 4,
+    "status": "FINAL",
+    "note": "McKenna's go-ahead goal with 11 minutes left",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Anthony Stolarz",
+    "value": 14,
+    "unit": "1st-period saves",
+    "text": "Toronto were outshot 15–6 but only trailed 1–0"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "The winner",
+    "title": "On a delayed penalty",
+    "sub": "Gavin McKenna put Toronto ahead with just over 11 minutes left"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Toronto · 9-14-3",
+    "title": "Nine-game skid: over",
+    "sub": "First win since the skid began"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can the Leafs make the playoffs?",
+    "sub": "Follow ScoreBuzz for NHL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL",
+   "big": "9",
+   "hook": "Game skid *snapped*",
+   "sticker": "FINALLY",
+   "teams": [
+    "TOR",
+    "NYI"
+   ],
+   "emoji": "🍁"
+  },
+  "fbtext": "🍁 Nine straight losses… and then Gavin McKenna.\n\nHe scored the go-ahead goal with 11 minutes left as the Leafs beat the Islanders 4–2.\n\nCan Toronto still make the playoffs? 👇\n\n#LeafsForever #GavinMcKenna #NHL #Reels",
+  "time": "2026-11-25T03:25:00"
+ },
+ {
+  "id": "s09-arsenal-dortmund",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "drama",
+  "venue": "Emirates Stadium",
+  "fb": "2026-11-24T18:28:00",
+  "title": "Arsenal vs Dortmund Preview: 1st v 1st ⚽ #UCL #shorts",
+  "description": "Arsenal host Borussia Dortmund in the Champions League tonight (20:00 GMT / 3pm ET). Arsenal lead the Premier League by six points and are unbeaten in the Champions League with 10 points from four games; Dortmund top the Bundesliga and have nine points. Arsenal lost last season's final to PSG on penalties.\n\nArsenal vs Dortmund live score: https://scorebuzz.net\n\n#Arsenal #BVB #UCL",
+  "tags": [
+   "arsenal vs dortmund",
+   "dortmund vs arsenal",
+   "champions league tonight",
+   "arsenal",
+   "borussia dortmund",
+   "ucl predictions",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "Champions League · tonight",
+    "title": "1st in England v 1st in Germany",
+    "sub": "Arsenal v Dortmund · 20:00 GMT / 3pm ET"
+   },
+   {
+    "type": "text",
+    "dur": 4.0,
+    "label": "Top of their leagues",
+    "title": "Arsenal 6 clear · Dortmund 2 clear",
+    "sub": "Arsenal: 28 pts after 11 Premier League games. Dortmund: 24 pts after 10 in the Bundesliga."
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Champions League so far",
+    "title": "Arsenal 10 pts · Dortmund 9",
+    "rows": [
+     [
+      "ARS",
+      "W W D W",
+      "unbeaten"
+     ],
+     [
+      "BVB",
+      "W L W W",
+      "3 wins"
+     ]
+    ],
+    "note": "Arsenal 3rd · Dortmund 12th in the league phase"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Last May",
+    "title": "Arsenal lost the final on penalties",
+    "sub": "1–1 v PSG in Budapest, 4–3 in the shootout"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Score prediction?",
+    "sub": "Follow ScoreBuzz for live scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League tonight",
+   "big": "1v1",
+   "hook": "Top of *England* v top of Germany",
+   "sticker": "TONIGHT",
+   "teams": [
+    "ARS",
+    "BVB"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Top of the Premier League v top of the Bundesliga: Arsenal v Dortmund, 20:00 GMT / 3pm ET.\n\nArsenal are unbeaten in the Champions League this season.\n\nScore prediction? 👇\n\n#Arsenal #BVB #UCL #Reels",
+  "time": "2026-11-24T18:28:00"
+ }
+]

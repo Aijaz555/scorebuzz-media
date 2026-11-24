@@ -1,0 +1,360 @@
+[
+ {
+  "id": "01-commanders-bengals",
+  "time": "2026-11-24T11:00:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "MONDAY NIGHT FOOTBALL · WEEK 11",
+  "home": "Commanders",
+  "homeScore": 22,
+  "away": "Bengals",
+  "awayScore": 20,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+  "venue": "Northwest Stadium",
+  "headline": "Drew Stevens wins it as time expires",
+  "sub": "Daniels to Antonio Williams: 22 yards, then 42. 64 yards in 34 seconds, no timeouts. Stevens 5/5 on field goals.",
+  "caption": "🚨 Commanders 22, Bengals 20.\n\nNo timeouts, 39 seconds left: Jayden Daniels hit rookie Antonio Williams for 22 and 42 yards, and Drew Stevens kicked the 26-yard winner as time expired.\n\nBiggest upset of Week 11? 👇\n\n#HTTC #Bengals #MNF",
+  "firstCommentText": ""
+ },
+ {
+  "id": "02-brentford-everton",
+  "time": "2026-11-24T11:56:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "score",
+  "label": "PREMIER LEAGUE · MONDAY NIGHT",
+  "home": "Brentford",
+  "homeScore": 4,
+  "away": "Everton",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+  "venue": "Gtech Community Stadium",
+  "headline": "Janelt screamer caps Brentford rout",
+  "sub": "Lewis-Potter 23' & 25', Janelt 67', Carvalho 90'. Tarkowski sent off on 40'. Brentford up to 6th.",
+  "caption": "🐝 Brentford 4–0 Everton.\n\nKeane Lewis-Potter scored twice in two minutes, James Tarkowski was sent off before half-time and Vitaly Janelt hit a 30-yard stunner.\n\nCan Brentford finish in the top six? 👇\n\n#BrentfordFC #EFC #PremierLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "03-monza-fiorentina",
+  "time": "2026-11-24T13:48:00",
+  "sport": "football",
+  "league": "seriea",
+  "kind": "score",
+  "label": "SERIE A · MONDAY NIGHT",
+  "home": "Monza",
+  "homeScore": 3,
+  "away": "Fiorentina",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
+  "venue": "U-Power Stadium",
+  "headline": "Fiorentina sink to 16th",
+  "sub": "Gustavo Varela 45' (pen) & 51', Jay Robinson 59'. Fiorentina have 9 points from 12 games.",
+  "caption": "🟣 Monza 3–0 Fiorentina.\n\nGustavo Varela scored twice and Jay Robinson volleyed in a third. Fiorentina are 16th with just nine points from 12 games.\n\nAre Fiorentina in a relegation fight? 👇\n\n#Fiorentina #Monza #SerieA",
+  "firstCommentText": ""
+ },
+ {
+  "id": "04-epl-top5",
+  "time": "2026-11-24T14:44:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · TOP FIVE AFTER 11 GAMES",
+  "headline": "Arsenal six points clear",
+  "rows": [
+   [
+    "1. Arsenal",
+    "9-1-1",
+    "28 pts"
+   ],
+   [
+    "2. Brighton",
+    "7-1-3",
+    "22 pts"
+   ],
+   [
+    "3. Man City",
+    "7-1-3",
+    "22 pts"
+   ],
+   [
+    "4. Liverpool",
+    "6-3-2",
+    "21 pts"
+   ],
+   [
+    "5. Bournemouth",
+    "5-3-3",
+    "18 pts"
+   ]
+  ],
+  "sub": "Brentford's 4–0 win over Everton lifted them to 6th on 17 points. Man United are 19th.",
+  "caption": "📊 The Premier League top five after Matchweek 11.\n\nArsenal are six points clear of Brighton and Man City, with Liverpool one further back.\n\nWho finishes second? 👇\n\n#PremierLeague #Arsenal #MCFC",
+  "firstCommentText": ""
+ },
+ {
+  "id": "05-ucl-tonight",
+  "time": "2026-11-24T16:36:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 5 · TONIGHT",
+  "headline": "Five games to watch",
+  "rows": [
+   [
+    "17:45 GMT",
+    "Galatasaray v Aston Villa",
+    "12:45pm ET"
+   ],
+   [
+    "20:00 GMT",
+    "Arsenal v Dortmund",
+    "3pm ET"
+   ],
+   [
+    "20:00 GMT",
+    "Man City v Napoli",
+    "3pm ET"
+   ],
+   [
+    "20:00 GMT",
+    "Real Madrid v PSV",
+    "3pm ET"
+   ],
+   [
+    "20:00 GMT",
+    "Como v AEK Athens",
+    "3pm ET"
+   ]
+  ],
+  "sub": "Nine league-phase games tonight, nine more on Wednesday.",
+  "caption": "⭐ Champions League night.\n\nArsenal host Dortmund, Man City face Napoli, Real Madrid play PSV and Aston Villa go to Galatasaray (17:45 GMT).\n\nWhich game are you watching? 👇\n\n#UCL #ChampionsLeague #Arsenal",
+  "firstCommentText": ""
+ },
+ {
+  "id": "06-arsenal-dortmund",
+  "time": "2026-11-24T17:32:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "headline",
+  "label": "CHAMPIONS LEAGUE · TONIGHT · 20:00 GMT / 3PM ET",
+  "venue": "Emirates Stadium",
+  "headline": "Arsenal v Dortmund: first in England v first in Germany",
+  "sub": "Arsenal: 10 pts from 4 games, unbeaten. Dortmund: 9 pts. Both lead their leagues (Arsenal by 6, Dortmund by 2).",
+  "caption": "🔥 Top of the Premier League v top of the Bundesliga, tonight at the Emirates.\n\nArsenal are unbeaten in the Champions League this season (10 points). Dortmund have 9.\n\nScore prediction? 👇\n\n#Arsenal #BVB #UCL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "07-ucl-table",
+  "time": "2026-11-24T19:24:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · LEAGUE PHASE · AFTER 4 OF 8",
+  "headline": "Four English clubs in the top eight",
+  "rows": [
+   [
+    "1. PSG",
+    "4-0-0",
+    "12"
+   ],
+   [
+    "2. Real Madrid",
+    "4-0-0",
+    "12"
+   ],
+   [
+    "3. Arsenal",
+    "3-1-0",
+    "10"
+   ],
+   [
+    "4. Como",
+    "3-0-1",
+    "9"
+   ],
+   [
+    "5. Barcelona",
+    "3-0-1",
+    "9"
+   ],
+   [
+    "6–8. Villa, City, Liverpool",
+    "3-0-1",
+    "9"
+   ]
+  ],
+  "sub": "Top eight go straight to the last 16.",
+  "caption": "📊 Champions League table before Matchday 5: Arsenal are 3rd, and Aston Villa, Man City and Liverpool are all in the top eight too. Man United are 17th.\n\nWho wins it this season? 👇\n\n#UCL #ChampionsLeague #PremierLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "08-gala-villa",
+  "time": "2026-11-24T21:16:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "headline",
+  "label": "CHAMPIONS LEAGUE · TONIGHT · 17:45 GMT / 12:45PM ET",
+  "venue": "RAMS Park",
+  "headline": "Aston Villa go to Galatasaray",
+  "sub": "Villa: 9 pts, 6th in the league phase. Galatasaray: 6 pts. Unai Emery's side are 12th in the Premier League.",
+  "caption": "🦁 Aston Villa are in Istanbul tonight.\n\nThey're 6th in the Champions League table with 9 points; Galatasaray have 6. Kick-off 17:45 GMT / 12:45pm ET.\n\nCan Villa win in Turkey? 👇\n\n#AVFC #Galatasaray #UCL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "09-stl-lafc",
+  "time": "2026-11-24T23:08:00",
+  "sport": "football",
+  "league": "mls",
+  "kind": "score",
+  "label": "MLS CUP PLAYOFFS · WEST ROUND ONE",
+  "home": "St. Louis CITY",
+  "homeScore": 3,
+  "away": "LAFC",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
+  "venue": "Energizer Park",
+  "headline": "St. Louis hold off LAFC",
+  "sub": "Edelman 34', Jeong Sang-Bin 51', Becher 78'. Palencia and a Bouanga penalty for LAFC.",
+  "caption": "⚽ St. Louis CITY SC 3–2 LAFC.\n\nDaniel Edelman, Jeong Sang-Bin and a Simon Becher strike from outside the box, then Denis Bouanga's late penalty made it nervy.\n\nWho wins MLS Cup? 👇\n\n#STLCITY #LAFC #MLSCupPlayoffs",
+  "firstCommentText": ""
+ },
+ {
+  "id": "10-blazers-76ers",
+  "time": "2026-11-25T00:04:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · MONDAY NIGHT",
+  "home": "76ers",
+  "homeScore": 111,
+  "away": "Trail Blazers",
+  "awayScore": 128,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+  "venue": "Xfinity Mobile Arena",
+  "headline": "Avdija 31, Portland hit 19 threes",
+  "sub": "Deni Avdija 5 threes, Clingan 15 & 18 boards. Only Philly's 4th loss (14-4).",
+  "caption": "🔥 Trail Blazers 128, 76ers 111.\n\nDeni Avdija scored 31 and Portland hit 19 threes in Philadelphia. Only the Sixers' fourth loss of the season.\n\nAre the Blazers (11-6) for real? 👇\n\n#RipCity #Sixers #NBA",
+  "firstCommentText": ""
+ },
+ {
+  "id": "11-pacers-thunder",
+  "time": "2026-11-25T01:56:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "score",
+  "label": "NBA · MONDAY NIGHT",
+  "home": "Pacers",
+  "homeScore": 125,
+  "away": "Thunder",
+  "awayScore": 120,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+  "venue": "Gainbridge Fieldhouse",
+  "headline": "Siakam's late three sinks OKC",
+  "sub": "Siakam 20, Oubre 20, six Pacers in double figures. SGA 38 in defeat. OKC are 10-8.",
+  "caption": "😮 Pacers 125, Thunder 120.\n\nPascal Siakam hit a three with 44 seconds left and Indiana snapped a four-game skid. Shai Gilgeous-Alexander had 38 for short-handed OKC.\n\nWhat's wrong with the Thunder? 👇\n\n#Pacers #ThunderUp #NBA",
+  "firstCommentText": ""
+ },
+ {
+  "id": "12-nba-cup-tonight",
+  "time": "2026-11-25T02:52:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA CUP · GROUP PLAY · TONIGHT",
+  "headline": "Three NBA Cup games tonight",
+  "rows": [
+   [
+    "7pm ET",
+    "Pistons @ Magic",
+    "10-6 v 7-9"
+   ],
+   [
+    "8pm ET",
+    "Celtics @ Wizards",
+    "11-6 v 7-11"
+   ],
+   [
+    "10pm ET",
+    "Mavericks @ Nuggets",
+    "10-7 v 10-5"
+   ]
+  ],
+  "sub": "Celtics–Wizards and Mavs–Nuggets on NBC.",
+  "caption": "🏆 NBA Cup night: Pistons at Magic (7pm ET), Celtics at Wizards (8pm ET) and Mavericks at Nuggets (10pm ET).\n\nWho wins the NBA Cup this year? 👇\n\n#NBACup #Celtics #Nuggets",
+  "firstCommentText": ""
+ },
+ {
+  "id": "13-jets-vilardi",
+  "time": "2026-11-25T05:40:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · MONDAY NIGHT",
+  "home": "Jets",
+  "homeScore": 4,
+  "away": "Mammoth",
+  "awayScore": 2,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png",
+  "venue": "Canada Life Centre",
+  "headline": "Gabriel Vilardi hat trick",
+  "sub": "His 2nd career hat trick. Kyle Connor 2 assists, Skinner 34 saves. Winnipeg are 8-1-1 in their last 10.",
+  "caption": "🎩 Gabriel Vilardi scored a hat trick as the Jets beat the Utah Mammoth 4–2.\n\nWinnipeg are 8-1-1 in their last 10 games.\n\nAre the Jets the hottest team in the NHL? 👇\n\n#GoJetsGo #Vilardi #NHL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "14-ufc-adesanya",
+  "time": "2026-11-25T07:32:00",
+  "sport": "mma",
+  "league": "ufc",
+  "kind": "headline",
+  "label": "UFC FIGHT NIGHT · RIYADH · SAT 5 DECEMBER",
+  "headline": "Adesanya vs Shara Magomedov",
+  "sub": "The former middleweight champion headlines in Riyadh. Also on the card: Amosov v Machado Garry and Spivac v Pinto.",
+  "caption": "🥊 Israel Adesanya vs Shara Magomedov headlines UFC Riyadh on Saturday 5 December.\n\nYaroslav Amosov v Ian Machado Garry is on the card too.\n\nWho wins: Adesanya or Magomedov? 👇\n\n#UFC #Adesanya #UFCRiyadh",
+  "firstCommentText": ""
+ },
+ {
+  "id": "15-f1-qatar",
+  "time": "2026-11-25T09:24:00",
+  "sport": "racing",
+  "league": "f1",
+  "kind": "list",
+  "label": "FORMULA 1 · QATAR GRAND PRIX · LOSAIL",
+  "headline": "Qatar GP weekend times",
+  "rows": [
+   [
+    "Fri 13:30 GMT",
+    "Practice 1",
+    "8:30am ET"
+   ],
+   [
+    "Sat 18:00 GMT",
+    "Qualifying",
+    "1pm ET"
+   ],
+   [
+    "Sun 16:00 GMT",
+    "Race",
+    "11am ET"
+   ]
+  ],
+  "sub": "Second-to-last round of 2026, then Abu Dhabi.",
+  "caption": "🏁 Qatar GP this weekend: qualifying Saturday 18:00 GMT / 1pm ET, race Sunday 16:00 GMT / 11am ET.\n\nVerstappen won from pole in Vegas. Who wins in Qatar? 👇\n\n#F1 #QatarGP",
+  "firstCommentText": ""
+ }
+]
