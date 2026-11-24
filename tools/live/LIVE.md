@@ -401,6 +401,15 @@ Event caption removed (owner 16 Nov 2026: "Corner K Shaw (Malta)" text under the
   cancel its schedule, start the refused game once, and put "bump: Slot N <dropped> for Slot M <refused>" in the commit. No
   candidate → notify the owner as before.
 
+## All-games scoreboard (owner, 24 Nov 2026)
+
+`docs/live/multi.html?league=ucl` shows every game of one league on one screen (grid of score cards, scorers, red cards, goal flash,
+goals ticker; ESPN scoreboard every 15 s; `&demo=1` fakes a mid-game state). On a stream slot: `"slots": {"N": {"league": "ucl",
+"event": null, "multi": "ucl"}}` makes app.html hand that slot to multi.html (no event, so the planner and end watch leave it alone and
+the stream ends on its planned duration; the next planner run frees the slot once it is offline).
+- 24 Nov 2026 20:22 UTC: first run, Slot 10 "Champions League Live Scores Today | All Games Live Scoreboard", planned 6600 s (to ~22:12),
+  crowd audio. PREPARING for 10 min, then LIVE at 20:32; YouTube preview showed all 9 games correctly.
+
 ## Stream check (added 9 Nov 2026)
 
 Each hourly run checks what every LIVE stream actually shows on YouTube (needs `i.ytimg.com` on the session's allowed

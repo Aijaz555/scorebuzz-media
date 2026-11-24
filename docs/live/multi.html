@@ -81,7 +81,7 @@ async function slotLeague() {
 const DEMO = Q.get('demo') === '1';
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-function fit() { const k = Math.min(innerWidth / 1920, innerHeight / 1080); document.body.style.transform = `scale(${k})`; }
+function fit() { const x = innerWidth / 1920, y = innerHeight / 1080, k = Math.min(x, y); document.body.style.transform = Q.get('fit') === 'fill' ? `scale(${x},${y})` : `scale(${k})`; }   // fit=fill (stream slots): fill the web layer exactly
 addEventListener('resize', fit); fit();
 $('t1').textContent = `${NAME[league]} Live Scores`;
 
