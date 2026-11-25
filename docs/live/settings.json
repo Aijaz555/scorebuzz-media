@@ -31,46 +31,50 @@
    "event": "401909317",
    "note": "Philadelphia 76ers vs Miami Heat, 2026-11-25T22:00:00Z"
   },
+  "2": {
+   "league": "nhl",
+   "event": "401892781",
+   "note": "Boston Bruins vs Winnipeg Jets, 2026-11-26T00:00:00Z"
+  },
   "3": {
-   "league": "ucl",
-   "event": "401915292",
-   "note": "Club Brugge vs Liverpool, 2026-11-25T20:00:00Z"
+   "league": "nhl",
+   "event": "401892787",
+   "note": "Washington Capitals vs Philadelphia Flyers, 2026-11-26T00:00:00Z"
   },
   "4": {
-   "league": "ucl",
-   "event": "401915374",
-   "note": "Paris Saint-Germain vs AS Roma, 2026-11-25T20:00:00Z"
+   "league": "nhl",
+   "event": "401892783",
+   "note": "Tampa Bay Lightning vs Carolina Hurricanes, 2026-11-26T00:00:00Z"
   },
   "5": {
-   "league": "ucl",
-   "event": "401915373",
-   "note": "Sporting CP vs Manchester United, 2026-11-25T20:00:00Z"
+   "league": "nhl",
+   "event": "401892784",
+   "note": "Florida Panthers vs Ottawa Senators, 2026-11-26T00:00:00Z"
   },
   "6": {
-   "league": "ucl",
-   "event": "401915376",
-   "note": "Internazionale vs VfB Stuttgart, 2026-11-25T20:00:00Z"
+   "league": "nhl",
+   "event": "401892788",
+   "note": "Columbus Blue Jackets vs New Jersey Devils, 2026-11-26T00:00:00Z"
   },
   "7": {
-   "league": "ucl",
-   "event": "401915291",
-   "note": "Atlético Madrid vs Viking FK, 2026-11-25T20:00:00Z"
+   "league": "nhl",
+   "event": "401892785",
+   "note": "New York Islanders vs St. Louis Blues, 2026-11-26T00:00:00Z"
   },
   "8": {
-   "league": "ucl",
-   "event": "401915377",
-   "note": "Lille vs Bayern Munich, 2026-11-25T20:00:00Z"
+   "league": "nhl",
+   "event": "401892782",
+   "note": "Buffalo Sabres vs New York Rangers, 2026-11-26T00:00:00Z"
   },
   "9": {
-   "league": "ucl",
-   "event": "401915375",
-   "note": "Shakhtar Donetsk vs Fenerbahce, 2026-11-25T20:00:00Z"
+   "league": "nhl",
+   "event": "401892786",
+   "note": "Pittsburgh Penguins vs Calgary Flames, 2026-11-26T00:00:00Z"
   },
   "10": {
-   "league": "ucl",
-   "event": null,
-   "multi": "ucl",
-   "note": "All Champions League games (multi.html), 25 Nov 2026 17:15Z until ~22:15Z"
+   "league": "nhl",
+   "event": "401892789",
+   "note": "Detroit Red Wings vs Vancouver Canucks, 2026-11-26T00:30:00Z"
   }
  },
  "fit": {
