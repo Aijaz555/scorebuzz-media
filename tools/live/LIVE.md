@@ -310,6 +310,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 25 Nov 2026 06:42 UTC: no planner actions (Slot 5 Nuggets-Mavericks cleared from settings; all 21 projects OFFLINE). No stream check; usage already done today. End watch idle.
   - 25 Nov 2026 17:42 UTC: no planner actions (Slots 1, 2, 10 LIVE: Sabah-Barcelona, Slavia Prague-Villarreal, all-games UCL). Stream check Slots 1, 2, 10 correct; usage already done today. End watch idle.
   - 25 Nov 2026 18:42 UTC: UCL 20:00 games Brugge-Liverpool, PSG-Roma, Sporting-Man Utd, Inter-Stuttgart, Atlético-Viking, Lille-Bayern, Shakhtar-Fenerbahce (Slots 3-9) scheduled 19:30 (crowd audio), all accepted; 8 LIVE, 2 PREPARING at 19:32. Stream check: Slots 1, 2, 10 correct (half-time). End watch: no games ended by 19:32.
+  - 25 Nov 2026 19:42 UTC: no planner actions (10 live, cap 10; Sabah-Barcelona, Slavia Prague-Villarreal (Slots 1, 2) final, in grace). Stream check: Slots 3-10 correct (pre-game, 20:00 kick-offs).
 - Older cap (found 7 Nov 2026 01:45 UTC): the plan allowed only 9 concurrent live streams; the log below is from that period.
   - 8 Nov 2026 14:43 UTC: cap hit again — Real Sociedad-Rayo (Slot 2, now) and 4 Ligue 1 16:15 UK games (Slots 12-15) refused; only Slot 1 (Man Utd-Villa) scheduled.
   - 8 Nov 2026 16:45 UTC: 4 Ligue 1 restarts (Slots 14-17) went through (10 streams counted), then all 8 18:00 UK schedules (7 NFL 1pm ET games + Panthers-Bruins, Slots 4-6,8-11,18) were refused by the cap; the next hourly runs start them as slots free up.
