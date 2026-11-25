@@ -75,6 +75,21 @@
    "league": "nhl",
    "event": "401892789",
    "note": "Detroit Red Wings vs Vancouver Canucks, 2026-11-26T00:30:00Z"
+  },
+  "11": {
+   "league": "nhl",
+   "event": "401892790",
+   "note": "Dallas Stars vs Nashville Predators, 2026-11-26T01:00:00Z"
+  },
+  "12": {
+   "league": "nfl",
+   "event": "401873079",
+   "note": "Los Angeles Rams vs Green Bay Packers, 2026-11-26T01:00:00Z"
+  },
+  "13": {
+   "league": "nhl",
+   "event": "401892791",
+   "note": "Minnesota Wild vs Utah Mammoth, 2026-11-26T01:00:00Z"
   }
  },
  "fit": {
@@ -355,8 +370,8 @@
   },
   "maxLive": 10,
   "maxLiveTemp": {
-   "value": 11,
-   "until": "2026-11-24T04:00:00Z"
+   "value": 13,
+   "until": "2026-11-26T04:30:00Z"
   }
  },
  "gsScores": true
