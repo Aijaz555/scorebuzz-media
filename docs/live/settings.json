@@ -26,16 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "2": {
-   "league": "nhl",
-   "event": "401892780",
-   "note": "Edmonton Oilers vs Vegas Golden Knights, 2026-11-25T01:00:00Z"
-  },
-  "3": {
-   "league": "nba",
-   "event": "401909315",
-   "note": "Washington Wizards vs Boston Celtics, 2026-11-25T01:00:00Z"
-  },
   "4": {
    "league": "mls",
    "event": "401933738",
