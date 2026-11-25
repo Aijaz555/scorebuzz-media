@@ -1,24 +1,4 @@
 {
- "401892666": {
-  "slot": "12",
-  "league": "nhl",
-  "game": "Senators v Mammoth",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/senators-vs-mammoth-401892666/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-08T02:34:38+00:00"
- },
- "401892667": {
-  "slot": "15",
-  "league": "nhl",
-  "game": "Islanders v Devils",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/islanders-vs-devils-401892667/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 79)",
-  "at": "2026-11-08T02:34:44+00:00"
- },
  "401892668": {
   "slot": "4",
   "league": "nhl",
@@ -2998,5 +2978,25 @@
   "status": "ok",
   "reason": "ok (contrast 37)",
   "at": "2026-11-24T19:39:51+00:00"
+ },
+ "401892780": {
+  "slot": "2",
+  "league": "nhl",
+  "game": "Oilers v Golden Knights",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/oilers-vs-golden-knights-401892780/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 89)",
+  "at": "2026-11-25T03:00:49+00:00"
+ },
+ "401909315": {
+  "slot": "3",
+  "league": "nba",
+  "game": "Wizards v Celtics",
+  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-celtics-401909315/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-25T03:00:52+00:00"
  }
 }

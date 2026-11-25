@@ -2505,5 +2505,174 @@
     }
    }
   }
+ },
+ "401933738": {
+  "at": "2026-11-25T03:00:43+00:00",
+  "teams": {
+   "SJ Earthquakes": {
+    "36": {
+     "id": "103129",
+     "name": "Earl Edwards Jr"
+    },
+    "28": {
+     "id": "653368",
+     "name": "Benjamin Kikanović"
+    },
+    "5": {
+     "id": "500347",
+     "name": "Daniel Munie"
+    },
+    "18": {
+     "id": "721291",
+     "name": "Reid Roberts"
+    },
+    "87": {
+     "id": "411591",
+     "name": "Vitor Costa"
+    },
+    "14": {
+     "id": "444205",
+     "name": "Ronaldo Vieira"
+    },
+    "34": {
+     "id": "638401",
+     "name": "Beau Leroux"
+    },
+    "23": {
+     "id": "358461",
+     "name": "Eduard Löwen"
+    },
+    "10": {
+     "id": "712308",
+     "name": "Niko Tsakiris"
+    },
+    "11": {
+     "id": "242778",
+     "name": "Timo Werner"
+    },
+    "19": {
+     "id": "700365",
+     "name": "Preston Judd"
+    },
+    "1": {
+     "id": "217678",
+     "name": "Angus Gunn"
+    },
+    "2": {
+     "id": "657484",
+     "name": "Jamar Ricketts"
+    },
+    "3": {
+     "id": "320117",
+     "name": "Paul Marie"
+    },
+    "17": {
+     "id": "622334",
+     "name": "Jack Jasinski"
+    },
+    "4": {
+     "id": "400538",
+     "name": "Dave Romney"
+    },
+    "25": {
+     "id": "1020696",
+     "name": "Max Floriani"
+    },
+    "20": {
+     "id": "489944",
+     "name": "Nick Fernandez"
+    },
+    "6": {
+     "id": "473310",
+     "name": "Ian Harkes"
+    },
+    "7": {
+     "id": "609504",
+     "name": "Ousseni Bouda"
+    }
+   },
+   "Houston": {
+    "31": {
+     "id": "113892",
+     "name": "Jonathan Bond"
+    },
+    "20": {
+     "id": "434106",
+     "name": "Guilherme"
+    },
+    "5": {
+     "id": "475262",
+     "name": "Lucas Halter"
+    },
+    "34": {
+     "id": "1204498",
+     "name": "Agustin Resch"
+    },
+    "21": {
+     "id": "457045",
+     "name": "Franco Negri"
+    },
+    "6": {
+     "id": "433197",
+     "name": "Artur"
+    },
+    "24": {
+     "id": "594778",
+     "name": "Ibrahim Aliyu"
+    },
+    "16": {
+     "id": "85145",
+     "name": "Héctor Herrera"
+    },
+    "14": {
+     "id": "282872",
+     "name": "Duane Holmes"
+    },
+    "19": {
+     "id": "517222",
+     "name": "Mateusz Bogusz"
+    },
+    "9": {
+     "id": "505193",
+     "name": "Lyle Foster"
+    },
+    "26": {
+     "id": "510681",
+     "name": "Blake Gillingham"
+    },
+    "11": {
+     "id": "560642",
+     "name": "Lawrence Ennali"
+    },
+    "4": {
+     "id": "397867",
+     "name": "Marcelo Saracchi"
+    },
+    "3": {
+     "id": "233604",
+     "name": "Antônio Carlos"
+    },
+    "30": {
+     "id": "432615",
+     "name": "Agustín Bouzat"
+    },
+    "18": {
+     "id": "347111",
+     "name": "Diadié Samassékou"
+    },
+    "37": {
+     "id": "1211465",
+     "name": "Gilberto Rivera"
+    },
+    "17": {
+     "id": "812119",
+     "name": "Nick Markanich"
+    },
+    "23": {
+     "id": "892609",
+     "name": "Duncan McGuire"
+    }
+   }
+  }
  }
 }
