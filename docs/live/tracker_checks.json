@@ -2959,26 +2959,6 @@
   "reason": "ok (contrast 37)",
   "at": "2026-11-24T19:39:51+00:00"
  },
- "401892780": {
-  "slot": "2",
-  "league": "nhl",
-  "game": "Oilers v Golden Knights",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/oilers-vs-golden-knights-401892780/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 89)",
-  "at": "2026-11-25T03:00:49+00:00"
- },
- "401909315": {
-  "slot": "3",
-  "league": "nba",
-  "game": "Wizards v Celtics",
-  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-celtics-401909315/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 64)",
-  "at": "2026-11-25T03:00:52+00:00"
- },
  "401909316": {
   "slot": "5",
   "league": "nba",
@@ -2998,5 +2978,25 @@
   "status": "switched",
   "reason": "tracker card has no drawing",
   "at": "2026-11-25T03:26:43+00:00"
+ },
+ "401892780": {
+  "slot": "2",
+  "league": "nhl",
+  "game": "Oilers v Golden Knights",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/oilers-vs-golden-knights-401892780/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 87)",
+  "at": "2026-11-25T03:34:50+00:00"
+ },
+ "401909315": {
+  "slot": "3",
+  "league": "nba",
+  "game": "Wizards v Celtics",
+  "url": "https://scorebuzz.net/basketball/nba/wizards-vs-celtics-401909315/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 64)",
+  "at": "2026-11-25T03:34:53+00:00"
  }
 }
