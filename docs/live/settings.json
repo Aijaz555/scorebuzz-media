@@ -27,14 +27,9 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "ucl",
-   "event": "401915378",
-   "note": "Sabah FK vs Barcelona, 2026-11-25T17:45:00Z"
-  },
-  "2": {
-   "league": "ucl",
-   "event": "401915293",
-   "note": "Slavia Prague vs Villarreal, 2026-11-25T17:45:00Z"
+   "league": "nba",
+   "event": "401909317",
+   "note": "Philadelphia 76ers vs Miami Heat, 2026-11-25T22:00:00Z"
   },
   "3": {
    "league": "ucl",
