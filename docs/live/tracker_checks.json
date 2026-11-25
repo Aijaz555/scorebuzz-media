@@ -1,14 +1,4 @@
 {
- "401909940": {
-  "slot": "16",
-  "league": "nba",
-  "game": "Cavaliers v Knicks",
-  "url": "https://scorebuzz.net/basketball/nba/cavaliers-vs-knicks-401909940/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 71)",
-  "at": "2026-11-08T03:07:45+00:00"
- },
  "401909941": {
   "slot": "17",
   "league": "nba",
@@ -2998,5 +2988,15 @@
   "status": "ok",
   "reason": "ok (contrast 64)",
   "at": "2026-11-25T03:34:53+00:00"
+ },
+ "401909317": {
+  "slot": "1",
+  "league": "nba",
+  "game": "76ers v Heat",
+  "url": "https://scorebuzz.net/basketball/nba/76ers-vs-heat-401909317/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-25T22:17:52+00:00"
  }
 }
