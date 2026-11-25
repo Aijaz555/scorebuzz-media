@@ -1,0 +1,1089 @@
+[
+ {
+  "id": "s01-ucl-tuesday-board",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "hype",
+  "yt": "2026-11-25T11:45:00",
+  "fb": "2026-11-25T12:50:00",
+  "title": "Champions League Results: Every Matchday 5 Score ⚽ #UCL #shorts",
+  "description": "Every Champions League score from Tuesday night (Matchday 5): Real Madrid 5–1 PSV, Arsenal 1–1 Borussia Dortmund, Manchester City 2–2 Napoli, Galatasaray 1–0 Aston Villa, Bodø/Glimt 1–0 LASK, Como 1–0 AEK Athens, Feyenoord 0–1 Porto, RB Leipzig 3–1 Lens and Slovan Bratislava 0–2 Real Betis. Real Madrid are top of the league phase with five wins from five.\n\nChampions League results and table: https://scorebuzz.net\n\n#ChampionsLeague #UCL #RealMadrid",
+  "tags": [
+   "champions league results",
+   "champions league scores today",
+   "ucl matchday 5",
+   "real madrid vs psv",
+   "arsenal vs dortmund",
+   "man city vs napoli",
+   "galatasaray vs aston villa",
+   "champions league table",
+   "ucl results",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 19.4,
+    "kicker": "Champions League · Matchday 5",
+    "title": "Tuesday's results",
+    "badge": "FULL TIME",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Real Madrid",
+      "homeAbbr": "RMA",
+      "hs": 5,
+      "away": "PSV",
+      "awayAbbr": "PSV",
+      "as": 1,
+      "note": "Mbappé 2, Bellingham",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png"
+     },
+     {
+      "home": "Arsenal",
+      "homeAbbr": "ARS",
+      "hs": 1,
+      "away": "Dortmund",
+      "awayAbbr": "BVB",
+      "as": 1,
+      "note": "Gyökeres, Beier",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
+     },
+     {
+      "home": "Man City",
+      "homeAbbr": "MCI",
+      "hs": 2,
+      "away": "Napoli",
+      "awayAbbr": "NAP",
+      "as": 2,
+      "note": "Cherki 86'",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
+     },
+     {
+      "home": "Galatasaray",
+      "homeAbbr": "GAL",
+      "hs": 1,
+      "away": "Aston Villa",
+      "awayAbbr": "AVL",
+      "as": 0,
+      "note": "Gül 77'",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+     },
+     {
+      "home": "Bodø/Glimt",
+      "homeAbbr": "BOD",
+      "hs": 1,
+      "away": "LASK",
+      "awayAbbr": "LASK",
+      "as": 0,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png"
+     },
+     {
+      "home": "Como",
+      "homeAbbr": "COMO",
+      "hs": 1,
+      "away": "AEK Athens",
+      "awayAbbr": "AEK",
+      "as": 0,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png"
+     },
+     {
+      "home": "Feyenoord",
+      "homeAbbr": "FEY",
+      "hs": 0,
+      "away": "Porto",
+      "awayAbbr": "POR",
+      "as": 1,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png"
+     },
+     {
+      "home": "RB Leipzig",
+      "homeAbbr": "RBL",
+      "hs": 3,
+      "away": "Lens",
+      "awayAbbr": "RCL",
+      "as": 1,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
+     },
+     {
+      "home": "S. Bratislava",
+      "homeAbbr": "SLB",
+      "hs": 0,
+      "away": "Real Betis",
+      "awayAbbr": "BET",
+      "as": 2,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Best result of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League",
+   "big": "5–1",
+   "hook": "Every *result* from Tuesday",
+   "sticker": "FULL TIME",
+   "emoji": "⚽"
+  },
+  "fbtext": "⚽ Every Champions League score from Tuesday night.\n\nReal Madrid hit PSV for five, Arsenal and Man City both drew, and Aston Villa lost in Istanbul.\n\nBest result of the night? 👇\n\n#UCL #ChampionsLeague #RealMadrid #Reels",
+  "time": "2026-11-25T11:45:00"
+ },
+ {
+  "id": "s02-real-madrid-psv",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "anthem",
+  "venue": "Santiago Bernabéu",
+  "yt": "2026-11-25T14:00:00",
+  "fb": "2026-11-25T18:20:00",
+  "title": "Real Madrid vs PSV 5–1: Bellingham Off the Bench Sparks Comeback 🔥 #shorts",
+  "description": "Real Madrid beat PSV Eindhoven 5–1 at the Santiago Bernabéu in the Champions League after trailing at half-time to an Ivan Perišić penalty. José Mourinho sent on Jude Bellingham, Ibrahima Konaté and Dean Huijsen at the break; Federico Valverde equalised, Bellingham scored from outside the box, Kylian Mbappé scored twice and Vinícius Júnior added a fifth. Madrid have won all five league-phase games and are top of the table.\n\nReal Madrid vs PSV final score and Champions League table: https://scorebuzz.net\n\n#RealMadrid #Bellingham #UCL",
+  "tags": [
+   "real madrid vs psv",
+   "psv vs real madrid",
+   "jude bellingham",
+   "kylian mbappe",
+   "real madrid champions league",
+   "mourinho real madrid",
+   "champions league results",
+   "champions league table",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Champions League · Matchday 5",
+    "title": "Losing 1–0 at half-time…",
+    "sub": "Then Mourinho made three changes"
+   },
+   {
+    "type": "score",
+    "dur": 4.2,
+    "label": "Santiago Bernabéu",
+    "home": "Real Madrid",
+    "homeAbbr": "RMA",
+    "homeScore": 5,
+    "away": "PSV",
+    "awayAbbr": "PSV",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "note": "Valverde 50' · Bellingham 60' · Mbappé 64' 84' · Vinícius 87'",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Half-time",
+    "title": "On: Bellingham, Konaté, Huijsen",
+    "sub": "PSV led through Ivan Perišić's penalty"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "60 minutes",
+    "title": "Bellingham from outside the box",
+    "sub": "Off the bench, and Madrid led 2–1"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Kylian Mbappé",
+    "value": 2,
+    "unit": "goals",
+    "text": "64' and 84'"
+   },
+   {
+    "type": "table",
+    "dur": 4.2,
+    "label": "Champions League · top four",
+    "cols": [
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Real Madrid",
+      15
+     ],
+     [
+      2,
+      "PSG",
+      12
+     ],
+     [
+      3,
+      "Como",
+      12
+     ],
+     [
+      4,
+      "Betis",
+      12
+     ]
+    ],
+    "highlight": [
+     1
+    ],
+    "note": "PSG have a game in hand"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can anyone stop Madrid?",
+    "sub": "Follow ScoreBuzz for Champions League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League",
+   "big": "5/5",
+   "hook": "Madrid still *perfect*",
+   "sticker": "COMEBACK",
+   "teams": [
+    "RMA",
+    "PSV"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 1–0 down at half-time, 5–1 winners.\n\nJude Bellingham came off the bench and scored from distance, Kylian Mbappé got two, and Real Madrid made it five Champions League wins from five.\n\nCan anyone stop them? 👇\n\n#RealMadrid #Bellingham #UCL #Reels",
+  "time": "2026-11-25T14:00:00"
+ },
+ {
+  "id": "s03-ev-nba-cup-winners",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "anthem",
+  "evergreen": true,
+  "yt": "2026-11-25T16:15:00",
+  "fb": "2026-11-25T20:10:00",
+  "title": "Every NBA Cup Winner Ever 🏆 Lakers, Bucks, Knicks #NBACup #shorts",
+  "description": "Every NBA Cup champion so far: the Los Angeles Lakers beat the Indiana Pacers 123–109 in 2023 (MVP LeBron James), the Milwaukee Bucks beat the Oklahoma City Thunder 97–81 in 2024 (MVP Giannis Antetokounmpo) and the New York Knicks beat the San Antonio Spurs 124–113 in 2025 (MVP Jalen Brunson). The 2026 NBA Cup champion is crowned on 11 December.\n\nNBA Cup standings and NBA scores: https://scorebuzz.net\n\n#NBACup #NBA #Knicks",
+  "tags": [
+   "nba cup winners",
+   "nba cup champions",
+   "every nba cup winner",
+   "nba cup mvp",
+   "nba in-season tournament winners",
+   "lakers nba cup",
+   "bucks nba cup",
+   "knicks nba cup",
+   "nba cup 2026",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NBA Cup history",
+    "title": "Only 3 teams have ever won the NBA Cup",
+    "sub": "Can you name them?"
+   },
+   {
+    "type": "list",
+    "dur": 5.6,
+    "label": "NBA Cup finals",
+    "title": "Every champion",
+    "rows": [
+     [
+      "2023",
+      "Lakers",
+      "123–109 v Pacers"
+     ],
+     [
+      "2024",
+      "Bucks",
+      "97–81 v Thunder"
+     ],
+     [
+      "2025",
+      "Knicks",
+      "124–113 v Spurs"
+     ]
+    ],
+    "note": "Year · champion · final"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "NBA Cup MVP",
+    "title": "Every MVP",
+    "rows": [
+     [
+      "2023",
+      "LeBron James",
+      "Lakers"
+     ],
+     [
+      "2024",
+      "Giannis Antetokounmpo",
+      "Bucks"
+     ],
+     [
+      "2025",
+      "Jalen Brunson",
+      "Knicks"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "2024 champions Milwaukee",
+    "value": "2-16",
+    "unit": "this season",
+    "text": "As of 25 Nov 2026"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "2026 NBA Cup",
+    "title": "New champion crowned on 11 Dec",
+    "sub": "Group play is under way now"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins it this year?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA Cup history",
+   "big": "3",
+   "hook": "teams have *ever* won it",
+   "sticker": "HISTORY",
+   "emoji": "🏆"
+  },
+  "fbtext": "🏆 Only three teams have won the NBA Cup: the Lakers (2023), Bucks (2024) and Knicks (2025).\n\nThe 2024 champions Milwaukee are 2-16 this season.\n\nWho wins it this year? 👇\n\n#NBACup #NBA #Knicks #Reels",
+  "time": "2026-11-25T16:15:00"
+ },
+ {
+  "id": "s04-arsenal-city-preview",
+  "sport": "football",
+  "league": "epl",
+  "bed": "drama",
+  "venue": "Emirates Stadium",
+  "yt": "2026-11-25T18:30:00",
+  "fb": null,
+  "title": "Arsenal vs Man City: 1st v 3rd This Sunday 🔥 Premier League #shorts",
+  "description": "Arsenal vs Manchester City is on Sunday at the Emirates Stadium (16:30 GMT / 11:30am ET): first against third in the Premier League. Arsenal have 28 points after 11 games, six clear of Brighton and Man City on 22. Arsenal drew 1–1 with Borussia Dortmund in the Champions League on Tuesday and City drew 2–2 with Napoli; City have won one of their last seven games in all competitions.\n\nArsenal vs Man City preview and Premier League table: https://scorebuzz.net\n\n#Arsenal #ManCity #PremierLeague",
+  "tags": [
+   "arsenal vs man city",
+   "man city vs arsenal",
+   "arsenal vs manchester city",
+   "premier league table",
+   "premier league title race",
+   "arsenal",
+   "manchester city",
+   "premier league predictions",
+   "premier league this weekend",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Premier League · Sunday",
+    "title": "Win, and Arsenal go NINE clear of City",
+    "sub": "1st v 3rd at the Emirates"
+   },
+   {
+    "type": "table",
+    "dur": 4.6,
+    "label": "Premier League · after 11 games",
+    "cols": [
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Arsenal",
+      28
+     ],
+     [
+      2,
+      "Brighton",
+      22
+     ],
+     [
+      3,
+      "Man City",
+      22
+     ],
+     [
+      4,
+      "Liverpool",
+      21
+     ],
+     [
+      5,
+      "Bournemouth",
+      18
+     ]
+    ],
+    "highlight": [
+     1,
+     3
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "Arsenal this week",
+    "title": "Two leads let slip",
+    "sub": "Led at Newcastle, led v Dortmund: dropped points both times"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Man City",
+    "value": 1,
+    "unit": "win in 7",
+    "text": "In all competitions, after 2–2 with Napoli"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Kick-off",
+    "title": "Sunday 16:30 GMT · 11:30am ET",
+    "sub": "Emirates Stadium"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Score prediction?",
+    "sub": "Follow ScoreBuzz for Premier League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Premier League",
+   "big": "+6",
+   "hook": "Arsenal v City: *1st v 3rd*",
+   "sticker": "SUNDAY",
+   "teams": [
+    "ARS",
+    "MCI"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "",
+  "time": "2026-11-25T18:30:00"
+ },
+ {
+  "id": "s05-ev-nhl-milestones",
+  "sport": "nhl",
+  "league": "nhl",
+  "bed": "drama",
+  "evergreen": true,
+  "venue": "Rogers Place",
+  "yt": "2026-11-25T20:45:00",
+  "fb": "2026-11-26T00:50:00",
+  "title": "Evan Bouchard Joins Bobby Orr & Paul Coffey in NHL Record Books 🤯 #NHL #shorts",
+  "description": "Edmonton Oilers defenseman Evan Bouchard passed 40 points in 27 games, the fastest in Oilers history (beating Paul Coffey) and only the third defenseman in NHL history to get 40 points in 27 games or fewer after Bobby Orr and Coffey. In the same game, Vegas Golden Knights forward Mitch Marner recorded his 600th career assist in his 762nd game, the 15th-fastest in NHL history; only Connor McDavid (616 games) and Sidney Crosby (704) got there faster among active players. Vegas won 5–3 in Edmonton.\n\nNHL scores and records: https://scorebuzz.net\n\n#Oilers #EvanBouchard #NHL",
+  "tags": [
+   "evan bouchard",
+   "bobby orr",
+   "paul coffey",
+   "mitch marner 600 assists",
+   "connor mcdavid",
+   "sidney crosby",
+   "oilers vs golden knights",
+   "golden knights vs oilers",
+   "nhl records",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NHL record books",
+    "title": "Only Bobby Orr and Paul Coffey had done this",
+    "sub": "Until Tuesday night"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Evan Bouchard · Oilers",
+    "value": "40+",
+    "unit": "points",
+    "text": "In 27 games, as a defenseman"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Defensemen · 40 points in 27 games or fewer",
+    "title": "Only three ever",
+    "rows": [
+     [
+      "Bobby Orr",
+      "",
+      ""
+     ],
+     [
+      "Paul Coffey",
+      "",
+      "then with Pittsburgh"
+     ],
+     [
+      "Evan Bouchard",
+      "",
+      "Oilers, 2026"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Oilers history",
+    "title": "Fastest Oiler to 40 points",
+    "sub": "Bouchard passed Paul Coffey"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Fastest active players to 600 assists",
+    "title": "Marner joins the club",
+    "rows": [
+     [
+      "Connor McDavid",
+      "616",
+      "games"
+     ],
+     [
+      "Sidney Crosby",
+      "704",
+      "games"
+     ],
+     [
+      "Mitch Marner",
+      "762",
+      "games"
+     ]
+    ],
+    "note": "Marner is 15th-fastest in NHL history"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Same night · Rogers Place",
+    "home": "Oilers",
+    "homeAbbr": "EDM",
+    "homeScore": 3,
+    "away": "Golden Knights",
+    "awayAbbr": "VGK",
+    "awayScore": 5,
+    "status": "FINAL",
+    "note": "Connelly 2G 1A · Eichel 2G",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Best D-man in the NHL right now?",
+    "sub": "Follow ScoreBuzz for NHL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NHL record books",
+   "big": "40+",
+   "hook": "points. Only *Orr* & Coffey before",
+   "sticker": "RECORD",
+   "emoji": "🤯"
+  },
+  "fbtext": "🤯 Only Bobby Orr and Paul Coffey had done it before.\n\nEvan Bouchard has 40+ points in 27 games, the third defenseman ever that fast. Same night, Mitch Marner reached 600 career assists.\n\nBest D-man in the NHL right now? 👇\n\n#Oilers #EvanBouchard #NHL #Reels",
+  "time": "2026-11-25T20:45:00"
+ },
+ {
+  "id": "s06-tatum-41",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "venue": "Capital One Arena",
+  "yt": "2026-11-25T23:00:00",
+  "fb": "2026-11-25T22:00:00",
+  "title": "Jayson Tatum 41 Points | Celtics vs Wizards 131–116 🔥 #NBA #shorts",
+  "description": "Jayson Tatum scored 41 points, 28 in the first half, as the Boston Celtics beat the Washington Wizards 131–116 in an NBA Cup game to snap a four-game losing streak. Boston made 10 threes in a 46-point second quarter and led 80–49 at half-time. Paul George scored 28 and Neemias Queta 21; Anthony Davis had 33 points and 13 rebounds for Washington, who are eliminated from the NBA Cup.\n\nCeltics vs Wizards final score and NBA scores: https://scorebuzz.net\n\n#Celtics #JaysonTatum #NBACup",
+  "tags": [
+   "jayson tatum",
+   "celtics vs wizards",
+   "wizards vs celtics",
+   "jayson tatum 41 points",
+   "paul george",
+   "anthony davis",
+   "nba cup",
+   "nba scores today",
+   "boston celtics",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA Cup · Tuesday",
+    "title": "28 points. In ONE half.",
+    "sub": "Jayson Tatum in Washington"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Capital One Arena",
+    "home": "Wizards",
+    "homeAbbr": "WSH",
+    "homeScore": 116,
+    "away": "Celtics",
+    "awayAbbr": "BOS",
+    "awayScore": 131,
+    "status": "FINAL",
+    "note": "Tatum 41 · George 28 · Queta 21",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Jayson Tatum",
+    "value": 41,
+    "unit": "points",
+    "text": "28 of them before half-time"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Second quarter",
+    "title": "46 points, 10 threes",
+    "sub": "Boston led 80–49 at half-time"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Skid over",
+    "title": "Celtics snap a 4-game losing streak",
+    "sub": "Still unbeaten in the NBA Cup. Washington are out."
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Are the Celtics back?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA Cup",
+   "big": "41",
+   "hook": "Tatum *torches* Washington",
+   "sticker": "FINAL",
+   "teams": [
+    "BOS",
+    "WSH"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Jayson Tatum had 28 points by half-time and finished with 41.\n\nThe Celtics hit 10 threes in a 46-point second quarter and beat the Wizards 131–116 to end a four-game skid.\n\nAre the Celtics back? 👇\n\n#Celtics #JaysonTatum #NBACup #Reels",
+  "time": "2026-11-25T23:00:00"
+ },
+ {
+  "id": "s07-ev-bills-chiefs-playoffs",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "drama",
+  "evergreen": true,
+  "yt": "2026-11-26T01:15:00",
+  "fb": "2026-11-26T02:40:00",
+  "title": "Bills vs Chiefs Playoff History: 0–4 in the Mahomes Era 😳 #NFL #shorts",
+  "description": "Bills vs Chiefs playoff history: the Buffalo Bills and Kansas City Chiefs have met seven times in the postseason. Kansas City won the 1966 AFL Championship 31–7, Buffalo won the 1991 divisional round 37–14 and the 1993 AFC Championship 30–13, and then the Chiefs won all four meetings with Patrick Mahomes: the 2020 AFC Championship 38–24, the 2021 divisional round 42–36 in overtime (the '13 seconds' game), the 2023 divisional round 27–24 in Buffalo and the 2024 AFC Championship 32–29. The Chiefs (8-2) visit the Bills (9-1) on Thanksgiving night.\n\nChiefs vs Bills and NFL scores: https://scorebuzz.net\n\n#BillsMafia #ChiefsKingdom #NFL",
+  "tags": [
+   "bills vs chiefs",
+   "chiefs vs bills",
+   "bills chiefs playoff history",
+   "josh allen vs patrick mahomes",
+   "13 seconds game",
+   "chiefs vs bills thanksgiving",
+   "nfl thanksgiving 2026",
+   "buffalo bills",
+   "kansas city chiefs",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Bills v Chiefs · playoff history",
+    "title": "7 playoff meetings. Mahomes has won all 4 of his.",
+    "sub": "Thursday: round 8?"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Before Mahomes",
+    "title": "Bills 2, Chiefs 1",
+    "rows": [
+     [
+      "1966 AFL title",
+      "Chiefs",
+      "31–7"
+     ],
+     [
+      "1991 Divisional",
+      "Bills",
+      "37–14"
+     ],
+     [
+      "1993 AFC title",
+      "Bills",
+      "30–13"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "dur": 5.6,
+    "label": "The Mahomes era",
+    "title": "Chiefs 4, Bills 0",
+    "rows": [
+     [
+      "2020 AFC title",
+      "Chiefs",
+      "38–24"
+     ],
+     [
+      "2021 Divisional",
+      "Chiefs",
+      "42–36 OT"
+     ],
+     [
+      "2023 Divisional",
+      "Chiefs",
+      "27–24"
+     ],
+     [
+      "2024 AFC title",
+      "Chiefs",
+      "32–29"
+     ]
+    ],
+    "note": "Season · winner · score"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "2021 Divisional round",
+    "value": 13,
+    "unit": "seconds",
+    "text": "All the Chiefs needed to force OT. They won 42–36."
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Thanksgiving night · 8:20pm ET",
+    "title": "Chiefs (8-2) at Bills (9-1)",
+    "sub": "Regular season, but Buffalo will remember"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Do the Bills finally get revenge?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Bills v Chiefs",
+   "big": "0–4",
+   "hook": "v Mahomes in the *playoffs*",
+   "sticker": "HISTORY",
+   "teams": [
+    "BUF",
+    "KC"
+   ],
+   "emoji": "😳"
+  },
+  "fbtext": "😳 Bills v Chiefs in the playoffs since Patrick Mahomes arrived: Chiefs 4, Bills 0.\n\nThat includes the '13 seconds' game. Thursday night it's 9-1 Buffalo v 8-2 Kansas City.\n\nDo the Bills get revenge? 👇\n\n#BillsMafia #ChiefsKingdom #NFL #Reels",
+  "time": "2026-11-26T01:15:00"
+ },
+ {
+  "id": "s08-thanksgiving-preview",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "venue": "Ford Field",
+  "yt": "2026-11-26T03:30:00",
+  "fb": "2026-11-26T06:20:00",
+  "title": "NFL Thanksgiving 2026: Bears vs Lions, Eagles vs Cowboys, Chiefs vs Bills 🦃 #shorts",
+  "description": "The NFL Thanksgiving 2026 schedule: Chicago Bears (8-2) at Detroit Lions (8-2) at 1pm ET on CBS, Philadelphia Eagles (3-7) at Dallas Cowboys (5-6) at 4:30pm ET on Fox, and Kansas City Chiefs (8-2) at Buffalo Bills (9-1) at 8:20pm ET on NBC. Detroit are 6-0 at home this season and Buffalo are 5-0 on the road.\n\nNFL Thanksgiving scores and live updates: https://scorebuzz.net\n\n#NFL #Thanksgiving #Lions",
+  "tags": [
+   "nfl thanksgiving 2026",
+   "nfl thanksgiving games",
+   "bears vs lions",
+   "lions vs bears",
+   "eagles vs cowboys",
+   "cowboys vs eagles",
+   "chiefs vs bills",
+   "bills vs chiefs",
+   "nfl week 12",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NFL · Thanksgiving",
+    "title": "Four teams with 8+ wins. One Thursday.",
+    "sub": "Your Thanksgiving slate"
+   },
+   {
+    "type": "list",
+    "dur": 5.2,
+    "label": "Thursday · ET (GMT)",
+    "title": "Thanksgiving games",
+    "rows": [
+     [
+      "1pm (18:00)",
+      "Bears at Lions",
+      "CBS"
+     ],
+     [
+      "4:30pm (21:30)",
+      "Eagles at Cowboys",
+      "Fox"
+     ],
+     [
+      "8:20pm (01:20)",
+      "Chiefs at Bills",
+      "NBC"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.6,
+    "label": "1pm ET · Ford Field",
+    "title": "Bears 8-2 at Lions 8-2",
+    "sub": "Detroit are 6-0 at home. First place in the NFC North on the line."
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "4:30pm ET",
+    "title": "Eagles 3-7 at Cowboys 5-6",
+    "sub": "Philadelphia snapped a seven-game skid last week"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "8:20pm ET",
+    "title": "Chiefs 8-2 at Bills 9-1",
+    "sub": "Buffalo are 5-0 on the road and 4-1 at home"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Pick all three winners 👇",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Thanksgiving",
+   "big": "3",
+   "hook": "games. *Huge* Thursday",
+   "sticker": "THURSDAY",
+   "emoji": "🦃"
+  },
+  "fbtext": "🦃 Thanksgiving football: Bears at Lions (both 8-2), Eagles at Cowboys, then Chiefs at Bills under the lights.\n\nPick all three winners 👇\n\n#NFL #Thanksgiving #OnePride #Reels",
+  "time": "2026-11-26T03:30:00"
+ },
+ {
+  "id": "s09-english-clubs-ucl",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "drama",
+  "yt": null,
+  "fb": "2026-11-25T15:35:00",
+  "title": "English clubs in the Champions League: no wins on Tuesday",
+  "description": "",
+  "tags": [],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Champions League · Tuesday",
+    "title": "Three English clubs. Zero wins.",
+    "sub": "Arsenal, Man City, Aston Villa"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Emirates Stadium",
+    "home": "Arsenal",
+    "homeAbbr": "ARS",
+    "homeScore": 1,
+    "away": "Dortmund",
+    "awayAbbr": "BVB",
+    "awayScore": 1,
+    "status": "FULL TIME",
+    "note": "Gyökeres 10' · Beier 55'",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "Etihad Stadium",
+    "home": "Man City",
+    "homeAbbr": "MCI",
+    "homeScore": 2,
+    "away": "Napoli",
+    "awayAbbr": "NAP",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "note": "Bouaddi 67' · Cherki 86' / Højlund 55' · Lang 76'",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "RAMS Park, Istanbul",
+    "home": "Galatasaray",
+    "homeAbbr": "GAL",
+    "homeScore": 1,
+    "away": "Aston Villa",
+    "awayAbbr": "AVL",
+    "awayScore": 0,
+    "status": "FULL TIME",
+    "note": "Deniz Gül header 77'",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Aston Villa",
+    "value": 0,
+    "unit": "shots on target",
+    "text": "Six games without a win in all competitions"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Wednesday",
+    "title": "Liverpool at Club Brugge · Man United at Sporting",
+    "sub": "20:00 GMT / 3pm ET"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Which English club goes furthest?",
+    "sub": "Follow ScoreBuzz for Champions League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League",
+   "big": "0",
+   "hook": "wins for *English* clubs",
+   "sticker": "TUESDAY",
+   "emoji": "😬"
+  },
+  "fbtext": "😬 Three English clubs played in the Champions League on Tuesday. None of them won.\n\nArsenal 1–1 Dortmund, Man City 2–2 Napoli, Galatasaray 1–0 Aston Villa. Liverpool and Man United play tonight.\n\nWhich English club goes furthest? 👇\n\n#UCL #Arsenal #MCFC #Reels",
+  "time": "2026-11-25T15:35:00"
+ },
+ {
+  "id": "s10-pistons-magic",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "venue": "Kia Center",
+  "yt": null,
+  "fb": "2026-11-26T04:30:00",
+  "title": "Pistons vs Magic 104–86",
+  "description": "",
+  "tags": [],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.4,
+    "kicker": "NBA Cup · Tuesday",
+    "title": "No Cade Cunningham. No problem.",
+    "sub": "Detroit in Orlando"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Kia Center",
+    "home": "Magic",
+    "homeAbbr": "ORL",
+    "homeScore": 86,
+    "away": "Pistons",
+    "awayAbbr": "DET",
+    "awayScore": 104,
+    "status": "FINAL",
+    "note": "Joe 21 · Jenkins 15 · Holland 13",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Isaiah Joe",
+    "value": 21,
+    "unit": "points",
+    "text": "In his first start for the Pistons"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Second quarter",
+    "title": "An 18–0 run",
+    "sub": "Detroit won the quarter 32–14"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Ausar Thompson",
+    "title": "6 pts · 10 reb · 7 ast · 4 blk",
+    "sub": "Orlando held to a season-low 86"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Detroit win the NBA Cup?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA Cup",
+   "big": "104–86",
+   "hook": "Pistons *without* Cade",
+   "sticker": "FINAL",
+   "teams": [
+    "DET",
+    "ORL"
+   ],
+   "emoji": "💪"
+  },
+  "fbtext": "💪 No Cade Cunningham, no problem.\n\nIsaiah Joe scored 21 in his first Pistons start and Detroit handed Orlando its first NBA Cup loss, 104–86.\n\nCan the Pistons win the NBA Cup? 👇\n\n#Pistons #NBACup #NBA #Reels",
+  "time": "2026-11-26T04:30:00"
+ }
+]

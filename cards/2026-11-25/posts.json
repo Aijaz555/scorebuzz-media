@@ -1,0 +1,354 @@
+[
+ {
+  "id": "01-real-madrid-psv",
+  "time": "2026-11-25T11:00:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 5",
+  "home": "Real Madrid",
+  "homeScore": 5,
+  "away": "PSV",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png",
+  "venue": "Santiago Bernabéu",
+  "headline": "Five from five: Madrid go top",
+  "sub": "1–0 down at half-time. Then Valverde 50', Bellingham 60', Mbappé 64' & 84', Vinícius 87'.",
+  "caption": "⚪ Real Madrid 5–1 PSV.\n\nBehind at the break, then five second-half goals: Jude Bellingham off the bench with a long-range stunner, Kylian Mbappé twice. Five wins from five and top of the table.\n\nCan anyone stop Madrid this season? 👇\n\n#RealMadrid #UCL #Bellingham",
+  "firstCommentText": ""
+ },
+ {
+  "id": "02-arsenal-dortmund",
+  "time": "2026-11-25T11:55:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 5",
+  "home": "Arsenal",
+  "homeScore": 1,
+  "away": "Dortmund",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+  "venue": "Emirates Stadium",
+  "headline": "Arsenal let another lead slip",
+  "sub": "Gyökeres 25-yard opener (10'), Beier levels (55'). Dortmund hit the post twice, Rice hit the woodwork.",
+  "caption": "😬 Arsenal 1–1 Dortmund.\n\nViktor Gyökeres scored a 25-yarder inside 10 minutes, but Maximilian Beier equalised after the break. It's the second game in a row Arsenal have dropped points from a winning position.\n\nWorried, Arsenal fans? 👇\n\n#Arsenal #BVB #UCL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "03-city-napoli",
+  "time": "2026-11-25T13:45:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 5",
+  "home": "Man City",
+  "homeScore": 2,
+  "away": "Napoli",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+  "venue": "Etihad Stadium",
+  "headline": "Cherki rescues a point at the Etihad",
+  "sub": "Højlund 55', Bouaddi 67', Lang 76', Cherki 86'. City have won 1 of their last 7 in all competitions.",
+  "caption": "🩵 Man City 2–2 Napoli.\n\nRasmus Højlund and Noa Lang put Napoli ahead twice. Rayan Cherki's solo goal four minutes from time saved City, who have won one of their last seven games.\n\nWhat's gone wrong at City? 👇\n\n#MCFC #Napoli #UCL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "04-vegas-edmonton",
+  "time": "2026-11-25T14:40:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · TUESDAY NIGHT",
+  "home": "Oilers",
+  "homeScore": 3,
+  "away": "Golden Knights",
+  "awayScore": 5,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
+  "venue": "Rogers Place",
+  "headline": "Vegas win the Pacific top-two clash",
+  "sub": "Connelly 2G 1A, Eichel 2G, Marner 600th career assist. Oilers have lost four straight.",
+  "caption": "⚔️ Golden Knights 5, Oilers 3.\n\nRookie Trevor Connelly and Jack Eichel scored twice each in Edmonton, and Mitch Marner picked up his 600th career assist. The Oilers have now lost four in a row.\n\nWho wins the Pacific? 👇\n\n#VegasBorn #Oilers #NHL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "05-ucl-table",
+  "time": "2026-11-25T16:30:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · TABLE BEFORE WEDNESDAY'S GAMES",
+  "headline": "Madrid top, Arsenal 5th, City 6th",
+  "rows": [
+   [
+    "1. Real Madrid",
+    "5 games",
+    "15 pts"
+   ],
+   [
+    "2. PSG",
+    "4 games",
+    "12 pts"
+   ],
+   [
+    "3. Como",
+    "5 games",
+    "12 pts"
+   ],
+   [
+    "4. Betis",
+    "5 games",
+    "12 pts"
+   ],
+   [
+    "5. Arsenal",
+    "5 games",
+    "11 pts"
+   ],
+   [
+    "6. Man City",
+    "5 games",
+    "10 pts"
+   ],
+   [
+    "7. Dortmund",
+    "5 games",
+    "10 pts"
+   ]
+  ],
+  "sub": "Barcelona 8th, Villa 9th, Liverpool 10th, Man United 19th. Top 8 go straight to the last 16.",
+  "caption": "📊 Champions League top eight before tonight's games.\n\nReal Madrid lead with 15 points. Como and Betis are in the top four, Arsenal are 5th and Man City 6th.\n\nWho finishes top? 👇\n\n#UCL #ChampionsLeague #RealMadrid",
+  "firstCommentText": ""
+ },
+ {
+  "id": "06-ucl-tonight",
+  "time": "2026-11-25T17:25:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 5 · TONIGHT",
+  "headline": "Liverpool, Man United, PSG, Bayern",
+  "rows": [
+   [
+    "17:45 GMT",
+    "Sabah v Barcelona",
+    "12:45pm ET"
+   ],
+   [
+    "20:00 GMT",
+    "Club Brugge v Liverpool",
+    "3pm ET"
+   ],
+   [
+    "20:00 GMT",
+    "Sporting v Man United",
+    "3pm ET"
+   ],
+   [
+    "20:00 GMT",
+    "PSG v Roma",
+    "3pm ET"
+   ],
+   [
+    "20:00 GMT",
+    "Lille v Bayern",
+    "3pm ET"
+   ]
+  ],
+  "sub": "Also tonight: Slavia v Villarreal, Atlético v Viking, Inter v Stuttgart, Shakhtar v Fenerbahçe.",
+  "caption": "⭐ Champions League, night two.\n\nLiverpool go to Club Brugge, Man United visit Sporting, PSG host Roma and Barcelona play Sabah (17:45 GMT).\n\nWhich game are you watching? 👇\n\n#UCL #LFC #MUFC",
+  "firstCommentText": ""
+ },
+ {
+  "id": "07-brugge-liverpool",
+  "time": "2026-11-25T19:15:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "headline",
+  "label": "CHAMPIONS LEAGUE · TONIGHT · 20:00 GMT / 3PM ET",
+  "venue": "Jan Breydel Stadium",
+  "headline": "Club Brugge v Liverpool: 9 points each",
+  "sub": "Both have won three of their four games. A win takes either side to 12 points.",
+  "caption": "🔴 Liverpool are in Bruges tonight (20:00 GMT / 3pm ET).\n\nBoth sides have 9 points from four games. Whoever wins moves up to 12.\n\nScore prediction? 👇\n\n#LFC #ClubBrugge #UCL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "08-arsenal-city-preview",
+  "time": "2026-11-25T21:05:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "headline",
+  "label": "PREMIER LEAGUE · SUNDAY 16:30 GMT / 11:30AM ET",
+  "venue": "Emirates Stadium",
+  "headline": "1st v 3rd: Arsenal v Man City",
+  "sub": "Arsenal 28 pts, City 22 after 11 games. Win and Arsenal go nine clear of City; lose and it's three.",
+  "caption": "🔥 The big one is on Sunday: Arsenal v Man City at the Emirates (16:30 GMT / 11:30am ET).\n\nArsenal lead the Premier League by six points. City are third on 22.\n\nWho wins? 👇\n\n#Arsenal #MCFC #PremierLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "09-steelers-rudolph",
+  "time": "2026-11-25T22:55:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "NFL · BREAKING",
+  "venue": "Acrisure Stadium",
+  "headline": "Steelers bench Aaron Rodgers",
+  "sub": "Mike McCarthy turns to Mason Rudolph. Pittsburgh (6-4) host Denver (8-2) on Black Friday, 3pm ET.",
+  "caption": "🚨 The Steelers have benched Aaron Rodgers.\n\nMike McCarthy will start Mason Rudolph instead. Pittsburgh (6-4) host the 8-2 Broncos on Friday at 3pm ET.\n\nRight call? 👇\n\n#Steelers #AaronRodgers #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "10-thanksgiving-slate",
+  "time": "2026-11-25T23:50:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "list",
+  "label": "NFL · THANKSGIVING · THURSDAY",
+  "headline": "Four teams with 8+ wins on Thanksgiving",
+  "rows": [
+   [
+    "1pm ET",
+    "Bears (8-2) at Lions (8-2)",
+    "CBS"
+   ],
+   [
+    "4:30pm ET",
+    "Eagles (3-7) at Cowboys (5-6)",
+    "Fox"
+   ],
+   [
+    "8:20pm ET",
+    "Chiefs (8-2) at Bills (9-1)",
+    "NBC"
+   ]
+  ],
+  "sub": "UK times: 18:00, 21:30 and 01:20 GMT. Black Friday: Broncos at Steelers, 3pm ET.",
+  "caption": "🦃 Thanksgiving football is set.\n\nBears at Lions (both 8-2), Eagles at Cowboys, then Chiefs at Bills under the lights.\n\nWhich game are you most looking forward to? 👇\n\n#NFL #Thanksgiving #OnePride",
+  "firstCommentText": ""
+ },
+ {
+  "id": "11-nba-tonight",
+  "time": "2026-11-26T01:45:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA CUP · GROUP PLAY · TONIGHT",
+  "headline": "Nine games on NBA Cup night",
+  "rows": [
+   [
+    "5pm ET",
+    "76ers (14-4) v Heat (10-6)",
+    "Philly"
+   ],
+   [
+    "7:30pm ET",
+    "Knicks v Cavaliers",
+    "New York"
+   ],
+   [
+    "7:30pm ET",
+    "Thunder v Timberwolves",
+    "OKC"
+   ],
+   [
+    "8:30pm ET",
+    "Rockets v Suns",
+    "Houston"
+   ],
+   [
+    "10pm ET",
+    "Blazers v Spurs (15-3)",
+    "Portland"
+   ]
+  ],
+  "sub": "Also: Hornets v Bulls, Grizzlies v Clippers, Bucks v Nets, Warriors v Kings.",
+  "caption": "🏀 Nine NBA Cup games tonight.\n\n76ers v Heat tips at 5pm ET, then Knicks v Cavs, Thunder v Wolves and the 15-3 Spurs in Portland.\n\nWho's your NBA Cup pick? 👇\n\n#NBACup #Knicks #Spurs",
+  "firstCommentText": ""
+ },
+ {
+  "id": "12-nhl-tonight",
+  "time": "2026-11-26T03:35:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "list",
+  "label": "NHL · THANKSGIVING EVE · TONIGHT",
+  "headline": "14 games on Thanksgiving Eve",
+  "rows": [
+   [
+    "7pm ET",
+    "Lightning v Hurricanes (18-3-3)",
+    "Tampa"
+   ],
+   [
+    "7pm ET",
+    "Bruins v Jets",
+    "Boston"
+   ],
+   [
+    "7pm ET",
+    "Panthers v Senators",
+    "Sunrise"
+   ],
+   [
+    "8pm ET",
+    "Wild (18-3-5) v Mammoth",
+    "St. Paul"
+   ],
+   [
+    "9:30pm ET",
+    "Avalanche v Canadiens",
+    "Denver"
+   ]
+  ],
+  "sub": "Carolina and Minnesota both have 18 wins. 28 of the NHL's 32 teams are in action.",
+  "caption": "🏒 14 NHL games tonight.\n\nThe 18-3-3 Hurricanes visit Tampa Bay, the 18-3-5 Wild host Utah and the Canadiens are in Colorado.\n\nWho's the best team in the NHL right now? 👇\n\n#NHL #LetsGoCanes #mnwild",
+  "firstCommentText": ""
+ },
+ {
+  "id": "13-chiefs-bills",
+  "time": "2026-11-26T05:25:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "NFL · THANKSGIVING NIGHT · 8:20PM ET / 01:20 GMT",
+  "venue": "Highmark Stadium",
+  "headline": "Chiefs at Bills: 8-2 v 9-1",
+  "sub": "Buffalo are 5-0 on the road and 4-1 at home. Kansas City have won all four playoff meetings with Mahomes at QB.",
+  "caption": "🏈 Thanksgiving night: Chiefs (8-2) at Bills (9-1).\n\nKansas City have beaten Buffalo in all four playoff meetings of the Mahomes era. Can the Bills flip the script at home?\n\nWho wins in Buffalo? 👇\n\n#BillsMafia #ChiefsKingdom #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "14-ufc-stirling",
+  "time": "2026-11-26T07:15:00",
+  "sport": "mma",
+  "league": "ufc",
+  "kind": "headline",
+  "label": "UFC · FIGHT NIGHT QATAR",
+  "headline": "Navajo Stirling is 7-0 in the UFC",
+  "sub": "The New Zealander knocked out former champion Jiří Procházka with a right hand in round 2 in Doha.",
+  "caption": "🥊 Navajo Stirling keeps winning.\n\nHe knocked out former champion Jiří Procházka in the second round in Doha to go 7-0 in the UFC.\n\nIs Stirling ready for a title shot? 👇\n\n#UFC #NavajoStirling #UFCQatar",
+  "firstCommentText": ""
+ },
+ {
+  "id": "15-bears-lions",
+  "time": "2026-11-26T08:20:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "NFL · THANKSGIVING · 1PM ET / 18:00 GMT",
+  "venue": "Ford Field",
+  "headline": "Bears at Lions: 8-2 v 8-2",
+  "sub": "Top of the NFC North on Thanksgiving. Detroit are 6-0 at home, Chicago 3-1 on the road.",
+  "caption": "🦁🐻 First place on the line on Thanksgiving.\n\nThe Bears (8-2) visit the Lions (8-2) at 1pm ET. Detroit are unbeaten at Ford Field this season.\n\nWho takes the NFC North lead? 👇\n\n#OnePride #DaBears #NFL",
+  "firstCommentText": ""
+ }
+]

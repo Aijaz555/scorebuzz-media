@@ -1,8 +1,4 @@
 {
- "acrisure-stadium": {
-  "venue": "Acrisure Stadium",
-  "credit": "Photo: NASA Headquarters / NASA/Aubrey Gemignani / Wikimedia Commons, Public domain"
- },
  "afas-stadion": {
   "venue": "AFAS Stadion",
   "credit": "Photo: KSKB1935 / Wikimedia Commons, CC BY-SA 4.0"
@@ -226,10 +222,6 @@
  "dkr-texas-memorial-stadium": {
   "venue": "DKR-Texas Memorial Stadium",
   "credit": "Photo: Fredlyfish4 / Wikimedia Commons, CC BY-SA 4.0"
- },
- "doak-campbell-stadium": {
-  "venue": "Doak Campbell Stadium",
-  "credit": "Photo: SeminoleNation / Wikimedia Commons, CC BY-SA 4.0"
  },
  "donald-w-reynolds-razorback-stadium": {
   "venue": "Donald W. Reynolds Razorback Stadium",
@@ -515,10 +507,6 @@
   "venue": "Madison Square Garden",
   "credit": "Photo: Ajay Suresh from New York, NY, USA / Wikimedia Commons, CC BY 2.0"
  },
- "maksimir-stadium": {
-  "venue": "Maksimir Stadium",
-  "credit": "Photo: Modzzak / Wikimedia Commons, CC BY-SA 3.0"
- },
  "mclane-stadium": {
   "venue": "McLane Stadium",
   "credit": "Photo: Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
@@ -686,10 +674,6 @@
  "rcde-stadium": {
   "venue": "RCDE Stadium",
   "credit": "Photo: Elemaki / Wikimedia Commons, CC BY 3.0"
- },
- "red-bull-arena-salzburg": {
-  "venue": "Red Bull Arena Salzburg",
-  "credit": "Photo: Werner100359 / Wikimedia Commons, CC BY 3.0"
  },
  "red-bull-arena": {
   "venue": "Red Bull Arena",
