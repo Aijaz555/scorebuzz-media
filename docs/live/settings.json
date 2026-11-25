@@ -36,6 +36,41 @@
    "event": "401915293",
    "note": "Slavia Prague vs Villarreal, 2026-11-25T17:45:00Z"
   },
+  "3": {
+   "league": "ucl",
+   "event": "401915292",
+   "note": "Club Brugge vs Liverpool, 2026-11-25T20:00:00Z"
+  },
+  "4": {
+   "league": "ucl",
+   "event": "401915374",
+   "note": "Paris Saint-Germain vs AS Roma, 2026-11-25T20:00:00Z"
+  },
+  "5": {
+   "league": "ucl",
+   "event": "401915373",
+   "note": "Sporting CP vs Manchester United, 2026-11-25T20:00:00Z"
+  },
+  "6": {
+   "league": "ucl",
+   "event": "401915376",
+   "note": "Internazionale vs VfB Stuttgart, 2026-11-25T20:00:00Z"
+  },
+  "7": {
+   "league": "ucl",
+   "event": "401915291",
+   "note": "Atlético Madrid vs Viking FK, 2026-11-25T20:00:00Z"
+  },
+  "8": {
+   "league": "ucl",
+   "event": "401915377",
+   "note": "Lille vs Bayern Munich, 2026-11-25T20:00:00Z"
+  },
+  "9": {
+   "league": "ucl",
+   "event": "401915375",
+   "note": "Shakhtar Donetsk vs Fenerbahce, 2026-11-25T20:00:00Z"
+  },
   "10": {
    "league": "ucl",
    "event": null,
