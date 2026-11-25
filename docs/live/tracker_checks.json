@@ -1,14 +1,4 @@
 {
- "401892668": {
-  "slot": "4",
-  "league": "nhl",
-  "game": "Hurricanes v Blackhawks",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/hurricanes-vs-blackhawks-401892668/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 80)",
-  "at": "2026-11-08T02:59:16+00:00"
- },
  "401909939": {
   "slot": "6",
   "league": "nba",
@@ -2998,5 +2988,15 @@
   "status": "ok",
   "reason": "ok (contrast 64)",
   "at": "2026-11-25T03:00:52+00:00"
+ },
+ "401909316": {
+  "slot": "5",
+  "league": "nba",
+  "game": "Nuggets v Mavericks",
+  "url": "https://scorebuzz.net/basketball/nba/nuggets-vs-mavericks-401909316/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-25T03:17:00+00:00"
  }
 }
