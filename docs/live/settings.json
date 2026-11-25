@@ -26,6 +26,16 @@
  "top25": 15,
  "pin": null,
  "slots": {
+  "1": {
+   "league": "ucl",
+   "event": "401915378",
+   "note": "Sabah FK vs Barcelona, 2026-11-25T17:45:00Z"
+  },
+  "2": {
+   "league": "ucl",
+   "event": "401915293",
+   "note": "Slavia Prague vs Villarreal, 2026-11-25T17:45:00Z"
+  },
   "10": {
    "league": "ucl",
    "event": null,
