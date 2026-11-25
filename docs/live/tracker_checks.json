@@ -1,14 +1,4 @@
 {
- "401909939": {
-  "slot": "6",
-  "league": "nba",
-  "game": "Hawks v Nets",
-  "url": "https://scorebuzz.net/basketball/nba/hawks-vs-nets-401909939/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-08T03:07:35+00:00"
- },
  "401909940": {
   "slot": "16",
   "league": "nba",
@@ -2998,5 +2988,15 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-25T03:17:00+00:00"
+ },
+ "401933738": {
+  "slot": "4",
+  "league": "mls",
+  "game": "San Jose v Houston",
+  "url": "https://scorebuzz.net/football/mls/san-jose-vs-houston-401933738/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "tracker card has no drawing",
+  "at": "2026-11-25T03:26:43+00:00"
  }
 }
