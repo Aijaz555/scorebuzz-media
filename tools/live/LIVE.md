@@ -676,3 +676,9 @@ Order for every player card (live tracker side panels, game leaders): the site's
 ESPN's headshot, else the shirt with his number. Line-ups come from `md-<fixture>.json`; when Goalserve has no line-up yet the
 live feed uses ESPN's and now fills each player's Goalserve id from his club's squad (surname, then shirt number), so the
 site's photos show. A game whose line-up is still thin is looked at again every minute (10 minutes once it is complete).
+
+### 4K (25 Nov 2026)
+LiveReacting tested 4K on their graphics-card servers (GTX 1080, 30 fps). `"trk4k": true` (or a list of slots) in settings.json makes
+center.html open the match page with `&q3d=4k`: tracker-3d.js draws the 3D view at 4x the stage size (about 3880 x 2328, the stream's
+own pixels). If the machine drops under 24 fps it steps down to 2x, then 1x. `trkhd` (2x) is for 1080p streams. Reload 48 also hides
+broken team logos in the ticker and header (they showed as broken-image boxes on teams without an ESPN logo).

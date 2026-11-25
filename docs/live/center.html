@@ -117,7 +117,7 @@ let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('s
 // moment a score changes) and the board shows whichever of Goalserve and ESPN changed last. Owner 24 Nov 2026, after the speed test:
 // Goalserve was 70-90 s ahead of ESPN on football goals and ~15 s on NHL goals; NBA about level, so both are read. NFL stays on ESPN.
 let GSON = q.get('gs') === '1';
-let TRK3D = q.get('trk3d') === '1', TRKGPU = q.get('trkgpu') === '1', TRKHD = q.get('trkhd') === '1', SITEPRE = q.get('sitepre') !== '0';
+let TRK3D = q.get('trk3d') === '1', TRKGPU = q.get('trkgpu') === '1', TRKHD = q.get('trkhd') === '1', TRK4K = q.get('trk4k') === '1', SITEPRE = q.get('sitepre') !== '0';
 function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
   const mode = R.fit || q.get('fit') || 'contain', b = document.body;
   if (mode === 'fill') b.style.transform = `scale(${sx},${sy})`; else { const k = Math.min(sx, sy); b.style.transform = `scale(${k})`; b.style.marginLeft = ((W - 1920 * k) / 2) + 'px'; b.style.marginTop = ((H - 1080 * k) / 2) + 'px'; } }
@@ -202,7 +202,7 @@ function gameCell(e, cur) {
   const c = e.competitions[0], h = c.competitors.find((x) => x.homeAway === 'home'), a = c.competitors.find((x) => x.homeAway === 'away');
   const st = e.status.type, pre = st.state === 'pre', fin = st.completed;
   const s = pre ? (FOOT() ? new Date(e.date).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: TZ()[0] }) + ' ' + TZ()[1] : new Date(e.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET') : fin ? st.shortDetail : FOOT() ? (e.status.displayClock || st.shortDetail) : st.shortDetail.replace(' - ', ' · ');
-  const row = (x, o) => `<div class="r"><img src="${x.team.logo}"><b>${esc(x.team.abbreviation)}</b><span class="${pre ? 'rec' : +x.score > +o.score ? 'w' : ''}">${pre ? esc(x.records?.[0]?.summary || '') : esc(x.score)}</span></div>`;
+  const row = (x, o) => `<div class="r">${x.team.logo ? `<img src="${esc(x.team.logo)}" onerror="this.style.visibility='hidden'">` : '<img style="visibility:hidden">'}<b>${esc(x.team.abbreviation)}</b><span class="${pre ? 'rec' : +x.score > +o.score ? 'w' : ''}">${pre ? esc(x.records?.[0]?.summary || '') : esc(x.score)}</span></div>`;
   return `<div class="gm ${cur ? 'cur' : ''}"><div class="st ${!pre && !fin ? 'live' : ''}">${esc(s)}</div>${FOOT() ? row(h, a) + row(a, h) : row(a, h) + row(h, a)}</div>`;
 }
 const dots = (n, max) => `<div class="dots">${Array.from({ length: max }, (_, i) => `<i class="${i < n ? '' : 'u'}"></i>`).join('')}</div>`;
@@ -388,7 +388,7 @@ function render(s, sb) {
   const nmCls = (T) => (T.nick.length > (FOOT() ? 8 : 12) ? 'l' : T.nick.length > (FOOT() ? 7 : 9) ? 'm' : '');
   const tag = (T, O) => (pre ? '' : T.score > O.score ? `<b>${fin ? 'WIN' : 'LEAD'}</b>+${T.score - O.score}` : '');
   const side = (T, O, k) => `<div class="side ${k}">
-    <div class="th">${k === 'h' ? `<img src="${T.logoD}">` : ''}<div class="tx" style="${k === 'a' ? 'margin-left:auto;text-align:right' : ''}"><div class="ct">${esc(T.city)}</div><div class="nm ${nmCls(T)}">${esc(T.nick)}</div><div class="rc">${esc(T.rec)}</div></div>${k === 'a' ? `<img src="${T.logoD}">` : ''}</div>
+    <div class="th">${k === 'h' && T.logoD ? `<img src="${T.logoD}" onerror="this.remove()">` : ''}<div class="tx" style="${k === 'a' ? 'margin-left:auto;text-align:right' : ''}"><div class="ct">${esc(T.city)}</div><div class="nm ${nmCls(T)}">${esc(T.nick)}</div><div class="rc">${esc(T.rec)}</div></div>${k === 'a' && T.logoD ? `<img src="${T.logoD}" onerror="this.remove()">` : ''}</div>
     <div class="scr" style="${k === 'a' ? 'flex-direction:row-reverse' : ''}"><div class="big ${T.score < O.score ? 'lo' : ''}">${pre ? 0 : T.score}</div><div class="tag" style="${k === 'a' ? 'text-align:left' : ''}">${tag(T, O)}</div></div>
     ${chips(T)}
     <div class="gl">${FOOT() ? footTitle(s, T, pre) : hasBox ? 'GAME LEADERS' : 'SEASON LEADERS'}<span>${FOOT() ? esc(T.abbr) : NHL() && hasBox ? 'SKATERS / GOALIE' : esc(T.abbr)}</span></div>
@@ -406,7 +406,7 @@ function render(s, sb) {
   // ---- tracker: website tracker while in play, built-in shot map otherwise ----
   const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   const shortOf = (T) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === T.id)?.team?.shortDisplayName || T.nick;
-  const siteUrl = !noSite && !OWN && sbEv && SITE[league] ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/${TRK3D ? '?trk=3d' + (TRKGPU ? '&gpu=1' : '') + (TRKHD ? '&q3d=hd' : '') : ''}` : '';
+  const siteUrl = !noSite && !OWN && sbEv && SITE[league] ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/${TRK3D ? '?trk=3d' + (TRKGPU ? '&gpu=1' : '') + (TRK4K ? '&q3d=4k' : TRKHD ? '&q3d=hd' : '') : ''}` : '';
   const trkUrlPre = pre && SITEPRE && !REPLAY ? siteUrl : ''; // same address as the live tracker, so kick-off needs no reload
   const trkUrl = live ? siteUrl : '';
   const scorers = (id) => { const m = new Map(); for (const k of s.keyEvents || []) { const t = k.type?.type || ''; if (!(k.scoringPlay || /goal|penalty---scored/.test(t)) || /miss|saved/.test(t) || String(k.team?.id || '') !== id) continue;
@@ -591,6 +591,7 @@ async function slotTick() {
     TRKGPU = c.trkgpu === true || (Array.isArray(c.trkgpu) && c.trkgpu.map(String).includes(String(SLOT)));
     GSON = c.gsScores === true || (Array.isArray(c.gsScores) && c.gsScores.map(String).includes(String(SLOT)));
     TRKHD = c.trkhd === true || (Array.isArray(c.trkhd) && c.trkhd.map(String).includes(String(SLOT)));      // 3D drawn at twice the size (graphics-card servers)
+    TRK4K = c.trk4k === true || (Array.isArray(c.trk4k) && c.trk4k.map(String).includes(String(SLOT)));      // 3D drawn at four times the size (4K streams)
     SITEPRE = c.sitePreview === undefined || c.sitePreview === true || (Array.isArray(c.sitePreview) && c.sitePreview.map(String).includes(String(SLOT)));
     if (String(sl.event) !== String(event) || sl.league !== league) { league = sl.league; event = String(sl.event); tick(); }
   } catch (e) { /* keep current */ }
