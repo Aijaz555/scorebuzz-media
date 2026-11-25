@@ -307,6 +307,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 25 Nov 2026 02:42 UTC: no planner actions (4 live, Slot 1 Magic-Pistons cleared). Stream check: Slots 2-5 correct. End watch: no games ended by 03:31.
   - 25 Nov 2026 03:42 UTC: no planner actions (4 live). Stream check: Slots 4, 5 correct. End watch stopped Oilers-Golden Knights (Slot 2) and Wizards-Celtics (Slot 3) at 03:48 (~5 min after the run's first look); no other games ended by 04:32.
   - 25 Nov 2026 04:42 UTC: no planner actions (Slots 2, 3 cleared from settings; 2 live). Stream check: Slots 4, 5 correct.
+  - 25 Nov 2026 06:42 UTC: no planner actions (Slot 5 Nuggets-Mavericks cleared from settings; all 21 projects OFFLINE). No stream check; usage already done today. End watch idle.
 - Older cap (found 7 Nov 2026 01:45 UTC): the plan allowed only 9 concurrent live streams; the log below is from that period.
   - 8 Nov 2026 14:43 UTC: cap hit again — Real Sociedad-Rayo (Slot 2, now) and 4 Ligue 1 16:15 UK games (Slots 12-15) refused; only Slot 1 (Man Utd-Villa) scheduled.
   - 8 Nov 2026 16:45 UTC: 4 Ligue 1 restarts (Slots 14-17) went through (10 streams counted), then all 8 18:00 UK schedules (7 NFL 1pm ET games + Panthers-Bruins, Slots 4-6,8-11,18) were refused by the cap; the next hourly runs start them as slots free up.

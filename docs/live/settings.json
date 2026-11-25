@@ -25,13 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "5": {
-   "league": "nba",
-   "event": "401909316",
-   "note": "Denver Nuggets vs Dallas Mavericks, 2026-11-25T03:00:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
