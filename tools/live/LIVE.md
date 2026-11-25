@@ -417,6 +417,7 @@ goals ticker; ESPN scoreboard every 15 s; `&demo=1` fakes a mid-game state). On 
 the stream ends on its planned duration; the next planner run frees the slot once it is offline).
 - 24 Nov 2026 20:22 UTC: first run, Slot 10 "Champions League Live Scores Today | All Games Live Scoreboard", planned 6600 s (to ~22:12),
   crowd audio. PREPARING for 10 min, then LIVE at 20:32; YouTube preview showed all 9 games correctly.
+- 25 Nov 2026 (owner asked in chat): Slot 10 all-games UCL board again, scheduled 17:15Z (30 min before the 17:45 games), planned 18000 s (to ~22:15, after the 20:00 games end), crowd audio.
 
 ## Stream check (added 9 Nov 2026)
 
