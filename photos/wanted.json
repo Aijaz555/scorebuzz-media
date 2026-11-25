@@ -1,8 +1,8 @@
 [
  {
-  "slug": "energizer-park",
-  "name": "Energizer Park",
-  "city": "St. Louis, Missouri",
+  "slug": "scottsmiracle-gro-field",
+  "name": "ScottsMiracle-Gro Field",
+  "city": "Columbus, Ohio",
   "country": "USA"
  },
  {
@@ -16,12 +16,6 @@
   "name": "Estádio José Alvalade",
   "city": "Lisbon",
   "country": "Portugal"
- },
- {
-  "slug": "batumi-stadium-adjarabet-arena",
-  "name": "Batumi Stadium (Adjarabet Arena)",
-  "city": "Batumi",
-  "country": "Georgia"
  },
  {
   "slug": "maksimir-stadium",
@@ -42,28 +36,16 @@
   "country": "Austria"
  },
  {
-  "slug": "king-power-at-den-dreef-stadion",
-  "name": "King Power at Den Dreef Stadion",
-  "city": "Leuven",
-  "country": "Belgium"
- },
- {
-  "slug": "doosan-arena",
-  "name": "Doosan Arena",
-  "city": "Plzen",
-  "country": "Czechia"
- },
- {
   "slug": "groupama-arena",
   "name": "Groupama Arena",
   "city": "Budapest",
   "country": "Hungary"
  },
  {
-  "slug": "pankritio-stadium",
-  "name": "Pankritio Stadium",
-  "city": "Crete",
-  "country": "Greece"
+  "slug": "acrisure-stadium",
+  "name": "Acrisure Stadium",
+  "city": "Pittsburgh",
+  "country": "USA"
  },
  {
   "slug": "galaxy-stadium",
@@ -72,15 +54,33 @@
   "country": "USA"
  },
  {
+  "slug": "doak-campbell-stadium",
+  "name": "Doak Campbell Stadium",
+  "city": "Tallahassee",
+  "country": "USA"
+ },
+ {
   "slug": "xfinity-mobile-arena",
   "name": "Xfinity Mobile Arena",
   "city": "Philadelphia",
-  "country": ""
+  "country": "USA"
  },
  {
   "slug": "gainbridge-fieldhouse",
   "name": "Gainbridge Fieldhouse",
   "city": "Indianapolis",
+  "country": ""
+ },
+ {
+  "slug": "mortgage-matchup-center",
+  "name": "Mortgage Matchup Center",
+  "city": "Phoenix",
+  "country": ""
+ },
+ {
+  "slug": "frost-bank-center",
+  "name": "Frost Bank Center",
+  "city": "San Antonio",
   "country": ""
  },
  {
