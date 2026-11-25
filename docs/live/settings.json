@@ -1,328 +1,338 @@
 {
+ "leagues": [
+  "nfl",
+  "ncaaf",
+  "nba",
+  "nhl",
+  "ucl",
+  "uel",
+  "epl"
+ ],
+ "teams": [
+  "LAL",
+  "GS",
+  "NYK",
+  "BOS",
+  "PHI",
+  "KC",
+  "DAL",
+  "ARS",
+  "LIV",
+  "MNC",
+  "CRY",
+  "BOU",
+  "SUN"
+ ],
+ "top25": 15,
+ "pin": null,
+ "slots": {
+  "1": {
+   "league": "nba",
+   "event": "401909314",
+   "note": "Orlando Magic vs Detroit Pistons, 2026-11-25T00:00:00Z"
+  },
+  "2": {
+   "league": "nhl",
+   "event": "401892780",
+   "note": "Edmonton Oilers vs Vegas Golden Knights, 2026-11-25T01:00:00Z"
+  },
+  "3": {
+   "league": "nba",
+   "event": "401909315",
+   "note": "Washington Wizards vs Boston Celtics, 2026-11-25T01:00:00Z"
+  },
+  "4": {
+   "league": "mls",
+   "event": "401933738",
+   "note": "San Jose Earthquakes vs Houston Dynamo FC, 2026-11-25T03:00:00Z"
+  },
+  "5": {
+   "league": "nba",
+   "event": "401909316",
+   "note": "Denver Nuggets vs Dallas Mavericks, 2026-11-25T03:00:00Z"
+  }
+ },
+ "fit": {
+  "win": true,
+  "fit": "fill"
+ },
+ "reload": 47,
+ "music": {
+  "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old; NBA uses the 8 Envato arena crowd recordings the owner licensed (11 Nov 2026), unmixed, in a fixed order, old funk playlist kept as basketball. NHL uses 8 Envato hockey crowd recordings (owner, 11 Nov 2026) played in a fixed order, not shuffled (music.ordered), old music kept as hockey. Soccer (owner, 11 Nov 2026) loops the single Envato \"Football Crowd Cheer\" clip, uploaded unchanged (louder than the other crowd tracks, volume 4 per owner); the Pixabay mixes are kept as soccer.",
+  "playlists": {
+   "american_football": {
+    "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
+    "Movement Proposition": "6aecebcca44fc7f985e3426d",
+    "Hitman": "6aecebfea44fc7f985e34cd7",
+    "Exhilarate": "6aecec2ea44fc7f985e353ba",
+    "Big Rock": "6aecec6ea44fc7f985e36052",
+    "Cut and Run": "6aecec8da44fc7f985e3676c",
+    "Raving Energy": "6aececada44fc7f985e36ce7",
+    "Malicious": "6aececcca44fc7f985e373d7",
+    "Hard Boiled": "6aecececa44fc7f985e37970",
+    "Ouroboros": "6aeced0ba44fc7f985e3805f",
+    "Heroic Age": "6aeced2aa44fc7f985e384c5",
+    "Killers": "6aeced49a44fc7f985e38ba3",
+    "Crusade": "6aeced69a44fc7f985e390e1",
+    "Fearless First": "6aeced88a44fc7f985e394fd",
+    "Severe Tire Damage": "6aeceda8a44fc7f985e39c4b",
+    "Rocket": "6aecedc7a44fc7f985e3a0ee",
+    "ScoreBuzz Stadium": "6aece863a44fc7f985e29b6f",
+    "ScoreBuzz Fourth Quarter": "6aece8d8a44fc7f985e2b019",
+    "EDM Detection Mode": "6aecf07ca44fc7f985e42db5"
+   },
+   "soccer": {
+    "ScoreBuzz Stadium Soccer A": "6af065e5f370b34507b78d51",
+    "ScoreBuzz Stadium Soccer B": "6af065e5f370b34507b78d5b"
+   },
+   "basketball": {
+    "Funkorama": "6aecede7a44fc7f985e3a8f0",
+    "Werq": "6aecee45a44fc7f985e3b8e5",
+    "Groove Grove": "6aecee26a44fc7f985e3b4de",
+    "Funk Game Loop": "6aecee06a44fc7f985e3ada9",
+    "Shiny Tech": "6aeceee3a44fc7f985e3d901",
+    "Gonna Start": "6aecef63a44fc7f985e3f6cb",
+    "EDM Detection Mode": "6aecf07ca44fc7f985e42db5",
+    "Raving Energy": "6aececada44fc7f985e36ce7",
+    "Rocket": "6aecedc7a44fc7f985e3a0ee",
+    "Exhilarate": "6aecec2ea44fc7f985e353ba",
+    "Movement Proposition": "6aecebcca44fc7f985e3426d",
+    "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
+    "Hitman": "6aecebfea44fc7f985e34cd7",
+    "Big Rock": "6aecec6ea44fc7f985e36052",
+    "Hard Boiled": "6aecececa44fc7f985e37970",
+    "ScoreBuzz Primetime": "6aece80ca44fc7f985e28b17",
+    "ScoreBuzz Kickoff": "6aece7d0a44fc7f985e28087"
+   },
+   "hockey": {
+    "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
+    "Movement Proposition": "6aecebcca44fc7f985e3426d",
+    "Hitman": "6aecebfea44fc7f985e34cd7",
+    "Exhilarate": "6aecec2ea44fc7f985e353ba",
+    "Big Rock": "6aecec6ea44fc7f985e36052",
+    "Cut and Run": "6aecec8da44fc7f985e3676c",
+    "Raving Energy": "6aececada44fc7f985e36ce7",
+    "Malicious": "6aececcca44fc7f985e373d7",
+    "Hard Boiled": "6aecececa44fc7f985e37970",
+    "Ouroboros": "6aeced0ba44fc7f985e3805f",
+    "Heroic Age": "6aeced2aa44fc7f985e384c5",
+    "Killers": "6aeced49a44fc7f985e38ba3",
+    "Crusade": "6aeced69a44fc7f985e390e1",
+    "Fearless First": "6aeced88a44fc7f985e394fd",
+    "Severe Tire Damage": "6aeceda8a44fc7f985e39c4b",
+    "Rocket": "6aecedc7a44fc7f985e3a0ee",
+    "EDM Detection Mode": "6aecf07ca44fc7f985e42db5",
+    "Shiny Tech": "6aeceee3a44fc7f985e3d901",
+    "Funk Game Loop": "6aecee06a44fc7f985e3ada9",
+    "ScoreBuzz Kickoff": "6aece7d0a44fc7f985e28087",
+    "ScoreBuzz Fourth Quarter": "6aece8d8a44fc7f985e2b019"
+   },
+   "baseball": {
+    "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
+    "Movement Proposition": "6aecebcca44fc7f985e3426d",
+    "Hitman": "6aecebfea44fc7f985e34cd7",
+    "Exhilarate": "6aecec2ea44fc7f985e353ba",
+    "Big Rock": "6aecec6ea44fc7f985e36052",
+    "Cut and Run": "6aecec8da44fc7f985e3676c",
+    "Raving Energy": "6aececada44fc7f985e36ce7",
+    "Malicious": "6aececcca44fc7f985e373d7",
+    "Hard Boiled": "6aecececa44fc7f985e37970",
+    "Ouroboros": "6aeced0ba44fc7f985e3805f",
+    "Heroic Age": "6aeced2aa44fc7f985e384c5",
+    "Killers": "6aeced49a44fc7f985e38ba3",
+    "Crusade": "6aeced69a44fc7f985e390e1",
+    "Fearless First": "6aeced88a44fc7f985e394fd",
+    "Severe Tire Damage": "6aeceda8a44fc7f985e39c4b",
+    "Rocket": "6aecedc7a44fc7f985e3a0ee",
+    "Funkorama": "6aecede7a44fc7f985e3a8f0",
+    "Werq": "6aecee45a44fc7f985e3b8e5",
+    "Groove Grove": "6aecee26a44fc7f985e3b4de",
+    "ScoreBuzz Primetime": "6aece80ca44fc7f985e28b17",
+    "ScoreBuzz Stadium": "6aece863a44fc7f985e29b6f"
+   },
+   "soccer_music_old": {
+    "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
+    "Movement Proposition": "6aecebcca44fc7f985e3426d",
+    "Hitman": "6aecebfea44fc7f985e34cd7",
+    "Exhilarate": "6aecec2ea44fc7f985e353ba",
+    "Big Rock": "6aecec6ea44fc7f985e36052",
+    "Cut and Run": "6aecec8da44fc7f985e3676c",
+    "Raving Energy": "6aececada44fc7f985e36ce7",
+    "Malicious": "6aececcca44fc7f985e373d7",
+    "Hard Boiled": "6aecececa44fc7f985e37970",
+    "Ouroboros": "6aeced0ba44fc7f985e3805f",
+    "Heroic Age": "6aeced2aa44fc7f985e384c5",
+    "Killers": "6aeced49a44fc7f985e38ba3",
+    "Crusade": "6aeced69a44fc7f985e390e1",
+    "Fearless First": "6aeced88a44fc7f985e394fd",
+    "Severe Tire Damage": "6aeceda8a44fc7f985e39c4b",
+    "Rocket": "6aecedc7a44fc7f985e3a0ee",
+    "EDM Detection Mode": "6aecf07ca44fc7f985e42db5",
+    "Pamgaea": "6aecefa2a44fc7f985e40100",
+    "Inspired": "6aecefc1a44fc7f985e4083e",
+    "Shiny Tech": "6aeceee3a44fc7f985e3d901",
+    "ScoreBuzz Kickoff": "6aece7d0a44fc7f985e28087",
+    "ScoreBuzz Primetime": "6aece80ca44fc7f985e28b17",
+    "ScoreBuzz Stadium": "6aece863a44fc7f985e29b6f",
+    "ScoreBuzz Fourth Quarter": "6aece8d8a44fc7f985e2b019"
+   },
+   "cricket": {
+    "ScoreBuzz Stadium Cricket A": "6af065e6f370b34507b78d6a"
+   },
+   "nfl_crowd": {
+    "ScoreBuzz Stadium NFL A": "6af06c6ef370b34507b9047e"
+   },
+   "basketball_crowd": {
+    "ScoreBuzz Basketball Crowd 01": "6af4c6081ad365c217611fb2",
+    "ScoreBuzz Basketball Crowd 02": "6af4c6081ad365c217611fd8",
+    "ScoreBuzz Basketball Crowd 03": "6af4c6091ad365c21761204a",
+    "ScoreBuzz Basketball Crowd 04": "6af4d0641ad365c21763e933",
+    "ScoreBuzz Basketball Crowd 05": "6af4d0651ad365c21763e949",
+    "ScoreBuzz Basketball Crowd 06": "6af4d0661ad365c21763e9fa",
+    "ScoreBuzz Basketball Crowd 07": "6af4d0671ad365c21763ea95",
+    "ScoreBuzz Basketball Crowd 08": "6af4d0671ad365c21763eab3"
+   },
+   "hockey_crowd": {
+    "ScoreBuzz Hockey Crowd 01": "6af4c5571ad365c21760efa6",
+    "ScoreBuzz Hockey Crowd 02": "6af4c5571ad365c21760efb6",
+    "ScoreBuzz Hockey Crowd 03": "6af4c5581ad365c21760efef",
+    "ScoreBuzz Hockey Crowd 04": "6af4c5581ad365c21760effc",
+    "ScoreBuzz Hockey Crowd 05": "6af4c5591ad365c21760f028",
+    "ScoreBuzz Hockey Crowd 06": "6af4c5591ad365c21760f02e",
+    "ScoreBuzz Hockey Crowd 07": "6af4c55a1ad365c21760f040",
+    "ScoreBuzz Hockey Crowd 08": "6af4c55b1ad365c21760f05d"
+   },
+   "soccer_cheer": {
+    "ScoreBuzz Football Crowd Cheer": "6af4c6b31ad365c217614ea4"
+   },
+   "ufc_crowd": {
+    "ScoreBuzz UFC Crowd 01": "6af877169bca35b490d32c6d",
+    "ScoreBuzz UFC Crowd 02": "6af877179bca35b490d32c78",
+    "ScoreBuzz UFC Crowd 03": "6af877179bca35b490d32c7e",
+    "ScoreBuzz UFC Crowd 04": "6af877189bca35b490d32cbe",
+    "ScoreBuzz UFC Crowd 05": "6af877189bca35b490d32cd3",
+    "ScoreBuzz UFC Crowd 06": "6af877199bca35b490d32cdc"
+   }
+  },
+  "sports": {
+   "nfl": "nfl_crowd",
+   "ncaaf": "nfl_crowd",
+   "nba": "basketball_crowd",
+   "nhl": "hockey_crowd",
+   "mlb": "baseball",
+   "soccer": "soccer_cheer",
+   "cricket": "cricket",
+   "ufc": "ufc_crowd"
+  },
+  "layers": {
+   "1": "6aece926a44fc7f985e2be6a",
+   "2": "6aece939a44fc7f985e2c47e",
+   "3": "6aece93aa44fc7f985e2c492",
+   "4": "6aece93aa44fc7f985e2c4a6",
+   "5": "6aece93aa44fc7f985e2c4be",
+   "6": "6aeceaa0a44fc7f985e309da",
+   "7": "6aeceb79a44fc7f985e33400",
+   "8": "6aecebb0a44fc7f985e33e4b",
+   "9": "6aecebcfa44fc7f985e342d5",
+   "10": "6aecebe8a44fc7f985e346c9",
+   "11": "6aecec24a44fc7f985e351e8",
+   "12": "6aecec5ca44fc7f985e35de0",
+   "13": "6aecec75a44fc7f985e36464",
+   "14": "6aecec8da44fc7f985e3675a",
+   "15": "6aececa6a44fc7f985e36b50",
+   "16": "6aececc2a44fc7f985e37246",
+   "17": "6aececf4a44fc7f985e37a50",
+   "18": "6aeced15a44fc7f985e381ba",
+   "19": "6aeced2ba44fc7f985e384d9",
+   "20": "6aeced46a44fc7f985e38b37",
+   "main": "6aece93aa44fc7f985e2c4d1"
+  },
+  "volume": 3,
+  "volumes": {
+   "soccer": 6,
+   "cricket": 6,
+   "nfl_crowd": 6,
+   "basketball_crowd": 6,
+   "hockey_crowd": 6,
+   "soccer_cheer": 4,
+   "ufc_crowd": 6
+  },
+  "ordered": [
+   "hockey_crowd",
+   "basketball_crowd",
+   "ufc_crowd"
+  ]
+ },
+ "thumbs": false,
+ "dark": [
+  "nba",
+  "nfl",
+  "ncaaf",
+  "nhl",
+  "mlb"
+ ],
+ "centerLeagues": [
+  "nba",
+  "nhl",
+  "epl",
+  "laliga",
+  "seriea",
+  "ligue1",
+  "bundesliga",
+  "mls",
+  "ucl",
+  "uel",
+  "unl",
+  "nfl",
+  "bra"
+ ],
+ "usLeagues": [
+  "nhl",
+  "nfl",
+  "mlb"
+ ],
+ "soccerLeagues": [
+  "epl",
+  "ucl",
+  "uel",
+  "laliga",
+  "seriea",
+  "bundesliga",
+  "ligue1",
+  "mls",
+  "unl",
+  "bra"
+ ],
+ "streams": {
   "leagues": [
-    "nfl",
-    "ncaaf",
-    "nba",
-    "nhl",
-    "ucl",
-    "uel",
-    "epl"
+   "nfl",
+   "nhl",
+   "bra",
+   "nba",
+   "epl",
+   "unl",
+   "ucl",
+   "laliga",
+   "seriea",
+   "ligue1",
+   "mls",
+   "mlb"
   ],
-  "teams": [
-    "LAL",
-    "GS",
-    "NYK",
-    "BOS",
-    "PHI",
-    "KC",
-    "DAL",
-    "ARS",
-    "LIV",
-    "MNC",
-    "CRY",
-    "BOU",
-    "SUN"
-  ],
-  "top25": 15,
-  "pin": null,
-  "slots": {
-    "1": {
-      "league": "nba",
-      "event": "401909314",
-      "note": "Orlando Magic vs Detroit Pistons, 2026-11-25T00:00:00Z"
-    },
-    "2": {
-      "league": "nhl",
-      "event": "401892780",
-      "note": "Edmonton Oilers vs Vegas Golden Knights, 2026-11-25T01:00:00Z"
-    },
-    "3": {
-      "league": "nba",
-      "event": "401909315",
-      "note": "Washington Wizards vs Boston Celtics, 2026-11-25T01:00:00Z"
-    }
+  "until": {
+   "unl": "2026-11-17T23:59:00Z",
+   "bra": "2026-11-19T06:00:00Z"
   },
-  "fit": {
-    "win": true,
-    "fit": "fill"
+  "onlyEvents": {
+   "bra": [
+    "401841314",
+    "401841313"
+   ]
   },
-  "reload": 47,
-  "music": {
-    "note": "Motivational stadium music only (owner, 5 Nov 2026: no playful/kids-sounding tracks — no Happy Alley, Carefree, Wholesome, Itty Bitty 8 Bit, Daily Beetle etc.). Kevin MacLeod tracks (incompetech.com, CC BY 4.0, credited in descriptions) + our originals. Stadium crowd ambience (owner, 8 Nov 2026): soccer and cricket use 30-min crowd mixes built from Pixabay recordings (Pixabay Content License, no credit needed); old soccer music kept as soccer_music_old; NBA uses the 8 Envato arena crowd recordings the owner licensed (11 Nov 2026), unmixed, in a fixed order, old funk playlist kept as basketball. NHL uses 8 Envato hockey crowd recordings (owner, 11 Nov 2026) played in a fixed order, not shuffled (music.ordered), old music kept as hockey. Soccer (owner, 11 Nov 2026) loops the single Envato \"Football Crowd Cheer\" clip, uploaded unchanged (louder than the other crowd tracks, volume 4 per owner); the Pixabay mixes are kept as soccer.",
-    "playlists": {
-      "american_football": {
-        "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
-        "Movement Proposition": "6aecebcca44fc7f985e3426d",
-        "Hitman": "6aecebfea44fc7f985e34cd7",
-        "Exhilarate": "6aecec2ea44fc7f985e353ba",
-        "Big Rock": "6aecec6ea44fc7f985e36052",
-        "Cut and Run": "6aecec8da44fc7f985e3676c",
-        "Raving Energy": "6aececada44fc7f985e36ce7",
-        "Malicious": "6aececcca44fc7f985e373d7",
-        "Hard Boiled": "6aecececa44fc7f985e37970",
-        "Ouroboros": "6aeced0ba44fc7f985e3805f",
-        "Heroic Age": "6aeced2aa44fc7f985e384c5",
-        "Killers": "6aeced49a44fc7f985e38ba3",
-        "Crusade": "6aeced69a44fc7f985e390e1",
-        "Fearless First": "6aeced88a44fc7f985e394fd",
-        "Severe Tire Damage": "6aeceda8a44fc7f985e39c4b",
-        "Rocket": "6aecedc7a44fc7f985e3a0ee",
-        "ScoreBuzz Stadium": "6aece863a44fc7f985e29b6f",
-        "ScoreBuzz Fourth Quarter": "6aece8d8a44fc7f985e2b019",
-        "EDM Detection Mode": "6aecf07ca44fc7f985e42db5"
-      },
-      "soccer": {
-        "ScoreBuzz Stadium Soccer A": "6af065e5f370b34507b78d51",
-        "ScoreBuzz Stadium Soccer B": "6af065e5f370b34507b78d5b"
-      },
-      "basketball": {
-        "Funkorama": "6aecede7a44fc7f985e3a8f0",
-        "Werq": "6aecee45a44fc7f985e3b8e5",
-        "Groove Grove": "6aecee26a44fc7f985e3b4de",
-        "Funk Game Loop": "6aecee06a44fc7f985e3ada9",
-        "Shiny Tech": "6aeceee3a44fc7f985e3d901",
-        "Gonna Start": "6aecef63a44fc7f985e3f6cb",
-        "EDM Detection Mode": "6aecf07ca44fc7f985e42db5",
-        "Raving Energy": "6aececada44fc7f985e36ce7",
-        "Rocket": "6aecedc7a44fc7f985e3a0ee",
-        "Exhilarate": "6aecec2ea44fc7f985e353ba",
-        "Movement Proposition": "6aecebcca44fc7f985e3426d",
-        "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
-        "Hitman": "6aecebfea44fc7f985e34cd7",
-        "Big Rock": "6aecec6ea44fc7f985e36052",
-        "Hard Boiled": "6aecececa44fc7f985e37970",
-        "ScoreBuzz Primetime": "6aece80ca44fc7f985e28b17",
-        "ScoreBuzz Kickoff": "6aece7d0a44fc7f985e28087"
-      },
-      "hockey": {
-        "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
-        "Movement Proposition": "6aecebcca44fc7f985e3426d",
-        "Hitman": "6aecebfea44fc7f985e34cd7",
-        "Exhilarate": "6aecec2ea44fc7f985e353ba",
-        "Big Rock": "6aecec6ea44fc7f985e36052",
-        "Cut and Run": "6aecec8da44fc7f985e3676c",
-        "Raving Energy": "6aececada44fc7f985e36ce7",
-        "Malicious": "6aececcca44fc7f985e373d7",
-        "Hard Boiled": "6aecececa44fc7f985e37970",
-        "Ouroboros": "6aeced0ba44fc7f985e3805f",
-        "Heroic Age": "6aeced2aa44fc7f985e384c5",
-        "Killers": "6aeced49a44fc7f985e38ba3",
-        "Crusade": "6aeced69a44fc7f985e390e1",
-        "Fearless First": "6aeced88a44fc7f985e394fd",
-        "Severe Tire Damage": "6aeceda8a44fc7f985e39c4b",
-        "Rocket": "6aecedc7a44fc7f985e3a0ee",
-        "EDM Detection Mode": "6aecf07ca44fc7f985e42db5",
-        "Shiny Tech": "6aeceee3a44fc7f985e3d901",
-        "Funk Game Loop": "6aecee06a44fc7f985e3ada9",
-        "ScoreBuzz Kickoff": "6aece7d0a44fc7f985e28087",
-        "ScoreBuzz Fourth Quarter": "6aece8d8a44fc7f985e2b019"
-      },
-      "baseball": {
-        "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
-        "Movement Proposition": "6aecebcca44fc7f985e3426d",
-        "Hitman": "6aecebfea44fc7f985e34cd7",
-        "Exhilarate": "6aecec2ea44fc7f985e353ba",
-        "Big Rock": "6aecec6ea44fc7f985e36052",
-        "Cut and Run": "6aecec8da44fc7f985e3676c",
-        "Raving Energy": "6aececada44fc7f985e36ce7",
-        "Malicious": "6aececcca44fc7f985e373d7",
-        "Hard Boiled": "6aecececa44fc7f985e37970",
-        "Ouroboros": "6aeced0ba44fc7f985e3805f",
-        "Heroic Age": "6aeced2aa44fc7f985e384c5",
-        "Killers": "6aeced49a44fc7f985e38ba3",
-        "Crusade": "6aeced69a44fc7f985e390e1",
-        "Fearless First": "6aeced88a44fc7f985e394fd",
-        "Severe Tire Damage": "6aeceda8a44fc7f985e39c4b",
-        "Rocket": "6aecedc7a44fc7f985e3a0ee",
-        "Funkorama": "6aecede7a44fc7f985e3a8f0",
-        "Werq": "6aecee45a44fc7f985e3b8e5",
-        "Groove Grove": "6aecee26a44fc7f985e3b4de",
-        "ScoreBuzz Primetime": "6aece80ca44fc7f985e28b17",
-        "ScoreBuzz Stadium": "6aece863a44fc7f985e29b6f"
-      },
-      "soccer_music_old": {
-        "Volatile Reaction": "6aeceb72a44fc7f985e331dd",
-        "Movement Proposition": "6aecebcca44fc7f985e3426d",
-        "Hitman": "6aecebfea44fc7f985e34cd7",
-        "Exhilarate": "6aecec2ea44fc7f985e353ba",
-        "Big Rock": "6aecec6ea44fc7f985e36052",
-        "Cut and Run": "6aecec8da44fc7f985e3676c",
-        "Raving Energy": "6aececada44fc7f985e36ce7",
-        "Malicious": "6aececcca44fc7f985e373d7",
-        "Hard Boiled": "6aecececa44fc7f985e37970",
-        "Ouroboros": "6aeced0ba44fc7f985e3805f",
-        "Heroic Age": "6aeced2aa44fc7f985e384c5",
-        "Killers": "6aeced49a44fc7f985e38ba3",
-        "Crusade": "6aeced69a44fc7f985e390e1",
-        "Fearless First": "6aeced88a44fc7f985e394fd",
-        "Severe Tire Damage": "6aeceda8a44fc7f985e39c4b",
-        "Rocket": "6aecedc7a44fc7f985e3a0ee",
-        "EDM Detection Mode": "6aecf07ca44fc7f985e42db5",
-        "Pamgaea": "6aecefa2a44fc7f985e40100",
-        "Inspired": "6aecefc1a44fc7f985e4083e",
-        "Shiny Tech": "6aeceee3a44fc7f985e3d901",
-        "ScoreBuzz Kickoff": "6aece7d0a44fc7f985e28087",
-        "ScoreBuzz Primetime": "6aece80ca44fc7f985e28b17",
-        "ScoreBuzz Stadium": "6aece863a44fc7f985e29b6f",
-        "ScoreBuzz Fourth Quarter": "6aece8d8a44fc7f985e2b019"
-      },
-      "cricket": {
-        "ScoreBuzz Stadium Cricket A": "6af065e6f370b34507b78d6a"
-      },
-      "nfl_crowd": {
-        "ScoreBuzz Stadium NFL A": "6af06c6ef370b34507b9047e"
-      },
-      "basketball_crowd": {
-        "ScoreBuzz Basketball Crowd 01": "6af4c6081ad365c217611fb2",
-        "ScoreBuzz Basketball Crowd 02": "6af4c6081ad365c217611fd8",
-        "ScoreBuzz Basketball Crowd 03": "6af4c6091ad365c21761204a",
-        "ScoreBuzz Basketball Crowd 04": "6af4d0641ad365c21763e933",
-        "ScoreBuzz Basketball Crowd 05": "6af4d0651ad365c21763e949",
-        "ScoreBuzz Basketball Crowd 06": "6af4d0661ad365c21763e9fa",
-        "ScoreBuzz Basketball Crowd 07": "6af4d0671ad365c21763ea95",
-        "ScoreBuzz Basketball Crowd 08": "6af4d0671ad365c21763eab3"
-      },
-      "hockey_crowd": {
-        "ScoreBuzz Hockey Crowd 01": "6af4c5571ad365c21760efa6",
-        "ScoreBuzz Hockey Crowd 02": "6af4c5571ad365c21760efb6",
-        "ScoreBuzz Hockey Crowd 03": "6af4c5581ad365c21760efef",
-        "ScoreBuzz Hockey Crowd 04": "6af4c5581ad365c21760effc",
-        "ScoreBuzz Hockey Crowd 05": "6af4c5591ad365c21760f028",
-        "ScoreBuzz Hockey Crowd 06": "6af4c5591ad365c21760f02e",
-        "ScoreBuzz Hockey Crowd 07": "6af4c55a1ad365c21760f040",
-        "ScoreBuzz Hockey Crowd 08": "6af4c55b1ad365c21760f05d"
-      },
-      "soccer_cheer": {
-        "ScoreBuzz Football Crowd Cheer": "6af4c6b31ad365c217614ea4"
-      },
-      "ufc_crowd": {
-        "ScoreBuzz UFC Crowd 01": "6af877169bca35b490d32c6d",
-        "ScoreBuzz UFC Crowd 02": "6af877179bca35b490d32c78",
-        "ScoreBuzz UFC Crowd 03": "6af877179bca35b490d32c7e",
-        "ScoreBuzz UFC Crowd 04": "6af877189bca35b490d32cbe",
-        "ScoreBuzz UFC Crowd 05": "6af877189bca35b490d32cd3",
-        "ScoreBuzz UFC Crowd 06": "6af877199bca35b490d32cdc"
-      }
-    },
-    "sports": {
-      "nfl": "nfl_crowd",
-      "ncaaf": "nfl_crowd",
-      "nba": "basketball_crowd",
-      "nhl": "hockey_crowd",
-      "mlb": "baseball",
-      "soccer": "soccer_cheer",
-      "cricket": "cricket",
-      "ufc": "ufc_crowd"
-    },
-    "layers": {
-      "1": "6aece926a44fc7f985e2be6a",
-      "2": "6aece939a44fc7f985e2c47e",
-      "3": "6aece93aa44fc7f985e2c492",
-      "4": "6aece93aa44fc7f985e2c4a6",
-      "5": "6aece93aa44fc7f985e2c4be",
-      "6": "6aeceaa0a44fc7f985e309da",
-      "7": "6aeceb79a44fc7f985e33400",
-      "8": "6aecebb0a44fc7f985e33e4b",
-      "9": "6aecebcfa44fc7f985e342d5",
-      "10": "6aecebe8a44fc7f985e346c9",
-      "11": "6aecec24a44fc7f985e351e8",
-      "12": "6aecec5ca44fc7f985e35de0",
-      "13": "6aecec75a44fc7f985e36464",
-      "14": "6aecec8da44fc7f985e3675a",
-      "15": "6aececa6a44fc7f985e36b50",
-      "16": "6aececc2a44fc7f985e37246",
-      "17": "6aececf4a44fc7f985e37a50",
-      "18": "6aeced15a44fc7f985e381ba",
-      "19": "6aeced2ba44fc7f985e384d9",
-      "20": "6aeced46a44fc7f985e38b37",
-      "main": "6aece93aa44fc7f985e2c4d1"
-    },
-    "volume": 3,
-    "volumes": {
-      "soccer": 6,
-      "cricket": 6,
-      "nfl_crowd": 6,
-      "basketball_crowd": 6,
-      "hockey_crowd": 6,
-      "soccer_cheer": 4,
-      "ufc_crowd": 6
-    },
-    "ordered": [
-      "hockey_crowd",
-      "basketball_crowd",
-      "ufc_crowd"
-    ]
-  },
-  "thumbs": false,
-  "dark": [
-    "nba",
-    "nfl",
-    "ncaaf",
-    "nhl",
-    "mlb"
-  ],
-  "centerLeagues": [
-    "nba",
-    "nhl",
-    "epl",
-    "laliga",
-    "seriea",
-    "ligue1",
-    "bundesliga",
-    "mls",
-    "ucl",
-    "uel",
-    "unl",
-    "nfl",
-    "bra"
-  ],
-  "usLeagues": [
-    "nhl",
-    "nfl",
-    "mlb"
-  ],
-  "soccerLeagues": [
-    "epl",
-    "ucl",
-    "uel",
-    "laliga",
-    "seriea",
-    "bundesliga",
-    "ligue1",
-    "mls",
-    "unl",
-    "bra"
-  ],
-  "streams": {
-    "leagues": [
-      "nfl",
-      "nhl",
-      "bra",
-      "nba",
-      "epl",
-      "unl",
-      "ucl",
-      "laliga",
-      "seriea",
-      "ligue1",
-      "mls",
-      "mlb"
-    ],
-    "until": {
-      "unl": "2026-11-17T23:59:00Z",
-      "bra": "2026-11-19T06:00:00Z"
-    },
-    "onlyEvents": {
-      "bra": [
-        "401841314",
-        "401841313"
-      ]
-    },
-    "maxLive": 10,
-    "maxLiveTemp": {
-      "value": 11,
-      "until": "2026-11-24T04:00:00Z"
-    }
-  },
-  "gsScores": true
+  "maxLive": 10,
+  "maxLiveTemp": {
+   "value": 11,
+   "until": "2026-11-24T04:00:00Z"
+  }
+ },
+ "gsScores": true
 }
