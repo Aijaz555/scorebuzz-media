@@ -663,7 +663,8 @@ Goalserve's basketball feed only every 12 s, now 4 s); NFL not enough data.
 center.html therefore also reads `https://scorebuzz.net/api/live/sc-<soccer|hockey|basket>.json` (written by vps/multiticks.py the
 moment a score changes; the game is found through the site row whose page address ends in the ESPN id, field `p`) and shows
 whichever of Goalserve and ESPN changed last. NFL stays on ESPN only. Switch: settings `"gsScores": true` or a list of slots
-(URL `gs=1`). Started on slot 1 only; widen to `true` once it has run cleanly through a match day.
+(URL `gs=1`). Started on slot 1 only (24 Nov); widened to `true` on 25 Nov after a clean 5-minute check on Magic v Pistons: the board took
+every basket from Goalserve within ~2 s, 5-8 s before ESPN, never older and never flipping. NFL stays ESPN-only automatically.
 
 ## Player photos on the streams (25 Nov 2026)
 
