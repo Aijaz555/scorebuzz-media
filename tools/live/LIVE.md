@@ -370,6 +370,8 @@ starting 30 min before kick-off and stopped when the game is over.
   17:50 UTC (owner: start the 20:00 games now too): Sunderland-Jagiellonia started on Slot 10, then LiveReacting refused the 11th stream:
   "maximum number of concurrent live streams (10) allowed under your current plan" (the GPU plan's limit is 10, not 15). Remaining 20:00
   games start as soon as the 17:45 games are stopped (~19:50), with one slot kept for Eagles-Cowboys (NFL, 21:00).
+  ~18:00 UTC (owner): Besiktas-Hapoel Be'er (Slot 8) stopped: the game was delayed and the stream showed wrong data. New setting
+  `"streams": {"skipEvents": {"<league>": [event ids]}}` keeps the planner from putting a game back on (event 401915506).
 - **UEFA Nations League (owner, 15 Nov 2026: no EPL this week, stream the Nations League instead):** league key `unl`
   (ESPN `soccer/uefa.nations`, scorebuzz.net `football/uefa-nations-league`) added to feed.js, app.html, center.html, soccer.html,
   match3d.html, overlay.html, live_thumbs.js, check_trackers.py and settings `streams.leagues` (after epl), `centerLeagues`,

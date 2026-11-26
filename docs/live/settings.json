@@ -61,11 +61,6 @@
    "event": "401915508",
    "note": "Union St.-Gilloise vs Lech Poznan, 2026-11-26T17:45:00Z"
   },
-  "8": {
-   "league": "uel",
-   "event": "401915506",
-   "note": "Besiktas vs Hapoel Be'er, 2026-11-26T17:45:00Z"
-  },
   "9": {
    "league": "uel",
    "event": "401915520",
@@ -357,7 +352,12 @@
     "401841313"
    ]
   },
-  "maxLive": 10
+  "maxLive": 10,
+  "skipEvents": {
+   "uel": [
+    "401915506"
+   ]
+  }
  },
  "gsScores": true,
  "story": [

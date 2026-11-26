@@ -183,6 +183,8 @@ async function games(extra) {
     if (g.league === 'ncaaf' && g.rank > cfg.ncaafTop) return false;
     // "streams": {"onlyEvents": {"<league>": [ESPN event ids]}} streams only those games of that league (e.g. top Brasileirão games)
     if (cfg.onlyEvents && cfg.onlyEvents[g.league] && !cfg.onlyEvents[g.league].map(String).includes(String(g.id))) return false;
+    // "streams": {"skipEvents": {"<league>": [ESPN event ids]}} never streams those games (owner, 26 Nov 2026: a delayed game showing wrong data)
+    if (cfg.skipEvents && cfg.skipEvents[g.league] && cfg.skipEvents[g.league].map(String).includes(String(g.id))) return false;
     if (g.state === 'in') return true;
     return g.state === 'pre' && new Date(g.start).getTime() - cfg.leadMinutes * MIN <= now + cfg.lookaheadMinutes * MIN;
   }).sort((a, b) => (a.league === 'nba') - (b.league === 'nba') || top(b) - top(a) || (b.state === 'in') - (a.state === 'in') || favX(b) - favX(a) || pri(a) - pri(b) || fav(b) - fav(a) || (b.winPct ?? 0.5) - (a.winPct ?? 0.5) || a.start.localeCompare(b.start));
