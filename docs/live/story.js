@@ -36,7 +36,7 @@
   const side = (id) => (String(id ?? '') === C.H.id ? 'h' : String(id ?? '') === C.A.id ? 'a' : '');
   const tn = (sd) => (FOOT() ? T(sd).nick : 'the ' + T(sd).nick);          // "Lille lead" / "the Knicks lead"
   const Tn = (sd) => cap(tn(sd));
-  const last = (name) => { const w = String(name || '').trim().split(' '); return w.length > 1 && /^(Jr\.?|Sr\.?|II|III|IV)$/.test(w[w.length - 1]) ? w.slice(-2).join(' ') : w.length > 2 && /^(de|van|von|da|di|del|St\.|Mac|Le|La)$/i.test(w[w.length - 2]) ? w.slice(-2).join(' ') : w[w.length - 1]; };
+  const last = (name) => { const w = String(name || '').trim().split(' '); if (w.length === 2 && /-/.test(w[1]) && !/-/.test(w[0])) return w.join(' '); /* "Shin Min-Ha": family name first, so the full name */ return w.length > 1 && /^(Jr\.?|Sr\.?|II|III|IV)$/.test(w[w.length - 1]) ? w.slice(-2).join(' ') : w.length > 2 && /^(de|van|von|da|di|del|St\.|Mac|Le|La)$/i.test(w[w.length - 2]) ? w.slice(-2).join(' ') : w[w.length - 1]; };
   const scoreLine = (h = G.sc[0], a = G.sc[1]) => {
     if (FOOT()) return `${C.H.nick} ${h}-${a} ${C.A.nick}.`;
     if (h === a) return h ? `Tied at ${h}.` : 'No score yet.';
