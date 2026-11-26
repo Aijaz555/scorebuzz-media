@@ -26,6 +26,11 @@
  "top25": 15,
  "pin": null,
  "slots": {
+  "1": {
+   "league": "nfl",
+   "event": "401873082",
+   "note": "Buffalo Bills vs Kansas City Chiefs, 2026-11-27T01:20:00Z"
+  },
   "2": {
    "league": "nfl",
    "event": "401873080",
