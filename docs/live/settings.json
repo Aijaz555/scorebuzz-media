@@ -37,9 +37,9 @@
    "note": "Seattle Kraken vs Chicago Blackhawks, 2026-11-26T02:40:00Z"
   },
   "3": {
-   "league": "nhl",
-   "event": "401892787",
-   "note": "Washington Capitals vs Philadelphia Flyers, 2026-11-26T00:00:00Z"
+   "league": "nba",
+   "event": "401909321",
+   "note": "Memphis Grizzlies vs LA Clippers, 2026-11-26T01:00:00Z"
   },
   "4": {
    "league": "nhl",
@@ -47,19 +47,14 @@
    "note": "Anaheim Ducks vs San Jose Sharks, 2026-11-26T03:00:00Z"
   },
   "5": {
-   "league": "nhl",
-   "event": "401892784",
-   "note": "Florida Panthers vs Ottawa Senators, 2026-11-26T00:00:00Z"
+   "league": "nba",
+   "event": "401909322",
+   "note": "Milwaukee Bucks vs Brooklyn Nets, 2026-11-26T01:00:00Z"
   },
   "6": {
-   "league": "nhl",
-   "event": "401892788",
-   "note": "Columbus Blue Jackets vs New Jersey Devils, 2026-11-26T00:00:00Z"
-  },
-  "7": {
-   "league": "nhl",
-   "event": "401892785",
-   "note": "New York Islanders vs St. Louis Blues, 2026-11-26T00:00:00Z"
+   "league": "nba",
+   "event": "401909324",
+   "note": "Golden State Warriors vs Sacramento Kings, 2026-11-26T03:00:00Z"
   },
   "8": {
    "league": "nba",
