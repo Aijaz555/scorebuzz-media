@@ -25,7 +25,13 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "acl2",
+   "event": "401912744",
+   "note": "TEST 26 Nov: Gangwon FC vs Kitchee SC, 2026-11-26T10:00:00Z (3D 4K + match story check)"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
@@ -258,7 +264,8 @@
   "uel",
   "unl",
   "nfl",
-  "bra"
+  "bra",
+  "acl2"
  ],
  "usLeagues": [
   "nhl",
@@ -275,7 +282,8 @@
   "ligue1",
   "mls",
   "unl",
-  "bra"
+  "bra",
+  "acl2"
  ],
  "streams": {
   "leagues": [
@@ -309,8 +317,14 @@
   }
  },
  "gsScores": true,
- "story": ["1", "2"],
+ "story": [
+  "1",
+  "2"
+ ],
  "trk3d": true,
  "trk4k": true,
- "trkgpu": ["1", "2"]
+ "trkgpu": [
+  "1",
+  "2"
+ ]
 }

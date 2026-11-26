@@ -120,7 +120,11 @@ let GSON = q.get('gs') === '1';
 // "story" (same form; URL story=1): the match story from story.js, which makes each stream its own broadcast (owner 26 Nov 2026):
 // a written pre-match show, a live commentary card in our own words, and a report over the tracker at every break and at the end.
 let STORY = q.get('story') === '1';
-const storyLoad = () => { if (window.SBStory || storyLoad.on) return; storyLoad.on = 1; const sc = document.createElement('script'); sc.src = 'story.js?v=' + (window.__reloadSeen ?? '') + '-' + Math.floor(Date.now() / 3600000); sc.onerror = () => { storyLoad.on = 0; }; document.head.appendChild(sc); };
+// loaded as text from raw GitHub (always the newest; the stream host caches docs/live files for hours), with the file next to this page as the fallback
+const storyLoad = () => { if (window.SBStory || storyLoad.on) return; storyLoad.on = 1;
+  const local = () => { const sc = document.createElement('script'); sc.src = 'story.js?v=' + Math.floor(Date.now() / 3600000); sc.onerror = () => { storyLoad.on = 0; }; document.head.appendChild(sc); };
+  fetch('https://raw.githubusercontent.com/Aijaz555/scorebuzz-media/main/docs/live/story.js?t=' + Date.now(), { cache: 'no-store' }).then((r) => { if (!r.ok) throw 0; return r.text(); })
+    .then((t) => { const sc = document.createElement('script'); sc.textContent = t; document.head.appendChild(sc); if (!window.SBStory) throw 0; }).catch(local); };
 const AT = +q.get('at') || 0; // demo, with replay=1: stop at the end of this period (1 = half-time in football, 2 = half-time in NBA/NFL, 1 or 2 = NHL intermission)
 let TRK3D = q.get('trk3d') === '1', TRKGPU = q.get('trkgpu') === '1', TRKHD = q.get('trkhd') === '1', TRK4K = q.get('trk4k') === '1', SITEPRE = q.get('sitepre') !== '0';
 function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
@@ -135,9 +139,9 @@ const lum = (h) => { const n = parseInt(h.slice(1), 16); return (0.299 * (n >> 1
 const darkish = (c, alt) => (lum(c) > 0.7 ? (lum(alt) > 0.7 ? '#1d2a4a' : alt) : c);
 const vivid = (c) => { if (lum(c) >= 0.38) return c; const n = parseInt(c.slice(1), 16), k = 0.45, m = (v) => Math.round(v + (255 - v) * k); return '#' + [n >> 16, (n >> 8) & 255, n & 255].map((v) => m(v).toString(16).padStart(2, '0')).join(''); }; // marker colour that still shows on the dark tracker
 // football (owner 13 Nov 2026): the same centre layout for the leagues in settings "soccerLeagues" that are also in "centerLeagues"
-const FPATH = { epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', ucl: 'uefa.champions', uel: 'uefa.europa', unl: 'uefa.nations', bra: 'bra.1' };
+const FPATH = { epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', ucl: 'uefa.champions', uel: 'uefa.europa', unl: 'uefa.nations', bra: 'bra.1', acl2: 'afc.cup' };
 const SPORT = { nba: 'basketball/nba', nhl: 'hockey/nhl', nfl: 'football/nfl' }; for (const [k, v] of Object.entries(FPATH)) SPORT[k] = 'soccer/' + v;
-const SITE = { nba: 'basketball/nba', nhl: 'ice-hockey/nhl', nfl: 'american-football/nfl', epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', unl: 'football/uefa-nations-league', bra: 'football/brasileirao', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls' }; // scorebuzz.net match pages
+const SITE = { nba: 'basketball/nba', nhl: 'ice-hockey/nhl', nfl: 'american-football/nfl', epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', acl2: 'football/afc-champions-league-two', unl: 'football/uefa-nations-league', bra: 'football/brasileirao', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls' }; // scorebuzz.net match pages
 const CROP = { top: 65, vh: 517, x: 15, vw: 970 }; // scorebuzz.net 'live action' tracker (see nba.html / us.html)
 // owner 21 Nov 2026: before the start, show the match page's own preview slides (form guide, table, head to head, ...) that sit
 // where the live tracker appears at kick-off (#trkSlot, 972x330 at 1000 px; its top 65 px are under the site's sticky header).
