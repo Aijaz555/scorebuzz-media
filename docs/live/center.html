@@ -205,6 +205,7 @@ function footPlays(s, H, A) {
     const m = /^(?:Goal!|Own Goal)[^.]*?(\d+),[^.]*?(\d+)\./.exec(x.text) || /(?:ends|Half), [^.]*?(\d+), [^.]*?(\d+)\./.exec(x.text); if (m) { h = +m[1]; a = +m[2]; }
     const tn = nm(x.play?.team?.displayName), tid = x.play?.team?.id ? String(x.play.team.id) : tn && tn === nm(H.full) ? H.id : tn && tn === nm(A.full) ? A.id : '';
     const t = x.play?.type?.type || '', scoring = /goal|penalty---scored/.test(t) && !/miss|saved/.test(t);
+    if (scoring && !m && tid) { if (tid === H.id) h++; else if (tid === A.id) a++; }      // feeds with short lines ("X (Team) Goal at 50'") carry no score: count it
     return { clk: x.time.displayValue, label: (/Second Half ends|Match ends/i.test(x.text) ? 'FULL TIME' : /First Half ends/i.test(x.text) ? 'HALF-TIME' : /Half begins|First Half starts/i.test(x.text) ? 'KICK-OFF' : '') || FLAB(t) || (x.play?.type?.text || 'COMMENTARY').toUpperCase(), text: x.text, team: tid, home: h, away: a, scoring }; });
 }
 function gameCell(e, cur) {
