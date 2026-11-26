@@ -1,14 +1,4 @@
 {
- "401892671": {
-  "slot": "1",
-  "league": "nhl",
-  "game": "Avalanche v Red Wings",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/avalanche-vs-red-wings-401892671/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 79)",
-  "at": "2026-11-08T04:30:01+00:00"
- },
  "401892672": {
   "slot": "3",
   "league": "nhl",
@@ -2998,5 +2988,15 @@
   "status": "ok",
   "reason": "ok (contrast 67)",
   "at": "2026-11-26T04:49:57+00:00"
+ },
+ "401873080": {
+  "slot": "2",
+  "league": "nfl",
+  "game": "Cowboys v Eagles",
+  "url": "https://scorebuzz.net/american-football/nfl/cowboys-vs-eagles-401873080/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 41)",
+  "at": "2026-11-26T23:12:04+00:00"
  }
 }
