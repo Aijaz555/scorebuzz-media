@@ -718,3 +718,8 @@ period: 1 = football half-time, 2 = NBA/NFL half-time, 1 or 2 = NHL intermission
   8000 kbps, only LiveReacting can raise it). settings.json: `"trk3d": true`, `"trk4k": true`, and `"trkgpu": ["1","2"]` so slots 1
   and 2 showed the graphics-card readout; removed 26 Nov 11:40 UTC (owner) after it read GTX 1080, 30 fps, 3880x2328. To go back:
   remove `trk3d`/`trk4k` (2D at once) and set the projects to 16:9_1080p while they are offline.
+- **26 Nov 2026, 3D "realistic" picture (owner approved the demo, "apply now on live"):** tracker-3d.js now draws basketball and ice hockey
+  with cast shadows, players mirrored in the floor / ice, an athletic stance and different heights (basketball) and a tighter main
+  camera. On by default on desktops and on the streams (finer shadow map with `q3d=hd|4k`); phones and machines without a graphics
+  card keep the lighter picture. `?real=0` on the match page switches it off, `?real=1` forces it. Football and NFL are unchanged.
+  First games on air with it: NBA / NHL on Fri 27 Nov. Next: better movement (defensive slides, fuller jump shot, skating strides).
