@@ -736,3 +736,4 @@ period: 1 = football half-time, 2 = NBA/NFL half-time, 1 or 2 = NHL intermission
   camera. On by default on desktops and on the streams (finer shadow map with `q3d=hd|4k`); phones and machines without a graphics
   card keep the lighter picture. `?real=0` on the match page switches it off, `?real=1` forces it. Football and NFL are unchanged.
   First games on air with it: NBA / NHL on Fri 27 Nov. Next: better movement (defensive slides, fuller jump shot, skating strides).
+- 2026-11-26: Match story (pre-match show, written commentary, half-time/full-time reports) switched on for all slots (`story: true`) after a clean live check on Lions v Bears: half-time report slides and the tracker's return in Q3 both verified on air at 4K.

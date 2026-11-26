@@ -372,10 +372,7 @@
   }
  },
  "gsScores": true,
- "story": [
-  "1",
-  "2"
- ],
+ "story": true,
  "trk3d": true,
  "trk4k": true
 }
