@@ -365,5 +365,9 @@
   "2"
  ],
  "trk3d": true,
- "trk4k": true
+ "trk4k": true,
+ "trkgpu": [
+  "9",
+  "10"
+ ]
 }
