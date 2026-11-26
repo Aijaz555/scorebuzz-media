@@ -25,24 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "3": {
-   "league": "nba",
-   "event": "401909325",
-   "note": "Portland Trail Blazers vs San Antonio Spurs, 2026-11-26T03:00:00Z"
-  },
-  "4": {
-   "league": "nhl",
-   "event": "401892793",
-   "note": "Anaheim Ducks vs San Jose Sharks, 2026-11-26T03:00:00Z"
-  },
-  "14": {
-   "league": "nhl",
-   "event": null,
-   "multi": "nhl",
-   "note": "All NHL games (multi.html), 26 Nov 2026 from ~03:00Z until ~06:30Z (owner asked in chat)"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
