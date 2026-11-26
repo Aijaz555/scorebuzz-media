@@ -321,6 +321,7 @@ starting 30 min before kick-off and stopped when the game is over.
   - 26 Nov 2026 04:42 UTC: no planner actions (7 live, cap 10). Stream check: Slots 1-4, 6, 14 correct. End watch stopped Rams-Packers (Slot 12) 04:49 (~6 min after first look final), Avalanche-Canadiens (Slot 1) 05:29, Kraken-Blackhawks (Slot 2) and Warriors-Kings (Slot 6) 05:36 (~12 min after the final).
   - 26 Nov 2026 05:42 UTC: no planner actions (Slots 1, 2, 6, 12 cleared from settings; 3 live). Ducks-Sharks (Slot 4), Trail Blazers-Spurs (Slot 3) final, in grace to 05:48. Stream check: Slot 14 NHL board correct (all 14 final).
   - 26 Nov 2026 10:42 UTC: nothing live or scheduled (all 21 projects OFFLINE), no planner actions, no games inside the 30-min lead window; usage already done today. End watch idle.
+  - 26 Nov 2026 12:42 UTC: no planner actions (only Slot 1 LIVE: owner's 4K test, Svay Rieng-Machida Zelvia). Stream check: Slot 1 correct (27', 0-0). Usage already done today. End watch idle.
 - Older cap (found 7 Nov 2026 01:45 UTC): the plan allowed only 9 concurrent live streams; the log below is from that period.
   - 8 Nov 2026 14:43 UTC: cap hit again — Real Sociedad-Rayo (Slot 2, now) and 4 Ligue 1 16:15 UK games (Slots 12-15) refused; only Slot 1 (Man Utd-Villa) scheduled.
   - 8 Nov 2026 16:45 UTC: 4 Ligue 1 restarts (Slots 14-17) went through (10 streams counted), then all 8 18:00 UK schedules (7 NFL 1pm ET games + Panthers-Bruins, Slots 4-6,8-11,18) were refused by the cap; the next hourly runs start them as slots free up.
