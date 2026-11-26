@@ -309,5 +309,8 @@
   }
  },
  "gsScores": true,
- "story": ["1", "2"]
+ "story": ["1", "2"],
+ "trk3d": true,
+ "trk4k": true,
+ "trkgpu": ["1", "2"]
 }

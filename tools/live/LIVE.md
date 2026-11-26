@@ -712,3 +712,8 @@ Demo URLs (raw.githack.com/Aijaz555/scorebuzz-media/main/docs/live/center.html?.
 finished = final report), `&replay=1&from=<play>` (live commentary on a finished game), `&replay=1&at=<period>` (stops at the end of that
 period: 1 = football half-time, 2 = NBA/NFL half-time, 1 or 2 = NHL intermission). NFL replay was added with this (drives grow play by play).
 - 26 Nov 2026: owner approved the match story. On air on slots 1 and 2 first (`"story": ["1","2"]`); after one clean full game per sport, set `"story": true` for every slot.
+- **26 Nov 2026 ~10:45 UTC, owner: LiveReacting's GPU server is ready, run 3D 4K on every slot from today.** All 21 projects
+  (Slot 1-20 and ScoreBuzz Main) set to format 16:9_2160p (3840x2160; the Web Page layer scaled itself to 3819x2139; bitrate still
+  8000 kbps, only LiveReacting can raise it). settings.json: `"trk3d": true`, `"trk4k": true`, and `"trkgpu": ["1","2"]` so slots 1
+  and 2 show the graphics-card readout for the first evening (remove once it reads "Graphics card" at 30 fps). To go back:
+  remove `trk3d`/`trk4k` (2D at once) and set the projects to 16:9_1080p while they are offline.
