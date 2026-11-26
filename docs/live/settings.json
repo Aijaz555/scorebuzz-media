@@ -70,6 +70,36 @@
    "league": "uel",
    "event": "401915520",
    "note": "RB Salzburg vs Ararat-Armenia, 2026-11-26T17:45:00Z"
+  },
+  "10": {
+   "league": "uel",
+   "event": "401915513",
+   "note": "Sunderland vs Jagiellonia Bialystok, 2026-11-26T20:00:00Z"
+  },
+  "11": {
+   "league": "uel",
+   "event": "401915504",
+   "note": "Crystal Palace vs Real Sociedad, 2026-11-26T20:00:00Z"
+  },
+  "12": {
+   "league": "uel",
+   "event": "401915516",
+   "note": "Ferencvaros vs NK Celje, 2026-11-26T20:00:00Z"
+  },
+  "13": {
+   "league": "uel",
+   "event": "401915502",
+   "note": "Juventus vs Omonia Nicosia, 2026-11-26T20:00:00Z"
+  },
+  "14": {
+   "league": "uel",
+   "event": "401915503",
+   "note": "OFI Crete vs Anderlecht, 2026-11-26T20:00:00Z"
+  },
+  "15": {
+   "league": "uel",
+   "event": "401915505",
+   "note": "NEC Nijmegen vs Stade Rennais, 2026-11-26T20:00:00Z"
   }
  },
  "fit": {
@@ -354,8 +384,8 @@
   },
   "maxLive": 10,
   "maxLiveTemp": {
-   "value": 13,
-   "until": "2026-11-26T04:30:00Z"
+   "value": 15,
+   "until": "2026-11-26T23:59:00Z"
   }
  },
  "gsScores": true,
