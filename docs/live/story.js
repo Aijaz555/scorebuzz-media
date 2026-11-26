@@ -463,6 +463,10 @@
     C.comp = (sd) => (c.s.header?.competitions?.[0]?.competitors || []).find((x) => x.homeAway === (sd === 'h' ? 'home' : 'away')) || {};
     if (c.pre) { const p = preview(now); return p ? { pbp: p, cls: 'st1', keep: 0 } : null; }
     feed(now);
+    // the board's score (Goalserve first) can be ahead of the play feed: say the goal at once, the scorer follows when the feed has it
+    if (!C.replay && C.live && C.kind !== 'nba') { const b = [c.H.score, c.A.score], o = G.board; G.board = b;
+      if (o && (b[0] > o[0] || b[1] > o[1]) && (b[0] > G.sc[0] || b[1] > G.sc[1])) { const sd = b[0] > o[0] ? 'h' : 'a';
+        G.line = { t: `${C.kind === 'nfl' ? `${Tn(sd)} score!` : `GOAL! ${Tn(sd)} score.`} ${scoreLine(b[0], b[1])}`, p: 3, at: now }; G.q = null; } }
     if (!C.replay && (C.live || C.fin)) G.sc = [c.H.score, c.A.score];
     if (!C.replay) { // the feed's official team numbers replace our running counts whenever it has them
       const MAP = FOOT() ? { sh: 'totalShots', sot: 'shotsOnTarget', co: 'wonCorners', fo: 'foulsCommitted', off: 'offsides', yc: 'yellowCards' } : C.kind === 'nba' ? { reb: 'totalRebounds', ast: 'assists', to: 'turnovers', blk: 'blocks', stl: 'steals' } : C.kind === 'nhl' ? { sog: 'shotsTotal', hit: 'hits', fo: 'faceoffsWon', gv: 'giveaways', tk: 'takeaways', pim: 'penaltyMinutes', ppg: 'powerPlayGoals', ppo: 'powerPlayOpportunities' } : {};
