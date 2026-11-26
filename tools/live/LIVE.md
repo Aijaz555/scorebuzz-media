@@ -716,5 +716,5 @@ period: 1 = football half-time, 2 = NBA/NFL half-time, 1 or 2 = NHL intermission
 - **26 Nov 2026 ~10:45 UTC, owner: LiveReacting's GPU server is ready, run 3D 4K on every slot from today.** All 21 projects
   (Slot 1-20 and ScoreBuzz Main) set to format 16:9_2160p (3840x2160; the Web Page layer scaled itself to 3819x2139; bitrate still
   8000 kbps, only LiveReacting can raise it). settings.json: `"trk3d": true`, `"trk4k": true`, and `"trkgpu": ["1","2"]` so slots 1
-  and 2 show the graphics-card readout for the first evening (remove once it reads "Graphics card" at 30 fps). To go back:
+  and 2 showed the graphics-card readout; removed 26 Nov 11:40 UTC (owner) after it read GTX 1080, 30 fps, 3880x2328. To go back:
   remove `trk3d`/`trk4k` (2D at once) and set the projects to 16:9_1080p while they are offline.
