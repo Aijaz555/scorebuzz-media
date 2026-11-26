@@ -694,3 +694,18 @@ LiveReacting tested 4K on their graphics-card servers (GTX 1080, 30 fps). `"trk4
 center.html open the match page with `&q3d=4k`: tracker-3d.js draws the 3D view at 4x the stage size (about 3880 x 2328, the stream's
 own pixels). If the machine drops under 24 fps it steps down to 2x, then 1x. `trkhd` (2x) is for 1080p streams. Reload 48 also hides
 broken team logos in the ticker and header (they showed as broken-image boxes on teams without an ESPN logo).
+
+### Match story (26 Nov 2026) — demo, not on air yet
+Why: YouTube's "generic or repetitive content" policy. Every stream had the same layout and nothing written for that match.
+`docs/live/story.js` adds three things to center.html when `"story": true` (or a list of slots) is in settings.json, or `&story=1` is in the URL:
+1. **Pre-match show** (strip under the tracker, 10 s per slide): what's at stake, form, head to head / season series, players to watch,
+   team news (US sports), line-ups (football, once announced), the details.
+2. **Live commentary card** (left two thirds of the strip; the latest feed play stays on the right): one line per notable play, written
+   in our own words from the play's facts, with context (runs, lead changes, milestones, shot counts, power plays, drives). Big moments turn
+   the card lime. When play is quiet it shows match facts. Never copy the feed's commentary text into this card.
+3. **Reports** over the tracker box at every break and at the end (9 s per slide): written summary, key stats, top performers and, at the
+   end, the table. The site tracker layer is hidden while a report is up (its page stays loaded).
+Numbers: the feed's official team stats when live; our own running counts from the plays in a replay.
+Demo URLs (raw.githack.com/Aijaz555/scorebuzz-media/main/docs/live/center.html?...): `league=<l>&event=<id>&story=1` (any game: upcoming = pre-match,
+finished = final report), `&replay=1&from=<play>` (live commentary on a finished game), `&replay=1&at=<period>` (stops at the end of that
+period: 1 = football half-time, 2 = NBA/NFL half-time, 1 or 2 = NHL intermission). NFL replay was added with this (drives grow play by play).

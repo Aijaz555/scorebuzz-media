@@ -117,6 +117,11 @@ let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('s
 // moment a score changes) and the board shows whichever of Goalserve and ESPN changed last. Owner 24 Nov 2026, after the speed test:
 // Goalserve was 70-90 s ahead of ESPN on football goals and ~15 s on NHL goals; NBA about level, so both are read. NFL stays on ESPN.
 let GSON = q.get('gs') === '1';
+// "story" (same form; URL story=1): the match story from story.js, which makes each stream its own broadcast (owner 26 Nov 2026):
+// a written pre-match show, a live commentary card in our own words, and a report over the tracker at every break and at the end.
+let STORY = q.get('story') === '1';
+const storyLoad = () => { if (window.SBStory || storyLoad.on) return; storyLoad.on = 1; const sc = document.createElement('script'); sc.src = 'story.js?v=' + (window.__reloadSeen ?? '') + '-' + Math.floor(Date.now() / 3600000); sc.onerror = () => { storyLoad.on = 0; }; document.head.appendChild(sc); };
+const AT = +q.get('at') || 0; // demo, with replay=1: stop at the end of this period (1 = half-time in football, 2 = half-time in NBA/NFL, 1 or 2 = NHL intermission)
 let TRK3D = q.get('trk3d') === '1', TRKGPU = q.get('trkgpu') === '1', TRKHD = q.get('trkhd') === '1', TRK4K = q.get('trk4k') === '1', SITEPRE = q.get('sitepre') !== '0';
 function fit() { const R = window.__fitRemote || {}; const W = +R.w || (R.win ? 0 : +q.get('w')) || innerWidth, H = +R.h || (R.win ? 0 : +q.get('h')) || innerHeight, sx = W / 1920, sy = H / 1080;
   const mode = R.fit || q.get('fit') || 'contain', b = document.body;
@@ -399,9 +404,10 @@ function render(s, sb) {
   const dayOf = (d) => new Date(d).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: FOOT() ? TZ()[0] : 'America/New_York' });
   const venue = [s.gameInfo?.venue?.fullName, s.gameInfo?.venue?.address?.city].filter(Boolean).join(', ');
   const info = [[start.toUpperCase(), `${et(c.date)}${mins >= 1440 ? ` · ${dayOf(c.date)}` : mins > 0 ? ` · in ${mins >= 60 ? Math.floor(mins / 60) + 'h ' : ''}${mins % 60} min` : ''}`], ['VENUE', venue], ['WATCH', (c.broadcasts || []).map((x) => x.media?.shortName).filter(Boolean).join(', ') || 'Live scores here on ScoreBuzz']];
-  const pbp = P.length && !pre ? P.map((p, i) => `<div class="pl ${i === 0 ? 'new' : ''}" style="--nc:${p.team === A.id ? A.color : p.team === H.id ? H.color : '#24366e'}">
+  const playCard = (p, i) => `<div class="pl ${i === 0 ? 'new' : ''}" style="--nc:${p.team === A.id ? A.color : p.team === H.id ? H.color : '#24366e'}">
       <div class="l0">${logo(p.team) ? `<img src="${logo(p.team)}">` : ''}<span>${esc(p.clk)}</span><em><span class="${p.scoring && p.team === L.id ? 'g' : ''}">${(L === H ? p.home : p.away) ?? ''}</span> - <span class="${p.scoring && p.team === R.id ? 'g' : ''}">${(L === H ? p.away : p.home) ?? ''}</span></em></div>
-      <div class="l1">${esc(p.label)}</div><div class="l2">${esc(p.text)}</div></div>`).join('')
+      <div class="l1">${esc(p.label)}</div><div class="l2">${esc(p.text)}</div></div>`;
+  let pbp = P.length && !pre ? P.map(playCard).join('')
     : info.map(([k, v]) => `<div class="pl" style="--nc:#24366e"><div class="l0"><span>${esc(k)}</span></div><div class="l2" style="font-size:26px;font-weight:700;margin-top:6px">${esc(v)}</div></div>`).join('');
   // ---- tracker: website tracker while in play, built-in shot map otherwise ----
   const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
@@ -421,17 +427,25 @@ function render(s, sb) {
   let evs = (sb?.events || []).filter((e) => !lu || !e.uid || e.uid.startsWith(lu + '~'));
   const rk = (e) => (e.id === c.id ? 0 : e.status.type.state === 'in' ? 1 : e.status.type.state === 'pre' ? 2 : 3);
   if (evs.length > 6) evs = [...evs].sort((a, b) => rk(a) - rk(b)).slice(0, 6).sort((a, b) => new Date(a.date) - new Date(b.date));
+  // ---- match story (story.js): pre-match show / commentary card in the strip, break and final reports over the tracker ----
+  let ST = null;
+  if (STORY) { storyLoad(); if (window.SBStory) try {
+    const brk = live && (/HALFTIME/.test(n) || (!FOOT() && /END/.test(n)));
+    ST = window.SBStory.frame({ s, H: { ...H, mark: vivid(H.color) }, A: { ...A, mark: vivid(A.color) }, L: { ...L, mark: vivid(L.color) }, R: { ...R, mark: vivid(R.color) }, league, event: String(c.id), kind: FOOT() ? 'foot' : league, pre, live, fin: !!fin, brk, half: /HALFTIME/.test(n), per, clk, sub: pre ? '' : FOOT() ? (live && !brk ? half(per) : '') : (live && !brk ? perName(per) : ''), venue,
+      when: `${et(c.date)}${mins >= 1440 ? ` on ${dayOf(c.date)}` : ''}`, replay: REPLAY, perLong: (p) => (FOOT() ? (p === 1 ? 'first half' : p === 2 ? 'second half' : 'extra time') : perLong(p).toLowerCase()) });
+  } catch (e) { console.error('story', e); ST = null; } }
+  if (ST?.pbp) pbp = ST.pbp + (ST.keep && P.length ? P.slice(0, ST.keep).map(playCard).join('') : '');
   $('app').innerHTML = `${side(L, R, 'h')}
   <div class="mid">
     <div class="clock"><div class="c ${clk.length > 8 ? 'sm' : ''}">${esc(clk)}</div><div class="p">${esc(sub)}</div></div>
     ${strip}
-    <div class="trk" id="trk">${trkUrl ? '' : trkUrlPre ? ov.replace('class="ov"', 'class="pre"') : ownTracker(s, H, A, ov)}</div>
-    <div class="pbp">${pbp}</div>
+    <div class="trk" id="trk">${ST?.trk ? ST.trk : trkUrl ? '' : trkUrlPre ? ov.replace('class="ov"', 'class="pre"') : ownTracker(s, H, A, ov)}</div>
+    <div class="pbp ${ST?.pbp ? ST.cls || '' : ''}">${pbp}</div>
   </div>
   ${side(R, L, 'a')}
   <div class="bot">${evs.map((e) => gameCell(e, e.id === c.id)).join('')}<div class="sub"><div class="bz">Score<b>Buzz</b><span>scorebuzz.net</span></div><div class="btn">SUBSCRIBE</div></div></div>`;
-  placeTracker(trkUrl || trkUrlPre, !trkUrl && !!trkUrlPre);
-  trackerChip(trkUrl && FOOT() ? { H, A, clk } : null);
+  placeTracker(ST?.trk ? '' : trkUrl || trkUrlPre, !trkUrl && !!trkUrlPre);      // a report covers the tracker box: the site layer hides (its page stays loaded)
+  trackerChip(trkUrl && FOOT() && !ST?.trk ? { H, A, clk } : null);
   if (VOICE && !FOOT()) commentary(all, H, A, per, pre, fin);
 }
 // ---- DEMO: spoken commentary (&voice=1). Turns each new play into a short line and reads it with the browser's own voice. ----
@@ -479,19 +493,36 @@ function commentary(all, H, A, per, pre, fin) {
 let rpS = null, rpI = 0;
 function replayStep(s) {
   if (FOOT()) return footReplay(s);
-  if (!rpS) { rpS = s; rpI = Math.max(1, Math.min(+q.get('from') || 40, (s.plays || []).length - 1)); }
-  const S = JSON.parse(JSON.stringify(rpS)), all = rpS.plays || []; rpI = Math.min(rpI + 1, all.length);
-  const p = all[rpI - 1] || {}, c = S.header.competitions[0], per = p.period?.number || 1;
+  if (NFL()) return nflReplay(s);
+  const end = AT ? (() => { const i = (s.plays || []).findIndex((p) => (p.period?.number || 1) > AT); return i < 0 ? (s.plays || []).length : i; })() : 0;      // &at=N: stop at the end of period N
+  if (!rpS) { rpS = s; rpI = Math.max(1, Math.min(+q.get('from') || (AT ? end - 6 : 40), (s.plays || []).length - 1)); }
+  const S = JSON.parse(JSON.stringify(rpS)), all = rpS.plays || []; rpI = Math.min(rpI + 1, end || all.length);
+  const p = all[rpI - 1] || {}, c = S.header.competitions[0], per = p.period?.number || 1, held = AT && rpI >= end;
   S.plays = all.slice(0, rpI);
-  c.status = { period: per, displayClock: NHL() ? left(p.clock?.displayValue, per) : p.clock?.displayValue || '', type: { state: 'in', name: 'STATUS_IN_PROGRESS', completed: false, shortDetail: '' } };
+  c.status = { period: per, displayClock: held ? '0:00' : NHL() ? left(p.clock?.displayValue, per) : p.clock?.displayValue || '', type: { state: 'in', name: held ? (per === 2 && !NHL() ? 'STATUS_HALFTIME' : 'STATUS_END_PERIOD') : 'STATUS_IN_PROGRESS', completed: false, shortDetail: '' } };
   for (const x of c.competitors) { x.score = String((x.homeAway === 'home' ? p.homeScore : p.awayScore) ?? 0); x.linescores = []; }
+  return S;
+}
+// NFL replay: the drives grow one play at a time (score, quarter and clock follow the plays; the box score stays at the final)
+function nflReplay(s) {
+  const flat = (x) => (x.drives?.previous || []).flatMap((d) => d.plays || []);
+  const all = flat(s), end = AT ? (() => { const i = all.findIndex((p) => (p.period?.number || 1) > AT); return i < 0 ? all.length : i; })() : 0;
+  if (!rpS) { rpS = s; rpI = Math.max(1, Math.min(+q.get('from') || (AT ? end - 6 : 20), all.length - 1)); }
+  rpI = Math.min(rpI + 1, end || flat(rpS).length);
+  const S = JSON.parse(JSON.stringify(rpS)), c = S.header.competitions[0]; let k = rpI, lastP = {}; const prev = [];
+  for (const d of rpS.drives?.previous || []) { if (k <= 0) break; const ps = (d.plays || []).slice(0, k); k -= (d.plays || []).length; prev.push({ ...d, plays: ps }); lastP = ps[ps.length - 1] || lastP; }
+  S.drives = { previous: prev }; S.scoringPlays = (S.scoringPlays || []).filter((x) => prev.some((d) => d.plays.some((p) => p.id === x.id)));
+  const per = lastP.period?.number || 1, held = AT && rpI >= end;
+  c.status = { period: per, displayClock: held ? '0:00' : lastP.clock?.displayValue || '', type: { state: 'in', name: held ? (per === 2 ? 'STATUS_HALFTIME' : 'STATUS_END_PERIOD') : 'STATUS_IN_PROGRESS', completed: false, shortDetail: '' } };
+  for (const x of c.competitors) { x.score = String((x.homeAway === 'home' ? lastP.homeScore : lastP.awayScore) ?? 0); x.linescores = []; }
   return S;
 }
 // football replay: one commentary line every few seconds; clock, half and score follow the commentary, stats/line-ups stay at full time
 function footReplay(s) {
   const all = (s.commentary || []).filter((x) => x.text && x.time?.displayValue);
-  if (!rpS) { rpS = s; rpI = Math.max(1, Math.min(+q.get('from') || 1, all.length - 1)); }
-  rpI = Math.min(rpI + 1, all.length);
+  const end = AT ? (() => { const i = all.findIndex((x) => /First Half ends/i.test(x.text)); return i < 0 ? all.length : i + 1; })() : 0;      // &at=1: stop at half-time
+  if (!rpS) { rpS = s; rpI = Math.max(1, Math.min(+q.get('from') || (AT ? end - 6 : 1), all.length - 1)); }
+  rpI = Math.min(rpI + 1, end || all.length);
   const S = JSON.parse(JSON.stringify(rpS)), c = S.header.competitions[0];
   S.commentary = all.slice(0, rpI); const x = all[rpI - 1], H0 = c.competitors.find((k) => k.homeAway === 'home'), A0 = c.competitors.find((k) => k.homeAway === 'away');
   const P = footPlays(S, { full: H0.team.displayName }, { full: A0.team.displayName }), lastP = P[P.length - 1] || { home: 0, away: 0 };
@@ -589,6 +620,7 @@ async function slotTick() {
     noSite = sl.sbtrk === 0;
     TRK3D = c.trk3d === true || (Array.isArray(c.trk3d) && c.trk3d.map(String).includes(String(SLOT)));
     TRKGPU = c.trkgpu === true || (Array.isArray(c.trkgpu) && c.trkgpu.map(String).includes(String(SLOT)));
+    STORY = c.story === true || (Array.isArray(c.story) && c.story.map(String).includes(String(SLOT)));
     GSON = c.gsScores === true || (Array.isArray(c.gsScores) && c.gsScores.map(String).includes(String(SLOT)));
     TRKHD = c.trkhd === true || (Array.isArray(c.trkhd) && c.trkhd.map(String).includes(String(SLOT)));      // 3D drawn at twice the size (graphics-card servers)
     TRK4K = c.trk4k === true || (Array.isArray(c.trk4k) && c.trk4k.map(String).includes(String(SLOT)));      // 3D drawn at four times the size (4K streams)
