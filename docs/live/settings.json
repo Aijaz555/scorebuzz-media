@@ -25,7 +25,13 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "nfl",
+   "event": "401873081",
+   "note": "Detroit Lions vs Chicago Bears, 2026-11-26T18:00:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
