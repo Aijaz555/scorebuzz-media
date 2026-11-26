@@ -1,21 +1,21 @@
 [
  {
+  "slug": "stade-raymond-kopa",
+  "name": "Stade Raymond Kopa",
+  "city": "Angers",
+  "country": "France"
+ },
+ {
+  "slug": "stade-marie-marvingt",
+  "name": "Stade Marie-Marvingt",
+  "city": "Le Mans",
+  "country": "France"
+ },
+ {
   "slug": "scottsmiracle-gro-field",
   "name": "ScottsMiracle-Gro Field",
   "city": "Columbus, Ohio",
   "country": "USA"
- },
- {
-  "slug": "rams-park",
-  "name": "RAMS Park",
-  "city": "Istanbul",
-  "country": "Türkiye"
- },
- {
-  "slug": "estadio-jose-alvalade",
-  "name": "Estádio José Alvalade",
-  "city": "Lisbon",
-  "country": "Portugal"
  },
  {
   "slug": "maksimir-stadium",
@@ -24,22 +24,10 @@
   "country": "Croatia"
  },
  {
-  "slug": "georgios-karaiskakis-stadium",
-  "name": "Georgios Karaiskakis Stadium",
-  "city": "Piraeus",
-  "country": "Greece"
- },
- {
   "slug": "red-bull-arena-salzburg",
   "name": "Red Bull Arena Salzburg",
   "city": "Salzburg",
   "country": "Austria"
- },
- {
-  "slug": "groupama-arena",
-  "name": "Groupama Arena",
-  "city": "Budapest",
-  "country": "Hungary"
  },
  {
   "slug": "acrisure-stadium",
@@ -57,6 +45,24 @@
   "slug": "doak-campbell-stadium",
   "name": "Doak Campbell Stadium",
   "city": "Tallahassee",
+  "country": "USA"
+ },
+ {
+  "slug": "kroger-field",
+  "name": "Kroger Field",
+  "city": "Lexington",
+  "country": "USA"
+ },
+ {
+  "slug": "allegacy-federal-credit-union-stadium",
+  "name": "Allegacy Federal Credit Union Stadium",
+  "city": "Winston-Salem",
+  "country": "USA"
+ },
+ {
+  "slug": "casino-del-sol-stadium",
+  "name": "Casino Del Sol Stadium",
+  "city": "Tucson",
   "country": "USA"
  },
  {
@@ -93,6 +99,12 @@
   "slug": "grand-casino-arena",
   "name": "Grand Casino Arena",
   "city": "Saint Paul",
+  "country": "USA"
+ },
+ {
+  "slug": "lenovo-center",
+  "name": "Lenovo Center",
+  "city": "Raleigh",
   "country": "USA"
  }
 ]
