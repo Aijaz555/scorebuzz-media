@@ -33,8 +33,8 @@
   },
   "2": {
    "league": "nhl",
-   "event": "401892781",
-   "note": "Boston Bruins vs Winnipeg Jets, 2026-11-26T00:00:00Z"
+   "event": "401892794",
+   "note": "Seattle Kraken vs Chicago Blackhawks, 2026-11-26T02:40:00Z"
   },
   "3": {
    "league": "nhl",
@@ -43,8 +43,8 @@
   },
   "4": {
    "league": "nhl",
-   "event": "401892783",
-   "note": "Tampa Bay Lightning vs Carolina Hurricanes, 2026-11-26T00:00:00Z"
+   "event": "401892793",
+   "note": "Anaheim Ducks vs San Jose Sharks, 2026-11-26T03:00:00Z"
   },
   "5": {
    "league": "nhl",
@@ -62,14 +62,14 @@
    "note": "New York Islanders vs St. Louis Blues, 2026-11-26T00:00:00Z"
   },
   "8": {
-   "league": "nhl",
-   "event": "401892782",
-   "note": "Buffalo Sabres vs New York Rangers, 2026-11-26T00:00:00Z"
+   "league": "nba",
+   "event": "401909323",
+   "note": "Houston Rockets vs Phoenix Suns, 2026-11-26T01:30:00Z"
   },
   "9": {
-   "league": "nhl",
-   "event": "401892786",
-   "note": "Pittsburgh Penguins vs Calgary Flames, 2026-11-26T00:00:00Z"
+   "league": "nba",
+   "event": "401909320",
+   "note": "Oklahoma City Thunder vs Minnesota Timberwolves, 2026-11-26T00:30:00Z"
   },
   "10": {
    "league": "nhl",
