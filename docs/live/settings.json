@@ -90,6 +90,12 @@
    "league": "nhl",
    "event": "401892791",
    "note": "Minnesota Wild vs Utah Mammoth, 2026-11-26T01:00:00Z"
+  },
+  "14": {
+   "league": "nhl",
+   "event": null,
+   "multi": "nhl",
+   "note": "All NHL games (multi.html), 26 Nov 2026 from ~03:00Z until ~06:30Z (owner asked in chat)"
   }
  },
  "fit": {

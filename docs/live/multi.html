@@ -1,7 +1,7 @@
 <!doctype html>
 <html><head><meta charset="utf-8"><title>ScoreBuzz live scores</title>
 <!-- ScoreBuzz "all games" scoreboard (owner's request, 24 Nov 2026): every game of one league on one stream, live scores from ESPN.
-     Usage: multi.html?league=ucl (ucl|uel|epl|laliga|seriea|ligue1|bundesliga|mls)  [&date=YYYYMMDD]  [&demo=1 fakes a mid-game state for previews]
+     Usage: multi.html?league=ucl (ucl|uel|epl|laliga|seriea|ligue1|bundesliga|mls|nhl)  [&date=YYYYMMDD]  [&demo=1 fakes a mid-game state for previews]
      Designed at 1920x1080 (scaled to fit the window). Grid adapts to the number of games (up to 18). -->
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -66,8 +66,9 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 <script>
 (() => {   // own scope: on a stream slot this page is document.write()n over app.html, whose globals stay
 const Q = new URLSearchParams(location.search);
-const PATH = { ucl: 'uefa.champions', uel: 'uefa.europa', uecl: 'uefa.europa.conf', epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', unl: 'uefa.nations' };
-const NAME = { ucl: 'Champions League', uel: 'Europa League', uecl: 'Conference League', epl: 'Premier League', laliga: 'LaLiga', seriea: 'Serie A', ligue1: 'Ligue 1', bundesliga: 'Bundesliga', mls: 'MLS', unl: 'Nations League' };
+const PATH = { ucl: 'uefa.champions', uel: 'uefa.europa', uecl: 'uefa.europa.conf', epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', unl: 'uefa.nations', nhl: 'nhl' };
+const SPORT = { nhl: 'hockey' };   // everything else is soccer (NHL board added 26 Nov 2026)
+const NAME = { ucl: 'Champions League', uel: 'Europa League', uecl: 'Conference League', epl: 'Premier League', laliga: 'LaLiga', seriea: 'Serie A', ligue1: 'Ligue 1', bundesliga: 'Bundesliga', mls: 'MLS', unl: 'Nations League', nhl: 'NHL' };
 let league = PATH[Q.get('league')] ? Q.get('league') : 'ucl';
 // on a stream slot (index.html?slot=N): the league comes from settings.json slots[N].multi
 const SLOT = Q.get('slot');
@@ -105,7 +106,7 @@ function demoize(sb) {   // preview only: turns today's fixtures into a believab
 
 async function load() {
   const date = Q.get('date') ? `?dates=${Q.get('date')}` : '';
-  const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/soccer/${PATH[league]}/scoreboard${date}`, { cache: 'no-store' });
+  const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${SPORT[league] || 'soccer'}/${PATH[league]}/scoreboard${date}`, { cache: 'no-store' });
   let sb = await r.json();
   if (DEMO) sb = demoize(sb);
   render(sb);
@@ -114,8 +115,9 @@ async function load() {
 function render(sb) {
   const ev = (sb.events || []).slice().sort((a, b) => a.date.localeCompare(b.date) || a.name.localeCompare(b.name)).slice(0, 18);
   if (!ev.length) { $('grid').innerHTML = `<div class="err">No ${NAME[league]} games today · next matchday coming up</div>`; return; }
-  const day = new Date(ev[0].date);
-  $('t2').textContent = `All games · ${day.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Europe/London' })} · goals & red cards`;
+  const day = new Date(ev[0].date), HOCKEY = SPORT[league] === 'hockey';
+  $('t2').textContent = HOCKEY ? `All games · ${day.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'America/New_York' })} · scores by period` : `All games · ${day.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Europe/London' })} · goals & red cards`;
+  $('nPost').nextElementSibling.textContent = HOCKEY ? 'FINAL' : 'FULL TIME';
   const n = ev.length, cols = n <= 4 ? 2 : n <= 9 ? 3 : n <= 12 ? 4 : n <= 15 ? 5 : 6, rows = Math.ceil(n / cols);
   const g = $('grid'); g.style.gridTemplateColumns = `repeat(${cols},1fr)`; g.style.gridTemplateRows = `repeat(${rows},1fr)`;
   const big = rows <= 2 ? 1.35 : rows === 3 ? 1 : 0.8; const wide = cols <= 3 ? 1 : cols === 4 ? .85 : .72;
@@ -133,17 +135,19 @@ function render(sb) {
     const reds = (t) => det.filter((d) => d.redCard && d.team?.id === t.team.id).length;
     det.filter((d) => d.scoringPlay).forEach((d) => tick.push({ t: d.clock?.value ?? (parseInt(d.clock?.displayValue) || 0), s: `<b>⚽ ${esc(d.clock?.displayValue || '')}</b> ${esc(d.athletesInvolved?.[0]?.shortName || '')} · ${esc(short(H.team))} ${hs}–${as} ${esc(short(A.team))}` }));
     const kick = new Date(e.date);
-    const stTxt = st === 'pre' ? `KO ${tz(kick, 'Europe/London')} UK · ${tz(kick, 'Europe/Paris')} CET` : st === 'post' ? 'FULL TIME' : (e.status.displayClock === 'HT' || /half/i.test(e.status.type?.detail || '') ? 'HALF TIME' : e.status.displayClock);
+    const stTxt = HOCKEY ? (st === 'pre' ? `${tz(kick, 'America/New_York')} ET · ${tz(kick, 'Europe/London')} UK` : (e.status.type?.shortDetail || '').replace(' - ', ' · ').replace(/^End of /i, 'End ').toUpperCase()) : st === 'pre' ? `KO ${tz(kick, 'Europe/London')} UK · ${tz(kick, 'Europe/Paris')} CET` : st === 'post' ? 'FULL TIME' : (e.status.displayClock === 'HT' || /half/i.test(e.status.type?.detail || '') ? 'HALF TIME' : e.status.displayClock);
     const rowH = (t, s, o) => `<div class="row ${st !== 'pre' && s < o ? 'lo' : ''}"><img src="${esc(t.team.logo || '')}" alt=""><div class="nm" style="${short(t.team).length > 13 ? `font-size:calc(var(--nm) * ${Math.max(.7, 13 / short(t.team).length).toFixed(2)})` : ''}">${esc(short(t.team))}${'<span class="rc"></span>'.repeat(reds(t))}</div><div class="sc">${st === 'pre' ? '–' : s}</div></div>`;
-    const gH = goals(H), gA = goals(A), lines = (gH.length || gA.length) ? [`<div>${gH.join(', ')}</div><div>${gA.join(', ')}</div>`] : [];
-    const v = c.venue?.address?.city || c.venue?.fullName || '';
+    const per = (t) => (t.linescores || []).map((l, i) => `${i < 3 ? 'P' + (i + 1) : i === 3 ? 'OT' : 'SO'} <b>${esc(l.displayValue ?? l.value ?? 0)}</b>`).join(' · ');
+    if (HOCKEY && st !== 'pre') tick.push({ t: st === 'in' ? 1 : 0, s: `<b>${esc(H.team.abbreviation)} ${hs}–${as} ${esc(A.team.abbreviation)}</b> ${esc(e.status.type?.shortDetail || '')}` });
+    const gH = HOCKEY ? (per(H) ? [per(H)] : []) : goals(H), gA = HOCKEY ? (per(A) ? [per(A)] : []) : goals(A), lines = (gH.length || gA.length) ? [`<div>${gH.join(', ')}</div><div>${gA.join(', ')}</div>`] : [];
+    const v = HOCKEY ? '' : (c.venue?.address?.city || c.venue?.fullName || '');
     return `<div class="card ${st} ${goalUntil[e.id] > Date.now() ? 'goal' : ''}"><div class="hd"><div class="st">${st === 'in' ? '<i></i>' : ''}${esc(stTxt)}</div><div class="venue">${esc(v)}</div></div>
-      ${rowH(H, hs, as)}${rowH(A, as, hs)}<div class="sco">${lines.join('') || (st === 'pre' ? '<div>Kick-off soon</div><div></div>' : '')}</div><div class="badge">GOAL!</div></div>`;
+      ${rowH(H, hs, as)}${rowH(A, as, hs)}<div class="sco">${lines.join('') || (st === 'pre' ? `<div>${HOCKEY ? 'Puck drop soon' : 'Kick-off soon'}</div><div></div>` : '')}</div><div class="badge">GOAL!</div></div>`;
   }).join('');
   $('nIn').textContent = nIn; $('nPre').textContent = nPre; $('nPost').textContent = nPost;
   tick.sort((a, b) => b.t - a.t);
-  const items = tick.length ? tick.slice(0, 20).map((x) => `<span>${x.s}</span>`) : ev.map((e) => { const k = new Date(e.date); return `<span><b>${tz(k, 'Europe/London')} UK</b> ${esc(short(e.competitions[0].competitors.find((x) => x.homeAway === 'home').team))} vs ${esc(short(e.competitions[0].competitors.find((x) => x.homeAway === 'away').team))}</span>`; });
-  $('lab').textContent = tick.length ? 'GOALS' : 'TODAY';
+  const items = tick.length ? tick.slice(0, 20).map((x) => `<span>${x.s}</span>`) : ev.map((e) => { const k = new Date(e.date); return `<span><b>${HOCKEY ? tz(k, 'America/New_York') + ' ET' : tz(k, 'Europe/London') + ' UK'}</b> ${esc(short(e.competitions[0].competitors.find((x) => x.homeAway === 'home').team))} vs ${esc(short(e.competitions[0].competitors.find((x) => x.homeAway === 'away').team))}</span>`; });
+  $('lab').textContent = tick.length ? (HOCKEY ? 'SCORES' : 'GOALS') : 'TODAY';
   const html = items.join('');
   if ($('tk').dataset.h !== html) { $('tk').dataset.h = html; $('tk').innerHTML = html; $('tk').style.setProperty('--dur', `${Math.max(30, items.length * 9)}s`); }
 }
