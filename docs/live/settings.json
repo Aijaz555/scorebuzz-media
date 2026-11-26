@@ -26,55 +26,10 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "nfl",
-   "event": "401873081",
-   "note": "Detroit Lions vs Chicago Bears, 2026-11-26T18:00:00Z"
-  },
   "2": {
    "league": "nfl",
    "event": "401873080",
    "note": "Dallas Cowboys vs Philadelphia Eagles, 2026-11-26T21:30:00Z"
-  },
-  "3": {
-   "league": "uel",
-   "event": "401915516",
-   "note": "Ferencvaros vs NK Celje, 2026-11-26T20:00:00Z"
-  },
-  "4": {
-   "league": "uel",
-   "event": "401915502",
-   "note": "Juventus vs Omonia Nicosia, 2026-11-26T20:00:00Z"
-  },
-  "5": {
-   "league": "uel",
-   "event": "401915503",
-   "note": "OFI Crete vs Anderlecht, 2026-11-26T20:00:00Z"
-  },
-  "6": {
-   "league": "uel",
-   "event": "401915505",
-   "note": "NEC Nijmegen vs Stade Rennais, 2026-11-26T20:00:00Z"
-  },
-  "7": {
-   "league": "uel",
-   "event": "401915514",
-   "note": "Sparta Prague vs AZ Alkmaar, 2026-11-26T20:00:00Z"
-  },
-  "8": {
-   "league": "uel",
-   "event": "401915504",
-   "note": "Crystal Palace vs Real Sociedad, 2026-11-26T20:00:00Z"
-  },
-  "9": {
-   "league": "uel",
-   "event": "401915512",
-   "note": "Torreense vs Celtic, 2026-11-26T20:00:00Z"
-  },
-  "10": {
-   "league": "uel",
-   "event": "401915513",
-   "note": "Sunderland vs Jagiellonia Bialystok, 2026-11-26T20:00:00Z"
   }
  },
  "fit": {
