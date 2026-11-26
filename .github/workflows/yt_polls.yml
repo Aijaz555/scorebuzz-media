@@ -1,0 +1,47 @@
+name: YouTube live polls
+# Every 10 minutes: opens a "Who wins?" poll in the chat of each ScoreBuzz broadcast that has just gone live
+# (one poll per broadcast). See tools/live/yt_polls.js.
+on:
+  schedule:
+    - cron: '3-59/10 * * * *'
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Test: open the poll on this one live video id, whatever its age'
+        required: false
+      close:
+        description: 'Close the running poll on this live video id'
+        required: false
+concurrency:
+  group: yt-polls
+  cancel-in-progress: false
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/cache/restore@v4
+        with:
+          path: .polls
+          key: yt-polls-${{ github.run_id }}
+          restore-keys: yt-polls-
+      - env:
+          ONLY: ${{ inputs.only }}
+          CLOSE: ${{ inputs.close }}
+        run: |
+          if [ -n "$CLOSE" ]; then node tools/live/yt_polls.js .polls/state.json --close "$CLOSE"
+          elif [ -n "$ONLY" ]; then node tools/live/yt_polls.js .polls/state.json --only "$ONLY"
+          else node tools/live/yt_polls.js .polls/state.json; fi
+      - if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .polls
+          key: yt-polls-${{ github.run_id }}

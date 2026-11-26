@@ -737,3 +737,4 @@ period: 1 = football half-time, 2 = NBA/NFL half-time, 1 or 2 = NHL intermission
   card keep the lighter picture. `?real=0` on the match page switches it off, `?real=1` forces it. Football and NFL are unchanged.
   First games on air with it: NBA / NHL on Fri 27 Nov. Next: better movement (defensive slides, fuller jump shot, skating strides).
 - 2026-11-26: Match story (pre-match show, written commentary, half-time/full-time reports) switched on for all slots (`story: true`) after a clean live check on Lions v Bears: half-time report slides and the tracker's return in Q3 both verified on air at 4K.
+- 2026-11-26: Chat polls: `yt_polls.js` + "YouTube live polls" Action open a "Who wins?" poll (football: Home / Draw / Away) in each broadcast's chat within 10 minutes of it going live; one per broadcast, none if the stream has been live over 90 minutes. Test: run the Action with `only=<video id>`; `close=<video id>` ends a poll.
