@@ -1,0 +1,363 @@
+[
+ {
+  "id": "01-brugge-liverpool",
+  "time": "2026-11-26T11:00:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 5",
+  "home": "Club Brugge",
+  "homeScore": 0,
+  "away": "Liverpool",
+  "awayScore": 3,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+  "venue": "Jan Breydel Stadium",
+  "headline": "Isak double, Wirtz stunner in Bruges",
+  "sub": "Isak 13' & 82', Wirtz 79'. Isak's 10th goal of the season, and Liverpool move up to 5th.",
+  "caption": "🔴 Club Brugge 0–3 Liverpool.\n\nAlexander Isak scored twice, the second a solo chip, and Florian Wirtz curled one in from outside the box. That's 10 goals for Isak this season.\n\nIs Isak finally firing? 👇\n\n#LFC #Isak #UCL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "02-sporting-man-utd",
+  "time": "2026-11-26T11:55:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 5",
+  "home": "Sporting CP",
+  "homeScore": 2,
+  "away": "Man United",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+  "venue": "Estádio José Alvalade",
+  "headline": "Three penalties, a red card, no win",
+  "sub": "Suárez pen 33' & 80', Fernandes pen 48' & 50'. Tielemans sent off in stoppage time.",
+  "caption": "😩 Sporting 2–2 Man United.\n\nBruno Fernandes scored twice against his old club, but a goalkeeping error let Luis Suárez equalise and Youri Tielemans was sent off late. Mauricio Pochettino is still waiting for his first win.\n\nHow long until it clicks under Pochettino? 👇\n\n#MUFC #Pochettino #UCL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "03-psg-roma",
+  "time": "2026-11-26T13:45:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "score",
+  "label": "CHAMPIONS LEAGUE · MATCHDAY 5",
+  "home": "PSG",
+  "homeScore": 2,
+  "away": "Roma",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+  "venue": "Parc des Princes",
+  "headline": "Roma end PSG's 12-game winning run",
+  "sub": "Hermoso 5', Zabarnyi 31', Dembélé pen 62', Malen pen 78'. First points PSG have dropped in this Champions League.",
+  "caption": "😮 PSG 2–2 Roma.\n\nThe double defending champions had won 12 in a row in all competitions. Donyell Malen's penalty ended that run at the Parc des Princes.\n\nCan PSG still win a third straight Champions League? 👇\n\n#PSG #ASRoma #UCL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "04-ucl-table",
+  "time": "2026-11-26T14:40:00",
+  "sport": "football",
+  "league": "ucl",
+  "kind": "list",
+  "label": "CHAMPIONS LEAGUE · AFTER MATCHDAY 5",
+  "headline": "The top eight",
+  "rows": [
+   [
+    "1",
+    "Real Madrid",
+    "15"
+   ],
+   [
+    "2",
+    "PSG",
+    "13"
+   ],
+   [
+    "3",
+    "Como",
+    "12"
+   ],
+   [
+    "4",
+    "Barcelona",
+    "12"
+   ],
+   [
+    "5",
+    "Liverpool",
+    "12"
+   ],
+   [
+    "6",
+    "Real Betis",
+    "12"
+   ],
+   [
+    "7",
+    "Arsenal",
+    "11"
+   ],
+   [
+    "8",
+    "Man City",
+    "10"
+   ]
+  ],
+  "sub": "Top eight go straight to the last 16. Three games left.",
+  "caption": "📊 Champions League top eight after Matchday 5.\n\nReal Madrid are perfect on 15. Como and Betis are both in the top six, and Bayern have slipped to 15th after losing at Lille.\n\nWho drops out of the top eight? 👇\n\n#UCL #ChampionsLeague #LFC",
+  "firstCommentText": ""
+ },
+ {
+  "id": "05-europa-tonight",
+  "time": "2026-11-26T16:30:00",
+  "sport": "football",
+  "league": "uel",
+  "kind": "list",
+  "label": "EUROPA LEAGUE · TONIGHT",
+  "headline": "Four English clubs in Europe tonight",
+  "rows": [
+   [
+    "17:45",
+    "Celta Vigo v Bournemouth",
+    "12:45 ET"
+   ],
+   [
+    "17:45",
+    "Brighton v Craiova*",
+    "12:45 ET"
+   ],
+   [
+    "17:45",
+    "Olympiacos v AC Milan",
+    "12:45 ET"
+   ],
+   [
+    "20:00",
+    "Crystal Palace v Real Sociedad",
+    "3pm ET"
+   ],
+   [
+    "20:00",
+    "Sunderland v Jagiellonia",
+    "3pm ET"
+   ]
+  ],
+  "sub": "Times GMT. *Conference League. Bournemouth have won all four Europa League games so far.",
+  "caption": "🟠 European Thursday.\n\nBournemouth (4 wins from 4) are in Vigo, Crystal Palace host Real Sociedad, Sunderland play Jagiellonia and Brighton face Craiova in the Conference League.\n\nWhich English side has the best night? 👇\n\n#EuropaLeague #AFCB #CPFC",
+  "firstCommentText": ""
+ },
+ {
+  "id": "06-durant-33000",
+  "time": "2026-11-26T18:20:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "headline",
+  "label": "NBA · RECORD",
+  "venue": "Toyota Center (Houston)",
+  "headline": "Kevin Durant joins the 33,000-point club",
+  "stat": [
+   "5th",
+   "player in NBA history"
+  ],
+  "sub": "Only LeBron, Kareem, Karl Malone and Kobe got there first. Rockets beat the Suns 116–104.",
+  "caption": "🐐 Kevin Durant is the fifth player in NBA history to score 33,000 points.\n\nHe joins LeBron James, Kareem Abdul-Jabbar, Karl Malone and Kobe Bryant. He got there with a three in Houston's 116–104 win over Phoenix.\n\nWhere does KD rank among the all-time scorers? 👇\n\n#KevinDurant #Rockets #NBA",
+  "firstCommentText": ""
+ },
+ {
+  "id": "07-nba-wednesday",
+  "time": "2026-11-26T19:15:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA CUP · WEDNESDAY",
+  "headline": "Wednesday's NBA Cup results",
+  "rows": [
+   [
+    "76ers 111",
+    "LeBron triple-double",
+    "Heat 104"
+   ],
+   [
+    "Knicks 121",
+    "6 straight wins",
+    "Cavs 102"
+   ],
+   [
+    "Wolves 113",
+    "3-0 in the Cup",
+    "Thunder 106"
+   ],
+   [
+    "Rockets 116",
+    "Durant 33,000",
+    "Suns 104"
+   ],
+   [
+    "Nets 104",
+    "Randle 28",
+    "Bucks 97"
+   ],
+   [
+    "Grizzlies 115",
+    "Clippers 0-9 away",
+    "Clippers 97"
+   ]
+  ],
+  "sub": "Bulls beat the Hornets 107–105 for a second straight win.",
+  "caption": "🏀 A big NBA Cup night.\n\nLeBron had a triple-double against Giannis and the Heat, the Knicks won their sixth straight, and the Wolves beat OKC to go 3-0 in Cup play.\n\nWho's your NBA Cup favourite now? 👇\n\n#NBACup #Knicks #NBA",
+  "firstCommentText": ""
+ },
+ {
+  "id": "08-bears-lions",
+  "time": "2026-11-26T20:55:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · THANKSGIVING · 1PM ET / 18:00 GMT",
+  "home": "Lions",
+  "homeScore": "8-2",
+  "away": "Bears",
+  "awayScore": "8-2",
+  "status": "TODAY",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+  "venue": "Ford Field",
+  "headline": "Six straight wins v five straight wins",
+  "sub": "The NFC North lead is on the line in the first Thanksgiving game.",
+  "caption": "🦃 Thanksgiving opens with a first-place showdown.\n\nThe Lions have won six in a row, the Bears five in a row, and both are 8-2. Kickoff 1pm ET / 18:00 GMT at Ford Field.\n\nLions or Bears? 👇\n\n#OnePride #DaBears #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "09-rams-packers",
+  "time": "2026-11-26T23:30:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · WEEK 12 · WEDNESDAY",
+  "home": "Rams",
+  "homeScore": 26,
+  "away": "Packers",
+  "awayScore": 13,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
+  "venue": "SoFi Stadium",
+  "headline": "Blake Corum runs over Green Bay",
+  "sub": "Career-high 184 yards on 32 carries, the most carries by anyone in the NFL this season. Rams have won five straight.",
+  "caption": "🐏 Rams 26, Packers 13.\n\nOn his 26th birthday, Blake Corum ran 32 times for 184 yards and a touchdown. LA have won five in a row; Green Bay have lost two straight.\n\nAre the Rams an NFC contender? 👇\n\n#RamsHouse #BlakeCorum #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "10-eagles-cowboys",
+  "time": "2026-11-27T01:15:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "headline",
+  "label": "NFL · THANKSGIVING · 4:30PM ET / 21:30 GMT",
+  "venue": "AT&T Stadium",
+  "headline": "Dallas need back-to-back wins",
+  "stat": [
+   "88",
+   "catches for CeeDee Lamb, most in the NFL"
+  ],
+  "sub": "They have had one winning streak in two seasons. The 5-6 Cowboys host the 3-7 Eagles.",
+  "caption": "🤠 Eagles at Cowboys, 4:30pm ET.\n\nDallas are 5-6 and have had one winning streak in two seasons under Brian Schottenheimer. CeeDee Lamb leads the NFL with 88 catches. Philadelphia are 3-7.\n\nWho wins in Arlington? 👇\n\n#DallasCowboys #FlyEaglesFly #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "11-nhl-wednesday",
+  "time": "2026-11-27T03:00:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "score",
+  "label": "NHL · WEDNESDAY",
+  "home": "Wild",
+  "homeScore": 3,
+  "away": "Mammoth",
+  "awayScore": 4,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/uta.png",
+  "headline": "Utah end Minnesota's franchise-best run",
+  "sub": "The Wild's first regulation loss in 16 games. Logan Cooley and Dylan Guenther each had a goal and an assist.",
+  "caption": "🏒 Mammoth 4, Wild 3.\n\nMinnesota hadn't lost in regulation in 16 games, a franchise record run, until Utah came to town. Logan Cooley and Dylan Guenther had a goal and an assist each.\n\nAre the Wild for real? 👇\n\n#mnwild #UtahMammoth #NHL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "12-steelers-broncos",
+  "time": "2026-11-27T03:50:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · BLACK FRIDAY · 3PM ET / 20:00 GMT",
+  "home": "Steelers",
+  "homeScore": "6-4",
+  "away": "Broncos",
+  "awayScore": "8-2",
+  "status": "FRIDAY",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+  "headline": "Mason Rudolph gets the start",
+  "sub": "Aaron Rodgers is benched as Pittsburgh host 8-2 Denver on Black Friday.",
+  "caption": "🛍️ Black Friday football: Broncos at Steelers, 3pm ET tomorrow.\n\nMason Rudolph starts for Pittsburgh (6-4) after Aaron Rodgers was benched. Denver are 8-2.\n\nCan Rudolph beat the Broncos? 👇\n\n#Steelers #BroncosCountry #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "13-texas-tech-tcu",
+  "time": "2026-11-27T05:30:00",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "kind": "score",
+  "label": "COLLEGE FOOTBALL · TONIGHT 8PM ET",
+  "home": "Texas Tech",
+  "homeScore": "10-1",
+  "away": "TCU",
+  "awayScore": "5-6",
+  "status": "TONIGHT",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
+  "headline": "Win and Texas Tech are in the Big 12 final",
+  "sub": "School-record 14-game home winning streak. A win sets up No. 2 Utah on Dec. 4. TCU just fired Sonny Dykes.",
+  "caption": "🏈 Thanksgiving night in Lubbock: TCU at Texas Tech, 8pm ET.\n\nThe Red Raiders (10-1) have won 14 straight at home. Win tonight and they play unbeaten Utah for the Big 12 title.\n\nDo the Red Raiders get it done? 👇\n\n#TexasTech #CollegeFootball #Big12",
+  "firstCommentText": ""
+ },
+ {
+  "id": "14-lakers-spurs",
+  "time": "2026-11-27T06:25:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "headline",
+  "label": "NBA CUP · FRIDAY 9:30PM ET",
+  "headline": "Lakers at Spurs on Friday night",
+  "sub": "Two of the best teams in the West meet in San Antonio. 11 NBA Cup games on Friday, starting with Heat at Knicks.",
+  "caption": "🏀 Friday's NBA Cup headliner: Lakers at Spurs, 9:30pm ET.\n\nTwo of the West's best meet in San Antonio, after Heat at Knicks starts the 11-game night.\n\nWho wins in San Antonio? 👇\n\n#Lakers #Spurs #NBACup",
+  "firstCommentText": "",
+  "venue": "Frost Bank Center"
+ },
+ {
+  "id": "15-man-utd-brentford",
+  "time": "2026-11-27T08:05:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "score",
+  "label": "PREMIER LEAGUE · SATURDAY 15:00 GMT / 10AM ET",
+  "home": "Man United",
+  "homeScore": "19th",
+  "away": "Brentford",
+  "awayScore": "6th",
+  "status": "SATURDAY",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+  "venue": "Old Trafford",
+  "headline": "Pochettino's first game at Old Trafford",
+  "sub": "United have one Premier League win in 11 and sit 19th. Brentford are 6th.",
+  "caption": "🔴 Saturday: Man United v Brentford, 15:00 GMT / 10am ET.\n\nMauricio Pochettino's first home game. United have won one of 11 Premier League games and are 19th; Brentford are 6th.\n\nDoes Pochettino get his first win? 👇\n\n#MUFC #BrentfordFC #PremierLeague",
+  "firstCommentText": ""
+ }
+]
