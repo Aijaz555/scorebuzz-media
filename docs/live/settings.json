@@ -32,34 +32,34 @@
    "note": "Detroit Lions vs Chicago Bears, 2026-11-26T18:00:00Z"
   },
   "2": {
-   "league": "uel",
-   "event": "401915519",
-   "note": "Celta Vigo vs AFC Bournemouth, 2026-11-26T17:45:00Z"
+   "league": "nfl",
+   "event": "401873080",
+   "note": "Dallas Cowboys vs Philadelphia Eagles, 2026-11-26T21:30:00Z"
   },
   "3": {
    "league": "uel",
-   "event": "401915517",
-   "note": "Dinamo Zagreb vs Bayer Leverkusen, 2026-11-26T17:45:00Z"
+   "event": "401915516",
+   "note": "Ferencvaros vs NK Celje, 2026-11-26T20:00:00Z"
   },
   "4": {
    "league": "uel",
-   "event": "401915518",
-   "note": "Viktoria Plzen vs Benfica, 2026-11-26T17:45:00Z"
+   "event": "401915502",
+   "note": "Juventus vs Omonia Nicosia, 2026-11-26T20:00:00Z"
   },
   "5": {
    "league": "uel",
-   "event": "401915521",
-   "note": "Olympiacos vs AC Milan, 2026-11-26T17:45:00Z"
+   "event": "401915503",
+   "note": "OFI Crete vs Anderlecht, 2026-11-26T20:00:00Z"
   },
   "6": {
    "league": "uel",
-   "event": "401915507",
-   "note": "Marseille vs Levski Sofia, 2026-11-26T17:45:00Z"
+   "event": "401915505",
+   "note": "NEC Nijmegen vs Stade Rennais, 2026-11-26T20:00:00Z"
   },
   "7": {
    "league": "uel",
-   "event": "401915508",
-   "note": "Union St.-Gilloise vs Lech Poznan, 2026-11-26T17:45:00Z"
+   "event": "401915514",
+   "note": "Sparta Prague vs AZ Alkmaar, 2026-11-26T20:00:00Z"
   },
   "8": {
    "league": "uel",
@@ -68,8 +68,8 @@
   },
   "9": {
    "league": "uel",
-   "event": "401915520",
-   "note": "RB Salzburg vs Ararat-Armenia, 2026-11-26T17:45:00Z"
+   "event": "401915512",
+   "note": "Torreense vs Celtic, 2026-11-26T20:00:00Z"
   },
   "10": {
    "league": "uel",
@@ -360,7 +360,14 @@
   "maxLive": 10,
   "skipEvents": {
    "uel": [
-    "401915506"
+    "401915506",
+    "401915519",
+    "401915517",
+    "401915518",
+    "401915521",
+    "401915507",
+    "401915508",
+    "401915520"
    ]
   }
  },
