@@ -711,3 +711,4 @@ Numbers: the feed's official team stats when live; our own running counts from t
 Demo URLs (raw.githack.com/Aijaz555/scorebuzz-media/main/docs/live/center.html?...): `league=<l>&event=<id>&story=1` (any game: upcoming = pre-match,
 finished = final report), `&replay=1&from=<play>` (live commentary on a finished game), `&replay=1&at=<period>` (stops at the end of that
 period: 1 = football half-time, 2 = NBA/NFL half-time, 1 or 2 = NHL intermission). NFL replay was added with this (drives grow play by play).
+- 26 Nov 2026: owner approved the match story. On air on slots 1 and 2 first (`"story": ["1","2"]`); after one clean full game per sport, set `"story": true` for every slot.
