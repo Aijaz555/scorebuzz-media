@@ -1,0 +1,986 @@
+[
+ {
+  "id": "s01-ucl-wednesday-board",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "hype",
+  "yt": "2026-11-26T11:50:00",
+  "fb": "2026-11-26T12:50:00",
+  "title": "Champions League Results: Wednesday Matchday 5 Scores ⚽ #UCL #shorts",
+  "description": "Every Champions League score from Wednesday night (Matchday 5): Club Brugge 0–3 Liverpool, Sporting CP 2–2 Manchester United, Paris Saint-Germain 2–2 Roma, Lille 2–1 Bayern Munich, Sabah 1–4 Barcelona, Inter 2–0 Stuttgart, Atlético Madrid 2–0 Viking, Slavia Prague 0–1 Villarreal and Shakhtar Donetsk 0–1 Fenerbahçe. Alexander Isak scored twice for Liverpool and Anthony Gordon twice for Barcelona.\n\nChampions League results and table: https://scorebuzz.net\n\n#ChampionsLeague #UCL #LFC",
+  "tags": [
+   "champions league results",
+   "champions league scores today",
+   "ucl matchday 5",
+   "club brugge vs liverpool",
+   "sporting vs man united",
+   "psg vs roma",
+   "lille vs bayern",
+   "champions league table",
+   "ucl results",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 18.6,
+    "kicker": "Champions League · Matchday 5",
+    "title": "Wednesday's results",
+    "badge": "FULL TIME",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Club Brugge",
+      "homeAbbr": "BRU",
+      "hs": 0,
+      "away": "Liverpool",
+      "awayAbbr": "LIV",
+      "as": 3,
+      "note": "Isak 2, Wirtz",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+     },
+     {
+      "home": "Sporting CP",
+      "homeAbbr": "SCP",
+      "hs": 2,
+      "away": "Man United",
+      "awayAbbr": "MUN",
+      "as": 2,
+      "note": "Suárez 2, Fernandes 2",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
+     },
+     {
+      "home": "PSG",
+      "homeAbbr": "PSG",
+      "hs": 2,
+      "away": "Roma",
+      "awayAbbr": "ROM",
+      "as": 2,
+      "note": "Malen pen 78'",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png"
+     },
+     {
+      "home": "Lille",
+      "homeAbbr": "LIL",
+      "hs": 2,
+      "away": "Bayern",
+      "awayAbbr": "FCB",
+      "as": 1,
+      "note": "Pavlović o.g.",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png"
+     },
+     {
+      "home": "Sabah",
+      "homeAbbr": "SAB",
+      "hs": 1,
+      "away": "Barcelona",
+      "awayAbbr": "BAR",
+      "as": 4,
+      "note": "Gordon 2",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21922.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+     },
+     {
+      "home": "Inter",
+      "homeAbbr": "INT",
+      "hs": 2,
+      "away": "Stuttgart",
+      "awayAbbr": "VFB",
+      "as": 0,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
+     },
+     {
+      "home": "Atlético",
+      "homeAbbr": "ATM",
+      "hs": 2,
+      "away": "Viking",
+      "awayAbbr": "VIK",
+      "as": 0,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/510.png"
+     },
+     {
+      "home": "Slavia Prague",
+      "homeAbbr": "SLP",
+      "hs": 0,
+      "away": "Villarreal",
+      "awayAbbr": "VIL",
+      "as": 1,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/494.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+     },
+     {
+      "home": "Shakhtar",
+      "homeAbbr": "SHK",
+      "hs": 0,
+      "away": "Fenerbahçe",
+      "awayAbbr": "FEN",
+      "as": 1,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.0,
+    "title": "Best result of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League",
+   "big": "0–3",
+   "hook": "Every *result* from Wednesday",
+   "sticker": "FULL TIME",
+   "emoji": "⚽"
+  },
+  "fbtext": "⚽ Every Champions League score from Wednesday night.\n\nLiverpool won 3–0 in Bruges, Bayern lost at Lille, PSG were held by Roma and Man United drew in Lisbon.\n\nResult of the night? 👇\n\n#UCL #ChampionsLeague #LFC #Reels",
+  "time": "2026-11-26T11:50:00"
+ },
+ {
+  "id": "s02-sporting-man-utd",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "drama",
+  "venue": "Estádio José Alvalade",
+  "yt": "2026-11-26T14:05:00",
+  "fb": "2026-11-26T17:25:00",
+  "title": "Sporting vs Man United 2–2: Pens, a Red & Still No Win 😩 #MUFC #shorts",
+  "description": "Sporting CP and Manchester United drew 2–2 in the Champions League in Lisbon. Luis Suárez scored a penalty and a late equaliser for Sporting; Bruno Fernandes scored a penalty and a second goal against his old club. Goalkeeper Senne Lammens' error led to Sporting's equaliser and Youri Tielemans was sent off in stoppage time, so Mauricio Pochettino is still waiting for his first win as United manager.\n\nSporting vs Man United final score and Champions League table: https://scorebuzz.net\n\n#MUFC #Pochettino #UCL",
+  "tags": [
+   "sporting vs man united",
+   "man united vs sporting",
+   "manchester united",
+   "pochettino",
+   "bruno fernandes",
+   "luis suarez",
+   "senne lammens",
+   "champions league results",
+   "man united champions league",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Champions League · Lisbon",
+    "title": "3 penalties. 1 red card. 0 wins.",
+    "sub": "Pochettino's Man United, again"
+   },
+   {
+    "type": "score",
+    "dur": 4.2,
+    "label": "Estádio José Alvalade",
+    "home": "Sporting CP",
+    "homeAbbr": "SCP",
+    "homeScore": 2,
+    "away": "Man United",
+    "awayAbbr": "MUN",
+    "awayScore": 2,
+    "status": "FULL TIME",
+    "note": "Suárez pen 33' · Fernandes pen 48' · Fernandes 50' · Suárez 80'",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "50 minutes",
+    "title": "Bruno Fernandes, again",
+    "sub": "His second goal hit a divot and flew in"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "80 minutes",
+    "title": "Lammens flaps at a cross",
+    "sub": "Luis Suárez makes it 2–2"
+   },
+   {
+    "type": "text",
+    "dur": 2.8,
+    "label": "Stoppage time",
+    "title": "Tielemans sent off",
+    "sub": "Second yellow card"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Premier League",
+    "value": "19th",
+    "unit": "in the table",
+    "text": "One league win in 11. Brentford at Old Trafford on Saturday"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Pochettino fix United?",
+    "sub": "Follow ScoreBuzz for Champions League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League",
+   "big": "2–2",
+   "hook": "Still *no win* for Poch",
+   "sticker": "RED CARD",
+   "teams": [
+    "SCP",
+    "MUN"
+   ],
+   "emoji": "😩"
+  },
+  "fbtext": "😩 Three penalties, a red card and still no win for Pochettino.\n\nBruno Fernandes scored twice in Lisbon, but a Senne Lammens error let Sporting draw 2–2 and Youri Tielemans was sent off late.\n\nCan Pochettino turn United around? 👇\n\n#MUFC #Pochettino #UCL #Reels",
+  "time": "2026-11-26T14:05:00"
+ },
+ {
+  "id": "s03-ev-three-peat",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "anthem",
+  "evergreen": true,
+  "yt": "2026-11-26T16:20:00",
+  "fb": "2026-11-26T15:35:00",
+  "title": "Every European Cup Three-Peat Ever 🏆 Can PSG Make It 3? #UCL #shorts",
+  "description": "Only three clubs have won the European Cup or Champions League three seasons in a row: Real Madrid (five straight from 1956 to 1960, and three from 2016 to 2018), Ajax (1971–1973) and Bayern Munich (1974–1976). Paris Saint-Germain won the Champions League in 2025 (5–0 v Inter) and 2026 (1–1 v Arsenal, won on penalties) and are trying to become the first three-in-a-row winners since Real Madrid.\n\nChampions League table and scores: https://scorebuzz.net\n\n#ChampionsLeague #PSG #RealMadrid",
+  "tags": [
+   "champions league three in a row",
+   "european cup winners",
+   "champions league winners list",
+   "real madrid five european cups",
+   "ajax european cup",
+   "bayern european cup",
+   "psg champions league",
+   "psg three peat",
+   "champions league history",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Champions League history",
+    "title": "Only 3 clubs have won it 3 years in a row",
+    "sub": "Can you name them?"
+   },
+   {
+    "type": "list",
+    "dur": 6.0,
+    "label": "European Cup / Champions League",
+    "title": "Three (or more) in a row",
+    "rows": [
+     [
+      "1956–60",
+      "Real Madrid",
+      "5 straight"
+     ],
+     [
+      "1971–73",
+      "Ajax",
+      "3 straight"
+     ],
+     [
+      "1974–76",
+      "Bayern Munich",
+      "3 straight"
+     ],
+     [
+      "2016–18",
+      "Real Madrid",
+      "3 straight"
+     ]
+    ],
+    "note": "Seasons shown by final year"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "The record",
+    "value": 5,
+    "unit": "in a row",
+    "text": "Real Madrid, the first five European Cups"
+   },
+   {
+    "type": "list",
+    "dur": 4.4,
+    "label": "Now",
+    "title": "PSG have won the last two",
+    "rows": [
+     [
+      "2025",
+      "PSG 5–0 Inter",
+      "Munich"
+     ],
+     [
+      "2026",
+      "PSG 1–1 Arsenal",
+      "won on pens"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "2027 final",
+    "title": "Metropolitano, Madrid",
+    "sub": "PSG are 2nd in the league phase (as of 26 Nov)"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can PSG make it three?",
+    "sub": "Follow ScoreBuzz for Champions League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League history",
+   "big": "3",
+   "hook": "in a row: only *3 clubs*",
+   "sticker": "HISTORY",
+   "emoji": "🏆"
+  },
+  "fbtext": "🏆 Only three clubs have ever won the European Cup three years in a row: Real Madrid (twice), Ajax and Bayern Munich.\n\nReal Madrid won the first FIVE. PSG have won the last two.\n\nCan PSG make it three? 👇\n\n#ChampionsLeague #PSG #RealMadrid #Reels",
+  "time": "2026-11-26T16:20:00"
+ },
+ {
+  "id": "s04-isak-liverpool",
+  "sport": "football",
+  "league": "ucl",
+  "bed": "anthem",
+  "venue": "Jan Breydel Stadium",
+  "yt": null,
+  "fb": "2026-11-27T00:25:00",
+  "title": "Club Brugge vs Liverpool 0–3: Isak Double, Wirtz Stunner ⚽ #LFC #shorts",
+  "description": "Liverpool beat Club Brugge 3–0 in the Champions League. Alexander Isak scored twice, his second a solo goal finished with a chip, and Florian Wirtz scored from outside the box. Isak has 10 goals this season and Liverpool are 5th in the league phase.\n\nClub Brugge vs Liverpool final score: https://scorebuzz.net\n\n#LFC #Isak #UCL",
+  "tags": [
+   "club brugge vs liverpool",
+   "liverpool vs club brugge",
+   "alexander isak",
+   "florian wirtz",
+   "liverpool champions league",
+   "champions league results",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Champions League · Bruges",
+    "title": "Isak is finding his feet",
+    "sub": "Two more goals for Liverpool"
+   },
+   {
+    "type": "score",
+    "dur": 4.2,
+    "label": "Jan Breydel Stadium",
+    "home": "Club Brugge",
+    "homeAbbr": "BRU",
+    "homeScore": 0,
+    "away": "Liverpool",
+    "awayAbbr": "LIV",
+    "awayScore": 3,
+    "status": "FULL TIME",
+    "note": "Isak 13' · Wirtz 79' · Isak 82'",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "79 minutes",
+    "title": "Wirtz from outside the box",
+    "sub": "Assisted by Rio Ngumoha"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "82 minutes",
+    "title": "Isak shrugs off Mechele",
+    "sub": "…and chips the keeper"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Alexander Isak",
+    "value": 10,
+    "unit": "goals",
+    "text": "This season, all competitions"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is Isak back to his best?",
+    "sub": "Follow ScoreBuzz for Champions League scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Champions League",
+   "big": "0–3",
+   "hook": "Isak *double* in Bruges",
+   "sticker": "FINAL",
+   "teams": [
+    "BRU",
+    "LIV"
+   ],
+   "emoji": "🔴"
+  },
+  "fbtext": "🔴 Alexander Isak shrugged off a giant centre-back and chipped the keeper. That's 10 goals this season.\n\nFlorian Wirtz scored from distance too as Liverpool won 3–0 in Bruges.\n\nIs Isak back to his best? 👇\n\n#LFC #Isak #UCL #Reels",
+  "time": "2026-11-27T00:25:00"
+ },
+ {
+  "id": "s05-ev-33000-club",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "anthem",
+  "evergreen": true,
+  "venue": "Toyota Center (Houston)",
+  "yt": "2026-11-26T18:35:00",
+  "fb": "2026-11-26T21:50:00",
+  "title": "Kevin Durant Joins the NBA 33,000-Point Club 🐐 Only 5 Ever #NBA #shorts",
+  "description": "Kevin Durant became the fifth player in NBA history to score 33,000 points, joining LeBron James, Kareem Abdul-Jabbar, Karl Malone and Kobe Bryant. Durant reached the mark with a three-pointer late in the second quarter of the Houston Rockets' 116–104 win over the Phoenix Suns on 25 November 2026.\n\nNBA scores and records: https://scorebuzz.net\n\n#KevinDurant #Rockets #NBA",
+  "tags": [
+   "kevin durant",
+   "kevin durant 33000 points",
+   "nba all time scoring list",
+   "nba all time leading scorers",
+   "lebron james",
+   "kareem abdul jabbar",
+   "karl malone",
+   "kobe bryant",
+   "rockets vs suns",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NBA history",
+    "title": "Only FIVE players have scored 33,000 points",
+    "sub": "Can you name them?"
+   },
+   {
+    "type": "list",
+    "dur": 6.2,
+    "label": "NBA 33,000-point club",
+    "title": "The five",
+    "rows": [
+     [
+      "",
+      "LeBron James",
+      ""
+     ],
+     [
+      "",
+      "Kareem Abdul-Jabbar",
+      ""
+     ],
+     [
+      "",
+      "Karl Malone",
+      ""
+     ],
+     [
+      "",
+      "Kobe Bryant",
+      ""
+     ],
+     [
+      "NEW",
+      "Kevin Durant",
+      "25 Nov 2026"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "How he got there",
+    "title": "A three before half-time",
+    "sub": "46.3 seconds left in the 2nd quarter v Phoenix"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "Kevin Durant",
+    "value": 33000,
+    "unit": "career points",
+    "text": "Rockets 116, Suns 104"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who joins them next?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA history",
+   "big": "33,000",
+   "hook": "Only *five* players ever",
+   "sticker": "RECORD",
+   "emoji": "🐐"
+  },
+  "fbtext": "🐐 Only five players in NBA history have scored 33,000 points.\n\nLeBron James, Kareem Abdul-Jabbar, Karl Malone, Kobe Bryant… and now Kevin Durant, with a three against the Suns.\n\nWho's next to join the club? 👇\n\n#KevinDurant #NBA #Rockets #Reels",
+  "time": "2026-11-26T18:35:00"
+ },
+ {
+  "id": "s06-lebron-triple-double",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "yt": "2026-11-27T03:35:00",
+  "fb": "2026-11-26T20:05:00",
+  "title": "LeBron James Triple-Double vs Giannis | 76ers vs Heat 111–104 🔥 #shorts",
+  "description": "LeBron James had 25 points, 12 assists and 10 rebounds, his first triple-double for the Philadelphia 76ers, in a 111–104 NBA Cup win over the Miami Heat. Tyrese Maxey scored 30 and Giannis Antetokounmpo had 32 points and 14 rebounds for Miami. James, who turns 42 on 30 December, scored 14 straight points in the first half.\n\n76ers vs Heat final score and NBA scores: https://scorebuzz.net\n\n#LeBronJames #Sixers #NBACup",
+  "tags": [
+   "lebron james",
+   "lebron james triple double",
+   "76ers vs heat",
+   "heat vs 76ers",
+   "tyrese maxey",
+   "giannis antetokounmpo",
+   "nba cup",
+   "nba scores today",
+   "philadelphia 76ers",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NBA Cup · Philadelphia",
+    "title": "LeBron, 41, v Giannis",
+    "sub": "Guess who won"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Xfinity Mobile Arena",
+    "home": "76ers",
+    "homeAbbr": "PHI",
+    "homeScore": 111,
+    "away": "Heat",
+    "awayAbbr": "MIA",
+    "awayScore": 104,
+    "status": "FINAL",
+    "note": "Maxey 30 · Giannis 32 & 14 reb",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png"
+   },
+   {
+    "type": "list",
+    "dur": 4.2,
+    "label": "LeBron James",
+    "title": "First 76ers triple-double",
+    "rows": [
+     [
+      "25",
+      "points",
+      ""
+     ],
+     [
+      "12",
+      "assists",
+      ""
+     ],
+     [
+      "10",
+      "rebounds",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "First half",
+    "value": 14,
+    "unit": "straight points",
+    "text": "LeBron, all on his own"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Turns 42 on",
+    "title": "30 December",
+    "sub": "No Embiid, Jaylen Brown out after half-time"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Greatest of all time?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA Cup",
+   "big": "25-12-10",
+   "hook": "LeBron at *41*",
+   "sticker": "TRIPLE-DOUBLE",
+   "teams": [
+    "PHI",
+    "MIA"
+   ],
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 LeBron James, 41, against Giannis and his old Heat team: 25 points, 12 assists, 10 rebounds.\n\nHis first triple-double for the 76ers, including 14 straight points in the first half.\n\nWill we ever see this again? 👇\n\n#LeBronJames #Sixers #NBACup #Reels",
+  "time": "2026-11-27T03:35:00"
+ },
+ {
+  "id": "s07-thanksgiving-storylines",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "drama",
+  "venue": "Ford Field",
+  "yt": "2026-11-26T20:50:00",
+  "fb": "2026-11-26T22:40:00",
+  "title": "NFL Thanksgiving 2026: 3 Games, 3 Storylines 🦃 Lions, Cowboys, Bills #shorts",
+  "description": "The three NFL Thanksgiving games: Chicago Bears at Detroit Lions (1pm ET), with both teams 8-2, the Lions on six straight wins and the Bears on five; Philadelphia Eagles (3-7) at Dallas Cowboys (5-6) at 4:30pm ET, with Dallas needing back-to-back wins; and Kansas City Chiefs (8-2) at Buffalo Bills (9-1) at 8:20pm ET, where Josh Allen is 5-1 against Patrick Mahomes in the regular season and Mahomes is 4-0 in the playoffs.\n\nNFL Thanksgiving scores live: https://scorebuzz.net\n\n#NFL #Thanksgiving #Lions",
+  "tags": [
+   "nfl thanksgiving 2026",
+   "nfl thanksgiving games",
+   "bears vs lions",
+   "lions vs bears",
+   "eagles vs cowboys",
+   "cowboys vs eagles",
+   "chiefs vs bills",
+   "bills vs chiefs",
+   "nfl week 12",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NFL · Thanksgiving",
+    "title": "3 games. 3 storylines.",
+    "sub": "Here is what is at stake"
+   },
+   {
+    "type": "text",
+    "dur": 3.8,
+    "label": "1pm ET · Ford Field",
+    "title": "Lions (6 straight) v Bears (5 straight)",
+    "sub": "Both 8-2, first place in the NFC North"
+   },
+   {
+    "type": "text",
+    "dur": 3.8,
+    "label": "4:30pm ET · Arlington",
+    "title": "Cowboys need back-to-back wins",
+    "sub": "One winning streak in two seasons. Eagles are 3-7"
+   },
+   {
+    "type": "text",
+    "dur": 3.8,
+    "label": "8:20pm ET · Buffalo",
+    "title": "Allen 5-1 v Mahomes",
+    "sub": "…in the regular season. Mahomes is 4-0 in the playoffs"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Pick all three winners",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Thanksgiving",
+   "big": "3",
+   "hook": "games, *3 storylines*",
+   "sticker": "TODAY",
+   "emoji": "🦃"
+  },
+  "fbtext": "🦃 Three Thanksgiving games, three storylines.\n\nLions (six straight wins) v Bears (five straight), Dallas needing a rare winning streak, and Allen v Mahomes under the lights.\n\nPick all three winners 👇\n\n#NFL #Thanksgiving #OnePride #Reels",
+  "time": "2026-11-26T20:50:00"
+ },
+ {
+  "id": "s08-corum-184",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "venue": "SoFi Stadium",
+  "yt": "2026-11-26T23:05:00",
+  "fb": "2026-11-27T02:05:00",
+  "title": "Blake Corum 184 Yards | Rams vs Packers 26–13 🐏 #NFL #shorts",
+  "description": "Blake Corum ran for a career-high 184 yards and a touchdown on 32 carries, the most by any player in the NFL this season, as the Los Angeles Rams beat the Green Bay Packers 26–13 on Thanksgiving Eve. Kyren Williams also ran for a score, and the Rams have won five straight. Jordan Love threw two interceptions and Christian Watson left with a concussion.\n\nRams vs Packers final score and NFL scores: https://scorebuzz.net\n\n#BlakeCorum #Rams #NFL",
+  "tags": [
+   "blake corum",
+   "rams vs packers",
+   "packers vs rams",
+   "los angeles rams",
+   "green bay packers",
+   "kyren williams",
+   "jordan love",
+   "nfl week 12",
+   "nfl scores today",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NFL · Thanksgiving Eve",
+    "title": "32 carries. On his birthday.",
+    "sub": "Blake Corum would not stop"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "SoFi Stadium",
+    "home": "Rams",
+    "homeAbbr": "LAR",
+    "homeScore": 26,
+    "away": "Packers",
+    "awayAbbr": "GB",
+    "awayScore": 13,
+    "status": "FINAL",
+    "note": "Corum TD · K. Williams TD · Love 2 INT",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Blake Corum",
+    "value": 184,
+    "unit": "rushing yards",
+    "text": "Career high. 161 of them in the second half"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "32 carries",
+    "title": "Most by anyone in the NFL this season",
+    "sub": "Rams had the ball for 23:45 of the second half"
+   },
+   {
+    "type": "stat",
+    "dur": 2.8,
+    "label": "Los Angeles Rams",
+    "value": 5,
+    "unit": "straight wins",
+    "text": "7-4 and climbing in the NFC"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Are the Rams contenders?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL",
+   "big": "184",
+   "hook": "yards on his *birthday*",
+   "sticker": "CAREER HIGH",
+   "teams": [
+    "LAR",
+    "GB"
+   ],
+   "emoji": "🐏"
+  },
+  "fbtext": "🐏 Blake Corum turned 26 and ran for 184 yards.\n\n32 carries, the most by anyone in the NFL this season, as the Rams beat Green Bay 26–13 for a fifth straight win.\n\nAre the Rams NFC contenders? 👇\n\n#RamsHouse #BlakeCorum #NFL #Reels",
+  "time": "2026-11-26T23:05:00"
+ },
+ {
+  "id": "s09-allen-mahomes",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "drama",
+  "venue": "Highmark Stadium",
+  "yt": "2026-11-27T01:20:00",
+  "fb": "2026-11-27T04:40:00",
+  "title": "Bills vs Chiefs Tonight: Allen vs Mahomes, Meeting No. 11 🏈 #NFL #shorts",
+  "description": "Josh Allen and Patrick Mahomes meet for the 11th time in seven seasons when the Buffalo Bills (9-1) host the Kansas City Chiefs (8-2) on Thanksgiving night at 8:20pm ET. Allen is 5-1 against Mahomes in the regular season with five straight wins; Mahomes is 4-0 against Buffalo in the playoffs, including two AFC Championship Game wins.\n\nChiefs vs Bills live score: https://scorebuzz.net\n\n#BillsMafia #ChiefsKingdom #NFL",
+  "tags": [
+   "bills vs chiefs",
+   "chiefs vs bills",
+   "josh allen",
+   "patrick mahomes",
+   "josh allen vs mahomes",
+   "chiefs vs bills thanksgiving",
+   "nfl thanksgiving 2026",
+   "nfl week 12",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NFL · Thanksgiving night",
+    "title": "Allen v Mahomes. Meeting No. 11.",
+    "sub": "Who really owns this rivalry?"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Josh Allen v Patrick Mahomes",
+    "title": "Head to head",
+    "rows": [
+     [
+      "Regular season",
+      "Allen 5-1",
+      "5 straight"
+     ],
+     [
+      "Playoffs",
+      "Mahomes 4-0",
+      "2 AFC titles"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Tonight",
+    "title": "Bills 9-1 · Chiefs 8-2",
+    "sub": "Top of the AFC on the line"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Kick-off",
+    "title": "8:20pm ET · 01:20 GMT",
+    "sub": "Highmark Stadium, Orchard Park"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins tonight?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Thanksgiving",
+   "big": "5-1",
+   "hook": "Allen owns the *regular season*",
+   "sticker": "TONIGHT",
+   "teams": [
+    "KC",
+    "BUF"
+   ],
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 Josh Allen is 5-1 against Patrick Mahomes in the regular season. Mahomes is 4-0 against him in the playoffs.\n\nMeeting No. 11 is tonight in Buffalo, 8:20pm ET.\n\nWho wins? 👇\n\n#BillsMafia #ChiefsKingdom #NFL #Reels",
+  "time": "2026-11-27T01:20:00"
+ },
+ {
+  "id": "s10-qatar-gp",
+  "sport": "racing",
+  "league": "f1",
+  "bed": "hype",
+  "yt": null,
+  "fb": "2026-11-27T07:15:00",
+  "title": "F1 Qatar Grand Prix 2026: Times & Standings 🏁 #F1 #shorts",
+  "description": "The Formula 1 Qatar Grand Prix is at the Lusail International Circuit this weekend: practice on Friday, qualifying on Saturday at 18:00 GMT (1pm ET) and the race on Sunday at 16:00 GMT (11am ET). Kimi Antonelli leads the drivers' standings with 402 points, ahead of Max Verstappen (304) and Lewis Hamilton (267).\n\nF1 standings: https://scorebuzz.net\n\n#F1 #QatarGP #Antonelli",
+  "tags": [
+   "qatar grand prix 2026",
+   "f1 qatar",
+   "f1 standings",
+   "kimi antonelli",
+   "max verstappen",
+   "lewis hamilton",
+   "f1 2026",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "Formula 1 · Lusail",
+    "title": "Qatar Grand Prix this weekend",
+    "sub": "Here is when to watch"
+   },
+   {
+    "type": "list",
+    "dur": 4.6,
+    "label": "Qatar GP · all times GMT",
+    "title": "Weekend schedule",
+    "rows": [
+     [
+      "Fri",
+      "Practice 1",
+      "13:30"
+     ],
+     [
+      "Sat",
+      "Qualifying",
+      "18:00 (1pm ET)"
+     ],
+     [
+      "Sun",
+      "Race",
+      "16:00 (11am ET)"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "dur": 4.6,
+    "label": "Drivers' standings",
+    "cols": [
+     "PTS"
+    ],
+    "rows": [
+     [
+      1,
+      "Kimi Antonelli",
+      402
+     ],
+     [
+      2,
+      "Max Verstappen",
+      304
+     ],
+     [
+      3,
+      "Lewis Hamilton",
+      267
+     ],
+     [
+      4,
+      "George Russell",
+      264
+     ],
+     [
+      5,
+      "Lando Norris",
+      264
+     ]
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Who wins in Qatar?",
+    "sub": "Follow ScoreBuzz for F1 results"
+   }
+  ],
+  "thumb": {
+   "kicker": "Formula 1",
+   "big": "402",
+   "hook": "Antonelli heads to *Qatar*",
+   "sticker": "THIS WEEKEND",
+   "emoji": "🏁"
+  },
+  "fbtext": "🏁 Qatar Grand Prix weekend.\n\nQualifying Saturday 18:00 GMT / 1pm ET, race Sunday 16:00 GMT / 11am ET. Kimi Antonelli leads the standings on 402 points.\n\nWho wins in Lusail? 👇\n\n#F1 #QatarGP #Reels",
+  "time": "2026-11-27T07:15:00"
+ }
+]
