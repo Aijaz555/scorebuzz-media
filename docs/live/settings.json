@@ -26,16 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "nhl",
-   "event": "401892792",
-   "note": "Colorado Avalanche vs Montreal Canadiens, 2026-11-26T02:30:00Z"
-  },
-  "2": {
-   "league": "nhl",
-   "event": "401892794",
-   "note": "Seattle Kraken vs Chicago Blackhawks, 2026-11-26T02:40:00Z"
-  },
   "3": {
    "league": "nba",
    "event": "401909325",
@@ -45,16 +35,6 @@
    "league": "nhl",
    "event": "401892793",
    "note": "Anaheim Ducks vs San Jose Sharks, 2026-11-26T03:00:00Z"
-  },
-  "6": {
-   "league": "nba",
-   "event": "401909324",
-   "note": "Golden State Warriors vs Sacramento Kings, 2026-11-26T03:00:00Z"
-  },
-  "12": {
-   "league": "nfl",
-   "event": "401873079",
-   "note": "Los Angeles Rams vs Green Bay Packers, 2026-11-26T01:00:00Z"
   },
   "14": {
    "league": "nhl",
