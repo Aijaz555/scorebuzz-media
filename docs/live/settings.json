@@ -46,30 +46,30 @@
    "event": "401892807",
    "note": "New York Islanders vs Winnipeg Jets, 2026-11-28T00:30:00Z"
   },
+  "5": {
+   "league": "nba",
+   "event": "401909328",
+   "note": "Indiana Pacers vs Philadelphia 76ers, 2026-11-28T00:30:00Z"
+  },
+  "6": {
+   "league": "nba",
+   "event": "401909326",
+   "note": "New York Knicks vs Miami Heat, 2026-11-28T00:00:00Z"
+  },
   "7": {
-   "league": "nhl",
-   "event": "401892802",
-   "note": "Columbus Blue Jackets vs Detroit Red Wings, 2026-11-27T20:00:00Z"
+   "league": "nba",
+   "event": "401909327",
+   "note": "Detroit Pistons vs Milwaukee Bucks, 2026-11-28T00:30:00Z"
   },
   "8": {
    "league": "nhl",
    "event": "401892803",
    "note": "Minnesota Wild vs Colorado Avalanche, 2026-11-27T21:00:00Z"
   },
-  "9": {
-   "league": "nhl",
-   "event": "401892800",
-   "note": "Philadelphia Flyers vs Vancouver Canucks, 2026-11-27T20:00:00Z"
-  },
   "10": {
    "league": "nfl",
    "event": "401873083",
    "note": "Pittsburgh Steelers vs Denver Broncos, 2026-11-27T20:00:00Z"
-  },
-  "11": {
-   "league": "nhl",
-   "event": "401892799",
-   "note": "Tampa Bay Lightning vs Ottawa Senators, 2026-11-27T20:00:00Z"
   },
   "12": {
    "league": "nhl",
