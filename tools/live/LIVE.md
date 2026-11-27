@@ -460,7 +460,7 @@ network domains, which the owner added 9 Nov 2026):
 `node tools/live/check_streams.js <videoId>:<slot> ... --out <scratch dir>` downloads YouTube's live preview frame
 (`maxresdefault_live.jpg`, refreshed every few minutes) and prints, per stream, the image path and the game
 settings.json says the slot should show. Look at each image: the screen shows home team first, so either team order
-matches. Problems: a different matchup, "next game coming up", a blank/black/loading screen. Skip streams that went
+matches. Problems: a different matchup, "next game coming up", a blank/black/loading screen. Also a problem (27 Nov 2026, owner saw a Liga MX stream with no tracker): the tracker box in the middle showing a web error page ("page not found", "404") instead of the pitch/court; restart once like the others, and if it is still there next run notify the owner and name the league. Skip streams that went
 LIVE in this run (the preview lags a few minutes). A problem seen once → stop + start that project once
 (it reloads the page); seen again in the next run (same game) → notify the owner.
 
