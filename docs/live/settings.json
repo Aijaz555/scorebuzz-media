@@ -40,6 +40,31 @@
    "league": "nhl",
    "event": "401892797",
    "note": "Nashville Predators vs Utah Mammoth, 2026-11-27T18:00:00Z"
+  },
+  "4": {
+   "league": "nhl",
+   "event": "401892798",
+   "note": "St. Louis Blues vs Dallas Stars, 2026-11-27T19:00:00Z"
+  },
+  "5": {
+   "league": "seriea",
+   "event": "401875004",
+   "note": "Venezia vs Bologna, 2026-11-27T19:45:00Z"
+  },
+  "6": {
+   "league": "ligue1",
+   "event": "401876392",
+   "note": "Brest vs Paris FC, 2026-11-27T19:45:00Z"
+  },
+  "7": {
+   "league": "bundesliga",
+   "event": "401884720",
+   "note": "Werder Bremen vs Borussia Mönchengladbach, 2026-11-27T19:30:00Z"
+  },
+  "8": {
+   "league": "eredivisie",
+   "event": "401875536",
+   "note": "FC Groningen vs Willem II, 2026-11-27T19:00:00Z"
   }
  },
  "fit": {
