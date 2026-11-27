@@ -25,7 +25,23 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "nhl",
+   "event": "401892795",
+   "note": "Boston Bruins vs Toronto Maple Leafs, 2026-11-27T18:00:00Z"
+  },
+  "2": {
+   "league": "nhl",
+   "event": "401892796",
+   "note": "New Jersey Devils vs Calgary Flames, 2026-11-27T18:00:00Z"
+  },
+  "3": {
+   "league": "nhl",
+   "event": "401892797",
+   "note": "Nashville Predators vs Utah Mammoth, 2026-11-27T18:00:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
