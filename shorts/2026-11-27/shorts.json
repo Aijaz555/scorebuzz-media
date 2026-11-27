@@ -1,0 +1,855 @@
+[
+ {
+  "id": "s01-europa-board",
+  "sport": "football",
+  "league": "uel",
+  "bed": "hype",
+  "yt": "2026-11-27T12:00:00",
+  "fb": "2026-11-27T12:40:00",
+  "title": "Europa League Results: Thursday Matchday 5 Scores ⚽ #UEL #shorts",
+  "description": "Every big Europa League score from Thursday night (Matchday 5): Crystal Palace 2–1 Real Sociedad, Celta Vigo 1–2 Bournemouth, Olympiacos 2–4 AC Milan, Viktoria Plzen 4–0 Benfica, Sunderland 1–1 Jagiellonia, Juventus 4–1 Omonia, Dinamo Zagreb 0–2 Bayer Leverkusen, Marseille 1–0 Levski Sofia and Torreense 1–2 Celtic. Ten-man Bournemouth made it 10 straight wins and Thomas Frank got his first Palace win.\n\nEuropa League results and table: https://scorebuzz.net\n\n#EuropaLeague #UEL #AFCB",
+  "tags": [
+   "europa league results",
+   "europa league scores today",
+   "europa league matchday 5",
+   "crystal palace vs real sociedad",
+   "celta vigo vs bournemouth",
+   "olympiacos vs ac milan",
+   "viktoria plzen vs benfica",
+   "sunderland vs jagiellonia",
+   "europa league table",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "board",
+    "dur": 19.4,
+    "kicker": "Europa League · Matchday 5",
+    "title": "Thursday's results",
+    "badge": "FULL TIME",
+    "first": 1.0,
+    "step": 1.8,
+    "rows": [
+     {
+      "home": "Crystal Palace",
+      "homeAbbr": "CRY",
+      "hs": 2,
+      "away": "Real Sociedad",
+      "awayAbbr": "RSO",
+      "as": 1,
+      "note": "Mateta pen, McNeil",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+     },
+     {
+      "home": "Celta Vigo",
+      "homeAbbr": "CEL",
+      "hs": 1,
+      "away": "Bournemouth",
+      "awayAbbr": "BOU",
+      "as": 2,
+      "note": "10 men, Rayan 78'",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+     },
+     {
+      "home": "Olympiacos",
+      "homeAbbr": "OLY",
+      "hs": 2,
+      "away": "AC Milan",
+      "awayAbbr": "MIL",
+      "as": 4,
+      "note": "From 2-0 down",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
+     },
+     {
+      "home": "Viktoria Plzen",
+      "homeAbbr": "PLZ",
+      "hs": 4,
+      "away": "Benfica",
+      "awayAbbr": "BEN",
+      "as": 0,
+      "note": "Kabongo 2",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11706.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1929.png"
+     },
+     {
+      "home": "Sunderland",
+      "homeAbbr": "SUN",
+      "hs": 1,
+      "away": "Jagiellonia",
+      "awayAbbr": "JAG",
+      "as": 1,
+      "note": "Tutierov",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11505.png"
+     },
+     {
+      "home": "Juventus",
+      "homeAbbr": "JUV",
+      "hs": 4,
+      "away": "Omonia",
+      "awayAbbr": "OMO",
+      "as": 1,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/617.png"
+     },
+     {
+      "home": "Dinamo Zagreb",
+      "homeAbbr": "DZG",
+      "hs": 0,
+      "away": "Leverkusen",
+      "awayAbbr": "LEV",
+      "as": 2,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/597.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png"
+     },
+     {
+      "home": "Marseille",
+      "homeAbbr": "MAR",
+      "hs": 1,
+      "away": "Levski Sofia",
+      "awayAbbr": "LEV",
+      "as": 0,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/490.png"
+     },
+     {
+      "home": "Torreense",
+      "homeAbbr": "TOR",
+      "hs": 1,
+      "away": "Celtic",
+      "awayAbbr": "CEL",
+      "as": 2,
+      "note": "",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21615.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png"
+     }
+    ]
+   },
+   {
+    "type": "cta",
+    "dur": 3.2,
+    "title": "Result of the night?",
+    "sub": "Like · Comment · Share"
+   }
+  ],
+  "thumb": {
+   "kicker": "Europa League",
+   "big": "4–0",
+   "hook": "Benfica *thrashed* in Plzen",
+   "sticker": "RESULTS",
+   "teams": [
+    "PLZ",
+    "BEN"
+   ],
+   "emoji": "😳"
+  },
+  "fbtext": "⚽ Every big Europa League score from Thursday.\n\nTen-man Bournemouth won again, Milan came from 2–0 down, Benfica lost 4–0 in Plzen and Thomas Frank finally won with Palace.\n\nResult of the night? 👇\n\n#EuropaLeague #AFCB #CPFC #Reels",
+  "time": "2026-11-27T12:00:00"
+ },
+ {
+  "id": "s02-thanksgiving-final-seconds",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "drama",
+  "venue": "Ford Field",
+  "yt": "2026-11-27T18:45:00",
+  "fb": "2026-11-27T17:40:00",
+  "title": "NFL Thanksgiving 2026: All 3 Games Won in the Final 3 Seconds 🦃 #NFL #shorts",
+  "description": "All three NFL Thanksgiving games in Week 12 were won in the last three seconds. Caleb Williams threw a 6-yard touchdown to Rome Odunze with 3 seconds left as the Chicago Bears beat the Detroit Lions 39–35, Jake Elliott kicked a 59-yard field goal with 2 seconds left as the Philadelphia Eagles beat the Dallas Cowboys 39–38, and Tyler Bass hit a 57-yarder as time expired as the Buffalo Bills beat the Kansas City Chiefs 13–10.\n\nNFL scores and standings: https://scorebuzz.net\n\n#NFL #Thanksgiving #NFLShorts",
+  "tags": [
+   "nfl thanksgiving 2026",
+   "bears vs lions",
+   "lions vs bears",
+   "eagles vs cowboys",
+   "cowboys vs eagles",
+   "chiefs vs bills",
+   "bills vs chiefs",
+   "nfl week 12",
+   "nfl scores today",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.8,
+    "kicker": "NFL Thanksgiving",
+    "title": "3 games. All won in the last 3 seconds.",
+    "sub": "Seriously."
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Ford Field · 0:03 left",
+    "home": "Lions",
+    "homeAbbr": "DET",
+    "homeScore": 35,
+    "away": "Bears",
+    "awayAbbr": "CHI",
+    "awayScore": 39,
+    "status": "FINAL",
+    "note": "Caleb Williams to Rome Odunze, 6-yard TD",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "AT&T Stadium · 0:02 left",
+    "home": "Cowboys",
+    "homeAbbr": "DAL",
+    "homeScore": 38,
+    "away": "Eagles",
+    "awayAbbr": "PHI",
+    "awayScore": 39,
+    "status": "FINAL",
+    "note": "Jake Elliott, 59-yard field goal",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png"
+   },
+   {
+    "type": "score",
+    "dur": 4.0,
+    "label": "Highmark Stadium · 0:00 left",
+    "home": "Bills",
+    "homeAbbr": "BUF",
+    "homeScore": 13,
+    "away": "Chiefs",
+    "awayAbbr": "KC",
+    "awayScore": 10,
+    "status": "FINAL",
+    "note": "Tyler Bass, 57-yard field goal",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Which finish was best?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL Thanksgiving",
+   "big": "0:03",
+   "hook": "All 3 games *decided* late",
+   "sticker": "WILD",
+   "emoji": "🦃"
+  },
+  "fbtext": "🦃 Three Thanksgiving games. All three won in the final 3 seconds.\n\nCaleb Williams' TD with 0:03 left, Jake Elliott's 59-yarder with 0:02 left, Tyler Bass' 57-yarder with no time left.\n\nWhich finish was the best? 👇\n\n#NFL #Thanksgiving #DaBears #Reels",
+  "time": "2026-11-27T18:45:00"
+ },
+ {
+  "id": "s03-ev-longest-fg",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "anthem",
+  "evergreen": true,
+  "yt": "2026-11-27T16:30:00",
+  "fb": "2026-11-27T20:10:00",
+  "title": "Longest Field Goals in NFL History 🏈 Nobody Has Hit 70… Yet #NFL #shorts",
+  "description": "The longest field goals in NFL regular-season history: Cam Little's 68-yarder for the Jacksonville Jaguars against the Las Vegas Raiders (2 November 2025) is the record, ahead of Little's 67 against Tennessee (January 2026) and Justin Tucker's 66-yard game-winner for the Baltimore Ravens at Detroit in 2021. Brandon Aubrey, Chase McLaughlin and Matt Prater also have kicks of 64 yards or more. On Thanksgiving 2026, Jake Elliott (59) and Tyler Bass (57) won games with long kicks at the end.\n\nNFL scores and records: https://scorebuzz.net\n\n#NFL #FieldGoal #CamLittle",
+  "tags": [
+   "longest field goal in nfl history",
+   "longest field goals nfl",
+   "cam little 68 yard field goal",
+   "justin tucker 66 yard field goal",
+   "brandon aubrey",
+   "matt prater 64",
+   "nfl records",
+   "jake elliott 59 yard field goal",
+   "tyler bass",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NFL records",
+    "title": "The longest field goals ever kicked",
+    "sub": "Regular season, as of Nov 2026"
+   },
+   {
+    "type": "list",
+    "dur": 7.0,
+    "label": "Longest NFL field goals",
+    "title": "The top seven",
+    "rows": [
+     [
+      "68",
+      "Cam Little, JAX",
+      "2025"
+     ],
+     [
+      "67",
+      "Cam Little, JAX",
+      "2026"
+     ],
+     [
+      "66",
+      "Justin Tucker, BAL",
+      "2021"
+     ],
+     [
+      "65",
+      "Brandon Aubrey, DAL",
+      "2024"
+     ],
+     [
+      "65",
+      "Chase McLaughlin, TB",
+      "2025"
+     ],
+     [
+      "64",
+      "Matt Prater, DEN",
+      "2013"
+     ],
+     [
+      "64",
+      "Brandon Aubrey, DAL",
+      "2025"
+     ]
+    ]
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "The record",
+    "value": 68,
+    "unit": "yards",
+    "text": "Cam Little v Las Vegas, 2 Nov 2025"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Game-winner",
+    "title": "Tucker's 66 hit the crossbar and went in",
+    "sub": "As time expired in Detroit, 2021"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Thanksgiving 2026",
+    "title": "Elliott 59 · Bass 57",
+    "sub": "Both won the game at the end"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Will anyone hit 70?",
+    "sub": "Follow ScoreBuzz for NFL records"
+   }
+  ],
+  "thumb": {
+   "kicker": "NFL records",
+   "big": "68",
+   "hook": "The *longest* kick ever",
+   "sticker": "RECORD",
+   "emoji": "🏈"
+  },
+  "fbtext": "🏈 The longest field goal in NFL history is 68 yards, by Cam Little in 2025. He also has the 67.\n\nJustin Tucker's 66-yarder won a game as time expired, off the crossbar.\n\nWill anyone ever make a 70? 👇\n\n#NFL #CamLittle #FieldGoal #Reels",
+  "time": "2026-11-27T16:30:00"
+ },
+ {
+  "id": "s04-ev-thanksgiving-comebacks",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "drama",
+  "evergreen": true,
+  "venue": "AT&T Stadium",
+  "yt": "2026-11-27T23:15:00",
+  "fb": "2026-11-28T01:10:00",
+  "title": "Biggest Thanksgiving Comeback Ever | Eagles vs Cowboys 39–38 😱 #NFL #shorts",
+  "description": "The Philadelphia Eagles came back from 21 points down to beat the Dallas Cowboys 39–38 on Thanksgiving 2026, the biggest blown lead in Thanksgiving history. A year earlier, on 23 November 2025, Dallas had come back from 21–0 down to beat Philadelphia 24–21. The Chicago Bears also rallied from 11 points down in the fourth quarter to beat Detroit 39–35, joining the 1962 New York Titans and the 1980 Bears as the only teams to win on Thanksgiving after trailing by 11 or more in the fourth.\n\nNFL scores: https://scorebuzz.net\n\n#FlyEaglesFly #DallasCowboys #NFL",
+  "tags": [
+   "biggest thanksgiving comeback",
+   "eagles vs cowboys",
+   "cowboys vs eagles",
+   "eagles comeback thanksgiving",
+   "cowboys blow 21 point lead",
+   "bears vs lions",
+   "nfl thanksgiving history",
+   "nfl comebacks",
+   "nfl week 12",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.8,
+    "kicker": "Thanksgiving history",
+    "title": "The biggest Thanksgiving collapse ever",
+    "sub": "And it was revenge"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Cowboys v Eagles · Thanksgiving 2026",
+    "value": 21,
+    "unit": "point lead blown",
+    "text": "Dallas led in the 3rd quarter and lost 39–38"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "One year earlier · 23 Nov 2025",
+    "title": "Dallas came back from 21–0 down",
+    "sub": "Cowboys 24, Eagles 21, field goal at the end"
+   },
+   {
+    "type": "list",
+    "dur": 5.6,
+    "label": "Won on Thanksgiving after trailing by 11+ in the 4th",
+    "title": "Only three teams",
+    "rows": [
+     [
+      "1962",
+      "NY Titans v Broncos",
+      ""
+     ],
+     [
+      "1980",
+      "Bears v Lions",
+      ""
+     ],
+     [
+      "2026",
+      "Bears v Lions",
+      "39–35"
+     ]
+    ]
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Greatest Thanksgiving comeback?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Thanksgiving history",
+   "big": "21",
+   "hook": "Biggest *collapse* ever",
+   "sticker": "HISTORY",
+   "emoji": "😱"
+  },
+  "fbtext": "😱 Dallas led by 21 and lost. The biggest blown lead in Thanksgiving history.\n\nA year ago it was the other way round: the Cowboys came back from 21–0 down to beat the Eagles 24–21.\n\nWas that revenge for Philly? 👇\n\n#FlyEaglesFly #DallasCowboys #NFL #Reels",
+  "time": "2026-11-27T23:15:00"
+ },
+ {
+  "id": "s05-ev-simeone-record",
+  "sport": "football",
+  "league": "laliga",
+  "bed": "anthem",
+  "evergreen": true,
+  "venue": "Riyadh Air Metropolitano",
+  "yt": "2026-11-27T14:15:00",
+  "fb": "2026-11-27T15:10:00",
+  "title": "Diego Simeone: Most Wins in LaLiga History 🏆 345 and Counting #LaLiga #shorts",
+  "description": "Diego Simeone is now the manager with the most wins in LaLiga history. Atlético Madrid's 3–0 win at Getafe on 22 November 2026 was his 345th LaLiga victory, passing Luis Aragonés, who won 344 games in 756 matches. Simeone got there in his 567th LaLiga game, all with Atlético. Next up: Elche v Atlético Madrid on Saturday.\n\nLaLiga scores and table: https://scorebuzz.net\n\n#Simeone #Atleti #LaLiga",
+  "tags": [
+   "diego simeone",
+   "simeone record",
+   "most wins laliga manager",
+   "laliga records",
+   "atletico madrid",
+   "luis aragones",
+   "getafe vs atletico madrid",
+   "elche vs atletico madrid",
+   "laliga",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "LaLiga history",
+    "title": "The winningest coach in LaLiga history",
+    "sub": "Hint: Atlético Madrid"
+   },
+   {
+    "type": "stat",
+    "dur": 3.4,
+    "label": "Diego Simeone · Atlético Madrid",
+    "value": 345,
+    "unit": "LaLiga wins",
+    "text": "New record, set on 22 Nov 2026"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "The old record",
+    "title": "Luis Aragonés: 344 wins",
+    "sub": "In 756 LaLiga games"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "How fast?",
+    "title": "Simeone needed 567 games",
+    "sub": "Every one of them with Atlético"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Record breaker",
+    "title": "Getafe 0–3 Atlético",
+    "sub": "Next: Elche v Atlético, Saturday"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Will anyone ever catch him?",
+    "sub": "Follow ScoreBuzz for LaLiga scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "LaLiga record",
+   "big": "345",
+   "hook": "Most wins *ever*",
+   "sticker": "RECORD",
+   "emoji": "🏆"
+  },
+  "fbtext": "🏆 Diego Simeone now has more LaLiga wins than any manager in history: 345, all with Atlético Madrid.\n\nHe passed Luis Aragonés (344) in his 567th game. Aragonés needed 756.\n\nWill anyone ever catch him? 👇\n\n#Simeone #Atleti #LaLiga #Reels",
+  "time": "2026-11-27T14:15:00"
+ },
+ {
+  "id": "s06-joe-milton",
+  "sport": "nfl",
+  "league": "nfl",
+  "bed": "hype",
+  "venue": "AT&T Stadium",
+  "yt": "2026-11-27T21:00:00",
+  "fb": "2026-11-27T22:40:00",
+  "title": "Joe Milton 331 Yards, 4 TDs | Eagles vs Cowboys 39–38 🔥 #NFL #shorts",
+  "description": "Joe Milton threw for 331 yards and three touchdowns and ran for another as the Philadelphia Eagles beat the Dallas Cowboys 39–38 on Thanksgiving. It was only his third career start; he couldn't win the backup job behind Dak Prescott in Dallas' training camp and was signed off the Cowboys' practice squad last month. DeVonta Smith caught 11 passes for 200 yards and two touchdowns, and Jake Elliott won it with a 59-yard field goal.\n\nEagles vs Cowboys final score and NFL scores: https://scorebuzz.net\n\n#JoeMilton #FlyEaglesFly #NFL",
+  "tags": [
+   "joe milton",
+   "joe milton eagles",
+   "eagles vs cowboys",
+   "cowboys vs eagles",
+   "devonta smith",
+   "jake elliott",
+   "philadelphia eagles",
+   "dallas cowboys",
+   "nfl thanksgiving 2026",
+   "nfl shorts",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.8,
+    "kicker": "Eagles · Thanksgiving",
+    "title": "A month ago he was on Dallas' practice squad",
+    "sub": "Then he beat them"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Last month",
+    "title": "Signed off the Cowboys' practice squad",
+    "sub": "He couldn't win Dallas' backup QB job in camp"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Joe Milton · 3rd career start",
+    "value": 331,
+    "unit": "passing yards",
+    "text": "21 of 31, 3 TD passes + a TD run"
+   },
+   {
+    "type": "stat",
+    "dur": 3.0,
+    "label": "DeVonta Smith",
+    "value": 200,
+    "unit": "receiving yards",
+    "text": "11 catches, 2 TDs (50 and 45 yards)"
+   },
+   {
+    "type": "score",
+    "dur": 3.6,
+    "label": "AT&T Stadium",
+    "home": "Cowboys",
+    "homeAbbr": "DAL",
+    "homeScore": 38,
+    "away": "Eagles",
+    "awayAbbr": "PHI",
+    "awayScore": 39,
+    "status": "FINAL",
+    "note": "Jake Elliott 59-yard FG, 0:02 left",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Is Milton the real deal?",
+    "sub": "Follow ScoreBuzz for NFL scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Eagles QB",
+   "big": "331",
+   "hook": "Revenge on his *old* team",
+   "sticker": "BREAKOUT",
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 A month ago Joe Milton was on the Cowboys' practice squad.\n\nOn Thanksgiving he threw for 331 yards and three TDs, ran for another, and beat Dallas 39–38 in his third career start.\n\nIs Milton the real deal? 👇\n\n#JoeMilton #FlyEaglesFly #NFL #Reels",
+  "time": "2026-11-27T21:00:00"
+ },
+ {
+  "id": "s07-texas-tech-41",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "bed": "hype",
+  "fb": "2026-11-28T02:50:00",
+  "title": "Texas Tech 48–27 TCU: 41 Straight Points 🔥 #CollegeFootball #shorts",
+  "description": "Texas Tech beat TCU 48–27 on Thanksgiving night in Lubbock, scoring 41 straight points after falling 10–0 behind. Thomas Castellanos was 20 of 25 for a career-high 374 yards and three touchdowns, and the Red Raiders (11-1) will play unbeaten Utah in the Big 12 Championship Game on 4 December at AT&T Stadium.\n\nCollege football scores: https://scorebuzz.net\n\n#TexasTech #CollegeFootball #Big12",
+  "tags": [
+   "texas tech vs tcu",
+   "tcu vs texas tech",
+   "texas tech football",
+   "thomas castellanos",
+   "big 12 championship",
+   "texas tech vs utah",
+   "college football scores",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "College football · Big 12",
+    "title": "10–0 down. Then 41 straight points.",
+    "sub": "Texas Tech on Thanksgiving night"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Lubbock · Thanksgiving night",
+    "home": "Texas Tech",
+    "homeAbbr": "TTU",
+    "homeScore": 48,
+    "away": "TCU",
+    "awayAbbr": "TCU",
+    "awayScore": 27,
+    "status": "FINAL",
+    "note": "Red Raiders 11-1",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png"
+   },
+   {
+    "type": "stat",
+    "dur": 3.2,
+    "label": "Thomas Castellanos",
+    "value": 374,
+    "unit": "passing yards",
+    "text": "20 of 25, 3 TDs, career high"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Before half-time",
+    "title": "3 touchdowns in 1 minute 15 seconds",
+    "sub": "Two TD passes and a 79-yard punt return"
+   },
+   {
+    "type": "text",
+    "dur": 3.2,
+    "label": "Big 12 Championship · 4 Dec",
+    "title": "Next: unbeaten Utah",
+    "sub": "At AT&T Stadium, Arlington"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Texas Tech or Utah?",
+    "sub": "Follow ScoreBuzz for college football scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "Texas Tech 48–27 TCU",
+   "big": "41",
+   "hook": "*Straight* points",
+   "sticker": "FINAL",
+   "emoji": "🔥"
+  },
+  "fbtext": "🔥 Texas Tech were 10–0 down to TCU. Then they scored 41 straight points.\n\nThomas Castellanos threw for a career-high 374 yards and the 11-1 Red Raiders play unbeaten Utah for the Big 12 title on 4 December.\n\nTexas Tech or Utah? 👇\n\n#TexasTech #CollegeFootball #Big12 #Reels",
+  "time": "2026-11-28T02:50:00"
+ },
+ {
+  "id": "s08-inter-miami-columbus",
+  "sport": "football",
+  "league": "mls",
+  "bed": "drama",
+  "yt": "2026-11-28T01:30:00",
+  "fb": "2026-11-28T04:20:00",
+  "title": "Inter Miami vs Columbus Crew Tonight: Win or Go Home ⚽ #MLS #shorts",
+  "description": "Inter Miami face elimination in the MLS Cup Playoffs tonight. The Columbus Crew won Game 1 of their best-of-three Eastern Conference Round One series 3–0 in Miami, so a Columbus win in Game 2 at ScottsMiracle-Gro Field (8pm ET / 01:00 GMT) knocks out the defending MLS Cup champions. If Miami win, the series goes to a deciding Game 3.\n\nInter Miami vs Columbus Crew live score: https://scorebuzz.net\n\n#InterMiami #Crew96 #MLS",
+  "tags": [
+   "inter miami vs columbus crew",
+   "columbus crew vs inter miami",
+   "inter miami",
+   "columbus crew",
+   "mls playoffs",
+   "mls cup playoffs 2026",
+   "inter miami playoffs",
+   "mls scores today",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "MLS Cup Playoffs",
+    "title": "Inter Miami are one loss from going out",
+    "sub": "Game 2 is tonight"
+   },
+   {
+    "type": "score",
+    "dur": 3.8,
+    "label": "Game 1 · in Miami",
+    "home": "Inter Miami",
+    "homeAbbr": "MIA",
+    "homeScore": 0,
+    "away": "Columbus",
+    "awayAbbr": "CLB",
+    "awayScore": 3,
+    "status": "FULL TIME",
+    "note": "Columbus lead the best-of-3 series 1–0",
+    "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
+    "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png"
+   },
+   {
+    "type": "text",
+    "dur": 3.4,
+    "label": "Tonight · 8pm ET / 01:00 GMT",
+    "title": "Game 2 in Columbus",
+    "sub": "Crew win = defending champions out"
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "If Miami win",
+    "title": "Game 3 decides it",
+    "sub": "No. 2 seed v No. 7 seed in the East"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Can Miami force a Game 3?",
+    "sub": "Follow ScoreBuzz for MLS scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "MLS Cup Playoffs",
+   "big": "0–3",
+   "hook": "Miami on the *brink*",
+   "sticker": "TONIGHT",
+   "teams": [
+    "MIA",
+    "CLB"
+   ],
+   "emoji": "😬"
+  },
+  "fbtext": "😬 Inter Miami are one loss away from a first-round exit.\n\nColumbus won Game 1 3–0 in Miami. Game 2 is tonight in Columbus, 8pm ET / 01:00 GMT.\n\nCan Miami force a Game 3? 👇\n\n#InterMiami #Crew96 #MLS #Reels",
+  "time": "2026-11-28T01:30:00"
+ },
+ {
+  "id": "s09-lakers-spurs",
+  "sport": "nba",
+  "league": "nba",
+  "bed": "hype",
+  "yt": "2026-11-28T03:45:00",
+  "fb": "2026-11-28T06:00:00",
+  "title": "Lakers vs Spurs Tonight: 1st vs 2nd in the West 🏀 NBA Cup #shorts",
+  "description": "The Los Angeles Lakers (15-3) visit the San Antonio Spurs (15-4) in NBA Cup group play tonight at 9:30pm ET (02:30 GMT) at Frost Bank Center, a meeting of the top two teams in the Western Conference. It's one of 11 NBA Cup games on Friday night.\n\nLakers vs Spurs live score and NBA scores: https://scorebuzz.net\n\n#Lakers #Spurs #NBACup",
+  "tags": [
+   "lakers vs spurs",
+   "spurs vs lakers",
+   "los angeles lakers",
+   "san antonio spurs",
+   "nba cup",
+   "nba cup 2026",
+   "western conference standings",
+   "nba games tonight",
+   "scorebuzz"
+  ],
+  "scenes": [
+   {
+    "type": "hook",
+    "dur": 2.6,
+    "kicker": "NBA Cup · tonight",
+    "title": "The West's top two, face to face",
+    "sub": "Lakers at Spurs, 9:30pm ET"
+   },
+   {
+    "type": "text",
+    "dur": 3.8,
+    "label": "Frost Bank Center · San Antonio",
+    "title": "Lakers 15-3 at Spurs 15-4",
+    "sub": "1st v 2nd in the Western Conference"
+   },
+   {
+    "type": "list",
+    "dur": 5.0,
+    "label": "Western Conference",
+    "title": "Top of the West",
+    "rows": [
+     [
+      "1",
+      "Lakers",
+      "15-3"
+     ],
+     [
+      "2",
+      "Spurs",
+      "15-4"
+     ],
+     [
+      "3",
+      "Timberwolves",
+      "14-5"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "dur": 3.0,
+    "label": "Also tonight",
+    "title": "Grizzlies at Timberwolves",
+    "sub": "14-5 v 14-5, 8:30pm ET"
+   },
+   {
+    "type": "outro",
+    "dur": 2.6,
+    "title": "Lakers or Spurs?",
+    "sub": "Follow ScoreBuzz for NBA scores"
+   }
+  ],
+  "thumb": {
+   "kicker": "NBA Cup · tonight",
+   "big": "1 v 2",
+   "hook": "The West's *best*",
+   "sticker": "TONIGHT",
+   "teams": [
+    "LAL",
+    "SA"
+   ],
+   "emoji": "🏀"
+  },
+  "fbtext": "🏀 First v second in the West tonight: Lakers (15-3) at Spurs (15-4), 9:30pm ET / 02:30 GMT.\n\nNBA Cup group play in San Antonio.\n\nLakers or Spurs? 👇\n\n#Lakers #Spurs #NBACup #Reels",
+  "time": "2026-11-28T03:45:00"
+ }
+]

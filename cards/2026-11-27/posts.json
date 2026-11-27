@@ -1,0 +1,382 @@
+[
+ {
+  "id": "01-palace-real-sociedad",
+  "time": "2026-11-27T11:00:00",
+  "sport": "football",
+  "league": "uel",
+  "kind": "score",
+  "label": "EUROPA LEAGUE · MATCHDAY 5",
+  "home": "Crystal Palace",
+  "homeScore": 2,
+  "away": "Real Sociedad",
+  "awayScore": 1,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+  "venue": "Selhurst Park",
+  "headline": "Thomas Frank's first Palace win",
+  "sub": "Sarr 66' put Sociedad ahead, Martín was sent off 71', then Mateta pen 73' and McNeil 81'.",
+  "caption": "🦅 Crystal Palace 2–1 Real Sociedad.\n\nA goal down with 25 minutes left, Palace hit back against 10 men through Jean-Philippe Mateta's penalty and Dwight McNeil. Thomas Frank's first win in charge.\n\nIs this the turning point for Palace? 👇\n\n#CPFC #ThomasFrank #EuropaLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "02-celta-bournemouth",
+  "time": "2026-11-27T11:50:00",
+  "sport": "football",
+  "league": "uel",
+  "kind": "score",
+  "label": "EUROPA LEAGUE · MATCHDAY 5",
+  "home": "Celta Vigo",
+  "homeScore": 1,
+  "away": "Bournemouth",
+  "awayScore": 2,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+  "venue": "Balaidos",
+  "headline": "10 men, 10 straight wins",
+  "sub": "Aspas 19', Diakité sent off 23', then Álvaro Rodríguez 47' and Rayan 78'. Five wins from five in Europe.",
+  "caption": "🍒 Ten men. Ten wins in a row.\n\nBournemouth went a goal and a man down in Vigo, then won 2–1 through Álvaro Rodríguez and Rayan. Marco Rose's side have won 10 straight in all competitions.\n\nHow far can Bournemouth go? 👇\n\n#AFCB #Bournemouth #EuropaLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "03-olympiacos-milan",
+  "time": "2026-11-27T13:30:00",
+  "sport": "football",
+  "league": "uel",
+  "kind": "score",
+  "label": "EUROPA LEAGUE · MATCHDAY 5",
+  "home": "Olympiacos",
+  "homeScore": 2,
+  "away": "AC Milan",
+  "awayScore": 4,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
+  "venue": "Georgios Karaiskakis Stadium",
+  "headline": "Milan from 2-0 down to 4-2",
+  "sub": "Hutchinson 56', Cissè 63', Pulisic 71', Moreira 90+5'. Omari Hutchinson: a goal and two assists.",
+  "caption": "🔴⚫ 2–0 down in Piraeus. Then four goals.\n\nOmari Hutchinson scored one and set up two, Christian Pulisic scored and assisted, and AC Milan won 4–2 at Olympiacos.\n\nBest comeback of the Europa League night? 👇\n\n#ACMilan #Pulisic #EuropaLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "04-bears-lions",
+  "time": "2026-11-27T14:20:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · THANKSGIVING · WEEK 12",
+  "home": "Lions",
+  "homeScore": 35,
+  "away": "Bears",
+  "awayScore": 39,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+  "venue": "Ford Field",
+  "headline": "Caleb Williams wins it with 3 seconds left",
+  "sub": "Down 11 in the 4th, Chicago's first lead of the game came on the last play. Bears 9-2, top of the NFC North.",
+  "caption": "🐻 Bears 39, Lions 35.\n\nCaleb Williams found Rome Odunze in the corner of the end zone with 3 seconds left. It was Chicago's first lead of the day, and it puts them top of the NFC North at 9-2.\n\nBest Thanksgiving game you've seen? 👇\n\n#DaBears #CalebWilliams #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "05-brighton-craiova",
+  "time": "2026-11-27T16:00:00",
+  "sport": "football",
+  "league": "uecl",
+  "kind": "score",
+  "label": "CONFERENCE LEAGUE · MATCHDAY 4",
+  "home": "Brighton",
+  "homeScore": 4,
+  "away": "U Craiova",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/8089.png",
+  "venue": "American Express Stadium",
+  "headline": "Osman's first Brighton goals",
+  "sub": "Osman 3' & 63', De Cuyper 33', Kostoulas 61'. Craiova had Screciu sent off on 39'.",
+  "caption": "🔵⚪ Brighton 4–0 Universitatea Craiova.\n\nIbrahim Osman scored his first two Brighton goals and Maxim De Cuyper curled in a beauty as the Seagulls bounced back from their defeat at Hull.\n\nCan Brighton stay in the title race? 👇\n\n#BHAFC #Brighton #ConferenceLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "06-eagles-cowboys",
+  "time": "2026-11-27T16:50:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · THANKSGIVING · WEEK 12",
+  "home": "Cowboys",
+  "homeScore": 38,
+  "away": "Eagles",
+  "awayScore": 39,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+  "venue": "AT&T Stadium",
+  "headline": "Dallas blew a 21-point lead",
+  "sub": "The biggest blown lead in Thanksgiving history. Jake Elliott's 59-yard field goal won it with 2 seconds left.",
+  "caption": "🦅 Eagles 39, Cowboys 38.\n\nDallas led by 21 in the third quarter. Then a blocked punt, Joe Milton's arm and Jake Elliott's 59-yarder with 2 seconds left. The biggest blown lead in Thanksgiving history.\n\nWas going for it on 4th-and-1 the wrong call? 👇\n\n#FlyEaglesFly #DallasCowboys #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "07-plzen-benfica",
+  "time": "2026-11-27T18:30:00",
+  "sport": "football",
+  "league": "uel",
+  "kind": "score",
+  "label": "EUROPA LEAGUE · MATCHDAY 5",
+  "home": "Viktoria Plzen",
+  "homeScore": 4,
+  "away": "Benfica",
+  "awayScore": 0,
+  "status": "FULL TIME",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11706.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1929.png",
+  "venue": "Doosan Arena",
+  "headline": "Four goals in 16 minutes",
+  "sub": "Hrosovsky 30', Adu 43', Kabongo 44' & 46'. Plzen were 4-0 up a minute into the second half.",
+  "caption": "😳 Viktoria Plzen 4–0 Benfica.\n\nPatrik Hrosovsky, Prince Adu and Christophe Kabongo twice, all between the 30th and 46th minutes.\n\nBiggest shock of the Europa League week? 👇\n\n#Benfica #ViktoriaPlzen #EuropaLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "08-forest-chelsea",
+  "time": "2026-11-27T19:20:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "score",
+  "label": "PREMIER LEAGUE · TONIGHT 20:00 GMT / 3PM ET",
+  "home": "Nott'm Forest",
+  "homeScore": "17th",
+  "away": "Chelsea",
+  "awayScore": "8th",
+  "status": "FRIDAY",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+  "venue": "The City Ground",
+  "headline": "Friday night at the City Ground",
+  "sub": "Forest have 9 points from 11 games. Chelsea have 16 and are two points off the top five.",
+  "caption": "🌳 Premier League Friday night: Nottingham Forest v Chelsea, 20:00 GMT / 3pm ET.\n\nForest are 17th on 9 points. Chelsea are 8th on 16, two points behind Bournemouth in 5th.\n\nForest or Chelsea? 👇\n\n#NFFC #CFC #PremierLeague",
+  "firstCommentText": ""
+ },
+ {
+  "id": "09-bills-chiefs",
+  "time": "2026-11-27T21:00:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · THANKSGIVING NIGHT · WEEK 12",
+  "home": "Bills",
+  "homeScore": 13,
+  "away": "Chiefs",
+  "awayScore": 10,
+  "status": "FINAL",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+  "venue": "Highmark Stadium",
+  "headline": "Tyler Bass, 57 yards, no time left",
+  "sub": "Rain, wind and 34°F. Josh Allen threw for 81 yards, James Cook ran for 117. Buffalo are 10-1.",
+  "caption": "🦬 Bills 13, Chiefs 10.\n\nNo Allen v Mahomes shootout, just rain, wind and Tyler Bass hitting a 57-yard field goal as time expired. Buffalo have won seven straight and are 10-1, their best start since 1991.\n\nAre the Bills the AFC favourites now? 👇\n\n#BillsMafia #ChiefsKingdom #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "10-nhl-black-friday",
+  "time": "2026-11-27T21:50:00",
+  "sport": "nhl",
+  "league": "nhl",
+  "kind": "list",
+  "label": "NHL · BLACK FRIDAY · 15 GAMES",
+  "headline": "Black Friday on ice",
+  "rows": [
+   [
+    "1PM ET",
+    "Maple Leafs @ Bruins",
+    "18:00 GMT"
+   ],
+   [
+    "4PM ET",
+    "Avalanche @ Wild",
+    "21:00 GMT"
+   ],
+   [
+    "4PM ET",
+    "Golden Knights @ Sharks",
+    "21:00 GMT"
+   ],
+   [
+    "7:30PM ET",
+    "Jets @ Islanders",
+    "00:30 GMT"
+   ],
+   [
+    "8PM ET",
+    "Kraken @ Oilers",
+    "01:00 GMT"
+   ]
+  ],
+  "sub": "The Wild (18-4-5) host Colorado. Toronto are 9-14-3 going into Boston.",
+  "caption": "🏒 15 NHL games on Black Friday, starting with Maple Leafs at Bruins, 1pm ET / 18:00 GMT.\n\nToronto are 9-14-3. Later, Minnesota (18-4-5) host Colorado and Edmonton try to end a four-game losing run against Seattle.\n\nWhich game are you watching? 👇\n\n#NHL #LeafsForever #mnwild",
+  "firstCommentText": ""
+ },
+ {
+  "id": "11-epl-weekend",
+  "time": "2026-11-28T05:10:00",
+  "sport": "football",
+  "league": "epl",
+  "kind": "list",
+  "label": "PREMIER LEAGUE · THIS WEEKEND (GMT)",
+  "headline": "Derby day and 1st v 3rd",
+  "rows": [
+   [
+    "SAT 15:00",
+    "Man United v Brentford",
+    "19th v 6th"
+   ],
+   [
+    "SAT 17:30",
+    "Ipswich v Aston Villa",
+    "16th v 12th"
+   ],
+   [
+    "SUN 12:00",
+    "Everton v Liverpool",
+    "9th v 4th"
+   ],
+   [
+    "SUN 16:30",
+    "Arsenal v Man City",
+    "1st v 3rd"
+   ]
+  ],
+  "sub": "Arsenal lead by six points. Brighton and Man City are level in 2nd and 3rd.",
+  "caption": "⚽ A huge Premier League weekend.\n\nPochettino's first home game, the Merseyside derby on Sunday lunchtime, then leaders Arsenal v Man City at 16:30 GMT / 11:30am ET. Arsenal are six points clear.\n\nWhich game are you most looking forward to? 👇\n\n#PremierLeague #AFC #MCFC",
+  "firstCommentText": ""
+ },
+ {
+  "id": "12-broncos-steelers",
+  "time": "2026-11-28T00:20:00",
+  "sport": "nfl",
+  "league": "nfl",
+  "kind": "score",
+  "label": "NFL · BLACK FRIDAY · 3PM ET / 20:00 GMT",
+  "home": "Steelers",
+  "homeScore": "6-4",
+  "away": "Broncos",
+  "awayScore": "8-2",
+  "status": "KICKOFF SOON",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+  "venue": "Acrisure Stadium",
+  "headline": "Mason Rudolph v the 8-2 Broncos",
+  "sub": "Black Friday football in Pittsburgh, 3pm ET. Denver can move to 9-2.",
+  "caption": "🛍️ Black Friday football: Broncos at Steelers, kickoff 3pm ET / 20:00 GMT.\n\nMason Rudolph starts for 6-4 Pittsburgh against 8-2 Denver.\n\nWho wins? 👇\n\n#Steelers #BroncosCountry #NFL",
+  "firstCommentText": ""
+ },
+ {
+  "id": "13-cfb-black-friday",
+  "time": "2026-11-28T02:00:00",
+  "sport": "nfl",
+  "league": "ncaaf",
+  "kind": "list",
+  "label": "COLLEGE FOOTBALL · BLACK FRIDAY NIGHT",
+  "headline": "Rivalry night",
+  "rows": [
+   [
+    "7:30PM ET",
+    "Texas (9-2) @ Texas A&M (4-7)",
+    ""
+   ],
+   [
+    "7:30PM ET",
+    "Minnesota @ Wisconsin",
+    ""
+   ],
+   [
+    "9PM ET",
+    "West Virginia @ Utah (11-0)",
+    ""
+   ]
+  ],
+  "sub": "Unbeaten Utah already play Texas Tech in the Big 12 title game on 4 December.",
+  "caption": "🏈 Black Friday college football: Texas (9-2) visit Texas A&M (4-7) at 7:30pm ET, then unbeaten Utah (11-0) host West Virginia at 9pm ET.\n\nUtah's Big 12 title-game date with Texas Tech is already set for 4 December.\n\nCan anyone stop Utah? 👇\n\n#CollegeFootball #HookEm #Utes",
+  "firstCommentText": ""
+ },
+ {
+  "id": "14-nba-cup-friday",
+  "time": "2026-11-28T03:30:00",
+  "sport": "nba",
+  "league": "nba",
+  "kind": "list",
+  "label": "NBA CUP · GROUP PLAY · TONIGHT (ET)",
+  "headline": "11 NBA Cup games tonight",
+  "rows": [
+   [
+    "7:00",
+    "Heat @ Knicks",
+    ""
+   ],
+   [
+    "7:30",
+    "76ers @ Pacers",
+    ""
+   ],
+   [
+    "8:00",
+    "Hawks @ Celtics",
+    ""
+   ],
+   [
+    "8:30",
+    "Grizzlies @ Timberwolves",
+    ""
+   ],
+   [
+    "9:30",
+    "Lakers @ Spurs",
+    ""
+   ]
+  ],
+  "sub": "Lakers (15-3) v Spurs (15-4) is first v second in the West. Jaylen Brown is out for Philadelphia.",
+  "caption": "🏀 11 NBA Cup games tonight, from Heat at Knicks (7pm ET) to Lakers at Spurs (9:30pm ET).\n\nThe Lakers (15-3) and Spurs (15-4) are first and second in the West. The 76ers (15-4) play without Jaylen Brown.\n\nWho's your NBA Cup pick? 👇\n\n#NBACup #Lakers #Spurs",
+  "firstCommentText": ""
+ },
+ {
+  "id": "15-f1-qatar",
+  "time": "2026-11-27T23:30:00",
+  "sport": "racing",
+  "league": "f1",
+  "kind": "list",
+  "label": "F1 · QATAR GRAND PRIX · LUSAIL",
+  "headline": "Antonelli leads by 98",
+  "rows": [
+   [
+    "1",
+    "Kimi Antonelli",
+    "402"
+   ],
+   [
+    "2",
+    "Max Verstappen",
+    "304"
+   ],
+   [
+    "3",
+    "Lewis Hamilton",
+    "267"
+   ],
+   [
+    "4",
+    "George Russell",
+    "264"
+   ],
+   [
+    "5",
+    "Lando Norris",
+    "264"
+   ]
+  ],
+  "sub": "Qualifying Saturday 18:00 GMT / 1pm ET. Race Sunday 16:00 GMT / 11am ET.",
+  "caption": "🏁 Qatar Grand Prix weekend.\n\nKimi Antonelli leads Max Verstappen by 98 points. Qualifying is Saturday 18:00 GMT / 1pm ET, the race Sunday 16:00 GMT / 11am ET.\n\nWho wins in Lusail? 👇\n\n#F1 #QatarGP #Antonelli",
+  "firstCommentText": ""
+ }
+]
