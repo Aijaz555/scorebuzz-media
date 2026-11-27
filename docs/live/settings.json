@@ -25,13 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "1": {
-   "league": "aleague",
-   "event": "401892133",
-   "note": "Macarthur FC vs Melbourne City FC, 2026-11-27T08:40:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
