@@ -99,6 +99,17 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 .tob .cd{display:flex;gap:16px;justify-content:center;font-size:32px}.tob .cd span{display:flex;align-items:center;gap:6px}.tob .cd i{width:20px;height:28px;border-radius:3px;background:#f2c14e;display:inline-block}.tob .cd i.r{background:var(--red)}
 .tob .poss{display:flex;align-items:center;gap:12px;padding:0 10px;font-size:30px}.tob .poss .bar{flex:1;height:16px;border-radius:8px;overflow:hidden;display:flex;background:#c3cad9}.tob .poss .bar i{display:block;height:100%}
 .tob .poss .lb{position:absolute;left:50%;transform:translateX(-50%);letter-spacing:6px;font-size:30px}
+.feed{position:absolute;inset:0;padding:10px 16px 12px;display:flex;flex-direction:column;gap:8px;background:linear-gradient(180deg,#0c1a45,#070A14)}
+.feed .fh{display:flex;align-items:center;justify-content:space-between;height:44px;font:800 30px 'Barlow Condensed',sans-serif;letter-spacing:2px;color:var(--lime)}
+.feed .fh em{font-style:normal;color:#fff;background:#e5262e;border-radius:6px;padding:2px 12px;font-size:26px;letter-spacing:1px}
+.feed .fr{flex:1;min-height:0;display:grid;grid-template-columns:104px 54px 1fr auto;align-items:center;gap:14px;background:#0f1d44;border-left:8px solid var(--nc);border-radius:10px;padding:0 18px 0 14px;overflow:hidden}
+.feed .fr.new{background:#16296a;box-shadow:inset 0 0 0 2px #ffffff22}
+.feed .fc{font:800 30px 'Barlow Condensed',sans-serif;color:var(--lime);white-space:nowrap;overflow:hidden}
+.feed .fl img{width:50px;height:50px;object-fit:contain;display:block}
+.feed .ft{min-width:0;display:flex;flex-direction:column;gap:2px}
+.feed .ft b{font:800 28px/1 'Barlow Condensed',sans-serif;letter-spacing:.5px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.feed .ft b.g{color:var(--lime)}
+.feed .ft span{font:500 19px/1.22 Inter,sans-serif;color:#e6ecff;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.feed .fs{font:800 32px 'Barlow Condensed',sans-serif;color:#fff;white-space:nowrap}
 .trk .gs{margin-top:14px;font:700 28px 'Barlow Condensed',sans-serif;color:#eef3ff;letter-spacing:1px;line-height:1.3}
 .err{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:800 48px Inter,sans-serif;color:var(--mute)}
 </style></head>
@@ -106,7 +117,7 @@ body{width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;position:re
 <script>
 (() => {
 const q = new URLSearchParams(location.search);
-const SLOT = q.get('slot'), OWN = q.get('trk') === 'own';
+const SLOT = q.get('slot'), OWN = q.get('trk') === 'own', NOTRK = q.get('notrk') === '1';      // notrk=1: test the no-tracker play-by-play box
 const VOICE = q.get('voice') === '1', REPLAY = q.get('replay') === '1'; // demo: spoken commentary (browser voice) / replay a finished game play by play
 let league = q.get('league') || 'nba', event = q.get('event'), noSite = q.get('sbtrk') === '0' || q.get('replay') === '1';
 // 3D tracker on stream: settings "trk3d": true (every slot) or ["2", "5"] (those slots) opens the site's match page with ?trk=3d, which
@@ -228,10 +239,12 @@ function footPlays(s, H, A) {
   let h = 0, a = 0; const nm = (x) => String(x || '').toLowerCase();
   return (s.commentary || []).filter((x) => x.text && x.time?.displayValue).map((x) => {
     const m = /^(?:Goal!|Own Goal)[^.]*?(\d+),[^.]*?(\d+)\./.exec(x.text) || /(?:ends|Half), [^.]*?(\d+), [^.]*?(\d+)\./.exec(x.text); if (m) { h = +m[1]; a = +m[2]; }
-    const tn = nm(x.play?.team?.displayName), tid = x.play?.team?.id ? String(x.play.team.id) : tn && tn === nm(H.full) ? H.id : tn && tn === nm(A.full) ? A.id : '';
+    /* the line names the player's club in brackets ("X (Cruz Azul) wins a free kick"): that is the team the play belongs to, ahead of the feed's team field (the fouling side) */
+    const br = nm((/\(([^)]+)\)/.exec(x.text) || [])[1]), byTxt = br && [H, A].find((T) => [T.full, T.nick, T.name].filter(Boolean).some((n) => nm(n) === br));
+    const tn = nm(x.play?.team?.displayName), tid = byTxt ? byTxt.id : x.play?.team?.id ? String(x.play.team.id) : tn && tn === nm(H.full) ? H.id : tn && tn === nm(A.full) ? A.id : '';
     const t = x.play?.type?.type || '', scoring = /goal|penalty---scored/.test(t) && !/miss|saved/.test(t);
     if (scoring && !m && tid) { if (tid === H.id) h++; else if (tid === A.id) a++; }      // feeds with short lines ("X (Team) Goal at 50'") carry no score: count it
-    return { clk: x.time.displayValue, label: (/Second Half ends|Match ends/i.test(x.text) ? 'FULL TIME' : /First Half ends/i.test(x.text) ? 'HALF-TIME' : /Half begins|First Half starts/i.test(x.text) ? 'KICK-OFF' : '') || FLAB(t) || (x.play?.type?.text || 'COMMENTARY').toUpperCase(), text: x.text, team: tid, home: h, away: a, scoring }; });
+    return { clk: x.time.displayValue, label: (/Second Half ends|Match ends/i.test(x.text) ? 'FULL TIME' : /First Half ends/i.test(x.text) ? 'HALF-TIME' : /Half begins|First Half starts/i.test(x.text) ? 'KICK-OFF' : /wins a free kick/i.test(x.text) ? 'FREE KICK' : '') || FLAB(t) || (x.play?.type?.text || 'COMMENTARY').toUpperCase(), text: x.text, team: tid, home: h, away: a, scoring }; });
 }
 function gameCell(e, cur) {
   const c = e.competitions[0], h = c.competitors.find((x) => x.homeAway === 'home'), a = c.competitors.find((x) => x.homeAway === 'away');
@@ -247,6 +260,15 @@ const tstat = (s, id, name) => (s.boxscore?.teams || []).find((t) => String(t.te
 function shotList(s, H) {
   return (s.plays || []).filter((p) => p.coordinate && Math.abs(p.coordinate.x) < 200 && Math.abs(p.coordinate.y) < 200 && (NHL() ? /Shot|Goal|Missed|Blocked/i.test(p.type?.text || '') : p.shootingPlay))
     .slice(-70).map((p) => ({ x: p.coordinate.x, y: p.coordinate.y, made: !!p.scoringPlay, home: String(p.team?.id) === H.id }));
+}
+// play-by-play in the tracker box, for games with no tracker (owner, 27 Nov 2026): the five latest plays, newest on top
+function feedPanel(list, H, A, clk) {
+  const row = (p, i) => { const T = p.team === H.id ? H : p.team === A.id ? A : null;
+    return `<div class="fr ${i === 0 ? 'new' : ''}" style="--nc:${T ? T.color : '#24366e'}"><div class="fc">${esc(String(p.clk || '').split(' - ')[0])}</div>
+      <div class="fl">${T?.logoD ? `<img src="${T.logoD}" onerror="this.style.visibility='hidden'">` : ''}</div>
+      <div class="ft"><b class="${p.scoring ? 'g' : ''}">${esc(p.label || '')}</b><span>${esc(p.text || '')}</span></div>
+      <div class="fs">${p.home != null && p.away != null ? (FOOT() ? `${p.home} - ${p.away}` : `${p.away} - ${p.home}`) : ''}</div></div>`; };
+  return `<div class="feed"><div class="fh"><span>LIVE PLAY-BY-PLAY</span><em>${esc(clk || '')}</em></div>${list.map(row).join('')}</div>`;
 }
 function ownTracker(s, H, A, overlay) {
   const BW = 1052, BH = 562, hc = vivid(H.color), ac = vivid(A.color), sh = shotList(s, H);
@@ -429,7 +451,8 @@ function render(s, sb) {
     <div class="gl">${FOOT() ? footTitle(s, T, pre) : hasBox ? 'GAME LEADERS' : 'SEASON LEADERS'}<span>${FOOT() ? esc(T.abbr) : NHL() && hasBox ? 'SKATERS / GOALIE' : esc(T.abbr)}</span></div>
     <div class="cards">${cards(T)}</div></div>`;
   // ---- plays ----
-  const P = (FOOT() ? footPlays(s, H, A) : NFL() ? nflPlays(s) : plays(s)).slice(-3).reverse(), logo = (id) => (id === H.id ? H.logoD : id === A.id ? A.logoD : '');
+  const PALL = FOOT() ? footPlays(s, H, A) : NFL() ? nflPlays(s) : plays(s);
+  const P = PALL.slice(-3).reverse(), logo = (id) => (id === H.id ? H.logoD : id === A.id ? A.logoD : '');
   const mins = Math.round((new Date(c.date) - Date.now()) / 60000);
   const dayOf = (d) => new Date(d).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: FOOT() ? TZ()[0] : 'America/New_York' });
   const venue = [s.gameInfo?.venue?.fullName, s.gameInfo?.venue?.address?.city].filter(Boolean).join(', ');
@@ -452,6 +475,9 @@ function render(s, sb) {
   const siteUrl = sitePath ? `https://scorebuzz.net/${sitePath}${TRK3D ? '?trk=3d' + (TRKGPU ? '&gpu=1' : '') + (TRK4K ? '&q3d=4k' : TRKHD ? '&q3d=hd' : '') : ''}` : '';
   const trkUrlPre = pre && SITEPRE && !REPLAY ? siteUrl : ''; // same address as the live tracker, so kick-off needs no reload
   const trkUrl = live ? siteUrl : '';
+  // owner, 27 Nov 2026: a game with no tracker shows live play-by-play in the tracker's place (never an empty or error box)
+  const noTrk = NOTRK || (wantSite ? SITEFIX[c.id]?.p === '' : !OWN && !noSite && !SITE[league]);
+  const feedOn = live && !trkUrl && noTrk && PALL.length > 0;
   const scorers = (id) => { const m = new Map(); for (const k of s.keyEvents || []) { const t = k.type?.type || ''; if (!(k.scoringPlay || /goal|penalty---scored/.test(t)) || /miss|saved/.test(t) || String(k.team?.id || '') !== id) continue;
       const who = (k.participants?.[0]?.athlete?.displayName || '').split(' ').slice(-1)[0] || '?'; m.set(who, [...(m.get(who) || []), k.clock?.displayValue + (/penalty/.test(t) ? ' P' : t === 'own-goal' ? ' OG' : '')]); }
     return [...m].map(([w, ts]) => `${w} ${ts.join(', ')}`).join(' · '); };
@@ -476,7 +502,7 @@ function render(s, sb) {
   <div class="mid">
     <div class="clock"><div class="c ${clk.length > 8 ? 'sm' : ''}">${esc(clk)}</div><div class="p">${esc(sub)}</div></div>
     ${strip}
-    <div class="trk" id="trk">${ST?.trk ? ST.trk : trkUrl ? '' : trkUrlPre ? ov.replace('class="ov"', 'class="pre"') : ownTracker(s, H, A, ov)}</div>
+    <div class="trk" id="trk">${ST?.trk ? ST.trk : trkUrl ? '' : trkUrlPre ? ov.replace('class="ov"', 'class="pre"') : feedOn ? feedPanel(PALL.slice(-5).reverse(), H, A, clk) : ownTracker(s, H, A, ov)}</div>
     <div class="pbp ${ST?.pbp ? ST.cls || '' : ''}">${pbp}</div>
   </div>
   ${side(R, L, 'a')}
