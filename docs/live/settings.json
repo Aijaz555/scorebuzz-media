@@ -66,15 +66,15 @@
    "event": "401892803",
    "note": "Minnesota Wild vs Colorado Avalanche, 2026-11-27T21:00:00Z"
   },
-  "10": {
-   "league": "nfl",
-   "event": "401873083",
-   "note": "Pittsburgh Steelers vs Denver Broncos, 2026-11-27T20:00:00Z"
-  },
-  "12": {
+  "9": {
    "league": "nhl",
-   "event": "401892801",
-   "note": "Washington Capitals vs Florida Panthers, 2026-11-27T20:00:00Z"
+   "event": "401892809",
+   "note": "Edmonton Oilers vs Seattle Kraken, 2026-11-28T01:00:00Z"
+  },
+  "10": {
+   "league": "nhl",
+   "event": "401892808",
+   "note": "Buffalo Sabres vs Pittsburgh Penguins, 2026-11-28T01:00:00Z"
   }
  },
  "fit": {
