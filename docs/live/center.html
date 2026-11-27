@@ -142,6 +142,31 @@ const vivid = (c) => { if (lum(c) >= 0.38) return c; const n = parseInt(c.slice(
 const FPATH = { epl: 'eng.1', laliga: 'esp.1', seriea: 'ita.1', ligue1: 'fra.1', bundesliga: 'ger.1', mls: 'usa.1', ucl: 'uefa.champions', uel: 'uefa.europa', unl: 'uefa.nations', bra: 'bra.1', acl2: 'afc.cup', champ: 'eng.2', eredivisie: 'ned.1', uecl: 'uefa.europa.conf', ligamx: 'mex.1', arg: 'arg.1', col: 'col.1', chi: 'chi.1', aleague: 'aus.1', acle: 'afc.champions', libertadores: 'conmebol.libertadores', sudamericana: 'conmebol.sudamericana' };
 const SPORT = { nba: 'basketball/nba', nhl: 'hockey/nhl', nfl: 'football/nfl' }; for (const [k, v] of Object.entries(FPATH)) SPORT[k] = 'soccer/' + v;
 const SITE = { champ: 'football/championship', eredivisie: 'football/eredivisie', uecl: 'football/conference-league', ligamx: 'football/liga-mx', arg: 'football/argentina-primera-division', col: 'football/colombia-primera-a', chi: 'football/chile-primera-division', aleague: 'football/a-league', acle: 'football/afc-champions-league', libertadores: 'football/copa-libertadores', sudamericana: 'football/copa-sudamericana', nba: 'basketball/nba', nhl: 'ice-hockey/nhl', nfl: 'american-football/nfl', epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', acl2: 'football/afc-champions-league-two', unl: 'football/uefa-nations-league', bra: 'football/brasileirao', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls' }; // scorebuzz.net match pages
+// 27 Nov 2026 (Leon v Cruz Azul and Macarthur v Melbourne City went out with a "page not found" tracker): the match page is not
+// always <ESPN short names>-<ESPN id>. The site shortens some names ("melbourne-c") and uses its other feed's id for some games
+// ("le-n-vs-cruz-azul-7707398737"). So: try the usual address; if the site says 404, read the league page and take the link for
+// this game (same id, else the same two teams in the same order). p: null = looking, '' = none (built-in tracker shows; retried).
+const SITEFIX = {};
+async function siteFind(id, guess, hub, home, away) {
+  const set = (p) => { SITEFIX[id] = { p, t: Date.now() }; };
+  let ok = null;
+  try { ok = (await fetch(`https://scorebuzz.net/${guess}`, { cache: 'no-store' })).ok; } catch { /* network trouble: keep the usual address */ }
+  if (ok !== false) return set(guess);
+  try {
+    const t = await (await fetch(`https://scorebuzz.net/${hub}/`, { cache: 'no-store' })).text();
+    const sim = (site, names) => { if (names.includes(site)) return 3; const a = site.split('-');
+      return names.some((n) => { const b = n.split('-'); return a.every((x) => b.some((y) => y.startsWith(x) || x.startsWith(y))); }) ? 1 : 0; };
+    const c = [];
+    for (const m of t.matchAll(new RegExp(`href="/${hub}/(([a-z0-9-]+?)-vs-([a-z0-9-]+)-(\\d{6,}))/"`, 'g'))) {
+      if (m[4] === String(id)) return set(`${hub}/${m[1]}/`);
+      const h = sim(m[2], home), a = sim(m[3], away);
+      if (h && a) c.push([h + a, +m[4], m[1]]);
+      else if (m[4].length >= 10 && sim(m[2], away) && sim(m[3], home)) c.push([0, +m[4], m[1]]);      /* the other feed lists some games away team first */
+    }
+    c.sort((x, y) => y[0] - x[0] || y[1] - x[1]);
+    set(c[0] ? `${hub}/${c[0][2]}/` : '');
+  } catch { set(''); }
+}
 const CROP = { top: 65, vh: 517, x: 15, vw: 970 }; // scorebuzz.net 'live action' tracker (see nba.html / us.html)
 // owner 21 Nov 2026: before the start, show the match page's own preview slides (form guide, table, head to head, ...) that sit
 // where the live tracker appears at kick-off (#trkSlot, 972x330 at 1000 px; its top 65 px are under the site's sticky header).
@@ -417,7 +442,14 @@ function render(s, sb) {
   // ---- tracker: website tracker while in play, built-in shot map otherwise ----
   const slug = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   const shortOf = (T) => sbEv?.competitions?.[0]?.competitors?.find((x) => String(x.team.id) === T.id)?.team?.shortDisplayName || T.nick;
-  const siteUrl = !noSite && !OWN && sbEv && SITE[league] ? `https://scorebuzz.net/${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/${TRK3D ? '?trk=3d' + (TRKGPU ? '&gpu=1' : '') + (TRK4K ? '&q3d=4k' : TRKHD ? '&q3d=hd' : '') : ''}` : '';
+  // the match page's real address is looked up (siteFind): the site names some pages with its own short names or ids
+  const wantSite = !noSite && !OWN && sbEv && SITE[league];
+  if (wantSite && (!SITEFIX[c.id] || (SITEFIX[c.id].p === '' && Date.now() - SITEFIX[c.id].t > 5 * 60e3))) {
+    SITEFIX[c.id] = { p: null, t: Date.now() };
+    siteFind(c.id, `${SITE[league]}/${slug(shortOf(H))}-vs-${slug(shortOf(A))}-${c.id}/`, SITE[league], [slug(shortOf(H)), slug(H.name || H.nick)], [slug(shortOf(A)), slug(A.name || A.nick)]);
+  }
+  const sitePath = wantSite ? SITEFIX[c.id]?.p : '';
+  const siteUrl = sitePath ? `https://scorebuzz.net/${sitePath}${TRK3D ? '?trk=3d' + (TRKGPU ? '&gpu=1' : '') + (TRK4K ? '&q3d=4k' : TRKHD ? '&q3d=hd' : '') : ''}` : '';
   const trkUrlPre = pre && SITEPRE && !REPLAY ? siteUrl : ''; // same address as the live tracker, so kick-off needs no reload
   const trkUrl = live ? siteUrl : '';
   const scorers = (id) => { const m = new Map(); for (const k of s.keyEvents || []) { const t = k.type?.type || ''; if (!(k.scoringPlay || /goal|penalty---scored/.test(t)) || /miss|saved/.test(t) || String(k.team?.id || '') !== id) continue;

@@ -755,3 +755,4 @@ period: 1 = football half-time, 2 = NBA/NFL half-time, 1 or 2 = NHL intermission
   MLS 74, LaLiga 55, Ligue 1 50, NFL 35, Serie A 34, NBA 32; best single streams were small games (Bodo/Glimt v LASK 1,418,
   Ferencvaros v Celje 393). Not added yet (ESPN gives goals and cards only, ~15 lines a game): League One/Two, Turkey, Scotland, Belgium,
   Saudi, LaLiga 2, Serie B, 2. Bundesliga, Ligue 2, Greece, Austria, Denmark, J.League. `maxLive` is still 10.
+- 2026-11-27: Tracker showed the site's "page not found" on León v Cruz Azul (Liga MX) and Macarthur v Melbourne City (A-League): the match page address was guessed from ESPN names + id, but the site shortens some names and uses its other feed's id for some games. `center.html` now checks the address and, on a 404, finds the game's link on the league page (`siteFind`); no page → built-in tracker instead of an error page.
