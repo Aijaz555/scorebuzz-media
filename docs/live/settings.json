@@ -56,15 +56,25 @@
    "event": "401876392",
    "note": "Brest vs Paris FC, 2026-11-27T19:45:00Z"
   },
-  "7": {
-   "league": "bundesliga",
-   "event": "401884720",
-   "note": "Werder Bremen vs Borussia Mönchengladbach, 2026-11-27T19:30:00Z"
+  "9": {
+   "league": "nhl",
+   "event": "401892800",
+   "note": "Philadelphia Flyers vs Vancouver Canucks, 2026-11-27T20:00:00Z"
   },
-  "8": {
-   "league": "eredivisie",
-   "event": "401875536",
-   "note": "FC Groningen vs Willem II, 2026-11-27T19:00:00Z"
+  "10": {
+   "league": "nfl",
+   "event": "401873083",
+   "note": "Pittsburgh Steelers vs Denver Broncos, 2026-11-27T20:00:00Z"
+  },
+  "11": {
+   "league": "nhl",
+   "event": "401892799",
+   "note": "Tampa Bay Lightning vs Ottawa Senators, 2026-11-27T20:00:00Z"
+  },
+  "12": {
+   "league": "nhl",
+   "event": "401892801",
+   "note": "Washington Capitals vs Florida Panthers, 2026-11-27T20:00:00Z"
   }
  },
  "fit": {
