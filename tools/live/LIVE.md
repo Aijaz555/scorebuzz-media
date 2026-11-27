@@ -456,6 +456,14 @@ the stream ends on its planned duration; the next planner run frees the slot onc
 - 25 Nov 2026 (owner asked in chat): Slot 10 all-games UCL board again, scheduled 17:15Z (30 min before the 17:45 games), planned 18000 s (to ~22:15, after the 20:00 games end), crowd audio.
 - 26 Nov 2026 (owner asked in chat): NHL board. multi.html now takes `league=nhl` (ESPN hockey/nhl: period clock, ET/UK puck drop, scores by period, score ticker). Slot 14 `{"multi": "nhl"}`, started once YouTube had room (it refuses past 10 live), after the single NHL games.
 
+### NHL never misses a slot (owner, 27 Nov 2026: "NHL is our main sport")
+
+At the 10-stream cap, `plan_streams.js` makes room for every NHL (and NFL) game in this order: a fill-league stream,
+then a finished game of any league still running out its 10-15 min grace, then the lowest-ranked NBA stream (one not
+started yet before a live one, lowest average win % first). The action reads `stop`/`cancel` with reason
+"... gives way to NHL <matchup>": carry it out like any other stop. An NHL game is only skipped when all 10 streams are
+NHL/NFL or main-league football. YouTube refusals still go through `bump.js` (never drops NHL).
+
 ## Stream check (added 9 Nov 2026)
 
 Each hourly run checks what every LIVE stream actually shows on YouTube (needs `i.ytimg.com` on the session's allowed

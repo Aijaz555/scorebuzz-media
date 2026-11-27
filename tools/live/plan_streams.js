@@ -214,6 +214,28 @@ async function games(extra) {
         setA(q.key, null); gone.add(q.id); occupied--;
       }
     }
+    // still at the cap and this is an NHL / NFL game: the lowest-ranked NBA stream gives way (owner, 18 + 27 Nov 2026:
+    // never miss an NHL game; drop fill games first, then only the lowest-ranked NBA games). Finished NBA games still in
+    // their grace period (any league) go first, then NBA games not started yet, then live ones; lowest average win % first.
+    if (occupied >= cfg.maxLive && top(g)) {
+      const restarting = new Set(actions.filter((x) => x.type === 'restart').map((x) => x.projectId));
+      const nbaG = (q) => { const a = getA(q.key); return a && a.league === 'nba' ? all.get(`nba:${a.event}`) : null; };
+      const live = (q) => (q.liveStatus === 'LIVE' || q.liveStatus === 'PREPARING') ? 1 : 0;
+      // a game of any league that is already over and only running out its 10-15 min grace gives way before any NBA game
+      const graceP = (q) => ending.some((e) => e.project === q.name);
+      const stage = (q) => graceP(q) ? 0 : live(q) ? 2 : 1;
+      const cands = projects.filter((q) => !stopped.has(q.id) && !gone.has(q.id) && !restarting.has(q.id) && (graceP(q) || getA(q.key)?.league === 'nba')
+        && (q.liveStatus === 'LIVE' || q.liveStatus === 'PREPARING' || q.liveStatus === 'SCHEDULED' || q.scheduledLivesCount > 0));
+      const q = cands.sort((x, y) => stage(x) - stage(y) || ((nbaG(x)?.winPct ?? 0.5) - (nbaG(y)?.winPct ?? 0.5)))[0];
+      if (q) {
+        const was = getA(q.key);
+        const wg = nbaG(q);
+        const what = graceP(q) ? `finished game (${ending.find((e) => e.project === q.name).matchup}, grace period)` : `NBA game (${wg ? wg.matchup : was.note || was.event})`;
+        actions.push({ type: live(q) ? 'stop' : 'cancel', projectId: q.id, project: q.name, reason: `${what} gives way to ${g.league.toUpperCase()} ${g.matchup}` });
+        const i = ending.findIndex((e) => e.project === q.name); if (i >= 0) ending.splice(i, 1);
+        setA(q.key, null); gone.add(q.id); occupied--;
+      }
+    }
     if (occupied >= cfg.maxLive) { skipped.push({ league: g.league, event: g.id, matchup: g.matchup, start: g.start, reason: `cap ${cfg.maxLive}` }); continue; }
     const p = free.shift();
     if (!p) { skipped.push({ league: g.league, event: g.id, matchup: g.matchup, start: g.start, reason: 'no free project' }); continue; }
