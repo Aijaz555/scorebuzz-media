@@ -31,20 +31,20 @@
    "event": "401892805",
    "note": "San Jose Sharks vs Vegas Golden Knights, 2026-11-27T21:00:00Z"
   },
+  "2": {
+   "league": "nhl",
+   "event": "401892804",
+   "note": "Anaheim Ducks vs Los Angeles Kings, 2026-11-27T21:00:00Z"
+  },
+  "3": {
+   "league": "nhl",
+   "event": "401892806",
+   "note": "Chicago Blackhawks vs New York Rangers, 2026-11-27T22:30:00Z"
+  },
   "4": {
    "league": "nhl",
    "event": "401892798",
    "note": "St. Louis Blues vs Dallas Stars, 2026-11-27T19:00:00Z"
-  },
-  "5": {
-   "league": "seriea",
-   "event": "401875004",
-   "note": "Venezia vs Bologna, 2026-11-27T19:45:00Z"
-  },
-  "6": {
-   "league": "ligue1",
-   "event": "401876392",
-   "note": "Brest vs Paris FC, 2026-11-27T19:45:00Z"
   },
   "7": {
    "league": "nhl",
@@ -394,6 +394,12 @@
     "401915507",
     "401915508",
     "401915520"
+   ],
+   "seriea": [
+    "401875004"
+   ],
+   "ligue1": [
+    "401876392"
    ]
   },
   "fill": [
