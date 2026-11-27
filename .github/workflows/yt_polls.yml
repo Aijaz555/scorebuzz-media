@@ -1,9 +1,15 @@
 name: YouTube live polls
-# Every 10 minutes: opens a "Who wins?" poll in the chat of each ScoreBuzz broadcast that has just gone live
+# Opens a "Who wins?" poll in the chat of each ScoreBuzz broadcast within a few minutes of it going live
 # (one poll per broadcast). See tools/live/yt_polls.js.
+# GitHub's schedule starts jobs hours late on this repo (27 Nov 2026: no scheduled run in six hours), so the job does
+# not depend on it: every stream-plan commit (docs/live/settings.json) starts a run that looks every 4 minutes for
+# 5 hours; a newer commit replaces the running one. The schedule below is only a backstop.
 on:
+  push:
+    branches: [main]
+    paths: ['docs/live/settings.json', '.github/workflows/yt_polls.yml']
   schedule:
-    - cron: '3-59/10 * * * *'
+    - cron: '7 */3 * * *'
   workflow_dispatch:
     inputs:
       only:
@@ -12,13 +18,16 @@ on:
       close:
         description: 'Close the running poll on this live video id'
         required: false
+      force:
+        description: 'yes = open the poll now on every live stream that has none, whatever its age'
+        required: false
 concurrency:
-  group: yt-polls
-  cancel-in-progress: false
+  group: yt-polls${{ (inputs.only || inputs.close || inputs.force) && '-manual' || '' }}
+  cancel-in-progress: true
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 320
     env:
       YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
       YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
@@ -36,12 +45,14 @@ jobs:
       - env:
           ONLY: ${{ inputs.only }}
           CLOSE: ${{ inputs.close }}
+          FORCE: ${{ inputs.force }}
         run: |
           if [ -n "$CLOSE" ]; then node tools/live/yt_polls.js .polls/state.json --close "$CLOSE"
           elif [ -n "$ONLY" ]; then node tools/live/yt_polls.js .polls/state.json --only "$ONLY"
-          else node tools/live/yt_polls.js .polls/state.json; fi
+          elif [ "$FORCE" = "yes" ]; then node tools/live/yt_polls.js .polls/state.json --force
+          else node tools/live/yt_polls.js .polls/state.json --loop 300; fi
       - if: always()
         uses: actions/cache/save@v4
         with:
           path: .polls
-          key: yt-polls-${{ github.run_id }}
+          key: yt-polls-${{ github.run_id }}-${{ github.run_attempt }}
