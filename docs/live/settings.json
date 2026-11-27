@@ -26,16 +26,6 @@
  "top25": 15,
  "pin": null,
  "slots": {
-  "1": {
-   "league": "nhl",
-   "event": "401892795",
-   "note": "Boston Bruins vs Toronto Maple Leafs, 2026-11-27T18:00:00Z"
-  },
-  "2": {
-   "league": "nhl",
-   "event": "401892796",
-   "note": "New Jersey Devils vs Calgary Flames, 2026-11-27T18:00:00Z"
-  },
   "3": {
    "league": "nhl",
    "event": "401892797",
@@ -55,6 +45,16 @@
    "league": "ligue1",
    "event": "401876392",
    "note": "Brest vs Paris FC, 2026-11-27T19:45:00Z"
+  },
+  "7": {
+   "league": "nhl",
+   "event": "401892802",
+   "note": "Columbus Blue Jackets vs Detroit Red Wings, 2026-11-27T20:00:00Z"
+  },
+  "8": {
+   "league": "nhl",
+   "event": "401892803",
+   "note": "Minnesota Wild vs Colorado Avalanche, 2026-11-27T21:00:00Z"
   },
   "9": {
    "league": "nhl",
