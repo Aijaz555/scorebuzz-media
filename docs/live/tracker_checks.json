@@ -1,44 +1,4 @@
 {
- "401892672": {
-  "slot": "3",
-  "league": "nhl",
-  "game": "Kings v Penguins",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/kings-vs-penguins-401892672/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 78)",
-  "at": "2026-11-08T04:30:04+00:00"
- },
- "401909944": {
-  "slot": "11",
-  "league": "nba",
-  "game": "Trail Blazers v Spurs",
-  "url": "https://scorebuzz.net/basketball/nba/trail-blazers-vs-spurs-401909944/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 62)",
-  "at": "2026-11-08T05:26:09+00:00"
- },
- "401892673": {
-  "slot": "18",
-  "league": "nhl",
-  "game": "Oilers v Canucks",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/oilers-vs-canucks-401892673/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 89)",
-  "at": "2026-11-08T05:26:12+00:00"
- },
- "401874810": {
-  "slot": "1",
-  "league": "seriea",
-  "game": "Napoli v Lazio",
-  "url": "https://scorebuzz.net/football/serie-a/napoli-vs-lazio-401874810/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-08T13:23:32+00:00"
- },
  "401876406": {
   "slot": "11",
   "league": "ligue1",
@@ -2998,5 +2958,45 @@
   "status": "ok",
   "reason": "ok (contrast 40)",
   "at": "2026-11-26T23:44:13+00:00"
+ },
+ "401892805": {
+  "slot": "1",
+  "league": "nhl",
+  "game": "Sharks v Golden Knights",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/sharks-vs-golden-knights-401892805/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-27T23:40:38+00:00"
+ },
+ "401892804": {
+  "slot": "2",
+  "league": "nhl",
+  "game": "Ducks v Kings",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/ducks-vs-kings-401892804/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-27T23:40:41+00:00"
+ },
+ "401892806": {
+  "slot": "3",
+  "league": "nhl",
+  "game": "Blackhawks v Rangers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-rangers-401892806/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 85)",
+  "at": "2026-11-27T23:40:45+00:00"
+ },
+ "401892803": {
+  "slot": "8",
+  "league": "nhl",
+  "game": "Wild v Avalanche",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/wild-vs-avalanche-401892803/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 88)",
+  "at": "2026-11-27T23:40:48+00:00"
  }
 }
