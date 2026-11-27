@@ -14,7 +14,8 @@ const settings = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'do
 const arg = (n) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : null; };
 const refused = String(process.argv[2] || '');
 const skip = new Set(String(arg('--skip') || '').split(',').filter(Boolean));
-const DROPPABLE = ['nba'];
+const FILL = (settings.streams && settings.streams.fill) || [];      // free-slot leagues (27 Nov 2026) are given up before any NBA game
+const DROPPABLE = ['nba', ...FILL];
 (async () => {
   const slots = { ...(settings.slots || {}), ...(settings.pin ? { main: settings.pin } : {}) };
   const cache = {};
@@ -36,9 +37,10 @@ const DROPPABLE = ['nba'];
     if (k === refused || skip.has(k) || !DROPPABLE.includes(a.league)) continue;
     const g = await game(a);
     if (!g || g.state === 'post') continue;
+    if (FILL.includes(want.league) && !FILL.includes(g.league)) continue;      // a free-slot game never pushes out an NBA game
     if (want.league === g.league && (g.winPct ?? 0.5) >= (want.winPct ?? 0.5)) continue;
-    cands.push({ slot: k, project: k === 'main' ? 'ScoreBuzz Main' : `Slot ${k}`, matchup: g.matchup, winPct: g.winPct, state: g.state });
+    cands.push({ fill: FILL.includes(g.league) ? 1 : 0, slot: k, project: k === 'main' ? 'ScoreBuzz Main' : `Slot ${k}`, matchup: g.matchup, winPct: g.winPct, state: g.state });
   }
-  cands.sort((a, b) => a.winPct - b.winPct || (a.state === 'pre') - (b.state === 'pre'));
+  cands.sort((a, b) => b.fill - a.fill || a.winPct - b.winPct || (a.state === 'pre') - (b.state === 'pre'));
   console.log(JSON.stringify({ refused: { slot: refused, matchup: want.matchup, league: want.league, winPct: want.winPct }, drop: cands[0] || null, reason: cands[0] ? undefined : 'no lower-ranked NBA game to drop' }, null, 1));
 })();

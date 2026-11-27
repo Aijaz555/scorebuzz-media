@@ -178,6 +178,9 @@ async function games(extra) {
   // NFL and NHL rank ahead of every other league even when those games are already in progress (24 Nov 2026: an
   // in-progress MLS game had pushed the 02:40 NHL Kraken-Ducks out at the cap; owner, 18 Nov: never miss an NHL game)
   const top = (g) => (g.league === 'nfl' || g.league === 'nhl') ? 1 : 0;
+  // "streams": {"fill": [leagues]} (owner, 27 Nov 2026: cover every football league we have full data for; small games get
+  // more views than big ones): these take only the slots nothing else wants, after every other league including the NBA
+  const fill = (g) => (cfg.fill || []).includes(g.league) ? 1 : 0;
   const want = [...all.values()].filter((g) => {
     if (!cfg.leagues.includes(g.league) || busy.has(`${g.league}:${g.id}`) || OFF.test(g.status)) return false;
     if (g.league === 'ncaaf' && g.rank > cfg.ncaafTop) return false;
@@ -187,7 +190,7 @@ async function games(extra) {
     if (cfg.skipEvents && cfg.skipEvents[g.league] && cfg.skipEvents[g.league].map(String).includes(String(g.id))) return false;
     if (g.state === 'in') return true;
     return g.state === 'pre' && new Date(g.start).getTime() - cfg.leadMinutes * MIN <= now + cfg.lookaheadMinutes * MIN;
-  }).sort((a, b) => (a.league === 'nba') - (b.league === 'nba') || top(b) - top(a) || (b.state === 'in') - (a.state === 'in') || favX(b) - favX(a) || pri(a) - pri(b) || fav(b) - fav(a) || (b.winPct ?? 0.5) - (a.winPct ?? 0.5) || a.start.localeCompare(b.start));
+  }).sort((a, b) => fill(a) - fill(b) || (a.league === 'nba') - (b.league === 'nba') || top(b) - top(a) || (b.state === 'in') - (a.state === 'in') || favX(b) - favX(a) || pri(a) - pri(b) || fav(b) - fav(a) || (b.winPct ?? 0.5) - (a.winPct ?? 0.5) || a.start.localeCompare(b.start));
   // NBA always ranks after every other league, even when its games are already in progress (22 Nov 2026: an in-progress
   // NBA game had pushed the 02:00 NHL Mammoth-Ducks out at the cap)
   // favourite NBA teams lead only within the NBA, never ahead of NHL (owner, 18 Nov 2026: never miss an NHL game; drop only NBA)
@@ -196,7 +199,21 @@ async function games(extra) {
   // slots first; Main last (it is the "best game" channel and falls back to auto when unassigned)
   free.sort((a, b) => (a.key === 'main') - (b.key === 'main') || Number(a.key) - Number(b.key));
   const skipped = [];
+  const gone = new Set();
   for (const g of want) {
+    // at the cap, a game from the main leagues takes the place of a free-slot ("fill") stream: one that has not started yet
+    // if there is one, else a running one (27 Nov 2026: fill games must never cost an NFL / NHL / NBA / top-league stream)
+    if (occupied >= cfg.maxLive && !fill(g)) {
+      const cands = projects.filter((q) => !stopped.has(q.id) && !gone.has(q.id) && (cfg.fill || []).includes(getA(q.key)?.league)
+        && (q.liveStatus === 'LIVE' || q.liveStatus === 'PREPARING' || q.liveStatus === 'SCHEDULED' || q.scheduledLivesCount > 0));
+      const live = (q) => (q.liveStatus === 'LIVE' || q.liveStatus === 'PREPARING') ? 1 : 0;
+      const q = cands.sort((x, y) => live(x) - live(y))[0];
+      if (q) {
+        const was = getA(q.key);
+        actions.push({ type: live(q) ? 'stop' : 'cancel', projectId: q.id, project: q.name, reason: `free-slot game (${was.note || was.league}) gives way to ${g.matchup}` });
+        setA(q.key, null); gone.add(q.id); occupied--;
+      }
+    }
     if (occupied >= cfg.maxLive) { skipped.push({ league: g.league, event: g.id, matchup: g.matchup, start: g.start, reason: `cap ${cfg.maxLive}` }); continue; }
     const p = free.shift();
     if (!p) { skipped.push({ league: g.league, event: g.id, matchup: g.matchup, start: g.start, reason: 'no free project' }); continue; }

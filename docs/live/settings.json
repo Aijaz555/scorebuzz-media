@@ -265,7 +265,18 @@
   "unl",
   "nfl",
   "bra",
-  "acl2"
+  "acl2",
+  "champ",
+  "eredivisie",
+  "uecl",
+  "ligamx",
+  "arg",
+  "col",
+  "chi",
+  "aleague",
+  "acle",
+  "libertadores",
+  "sudamericana"
  ],
  "usLeagues": [
   "nhl",
@@ -283,7 +294,18 @@
   "mls",
   "unl",
   "bra",
-  "acl2"
+  "acl2",
+  "champ",
+  "eredivisie",
+  "uecl",
+  "ligamx",
+  "arg",
+  "col",
+  "chi",
+  "aleague",
+  "acle",
+  "libertadores",
+  "sudamericana"
  ],
  "streams": {
   "leagues": [
@@ -299,18 +321,22 @@
    "seriea",
    "ligue1",
    "mls",
-   "mlb"
+   "mlb",
+   "uecl",
+   "champ",
+   "bundesliga",
+   "acle",
+   "libertadores",
+   "sudamericana",
+   "ligamx",
+   "arg",
+   "eredivisie",
+   "col",
+   "chi",
+   "aleague"
   ],
   "until": {
-   "unl": "2026-11-17T23:59:00Z",
-   "bra": "2026-11-19T06:00:00Z",
-   "uel": "2026-11-26T23:59:00Z"
-  },
-  "onlyEvents": {
-   "bra": [
-    "401841314",
-    "401841313"
-   ]
+   "unl": "2026-11-17T23:59:00Z"
   },
   "maxLive": 10,
   "skipEvents": {
@@ -324,7 +350,22 @@
     "401915508",
     "401915520"
    ]
-  }
+  },
+  "fill": [
+   "uecl",
+   "champ",
+   "bundesliga",
+   "acle",
+   "libertadores",
+   "sudamericana",
+   "bra",
+   "ligamx",
+   "arg",
+   "eredivisie",
+   "col",
+   "chi",
+   "aleague"
+  ]
  },
  "gsScores": true,
  "story": true,

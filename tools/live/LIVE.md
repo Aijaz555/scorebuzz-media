@@ -743,3 +743,12 @@ period: 1 = football half-time, 2 = NBA/NFL half-time, 1 or 2 = NHL intermission
 - 2026-11-26: Match story (pre-match show, written commentary, half-time/full-time reports) switched on for all slots (`story: true`) after a clean live check on Lions v Bears: half-time report slides and the tracker's return in Q3 both verified on air at 4K.
 - 2026-11-26: Chat polls: `yt_polls.js` + "YouTube live polls" Action open a "Who wins?" poll (football: Home / Draw / Away) in each broadcast's chat within 10 minutes of it going live; one per broadcast, none if the stream has been live over 90 minutes. Test: run the Action with `only=<video id>`; `close=<video id>` ends a poll.
 - 2026-11-27: Chat polls no longer depend on GitHub's schedule (no scheduled run in six hours; Bills-Chiefs got no poll). Every stream-plan commit starts a run that looks every 4 minutes for 5 hours (`--loop 300`); a newer commit replaces it. `force=yes` opens polls on all live streams now.
+- 2026-11-27: Free-slot ("fill") leagues (owner: cover every football league we have full data for; small games get more views than big
+  ones; LiveReacting moved to a bigger package with no weekly-hours cap). `settings.json` → `streams.fill`: Conference League, EFL
+  Championship, Bundesliga, AFC Champions League Elite, Libertadores, Sudamericana, Brasileirão, Liga MX, Argentina, Eredivisie, Colombia,
+  Chile, A-League: all have full ESPN play-by-play, line-ups and stats (checked 27 Nov). They rank after every other league including the
+  NBA, give way at the cap to any main-league game (planner stops/cancels a fill stream for it; `bump.js` drops fill before NBA), and
+  Europa League is a regular league again. Views per finished stream (`yt_stats.js`, 300 streams from 15 Nov): UCL 101, UEL 91, NHL 86,
+  MLS 74, LaLiga 55, Ligue 1 50, NFL 35, Serie A 34, NBA 32; best single streams were small games (Bodo/Glimt v LASK 1,418,
+  Ferencvaros v Celje 393). Not added yet (ESPN gives goals and cards only, ~15 lines a game): League One/Two, Turkey, Scotland, Belgium,
+  Saudi, LaLiga 2, Serie B, 2. Bundesliga, Ligue 2, Greece, Austria, Denmark, J.League. `maxLive` is still 10.

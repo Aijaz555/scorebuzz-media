@@ -274,6 +274,17 @@ const LEAGUES = {
   seriea: { path: 'soccer/ita.1', label: 'SERIE A', name: 'Serie A', sport: 'football', periods: 2, soccer: true },
   bundesliga: { path: 'soccer/ger.1', label: 'BUNDESLIGA', name: 'Bundesliga', sport: 'football', periods: 2, soccer: true },
   ligue1: { path: 'soccer/fra.1', label: 'LIGUE 1', name: 'Ligue 1', sport: 'football', periods: 2, soccer: true },
+  champ: { path: 'soccer/eng.2', label: 'CHAMPIONSHIP', name: 'EFL Championship', sport: 'football', periods: 2, soccer: true },
+  eredivisie: { path: 'soccer/ned.1', label: 'EREDIVISIE', name: 'Eredivisie', sport: 'football', periods: 2, soccer: true },
+  uecl: { path: 'soccer/uefa.europa.conf', label: 'CONFERENCE LEAGUE', name: 'Conference League', sport: 'football', periods: 2, soccer: true },
+  ligamx: { path: 'soccer/mex.1', label: 'LIGA MX', name: 'Liga MX', sport: 'football', periods: 2, soccer: true },
+  arg: { path: 'soccer/arg.1', label: 'LIGA PROFESIONAL', name: 'Argentine Liga Profesional', sport: 'football', periods: 2, soccer: true },
+  col: { path: 'soccer/col.1', label: 'PRIMERA A', name: 'Colombian Primera A', sport: 'football', periods: 2, soccer: true },
+  chi: { path: 'soccer/chi.1', label: 'PRIMERA DIVISIÓN', name: 'Chilean Primera División', sport: 'football', periods: 2, soccer: true },
+  aleague: { path: 'soccer/aus.1', label: 'A-LEAGUE', name: 'A-League', sport: 'football', periods: 2, soccer: true },
+  acle: { path: 'soccer/afc.champions', label: 'AFC CHAMPIONS LEAGUE', name: 'AFC Champions League Elite', sport: 'football', periods: 2, soccer: true },
+  libertadores: { path: 'soccer/conmebol.libertadores', label: 'LIBERTADORES', name: 'Copa Libertadores', sport: 'football', periods: 2, soccer: true },
+  sudamericana: { path: 'soccer/conmebol.sudamericana', label: 'SUDAMERICANA', name: 'Copa Sudamericana', sport: 'football', periods: 2, soccer: true },
   mls: { path: 'soccer/usa.1', label: 'MLS', sport: 'football', periods: 2, soccer: true },
 };
 
@@ -1279,7 +1290,7 @@ function statusBar(g, ph) {
 const LG_COLORS = { // [primary, accent, stripe end, chip text]
   epl: ['#37003C', '#00FF85', '#E90052', '#00FF85'], ucl: ['#0E1E5B', '#00C8FF', '#B8C2D6', '#00C8FF'], uel: ['#E06A00', '#1B1B1B', '#E06A00', '#FFFFFF'], unl: ['#0A1A3C', '#00B2FF', '#C9D3E6', '#FFFFFF'], bra: ['#00843D', '#FFD100', '#0A3A8C', '#FFD100'],
   laliga: ['#E8312B', '#1B1B1B', '#E8312B', '#FFFFFF'], seriea: ['#0A3D91', '#00B2E3', '#0A3D91', '#FFFFFF'], ligue1: ['#091C3E', '#DAE025', '#091C3E', '#DAE025'],
-  bundesliga: ['#D20515', '#1B1B1B', '#D20515', '#FFFFFF'], mls: ['#001F5B', '#C8102E', '#001F5B', '#FFFFFF'],
+  bundesliga: ['#D20515', '#1B1B1B', '#D20515', '#FFFFFF'], champ: ['#0B1E4D', '#F5C400', '#0B1E4D', '#FFFFFF'], eredivisie: ['#002B5C', '#E4002B', '#002B5C', '#FFFFFF'], uecl: ['#0A0A0A', '#00E676', '#0A0A0A', '#00E676'], ligamx: ['#0B3D2E', '#C8102E', '#0B3D2E', '#FFFFFF'], arg: ['#1B4F9C', '#75AADB', '#1B4F9C', '#FFFFFF'], col: ['#00338D', '#FCD116', '#CE1126', '#FCD116'], chi: ['#0039A6', '#D52B1E', '#0039A6', '#FFFFFF'], aleague: ['#1A1A1A', '#F26522', '#1A1A1A', '#F26522'], acle: ['#0A2A6B', '#F5B700', '#0A2A6B', '#FFFFFF'], libertadores: ['#101010', '#C9A227', '#101010', '#C9A227'], sudamericana: ['#0B2545', '#00A3E0', '#0B2545', '#FFFFFF'], mls: ['#001F5B', '#C8102E', '#001F5B', '#FFFFFF'],
   nba: ['#1D428A', '#C8102E', '#1D428A', '#FFFFFF'], nfl: ['#013369', '#D50A0A', '#013369', '#FFFFFF'],
   nhl: ['#111111', '#A2AAAD', '#111111', '#FFFFFF'], mlb: ['#041E42', '#BF0D3E', '#041E42', '#FFFFFF'],
 };
@@ -1326,7 +1337,7 @@ function render(g) {
 // The match page on scorebuzz.net is embedded and cropped to its tracker card: the page is opened at
 // #trkSlot (the browser scrolls the tracker to the top), the site's sticky header covers the first 64 px,
 // so the visible window starts just below it. ?sbtrk=0 turns it off (our own tracker is used instead).
-const SB_LEAGUE = { epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', acl2: 'football/afc-champions-league-two', unl: 'football/uefa-nations-league', bra: 'football/brasileirao', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls',
+const SB_LEAGUE = { champ: 'football/championship', eredivisie: 'football/eredivisie', uecl: 'football/conference-league', ligamx: 'football/liga-mx', arg: 'football/argentina-primera-division', col: 'football/colombia-primera-a', chi: 'football/chile-primera-division', aleague: 'football/a-league', acle: 'football/afc-champions-league', libertadores: 'football/copa-libertadores', sudamericana: 'football/copa-sudamericana', epl: 'football/english-premier-league', ucl: 'football/champions-league', uel: 'football/europa-league', acl2: 'football/afc-champions-league-two', unl: 'football/uefa-nations-league', bra: 'football/brasileirao', laliga: 'football/la-liga', seriea: 'football/serie-a', bundesliga: 'football/bundesliga', ligue1: 'football/ligue-1', mls: 'football/mls',
   nba: 'basketball/nba', nfl: 'american-football/nfl', ncaaf: 'american-football/college-football', nhl: 'ice-hockey/nhl' };
 const SB_US = ['nba', 'nfl', 'ncaaf', 'nhl'];
 // crop of the site's tracker card (page opened at #trkSlot, 1000 px wide; measured 6 Nov 2026):

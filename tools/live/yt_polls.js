@@ -12,7 +12,7 @@
 const fs = require('fs');
 const { YT_CLIENT_ID: id, YT_CLIENT_SECRET: secret, YT_REFRESH_TOKEN: refresh } = process.env;
 const API = 'https://www.googleapis.com/youtube/v3';
-const SOCCER = /\bMLS\b|premier league|\bEPL\b|champions league|\bUCL\b|europa league|conference league|la ?liga|serie a|ligue 1|bundesliga|eredivisie|championship|fa cup|efl cup|carabao|world cup|copa|euro\b|nations league|afc |saudi|scottish|primeira|super lig|friendl/i;
+const SOCCER = /\bMLS\b|premier league|\bEPL\b|champions league|\bUCL\b|europa league|conference league|la ?liga|serie a|ligue 1|bundesliga|eredivisie|championship|liga mx|liga profesional|primera|a-league|libertadores|sudamericana|brasileir|fa cup|efl cup|carabao|world cup|copa|euro\b|nations league|afc |saudi|scottish|primeira|super lig|friendl/i;
 const MAX_AGE = 90 * 60e3;        /* a broadcast live for longer than this gets no "Who wins?" poll: the game is well under way */
 const cut = (s, n) => (s.length > n ? s.slice(0, n - 1).trim() + '…' : s);
 

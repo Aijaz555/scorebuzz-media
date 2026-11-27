@@ -23,6 +23,18 @@ const LEAGUES = {
   bundesliga: { path: 'soccer/ger.1', label: 'BUNDESLIGA', name: 'Bundesliga', sport: 'football', periods: 2, soccer: true },
   ligue1: { path: 'soccer/fra.1', label: 'LIGUE 1', name: 'Ligue 1', sport: 'football', periods: 2, soccer: true },
   mls: { path: 'soccer/usa.1', label: 'MLS', sport: 'football', periods: 2, soccer: true },
+  // smaller competitions with full ESPN play-by-play (27 Nov 2026: the owner's "cover every league we have data for"; they fill free slots, see plan_streams.js "fill")
+  champ: { path: 'soccer/eng.2', label: 'CHAMPIONSHIP', name: 'EFL Championship', sport: 'football', periods: 2, soccer: true },
+  eredivisie: { path: 'soccer/ned.1', label: 'EREDIVISIE', name: 'Eredivisie', sport: 'football', periods: 2, soccer: true },
+  uecl: { path: 'soccer/uefa.europa.conf', label: 'CONFERENCE LEAGUE', name: 'Conference League', sport: 'football', periods: 2, soccer: true },
+  ligamx: { path: 'soccer/mex.1', label: 'LIGA MX', name: 'Liga MX', sport: 'football', periods: 2, soccer: true },
+  arg: { path: 'soccer/arg.1', label: 'LIGA PROFESIONAL', name: 'Argentine Liga Profesional', sport: 'football', periods: 2, soccer: true },
+  col: { path: 'soccer/col.1', label: 'PRIMERA A', name: 'Colombian Primera A', sport: 'football', periods: 2, soccer: true },
+  chi: { path: 'soccer/chi.1', label: 'PRIMERA DIVISIÓN', name: 'Chilean Primera División', sport: 'football', periods: 2, soccer: true },
+  aleague: { path: 'soccer/aus.1', label: 'A-LEAGUE', name: 'A-League', sport: 'football', periods: 2, soccer: true },
+  acle: { path: 'soccer/afc.champions', label: 'AFC CHAMPIONS LEAGUE', name: 'AFC Champions League Elite', sport: 'football', periods: 2, soccer: true },
+  libertadores: { path: 'soccer/conmebol.libertadores', label: 'LIBERTADORES', name: 'Copa Libertadores', sport: 'football', periods: 2, soccer: true },
+  sudamericana: { path: 'soccer/conmebol.sudamericana', label: 'SUDAMERICANA', name: 'Copa Sudamericana', sport: 'football', periods: 2, soccer: true },
 };
 
 const BASE = 'https://site.api.espn.com/apis/site/v2/sports';
