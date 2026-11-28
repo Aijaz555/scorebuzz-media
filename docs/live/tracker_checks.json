@@ -2979,16 +2979,6 @@
   "reason": "ok (contrast 82)",
   "at": "2026-11-27T23:40:41+00:00"
  },
- "401892806": {
-  "slot": "3",
-  "league": "nhl",
-  "game": "Blackhawks v Rangers",
-  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-rangers-401892806/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 85)",
-  "at": "2026-11-27T23:40:45+00:00"
- },
  "401892803": {
   "slot": "8",
   "league": "nhl",
@@ -2998,5 +2988,15 @@
   "status": "ok",
   "reason": "ok (contrast 88)",
   "at": "2026-11-27T23:40:48+00:00"
+ },
+ "401892806": {
+  "slot": "3",
+  "league": "nhl",
+  "game": "Blackhawks v Rangers",
+  "url": "https://scorebuzz.net/ice-hockey/nhl/blackhawks-vs-rangers-401892806/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 82)",
+  "at": "2026-11-28T00:12:59+00:00"
  }
 }
