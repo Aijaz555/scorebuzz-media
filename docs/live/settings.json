@@ -27,9 +27,9 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "laliga",
-   "event": "401882796",
-   "note": "Real Betis vs Rayo Vallecano, 2026-11-28T13:00:00Z"
+   "league": "epl",
+   "event": "401878752",
+   "note": "Ipswich Town vs Aston Villa, 2026-11-28T17:30:00Z"
   },
   "2": {
    "league": "ligue1",
@@ -42,24 +42,24 @@
    "note": "Mainz vs 1. FC Union Berlin, 2026-11-28T14:30:00Z"
   },
   "4": {
-   "league": "champ",
-   "event": "401880131",
-   "note": "Preston North End vs Norwich City, 2026-11-28T12:30:00Z"
+   "league": "laliga",
+   "event": "401882793",
+   "note": "Elche vs Atlético Madrid, 2026-11-28T17:30:00Z"
   },
   "5": {
    "league": "seriea",
    "event": "401875081",
    "note": "Frosinone vs Parma, 2026-11-28T14:00:00Z"
   },
-  "6": {
-   "league": "bundesliga",
-   "event": "401884722",
-   "note": "Hamburg SV vs Bayern Munich, 2026-11-28T14:30:00Z"
+  "8": {
+   "league": "seriea",
+   "event": "401874826",
+   "note": "Torino vs Lazio, 2026-11-28T17:00:00Z"
   },
-  "7": {
-   "league": "bundesliga",
-   "event": "401884721",
-   "note": "FC Cologne vs SV Elversberg, 2026-11-28T14:30:00Z"
+  "9": {
+   "league": "mls",
+   "event": "401933737",
+   "note": "Charlotte FC vs Chicago Fire FC, 2026-11-28T17:30:00Z"
   },
   "10": {
    "league": "epl",
