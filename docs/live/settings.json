@@ -27,14 +27,14 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "nhl",
-   "event": "401892805",
-   "note": "San Jose Sharks vs Vegas Golden Knights, 2026-11-27T21:00:00Z"
+   "league": "mls",
+   "event": "401933727",
+   "note": "Columbus Crew vs Inter Miami CF, 2026-11-28T01:00:00Z"
   },
   "2": {
-   "league": "nhl",
-   "event": "401892804",
-   "note": "Anaheim Ducks vs Los Angeles Kings, 2026-11-27T21:00:00Z"
+   "league": "nba",
+   "event": "401909329",
+   "note": "Toronto Raptors vs Brooklyn Nets, 2026-11-28T00:30:00Z"
   },
   "3": {
    "league": "nhl",
@@ -62,9 +62,9 @@
    "note": "Detroit Pistons vs Milwaukee Bucks, 2026-11-28T00:30:00Z"
   },
   "8": {
-   "league": "nhl",
-   "event": "401892803",
-   "note": "Minnesota Wild vs Colorado Avalanche, 2026-11-27T21:00:00Z"
+   "league": "nba",
+   "event": "401909333",
+   "note": "San Antonio Spurs vs Los Angeles Lakers, 2026-11-28T02:30:00Z"
   },
   "9": {
    "league": "nhl",
