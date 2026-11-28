@@ -41,11 +41,6 @@
    "event": "401933725",
    "note": "Real Salt Lake vs Vancouver Whitecaps, 2026-11-28T03:00:00Z"
   },
-  "4": {
-   "league": "nba",
-   "event": "401909331",
-   "note": "Minnesota Timberwolves vs Memphis Grizzlies, 2026-11-28T01:30:00Z"
-  },
   "5": {
    "league": "nba",
    "event": "401909334",
@@ -56,25 +51,10 @@
    "event": "401909335",
    "note": "LA Clippers vs New Orleans Pelicans, 2026-11-28T02:30:00Z"
   },
-  "7": {
-   "league": "col",
-   "event": "401936054",
-   "note": "Millonarios vs América de Cali, 2026-11-28T01:40:00Z"
-  },
   "8": {
    "league": "nba",
    "event": "401909333",
    "note": "San Antonio Spurs vs Los Angeles Lakers, 2026-11-28T02:30:00Z"
-  },
-  "9": {
-   "league": "nhl",
-   "event": "401892809",
-   "note": "Edmonton Oilers vs Seattle Kraken, 2026-11-28T01:00:00Z"
-  },
-  "10": {
-   "league": "nhl",
-   "event": "401892808",
-   "note": "Buffalo Sabres vs Pittsburgh Penguins, 2026-11-28T01:00:00Z"
   }
  },
  "fit": {
