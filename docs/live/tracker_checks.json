@@ -1,14 +1,4 @@
 {
- "401876406": {
-  "slot": "11",
-  "league": "ligue1",
-  "game": "Rennes v Lille",
-  "url": "https://scorebuzz.net/football/ligue-1/rennes-vs-lille-401876406/",
-  "mode": "built-in (website tracker failed)",
-  "status": "switched",
-  "reason": "tracker card has no drawing",
-  "at": "2026-11-08T14:05:59+00:00"
- },
  "401882814": {
   "slot": "3",
   "league": "laliga",
@@ -2998,5 +2988,15 @@
   "status": "ok",
   "reason": "ok (contrast 82)",
   "at": "2026-11-28T00:12:59+00:00"
+ },
+ "401909326": {
+  "slot": "6",
+  "league": "nba",
+  "game": "Knicks v Heat",
+  "url": "https://scorebuzz.net/basketball/nba/knicks-vs-heat-401909326/",
+  "mode": "website",
+  "status": "ok",
+  "reason": "ok (contrast 65)",
+  "at": "2026-11-28T00:21:06+00:00"
  }
 }
