@@ -30,6 +30,21 @@
    "league": "aleague",
    "event": "401892132",
    "note": "Central Coast Mariners FC vs Auckland FC, 2026-11-28T08:40:00Z"
+  },
+  "2": {
+   "league": "champ",
+   "event": "401880133",
+   "note": "Lincoln City vs Wolverhampton Wanderers, 2026-11-28T12:30:00Z"
+  },
+  "3": {
+   "league": "champ",
+   "event": "401880135",
+   "note": "Blackburn Rovers vs Charlton Athletic, 2026-11-28T12:30:00Z"
+  },
+  "4": {
+   "league": "champ",
+   "event": "401880131",
+   "note": "Preston North End vs Norwich City, 2026-11-28T12:30:00Z"
   }
  },
  "fit": {
