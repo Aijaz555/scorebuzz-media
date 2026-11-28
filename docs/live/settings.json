@@ -25,38 +25,7 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {
-  "1": {
-   "league": "nba",
-   "event": "401909336",
-   "note": "Portland Trail Blazers vs Golden State Warriors, 2026-11-28T02:30:00Z"
-  },
-  "2": {
-   "league": "nba",
-   "event": "401909332",
-   "note": "Phoenix Suns vs Dallas Mavericks, 2026-11-28T02:00:00Z"
-  },
-  "3": {
-   "league": "mls",
-   "event": "401933725",
-   "note": "Real Salt Lake vs Vancouver Whitecaps, 2026-11-28T03:00:00Z"
-  },
-  "5": {
-   "league": "nba",
-   "event": "401909334",
-   "note": "Utah Jazz vs Denver Nuggets, 2026-11-28T02:30:00Z"
-  },
-  "6": {
-   "league": "nba",
-   "event": "401909335",
-   "note": "LA Clippers vs New Orleans Pelicans, 2026-11-28T02:30:00Z"
-  },
-  "8": {
-   "league": "nba",
-   "event": "401909333",
-   "note": "San Antonio Spurs vs Los Angeles Lakers, 2026-11-28T02:30:00Z"
-  }
- },
+ "slots": {},
  "fit": {
   "win": true,
   "fit": "fill"
