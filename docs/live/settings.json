@@ -27,14 +27,14 @@
  "pin": null,
  "slots": {
   "1": {
-   "league": "mls",
-   "event": "401933727",
-   "note": "Columbus Crew vs Inter Miami CF, 2026-11-28T01:00:00Z"
+   "league": "nba",
+   "event": "401909336",
+   "note": "Portland Trail Blazers vs Golden State Warriors, 2026-11-28T02:30:00Z"
   },
   "2": {
    "league": "nba",
-   "event": "401909329",
-   "note": "Toronto Raptors vs Brooklyn Nets, 2026-11-28T00:30:00Z"
+   "event": "401909332",
+   "note": "Phoenix Suns vs Dallas Mavericks, 2026-11-28T02:00:00Z"
   },
   "3": {
    "league": "mls",
@@ -42,24 +42,24 @@
    "note": "Real Salt Lake vs Vancouver Whitecaps, 2026-11-28T03:00:00Z"
   },
   "4": {
-   "league": "nhl",
-   "event": "401892807",
-   "note": "New York Islanders vs Winnipeg Jets, 2026-11-28T00:30:00Z"
+   "league": "nba",
+   "event": "401909331",
+   "note": "Minnesota Timberwolves vs Memphis Grizzlies, 2026-11-28T01:30:00Z"
   },
   "5": {
    "league": "nba",
-   "event": "401909328",
-   "note": "Indiana Pacers vs Philadelphia 76ers, 2026-11-28T00:30:00Z"
+   "event": "401909334",
+   "note": "Utah Jazz vs Denver Nuggets, 2026-11-28T02:30:00Z"
   },
   "6": {
    "league": "nba",
-   "event": "401909326",
-   "note": "New York Knicks vs Miami Heat, 2026-11-28T00:00:00Z"
+   "event": "401909335",
+   "note": "LA Clippers vs New Orleans Pelicans, 2026-11-28T02:30:00Z"
   },
   "7": {
-   "league": "nba",
-   "event": "401909327",
-   "note": "Detroit Pistons vs Milwaukee Bucks, 2026-11-28T00:30:00Z"
+   "league": "col",
+   "event": "401936054",
+   "note": "Millonarios vs América de Cali, 2026-11-28T01:40:00Z"
   },
   "8": {
    "league": "nba",
