@@ -1,54 +1,4 @@
 {
- "401882814": {
-  "slot": "3",
-  "league": "laliga",
-  "game": "Elche v Betis",
-  "url": "https://scorebuzz.net/football/la-liga/elche-vs-betis-401882814/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-08T14:28:20+00:00"
- },
- "401879243": {
-  "slot": "4",
-  "league": "epl",
-  "game": "C Palace v Liverpool",
-  "url": "https://scorebuzz.net/football/english-premier-league/c-palace-vs-liverpool-401879243/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-08T15:46:46+00:00"
- },
- "401878759": {
-  "slot": "5",
-  "league": "epl",
-  "game": "Ipswich v Bournemouth",
-  "url": "https://scorebuzz.net/football/english-premier-league/ipswich-vs-bournemouth-401878759/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 44)",
-  "at": "2026-11-08T15:46:49+00:00"
- },
- "401879239": {
-  "slot": "6",
-  "league": "epl",
-  "game": "Sunderland v Chelsea",
-  "url": "https://scorebuzz.net/football/english-premier-league/sunderland-vs-chelsea-401879239/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 43)",
-  "at": "2026-11-08T15:46:52+00:00"
- },
- "401879244": {
-  "slot": "8",
-  "league": "epl",
-  "game": "Brighton v Brentford",
-  "url": "https://scorebuzz.net/football/english-premier-league/brighton-vs-brentford-401879244/",
-  "mode": "website",
-  "status": "ok",
-  "reason": "ok (contrast 45)",
-  "at": "2026-11-08T15:46:58+00:00"
- },
  "401875018": {
   "slot": "9",
   "league": "seriea",
@@ -2998,5 +2948,55 @@
   "status": "ok",
   "reason": "ok (contrast 65)",
   "at": "2026-11-28T00:21:06+00:00"
+ },
+ "401884723": {
+  "slot": "3",
+  "league": "bundesliga",
+  "game": "Mainz v Union Berlin",
+  "url": "https://scorebuzz.net/football/bundesliga/mainz-vs-union-berlin-401884723/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "no tracker card on the match page",
+  "at": "2026-11-28T15:51:46+00:00"
+ },
+ "401875081": {
+  "slot": "5",
+  "league": "seriea",
+  "game": "Frosinone v Parma",
+  "url": "https://scorebuzz.net/football/serie-a/frosinone-vs-parma-401875081/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "no tracker card on the match page",
+  "at": "2026-11-28T15:53:26+00:00"
+ },
+ "401879227": {
+  "slot": "10",
+  "league": "epl",
+  "game": "Leeds v Coventry",
+  "url": "https://scorebuzz.net/football/english-premier-league/leeds-vs-coventry-401879227/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "no tracker card on the match page",
+  "at": "2026-11-28T15:55:07+00:00"
+ },
+ "401879226": {
+  "slot": "11",
+  "league": "epl",
+  "game": "Man Utd v Brentford",
+  "url": "https://scorebuzz.net/football/english-premier-league/man-utd-vs-brentford-401879226/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "no tracker card on the match page",
+  "at": "2026-11-28T15:56:47+00:00"
+ },
+ "401882790": {
+  "slot": "12",
+  "league": "laliga",
+  "game": "M\u00e1laga v Athletic",
+  "url": "https://scorebuzz.net/football/la-liga/m-laga-vs-athletic-401882790/",
+  "mode": "built-in (website tracker failed)",
+  "status": "switched",
+  "reason": "no tracker card on the match page",
+  "at": "2026-11-28T15:58:28+00:00"
  }
 }

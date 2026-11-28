@@ -39,7 +39,8 @@
   "3": {
    "league": "bundesliga",
    "event": "401884723",
-   "note": "Mainz vs 1. FC Union Berlin, 2026-11-28T14:30:00Z"
+   "note": "Mainz vs 1. FC Union Berlin, 2026-11-28T14:30:00Z",
+   "sbtrk": 0
   },
   "4": {
    "league": "laliga",
@@ -49,7 +50,8 @@
   "5": {
    "league": "seriea",
    "event": "401875081",
-   "note": "Frosinone vs Parma, 2026-11-28T14:00:00Z"
+   "note": "Frosinone vs Parma, 2026-11-28T14:00:00Z",
+   "sbtrk": 0
   },
   "8": {
    "league": "seriea",
@@ -64,17 +66,20 @@
   "10": {
    "league": "epl",
    "event": "401879227",
-   "note": "Leeds United vs Coventry City, 2026-11-28T15:00:00Z"
+   "note": "Leeds United vs Coventry City, 2026-11-28T15:00:00Z",
+   "sbtrk": 0
   },
   "11": {
    "league": "epl",
    "event": "401879226",
-   "note": "Manchester United vs Brentford, 2026-11-28T15:00:00Z"
+   "note": "Manchester United vs Brentford, 2026-11-28T15:00:00Z",
+   "sbtrk": 0
   },
   "12": {
    "league": "laliga",
    "event": "401882790",
-   "note": "Málaga vs Athletic Club, 2026-11-28T15:15:00Z"
+   "note": "Málaga vs Athletic Club, 2026-11-28T15:15:00Z",
+   "sbtrk": 0
   }
  },
  "fit": {
