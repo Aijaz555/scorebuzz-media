@@ -45,6 +45,31 @@
    "league": "champ",
    "event": "401880131",
    "note": "Preston North End vs Norwich City, 2026-11-28T12:30:00Z"
+  },
+  "5": {
+   "league": "seriea",
+   "event": "401875081",
+   "note": "Frosinone vs Parma, 2026-11-28T14:00:00Z"
+  },
+  "6": {
+   "league": "bundesliga",
+   "event": "401884722",
+   "note": "Hamburg SV vs Bayern Munich, 2026-11-28T14:30:00Z"
+  },
+  "7": {
+   "league": "bundesliga",
+   "event": "401884721",
+   "note": "FC Cologne vs SV Elversberg, 2026-11-28T14:30:00Z"
+  },
+  "8": {
+   "league": "bundesliga",
+   "event": "401884723",
+   "note": "Mainz vs 1. FC Union Berlin, 2026-11-28T14:30:00Z"
+  },
+  "9": {
+   "league": "bundesliga",
+   "event": "401884719",
+   "note": "SC Paderborn 07 vs Schalke 04, 2026-11-28T14:30:00Z"
   }
  },
  "fit": {
