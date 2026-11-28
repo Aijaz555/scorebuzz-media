@@ -25,7 +25,13 @@
  ],
  "top25": 15,
  "pin": null,
- "slots": {},
+ "slots": {
+  "1": {
+   "league": "aleague",
+   "event": "401892132",
+   "note": "Central Coast Mariners FC vs Auckland FC, 2026-11-28T08:40:00Z"
+  }
+ },
  "fit": {
   "win": true,
   "fit": "fill"
