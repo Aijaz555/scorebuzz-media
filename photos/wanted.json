@@ -30,12 +30,6 @@
   "country": "USA"
  },
  {
-  "slug": "maksimir-stadium",
-  "name": "Maksimir Stadium",
-  "city": "Zagreb",
-  "country": "Croatia"
- },
- {
   "slug": "acrisure-stadium",
   "name": "Acrisure Stadium",
   "city": "Pittsburgh",
@@ -45,12 +39,6 @@
   "slug": "huntington-bank-field",
   "name": "Huntington Bank Field",
   "city": "Cleveland",
-  "country": "USA"
- },
- {
-  "slug": "galaxy-stadium",
-  "name": "Galaxy Stadium",
-  "city": "Lubbock",
   "country": "USA"
  },
  {
